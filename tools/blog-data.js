@@ -2700,6 +2700,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 <p><a href="/blog/ga4-events-explained/">GA4 events explained</a> covers event names and parameters in more detail. Once enquiries are tracked, you can <a href="/blog/measure-website-roi/">measure your website's ROI</a> in rupees.</p>
 
+<p>To see which campaigns bring enquiries, add <a href="/blog/utm-tags-explained/">UTM tags</a> to links in emails, social posts and WhatsApp messages.</p>
+
 <h2>Common setup mistakes</h2>
 <ul>
   <li><strong>The property belongs to someone else,</strong> such as an old agency, so you can't see your own data. Ask them to add you as an administrator, or start a new property.</li>
@@ -5119,6 +5121,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ul>
 <p>This site uses a small script that submits the URLs in its sitemap to IndexNow after each update, so Bing hears about new pages without waiting for a crawl.</p>
 
+<p>A single wrong line can stop Google crawling whole sections. Check your settings for <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> before requesting indexing.</p>
+
 <h2>What doesn't speed up indexing</h2>
 <ul>
   <li>Resubmitting the sitemap every day, or requesting indexing for the same URL repeatedly.</li>
@@ -5987,6 +5991,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Analytics recording purchases once each, with the right value, from a test order</li>
 </ul>
 
+<p>Stores slow down as products and orders grow. This guide explains how to <a href="/blog/woocommerce-speed-optimization/">speed up WooCommerce</a> on product, cart and checkout pages.</p>
+
 <h2>The test orders to run</h2>
 <table>
   <thead><tr><th>Scenario</th><th>What to check</th></tr></thead>
@@ -6289,6 +6295,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Downloadable PDFs, or a note that they're in English only</li>
 </ul>
 <p>Keep phone numbers, prices and timings identical across languages, and update both versions when they change. Out-of-date Hindi pages are a common problem once the launch excitement fades.</p>
+
+<p>If adding a language changes existing URLs, set up redirects from the old ones. See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which type to use.</p>
 
 <h2>Translation quality</h2>
 <ul>
@@ -8468,6 +8476,8 @@ wp cache flush</code></pre>
 <h2>Test your backups</h2>
 <p>Backups fail quietly: storage fills up, a cloud connection expires, or a schedule stops running after a plugin update. Every quarter, restore a recent backup to a staging site or a spare subdomain and check that pages, images, forms and logins work. While you're there, confirm the backup files are a sensible size; a backup that's suddenly much smaller than usual is a warning sign.</p>
 
+<p>Restoring an infected backup only brings the problem back. Learn <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a> before choosing which copy to restore.</p>
+
 <h2>Backup mistakes to avoid</h2>
 <ul>
   <li>Keeping every copy on the same server as the site</li>
@@ -8813,6 +8823,8 @@ wp cache flush</code></pre>
 </ol>
 <p>Before you start asking, make sure the profile itself is complete and accurate, since reviewers will see it; the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers every setting.</p>
 <p>Print the QR code where customers have a moment to spare: the billing counter, a table tent, the bill folder, a thank-you card in deliveries or the back of a visiting card. <a href="/blog/qr-codes-for-business-website/">QR codes for your business</a> covers printing, testing and tracking scans.</p>
+
+<p>When the review link goes out in several places, <a href="/blog/utm-tags-explained/">UTM tags</a> on your own website links show which channel sends the most visitors.</p>
 
 <h2>Step 2: Ask at the right moment</h2>
 <p>Ask when the customer is happiest: just after the problem is solved, the order arrives or they thank you. Asking weeks later rarely works, and asking before the job is finished feels pushy.</p>
@@ -9698,6 +9710,8 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <h2>Step 3: Tag your traffic sources with UTMs</h2>
 <p>UTM parameters tell Analytics where a visit came from. Add them to links you control: your Instagram bio, WhatsApp broadcast links, email newsletters, QR codes on brochures and vehicle branding, and links in directory listings. Without UTMs, many of these visits appear as "direct" and you can't tell which channel is working. Keep a simple naming sheet (source, medium, campaign) so everyone tags links the same way.</p>
+
+<p>For naming rules and examples, see this guide to <a href="/blog/utm-tags-explained/">UTM tags</a>, including how to keep source and medium values consistent.</p>
 
 <h2>Step 4: Capture phone and offline leads</h2>
 <p>In India, a large share of enquiries happen on the phone or WhatsApp, and some customers visit the shop or clinic after reading the website. Analytics only sees the click, not the conversation. Close the gap with:</p>
@@ -12142,6 +12156,8 @@ wp option update blog_public 0</code></pre>
 </ul>
 <p>Then test it: submit a real test enquiry, tap the phone number and the WhatsApp button, and confirm each one appears in GA4's real-time report and in Google Ads' conversion diagnostics. New conversions can take hours to show in Google Ads, so test a day or two before launch, not an hour before.</p>
 
+<p>If you also run social or email campaigns, use <a href="/blog/utm-tags-explained/">UTM tags</a> on those links so their leads are not mixed up with ad traffic.</p>
+
 <h2>2. Calls and WhatsApp, not just forms</h2>
 <p>For many Indian businesses, calls and WhatsApp chats bring more enquiries than forms, so leaving them out makes your ads look worse than they are.</p>
 <ul>
@@ -12380,6 +12396,8 @@ wp option update blog_public 0</code></pre>
 
 <h2>Fix the reasons people leave first</h2>
 <p>Reminders bring people back to the same checkout that lost them. If that checkout surprises them with a delivery or COD charge, forces account creation, asks for too many fields, lacks UPI or COD, or loads slowly on mobile data, they'll leave again. Work through the checkout before investing in recovery, and recheck it after every major update.</p>
+
+<p>A slow cart or checkout is a common reason buyers leave. Before adding reminders, check how to <a href="/blog/woocommerce-speed-optimization/">speed up WooCommerce</a> on those pages.</p>
 
 <h2>How WooCommerce abandoned cart recovery plugins work</h2>
 <ol>
@@ -17531,6 +17549,8 @@ cf-cache-status: HIT</code></pre>
 </ul>
 <p>Case studies are one of the strongest ways to show experience; <a href="/blog/write-case-studies-business-website/">how to write case studies for your website</a> shows how to structure them honestly, and <a href="/blog/how-to-write-website-content/">how to write website content</a> covers homepage, about and service pages.</p>
 
+<p>AI tools are often used to draft FAQs, which can produce vague answers. See <a href="/blog/faq-page-seo/">FAQ SEO</a> for writing questions from real customer conversations.</p>
+
 <h2>A fact-checking routine</h2>
 <ol>
   <li>Highlight every fact in the draft: numbers, prices, names, dates, laws, technical claims and comparisons.</li>
@@ -19187,6 +19207,8 @@ Target:  https://example.com/$1/</code></pre>
   <li>Watch the Pages report for 404s in the first weeks and add redirects for anything missed.</li>
 </ul>
 
+<p>Once the new site settles, run a full <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit</a> to catch broken redirects, duplicate archives and missing pages.</p>
+
 <h2>After the move</h2>
 <p>Add back analytics, ads and email sign-up forms, set up caching, backups and security, and keep your Blogger backup file. Rankings can move for a few weeks while Google recrawls; a steady fall on particular posts usually points to a missing redirect or changed content on those posts.</p>
 
@@ -19879,6 +19901,8 @@ Disallow: /</code></pre>
   <li><strong>Don't delete pages in bulk</strong> without checking which ones get traffic or links; redirect or improve them instead</li>
 </ul>
 
+<p>Copying the same questions onto every page is a quiet form of duplication. The guide to <a href="/blog/faq-page-seo/">FAQ SEO</a> explains how to keep answers unique and useful.</p>
+
 <h2>The principle</h2>
 <p>Each page should exist for a reason and offer something unique. If two pages would answer the same question, combine them into one better page.</p>
 
@@ -20188,6 +20212,8 @@ Disallow: /</code></pre>
 </ul>
 <p>None of that is unusual. It is what a new domain with no links looks like while Google works out what it is about.</p>
 
+<p>Technical problems can stretch any timeline. A <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit</a> checks indexing, speed and site structure before content work begins.</p>
+
 <h2>Signs SEO is working before rankings show it</h2>
 <ul>
   <li><strong>More of your important pages indexed</strong> in the Pages report</li>
@@ -20449,6 +20475,8 @@ Disallow: /</code></pre>
   <li><strong>What happens if I stop?</strong> You should keep everything, with a short notice period.</li>
   <li><strong>Who will actually do the work?</strong> A named person, not an unnamed team you never speak to.</li>
 </ol>
+
+<p>A genuine provider can explain what a <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit</a> covers and show the issues found, rather than handing over a generic score.</p>
 
 <h2>How to check a provider's work</h2>
 <ul>
@@ -21316,6 +21344,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li>Fix one thing at a time and retest the same way, logged out and with caches warmed.</li>
   <li>Watch the Search Console Core Web Vitals report over the following weeks.</li>
 </ol>
+
+<p>If every tool agrees the pages are heavy, the guide to a <a href="/blog/why-is-my-wordpress-site-slow/">slow WordPress site</a> walks through the usual causes, from hosting to plugins, in order.</p>
 
 <h2>What to fix, based on the results</h2>
 <ul>
@@ -23773,6 +23803,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li><strong>Ask partners, suppliers and associations</strong> you genuinely work with to link to the new site, or to update an old link. These are the honest links that help a new site most.</li>
 </ul>
 
+<p>Questions customers ask in the first weeks make good content. Read about <a href="/blog/faq-page-seo/">FAQ SEO</a> to turn them into answers that can rank.</p>
+
 <h2>Month 2: first content and stronger key pages</h2>
 <p>With the foundations working, put effort into the pages that bring enquiries:</p>
 <ul>
@@ -23782,6 +23814,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li><strong>Share new content</strong> on LinkedIn, WhatsApp status or wherever your customers already are.</li>
 </ul>
 <p>A few strong pages beat many thin ones. On a new site, Google is cautious about crawling and indexing pages that say little, so depth matters more than volume.</p>
+
+<p>At the three-month mark, a <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit</a> is a good way to catch crawl and indexing issues that Search Console only hints at.</p>
 
 <h2>Month 3: review the data and improve</h2>
 <p>By now you have real data. Use it:</p>
@@ -24088,6 +24122,8 @@ Description: Buy %title% online. %excerpt%</code></pre>
 
 <h2>URL structure</h2>
 <p>URLs should be short, readable and broadly follow your structure, such as /services/ac-repair/ or simply /ac-repair/. Both work; consistency matters more than depth. Use lowercase words with hyphens, avoid dates and IDs in page URLs, and never change URLs that already rank without a 301 redirect from the old address. <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a> covers permalinks and changing them safely.</p>
+
+<p>If restructuring changes page URLs, redirect the old addresses. Knowing <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> helps keep rankings when pages move.</p>
 
 <h2>Internal linking beyond the menu</h2>
 <p>Menus carry visitors to your main sections, but contextual links, written into the text of your pages, carry them to the specific page they need next: a blog post linking to the service it discusses, a service page linking to a relevant case study. These links also help Google understand how pages relate and which are most important. Pages that no menu and no other page links to become orphans that visitors and Google rarely find. See <a href="/blog/internal-linking-explained/">internal linking explained</a> and <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
@@ -27225,6 +27261,8 @@ wp db optimize</code></pre>
 <p>For a typical business site, a light cleanup every month and a proper review of autoloaded options and leftover tables once or twice a year is enough. Busy stores and sites with heavy logging may need the light cleanup weekly. Include it in your <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> so it happens without anyone remembering.</p>
 <p>If your WordPress admin is slow and you want it looked at properly, database work is part of my <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a>, or it can run monthly under <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
+<p>A bloated database is only one reason pages lag. For the full list of checks, see why a <a href="/blog/why-is-my-wordpress-site-slow/">WordPress site is slow</a> and how to find the real bottleneck.</p>
+
 <h2>When the problem is really the hosting</h2>
 <p>If the database is already lean and queries are still slow, the limit may be the server: shared plans with little memory, an old MySQL or MariaDB version, or a busy neighbour on the same server. Check your PHP and database versions in Site Health and compare plans in our guide to <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a> before spending more time on cleanup.</p>
 
@@ -29604,6 +29642,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>WooCommerce inventory management plugins: when ATUM helps</h2>
 <p>The built-in tools track quantities, not purchasing. ATUM Inventory Management for WooCommerce adds a Stock Central screen to view and edit stock for all products in one table, plus suppliers, purchase orders, inbound stock and stock logs in its free version at the time of writing. Paid add-ons cover things like multiple warehouses and products made from components. It's worth it if you reorder from suppliers regularly or stock several locations; a store with a few dozen products rarely needs it.</p>
 
+<p>Large catalogues with many variations can make the admin and shop pages sluggish. Here is how to <a href="/blog/woocommerce-speed-optimization/">speed up WooCommerce</a> without removing features.</p>
+
 <h2>Common stock problems and fixes</h2>
 <ul>
   <li><strong>Stock doesn't reduce after orders:</strong> Manage stock isn't ticked on the product or variation, or orders are stuck in Pending payment.</li>
@@ -30374,6 +30414,8 @@ dig yourdomain.com +short</code></pre>
   <li>Keep the domain in your business's own registrar account rather than a developer's or agency's, and give others access as users where the registrar allows it.</li>
   <li>Turn the transfer lock back on as soon as the transfer completes.</li>
 </ul>
+
+<p>A registrar transfer does not change URLs, but a move to a new domain does. In that case, read about <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> before switching.</p>
 
 <h2>Common problems and fixes</h2>
 <table>
@@ -33820,6 +33862,8 @@ wp db search "eval(" --all-tables</code></pre>
   </tbody>
 </table>
 
+<p>Backdoors are often what keeps a redirect infection coming back. If your site sends visitors elsewhere, pair this with the steps to fix a <a href="/blog/fix-wordpress-redirect-hack/">WordPress hacked redirect</a>.</p>
+
 <h2>How to remove backdoors safely</h2>
 <ol>
   <li><strong>Back up the infected site first</strong> and label it, so nothing real is lost and you can study how the attack worked.</li>
@@ -33898,6 +33942,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <p>If spam is going out through a real mailbox, its password has leaked. Common routes are a phishing email imitating your webmail login, a weak or reused password, an infected computer, or a hacked website: SMTP plugins often store the mailbox password in the database, where anyone who gets into the site can read it. Some SMTP plugins let you keep it in wp-config.php instead, which is better, though a full compromise can still reach it. API keys for transactional email services can leak the same way.</p>
 <h3>Check forms and plugins</h3>
 <p>Forms that send a "copy to yourself" to whatever address the visitor types, or that let the visitor choose the recipient, can be turned into spam relays. Registration forms abused by bots send a welcome email for every fake account. Turn off copy-to-sender options, add bot protection and update the plugin; see <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>.</p>
+
+<p>Spam mail and spam redirects often come from the same infection. If visitors are also being sent to other sites, follow the steps for a <a href="/blog/fix-wordpress-redirect-hack/">WordPress hacked redirect</a>.</p>
 
 <h2>Step 3: Fix the cause</h2>
 <ul>
@@ -34170,6 +34216,8 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
   <li><strong>Add monitoring:</strong> off-site backups, uptime checks, file-change alerts and Search Console emails, so a problem is caught in days rather than months.</li>
 </ol>
 
+<p>Before working out the cause, confirm there is a compromise at all. This checklist explains <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>.</p>
+
 <h2>How to work out how your site was hacked</h2>
 <p>Finding the entry point is what stops the same hack happening twice. The evidence that helps most:</p>
 <ul>
@@ -34301,6 +34349,8 @@ find wp-content/uploads -name "*.php"</code></pre>
   <li><strong>Request a review</strong> in Search Console if Google flagged the site; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a></li>
 </ol>
 <p>If the nulled item is your theme and someone edited its files directly, those edits will be lost when you replace it. Move genuine customisations into a child theme first; see child themes explained. Already have a genuine premium theme? See <a href="/blog/update-premium-theme-safely/">how to update it safely</a>.</p>
+
+<p>Removing a nulled plugin can leave broken code behind. If the site then shows a <a href="/blog/fix-wordpress-critical-error/">WordPress critical error</a>, this guide shows how to recover.</p>
 
 <h2>Licensed and free alternatives</h2>
 <ul>
@@ -34440,6 +34490,8 @@ find wp-content/uploads -name "*.php"</code></pre>
 </table>
 <p>Run one security plugin, not several; they conflict and slow the site. An occasional remote scan is a useful second opinion. A firewall blocks attacks rather than finding infections, so it complements a scanner rather than replacing it; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
 
+<p>Redirect malware is one of the infections scanners most often miss, because it can target only mobile or search visitors. See how to track down a <a href="/blog/fix-wordpress-redirect-hack/">WordPress hacked redirect</a> by hand.</p>
+
 <h2>When a scanner finds something</h2>
 <ol>
   <li>Don't click "delete all". Back up the site first, infected copy included.</li>
@@ -34531,6 +34583,8 @@ find wp-content/uploads -name "*.php"</code></pre>
 <p>A short, specific ticket gets a faster answer than an angry one. Something like this works:</p>
 <blockquote><p>Hello, my account was suspended for malware (ticket number here). Please could you share the full scan report and enable File Manager and SFTP access, restricted to my IP address if needed, so I can clean the account? The website can stay offline until you have re-scanned it. Please also confirm whether you hold backups and whether there is a deadline before the data is removed.</p></blockquote>
 <p>Some hosts offer a paid cleanup or security add-on at this point. Ask what it covers: deleting the flagged files without finding the backdoor or the entry point often leads to a second suspension.</p>
+
+<p>If the suspension followed visitors being bounced to scam pages, the guide to fixing a <a href="/blog/fix-wordpress-redirect-hack/">WordPress hacked redirect</a> shows where that code usually hides.</p>
 
 <h2>Clean the whole account, not just one website</h2>
 <p>This is where most repeat suspensions come from. The host scans the whole account, and an attacker who gets into one forgotten install can write to every other folder the same hosting user owns. An old WordPress copy in a /old/ or /test/ folder is a classic way back in.</p>
@@ -34810,6 +34864,8 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 <p>The last line shows the permission number and the owner, so you can confirm the change. If the site shows an error after you tighten wp-config.php, your server needs the web server's group to read it: set it to 640 and ask your host which value they support. To find files and folders that anyone can write to, which should usually return nothing:</p>
 <pre><code>find . -perm -o+w -not -type l</code></pre>
 
+<p>Wrong permissions can stop plugins loading and trigger the white screen message. See how to fix a <a href="/blog/fix-wordpress-critical-error/">WordPress critical error</a> step by step.</p>
+
 <h2>Why you should never use 777</h2>
 <p>777 means read, write and execute for everyone. On shared hosting, "everyone" can include other accounts on the same server and any compromised script running on it. A world-writable folder is an open invitation for malware to drop files into your site, and it is one of the first things attackers look for.</p>
 <p>It often doesn't even work. Many servers refuse to run PHP files that anyone can write to, so setting 777 can turn an upload error into a 500 Internal Server Error. If something only works at 777, the real problem is ownership or a server setting, and that's what needs fixing.</p>
@@ -35087,6 +35143,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   </tbody>
 </table>
 
+<p>Not sure the site was actually breached? Start with <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>, then come back to these checks.</p>
+
 <h2>Check wp-config.php after a hack</h2>
 <p>Attackers like this file because it loads on every request. Look for code before the opening <code>&lt;?php</code> line or after the final line, include or require lines pointing to unfamiliar files (often disguised with an image or icon extension), long encoded strings, and settings you don't recognise. Compare it with wp-config-sample.php from a fresh WordPress download, then change the database password and the salts. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers the other places to check.</p>
 
@@ -35099,6 +35157,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <li><strong>Backups that include the file.</strong> Many host backups cover public_html. If you moved wp-config.php one level up, confirm that your backup still includes it, or a restore will not boot.</li>
 </ul>
 <p>After any change, load the home page, log in, save a post and run a plugin update. If something fails, restore your copy of the file first, then add the lines back one at a time. If the site has already been hacked, or you are unsure what an unfamiliar line in the file does, get help from a <a href="/hire-wordpress-developer/">WordPress developer in India</a> before you edit further.</p>
+
+<p>A typo in wp-config.php is a common cause of a <a href="/blog/fix-wordpress-critical-error/">WordPress critical error</a>. Keep a copy of the original file so you can roll back quickly.</p>
 
 <h2>FAQs</h2>
 <h3>Where is wp-config.php?</h3>
@@ -35188,6 +35248,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 
 <h2>Step 5: Restore lost content and URLs</h2>
 <p>Compare the pages Google used to send traffic to with what exists now. Search Console's Performance report, set to a date range before the hack, lists your top pages; an older sitemap or backup lists the rest. Restore anything deleted at its original URL, fix internal links that break, and if a page has to move, redirect the old URL to the new one.</p>
+
+<p>When restoring moved or deleted pages, use the right redirect type. This guide on <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains which one passes signals permanently.</p>
 
 <h2>Step 6: Ask Google to recrawl</h2>
 <p>Resubmit your genuine sitemap and use Request indexing in URL Inspection for your most important pages. There is a daily limit on manual requests, so spend them on pages that matter. Good internal links from your homepage and menus help Google find the rest.</p>
@@ -36438,6 +36500,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </ol>
 <p>If several people edit the site, an activity log shows who changed what and when, which settles "it was working yesterday" quickly; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
 
+<p>Caching layers that hide changes also exist to keep pages fast. If removing them makes the site crawl, read about fixing a <a href="/blog/why-is-my-wordpress-site-slow/">slow WordPress site</a> properly instead.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WordPress changes not showing?</h3>
 <p>Usually a cache is still serving the old page. Clear your caching plugin, host cache and CDN, then check in a private window. If the change still isn't there, confirm it saved, and check you edited the right template, language or site rather than a staging copy.</p>
@@ -36541,6 +36605,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h2>Site URL, SSL and theme checks</h2>
 <p>"Preview could not be loaded" often happens when the WordPress Address and Site Address in Settings, General don't match, for example http:// and https://, or www and non-www. Make sure the whole site loads on HTTPS; after a migration, Elementor's Replace URL tool (Elementor, Tools) updates old addresses in its data. See <a href="/blog/mixed-content-warnings-fix/">mixed content warnings after moving to HTTPS</a>.</p>
 <p>A theme that doesn't support Elementor properly can also break the editor. Test by temporarily switching to Hello Elementor on a staging site; see <a href="/blog/best-theme-for-elementor/">best themes for Elementor</a>.</p>
+
+<p>If the editor keeps failing, it may be worth asking whether a page builder is still the right fit. See <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> for an honest comparison.</p>
 
 <h2>Elementor not loading: quick cause and fix table</h2>
 <p>Use this table to match what you see with the most likely cause, then jump to the matching section above.</p>
@@ -36669,6 +36735,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 
 <h2>Fix 8: Restore the pre-update backup</h2>
 <p>If the site is badly broken and important, restore the backup taken just before the update, then repeat the update on staging. On a WooCommerce store, restoring the database also removes orders placed since the backup, so restore files only or ask your host about restoring specific tables. See <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
+
+<p>Repeated breakage after updates is one reason some sites move to the block editor. The <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> comparison covers the trade-offs.</p>
 
 <h2>How to update Elementor without breaking the layout</h2>
 <ol>
@@ -36938,6 +37006,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 
 <h2>Never use a nulled theme</h2>
 <p>A nulled theme is a premium theme with its licence check removed, shared free or cheaply on unofficial sites. They're a well-known route for malware, backdoors and SEO spam onto WordPress sites, and even a clean copy never receives security updates. If a previous developer installed one, replace it with a genuine licence. <a href="/blog/nulled-themes-plugins-risks/">The risks of nulled themes and plugins</a> explains how to check and clean up.</p>
+
+<p>Many premium themes are built around a page builder. Before buying, compare <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> for speed, editing and long-term cost.</p>
 
 <h2>Premium theme, free theme or custom build?</h2>
 <table>
@@ -37458,6 +37528,8 @@ add_action( 'wp_enqueue_scripts', function () {
 
 <h2>Child themes with Elementor and other builders</h2>
 <p>Elementor, Divi and similar builders store page designs in the database, so a child theme is not needed for page content. It is still useful for custom PHP, extra fonts or code that hooks into the builder. Hello Elementor has an official child theme for this. If you are choosing a base theme, see our notes on <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+
+<p>Choosing between a builder and blocks changes how much a child theme matters. See <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> for how each approach handles design.</p>
 
 <h2>Common child theme problems and fixes</h2>
 <ul>
@@ -40234,6 +40306,8 @@ add_action( 'after_setup_theme', function () {
   <li>Limit who can view and export orders and customer lists, and don't share exports in WhatsApp groups or open drives</li>
   <li>Store backups securely, since they contain customer data too</li>
 </ul>
+
+<p>Part of any routine is knowing what a compromise looks like. Here is <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>, from odd admin users to strange search results.</p>
 
 <h2>A store security routine</h2>
 <table>
@@ -43588,6 +43662,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </table>
 <p>Do not put several branch addresses into one LocalBusiness block on the home page. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers how to add and test it.</p>
 
+<p>After adding LocalBusiness markup to each branch page, run the pages through a <a href="/blog/test-structured-data-rich-results/">rich snippet testing tool</a> to confirm every address and phone number is read correctly.</p>
+
 <h2>Build branch pages from a template in WordPress</h2>
 <p>With more than a few branches, typing each page by hand in a page builder leads to inconsistent details. A better approach is a Locations custom post type with custom fields for address, phone, WhatsApp, hours, map coordinates, photos, services and team. One template then lays out every branch page the same way and outputs the schema from the same fields.</p>
 <p>This brings practical benefits: the locations index and maps update automatically, a changed phone number is edited in one field, and new branches go live faster. <a href="/blog/custom-post-types-fields/">Custom post types and fields</a> explains how this is structured.</p>
@@ -44672,6 +44748,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <h2>Review schema: what not to do</h2>
 <p>Many review plugins offer to add star rating schema so that stars appear in Google search results. Be careful. Google's guidelines say that self-serving reviews, meaning reviews about your own business displayed on your own site, are not eligible for review rich results for local businesses and organisations. Adding such markup will not get you stars and can cause problems in Search Console.</p>
 <p>Product reviews collected on your own store for specific products are a different case and can be marked up properly. The <a href="/blog/schema-markup-explained/">schema markup explained</a> guide covers the basics.</p>
+
+<p>If you do add review markup, check it with a <a href="/blog/test-structured-data-rich-results/">rich snippet testing tool</a> so errors are caught before Google sees them.</p>
 
 <h2>Honesty and permission</h2>
 <ul>
@@ -46159,6 +46237,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>None of these is bad in itself; many support real business needs such as reducing returns on cash on delivery orders. The question is whether each one loads only where it is needed. A pin code checker belongs on product pages; a payment script belongs on checkout; a COD tool rarely needs to load on blog posts.</p>
 <p>Because many Indian visitors browse on mid-range phones and mobile data, the cost of every extra script is felt more strongly than on a fast office connection. Testing on a real phone over mobile data, not only on office Wi-Fi, gives a much more honest view. The guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> covers testing in those conditions.</p>
 <p>When two tools overlap, keep the one your team actually uses and checks. A single well-configured tool is easier to maintain and faster for visitors than three half-used ones.</p>
+
+<p>Scripts are often only part of the problem. The guide to a <a href="/blog/why-is-my-wordpress-site-slow/">slow WordPress site</a> covers hosting, caching, images and plugins as well.</p>
 
 <h2>Fixing third-party scripts on WordPress</h2>
 <ul>
@@ -50862,6 +50942,8 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>Agree a list:</strong> if several people write posts, keep a short approved list of categories and tags so new ones are not created on the fly.</li>
 </ul>
 <p>For WordPress tags SEO specifically, the practical rule is simple: if a tag archive would not make a useful page on its own, it should not be indexed. Many small business sites are better off using no tags at all and relying on categories and internal links.</p>
+<p>Noindex and robots.txt do different jobs for archives. See how <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> works before blocking any category or tag URLs.</p>
+
 <h2>Pagination, URLs and the category base</h2>
 <p>A few technical details affect how archives perform:</p>
 <ul>
@@ -65313,6 +65395,8 @@ any unused part of the advance refunded as agreed</code></pre>
 &lt;/script&gt;</code></pre>
 <p>Most WordPress SEO plugins can output this for you. Schema does not guarantee rich results; <a href="/blog/schema-markup-explained/">schema markup explained</a> covers what it can and cannot do.</p>
 
+<p>Once schema is in place, test each service page with a <a href="/blog/test-structured-data-rich-results/">rich snippet testing tool</a> to confirm it is valid.</p>
+
 <h2>Progress checklist</h2>
 <table>
   <thead><tr><th>Item</th><th>Done when</th></tr></thead>
@@ -69852,6 +69936,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p><strong>Security plugins and firewalls:</strong> some block requests they consider unusual, rate-limit crawlers, or block whole countries. If Googlebot comes from an IP range your firewall blocks, fetching fails. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a>.</p>
 <p><strong>Maintenance or coming soon mode:</strong> if a maintenance plugin is active, Google may get a 503 or a login page.</p>
 
+<p>A blocked sitemap path is a common culprit. Review how <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> works and make sure it lists the sitemap correctly.</p>
+
 <h2>Cloudflare and CDN issues</h2>
 <p>Cloudflare and similar services can challenge or block automated requests. Features like bot fight modes, strict security levels or country blocks may stop Googlebot. Verified search engine crawlers are usually allowed, but custom rules can override that. Check the security events log for blocked requests to the sitemap URL, and add a rule to skip challenges for that path if needed. The <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare WordPress setup guide</a> covers cache and security rules.</p>
 
@@ -72229,6 +72315,8 @@ or a cookie name starts with:
 
 <h2>Sitemaps per site</h2>
 <p>Each site in the network generates its own XML sitemap through WordPress core or the SEO plugin. Submit each sitemap in Search Console separately, and reference each in that site&apos;s robots.txt. Check that sitemaps only include URLs from their own site and do not include noindexed pages, redirects or staging addresses. If you use mapped domains, make sure sitemap URLs use the final mapped domain, not the internal network address. The <a href="/blog/xml-sitemaps-explained/">XML sitemaps guide</a> explains what a clean sitemap should contain, and <a href="/blog/search-console-sitemap-couldnt-fetch/">fixing &quot;sitemap couldn&apos;t fetch&quot;</a> helps when submission fails.</p>
+
+<p>Each site in a network serves its own rules file. Read about <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> to make sure no subsite is blocked by mistake.</p>
 
 <h2>Search Console properties</h2>
 <p>A domain property in Search Console covers every subdomain and protocol, which suits subdomain networks if you want one overview. Still add each site as its own URL-prefix property too, so you can see indexing, performance and errors per site. For subdirectory networks, URL-prefix properties for each site (such as <code>https://example.com/hindi/</code>) give a separate view of each section. Give access only to the people who manage each site. The guide to <a href="/blog/google-search-console-reports-explained/">Search Console reports</a> explains what to watch.</p>

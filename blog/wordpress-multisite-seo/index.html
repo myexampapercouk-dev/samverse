@@ -213,6 +213,8 @@
 <h2 id="sitemaps-per-site">Sitemaps per site</h2>
 <p>Each site in the network generates its own XML sitemap through WordPress core or the SEO plugin. Submit each sitemap in Search Console separately, and reference each in that site&apos;s robots.txt. Check that sitemaps only include URLs from their own site and do not include noindexed pages, redirects or staging addresses. If you use mapped domains, make sure sitemap URLs use the final mapped domain, not the internal network address. The <a href="/blog/xml-sitemaps-explained/">XML sitemaps guide</a> explains what a clean sitemap should contain, and <a href="/blog/search-console-sitemap-couldnt-fetch/">fixing &quot;sitemap couldn&apos;t fetch&quot;</a> helps when submission fails.</p>
 
+<p>Each site in a network serves its own rules file. Read about <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> to make sure no subsite is blocked by mistake.</p>
+
 <h2 id="search-console-properties">Search Console properties</h2>
 <p>A domain property in Search Console covers every subdomain and protocol, which suits subdomain networks if you want one overview. Still add each site as its own URL-prefix property too, so you can see indexing, performance and errors per site. For subdirectory networks, URL-prefix properties for each site (such as <code>https://example.com/hindi/</code>) give a separate view of each section. Give access only to the people who manage each site. The guide to <a href="/blog/google-search-console-reports-explained/">Search Console reports</a> explains what to watch.</p>
 

@@ -218,6 +218,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <h3>Check forms and plugins</h3>
 <p>Forms that send a "copy to yourself" to whatever address the visitor types, or that let the visitor choose the recipient, can be turned into spam relays. Registration forms abused by bots send a welcome email for every fake account. Turn off copy-to-sender options, add bot protection and update the plugin; see <a href="/blog/stop-contact-form-spam/">how to stop contact form spam</a>.</p>
 
+<p>Spam mail and spam redirects often come from the same infection. If visitors are also being sent to other sites, follow the steps for a <a href="/blog/fix-wordpress-redirect-hack/">WordPress hacked redirect</a>.</p>
+
 <h2 id="step-3-fix-the-cause">Step 3: Fix the cause</h2>
 <ul>
   <li><strong>Mailer script:</strong> delete it, then clean the site fully and close the hole the attacker used, or another one will appear.</li>

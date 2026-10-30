@@ -231,6 +231,8 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 <p>The last line shows the permission number and the owner, so you can confirm the change. If the site shows an error after you tighten wp-config.php, your server needs the web server's group to read it: set it to 640 and ask your host which value they support. To find files and folders that anyone can write to, which should usually return nothing:</p>
 <pre><code>find . -perm -o+w -not -type l</code></pre>
 
+<p>Wrong permissions can stop plugins loading and trigger the white screen message. See how to fix a <a href="/blog/fix-wordpress-critical-error/">WordPress critical error</a> step by step.</p>
+
 <h2 id="why-you-should-never-use-777">Why you should never use 777</h2>
 <p>777 means read, write and execute for everyone. On shared hosting, "everyone" can include other accounts on the same server and any compromised script running on it. A world-writable folder is an open invitation for malware to drop files into your site, and it is one of the first things attackers look for.</p>
 <p>It often doesn't even work. Many servers refuse to run PHP files that anyone can write to, so setting 777 can turn an upload error into a 500 Internal Server Error. If something only works at 777, the real problem is ownership or a server setting, and that's what needs fixing.</p>

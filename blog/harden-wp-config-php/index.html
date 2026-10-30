@@ -265,6 +265,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   </tbody>
 </table>
 
+<p>Not sure the site was actually breached? Start with <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>, then come back to these checks.</p>
+
 <h2 id="check-wp-config-php-after-a-hack">Check wp-config.php after a hack</h2>
 <p>Attackers like this file because it loads on every request. Look for code before the opening <code>&lt;?php</code> line or after the final line, include or require lines pointing to unfamiliar files (often disguised with an image or icon extension), long encoded strings, and settings you don't recognise. Compare it with wp-config-sample.php from a fresh WordPress download, then change the database password and the salts. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers the other places to check.</p>
 
@@ -277,6 +279,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <li><strong>Backups that include the file.</strong> Many host backups cover public_html. If you moved wp-config.php one level up, confirm that your backup still includes it, or a restore will not boot.</li>
 </ul>
 <p>After any change, load the home page, log in, save a post and run a plugin update. If something fails, restore your copy of the file first, then add the lines back one at a time. If the site has already been hacked, or you are unsure what an unfamiliar line in the file does, get help from a <a href="/hire-wordpress-developer/">WordPress developer in India</a> before you edit further.</p>
+
+<p>A typo in wp-config.php is a common cause of a <a href="/blog/fix-wordpress-critical-error/">WordPress critical error</a>. Keep a copy of the original file so you can roll back quickly.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>Where is wp-config.php?</h3>
@@ -364,8 +368,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/find-remove-wordpress-backdoors/"><img class="post-card-img" src="/assets/og/blog-find-remove-wordpress-backdoors.webp" alt="How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check</h3><p>Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Has Been Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Has Been Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site has been hacked: the warning signs, 10 quick checks you can run today, and the first steps to take if you find a problem.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/remove-malware-wordpress-step-by-step/"><img class="post-card-img" src="/assets/og/blog-remove-malware-wordpress-step-by-step.webp" alt="How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide</h3><p>WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>
