@@ -28,11 +28,11 @@
     <description>Slow WordPress site? Find the cause fast with PageSpeed Insights and Query Monitor, then fix hosting, caching, images, plugins and scripts in order.</description>
   </item>
   <item>
-    <title>How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First</title>
+    <title>How to Tell if Your WordPress Site Has Been Hacked: Warning Signs, Quick Checks and What to Do First</title>
     <link>https://samverse.space/blog/signs-wordpress-site-hacked/</link>
     <guid>https://samverse.space/blog/signs-wordpress-site-hacked/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>My WordPress site has been hacked: how to tell in 10 minutes with Google tools, the warning signs, a symptom table and the first steps to take right away.</description>
+    <description>How to tell if your WordPress site has been hacked: the warning signs, 10 quick checks you can run today, and the first steps to take if you find a problem.</description>
   </item>
   <item>
     <title>Private Clinic Website Checklist: 20 Things Every Doctor's Website Needs</title>
@@ -490,11 +490,11 @@
     <description>Internal linking explained for small business sites: anchor text, hub-and-spoke structure, how many links per page and a simple WordPress linking workflow.</description>
   </item>
   <item>
-    <title>WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)</title>
+    <title>WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)</title>
     <link>https://samverse.space/blog/technical-seo-audit-wordpress/</link>
     <guid>https://samverse.space/blog/technical-seo-audit-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A technical SEO audit checklist for WordPress: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema, WooCommerce and priorities.</description>
+    <description>How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, plus what to fix first.</description>
   </item>
   <item>
     <title>How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid</title>
@@ -1113,11 +1113,11 @@
     <description>What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.</description>
   </item>
   <item>
-    <title>301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress</title>
+    <title>301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress</title>
     <link>https://samverse.space/blog/301-vs-302-redirects/</link>
     <guid>https://samverse.space/blog/301-vs-302-redirects/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.</description>
+    <description>301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Learn which to use, how each affects SEO, common mistakes and how to set them up in WordPress.</description>
   </item>
   <item>
     <title>How to Keep Visitors Engaged on Your Website: Match Intent, Load Fast, Make Pages Scannable, Offer a Next Step and Measure Engaged Sessions in GA4</title>
@@ -2219,11 +2219,11 @@
     <description>A WooCommerce maintenance checklist by frequency: orders, payment reconciliation, stock, staging updates, backups, checkout tests, GST invoices, cleanup.</description>
   </item>
   <item>
-    <title>WooCommerce Speed Optimization: How to Speed Up Your Online Store</title>
+    <title>How to Speed Up WooCommerce: A Practical WooCommerce Performance Optimization Guide</title>
     <link>https://samverse.space/blog/woocommerce-speed-optimization/</link>
     <guid>https://samverse.space/blog/woocommerce-speed-optimization/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to speed up WooCommerce: test the right pages, add object caching, cache around the checkout, and fix cart fragments, images, filters and database.</description>
+    <description>How to speed up WooCommerce: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed, in a practical step-by-step guide.</description>
   </item>
   <item>
     <title>WooCommerce Security Checklist: Payments, Checkout, Card-Testing Bots, Staff Accounts and Customer Data</title>
@@ -2555,11 +2555,11 @@
     <description>Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.</description>
   </item>
   <item>
-    <title>Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify</title>
+    <title>Business Website Web Font Performance: How to Load Fonts Fast in WordPress and Shopify</title>
     <link>https://samverse.space/blog/web-fonts-performance/</link>
     <guid>https://samverse.space/blog/web-fonts-performance/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.</description>
+    <description>Improve your business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preload and subsetting, in WordPress and Shopify.</description>
   </item>
   <item>
     <title>Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website</title>
@@ -2800,11 +2800,11 @@
     <description>Building an online grocery website for a local or organic store in India: Shopify or WooCommerce, pin code delivery, slots, substitutions, UPI, COD, FSSAI.</description>
   </item>
   <item>
-    <title>How to Test Structured Data: Rich Results Test vs Schema Markup Validator, Reading Errors and Fixing Them in WordPress</title>
+    <title>Rich Snippet Testing Tool: How to Check Rich Snippets and Test Structured Data in WordPress</title>
     <link>https://samverse.space/blog/test-structured-data-rich-results/</link>
     <guid>https://samverse.space/blog/test-structured-data-rich-results/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.</description>
+    <description>The best rich snippet testing tool is Google's Rich Results Test. Learn how to check rich snippets, read errors and warnings, and fix schema in WordPress.</description>
   </item>
   <item>
     <title>How to Start an Email Newsletter for Your Small Business: Tools, Content and Sign-Ups</title>

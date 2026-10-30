@@ -417,166 +417,117 @@ module.exports = [
   },
   {
     slug: 'signs-wordpress-site-hacked',
-    seoTitle: 'How to Tell If Your WordPress Site Has Been Hacked',
-    title: 'How to Know If Your WordPress Site Has Been Hacked: Quick Checks, Warning Signs and What to Do First',
-    description: 'My WordPress site has been hacked: how to tell in 10 minutes with Google tools, the warning signs, a symptom table and the first steps to take right away.',
+    seoTitle: 'How to Tell if Your WordPress Site Has Been Hacked',
+    title: 'How to Tell if Your WordPress Site Has Been Hacked: Warning Signs, Quick Checks and What to Do First',
+    description: 'How to tell if your WordPress site has been hacked: the warning signs, 10 quick checks you can run today, and the first steps to take if you find a problem.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
-<p>"My WordPress site has been hacked" is usually confirmed in ten minutes: check Google's Safe Browsing status, Search Console's Security issues report, a site: search for spam pages, your administrator accounts and the uploads folder for PHP files. If any of those show something you didn't create, treat the site as hacked, back it up, tell your host and change every password before cleaning.</p>
-<p>Don't rely on how the site looks to you. Many infections are built to stay hidden: they redirect only mobile visitors, show spam only to Google, or skip anyone who is logged in.</p>
+<p>You can tell your WordPress site has been hacked when you see signs such as visitors being redirected to spam or scam sites, unfamiliar pages or Japanese and pharma keywords appearing in Google results, admin users you did not create, or a "This site may be hacked" or "Deceptive site ahead" warning. To know for sure, run a few quick checks: search Google for your domain, open the Security Issues report in Search Console, review your WordPress users, and scan the files with a malware scanner.</p>
 
-<p>If you have already spotted these signs and want the site cleaned properly, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers the clean-up, hardening and help with Google warnings.</p>
+<p><strong>Short answer:</strong> a hack usually shows up in one of four places: what visitors see (redirects, pop-ups, warnings), what Google shows (spam pages, odd titles), what the admin shows (new users, unknown plugins, changed settings) and what the server shows (modified files, high resource use, spam emails). Check all four, because many hacks hide from logged-in admins and only show to visitors from Google.</p>
 
-<h2>The quick answer</h2>
-<p>Your WordPress site has probably been hacked if any of these are true:</p>
+<h2>Warning signs that your WordPress site has been hacked</h2>
+<p>These are the symptoms owners most often notice first. One sign on its own can have an innocent cause, but two or more together almost always means you should investigate properly.</p>
 <ul>
-  <li>Google Search Console shows anything in the <strong>Security issues</strong> report</li>
-  <li>A <code>site:yourdomain.com</code> search on Google shows pages you never created</li>
-  <li>There are administrator accounts in WordPress that nobody on your team made</li>
-  <li>Visitors, especially on mobile or arriving from Google, are sent to other websites</li>
-  <li>There are PHP files inside <code>wp-content/uploads</code></li>
-  <li>Your host has emailed you about malware, spam or a suspension</li>
-</ul>
-<p>Here's how to check each of these properly.</p>
-
-<h2>Check if your WordPress site is hacked in 10 minutes</h2>
-
-<h3>1. Google Safe Browsing site status (1 minute)</h3>
-<p>Google's Transparency Report has a free Safe Browsing site status tool. Enter your domain and it tells you whether Google currently considers the site unsafe, for example for malware or phishing. This is the system behind red "Deceptive site ahead" browser warnings. A clean result only covers what Google has detected so far.</p>
-
-<h3>2. Search Console: Security issues and Manual actions (2 minutes)</h3>
-<p>If your site is verified in Google Search Console, open <strong>Security &amp; Manual Actions</strong> and check both reports:</p>
-<ul>
-  <li><strong>Security issues</strong> lists hacked content, malware, deceptive pages and similar problems, often with sample URLs</li>
-  <li><strong>Manual actions</strong> shows whether Google has taken action against spam on your site</li>
-</ul>
-<p>While you're there, open <strong>Settings &gt; Users and permissions</strong>. An owner you don't recognise is a serious red flag, because attackers sometimes verify themselves to submit spam sitemaps.</p>
-
-<h3>3. A site: search for spam pages (2 minutes)</h3>
-<p>Search Google for <code>site:yourdomain.com</code> and scroll through the results. Look for titles in a language you don't use, cheap medicines, casino or loan keywords, replica goods, or URLs with random strings. Then try targeted searches such as <code>site:yourdomain.com casino</code> or <code>site:yourdomain.com viagra</code>. Spam pages are often cloaked, so they appear in Google even though you can't see them on your site. If you find them, see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing the Japanese keyword and SEO spam hack</a>.</p>
-
-<h3>4. Unknown admin users (1 minute)</h3>
-<p>In the WordPress dashboard, go to <strong>Users</strong> and click the <strong>Administrator</strong> filter. Every admin should be someone you can name. Some malware hides its accounts from this list, so compare the number shown next to "Administrator" with the accounts you can actually see. A mismatch is suspicious. Also check <strong>Settings &gt; General</strong>: if "Anyone can register" is ticked and the default role is Administrator, someone has changed it.</p>
-
-<h3>5. Recently modified or unfamiliar files (2 minutes)</h3>
-<p>Open your hosting control panel's File Manager (or connect by SFTP) and look at:</p>
-<ul>
-  <li><strong>wp-content/uploads:</strong> this folder should hold images and documents. PHP files here are almost always malicious.</li>
-  <li><strong>The main folder:</strong> unfamiliar files with random names, or names that imitate WordPress files</li>
-  <li><strong>Last modified dates:</strong> sort by date. Core files, <code>wp-config.php</code>, <code>index.php</code> or <code>.htaccess</code> changing when nobody updated anything is a warning sign.</li>
-</ul>
-<p>If you or your developer have SSH access, WP-CLI can compare files with the official versions:</p>
-<pre><code>wp core verify-checksums
-wp plugin verify-checksums --all</code></pre>
-<p>The plugin check covers WordPress.org plugins only.</p>
-
-<h3>6. Redirects that only happen on mobile (1 minute)</h3>
-<p>Take your phone, switch off Wi-Fi so you're on mobile data, open a private or incognito tab, search Google for your business name and tap your own result. Redirect malware often targets exactly this visitor: mobile, logged out and arriving from a search engine. Some infections redirect a visitor only once, so use a fresh private tab for each test. Details are in <a href="/blog/fix-wordpress-redirect-hack/">how to fix the WordPress redirect hack</a>.</p>
-
-<h3>7. Hosting alerts and your inbox (1 minute)</h3>
-<p>Search your email for messages from your host about malware, quarantined files, high resource usage, outgoing spam or account suspension. Many hosts run their own malware scanner, so check its results in your control panel too. Bounced emails or complaints that your messages are landing in spam can mean your server is sending spam.</p>
-
-<p>Passing all seven checks is reassuring but not a guarantee, as some backdoors sit quietly until used. For a deeper scan, see <a href="/blog/wordpress-malware-scanners-compared/">WordPress malware scanners compared</a>.</p>
-
-<h2>Clear signs your WordPress site has been hacked</h2>
-
-<h3>Signs your visitors and Google see</h3>
-<ul>
-  <li><strong>Redirects</strong> to gambling, dating, fake prize, tech-support or adult sites</li>
-  <li><strong>Browser warnings</strong> such as "Deceptive site ahead"</li>
-  <li><strong>"This site may be hacked"</strong> under your listing in search results; see <a href="/blog/this-site-may-be-hacked-google/">removing that label</a></li>
-  <li><strong>Spam titles or descriptions</strong> on your real pages in search results</li>
-  <li><strong>Pop-ups, ads or push-notification prompts</strong> you never added</li>
-  <li><strong>Visitors' antivirus software</strong> blocking your site</li>
+<li><strong>Redirects to other sites:</strong> visitors, especially on mobile or coming from Google, get sent to gambling, dating, fake prize or scam pages. You may not see it yourself because many redirects skip logged-in users. See <a href="/blog/fix-wordpress-redirect-hack/">fixing the WordPress redirect hack</a>.</li>
+<li><strong>Spam pages in Google:</strong> searching your domain shows pages you never made, often in Japanese, or selling medicines, replica goods or loans. This is the <a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword SEO spam hack</a> and its cousins.</li>
+<li><strong>Browser or Google warnings:</strong> a red "Deceptive site ahead" screen in Chrome or "This site may be hacked" under your listing in search results.</li>
+<li><strong>Unknown admin users:</strong> new administrator accounts with random names or odd email addresses.</li>
+<li><strong>Plugins or files you did not install:</strong> plugins with generic names, or PHP files sitting in the uploads folder.</li>
+<li><strong>Hosting suspension or warning email:</strong> your host suspends the account or emails you about malware or abuse.</li>
+<li><strong>Spam emails sent from your domain:</strong> bounce messages you never sent, or your host limiting outgoing mail.</li>
+<li><strong>Sudden slowness or high CPU usage:</strong> hidden scripts mining, sending spam or attacking other sites use server resources.</li>
+<li><strong>Changed content or defacement:</strong> new links in the footer, injected text, or your homepage replaced.</li>
+<li><strong>Locked out of the admin:</strong> your password no longer works and the reset email never arrives because the admin email was changed.</li>
 </ul>
 
-<h3>Signs inside WordPress</h3>
-<ul>
-  <li>Administrator accounts nobody recognises</li>
-  <li>Plugins you didn't install, often with harmless-sounding names</li>
-  <li>Your security plugin switched off, or its alerts suddenly stopping</li>
-  <li>Posts or pages you didn't write, sometimes hidden as drafts or private</li>
-  <li>The site address or admin email changed under <strong>Settings &gt; General</strong></li>
-  <li>Your password no longer works and reset emails go somewhere else</li>
-</ul>
-
-<h3>Signs on the server</h3>
-<ul>
-  <li>PHP files in the uploads folder, or files with random names</li>
-  <li>Long blocks of scrambled code at the top or bottom of theme or core files</li>
-  <li>Unknown cron jobs in your hosting control panel</li>
-  <li>CPU or memory usage spiking with no rise in real visitors</li>
-  <li>Your host suspending the account</li>
-</ul>
-
-<h3>Signs in your data</h3>
-<ul>
-  <li>A sharp rise in indexed pages, or queries for keywords you've never used, in Search Console</li>
-  <li>Sitemaps you didn't submit, or an email saying a new owner was added</li>
-</ul>
-
-<h2>Hacked or not? Symptom, likely cause and first action</h2>
-<p>Not every problem is malware. Use this table to separate real hacks from ordinary faults before you panic:</p>
-<table>
-  <thead><tr><th>What you see</th><th>Likely cause</th><th>First action</th></tr></thead>
-  <tbody>
-    <tr><td>Mobile visitors from Google sent to spam sites</td><td>Redirect malware</td><td>Treat as hacked; follow the steps below</td></tr>
-    <tr><td>Spam or foreign-language pages in a site: search</td><td>SEO spam hack</td><td>Treat as hacked; check Search Console sitemaps and owners</td></tr>
-    <tr><td>Unknown administrator account</td><td>Compromised login or backdoor</td><td>Treat as hacked; don't just delete the user</td></tr>
-    <tr><td>Host email about malware or suspension</td><td>Infected files found by the host's scanner</td><td>Ask the host for the file list and logs</td></tr>
-    <tr><td>Critical error or white screen after an update</td><td>Plugin or theme conflict</td><td>Usually not a hack; check the error log</td></tr>
-    <tr><td>"Too many redirects" or "Not secure"</td><td>SSL or settings loop, mixed content</td><td>Usually not a hack; check SSL and site URL settings</td></tr>
-    <tr><td>Pop-ups seen by one person only</td><td>Adware or an extension on their device</td><td>Test on other devices and networks</td></tr>
-  </tbody>
-</table>
-<p>Real hacks usually leave more than one trace, so if one row matches, run all seven checks above.</p>
-
-<h2>My WordPress site has been hacked: what to do first</h2>
+<h2>How to know if your WordPress site has been hacked: 10 quick checks</h2>
+<p>If you suspect something is wrong, work through these checks in order. Most take a few minutes and need no technical tools.</p>
 <ol>
-  <li><strong>Don't delete the site or restore an old backup straight away.</strong> Your content can usually be saved, and older backups may already contain the infection.</li>
-  <li><strong>Back up the current files and database</strong>, even though they're infected. It preserves evidence and your latest real content.</li>
-  <li><strong>Tell your host.</strong> They may already know what's wrong, can share logs and may need to lift a suspension later.</li>
-  <li><strong>Change every password from a device you trust:</strong> hosting, SFTP, database, all WordPress admins and the email account linked to the site. If your own computer might be infected, scan it first.</li>
-  <li><strong>Note what you've seen</strong> (unknown users, file names, redirect destinations, dates) before removing anything. It helps find the entry point.</li>
-  <li><strong>Protect visitors.</strong> If people are being redirected or a checkout may be compromised, put up a maintenance page or pause payments.</li>
-  <li><strong>Don't ask Google for a review yet.</strong> Clean first; a failed review only slows things down.</li>
+<li><strong>Run a site: search.</strong> Type site:yourdomain.com into Google. Scroll through the results and look for titles, languages or URLs you do not recognise. Also try site:yourdomain.com viagra, casino or a Japanese character search to surface hidden spam.</li>
+<li><strong>Open Search Console Security Issues.</strong> In <a href="/blog/google-search-console-reports-explained/">Google Search Console</a>, open Security and Manual Actions, then Security Issues. Google lists detected malware, hacked content and deceptive pages here.</li>
+<li><strong>Check Search Console pages and sitemaps.</strong> A sudden jump in indexed pages, or sitemaps you did not submit, points to injected spam.</li>
+<li><strong>Visit the site as a stranger.</strong> Use a private browser window on your phone with mobile data, and click through from a Google result rather than typing the address. Many redirect hacks only trigger this way.</li>
+<li><strong>Review your users.</strong> In Users, filter by Administrator. Delete or demote anyone you cannot identify, and check the email address on your own account.</li>
+<li><strong>Review plugins and themes.</strong> Look for plugins you did not install, and for anything nulled or downloaded from unofficial sites. Read <a href="/blog/nulled-themes-plugins-risks/">why nulled themes and plugins are risky</a>.</li>
+<li><strong>Look at recently modified files.</strong> In your hosting file manager or over SFTP, sort folders by modified date. PHP files changed on a day nobody worked on the site, or any PHP file in wp-content/uploads, need a closer look.</li>
+<li><strong>Check key files.</strong> Open .htaccess, wp-config.php and index.php. Long lines of encoded text, eval, base64_decode or unfamiliar redirect rules are red flags.</li>
+<li><strong>Run a malware scanner.</strong> Use a reputable security plugin scan and an external scanner. Neither catches everything, so treat a clean result as reassurance rather than proof. Our <a href="/blog/wordpress-malware-scanners-compared/">malware scanner comparison</a> explains the differences.</li>
+<li><strong>Check the database.</strong> Search the wp_options and wp_posts tables for script tags, iframes or unfamiliar domains, especially in siteurl, home and widget settings.</li>
 </ol>
-<p>Then work through the full clean-up: <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>. Backdoors are the main reason cleaned sites get reinfected, so read <a href="/blog/find-remove-wordpress-backdoors/">finding and removing backdoors</a> too. Once the site is clean, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a> covers the Google side.</p>
+
+<h2>How to check if a WordPress site is hacked without logging in</h2>
+<p>Sometimes you cannot log in, or you want to check a site before you take it on. You can still learn a lot from outside:</p>
+<ul>
+<li>Run the site: search and look at titles and snippets.</li>
+<li>Use Google Safe Browsing's site status page to see if the domain is flagged.</li>
+<li>Open the site from a Google result on mobile data in a private window.</li>
+<li>View the page source and search for unfamiliar script sources or iframes pointing to other domains.</li>
+<li>Run an external website scanner, which checks the public pages for known malware and blacklist status.</li>
+</ul>
+<p>External checks only see what is served publicly. A backdoor that is waiting quietly will not show up, so a full check still needs file and database access.</p>
+
+<h2>Hacked or just broken? Common false alarms</h2>
+<p>Not every problem is a hack. Before you panic, rule out these common causes:</p>
+<table>
+<thead><tr><th>Symptom</th><th>Possible innocent cause</th><th>What points to a hack</th></tr></thead>
+<tbody>
+<tr><td>Site is slow</td><td>Heavy plugins, cheap hosting, large images</td><td>High CPU at odd hours, unknown processes, outgoing spam</td></tr>
+<tr><td>Redirect loop</td><td>SSL or URL settings mismatch</td><td>Redirects to unrelated external domains</td></tr>
+<tr><td>White screen</td><td>Plugin or PHP version conflict</td><td>Modified core files, encoded code in index.php</td></tr>
+<tr><td>Can't log in</td><td>Forgotten password, security plugin lockout</td><td>Admin email changed, unknown admins</td></tr>
+<tr><td>Traffic drop</td><td>Algorithm update, tracking broken</td><td>Spam pages indexed, security warning in Search Console</td></tr>
+</tbody>
+</table>
+<p>If you are not sure, see <a href="/blog/too-many-redirects-error-fix/">fixing too many redirects</a> or <a href="/blog/website-traffic-dropped/">why website traffic drops</a> to rule out the non-security causes.</p>
+
+<h2>What to do first if your WordPress site has been hacked</h2>
+<p>Once you are fairly sure the site is compromised, the order of steps matters. Rushing to delete things can destroy the evidence you need to find how attackers got in.</p>
+<ol>
+<li><strong>Do not panic-delete.</strong> Take a full backup of the files and database as they are now, labelled as infected. It helps with the clean-up and with finding the entry point.</li>
+<li><strong>Change every password.</strong> WordPress admins, hosting panel, SFTP, database and the email account linked to the admin. Update the security keys in wp-config.php so every session is logged out.</li>
+<li><strong>Put the site in maintenance mode if visitors are at risk</strong>, for example when it redirects to scams or the checkout is affected.</li>
+<li><strong>Clean properly.</strong> Replace WordPress core with a fresh copy, reinstall plugins and themes from official sources, remove unknown files and clean injected database content. Our <a href="/blog/remove-malware-wordpress-step-by-step/">step-by-step malware removal guide</a> covers this.</li>
+<li><strong>Hunt for backdoors.</strong> Attackers usually leave a way back in. See <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a>.</li>
+<li><strong>Find and close the entry point.</strong> Usually an outdated plugin, a weak or reused password, a nulled theme or another infected site on the same hosting account.</li>
+<li><strong>Request a review.</strong> Once clean, request a review in Search Console so Google removes the warning, then follow <a href="/blog/recover-rankings-after-hack/">our guide to recovering rankings after a hack</a>.</li>
+</ol>
+
+<h2>Why restoring an old backup is not always enough</h2>
+<p>Restoring yesterday's backup feels like the quickest fix, and sometimes it works. The problem is that many hacks sit quietly for weeks before anything visible happens, so your backups may already contain the backdoor. Restoring also brings back the same outdated plugin that let the attacker in. If you restore, still update everything, change passwords and scan the restored copy before going live.</p>
 
 <h2>How to stop it happening again</h2>
+<p>Most WordPress hacks come from a short list of causes, explained in <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>. The habits that prevent most of them are simple:</p>
 <ul>
-  <li>Keep WordPress, themes and plugins updated, delete what you don't use, and never install nulled themes or plugins</li>
-  <li>Use strong, unique passwords and two-factor authentication</li>
-  <li>Add a firewall, automatic off-site backups and an activity log</li>
-  <li>Check Search Console and your security alerts every month</li>
+<li>Keep WordPress, plugins and themes updated, and remove anything you do not use.</li>
+<li>Use strong unique passwords and two-factor authentication for every admin.</li>
+<li>Give each person their own account with the lowest role they need.</li>
+<li>Avoid nulled themes and plugins completely.</li>
+<li>Keep automatic off-site backups, and test that they restore.</li>
+<li>Use a firewall and monitoring so you hear about problems before your customers do.</li>
 </ul>
-<p>The full list is in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
-
-<p>A hack is one common cause of sudden traffic loss; see <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a>.</p>
+<p>Our full <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> goes through each step.</p>
 
 <p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>
 
 <h2>FAQs</h2>
+<h3>How do I tell if my WordPress site has been hacked?</h3>
+<p>Look for redirects to unrelated sites, spam pages when you search site:yourdomain.com, unknown admin users, Google or browser warnings, and unexpected file changes. Then confirm with Search Console's Security Issues report and a malware scan.</p>
+<h3>How can I check if my WordPress site is hacked for free?</h3>
+<p>A site: search, the Search Console Security Issues report, Google Safe Browsing site status, a free security plugin scan and a review of your users and recently modified files are all free and cover most common hacks.</p>
+<h3>Why can't I see the hack when I visit my own site?</h3>
+<p>Many hacks hide from logged-in users and from people who type the address directly. They only trigger for visitors arriving from Google, often on mobile. Test in a private window on mobile data, clicking through from a search result.</p>
+<h3>Can a malware scanner tell me my site is definitely clean?</h3>
+<p>No. Scanners catch known patterns, but new or well-hidden code can slip through. A clean scan is a good sign, not proof, so combine it with file, user and database checks.</p>
+<h3>Will my Google rankings recover after a hack?</h3>
+<p>Usually, once the spam pages are removed, the site is cleaned and Google's warning is lifted. How quickly depends on how long the hack ran and how many spam pages were indexed.</p>
+<h3>Should I fix a hacked WordPress site myself or hire someone?</h3>
+<p>If you are comfortable with SFTP, databases and file comparison, you can follow a careful process. If the site handles payments or enquiries, or the hack keeps coming back, professional help is usually quicker and safer.</p>
 
-<h3>My WordPress site has been hacked. What should I do first?</h3>
-<p>Don't delete anything. Back up the current files and database, tell your host, change every password from a clean device, protect visitors with a maintenance page if needed, then clean the site before asking Google for a review.</p>
-
-<h3>How to tell if your WordPress site has been hacked?</h3>
-<p>Use Google's Safe Browsing site status tool, the Security issues report in Search Console and a <code>site:yourdomain.com</code> search on Google. Then check your admin users, look for PHP files in the uploads folder and test the site on your phone using mobile data. Free security plugins and your host's scanner can add a file scan.</p>
-
-<h3>Will Google tell me if my site is hacked?</h3>
-<p>Often, but not always and not instantly. If your site is verified in Search Console, Google can email you when it detects hacked content or malware, and the issue shows in the Security issues report. Infections that Google hasn't spotted yet, or that only affect some visitors, can go unreported, so don't rely on Google as your only alarm.</p>
-
-<h3>Should I restore a backup or clean the site?</h3>
-<p>Restoring is quicker if you have a backup from before the infection and you know when it happened. Many hacks sit unnoticed for weeks, though, so recent backups may be infected too. Either way, you still need to change passwords and fix the hole the attacker used, or the site will be hacked again.</p>
-
-<h3>Can a hacked WordPress site be fixed without losing content?</h3>
-<p>Usually, yes. Posts, pages and media live in the database and uploads folder and can be kept after the malicious code is removed. A proper clean-up replaces WordPress core, plugins and themes with fresh copies while keeping your content.</p>
-
-<p>If any of these checks turned something up, or you'd rather not dig through files and databases yourself, I can investigate, clean the site properly and close the hole it came in through. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, or keep things updated, backed up and monitored every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<p>If your checks point to a hack, Samverse offers <a href="/wordpress-malware-removal/">hacked WordPress site repair and security</a>, including clean-up, backdoor removal and getting Google warnings lifted. For ongoing protection, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off security review.</p>
 `,
   },
   {
@@ -8895,186 +8846,132 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'technical-seo-audit-wordpress',
-    seoTitle: 'Technical SEO Audit Checklist for WordPress and WooCommerce',
-    title: 'WordPress Technical SEO Audit: A Practical Checklist (With WooCommerce Checks)',
-    description: 'A technical SEO audit checklist for WordPress: indexing, sitemaps, robots.txt, canonicals, redirects, Core Web Vitals, schema, WooCommerce and priorities.',
+    seoTitle: 'WordPress SEO Audit: A Practical Step-by-Step Checklist',
+    title: 'WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)',
+    description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, plus what to fix first.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
-<p>A technical SEO audit checklist covers whether Google can crawl, index and understand your site: indexing status, sitemaps and robots.txt, HTTPS and canonicals, redirects and broken links, Core Web Vitals, mobile, structured data and internal links. Great content can't rank if search engines struggle with any of these, and an audit finds the hidden problems: pages Google can't reach, duplicate versions competing with each other, broken redirects, slow templates and settings that quietly tell Google to stay away. This checklist is written for WordPress and WooCommerce sites, in the order I'd work through it. Run it once a year, after a redesign or migration, or whenever traffic drops unexpectedly.</p>
-<p>Technical SEO is about whether search engines can find, crawl and index your pages properly; on-page SEO is about what each page says. Both matter, and the on-page SEO checklist covers the second part.</p>
+<p>A WordPress SEO audit is a structured check of whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. To do one, start with Google Search Console and a site crawl to find indexing and technical problems, then check WordPress settings, speed, on-page SEO, structured data and (for stores) WooCommerce-specific issues, and fix them in order of impact.</p>
 
-<h2>Technical SEO audit checklist at a glance</h2>
-<p>Use this summary table as your working checklist, then read the numbered sections below for the detail behind each line.</p>
+<p><strong>Short answer:</strong> check indexing, crawlability, speed, on-page basics, structured data and content quality, in that order. Blockers such as a site-wide noindex, broken redirects or pages excluded from the index come first; title tweaks come last.</p>
+
+<h2>What you need before you start</h2>
+<ul>
+<li>Access to <a href="/blog/setup-google-analytics-search-console/">Google Search Console and Google Analytics</a>.</li>
+<li>An admin login to WordPress and your hosting panel.</li>
+<li>A site crawler (several have free versions that cover small sites).</li>
+<li>A spreadsheet to log each issue, the pages affected, impact and who will fix it.</li>
+<li>A recent backup, in case any fix needs undoing.</li>
+</ul>
+
+<h2>Step 1: Check indexing in Search Console</h2>
+<p>Open the Pages report. It shows how many pages are indexed and why others are not. Pay attention to:</p>
+<ul>
+<li><strong>Excluded by noindex:</strong> are any important pages in this list?</li>
+<li><strong>Crawled, currently not indexed</strong> and <strong>Discovered, currently not indexed:</strong> usually thin, duplicate or poorly linked pages.</li>
+<li><strong>Not found (404)</strong> and <strong>Soft 404:</strong> broken URLs that may need redirects.</li>
+<li><strong>Duplicate without user-selected canonical:</strong> pages Google sees as copies.</li>
+<li><strong>Blocked by robots.txt:</strong> check nothing important is blocked.</li>
+</ul>
+<p>Our guide to <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> explains each status. Also run a site:yourdomain.com search to spot spam pages, staging URLs or tag archives that should not be in Google.</p>
+
+<h2>Step 2: Check WordPress settings that block SEO</h2>
+<ul>
+<li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch.</li>
+<li><strong>Permalinks:</strong> use a readable structure such as post name, not ?p=123.</li>
+<li><strong>SEO plugin settings:</strong> check which post types and taxonomies are set to noindex, and that only one SEO plugin is active.</li>
+<li><strong>Attachment pages:</strong> media attachment pages should redirect to the file or parent post, not be indexed as thin pages.</li>
+<li><strong>Tag and category archives:</strong> decide which are useful and noindex or prune the rest (see <a href="/blog/category-tag-pages-seo/">category and tag pages for SEO</a>).</li>
+</ul>
+
+<h2>Step 3: Crawl the site</h2>
+<p>Run a crawler from your homepage and review:</p>
+<ul>
+<li><strong>Status codes:</strong> 4xx and 5xx errors, plus internal links pointing to redirects. Fix links at source. See <a href="/blog/find-fix-broken-links-wordpress/">finding and fixing broken links</a>.</li>
+<li><strong>Redirect chains and loops:</strong> point every old URL straight to the final one. See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
+<li><strong>Canonicals:</strong> each indexable page should have a self-referencing canonical, and none should point to redirected or noindexed URLs.</li>
+<li><strong>Orphan pages:</strong> pages with no internal links. Compare the crawl with your sitemap (see <a href="/blog/orphan-pages-fix/">fixing orphan pages</a>).</li>
+<li><strong>Crawl depth:</strong> important pages should be reachable within three clicks of the homepage.</li>
+<li><strong>Duplicate titles and descriptions:</strong> often from paginated archives or product variations.</li>
+</ul>
+
+<h2>Step 4: Check robots.txt and the XML sitemap</h2>
+<p>Open yourdomain.com/robots.txt. It should not block CSS, JavaScript or important folders, and it should point to your sitemap. Then open the sitemap and check:</p>
+<ul>
+<li>It only lists indexable pages that return 200.</li>
+<li>No noindexed, redirected or thin archive pages are included.</li>
+<li>It is submitted in Search Console with no fetch errors.</li>
+</ul>
+<p>See <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+
+<h2>Step 5: Check speed and Core Web Vitals</h2>
+<p>In Search Console, open the Core Web Vitals report, which uses real visitor data. Then test key templates (homepage, a service page, a post, a product) in PageSpeed Insights. Common WordPress causes of poor scores are heavy page builders, too many plugins, unoptimised images, render-blocking CSS and JavaScript, third-party scripts and slow hosting. Our <a href="/blog/core-web-vitals-explained/">Core Web Vitals guide</a> explains LCP, INP and CLS, and <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> helps you read the results.</p>
+
+<h2>Step 6: Check on-page SEO</h2>
+<ul>
+<li>Each important page targets one main topic and search intent.</li>
+<li>Titles are unique, around 60 characters or fewer, and include the main keyword naturally (see <a href="/blog/write-meta-titles-descriptions/">writing meta titles and descriptions</a>).</li>
+<li>One clear H1 per page, with logical H2 and H3 headings.</li>
+<li>Images have descriptive file names and alt text.</li>
+<li>Internal links use descriptive anchors and connect related pages.</li>
+<li>No two pages compete for the same query (keyword cannibalisation). Search Console's Performance report, filtered by query, shows when several URLs swap places.</li>
+</ul>
+
+<h2>Step 7: Check structured data</h2>
+<p>Test the main templates in Google's Rich Results Test and review Search Console's enhancement reports. Look for errors, duplicate schema from theme and plugins, and markup that does not match the page. Our guide to <a href="/blog/test-structured-data-rich-results/">testing structured data</a> covers this in detail.</p>
+
+<h2>Step 8: WooCommerce SEO audit checks</h2>
+<p>Stores have extra issues because of products, variations and filters:</p>
+<ul>
+<li><strong>Filter and sort URLs:</strong> parameters like ?orderby= or filter combinations can create thousands of near-duplicate URLs. Make sure they are canonicalised or not crawlable.</li>
+<li><strong>Out-of-stock and deleted products:</strong> keep useful out-of-stock pages live; redirect discontinued products to the closest alternative.</li>
+<li><strong>Thin product descriptions:</strong> manufacturer copy duplicated across many stores.</li>
+<li><strong>Product schema:</strong> price, availability and reviews valid for each product.</li>
+<li><strong>Cart, checkout and account pages:</strong> should be noindexed.</li>
+<li><strong>Category pages:</strong> need some unique introductory content and good internal links.</li>
+</ul>
+<p>The <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> goes deeper.</p>
+
+<h2>Step 9: Check content quality and security</h2>
+<p>List pages with impressions but no clicks, pages with no impressions at all, and posts that cover the same topic. Merge, improve or remove weak pages. Also confirm the site runs on HTTPS everywhere, has no mixed content warnings and has no hacked spam pages, because security problems can wipe out rankings quickly.</p>
+
+<h2>Step 10: Check mobile usability and local signals</h2>
+<p>Google indexes the mobile version of your site, so open key pages on a real phone, not just a resized desktop browser. Check that menus work, text is readable without zooming, buttons are not too close together, and that nothing important is hidden on mobile that appears on desktop. Pop-ups that cover the content on arrival can also hurt how Google and visitors judge the page.</p>
+<p>If you serve customers in particular cities, check the local basics too: your business name, address and phone number match your Google Business Profile, each location or service area has a genuinely useful page, and LocalBusiness schema matches what is on the page. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> covers these checks.</p>
+<p>Finally, check analytics is tracking correctly. An audit that compares traffic before and after fixes is only useful if the numbers are reliable, so confirm Search Console and Analytics both cover the same domain version (with or without www, and HTTPS).</p>
+
+<h2>How to prioritise what you find</h2>
 <table>
-  <thead><tr><th>Area</th><th>Check</th><th>Where to look</th><th>Pass when</th></tr></thead>
-  <tbody>
-    <tr><td>Indexing</td><td>Key pages indexed, with the right canonical</td><td>Search Console Pages report, URL Inspection</td><td>Every money page is indexed</td></tr>
-    <tr><td>Sitemaps</td><td>One sitemap with only indexable URLs</td><td>Sitemaps report, crawler</td><td>No redirects, 404s or noindexed URLs listed</td></tr>
-    <tr><td>robots.txt</td><td>Nothing important blocked</td><td>robots.txt report</td><td>CSS, JavaScript and content are crawlable</td></tr>
-    <tr><td>HTTPS and versions</td><td>One version of every URL</td><td>Browser, crawler</td><td>http and www variants redirect in one step</td></tr>
-    <tr><td>Redirects and 404s</td><td>No chains, loops or broken internal links</td><td>Crawler</td><td>Internal links point to final URLs</td></tr>
-    <tr><td>Core Web Vitals</td><td>LCP, INP and CLS by template</td><td>Search Console, PageSpeed Insights</td><td>Templates pass on real-visitor data</td></tr>
-    <tr><td>Mobile</td><td>Same content and links as desktop</td><td>Real phones, Lighthouse</td><td>No overlapping pop-ups or tiny tap targets</td></tr>
-    <tr><td>Structured data</td><td>One source, matching visible content</td><td>Rich Results Test, enhancement reports</td><td>No errors on key templates</td></tr>
-    <tr><td>Internal links</td><td>No orphan pages, shallow click depth</td><td>Crawler, SEO plugin</td><td>Key pages within a few clicks of home</td></tr>
-    <tr><td>Duplicates</td><td>Unique titles, controlled archives and parameters</td><td>Crawler, SEO plugin settings</td><td>No indexable near-copies</td></tr>
-    <tr><td>Security</td><td>No manual actions or hacked pages</td><td>Search Console Security and Manual actions</td><td>Both reports are clear</td></tr>
-  </tbody>
+<thead><tr><th>Priority</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>1. Blockers</td><td>Site-wide noindex, robots.txt blocking, hacked pages, important pages returning errors</td></tr>
+<tr><td>2. Template issues</td><td>Missing canonicals, duplicate schema, slow templates, indexable filter URLs</td></tr>
+<tr><td>3. Structural issues</td><td>Orphan pages, deep pages, redirect chains, weak internal linking</td></tr>
+<tr><td>4. Page-level improvements</td><td>Titles, descriptions, headings, content depth</td></tr>
+</tbody>
 </table>
+<p>Re-run the crawl and check Search Console after fixes. Technical improvements often show within weeks, while content changes can take longer.</p>
 
-<h2>Tools for a WordPress technical audit</h2>
-<ul>
-  <li><strong>Google Search Console:</strong> the most important tool, because it shows what Google itself has crawled and indexed. If it isn't set up yet, see <a href="/blog/setup-google-analytics-search-console/">setting up Search Console</a></li>
-  <li><strong>PageSpeed Insights:</strong> speed and Core Web Vitals for individual URLs, with real-visitor data where Google has enough of it</li>
-  <li><strong>A website crawler:</strong> a desktop or online tool that follows your links the way a search engine does and lists every URL with its status code, title, canonical and click depth</li>
-  <li><strong>Your SEO plugin settings:</strong> many technical issues come down to a single setting</li>
-  <li><strong>A real phone and "view source":</strong> to check what visitors and search engines actually receive</li>
-</ul>
-
-<h2>1. Crawling and indexing</h2>
-<p>Start here, because nothing else matters if important pages aren't in Google's index.</p>
-<ul>
-  <li>Search Console &gt; Pages: how many pages are indexed vs not indexed, and the reason given for each group</li>
-  <li>URL Inspection on your key pages: is each one indexed, and which canonical has Google chosen?</li>
-  <li>Settings &gt; Reading: "Discourage search engines from indexing this site" must be unticked on the live site</li>
-  <li>No accidental <code>noindex</code> on important pages, or on whole post types in your SEO plugin</li>
-  <li>Thin pages (empty tag archives, internal search results, author archives on single-author sites) deliberately kept out of the index where needed</li>
-</ul>
-<p>Not every "not indexed" status is a problem; redirects and deliberately noindexed pages belong there. See <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a>.</p>
-
-<h2>2. XML sitemaps and robots.txt</h2>
-<ul>
-  <li>One sitemap setup, not two: WordPress has a built-in sitemap at /wp-sitemap.xml, and SEO plugins usually replace it with their own</li>
-  <li>Only indexable, canonical URLs that load normally: no redirects, 404s or noindexed pages</li>
-  <li>No unwanted content types listed, such as page-builder templates, attachment pages or plugin-created post types</li>
-  <li>The sitemap submitted in Search Console, with no errors in the Sitemaps report</li>
-  <li>robots.txt not blocking important content, CSS or JavaScript; check the robots.txt report in Search Console settings</li>
-  <li>robots.txt not used to hide pages from the index: blocking crawling doesn't remove an indexed page, and it stops Google seeing a noindex tag</li>
-</ul>
-
-<h2>3. One version of every page: HTTPS and canonicals</h2>
-<ul>
-  <li>HTTPS everywhere, with a valid certificate and no mixed content warnings</li>
-  <li>http to https, and www to non-www (or the reverse), redirecting in one step to your preferred version</li>
-  <li>Consistent trailing slashes, so /page and /page/ don't both load as separate pages</li>
-  <li>A canonical tag on every page pointing to its own preferred URL, not to the homepage or a redirected address</li>
-  <li>Paginated archives (page 2, page 3) canonicalised to themselves, not all to page 1</li>
-  <li>Staging or temporary domains blocked from indexing, ideally with a password</li>
-</ul>
-<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
-
-<h2>4. Redirects, 404s and broken links</h2>
-<ul>
-  <li>No broken internal links pointing to 404 pages; your crawler will list them</li>
-  <li>Old URLs redirected (301) to their closest new equivalent</li>
-  <li>No redirect chains or loops; update internal links to point straight to the final URL</li>
-  <li>No "soft 404s": near-empty or "not found" pages that still return a normal status</li>
-  <li>Redirects managed in one place, either a plugin or the server, not scattered across both</li>
-  <li>A helpful custom 404 page</li>
-</ul>
-<p>See <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> for which to use when.</p>
-
-<h2>5. Core Web Vitals and speed</h2>
-<ul>
-  <li>Search Console &gt; Core Web Vitals: which groups of URLs are flagged for LCP (loading), INP (responsiveness) or CLS (layout shift)</li>
-  <li>PageSpeed Insights on one URL of each template: homepage, service page, blog post, category and product page</li>
-  <li>Real-visitor data given priority over the lab score, which is a diagnostic rather than a ranking</li>
-  <li>The usual WordPress causes checked: oversized images, no page caching, slow hosting, heavy page builders and third-party scripts</li>
-</ul>
-<p>Fixing a template fixes every page that uses it. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
-
-<h2>6. Mobile experience</h2>
-<p>Google mainly uses the mobile version of a page for indexing and ranking, and it has retired its standalone mobile-friendly test and mobile usability report, so check on real phones and with Lighthouse in PageSpeed Insights.</p>
-<ul>
-  <li>The same content and internal links on mobile as on desktop</li>
-  <li>No horizontal scrolling, tiny text or tap targets that are too close together</li>
-</ul>
-
-<h2>7. Structured data</h2>
-<ul>
-  <li>Organization or LocalBusiness, BreadcrumbList, Article and Product markup where relevant</li>
-  <li>Only one plugin or theme outputting schema, so markup isn't duplicated or conflicting</li>
-  <li>Markup that matches what's visible on the page, such as prices, ratings and business details</li>
-  <li>No errors in Search Console enhancement reports, and key templates checked in the Rich Results Test</li>
-</ul>
-<p>Google has reduced some rich results, such as FAQ results, for most sites, so accurate markup describes your content but doesn't guarantee extra features. See <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
-
-<h2>8. Internal links and site structure</h2>
-<ul>
-  <li>No orphan pages that nothing links to</li>
-  <li>Important pages reachable within a few clicks from the homepage</li>
-  <li>Service and category pages linked from the menu, the homepage and relevant articles</li>
-  <li>Normal HTML links, not buttons that only work with JavaScript</li>
-</ul>
-
-<h2>9. Duplicate and thin pages</h2>
-<ul>
-  <li>Unique title tags and meta descriptions on important pages; a crawler will list duplicates</li>
-  <li>No near-duplicate pages targeting the same search</li>
-  <li>Tag, category, date and author archives either improved or kept out of the index</li>
-  <li>Attachment pages redirected to the file or parent post (newer WordPress installs turn them off; older sites may still have them)</li>
-  <li>Filter, sort and tracking parameters not creating indexable copies of the same page</li>
-</ul>
-
-<h2>10. WordPress and SEO plugin settings</h2>
-<ul>
-  <li>Only one SEO plugin active; two can output duplicate titles, canonicals and sitemaps</li>
-  <li>Readable permalinks, and no slug changes without redirects</li>
-  <li>Title templates that produce sensible titles for posts, pages, products and archives</li>
-  <li>Index and noindex settings checked for each post type and taxonomy</li>
-</ul>
-
-<h2>11. Security and manual actions</h2>
-<ul>
-  <li>No security issues or manual actions reported in Search Console</li>
-  <li>No unfamiliar spam pages showing in a site: search, which can be a sign of a hack</li>
-</ul>
-
-<h2>Extra checks for a WooCommerce technical SEO audit</h2>
-<ul>
-  <li><strong>Filters and sorting:</strong> colour, size, price and sort parameters not creating thousands of indexable URLs</li>
-  <li><strong>Add-to-cart links:</strong> URLs with add-to-cart parameters not being crawled and indexed</li>
-  <li><strong>Cart, checkout and My Account:</strong> kept out of the index and sitemap</li>
-  <li><strong>Out-of-stock and discontinued products:</strong> temporarily unavailable products kept live and marked out of stock; discontinued ones redirected to the closest alternative or category</li>
-  <li><strong>Product structured data:</strong> price, availability and reviews accurate, with no errors in Search Console's product reports</li>
-  <li><strong>Category pages:</strong> useful introductory text, and not dozens of near-empty categories</li>
-  <li><strong>Product descriptions:</strong> not copied word for word from the manufacturer on every product</li>
-</ul>
-<p>See <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> for store-specific fixes.</p>
-
-<h2>How to prioritise the fixes</h2>
-<p>An audit usually produces a long list. Sort it by impact and effort, and work in this order:</p>
-<table>
-  <thead><tr><th>Priority</th><th>What it covers</th></tr></thead>
-  <tbody>
-    <tr><td>1. Blockers</td><td>Important pages noindexed, blocked or missing from the index; site-wide HTTPS, redirect or canonical errors; hacked content</td></tr>
-    <tr><td>2. Site-wide template issues</td><td>Problems that affect many pages at once: duplicate titles, wrong canonicals, slow post or product templates</td></tr>
-    <tr><td>3. Key-page fixes</td><td>Broken links, redirect chains and Core Web Vitals issues on pages that bring enquiries or sales</td></tr>
-    <tr><td>4. Improvements</td><td>Structured data, internal links, thin archives and general tidy-up</td></tr>
-  </tbody>
-</table>
-<p>Within each group, start with the pages that matter most to the business. Record what you changed and when, use "Validate fix" in Search Console where it's offered, and recheck after a few weeks, because Google needs time to recrawl.</p>
-
-<p>Background reading: <a href="/blog/xml-sitemaps-explained/">XML sitemaps</a> and <a href="/blog/robots-txt-explained/">robots.txt</a> explained.</p>
+<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
 
 <h2>FAQs</h2>
-<h3>What should a technical SEO audit checklist include?</h3>
-<p>Indexing and URL Inspection, sitemaps and robots.txt, HTTPS and canonicals, redirects and broken links, Core Web Vitals, mobile, structured data, internal links, duplicate pages, plugin settings and security. Stores add filter, cart and product schema checks.</p>
-<h3>How often should I run a technical SEO audit on WordPress?</h3>
-<p>A full audit once a year suits most business sites, with a quick monthly look at Search Console. Run one straight away after a redesign, migration, domain change or unexplained traffic drop.</p>
-<h3>Can I do a WordPress SEO audit myself?</h3>
-<p>Yes, for the basics. Search Console, PageSpeed Insights and a crawler will show most issues, and the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> is a good starting point. Fixing redirects, templates, canonicals and speed safely is where developer help is usually worth it.</p>
-<h3>What is the best tool for a technical SEO audit?</h3>
-<p>Search Console comes first because it shows Google's own view of your site. Add PageSpeed Insights for speed and a crawler for broken links, redirects and duplicate titles. No single tool covers everything.</p>
-<h3>Will a technical audit improve my rankings straight away?</h3>
-<p>Not on its own. Fixing blockers can help once Google recrawls, but most fixes remove obstacles rather than add rankings. Content, relevance and links still decide where you rank.</p>
-<h3>How long does a technical SEO audit take?</h3>
-<p>It depends on the size of the site. A small business site can be reviewed much faster than a large WooCommerce store with thousands of products and filter URLs.</p>
+<h3>How do I do a WordPress SEO audit?</h3>
+<p>Check indexing in Search Console, crawl the site for errors and redirects, review WordPress and SEO plugin settings, test speed, review on-page SEO and structured data, then prioritise fixes by impact.</p>
+<h3>What is the best WordPress SEO audit tool?</h3>
+<p>There is no single tool. Google Search Console, a site crawler, PageSpeed Insights and the Rich Results Test together cover most of what an audit needs, and the first and last are free.</p>
+<h3>How often should I audit my WordPress site's SEO?</h3>
+<p>A full audit once or twice a year is enough for most business sites, plus a quick check after a redesign, migration, theme change or big traffic drop.</p>
+<h3>Can an SEO plugin audit my WordPress site for me?</h3>
+<p>SEO plugins check individual pages and settings, which is useful, but they do not crawl the whole site, assess indexing in Google or judge content overlap, so they do not replace a full audit.</p>
+<h3>What is the difference between a technical SEO audit and an SEO audit?</h3>
+<p>A technical SEO audit focuses on crawling, indexing, speed, redirects and structured data. A full SEO audit also covers content quality, keyword targeting and backlinks.</p>
+<h3>What should a WooCommerce SEO audit include?</h3>
+<p>Everything in a WordPress audit plus filter and sort URLs, product and category content, out-of-stock handling, product schema and noindexing cart, checkout and account pages.</p>
 
-<p>Want a professional technical review of your WordPress or WooCommerce site, with a prioritised list of fixes and the fixes themselves done safely? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> if Core Web Vitals are the main problem.</p>
+<p>Want an expert to run the audit and fix what it finds? Samverse offers <a href="/wordpress-seo-services/">WordPress SEO services</a>, including technical audits for WooCommerce stores, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for the performance issues an audit uncovers.</p>
 `,
   },
   {
@@ -19800,144 +19697,117 @@ Disallow: /</code></pre>
   },
   {
     slug: '301-vs-302-redirects',
-    seoTitle: '301 vs 302 Redirect: Which HTTP Code to Use for SEO',
-    title: '301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
-    description: '301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.',
+    seoTitle: '301 vs 302 Redirects: Which to Use and the SEO Impact',
+    title: '301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
+    description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Learn which to use, how each affects SEO, common mistakes and how to set them up in WordPress.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>In 301 vs 302, the difference is permanence: a 301 redirect tells browsers and search engines that a page has moved for good, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
-<p>Redirects are where most redesigns and migrations quietly lose rankings. In my <a href="/wordpress-migration/">WordPress migration</a> work, every old URL that changes is 301-redirected to its new equivalent and Search Console is monitored after the move. This guide covers which redirect to use, what each does to SEO, and how to set them up on WordPress.</p>
-<p>If a redirect has gone wrong and your site now shows "too many redirects", go straight to <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
+<p>The difference between a 301 and a 302 redirect is that a 301 means a page has moved permanently, while a 302 means it has moved temporarily and the original URL will return. For SEO, use a 301 whenever the change is permanent, such as a new URL, a deleted page with a replacement or a domain change, so Google moves the old page's signals to the new address and shows the new URL in results.</p>
 
-<h2>Redirect types at a glance</h2>
+<p><strong>Short answer:</strong> 301 = permanent, pass signals and replace the old URL. 302 = temporary, keep the old URL in Google's index. If you are not sure which you need, ask "will the old URL ever be used again?" If the answer is no, use a 301.</p>
+
+<h2>301 vs 302: what each redirect means</h2>
+<p>A redirect is an instruction from your server that says "the page you asked for is somewhere else". The number is the HTTP status code that comes with it, and it tells browsers and search engines how to treat the move.</p>
 <table>
-  <thead><tr><th>Type</th><th>Meaning</th><th>How Google treats it</th><th>Use it for</th></tr></thead>
-  <tbody>
-    <tr><td>301 Moved Permanently</td><td>The page has a new permanent address</td><td>A strong signal that the new URL should be indexed instead</td><td>Changed URLs, merged pages, domain and https moves</td></tr>
-    <tr><td>308 Permanent Redirect</td><td>Permanent, and the browser must repeat the same request method</td><td>The same as a 301</td><td>Mainly forms and APIs; a 301 is fine for normal pages</td></tr>
-    <tr><td>302 Found</td><td>The page is temporarily somewhere else</td><td>A weak signal; the original URL usually stays indexed</td><td>Short-term swaps and A/B tests between URLs</td></tr>
-    <tr><td>307 Temporary Redirect</td><td>Temporary, keeping the request method</td><td>The same as a 302</td><td>The same cases as a 302</td></tr>
-    <tr><td>Meta refresh</td><td>A redirect inside the page's HTML</td><td>An instant one is treated like a 301, a delayed one like a 302</td><td>Only when you can't set a server redirect</td></tr>
-    <tr><td>JavaScript redirect</td><td>A script sends the browser elsewhere</td><td>Followed only after Google renders the page</td><td>A last resort</td></tr>
-  </tbody>
+<thead><tr><th></th><th>301 Moved Permanently</th><th>302 Found (temporary)</th></tr></thead>
+<tbody>
+<tr><td>Meaning</td><td>The page has moved for good</td><td>The page is elsewhere for now</td></tr>
+<tr><td>URL Google shows</td><td>Usually the new URL</td><td>Usually the old URL</td></tr>
+<tr><td>Ranking signals</td><td>Consolidated on the new URL</td><td>Generally kept with the old URL while it is treated as temporary</td></tr>
+<tr><td>Browser caching</td><td>Browsers may cache it for a long time</td><td>Not cached by default</td></tr>
+<tr><td>Typical use</td><td>URL changes, merged pages, domain or HTTPS moves</td><td>Short maintenance, A/B tests, seasonal or out-of-stock pages</td></tr>
+</tbody>
 </table>
+<p>There are also 307 (temporary, keeps the request method) and 308 (permanent, keeps the request method). For most business websites, 301 and 302 cover everything you need.</p>
 
-<h2>When to use a 301</h2>
+<h2>301 vs 302 for SEO: does it really matter?</h2>
+<p>Google has said that all redirect types pass ranking signals, and that a 302 left in place long enough may eventually be treated like a 301. So a wrong redirect is rarely a disaster. But it still matters, for three reasons:</p>
 <ul>
-  <li><strong>You changed a page or post URL,</strong> including a permalink structure change; see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs in WordPress</a> before changing any.</li>
-  <li><strong>You merged pages,</strong> such as two thin posts on the same topic combined into one stronger article.</li>
-  <li><strong>You removed a page that has a close replacement,</strong> such as a discontinued product with a direct successor.</li>
-  <li><strong>You moved to https,</strong> or settled on one version of the domain (www or non-www).</li>
-  <li><strong>You changed domain or platform,</strong> such as a rebrand or a move from Wix to WordPress, where every old URL needs mapping; <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> walks through the domain case.</li>
+<li><strong>Which URL gets indexed:</strong> with a 302, Google tends to keep showing the old URL, because you told it the move is temporary. That can leave outdated URLs in search results for months.</li>
+<li><strong>Speed of consolidation:</strong> a 301 is a clear signal, so Google updates its index faster. A 302 makes Google wait and guess.</li>
+<li><strong>Clarity for other tools:</strong> other search engines, SEO tools and AI crawlers may not be as forgiving, and a clear 301 removes doubt.</li>
+</ul>
+<p>The redirect is one signal among several. Google also looks at your <a href="/blog/canonical-tags-explained/">canonical tags</a>, internal links and sitemap. When all of these point to the same new URL, the move is clean.</p>
+
+<h2>When to use a 301 redirect</h2>
+<ul>
+<li>You changed a page's URL or slug, for example to make it shorter and cleaner (see <a href="/blog/seo-friendly-urls/">SEO-friendly URLs</a>).</li>
+<li>You merged two thin pages or posts into one stronger page.</li>
+<li>You deleted a page or product and there is a close replacement.</li>
+<li>You moved from HTTP to HTTPS, or from www to non-www.</li>
+<li>You moved to a new domain. Our guide to <a href="/blog/change-domain-name-without-losing-seo/">changing your domain without losing SEO</a> covers the full process.</li>
+<li>You redesigned the site and the URL structure changed. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
 </ul>
 
-<h2>When a 302 or 307 is the right choice</h2>
+<h2>When to use a 302 redirect</h2>
 <ul>
-  <li><strong>The original URL will come back.</strong> For example, a menu link to an offers page temporarily sending visitors to a festival sale page for a fortnight.</li>
-  <li><strong>Split-testing two page URLs.</strong> Google's own advice for A/B tests that redirect visitors is to use a temporary redirect, so the original stays indexed.</li>
+<li>The page is down for short maintenance and you are sending visitors to a notice page.</li>
+<li>You are running a test and sending some traffic to a variant page.</li>
+<li>A seasonal page, such as a festival offer, temporarily points to the main category until next season.</li>
+<li>Visitors are redirected by location or language, and the original URL still matters.</li>
+<li>A product is temporarily out of stock and you want to send people to a similar product for a short time.</li>
 </ul>
-<p>And when neither is right:</p>
-<ul>
-  <li><strong>Maintenance or downtime:</strong> return a 503 status, which tells Google to come back later. Good maintenance-mode plugins do this, and so does WordPress during core updates. Redirecting every page to a "back soon" page looks like a permanent change.</li>
-  <li><strong>Temporarily out-of-stock products:</strong> keep the page live with a back-in-stock note rather than redirecting it.</li>
-  <li><strong>Language or country detection:</strong> automatic redirects based on location can stop Google seeing your other versions. Offer a visible choice instead.</li>
-</ul>
-<p>If a permanent move was set up as a 302 by mistake, Google may eventually treat a long-standing 302 as permanent, but there's no reason to wait and see. Change it to a 301.</p>
+<p>If a "temporary" redirect has been in place for months with no plan to remove it, it is not temporary. Change it to a 301.</p>
 
-<h2>HTTP 301 vs 302: what the server actually sends</h2>
-<p>A redirect is just an HTTP response with a status code and a Location header. Visitors never see it, which is why a wrong code goes unnoticed for months. This is what each looks like:</p>
-<pre><code>HTTP/1.1 301 Moved Permanently
-Location: https://example.in/services/website-design/
-
-HTTP/1.1 302 Found
-Location: https://example.in/diwali-sale/</code></pre>
-<p>To check which one your site sends, use a redirect checker or run this from a terminal (Windows 10 and 11 include curl):</p>
-<pre><code>curl -sI https://example.in/old-page/</code></pre>
-<p>The first line shows the status code and the Location line shows where it points. If the target is itself another redirect, follow it with curl -sIL and count the hops; more than one is a chain to fix.</p>
-<table>
-  <thead><tr><th>Question</th><th>HTTP 301</th><th>HTTP 302</th></tr></thead>
-  <tbody>
-    <tr><td>Which URL Google indexes</td><td>The new one</td><td>Usually the old one</td></tr>
-    <tr><td>Where ranking signals go</td><td>Consolidated on the new URL</td><td>Stay with the old URL</td></tr>
-    <tr><td>Browser caching</td><td>Cached, sometimes for a long time</td><td>Not cached by default</td></tr>
-    <tr><td>Default in WordPress wp_redirect()</td><td>No, must be set</td><td>Yes</td></tr>
-    <tr><td>Easy to undo</td><td>Harder, because browsers remember it</td><td>Yes</td></tr>
-  </tbody>
-</table>
-<p>That WordPress default matters: a developer who writes a quick redirect in a theme or plugin without passing 301 creates a temporary redirect. If a theme function or snippet plugin handles redirects on your site, check its status code.</p>
-
-<h2>How redirects affect SEO</h2>
-<p>Google has said for years that a 301 or 302 doesn't lose ranking value just by being a redirect. When rankings drop after URLs change, it is almost always because of how the redirects were done:</p>
-<ul>
-  <li><strong>Redirecting to an unrelated page.</strong> Sending many old URLs to the homepage or a loosely related category looks like a deleted page to Google, which may treat it as a soft 404 and pass nothing on.</li>
-  <li><strong>Missing redirects.</strong> Old URLs that 404 lose the links pointing to them and the history Google had built up.</li>
-  <li><strong>Chains,</strong> where Google and visitors pass through several hops.</li>
-  <li><strong>Removing redirects too soon.</strong> Google's own site-move guidance is to keep them for as long as possible, generally at least a year. External links and bookmarks keep using old URLs for much longer, so I'd leave them in place indefinitely.</li>
-</ul>
-<p>Expect some movement in rankings for a few weeks after a large set of redirects while Google recrawls. A redirect is also not the only way to consolidate duplicates: when both URLs must stay usable, a canonical tag is the softer option; see <a href="/blog/canonical-tags-explained/">canonical tags explained</a>.</p>
-
-<h2>Redirect chains, loops and "Avoid multiple page redirects"</h2>
-<p>A chain is a redirect that leads to another redirect. A common one on WordPress sites looks like this:</p>
-<pre><code>http://example.com/old-page/
-  -&gt; https://example.com/old-page/
-  -&gt; https://www.example.com/old-page/
-  -&gt; https://www.example.com/new-page/</code></pre>
-<p>Googlebot follows a limited number of hops, and every hop adds a delay on a slow mobile connection. The fix is for every rule to point at the final URL, so the first request lands on https://www.example.com/new-page/ directly.</p>
-<p>PageSpeed Insights flags redirects on the page you test, for years under the name "Avoid multiple page redirects" (newer versions group it with other server response checks). On WordPress the usual causes are internal links or ads still using http or the wrong www version, https being forced in two places (a plugin and the server, or the server and Cloudflare), and an old redirect pointing to a URL that was itself redirected later. Update the old redirect's target, force https in one place only, and replace old URLs in your content and menus. A loop, where A points to B and B back to A, breaks the page entirely and needs the step-by-step checks in the too-many-redirects guide linked above.</p>
-
-<h2>How to set up redirects on WordPress</h2>
-<table>
-  <thead><tr><th>Method</th><th>Best for</th><th>Things to know</th></tr></thead>
-  <tbody>
-    <tr><td>WordPress itself</td><td>Changed post slugs</td><td>WordPress remembers a post's old slug and 301-redirects it, but not reliably for pages or a permalink structure change</td></tr>
-    <tr><td>Redirection plugin (free)</td><td>Individual page redirects on any site</td><td>Under Tools &gt; Redirection; logs 404s, can add redirects when a slug changes, imports and exports CSV</td></tr>
-    <tr><td>Rank Math Redirections (free module)</td><td>Sites already using Rank Math</td><td>301, 302, 307 and 410 options, with a 404 monitor</td></tr>
-    <tr><td>Yoast SEO Premium</td><td>Sites already paying for Yoast Premium</td><td>Its redirect manager offers to create a redirect when you change a URL or delete a page; the free version has no redirect manager</td></tr>
-    <tr><td>.htaccess on the server</td><td>Site-wide rules such as https or a domain change</td><td>Works on Apache and LiteSpeed servers, which many shared hosts use, including Hostinger; not on Nginx</td></tr>
-    <tr><td>Cloudflare or your hosting panel</td><td>Domain-level redirects</td><td>Runs before WordPress, so check it doesn't duplicate a plugin rule</td></tr>
-  </tbody>
-</table>
-<p>Menu names are correct at the time of writing. Pick one home for page-level redirects and one for site-wide rules, and write down which is which. If you ever uninstall a redirect plugin, export its redirects first, because they stop working the moment it is deactivated.</p>
-<h3>.htaccess examples</h3>
-<p>Take a backup of the file first, and place your rules above the "# BEGIN WordPress" line, since WordPress rewrites everything between its own markers:</p>
-<pre><code># Send http to https on one hostname, in one hop
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
-
-# Send one old page to its new address
-RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre>
-<p>If your site sits behind Cloudflare or a host's proxy, the https check above can cause a loop, because the server may see every request as plain http. In that case, force https with your host's or Cloudflare's own setting instead.</p>
-
-<h2>A redirect checklist for changed URLs</h2>
+<h2>Common redirect mistakes that hurt SEO</h2>
 <ol>
-  <li>List every old URL: a crawl of the site, your XML sitemap, Search Console's top pages and GA4 landing pages.</li>
-  <li>Map each one to its closest new equivalent in a spreadsheet. Only URLs with no equivalent and no traffic or links should be left to return a 404 or 410, with a <a href="/blog/helpful-404-pages/">helpful 404 page</a> to catch visitors.</li>
-  <li>Create 301s that go to the final URL in one hop.</li>
-  <li>Update internal links, menus, buttons and your sitemap to the new URLs, so you aren't relying on redirects for your own links.</li>
-  <li>Test old URLs in a private window, because browsers cache 301s and can show you an old result, or use a redirect checker that lists every hop.</li>
-  <li>Watch Search Console's Pages report for new 404s over the following weeks. Old URLs showing as "Page with redirect" are expected.</li>
+<li><strong>Using 302 for permanent moves.</strong> Many plugins and hosting panels default to 302. Always check the type you selected.</li>
+<li><strong>Redirect chains.</strong> Page A redirects to B, which redirects to C. Each hop slows the visitor and wastes crawl effort. Point A straight to C.</li>
+<li><strong>Redirect loops.</strong> A goes to B, B goes back to A, and the browser shows "too many redirects". See <a href="/blog/too-many-redirects-error-fix/">how to fix the too many redirects error</a>.</li>
+<li><strong>Redirecting everything to the homepage.</strong> When an old page has no close match, sending it to the homepage is often treated by Google as a soft 404. A helpful 404 page is usually better than an irrelevant redirect (see <a href="/blog/helpful-404-pages/">helpful 404 pages</a>).</li>
+<li><strong>Not updating internal links.</strong> Your menus, buttons and posts should link straight to the new URL, not through the redirect.</li>
+<li><strong>Leaving old URLs in the sitemap.</strong> Your <a href="/blog/xml-sitemaps-explained/">XML sitemap</a> should list only final URLs that return 200.</li>
+<li><strong>Removing redirects too soon.</strong> Keep 301s for at least a year, and ideally permanently if old links still point to them.</li>
 </ol>
-<p>For a full site, the <a href="/blog/redesign-website-without-losing-rankings/">redesign SEO checklist</a> covers benchmarking and the URL map in more depth.</p>
+
+<h2>How to set up 301 and 302 redirects in WordPress</h2>
+<h3>Option 1: a redirect plugin</h3>
+<p>The simplest way for most owners is a redirect plugin or the redirect manager in an SEO plugin. You enter the old path, the new URL and choose 301 or 302. Many also log 404 errors, so you can spot broken URLs and redirect them. Our <a href="/blog/wordpress-seo-plugins-compared/">WordPress SEO plugins comparison</a> covers which include redirects.</p>
+<h3>Option 2: the .htaccess file (Apache and LiteSpeed)</h3>
+<p>On Apache or LiteSpeed hosting, which includes many Indian shared hosts and Hostinger, redirects can go in .htaccess. They run before WordPress loads, so they are fast. A permanent redirect looks like this:</p>
+<pre><code>Redirect 301 /old-page/ https://example.com/new-page/</code></pre>
+<p>Edit .htaccess carefully and keep a copy first, because one typo can take the whole site down.</p>
+<h3>Option 3: Nginx or Cloudflare</h3>
+<p>On Nginx servers, redirects go in the server configuration, usually through your host. If your site uses Cloudflare, you can create redirect rules there and choose 301 or 302 for each. See our <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare setup guide for WordPress</a>.</p>
+<h3>Option 4: changing a slug in WordPress</h3>
+<p>When you change a post slug, WordPress often redirects the old one automatically. It is not reliable for pages, products or bulk changes, so add a proper 301 yourself.</p>
+
+<h2>How to check whether a redirect is 301 or 302</h2>
+<ul>
+<li>Use a free online HTTP status or redirect checker. Paste the old URL and it shows each hop and its status code.</li>
+<li>In Chrome, open Developer Tools, go to the Network tab, tick "Preserve log" and load the old URL. The first request shows the status code.</li>
+<li>In Google Search Console, use URL Inspection on the old URL. It shows "Page with redirect" and the final URL Google chose.</li>
+<li>Crawl the site with an SEO crawler to list every redirect, chain and loop in one go.</li>
+</ul>
+
+<h2>A simple redirect checklist</h2>
+<ol>
+<li>List every old URL that is changing, with its best new match.</li>
+<li>Use 301 for permanent changes and 302 only for genuinely temporary ones.</li>
+<li>Redirect one-to-one, old page to the closest new page.</li>
+<li>Remove chains so every old URL points straight to the final URL.</li>
+<li>Update internal links, menus, canonicals and the sitemap.</li>
+<li>Test a sample of old URLs, then watch Search Console's Pages report for a few weeks.</li>
+</ol>
 
 <h2>FAQs</h2>
-<h3>What is the difference between a 301 and a 302 redirect?</h3>
-<p>A 301 means the page has moved permanently, so Google indexes the new URL and moves its signals there. A 302 means the move is temporary, so Google usually keeps the original URL indexed. Visitors see the same thing with both.</p>
-<h3>Is a 301 or 302 redirect better for SEO?</h3>
-<p>For a permanent change, a 301 is better because Google moves the page's signals to the new URL. A 302 is only better when the old URL is genuinely coming back, such as a short sale page swap.</p>
-<h3>How can I tell if a URL uses HTTP 301 or 302?</h3>
-<p>Use an online redirect checker or run curl -sI with the old URL. The first line of the response shows the status code. Browser developer tools, in the Network tab with Preserve log ticked, show it too.</p>
-<h3>Does a 301 redirect hurt SEO?</h3>
-<p>Not by itself. Problems come from redirecting to unrelated pages, chains of several hops, missing redirects for pages that had links, and removing redirects too early.</p>
+<h3>What is the difference between a 301 and 302 redirect?</h3>
+<p>A 301 redirect tells browsers and search engines a page has moved permanently. A 302 says the move is temporary and the original URL will come back, so search engines usually keep the old URL indexed.</p>
+<h3>Is a 301 or 302 better for SEO?</h3>
+<p>For permanent changes, a 301 is better because it clearly tells Google to replace the old URL with the new one and consolidate signals. A 302 is only better when the move really is temporary.</p>
+<h3>Does a 302 redirect lose SEO value?</h3>
+<p>Google says 302s can pass signals, but because they signal a temporary move, the old URL tends to stay in results and consolidation is slower. For a permanent move, switch it to a 301.</p>
 <h3>How long should I keep a 301 redirect?</h3>
-<p>Google recommends keeping redirects from a site move for as long as possible, generally at least a year. Since old links and bookmarks keep working only while the redirect exists, leaving them in place permanently is the safer choice.</p>
-<h3>Can I redirect a deleted page to my homepage?</h3>
-<p>Only if the homepage genuinely replaces it. Otherwise Google tends to treat it as a soft 404. Redirect to the closest related page, or let the URL return a 404 or 410 if nothing related exists.</p>
+<p>At least a year, and longer if other websites or old emails still link to the old URL. Keeping a 301 in place has very little cost.</p>
+<h3>Should I redirect deleted pages to the homepage?</h3>
+<p>Only if the homepage is genuinely the best replacement. Otherwise redirect to the closest relevant page, or return a 404 or 410 with a helpful page.</p>
+<h3>Can too many redirects slow down my website?</h3>
+<p>A single redirect adds a small delay. Chains of several redirects add more and can stop crawlers following them, so always point old URLs straight to the final destination.</p>
 
-<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> just to audit and fix your redirects.</p>
+<p>Planning a redesign, URL clean-up or domain move? Samverse handles redirect mapping and checks as part of <a href="/wordpress-migration/">website migration</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, so you keep the rankings you have built. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit existing redirects.</p>
 `,
   },
   {
@@ -39691,140 +39561,137 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'woocommerce-speed-optimization',
-    seoTitle: 'WooCommerce Speed Optimization: How to Speed Up WooCommerce',
-    title: 'WooCommerce Speed Optimization: How to Speed Up Your Online Store',
-    description: 'How to speed up WooCommerce: test the right pages, add object caching, cache around the checkout, and fix cart fragments, images, filters and database.',
+    seoTitle: 'Speed Up WooCommerce: Performance Optimization Guide',
+    title: 'How to Speed Up WooCommerce: A Practical WooCommerce Performance Optimization Guide',
+    description: 'How to speed up WooCommerce: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed, in a practical step-by-step guide.',
     date: '2026-09-28',
     updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
-<p>To speed up WooCommerce, cache every page that is the same for all shoppers (home, category, product and blog pages), give the uncacheable cart, checkout and My Account pages fast hosting with an object cache such as Redis, then trim what loads on each page: heavy product images, cart fragments, filter plugins and third-party scripts. WooCommerce speed optimization is harder than speeding up a brochure site because a store's most important pages are built fresh for every shopper.</p>
-<p>This guide covers what to measure, a symptom-to-cause table, a step-by-step checklist and how to test without breaking the checkout. For general WordPress causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites get slow</a>. If you would rather have it done for you, my <a href="/wordpress-speed-optimization/">WooCommerce speed optimization service</a> covers every fix below.</p>
+<p>To speed up WooCommerce, put the store on hosting with enough PHP workers and server caching, cache product and category pages while excluding cart, checkout and account pages, compress and lazy load product images, remove plugins you do not need, and clean up the database. Then deal with WooCommerce-specific slowdowns such as cart fragments, slow product filters, heavy themes and third-party scripts on product and checkout pages.</p>
 
-<h2>Why WooCommerce performance optimization is different</h2>
-<p>On a brochure site, almost every visitor sees the same page, so a saved copy can be served instantly. A store works differently:</p>
+<p><strong>Short answer:</strong> WooCommerce performance optimization is mostly hosting, caching, images, plugins and database, in that order. Measure product, category and checkout pages before and after each change.</p>
+
+<h2>Why WooCommerce stores get slow</h2>
+<p>A WooCommerce store does more work than a brochure site. Carts, stock, prices, taxes, shipping and sessions all change per visitor, so some pages cannot be cached, and every uncached request runs PHP and database queries. Typical causes of a slow store are:</p>
 <ul>
-  <li>The cart, checkout and My Account pages are different for every shopper and must be built fresh each time</li>
-  <li>Logged-in customers, and shoppers with something in their cart, usually bypass the page cache</li>
-  <li>Large catalogues, variations, filters and search mean heavier database queries</li>
-  <li>Payment, shipping, review and marketing extensions each add their own scripts and processing</li>
-  <li>Every order adds data: order records, sessions, logs and background tasks</li>
+<li>Shared hosting with too few resources for dynamic pages.</li>
+<li>No page caching, or caching set up incorrectly.</li>
+<li>Large, uncompressed product images and galleries.</li>
+<li>Too many plugins, especially ones loading scripts on every page.</li>
+<li>Heavy themes and page builders.</li>
+<li>A bloated database with old sessions, transients, revisions and autoloaded options.</li>
+<li>Third-party scripts: chat widgets, pixels, review widgets and trackers.</li>
 </ul>
-<p>So a fast store needs two things: good caching for the pages that can be cached, and a capable server for the pages that can't.</p>
 
-<h2>Measure the right pages first</h2>
-<p>Don't test only the homepage. Check each page type on a phone, ideally on mobile data, because that is how most Indian shoppers arrive from Instagram, WhatsApp and Google.</p>
+<h2>Step 1: Measure the right pages</h2>
+<p>Test the homepage, a busy category page, a product page with variations, the cart and the checkout. Use PageSpeed Insights for Core Web Vitals and real-user data, and also time the admin and checkout yourself, because slow server response matters there. Our guide to <a href="/blog/website-speed-test-tools-explained/">speed test tools</a> explains which numbers to trust. Note the server response time (TTFB) separately from front-end load time; they need different fixes.</p>
+
+<h2>Step 2: Get hosting that suits WooCommerce</h2>
+<p>If uncached pages such as cart and checkout take several seconds before anything starts loading, the server is usually the bottleneck. Look for:</p>
+<ul>
+<li>A current, supported PHP version (see <a href="/blog/update-php-version-wordpress/">updating PHP in WordPress</a>).</li>
+<li>Enough PHP workers for simultaneous shoppers.</li>
+<li>Server-level page caching and object caching (Redis or Memcached).</li>
+<li>Servers close to your customers, such as an India region for Indian buyers.</li>
+</ul>
+<p>Our comparison of <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared, VPS and managed WordPress hosting</a> helps you decide when to upgrade, and <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a> covers TTFB fixes.</p>
+
+<h2>Step 3: Set up caching correctly for WooCommerce</h2>
+<p>Page caching gives the biggest speed boost, but must be configured carefully on a store:</p>
+<ul>
+<li><strong>Cache:</strong> homepage, category pages, product pages, blog and static pages.</li>
+<li><strong>Never cache:</strong> cart, checkout, my account, and any page that shows personalised data.</li>
+<li><strong>Respect WooCommerce cookies</strong> so visitors with items in the cart get uncached pages where needed.</li>
+<li><strong>Object caching</strong> speeds up the uncached pages and the admin by storing database query results in memory.</li>
+<li><strong>Browser caching and a CDN</strong> serve images, CSS and JavaScript faster to visitors across India and abroad.</li>
+</ul>
+<p>Most good caching plugins and hosts detect WooCommerce and add the exclusions automatically, but always check. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and <a href="/blog/what-is-a-cdn/">what a CDN is</a>.</p>
+
+<h2>Step 4: Optimise product images</h2>
+<ul>
+<li>Upload images at a sensible size for your theme instead of full camera resolution.</li>
+<li>Serve WebP or AVIF versions with a compression plugin or CDN.</li>
+<li>Set the correct WooCommerce thumbnail and single product image sizes, then regenerate thumbnails.</li>
+<li>Lazy load images below the fold, but not the main product image, which is often the LCP element.</li>
+<li>Limit gallery images and avoid autoplay sliders on category pages.</li>
+</ul>
+<p>Read <a href="/blog/image-optimization-wordpress/">image optimisation in WordPress</a> for the full process.</p>
+
+<h2>Step 5: Remove heavy plugins and scripts</h2>
+<p>Go through every active plugin and ask whether the store needs it. Then check what loads on each page type. Common problems:</p>
+<ul>
+<li>Plugins loading scripts and styles on every page, even where they are not used. Asset managers let you disable them per page.</li>
+<li>Several plugins doing the same job, such as two SEO or two security plugins.</li>
+<li>Chat widgets, review widgets, heatmaps and pixels all loading on product pages. Delay non-essential ones until user interaction. See <a href="/blog/third-party-scripts-slow-website/">third-party scripts that slow your site</a>.</li>
+<li>Heavy sliders and animation add-ons on the homepage.</li>
+</ul>
+
+<h2>Step 6: Fix WooCommerce-specific slowdowns</h2>
+<h3>Cart fragments</h3>
+<p>WooCommerce uses an AJAX request to update the mini-cart count. On some setups it runs on every page and adds a slow uncached request. Recent WooCommerce versions load it only where the mini-cart is used, and many performance plugins let you restrict it further. Test that the cart count still updates correctly.</p>
+<h3>Product filters and search</h3>
+<p>Filter plugins can run heavy queries on large catalogues. Use a filter plugin that builds its own index, and limit the number of filter combinations. See <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a>.</p>
+<h3>Variations</h3>
+<p>Products with very many variations can slow product pages. Check whether some options would work better as add-ons rather than full variations.</p>
+<h3>Checkout</h3>
+<p>Remove unnecessary checkout fields and scripts, and make sure payment gateway scripts load only on checkout. Our <a href="/blog/woocommerce-checkout-optimization/">checkout optimization guide</a> covers this.</p>
+
+<h2>Step 7: Clean and optimise the database</h2>
+<ul>
+<li>Delete expired transients and old customer sessions.</li>
+<li>Limit post revisions and clean old ones.</li>
+<li>Check autoloaded options; large autoloaded data from removed plugins slows every page.</li>
+<li>Enable WooCommerce's High-Performance Order Storage (HPOS) if your plugins support it.</li>
+<li>Check the Action Scheduler for huge numbers of failed or pending tasks.</li>
+</ul>
+<p>Always take a backup first. See <a href="/blog/wordpress-database-optimization/">WordPress database optimization</a>.</p>
+
+<h2>Step 8: Lighten the theme and front end</h2>
+<p>A lightweight, WooCommerce-ready theme with minimal page builder use is the foundation of a fast store. Reduce unused CSS and JavaScript, load fonts efficiently and avoid render-blocking files. If the admin is slow too, see <a href="/blog/wordpress-admin-slow/">fixing a slow WordPress admin</a>.</p>
+
+<h2>Step 9: Speed up WooCommerce for Indian shoppers</h2>
+<p>Many Indian stores sell mainly to mobile users on varying network quality. A few extra steps help them:</p>
+<ul>
+<li>Host in or near India, or use a CDN with Indian locations, so static files arrive quickly.</li>
+<li>Keep the mobile product page simple: one clear main image, price, variation selector and add-to-cart button above the fold.</li>
+<li>Check that payment gateway scripts for Razorpay, UPI or other providers load only on checkout, not across the whole store.</li>
+<li>Test pincode checkers, shipping calculators and COD plugins for slow requests, since they often run on product pages.</li>
+<li>Test on a mid-range Android phone, not just a fast laptop.</li>
+</ul>
+<p>Our guide to <a href="/blog/wordpress-site-slow-on-mobile-fix/">fixing a WordPress site that is slow on mobile</a> goes into more detail.</p>
+
+<h2>Step 10: Keep the store fast after launch</h2>
+<p>Speed often slips after launch as new plugins, banners and tracking scripts are added. Re-test key pages after every major update or new plugin, review the plugin list every few months, and keep an eye on Search Console's Core Web Vitals report. A regular maintenance routine catches slowdowns before customers notice them. See the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+
+<h2>WooCommerce performance optimization checklist</h2>
 <ol>
-  <li><strong>PageSpeed Insights:</strong> test the homepage, a category page and a product page at pagespeed.web.dev. Note LCP, INP and CLS, and the "Reduce initial server response time", image and third-party warnings.</li>
-  <li><strong>Search Console:</strong> the Core Web Vitals report groups similar URLs, so you can see whether product or category templates are the problem.</li>
-  <li><strong>Time the money steps by hand:</strong> add a product, change the quantity, apply a coupon, enter a pin code and move to payment. If one step drags, that's where to dig.</li>
-  <li><strong>Query Monitor on staging:</strong> load the slow page or cart step while logged in and check Queries by Component and HTTP API calls to see which plugin or external service is responsible.</li>
+<li>Measure product, category, cart and checkout pages.</li>
+<li>Upgrade hosting and PHP if server response is slow.</li>
+<li>Enable page caching with WooCommerce exclusions, plus object caching and a CDN.</li>
+<li>Compress, resize and lazy load images.</li>
+<li>Remove or restrict unnecessary plugins and scripts.</li>
+<li>Restrict cart fragments and use indexed product filters.</li>
+<li>Clean the database and enable HPOS if compatible.</li>
+<li>Re-test and keep monitoring after every update.</li>
 </ol>
-<p>See <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a> for reading the results.</p>
-
-<h3>What your results point to</h3>
-<table>
-  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix first</th></tr></thead>
-  <tbody>
-    <tr><td>Slow server response on shop and product pages</td><td>No page cache, or underpowered hosting</td><td>Page caching, then hosting</td></tr>
-    <tr><td>Cart and checkout slow, other pages fine</td><td>No object cache, heavy cart plugins, slow shipping or payment lookups</td><td>Object cache, cart and checkout extensions</td></tr>
-    <tr><td>Every page makes an uncached admin-ajax or wc-ajax request</td><td>Cart fragments running everywhere</td><td>Limit cart fragments</td></tr>
-    <tr><td>Product page main image appears late</td><td>Oversized images, lazy-loaded hero image, heavy gallery</td><td>Images and gallery</td></tr>
-    <tr><td>Filter or search clicks take seconds</td><td>Heavy filter queries, default search on a big catalogue</td><td>Filters and search</td></tr>
-    <tr><td>Admin and order screens crawl</td><td>Large database, Scheduled Actions backlog, legacy order storage</td><td>Database and HPOS</td></tr>
-    <tr><td>Many requests to other domains</td><td>Pixels, chat and review widgets</td><td>Third-party scripts</td></tr>
-  </tbody>
-</table>
-
-<h2>Hosting and object caching</h2>
-<p>Because cart and checkout pages are built fresh for every shopper, they depend directly on your server. Hosting that copes with a brochure site can struggle when several people check out at once, especially during a festival sale. For a store, look for:</p>
-<ul>
-  <li>A current, supported PHP version (see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>)</li>
-  <li>Enough memory and PHP workers to handle several uncached requests at the same time</li>
-  <li>Server-level caching and support for an object cache such as Redis or Memcached</li>
-  <li>A data centre in or near India if most of your customers are here</li>
-</ul>
-<p>Ask your host how much simultaneous checkout traffic your plan can realistically handle. If the server is slow before anything else loads, start with <a href="/blog/reduce-server-response-time-ttfb/">reducing server response time</a>.</p>
-<p>A page cache saves whole pages, which doesn't help the cart or checkout. An object cache keeps the results of repeated database lookups in memory, which helps exactly the pages that can't be page-cached: cart, checkout, My Account and the admin. It needs server support plus a plugin or host setting, so test the checkout after turning it on.</p>
-
-<h2>Page caching, with the right exclusions</h2>
-<p>Cache the pages that are the same for everyone: home, category, product and blog pages. Never cache the cart, checkout and My Account pages, or pages for a shopper who is logged in or has items in their cart.</p>
-<p>WooCommerce sets cookies such as <strong>woocommerce_items_in_cart</strong> and <strong>woocommerce_cart_hash</strong> when a shopper adds something, and good caching plugins and hosts use them to skip the cache for that shopper. Most detect WooCommerce automatically, but always test: open a private window, add a product, then check the cart count and prices on other pages. If prices change by currency or location, test extra carefully, because a cached page can show the wrong price. More in <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
-
-<h2>Speeding up cart, checkout and My Account</h2>
-<p>These pages make you money, and caching can't rescue them. Beyond hosting and an object cache, look at what runs on them:</p>
-<ul>
-  <li><strong>Live shipping and pin code lookups:</strong> extensions that ask a courier's system for rates on every change add a wait if that service is slow</li>
-  <li><strong>Discount, fee and pricing rules:</strong> complex rule plugins recalculate the cart on every update; keep only the rules you use</li>
-  <li><strong>Payment gateways:</strong> each loads its own scripts; disable gateways you don't offer, and load gateway scripts only on checkout</li>
-  <li><strong>Actions when the order is placed:</strong> slow email sending or many integrations firing at once can make the final step feel stuck</li>
-</ul>
-<p>For layout and form changes that also lift conversions, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
-
-<h2>Cart fragments</h2>
-<p>The header cart count is often updated by a script called cart fragments. It sends a background request (you may see <strong>get_refreshed_fragments</strong> in a waterfall) that can't be cached, so if it runs on every page for every visitor it adds server load even to cached pages. Recent WooCommerce versions no longer load it everywhere by default, but many themes and mini-cart widgets still do. Load it only on shop, product and cart pages, or use a mini-cart that updates the count without it, then check the count still updates when a product is added.</p>
-
-<h2>Product images and galleries</h2>
-<p>Product photos are usually the heaviest part of a store. Upload images at a sensible size, compress them and serve WebP. In classic themes, check the product image sizes under Appearance &gt; Customize &gt; WooCommerce &gt; Product Images so the store isn't generating oversized thumbnails.</p>
-<ul>
-  <li>Lazy-load images further down the page, but not the main product image, which is often the largest element Google measures</li>
-  <li>Keep gallery sliders, zoom and 360-degree viewers light, and load them only on product pages</li>
-  <li>Use a click-to-play embed for product videos instead of loading the full player upfront</li>
-</ul>
-<p>See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> and <a href="/blog/fix-lcp-largest-contentful-paint/">fixing slow LCP</a>.</p>
-
-<h2>Filters, search and large catalogues</h2>
-<p>With hundreds or thousands of products, filters and search can become the slowest part of a store, and they're usually uncached because every combination is different.</p>
-<ul>
-  <li><strong>Choose filters carefully:</strong> prefer filter plugins that use indexed data, and check the product attributes lookup table is used for filtering (WooCommerce &gt; Settings &gt; Products &gt; Advanced)</li>
-  <li><strong>Keep filter URLs out of Google:</strong> endless combinations waste crawling and server resources; see <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a></li>
-  <li><strong>Improve site search:</strong> default WordPress search gets slow on big catalogues; a search plugin with its own index usually helps</li>
-  <li><strong>Trim heavy sections:</strong> related products, "recently viewed" and upsell carousels each run extra queries</li>
-</ul>
-
-<h2>Database: sessions, Scheduled Actions and HPOS</h2>
-<ul>
-  <li><strong>Sessions and transients:</strong> expired cart sessions should clear automatically, but only if scheduled tasks actually run</li>
-  <li><strong>Scheduled Actions:</strong> check WooCommerce &gt; Status &gt; Scheduled Actions for large numbers of failed or pending items</li>
-  <li><strong>Autoloaded options:</strong> leftover settings from removed plugins can slow every request</li>
-  <li><strong>High-Performance Order Storage (HPOS):</strong> keeps orders in dedicated tables, designed to scale better as orders grow. Newer stores use it by default; older stores can switch under WooCommerce &gt; Settings &gt; Advanced &gt; Features once their extensions are compatible</li>
-</ul>
-<p>Always take a full backup first. See <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</p>
-
-<h2>How to speed up WooCommerce: step-by-step checklist</h2>
-<ol>
-  <li>Back up the store and set up a staging copy.</li>
-  <li>Record a baseline: PageSpeed Insights for home, category and product pages, plus timed add-to-cart and checkout steps.</li>
-  <li>Confirm page caching works on public pages and is bypassed for cart, checkout, My Account and shoppers with items in the cart.</li>
-  <li>Check PHP version and hosting resources; enable an object cache if your host supports it.</li>
-  <li>Limit cart fragments to the pages that need a live cart count.</li>
-  <li>Resize and compress product images; make sure the main product image isn't lazy-loaded.</li>
-  <li>Remove unused extensions and stop payment, review and chat scripts loading where they aren't needed.</li>
-  <li>Fix slow filters and search, and keep filter URLs out of the index.</li>
-  <li>Clear the Scheduled Actions backlog, tidy the database and consider HPOS.</li>
-  <li>Place a full test order (cart, coupon, shipping, payment, confirmation email), then re-test against your baseline.</li>
-</ol>
-<p>Re-test after major updates and before big sales; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the regular checks that stop a store getting heavier again.</p>
-
-<h2>DIY or a WooCommerce speed optimization service?</h2>
-<p>Compressing images, removing unused plugins and turning on caching are reasonable DIY jobs. Get help when the slow pages are the cart and checkout, when you have a large catalogue with filters, when the database needs clean-up, or when earlier "speed plugins" made things worse. A good service measures first, works on staging, explains each change and tests a full order before anything goes live. Be wary of anyone promising a particular score without looking at your store.</p>
 
 <h2>FAQs</h2>
-<h3>How do I speed up WooCommerce?</h3>
-<p>Cache public pages, exclude cart, checkout and My Account, use hosting with an object cache, limit cart fragments, compress product images and remove scripts that load everywhere. Test each change on staging with a full order.</p>
-<h3>What does WooCommerce speed optimization include?</h3>
-<p>Measuring each page type, fixing server response and caching, speeding up cart and checkout, optimising images and galleries, fixing filters and search, cleaning the database and trimming third-party scripts, all without breaking the checkout.</p>
-<h3>Is WooCommerce performance optimization different from WordPress optimization?</h3>
-<p>Yes. The basics are the same, but stores have uncacheable pages, cart fragments, filters and a growing order database, so hosting, object caching and extension quality matter much more.</p>
-<h3>Can I cache the WooCommerce cart and checkout?</h3>
-<p>No. They're different for every shopper, so caching them can show one customer another's cart or the wrong totals. Speed them up with better hosting, an object cache and fewer heavy extensions.</p>
-<h3>Does WooCommerce need Redis?</h3>
-<p>It isn't required, but an object cache such as Redis often helps busy stores because it speeds up the pages that can't be page-cached. Measure before and after.</p>
-<h3>Should I hire a WooCommerce speed optimization service?</h3>
-<p>If basic caching and image fixes haven't helped, or the cart and checkout are slow, a specialist who works on staging and tests real orders is usually safer than stacking more speed plugins.</p>
+<h3>How do I speed up my WooCommerce store?</h3>
+<p>Start with good hosting and correct caching, then optimise images, remove unnecessary plugins and scripts, clean the database and fix WooCommerce-specific issues like cart fragments and slow filters.</p>
+<h3>Why is my WooCommerce site so slow?</h3>
+<p>The usual causes are underpowered hosting, missing or misconfigured caching, large images, too many plugins, heavy themes, a bloated database and third-party scripts on product and checkout pages.</p>
+<h3>Can I cache WooCommerce cart and checkout pages?</h3>
+<p>No. Cart, checkout and account pages are personal to each shopper and must be excluded from page caching. Object caching can still speed them up.</p>
+<h3>Does the number of products slow down WooCommerce?</h3>
+<p>A large catalogue alone is manageable with good hosting, but it makes slow filters, searches and database queries more noticeable, so indexing and object caching matter more.</p>
+<h3>What is the best plugin to speed up WooCommerce?</h3>
+<p>No single plugin fixes everything. A good caching plugin, an image optimisation plugin and an asset manager help, but hosting and removing unnecessary plugins usually make the biggest difference.</p>
+<h3>Is WooCommerce slower than Shopify?</h3>
+<p>Not necessarily. A well-hosted, well-optimised WooCommerce store can be very fast. Shopify handles hosting for you, while WooCommerce speed depends on your setup. See our <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify comparison</a>.</p>
 
-<p>Want a faster store without breaking the checkout? I speed up WooCommerce stores on staging, test a full order before anything goes live and explain every change. See <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimisation</a> or <a href="/woocommerce-developer/">hire a WooCommerce developer in India</a>.</p>
+<p>If your store is still slow, Samverse offers <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a>, and you can <a href="/woocommerce-developer/">hire a WooCommerce developer</a> for ongoing store work and performance checks.</p>
 `,
   },
   {
@@ -45620,153 +45487,116 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'Business Website Web Font Performance: Load Fonts Faster',
-    title: 'Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify',
-    description: 'Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.',
+    seoTitle: 'Business Website Web Font Performance: How to Fix It',
+    title: 'Business Website Web Font Performance: How to Load Fonts Fast in WordPress and Shopify',
+    description: 'Improve your business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preload and subsetting, in WordPress and Shopify.',
     date: '2026-09-28',
     updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>Good web font performance on a business website comes from loading fewer fonts: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
-<p>Good typography makes a business site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
+<p>Web font performance on a business website comes down to how many font files the page has to download and how quickly the text can appear. To improve it, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain, add font-display: swap so text shows immediately, preload the main font, and remove fonts your theme or plugins load but never use.</p>
 
-<h2>How web fonts slow a page down</h2>
-<p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can mean eight files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
-<p>Fonts are also discovered late. The browser only learns it needs a font after it has downloaded and read your CSS and worked out which text uses it. If fonts come from another domain, it also has to open a connection to that server first. All of that happens while your visitor waits for the headline.</p>
+<p><strong>Short answer:</strong> fewer files, smaller files, loaded earlier, never blocking text. On many WordPress sites, cutting unused font weights and self-hosting Google Fonts is the single quickest fix.</p>
 
-<h2>Invisible text, flashes and layout shift</h2>
-<p>While a font downloads, browsers either hide the text for a short time, leaving blank spaces where your headline should be, or show a fallback font such as Arial and swap in your font when it arrives.</p>
-<p>The swap can cause a visible jump. If the fallback is wider or taller than your brand font, lines rewrap, buttons move and the page shifts. That movement counts against your Cumulative Layout Shift score, and slow fonts can delay Largest Contentful Paint when the main heading is the largest element on screen. See <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> and the guide on <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</p>
+<h2>Why web fonts affect business website performance</h2>
+<p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
+<p>Fonts affect performance in three ways:</p>
+<ul>
+<li><strong>Largest Contentful Paint (LCP):</strong> if your main heading is the largest element, it cannot finish painting until its font loads. See <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a>.</li>
+<li><strong>Layout shift (CLS):</strong> when the web font replaces a fallback font of a different size, text reflows and the page jumps. See <a href="/blog/fix-cls-layout-shift/">fixing CLS</a>.</li>
+<li><strong>Invisible text:</strong> some browsers hide text for a few seconds while fonts load, so visitors on slow mobile connections see a blank page.</li>
+</ul>
+<p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains why.</p>
 
-<h2>How to check what fonts your site loads</h2>
+<h2>How to check your web font performance</h2>
 <ol>
-<li>Open the page in Chrome, open DevTools, go to the Network tab, filter by &quot;Font&quot; and reload. Every file listed is something your visitors download.</li>
-<li>Note the domain each comes from: your own site, a font service or a plugin's folder.</li>
-<li>Look for duplicates: the same family loaded twice from different places.</li>
-<li>Run PageSpeed Insights and look for notes such as &quot;Ensure text remains visible during webfont load&quot;.</li>
-<li>Test on a real mid-range Android phone on mobile data, not only on office Wi-Fi.</li>
+<li><strong>Run PageSpeed Insights</strong> on your homepage and a key service page. Look for "Ensure text remains visible during webfont load", "Eliminate render-blocking resources" and the LCP element.</li>
+<li><strong>Open Chrome Developer Tools,</strong> Network tab, filter by Font, and reload. Count the files and note their sizes and where they come from.</li>
+<li><strong>Check for unused fonts.</strong> Many sites load icon fonts, extra families from page builders or fonts for sliders that no longer exist.</li>
+<li><strong>Check the file formats.</strong> WOFF2 is the modern format; TTF or older formats are larger.</li>
 </ol>
 
-<h2>Use fewer families, weights and styles</h2>
-<p>This is the biggest and easiest win. For most business websites:</p>
+<h2>Practical fixes to speed up web fonts</h2>
+<h3>1. Use fewer families and weights</h3>
+<p>Most business websites need one family, or two at most (one for headings, one for body). Regular and bold are often enough; a semi-bold for headings is fine if you drop something else. Each weight you remove is one less file. Our guide on <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a> helps you pick a sensible pair.</p>
+<h3>2. Use WOFF2</h3>
+<p>WOFF2 is compressed and supported by all modern browsers. If your theme loads TTF, OTF or WOFF files, switch to WOFF2 versions.</p>
+<h3>3. Self-host Google Fonts</h3>
+<p>Loading fonts from Google's servers means extra connections to other domains before the font can start downloading. Hosting the same WOFF2 files on your own domain (or your CDN) removes those steps and also avoids sending visitor data to a third party. Many WordPress performance plugins and some themes have a "host Google Fonts locally" option.</p>
+<h3>4. Add font-display: swap</h3>
+<p>This CSS setting tells the browser to show text in a fallback font immediately and swap in the web font when it arrives. Visitors can start reading straight away. If you self-host, add it to each font-face rule; if you use Google Fonts, the display=swap parameter does the same.</p>
+<h3>5. Preload the most important font</h3>
+<p>Preloading tells the browser to fetch a font early, before it discovers it in the CSS. Preload only the one or two files used above the fold, such as your heading font, or you will slow down other resources.</p>
+<pre><code>&lt;link rel="preload" href="/fonts/heading.woff2" as="font" type="font/woff2" crossorigin&gt;</code></pre>
+<h3>6. Subset fonts</h3>
+<p>Many fonts include thousands of characters for languages you do not use. Subsetting creates a smaller file with only the characters you need, such as Latin. If your site uses Hindi or Marathi, include Devanagari only where it is needed; see <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a>.</p>
+<h3>7. Consider variable fonts</h3>
+<p>A variable font holds many weights in one file. If you need three or more weights of one family, a single variable WOFF2 file can be smaller than separate files. If you only need two weights, separate files are often lighter.</p>
+<h3>8. Reduce layout shift with a matched fallback</h3>
+<p>Choose a fallback system font with similar width and height, and use size-adjust or similar font-face settings so the swap barely moves the text.</p>
+<h3>9. Replace icon fonts</h3>
+<p>Loading a whole icon font for a handful of icons is wasteful. Inline SVG icons are lighter and sharper.</p>
+
+<h2>Web font performance in WordPress</h2>
 <ul>
-<li><strong>One or two families:</strong> one for headings and one for body text, or one for both.</li>
-<li><strong>Two or three weights:</strong> for example regular for body text and bold for headings and buttons.</li>
-<li><strong>No italics</strong> unless your design genuinely uses them.</li>
+<li><strong>Theme settings:</strong> many themes let you choose fonts and weights in the Customizer. Remove anything you are not using.</li>
+<li><strong>Page builders:</strong> Elementor and similar builders can load fonts per widget. Set global fonts, and use any option to load fonts locally or disable Google Fonts. See <a href="/blog/why-elementor-sites-slow/">why Elementor sites are slow</a>.</li>
+<li><strong>Plugins:</strong> sliders, forms and popups sometimes load their own fonts. Check the Network tab after disabling suspects on a staging site.</li>
+<li><strong>Performance plugins:</strong> many can combine, preload or self-host fonts, but test after each change.</li>
+<li><strong>Block themes:</strong> theme.json lets you register local fonts properly, which is cleaner than pasting links into the header.</li>
 </ul>
-<p>Check your theme or builder's typography settings. It is common to find a weight chosen for one button on one page loading on every page of the site. <strong>Variable fonts</strong>, where one file covers a range of weights, can help if you use several weights, but may be larger than you need if you use only one or two. For choosing fonts in the first place, see <a href="/blog/choose-website-colours-fonts/">how to choose website colours and fonts</a>.</p>
-<p>Also consider a <strong>system font stack</strong> for body text. It uses fonts already on the visitor's device, so there is nothing to download. Many well-designed sites pair one brand font for headings with system fonts for everything else.</p>
+<p>Fonts are often one of several render-blocking resources; our guide to <a href="/blog/eliminate-render-blocking-resources/">eliminating render-blocking resources</a> covers the rest.</p>
 
-<h2>Self-host your fonts and use WOFF2</h2>
-<p>Loading fonts from a third-party service is convenient, but it means extra connections before any text is styled. Hosting font files on your own site or CDN removes that step and gives you control over caching.</p>
+<h2>Web font performance in Shopify</h2>
+<p>Shopify themes usually use the Shopify font library, served from Shopify's own CDN, and many themes already apply font-display: swap. The main improvements are:</p>
 <ul>
-<li><strong>WOFF2</strong> is the modern, compressed format supported by current browsers. Use it rather than older formats.</li>
-<li><strong>Subsets</strong> keep files small by including only the characters you need, such as Latin for English pages.</li>
-<li><strong>Indian scripts:</strong> Hindi, Marathi, Gujarati and other scripts need fonts that include them, and these files are often larger, so choose weights even more carefully. See <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a>.</li>
+<li>Choose a body font from the system font options in the theme settings if you want the fastest result.</li>
+<li>Avoid apps or custom code that inject extra Google Fonts.</li>
+<li>Limit headings and body to the weights the theme actually uses.</li>
 </ul>
-<p>In WordPress, Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and plugins can download and host fonts for you. Option names change between versions, so check your current setup. Self-hosting also means visitors' browsers do not contact a third-party font server just to show your text.</p>
 
-<h2>Business website web font performance: a setup you can copy</h2>
-<p>This is the font setup I aim for on most business sites: one family, self-hosted, a regular and a bold weight, swap behaviour, and a fallback tuned so the swap barely moves the text. Upload the two WOFF2 files to a fonts folder in your theme or child theme, then add CSS like this:</p>
-<pre><code>@font-face {
-  font-family: "Brand Sans";
-  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Brand Sans";
-  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-700.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-/* Fallback sized to match, so the swap causes little layout shift */
-@font-face {
-  font-family: "Brand Sans Fallback";
-  src: local("Arial");
-  size-adjust: 100%;
-}
-body { font-family: "Brand Sans", "Brand Sans Fallback", sans-serif; }</code></pre>
-<p>Adjust the size-adjust percentage until the fallback text takes up the same space as the brand font; a developer can measure this in a few minutes. Then switch off the theme's or builder's own Google Fonts loading, or you will load the family twice. Compare the setups side by side:</p>
-<table>
-<thead><tr><th>Setup</th><th>Extra connections</th><th>Control over files</th><th>Typical risk</th></tr></thead>
-<tbody>
-<tr><td>Google Fonts link from the theme</td><td>Yes, to two font domains</td><td>None</td><td>Many weights loaded by default</td></tr>
-<tr><td>Builder "load fonts locally" setting</td><td>No</td><td>Partial</td><td>Duplicates if the theme also loads fonts</td></tr>
-<tr><td>Self-hosted with your own CSS, as above</td><td>No</td><td>Full</td><td>Needs a developer to update fonts later</td></tr>
-<tr><td>System font stack, no web font</td><td>No</td><td>Not needed</td><td>Less distinctive branding</td></tr>
-</tbody>
-</table>
+<h2>Are system fonts a good option for a business website?</h2>
+<p>System fonts are already on the visitor's device, so they need no download at all. A modern system font stack looks clean and professional, and many well-known sites use one. If your brand does not depend on a particular typeface, using system fonts for body text and one web font for headings is a strong balance between speed and personality.</p>
 
-<h2>Use font-display to keep text visible</h2>
-<p>The font-display setting tells the browser what to do while a font loads:</p>
-<table>
-<thead><tr><th>Value</th><th>What happens</th><th>Good for</th></tr></thead>
-<tbody>
-<tr><td>swap</td><td>Fallback shows immediately, brand font swaps in when ready</td><td>Most sites; text is never invisible</td></tr>
-<tr><td>optional</td><td>Brand font used only if it arrives almost instantly</td><td>Sites where layout stability matters most</td></tr>
-<tr><td>fallback</td><td>Short invisible period, then fallback; swaps only if the font arrives soon</td><td>A middle ground</td></tr>
-<tr><td>block</td><td>Text hidden for longer while the font loads</td><td>Rarely a good idea for body text</td></tr>
-</tbody>
-</table>
-<p>To make the swap less jarring, choose a fallback font with similar proportions to your brand font. Modern CSS can also adjust the fallback's size and spacing so the swap barely moves anything, which a developer can set up for your main fonts.</p>
-
-<h2>Preload only the fonts that matter</h2>
-<p>A preload hint tells the browser to fetch a file early instead of waiting to discover it. For the one or two fonts used in your headline and body text on the first screen, this can make text appear sooner. A typical preload looks like this:</p>
-<pre><code>&lt;link rel=&quot;preload&quot; href=&quot;/fonts/heading.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></pre>
-<p>Do not preload everything. Every preloaded file competes for bandwidth with your hero image and CSS, so preloading five fonts can make the page slower. Preload the fonts visible above the fold and let the rest load normally.</p>
-
-<h2>Icon fonts and duplicate font loading</h2>
+<h2>Common web font mistakes on business websites</h2>
 <ul>
-<li><strong>Icon fonts:</strong> loading an entire icon library to show a phone, email and WhatsApp icon is wasteful. Inline SVG icons are lighter, and some builders, including Elementor, offer an option to render icons as SVG.</li>
-<li><strong>Duplicates:</strong> the theme loads fonts, the page builder loads them again, and a slider or form plugin adds its own. Set fonts in one place and turn off font loading everywhere else.</li>
+<li><strong>Loading every weight "just in case":</strong> theme demos often import a full family from thin to black. Your site probably uses two or three of them.</li>
+<li><strong>Loading the same font twice:</strong> once from the theme and once from a page builder or plugin, sometimes from two different servers.</li>
+<li><strong>Using a decorative font for body text:</strong> script or display fonts are hard to read in paragraphs and are often large files. Keep them for a logo or a single heading, or use an image or SVG for the logo instead.</li>
+<li><strong>Preloading fonts that are not used above the fold:</strong> this pushes useful resources back in the queue.</li>
+<li><strong>Forgetting the crossorigin attribute on preload:</strong> without it the browser may download the font twice.</li>
+<li><strong>Changing fonts during a redesign without re-testing:</strong> a new heading font can quietly become the slowest part of the page.</li>
 </ul>
-<p>See <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> for other builder-specific fixes.</p>
+<p>After any font change, re-run PageSpeed Insights on mobile and look at the page on a real phone over mobile data. The difference between a font that appears instantly and one that flashes in late is easy to see.</p>
 
-<h2>Web fonts on Shopify stores</h2>
-<p>Shopify themes usually let you pick fonts from Shopify's own font library in the theme editor, and those are served from Shopify's CDN. The same principles apply: keep to one or two families, avoid selecting extra weights for single elements, and be careful with apps that inject their own fonts into product pages or pop-ups. If you upload a custom brand font, use WOFF2 and check how the theme loads it. The guide to a <a href="/blog/shopify-store-slow-fix/">slow Shopify store</a> covers app and theme weight more broadly.</p>
-
-<h2>Fonts in WordPress page builders and themes</h2>
-<p>Most WordPress font problems come from settings spread across several places. A typical Elementor site may set fonts in the theme customiser, in Elementor's global fonts, in individual widgets and in a header plugin, each loading its own files. A tidy setup looks like this:</p>
+<h2>Web font performance checklist</h2>
 <ol>
-<li>Decide the families and weights once, ideally in the design system or Figma file.</li>
-<li>Set them in one place, such as Elementor global fonts or the block theme's styles.</li>
-<li>Remove font choices from individual widgets, so everything inherits from the global setting.</li>
-<li>Turn off font loading in the theme or plugins that duplicate it, if they offer that option.</li>
-<li>Use the builder's option to load fonts locally rather than from an external service.</li>
+<li>List every font file the page loads and remove unused ones.</li>
+<li>Limit to one or two families and only the weights you use.</li>
+<li>Serve WOFF2 from your own domain or CDN.</li>
+<li>Add font-display: swap.</li>
+<li>Preload the main above-the-fold font only.</li>
+<li>Subset to the languages you need.</li>
+<li>Match fallback fonts to reduce layout shift.</li>
+<li>Re-test with PageSpeed Insights and real devices.</li>
 </ol>
-<p>After changes, clear every cache layer: the caching plugin, any server cache and the CDN. Old CSS can keep loading removed fonts for a while, which confuses testing. The guide on <a href="/blog/wordpress-caching-explained/">WordPress caching</a> explains the layers.</p>
-<p>Agencies handing over a design should list the exact font files and weights used, so the developer does not guess and load extra ones just in case.</p>
-
-<h2>A quick font clean-up checklist</h2>
-<ul>
-<li>List every font file the homepage loads.</li>
-<li>Remove unused weights, styles and families.</li>
-<li>Self-host the rest in WOFF2, with subsets.</li>
-<li>Set font-display to swap or optional.</li>
-<li>Preload only above-the-fold fonts.</li>
-<li>Replace icon fonts with SVG where you can.</li>
-<li>Retest in PageSpeed Insights and on a real phone.</li>
-</ul>
 
 <h2>FAQs</h2>
-<h3>How do web fonts affect business website performance?</h3>
-<p>Each font file is an extra download that can delay your headline (LCP), cause text to jump when it swaps in (CLS) and add weight on slow mobile connections. One or two well-loaded families are rarely a problem; many weights from several sources usually are.</p>
-<h3>Are web fonts slowing my website?</h3>
-<p>Check the Network tab filtered by Font. If you see many files, files from several domains or duplicate families, fonts are likely adding delay and layout shift.</p>
-<h3>Is it better to self-host Google Fonts?</h3>
-<p>Usually, yes. Self-hosting removes extra connections, lets you control caching and avoids sending visitors' requests to another server.</p>
-<h3>What font-display value should I use?</h3>
-<p>Swap suits most sites because text is always visible. Optional avoids layout shift but some visitors will see the fallback font.</p>
-<h3>Do Hindi fonts slow down a website more than English fonts?</h3>
-<p>Often, because they cover more characters. Load fewer weights, subset where possible and test on mobile.</p>
+<h3>Do web fonts slow down a website?</h3>
+<p>They can. Each font file is an extra download that can delay text and the main heading. A few well-optimised WOFF2 files have a small impact; many unused weights from third-party servers have a large one.</p>
+<h3>Is it faster to self-host Google Fonts?</h3>
+<p>Usually yes, because the browser avoids extra connections to other servers, and you get control over caching and preloading. It also avoids sending visitor data to a third party.</p>
+<h3>What does font-display: swap do?</h3>
+<p>It tells the browser to show text immediately in a fallback font, then swap to the web font when it loads, so visitors are never left looking at invisible text.</p>
+<h3>How many fonts should a business website use?</h3>
+<p>One or two families, with two or three weights in total, is enough for most business websites and keeps performance under control.</p>
 <h3>Should I preload all my fonts?</h3>
-<p>No. Preload only the one or two fonts visible on the first screen; preloading too many slows the page.</p>
+<p>No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower.</p>
+<h3>Are system fonts better for performance than web fonts?</h3>
+<p>Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings.</p>
 
-<p>Want your brand fonts to look right without slowing the site? I can audit and clean up font loading as part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or rebuild typography settings properly on an <a href="/elementor-developer/">Elementor website</a>. Shopify stores can see <a href="/shopify-developer/">Shopify development</a>.</p>
+<p>If fonts, themes or plugins are slowing your site, Samverse can fix it as part of <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a>. For a wider check, see <a href="/website-redesign/">website redesign</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
   {
@@ -50085,155 +49915,113 @@ Support:           who to contact, and on what terms</code></pre>
   {
     slug: 'test-structured-data-rich-results',
     seoTitle: 'Rich Snippet Testing Tool: How to Check Rich Snippets',
-    title: 'How to Test Structured Data: Rich Results Test vs Schema Markup Validator, Reading Errors and Fixing Them in WordPress',
-    description: 'The rich snippet testing tool to use is Google\'s Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.',
+    title: 'Rich Snippet Testing Tool: How to Check Rich Snippets and Test Structured Data in WordPress',
+    description: 'The best rich snippet testing tool is Google\'s Rich Results Test. Learn how to check rich snippets, read errors and warnings, and fix schema in WordPress.',
     date: '2026-09-30',
     updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>The rich snippet testing tool to use is Google's free Rich Results Test: paste a URL or code and it shows which rich results the page is eligible for and which errors are stopping them. To check rich snippets fully, pair it with the Schema Markup Validator for the schema.org code itself and Search Console's Enhancements reports for the whole site, then fix errors before warnings, retest and click Validate fix.</p>
-<p>Structured data for your business, services, products, articles and breadcrumbs, checked with Google's testing tools, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide shows the same checking process so you can run it yourself, read what the tools are telling you, and trace each error back to the plugin, theme or template causing it.</p>
-<p>If you are still deciding which types to add, start with <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+<p>The main rich snippet testing tool is Google's Rich Results Test: paste a URL or code and it tells you which rich results (such as FAQ, product, review, breadcrumb or article snippets) the page is eligible for, and lists any errors or warnings in the structured data. To check rich snippets across your whole site, use the enhancement reports in Google Search Console, and use the Schema Markup Validator when you want to check schema types Google does not show as rich results.</p>
 
-<h2>Rich snippet testing tool: which one answers which question</h2>
+<p><strong>Short answer:</strong> test a single page with the Rich Results Test, validate general schema with the Schema Markup Validator, and monitor the whole site in Search Console. Fix errors first (they block eligibility), then warnings (they limit what can be shown), then re-test and request indexing.</p>
+
+<h2>What is a rich snippet, and why test it?</h2>
+<p>A rich snippet is a search result with extra information, such as star ratings, price and stock, breadcrumbs, event dates or recipe details. They come from structured data, usually <a href="/blog/schema-markup-explained/">schema markup</a> added as JSON-LD in the page code.</p>
+<p>Testing matters because small mistakes, such as a missing price, a wrong date format or markup that does not match the visible page, quietly stop Google from using it. Nothing breaks on the page itself, so you only find out by checking.</p>
+
+<h2>The rich snippet testing tools compared</h2>
 <table>
-  <thead><tr><th>Tool</th><th>Question it answers</th><th>Limits</th></tr></thead>
-  <tbody>
-    <tr><td>View source (Ctrl+U)</td><td>What markup is on the page, and how many blocks of it</td><td>Shows the raw HTML only, not markup added later by JavaScript</td></tr>
-    <tr><td>Rich Results Test</td><td>Which Google rich result types the page is eligible for, with errors and warnings per item</td><td>Only reports types Google supports for rich results</td></tr>
-    <tr><td>Schema Markup Validator</td><td>Is the code valid schema.org, for any type, and how do the items connect</td><td>Says nothing about Google's requirements or eligibility</td></tr>
-    <tr><td>URL Inspection in Search Console</td><td>What structured data Google found on the indexed version, and on the live page</td><td>One URL at a time</td></tr>
-    <tr><td>Enhancements reports in Search Console</td><td>Which pages across the site have valid or invalid items of each type</td><td>Data lags behind crawling; only types Google has found appear</td></tr>
-  </tbody>
+<thead><tr><th>Tool</th><th>Best for</th><th>Limits</th></tr></thead>
+<tbody>
+<tr><td>Rich Results Test (Google)</td><td>Checking if a page is eligible for Google rich results; errors and warnings</td><td>Only covers schema types Google supports as rich results</td></tr>
+<tr><td>Schema Markup Validator (schema.org)</td><td>Validating any schema.org markup, including types Google ignores</td><td>Does not say whether Google will show a rich result</td></tr>
+<tr><td>Search Console enhancement reports</td><td>Monitoring valid and invalid items across the whole site over time</td><td>Delayed; only shows pages Google has crawled</td></tr>
+<tr><td>URL Inspection (Search Console)</td><td>Seeing the structured data Google found on the indexed version</td><td>One URL at a time</td></tr>
+<tr><td>SEO crawlers and browser extensions</td><td>Spotting missing or duplicate schema across many pages quickly</td><td>Not Google's own verdict</td></tr>
+</tbody>
 </table>
+<p>The old Structured Data Testing Tool has been retired by Google; its role is now split between the Rich Results Test and the Schema Markup Validator.</p>
 
-<h2>Step 1: See what is on the page before testing</h2>
-<p>Open the page, press Ctrl+U and search the source for application/ld+json. Count the blocks. A typical WordPress page has one from the SEO plugin, sometimes a second from WooCommerce; the same type appearing twice is the first sign of duplication.</p>
-<p>The source often tells you which plugin wrote each block, from its class name or a nearby HTML comment. Old themes may add microdata, visible as itemtype and itemprop attributes. Note each source for when an error appears.</p>
-
-<h2>Step 2: The Rich Results Test, live URL or code</h2>
-<p>The Rich Results Test offers two modes, and they test different things:</p>
-<ul>
-  <li><strong>URL mode</strong> fetches the live page the way Google's smartphone crawler does, runs its JavaScript, and tests the rendered result. This is closest to what Google sees, including markup injected by scripts or tag managers.</li>
-  <li><strong>Code mode</strong> tests a snippet or a full page source you paste in. Use it for a staging site behind a password, for markup you are writing before it goes live, or to isolate one block from the rest of the page.</li>
-</ul>
-<p>In URL mode, a "couldn't be fetched" result usually means a firewall, bot protection or robots.txt is blocking Google's crawler, a bigger problem than the schema. Purge caches before retesting a fix, and note that each detected item, such as Product snippets and Merchant listings, has its own list of issues.</p>
-<p>Testing on staging first is sensible for big schema changes; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how to set one up.</p>
-
-<h2>Step 3: The Schema Markup Validator</h2>
-<p>The Schema Markup Validator, run by schema.org at validator.schema.org, is the successor to Google's old Structured Data Testing Tool. It checks your markup against the full schema.org vocabulary rather than Google's rules, which makes it the right tool for:</p>
-<ul>
-  <li>Types with no Google rich result, such as Service, ProfessionalService or WebSite, which the Rich Results Test may simply report as "no items detected"</li>
-  <li>Seeing the whole graph, such as whether every page points to the same Organization</li>
-  <li>Spotting misspelt property names and properties used on the wrong type</li>
-</ul>
-<p>A clean validator result means the code is well formed, not that Google will show anything.</p>
-
-<h2>Errors, warnings and valid items</h2>
-<table>
-  <thead><tr><th>Status</th><th>What it means</th><th>What to do</th></tr></thead>
-  <tbody>
-    <tr><td>Error, or invalid item</td><td>A required property is missing or a value can't be read, so the item can't produce a rich result</td><td>Fix first, starting with templates that cover many pages</td></tr>
-    <tr><td>Warning, or valid with warnings</td><td>A recommended property is missing; the item is still eligible, with less detail</td><td>Fix only when you genuinely have the information</td></tr>
-    <tr><td>Valid</td><td>Google can read the item and it is eligible</td><td>Nothing, but eligibility is not a promise of display</td></tr>
-  </tbody>
-</table>
-<p>A missing optional field is fine; a made-up rating, brand or price added to silence a warning breaks Google's guidelines.</p>
-
-<h2>Common structured data errors and how to fix them</h2>
-<table>
-  <thead><tr><th>What the tool says (roughly)</th><th>Usual cause on WordPress</th><th>Fix</th></tr></thead>
-  <tbody>
-    <tr><td>Missing field "image" or "name"</td><td>A post with no featured image, or a product saved without a main image</td><td>Add the image or title in the editor; check the SEO plugin's default image setting</td></tr>
-    <tr><td>Either "offers", "review" or "aggregateRating" should be specified</td><td>A product with no price, such as an enquiry-only catalogue item or a variable product whose variations have no prices</td><td>Set prices, or stop outputting Product markup on enquiry-only pages</td></tr>
-    <tr><td>Invalid value in field "price" or "availability"</td><td>Hand-written markup with text such as "Rs 1,499/-", or availability written as "In stock"</td><td>Use a plain number, a currency code such as INR, and a schema.org value such as InStock</td></tr>
-    <tr><td>Invalid object type, or an item detected under the wrong parent</td><td>Wrong nesting: an address as plain text instead of a PostalAddress, or an Offer sitting outside its Product</td><td>Nest the object inside the property that expects it; see the example below</td></tr>
-    <tr><td>Two Organization, Product or BreadcrumbList items</td><td>Duplicate schema from two plugins, or a plugin plus the theme</td><td>Keep one source and switch structured data off in the other</td></tr>
-    <tr><td>Missing field "item" in breadcrumbs</td><td>Theme breadcrumbs outputting their own markup with incomplete links</td><td>Use one breadcrumb source, usually the SEO plugin's</td></tr>
-    <tr><td>Unparsable structured data, or a parsing error</td><td>Hand-written JSON with a missing comma, an extra bracket or curly quotes pasted from a document</td><td>Retype quotes as straight quotes and validate the snippet in code mode</td></tr>
-    <tr><td>Missing shipping or return policy fields (warning)</td><td>WooCommerce product markup without shipping and returns details</td><td>Add them through your SEO plugin, store-wide markup or Merchant Center, depending on your setup</td></tr>
-  </tbody>
-</table>
-<h3>Wrong nesting and invalid values, side by side</h3>
-<p>This is a shortened LocalBusiness and Product example. The first version has the two most common mistakes; the second is correct:</p>
-<pre><code>Wrong:
-"address": "12 Example Road, Kothrud, Pune 411038",
-"offers": { "price": "Rs 1,499/-", "availability": "In stock" }
-
-Right:
-"address": {
-  "@type": "PostalAddress",
-  "streetAddress": "12 Example Road, Kothrud",
-  "addressLocality": "Pune",
-  "postalCode": "411038",
-  "addressCountry": "IN"
-},
-"offers": {
-  "@type": "Offer",
-  "url": "https://example.com/product/example-product/",
-  "price": "1499.00",
-  "priceCurrency": "INR",
-  "availability": "https://schema.org/InStock"
-}</code></pre>
-<h3>Duplicate schema from two plugins</h3>
-<p>This is common on sites that have changed SEO plugins or added a separate schema plugin. Rank Math lets you switch off its Schema module from its dashboard; Yoast's output, at the time of writing, can only be removed with a code filter, so it is usually simpler to switch off the other source. Theme microdata may need a theme setting or a child theme. <a href="/blog/wordpress-seo-plugins-compared/">Yoast vs Rank Math vs All in One SEO</a> covers the plugins more broadly, and <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO</a> covers product markup in stores.</p>
-
-<h2>Search Console Enhancements reports and validation</h2>
-<p>Once Google finds a supported type on your pages, Search Console creates a report for it in the left menu, under Enhancements or, for stores, Shopping, at the time of writing. Breadcrumbs, Product snippets, Merchant listings and Review snippets are typical. There is also an Unparsable structured data report for code Google couldn't read at all.</p>
+<h2>How to check rich snippets with the Rich Results Test</h2>
 <ol>
-  <li>Open the report and click an issue to see example URLs.</li>
-  <li>Open one example in the Rich Results Test, find the item and the field, and trace it to its source using your list from step 1.</li>
-  <li>Fix the template or setting, not one page, so every affected page is fixed at once.</li>
-  <li>Purge caches and retest two or three example URLs.</li>
-  <li>Click Validate fix. Google rechecks the affected URLs over the following days or weeks, and the status moves through started and passed, or failed.</li>
+<li><strong>Open the Rich Results Test</strong> and choose URL or Code. Use URL for live pages and Code to test markup before you publish it.</li>
+<li><strong>Pick the crawler.</strong> Smartphone is the default and matches how Google indexes most sites.</li>
+<li><strong>Read the summary.</strong> It says "Page is eligible for rich results" or "Not eligible", and lists each detected item, such as Product snippets, Breadcrumbs or FAQ.</li>
+<li><strong>Open each item.</strong> Errors are shown in red and warnings in amber, with the field name that caused them.</li>
+<li><strong>Check the rendered HTML.</strong> If your schema is added by JavaScript, look at the rendered page to make sure Google actually sees it.</li>
+<li><strong>Preview the result</strong> where available, to see roughly how the snippet could look.</li>
 </ol>
-<p>A failed validation usually means a page on another template still has the issue. For the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
 
-<h2>How to check rich snippets: a 15-minute checklist</h2>
-<p>Structured data breaks quietly, because nothing changes on screen when an update alters a plugin's schema output. Keep one URL per template (home, a service page, a blog post, a simple product, a variable product, a category and contact) and run this after launch and after every SEO plugin, theme or WooCommerce update:</p>
+<h2>Errors vs warnings: what to fix first</h2>
+<p><strong>Errors</strong> mean a required property is missing or invalid, so that item cannot appear as a rich result. Common examples:</p>
+<ul>
+<li>Product markup with no offers, review or aggregateRating.</li>
+<li>Missing name, or an invalid price or currency format.</li>
+<li>Invalid dates (Google expects ISO 8601, such as 2026-11-15).</li>
+<li>Broken JSON, such as a missing comma or quote, which makes the whole block unreadable.</li>
+</ul>
+<p><strong>Warnings</strong> mean a recommended property is missing. The item is still valid, but Google has less to show. Examples include a missing brand, SKU, priceValidUntil or review author. Fix the ones that are true and useful; never fill fields with made-up data just to clear a warning.</p>
+
+<h2>How to fix common structured data problems in WordPress</h2>
+<p>Most WordPress sites get schema from an SEO plugin, WooCommerce, the theme or a page builder. Problems often come from these overlapping.</p>
+<h3>Duplicate or conflicting schema</h3>
+<p>If the theme, an SEO plugin and a schema plugin all output Organization or Product markup, Google sees two versions with different details. Choose one source, and switch schema off in the others. Our <a href="/blog/wordpress-seo-plugins-compared/">SEO plugins comparison</a> explains where each adds markup.</p>
+<h3>WooCommerce product errors</h3>
+<p>WooCommerce adds product schema automatically. Errors usually come from products with no price (variable products with no variations set up), no reviews, or stock settings that are blank. See our <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a> and <a href="/blog/google-merchant-center-woocommerce/">Merchant Center setup</a>, which relies on the same data.</p>
+<h3>Markup that does not match the page</h3>
+<p>Google's policies require structured data to describe content visible on the page. Ratings that do not appear on the page, prices that differ from the visible price, or reviews written by the business about itself can lead to rich results being dropped or a manual action.</p>
+<h3>FAQ and HowTo expectations</h3>
+<p>Google now shows FAQ rich results only for a limited set of authoritative sites and has stopped showing HowTo rich results. FAQ markup can still be valid, and the questions still help readers and AI search, but do not expect FAQ snippets in most cases. See <a href="/blog/faq-page-seo/">FAQ pages for SEO</a>.</p>
+<h3>Breadcrumb errors</h3>
+<p>Breadcrumb schema needs a name and item URL for each level. Missing levels usually come from theme breadcrumbs and plugin breadcrumbs disagreeing. Read <a href="/blog/breadcrumbs-explained/">breadcrumbs explained</a>.</p>
+
+<h2>Monitoring rich snippets across the whole site</h2>
+<p>Testing one page is useful, but problems usually affect templates, so they repeat across many pages. In Search Console, the enhancement reports (under Shopping, Enhancements or Experience, depending on the type) group items into valid and invalid, with example URLs for each issue.</p>
 <ol>
-  <li>Purge the caching plugin, host cache and CDN.</li>
-  <li>Run each URL through the Rich Results Test in URL mode and note the detected item types.</li>
-  <li>Compare with last time: a missing type or a new duplicate is the warning sign.</li>
-  <li>Open any item with errors and note the exact field named.</li>
-  <li>Run the same URL through the Schema Markup Validator to check the graph and non-Google types such as Service.</li>
-  <li>Check that marked-up facts (price, stock, author, date) match what the visitor sees.</li>
-  <li>Fix the template or plugin setting, not one page, then retest.</li>
-  <li>Once a month, check Search Console's Enhancements reports for a drop in valid items.</li>
+<li>Open the report for the schema type, such as Product snippets or Breadcrumbs.</li>
+<li>Click an issue to see affected pages, and test one in the Rich Results Test.</li>
+<li>Fix the template or plugin setting, not just one page.</li>
+<li>Click Validate Fix so Google re-checks the affected URLs over the following days.</li>
 </ol>
-<p><a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> covers backups and staging for those updates.</p>
+<p>Our guide to <a href="/blog/google-search-console-reports-explained/">Search Console reports</a> walks through where each report lives.</p>
 
-<h3>What each rich result type needs before you test</h3>
-<table>
-  <thead><tr><th>Rich result</th><th>Typical source in WordPress</th><th>Most common reason it fails</th></tr></thead>
-  <tbody>
-    <tr><td>Breadcrumbs</td><td>SEO plugin breadcrumb setting</td><td>Breadcrumbs turned off in the theme, so no markup is output</td></tr>
-    <tr><td>Product snippets</td><td>WooCommerce plus the SEO plugin</td><td>Variable products without a price on the parent, or no reviews field</td></tr>
-    <tr><td>Merchant listings</td><td>WooCommerce plus the SEO plugin</td><td>Missing shipping or returns details, or an unreadable price format</td></tr>
-    <tr><td>Article</td><td>SEO plugin post settings</td><td>Missing author or image, or the wrong schema type chosen</td></tr>
-    <tr><td>Review snippets</td><td>Review or schema plugin</td><td>Self-serving reviews on your own business, which Google won't show</td></tr>
-  </tbody>
-</table>
+<h2>Why valid schema still shows no rich snippet</h2>
+<p>A green "eligible" result does not guarantee a rich snippet. Google may not show one because:</p>
+<ul>
+<li>The page has not been recrawled since you fixed it. Use URL Inspection and request indexing.</li>
+<li>The site or page does not meet Google's quality expectations for that feature.</li>
+<li>The search query does not suit a rich result.</li>
+<li>The rich result type is restricted, as with FAQ, or no longer supported.</li>
+<li>The markup describes something that is not the main content of the page.</li>
+</ul>
+<p>Rich snippets also tend to appear more for pages already ranking well, so they work alongside wider <a href="/blog/on-page-seo-checklist/">on-page SEO</a> rather than replacing it.</p>
 
-<h2>Valid, but no rich result?</h2>
-<p>Passing the tests makes a page eligible, nothing more; Google decides per search whether to show a rich result. FAQ rich results are now limited to a small group of authoritative sites (see <a href="/blog/faq-page-seo/">FAQs for SEO</a>), and self-serving review stars aren't shown. Check Google's current documentation for supported types.</p>
+<h2>A quick structured data testing checklist</h2>
+<ol>
+<li>Test your homepage, one service or category page, one product and one blog post in the Rich Results Test.</li>
+<li>Run the same pages through the Schema Markup Validator.</li>
+<li>Remove duplicate schema so each type comes from one source.</li>
+<li>Fix all errors, then any warnings you can fill with real data.</li>
+<li>Check that markup matches what visitors see on the page.</li>
+<li>Validate the fix in Search Console and recheck in two to four weeks.</li>
+</ol>
 
 <h2>FAQs</h2>
 <h3>What is the best rich snippet testing tool?</h3>
-<p>Google's Rich Results Test, because it checks your markup against the rules Google actually uses for rich snippets. Use the Schema Markup Validator alongside it for types Google doesn't show as rich results.</p>
-<h3>How do I check rich snippets on my website?</h3>
-<p>Test one URL per template in the Rich Results Test, then open Search Console's Enhancements reports to see valid and invalid items across the site. To see whether a snippet actually appears, search for the page in Google, but remember display is never guaranteed.</p>
-<h3>What is the difference between the Rich Results Test and the Schema Markup Validator?</h3>
-<p>The Rich Results Test checks markup against Google's requirements for rich results and only reports types Google supports. The Schema Markup Validator checks any schema.org markup for valid syntax and vocabulary, but says nothing about Google eligibility.</p>
-<h3>Why does the Rich Results Test say no items were detected?</h3>
-<p>Either the page has no markup Google uses for rich results, which is normal for Service or WebSite markup, or the markup didn't load for Google's crawler. Check the source, then run the URL through the Schema Markup Validator.</p>
-<h3>Do structured data warnings hurt rankings?</h3>
-<p>No. A warning means a recommended field is missing; the item stays eligible. Fill it only with accurate information.</p>
-<h3>Why does Search Console still show errors I have fixed?</h3>
-<p>The reports reflect Google's last crawl, so they lag behind your changes, sometimes by weeks. Purge caches, use Test live URL in URL Inspection to confirm Google sees the fix, then click Validate fix.</p>
+<p>Google's Rich Results Test is the best place to start, because it shows whether a page is eligible for Google rich results. Pair it with the Schema Markup Validator for general schema checks.</p>
+<h3>How do I check rich snippets for my whole website?</h3>
+<p>Use the enhancement and shopping reports in Google Search Console. They list valid and invalid items for each schema type across all crawled pages, with example URLs.</p>
+<h3>Is Google's Structured Data Testing Tool still available?</h3>
+<p>No. Google retired it. Use the Rich Results Test for Google features and the Schema Markup Validator at schema.org for general validation.</p>
+<h3>Why does the Rich Results Test say my page is eligible but no rich snippet shows?</h3>
+<p>Eligibility only means the markup is valid. Google decides whether to show it based on quality, relevance, the query and feature restrictions. Recrawling can also take time.</p>
+<h3>Should I fix warnings in the Rich Results Test?</h3>
+<p>Fix warnings when you have genuine data for the missing field, such as brand or SKU. Warnings do not block eligibility, and you should never add fake values just to clear them.</p>
+<h3>Can I test structured data before publishing a page?</h3>
+<p>Yes. Choose the Code option in the Rich Results Test or Schema Markup Validator and paste your HTML or JSON-LD to check it before it goes live.</p>
 
-<p>Want your structured data tested template by template, duplicates removed and errors fixed at the source rather than page by page? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off schema fix, starting with a free review and a fixed quote.</p>
+<p>If your structured data is showing errors or duplicates, Samverse can clean it up as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, including WooCommerce product schema. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off schema audit.</p>
 `,
   },
   {
