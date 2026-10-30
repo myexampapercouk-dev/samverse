@@ -219,6 +219,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2 id="file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</h2>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
 
+<p>Updates sometimes break things when two plugins clash. Learn how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> before turning automatic updates back on.</p>
+
 <h2 id="before-you-re-enable-updates">Before you re-enable updates</h2>
 <p>A site that has not been updated for months may have many updates waiting. Updating everything at once can break it. A safer order:</p>
 <ol>

@@ -253,6 +253,8 @@ LIMIT 20;</code></pre>
 <h3>8. Upgrade hosting when you've outgrown it</h3>
 <p>If the dashboard is still slow with a lean plugin list, a clean database and current PHP, the server is the limit. Cheap shared plans give each site a small share of CPU and few PHP workers, so admin requests queue behind visitors and bots. A better plan, a VPS or managed WordPress hosting is the fix; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a>.</p>
 
+<p>On a network install, one busy subsite can slow the dashboard for all of them. See how to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a> when the shared database is the bottleneck.</p>
+
 <h2 id="woocommerce-admin-and-page-builder-editors">WooCommerce admin and page builder editors</h2>
 <ul>
   <li><strong>Scheduled actions:</strong> WooCommerce queues background work under WooCommerce &gt; Status &gt; Scheduled Actions. Thousands of pending or failed actions slow the admin and can delay emails, so find out which plugin creates them before clearing them.</li>

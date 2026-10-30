@@ -282,6 +282,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <h2 id="does-a-server-cron-make-the-site-faster">Does a server cron make the site faster?</h2>
 <p>Somewhat, mainly by making things predictable. With default WP-Cron, a visitor's page load can start a heavy job during a busy period. With a server cron, tasks run on a timetable and page loads no longer check the schedule. On its own it will not fix a slow site, but it removes one source of random slowdowns, and it is worth checking during <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> work.</p>
 
+<p>Heavy scheduled tasks can tie up PHP workers and cause gateway errors under load; see how to fix a <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 bad gateway in WordPress</a>.</p>
+
 <h2 id="common-mistakes-when-switching-to-a-server-cron">Common mistakes when switching to a server cron</h2>
 <ul>
   <li><strong>Adding the line below "stop editing":</strong> constants defined after wp-settings.php loads are ignored, so the visitor-triggered check keeps running.</li>
@@ -291,6 +293,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
   <li><strong>Interval too long:</strong> a once-an-hour job means a 9:05 scheduled post may appear at 10:00.</li>
 </ul>
 <p>Moving hosts is the usual moment these slip; it is part of the checklist I follow for <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<p>Networks run scheduled tasks per subsite, which adds up quickly. To <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>, a real server cron that loops over each site is usually one of the first fixes.</p>
 
 <h2 id="monthly-cron-health-checklist">Monthly cron health checklist</h2>
 <ul>
@@ -385,9 +389,9 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-502-504-gateway-timeout-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-502-504-gateway-timeout-fix.webp" alt="WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them</h3><p>How to fix a WordPress 502 bad gateway or 504 gateway timeout, what &quot;the gateway did not receive a timely response&quot; means and what to check or send your host.</p><span class="post-card-meta">11 October 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-backup-restore-guide/"><img class="post-card-img" src="/assets/og/blog-wordpress-backup-restore-guide.webp" alt="WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks</h3><p>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-plugin-conflicts-troubleshooting/"><img class="post-card-img" src="/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.webp" alt="How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention</h3><p>Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.</p><span class="post-card-meta">1 October 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-auto-updates/"><img class="post-card-img" src="/assets/og/blog-wordpress-auto-updates.webp" alt="WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?</h3><p>Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.</p><span class="post-card-meta">1 October 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

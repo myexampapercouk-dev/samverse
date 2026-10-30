@@ -2552,6 +2552,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </table>
 <p>If the slow part is server response, <a href="/blog/reduce-server-response-time-ttfb/">how to reduce TTFB</a> explains caching, PHP and hosting. For the full list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a></p>
 
+<p>Fonts affect both LCP and layout shift. Small changes such as fewer weights and self-hosting can <a href="/blog/web-fonts-performance/">reduce font load</a> without changing the design.</p>
+
 <h2>A sensible order of work</h2>
 <ol>
   <li>Check the field data in PageSpeed Insights and Search Console, mobile first.</li>
@@ -9501,6 +9503,8 @@ site:example.com/blog/ "net metering"</code></pre>
   <li><strong>Re-test</strong> the same pages and compare against your starting figures.</li>
 </ol>
 
+<p>Elementor loads Google Fonts and icon fonts by default. Trimming them is one of the simpler ways to <a href="/blog/web-fonts-performance/">reduce font load</a> on an Elementor site.</p>
+
 <h2>When the Elementor editor is slow</h2>
 <p>A slow editor is a different problem from slow pages, because the editor is never cached. The usual causes:</p>
 <ul>
@@ -10583,6 +10587,8 @@ wp option update blog_public 0</code></pre>
   <li><strong>Scheduled tasks:</strong> subscriptions, membership renewals and automated emails can run on a copy. WooCommerce Subscriptions detects a duplicate site and pauses automatic payments, but other plugins may not, so check.</li>
   <li><strong>Analytics and pixels:</strong> remove or disable tracking on staging so test visits don't pollute your data.</li>
 </ul>
+
+<p>Staging is also the safest way to test a host change. Here is how to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a> and check everything before switching DNS.</p>
 
 <h2>Pushing changes from staging to live</h2>
 <p>Always take a fresh backup of the live site first; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
@@ -12722,6 +12728,8 @@ function my_only_free_shipping( $rates ) {
 </ol>
 <p>Question 6 is the reverse test: you want the answer yes, because local text that only fits one place is exactly what a doorway lacks. Search Console helps with question 9: filter Performance by page to see which location pages earn anything. Pages that score well are worth improving; pages that score badly are usually better merged into a single areas page. The same test applies to our own city pages, such as <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, which is built around where work is actually done.</p>
 
+<p>If each branch runs as a separate subsite rather than a page, the same doorway risks apply; see <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> for how to keep a network of sites distinct.</p>
+
 <h2>How to fix existing doorway pages</h2>
 <ol>
   <li><strong>List every location page</strong> and check each one in Search Console's Performance report: impressions, clicks and the queries it appears for.</li>
@@ -13093,6 +13101,8 @@ wp cap list editor</code></pre>
   </tbody>
 </table>
 <p>A host's guarantee usually means a partial refund or credit if they miss it, and often excludes planned maintenance and problems caused by your own site. Your monitoring log is how you'd know whether the promise was kept.</p>
+
+<p>If the alert shows a gateway error rather than a full outage, see how to fix a <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 bad gateway in WordPress</a> and the related 504 timeout.</p>
 
 <h2>When an alert arrives</h2>
 <ol>
@@ -16167,6 +16177,8 @@ cf-cache-status: HIT</code></pre>
 </ul>
 <p>A partner page with each approved vendor's name, what they offer and a link to their site helps families and builds goodwill with vendors who refer clients to you. Caterers and decorators who work with venues have their own needs, described in <a href="/blog/website-for-catering-services/">websites for catering services</a> and <a href="/blog/website-for-wedding-decorators/">websites for wedding decorators</a>.</p>
 
+<p>Venues with guest rooms that also sell stays online need availability kept in step everywhere; see how a <a href="/blog/hotel-booking-engine-channel-manager/">booking engine and channel manager</a> handles that.</p>
+
 <h2>Parking, rooms and the practical details</h2>
 <p>Practical details decide as many bookings as the decor does. Put them on one page and link it from every space:</p>
 <ul>
@@ -16413,6 +16425,8 @@ cf-cache-status: HIT</code></pre>
   <li>Directions from a well-known landmark for the first visit</li>
 </ul>
 <p>An embedded map with the building pinned correctly, plus these details as text, helps visitors and Google alike; <a href="/blog/google-maps-on-website/">adding Google Maps to your website</a> covers the embed. If you run several buildings, give each its own page, address, photos and Google Business Profile, as <a href="/blog/multi-location-business-website/">websites for businesses with multiple branches</a> explains.</p>
+
+<p>Hostels that also take short stays through travel sites face double bookings unless rooms sync. A <a href="/blog/hotel-booking-engine-channel-manager/">booking engine and channel manager</a> keeps one calendar across every channel.</p>
 
 <h2>Visits, video tours and holding a bed</h2>
 <p>For most PGs the visit is the step just before a booking, so every page should lead to it. Keep the visit form short:</p>
@@ -21180,6 +21194,8 @@ Category:       Dentist</code></pre>
 <h2>Zoho Mail</h2>
 <p>Zoho is an Indian company with data centres in India, and Zoho Mail is the most affordable of the three big providers. At the time of writing, its Forever Free plan covers up to five users on one domain with a modest amount of storage each, but only through the web and Zoho's mobile apps, without IMAP or POP access for other email apps. The paid Mail Lite and Premium plans add storage, email app access and more admin features at a low price per user. It's a sensible choice for small teams that mostly need email, and Zoho Workplace adds documents and meetings if you need them.</p>
 
+<p>Email bundled with a hosting plan affects what that plan is worth; compare <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> before deciding where email should live.</p>
+
 <h2>Email from your web hosting</h2>
 <p>Many hosts, including Hostinger and most cPanel hosts, include mailboxes or sell them cheaply. That's fine for one or two basic addresses, but there are catches:</p>
 <ul>
@@ -22722,6 +22738,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Fixed departures are the heart of most trekking businesses, and the batch calendar is the page regular trekkers check first. Each batch should show its dates, the seats remaining and a status such as open, filling fast, full or waitlist. Seasonal price differences belong on the batch, not hidden in the terms.</p>
 <p>In WooCommerce each trek can be a product with one variation per batch, and the stock of each variation is the number of seats. When a deposit is paid, the seat count drops on its own, so two trekkers cannot buy the last seat at the same moment. Avoid editing seat counts by hand in a spreadsheet and then on the site; that is how batches get overbooked. A waitlist form for full batches catches people who would otherwise book elsewhere.</p>
 <p>Show a registration cut-off where it matters. Some routes need permits arranged in advance, and late bookings may not be possible even when seats are free.</p>
+
+<p>Operators who also run a camp, lodge or homestay can take direct room bookings too. Read how a <a href="/blog/hotel-booking-engine-channel-manager/">booking engine and channel manager</a> works before adding one.</p>
 
 <h2>Deposits, balances and cancellations</h2>
 <p>A deposit-first flow suits treks well: the trekker pays a part online to hold the seat, the balance is due by a date you set before departure, and a confirmation goes out with joining instructions. A partial payment plugin or a payment link sent on WhatsApp can handle the deposit through UPI, cards or net banking; <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a> compares gateways, fees and setup.</p>
@@ -26625,6 +26643,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <h2>Step 3: Add a COD fee, or reward prepaid instead</h2>
 <p>WooCommerce has no COD fee setting, so a fee needs a payment-based fees plugin or custom code. Whichever you use, the fee must appear in the checkout totals as soon as COD is selected, and be mentioned in the COD description, so nobody is surprised at the door. Ask your CA how the fee should be taxed and shown on your GST invoice; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> covers the invoice side.</p>
 <p>Many stores frame it the other way round: a small discount or free shipping for prepaid orders. The economics are similar, but a reward feels better than a penalty. WooCommerce coupons can't be limited to a payment method on their own, so this also needs a gateway-based discount plugin. Make paying online genuinely easy too, with UPI offered first on mobile; <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a> covers gateways and UPI.</p>
+
+<p>If COD disappears from checkout or orders will not place at all, work through the guide for <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a>.</p>
 
 <h2>Step 4: Confirm COD orders before you ship</h2>
 <table>
@@ -30535,6 +30555,8 @@ LIMIT 20;</code></pre>
 <h3>8. Upgrade hosting when you've outgrown it</h3>
 <p>If the dashboard is still slow with a lean plugin list, a clean database and current PHP, the server is the limit. Cheap shared plans give each site a small share of CPU and few PHP workers, so admin requests queue behind visitors and bots. A better plan, a VPS or managed WordPress hosting is the fix; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a>.</p>
 
+<p>On a network install, one busy subsite can slow the dashboard for all of them. See how to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a> when the shared database is the bottleneck.</p>
+
 <h2>WooCommerce admin and page builder editors</h2>
 <ul>
   <li><strong>Scheduled actions:</strong> WooCommerce queues background work under WooCommerce &gt; Status &gt; Scheduled Actions. Thousands of pending or failed actions slow the admin and can delay emails, so find out which plugin creates them before clearing them.</li>
@@ -31661,6 +31683,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li><strong>For development:</strong> open their live sites on your phone. Do they load quickly, work properly and send forms? Run a few through PageSpeed Insights; see <a href="/blog/website-speed-test-tools-explained/">speed test tools explained</a>.</li>
   <li><strong>For both:</strong> ask who registers the domain and hosting (it should be you), what happens after launch and who updates the site.</li>
 </ul>
+
+<p>A designer and a developer will often price the same project very differently. Before choosing on price alone, read <a href="/blog/compare-website-quotes/">why website quotes differ</a> so each quote covers the same work.</p>
 
 <h2>Hiring mistakes to avoid</h2>
 <ul>
@@ -35543,6 +35567,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 </ul>
 <p>For the full list of site-side causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
 
+<p>If the site was moved recently and slowness started then, retrace the steps to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a> and confirm caching, PHP and DNS were set up after the move.</p>
+
 <h2>When to upgrade your plan</h2>
 <p>Upgrade when you've optimised properly and still hit resource limits. Typical signs:</p>
 <ul>
@@ -36074,6 +36100,8 @@ Who checks it:
 Notes:                (price changes, plans to move)</code></pre>
 <p>Once a year, review the whole list in one sitting, ideally in the month with the most renewals.</p>
 
+<p>Renewal costs are easier to judge when you know the normal range; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> by plan type.</p>
+
 <h2>Who should own the billing</h2>
 <table>
   <thead><tr><th>Item</th><th>Account and billing should be with</th><th>Your developer's role</th></tr></thead>
@@ -36360,6 +36388,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 
 <h2>Once you're back in: use Site Health</h2>
 <p>Tools &gt; Site Health lists critical issues such as an outdated PHP version, missing PHP extensions or failed scheduled events. For conflicts that are hard to reproduce, the free Health Check &amp; Troubleshooting plugin can disable plugins and switch theme for your login only, while visitors see the normal site. If the log shows files you don't recognise, check the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> before reactivating everything.</p>
+
+<p>When the error only appears with certain plugins active together, the cause is a clash rather than one bad plugin; see how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a>.</p>
 
 <h2>How to stop it happening again</h2>
 <ul>
@@ -46741,6 +46771,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Test after every change, because over-aggressive deferring can break menus, forms or checkout. The detail is in <a href="/blog/eliminate-render-blocking-resources/">how to eliminate render-blocking resources</a>.</p>
 
+<p>When the LCP element is a text heading, the font is often what holds it back. Here is how to <a href="/blog/web-fonts-performance/">reduce font load</a> on WordPress.</p>
+
 <h2>LCP fixes by type of WordPress page</h2>
 <table>
   <thead><tr><th>Page type</th><th>Usual LCP element</th><th>First fixes to try</th></tr></thead>
@@ -47255,6 +47287,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <h2>Does a server cron make the site faster?</h2>
 <p>Somewhat, mainly by making things predictable. With default WP-Cron, a visitor's page load can start a heavy job during a busy period. With a server cron, tasks run on a timetable and page loads no longer check the schedule. On its own it will not fix a slow site, but it removes one source of random slowdowns, and it is worth checking during <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> work.</p>
 
+<p>Heavy scheduled tasks can tie up PHP workers and cause gateway errors under load; see how to fix a <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 bad gateway in WordPress</a>.</p>
+
 <h2>Common mistakes when switching to a server cron</h2>
 <ul>
   <li><strong>Adding the line below "stop editing":</strong> constants defined after wp-settings.php loads are ignored, so the visitor-triggered check keeps running.</li>
@@ -47264,6 +47298,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
   <li><strong>Interval too long:</strong> a once-an-hour job means a 9:05 scheduled post may appear at 10:00.</li>
 </ul>
 <p>Moving hosts is the usual moment these slip; it is part of the checklist I follow for <a href="/wordpress-migration/">WordPress migration</a>.</p>
+
+<p>Networks run scheduled tasks per subsite, which adds up quickly. To <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>, a real server cron that loops over each site is usually one of the first fixes.</p>
 
 <h2>Monthly cron health checklist</h2>
 <ul>
@@ -47987,6 +48023,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ol>
 <p>Once the site loads, remove any temporary changes you no longer need and record what fixed it, so the next person does not reintroduce the same loop. If the error appeared alongside a security warning, see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>, and for other error messages, <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and how to fix them</a>.</p>
 
+<p>Once the redirect loop is fixed, check that every image and script also loads over https. If the padlock is missing, see how to fix a <a href="/blog/mixed-content-warnings-fix/">mixed content warning in WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix ERR_TOO_MANY_REDIRECTS in WordPress?</h3>
 <p>Clear cookies and caches, set Cloudflare SSL to Full or Full (strict), make the WordPress Address and Site Address match, remove duplicate HTTPS rules in .htaccess or the hosting panel, then check redirect plugins.</p>
@@ -48239,6 +48277,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Multiple languages or currencies for international customers</li>
 </ul>
 <p>A good way to control cost is to separate the must-haves for launch from features that can wait until the store is selling.</p>
+
+<p>Hosting is one of the largest ongoing costs for a store. For typical ranges, see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> and what each plan includes.</p>
 
 <h2>One-time costs vs ongoing costs</h2>
 <p>Budget for running the store as well as building it. Some costs are paid once, some renew every month or year, and some grow with every order.</p>
@@ -49336,6 +49376,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ul>
 <p>Printed QR codes keep working only as long as the old domain keeps redirecting. For keeping listings consistent, see <a href="/blog/business-directories-citations-india/">business directories and citations in India</a>.</p>
 
+<p>Old links hardcoded with http or the old domain can trigger browser warnings after the switch; see how to fix a <a href="/blog/mixed-content-warnings-fix/">mixed content warning in WordPress</a>.</p>
+
 <h2>Monitor after the move</h2>
 <ul>
 <li><strong>First week:</strong> crawl a list of old URLs and confirm each redirects in a single hop to the right page. Check the new property's Pages report for errors.</li>
@@ -49852,6 +49894,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Run the partner's builds through your own quality check before the client sees them</li>
 </ul>
 <p>For campaign pages your team designs, a partner can also build focused <a href="/landing-page-design/">landing pages</a> with tracking already set up, so your media team can launch faster. The <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development guide</a> goes further into contracts and workflow.</p>
+
+<p>Agencies that sell builds without an in-house team often <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a>; agree scope, access and quality checks before the first client project goes out.</p>
 
 <h2>Your own site is a sample of your work</h2>
 <p>A prospect considering you for SEO or ads may well test your homepage in PageSpeed Insights or look at how your tracking is set up. A slow, script-heavy agency site undermines the pitch.</p>
@@ -51228,6 +51272,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Perfect hreflang won't rescue a poor translation. Google's spam policies list text translated by an automated tool without human review as an example of low-value, automatically generated content.</p>
 <p>Use native speakers for the pages that matter most, have a fluent reviewer edit any machine translation, and translate the whole experience: SEO titles, descriptions, menus, buttons, form messages and thank-you pages.</p>
 
+<p>Running each language as its own site in a network adds a few extra checks; see <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> for sitemaps, canonicals and domain mapping.</p>
+
 <h2>Common hreflang errors</h2>
 <table>
   <thead><tr><th>Error</th><th>What it means</th><th>Fix</th></tr></thead>
@@ -52466,6 +52512,8 @@ Support:           who to contact, and on what terms</code></pre>
 <h2>Using checker data to improve the store</h2>
 <p>Every pin code a shopper types is a small piece of demand data. Some checker plugins and apps log the pin codes entered and whether they were serviceable. Reviewing this log every month or so shows which areas people want delivery to, where you currently say no, and where COD is being requested most. That helps you decide whether to add a courier, extend a local delivery radius, or open COD to more areas.</p>
 <p>You can also use failed checks to capture interest. Instead of a dead end saying &quot;we do not deliver here&quot;, offer a short form or WhatsApp link so the shopper can be told when delivery reaches their area, or suggest an alternative such as store pickup. If you log pin codes, mention it in your privacy policy and keep only what you need; a pin code alone is less sensitive than a full address, but it is still customer data and should be handled carefully.</p>
+
+<p>A checker that conflicts with shipping rules can stop orders at the last step. If that happens, see the fixes for <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a>.</p>
 
 <h2>Performance and mobile usability</h2>
 <p>Large pin code lists can slow pages if loaded badly. A good plugin or custom build checks the pin code on the server or through a small request, rather than loading a huge list into every page. Test the checker on a mid-range phone over mobile data. Make sure the input uses a numeric keypad, accepts six digits only, and shows the result without reloading the page. Error messages should be plain, such as asking for a valid six-digit pin code.</p>
@@ -55743,6 +55791,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ol>
 <p>Review the sources of applications every month. If a campaign brings many enquiries but few outlet visits, the issue may be the ad message, the form questions or the follow-up speed rather than the website itself.</p>
 
+<p>Brands that give each franchisee its own subsite often use a network install. Read about <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> before choosing that structure.</p>
+
 <h2>Landing pages, SEO and speed</h2>
 <ul>
 <li>Make sure your official franchise page ranks for &quot;[brand] franchise&quot;, ahead of portals and imitators.</li>
@@ -57270,6 +57320,8 @@ Support:           who to contact, and on what terms</code></pre>
 <h2>WooCommerce and large stores</h2>
 <p>Online stores often have thousands of product images with many sizes each. Before bulk optimising, estimate the total number of images including thumbnails, check the plugin&#39;s quota, and run optimisation in batches. Make sure product zoom and gallery images still look sharp. The guide to <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers other store-specific fixes.</p>
 <p>If you are on Shopify, image compression works differently: Shopify serves images through its own CDN and generates sized versions automatically, so the main tasks are uploading sensibly sized images and keeping theme code from loading oversized versions.</p>
+
+<p>Running two optimisation plugins at once is a common cause of broken images and errors. If that happens, see how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> step by step.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -61182,6 +61234,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>A good developer will ask you plenty of questions too. Be careful with anyone who quotes before understanding your business.</p>
 
+<p>If local presence matters less than skills and process, it can make sense to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> more widely and judge developers on the same brief.</p>
+
 <h2>Step 5: compare proposals like for like</h2>
 <p>Quotes vary widely because people quote for different things. Compare scope, not just the total. A fair proposal spells out:</p>
 <ul>
@@ -61717,6 +61771,8 @@ if ( ! $link ) {
   <li>DB_HOST is right for the new host, which may not use localhost.</li>
 </ol>
 <p>Leave the old hosting account active for a week or two after the switch, as a fallback. A planned <a href="/wordpress-migration/">WordPress migration</a> copies and tests everything on the new host before DNS is switched, which is how this error is avoided in the first place.</p>
+
+<p>This error often appears straight after a move. If you are about to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a>, follow the full checklist so the database details are right first time.</p>
 
 <h2>What to tell your host</h2>
 <p>Support teams answer faster when the first message rules things out. Something like this works well:</p>
@@ -62695,6 +62751,8 @@ billed with the next payment
 Invoices: issued for every payment
 Cancellation: written notice; client pays for work completed to date;
 any unused part of the advance refunded as agreed</code></pre>
+
+<p>Payment terms are one reason two proposals look so different. For the other reasons, see <a href="/blog/compare-website-quotes/">why website quotes differ</a> and how to compare them on the same scope.</p>
 
 <h2>Red flags in payment terms</h2>
 <ul>
@@ -64120,6 +64178,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <li>Watch hosting resource usage in your panel, especially before sales or campaigns.</li>
 </ul>
 <p>Small regular checks are easier than a big rescue later, and they catch problems before visitors notice.</p>
+
+<p>Very slow responses can tip over into errors when the server gives up waiting. If visitors see one, here is how to fix a <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 bad gateway in WordPress</a>.</p>
 
 <h2>When to move hosting</h2>
 <p>If caching is on, PHP is current, plugins are lean and the database is clean, but TTFB is still high, hosting is the likely limit. Moving to a better plan or provider can help. Plan the move carefully with a backup, staging test and DNS change at a quiet time, so there is no downtime.</p>
@@ -67071,6 +67131,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </tbody>
 </table>
 <p>The article on <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a> explains how to plan for the second-year jump.</p>
+
+<p>Network installs outgrow shared plans sooner than single sites. Before upgrading, check the other ways to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>.</p>
 
 <h2>Signs you have outgrown your current hosting</h2>
 <ol>
@@ -71017,6 +71079,8 @@ or a cookie name starts with:
   <li>Confirm your real IP appears in logs.</li>
 </ol>
 
+<p>If the padlock disappears after turning on Cloudflare, the page is probably loading some files over http; see how to fix a <a href="/blog/mixed-content-warnings-fix/">mixed content warning in WordPress</a>.</p>
+
 <h2>Troubleshooting after the switch</h2>
 <table>
   <thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead>
@@ -71438,6 +71502,8 @@ or a cookie name starts with:
 <li>Re-enable plugins one by one until the problem returns.</li>
 </ol>
 <p>The process is covered in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting WordPress plugin conflicts</a>. Also check the browser console on the checkout page; a red JavaScript error often names the plugin responsible.</p>
+
+<p>If the checkout page itself fails before the gateway ever loads, the cause is usually elsewhere; see what to do when <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a> is the real problem.</p>
 
 <h2>Step 5: check versions and the server</h2>
 <ul>
@@ -73213,6 +73279,8 @@ done</code></pre>
 </table>
 <p>In short, Shopify's costs are predictable and rise with sales and app count, while WooCommerce has lower platform costs but asks you to pay for hosting and upkeep in time or money. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> covers the other side in detail, and <a href="/blog/ecommerce-website-cost-india/">e-commerce website costs in India</a> looks at what changes the build cost on either platform.</p>
 
+<p>Setup quotes from different developers can vary widely for the same store. Here is <a href="/blog/compare-website-quotes/">why website quotes differ</a> and what to check line by line.</p>
+
 <h2>A checklist for budgeting your Shopify store</h2>
 <ol>
 <li>Estimate monthly orders and average order value for the first year, and the share you expect to be prepaid rather than COD.</li>
@@ -73858,6 +73926,8 @@ done</code></pre>
 <li>you can remove that access at any time from the users and permissions settings.</li>
 </ul>
 <p>At the time of writing, collaborator accounts do not use one of your plan's staff seats, and you can require a collaborator request code so that nobody can send a request without it. When the project ends, ask for any custom code to be documented and remove access you no longer need.</p>
+
+<p>If part of the store or a companion site runs on WordPress instead, the same questions apply when you <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a>: who does the work, who owns the access and how changes are handled.</p>
 
 <h2>Red flags</h2>
 <ul>
@@ -74586,6 +74656,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>File permissions and the FTP prompt</h2>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
+
+<p>Updates sometimes break things when two plugins clash. Learn how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> before turning automatic updates back on.</p>
 
 <h2>Before you re-enable updates</h2>
 <p>A site that has not been updated for months may have many updates waiting. Updating everything at once can break it. A safer order:</p>
