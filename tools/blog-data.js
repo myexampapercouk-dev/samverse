@@ -71941,10 +71941,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-cash-on-delivery-india',
-    seoTitle: 'Cash on Delivery on Shopify in India: Setup and RTO Control',
+    seoTitle: 'Shopify Cash on Delivery India: Setup, Fees and RTO',
     title: 'Cash on Delivery on Shopify in India: Setting It Up, COD Fees, Order Confirmation, RTO and Partial Prepaid',
-    description: 'Offer cash on delivery on Shopify in India: enabling COD, fees and limits via apps, confirming orders, and cutting RTO with pin code checks and part prepaid.',
+    description: 'Set up Shopify cash on delivery in India: the manual payment method, COD fees, pin code and order-value limits, confirmation, RTO and partial prepaid.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -71952,7 +71953,7 @@ or a cookie name starts with:
 
 <p>Many Indian shoppers still prefer to pay on delivery, especially for a first order from an unfamiliar brand, so most stores offer it in some form. This guide covers the setup and the controls around it. If you want it configured and tested for you, it is part of my <a href="/shopify-developer/">Shopify store setup service</a>, along with payments, shipping and invoices. For the wider launch steps, see <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a>.</p>
 
-<h2>How COD works in Shopify</h2>
+<h2>How Shopify cash on delivery works in India</h2>
 <p>Shopify treats cash on delivery as a manual payment method, in the same family as bank transfer. That has a few practical effects worth understanding before you switch it on:</p>
 <ul>
 <li>The order is created straight away with a payment status of pending, and stock is reduced as usual.</li>
@@ -72032,7 +72033,11 @@ or a cookie name starts with:
 <li>Your RTO rate reviewed monthly by pin code and product, and the rules adjusted.</li>
 </ol>
 
+<p>COD touches the rest of the store too. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> explains where COD and RTO costs sit among your running costs. If you want COD rules, confirmation and couriers set up properly, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+
 <h2>FAQs</h2>
+<h3>How do I enable Shopify cash on delivery in India?</h3>
+<p>To enable Shopify cash on delivery in India, open the payments settings, add a manual payment method, choose cash on delivery, write short instructions for the buyer and save. Place a test order, then decide whether you need an app for COD fees, pin code or order-value limits and order confirmation. Online payments sit beside it; see <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a>.</p>
 <h3>Does Shopify support cash on delivery in India?</h3>
 <p>Yes. COD is added as a manual payment method in the payments settings. Orders arrive with payment pending and are marked as paid once the cash reaches you.</p>
 <h3>Can I charge a COD fee on Shopify?</h3>
@@ -72049,10 +72054,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-gst-invoices-india',
-    seoTitle: 'GST on Shopify in India: Tax Settings, HSN and Invoices',
+    seoTitle: 'Shopify GST Invoice India: Tax Settings, HSN and Apps',
     title: 'GST on Shopify for Indian Sellers: Tax Settings, HSN Codes, GST Invoice Apps and B2B GSTIN Capture',
-    description: 'Set up GST on Shopify in India: tax settings, tax-inclusive prices, HSN codes, a GST invoice app, B2B GSTIN capture and what to confirm with your CA.',
+    description: 'Shopify GST invoice setup for India: tax settings, tax-inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture and a checklist for your CA.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -72089,7 +72095,7 @@ or a cookie name starts with:
 <p>Shopify products have a field for a harmonised system code in the shipping and customs section. It was designed for international shipping, and the number of digits it expects may not match what your Indian invoices need. Many invoice apps let you enter HSN codes in their own settings or read them from a product metafield instead.</p>
 <p>A metafield is usually the tidiest choice: you create a field called HSN code once, it appears on every product's edit screen, and it can be filled in bulk through a product spreadsheet import. Whichever place you choose, use only one, and make sure the invoice app reads from it. The <a href="/blog/shopify-theme-customisation/">guide to Shopify theme customisation</a> explains metafields in more detail.</p>
 
-<h2>Choosing a GST invoice app</h2>
+<h2>Choosing a Shopify GST invoice app in India</h2>
 <p>Several apps generate GST invoices for Shopify stores, and their features differ. I won't recommend one here because listings and features change; test two or three with real orders before committing. Check each against this table.</p>
 <table>
 <thead><tr><th>What to check</th><th>Why it matters</th></tr></thead>
@@ -72134,7 +72140,11 @@ or a cookie name starts with:
 <li>Monthly export checked by your accountant for the first filing.</li>
 </ol>
 
+<p>GST works alongside payments and pricing. <a href="/blog/shopify-payment-gateways-india/">Payment gateways on Shopify in India</a> covers how money reaches you, and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> covers invoice apps among your running costs. If you need help with tax settings, HSN data or an invoice app, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+
 <h2>FAQs</h2>
+<h3>How do I create a Shopify GST invoice in India?</h3>
+<p>To create a Shopify GST invoice in India, set up India's tax options in the taxes and duties settings, add HSN codes to products, then install a GST invoice app and enter your GSTIN, business address and invoice numbering in it. The app builds an invoice for each order from Shopify's data. Place test orders inside and outside your state and have your CA check the result.</p>
 <h3>Does Shopify generate GST invoices in India?</h3>
 <p>Not by itself at the time of writing. Shopify calculates tax at checkout and sends order confirmations, but a GST-compliant invoice with your GSTIN, HSN codes and the tax split normally comes from an invoice app.</p>
 <h3>Should Shopify prices include GST?</h3>
@@ -72151,10 +72161,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-payment-gateways-india',
-    seoTitle: 'Payment Gateways on Shopify in India: Setup, UPI and Fees',
+    seoTitle: 'Shopify Payment Gateway India: Setup, UPI and Fees',
     title: 'Payment Gateways on Shopify in India: How They Connect, Fees, UPI, Failed Payments and Refunds',
-    description: 'How Indian payment gateways connect to Shopify: KYC, setup, the Shopify fee on outside providers, UPI at checkout, failed payments, refunds and settlements.',
+    description: 'How a Shopify payment gateway works in India: connecting a provider, KYC, UPI at checkout, the two sets of fees, failed payments, refunds and settlements.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -72162,7 +72173,7 @@ or a cookie name starts with:
 
 <p>This guide explains how the connection works and what to watch once orders start: failed payments, refunds and settlements. Choosing between providers is covered in <a href="/blog/payment-gateways-india-compared/">the guide to comparing Indian payment gateways</a>. If you want the provider connected and checkout tested on a phone before launch, that is part of my <a href="/shopify-developer/">Shopify store setup service</a>.</p>
 
-<h2>Why Indian stores use a third-party provider</h2>
+<h2>Shopify payment gateway in India: why a third-party provider</h2>
 <p>In countries where Shopify Payments is available, it is the default way to accept cards, and Shopify has not charged its own transaction fee to stores using it. In India, at the time of writing, that option does not exist, so every store that wants online payments connects an outside provider. Razorpay, PayU, Cashfree and PhonePe are examples of providers Indian stores use with Shopify; which ones are listed for your store, and on what terms, can change, so check the payments settings in your own admin.</p>
 <p>The provider holds the merchant account, so the relationship, the KYC and the payouts are between your business and them. Shopify only passes the shopper to the provider and records the result.</p>
 
@@ -72235,7 +72246,11 @@ or a cookie name starts with:
 <li>COD set up separately as a manual method, if you offer it.</li>
 </ol>
 
+<p>Payments are one part of the launch. <a href="/blog/shopify-store-setup-india/">Setting up a Shopify store in India</a> puts them in order with domain, GST and shipping, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a> covers the tax side, and <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers delivery. If you are still choosing a platform, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>. For help connecting and testing a gateway, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+
 <h2>FAQs</h2>
+<h3>Which Shopify payment gateway in India should I choose?</h3>
+<p>Choose the Shopify payment gateway in India that is available as a Shopify integration, accepts your business type at KYC, supports the methods your buyers use (UPI first, then cards, net banking and wallets), settles on a schedule your cash flow can live with and handles refunds cleanly. Compare the provider's fees together with any Shopify transaction fee. <a href="/blog/payment-gateways-india-compared/">Payment gateways in India compared</a> covers the criteria in more detail.</p>
 <h3>Is Shopify Payments available in India?</h3>
 <p>Not at the time of writing. Indian stores connect a third-party provider instead. Check Shopify's current help pages, as availability by country changes.</p>
 <h3>Which payment gateways work with Shopify in India?</h3>
@@ -72252,10 +72267,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-shipping-india',
-    seoTitle: 'Shopify Shipping in India: Zones, Rates and Couriers',
+    seoTitle: 'Shopify Shipping Rates India: Zones, Pin Codes, Couriers',
     title: 'Shopify Shipping in India: Zones, Rates, Pin Code Serviceability, Couriers, NDR and RTO',
-    description: 'Set up Shopify shipping for India: zones and rates, free-shipping thresholds, pin code serviceability, courier and aggregator apps, NDR, RTO and packaging.',
+    description: 'Set Shopify shipping rates in India: zones, weight and order-value rates, free-shipping thresholds, pin code checks, courier apps, NDR, RTO and packaging.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -72273,7 +72289,7 @@ or a cookie name starts with:
 <p>Shopify also offers local delivery, which can be limited by postal codes or a distance from your location, and local pickup from a shop or warehouse. These suit a store that delivers in its own city alongside national courier shipping. Check how they behave at checkout before relying on them.</p>
 <p>Live courier-calculated rates at checkout depend on your plan and the courier app, so check availability rather than assuming they are included.</p>
 
-<h2>Choosing rates for Indian shoppers</h2>
+<h2>Setting Shopify shipping rates in India</h2>
 <p>Indian shoppers are quick to abandon a cart over an unexpected shipping charge, so the aim is a rate that is simple to understand and still covers your average cost.</p>
 <table>
 <thead><tr><th>Situation</th><th>Rate setup in Shopify</th><th>Check before launch</th></tr></thead>
@@ -72341,7 +72357,11 @@ or a cookie name starts with:
 <li>A shipping policy stating delivery areas, times, charges and what happens to refused parcels.</li>
 </ol>
 
+<p>Shipping decisions affect the rest of the store. <a href="/blog/shopify-gst-invoices-india/">GST on Shopify</a> covers tax on shipping charges with your CA, <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a> covers prepaid orders, and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> covers courier and app costs. For help setting up zones, rates and a courier app, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+
 <h2>FAQs</h2>
+<h3>How do I set Shopify shipping rates in India?</h3>
+<p>To set Shopify shipping rates in India, go to the shipping and delivery settings, create a zone for India, then add rates by weight, by order value or as a flat charge, and add a free-shipping rate above the threshold your margin can carry. Make sure every product has a correct weight, then check the rates with test orders to a few pin codes.</p>
 <h3>Can I set Shopify shipping rates by pin code?</h3>
 <p>Not with standard zones at the time of writing; they work by country and state. Local delivery can use postal codes for your own area, and courier or pin code apps handle the rest.</p>
 <h3>Does Shopify ship orders for me in India?</h3>
@@ -72358,10 +72378,11 @@ or a cookie name starts with:
   },
   {
     slug: 'hire-shopify-developer-india',
-    seoTitle: 'Hiring a Shopify Developer in India: What to Ask',
+    seoTitle: 'Hire a Shopify Developer in India: What to Ask First',
     title: 'Hiring a Shopify Developer in India: What They Do, When You Need One, What to Ask and Red Flags',
-    description: 'What a Shopify developer does, how they differ from a listed Shopify partner or an agency, when you need one, what to ask, collaborator access and red flags.',
+    description: 'Before you hire a Shopify developer in India: what they do, freelancer vs partner vs agency, when you need one, questions to ask, access and red flags.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'hire-wordpress-developer'],
     body: `
@@ -72407,7 +72428,7 @@ or a cookie name starts with:
 </ul>
 <p>The general version of this decision is covered in <a href="/blog/hire-developer-vs-diy-website/">hiring a developer vs doing it yourself</a>.</p>
 
-<h2>Questions to ask before you hire</h2>
+<h2>Questions to ask before you hire a Shopify developer in India</h2>
 <ol>
 <li><strong>Which Shopify stores have you worked on, and what did you do on each?</strong> Ask for specifics: setup, theme code, migration. Some work is under confidentiality, so a developer may describe a project without naming it; that is reasonable, but the description should be concrete.</li>
 <li><strong>Will you work on a duplicate theme?</strong> The answer should be yes, with a preview link for you to check before anything is published.</li>
@@ -72458,6 +72479,8 @@ or a cookie name starts with:
 <p>City notes for Shopify brands: <a href="/wordpress-shopify-developer-surat/">Surat</a> textiles, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a> jewellery and handicrafts, <a href="/wordpress-shopify-developer-lucknow/">Lucknow</a> chikankari and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a> hosiery.</p>
 
 <h2>FAQs</h2>
+<h3>Where can I hire a Shopify developer in India?</h3>
+<p>You can hire a Shopify developer in India through Shopify's partner directory, freelance platforms, referrals from other store owners or directly from a developer's own website. Whichever route you take, ask the questions above and check how they handle access and ownership. If you want to talk about your store, see my <a href="/shopify-developer/">Shopify developer services</a>.</p>
 <h3>Do I need a Shopify developer to start a store?</h3>
 <p>Not always. A small store on a free theme can be set up by the owner. A developer helps when you need custom design, a migration, integrations or a tested launch by a fixed date.</p>
 <h3>Should I give a developer my Shopify password?</h3>
@@ -72474,10 +72497,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-theme-change-without-losing-seo',
-    seoTitle: 'Change Your Shopify Theme Without Losing SEO',
+    seoTitle: 'How to Change Shopify Theme Without Losing SEO',
     title: 'Changing Your Shopify Theme Without Losing SEO: Duplicate, Preview, App Embeds, Templates, Redirects and Launch Checks',
-    description: 'Switch or redesign a Shopify theme without losing search traffic: the duplicate theme, app embeds, metafields, custom templates, redirects and checks.',
+    description: 'How to change Shopify theme without losing SEO: what a theme controls, benchmarking, an unpublished copy, app embeds, metafields, redirects, launch checks.',
     date: '2026-10-27',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'website-redesign'],
     body: `
@@ -72502,7 +72526,7 @@ or a cookie name starts with:
 </table>
 <p>The fixed URLs are the reason a Shopify theme change is safer than most redesigns. The risk sits in the rows marked theme.</p>
 
-<h2>Before you start: benchmark and inventory</h2>
+<h2>How to change Shopify theme without losing SEO: benchmark first</h2>
 <ol>
 <li><strong>Record the current numbers.</strong> Export the last three months of Search Console performance by page and by query, and note sales by landing page from your analytics.</li>
 <li><strong>List the pages that matter.</strong> Usually the home page, the top collections, best-selling products and any blog posts that bring traffic.</li>
@@ -72550,7 +72574,11 @@ or a cookie name starts with:
 </ol>
 <p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> shows which reports to watch.</p>
 
+<p>A theme change is a good moment to fix other things. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> covers paid theme and app costs, and <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a> covers the bigger job when the platform changes too. For a theme switch handled with SEO checks, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+
 <h2>FAQs</h2>
+<h3>How do I change my Shopify theme without losing SEO?</h3>
+<p>To change your Shopify theme without losing SEO, record current rankings and traffic, list what the old theme outputs (titles, headings, structured data, internal links, custom templates and app embeds), build the new theme as an unpublished copy, match those items, publish in a quiet period and watch Search Console for a few weeks.</p>
 <h3>Will changing my Shopify theme change my URLs?</h3>
 <p>No. Products, collections, pages and blog posts keep their URLs because they are stored in the admin, not the theme. URLs change only if you edit handles yourself.</p>
 <h3>Will I lose my product descriptions or images?</h3>
