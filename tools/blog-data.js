@@ -74696,4 +74696,351 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Stuck with a site you cannot update, or one that is far behind? <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers safe catch-up updates and ongoing care, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
   },
+  {
+    slug: 'gravity-forms-vs-contact-form-7',
+    seoTitle: 'Gravity Forms vs Contact Form 7: Which Should You Use?',
+    title: 'Gravity Forms vs Contact Form 7: Features, Limits and Which One Your WordPress Site Needs',
+    description: 'Gravity Forms vs Contact Form 7 compared on builder, entries, logic, calculations, integrations and spam, with clear advice on which suits your WordPress site.',
+    date: '2026-10-30',
+    category: 'Guides',
+    related: ['wordpress-website-development', 'hire-wordpress-developer'],
+    body: `
+<p>Gravity Forms vs Contact Form 7 comes down to complexity: Contact Form 7 is a free, lightweight plugin for simple contact forms, while Gravity Forms is a paid plugin for complex forms with saved entries, conditional logic, calculations, multi-page layouts and integrations. For a basic enquiry form, Contact Form 7 is enough; for applications, quotes or workflows, Gravity Forms is the better tool.</p>
+<p>Below is a practical comparison from building and maintaining both on business sites, plus guidance on which to pick.</p>
+
+<h2>Gravity Forms vs Contact Form 7 at a glance</h2>
+<table>
+<thead><tr><th></th><th>Contact Form 7</th><th>Gravity Forms</th></tr></thead>
+<tbody>
+<tr><td>Cost</td><td>Free</td><td>Paid annual licence (check the official site for current plans)</td></tr>
+<tr><td>Builder</td><td>Text and tag markup</td><td>Visual drag and drop</td></tr>
+<tr><td>Saved entries</td><td>Needs Flamingo</td><td>Built in, with search, notes and export</td></tr>
+<tr><td>Conditional logic</td><td>Add-on</td><td>Built in on fields, pages, notifications and confirmations</td></tr>
+<tr><td>Multi-page forms</td><td>Add-on</td><td>Built in, with progress bar</td></tr>
+<tr><td>Calculations</td><td>Add-on</td><td>Built in (number and product fields)</td></tr>
+<tr><td>File uploads</td><td>Yes</td><td>Yes, including multiple files</td></tr>
+<tr><td>Integrations</td><td>Third-party add-ons</td><td>Official add-ons for many CRMs, email tools and payments</td></tr>
+<tr><td>Spam protection</td><td>reCAPTCHA, Akismet, add-ons</td><td>Honeypot, reCAPTCHA, Akismet, add-ons</td></tr>
+<tr><td>Styling</td><td>Theme-dependent, needs CSS</td><td>Modern default theme, settings per form</td></tr>
+<tr><td>Support</td><td>Community forum</td><td>Official support with licence</td></tr>
+</tbody>
+</table>
+
+<h2>Where Contact Form 7 wins</h2>
+<ul>
+<li><strong>Cost.</strong> It is free, and so are most of its add-ons.</li>
+<li><strong>Weight.</strong> It is light, and with a little configuration it can load its scripts only on pages that contain a form.</li>
+<li><strong>Developer control.</strong> The markup-based forms are quick for a developer to write and easy to keep in version control.</li>
+<li><strong>Simple needs.</strong> Name, phone, email, message and a submit button is exactly what CF7 was built for.</li>
+</ul>
+<p>The weak spots are well known: entries are not saved by default, spam needs extra protection, and email delivery depends on your host unless you set up SMTP. Fix those three and CF7 is dependable. Our guides on <a href="/blog/stop-contact-form-spam/">stopping contact form spam</a> and <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a> cover both fixes.</p>
+
+<h2>Where Gravity Forms wins</h2>
+<ul>
+<li><strong>Complex forms.</strong> Admission applications, loan or insurance enquiries, job applications and long quote forms are much easier to build and maintain.</li>
+<li><strong>Conditional logic everywhere.</strong> Show fields, skip pages and route notifications to different teams based on answers, for example sending service enquiries to one inbox and sales enquiries to another.</li>
+<li><strong>Calculations and quotes.</strong> Build simple estimate calculators using number fields and formulas.</li>
+<li><strong>Entries as a mini database.</strong> Search, filter, add notes, mark as read and export to CSV from the dashboard.</li>
+<li><strong>Integrations.</strong> Official and third-party add-ons connect to CRMs, email platforms, spreadsheets and payment processors, so leads do not sit in an inbox. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
+<li><strong>Developer hooks.</strong> Gravity Forms has extensive actions and filters for custom behaviour. If that term is new, our explainer on <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters</a> covers the basics.</li>
+</ul>
+
+<h2>Real-world examples: which plugin each form needs</h2>
+<p>Abstract feature lists are less useful than real form types. Here is how I would match common business forms to each plugin.</p>
+<h3>A clinic appointment request</h3>
+<p>Name, phone, preferred date, doctor and a short message. Contact Form 7 handles this well. If the clinic wants requests for each doctor routed to a different receptionist, Gravity Forms conditional notifications make that simpler, though CF7 can do it with a little customisation.</p>
+<h3>A coaching institute admission form</h3>
+<p>Student details, parent details, course choice, previous marks, photo upload and a document upload, often over several steps. This is a Gravity Forms job. Multi-page layout, saved partial progress via an add-on, and searchable entries for the admissions team all matter here.</p>
+<h3>A manufacturer's request for quote</h3>
+<p>Product selection, quantities, specifications, delivery location and drawing upload. Gravity Forms handles product lists, conditional fields per product type and routing to the right sales person. Our guide to <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> explains what to ask.</p>
+<h3>A simple "contact us" page</h3>
+<p>Contact Form 7, set up properly. Paying for Gravity Forms here adds cost without benefit.</p>
+<h3>A service cost estimator</h3>
+<p>Visitors choose options and see an estimated range before submitting. Gravity Forms calculations do this without custom code; in Contact Form 7 it means add-ons or custom JavaScript.</p>
+<p>The pattern is consistent: the more the form branches, calculates or needs to be worked through by a team afterwards, the more Gravity Forms earns its licence.</p>
+
+<h2>Which one should you choose?</h2>
+<table>
+<thead><tr><th>Your form</th><th>Recommendation</th></tr></thead>
+<tbody>
+<tr><td>Basic contact or enquiry form</td><td>Contact Form 7 (with SMTP, entries and spam protection)</td></tr>
+<tr><td>Simple form that a non-technical owner edits</td><td>A visual builder such as WPForms or Fluent Forms</td></tr>
+<tr><td>Multi-step lead qualification form</td><td>Gravity Forms</td></tr>
+<tr><td>Admission or job application with uploads</td><td>Gravity Forms</td></tr>
+<tr><td>Quote calculator or estimate form</td><td>Gravity Forms</td></tr>
+<tr><td>B2B request for quote with product lists</td><td>Gravity Forms</td></tr>
+<tr><td>Agency site with many client sites</td><td>Depends on licence terms and team skills; many agencies standardise on one</td></tr>
+</tbody>
+</table>
+<p>If neither feels quite right, there are other options in between. See the wider <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins comparison</a>.</p>
+
+<h2>Performance: does Gravity Forms slow your site?</h2>
+<p>Both plugins are reasonably efficient when set up properly. Problems usually come from loading form scripts and styles on every page, or from adding many add-ons. With either plugin:</p>
+<ul>
+<li>Load form assets only on pages that contain a form, using the plugin setting or a script manager.</li>
+<li>Avoid loading reCAPTCHA site-wide; it is one of the heavier scripts on many sites.</li>
+<li>Exclude form pages from aggressive JavaScript delay if the form stops working after optimisation.</li>
+</ul>
+<p>If your site is slow overall, the form is rarely the main cause. Our <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service looks at the full picture.</p>
+
+<h2>Switching from Contact Form 7 to Gravity Forms</h2>
+<ol>
+<li>List every page, widget and popup using a CF7 shortcode.</li>
+<li>Export any stored Flamingo entries.</li>
+<li>Rebuild each form in Gravity Forms, adding logic where it simplifies the form.</li>
+<li>Set up notifications, confirmations and a thank-you page redirect.</li>
+<li>Reconnect conversion tracking for Google Ads and Meta; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking setup</a>.</li>
+<li>Replace the shortcodes, test on mobile, and keep CF7 active for a short overlap before removing it.</li>
+</ol>
+<p>Moving the other way, from Gravity Forms to CF7, is unusual and only makes sense when the forms have become simpler than the tool. Remember to export entries first, because they will not carry across.</p>
+
+<h2>Maintenance and long-term cost</h2>
+<p>The licence is only part of the cost. Think about who will maintain the forms over the next few years.</p>
+<ul>
+<li><strong>Contact Form 7</strong> costs nothing to license, but every extra feature means another add-on from a different author. Each add-on is one more thing to update, and one more thing that can break after a WordPress or PHP upgrade. Sites with five or six CF7 add-ons often end up harder to maintain than one Gravity Forms install.</li>
+<li><strong>Gravity Forms</strong> keeps most features in one product with official add-ons from the same team, which usually means fewer compatibility surprises. The trade-off is a renewal you must keep active for updates and support. An expired licence on a business-critical form plugin is a security risk, not a saving.</li>
+<li><strong>Editing by the owner.</strong> If staff need to add a field or change who receives notifications, the Gravity Forms visual editor is far easier for them than CF7 markup, which saves developer time on small changes.</li>
+</ul>
+<p>Never use a nulled copy of Gravity Forms to avoid the licence. Pirated premium plugins are a common route for malware; our article on <a href="/blog/nulled-themes-plugins-risks/">nulled themes and plugins</a> explains the risk.</p>
+
+<h2>Common mistakes with either plugin</h2>
+<ul>
+<li>Not setting up SMTP, so notifications silently land in spam or never send.</li>
+<li>Sending notifications from the visitor's email address, which fails email authentication. Use your own domain address as the sender and the visitor's address as reply-to.</li>
+<li>No thank-you page or confirmation, so visitors are unsure the form worked and ad platforms cannot count conversions.</li>
+<li>Asking for too many fields on a first contact form.</li>
+<li>Never testing the form after plugin or theme updates.</li>
+</ul>
+<p>Regular form tests are part of our <a href="/wordpress-maintenance/">WordPress maintenance</a> plans, because a broken form is the most expensive silent failure on a business site. If you need a complex Gravity Forms build or a clean CF7 setup, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to handle it.</p>
+
+<h2>FAQs</h2>
+<h3>Is Gravity Forms better than Contact Form 7?</h3>
+<p>For complex forms, yes: it includes saved entries, conditional logic, multi-page forms, calculations and integrations. For a simple contact form, Contact Form 7 does the same job for free.</p>
+<h3>Is Gravity Forms free?</h3>
+<p>No. Gravity Forms is a paid plugin with annual licences. Contact Form 7 is free.</p>
+<h3>Does Contact Form 7 have conditional logic?</h3>
+<p>Not built in. Third-party add-ons provide it, but complex logic is much easier to build and maintain in Gravity Forms.</p>
+<h3>Which is better for multi-step forms, Gravity Forms or Contact Form 7?</h3>
+<p>Gravity Forms, which has multi-page forms with progress bars built in. Contact Form 7 needs an add-on and is harder to maintain for long forms.</p>
+<h3>Can I import Contact Form 7 forms into Gravity Forms?</h3>
+<p>There is no reliable direct import for most setups. Rebuilding the forms is usually quicker and gives you the chance to tidy fields and add logic.</p>
+<h3>Which uses fewer resources, Gravity Forms or Contact Form 7?</h3>
+<p>Both are light when their assets load only on form pages. Contact Form 7 is smaller, but the difference is rarely what makes a site slow.</p>
+`,
+  },
+  {
+    slug: 'squeeze-page-vs-landing-page',
+    seoTitle: 'Squeeze Page vs Landing Page: Differences and When to Use',
+    title: 'Squeeze Page vs Landing Page: The Differences, Examples and Which One Your Campaign Needs',
+    description: 'Squeeze page vs landing page explained: what each one is for, how they differ in length and form fields, and how to build either one well on WordPress.',
+    date: '2026-10-30',
+    category: 'Growth',
+    related: ['landing-page-design', 'wordpress-website-development'],
+    body: `
+<p>A squeeze page is a type of landing page built for one action only: getting a visitor to hand over an email address or phone number, usually in exchange for something free. Every squeeze page is a landing page, but most landing pages are not squeeze pages, because they also explain, persuade and sell.</p>
+<p>The choice between them depends on how much a visitor needs to know before acting. Below are the practical differences, when each one works, and how I build them on WordPress so they load fast and track properly.</p>
+
+<h2>What is a landing page?</h2>
+<p>A landing page is any standalone page that a visitor lands on from a campaign, such as a Google ad, a Meta ad, an email or a QR code, with a single goal. That goal might be a booking, a quote request, a purchase, a demo or a download. Unlike a normal website page, it removes the main menu and side routes so the visitor focuses on one action.</p>
+<p>Landing pages can be long. A page selling a coaching course or a solar installation often runs to many sections: the problem, the offer, how it works, proof, pricing approach, FAQs and the form. For a fuller comparison with a normal site, read <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
+
+<h2>What is a squeeze page?</h2>
+<p>A squeeze page is a short, focused landing page that "squeezes" contact details out of a visitor. It typically has:</p>
+<ul>
+<li>A strong headline naming the free thing and its benefit.</li>
+<li>Two to four bullet points on what the visitor gets.</li>
+<li>A form with one or two fields, often just name and email or a WhatsApp number.</li>
+<li>One button, and nothing else to click.</li>
+</ul>
+<p>The free thing is called a lead magnet: a checklist, a price guide, a sample chapter, a webinar seat, a discount code or a free consultation slot. Our guide to <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> has ideas that work for Indian service businesses.</p>
+
+<h2>Squeeze page vs landing page: the key differences</h2>
+<table>
+<thead><tr><th></th><th>Squeeze page</th><th>Landing page</th></tr></thead>
+<tbody>
+<tr><td>Main goal</td><td>Capture an email or phone number</td><td>Any single conversion: enquiry, booking, sale, download</td></tr>
+<tr><td>Length</td><td>Short, often one screen</td><td>Short to very long, depending on the offer</td></tr>
+<tr><td>Form fields</td><td>One or two</td><td>As many as the conversion needs</td></tr>
+<tr><td>Offer</td><td>Usually free (lead magnet)</td><td>Free or paid</td></tr>
+<tr><td>Content</td><td>Headline, bullets, form</td><td>Benefits, details, proof, FAQs, form</td></tr>
+<tr><td>Best traffic</td><td>Cold audiences who do not know you yet</td><td>Warm or high-intent searchers</td></tr>
+<tr><td>What happens next</td><td>Email or WhatsApp follow-up sequence</td><td>Sales call, quote, checkout</td></tr>
+</tbody>
+</table>
+<p>The simplest way to remember it: a squeeze page starts a relationship, a landing page usually asks for a decision.</p>
+
+<h2>When to use a squeeze page</h2>
+<ul>
+<li><strong>Cold social traffic.</strong> People scrolling Instagram are not ready to request a quote, but many will download a useful checklist.</li>
+<li><strong>Building an email or WhatsApp list</strong> before a launch, festival sale or new course batch.</li>
+<li><strong>Webinars and events,</strong> where the only action is registering.</li>
+<li><strong>Low-cost or free offers</strong> where explaining more would only add friction.</li>
+</ul>
+<p>A squeeze page only pays off if there is a follow-up. Without an email sequence or a sales call process, you are simply collecting addresses. Set up the follow-up first; our guide on <a href="/blog/email-newsletter-small-business/">email newsletters for small businesses</a> covers the basics.</p>
+
+<h2>When a full landing page is the better choice</h2>
+<ul>
+<li><strong>Search ads for buying-intent keywords</strong> such as "website developer near me" or "solar panel installation cost". These people want details now.</li>
+<li><strong>Higher-value services</strong> where trust matters: clinics, real estate, B2B manufacturing, coaching admissions.</li>
+<li><strong>Direct sales</strong> of a product or package.</li>
+<li><strong>Anything with a price question.</strong> If visitors need to understand what affects cost, give them that context instead of hiding it behind a form.</li>
+</ul>
+<p>For paid search in particular, Google rates the landing page experience, and a thin squeeze page for a high-intent keyword can hurt your quality score. See <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste Google Ads budget</a>.</p>
+
+<h2>What both pages need to convert</h2>
+<ol>
+<li><strong>One goal.</strong> One form, one button wording, no main menu.</li>
+<li><strong>A headline that matches the ad.</strong> If the ad promises a free price guide, the page headline should say exactly that.</li>
+<li><strong>Fast mobile loading.</strong> Most campaign traffic in India arrives on phones, often on patchy networks. Keep heavy sliders and videos off squeeze pages.</li>
+<li><strong>Short forms.</strong> Every extra field costs submissions. Ask for more only when you need it to qualify the lead; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> help when you do.</li>
+<li><strong>A thank-you page.</strong> Send people to a dedicated page after submitting, so you can track conversions and tell them what happens next. Our guide to <a href="/blog/thank-you-pages-forms/">thank-you pages</a> explains why.</li>
+<li><strong>Tracking before launch.</strong> Google Ads and Meta conversion events must fire on the thank-you page, or you cannot tell which ads work.</li>
+</ol>
+
+<h2>Building a squeeze page or landing page on WordPress</h2>
+<p>You do not need a separate landing page tool if your site already runs on WordPress. A typical build looks like this:</p>
+<ol>
+<li>Create a new page and choose a blank or canvas template so the header menu and footer are hidden.</li>
+<li>Build the layout with the block editor or Elementor, keeping it to the sections the page actually needs.</li>
+<li>Add a form from your form plugin with only the required fields, and set it to redirect to a thank-you page.</li>
+<li>Connect the form to your email tool or CRM so leads are not stuck in an inbox. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
+<li>Set the page to noindex if it exists only for ads and duplicates content elsewhere on the site.</li>
+<li>Test on a real phone over mobile data before turning the ads on.</li>
+</ol>
+
+<h2>Squeeze page and landing page examples</h2>
+<p>Here is how the same business might use each page type, so the difference is concrete rather than theoretical.</p>
+<ul>
+<li><strong>A coaching institute.</strong> Squeeze page: "Download the free syllabus and study plan for the next exam", with name and WhatsApp number. Landing page: the full course page for a new batch, with faculty, schedule, fee structure approach, results policy and an admission enquiry form.</li>
+<li><strong>An interior designer.</strong> Squeeze page: "Get our 2BHK design checklist", email only. Landing page: a "modular kitchen design in Pune" page with project photos, process, timelines and a site visit request form.</li>
+<li><strong>A clinic.</strong> Squeeze page: rarely the right fit, because patients want to book, not download. Landing page: a treatment page with doctor details, what to expect, FAQs and an appointment form.</li>
+<li><strong>An online store.</strong> Squeeze page: "Join the list for early access to the Diwali sale", with a discount code as the reward. Landing page: a collection page built for one ad campaign, with products and a clear add-to-cart path.</li>
+</ul>
+<p>Notice the pattern. The squeeze page offers something small and immediate to people early in their decision. The landing page serves people who already know roughly what they want and need enough information to take the next step with confidence.</p>
+
+<h2>Testing which one works for you</h2>
+<p>If you are not sure, run both. Send half the traffic from the same ad to a squeeze page offering a free guide and half to a full landing page asking for an enquiry, then compare cost per lead and, more importantly, how many of those leads become customers. A squeeze page often produces cheaper leads that need more nurturing. Our guide to <a href="/blog/landing-page-ab-testing/">landing page A/B testing</a> explains how to run a fair test without fooling yourself with small numbers.</p>
+<p>If you want a page built and tracked properly from the start, our <a href="/landing-page-design/">landing page design</a> service covers both squeeze pages and full campaign pages, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing campaign work.</p>
+
+<h2>FAQs</h2>
+<h3>What is the difference between a squeeze page and a landing page?</h3>
+<p>A squeeze page is a short landing page that only collects an email or phone number, usually for a free resource. A landing page is any single-goal campaign page, which can be long and can ask for an enquiry, booking or purchase.</p>
+<h3>Is a squeeze page the same as a landing page?</h3>
+<p>It is one type of landing page. All squeeze pages are landing pages, but not all landing pages are squeeze pages.</p>
+<h3>Is a squeeze page the same as a lead capture page or opt-in page?</h3>
+<p>Mostly yes. Lead capture page and opt-in page are common names for the same idea: a page whose only job is collecting contact details.</p>
+<h3>Should I use a squeeze page for Google Ads?</h3>
+<p>For high-intent search keywords, a fuller landing page usually performs better and supports a better landing page experience rating. Squeeze pages suit colder traffic such as social ads and content promotion.</p>
+<h3>How long should a squeeze page be?</h3>
+<p>Short enough to read in a few seconds: a headline, a few bullet points, a one or two field form and a button. If you need to explain much more, you probably need a landing page instead.</p>
+<h3>Can I build a squeeze page in WordPress without extra software?</h3>
+<p>Yes. A blank page template, the block editor or Elementor, and your existing form plugin are enough. Connect the form to your email tool and add a thank-you page for tracking. An <a href="/elementor-developer/">Elementor developer</a> can set up reusable templates if you run many campaigns.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-vendor-onboarding',
+    seoTitle: 'WooCommerce Vendor Onboarding: Seller Onboarding Process',
+    title: 'WooCommerce Vendor Onboarding: A Step-by-Step Seller Onboarding Process for Multi-Vendor Stores',
+    description: 'How to set up WooCommerce vendor onboarding: registration forms, KYC and GST checks, approval, store setup, payouts and the seller onboarding process.',
+    date: '2026-10-30',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>WooCommerce vendor onboarding is the process a new seller goes through on your multi-vendor store, from filling in a registration form to making their first sale. In WooCommerce it is handled by a marketplace plugin such as Dokan, WCFM or WC Vendors, plus the rules you set for verification, approval, store setup and payouts.</p>
+<p>The plugin gives you the screens. The process is up to you, and a weak one leads to half-finished shops, wrong product listings and payout disputes. Below is a seller onboarding process that works for Indian marketplaces, step by step.</p>
+
+<h2>What vendor onboarding needs to achieve</h2>
+<p>A good onboarding flow does four things:</p>
+<ul>
+<li><strong>Filters out sellers you do not want</strong> before they can list anything.</li>
+<li><strong>Collects the legal and payout details</strong> you need, such as GST, PAN and bank account, once and correctly.</li>
+<li><strong>Gets approved sellers to a live, compliant shop quickly,</strong> because sellers who stall in setup rarely come back.</li>
+<li><strong>Sets expectations</strong> about commission, shipping, returns and response times before the first order, not after a dispute.</li>
+</ul>
+<p>If you are still choosing the platform, start with our guide to <a href="/blog/woocommerce-multi-vendor-marketplace/">building a WooCommerce multi-vendor marketplace</a>, which compares the main plugins.</p>
+
+<h2>The WooCommerce seller onboarding process, step by step</h2>
+<h3>Step 1: Vendor registration form</h3>
+<p>Most marketplace plugins add a "become a vendor" option to the My Account registration form or give you a separate vendor registration page. Keep this first form short: name, business or shop name, email, mobile number, product category and city. A long form with document uploads at this stage scares away genuine sellers who simply want to know whether they qualify.</p>
+<h3>Step 2: Application review and approval</h3>
+<p>Set new vendor accounts to "pending" rather than auto-approved. In Dokan this is a setting under Selling Options; WCFM and WC Vendors have similar options. Review each application against simple criteria: do they sell in categories you allow, do they look like a real business, can they ship to your service areas? Send an approval or rejection email either way.</p>
+<h3>Step 3: KYC and business verification</h3>
+<p>After approval, ask for verification documents through the vendor dashboard. For an Indian marketplace this typically means:</p>
+<ul>
+<li>GSTIN (mandatory for most sellers on an e-commerce operator; check with your CA for exemptions).</li>
+<li>PAN of the business or proprietor.</li>
+<li>Bank account details with a cancelled cheque or bank statement.</li>
+<li>Pickup address for shipping.</li>
+<li>Any category licences, for example FSSAI for food.</li>
+</ul>
+<p>Some plugins include verification modules; otherwise a custom field set or a form plugin with file upload does the job. Store documents securely and limit who can see them.</p>
+<h3>Step 4: Store setup</h3>
+<p>The vendor now sets up their shop page: logo, banner, store name, description, policies and shipping settings. Give them a setup wizard if your plugin has one, and a written checklist either way. Decide which settings vendors control and which you lock, such as commission rate, allowed shipping methods and product types.</p>
+<h3>Step 5: First product review</h3>
+<p>Set new products to "pending review" for new vendors. Check titles, images, category, attributes, price, tax class and stock before approval. Variable products need extra care, since wrong attributes cause messy filters; see our guide to <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. After a vendor has a few clean listings, you can let their products publish directly.</p>
+<h3>Step 6: Payout and commission setup</h3>
+<p>Confirm how and when vendors get paid: commission percentage or fixed fee, payout schedule, minimum withdrawal, and how refunds and returns are deducted. In India, split payments through a gateway such as Razorpay Route or Cashfree are common for automating this. Our comparison of <a href="/blog/payment-gateways-india-compared/">payment gateways in India</a> covers which ones support marketplaces.</p>
+<h3>Step 7: Go live and first order follow-up</h3>
+<p>When the shop is approved, send a go-live email with links to the vendor dashboard, order handling steps and support contact. Watch the vendor's first few orders closely: shipping times, packaging complaints and cancellations show early whether the seller will work out.</p>
+
+<h2>Vendor onboarding emails to set up</h2>
+<table>
+<thead><tr><th>Trigger</th><th>Email content</th></tr></thead>
+<tbody>
+<tr><td>Application received</td><td>Thanks, what happens next, how long review takes</td></tr>
+<tr><td>Approved</td><td>Login link, documents to upload, setup checklist</td></tr>
+<tr><td>Rejected</td><td>Polite reason and whether they can reapply</td></tr>
+<tr><td>Documents verified</td><td>Prompt to finish store setup and add products</td></tr>
+<tr><td>Store live</td><td>Order handling guide, payout schedule, support contact</td></tr>
+<tr><td>Stalled for 7 days</td><td>Reminder with the next incomplete step</td></tr>
+</tbody>
+</table>
+<p>Marketplace plugins send some of these by default; others need a small customisation. The same email editing approach in our guide to <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> applies, and make sure emails actually arrive by using SMTP as explained in <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
+
+<h2>GST and compliance points to settle early</h2>
+<p>When you run a marketplace, you are an e-commerce operator under Indian GST law, which brings obligations such as TCS collection on vendor sales. Settle with your CA before launch who issues invoices (usually the vendor, under their GSTIN), how TCS is deducted from payouts, and what reports you need each month. Your onboarding must collect the data those reports need. Our post on <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST invoices in India</a> explains the invoicing side.</p>
+
+<h2>Common vendor onboarding mistakes</h2>
+<ul>
+<li><strong>Auto-approving everyone,</strong> which fills the marketplace with duplicate, low-quality or prohibited listings.</li>
+<li><strong>Asking for every document upfront,</strong> so genuine sellers abandon the form.</li>
+<li><strong>No product review for new sellers,</strong> leading to wrong categories, missing tax classes and poor images.</li>
+<li><strong>Unclear commission and return rules,</strong> which become disputes after the first refund.</li>
+<li><strong>Giving vendors too much control,</strong> for example letting them change shipping rules that break checkout.</li>
+<li><strong>Plugin overload.</strong> Stacking add-ons for every onboarding feature slows the vendor dashboard; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</li>
+</ul>
+
+<h2>A vendor welcome checklist you can copy</h2>
+<p>Send this list with the approval email, or pin it on the vendor dashboard. It cuts the number of support questions and gets shops live faster.</p>
+<ol>
+<li>Upload your GST certificate, PAN and bank proof in the Verification section.</li>
+<li>Add your shop logo (square), banner and a short description of what you sell.</li>
+<li>Fill in your pickup address and confirm the pincodes you can ship to.</li>
+<li>Read the commission, payout and returns policy and accept it in the dashboard.</li>
+<li>Add your first three products using the product template: clear title, at least three photos on a plain background, correct category, price inclusive of GST and accurate stock.</li>
+<li>Wait for product approval; we check new sellers' first listings before they go live.</li>
+<li>Place a test order on your own shop if we ask you to, so you see how notifications arrive.</li>
+<li>Keep your mobile number active for order alerts and respond to orders within the agreed time.</li>
+</ol>
+<p>A checklist like this also gives your own team a standard to review against. When a vendor emails to ask why their shop is not live yet, you can point to the exact step that is still incomplete instead of investigating from scratch every time. Track each vendor's progress in a simple sheet or a custom admin column so stalled applications get a reminder.</p>
+
+<h2>Plugin or custom onboarding?</h2>
+<p>For most new marketplaces, the built-in onboarding of Dokan, WCFM or WC Vendors plus a few custom fields and emails is enough. Custom development makes sense when you need document checks against an external API, a multi-stage approval with different staff roles, or onboarding that pulls data into your ERP or CRM. Start simple, run the process with your first twenty or thirty sellers, and automate the steps that actually take your time.</p>
+<p>If you want help planning or building the flow, I work as a <a href="/woocommerce-developer/">WooCommerce developer</a> on marketplace setups, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing changes after launch.</p>
+
+<h2>FAQs</h2>
+<h3>What is WooCommerce vendor onboarding?</h3>
+<p>It is the process that takes a new seller on a WooCommerce multi-vendor store from registration through verification, approval, store setup and product review to their first sale, usually run through a marketplace plugin.</p>
+<h3>What is a good seller onboarding process for a marketplace?</h3>
+<p>Short registration, manual application review, KYC and GST verification, guided store setup, review of the first products, clear payout and commission setup, then a go-live email and close watch on early orders.</p>
+<h3>Which plugin is best for WooCommerce vendor registration?</h3>
+<p>Dokan, WCFM Marketplace and WC Vendors all include vendor registration and approval. The best choice depends on the dashboard your sellers prefer, the payout options you need and how much customisation you plan.</p>
+<h3>Should I manually approve new vendors?</h3>
+<p>Yes, at least at the start. Manual approval of vendors and their first products keeps quality high and stops prohibited or duplicate listings.</p>
+<h3>What documents should I collect from vendors in India?</h3>
+<p>Typically GSTIN, PAN, bank account proof, pickup address and any category licence such as FSSAI. Confirm the exact list with your CA based on your categories.</p>
+<h3>How do vendors get paid in a WooCommerce marketplace?</h3>
+<p>Either you collect payments and pay vendors on a schedule after deducting commission, or a split-payment gateway sends each vendor their share automatically. Refunds and TCS deductions should be part of the payout rules from day one.</p>
+`,
+  },
 ];

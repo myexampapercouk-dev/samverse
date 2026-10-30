@@ -4185,5 +4185,26 @@
     <pubDate>Fri, 30 Oct 2026 03:30:00 GMT</pubDate>
     <description>WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.</description>
   </item>
+  <item>
+    <title>Gravity Forms vs Contact Form 7: Features, Limits and Which One Your WordPress Site Needs</title>
+    <link>https://samverse.space/blog/gravity-forms-vs-contact-form-7/</link>
+    <guid>https://samverse.space/blog/gravity-forms-vs-contact-form-7/</guid>
+    <pubDate>Fri, 30 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Gravity Forms vs Contact Form 7 compared on builder, entries, logic, calculations, integrations and spam, with clear advice on which suits your WordPress site.</description>
+  </item>
+  <item>
+    <title>Squeeze Page vs Landing Page: The Differences, Examples and Which One Your Campaign Needs</title>
+    <link>https://samverse.space/blog/squeeze-page-vs-landing-page/</link>
+    <guid>https://samverse.space/blog/squeeze-page-vs-landing-page/</guid>
+    <pubDate>Fri, 30 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Squeeze page vs landing page explained: what each one is for, how they differ in length and form fields, and how to build either one well on WordPress.</description>
+  </item>
+  <item>
+    <title>WooCommerce Vendor Onboarding: A Step-by-Step Seller Onboarding Process for Multi-Vendor Stores</title>
+    <link>https://samverse.space/blog/woocommerce-vendor-onboarding/</link>
+    <guid>https://samverse.space/blog/woocommerce-vendor-onboarding/</guid>
+    <pubDate>Fri, 30 Oct 2026 03:30:00 GMT</pubDate>
+    <description>How to set up WooCommerce vendor onboarding: registration forms, KYC and GST checks, approval, store setup, payouts and the seller onboarding process.</description>
+  </item>
 </channel>
 </rss>
