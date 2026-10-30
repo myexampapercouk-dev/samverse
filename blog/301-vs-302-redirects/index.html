@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>301 vs 302 Redirects: Which to Use and How to Set Them Up</title>
-  <meta name="description" content="301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.">
+  <title>301 vs 302 Redirect: Which HTTP Code to Use for SEO</title>
+  <meta name="description" content="301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/301-vs-302-redirects/">
-  <meta property="og:title" content="301 vs 302 Redirects: Which to Use and How to Set Them Up">
-  <meta property="og:description" content="301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.">
+  <meta property="og:title" content="301 vs 302 Redirect: Which HTTP Code to Use for SEO">
+  <meta property="og:description" content="301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-301-vs-302-redirects.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/301-vs-302-redirects/#article",
       "headline": "301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress",
-      "description": "301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.",
+      "description": "301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-15",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/301-vs-302-redirects/",
       "image": "https://samverse.space/assets/og/blog-301-vs-302-redirects.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress</h1>
-          <p class="post-dek">301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.</p>
+          <p class="post-dek">301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-15">15 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=301%20vs%20302%20Redirects%3A%20Which%20to%20Use%2C%20How%20They%20Affect%20SEO%20and%20How%20to%20Set%20Them%20Up%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2F301-vs-302-redirects%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -156,6 +156,7 @@
               <li><a href="#redirect-types-at-a-glance">Redirect types at a glance</a></li>
               <li><a href="#when-to-use-a-301">When to use a 301</a></li>
               <li><a href="#when-a-302-or-307-is-the-right-choice">When a 302 or 307 is the right choice</a></li>
+              <li><a href="#http-301-vs-302-what-the-server-actually-sends">HTTP 301 vs 302: what the server actually sends</a></li>
               <li><a href="#how-redirects-affect-seo">How redirects affect SEO</a></li>
               <li><a href="#redirect-chains-loops-and-avoid-multiple-page-redirects">Redirect chains, loops and "Avoid multiple page redirects"</a></li>
               <li><a href="#how-to-set-up-redirects-on-wordpress">How to set up redirects on WordPress</a></li>
@@ -171,7 +172,7 @@
               <li>Manage page redirects in one place, such as the Redirection plugin or Rank Math, keep site-wide rules at server level, and test in a private window because browsers cache 301s.</li>
             </ul>
           </div>
-<p>A 301 redirect tells browsers and search engines that a page has moved permanently, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
+<p>In 301 vs 302, the difference is permanence: a 301 redirect tells browsers and search engines that a page has moved for good, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
 <p>Redirects are where most redesigns and migrations quietly lose rankings. In my <a href="/wordpress-migration/">WordPress migration</a> work, every old URL that changes is 301-redirected to its new equivalent and Search Console is monitored after the move. This guide covers which redirect to use, what each does to SEO, and how to set them up on WordPress.</p>
 <p>If a redirect has gone wrong and your site now shows "too many redirects", go straight to <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
 
@@ -215,6 +216,28 @@
   <li><strong>Language or country detection:</strong> automatic redirects based on location can stop Google seeing your other versions. Offer a visible choice instead.</li>
 </ul>
 <p>If a permanent move was set up as a 302 by mistake, Google may eventually treat a long-standing 302 as permanent, but there's no reason to wait and see. Change it to a 301.</p>
+
+<h2 id="http-301-vs-302-what-the-server-actually-sends">HTTP 301 vs 302: what the server actually sends</h2>
+<p>A redirect is just an HTTP response with a status code and a Location header. Visitors never see it, which is why a wrong code goes unnoticed for months. This is what each looks like:</p>
+<pre><code>HTTP/1.1 301 Moved Permanently
+Location: https://example.in/services/website-design/
+
+HTTP/1.1 302 Found
+Location: https://example.in/diwali-sale/</code></pre>
+<p>To check which one your site sends, use a redirect checker or run this from a terminal (Windows 10 and 11 include curl):</p>
+<pre><code>curl -sI https://example.in/old-page/</code></pre>
+<p>The first line shows the status code and the Location line shows where it points. If the target is itself another redirect, follow it with curl -sIL and count the hops; more than one is a chain to fix.</p>
+<table>
+  <thead><tr><th>Question</th><th>HTTP 301</th><th>HTTP 302</th></tr></thead>
+  <tbody>
+    <tr><td>Which URL Google indexes</td><td>The new one</td><td>Usually the old one</td></tr>
+    <tr><td>Where ranking signals go</td><td>Consolidated on the new URL</td><td>Stay with the old URL</td></tr>
+    <tr><td>Browser caching</td><td>Cached, sometimes for a long time</td><td>Not cached by default</td></tr>
+    <tr><td>Default in WordPress wp_redirect()</td><td>No, must be set</td><td>Yes</td></tr>
+    <tr><td>Easy to undo</td><td>Harder, because browsers remember it</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<p>That WordPress default matters: a developer who writes a quick redirect in a theme or plugin without passing 301 creates a temporary redirect. If a theme function or snippet plugin handles redirects on your site, check its status code.</p>
 
 <h2 id="how-redirects-affect-seo">How redirects affect SEO</h2>
 <p>Google has said for years that a 301 or 302 doesn't lose ranking value just by being a redirect. When rankings drop after URLs change, it is almost always because of how the redirects were done:</p>
@@ -273,16 +296,18 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
 <h2 id="faqs">FAQs</h2>
 <h3>What is the difference between a 301 and a 302 redirect?</h3>
 <p>A 301 means the page has moved permanently, so Google indexes the new URL and moves its signals there. A 302 means the move is temporary, so Google usually keeps the original URL indexed. Visitors see the same thing with both.</p>
+<h3>Is a 301 or 302 redirect better for SEO?</h3>
+<p>For a permanent change, a 301 is better because Google moves the page's signals to the new URL. A 302 is only better when the old URL is genuinely coming back, such as a short sale page swap.</p>
+<h3>How can I tell if a URL uses HTTP 301 or 302?</h3>
+<p>Use an online redirect checker or run curl -sI with the old URL. The first line of the response shows the status code. Browser developer tools, in the Network tab with Preserve log ticked, show it too.</p>
 <h3>Does a 301 redirect hurt SEO?</h3>
 <p>Not by itself. Problems come from redirecting to unrelated pages, chains of several hops, missing redirects for pages that had links, and removing redirects too early.</p>
 <h3>How long should I keep a 301 redirect?</h3>
 <p>Google recommends keeping redirects from a site move for as long as possible, generally at least a year. Since old links and bookmarks keep working only while the redirect exists, leaving them in place permanently is the safer choice.</p>
-<h3>How do I fix "Avoid multiple page redirects" in WordPress?</h3>
-<p>Find the chain with a redirect checker, then make every rule point to the final URL, force https in only one place, and update internal links and ads that use old, http or wrong-www addresses.</p>
 <h3>Can I redirect a deleted page to my homepage?</h3>
 <p>Only if the homepage genuinely replaces it. Otherwise Google tends to treat it as a soft 404. Redirect to the closest related page, or let the URL return a 404 or 410 if nothing related exists.</p>
 
-<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up.</p>
+<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> just to audit and fix your redirects.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -321,6 +346,7 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
               <li><a href="#redirect-types-at-a-glance">Redirect types at a glance</a></li>
               <li><a href="#when-to-use-a-301">When to use a 301</a></li>
               <li><a href="#when-a-302-or-307-is-the-right-choice">When a 302 or 307 is the right choice</a></li>
+              <li><a href="#http-301-vs-302-what-the-server-actually-sends">HTTP 301 vs 302: what the server actually sends</a></li>
               <li><a href="#how-redirects-affect-seo">How redirects affect SEO</a></li>
               <li><a href="#redirect-chains-loops-and-avoid-multiple-page-redirects">Redirect chains, loops and "Avoid multiple page redirects"</a></li>
               <li><a href="#how-to-set-up-redirects-on-wordpress">How to set up redirects on WordPress</a></li>

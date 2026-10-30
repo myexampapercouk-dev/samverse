@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Fonts Slowing Your Website? How to Load Them Faster</title>
-  <meta name="description" content="Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.">
+  <title>Business Website Web Font Performance: Load Fonts Faster</title>
+  <meta name="description" content="Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/web-fonts-performance/">
-  <meta property="og:title" content="Web Fonts Slowing Your Website? How to Load Them Faster">
-  <meta property="og:description" content="Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.">
+  <meta property="og:title" content="Business Website Web Font Performance: Load Fonts Faster">
+  <meta property="og:description" content="Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-web-fonts-performance.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/web-fonts-performance/#article",
       "headline": "Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify",
-      "description": "Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.",
+      "description": "Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-28",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/web-fonts-performance/",
       "image": "https://samverse.space/assets/og/blog-web-fonts-performance.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify</h1>
-          <p class="post-dek">Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.</p>
+          <p class="post-dek">Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Web%20Fonts%20Slowing%20Your%20Website%3F%20How%20to%20Load%20Fonts%20Efficiently%20in%20WordPress%20and%20Shopify%20https%3A%2F%2Fsamverse.space%2Fblog%2Fweb-fonts-performance%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -158,6 +158,7 @@
               <li><a href="#how-to-check-what-fonts-your-site-loads">How to check what fonts your site loads</a></li>
               <li><a href="#use-fewer-families-weights-and-styles">Use fewer families, weights and styles</a></li>
               <li><a href="#self-host-your-fonts-and-use-woff2">Self-host your fonts and use WOFF2</a></li>
+              <li><a href="#business-website-web-font-performance-a-setup-you-can-copy">Business website web font performance: a setup you can copy</a></li>
               <li><a href="#use-font-display-to-keep-text-visible">Use font-display to keep text visible</a></li>
               <li><a href="#preload-only-the-fonts-that-matter">Preload only the fonts that matter</a></li>
               <li><a href="#icon-fonts-and-duplicate-font-loading">Icon fonts and duplicate font loading</a></li>
@@ -175,8 +176,8 @@
               <li>Remove duplicate font loading from themes, builders and plugins, and replace icon fonts with SVG icons where you can.</li>
             </ul>
           </div>
-<p>If web fonts are slowing your website, the fix is usually to load fewer of them: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
-<p>Good typography makes a site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
+<p>Good web font performance on a business website comes from loading fewer fonts: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
+<p>Good typography makes a business site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
 
 <h2 id="how-web-fonts-slow-a-page-down">How web fonts slow a page down</h2>
 <p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can mean eight files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
@@ -219,6 +220,40 @@
 <li><strong>Indian scripts:</strong> Hindi, Marathi, Gujarati and other scripts need fonts that include them, and these files are often larger, so choose weights even more carefully. See <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a>.</li>
 </ul>
 <p>In WordPress, Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and plugins can download and host fonts for you. Option names change between versions, so check your current setup. Self-hosting also means visitors' browsers do not contact a third-party font server just to show your text.</p>
+
+<h2 id="business-website-web-font-performance-a-setup-you-can-copy">Business website web font performance: a setup you can copy</h2>
+<p>This is the font setup I aim for on most business sites: one family, self-hosted, a regular and a bold weight, swap behaviour, and a fallback tuned so the swap barely moves the text. Upload the two WOFF2 files to a fonts folder in your theme or child theme, then add CSS like this:</p>
+<pre><code>@font-face {
+  font-family: "Brand Sans";
+  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brand Sans";
+  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Fallback sized to match, so the swap causes little layout shift */
+@font-face {
+  font-family: "Brand Sans Fallback";
+  src: local("Arial");
+  size-adjust: 100%;
+}
+body { font-family: "Brand Sans", "Brand Sans Fallback", sans-serif; }</code></pre>
+<p>Adjust the size-adjust percentage until the fallback text takes up the same space as the brand font; a developer can measure this in a few minutes. Then switch off the theme's or builder's own Google Fonts loading, or you will load the family twice. Compare the setups side by side:</p>
+<table>
+<thead><tr><th>Setup</th><th>Extra connections</th><th>Control over files</th><th>Typical risk</th></tr></thead>
+<tbody>
+<tr><td>Google Fonts link from the theme</td><td>Yes, to two font domains</td><td>None</td><td>Many weights loaded by default</td></tr>
+<tr><td>Builder "load fonts locally" setting</td><td>No</td><td>Partial</td><td>Duplicates if the theme also loads fonts</td></tr>
+<tr><td>Self-hosted with your own CSS, as above</td><td>No</td><td>Full</td><td>Needs a developer to update fonts later</td></tr>
+<tr><td>System font stack, no web font</td><td>No</td><td>Not needed</td><td>Less distinctive branding</td></tr>
+</tbody>
+</table>
 
 <h2 id="use-font-display-to-keep-text-visible">Use font-display to keep text visible</h2>
 <p>The font-display setting tells the browser what to do while a font loads:</p>
@@ -272,6 +307,8 @@
 </ul>
 
 <h2 id="faqs">FAQs</h2>
+<h3>How do web fonts affect business website performance?</h3>
+<p>Each font file is an extra download that can delay your headline (LCP), cause text to jump when it swaps in (CLS) and add weight on slow mobile connections. One or two well-loaded families are rarely a problem; many weights from several sources usually are.</p>
 <h3>Are web fonts slowing my website?</h3>
 <p>Check the Network tab filtered by Font. If you see many files, files from several domains or duplicate families, fonts are likely adding delay and layout shift.</p>
 <h3>Is it better to self-host Google Fonts?</h3>
@@ -324,6 +361,7 @@
               <li><a href="#how-to-check-what-fonts-your-site-loads">How to check what fonts your site loads</a></li>
               <li><a href="#use-fewer-families-weights-and-styles">Use fewer families, weights and styles</a></li>
               <li><a href="#self-host-your-fonts-and-use-woff2">Self-host your fonts and use WOFF2</a></li>
+              <li><a href="#business-website-web-font-performance-a-setup-you-can-copy">Business website web font performance: a setup you can copy</a></li>
               <li><a href="#use-font-display-to-keep-text-visible">Use font-display to keep text visible</a></li>
               <li><a href="#preload-only-the-fonts-that-matter">Preload only the fonts that matter</a></li>
               <li><a href="#icon-fonts-and-duplicate-font-loading">Icon fonts and duplicate font loading</a></li>

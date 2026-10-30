@@ -1453,15 +1453,16 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'elementor-vs-gutenberg',
-    seoTitle: 'Elementor vs Gutenberg: Which WordPress Editor to Choose?',
+    seoTitle: 'Gutenberg vs Elementor: Which WordPress Editor to Choose?',
     title: 'Elementor vs Gutenberg: Which WordPress Builder Should You Use?',
-    description: 'Elementor vs Gutenberg compared: editing experience, speed, design flexibility, cost, lock-in and client editing, with clear advice on when to choose each one.',
+    description: 'Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
-<p>If you're building or redesigning a WordPress site, you'll probably choose between two ways of creating pages: <strong>Elementor</strong>, the popular drag-and-drop page builder plugin, or <strong>Gutenberg</strong>, WordPress's built-in block editor. Both are good, and I build with both. The right choice depends on who will edit the site, how design-heavy it is and how much you care about speed and long-term flexibility.</p>
+<p>Gutenberg vs Elementor comes down to this: Gutenberg, WordPress's built-in block editor, is free, lighter and keeps your content native to WordPress, while Elementor, a drag-and-drop page builder plugin, gives non-technical teams more visual design control at the cost of extra code and a yearly Pro licence. Choose Gutenberg for blogs and lean business sites, and Elementor for design-heavy marketing pages your team wants to edit visually.</p>
+<p>Both are good, and I build with both. The right choice depends on who will edit the site, how design-heavy it is and how much you care about speed and long-term flexibility.</p>
 
 <h2>Quick comparison</h2>
 <table>
@@ -1495,7 +1496,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Design flexibility</h2>
 <p>For design-heavy pages, Elementor gives more out of the box: motion effects, custom layouts per device, popups, forms, loops of posts or products, and theme templates, all without code. A designer's Figma file can usually be matched closely.</p>
 <p>Gutenberg has caught up a lot. Group, row, stack and grid blocks handle most layouts, patterns give you reusable sections, and block themes control the whole site. Where something isn't possible with core blocks, a developer can build custom blocks that match your design exactly and give editors only the fields they need; see <a href="/blog/custom-gutenberg-blocks/">custom Gutenberg blocks</a>. That takes more development time up front, but the result is lean and hard to break.</p>
-<p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+<p>Your theme matters just as much as the builder, because it controls the base styles, fonts and how much extra code loads on every page.</p>
 
 <h2>Cost</h2>
 <p>Gutenberg is free and comes with WordPress. Elementor's free version is enough for simple pages, but most business sites end up using Pro for the theme builder, forms and popups. Pro is a yearly licence, priced by the number of sites, and renewing it is what keeps updates and support coming. Check Elementor's current terms for what happens to Pro features if a licence lapses, and budget for any add-on packs, which usually have their own licences.</p>
@@ -1505,7 +1506,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Lock-in and switching later</h2>
 <p>Elementor stores layouts in its own format. If you deactivate it, the text on your pages usually remains as plain, unstyled content, but the layout and design are gone, and pages built with it have to be rebuilt in whatever you move to. That's manageable for a ten-page site and a real project for a large one.</p>
 <p>Gutenberg content is native WordPress content and survives a theme change far better. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
-<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
+<p>Lock-in shows most clearly when a plugin is removed, so ask before any build how the content is stored and what a future switch would involve.</p>
 
 <h2>Client editing: who will update the site?</h2>
 <p>This is often the deciding question. If the owner or marketing team wants to change headlines, swap images and build new landing pages without calling a developer, Elementor is easier to learn. The risk is that the same freedom makes it easy to break a layout or a mobile view by accident. Elementor Pro's role manager can limit some users to editing content only.</p>
@@ -1513,6 +1514,30 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <h2>Updates and maintenance</h2>
 <p>Gutenberg improves with each WordPress release, so there's one less plugin to update. Elementor releases updates often, and major ones occasionally change how layouts render, so test on a staging copy before updating a live site; see <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
+
+<h2>Gutenberg vs Elementor: the same page built both ways</h2>
+<p>A comparison of features only goes so far. This is how common jobs on a typical Indian small business site, such as a clinic, a coaching institute or a manufacturer, play out in each editor:</p>
+<table>
+  <thead><tr><th>Job</th><th>In Elementor</th><th>In Gutenberg</th></tr></thead>
+  <tbody>
+    <tr><td>Hero section with heading, text, button and image</td><td>Container plus widgets, styled per device in the panel</td><td>Cover or group block, or a ready-made pattern from the theme</td></tr>
+    <tr><td>Enquiry form that sends email and WhatsApp alerts</td><td>Elementor Pro form widget, or a form plugin</td><td>A form plugin block</td></tr>
+    <tr><td>Header and footer on every page</td><td>Pro theme builder templates</td><td>Template parts in the Site Editor (block theme)</td></tr>
+    <tr><td>Festival offer popup</td><td>Pro popup builder with display rules</td><td>A popup plugin</td></tr>
+    <tr><td>Services grid pulling from a custom post type</td><td>Pro loop grid</td><td>Query loop block</td></tr>
+    <tr><td>Hindi and English versions of a page</td><td>Works with multilingual plugins; layouts duplicated per language</td><td>Works with multilingual plugins; blocks translated natively</td></tr>
+    <tr><td>Owner changes a price or phone number</td><td>Click the text on the canvas and type</td><td>Click the block and type; a locked pattern prevents layout mistakes</td></tr>
+  </tbody>
+</table>
+<p>Before you choose, answer these questions honestly:</p>
+<ul>
+  <li>Who will edit the site after launch, and how often?</li>
+  <li>Will you build new landing pages yourself for ads and offers?</li>
+  <li>Is the site mostly articles, or mostly designed sales pages?</li>
+  <li>Are you happy to renew a builder licence every year?</li>
+  <li>Does most of your traffic come on mobile data, where every extra script counts?</li>
+</ul>
+<p>Two or more answers pointing to frequent visual editing by non-developers usually means Elementor; mostly content and a tight speed budget usually means Gutenberg.</p>
 
 <h2>When to choose each</h2>
 <h3>Choose Elementor if...</h3>
@@ -1531,20 +1556,25 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   <li>You want content that isn't tied to a third-party builder</li>
 </ul>
 
+<p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
+
 <h2>My recommendation</h2>
-<p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages.</p>
+<p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages. If you want it built properly from the start, you can <a href="/elementor-developer/">hire an Elementor developer</a> who also builds with blocks, so the advice isn't tied to one tool.</p>
+
+<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
 
 <h2>FAQs</h2>
-<h3>Is Gutenberg replacing Elementor?</h3>
-<p>No. Gutenberg is WordPress's built-in editor and keeps getting more capable, but Elementor remains a separate, widely used builder. Many sites use both.</p>
+<h3>Gutenberg vs Elementor: which is better?</h3>
+<p>Neither is better for every site. Gutenberg is better for blogs, content sites and lean business sites; Elementor is better when a non-technical team wants to design and edit marketing pages visually. Gutenberg is not replacing Elementor, and many sites use both.</p>
+<h3>Is Gutenberg faster than Elementor?</h3>
+<p>Usually, out of the box, because it loads less code. A carefully built Elementor site can still pass Core Web Vitals, and a heavy block theme can be slow, so test the finished site rather than the editor.</p>
 <h3>Is Elementor bad for SEO?</h3>
 <p>Not in itself. Google ranks content, relevance and page experience, not the editor. Elementor sites can rank well if they're fast, use proper headings and have good content.</p>
 <h3>Can I switch from Elementor to Gutenberg?</h3>
 <p>Yes, but there's no clean automatic conversion. Pages are usually rebuilt in blocks, which is a good moment to simplify the design and improve speed.</p>
 <h3>Can I use Elementor and Gutenberg on the same site?</h3>
 <p>Yes. You choose per page or post, so blog posts can use the block editor while the homepage and landing pages use Elementor.</p>
-<h3>Do I need Elementor Pro?</h3>
-<p>Not always. If you need a custom header and footer, forms, popups or templates for posts and products, Pro is usually worth it. For a few simple pages, the free version may be enough.</p>
+
 <h3>Which is better for a blog?</h3>
 <p>Gutenberg. Writing is faster, content stays native to WordPress, and post templates can be designed in the Site Editor or by your theme.</p>
 
@@ -3186,18 +3216,19 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'wordpress-vs-custom-coded-website',
-    seoTitle: 'WordPress vs Custom-Coded Website: What\'s the Difference?',
+    seoTitle: 'WordPress Website vs Custom Coded Website: The Difference',
     title: 'WordPress vs Custom-Coded Website: Differences, Costs and Which Is Right for Your Business',
-    description: 'WordPress vs a custom-coded website: the real differences in cost, launch time, editing, speed, SEO, security and upkeep, and which one suits your business.',
+    description: 'The difference between a WordPress website and a custom coded website: cost, launch time, editing, speed, SEO, security and upkeep, and which suits you.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
     body: `
 <p>The difference between a WordPress website and a custom-coded website is what you start from. WordPress is a ready-made content management system: a developer builds your site on it with a theme, plugins and sometimes custom code, and your team edits pages through its dashboard. A custom-coded site is written from scratch, or with a framework such as React, Next.js or Laravel, so every feature, every editing screen and every future change has to be built by developers.</p>
 <p>For most business websites, WordPress is quicker to launch, cheaper and easier for your team to update. Custom code makes sense when the website is really a piece of software. Below is a full comparison, what "custom" can actually mean, and why my own site is custom-coded while I still recommend WordPress for most clients. If you've decided on WordPress and want someone to build it, see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 
-<h2>WordPress vs custom-coded: quick comparison</h2>
+<h2>What is the difference between a WordPress website and a custom coded website?</h2>
+<p>In short: WordPress gives you a tested editing system and thousands of ready features on day one, and you pay mainly for design and setup. A custom coded website gives you exactly what you specify and nothing more, and you pay for every part, including the screens your team uses to edit it.</p>
 <table>
   <thead><tr><th></th><th>WordPress</th><th>Custom-coded</th></tr></thead>
   <tbody>
@@ -3266,7 +3297,28 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Strict security or compliance requirements that rule out third-party plugins</li>
   <li>When you have an in-house development team to maintain it</li>
 </ul>
-<p>Startups often use both: a WordPress marketing site the team can update while the product itself is custom-built. The <a href="/blog/startup-website-checklist/">startup website checklist</a> covers what to launch with.</p>
+<p>Startups often use both: a WordPress marketing site the team can update while the product itself is custom-built.</p>
+
+<h2>The same jobs on WordPress and on custom code</h2>
+<p>The difference is clearest in everyday jobs after launch. This is how common requests from an Indian small business usually play out on each:</p>
+<table>
+  <thead><tr><th>Job after launch</th><th>WordPress website</th><th>Custom coded website</th></tr></thead>
+  <tbody>
+    <tr><td>Add a new service page</td><td>Your team duplicates a page in the dashboard and edits it</td><td>A developer adds it, unless an editing screen was built for it</td></tr>
+    <tr><td>Publish a blog post</td><td>Built in</td><td>Needs a blog system built or a headless CMS connected</td></tr>
+    <tr><td>Add a WhatsApp button or enquiry form</td><td>A plugin or a small snippet, often within a day</td><td>Coded, tested and deployed by a developer</td></tr>
+    <tr><td>Take payments with Razorpay or UPI</td><td>WooCommerce or a form plugin with a payment add-on</td><td>Gateway integration written and tested from scratch</td></tr>
+    <tr><td>Monthly upkeep</td><td>Core, theme and plugin updates, backups and monitoring</td><td>Framework and package updates, server patches and backups</td></tr>
+    <tr><td>Change developer</td><td>Many developers in India know WordPress</td><td>The new developer must first learn your codebase</td></tr>
+  </tbody>
+</table>
+<p>Before you sign off on either, ask your developer these in writing:</p>
+<ul>
+  <li>Which parts of the site can my team edit without you?</li>
+  <li>Who owns the code, the domain and the hosting account?</li>
+  <li>What does monthly upkeep involve, and who does it?</li>
+  <li>How would another developer take over if needed?</li>
+</ul>
 
 <h2>Five questions to decide</h2>
 <ol>
@@ -3277,6 +3329,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>How soon does it need to launch?</li>
 </ol>
 <p>If your answers are "our team, often", "standard features", "anyone" and "soon", WordPress is the practical choice.</p>
+
+<p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
 
 <h2>FAQs</h2>
 <h3>What is the difference between a WordPress website and a custom-coded website?</h3>
@@ -12365,15 +12419,15 @@ function my_only_free_shipping( $rates ) {
   },
   {
     slug: 'local-landing-pages-without-doorway-pages',
-    seoTitle: 'Local Landing Pages Done Right: City Pages vs Doorway Pages',
+    seoTitle: 'SEO Doorway Pages: How to Build City Pages Safely',
     title: 'Local Landing Pages Done Right: City and Area Pages That Rank Without Becoming Doorway Pages',
-    description: 'Local landing pages done right: Google\'s doorway page policy, unique content for each city or area page, when not to build them and how to fix them.',
+    description: 'SEO doorway pages explained: what Google\'s policy says, a 10-point audit for city and area pages, the unique content each needs and how to fix doorways.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
-<p>Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things that are only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times. They become doorway pages when they're near-identical copies with the city name swapped, built to catch searches and send everyone to the same place. Google's spam policies treat doorways as spam, so a set of thin city pages can hold back the pages themselves and the site around them.</p>
+<p>In SEO, doorway pages are near-identical pages built to rank for many city or keyword variations that all send visitors to the same place, and Google's spam policies treat them as spam. Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things that are only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times. They become doorway pages when they're near-identical copies with the city name swapped, built to catch searches and send everyone to the same place. Google's spam policies treat doorways as spam, so a set of thin city pages can hold back the pages themselves and the site around them.</p>
 <p>Planning which location pages to build, how to structure and link them, and which schema to add is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide sets out the rules so you can judge your own pages.</p>
 <p>It covers the principles for any city, area or locality page. If you have several branches, also read <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>. If you travel to customers and have no shopfront, <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers the Business Profile side.</p>
 
@@ -12441,6 +12495,22 @@ function my_only_free_shipping( $rates ) {
 <p>Use a template for the structure, not the words. A custom post type for locations, with custom fields for the address, hours, areas covered, team, projects and reviews, keeps every page consistent and makes the gaps obvious: if a location has no projects or reviews to fill the fields, it isn't ready to publish. See <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a> for how that works.</p>
 <p>Avoid plugins that generate hundreds of pages from a list of city names or spun text. They're quick, and they produce exactly what Google's policies describe.</p>
 
+<h2>SEO doorway pages: a 10-point audit for your city pages</h2>
+<p>Open each location page and answer yes or no. Every "no" is a gap to fill before the page earns its place; three or more usually means the page should be merged or removed rather than patched.</p>
+<ol>
+  <li>Do you have a branch, staff or regular work in this place?</li>
+  <li>Does the page name who serves the area, with a real address or service radius?</li>
+  <li>Does it show at least one project, photo or job done there?</li>
+  <li>Does it show reviews from customers in that area, used with permission?</li>
+  <li>Does it state coverage, timings or delivery details that differ from other areas?</li>
+  <li>Would more than half the text be wrong if you swapped in another city name?</li>
+  <li>Is it linked from an "Areas we serve" page and relevant service pages, not just a footer list?</li>
+  <li>Does its title describe the service and place once, without stuffing locality names?</li>
+  <li>Has it earned any impressions or clicks in Search Console in the last three months?</li>
+  <li>Would you be happy to send a customer from that area to this page?</li>
+</ol>
+<p>Question 6 is the reverse test: you want the answer yes, because local text that only fits one place is exactly what a doorway lacks. Search Console helps with question 9: filter Performance by page to see which location pages earn anything. Pages that score well are worth improving; pages that score badly are usually better merged into a single areas page. The same test applies to our own city pages, such as <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, which is built around where work is actually done.</p>
+
 <h2>How to fix existing doorway pages</h2>
 <ol>
   <li><strong>List every location page</strong> and check each one in Search Console's Performance report: impressions, clicks and the queries it appears for.</li>
@@ -12449,19 +12519,20 @@ function my_only_free_shipping( $rates ) {
   <li><strong>Redirect retired URLs with 301s</strong> to the most relevant remaining page, not all to the homepage, and remove them from your sitemap.</li>
   <li><strong>If you have a manual action,</strong> fix every affected page first, then request reconsideration in Search Console explaining what you changed.</li>
 </ol>
-<p>For a worked example of these rules applied to one city, see <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>.</p>
+
 
 <h2>FAQs</h2>
 <h3>What is a doorway page in SEO?</h3>
 <p>A page built mainly to rank for a particular search, often one of many near-identical pages targeting different cities or keyword variations, which sends visitors on to the same place. Google's spam policies treat doorways as spam.</p>
+<h3>Are doorway pages bad for SEO?</h3>
+<p>Yes. Google can rank them lower or remove them, and a large set of thin doorways can hold back the rest of the site. Merging them into fewer, genuinely useful pages is the safe fix.</p>
 <h3>Are city pages considered doorway pages?</h3>
 <p>Not automatically. A city page for a real branch, or an area you serve with genuine local content, is a normal and useful page. It becomes a doorway when it's one of a set of copies with only the place name changed.</p>
 <h3>How many location pages should I create?</h3>
 <p>As many as you have real locations, plus areas where you have genuine local work and something specific to say. For most small businesses that means a handful, not dozens. Start with your busiest two or three areas.</p>
 <h3>How much unique content does a location page need?</h3>
 <p>Enough that the local information is the main part of the page: who serves the area, local projects and reviews, coverage, timings and local questions. There's no minimum word count; a short page with real local detail beats a long templated one.</p>
-<h3>Do I need hreflang for city pages?</h3>
-<p>No. Hreflang is for language and country versions of the same page. City pages in the same language for the same country don't need it.</p>
+
 <h3>Can I use AI to write location pages?</h3>
 <p>As a drafting aid, carefully. The facts that make a location page useful, such as local jobs, reviews and coverage, have to come from you, and mass-producing pages with AI falls under Google's scaled content abuse policy.</p>
 
@@ -19108,15 +19179,15 @@ Target:  https://example.com/products/$1/</code></pre>
   },
   {
     slug: 'robots-txt-explained',
-    seoTitle: 'Robots.txt Explained: WordPress Examples and Common Mistakes',
+    seoTitle: 'Robots.txt WordPress Guide: Safe Examples and Mistakes',
     title: 'Robots.txt Explained Simply: How It Works, Safe WordPress Examples and Mistakes to Avoid',
-    description: 'Robots.txt explained simply: how crawlers read it, safe WordPress and WooCommerce examples, AI crawler rules, Search Console testing and common mistakes.',
+    description: 'Robots.txt for WordPress explained: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples and mistakes.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>Robots.txt is a small plain-text file at the root of your website that tells search engine crawlers which URLs they may and may not crawl. It controls crawling, not indexing: to keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. For most WordPress sites the right robots.txt is short, blocking only the admin area and pointing to your sitemap, and the biggest risks are rules that block too much, such as a leftover "Disallow: /" from a staging site.</p>
+<p>In WordPress, robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your sitemap. It controls crawling, not indexing: to keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. For most WordPress sites the right robots.txt is short, blocking only the admin area and pointing to your sitemap, and the biggest risks are rules that block too much, such as a leftover "Disallow: /" from a staging site.</p>
 <p>Robots.txt and the XML sitemap are both part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because a single wrong line in this file can stop Google crawling a whole site. This guide explains how the file works, gives safe examples for WordPress and WooCommerce, covers AI crawlers and shows how to test it.</p>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
@@ -19165,6 +19236,30 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
   <li><strong>Rank Math:</strong> Rank Math SEO &gt; General Settings &gt; Edit robots.txt. This only works when no physical file exists; if your edits don't appear on the live file, an old physical file is usually the reason.</li>
   <li><strong>Hosting file manager or FTP:</strong> upload or edit robots.txt in the same folder as wp-config.php.</li>
 </ul>
+
+<h2>Robots.txt WordPress setups: good, risky and broken</h2>
+<p>Most robots.txt problems I find on WordPress sites fall into one of three patterns. Compare yours with these.</p>
+<table>
+  <thead><tr><th>File contains</th><th>Verdict</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Disallow: /wp-admin/, Allow: /wp-admin/admin-ajax.php, Sitemap line</td><td>Good</td><td>The WordPress default plus your sitemap; nothing useful is blocked</td></tr>
+    <tr><td>Disallow: /wp-content/ or /wp-includes/</td><td>Risky</td><td>Blocks CSS, JavaScript and images Google needs to render pages</td></tr>
+    <tr><td>Disallow: /*? on a store</td><td>Risky</td><td>Can block paginated, filtered or tracked URLs you want crawled</td></tr>
+    <tr><td>Disallow: / for User-agent: *</td><td>Broken</td><td>Blocks the whole site, usually left over from a staging copy</td></tr>
+    <tr><td>Sitemap line pointing to an old domain or http</td><td>Broken</td><td>Sends crawlers to a sitemap that redirects or no longer exists</td></tr>
+  </tbody>
+</table>
+<p>A common broken file after a launch looks like this:</p>
+<pre><code>User-agent: *
+Disallow: /
+Sitemap: http://staging.example.in/sitemap_index.xml</code></pre>
+<p>And the fixed version:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://example.in/sitemap_index.xml</code></pre>
+<p>Also check Settings &gt; Reading in WordPress: if "Discourage search engines from indexing this site" is ticked, WordPress adds noindex to every page, which is a separate problem from robots.txt and just as damaging.</p>
 
 <h2>Robots.txt for WooCommerce stores</h2>
 <p>Stores create endless URL variations: add-to-cart links, sorting options and every combination of filters. They are all crawlable by default, and on a new store with limited crawling attention they can soak up visits Google could spend on products. A common addition:</p>
@@ -19229,10 +19324,12 @@ Disallow: /</code></pre>
 <p>Not reliably. A blocked page can still be indexed if other pages link to it, just without a description. Use a noindex tag on a crawlable page, or delete the page, if you want it gone from results.</p>
 <h3>Should I block AI crawlers like GPTBot?</h3>
 <p>It depends on whether you mind your content being used to train AI models, and whether you want AI assistants to cite you. Blocking training crawlers while allowing AI search crawlers is a common middle ground. Google-Extended affects only Google's AI models, not your Google Search rankings.</p>
+<h3>How do I edit robots.txt in WordPress?</h3>
+<p>With Yoast SEO, use Tools &gt; File editor; with Rank Math, use General Settings &gt; Edit robots.txt. If your changes don't show at yourdomain/robots.txt, a physical file in the root folder is overriding them, so edit or delete that file through your host's file manager.</p>
 <h3>Do I need a robots.txt file at all?</h3>
 <p>No. Without one, crawlers assume everything is allowed, which is fine for many small sites. WordPress provides one anyway, and a short file with your sitemap line is useful.</p>
 
-<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
 `,
   },
   {
@@ -19500,15 +19597,15 @@ Disallow: /</code></pre>
   },
   {
     slug: '301-vs-302-redirects',
-    seoTitle: '301 vs 302 Redirects: Which to Use and How to Set Them Up',
+    seoTitle: '301 vs 302 Redirect: Which HTTP Code to Use for SEO',
     title: '301 vs 302 Redirects: Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
-    description: '301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.',
+    description: '301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
-<p>A 301 redirect tells browsers and search engines that a page has moved permanently, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
+<p>In 301 vs 302, the difference is permanence: a 301 redirect tells browsers and search engines that a page has moved for good, so Google transfers indexing and ranking signals to the new URL. A 302 says the move is temporary, so Google keeps the original URL in its results and expects it back. Use a 301 for almost every real change, such as a new slug, a merged page, a new domain or the switch to https, and keep 302s for situations where the old URL genuinely returns. Whichever you use, send each old URL straight to its closest equivalent in a single hop.</p>
 <p>Redirects are where most redesigns and migrations quietly lose rankings. In my <a href="/wordpress-migration/">WordPress migration</a> work, every old URL that changes is 301-redirected to its new equivalent and Search Console is monitored after the move. This guide covers which redirect to use, what each does to SEO, and how to set them up on WordPress.</p>
 <p>If a redirect has gone wrong and your site now shows "too many redirects", go straight to <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS in WordPress</a>.</p>
 
@@ -19546,6 +19643,28 @@ Disallow: /</code></pre>
   <li><strong>Language or country detection:</strong> automatic redirects based on location can stop Google seeing your other versions. Offer a visible choice instead.</li>
 </ul>
 <p>If a permanent move was set up as a 302 by mistake, Google may eventually treat a long-standing 302 as permanent, but there's no reason to wait and see. Change it to a 301.</p>
+
+<h2>HTTP 301 vs 302: what the server actually sends</h2>
+<p>A redirect is just an HTTP response with a status code and a Location header. Visitors never see it, which is why a wrong code goes unnoticed for months. This is what each looks like:</p>
+<pre><code>HTTP/1.1 301 Moved Permanently
+Location: https://example.in/services/website-design/
+
+HTTP/1.1 302 Found
+Location: https://example.in/diwali-sale/</code></pre>
+<p>To check which one your site sends, use a redirect checker or run this from a terminal (Windows 10 and 11 include curl):</p>
+<pre><code>curl -sI https://example.in/old-page/</code></pre>
+<p>The first line shows the status code and the Location line shows where it points. If the target is itself another redirect, follow it with curl -sIL and count the hops; more than one is a chain to fix.</p>
+<table>
+  <thead><tr><th>Question</th><th>HTTP 301</th><th>HTTP 302</th></tr></thead>
+  <tbody>
+    <tr><td>Which URL Google indexes</td><td>The new one</td><td>Usually the old one</td></tr>
+    <tr><td>Where ranking signals go</td><td>Consolidated on the new URL</td><td>Stay with the old URL</td></tr>
+    <tr><td>Browser caching</td><td>Cached, sometimes for a long time</td><td>Not cached by default</td></tr>
+    <tr><td>Default in WordPress wp_redirect()</td><td>No, must be set</td><td>Yes</td></tr>
+    <tr><td>Easy to undo</td><td>Harder, because browsers remember it</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<p>That WordPress default matters: a developer who writes a quick redirect in a theme or plugin without passing 301 creates a temporary redirect. If a theme function or snippet plugin handles redirects on your site, check its status code.</p>
 
 <h2>How redirects affect SEO</h2>
 <p>Google has said for years that a 301 or 302 doesn't lose ranking value just by being a redirect. When rankings drop after URLs change, it is almost always because of how the redirects were done:</p>
@@ -19604,16 +19723,18 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
 <h2>FAQs</h2>
 <h3>What is the difference between a 301 and a 302 redirect?</h3>
 <p>A 301 means the page has moved permanently, so Google indexes the new URL and moves its signals there. A 302 means the move is temporary, so Google usually keeps the original URL indexed. Visitors see the same thing with both.</p>
+<h3>Is a 301 or 302 redirect better for SEO?</h3>
+<p>For a permanent change, a 301 is better because Google moves the page's signals to the new URL. A 302 is only better when the old URL is genuinely coming back, such as a short sale page swap.</p>
+<h3>How can I tell if a URL uses HTTP 301 or 302?</h3>
+<p>Use an online redirect checker or run curl -sI with the old URL. The first line of the response shows the status code. Browser developer tools, in the Network tab with Preserve log ticked, show it too.</p>
 <h3>Does a 301 redirect hurt SEO?</h3>
 <p>Not by itself. Problems come from redirecting to unrelated pages, chains of several hops, missing redirects for pages that had links, and removing redirects too early.</p>
 <h3>How long should I keep a 301 redirect?</h3>
 <p>Google recommends keeping redirects from a site move for as long as possible, generally at least a year. Since old links and bookmarks keep working only while the redirect exists, leaving them in place permanently is the safer choice.</p>
-<h3>How do I fix "Avoid multiple page redirects" in WordPress?</h3>
-<p>Find the chain with a redirect checker, then make every rule point to the final URL, force https in only one place, and update internal links and ads that use old, http or wrong-www addresses.</p>
 <h3>Can I redirect a deleted page to my homepage?</h3>
 <p>Only if the homepage genuinely replaces it. Otherwise Google tends to treat it as a soft 404. Redirect to the closest related page, or let the URL return a 404 or 410 if nothing related exists.</p>
 
-<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up.</p>
+<p>Moving hosts, changing domain or restructuring your URLs? A <a href="/wordpress-migration/">WordPress migration</a> includes a redirect map for changed URLs and post-move checks, and if redirect chains or old URLs are already holding your site back, <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the clean-up. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> just to audit and fix your redirects.</p>
 `,
   },
   {
@@ -25365,11 +25486,11 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   },
   {
     slug: 'utm-tags-explained',
-    seoTitle: 'UTM Tags Explained: How to Build and Track Campaign Links',
+    seoTitle: 'UTM Tags: How to Build, Name and Track Campaign Links',
     title: 'UTM Tags Explained: How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
-    description: 'UTM tags explained: the five parameters, naming GA4 understands, examples for WhatsApp, Instagram, email, QR codes and Meta ads, and reading them in GA4.',
+    description: 'UTM tags explained: the five parameters, naming GA4 understands, a ready template for WhatsApp, Instagram, email, QR codes and ads, and GA4 reports.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
     body: `
@@ -25447,6 +25568,31 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <pre><code>=A2&amp;"?utm_source="&amp;B2&amp;"&amp;utm_medium="&amp;C2&amp;"&amp;utm_campaign="&amp;D2</code></pre>
 <p>Long tagged links look messy in WhatsApp and make dense QR codes, so a link shortener you control is useful. Test the short link once to make sure the parameters survive, and check that any redirect on your own site keeps them too.</p>
 
+<h2>A ready UTM tags template for a small business</h2>
+<p>Most small businesses reuse the same handful of channels, so set up a shared sheet once and copy from it. This template uses mediums GA4 recognises, apart from qr, and one campaign name per offer. Replace example.in and the campaign name with your own.</p>
+<table>
+  <thead><tr><th>Where the link goes</th><th>utm_source</th><th>utm_medium</th><th>utm_campaign</th><th>utm_content (optional)</th></tr></thead>
+  <tbody>
+    <tr><td>WhatsApp broadcast or status</td><td>whatsapp</td><td>social</td><td>diwali-offer-2026</td><td>broadcast or status</td></tr>
+    <tr><td>Instagram bio link</td><td>instagram</td><td>social</td><td>bio-link</td><td>(leave empty)</td></tr>
+    <tr><td>Monthly email newsletter</td><td>newsletter</td><td>email</td><td>diwali-offer-2026</td><td>top-button or footer-link</td></tr>
+    <tr><td>QR code on a flyer or shop counter</td><td>flyer</td><td>qr (with a custom channel group)</td><td>diwali-offer-2026</td><td>counter or flyer-a5</td></tr>
+    <tr><td>Listing on a partner or directory site</td><td>partner-name</td><td>referral</td><td>listing</td><td>(leave empty)</td></tr>
+    <tr><td>Meta ads</td><td>facebook or instagram</td><td>paid_social</td><td>diwali-offer-2026</td><td>ad name</td></tr>
+  </tbody>
+</table>
+<p>A finished link looks like this:</p>
+<pre><code>https://example.in/diwali-offer/?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=diwali-offer-2026&amp;utm_content=broadcast</code></pre>
+<p>Before sharing any tagged link, run through this checklist:</p>
+<ul>
+  <li>All values lowercase, with hyphens instead of spaces</li>
+  <li>Source, medium and campaign filled in every time</li>
+  <li>Link opened once on a phone to confirm the page loads and the tags survive any redirect</li>
+  <li>Long links shortened or turned into a QR code only after tagging</li>
+  <li>The new row added to the shared sheet so the next person reuses the same names</li>
+</ul>
+<p>For chats started from your site rather than links you send, see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a>, which covers click tracking.</p>
+
 <h2>Reading UTM data in GA4</h2>
 <ol>
   <li>Open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>.</li>
@@ -25468,8 +25614,10 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 </ul>
 
 <h2>FAQs</h2>
-<h3>What are UTM parameters used for?</h3>
-<p>They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries.</p>
+<h3>What are UTM tags and what are they used for?</h3>
+<p>UTM tags are labels added to a link after a question mark. They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries.</p>
+<h3>Are UTM tags case-sensitive?</h3>
+<p>Yes, in your reports. GA4 treats WhatsApp and whatsapp as two different sources, which splits your data. Keep every value lowercase.</p>
 <h3>Do UTM tags affect SEO?</h3>
 <p>No. They only affect analytics. Tagged versions of a page don't compete with the original in Google as long as your pages have correct canonical tags, which WordPress SEO plugins set by default.</p>
 <h3>Which UTM parameters are required?</h3>
@@ -25479,7 +25627,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <h3>How do I track WhatsApp traffic in GA4?</h3>
 <p>Add UTM tags to every link you send on WhatsApp, with a consistent source such as whatsapp, so those visits stop appearing as Direct. To track chats started from your website, use a click event on wa.me links and a pre-filled message naming the page or campaign.</p>
 
-<p>Running campaigns and want to see which ones actually produce enquiries? A <a href="/landing-page-design/">landing page</a> built for one campaign, with conversion tracking confirmed before the ads start, makes your UTM data worth reading.</p>
+<p>Running campaigns and want to see which ones actually produce enquiries? A <a href="/landing-page-design/">landing page</a> built for one campaign, with conversion tracking confirmed before the ads start, makes your UTM data worth reading. If tracking on your existing WordPress site needs fixing first, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to set up GA4 events and test them.</p>
 `,
   },
   {
@@ -42132,15 +42280,15 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'backlink-audit-disavow',
-    seoTitle: 'Backlink Audit and Disavow: When Toxic Links Matter',
+    seoTitle: 'Toxic Backlink Audit: When to Disavow and When to Ignore',
     title: 'Backlink Audits and the Disavow Tool: When "Toxic" Links Really Matter',
-    description: 'How to do a backlink audit for a small business site, when to use the Google disavow tool, and why most "toxic" spam links can simply be ignored.',
+    description: 'How to do a toxic backlink audit for a small business site, a table for sorting each link, when to use Google\'s disavow tool and when to ignore spam.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
-<p>A backlink audit is a review of the sites linking to yours, to check for harmful links and spot opportunities. For most small business sites, Google already ignores the random spam links that SEO tools label &quot;toxic&quot;, so you rarely need the disavow tool. Disavow is mainly for sites with a manual action for unnatural links, or with a history of paid or scheme links built on purpose.</p>
+<p>A toxic backlink audit is a review of the sites linking to yours, to find links that could genuinely harm you and spot opportunities. For most small business sites, Google already ignores the random spam links that SEO tools label &quot;toxic&quot;, so you rarely need the disavow tool. Disavow is mainly for sites with a manual action for unnatural links, or with a history of paid or scheme links built on purpose.</p>
 <p>This guide explains how to run a simple backlink audit, how to decide whether to disavow, and what to do instead when the problem is not bad links at all.</p>
 
 <h2>Why &quot;toxic link&quot; reports cause panic</h2>
@@ -42168,8 +42316,24 @@ add_action( 'after_setup_theme', function () {
 <li><strong>Mark the clearly good links:</strong> local news, industry associations, suppliers, clients, chambers of commerce, directories that real people use, partner sites.</li>
 <li><strong>Mark links you or an agency created on purpose:</strong> paid guest posts, link packages, private blog networks, link exchanges, footer links on unrelated sites.</li>
 <li><strong>Ignore the random spam</strong> unless it is huge in volume and clearly tied to a drop, or you have a manual action.</li>
-<li><strong>Check for broken links to your site.</strong> Links pointing to pages that now show 404 errors are wasted; redirect them to the closest live page.</li>
+<li><strong>Check for broken links to your site.</strong> Links pointing to pages that now show 404 errors are wasted; redirect them to the closest live page with a 301; see <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</li>
 </ol>
+
+<h2>Toxic backlink audit: how to sort each link</h2>
+<p>Put your exported domains in a spreadsheet with columns for domain, number of links, the page linked to, anchor text, category and action. Then sort every domain into one of these rows:</p>
+<table>
+<thead><tr><th>What the link looks like</th><th>Category</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Local newspaper, association, supplier, client or partner site</td><td>Good</td><td>Keep; thank them, and check the link points to a live page</td></tr>
+<tr><td>Directory or listing site that real customers use</td><td>Good or neutral</td><td>Keep; make sure your name, address and phone match</td></tr>
+<tr><td>Scraper copies, auto-generated stats pages, odd foreign domains you never contacted</td><td>Random spam</td><td>Ignore; Google usually discounts these already</td></tr>
+<tr><td>Paid guest posts with keyword-rich anchors, bought from a link package</td><td>Self-made, against guidelines</td><td>Ask for removal; disavow the domain if removal fails</td></tr>
+<tr><td>Private blog network or exchange pages linking with exact-match anchors</td><td>Self-made, against guidelines</td><td>Disavow at domain level</td></tr>
+<tr><td>Links to pages that now return 404</td><td>Wasted value</td><td>Redirect the target URL to the closest live page</td></tr>
+</tbody>
+</table>
+<p>The anchor text column is the quickest signal. Natural links mostly use your business name, your web address or plain words like &quot;website&quot;; dozens of links using the exact phrase you want to rank for usually mean someone built them on purpose.</p>
+<p>If a toxic link report arrives by email from someone selling removal, check it against this table before replying. The <a href="/blog/helpful-404-pages/">helpful 404 pages guide</a> covers what visitors from old links see while you sort out redirects.</p>
 
 <h2>Check Search Console for manual actions first</h2>
 <p>In Search Console, open Security and Manual Actions, then Manual actions. If it says &quot;No issues detected&quot;, Google has not penalised your site manually. Most ranking drops are not manual actions, and a disavow file will not fix a drop caused by thin content, slow pages, indexing problems or algorithm updates.</p>
@@ -42210,8 +42374,10 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>For local service businesses, the commercial pages matter most. A clear service page, a page for each city you genuinely serve, and steady reviews on your Google Business Profile are the foundation. Links help that foundation rank, but they cannot replace it.</p>
 
 <h2>FAQs</h2>
-<h3>How do I do a backlink audit?</h3>
+<h3>How do I do a toxic backlink audit?</h3>
 <p>Export links from Google Search Console, group them by domain, mark good links and any links you deliberately built, ignore random spam, check for manual actions and redirect broken inbound links.</p>
+<h3>Are toxic backlink scores from SEO tools accurate?</h3>
+<p>They are each tool's own estimate, not a Google measure. Treat a high score as a prompt to look at the link, then judge it by who placed it and why, using the sorting table above.</p>
 <h3>Should I disavow toxic backlinks?</h3>
 <p>Usually not, if they are random spam you never asked for. Disavow mainly when you have a manual action for unnatural links or know paid or scheme links were built for your site.</p>
 <h3>Can spammy backlinks hurt my rankings?</h3>
@@ -44874,16 +45040,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'Web Fonts Slowing Your Website? How to Load Them Faster',
+    seoTitle: 'Business Website Web Font Performance: Load Fonts Faster',
     title: 'Web Fonts Slowing Your Website? How to Load Fonts Efficiently in WordPress and Shopify',
-    description: 'Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.',
+    description: 'Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>If web fonts are slowing your website, the fix is usually to load fewer of them: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
-<p>Good typography makes a site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
+<p>Good web font performance on a business website comes from loading fewer fonts: keep one or two families and two or three weights, self-host the files in WOFF2 format, use font-display so text stays visible, and preload only the fonts used on the first screen. You rarely need to give up your brand fonts; you just need to load them sensibly.</p>
+<p>Good typography makes a business site look professional, but a careless font setup can delay your headline, make text flash or jump, and add weight to every page, which matters for visitors on Indian mobile networks.</p>
 
 <h2>How web fonts slow a page down</h2>
 <p>Each font family, weight and style is usually a separate file. Regular, medium, semi-bold and bold, plus italics of each, can mean eight files for a single family. Add a second family for headings and an icon font, and the count keeps climbing.</p>
@@ -44920,6 +45086,40 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Indian scripts:</strong> Hindi, Marathi, Gujarati and other scripts need fonts that include them, and these files are often larger, so choose weights even more carefully. See <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on websites</a>.</li>
 </ul>
 <p>In WordPress, Elementor has a setting to load Google Fonts locally, block themes include a Font Library that installs fonts into your own site, and plugins can download and host fonts for you. Option names change between versions, so check your current setup. Self-hosting also means visitors' browsers do not contact a third-party font server just to show your text.</p>
+
+<h2>Business website web font performance: a setup you can copy</h2>
+<p>This is the font setup I aim for on most business sites: one family, self-hosted, a regular and a bold weight, swap behaviour, and a fallback tuned so the swap barely moves the text. Upload the two WOFF2 files to a fonts folder in your theme or child theme, then add CSS like this:</p>
+<pre><code>@font-face {
+  font-family: "Brand Sans";
+  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brand Sans";
+  src: url("/wp-content/themes/your-child-theme/fonts/brand-sans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Fallback sized to match, so the swap causes little layout shift */
+@font-face {
+  font-family: "Brand Sans Fallback";
+  src: local("Arial");
+  size-adjust: 100%;
+}
+body { font-family: "Brand Sans", "Brand Sans Fallback", sans-serif; }</code></pre>
+<p>Adjust the size-adjust percentage until the fallback text takes up the same space as the brand font; a developer can measure this in a few minutes. Then switch off the theme's or builder's own Google Fonts loading, or you will load the family twice. Compare the setups side by side:</p>
+<table>
+<thead><tr><th>Setup</th><th>Extra connections</th><th>Control over files</th><th>Typical risk</th></tr></thead>
+<tbody>
+<tr><td>Google Fonts link from the theme</td><td>Yes, to two font domains</td><td>None</td><td>Many weights loaded by default</td></tr>
+<tr><td>Builder "load fonts locally" setting</td><td>No</td><td>Partial</td><td>Duplicates if the theme also loads fonts</td></tr>
+<tr><td>Self-hosted with your own CSS, as above</td><td>No</td><td>Full</td><td>Needs a developer to update fonts later</td></tr>
+<tr><td>System font stack, no web font</td><td>No</td><td>Not needed</td><td>Less distinctive branding</td></tr>
+</tbody>
+</table>
 
 <h2>Use font-display to keep text visible</h2>
 <p>The font-display setting tells the browser what to do while a font loads:</p>
@@ -44973,6 +45173,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 
 <h2>FAQs</h2>
+<h3>How do web fonts affect business website performance?</h3>
+<p>Each font file is an extra download that can delay your headline (LCP), cause text to jump when it swaps in (CLS) and add weight on slow mobile connections. One or two well-loaded families are rarely a problem; many weights from several sources usually are.</p>
 <h3>Are web fonts slowing my website?</h3>
 <p>Check the Network tab filtered by Font. If you see many files, files from several domains or duplicate families, fonts are likely adding delay and layout shift.</p>
 <h3>Is it better to self-host Google Fonts?</h3>
@@ -49268,19 +49470,19 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'test-structured-data-rich-results',
-    seoTitle: 'How to Test Structured Data and Fix Rich Result Errors',
+    seoTitle: 'Rich Snippet Testing Tool: How to Check Rich Snippets',
     title: 'How to Test Structured Data: Rich Results Test vs Schema Markup Validator, Reading Errors and Fixing Them in WordPress',
-    description: 'How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.',
+    description: 'The rich snippet testing tool to use is Google\'s Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.',
     date: '2026-09-30',
-    updated: '2026-10-16',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>To test structured data, run the page through two tools: Google's Rich Results Test, which shows which rich result types Google can read from the page and what is stopping them, and the Schema Markup Validator, which checks that the schema.org code itself is valid, including types Google doesn't use for rich results. Then use Search Console's Enhancements reports to catch problems across the whole site, fix errors before warnings, retest and click Validate fix.</p>
+<p>The rich snippet testing tool to use is Google's free Rich Results Test: paste a URL or code and it shows which rich results the page is eligible for and which errors are stopping them. To check rich snippets fully, pair it with the Schema Markup Validator for the schema.org code itself and Search Console's Enhancements reports for the whole site, then fix errors before warnings, retest and click Validate fix.</p>
 <p>Structured data for your business, services, products, articles and breadcrumbs, checked with Google's testing tools, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide shows the same checking process so you can run it yourself, read what the tools are telling you, and trace each error back to the plugin, theme or template causing it.</p>
-<p>If you are still deciding which types to add, start with <a href="/blog/schema-markup-explained/">schema markup explained</a>. This article assumes markup already exists and covers testing and fixing it.</p>
+<p>If you are still deciding which types to add, start with <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
-<h2>Which tool answers which question</h2>
+<h2>Rich snippet testing tool: which one answers which question</h2>
 <table>
   <thead><tr><th>Tool</th><th>Question it answers</th><th>Limits</th></tr></thead>
   <tbody>
@@ -49293,8 +49495,8 @@ Support:           who to contact, and on what terms</code></pre>
 </table>
 
 <h2>Step 1: See what is on the page before testing</h2>
-<p>Open the page, press Ctrl+U and search the source for application/ld+json. Count the blocks you find. A typical WordPress page has one connected block from the SEO plugin, sometimes a second from WooCommerce or a schema plugin. Three or four blocks, or the same type appearing twice, is the first sign of duplication.</p>
-<p>The source often tells you which plugin wrote each block. At the time of writing, Yoast SEO's script tag carries a class mentioning yoast-schema-graph and Rank Math's mentions rank-math-schema, and many plugins leave an HTML comment with their name nearby. Old themes may also add microdata straight into the visible HTML, which you can spot as itemtype and itemprop attributes. Note each source for when an error appears.</p>
+<p>Open the page, press Ctrl+U and search the source for application/ld+json. Count the blocks. A typical WordPress page has one from the SEO plugin, sometimes a second from WooCommerce; the same type appearing twice is the first sign of duplication.</p>
+<p>The source often tells you which plugin wrote each block, from its class name or a nearby HTML comment. Old themes may add microdata, visible as itemtype and itemprop attributes. Note each source for when an error appears.</p>
 
 <h2>Step 2: The Rich Results Test, live URL or code</h2>
 <p>The Rich Results Test offers two modes, and they test different things:</p>
@@ -49302,15 +49504,15 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>URL mode</strong> fetches the live page the way Google's smartphone crawler does, runs its JavaScript, and tests the rendered result. This is closest to what Google sees, including markup injected by scripts or tag managers.</li>
   <li><strong>Code mode</strong> tests a snippet or a full page source you paste in. Use it for a staging site behind a password, for markup you are writing before it goes live, or to isolate one block from the rest of the page.</li>
 </ul>
-<p>Three things trip people up in URL mode. First, if the test reports that the page couldn't be fetched, a firewall, a bot protection setting or robots.txt may be blocking Google's crawler, which is a bigger problem than the schema. Second, a page cache may serve old markup, so purge your caching plugin, host cache and CDN before retesting a fix. Third, the test reports each detected item separately; a product page might show both Product snippets and Merchant listings, each with its own list of issues.</p>
+<p>In URL mode, a "couldn't be fetched" result usually means a firewall, bot protection or robots.txt is blocking Google's crawler, a bigger problem than the schema. Purge caches before retesting a fix, and note that each detected item, such as Product snippets and Merchant listings, has its own list of issues.</p>
 <p>Testing on staging first is sensible for big schema changes; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how to set one up.</p>
 
 <h2>Step 3: The Schema Markup Validator</h2>
 <p>The Schema Markup Validator, run by schema.org at validator.schema.org, is the successor to Google's old Structured Data Testing Tool. It checks your markup against the full schema.org vocabulary rather than Google's rules, which makes it the right tool for:</p>
 <ul>
   <li>Types with no Google rich result, such as Service, ProfessionalService or WebSite, which the Rich Results Test may simply report as "no items detected"</li>
-  <li>Seeing the whole graph: whether the article's author points to the same Person or Organization as the rest of the site, and whether the WebPage links to the right business</li>
-  <li>Spotting misspelt property names and properties used on the wrong type, which the validator flags as not recognised</li>
+  <li>Seeing the whole graph, such as whether every page points to the same Organization</li>
+  <li>Spotting misspelt property names and properties used on the wrong type</li>
 </ul>
 <p>A clean validator result means the code is well formed, not that Google will show anything.</p>
 
@@ -49323,7 +49525,7 @@ Support:           who to contact, and on what terms</code></pre>
     <tr><td>Valid</td><td>Google can read the item and it is eligible</td><td>Nothing, but eligibility is not a promise of display</td></tr>
   </tbody>
 </table>
-<p>Google's wording varies between tools and has changed over time; Search Console may describe the same split as critical and non-critical issues. The rule doesn't change: a missing optional field is fine, and a made-up rating, brand or price added to silence a warning breaks Google's guidelines.</p>
+<p>A missing optional field is fine; a made-up rating, brand or price added to silence a warning breaks Google's guidelines.</p>
 
 <h2>Common structured data errors and how to fix them</h2>
 <table>
@@ -49372,34 +49574,52 @@ Right:
   <li>Purge caches and retest two or three example URLs.</li>
   <li>Click Validate fix. Google rechecks the affected URLs over the following days or weeks, and the status moves through started and passed, or failed.</li>
 </ol>
-<p>A failed validation means at least one affected URL still showed the issue when Google rechecked it, often a page using a different template. Fix that template and validate again. For the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+<p>A failed validation usually means a page on another template still has the issue. For the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
 
-<h2>Testing after plugin and theme updates</h2>
-<p>Structured data breaks quietly. Nothing changes on screen when an update changes a plugin's schema output or a theme starts adding its own. Keep a short list with one URL per template: home, a service page, a blog post, a simple product, a variable product, a category and the contact page. Then:</p>
-<ul>
-  <li>After any SEO plugin, schema plugin, theme or WooCommerce update, purge caches and run each URL through the Rich Results Test</li>
-  <li>Compare the detected items with your last notes; a missing type or a new duplicate is the warning sign</li>
-  <li>After switching SEO plugins, deactivate the old one fully once its settings are imported, then test every template</li>
-  <li>Once a month, check the Enhancements reports for a drop in valid items</li>
-</ul>
+<h2>How to check rich snippets: a 15-minute checklist</h2>
+<p>Structured data breaks quietly, because nothing changes on screen when an update alters a plugin's schema output. Keep one URL per template (home, a service page, a blog post, a simple product, a variable product, a category and contact) and run this after launch and after every SEO plugin, theme or WooCommerce update:</p>
+<ol>
+  <li>Purge the caching plugin, host cache and CDN.</li>
+  <li>Run each URL through the Rich Results Test in URL mode and note the detected item types.</li>
+  <li>Compare with last time: a missing type or a new duplicate is the warning sign.</li>
+  <li>Open any item with errors and note the exact field named.</li>
+  <li>Run the same URL through the Schema Markup Validator to check the graph and non-Google types such as Service.</li>
+  <li>Check that marked-up facts (price, stock, author, date) match what the visitor sees.</li>
+  <li>Fix the template or plugin setting, not one page, then retest.</li>
+  <li>Once a month, check Search Console's Enhancements reports for a drop in valid items.</li>
+</ol>
 <p><a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> covers backups and staging for those updates.</p>
 
+<h3>What each rich result type needs before you test</h3>
+<table>
+  <thead><tr><th>Rich result</th><th>Typical source in WordPress</th><th>Most common reason it fails</th></tr></thead>
+  <tbody>
+    <tr><td>Breadcrumbs</td><td>SEO plugin breadcrumb setting</td><td>Breadcrumbs turned off in the theme, so no markup is output</td></tr>
+    <tr><td>Product snippets</td><td>WooCommerce plus the SEO plugin</td><td>Variable products without a price on the parent, or no reviews field</td></tr>
+    <tr><td>Merchant listings</td><td>WooCommerce plus the SEO plugin</td><td>Missing shipping or returns details, or an unreadable price format</td></tr>
+    <tr><td>Article</td><td>SEO plugin post settings</td><td>Missing author or image, or the wrong schema type chosen</td></tr>
+    <tr><td>Review snippets</td><td>Review or schema plugin</td><td>Self-serving reviews on your own business, which Google won't show</td></tr>
+  </tbody>
+</table>
+
 <h2>Valid, but no rich result?</h2>
-<p>Passing the tests makes a page eligible, nothing more; Google decides per search whether to show a rich result, and it has narrowed several features: FAQ rich results are now limited to a small group of authoritative sites, so check <a href="/blog/faq-page-seo/">FAQs for SEO</a> before expecting dropdowns, and review stars aren't shown for reviews a business marks up about itself on its own LocalBusiness or Organization markup. Check Google's current documentation for supported types.</p>
+<p>Passing the tests makes a page eligible, nothing more; Google decides per search whether to show a rich result. FAQ rich results are now limited to a small group of authoritative sites (see <a href="/blog/faq-page-seo/">FAQs for SEO</a>), and self-serving review stars aren't shown. Check Google's current documentation for supported types.</p>
 
 <h2>FAQs</h2>
+<h3>What is the best rich snippet testing tool?</h3>
+<p>Google's Rich Results Test, because it checks your markup against the rules Google actually uses for rich snippets. Use the Schema Markup Validator alongside it for types Google doesn't show as rich results.</p>
+<h3>How do I check rich snippets on my website?</h3>
+<p>Test one URL per template in the Rich Results Test, then open Search Console's Enhancements reports to see valid and invalid items across the site. To see whether a snippet actually appears, search for the page in Google, but remember display is never guaranteed.</p>
 <h3>What is the difference between the Rich Results Test and the Schema Markup Validator?</h3>
 <p>The Rich Results Test checks markup against Google's requirements for rich results and only reports types Google supports. The Schema Markup Validator checks any schema.org markup for valid syntax and vocabulary, but says nothing about Google eligibility.</p>
 <h3>Why does the Rich Results Test say no items were detected?</h3>
 <p>Either the page has no markup Google uses for rich results, which is normal for Service or WebSite markup, or the markup didn't load for Google's crawler. Check the source, then run the URL through the Schema Markup Validator.</p>
 <h3>Do structured data warnings hurt rankings?</h3>
 <p>No. A warning means a recommended field is missing; the item stays eligible. Fill it only with accurate information.</p>
-<h3>How long does Search Console take to validate a fix?</h3>
-<p>It varies with how often Google crawls your pages, from a few days to a couple of weeks or more. Retest a few URLs yourself first so you only start validation once the fix is live.</p>
 <h3>Why does Search Console still show errors I have fixed?</h3>
-<p>The reports reflect Google's last crawl, so they lag behind your changes. Check that caches are purged, use Test live URL in URL Inspection to confirm Google sees the fix, then validate.</p>
+<p>The reports reflect Google's last crawl, so they lag behind your changes, sometimes by weeks. Purge caches, use Test live URL in URL Inspection to confirm Google sees the fix, then click Validate fix.</p>
 
-<p>Want your structured data tested template by template, duplicates removed and errors fixed at the source rather than page by page? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
+<p>Want your structured data tested template by template, duplicates removed and errors fixed at the source rather than page by page? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off schema fix, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -70962,13 +71182,13 @@ or a cookie name starts with:
     slug: 'wordpress-multisite-seo',
     seoTitle: 'WordPress Multisite SEO: Sitemaps, Canonicals and Hreflang',
     title: 'WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang',
-    description: 'WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.',
+    description: 'WordPress multisite SEO explained: subdomains vs subfolders, a per-site settings audit, sitemaps, Search Console, duplicate content, hreflang, splitting.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
-<p>WordPress multisite SEO works much like SEO for separate sites, because Google treats each site in the network as its own website. Each one needs its own sitemap, Search Console property, titles, internal links and unique content. The main extra risks are duplicate content across sites, plugin settings that differ between sites, and shared performance problems.</p>
+<p>WordPress multisite SEO works much like SEO for separate sites, because Google treats each site in the network as its own website. Each one needs its own sitemap, Search Console property, titles, internal links and unique content, and settings must be checked site by site rather than once for the network. The main extra risks are duplicate content across sites, plugin settings that differ between sites, and shared performance problems.</p>
 <p>This guide covers the choices and settings that matter for multisite networks run by Indian businesses, such as franchise groups, school chains, multi-brand companies and sites with Hindi and English versions. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">when you actually need WordPress multisite</a> first.</p>
 
 <h2>Subdomain vs subdirectory multisite for SEO</h2>
@@ -71038,6 +71258,27 @@ or a cookie name starts with:
 </ul>
 <p>Splitting a site out of a network later is possible but needs careful migration and redirects, so think about this early.</p>
 
+<h2>Multi site WordPress SEO: audit every site's settings</h2>
+<p>The most common multi site WordPress SEO problem I see is not strategy but drift: one site in the network was left with search engines discouraged after launch, another has an old SEO plugin configuration, a third points its canonical tags at the main site. Network admins rarely open every site's settings, so check them in a table like this:</p>
+<table>
+<thead><tr><th>Setting</th><th>Where to check it</th><th>What correct looks like</th></tr></thead>
+<tbody>
+<tr><td>Search engine visibility</td><td>Each site: Settings &gt; Reading</td><td>"Discourage search engines" unticked on every live site</td></tr>
+<tr><td>SEO plugin activation</td><td>Network Admin &gt; Plugins, then each site</td><td>Same plugin on every site, configured per site</td></tr>
+<tr><td>Titles and meta descriptions</td><td>SEO plugin templates on each site</td><td>Site name and wording specific to that site</td></tr>
+<tr><td>XML sitemap</td><td>Each site's own sitemap URL</td><td>Lists only that site's indexable URLs</td></tr>
+<tr><td>Canonical tags</td><td>View source on a few pages per site</td><td>Self-referencing, unless content is deliberately shared</td></tr>
+<tr><td>robots.txt</td><td>Each site's domain or subdomain /robots.txt</td><td>No leftover Disallow: / and the right sitemap line</td></tr>
+<tr><td>Search Console</td><td>One property per site</td><td>Sitemap submitted, no spike in excluded pages</td></tr>
+</tbody>
+</table>
+<p>On a large network, WP-CLI saves opening every dashboard. This lists each site with its visibility setting, where 1 means search engines are allowed and 0 means discouraged:</p>
+<pre><code>for url in $(wp site list --field=url); do
+  echo "$url"
+  wp option get blog_public --url="$url"
+done</code></pre>
+<p>Any site returning 0 that should be live needs fixing in Settings &gt; Reading. Run it after launching a new site in the network and after migrations, because staging copies are usually set to 0.</p>
+
 <h2>A multisite SEO checklist</h2>
 <ol>
 <li>Each site indexable, with search engine visibility checked.</li>
@@ -71050,6 +71291,8 @@ or a cookie name starts with:
 </ol>
 
 <h2>FAQs</h2>
+<h3>How do I do multi site WordPress SEO?</h3>
+<p>Treat each site as its own website: configure the SEO plugin, sitemap, Search Console property and content per site, then audit every site's settings regularly, because network-level changes and new sites often leave one site misconfigured.</p>
 <h3>Is WordPress multisite bad for SEO?</h3>
 <p>No. Google treats each site in the network as its own site. SEO problems come from duplicate content, misconfigured plugins, accidental noindex settings or a slow shared setup, not from multisite itself.</p>
 <h3>Subdomain or subdirectory: which is better for WordPress multisite SEO?</h3>

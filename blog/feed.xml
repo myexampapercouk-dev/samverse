@@ -88,7 +88,7 @@
     <link>https://samverse.space/blog/elementor-vs-gutenberg/</link>
     <guid>https://samverse.space/blog/elementor-vs-gutenberg/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Elementor vs Gutenberg compared: editing experience, speed, design flexibility, cost, lock-in and client editing, with clear advice on when to choose each one.</description>
+    <description>Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.</description>
   </item>
   <item>
     <title>How to Choose WordPress Hosting in India: Hosting Types, Server Location, Speed, Backups, Support and Renewals</title>
@@ -186,7 +186,7 @@
     <link>https://samverse.space/blog/wordpress-vs-custom-coded-website/</link>
     <guid>https://samverse.space/blog/wordpress-vs-custom-coded-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress vs a custom-coded website: the real differences in cost, launch time, editing, speed, SEO, security and upkeep, and which one suits your business.</description>
+    <description>The difference between a WordPress website and a custom coded website: cost, launch time, editing, speed, SEO, security and upkeep, and which suits you.</description>
   </item>
   <item>
     <title>Hotel and Homestay Websites: How to Get More Direct Bookings and Rely Less on OTAs</title>
@@ -704,7 +704,7 @@
     <link>https://samverse.space/blog/local-landing-pages-without-doorway-pages/</link>
     <guid>https://samverse.space/blog/local-landing-pages-without-doorway-pages/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Local landing pages done right: Google's doorway page policy, unique content for each city or area page, when not to build them and how to fix them.</description>
+    <description>SEO doorway pages explained: what Google's policy says, a 10-point audit for city and area pages, the unique content each needs and how to fix doorways.</description>
   </item>
   <item>
     <title>Privacy Policy and Cookie Consent for Indian Business Websites: DPDP Basics, GA4, Meta Pixel and Consent Mode v2</title>
@@ -1096,7 +1096,7 @@
     <link>https://samverse.space/blog/robots-txt-explained/</link>
     <guid>https://samverse.space/blog/robots-txt-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Robots.txt explained simply: how crawlers read it, safe WordPress and WooCommerce examples, AI crawler rules, Search Console testing and common mistakes.</description>
+    <description>Robots.txt for WordPress explained: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples and mistakes.</description>
   </item>
   <item>
     <title>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</title>
@@ -1117,7 +1117,7 @@
     <link>https://samverse.space/blog/301-vs-302-redirects/</link>
     <guid>https://samverse.space/blog/301-vs-302-redirects/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>301 vs 302 redirects explained: permanent vs temporary, 307 and 308, the SEO effect, chains and loops, and setting up redirects in WordPress and .htaccess.</description>
+    <description>301 vs 302 redirect: a 301 is permanent and moves SEO signals, a 302 is temporary. HTTP headers, 307/308, chains and WordPress and .htaccess setup.</description>
   </item>
   <item>
     <title>How to Keep Visitors Engaged on Your Website: Match Intent, Load Fast, Make Pages Scannable, Offer a Next Step and Measure Engaged Sessions in GA4</title>
@@ -1453,7 +1453,7 @@
     <link>https://samverse.space/blog/utm-tags-explained/</link>
     <guid>https://samverse.space/blog/utm-tags-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>UTM tags explained: the five parameters, naming GA4 understands, examples for WhatsApp, Instagram, email, QR codes and Meta ads, and reading them in GA4.</description>
+    <description>UTM tags explained: the five parameters, naming GA4 understands, a ready template for WhatsApp, Instagram, email, QR codes and ads, and GA4 reports.</description>
   </item>
   <item>
     <title>Thank-You Pages: Why Every Website Form Needs One, What to Put on It and How to Track It</title>
@@ -2398,7 +2398,7 @@
     <link>https://samverse.space/blog/backlink-audit-disavow/</link>
     <guid>https://samverse.space/blog/backlink-audit-disavow/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to do a backlink audit for a small business site, when to use the Google disavow tool, and why most &quot;toxic&quot; spam links can simply be ignored.</description>
+    <description>How to do a toxic backlink audit for a small business site, a table for sorting each link, when to use Google's disavow tool and when to ignore spam.</description>
   </item>
   <item>
     <title>How to Analyse Your Competitors' SEO and Find Gaps You Can Win</title>
@@ -2559,7 +2559,7 @@
     <link>https://samverse.space/blog/web-fonts-performance/</link>
     <guid>https://samverse.space/blog/web-fonts-performance/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Web fonts slowing your website? Cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.</description>
+    <description>Business website web font performance: cut weights, self-host WOFF2, use font-display and preload key fonts in WordPress or Shopify to fix LCP and CLS.</description>
   </item>
   <item>
     <title>Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website</title>
@@ -2804,7 +2804,7 @@
     <link>https://samverse.space/blog/test-structured-data-rich-results/</link>
     <guid>https://samverse.space/blog/test-structured-data-rich-results/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.</description>
+    <description>The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.</description>
   </item>
   <item>
     <title>How to Start an Email Newsletter for Your Small Business: Tools, Content and Sign-Ups</title>
@@ -4043,7 +4043,7 @@
     <link>https://samverse.space/blog/wordpress-multisite-seo/</link>
     <guid>https://samverse.space/blog/wordpress-multisite-seo/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>WordPress multisite SEO explained: subdomains vs subfolders, SEO plugins, sitemaps per site, Search Console, duplicate content, hreflang and when to split.</description>
+    <description>WordPress multisite SEO explained: subdomains vs subfolders, a per-site settings audit, sitemaps, Search Console, duplicate content, hreflang, splitting.</description>
   </item>
   <item>
     <title>WordPress Hosting Price in India: Intro vs Renewal, Shared vs VPS vs Managed, Hidden Add-ons and When to Move Host</title>

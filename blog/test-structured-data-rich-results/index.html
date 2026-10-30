@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Test Structured Data and Fix Rich Result Errors</title>
-  <meta name="description" content="How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.">
+  <title>Rich Snippet Testing Tool: How to Check Rich Snippets</title>
+  <meta name="description" content="The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/test-structured-data-rich-results/">
-  <meta property="og:title" content="How to Test Structured Data and Fix Rich Result Errors">
-  <meta property="og:description" content="How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.">
+  <meta property="og:title" content="Rich Snippet Testing Tool: How to Check Rich Snippets">
+  <meta property="og:description" content="The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-test-structured-data-rich-results.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/test-structured-data-rich-results/#article",
       "headline": "How to Test Structured Data: Rich Results Test vs Schema Markup Validator, Reading Errors and Fixing Them in WordPress",
-      "description": "How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.",
+      "description": "The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.",
       "datePublished": "2026-09-30",
-      "dateModified": "2026-10-16",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/test-structured-data-rich-results/",
       "image": "https://samverse.space/assets/og/blog-test-structured-data-rich-results.png",
       "articleSection": "SEO",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">SEO</a>
           <h1>How to Test Structured Data: Rich Results Test vs Schema Markup Validator, Reading Errors and Fixing Them in WordPress</h1>
-          <p class="post-dek">How to test structured data: Rich Results Test vs Schema Markup Validator, live URL vs code, errors vs warnings, Search Console validation and fixes.</p>
+          <p class="post-dek">The rich snippet testing tool to use is Google's Rich Results Test. How to check rich snippets, read errors and warnings, and fix schema in WordPress.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-10-16">16 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Test%20Structured%20Data%3A%20Rich%20Results%20Test%20vs%20Schema%20Markup%20Validator%2C%20Reading%20Errors%20and%20Fixing%20Them%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftest-structured-data-rich-results%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -153,14 +153,14 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
-              <li><a href="#which-tool-answers-which-question">Which tool answers which question</a></li>
+              <li><a href="#rich-snippet-testing-tool-which-one-answers-which-question">Rich snippet testing tool: which one answers which question</a></li>
               <li><a href="#step-1-see-what-is-on-the-page-before-testing">Step 1: See what is on the page before testing</a></li>
               <li><a href="#step-2-the-rich-results-test-live-url-or-code">Step 2: The Rich Results Test, live URL or code</a></li>
               <li><a href="#step-3-the-schema-markup-validator">Step 3: The Schema Markup Validator</a></li>
               <li><a href="#errors-warnings-and-valid-items">Errors, warnings and valid items</a></li>
               <li><a href="#common-structured-data-errors-and-how-to-fix-them">Common structured data errors and how to fix them</a></li>
               <li><a href="#search-console-enhancements-reports-and-validation">Search Console Enhancements reports and validation</a></li>
-              <li><a href="#testing-after-plugin-and-theme-updates">Testing after plugin and theme updates</a></li>
+              <li><a href="#how-to-check-rich-snippets-a-15-minute-checklist">How to check rich snippets: a 15-minute checklist</a></li>
               <li><a href="#valid-but-no-rich-result">Valid, but no rich result?</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -173,11 +173,11 @@
               <li>Test one page of every template after launch and after every SEO plugin, theme or WooCommerce update, purge caches first, then use Validate fix in Search Console.</li>
             </ul>
           </div>
-<p>To test structured data, run the page through two tools: Google's Rich Results Test, which shows which rich result types Google can read from the page and what is stopping them, and the Schema Markup Validator, which checks that the schema.org code itself is valid, including types Google doesn't use for rich results. Then use Search Console's Enhancements reports to catch problems across the whole site, fix errors before warnings, retest and click Validate fix.</p>
+<p>The rich snippet testing tool to use is Google's free Rich Results Test: paste a URL or code and it shows which rich results the page is eligible for and which errors are stopping them. To check rich snippets fully, pair it with the Schema Markup Validator for the schema.org code itself and Search Console's Enhancements reports for the whole site, then fix errors before warnings, retest and click Validate fix.</p>
 <p>Structured data for your business, services, products, articles and breadcrumbs, checked with Google's testing tools, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>. This guide shows the same checking process so you can run it yourself, read what the tools are telling you, and trace each error back to the plugin, theme or template causing it.</p>
-<p>If you are still deciding which types to add, start with <a href="/blog/schema-markup-explained/">schema markup explained</a>. This article assumes markup already exists and covers testing and fixing it.</p>
+<p>If you are still deciding which types to add, start with <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
-<h2 id="which-tool-answers-which-question">Which tool answers which question</h2>
+<h2 id="rich-snippet-testing-tool-which-one-answers-which-question">Rich snippet testing tool: which one answers which question</h2>
 <table>
   <thead><tr><th>Tool</th><th>Question it answers</th><th>Limits</th></tr></thead>
   <tbody>
@@ -190,8 +190,8 @@
 </table>
 
 <h2 id="step-1-see-what-is-on-the-page-before-testing">Step 1: See what is on the page before testing</h2>
-<p>Open the page, press Ctrl+U and search the source for application/ld+json. Count the blocks you find. A typical WordPress page has one connected block from the SEO plugin, sometimes a second from WooCommerce or a schema plugin. Three or four blocks, or the same type appearing twice, is the first sign of duplication.</p>
-<p>The source often tells you which plugin wrote each block. At the time of writing, Yoast SEO's script tag carries a class mentioning yoast-schema-graph and Rank Math's mentions rank-math-schema, and many plugins leave an HTML comment with their name nearby. Old themes may also add microdata straight into the visible HTML, which you can spot as itemtype and itemprop attributes. Note each source for when an error appears.</p>
+<p>Open the page, press Ctrl+U and search the source for application/ld+json. Count the blocks. A typical WordPress page has one from the SEO plugin, sometimes a second from WooCommerce; the same type appearing twice is the first sign of duplication.</p>
+<p>The source often tells you which plugin wrote each block, from its class name or a nearby HTML comment. Old themes may add microdata, visible as itemtype and itemprop attributes. Note each source for when an error appears.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -205,15 +205,15 @@
   <li><strong>URL mode</strong> fetches the live page the way Google's smartphone crawler does, runs its JavaScript, and tests the rendered result. This is closest to what Google sees, including markup injected by scripts or tag managers.</li>
   <li><strong>Code mode</strong> tests a snippet or a full page source you paste in. Use it for a staging site behind a password, for markup you are writing before it goes live, or to isolate one block from the rest of the page.</li>
 </ul>
-<p>Three things trip people up in URL mode. First, if the test reports that the page couldn't be fetched, a firewall, a bot protection setting or robots.txt may be blocking Google's crawler, which is a bigger problem than the schema. Second, a page cache may serve old markup, so purge your caching plugin, host cache and CDN before retesting a fix. Third, the test reports each detected item separately; a product page might show both Product snippets and Merchant listings, each with its own list of issues.</p>
+<p>In URL mode, a "couldn't be fetched" result usually means a firewall, bot protection or robots.txt is blocking Google's crawler, a bigger problem than the schema. Purge caches before retesting a fix, and note that each detected item, such as Product snippets and Merchant listings, has its own list of issues.</p>
 <p>Testing on staging first is sensible for big schema changes; <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how to set one up.</p>
 
 <h2 id="step-3-the-schema-markup-validator">Step 3: The Schema Markup Validator</h2>
 <p>The Schema Markup Validator, run by schema.org at validator.schema.org, is the successor to Google's old Structured Data Testing Tool. It checks your markup against the full schema.org vocabulary rather than Google's rules, which makes it the right tool for:</p>
 <ul>
   <li>Types with no Google rich result, such as Service, ProfessionalService or WebSite, which the Rich Results Test may simply report as "no items detected"</li>
-  <li>Seeing the whole graph: whether the article's author points to the same Person or Organization as the rest of the site, and whether the WebPage links to the right business</li>
-  <li>Spotting misspelt property names and properties used on the wrong type, which the validator flags as not recognised</li>
+  <li>Seeing the whole graph, such as whether every page points to the same Organization</li>
+  <li>Spotting misspelt property names and properties used on the wrong type</li>
 </ul>
 <p>A clean validator result means the code is well formed, not that Google will show anything.</p>
 
@@ -226,7 +226,7 @@
     <tr><td>Valid</td><td>Google can read the item and it is eligible</td><td>Nothing, but eligibility is not a promise of display</td></tr>
   </tbody>
 </table>
-<p>Google's wording varies between tools and has changed over time; Search Console may describe the same split as critical and non-critical issues. The rule doesn't change: a missing optional field is fine, and a made-up rating, brand or price added to silence a warning breaks Google's guidelines.</p>
+<p>A missing optional field is fine; a made-up rating, brand or price added to silence a warning breaks Google's guidelines.</p>
 
 <h2 id="common-structured-data-errors-and-how-to-fix-them">Common structured data errors and how to fix them</h2>
 <table>
@@ -275,34 +275,52 @@ Right:
   <li>Purge caches and retest two or three example URLs.</li>
   <li>Click Validate fix. Google rechecks the affected URLs over the following days or weeks, and the status moves through started and passed, or failed.</li>
 </ol>
-<p>A failed validation means at least one affected URL still showed the issue when Google rechecked it, often a page using a different template. Fix that template and validate again. For the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+<p>A failed validation usually means a page on another template still has the issue. For the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
 
-<h2 id="testing-after-plugin-and-theme-updates">Testing after plugin and theme updates</h2>
-<p>Structured data breaks quietly. Nothing changes on screen when an update changes a plugin's schema output or a theme starts adding its own. Keep a short list with one URL per template: home, a service page, a blog post, a simple product, a variable product, a category and the contact page. Then:</p>
-<ul>
-  <li>After any SEO plugin, schema plugin, theme or WooCommerce update, purge caches and run each URL through the Rich Results Test</li>
-  <li>Compare the detected items with your last notes; a missing type or a new duplicate is the warning sign</li>
-  <li>After switching SEO plugins, deactivate the old one fully once its settings are imported, then test every template</li>
-  <li>Once a month, check the Enhancements reports for a drop in valid items</li>
-</ul>
+<h2 id="how-to-check-rich-snippets-a-15-minute-checklist">How to check rich snippets: a 15-minute checklist</h2>
+<p>Structured data breaks quietly, because nothing changes on screen when an update alters a plugin's schema output. Keep one URL per template (home, a service page, a blog post, a simple product, a variable product, a category and contact) and run this after launch and after every SEO plugin, theme or WooCommerce update:</p>
+<ol>
+  <li>Purge the caching plugin, host cache and CDN.</li>
+  <li>Run each URL through the Rich Results Test in URL mode and note the detected item types.</li>
+  <li>Compare with last time: a missing type or a new duplicate is the warning sign.</li>
+  <li>Open any item with errors and note the exact field named.</li>
+  <li>Run the same URL through the Schema Markup Validator to check the graph and non-Google types such as Service.</li>
+  <li>Check that marked-up facts (price, stock, author, date) match what the visitor sees.</li>
+  <li>Fix the template or plugin setting, not one page, then retest.</li>
+  <li>Once a month, check Search Console's Enhancements reports for a drop in valid items.</li>
+</ol>
 <p><a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> covers backups and staging for those updates.</p>
 
+<h3>What each rich result type needs before you test</h3>
+<table>
+  <thead><tr><th>Rich result</th><th>Typical source in WordPress</th><th>Most common reason it fails</th></tr></thead>
+  <tbody>
+    <tr><td>Breadcrumbs</td><td>SEO plugin breadcrumb setting</td><td>Breadcrumbs turned off in the theme, so no markup is output</td></tr>
+    <tr><td>Product snippets</td><td>WooCommerce plus the SEO plugin</td><td>Variable products without a price on the parent, or no reviews field</td></tr>
+    <tr><td>Merchant listings</td><td>WooCommerce plus the SEO plugin</td><td>Missing shipping or returns details, or an unreadable price format</td></tr>
+    <tr><td>Article</td><td>SEO plugin post settings</td><td>Missing author or image, or the wrong schema type chosen</td></tr>
+    <tr><td>Review snippets</td><td>Review or schema plugin</td><td>Self-serving reviews on your own business, which Google won't show</td></tr>
+  </tbody>
+</table>
+
 <h2 id="valid-but-no-rich-result">Valid, but no rich result?</h2>
-<p>Passing the tests makes a page eligible, nothing more; Google decides per search whether to show a rich result, and it has narrowed several features: FAQ rich results are now limited to a small group of authoritative sites, so check <a href="/blog/faq-page-seo/">FAQs for SEO</a> before expecting dropdowns, and review stars aren't shown for reviews a business marks up about itself on its own LocalBusiness or Organization markup. Check Google's current documentation for supported types.</p>
+<p>Passing the tests makes a page eligible, nothing more; Google decides per search whether to show a rich result. FAQ rich results are now limited to a small group of authoritative sites (see <a href="/blog/faq-page-seo/">FAQs for SEO</a>), and self-serving review stars aren't shown. Check Google's current documentation for supported types.</p>
 
 <h2 id="faqs">FAQs</h2>
+<h3>What is the best rich snippet testing tool?</h3>
+<p>Google's Rich Results Test, because it checks your markup against the rules Google actually uses for rich snippets. Use the Schema Markup Validator alongside it for types Google doesn't show as rich results.</p>
+<h3>How do I check rich snippets on my website?</h3>
+<p>Test one URL per template in the Rich Results Test, then open Search Console's Enhancements reports to see valid and invalid items across the site. To see whether a snippet actually appears, search for the page in Google, but remember display is never guaranteed.</p>
 <h3>What is the difference between the Rich Results Test and the Schema Markup Validator?</h3>
 <p>The Rich Results Test checks markup against Google's requirements for rich results and only reports types Google supports. The Schema Markup Validator checks any schema.org markup for valid syntax and vocabulary, but says nothing about Google eligibility.</p>
 <h3>Why does the Rich Results Test say no items were detected?</h3>
 <p>Either the page has no markup Google uses for rich results, which is normal for Service or WebSite markup, or the markup didn't load for Google's crawler. Check the source, then run the URL through the Schema Markup Validator.</p>
 <h3>Do structured data warnings hurt rankings?</h3>
 <p>No. A warning means a recommended field is missing; the item stays eligible. Fill it only with accurate information.</p>
-<h3>How long does Search Console take to validate a fix?</h3>
-<p>It varies with how often Google crawls your pages, from a few days to a couple of weeks or more. Retest a few URLs yourself first so you only start validation once the fix is live.</p>
 <h3>Why does Search Console still show errors I have fixed?</h3>
-<p>The reports reflect Google's last crawl, so they lag behind your changes. Check that caches are purged, use Test live URL in URL Inspection to confirm Google sees the fix, then validate.</p>
+<p>The reports reflect Google's last crawl, so they lag behind your changes, sometimes by weeks. Purge caches, use Test live URL in URL Inspection to confirm Google sees the fix, then click Validate fix.</p>
 
-<p>Want your structured data tested template by template, duplicates removed and errors fixed at the source rather than page by page? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
+<p>Want your structured data tested template by template, duplicates removed and errors fixed at the source rather than page by page? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off schema fix, starting with a free review and a fixed quote.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -338,14 +356,14 @@ Right:
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
-              <li><a href="#which-tool-answers-which-question">Which tool answers which question</a></li>
+              <li><a href="#rich-snippet-testing-tool-which-one-answers-which-question">Rich snippet testing tool: which one answers which question</a></li>
               <li><a href="#step-1-see-what-is-on-the-page-before-testing">Step 1: See what is on the page before testing</a></li>
               <li><a href="#step-2-the-rich-results-test-live-url-or-code">Step 2: The Rich Results Test, live URL or code</a></li>
               <li><a href="#step-3-the-schema-markup-validator">Step 3: The Schema Markup Validator</a></li>
               <li><a href="#errors-warnings-and-valid-items">Errors, warnings and valid items</a></li>
               <li><a href="#common-structured-data-errors-and-how-to-fix-them">Common structured data errors and how to fix them</a></li>
               <li><a href="#search-console-enhancements-reports-and-validation">Search Console Enhancements reports and validation</a></li>
-              <li><a href="#testing-after-plugin-and-theme-updates">Testing after plugin and theme updates</a></li>
+              <li><a href="#how-to-check-rich-snippets-a-15-minute-checklist">How to check rich snippets: a 15-minute checklist</a></li>
               <li><a href="#valid-but-no-rich-result">Valid, but no rich result?</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
