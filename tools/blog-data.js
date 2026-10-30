@@ -11837,9 +11837,9 @@ wp option update blog_public 0</code></pre>
     slug: 'wordpress-vs-webflow',
     seoTitle: 'WordPress vs Webflow: Cost, CMS Limits and Which to Choose',
     title: 'WordPress vs Webflow: Which Is Better for Your Business Website? Cost, CMS Limits, Editing and Developers Compared',
-    description: 'WordPress vs Webflow for a business website: hosting costs, CMS limits, editing, plugins, Indian payment gateways, SEO and developer availability compared.',
+    description: 'WordPress vs Webflow for a business website in India: cost, CMS limits, editing, plugins, Indian payment gateways, SEO and developer availability compared.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-migration'],
     body: `
@@ -11895,7 +11895,7 @@ wp option update blog_public 0</code></pre>
 <h2>Finding developers in India</h2>
 <p>WordPress developers are easy to find in India at every budget, which keeps support affordable and means you're never dependent on one person. Webflow specialists exist but are fewer, often designers or agencies, and their rates reflect that. If a Webflow site's builder moves on, finding a replacement can take longer.</p>
 
-<h2>Which should you choose?</h2>
+<h2>WordPress vs Webflow: which should you choose?</h2>
 <h3>Choose WordPress if</h3>
 <ul>
   <li>You want full ownership and a free choice of hosting</li>
@@ -11925,7 +11925,7 @@ wp option update blog_public 0</code></pre>
 <h3>Can I accept UPI payments on Webflow?</h3>
 <p>Webflow's built-in e-commerce checkout uses Stripe and PayPal at the time of writing, not Indian gateways such as Razorpay. Some businesses link to an external payment page instead. On WordPress, WooCommerce works directly with Indian gateways that support UPI.</p>
 
-<p>Weighing up a rebuild or a new site? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan, build and hand over business sites.</p>
+<p>Weighing up a rebuild or a new site? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan, build and hand over business sites. If you choose WordPress, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build and look after it.</p>
 `,
   },
   {
@@ -17830,7 +17830,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
     title: 'How to Redesign Your Website on a Tight Budget: What to Spend On, What to Phase and What Never to Cut',
     description: 'Redesign your website on a tight budget: find the pages that bring enquiries, phase the work, adapt a quality theme, reuse content and protect your SEO.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
@@ -17915,7 +17915,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 </ul>
 <p>Low quotes that quietly drop these items are the main risk of shopping on price alone; <a href="/blog/cheap-website-risks/">the real risks of very cheap websites</a> explains what tends to go missing.</p>
 
-<h2>What a budget redesign costs</h2>
+<h2>Website redesign cost on a tight budget</h2>
 <p>A redesign is priced much like a new build: by the number of unique templates, whether the design is custom or an adapted theme, the features, how much content work is needed and whether the platform changes. For reference, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts a professionally built small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. A phased redesign spreads that cost over time, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own scope.</p>
 <p>If you get several quotes, send everyone the same brief and compare the scope line by line; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> shows what to check.</p>
 
@@ -17933,7 +17933,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h3>How do I find an affordable website redesign service?</h3>
 <p>Look for a developer who asks about your goals, reviews your current site before quoting, offers a fixed price with a written scope and suggests phasing. Be wary of quotes with no mention of redirects, backups, ownership or testing.</p>
 
-<p>Working with a fixed budget and want it spent where it counts? Send me your website address for a free review: you'll get an honest view on refresh or redesign, a suggested phase one and a fixed quote; see <a href="/website-redesign/">website redesign</a>.</p>
+<p>Working with a fixed budget and want it spent where it counts? Send me your website address for a free review: you'll get an honest view on refresh or redesign, a suggested phase one and a fixed quote; see <a href="/website-redesign/">website redesign</a>. Want a fixed quote? <a href="/hire-wordpress-developer/">Hire a WordPress developer in India</a> and send your brief.</p>
 `,
   },
   {
@@ -30335,11 +30335,11 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'fixed-price-vs-hourly-website-projects',
-    seoTitle: 'Fixed Price vs Hourly for Website Projects: Which Is Better?',
+    seoTitle: 'Fixed Price vs Hourly Website Projects: Which Is Better?',
     title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?',
-    description: 'Fixed price vs hourly for website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.',
+    description: 'Fixed price vs hourly website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
@@ -30388,7 +30388,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>A fixed monthly fee covers either a set of services, such as updates, backups, security checks and small content changes, or a block of hours. Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month; see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> for what drives the price.</p>
 <p>Retainers work well for agencies that send a developer a steady flow of work, as long as everyone agrees how requests are queued and what happens to unused hours; see <a href="/blog/agency-development-retainer/">agency development retainers</a>.</p>
 
-<h2>Which model suits your project?</h2>
+<h2>Fixed price vs hourly: which model suits your website project?</h2>
 <table>
   <thead><tr><th>Project</th><th>Usually best</th><th>Why</th></tr></thead>
   <tbody>
@@ -30437,7 +30437,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h3>Can a project be partly fixed and partly hourly?</h3>
 <p>Yes. A fixed price for the defined build plus a capped hourly allowance for a part nobody can scope yet, such as a third-party integration, is a sensible middle ground. Write both into the agreement.</p>
 
-<p>Want a fixed quote for your website, or a price for a batch of fixes? Send your requirements and you'll get a clear scope, price and timeline before anything starts; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+<p>Want a fixed quote for your website, or a price for a batch of fixes? Send your requirements and you'll get a clear scope, price and timeline before anything starts; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>. Based near Pune? See <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -46481,11 +46481,11 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
   },
   {
     slug: 'wordpress-vs-squarespace',
-    seoTitle: 'WordPress vs Squarespace: Which Is Better in India?',
+    seoTitle: 'WordPress vs Squarespace in India: Which Is Better?',
     title: 'WordPress vs Squarespace: Which Is Better for Your Business Website?',
-    description: 'WordPress vs Squarespace for Indian businesses: ownership, flexibility, cost over time, Indian payments, SEO, and when Shopify suits online stores better.',
+    description: 'WordPress vs Squarespace in India: ownership, flexibility, cost over time, Indian payments, SEO, moving later, and when Shopify suits a store better.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration'],
     body: `
@@ -46546,7 +46546,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 
 <h2>SEO and speed</h2>
 <p>Both platforms let you edit titles, descriptions and URLs, create sitemaps and publish blogs, so either can rank. Squarespace handles many technical basics automatically but gives less control. WordPress, with an SEO plugin, gives full control over schema, redirects, indexing and site structure, which matters more as the site grows.</p>
-<p>Speed depends mostly on how the site is built. Squarespace sites are reasonably fast by default but heavy templates and large images can slow them. WordPress speed depends on hosting, theme and plugins; a lean build on good hosting is fast, while a bloated one is slow. If your WordPress site is already slow, <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> can usually fix it without a rebuild.</p>
+<p>Speed depends mostly on how the site is built. Squarespace sites are reasonably fast by default but heavy templates and large images can slow them. WordPress speed depends on hosting, theme and plugins; a lean build on good hosting is fast, while a bloated one is slow. If your WordPress site is already slow, WordPress speed optimization can usually fix it without a rebuild.</p>
 
 <h2>Who will look after the site?</h2>
 <p>A practical question that often decides the platform is who will keep the site running after launch. On Squarespace, the platform handles hosting, security and software updates, and you edit content in its editor. If something is missing, you mostly wait for Squarespace to add it or work around it.</p>
@@ -46554,7 +46554,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Before choosing, list the people involved: who writes content, who answers enquiries, who handles payments and who you call when something breaks. If the answer to the last one is &quot;nobody&quot;, a hosted builder or Shopify may suit you better for now. If you already work with a developer or agency, WordPress lets them build exactly what you need and hand over a site your team can edit.</p>
 <p>Also think about the people who need access. WordPress has user roles, so a content writer can publish blog posts without being able to change plugins or payment settings, which suits growing teams.</p>
 
-<h2>Which should you choose?</h2>
+<h2>WordPress vs Squarespace in India: which should you choose?</h2>
 <p><strong>Choose Squarespace if</strong> you want a simple portfolio or brochure site, you will build and edit it yourself, you don&#39;t need Indian payment gateways or special integrations, and you prefer one subscription with no maintenance.</p>
 <p><strong>Choose WordPress if</strong> you want full ownership, expect to add features over time, need Indian payments or integrations, plan to invest in SEO and content, or want a developer to build something tailored to your business.</p>
 <p><strong>Consider Shopify if</strong> selling products online is the main purpose and you want the platform to handle the technical side.</p>
@@ -46573,17 +46573,19 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Check Squarespace&#39;s current list of supported payment providers for India. WordPress with WooCommerce and Shopify both support UPI through Indian gateways.</p>
 <h3>Should I use Shopify instead of Squarespace for an online store?</h3>
 <p>For a store selling in India, Shopify or WooCommerce is usually the more practical choice because of Indian payment, COD, GST and shipping support.</p>
+<h3>Can I move my Squarespace website to WordPress later?</h3>
+<p>Yes, but it is a rebuild rather than a one-click move. Pages and posts are copied or exported, the design is recreated, your domain is pointed to the new hosting, and any changed URLs are redirected so you keep the visibility you have built. Connecting your own domain from day one makes this much easier.</p>
 
-<p>Weighing up platforms for a new site or a move away from a builder? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/shopify-developer/">Shopify development</a>, and the page for <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers in India</a>.</p>
+<p>Weighing up platforms for a new site or a move away from a builder? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/shopify-developer/">Shopify development</a>, and the page for <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers in India</a>. If you would rather hand the build to someone, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
   {
     slug: 'wordpress-vs-google-sites',
     seoTitle: 'WordPress vs Google Sites: Is a Free Website Enough?',
     title: 'WordPress vs Google Sites: Is a Free Website Good Enough for Your Business? Features, SEO, Custom Domains, Forms and Cost Compared',
-    description: 'WordPress vs Google Sites for a business: features, SEO, custom domains, forms, design control and cost, when free is enough and how to move later.',
+    description: 'WordPress vs Google Sites for a business: features, SEO, custom domains, forms and cost, when a free Google Sites website is enough and how to move later.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-for-startups'],
     body: `
@@ -46650,7 +46652,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Google Sites costs nothing beyond the domain if you connect one. The real cost is your time, and what the limits cost you in missed enquiries.</p>
 <p>With WordPress, you pay for a domain and hosting every year, the build, any premium plugin licences, and maintenance, whether you do it yourself or pay someone. The build is the biggest part, and it moves with the number of pages, the design, features such as payments or bookings, and how much content help you need. For a sense of scale, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India, such as ₹15,000 to ₹40,000 for a small business site of five to eight pages, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own list of pages.</p>
 
-<h2>When Google Sites is genuinely enough</h2>
+<h2>WordPress vs Google Sites: when the free option is enough</h2>
 <ul>
   <li>You're testing a business idea and need something live this week</li>
   <li>You need a simple page for an event, a workshop, a class or an internal team</li>
@@ -46693,8 +46695,10 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Not directly. You can link to a payment page from your gateway, embed a form or show a UPI QR code, but there's no cart, checkout or order management.</p>
 <h3>Can I move my Google Sites website to WordPress?</h3>
 <p>Yes, by rebuilding it. Content is copied across, your domain is pointed to the new hosting, and old addresses are redirected where they change.</p>
+<h3>WordPress vs Google Sites: which is better for a small business?</h3>
+<p>For a business that wants enquiries from Google, WordPress is usually the better choice, because it gives you a blog, control over SEO, forms that connect to your tools, and room for payments or bookings later. Google Sites is fine for an internal page, an event or a quick stopgap while the real site is built.</p>
 
-<p>Ready for a website that grows with your business? <a href="/wordpress-website-development/">WordPress website development</a> gives you a fast, SEO-ready site on hosting in your name, which you can edit yourself. Starting from scratch? See <a href="/website-for-startups/">websites for startups</a>.</p>
+<p>Ready for a website that grows with your business? <a href="/wordpress-website-development/">WordPress website development</a> gives you a fast, SEO-ready site on hosting in your name, which you can edit yourself. Starting from scratch? See <a href="/website-for-startups/">websites for startups</a>. If you want it built for you, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
   {
@@ -47159,9 +47163,9 @@ RewriteRule . /index.php [L]
     slug: 'ecommerce-website-cost-india',
     seoTitle: 'E-commerce Website Cost in India: Build and Running Costs',
     title: 'How Much Does an E-commerce Website Cost in India? What Affects the Price',
-    description: 'What an online store costs to build and run in India: what drives the price, costs by type of store, one-time vs ongoing costs, and WooCommerce vs Shopify.',
+    description: 'E-commerce website cost in India: what drives the build price, costs by type of store, one-time vs running costs, and WooCommerce vs Shopify compared.',
     date: '2026-09-28',
-    updated: '2026-10-10',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['woocommerce-developer', 'shopify-developer', 'wordpress-website-development'],
     body: `
@@ -47170,7 +47174,7 @@ RewriteRule . /index.php [L]
 
 <p>For a fixed quote on your own store, see my work as a <a href="/woocommerce-developer/">WooCommerce developer in India</a>.</p>
 
-<h2>The short answer</h2>
+<h2>E-commerce website cost in India: the short answer</h2>
 <p>There's no fixed price for "an online store", because two stores can need very different amounts of work. Six things decide most of the cost:</p>
 <ol>
   <li>The platform: WooCommerce, Shopify or custom-built</li>
@@ -47197,7 +47201,7 @@ RewriteRule . /index.php [L]
     <tr><td>Multi-vendor marketplace</td><td>Vendor sign-up, commissions, vendor dashboards and payouts</td><td>Highest</td></tr>
   </tbody>
 </table>
-<p>Most stores mix several of these. More on the specific features: <a href="/blog/woocommerce-product-variations/">product variations</a>, <a href="/blog/woocommerce-wholesale-dealer-pricing/">wholesale and dealer pricing</a>, <a href="/blog/woocommerce-subscriptions/">subscriptions</a> and <a href="/blog/woocommerce-multi-vendor-marketplace/">multi-vendor marketplaces</a>.</p>
+<p>Most stores mix several of these. More on the specific features: <a href="/blog/woocommerce-product-variations/">product variations</a>, wholesale and dealer pricing, subscriptions and multi-vendor marketplaces.</p>
 
 <h2>The platform you choose</h2>
 <p>Your platform affects both what you pay to build the store and what you pay every year to run it.</p>
@@ -47220,7 +47224,7 @@ RewriteRule . /index.php [L]
     <tr><td>Moving later</td><td>Move to any host whenever you like</td><td>Leaving means rebuilding on another platform</td></tr>
   </tbody>
 </table>
-<p>Over two or three years, the total often depends more on plugins, apps and maintenance than on the platform fee itself, so price your actual feature list on both. For a full side-by-side comparison, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>, and if you're already on Shopify, <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
+<p>Over two or three years, the total often depends more on plugins, apps and maintenance than on the platform fee itself, so price your actual feature list on both. For a full side-by-side comparison, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>, and if you're already on Shopify, moving from Shopify to WooCommerce.</p>
 
 <h2>Your products and catalogue</h2>
 <p>The number of products matters less than how complicated they are and who does the work of adding them.</p>
@@ -47300,7 +47304,7 @@ RewriteRule . /index.php [L]
   <li>Adapt a quality theme rather than designing every template from scratch, unless your brand really needs it</li>
   <li>Choose plugins and apps carefully, as each one adds a fee, maintenance or both</li>
   <li>Start with simple shipping rules and refine them as you learn what customers order</li>
-  <li>Avoid very cheap builds that skip testing, security and speed, because fixing them later usually costs more; see <a href="/blog/cheap-website-risks/">the risks of very cheap websites</a></li>
+  <li>Avoid very cheap builds that skip testing, security and speed, because fixing them later usually costs more; see the risks of very cheap websites</li>
 </ul>
 
 <h2>How to get an accurate quote</h2>
@@ -47335,7 +47339,7 @@ RewriteRule . /index.php [L]
 <h3>Why do e-commerce quotes vary so much?</h3>
 <p>Quotes often cover different things. One may include product upload, payment testing, speed optimisation and support after launch, while another leaves them out. Comparing itemised quotes for the same scope is the only fair comparison.</p>
 
-<p>Planning an online store? See <a href="/woocommerce-developer/">WooCommerce development</a> to talk through your products, payments and shipping before you commit to a budget.</p>
+<p>Planning an online store? See <a href="/woocommerce-developer/">WooCommerce development</a> to talk through your products, payments and shipping before you commit to a budget. If you sell on Shopify, see <a href="/shopify-developer/">Shopify development</a>.</p>
 `,
   },
   {
@@ -47459,14 +47463,14 @@ RewriteRule . /index.php [L]
     title: 'Website Refresh vs Redesign: Which Does Your Business Need? A Simple Test, Signs and Examples',
     description: 'Website refresh vs redesign: what each involves, the signs that point to one or the other, a 10-minute decision test, examples and how to protect your SEO.',
     date: '2026-09-28',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['website-redesign', 'wordpress-speed-optimization'],
     body: `
 <p>Choose a website refresh if your site works on phones, updates safely and still matches what you sell, and the problems are specific: dated photos, weak calls to action, old content or slow pages. Choose a redesign if the site isn't built for phones, runs on an abandoned theme or builder, keeps breaking, or no longer fits your business or customers. A refresh keeps the platform, structure and URLs; a redesign changes them, so it costs more and needs more care to protect your rankings.</p>
 <p>Many sites that "need a redesign" only need a refresh, and choosing correctly saves money and avoids risking rankings you've already earned. When you send me your site for a <a href="/website-redesign/">website redesign</a> review, I'll tell you if a refresh would do the job. Here's how to work it out yourself.</p>
 
-<h2>Refresh vs redesign at a glance</h2>
+<h2>Website refresh vs redesign at a glance</h2>
 <table>
   <thead><tr><th></th><th>Refresh</th><th>Redesign</th><th>Redesign with a platform move</th></tr></thead>
   <tbody>
@@ -47579,7 +47583,7 @@ RewriteRule . /index.php [L]
 <h3>Can I refresh my website myself?</h3>
 <p>Much of it, yes: new photos, updated text, reviews and simple button changes in the editor. Theme changes, speed work and anything touching URLs are worth handing to a developer.</p>
 
-<p>Not sure which your site needs? Send me your website address for a free review: you'll get an honest answer on refresh or redesign and a fixed quote for whichever fits; see <a href="/website-redesign/">website redesign</a>.</p>
+<p>Not sure which your site needs? Send me your website address for a free review: you'll get an honest answer on refresh or redesign and a fixed quote for whichever fits; see <a href="/website-redesign/">website redesign</a>. Based in Maharashtra? Meet a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -61767,9 +61771,9 @@ any unused part of the advance refunded as agreed</code></pre>
     slug: 'hidden-website-costs',
     seoTitle: 'Hidden Website Costs: What to Budget After Launch',
     title: 'Hidden Website Costs: Domain and Hosting Renewals, Plugin Licences, Email, SSL, Maintenance, Content, Ads and Payment Gateway Fees You Pay After the Build',
-    description: 'The website costs that arrive after launch: renewal prices, premium licences, business email, SSL, maintenance, content, ads and payment gateway fees.',
+    description: 'Hidden website costs after launch: hosting renewal prices, premium licences, business email, SSL, maintenance, content, ads and gateway fees in India.',
     date: '2026-10-01',
-    updated: '2026-10-27',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -61784,7 +61788,7 @@ any unused part of the advance refunded as agreed</code></pre>
 </ul>
 <p>The fix is simple: whenever you compare offers, add up the cost over two or three years, using the renewal prices.</p>
 
-<h2>The running-cost ledger</h2>
+<h2>Hidden website costs: the running-cost ledger</h2>
 <p>Here is every recurring cost a typical WordPress business site can carry, with the ranges used elsewhere on this site where they exist. Items marked "varies" depend too much on the vendor or your choices to give a fair range.</p>
 <table>
   <thead>
@@ -61861,7 +61865,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <ul>
   <li>Recovering a domain that expired, which can cost more than a normal renewal and is not always possible</li>
   <li>Cleaning up after a hack, plus lost enquiries while the site was down</li>
-  <li>Rebuilding access when the previous developer held the hosting, domain or licence accounts; see <a href="/blog/regain-website-access-old-developer/">regaining access from an old developer</a></li>
+  <li>Rebuilding access when the previous developer held the hosting, domain or licence accounts; see regaining access from an old developer</li>
   <li>Emergency fixes after an untested update broke the site</li>
 </ul>
 <p>Most of these come down to the same causes: renewals nobody tracked, accounts in the wrong name, and no backups. The <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a> prevents the first.</p>
@@ -61876,6 +61880,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>If I sell online, which gateway and extensions will be used, and what do they charge?</li>
 </ul>
 
+<p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see e-commerce website cost in India for what drives the price of a store.</p>
+
 <p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> for what drives the price of a store.</p>
 
 <h2>FAQs</h2>
@@ -61889,8 +61895,10 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>For most business websites, no. The free certificate most hosts include gives the same padlock. Just make sure it renews automatically.</p>
 <h3>How can I avoid surprise website costs?</h3>
 <p>Ask for a written list of every recurring cost and account at handover, keep it with renewal dates in a calendar, and make sure every account is in your business's name.</p>
+<h3>What are the hidden costs of a website?</h3>
+<p>The usual ones are higher hosting and domain renewal prices after the first term, yearly licences for premium themes and plugins, business email per user, maintenance and backups, content and photos, marketing, and payment gateway fees if you sell online. None are really hidden; they are simply left out of many build quotes, so ask for them in writing.</p>
 
-<p>For build prices, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> or try the <a href="/website-cost-calculator/">website cost calculator</a>. If you are planning a new site, <a href="/wordpress-website-development/">WordPress website development</a> explains how projects are quoted. And to have updates, backups and renewals watched for you, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<p>For build prices, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> or try the <a href="/website-cost-calculator/">website cost calculator</a>. If you are planning a new site, <a href="/wordpress-website-development/">WordPress website development</a> explains how projects are quoted. And to have updates, backups and renewals watched for you, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. To have someone manage this for you, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
   {
