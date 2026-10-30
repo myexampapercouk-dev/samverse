@@ -8317,14 +8317,14 @@ wp cache flush</code></pre>
     title: 'WooCommerce Product Page Optimization: Photos, Pricing, Delivery Details and Layouts That Help Shoppers Buy',
     description: 'Optimize WooCommerce product pages: mobile layout, photos, GST-inclusive pricing, delivery and COD details, variations, reviews, speed and product schema.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
 <p>A WooCommerce product page sells when a shopper can answer four questions on a phone without hunting: what is it, what will it cost in total, when will it arrive, and can I trust this store? Put sharp photos, a descriptive title, the GST-inclusive price, the variation picker, delivery and cash on delivery details and a clear Add to cart button near the top. Follow with a scannable description, specifications, reviews and a short returns summary, and keep the whole page fast.</p>
 <p>Most shoppers buy on their phones, so in my <a href="/woocommerce-developer/">WooCommerce development</a> work product pages, cart and checkout are kept light and simple. This guide covers what goes on the page and where; the checkout itself is covered in <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
-<h2>What shoppers need to see, and where</h2>
+<h2>WooCommerce product page optimization: what shoppers need to see, and where</h2>
 <table>
   <thead><tr><th>Shopper's question</th><th>Answer it with</th><th>Where on the page</th></tr></thead>
   <tbody>
@@ -8422,6 +8422,12 @@ wp cache flush</code></pre>
 </ul>
 <p>Change one thing, give it a few weeks, and compare. Then watch someone who has never seen your store buy a product on their own phone; wherever they hesitate is the next thing to fix.</p>
 
+<p>High-value products need extra trust; see websites for jewellers for a good example.</p>
+
+<p>Losing buyers at checkout? See abandoned cart recovery.</p>
+
+<p>Accurate stock status matters too; see inventory management.</p>
+
 <p>High-value products need extra trust; see <a href="/blog/website-for-jewellers/">websites for jewellers</a> for a good example.</p>
 
 <p>Losing buyers at checkout? See <a href="/blog/woocommerce-abandoned-cart-recovery/">abandoned cart recovery</a>.</p>
@@ -8439,6 +8445,8 @@ wp cache flush</code></pre>
 <p>Both, in the right places. Put a short summary of the deciding facts near the price, and a fuller description with specifications and FAQs lower down for shoppers who want detail.</p>
 <h3>Why do shoppers view my products but not add them to cart?</h3>
 <p>Usually because a question is left unanswered: the total price, delivery time, COD, sizing or trust. Check the first phone screen, add delivery and returns details beside the button, and improve photos and reviews.</p>
+<h3>Is WooCommerce product page optimization worth doing on a small store?</h3>
+<p>Yes, because every visitor from Google, ads or Instagram lands on a product page before the cart. Start with the first screen on a phone, total price and delivery details, then test one change at a time so you can see what actually helped.</p>
 
 <p>Want product pages that answer shoppers' questions and load quickly on a phone? In my <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light and simple for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a> next.</p>
 `,
@@ -12174,9 +12182,9 @@ wp option update blog_public 0</code></pre>
     slug: 'woocommerce-abandoned-cart-recovery',
     seoTitle: 'WooCommerce Abandoned Cart Recovery: Email and WhatsApp',
     title: 'WooCommerce Abandoned Cart Recovery: How It Works, Plugins, Email and WhatsApp Reminders, and Consent',
-    description: 'How WooCommerce abandoned cart recovery works: plugins, pending payment orders, reminder timing for email and WhatsApp, discounts, consent and what to measure.',
+    description: 'WooCommerce abandoned cart recovery explained: plugins, reminder timing, WhatsApp and email messages, pending payments, consent and what to measure.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
@@ -12199,7 +12207,7 @@ wp option update blog_public 0</code></pre>
 <h2>Fix the reasons people leave first</h2>
 <p>Reminders bring people back to the same checkout that lost them. If that checkout surprises them with a delivery or COD charge, forces account creation, asks for too many fields, lacks UPI or COD, or loads slowly on mobile data, they'll leave again. Work through the checkout before investing in recovery, and recheck it after every major update.</p>
 
-<h2>How cart recovery plugins work</h2>
+<h2>How WooCommerce abandoned cart recovery plugins work</h2>
 <ol>
   <li><strong>Capture:</strong> as the shopper types an email or phone number at checkout, the plugin saves it with the cart contents, even if they never press Place order.</li>
   <li><strong>Wait:</strong> after a period you set, the cart counts as abandoned.</li>
@@ -12269,7 +12277,7 @@ wp option update blog_public 0</code></pre>
 </ul>
 
 <h2>FAQs</h2>
-<h3>Does WooCommerce have abandoned cart recovery built in?</h3>
+<h3>Is WooCommerce abandoned cart recovery built in?</h3>
 <p>No. WooCommerce records orders, including unpaid ones, but doesn't capture or email shoppers who leave checkout. You need a cart recovery plugin, AutomateWoo, or an email platform connected to your store.</p>
 <h3>What is a pending payment order in WooCommerce?</h3>
 <p>An order that was placed but not paid, often because a UPI or card payment failed or the shopper closed the payment window. WooCommerce cancels it after the hold-stock time, so contact the customer quickly with the payment link.</p>
@@ -20681,7 +20689,7 @@ Category:       Dentist</code></pre>
     title: 'How to Write Product Descriptions That Sell and Rank: A Framework, Specs Tables and Examples for Indian Stores',
     description: 'How to write product descriptions that sell and rank: a simple framework, specs tables, real benefits, unique copy and SEO without keyword stuffing.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -20702,7 +20710,7 @@ Category:       Dentist</code></pre>
 </table>
 <p>Specifications belong in neither box. Add them as attributes under <strong>Product data &gt; Attributes</strong> with "Visible on the product page" ticked, and WooCommerce shows them as a tidy table in the Additional information tab, along with weight and dimensions. Consistent attributes also power category filters.</p>
 
-<h2>A product description framework</h2>
+<h2>How to write product descriptions that sell: a framework</h2>
 <ol>
   <li><strong>The hook:</strong> one or two sentences on who it's for and the main benefit.</li>
   <li><strong>Why it's different:</strong> how it's made, sourced or designed, in specific terms.</li>
@@ -20788,6 +20796,8 @@ Category:       Dentist</code></pre>
 <p>Use the main phrase in the product title and once or twice in the description, then write naturally about materials, uses and occasions. If a sentence sounds odd read aloud, rewrite it.</p>
 <h3>Should product descriptions mention delivery and returns?</h3>
 <p>Yes, briefly. A line each on delivery time and the return window, linking to your full <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds policy</a>, answers common doubts at the moment of purchase.</p>
+<h3>How to write product descriptions that sell when you have hundreds of products?</h3>
+<p>Start with your best sellers and category leaders, write a reusable template for each product type, and fill specification tables from your own data. Then improve the remaining descriptions in batches, starting with the products that get the most visits.</p>
 
 <p>Setting up a new store or fixing an old one? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I can set up your product template, attributes and specification tables, and import your existing product list from a spreadsheet, so your descriptions have a clear structure to fit into. Send me what you sell and roughly how many products you have for a free review and a fixed quote.</p>
 `,
@@ -28697,9 +28707,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     slug: 'woocommerce-returns-refunds-policy',
     seoTitle: 'WooCommerce Returns and Refunds Policy for Indian Stores',
     title: 'Returns and Refunds for WooCommerce Stores in India: Writing the Policy, Processing Refunds, COD Refunds and RTO',
-    description: 'Write a clear returns and refunds policy for your Indian WooCommerce store, process refunds in WooCommerce, handle COD refunds and RTO, and show the policy.',
+    description: 'How to write a WooCommerce returns and refunds policy for an Indian store: what to cover, where to show it, COD refunds, partial refunds and fewer returns.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups', 'wordpress-website-development'],
     body: `
@@ -28710,7 +28720,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>What the rules expect</h2>
 <p>India's Consumer Protection (E-Commerce) Rules, 2020 generally expect online sellers to display clear information about returns, refunds, exchanges, warranties, delivery and shipping, and how customers can raise a complaint, before they buy. The rules also generally don't allow a seller to refuse a return or refund when goods are defective, not as described, or delivered late against the stated schedule. Consumer law, payment network rules and your gateway's terms all change, so check the current position with a lawyer before you publish, and don't copy another store's policy without checking it fits how you work; <a href="/blog/website-terms-and-conditions/">website terms and conditions</a> explains why copied templates cause problems.</p>
 
-<h2>What your policy should cover</h2>
+<h2>What a WooCommerce returns and refunds policy should cover</h2>
 <table>
   <thead><tr><th>Section</th><th>What to state</th><th>Example wording (fictional)</th></tr></thead>
   <tbody>
@@ -28801,6 +28811,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Open the order, click Refund, enter the quantities or amount being refunded, and confirm. The order keeps its status, and the customer receives a partial refund email.</p>
 <h3>Can I refuse returns on sale items?</h3>
 <p>You can set a different exchange or return rule for sale items if you state it clearly before purchase, but faulty, damaged or wrongly sent items still need putting right. Check the current rules for your category.</p>
+<h3>How do I write a WooCommerce returns and refunds policy?</h3>
+<p>List which products can be returned or exchanged, the time window from delivery, the condition required, how to request a return, who pays return shipping and how and when refunds are paid, including for COD orders. Publish it as a page, link it from the footer, product pages and checkout, and ask a lawyer to check it against current consumer rules.</p>
 
 <p>Want returns, refunds and order emails set up properly on your store? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I set up payments, COD rules, shipping and order emails, test them with real orders, and show you how to process orders and issue refunds on a training call. Send me what you sell for a free review and a fixed quote.</p>
 `,
@@ -28957,11 +28969,11 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'woocommerce-inventory-management',
-    seoTitle: 'WooCommerce Inventory and Stock Management: Setup and Sync',
+    seoTitle: 'WooCommerce Inventory Management: Stock Setup and Sync',
     title: 'WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop',
-    description: 'WooCommerce stock management explained: inventory settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.',
+    description: 'WooCommerce inventory management step by step: stock settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-maintenance'],
     body: `
@@ -29046,7 +29058,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h3>Amazon, Flipkart and other marketplaces</h3>
 <p>Multi-channel tools such as Unicommerce, EasyEcom or Browntape, or a marketplace's own connector, sync one stock figure across your website and marketplaces. Check features and pricing with each vendor. The trade-offs of selling in both places are in <a href="/blog/own-website-vs-marketplaces/">own website vs marketplaces</a>.</p>
 
-<h2>When an inventory plugin like ATUM helps</h2>
+<h2>WooCommerce inventory management plugins: when ATUM helps</h2>
 <p>The built-in tools track quantities, not purchasing. ATUM Inventory Management for WooCommerce adds a Stock Central screen to view and edit stock for all products in one table, plus suppliers, purchase orders, inbound stock and stock logs in its free version at the time of writing. Paid add-ons cover things like multiple warehouses and products made from components. It's worth it if you reorder from suppliers regularly or stock several locations; a store with a few dozen products rarely needs it.</p>
 
 <h2>Common stock problems and fixes</h2>
@@ -29069,6 +29081,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Not out of the box. Third-party connectors can sync stock and orders between Tally and WooCommerce, or you can export stock from Tally and import it into WooCommerce by SKU on a regular schedule.</p>
 <h3>Do I need an inventory plugin like ATUM?</h3>
 <p>Only if you manage suppliers, purchase orders or several warehouses. For most small stores, WooCommerce's built-in stock management, the Stock report and low-stock emails are enough.</p>
+<h3>What does WooCommerce inventory management cover?</h3>
+<p>It covers stock quantities per product and variation, SKUs, low-stock and out-of-stock thresholds, backorder rules and stock emails. Bundles need care, because each item inside a bundle should reduce its own stock; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles and upsells</a>. Before launch, test a few orders end to end as part of a <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a>.</p>
 
 <p>Need a store with stock, payments and shipping set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
@@ -29222,14 +29236,14 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Google Merchant Center for WooCommerce: Set Up Free Listings and Fix Disapprovals',
     description: 'Set up Google Merchant Center for WooCommerce step by step: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
     body: `
 <p>To show your WooCommerce products on Google for free, create a Google Merchant Center account, verify your website, and sync your products using the free Google for WooCommerce extension (previously called Google Listings &amp; Ads) or a feed plugin. Then set your shipping and return details, make sure prices (including GST) and stock match your product pages, and fix anything Merchant Center flags. Approved products can appear as free listings in the Shopping tab and other Google surfaces, and the same data powers Shopping ads later.</p>
 <p>Here's the full setup, which sync method to choose, the product data Google needs, and how to fix the disapprovals that trip up most Indian stores. If you'd rather have it set up and tested for you, that's part of my <a href="/woocommerce-developer/">WooCommerce development</a> work.</p>
 
-<h2>What Merchant Center does for a WooCommerce store</h2>
+<h2>What Google Merchant Center for WooCommerce does</h2>
 <p>Merchant Center is where Google stores your product information. Once your products are approved, they can show with an image, price and store name when people search for what you sell.</p>
 <table>
   <thead><tr><th></th><th>Free listings</th><th>Shopping ads and Performance Max</th></tr></thead>
@@ -29330,7 +29344,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>FAQs</h2>
 <h3>How do I connect WooCommerce to Google Merchant Center?</h3>
 <p>Install the free Google for WooCommerce extension, open Marketing &gt; Google for WooCommerce, connect your Google account and Merchant Center, choose India as your selling country, set shipping, and let it sync your products. Alternatively, use a feed plugin to create a feed URL and add it to Merchant Center as a scheduled file.</p>
-<h3>Is Google Merchant Center free for WooCommerce stores?</h3>
+<h3>Is Google Merchant Center for WooCommerce free?</h3>
 <p>Yes. Merchant Center, the Google for WooCommerce extension and free product listings cost nothing. You only pay if you run Shopping or Performance Max ads through Google Ads, or if you choose a paid feed plugin.</p>
 <h3>Is Google for WooCommerce the same as Google Listings &amp; Ads?</h3>
 <p>Yes. Google Listings &amp; Ads was renamed Google for WooCommerce. It's the official free extension for syncing WooCommerce products to Merchant Center and running Google ads from your dashboard.</p>
@@ -43949,7 +43963,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'Selling Subscriptions With WooCommerce in India: Plugins, Recurring Payments, Billing Cycles, Trials, Pausing and Retention',
     description: 'How to sell subscriptions with WooCommerce in India: plugin options, recurring payments and e-mandates, billing cycles, trials, pausing and cancelling.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
@@ -43979,7 +43993,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </table>
 <p>Many businesses start with prepaid plans or manual renewals and move to automatic billing once demand is proven. A prepaid pack doesn't even need a subscription plugin; a simple product or a variation for each plan length is enough.</p>
 
-<h2>Choosing a subscription plugin</h2>
+<h2>Choosing a plugin for WooCommerce subscriptions in India</h2>
 <p>The official WooCommerce Subscriptions extension is the most established option. Others include YITH WooCommerce Subscription and several plugins in the WordPress.org directory, with free and paid tiers. Features and pricing change, so compare them on the points that matter to your store:</p>
 <table>
   <thead><tr><th>What to compare</th><th>Questions to ask</th></tr></thead>
@@ -44084,6 +44098,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>With most subscription plugins, yes, either from My Account or by asking you. You can usually limit how often or how long they pause.</p>
 <h3>Do I need a GST invoice for every renewal?</h3>
 <p>Each renewal is a new order, so set your invoice plugin to create one for renewals too. Ask your CA to confirm the rates and format for your products.</p>
+<h3>How do I set up WooCommerce subscriptions in India?</h3>
+<p>Install a subscription plugin, create a subscription product with its billing cycle, trial and sign-up fee, then connect a payment gateway whose WooCommerce integration supports automatic renewals with that plugin. Test sign-up, renewal, a failed payment and a cancellation before launch, and check current mandate rules with your gateway.</p>
 
 <p>Planning a subscription store, or adding recurring plans to an existing one? My <a href="/woocommerce-developer/">WooCommerce development</a> service covers the plugin, gateway, renewal emails and test orders, set up and tested before launch. Launching a new subscription brand? See <a href="/website-for-startups/">websites for startups</a>.</p>
 `,
@@ -44539,7 +44555,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'WooCommerce Product Reviews: How to Enable, Collect, Moderate and Display Them (Verified Owners, Photos and Star Ratings)',
     description: 'How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.',
     date: '2026-09-28',
-    updated: '2026-10-17',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services'],
     body: `
@@ -44629,7 +44645,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </table>
 <p>Reply to critical reviews publicly, calmly and with a fix: a replacement, a refund or an explanation. Future shoppers read your replies as closely as the review itself; see <a href="/blog/handle-negative-reviews/">how to handle negative reviews</a>.</p>
 
-<h2>Display reviews where they help</h2>
+<h2>Display WooCommerce product reviews where they help</h2>
 <ul>
   <li><strong>Near the title and price:</strong> the star rating and review count, linking down to the reviews.</li>
   <li><strong>Shop and category pages:</strong> most themes show the average rating under each product name once it has reviews, which helps shoppers compare quickly.</li>
@@ -44681,6 +44697,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Not with the built-in form. A review plugin adds photo and video uploads. Moderate images before they go live, and keep them compressed so product pages stay fast.</p>
 <h3>Why aren't star ratings showing for my products in Google?</h3>
 <p>Google decides whether to show them, even with valid markup. Check that the page has real, visible reviews, that the markup passes the Rich Results Test, and that only one plugin outputs Product schema.</p>
+<h3>How do I get more WooCommerce product reviews?</h3>
+<p>Ask after delivery, not after payment, with a one-tap link on a channel customers read, such as email or WhatsApp. Keep the form short and never offer rewards for positive reviews only.</p>
 
 <p>Want reviews that collect themselves and show up properly on your store? I can set up review settings, request emails, moderation and product schema as part of <a href="/woocommerce-developer/">WooCommerce development</a>, tested on real phones alongside the checkout. Send me your store address for a free review and a fixed quote.</p>
 `,
