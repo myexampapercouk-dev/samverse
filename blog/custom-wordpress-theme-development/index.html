@@ -43,7 +43,7 @@
       "headline": "Custom WordPress Theme Development: What It Is, Block vs Classic vs Builder Builds, the Process, Cost Drivers and When It Is Worth It",
       "description": "Custom WordPress theme development: block vs classic vs page builder builds, the process from design to theme, cost drivers and when it is worth it.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-19",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/custom-wordpress-theme-development/",
       "image": "https://samverse.space/assets/og/blog-custom-wordpress-theme-development.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-19">19 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Custom%20WordPress%20Theme%20Development%3A%20What%20It%20Is%2C%20Block%20vs%20Classic%20vs%20Builder%20Builds%2C%20the%20Process%2C%20Cost%20Drivers%20and%20When%20It%20Is%20Worth%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcustom-wordpress-theme-development%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,6 +160,7 @@
               <li><a href="#what-drives-the-cost">What drives the cost</a></li>
               <li><a href="#when-a-custom-theme-is-worth-it">When a custom theme is worth it</a></li>
               <li><a href="#maintenance-and-avoiding-lock-in">Maintenance and avoiding lock-in</a></li>
+              <li><a href="#what-to-put-in-a-custom-theme-brief">What to put in a custom theme brief</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -172,7 +173,7 @@
             </ul>
           </div>
 <p>Custom WordPress theme development means writing a theme for one website, from its own design, instead of adapting a ready-made theme. It's worth it when the design is unusual, speed targets are strict, editors need structured fields they can't break, or the site has content types no theme handles well. For most small business sites, a lightweight theme with Elementor or the block editor is quicker, cheaper and easier for you to edit.</p>
-<p>In my <a href="/wordpress-website-development/">WordPress website development</a> work there are three ways to build a site: a quality theme adapted to your brand, a custom design built in Elementor, or a custom-coded theme. Every client site in my case studies is built with Elementor on a ready-made theme, which lets owners change layouts themselves. A custom theme is the right tool for a narrower set of projects, and this guide explains which.</p>
+<p>In my WordPress website development work there are three ways to build a site: a quality theme adapted to your brand, a custom design built in Elementor, or a custom-coded theme. Every client site in my case studies is built with Elementor on a ready-made theme, which lets owners change layouts themselves. A custom theme is the right tool for a narrower set of projects, and this guide explains which.</p>
 <p>If you already have a design and are weighing up how to build it, <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress: choosing the build approach</a> compares the options side by side.</p>
 
 <h2 id="what-a-custom-theme-is-and-what-it-isn-t">What a custom theme is, and what it isn't</h2>
@@ -180,7 +181,7 @@
 <p>It's worth separating it from things that sound similar:</p>
 <ul>
   <li><strong>A child theme</strong> is a small layer of changes on top of an existing theme. It customises; it doesn't replace.</li>
-  <li><strong>A customised premium theme</strong> is a ready-made theme with your branding and settings. Quicker, but you inherit its code and limits; <a href="/blog/premium-wordpress-themes-guide/">what to know before buying a premium theme</a> covers the trade-offs.</li>
+  <li><strong>A customised premium theme</strong> is a ready-made theme with your branding and settings. Quicker, but you inherit its code and limits; what to know before buying a premium theme covers the trade-offs.</li>
   <li><strong>A custom design in a page builder</strong> looks bespoke, but the layout lives in Elementor and the theme underneath is a general one.</li>
   <li><strong>A custom-coded website without WordPress</strong> is a different thing again; <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> explains the difference.</li>
 </ul>
@@ -281,6 +282,26 @@
   <li><strong>Review it once a year</strong> against the current WordPress and PHP versions, on a staging copy.</li>
 </ul>
 
+<h2 id="what-to-put-in-a-custom-theme-brief">What to put in a custom theme brief</h2>
+<p>A clear brief is the biggest single thing you can do to keep a custom theme on budget, because most overruns come from discovering requirements halfway through the build. A useful brief for a developer covers:</p>
+<ol>
+<li><strong>The page types, not just the pages.</strong> List templates such as home, service, location, blog post, case study, product category and contact. A site with forty service pages may still have only six templates.</li>
+<li><strong>Content structures.</strong> Note anything that repeats with fields: team members, projects, doctors, courses, properties. These usually become custom post types with fields rather than free-form pages.</li>
+<li><strong>Who edits what.</strong> Say which parts your team will change every week (offers, blog, team) and which almost never change. That decides how much is locked down and how much is editable.</li>
+<li><strong>The design files and states.</strong> Mobile designs, hover and focus states, form errors, empty states and long-title cases. A design with only desktop screens leaves the developer guessing.</li>
+<li><strong>Integrations.</strong> CRM, WhatsApp, booking, payment gateway, Google Analytics, any ERP or inventory feed, and who owns the accounts.</li>
+<li><strong>Performance and accessibility targets.</strong> For example passing Core Web Vitals on mobile and meeting basic WCAG contrast and keyboard use.</li>
+<li><strong>Languages.</strong> If a Hindi, Marathi or other regional version is planned, say so now; it affects fonts, layouts and plugin choice.</li>
+</ol>
+<h3>What you should receive at the end</h3>
+<p>A custom theme should arrive with its source code in a repository you can access, a short document listing the templates, blocks and custom fields, the build steps if any assets are compiled, and the list of plugins it depends on. Admin logins, hosting access and licence keys belong in the handover too. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists everything to ask for, so a future developer is not starting from zero.</p>
+<h3>Questions to ask a developer before you agree</h3>
+<ul>
+<li>Will the theme work with the standard block editor, and which blocks will be custom?</li>
+<li>Is any business logic, such as forms or custom post types, kept in a plugin rather than the theme, so it survives a redesign?</li>
+<li>How are updates handled after launch, and what happens when a new WordPress version changes the editor?</li>
+</ul>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is the difference between a custom theme and a child theme?</h3>
 <p>A child theme sits on top of an existing theme and changes parts of it. A custom theme is written from scratch for one site and doesn't depend on another theme.</p>
@@ -292,6 +313,9 @@
 <p>A block theme suits sites edited mainly in the block editor and is where WordPress is heading. A classic theme with custom fields still suits complex, data-heavy sites. The editing needs and the content model decide.</p>
 <h3>Can another developer take over a custom theme?</h3>
 <p>Yes, if it follows WordPress standards, is documented and sits in version control. An undocumented theme with business logic mixed into templates is much harder to hand over.</p>
+
+<h3>Can I edit a custom theme myself after launch?</h3>
+<p>You can edit content, menus and the blocks you were given in the editor. Changing layouts or adding new template types normally needs a developer, which is intended: it keeps the design consistent.</p>
 
 <p>Have a design that needs to be built precisely, or a site that has outgrown its theme? My <a href="/wordpress-website-development/">WordPress website development</a> service covers all three approaches, and the aim is always the simplest one that does the job. Designers can send a file for <a href="/figma-to-wordpress/">Figma to WordPress</a>, and agencies can use my <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>.</p>
 
@@ -336,6 +360,7 @@
               <li><a href="#what-drives-the-cost">What drives the cost</a></li>
               <li><a href="#when-a-custom-theme-is-worth-it">When a custom theme is worth it</a></li>
               <li><a href="#maintenance-and-avoiding-lock-in">Maintenance and avoiding lock-in</a></li>
+              <li><a href="#what-to-put-in-a-custom-theme-brief">What to put in a custom theme brief</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

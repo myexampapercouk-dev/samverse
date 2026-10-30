@@ -5331,12 +5331,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'Personal Brand Websites for Doctors, Lawyers, Coaches and Consultants: Pages, Credentials, Professional Rules and Bookings',
     description: 'Plan a personal brand website as a doctor, lawyer, CA, coach or consultant: positioning, key pages, verifiable credentials, professional rules and booking.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['wordpress-website-for-doctors', 'website-for-lawyers-and-consultants', 'landing-page-design'],
     body: `
 <p>A personal brand website for a doctor, lawyer, chartered accountant, coach or consultant should answer three questions within seconds: who you help, what you help them with, and why they should trust you. Build it around a clear headline, an About page with credentials visitors can verify, one page for each service or problem you handle, articles that show your expertise, and one easy next step such as a consultation request. Keep every claim factual and within your professional body's current rules.</p>
-<p>People choosing a professional are choosing a person, so the site has to feel like you rather than a template. My <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> and <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> are built on this idea: qualifications and practice areas presented clearly, consultation requests on every page, and wording you review and approve before launch. Here is how to plan one, whatever your profession.</p>
+<p>People choosing a professional are choosing a person, so the site has to feel like you rather than a template. My <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> and websites for doctors and clinics are built on this idea: qualifications and practice areas presented clearly, consultation requests on every page, and wording you review and approve before launch. Here is how to plan one, whatever your profession.</p>
 
 <h2>Start with positioning, not design</h2>
 <p>Before choosing colours or a theme, write down three things in your clients' words:</p>
@@ -5379,7 +5379,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <h2>Turning visitors into clients</h2>
 <ul>
-  <li><strong>A free first step</strong> for people not ready to book: a self-assessment, a checklist or a short guide. The free anxiety self-assessment on <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's site</a> is one example of a tool that engages visitors before they book.</li>
+  <li><strong>A free first step</strong> for people not ready to book: a self-assessment, a checklist or a short guide. The free anxiety self-assessment on Dr. Sudhir Arora's site is one example of a tool that engages visitors before they book.</li>
   <li><strong>Easy booking:</strong> a short consultation form, a WhatsApp button with the first message already written, or a calendar booking tool for paid consultations; see <a href="/blog/online-appointment-booking-website/">online appointment booking options</a>.</li>
   <li><strong>Online payment</strong> for consultations or programmes, if you sell them directly.</li>
   <li><strong>Clear expectations:</strong> how quickly you reply, what happens in the first session and what to bring.</li>
@@ -5418,7 +5418,31 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <h2>A personal site alongside a hospital or firm</h2>
 <p>If you work within a hospital, firm or company, your profile on its website stays important. A personal site can complement it with your articles, talks and the services you offer independently. Check your employer's or firm's policy first, link the two, and keep details such as consultation timings consistent between them.</p>
-<p>More detail by profession: <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>, <a href="/blog/website-for-coaches-consultants/">websites for coaches</a> and the doctors' page linked above.</p>
+<p>More detail by profession: websites for lawyers, CAs and consultants, <a href="/blog/website-for-coaches-consultants/">websites for coaches</a> and the doctors' page linked above.</p>
+
+<p>Fitness trainers and yoga teachers can apply the same ideas; see websites for gyms and fitness trainers.</p>
+
+<p>Consultants in traditional fields: see websites for astrologers and vastu consultants.</p>
+
+<h2>Writing about yourself without sounding like a brochure</h2>
+<p>Professionals often find their own site the hardest one to write. A few rules keep it clear and credible:</p>
+<ul>
+<li><strong>Lead with the client's problem.</strong> "I help families plan for their children's education" says more than "experienced financial professional". The first lines of your home page should say who you help and with what.</li>
+<li><strong>Write in the first person if you work alone.</strong> "We" on a one-person practice reads oddly once a client meets you. If you have a team, introduce them by role.</li>
+<li><strong>State credentials plainly.</strong> Qualifications, registrations and years in practice, written as facts with the issuing body named. Leave out adjectives such as "renowned" or "leading", which some professional rules discourage and readers skip anyway.</li>
+<li><strong>Explain how a first consultation works.</strong> Duration, online or in person, what to bring, fees or a fee basis if you can share it, and what happens next. This is often the page that decides whether someone books.</li>
+</ul>
+<h2>Keeping the site alive with little time</h2>
+<p>A personal brand site goes stale when it depends on long blog posts that never get written. A lighter routine works better for busy doctors, lawyers and consultants:</p>
+<ol>
+<li>Once a month, turn the question you answered most often into a short article of a few hundred words.</li>
+<li>Add talks, interviews, published papers or media mentions to a simple "speaking and media" list as they happen.</li>
+<li>Review the about page and services every six months, and update photos when your appearance or clinic changes.</li>
+<li>Share each new article on LinkedIn or WhatsApp with a link back to the site, so the site, not the social platform, holds your best material.</li>
+</ol>
+<p>Hosting, updates and backups should be handled for you so that the routine is about content only. A maintenance plan from your developer, or a managed host, keeps the site secure while you focus on clients.</p>
+
+<p>Lawyers, chartered accountants and consultants have specific needs around practice areas and guidelines; see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers, CAs and consultants</a>.</p>
 
 <p>Fitness trainers and yoga teachers can apply the same ideas; see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms and fitness trainers</a>.</p>
 
@@ -5435,6 +5459,9 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Qualifications with university and year, registration number, the conditions you treat and procedures you offer, clinic timings and locations, and easy ways to book, all kept factual and within current medical council guidance.</p>
 <h3>How many pages does a personal brand website need?</h3>
 <p>Often fewer than people expect: home, about, one page per service or programme, a contact page and an articles section. Add pages for specific problems as you write about them.</p>
+
+<h3>Should my personal website use my name as the domain?</h3>
+<p>If you practise under your own name, yes; it is what people search for after meeting you or hearing a referral. If you plan to grow into a firm or clinic with others, a practice name may serve you better, with your name prominent on the site.</p>
 
 <p>Ready to build yours? See what's included in a website for <a href="/website-for-lawyers-and-consultants/">lawyers, CAs and consultants</a>, with practice area pages, consultation forms and articles your team can publish, or in a website for <a href="/wordpress-website-for-doctors/">doctors and clinics</a>.</p>
 `,
@@ -18341,7 +18368,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
     title: 'Video on Your Business Website: Where It Helps, YouTube vs Self-Hosting, Fast Embeds, Captions, Video Schema and Production on a Budget',
     description: 'Video on your business website: where it helps, YouTube vs self-hosting, facade embeds for speed, captions, video schema and how to film on a budget.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['wordpress-speed-optimization', 'landing-page-design', 'website-redesign'],
     body: `
@@ -18402,7 +18429,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 <p>Test the page in PageSpeed Insights before and after adding video. Indian mobile connections vary widely, as <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains, so check on a real phone too.</p>
 
 <h2>If you want a background or hero video</h2>
-<p>Sometimes a short moving clip genuinely sells, such as <a href="/hotel-website-design/">a resort</a>, <a href="/website-for-restaurants/">a restaurant</a> or a factory line. If so:</p>
+<p>Sometimes a short moving clip genuinely sells, such as a resort, a restaurant or a factory line. If so:</p>
 <ul>
   <li>Keep it a few seconds long, muted, compressed and looping, with no important text inside the video.</li>
   <li>Show a poster image first, and consider showing only the image on phones.</li>
@@ -18459,6 +18486,27 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 <h2>Measuring whether video works</h2>
 <p>YouTube Studio shows how many plays come from embeds on your site and how long people watch. GA4's enhanced measurement can record engagement with embedded YouTube videos, and you can compare enquiries from pages before and after adding a video. If people stop watching early, shorten the video or move the key point earlier.</p>
 
+<p>If video is your product rather than a marketing extra, see websites for video production companies.</p>
+
+<h2>Video by business type: what is worth filming first</h2>
+<p>Most small businesses don't need a video library. They need two or three short videos in the places where a visitor hesitates. Where to start depends on what you sell:</p>
+<table>
+<thead><tr><th>Business</th><th>First video worth making</th><th>Where it goes</th></tr></thead>
+<tbody>
+<tr><td>Clinic or doctor</td><td>A walk from the entrance to the consultation room, and the doctor explaining what a first visit involves</td><td>Home page and the contact or booking page</td></tr>
+<tr><td>Restaurant, café or hotel</td><td>Short clips of the space, a signature dish being plated, or a room walkthrough</td><td>Home page, menu or rooms page</td></tr>
+<tr><td>Manufacturer or B2B supplier</td><td>The factory floor, quality checks and packing</td><td>About page and key product category pages</td></tr>
+<tr><td>Coach, trainer or consultant</td><td>A two-minute talk on how you work and who you help</td><td>About page and service pages</td></tr>
+<tr><td>Online store</td><td>The product in use, showing size, texture or how it folds or fits</td><td>Product page gallery, after the main photos</td></tr>
+<tr><td>Builder or interior designer</td><td>A finished project walkthrough, with the owner's permission</td><td>Project or portfolio pages</td></tr>
+</tbody>
+</table>
+<p>Notice that none of these is a brand film. Clips like these answer a buying question: what will it be like, is this place real, is the product what it looks like. They can be shot on a recent phone in good daylight with a cheap clip-on microphone.</p>
+<h3>Before you publish, check speed again</h3>
+<p>Every new video embed is a chance to undo the speed work on a page. After adding a video, run the page through PageSpeed Insights on mobile and look at the Largest Contentful Paint and layout shift figures. If the video sits in the first screen, the poster image is often the element Google measures, so it needs to be compressed and sized correctly. The guide to <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> explains what those numbers mean.</p>
+<h3>Language and Indian audiences</h3>
+<p>If your customers are spread across regions, a Hindi or regional-language version of one key video can help more than a second English video. Add captions in the spoken language, and keep any important information, such as prices or timings, in the page text too, because it changes more often than videos get re-shot.</p>
+
 <p>If video is your product rather than a marketing extra, see <a href="/blog/website-for-video-production-companies/">websites for video production companies</a>.</p>
 
 <h2>FAQs</h2>
@@ -18472,6 +18520,9 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 <p>Short. Under two minutes suits most explainers and testimonials, with the main point in the first few seconds. Longer how-to videos are fine if they're well structured.</p>
 <h3>Should my homepage have a background video?</h3>
 <p>Usually not. If you use one, keep it short, muted and compressed, show a poster image first, add a pause button, and keep the headline as real text.</p>
+
+<h3>How long should a business website video be?</h3>
+<p>As short as the job allows. A product clip can be under thirty seconds; a doctor or consultant introduction usually works in one to two minutes. Longer explainers belong on YouTube, linked from the page.</p>
 
 <p>Added videos and now the site feels slow? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> replaces heavy embeds with fast previews, lazy-loads the rest and reports the before-and-after results. Planning a campaign page with video? See <a href="/landing-page-design/">landing page design</a>.</p>
 `,
@@ -21421,7 +21472,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'Websites for Dermatology and Skin Clinics: Concern-Led Pages, Medical and Cosmetic Treatments, Before-and-After Consent and Local Search',
     description: 'Plan a dermatology or skin clinic website: concern-led pages, medical and cosmetic treatments, before-and-after photo consent, booking and local SEO.',
     date: '2026-09-27',
-    updated: '2026-10-22',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -21468,7 +21519,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li><strong>Aftercare:</strong> sun protection, products to pause, when to come back</li>
   <li><strong>Cost:</strong> a starting price per session or package, or how the cost is worked out</li>
 </ol>
-<p>Then explain how the procedure works and what a session feels like. The <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> site I built for <a href="/wordpress-shopify-developer-agra/">a dental clinic in Agra</a> answers one worry per treatment in a single sentence, and its FAQ asks "Is the treatment painful?" outright. Skin patients carry similar worries about pain, scarring and whether people will notice, and a procedure page should answer them just as directly.</p>
+<p>Then explain how the procedure works and what a session feels like. The <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> site I built for a dental clinic in Agra answers one worry per treatment in a single sentence, and its FAQ asks "Is the treatment painful?" outright. Skin patients carry similar worries about pain, scarring and whether people will notice, and a procedure page should answer them just as directly.</p>
 
 <h2>Before-and-after photos: consent, consistency and context</h2>
 <p>Comparisons persuade, and they are also where a skin clinic website can mislead or cause harm. Professional conduct guidance for doctors and advertising rules both bear on how results are shown, and the guidance has been revised in recent years, so check the National Medical Commission's current position and your ad platforms' policies before publishing any. If you do show results, a written process protects patients and the clinic:</p>
@@ -21503,6 +21554,22 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 
 <p>Skin clinics in Kochi can see the page on <a href="/wordpress-shopify-developer-kochi/">website development in Kochi</a>, including local search setup.</p>
 
+<h2>Pre-visit and aftercare information that reduces calls</h2>
+<p>Skin clinics take a lot of repeat questions on the phone and WhatsApp: can I come with makeup on, should I stop my creams before a peel, how long before I can go in the sun. Answering them on the website saves front desk time and makes the clinic look organised.</p>
+<h3>Before the appointment</h3>
+<ul>
+<li>What to bring: previous prescriptions, a list of current creams and medicines, earlier reports if any.</li>
+<li>Preparation for procedures, written in general terms and ending with "your doctor will confirm what applies to you".</li>
+<li>How long the first visit usually takes and whether a consultation comes before any procedure.</li>
+<li>Clinic timings, parking, the floor and lift details, and which entrance to use.</li>
+</ul>
+<h3>After a procedure</h3>
+<p>Aftercare pages for peels, lasers or minor procedures can be printed and handed over as well as published. Keep them factual: what is expected in the first days, what to avoid, and when to call the clinic. Link each aftercare page from the matching procedure page, and make the clinic phone and WhatsApp number easy to tap on the page in case a patient is worried.</p>
+<h3>Patient privacy on every form</h3>
+<p>Booking and enquiry forms for a skin clinic often collect sensitive details. Ask only what you need to schedule the visit, avoid asking for photos of the concern through a general contact form, and say in plain words how the information is used. India's data protection law and medical guidance on patient records both apply here, so check the current requirements with your adviser before you add uploads or long medical questionnaires.</p>
+<h3>Reviews that respect patients</h3>
+<p>Google reviews matter for a clinic, but asking for them needs care. A polite review link sent after the visit is fine; offering discounts for reviews or replying with treatment details is not. Never confirm in a reply that the reviewer is a patient or what they were treated for. The guide on <a href="/blog/get-more-google-reviews/">getting more Google reviews ethically</a> has templates you can adapt.</p>
+
 <h2>FAQs</h2>
 <h3>Can a dermatology clinic show before-and-after photos?</h3>
 <p>Only with written consent, consistent lighting, no editing and honest captions, and after checking the current professional guidance for doctors and your ad platforms' rules.</p>
@@ -21514,6 +21581,9 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Better not through an open form. Skin photos are health data, so ask patients to show the problem at the consultation or to use the channel your clinic already uses for patient records.</p>
 <h3>Do we need a landing page for laser hair reduction ads?</h3>
 <p>If you run ads for it, yes. A focused page with the procedure facts, the price basis and a booking form gives ad visitors what they clicked for, instead of leaving them to search the homepage.</p>
+
+<h3>Should a skin clinic website show treatment prices?</h3>
+<p>Many clinics show a consultation fee and a starting price or price basis for common procedures, with a note that the final plan depends on the consultation. That answers the first question patients have without promising a fixed result.</p>
 
 <p>If your clinic's site is a list of treatments decorated with stock photos, I can rebuild it around concern-led pages, honest procedure facts and a consent-based gallery. The <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> page shows how a project with me runs, starting with a free review and a fixed quote.</p>
 `,
@@ -25314,7 +25384,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     title: 'Should You Show Prices on Your Business Website? Fixed Prices, Ranges, Starting-From, Packages, Calculators or Price on Request',
     description: 'Should you show prices on your website? Compare fixed prices, ranges, starting-from prices, packages, calculators and price on request, with examples.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'website-redesign'],
     body: `
@@ -25398,6 +25468,21 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 
 <h2>How to tell whether it's working</h2>
 <p>Add price guidance to one important page, then compare the following month or two with the period before: the number of enquiries, how many were a good fit, and how many became customers. Track form submissions, calls and WhatsApp clicks as key events, as <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows, and keep a simple lead sheet with the source and outcome of each enquiry. Fewer but better enquiries is often a good result. <a href="/blog/conversion-rate-optimization-basics/">Conversion rate optimisation basics</a> covers testing one change at a time.</p>
+
+<h2>Pricing pages for services in India: practical details</h2>
+<p>Indian buyers compare prices across WhatsApp, marketplaces and competitor sites before they call, so small details on a price page make a real difference:</p>
+<ul>
+<li><strong>Say whether GST is included.</strong> "Plus GST" or "inclusive of GST" next to every price avoids an awkward conversation later. If you are not GST-registered, say prices are final rather than leaving it unclear; check with your CA how to word it.</li>
+<li><strong>Show what is excluded.</strong> Travel outside the city, materials, government fees, third-party licences or hosting renewals are common surprises. List them under the price, not in a separate terms page.</li>
+<li><strong>Explain payment terms.</strong> Advance and balance, milestones, UPI or bank transfer, and whether you accept card payments online. For products, mention COD if it is available.</li>
+<li><strong>Use the rupee symbol and Indian number format.</strong> Write amounts the way your buyers read them, with lakh and thousand grouping, and avoid mixing currencies on one page unless you serve overseas clients too.</li>
+<li><strong>Date your prices.</strong> A short "prices valid from" line tells visitors the page is maintained and protects you when costs change.</li>
+</ul>
+<h3>Price pages and search queries</h3>
+<p>People search with phrases such as "website maintenance charges", "price list", "packages" and "cost in Pune" or another city. If you want a pricing page to appear for those searches, use those words naturally in the page title, one heading and a question in the FAQs, and answer the question in the first lines rather than after a long introduction.</p>
+<h3>When to update prices on the site</h3>
+<p>Review the page whenever your rates change, when you add or drop a package, and at least once a year. Old prices left online lead to disputes and erode trust faster than having no prices at all. If you run seasonal offers, show them as a separate line with an end date rather than editing the main price and forgetting to change it back.</p>
+<p>If you would rather have a developer set up price tables, package pages and enquiry forms properly, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them so you can edit prices yourself in the dashboard without touching the layout.</p>
 
 <h2>FAQs</h2>
 <h3>Should a service business show prices on its website?</h3>
@@ -30753,7 +30838,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'How to Give Clear Website Feedback to Your Designer or Developer: Screenshots, One List, Priorities, Bugs vs Changes and a Feedback Template',
     description: 'Give clear website feedback: one consolidated list, screenshots with page and device, priorities, bugs vs changes, revision rounds and a template.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
@@ -30881,6 +30966,20 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Rewriting content after layouts were built around the first version.</li>
 </ul>
 
+<h2>Feedback on content, not just design</h2>
+<p>Most feedback guides talk about colours and layouts, but in practice the slowest part of a website project is usually the words. Content feedback needs its own process:</p>
+<ul>
+<li><strong>Review copy in a document first.</strong> Agree the text for key pages in a shared document before it goes into the design. Editing paragraphs inside a live page through screenshots is slow and error-prone.</li>
+<li><strong>Mark facts separately from style.</strong> "Our clinic opens at 9, not 10" is a fact correction and must be done. "This sentence feels flat" is a style comment and can wait for a later round.</li>
+<li><strong>Check names, numbers and contact details yourself.</strong> Phone numbers, WhatsApp links, addresses, GST numbers, registration numbers and staff names are the things only you can verify. Click every phone and WhatsApp button on your own phone.</li>
+<li><strong>Send final images in one batch.</strong> Name the files by page, for example "about-team-photo.jpg", and say which placeholder each one replaces.</li>
+</ul>
+<h2>Feedback after launch</h2>
+<p>Feedback does not end at go-live. In the first weeks you will notice things that only appear with real visitors: a form that customers misunderstand, a page that gets calls asking the same question, a menu item nobody clicks. Keep a running list rather than sending each one as it occurs, and agree with your developer whether these fall under the original project, a warranty period or a maintenance plan. Anything that is broken is a bug; anything that is new is a change, and the earlier step on keeping them apart applies after launch too.</p>
+<p>At handover, ask for the admin logins, backups and a short guide to editing common content, so small text changes do not need a developer at all. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to collect. If you are still choosing who to work with, it helps to <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> who explains the feedback process and revision rounds before the project starts, not after the first draft.</p>
+<h3>Giving feedback as a team</h3>
+<p>When partners, family members or department heads all review the site, collect their comments into one list before sending it. Resolve disagreements internally first; if two people ask for opposite changes, the developer can only guess which one wins.</p>
+
 <h2>FAQs</h2>
 <h3>How many revision rounds are normal?</h3>
 <p>Whatever your proposal says, which is why it should say a number. For example, two rounds on the key page designs and one on inner pages. Extra rounds are usually charged, so make each one complete.</p>
@@ -30892,6 +30991,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Usually not. Fixing something that doesn't work as agreed is part of the job, while revision rounds cover changes to agreed designs and content.</p>
 <h3>How quickly should I send feedback?</h3>
 <p>By the date agreed in the project plan. If you need more time, tell the developer, because the timeline moves with every delay.</p>
+
+<h3>Can I give feedback over a WhatsApp voice note?</h3>
+<p>For a quick question, yes. For actual changes, follow up in writing with the page, the issue and a screenshot, because voice notes are hard to search, tick off or refer back to later.</p>
 
 <p>Want a project where feedback, revision rounds and approvals are agreed from the start? <a href="/wordpress-website-development/">WordPress website development</a> with me includes a written scope, design feedback before the build and a staging link to review on your phone. Updating an existing site? See <a href="/website-redesign/">website redesign</a>.</p>
 `,
@@ -32508,12 +32610,12 @@ Screenshot: attached</code></pre>
     title: 'Solar Lead Generation: How Rooftop Solar Companies Can Get More Enquiries Online, Qualify Them and Turn Them Into Site Surveys',
     description: 'Solar lead generation for installers: ad landing pages, forms asking roof type and bill range, WhatsApp follow-up, call tracking and local SEO.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
 <p>Solar lead generation works when three things line up: the right channels bring people who are actually considering solar, a focused page and a short qualifying form turn them into enquiries your team can price, and fast follow-up turns those enquiries into site surveys before a competitor gets there. Most installers who complain about lead quality have a problem in one of those three places, not a shortage of traffic.</p>
-<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and <a href="/landing-page-design/">landing pages for ad campaigns</a>, with quote forms, WhatsApp and conversion tracking set up. The <a href="/blog/solar-company-website-guide/">solar company website guide</a> covers the pages on the main site. This guide covers the pipeline around it: where leads come from, how to qualify them and what to do in the hours after one arrives.</p>
+<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and landing pages for ad campaigns, with quote forms, WhatsApp and conversion tracking set up. The <a href="/blog/solar-company-website-guide/">solar company website guide</a> covers the pages on the main site. This guide covers the pipeline around it: where leads come from, how to qualify them and what to do in the hours after one arrives.</p>
 
 <h2>Where solar leads come from</h2>
 <p>Each channel brings a different kind of buyer, and each needs a different landing point:</p>
@@ -32580,6 +32682,22 @@ Screenshot: attached</code></pre>
 </ul>
 <p>Write FAQs in the words customers use, including the localities and districts you cover, and answer the questions your sales team hears on every call: how long installation takes, what happens on cloudy days, who handles the subsidy paperwork and what maintenance involves.</p>
 
+<h2>Residential, housing society and commercial leads need different paths</h2>
+<p>A homeowner wanting a rooftop system, a housing society committee and a factory owner each ask different questions and decide in different ways. Sending all three to one generic page and one form lowers the quality of every lead.</p>
+<table>
+<thead><tr><th>Buyer</th><th>What they need to see</th><th>What the form should ask</th></tr></thead>
+<tbody>
+<tr><td>Homeowner</td><td>How subsidy applications work in general terms, the process from survey to net metering, payment and finance options, and nearby installations</td><td>Monthly electricity bill range, roof type, own or rented, city and pincode</td></tr>
+<tr><td>Housing society</td><td>Common-area use cases, how decisions are documented, examples of society projects, and who handles approvals</td><td>Society name, number of flats, contact role (committee member or resident), area</td></tr>
+<tr><td>Commercial or industrial</td><td>Capacity range you handle, open access or captive options where relevant, maintenance contracts and project references</td><td>Sanctioned load or bill range, roof or land area, company name, timeline</td></tr>
+</tbody>
+</table>
+<p>Give each buyer its own landing page and form. The ad or search query decides which page they see first, and the sales team gets leads already sorted by type.</p>
+<h3>WhatsApp as a lead channel</h3>
+<p>Many rooftop solar enquiries in India start on WhatsApp, often with a photo of the electricity bill. That is useful: the bill answers the qualifying questions. Put a click-to-chat button on every solar page with a pre-filled message such as "I want a rooftop solar quote for my home in Pune", so you know where the lead came from. Track those clicks as events, and respond with a fixed set of questions. The guide to <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> explains buttons, pre-filled messages and tracking.</p>
+<h3>Subsidy and policy wording</h3>
+<p>Subsidy schemes, net metering rules and DISCOM processes change and differ by state. Explain them in general terms, link to the official portal, and add a line that eligibility is confirmed at survey. Promising a subsidy amount or payback period on a landing page creates complaints when the rules or the roof don't match.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best way to get solar leads?</h3>
 <p>For most installers, a mix: Google search ads and a strong Google Business Profile for buyers who are ready now, articles and city pages that keep bringing researchers, and referrals from happy customers. Whatever the channel, a focused landing page and fast follow-up decide how many become surveys.</p>
@@ -32591,6 +32709,9 @@ Screenshot: attached</code></pre>
 <p>As soon as you reasonably can during working hours, with an instant automatic reply in the meantime. Buyers comparing installers tend to go with the first one who gives them useful answers.</p>
 <h3>Google Ads or Facebook ads for solar?</h3>
 <p>Google search ads reach people already looking for an installer, so leads tend to be closer to buying. Facebook and Instagram can reach more people at a lower cost per lead, but they need stronger qualification. Many installers test both and judge them by surveys booked.</p>
+
+<h3>Should we ask for the electricity bill in the website form?</h3>
+<p>An optional upload or a bill range question works better than a required upload, which puts many people off. Ask for the bill on WhatsApp or at the call stage, once the lead has shown real interest.</p>
 
 <p>If your leads are plentiful but rarely turn into surveys, the fix is usually the page, the form and the follow-up. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> for the full site, or <a href="/landing-page-design/">landing page design</a> for campaign pages with tracking, and share your current site or ads for a free review and a fixed quote.</p>
 `,
@@ -36594,12 +36715,12 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
     title: 'Custom WordPress Theme Development: What It Is, Block vs Classic vs Builder Builds, the Process, Cost Drivers and When It Is Worth It',
     description: 'Custom WordPress theme development: block vs classic vs page builder builds, the process from design to theme, cost drivers and when it is worth it.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-developer-for-agencies'],
     body: `
 <p>Custom WordPress theme development means writing a theme for one website, from its own design, instead of adapting a ready-made theme. It's worth it when the design is unusual, speed targets are strict, editors need structured fields they can't break, or the site has content types no theme handles well. For most small business sites, a lightweight theme with Elementor or the block editor is quicker, cheaper and easier for you to edit.</p>
-<p>In my <a href="/wordpress-website-development/">WordPress website development</a> work there are three ways to build a site: a quality theme adapted to your brand, a custom design built in Elementor, or a custom-coded theme. Every client site in my case studies is built with Elementor on a ready-made theme, which lets owners change layouts themselves. A custom theme is the right tool for a narrower set of projects, and this guide explains which.</p>
+<p>In my WordPress website development work there are three ways to build a site: a quality theme adapted to your brand, a custom design built in Elementor, or a custom-coded theme. Every client site in my case studies is built with Elementor on a ready-made theme, which lets owners change layouts themselves. A custom theme is the right tool for a narrower set of projects, and this guide explains which.</p>
 <p>If you already have a design and are weighing up how to build it, <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress: choosing the build approach</a> compares the options side by side.</p>
 
 <h2>What a custom theme is, and what it isn't</h2>
@@ -36607,7 +36728,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>It's worth separating it from things that sound similar:</p>
 <ul>
   <li><strong>A child theme</strong> is a small layer of changes on top of an existing theme. It customises; it doesn't replace.</li>
-  <li><strong>A customised premium theme</strong> is a ready-made theme with your branding and settings. Quicker, but you inherit its code and limits; <a href="/blog/premium-wordpress-themes-guide/">what to know before buying a premium theme</a> covers the trade-offs.</li>
+  <li><strong>A customised premium theme</strong> is a ready-made theme with your branding and settings. Quicker, but you inherit its code and limits; what to know before buying a premium theme covers the trade-offs.</li>
   <li><strong>A custom design in a page builder</strong> looks bespoke, but the layout lives in Elementor and the theme underneath is a general one.</li>
   <li><strong>A custom-coded website without WordPress</strong> is a different thing again; <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> explains the difference.</li>
 </ul>
@@ -36702,6 +36823,26 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
   <li><strong>Review it once a year</strong> against the current WordPress and PHP versions, on a staging copy.</li>
 </ul>
 
+<h2>What to put in a custom theme brief</h2>
+<p>A clear brief is the biggest single thing you can do to keep a custom theme on budget, because most overruns come from discovering requirements halfway through the build. A useful brief for a developer covers:</p>
+<ol>
+<li><strong>The page types, not just the pages.</strong> List templates such as home, service, location, blog post, case study, product category and contact. A site with forty service pages may still have only six templates.</li>
+<li><strong>Content structures.</strong> Note anything that repeats with fields: team members, projects, doctors, courses, properties. These usually become custom post types with fields rather than free-form pages.</li>
+<li><strong>Who edits what.</strong> Say which parts your team will change every week (offers, blog, team) and which almost never change. That decides how much is locked down and how much is editable.</li>
+<li><strong>The design files and states.</strong> Mobile designs, hover and focus states, form errors, empty states and long-title cases. A design with only desktop screens leaves the developer guessing.</li>
+<li><strong>Integrations.</strong> CRM, WhatsApp, booking, payment gateway, Google Analytics, any ERP or inventory feed, and who owns the accounts.</li>
+<li><strong>Performance and accessibility targets.</strong> For example passing Core Web Vitals on mobile and meeting basic WCAG contrast and keyboard use.</li>
+<li><strong>Languages.</strong> If a Hindi, Marathi or other regional version is planned, say so now; it affects fonts, layouts and plugin choice.</li>
+</ol>
+<h3>What you should receive at the end</h3>
+<p>A custom theme should arrive with its source code in a repository you can access, a short document listing the templates, blocks and custom fields, the build steps if any assets are compiled, and the list of plugins it depends on. Admin logins, hosting access and licence keys belong in the handover too. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists everything to ask for, so a future developer is not starting from zero.</p>
+<h3>Questions to ask a developer before you agree</h3>
+<ul>
+<li>Will the theme work with the standard block editor, and which blocks will be custom?</li>
+<li>Is any business logic, such as forms or custom post types, kept in a plugin rather than the theme, so it survives a redesign?</li>
+<li>How are updates handled after launch, and what happens when a new WordPress version changes the editor?</li>
+</ul>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a custom theme and a child theme?</h3>
 <p>A child theme sits on top of an existing theme and changes parts of it. A custom theme is written from scratch for one site and doesn't depend on another theme.</p>
@@ -36713,6 +36854,9 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>A block theme suits sites edited mainly in the block editor and is where WordPress is heading. A classic theme with custom fields still suits complex, data-heavy sites. The editing needs and the content model decide.</p>
 <h3>Can another developer take over a custom theme?</h3>
 <p>Yes, if it follows WordPress standards, is documented and sits in version control. An undocumented theme with business logic mixed into templates is much harder to hand over.</p>
+
+<h3>Can I edit a custom theme myself after launch?</h3>
+<p>You can edit content, menus and the blocks you were given in the editor. Changing layouts or adding new template types normally needs a developer, which is intended: it keeps the design consistent.</p>
 
 <p>Have a design that needs to be built precisely, or a site that has outgrown its theme? My <a href="/wordpress-website-development/">WordPress website development</a> service covers all three approaches, and the aim is always the simplest one that does the job. Designers can send a file for <a href="/figma-to-wordpress/">Figma to WordPress</a>, and agencies can use my <a href="/wordpress-developer-for-agencies/">white-label WordPress development</a>.</p>
 `,
@@ -44487,12 +44631,12 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'How to Sell Digital Products on WordPress: E-books, Courses, Templates and Software, With File Protection, Licence Keys, GST and Refunds',
     description: 'Sell e-books, courses, templates and software on WordPress: WooCommerce downloads vs dedicated plugins, file protection, licence keys, GST and refunds.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
 <p>To sell digital products on WordPress, use WooCommerce's virtual and downloadable products if you sell a handful of files or mix digital and physical products, a dedicated downloads plugin if you mainly sell software with licence keys, or an LMS plugin if you sell courses. Then protect the files, deliver them by email and in the customer's account, connect an Indian payment gateway, check GST treatment with your CA and publish a clear refund policy.</p>
-<p>As part of <a href="/woocommerce-developer/">WooCommerce development</a>, I can set up downloadable products, secure file delivery, the payment gateway and branded order emails, tested with test orders before launch. Each product also needs a page that persuades people to buy, which is where <a href="/landing-page-design/">landing page design</a> comes in.</p>
+<p>As part of <a href="/woocommerce-developer/">WooCommerce development</a>, I can set up downloadable products, secure file delivery, the payment gateway and branded order emails, tested with test orders before launch. Each product also needs a page that persuades people to buy, which is where landing page design comes in.</p>
 <p>Selling ongoing access rather than one-off files? See <a href="/blog/membership-website-wordpress/">membership websites on WordPress</a>, or <a href="/blog/woocommerce-subscriptions/">selling subscriptions with WooCommerce</a> for monthly or yearly billing.</p>
 
 <h2>What you can sell</h2>
@@ -44603,6 +44747,19 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Analytics records purchases, so you know which pages and campaigns sell.</li>
 </ol>
 
+<h2>Pricing, bundles and coupons for digital products</h2>
+<p>Digital products have no stock and no shipping, so the structure of your offer does more work than it would in a physical store. A few patterns that WooCommerce handles without custom code:</p>
+<ul>
+<li><strong>Tiers by licence, not by file.</strong> A template sold as "personal use" and "client use", or a plugin sold for one site and for several sites, is usually one variable product with a licence attribute. Each variation can deliver the same file but carry a different licence key limit and a different terms page.</li>
+<li><strong>Bundles.</strong> A set of e-books or a template pack can be a grouped product, or a bundle product from a bundle plugin, so the buyer gets every file in one order and one email.</li>
+<li><strong>Launch and festival coupons.</strong> WooCommerce coupons can be limited by date, by product, by first order or by number of uses, which keeps a Diwali or launch-week offer from being shared forever.</li>
+<li><strong>Free products as lead magnets.</strong> A free checklist sold at zero through the normal checkout gives you a customer account and an email address with consent, which a plain download link does not.</li>
+</ul>
+<p>For Indian buyers, check how the checkout looks on a phone with UPI as the first option. Many digital purchases are impulse buys from Instagram or WhatsApp, and a long checkout asking for a shipping address loses them. Turn off shipping fields for virtual products, keep billing fields to what your GST invoice needs, and test a real UPI payment before launch. The guide to <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments on WordPress in India</a> covers gateway choice and KYC.</p>
+<p>If you also sell internationally, decide early whether you will show prices in INR only or in other currencies too, because currency switching, international cards and tax rules for overseas buyers each add setup and testing. Starting with INR and adding currencies once foreign orders actually arrive is often the calmer route.</p>
+<h3>Upsells that don't feel pushy</h3>
+<p>Digital buyers are often open to one sensible add-on: the workbook that goes with an e-book, the extended licence for a template, or a one-to-one call after a course. Offer it on the product page or as a single order bump at checkout, not as a chain of pop-ups. Track how many orders take the add-on before adding more.</p>
+
 <h2>FAQs</h2>
 <h3>Can I sell digital products with WooCommerce for free?</h3>
 <p>WooCommerce itself is free, and downloadable products are built in. You still pay for hosting, the gateway's transaction charges and any premium plugins you add, such as licensing or PDF stamping.</p>
@@ -44614,6 +44771,9 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>It depends on your turnover, who you sell to and how your products are classified, and the rules for digital products can differ from physical goods. Ask your CA before you launch.</p>
 <h3>Can I sell online courses through WooCommerce?</h3>
 <p>Yes. Several LMS plugins integrate with WooCommerce, so the course is sold as a product and access is granted after payment.</p>
+
+<h3>Should I sell digital products on my own WordPress site or on a marketplace?</h3>
+<p>A marketplace brings buyers but takes a cut and keeps the customer relationship. Your own site keeps the customer list and the margin but needs you to bring traffic. Many sellers use both, with the full range and best offers on their own site.</p>
 
 <p>Ready to sell your e-books, templates, courses or software from your own site? My <a href="/woocommerce-developer/">WooCommerce development</a> service sets up the products, secure delivery, payments and emails, and <a href="/landing-page-design/">landing page design</a> gives each product a sales page built to convert.</p>
 `,
