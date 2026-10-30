@@ -2426,9 +2426,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     slug: 'core-web-vitals-explained',
     seoTitle: 'Core Web Vitals Explained: LCP, INP and CLS in Plain English',
     title: 'Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them',
-    description: 'Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, the Search Console report and what to fix first on WordPress.',
+    description: 'Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, Search Console reports and what to fix first on WordPress.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -2513,6 +2513,16 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ol>
 <p>Test on a real mid-range Android phone on mobile data as well. Many Indian visitors browse on budget phones and variable connections, and that's exactly the audience the 75th percentile captures; see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
 
+<h2>Core Web Vitals on Indian mobile traffic</h2>
+<p>For most Indian business sites, the majority of visitors arrive on mid-range Android phones over mobile data. That is where Core Web Vitals usually fail, even when the site feels quick on an office laptop on Wi-Fi. A few patterns come up again and again:</p>
+<ul>
+<li><strong>LCP</strong> suffers from large hero images and sliders, image-heavy page builders and slow shared hosting that takes too long to send the first byte.</li>
+<li><strong>INP</strong> suffers from heavy JavaScript: chat widgets, WhatsApp buttons loaded as scripts, pop-up builders, multiple tracking tags and large theme bundles that keep the phone busy.</li>
+<li><strong>CLS</strong> suffers from banners and cookie notices that push content down, ads without reserved space and web fonts that swap late.</li>
+</ul>
+<p>Test the way your visitors browse. In PageSpeed Insights, read the mobile tab first. In Chrome DevTools, use network and CPU throttling to approximate a slower phone. Then compare against the field data in Search Console, which reflects your real audience.</p>
+<p>If your Shopify store fails Core Web Vitals, the same principles apply: too many apps adding scripts, oversized images and heavy theme sections. The difference is that on Shopify you mostly fix it by removing apps and simplifying the theme rather than changing hosting.</p>
+
 <h2>FAQs</h2>
 <h3>What are good Core Web Vitals scores?</h3>
 <p>LCP of 2.5 seconds or less, INP of 200 milliseconds or less, and CLS of 0.1 or less, each met by at least 75% of page visits. A page passes the assessment when all three are good.</p>
@@ -2524,6 +2534,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>No. The lab score isn't a Core Web Vital, and chasing 100 can mean removing useful features. Aim to pass Core Web Vitals for real visitors, especially on mobile.</p>
 <h3>What happened to First Input Delay?</h3>
 <p>Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024. INP measures responsiveness across the whole visit, not just the first tap, so it's harder to pass.</p>
+<h3>Why do my Core Web Vitals pass on desktop but fail on mobile?</h3>
+<p>Phones have slower processors and often slower connections, so heavy images and JavaScript hurt them far more. Google reports mobile and desktop separately, so fix the mobile issues first.</p>
+
 
 <p>If your Search Console report shows pages as Poor or Needs improvement and you'd rather have the causes found and fixed safely, my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service includes a full audit, Core Web Vitals fixes for LCP, INP and CLS, testing after every change, and a before-and-after report.</p>
 `,
@@ -4845,14 +4858,14 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     slug: 'landing-page-vs-website',
     seoTitle: 'Landing Page vs Website: Key Differences and Which You Need',
     title: 'Landing Page vs Website: The Key Differences, Where Squeeze Pages Fit, and Which You Need for Your Ads',
-    description: 'Landing page vs website: the key differences, landing page vs homepage, squeeze pages explained, and when to send ad clicks to each to get more leads.',
+    description: 'Landing page vs website: the key differences, landing page vs homepage, squeeze pages, and when to send Google or Meta ad clicks to each for more leads.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'real-estate-website-design'],
     body: `
 <p>A website is your business's full presence online: many pages for many kinds of visitors, built to inform, build trust and rank in search. A landing page is a single page built for one audience, one offer and one action, usually the destination of a Google or Meta ad. For paid campaigns, send clicks to a landing page (or a very focused service page) that matches the ad; for credibility, search traffic and returning visitors, you need the website. Most businesses that advertise need both.</p>
-<p>I build both. A focused <a href="/landing-page-design/">landing page for Google and Meta ads</a> comes with GA4, Meta Pixel and Google Ads conversion tracking set up, and my <a href="/blog/wordpress-website-cost-india/">website cost guide</a> puts a single landing page at about ₹5,000 to ₹15,000, against ₹15,000 to ₹40,000 for a small business website.</p>
+<p>I build both. A focused <a href="/landing-page-design/">landing page for Google and Meta ads</a> comes with GA4, Meta Pixel and Google Ads conversion tracking set up, and my website cost guide puts a single landing page at about ₹5,000 to ₹15,000, against ₹15,000 to ₹40,000 for a small business website.</p>
 <p>Below: the differences side by side, landing page vs homepage, the types of landing page including squeeze pages, and how to decide where your ad clicks should go.</p>
 
 <h2>Landing page vs website: the key differences</h2>
@@ -4889,8 +4902,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h3>Squeeze page vs landing page</h3>
 <p>Every squeeze page is a landing page, but not every landing page is a squeeze page. A squeeze page strips everything back to a single field and a reason to fill it in, usually a lead magnet such as a checklist or guide. It suits building an email or WhatsApp list cheaply. A lead generation landing page asks for more and gives more: details of the service, proof and answers, because the visitor is closer to buying. See <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> if you're planning one.</p>
 <h3>Microsites</h3>
-<p>Between the two sits the microsite: a few pages for one project or campaign, such as a new housing project with its own floor plans, amenities and location pages. See <a href="/blog/real-estate-project-microsite/">real estate project microsites</a>.</p>
-
 <h2>When a landing page is the right choice</h2>
 <ul>
   <li>Google Ads or Meta ads for a specific service, offer or location</li>
@@ -4931,9 +4942,23 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>Building landing pages on WordPress</h2>
 <p>You can build a landing page on your existing WordPress site, using a blank template such as Elementor Canvas so the menu and footer don't appear, or on a separate subdomain set up for campaigns. Your own site is simpler to manage and shares your domain's trust; a separate setup keeps campaign pages and tracking scripts away from the main site. Either way, keep the page light so it loads fast on mobile. Most of my landing pages are ready in three to five working days once the content and offer are clear.</p>
 
-<p>Property marketing is a classic example: each project needs its own campaign page alongside the main site. See the <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a>.</p>
-
 <p>Deciding between paid and organic first? See <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a>.</p>
+
+<h2>Landing pages for Indian ad campaigns: what to include</h2>
+<p>Ads aimed at Indian customers often bring visitors who want a quick answer and a fast way to contact you. A landing page built for that behaviour usually needs:</p>
+<ul>
+<li><strong>A WhatsApp button and a tap-to-call number</strong> alongside the form, because many visitors would rather message or call than type into a form.</li>
+<li><strong>A short form</strong>: name, phone and one qualifying question is often enough. Every extra field is one more reason to leave.</li>
+<li><strong>Local proof</strong>: the cities or areas you serve, your office address and real photos of your work or team.</li>
+<li><strong>Clear pricing context</strong> where you can give it honestly, such as what affects cost, so visitors are not surprised later.</li>
+<li><strong>Fast loading on mobile data</strong>, since a slow page wastes the click you paid for.</li>
+<li><strong>Conversion tracking</strong> for form submissions, WhatsApp clicks and calls, so you can see which ads bring leads.</li>
+</ul>
+<p>If you sell products through a Shopify store, the same thinking applies: a campaign can point to a focused collection or product page with COD, delivery times and returns spelled out clearly, rather than to your store's homepage.</p>
+<p>The landing page should still look like your website, with the same logo, colours and contact details, so a visitor who later checks your main site recognises the business immediately.</p>
+<p>Plan one landing page per offer or audience rather than one page for every ad. If you run separate campaigns for different services, cities or languages, each deserves a page whose headline, images and form match that campaign. Smaller differences, such as two versions of the same ad text, can share one page. Review the pages every month against the leads they bring, and retire or merge any that no longer match a live campaign, so old offers do not keep collecting clicks from search or shared links.</p>
+
+<p>Property marketing is a classic example: each project needs its own campaign page alongside the main site. See the <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a>.</p>
 
 <p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>
 
@@ -20005,9 +20030,9 @@ Disallow: /</code></pre>
     slug: 'how-long-does-seo-take',
     seoTitle: 'How Long Does SEO Take to Work? An Honest Answer',
     title: 'How Long Does SEO Take to Work? What Affects the Timeline, What Usually Happens First and How to Tell It Is Working',
-    description: 'How long does SEO take? An honest answer: what affects the timeline, what usually comes first, new vs established sites, and signs SEO is working.',
+    description: 'How long does SEO take to work? An honest answer: what affects the timeline, what comes first, new vs established sites and the signs that SEO is working.',
     date: '2026-09-27',
-    updated: '2026-10-16',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-website-development'],
     body: `
@@ -20099,6 +20124,19 @@ Disallow: /</code></pre>
 <h2>Updates, dips and patience</h2>
 <p>Rankings don't rise in a straight line. Google's core updates can shift positions for weeks while they roll out, and a page can dip before settling higher. Judge progress over months and look at groups of pages, not single keywords; <a href="/blog/google-algorithm-updates-small-business/">Google algorithm updates for small businesses</a> explains how to tell an update from a problem on your site.</p>
 <p>Because SEO takes time, many businesses run ads for immediate enquiries while organic visibility builds, then rely on them less as it grows; <a href="/blog/seo-vs-google-ads/">SEO vs Google Ads</a> compares the two.</p>
+
+<p>Start with realistic targets: match search intent and pick specific keywords.</p>
+
+<h2>How long SEO takes for Indian local and service businesses</h2>
+<p>For a business that serves one city or region in India, the timeline often looks different from the generic advice online. A few points make a real difference:</p>
+<ul>
+<li><strong>City-specific searches move first.</strong> A search such as a service plus your city usually has fewer strong competitors than the national version, so pages built for it tend to move sooner.</li>
+<li><strong>Your Google Business Profile matters as much as the website</strong> for map results. Correct categories, real photos, service areas and genuine reviews support the website's progress.</li>
+<li><strong>Directory and marketplace sites dominate many Indian queries.</strong> For some searches, you will compete with large listing sites for months; the realistic target is the long-tail version they do not cover well.</li>
+<li><strong>Price and cost queries are popular in India.</strong> Honest pages explaining what affects price often earn impressions earlier than generic service pages.</li>
+<li><strong>Mobile speed counts.</strong> Most visitors search on phones, so a slow site holds back both rankings and enquiries.</li>
+</ul>
+<p>A sensible expectation for a new local business site is to watch for the first impressions on specific city and service searches, then the first clicks, then enquiries, and to keep publishing useful pages in that order. If you also sell through a Shopify store, collection and product pages for specific product types usually move before the homepage does.</p>
 
 <p>Start with realistic targets: <a href="/blog/search-intent-explained/">match search intent</a> and pick specific keywords.</p>
 
@@ -21332,9 +21370,9 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     slug: 'domain-seo-scam-emails',
     seoTitle: 'Fake Domain Renewal & SEO Scam Emails: How to Spot Them',
     title: 'Domain Renewal and SEO Scam Emails: How to Spot Fake Expiry Notices, "SEO for Your Domain" Invoices and Cold Audit Emails',
-    description: 'How to spot domain renewal and SEO scam emails: fake expiry notices, "domain registration authority" invoices, brand domain warnings and fake SEO audits.',
+    description: 'Spot domain renewal and SEO scam emails: fake expiry notices, Domain Registration Authority invoices, brand domain warnings and cold SEO audit emails.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-seo-services'],
     body: `
@@ -21404,6 +21442,18 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 </ol>
 <p>If the site has been compromised, it needs a proper clean-up rather than just a password change; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
 
+<h2>Scam emails Indian businesses commonly receive</h2>
+<p>Besides the global patterns above, a few versions show up often in Indian inboxes. Treat each one with the same rule: verify independently, never through the message.</p>
+<ul>
+<li><strong>"Your domain .in / .co.in will be deleted"</strong> notices asking for urgent payment by UPI or a payment link. Check the expiry date in your registrar account instead.</li>
+<li><strong>GST or invoice-themed emails</strong> with a "pending domain invoice" attachment. Real registrar invoices sit inside your account dashboard; do not open unexpected attachments.</li>
+<li><strong>WhatsApp messages from "Google partners"</strong> offering first-page rankings or a "verified" listing for a fee. Google does not sell rankings and does not contact you on WhatsApp about your website.</li>
+<li><strong>Fake Google Business Profile suspension calls</strong> asking for a fee to keep your listing live. Your profile can be managed for free from your own Google account.</li>
+<li><strong>Hosting "account suspended" emails</strong> asking you to log in through a link. Open your hosting panel from a bookmark to check.</li>
+</ul>
+<p>A useful habit is to write down, in one place, who your registrar, hosting company and email provider are, and when each renews. When a message arrives from anyone not on that list, you know at a glance it is not a real bill.</p>
+<p>If you are not sure who controls your domain at all, sort that out first: it is the account scammers try hardest to steal.</p>
+
 <h2>FAQs</h2>
 <h3>Is "Domain Registration Authority" a scam?</h3>
 <p>An invoice from a company with a name like that, which isn't the registrar you pay, is not a real renewal. At best it's a paid listing service presented as a bill; at worst it transfers your domain. Check your expiry date in your own registrar account and ignore the email.</p>
@@ -21415,6 +21465,9 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Usually nothing. These emails invent a rival applicant to pressure you into buying many domains. If you genuinely trade in China or Asia, register the extensions you need through your usual registrar.</p>
 <h3>Should I reply to emails saying my website has SEO errors?</h3>
 <p>No need. They're mass-sent templates, and automated tools always find some "errors". If you're worried about your site, look at Search Console or ask a provider you've chosen yourself.</p>
+<h3>Can someone take my domain if I ignore a renewal scam email?</h3>
+<p>No. Ignoring a scam email does nothing to your domain. It only expires if you do not renew it with your real registrar, so keep auto-renew on and your payment details current there.</p>
+
 
 <p>Not sure who controls your domain and hosting, or whether a notice is genuine? Getting accounts into your name and keeping them updated is part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> work.</p>
 `,
@@ -23298,15 +23351,15 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     slug: 'news-magazine-websites-wordpress',
     seoTitle: 'News and Magazine Websites on WordPress: How to Build One',
     title: 'Building News and Magazine Websites on WordPress: Themes, Categories, Authors, Speed at Scale, Ads, Google News and Schema',
-    description: 'How to build a news or magazine website on WordPress: themes, categories, authors, speed at scale, ads and Core Web Vitals, Google News basics and schema.',
+    description: 'Build a news or magazine website on WordPress: categories, authors, editorial roles, speed at scale, ads and Core Web Vitals, Google News basics and schema.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-speed-optimization', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
 <p>WordPress is a strong platform for news and magazine websites, from local news portals to industry publications. A good one needs a category structure that matches how readers browse, author pages and clear dates on every article, an editorial workflow with the right user roles, hosting and caching that stay fast as the archive grows into thousands of posts, ads that don't wreck Core Web Vitals, and article structured data. Inclusion in Google News is decided by Google, not applied for, so the basics of trustworthy publishing matter most.</p>
 <p>Speed is where content-heavy sites often struggle. Thousands of images, ad scripts, related-post queries and busy homepages add up, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds out whether the bottleneck is hosting, plugins, the theme, images, scripts or the database, then fixes it and shows you the before-and-after results.</p>
-<p>A real example runs through this guide: <a href="/work/india-automation-hub/">India Automation Hub</a>, a news and resource portal for India's industrial automation community, built with WordPress, Elementor, the Newsfy theme and Yoast SEO.</p>
+<p>A real example runs through this guide: a news and resource portal for India's industrial automation community, built with WordPress, Elementor, the Newsfy theme and Yoast SEO.</p>
 
 <h2>Choosing how to build it</h2>
 <table>
@@ -23407,6 +23460,20 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li><strong>Site search and "read next" links,</strong> so a reader who finishes one article always has another in view.</li>
 </ul>
 
+<h2>A launch checklist for a news site in India</h2>
+<p>Before a news or magazine website goes live, run through the points that are specific to publishing rather than to a normal business site:</p>
+<ul>
+<li><strong>About, contact and editorial policy pages</strong> that say who runs the publication, how to reach the newsroom and how corrections are handled.</li>
+<li><strong>Author pages</strong> with a short bio for every writer, linked from each byline.</li>
+<li><strong>Published and updated dates</strong> visible on every article and present in the schema.</li>
+<li><strong>Language and region</strong>: if you publish in Hindi, Marathi or another Indian language as well as English, decide early whether each language gets its own section or its own site, and set the language correctly.</li>
+<li><strong>A news sitemap</strong> listing recent articles, alongside the normal sitemap, submitted in Search Console.</li>
+<li><strong>Image rules</strong> for editors: a set featured image size, compression on upload and alt text written by the reporter.</li>
+<li><strong>Load testing</strong> before a big event or election day, so a traffic spike does not take the site down.</li>
+<li><strong>Backups and update routine</strong> that suit a site updated many times a day.</li>
+</ul>
+<p>Also check the current rules that apply to digital news publishers in India with someone who knows media law, since obligations can change. Getting these basics right from day one is far easier than fixing thousands of articles later.</p>
+
 <h2>FAQs</h2>
 <h3>Is WordPress good for a news website?</h3>
 <p>Yes. It handles frequent publishing, multiple authors, categories, scheduling and large archives well. The work is in choosing a lean theme, structuring categories and keeping it fast as content grows.</p>
@@ -23418,6 +23485,9 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Yes, with suitable hosting, page and object caching, sized images and a tidy database. Slowdowns at scale usually come from hosting, heavy queries and scripts rather than WordPress itself.</p>
 <h3>Do ads slow down a WordPress news site?</h3>
 <p>They can. Ad scripts add weight and can cause layout shifts. Reserving space for each slot, lazy-loading lower ads and limiting their number keeps the impact down.</p>
+<h3>Should a Hindi or regional language news site be separate from the English one?</h3>
+<p>It depends on the team and audience. Separate sections with correct language settings work for small teams; separate sites suit larger newsrooms. Either way, keep each article in one language.</p>
+
 
 <p>Running a news or magazine site that has slowed down as it has grown? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers hosting checks, caching, images, scripts and the database, with a before-and-after report. For indexing, archives and article schema, see <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
@@ -24762,9 +24832,9 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     slug: 'website-launch-checklist',
     seoTitle: 'Website Launch Checklist: What to Check Before Going Live',
     title: 'Website Launch Checklist for Small Businesses: What to Check Before, On and After Launch Day',
-    description: 'A website launch checklist for small businesses: content, mobile, forms, SEO settings, analytics, security, legal pages, launch-day steps and the first week.',
+    description: 'A website launch checklist for small businesses: content, mobile, forms, SEO settings, analytics, security, legal pages, launch day steps and the first week.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -24889,6 +24959,20 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 </ul>
 <p>After that, the <a href="/blog/first-90-days-after-website-launch/">first 90 days after launch</a> plan covers getting found, building trust and improving the site.</p>
 
+<h2>Launch checks specific to Indian businesses</h2>
+<p>Alongside the general checklist, a few checks come up again and again on sites built for Indian customers:</p>
+<ul>
+<li><strong>Phone numbers</strong> include the country code in tap-to-call links, so they work for visitors calling from abroad as well as locally.</li>
+<li><strong>WhatsApp links</strong> open the right business number with a sensible pre-filled message, on both phones and desktop.</li>
+<li><strong>Payment gateways</strong> such as Razorpay or another provider are switched from test mode to live mode, and a small real payment has been tested and refunded.</li>
+<li><strong>GST details</strong>, business name and address match what appears on your invoices, where you show them on the site.</li>
+<li><strong>Google Business Profile</strong> lists the new website address and the same phone number.</li>
+<li><strong>Hosting location and speed</strong> suit an Indian audience; test the site on mobile data, not just office Wi-Fi.</li>
+<li><strong>Email</strong> sent from the website (form notifications, order emails) actually reaches your inbox and not spam.</li>
+</ul>
+<p>If you are launching a Shopify store instead, check that the password page is removed, the payment provider is live, shipping rates and COD rules are correct for your delivery areas, and the store domain is connected with HTTPS.</p>
+<p>Write the results down. A short launch log makes it much easier to fix problems that only show up after the first real visitors arrive.</p>
+
 <p>Not sure what your terms page should say? See <a href="/blog/website-terms-and-conditions/">what website terms and conditions usually cover</a>.</p>
 
 <h2>FAQs</h2>
@@ -24902,8 +24986,11 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <p>No. Replace it on the same domain at launch, with redirects from old page addresses to their new equivalents. Taking the old site down early leaves customers and Google with nothing to find.</p>
 <h3>Why isn't my new website showing on Google?</h3>
 <p>New pages can take days or weeks to appear. If nothing shows after that, check the "Discourage search engines" setting, noindex tags and robots.txt first; see <a href="/blog/wordpress-site-not-showing-on-google/">a WordPress site not showing on Google</a> for the full list.</p>
+<h3>Should I test payments before launching my website?</h3>
+<p>Yes. Switch the payment gateway to live mode, make a small real payment, check the order and email confirmation, then refund it. Test mode alone does not prove live payments work.</p>
 
-<p>Planning a new website? Before launch on my <a href="/wordpress-website-development/">WordPress website development</a> projects, every page is tested on real devices, speed-optimised and given SEO basics, and afterwards you get a walkthrough on editing the site yourself. Opening an online store? Use the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> as well.</p>
+
+<p>Planning a new website? Before launch on my <a href="/wordpress-website-development/">WordPress website development</a> projects, every page is tested on real devices, speed-optimised and given SEO basics, and afterwards you get a walkthrough on editing the site yourself. Opening an online store? Use the WooCommerce store launch checklist as well.</p>
 `,
   },
   {
@@ -33829,9 +33916,9 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
     slug: 'why-wordpress-sites-get-hacked',
     seoTitle: 'Why WordPress Sites Get Hacked (and How to Prevent It)',
     title: 'Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One',
-    description: 'Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, neglected hosting and supply-chain attacks, and what prevents each.',
+    description: 'Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, weak hosting and admin access, plus the fix that prevents each one.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -33934,6 +34021,19 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 </ul>
 <p>Logs aren't always available, especially on cheap shared hosting, so sometimes the honest answer is "most likely". In that case, close every plausible route.</p>
 
+<h2>Hidden entry points Indian small business sites often miss</h2>
+<p>When I clean up hacked sites, the cause is often something the owner forgot existed rather than the live website itself. These are worth checking even if your main site looks fine:</p>
+<ul>
+<li><strong>Old staging or test copies</strong> in a subfolder such as /old/, /test/ or /new/, left behind after a redesign and never updated again.</li>
+<li><strong>Admin accounts for past freelancers or agencies</strong> that still work, often with simple passwords set during the build.</li>
+<li><strong>cPanel, FTP and hosting logins</strong> shared over WhatsApp or email years ago, never changed since.</li>
+<li><strong>Payment, form and WhatsApp chat plugins</strong> installed for a campaign, then deactivated but left on the server with their old code.</li>
+<li><strong>A cheap shared hosting plan</strong> where one outdated site in the same account can infect every other site next to it.</li>
+<li><strong>The office computer</strong> where the browser has saved the WordPress password and someone installs pirated software.</li>
+</ul>
+<p>A simple test: list every person, plugin and folder that can touch your site, then remove anything you cannot explain. If you also run a Shopify store, the platform handles server security for you, but staff accounts and third-party apps still need the same review.</p>
+<p>The aim is not to buy more security tools. It is to shrink the number of doors, keep the ones you need locked and updated, and keep a clean off-site backup so a bad day is a restore rather than a rebuild.</p>
+
 <h2>FAQs</h2>
 <h3>Why do hackers target small business websites?</h3>
 <p>Mostly they don't target anyone in particular. Bots scan for known weaknesses across the internet, and any site that matches gets used for spam, redirects, phishing or email abuse, whatever its size.</p>
@@ -33945,6 +34045,9 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 <p>Yes. A stolen hosting or FTP password, or an infected site in the same account, gives an attacker access to your files without touching WordPress logins.</p>
 <h3>Does a security plugin stop all hacks?</h3>
 <p>No. It reduces risk, but it can't fix an unpatched plugin, a reused password or a nulled theme. Updates and strong logins do more of the work, and a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> adds another layer.</p>
+<h3>How often should a small business check its WordPress site for security problems?</h3>
+<p>Check updates at least weekly, review admin users and plugins monthly, and test that you can restore a backup every few months. A maintenance plan can handle this routine for you.</p>
+
 
 <p>Most of these causes come down to upkeep: updates with a backup first, user reviews and monitoring, which is what <a href="/wordpress-maintenance/">WordPress maintenance</a> covers every month. If your site has already been hacked, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
@@ -34836,9 +34939,9 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     slug: 'recover-rankings-after-hack',
     seoTitle: 'Recover Google Rankings After a Hack: A Step-by-Step Plan',
     title: 'How to Recover Google Rankings After Your Website Was Hacked: Manual Actions, Spam URLs and a Realistic Timeline',
-    description: 'Recover Google rankings after a hack: security issues vs manual actions, review requests, clearing spam URLs, when to disavow and a realistic timeline.',
+    description: 'Recover Google rankings after a hack: security issues vs manual actions, review requests, clearing spam URLs, fixing SEO damage and a realistic timeline.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -34932,6 +35035,21 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 </ul>
 <p>If rankings stay down long after everything is clean, look for other causes in the same period, such as a Google update or a competitor improving; <a href="/blog/website-traffic-dropped/">what to check when traffic drops</a> walks through them.</p>
 
+<h2>A recovery checklist to keep beside Search Console</h2>
+<p>Recovery has many small steps and it is easy to skip one. Work through this list and note the date you finish each item, so you can match later changes in Search Console to the work you did:</p>
+<ol>
+<li>Malware removed, entry point found and closed, all passwords and keys changed.</li>
+<li>Security issues report shows no issues, and any manual action review request has been answered.</li>
+<li>Spam URLs return 404 or 410, not a redirect to the homepage.</li>
+<li>Your sitemap lists only real pages and has been resubmitted.</li>
+<li>Robots.txt, the site language, canonical tags and the "discourage search engines" setting are correct.</li>
+<li>Titles and meta descriptions on key service pages are your own again, not the hacker's.</li>
+<li>Google Business Profile still points to the correct website address.</li>
+<li>Key pages requested for indexing with the URL Inspection tool.</li>
+</ol>
+<p>For a business in India that depends on local searches, check your branded search first: search your business name with your city and see whether your real homepage and contact page show with the right title. That usually recovers before broader service keywords do, and it is the clearest early sign that Google trusts the site again.</p>
+<p>Keep a simple log of these dates. If rankings stay low weeks after everything is ticked, the log helps you see whether the problem is still the hack or something unrelated, such as an algorithm update or a competitor.</p>
+
 <h2>FAQs</h2>
 <h3>How long does it take to recover rankings after a hack?</h3>
 <p>It varies. Small infections cleaned quickly can recover soon after Google recrawls, while large spam hacks or manual actions take longer. Nobody can honestly promise a timeline, but a thorough first cleanup is the biggest factor you control.</p>
@@ -34943,6 +35061,9 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <p>No. A new domain starts without your existing reputation, and a clean, reviewed site recovers on its own domain. Moving doesn't fix the vulnerability either.</p>
 <h3>Why do spam pages still show for my business name?</h3>
 <p>Either Google hasn't recrawled them yet, or they still return content to Googlebot because the cloaking code is active. Check with the URL Inspection live test, then use the Removals tool to hide them while Google catches up.</p>
+<h3>Should I redirect hacked spam URLs to my homepage?</h3>
+<p>No. Let spam URLs return a 404 or 410 so Google drops them. Redirecting thousands of junk URLs to your homepage can look like soft 404s and slows the clean-up.</p>
+
 
 <p>Rankings dropped after a hack? I can confirm the site is clean, remove leftover spam pages and redirects, and handle the review requests; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For the ranking side once the site is clean, see <a href="/wordpress-seo-services/">WordPress SEO</a>.</p>
 `,
@@ -72149,12 +72270,13 @@ done</code></pre>
     title: 'How to Set Up a Shopify Store in India, Step by Step: Plan, Domain, Payments, GST, Shipping and Launch',
     description: 'Set up a Shopify store in India step by step: plan costs, domain and email DNS, Razorpay or PayU and COD, GST invoices, pin code shipping, policies and launch.',
     date: '2026-10-25',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
-<p>Opening a Shopify account takes a few minutes. Getting a store ready to take orders in India takes longer, because the decisions that matter are local ones: which payment provider you use, how cash on delivery works, how GST appears on the invoice, which pin codes your courier reaches and what your returns policy promises. Settle those before launch and the first few weeks are about selling rather than firefighting.</p>
+<p>To set up a Shopify store in India, choose a plan, connect your domain, add an Indian payment provider such as Razorpay or PayU plus cash on delivery, configure GST and invoices, set shipping by pin code, publish your policies and test real orders before launch. The account takes minutes; the local decisions on payments, COD, GST and couriers are what take the time.</p>
 
-<p>This guide walks through the setup in the order I follow it, from choosing a plan to launch day. If you would rather hand the whole job over, my <a href="/shopify-developer/">Shopify store setup and customisation service</a> covers every step below, with every account staying in your name. Still deciding on a platform? Read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> first; both have their place, and the right one depends on how your store sells.</p>
+<p>This guide walks through the setup in the order I follow it, from choosing a plan to launch day, with every account staying in your name. Still deciding on a platform? Read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> first; both have their place, and the right one depends on how your store sells.</p>
 
 <p>Before you begin, gather your GSTIN if registered, a product sheet with prices, SKUs, variants, weights and stock, consistent photos, a domain you control, and rough shipping and returns rules. A missing item here is the usual reason a launch slips.</p>
 
@@ -72246,6 +72368,10 @@ done</code></pre>
 <p>That depends on your turnover, what you sell and how you sell it, and payment providers often ask for one during KYC. Your CA can tell you what applies to your business before you launch.</p>
 <h3>Can customers pay by UPI on a Shopify store in India?</h3>
 <p>Yes, through an Indian payment provider. Razorpay, PayU, Cashfree and PhonePe support UPI at the time of writing; check each provider's current Shopify integration and fees before choosing.</p>
+<h3>Should I use Shopify Markets to sell outside India?</h3>
+<p>Only once domestic orders run smoothly. Selling abroad adds currency display, international shipping rates, duties and a payment provider that accepts foreign cards, so confirm each of those before switching another market on.</p>
+<h3>Which Shopify apps does a new Indian store actually need?</h3>
+<p>Usually a GST invoice app, your courier or shipping aggregator app, and possibly a COD-control tool. Add reviews, WhatsApp or upsell apps later, one at a time, and check page speed after each.</p>
 <h3>Can you set the store up for me?</h3>
 <p>Yes. My most recent Shopify project, a store for a fashion brand that is launching soon, covered the theme, products and collections, payments, shipping and checkout, and the apps, speed and SEO basics. The client's details stay private until launch.</p>
 
