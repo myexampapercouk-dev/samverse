@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Harden wp-config.php: WordPress Security Settings</title>
-  <meta name="description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.">
+  <meta name="description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/harden-wp-config-php/">
   <meta property="og:title" content="How to Harden wp-config.php: WordPress Security Settings">
-  <meta property="og:description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.">
+  <meta property="og:description" content="Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-harden-wp-config-php.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/harden-wp-config-php/#article",
       "headline": "Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip",
-      "description": "Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.",
+      "description": "Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/harden-wp-config-php/",
       "image": "https://samverse.space/assets/og/blog-harden-wp-config-php.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip</h1>
-          <p class="post-dek">Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.</p>
+          <p class="post-dek">Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Hardening%20wp-config.php%3A%20Security%20Settings%20Every%20WordPress%20Site%20Should%20Use%2C%20and%20Which%20Ones%20to%20Skip%20https%3A%2F%2Fsamverse.space%2Fblog%2Fharden-wp-config-php%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -159,6 +159,7 @@
               <li><a href="#protect-the-file-itself">Protect the file itself</a></li>
               <li><a href="#myths-the-table-prefix-and-moving-the-file">Myths: the table prefix and moving the file</a></li>
               <li><a href="#check-wp-config-php-after-a-hack">Check wp-config.php after a hack</a></li>
+              <li><a href="#wp-config-php-on-shared-hosting-in-india">wp-config.php on shared hosting in India</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -267,6 +268,16 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <h2 id="check-wp-config-php-after-a-hack">Check wp-config.php after a hack</h2>
 <p>Attackers like this file because it loads on every request. Look for code before the opening <code>&lt;?php</code> line or after the final line, include or require lines pointing to unfamiliar files (often disguised with an image or icon extension), long encoded strings, and settings you don't recognise. Compare it with wp-config-sample.php from a fresh WordPress download, then change the database password and the salts. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers the other places to check.</p>
 
+<h2 id="wp-config-php-on-shared-hosting-in-india">wp-config.php on shared hosting in India</h2>
+<p>Most Indian small business sites run on shared cPanel or hPanel hosting, and that shapes which hardening steps are practical.</p>
+<ul>
+<li><strong>Database user rights.</strong> cPanel's MySQL Databases screen lets you create a separate user for each site. Give each WordPress install its own user and database, so a hacked site cannot read another site's tables on the same account.</li>
+<li><strong>Several sites in one account.</strong> If one hosting plan holds your main site, a staging copy and an old landing page, each has its own wp-config.php. Harden all of them, and delete old copies you no longer use, because attackers often get in through the forgotten one.</li>
+<li><strong>Host-level settings.</strong> Some hosts add their own lines for caching or object cache. Leave those in place and add your security block above the "That's all, stop editing" comment.</li>
+<li><strong>Backups that include the file.</strong> Many host backups cover public_html. If you moved wp-config.php one level up, confirm that your backup still includes it, or a restore will not boot.</li>
+</ul>
+<p>After any change, load the home page, log in, save a post and run a plugin update. If something fails, restore your copy of the file first, then add the lines back one at a time. If the site has already been hacked, or you are unsure what an unfamiliar line in the file does, get help from a <a href="/hire-wordpress-developer/">WordPress developer in India</a> before you edit further.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Where is wp-config.php?</h3>
 <p>In the main folder of your WordPress install, usually public_html on cPanel hosting, next to wp-admin and wp-content. If it isn't there, check the folder above, where WordPress also looks.</p>
@@ -323,6 +334,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
               <li><a href="#protect-the-file-itself">Protect the file itself</a></li>
               <li><a href="#myths-the-table-prefix-and-moving-the-file">Myths: the table prefix and moving the file</a></li>
               <li><a href="#check-wp-config-php-after-a-hack">Check wp-config.php after a hack</a></li>
+              <li><a href="#wp-config-php-on-shared-hosting-in-india">wp-config.php on shared hosting in India</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

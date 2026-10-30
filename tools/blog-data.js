@@ -9348,9 +9348,9 @@ site:example.com/blog/ "net metering"</code></pre>
     slug: 'headless-wordpress-small-business',
     seoTitle: 'Headless WordPress: Does a Small Business Need It?',
     title: 'Headless WordPress Explained: How It Works, Pros and Cons, Costs, and Whether a Small Business Needs It',
-    description: 'Headless WordPress explained for business owners: how it works, pros and cons, what drives the cost, when a small business needs it, and the alternatives.',
+    description: 'Headless WordPress explained for small businesses: how it works, pros and cons, what drives the cost, when it makes sense and the cheaper alternatives.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-for-startups', 'hire-wordpress-developer'],
     body: `
@@ -9442,11 +9442,11 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <h2>Alternatives that get most of the benefit</h2>
 <h3>A well-built traditional WordPress site</h3>
-<p>Good hosting, a lightweight theme, page caching, optimised images and a careful plugin list make WordPress fast enough for nearly every small business, and pass Core Web Vitals on real devices. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and <a href="/blog/what-is-a-cdn/">what a CDN does</a> cover the two biggest levers.</p>
+<p>Good hosting, a lightweight theme, page caching, optimised images and a careful plugin list make WordPress fast enough for nearly every small business, and pass Core Web Vitals on real devices. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and what a CDN does cover the two biggest levers.</p>
 <h3>Static export</h3>
 <p>For a site that rarely changes, plugins such as Simply Static can export WordPress to plain HTML files. You keep WordPress for editing, but forms, search and comments need outside services, and every change needs a fresh export.</p>
 <h3>A static or custom-coded site</h3>
-<p>This website, samverse.space, is custom-coded rather than built on WordPress. Its pages are generated from plain data files by Node.js build scripts and served as static HTML from Hostinger, with a small PHP script for the contact form. That suits a content-heavy site run by one developer; it would not suit a team that wants to edit pages visually. The <a href="/work/samverse/">Samverse case study</a> explains the setup.</p>
+<p>This website, samverse.space, is custom-coded rather than built on WordPress. Its pages are generated from plain data files by Node.js build scripts and served as static HTML from Hostinger, with a small PHP script for the contact form. That suits a content-heavy site run by one developer; it would not suit a team that wants to edit pages visually. The Samverse case study explains the setup.</p>
 <h3>Keep the website and the app separate</h3>
 <p>If you have a software product, a common pattern is a normal WordPress marketing site on your main domain and the app on a subdomain such as app.example.com. Marketing can edit the website freely, and website changes never affect the product.</p>
 
@@ -9460,6 +9460,16 @@ site:example.com/blog/ "net metering"</code></pre>
 </ol>
 <p>If the answers are vague, a traditional build is the safer choice.</p>
 
+<h2>Headless WordPress for Indian small businesses: what to check</h2>
+<p>For most small businesses in India, the deciding factors are who will maintain the site and what it has to connect to.</p>
+<ul>
+<li><strong>Developer availability.</strong> A normal WordPress site can be maintained by many freelancers and agencies. A headless build needs someone comfortable with both WordPress and a JavaScript framework. Ask who will fix it in two years if the original developer is unavailable.</li>
+<li><strong>Forms, payments and WhatsApp.</strong> Contact forms, Razorpay or other payment buttons and WhatsApp chat widgets are drop-in on standard WordPress. In a headless build each one has to be wired into the front end and tested separately.</li>
+<li><strong>Hindi or regional language pages.</strong> Multilingual plugins work smoothly on a normal theme. In headless, language switching, hreflang tags and URL structure must be built into the front end.</li>
+<li><strong>Hosting and bills.</strong> You usually pay for WordPress hosting plus a separate front-end host, with two sets of renewals and logins to track.</li>
+</ul>
+<p>If your aim is a faster site, start with good hosting, a light theme and <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. Those changes often give most of the speed benefit at a fraction of the effort.</p>
+
 <h2>FAQs</h2>
 <h3>Is headless WordPress faster?</h3>
 <p>It can be, especially with pages generated ahead of time. But a heavy front end can also be slower, and a well-optimised traditional WordPress site is fast enough for most businesses. Speed depends on how either is built.</p>
@@ -9471,6 +9481,9 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Not if it's built properly, with titles, descriptions, canonical tags, schema, sitemaps and redirects output correctly and pages rendered as HTML that search engines can read. The risk is that these are easy to miss.</p>
 <h3>Can I move to headless later?</h3>
 <p>Yes. Your content stays in WordPress, so a headless front end can be added later if a real need appears, such as a mobile app. Starting traditional doesn't lock you out.</p>
+
+<h3>Is headless WordPress worth it for a small business?</h3>
+<p>Usually not. It suits sites that need to share content across an app, several front ends or a very custom interface. A small business brochure site or shop normally gets better value from a well-built standard WordPress theme with caching and a CDN.</p>
 
 <p>For most businesses, the better investment is a fast, well-built WordPress site you can edit yourself. That's what I build through <a href="/wordpress-website-development/">WordPress website development</a>. For a second opinion on a headless proposal you've received, send it over through <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
@@ -16707,9 +16720,9 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
     slug: 'website-for-agriculture-businesses',
     seoTitle: 'Agriculture Business Website: Products, Dealers, Languages',
     title: 'Websites for Agriculture and Agri-Input Businesses: Crop-Wise Product Pages, Dealer Locators, Marathi and Hindi Content, WhatsApp and Label-Safe Claims',
-    description: 'Plan an agri-input or FPO website: seed, fertiliser and equipment pages, crop-wise guides, a dealer locator, Marathi or Hindi pages and label-safe claims.',
+    description: 'Plan an agriculture business website: crop-wise product pages, a dealer locator, Marathi or Hindi content, WhatsApp enquiries and label-safe product claims.',
     date: '2026-09-27',
-    updated: '2026-10-22',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -16776,7 +16789,7 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
   <li>The contact and WhatsApp pages</li>
   <li>Company and dealer pages later, if dealers ask for them</li>
 </ol>
-<p>Give each language its own pages and URLs so Google can show the right version, and have translations written or checked by a fluent speaker who knows farming terms rather than an automatic tool. <a href="/work/our-temples/">Our Temples</a>, a directory I built, runs Telugu content alongside English, and <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a> explains the setup. Marathi and Hindi share the Devanagari script, so pick a font that renders conjuncts cleanly and loads quickly; <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts</a> compares the options.</p>
+<p>Give each language its own pages and URLs so Google can show the right version, and have translations written or checked by a fluent speaker who knows farming terms rather than an automatic tool. Our Temples, a directory I built, runs Telugu content alongside English, and <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a> explains the setup. Marathi and Hindi share the Devanagari script, so pick a font that renders conjuncts cleanly and loads quickly; <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts</a> compares the options.</p>
 
 <h2>WhatsApp, missed calls and photo queries</h2>
 <p>Farmers who contact you will mostly call or send a WhatsApp message, often with a photo of a leaf or a fruit. Make WhatsApp the main button on every product and crop page, with a pre-filled message naming that page, and say what happens next: who replies, in which languages, and during which hours. If your team answers photo queries about crop problems, be careful about prescribing products from a photo alone, and suggest a field visit, the nearest dealer or an agriculture officer when a picture is not enough. <a href="/blog/whatsapp-on-business-website/">Adding WhatsApp to your website</a> covers buttons, pre-filled messages and tracking. If you also run a toll-free or missed-call number, show it beside the WhatsApp button with honest hours.</p>
@@ -16792,9 +16805,19 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
 </ul>
 
 <h2>FPOs and producer companies</h2>
-<p>Farmer producer organisations use a website differently. Buyers, banks and scheme officials want the FPO's registration, its members and area, the crops and quantities it can supply, grading and storage facilities, and contacts for the board and CEO. Members want notices about input purchases, meetings and payments. A simple site with a crop availability page, a buyer enquiry form and a notices section covers both. If the FPO starts selling packed produce to households, that becomes a retail site with its own needs; <a href="/blog/website-for-organic-food-stores/">websites for organic food stores</a> covers that move.</p>
+<p>Farmer producer organisations use a website differently. Buyers, banks and scheme officials want the FPO's registration, its members and area, the crops and quantities it can supply, grading and storage facilities, and contacts for the board and CEO. Members want notices about input purchases, meetings and payments. A simple site with a crop availability page, a buyer enquiry form and a notices section covers both. If the FPO starts selling packed produce to households, that becomes a retail site with its own needs; websites for organic food stores covers that move.</p>
 
 <p>Agri businesses in Vidarbha and north Maharashtra can read about <a href="/wordpress-shopify-developer-nagpur/">website development in Nagpur</a> and <a href="/wordpress-shopify-developer-nashik/">website development in Nashik</a>.</p>
+
+<h2>Dealer and distributor enquiries: a separate path</h2>
+<p>For many agri-input companies, the most valuable enquiry is not from a farmer but from a shop owner or distributor who wants to stock your products. Treat this as its own journey.</p>
+<ul>
+<li><strong>A dedicated "become a dealer" page.</strong> Explain which districts or states you are appointing dealers in, what range they would stock and what support you give, such as field demos, point-of-sale material or training.</li>
+<li><strong>A short qualifying form.</strong> Ask for the shop or firm name, town and district, current brands handled and whether they hold the licences needed to sell your category. Keep it to a few fields so it works on a phone.</li>
+<li><strong>Routing by territory.</strong> Send each enquiry to the right area sales manager by district, by email and WhatsApp, so it is answered quickly.</li>
+<li><strong>Downloadable material.</strong> A product catalogue and price-list request option (not public prices if you do not publish them) helps dealers make a case to their own buyers.</li>
+</ul>
+<p>Track these enquiries separately from farmer queries, so you can see which districts produce dealer interest and plan field visits around them.</p>
 
 <h2>FAQs</h2>
 <h3>Do farmers really use agriculture websites?</h3>
@@ -16807,6 +16830,9 @@ document.querySelectorAll('.map-facade button').forEach(function (btn) {
 <p>Yes. Dealers can be managed from the dashboard or updated from a spreadsheet, so new shops appear and closed ones disappear without a developer.</p>
 <h3>Can an FPO take buyer enquiries through its website?</h3>
 <p>Yes. A crop availability page and an enquiry form asking for the crop, quantity, grade and delivery location can send enquiries straight to the FPO's office.</p>
+
+<h3>Should an agriculture company publish product prices online?</h3>
+<p>That depends on how you sell. Many input companies sell through dealers and leave retail pricing to them, so the site shows products and a dealer locator instead. If you sell directly, show clear prices with GST and delivery terms.</p>
 
 <p>If your website lists products without crops, dealers or a word of Marathi or Hindi, I can rebuild it around crop-wise pages, a dealer locator and WhatsApp. Read about <a href="/website-for-manufacturers/">manufacturer and B2B websites</a> to see what is included; each project starts with a free review and a fixed quote.</p>
 `,
@@ -27712,9 +27738,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     slug: 'website-for-colleges-universities',
     seoTitle: 'College and University Website: Programmes and Admissions',
     title: 'Websites for Colleges and Universities: Programme Pages, Admission Funnels, Approvals, Placements and Many Audiences',
-    description: 'Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placement data and pages for each audience.',
+    description: 'Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placements and pages for each audience.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -27741,7 +27767,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Students search for programmes, not institutions: "BBA college in Pune", "BSc data science colleges in Nashik", "MBA with hostel near me". Each programme, and each specialisation that has its own intake, deserves its own page:</p>
 <ul>
   <li>A plain summary of who the programme is for and what it leads to</li>
-  <li>Eligibility, duration, intake and mode (full-time, part-time, online)</li>
+  <li>Eligibility, duration, intake and mode (regular, part-time, online)</li>
   <li>The affiliating university or awarding body, stated exactly</li>
   <li>Curriculum by semester or year, with electives, projects and internships</li>
   <li>Fees, or a fee structure that explains what is included, scholarships and instalments</li>
@@ -27801,7 +27827,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>An outdated website does real damage: last year's fees, a deadline that has passed, a circular nobody removed. Large institutions solve this with clear ownership. Give each department or office its own editor login with access only to its pages, and an administrator who approves major changes; <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> shows how. Notices get categories, such as examinations, admissions and events, with old notices moving to an archive automatically. When notices are PDFs, type the key points on the page too, and use real text in prospectus PDFs so they can be read and found; see <a href="/blog/seo-for-pdfs-brochures/">SEO for PDFs and brochures</a>.</p>
 
 <h3>Regional languages</h3>
-<p>Many parents read Marathi, Hindi or another regional language more comfortably than English. Admissions, fees, contact and key notices are usually enough to translate first, each on its own pages. <a href="/work/our-temples/">Our Temples</a>, a directory I built, shows temple names and sections such as history and festivals in Hindi and Telugu as well as English, which is the same approach a college can use.</p>
+<p>Many parents read Marathi, Hindi or another regional language more comfortably than English. Admissions, fees, contact and key notices are usually enough to translate first, each on its own pages. Our Temples, a directory I built, shows temple names and sections such as history and festivals in Hindi and Telugu as well as English, which is the same approach a college can use.</p>
 
 <h2>Speed, accessibility and search</h2>
 <ul>
@@ -27822,6 +27848,17 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Important information only in scanned PDFs</li>
 </ul>
 
+<h2>Admission season: preparing the site before the rush</h2>
+<p>Most college websites get their heaviest use in a few weeks around results and counselling dates. Plan for that window months ahead.</p>
+<ul>
+<li><strong>Publish dates early.</strong> Put application, entrance test and counselling dates on each programme page as soon as they are confirmed, with the date the information was last updated.</li>
+<li><strong>Test forms and payments.</strong> If applicants pay an application fee online, run test payments through your gateway before the season and check confirmation emails and SMS arrive.</li>
+<li><strong>Check hosting capacity.</strong> Result days bring sudden traffic. Ask your host what your plan can handle, add caching and a CDN, and keep heavy PDFs and videos off the key pages.</li>
+<li><strong>Prepare FAQs from last year.</strong> Ask the admissions office for the questions they answered most often and turn them into a clear admissions FAQ.</li>
+<li><strong>Freeze big changes.</strong> Avoid redesigns or plugin overhauls during the admission window; schedule them for the quieter months.</li>
+</ul>
+<p>If your team needs help with the build or ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> who has worked on enquiry-led sites.</p>
+
 <h2>FAQs</h2>
 <h3>What pages should a college website have?</h3>
 <p>At minimum: programme pages, admissions, fees or fee structure, approvals and affiliation, faculty and departments, placements, campus life and hostel, notices, mandatory disclosures and contact. Larger institutions add research, alumni and careers pages.</p>
@@ -27833,6 +27870,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Yes. WordPress user roles can give each department an editor login limited to its own pages and notices, with an administrator overseeing the rest.</p>
 <h3>Should we publish placement statistics?</h3>
 <p>Only if you can support them with records. Show them by programme and batch, explain how they were calculated, and use recruiter names only with permission.</p>
+
+<h3>How often should a college website be updated?</h3>
+<p>Notices, dates and fees should be updated as soon as they change, and every programme page should be reviewed at least once before each admission cycle. Assign each department an owner so pages do not go stale.</p>
 
 <p>Planning a college or university website with programme pages that rank, an admissions funnel that reaches counsellors fast and accurate approval details? See <a href="/website-for-schools-and-coaching/">websites for schools, colleges and coaching institutes</a> for how I plan and build them, starting with a free review and a fixed quote.</p>
 `,
@@ -29857,9 +29897,9 @@ dig yourdomain.com +short</code></pre>
     slug: 'domain-expired-what-to-do',
     seoTitle: 'Domain Name Expired? How to Get It Back Before It\'s Gone',
     title: 'Domain Name Expired? How to Get It Back, What Breaks in the Meantime and How to Stop It Happening Again',
-    description: 'Domain name expired? How grace and redemption periods work, how to get it back, what happens to your website and email, and how to stop it happening.',
+    description: 'Domain name expired? How to get it back in the grace or redemption period, what breaks for your website and email, and how to stop it happening again.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
     body: `
@@ -29879,7 +29919,7 @@ dig yourdomain.com +short</code></pre>
     <tr><td>Released</td><td>After pending delete</td><td>Anyone can register it, including drop-catching services</td><td>Only by registering or buying it like anyone else</td></tr>
   </tbody>
 </table>
-<p>Some registrars also put valuable expired domains up for auction during the grace or redemption period, so don't assume you have the full time shown.</p>
+<p>Some registrars also put valuable expired domains up for auction during the grace or redemption period, so don't assume you have the whole period shown.</p>
 
 <h2>What breaks when a domain expires</h2>
 <ul>
@@ -29938,6 +29978,17 @@ dig yourdomain.com +short</code></pre>
 
 <h2>Expired domain or something else?</h2>
 <p>Not every "site down" is an expired domain. If WHOIS shows the domain is active and paid up, the problem is more likely hosting, DNS or the site itself; see <a href="/blog/website-down-what-to-do/">what to do when your website is down</a>.</p>
+
+<h2>Domain expired on a .in or .co.in address?</h2>
+<p>Indian .in, .co.in and other .in domains are run by the .IN registry, but you renew them through the registrar you bought from, exactly like a .com. The grace and redemption periods for .in names are not always the same length as for .com, and registrars set their own restore fees, so check the expiry notice or your registrar's help pages rather than assuming the dates match a .com you also own.</p>
+<p>A few India-specific points make recovery smoother:</p>
+<ul>
+<li><strong>Find the right account first.</strong> Many Indian businesses had the domain bought by a past developer, a cousin or a hosting reseller. Search your email for the registrar's name and the word "invoice" to find the account it sits in.</li>
+<li><strong>Pay in the account that holds the domain.</strong> Paying a reseller's invoice by UPI or bank transfer does not renew anything until they actually renew it with the registrar. Ask for the updated expiry date as proof.</li>
+<li><strong>Check the GST invoice details.</strong> If the renewal is billed to your business, make sure the invoice shows your business name and GSTIN, which also helps prove ownership later.</li>
+<li><strong>Update the registrant email.</strong> If expiry reminders went to an old staff address, change the contact to a role address such as an admin mailbox you control.</li>
+</ul>
+<p>Once the domain is renewed, test the website, your business email and any WhatsApp or payment links that use the domain. Payment gateways and email services sometimes need DNS records re-checked if the nameservers were changed to a parking page during the expiry.</p>
 
 <h2>FAQs</h2>
 <h3>How can I get my expired domain name back?</h3>
@@ -33942,9 +33993,9 @@ find wp-content/uploads -name "*.php"</code></pre>
     slug: 'wordpress-malware-scanners-compared',
     seoTitle: 'WordPress Malware Scanners Compared: Wordfence vs Sucuri',
     title: 'WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera',
-    description: 'WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, remote vs server-side scanning and what each misses.',
+    description: 'WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, how each scans, what they miss and how to choose one.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -34036,6 +34087,16 @@ find wp-content/uploads -name "*.php"</code></pre>
 </ol>
 <p>The full process is in <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
 
+<h2>Hosting scanners: Imunify360 and cPanel tools</h2>
+<p>Many Indian shared and VPS hosts run their own malware scanner on the server, often Imunify360 or a similar tool built into cPanel. These scan every account on the server and can quarantine files automatically.</p>
+<ul>
+<li><strong>Check what your host already runs.</strong> Look in cPanel for a Security or Imunify section, or ask support. You may already have server-side scanning without installing anything.</li>
+<li><strong>Read the quarantine list.</strong> Server scanners sometimes move a file that WordPress needs, which can break a plugin or show a white screen. If a site breaks suddenly, check the quarantine before anything else.</li>
+<li><strong>Do not rely on it alone.</strong> Host scanners see files, but may not inspect the WordPress database, where injected scripts and spam links often hide.</li>
+<li><strong>Avoid duplicate heavy scans.</strong> If the host scans files nightly, schedule your plugin's full scan at a different time, or limit it to quick scans, to keep shared hosting resources free.</li>
+</ul>
+<p>The practical combination for most small sites is a host scanner for files, a plugin or remote scan that also checks the database, and Google Search Console for warnings that only Google sees.</p>
+
 <h2>FAQs</h2>
 <h3>Which is the best free malware scanner for WordPress?</h3>
 <p>There isn't one best tool for every site. A free plugin scanner such as Wordfence checks files from the inside, Sucuri SiteCheck gives a quick outside view, and your host's scanner may already cover the whole account. An inside and an outside scan together beat relying on either.</p>
@@ -34047,6 +34108,9 @@ find wp-content/uploads -name "*.php"</code></pre>
 <p>Usually because the infection is cloaked, stored in the database or not yet in the scanner's signatures. Search Console's URL Inspection live test shows what Google actually sees.</p>
 <h3>Do malware scans slow down my website?</h3>
 <p>Scans that run on your server use CPU and memory while they run, which shows on small hosting plans. Schedule them for quiet hours, or use a scanner that does the analysis on its own servers.</p>
+
+<h3>Does my hosting company scan my WordPress site for malware?</h3>
+<p>Many hosts do, especially those using Imunify360 or similar tools, but coverage differs. Ask your host what is scanned, how often, and whether infected files are cleaned, quarantined or only reported.</p>
 
 <p>Scanner flagged something, or Google says hacked while your scan says clean? Send me what you're seeing and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For regular scans and monitoring afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
@@ -34325,7 +34389,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors',
     description: 'WordPress file permissions explained: 644 for files, 755 for folders, 600 or 440 for wp-config.php, why 777 is dangerous and how to fix permission errors.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -34409,6 +34473,16 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 <p>Attackers sometimes set their own files to read-only so they're harder to delete, or open folders up to 777 so they can keep writing to them. Resetting permissions and ownership is part of a proper <a href="/blog/remove-malware-wordpress-step-by-step/">malware clean-up</a>, after the malicious files themselves are gone.</p>
 <p>Migrations are the other common cause. Copying files as the wrong user, or unpacking an archive with its old permissions, leaves a site that loads but can't update or upload. Checking ownership and permissions is a standard step after moving a site; see <a href="/wordpress-migration/">WordPress migration</a> if you'd like the move handled for you.</p>
 
+<h2>File permissions on cPanel and hPanel hosting</h2>
+<p>On most Indian shared hosting, files uploaded through the host's file manager or SFTP are owned by your account automatically, so the standard 644 and 755 settings work out of the box. Problems usually appear in specific situations.</p>
+<ul>
+<li><strong>After a restore or migration.</strong> Files copied from another server can keep their old permissions. Run a quick check across wp-content after any move.</li>
+<li><strong>Files created by root on a VPS.</strong> If you or a developer ran commands as root, some files may be owned by root and WordPress cannot update them. Fix the owner, not the permission number.</li>
+<li><strong>Host security tools.</strong> Some hosts reject 777 outright and return a 500 error for scripts with loose permissions, which is a good thing.</li>
+<li><strong>Bulk fixes.</strong> cPanel's File Manager can change permissions for one item at a time. For a whole site, ask your host or use SSH carefully, setting folders and files separately.</li>
+</ul>
+<p>If you are not comfortable running commands on a live site, note the error, take a backup and ask your host's support or a developer to correct ownership.</p>
+
 <h2>FAQs</h2>
 <h3>What are the correct file permissions for WordPress?</h3>
 <p>755 for folders, 644 for files and 600 or 440 for wp-config.php, with all files owned by your hosting account's user. Some servers need wp-config.php at 640, so follow your host's advice if a stricter value causes an error.</p>
@@ -34430,9 +34504,9 @@ stat -c "%a %U %n" wp-config.php</code></pre>
     slug: 'wordpress-firewall-waf-explained',
     seoTitle: 'WordPress Firewall (WAF): Cloudflare, Sucuri or a Plugin?',
     title: 'WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives',
-    description: 'WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.',
+    description: 'WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -34522,6 +34596,16 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 </table>
 <p>Avoid stacking two firewall plugins; they duplicate work and conflict. A cloud firewall and one plugin together is fine, because they work at different layers. None of this replaces updates and strong logins; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
 
+<h2>Testing your firewall after setup</h2>
+<p>A firewall that is switched on is not the same as a firewall that works. After setting one up, run a few simple checks.</p>
+<ol>
+<li><strong>Confirm traffic passes through it.</strong> For Cloudflare or Sucuri, check that your DNS points to them and that the origin server's IP is not exposed in old DNS records such as a "direct" or "ftp" subdomain. Attackers who find the real IP can skip a DNS-level firewall.</li>
+<li><strong>Test the login protection.</strong> From a phone on mobile data, try a few wrong passwords and confirm the rate limit or challenge triggers, and that your office IP is not locked out by mistake.</li>
+<li><strong>Test the paths that matter.</strong> Place a test order, submit the contact form, and if you take payments through Razorpay or another gateway, confirm their callback URLs are not blocked. Payment webhooks blocked by a firewall are a common cause of orders stuck as pending.</li>
+<li><strong>Check the logs for a week.</strong> Look at what is being blocked. If real customers or your own tools appear, add a narrow exception rather than turning a rule off.</li>
+</ol>
+<p>Repeat these checks after major plugin changes or a move to new hosting, because new URLs and IP addresses can break rules quietly.</p>
+
 <h2>FAQs</h2>
 <h3>Do I need a firewall plugin if I use Cloudflare?</h3>
 <p>Not necessarily for blocking attacks, but a security plugin still helps with WordPress-aware jobs such as two-factor login, login limits and file-change alerts. Cloudflare plus one plugin is a common, sensible pairing.</p>
@@ -34534,6 +34618,9 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 <h3>Why is my firewall blocking me?</h3>
 <p>Usually repeated failed logins from your IP, a rule triggered by code in a page you were saving, or a country or bot setting. Find the rule in the firewall's log, then add a narrow exception.</p>
 
+<h3>Does a WordPress firewall stop all hacks?</h3>
+<p>No. It blocks many known attack patterns and slows down password guessing, but outdated plugins, weak passwords and stolen admin logins can still lead to a hack. Keep updates, backups and two-factor login in place alongside the firewall.</p>
+
 <p>Want a firewall set up properly after a hack, with logins locked down and nothing legitimate blocked? See <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep it monitored every month.</p>
 `,
   },
@@ -34541,9 +34628,9 @@ stat -c "%a %U %n" wp-config.php</code></pre>
     slug: 'harden-wp-config-php',
     seoTitle: 'How to Harden wp-config.php: WordPress Security Settings',
     title: 'Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip',
-    description: 'Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.',
+    description: 'Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -34637,6 +34724,16 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 
 <h2>Check wp-config.php after a hack</h2>
 <p>Attackers like this file because it loads on every request. Look for code before the opening <code>&lt;?php</code> line or after the final line, include or require lines pointing to unfamiliar files (often disguised with an image or icon extension), long encoded strings, and settings you don't recognise. Compare it with wp-config-sample.php from a fresh WordPress download, then change the database password and the salts. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing backdoors</a> covers the other places to check.</p>
+
+<h2>wp-config.php on shared hosting in India</h2>
+<p>Most Indian small business sites run on shared cPanel or hPanel hosting, and that shapes which hardening steps are practical.</p>
+<ul>
+<li><strong>Database user rights.</strong> cPanel's MySQL Databases screen lets you create a separate user for each site. Give each WordPress install its own user and database, so a hacked site cannot read another site's tables on the same account.</li>
+<li><strong>Several sites in one account.</strong> If one hosting plan holds your main site, a staging copy and an old landing page, each has its own wp-config.php. Harden all of them, and delete old copies you no longer use, because attackers often get in through the forgotten one.</li>
+<li><strong>Host-level settings.</strong> Some hosts add their own lines for caching or object cache. Leave those in place and add your security block above the "That's all, stop editing" comment.</li>
+<li><strong>Backups that include the file.</strong> Many host backups cover public_html. If you moved wp-config.php one level up, confirm that your backup still includes it, or a restore will not boot.</li>
+</ul>
+<p>After any change, load the home page, log in, save a post and run a plugin update. If something fails, restore your copy of the file first, then add the lines back one at a time. If the site has already been hacked, or you are unsure what an unfamiliar line in the file does, get help from a <a href="/hire-wordpress-developer/">WordPress developer in India</a> before you edit further.</p>
 
 <h2>FAQs</h2>
 <h3>Where is wp-config.php?</h3>

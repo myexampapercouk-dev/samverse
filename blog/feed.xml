@@ -522,7 +522,7 @@
     <link>https://samverse.space/blog/headless-wordpress-small-business/</link>
     <guid>https://samverse.space/blog/headless-wordpress-small-business/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Headless WordPress explained for business owners: how it works, pros and cons, what drives the cost, when a small business needs it, and the alternatives.</description>
+    <description>Headless WordPress explained for small businesses: how it works, pros and cons, what drives the cost, when it makes sense and the cheaper alternatives.</description>
   </item>
   <item>
     <title>How to Measure Website ROI as a Small Business: Tracking, Lead Value and a Simple Formula</title>
@@ -949,7 +949,7 @@
     <link>https://samverse.space/blog/website-for-agriculture-businesses/</link>
     <guid>https://samverse.space/blog/website-for-agriculture-businesses/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Plan an agri-input or FPO website: seed, fertiliser and equipment pages, crop-wise guides, a dealer locator, Marathi or Hindi pages and label-safe claims.</description>
+    <description>Plan an agriculture business website: crop-wise product pages, a dealer locator, Marathi or Hindi content, WhatsApp enquiries and label-safe product claims.</description>
   </item>
   <item>
     <title>Websites for Chemical and Pharma Manufacturers: Catalogues by CAS Number and Grade, TDS and SDS Downloads, Certifications You Hold, Export Enquiries and RFQ Forms</title>
@@ -1565,7 +1565,7 @@
     <link>https://samverse.space/blog/website-for-colleges-universities/</link>
     <guid>https://samverse.space/blog/website-for-colleges-universities/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placement data and pages for each audience.</description>
+    <description>Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placements and pages for each audience.</description>
   </item>
   <item>
     <title>Website for Elder Care, Home Nursing and Assisted Living Services: Writing for Families Far Away, Caregiver Vetting, Care Plans, Service Areas and Family Updates</title>
@@ -1684,7 +1684,7 @@
     <link>https://samverse.space/blog/domain-expired-what-to-do/</link>
     <guid>https://samverse.space/blog/domain-expired-what-to-do/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Domain name expired? How grace and redemption periods work, how to get it back, what happens to your website and email, and how to stop it happening.</description>
+    <description>Domain name expired? How to get it back in the grace or redemption period, what breaks for your website and email, and how to stop it happening again.</description>
   </item>
   <item>
     <title>How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)</title>
@@ -1915,7 +1915,7 @@
     <link>https://samverse.space/blog/wordpress-malware-scanners-compared/</link>
     <guid>https://samverse.space/blog/wordpress-malware-scanners-compared/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, remote vs server-side scanning and what each misses.</description>
+    <description>WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, how each scans, what they miss and how to choose one.</description>
   </item>
   <item>
     <title>Hosting Account Suspended for Malware? What the Notice Means and How to Get Your Site Back Online</title>
@@ -1943,14 +1943,14 @@
     <link>https://samverse.space/blog/wordpress-firewall-waf-explained/</link>
     <guid>https://samverse.space/blog/wordpress-firewall-waf-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.</description>
+    <description>WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.</description>
   </item>
   <item>
     <title>Hardening wp-config.php: Security Settings Every WordPress Site Should Use, and Which Ones to Skip</title>
     <link>https://samverse.space/blog/harden-wp-config-php/</link>
     <guid>https://samverse.space/blog/harden-wp-config-php/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, DISALLOW_FILE_MODS trade-offs, FORCE_SSL_ADMIN, debug settings, moving the file and myths to skip.</description>
+    <description>Harden wp-config.php: fresh salts, DISALLOW_FILE_EDIT, FORCE_SSL_ADMIN, debug settings, database user rights, file protection, and the myths you can skip.</description>
   </item>
   <item>
     <title>How to Recover Google Rankings After Your Website Was Hacked: Manual Actions, Spam URLs and a Realistic Timeline</title>

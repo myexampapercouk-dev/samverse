@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Firewall (WAF): Cloudflare, Sucuri or a Plugin?</title>
-  <meta name="description" content="WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.">
+  <meta name="description" content="WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-firewall-waf-explained/">
   <meta property="og:title" content="WordPress Firewall (WAF): Cloudflare, Sucuri or a Plugin?">
-  <meta property="og:description" content="WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.">
+  <meta property="og:description" content="WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-firewall-waf-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-firewall-waf-explained/#article",
       "headline": "WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives",
-      "description": "WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.",
+      "description": "WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-firewall-waf-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-firewall-waf-explained.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives</h1>
-          <p class="post-dek">WordPress firewall (WAF) explained: plugin firewalls vs DNS-level ones like Cloudflare and Sucuri, rules worth adding, rate limiting and false positives.</p>
+          <p class="post-dek">WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Firewalls%20(WAF)%20Explained%3A%20Plugin%20vs%20Cloud%20Firewalls%2C%20Useful%20Rules%2C%20Rate%20Limiting%20and%20False%20Positives%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-firewall-waf-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -159,6 +159,7 @@
               <li><a href="#rate-limiting">Rate limiting</a></li>
               <li><a href="#false-positives-when-the-firewall-blocks-the-wrong-thing">False positives: when the firewall blocks the wrong thing</a></li>
               <li><a href="#which-setup-suits-your-site">Which setup suits your site</a></li>
+              <li><a href="#testing-your-firewall-after-setup">Testing your firewall after setup</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -262,6 +263,16 @@
 </table>
 <p>Avoid stacking two firewall plugins; they duplicate work and conflict. A cloud firewall and one plugin together is fine, because they work at different layers. None of this replaces updates and strong logins; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
 
+<h2 id="testing-your-firewall-after-setup">Testing your firewall after setup</h2>
+<p>A firewall that is switched on is not the same as a firewall that works. After setting one up, run a few simple checks.</p>
+<ol>
+<li><strong>Confirm traffic passes through it.</strong> For Cloudflare or Sucuri, check that your DNS points to them and that the origin server's IP is not exposed in old DNS records such as a "direct" or "ftp" subdomain. Attackers who find the real IP can skip a DNS-level firewall.</li>
+<li><strong>Test the login protection.</strong> From a phone on mobile data, try a few wrong passwords and confirm the rate limit or challenge triggers, and that your office IP is not locked out by mistake.</li>
+<li><strong>Test the paths that matter.</strong> Place a test order, submit the contact form, and if you take payments through Razorpay or another gateway, confirm their callback URLs are not blocked. Payment webhooks blocked by a firewall are a common cause of orders stuck as pending.</li>
+<li><strong>Check the logs for a week.</strong> Look at what is being blocked. If real customers or your own tools appear, add a narrow exception rather than turning a rule off.</li>
+</ol>
+<p>Repeat these checks after major plugin changes or a move to new hosting, because new URLs and IP addresses can break rules quietly.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Do I need a firewall plugin if I use Cloudflare?</h3>
 <p>Not necessarily for blocking attacks, but a security plugin still helps with WordPress-aware jobs such as two-factor login, login limits and file-change alerts. Cloudflare plus one plugin is a common, sensible pairing.</p>
@@ -273,6 +284,9 @@
 <p>A cloud firewall usually doesn't, and its CDN often makes pages faster. A plugin firewall adds a little work to each request, which is rarely noticeable on decent hosting.</p>
 <h3>Why is my firewall blocking me?</h3>
 <p>Usually repeated failed logins from your IP, a rule triggered by code in a page you were saving, or a country or bot setting. Find the rule in the firewall's log, then add a narrow exception.</p>
+
+<h3>Does a WordPress firewall stop all hacks?</h3>
+<p>No. It blocks many known attack patterns and slows down password guessing, but outdated plugins, weak passwords and stolen admin logins can still lead to a hack. Keep updates, backups and two-factor login in place alongside the firewall.</p>
 
 <p>Want a firewall set up properly after a hack, with logins locked down and nothing legitimate blocked? See <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep it monitored every month.</p>
 
@@ -316,6 +330,7 @@
               <li><a href="#rate-limiting">Rate limiting</a></li>
               <li><a href="#false-positives-when-the-firewall-blocks-the-wrong-thing">False positives: when the firewall blocks the wrong thing</a></li>
               <li><a href="#which-setup-suits-your-site">Which setup suits your site</a></li>
+              <li><a href="#testing-your-firewall-after-setup">Testing your firewall after setup</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -344,7 +359,7 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/wordpress-malware-scanners-compared/"><img class="post-card-img" src="/assets/og/blog-wordpress-malware-scanners-compared.webp" alt="WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera</h3><p>WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, remote vs server-side scanning and what each misses.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-malware-scanners-compared/"><img class="post-card-img" src="/assets/og/blog-wordpress-malware-scanners-compared.webp" alt="WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera</h3><p>WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, how each scans, what they miss and how to choose one.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/stop-contact-form-spam/"><img class="post-card-img" src="/assets/og/blog-stop-contact-form-spam.webp" alt="How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work</h3><p>Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection</h3><p>Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
