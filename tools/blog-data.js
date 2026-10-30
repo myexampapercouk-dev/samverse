@@ -35600,7 +35600,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded"? How to Fix the Elementor Loading Problem',
     description: 'Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.',
     date: '2026-09-28',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -35681,6 +35681,20 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>"Preview could not be loaded" often happens when the WordPress Address and Site Address in Settings, General don't match, for example http:// and https://, or www and non-www. Make sure the whole site loads on HTTPS; after a migration, Elementor's Replace URL tool (Elementor, Tools) updates old addresses in its data. See <a href="/blog/mixed-content-warnings-fix/">mixed content warnings after moving to HTTPS</a>.</p>
 <p>A theme that doesn't support Elementor properly can also break the editor. Test by temporarily switching to Hello Elementor on a staging site; see <a href="/blog/best-theme-for-elementor/">best themes for Elementor</a>.</p>
 
+<h2>Elementor not loading: quick cause and fix table</h2>
+<p>Use this table to match what you see with the most likely cause, then jump to the matching section above.</p>
+<table>
+<thead><tr><th>What you see</th><th>Likely cause</th><th>First fix to try</th></tr></thead>
+<tbody>
+<tr><td>Grey loading screen on every page</td><td>Low PHP memory or a plugin conflict</td><td>Raise the memory limit, then test in Safe Mode</td></tr>
+<tr><td>"Preview could not be loaded"</td><td>Mismatched site URLs, SSL or a redirect</td><td>Check WordPress Address and Site Address match exactly</td></tr>
+<tr><td>Editor loads after an update but breaks</td><td>Add-on plugin not yet compatible</td><td>Update or roll back the add-on on staging</td></tr>
+<tr><td>403 or 500 errors in the Network tab</td><td>Server security rule or .htaccess</td><td>Ask your host which rule fired</td></tr>
+<tr><td>Only one page will not open</td><td>Corrupted data or a missing widget</td><td>Restore a revision or remove the widget</td></tr>
+</tbody>
+</table>
+<p>If you would rather not experiment on a live business site, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to find the cause on a staging copy first.</p>
+
 <h2>FAQs</h2>
 <h3>Why is Elementor stuck on the loading screen?</h3>
 <p>Usually low PHP memory, a plugin conflict, a server firewall blocking the editor's requests, or caching and CDN scripts. The browser console and Safe Mode will tell you which.</p>
@@ -35692,6 +35706,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>Yes. It affects only the editor for logged-in users, not what visitors see. Switch it off once you've finished testing.</p>
 <h3>Will reinstalling Elementor fix the loading problem?</h3>
 <p>Rarely on its own, because the cause is usually around Elementor. Diagnose first; reinstalling the same version over itself only helps if its files were damaged.</p>
+<h3>How do I fix Elementor not loading after a WordPress update?</h3>
+<p>Update Elementor, Elementor Pro and any Elementor add-ons together, clear every cache, then test in Safe Mode. If the editor opens there, an add-on or theme is not compatible yet; roll it back on staging until its developer releases a fix.</p>
 
 <p>Still stuck, or don't want to experiment on a live site? I fix Elementor editor problems and the plugin, server and caching issues behind them; get help from an <a href="/elementor-developer/">Elementor developer</a>. If the editor loads but the design has changed, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
 `,
@@ -46328,7 +46344,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     title: '"Allowed Memory Size Exhausted" in WordPress: Causes and Fixes for Memory Limit Errors',
     description: 'Fix WordPress memory limit errors: what "allowed memory size exhausted" means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -46434,6 +46450,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Yes, it is the most common cause, especially after an update or when two plugins conflict. The error log often points to the plugin, though the named file is only a clue.</p>
 <h3>Will raising the memory limit slow my site?</h3>
 <p>No, the limit is a ceiling, not an amount used on every page. But pages that genuinely need a lot of memory are usually slow, so finding the cause helps speed as well.</p>
+<h3>How do I increase the WordPress memory limit in wp-config.php?</h3>
+<p>Add a WP_MEMORY_LIMIT line above the line that says to stop editing, save the file and reload the site. If the error stays, your host's PHP memory_limit is lower and caps it, so raise that in the hosting panel or ask support.</p>
 
 <p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
@@ -46783,7 +46801,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     title: 'How to Fix Mixed Content Warnings in WordPress: Find HTTP Links, Update URLs and Get the Padlock Back',
     description: 'How to fix mixed content warnings in WordPress: find insecure HTTP images and scripts, update database URLs safely and stop warnings returning.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -46860,6 +46878,19 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 </ul>
 <p>Including a quick mixed content check in monthly maintenance takes a few minutes and catches problems before customers notice them. Keep a short list of the pages you check, such as home, a service page, a blog post, a product and the checkout, so anyone doing maintenance follows the same routine.</p>
 
+<h2>Mixed content fixes at a glance</h2>
+<table>
+<thead><tr><th>Where the HTTP link lives</th><th>How to fix it</th></tr></thead>
+<tbody>
+<tr><td>Posts, pages and media URLs in the database</td><td>Search-and-replace http to https after a backup</td></tr>
+<tr><td>Page builder data</td><td>Use the builder's own replace URL tool, then regenerate CSS</td></tr>
+<tr><td>Theme or child theme files</td><td>Edit the hard-coded URL or load assets relatively</td></tr>
+<tr><td>Third-party embeds and scripts</td><td>Replace with the provider's current https embed code</td></tr>
+<tr><td>Cached pages</td><td>Purge the plugin, server and CDN caches</td></tr>
+</tbody>
+</table>
+<p>Mixed content often appears alongside other issues after a domain or hosting change; the <a href="/blog/change-domain-name-without-losing-seo/">domain change guide</a> and this list of <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> cover the rest.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix mixed content warnings in WordPress?</h3>
 <p>Back up the site, make sure both WordPress URLs use HTTPS, run a safe database search-and-replace from http:// to https://, fix hard-coded theme or plugin URLs, update old embeds, force HTTPS with a redirect and clear all caches.</p>
@@ -46871,6 +46902,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Yes, some rewrite URLs as pages load. That works as a quick fix, but correcting URLs in the database and theme is cleaner in the long run.</p>
 <h3>Is it safe to run a database search-and-replace?</h3>
 <p>It is safe with a full backup and a WordPress-aware tool that handles serialised data. Always run a dry run first.</p>
+<h3>How do I fix mixed content after installing SSL in WordPress?</h3>
+<p>Change the WordPress Address and Site Address to https, run a careful search-and-replace on the database, fix any hard-coded http links in the theme, force HTTPS at the server and clear every cache. Then check key pages in the browser console for remaining warnings.</p>
 
 <p>If you want mixed content and SSL issues fixed without risking your data, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care. Sites moving hosts can also see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
@@ -46985,7 +47018,7 @@ RewriteRule . /index.php [L]
     title: 'WordPress Not Sending Emails? How to Fix It With SMTP',
     description: 'WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -47093,6 +47126,8 @@ RewriteRule . /index.php [L]
 <p>You can use a Google Workspace account on your domain for low volumes. A personal Gmail address as the sender is not recommended for a business site.</p>
 <h3>Why did WooCommerce stop sending order emails?</h3>
 <p>Check that each email is enabled in WooCommerce settings, then look at the SMTP mail log. Recent hosting, DNS or password changes are the most common causes.</p>
+<h3>How do I fix WordPress contact form emails not sending?</h3>
+<p>Set the form's From address to an email on your own domain, send through an SMTP plugin connected to a real mailbox or email service, and check SPF and DKIM records. Then send a test and check the plugin's email log to see whether the message left the site.</p>
 
 <p>If your forms or order emails are not arriving and you want it fixed properly, I can set up SMTP, DNS records and logging. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
@@ -52775,7 +52810,7 @@ Right:
     title: 'WordPress Backup Plugins Compared: Host Backups, UpdraftPlus, BlogVault and More',
     description: 'Which WordPress backup plugin is best for an Indian business site or WooCommerce store? Host backups, UpdraftPlus, BlogVault, Jetpack and others compared.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -52892,6 +52927,8 @@ Right:
 <p>Yes, through your host's panel, a service with an external dashboard, or a manual restore of files and database. Plugins that work only from wp-admin cannot help in that case.</p>
 <h3>Do backup plugins slow down my site?</h3>
 <p>They can during the backup run. Schedule backups for quiet hours and exclude unnecessary folders.</p>
+<h3>How do I restore a WordPress backup from a backup plugin?</h3>
+<p>If you can still log in, use the plugin's restore button and choose files plus database. If the site is down, use the host's backup tool or reinstall WordPress and the same plugin on a clean install, then import the backup. Test a restore on staging before you ever need it.</p>
 
 <p>Not sure your backups would actually work? I set up and test backups as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off backup review. For store owners, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
@@ -60477,7 +60514,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'WordPress White Screen of Death: What Causes It and How to Fix It',
     description: 'Fix the WordPress white screen of death step by step: turn on debugging, disable plugins and theme, raise the memory limit and check PHP version safely.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -60565,6 +60602,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>The new version may conflict with another plugin, your theme, or your PHP version. Roll back to the previous version or disable it, then test the update on staging.</p>
 <h3>Can a hack cause the white screen of death?</h3>
 <p>Yes, injected or damaged code can cause it. If you see unknown files, new admin users or strange redirects, treat it as a security issue and get the site cleaned.</p>
+<h3>How do I fix the WordPress white screen of death after a theme update?</h3>
+<p>Rename the active theme's folder over FTP or the hosting file manager so WordPress falls back to a default theme. If the site returns, restore the previous theme version from a backup or check its changelog for a PHP version requirement before updating again.</p>
 
 <p>If you would rather not edit server files yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and fixes like this, and a hacked site is handled through <a href="/wordpress-malware-removal/">hacked site repair</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page.</p>
 `,
@@ -70078,7 +70117,7 @@ or a cookie name starts with:
     title: 'WordPress Search Not Working? Fixing Missing, Wrong and Slow Results',
     description: 'WordPress search not working? Fix no results, wrong results and slow search: theme forms, WooCommerce, page builders, caching and plugin conflicts.',
     date: '2026-10-11',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -70178,6 +70217,8 @@ or a cookie name starts with:
 <p>Usually a redirect rule, a security setting or a missing search results template. Check redirect plugins and the theme's search template.</p>
 <h3>Can caching break WordPress search?</h3>
 <p>Yes, if search URLs are cached as full pages. Exclude <code>?s=</code> URLs from page and CDN caching.</p>
+<h3>How do I fix WordPress search showing no results?</h3>
+<p>Check that the content is published and not excluded by a plugin, clear caches, and test with a default theme. If posts appear but pages built with a page builder do not, the default search is not reading that content, so a search plugin that indexes custom fields is usually the fix.</p>
 
 <p>If search on your site or store is broken or slow, I can diagnose and fix it as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
@@ -70964,7 +71005,7 @@ or a cookie name starts with:
     title: 'WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails',
     description: 'WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -71076,6 +71117,8 @@ or a cookie name starts with:
 <p>Check email settings in WooCommerce, then set up SMTP and an email log. Many hosts' default mail sending is unreliable.</p>
 <h3>Can I recover missing WooCommerce orders?</h3>
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
+<h3>Why are WooCommerce orders showing as pending payment?</h3>
+<p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
 
 <p>Orders going missing? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find out why and stop it happening again.</p>
 `,
