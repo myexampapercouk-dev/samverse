@@ -624,12 +624,12 @@
  "blog-shopify-store-slow-fix": "bc3caf244c50895001ec957457ba67b275e3c4be",
  "blog-migrate-woocommerce-to-shopify": "21456a4561bc3cafcd7da6fe51dcbcd16b4d62b7",
  "blog-shopify-store-cost-india": "4a9eabc5127d02839c94e532410c29726f917fc5",
- "blog-shopify-seo-checklist": "018e12d4bf063f16de6677077a7b5899a9f091c6",
+ "blog-shopify-seo-checklist": "56a995aec01ae46ea035d7c7732a72857a3b7e01",
  "blog-shopify-cash-on-delivery-india": "10a4f98c502e188250535a535e6c06afb23ee3b7",
  "blog-shopify-gst-invoices-india": "229574f74c57756d0a3bd372395b9ffad6b8aef6",
  "blog-shopify-payment-gateways-india": "c5379a965e9ae9921c53b78b96e82a23ab1917e8",
  "blog-shopify-shipping-india": "89b1ad0b4f457caf79ac85aaa17f3128386198c3",
- "blog-hire-shopify-developer-india": "5e2268ac1a350622384b95f6578bd3e6c20449b7",
+ "blog-hire-shopify-developer-india": "d17909168cde8b73d7355575c4dd99c472cb26bb",
  "blog-shopify-theme-change-without-losing-seo": "64e760a87d91786fb84eb61e25eccee267e7322b",
  "page-wordpress-shopify-developer-india": "c1c4e957568b75b356f54beb3f34fd85181af4e0",
  "page-wordpress-shopify-developer-mumbai": "13ea2012ee6f2286dfebcc37386a5cd7608bb467",
@@ -658,5 +658,7 @@
  "blog-wordpress-update-button-missing": "5dc5496d7e5e0cb6761ee706889261023d4b1483",
  "blog-gravity-forms-vs-contact-form-7": "500fb5811557548aeb22d2d719d0262912df67ed",
  "blog-squeeze-page-vs-landing-page": "8b727f4fb7a5fe8410cf33d3200367defaa8da84",
- "blog-woocommerce-vendor-onboarding": "63757c0c75839f860317d004c5526db4c4232cbc"
+ "blog-woocommerce-vendor-onboarding": "63757c0c75839f860317d004c5526db4c4232cbc",
+ "blog-shopify-pincode-checker-india": "3b21f6a426dc46faa015e6ed6d4012e179e55431",
+ "blog-shopify-whatsapp-ordering-india": "a0b7c4b3b44143a962a7323551a6c6a986e208c3"
 }
