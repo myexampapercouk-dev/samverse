@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Child Theme: What It Is and How to Create One</title>
-  <meta name="description" content="WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.">
+  <meta name="description" content="A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-child-theme-explained/">
   <meta property="og:title" content="WordPress Child Theme: What It Is and How to Create One">
-  <meta property="og:description" content="WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.">
+  <meta property="og:description" content="A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-child-theme-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-child-theme-explained/#article",
       "headline": "WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)",
-      "description": "WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.",
+      "description": "A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-child-theme-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-child-theme-explained.png",
       "articleSection": "Guides",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/planning/">Planning &amp; costs</a></nav>
           <a class="post-cat" href="/blog/topic/planning/">Guides</a>
           <h1>WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)</h1>
-          <p class="post-dek">WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.</p>
+          <p class="post-dek">A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Child%20Themes%20Explained%3A%20What%20They%20Are%2C%20When%20You%20Need%20One%20and%20How%20to%20Create%20One%20(With%20Code)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-child-theme-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,50 +160,44 @@
               <li><a href="#moving-existing-edits-out-of-the-parent-theme">Moving existing edits out of the parent theme</a></li>
               <li><a href="#overriding-template-files">Overriding template files</a></li>
               <li><a href="#child-themes-for-block-themes">Child themes for block themes</a></li>
+              <li><a href="#child-themes-with-elementor-and-other-builders">Child themes with Elementor and other builders</a></li>
               <li><a href="#common-child-theme-problems-and-fixes">Common child theme problems and fixes</a></li>
+              <li><a href="#keeping-the-child-theme-in-version-control">Keeping the child theme in version control</a></li>
+              <li><a href="#the-quicker-way-wp-cli-or-a-generator">The quicker way: WP-CLI or a generator</a></li>
+              <li><a href="#will-a-child-theme-slow-down-my-site">Will a child theme slow down my site?</a></li>
+              <li><a href="#what-happens-when-the-parent-theme-updates">What happens when the parent theme updates</a></li>
+              <li><a href="#back-up-the-child-theme-separately">Back up the child theme separately</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>A child theme inherits everything from its parent theme and holds only your changes, so the parent can be updated without wiping out custom code or template edits.</li>
-              <li>It needs just a folder, a style.css file whose Template line names the parent folder, and a functions.php that loads the stylesheets; WP-CLI or the theme vendor can generate one for you.</li>
-              <li>Use a child theme for theme templates and theme-specific code, not for small CSS tweaks or site-wide features, and test the switch on staging because Customizer settings may not carry over.</li>
+              <li>A child theme inherits everything from its parent and holds only your changes, so parent theme updates no longer wipe your custom code.</li>
+              <li>You need one only for template, PHP or substantial CSS changes; small CSS tweaks and snippets can live in Additional CSS or a code snippets plugin.</li>
+              <li>Create it with a style.css header and a functions.php that loads the parent styles, then test the switch on staging because menus and widgets may need reassigning.</li>
             </ul>
           </div>
-<p>A WordPress child theme is a small theme that inherits its design and features from a parent theme and contains only your changes. Because your custom CSS, PHP and template edits live in the child theme, the parent can be updated safely without wiping them out. To create one, add a folder in wp-content/themes with a style.css file whose Template line names the parent theme's folder and a functions.php file that loads the stylesheets, then activate it. You need one if you edit theme templates or add theme-specific code, not for a few lines of CSS.</p>
-<p>If you'd rather have it set up properly, I can create a child theme, move any direct edits out of the parent and test the switch on staging as part of <a href="/wordpress-website-development/">WordPress website development</a> work.</p>
-<p>Child themes matter most when it's time to update. If you're about to update a premium theme that someone has edited, read <a href="/blog/update-premium-theme-safely/">how to update a premium theme safely</a> as well.</p>
+<p>A WordPress child theme is a small theme that inherits all the design and features of a parent theme while holding only your own changes, so you can update the parent without losing your custom code. You need one when you edit theme template files or functions.php; to create it, you add a folder with a style.css header naming the parent and a functions.php that loads the parent's stylesheet, then activate it.</p>
+<p>Below is when a child theme is worth it, the exact files to create, how to switch a live site safely, and how the idea works with block themes and page builders.</p>
 
 <h2 id="how-a-child-theme-works">How a child theme works</h2>
-<p>When a child theme is active, WordPress uses the child's files where they exist and falls back to the parent for everything else.</p>
-<table>
-  <thead><tr><th>File in the child theme</th><th>What happens</th></tr></thead>
-  <tbody>
-    <tr><td>style.css</td><td>Required. Its header names the child theme and, through the Template line, its parent</td></tr>
-    <tr><td>functions.php</td><td>Loaded in addition to the parent's functions.php, just before it. It doesn't replace the parent's file</td></tr>
-    <tr><td>Template files such as header.php or single.php</td><td>Replace the parent's file at the same path</td></tr>
-    <tr><td>woocommerce/ folder</td><td>Overrides WooCommerce templates for this theme</td></tr>
-    <tr><td>theme.json (block themes)</td><td>Merged with the parent's settings, with the child's values taking priority</td></tr>
-    <tr><td>screenshot.png</td><td>Optional thumbnail shown in Appearance &gt; Themes</td></tr>
-  </tbody>
-</table>
+<p>WordPress looks for each template file in the active child theme first. If it is not there, it uses the parent's version. The child's functions.php loads in addition to the parent's (before it, in fact), so you can add features without copying the parent's code. Stylesheets can be layered so your CSS overrides the parent's.</p>
+<p>The result: when the theme developer releases an update, the parent folder is replaced, but your child folder is untouched. That is the whole point. Editing the parent directly means every update silently erases your work, which is one of the most common reasons we see "my site changed after an update" calls, alongside the issues in <a href="/blog/update-premium-theme-safely/">updating a premium theme safely</a>.</p>
 
 <h2 id="when-you-need-a-child-theme-and-when-you-don-t">When you need a child theme, and when you don't</h2>
 <table>
-  <thead><tr><th>The change you want</th><th>Best place for it</th></tr></thead>
-  <tbody>
-    <tr><td>Edit a theme template, such as the header or single post layout</td><td>Child theme</td></tr>
-    <tr><td>PHP that hooks into your theme's own functions</td><td>Child theme's functions.php</td></tr>
-    <tr><td>Override WooCommerce templates</td><td>Child theme</td></tr>
-    <tr><td>A large amount of custom CSS that belongs with the design</td><td>Child theme's style.css</td></tr>
-    <tr><td>A few lines of CSS</td><td>Appearance &gt; Customize &gt; Additional CSS, or your page builder's custom CSS</td></tr>
-    <tr><td>Features you'd want to keep if you changed theme, such as custom post types, tracking or integrations</td><td>A small custom plugin</td></tr>
-    <tr><td>A site built entirely in Elementor with no code changes</td><td>None needed yet</td></tr>
-  </tbody>
+<thead><tr><th>Change you want</th><th>Child theme needed?</th><th>Better place</th></tr></thead>
+<tbody>
+<tr><td>A few lines of CSS</td><td>No</td><td>Customizer Additional CSS or the Site Editor's custom CSS</td></tr>
+<tr><td>A small PHP snippet (e.g. change excerpt length)</td><td>Optional</td><td>A code snippets plugin or a small site plugin</td></tr>
+<tr><td>Editing template files such as header.php or single.php</td><td>Yes</td><td>Child theme</td></tr>
+<tr><td>Overriding WooCommerce templates</td><td>Yes</td><td>Child theme's woocommerce folder</td></tr>
+<tr><td>Adding custom post types or business logic</td><td>No</td><td>A plugin, so it survives a theme change</td></tr>
+<tr><td>Design changes in Elementor or the block editor</td><td>No</td><td>Stored in the database, safe on update</td></tr>
+</tbody>
 </table>
-<p>The rule of thumb: design and presentation belong in the child theme; functionality belongs in a plugin, so it survives a change of theme. See <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a> for more on that choice.</p>
+<p>The last two rows matter. Functionality that should outlive the design, such as a custom post type, belongs in a plugin. Our article on <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a> explains where each kind of change should go.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress website development?</strong>
@@ -212,96 +206,99 @@
 </aside>
 
 <h2 id="how-to-create-a-child-theme-step-by-step">How to create a child theme step by step</h2>
-<p>This example creates a child theme for Astra. Swap in your own parent theme's details.</p>
-<h3>Step 1: Create the folder</h3>
-<p>Find the parent theme's folder name in wp-content/themes, for example astra, and create a new folder next to it, such as astra-child. The Template line in the next step must match the parent's folder name exactly, including capital letters.</p>
-<h3>Step 2: Add style.css</h3>
-<p>Create a style.css file in the new folder with this header. Theme Name and Template are required; the version number is used in the next step:</p>
+<p>Work on a staging copy or with a fresh backup. Then:</p>
+<ol>
+<li>Find the parent theme's folder name in wp-content/themes, for example astra or generatepress. This is the Template value, and it must match exactly.</li>
+<li>Create a new folder next to it, for example astra-child.</li>
+<li>Inside it create style.css with this header:</li>
+</ol>
 <pre><code>/*
-Theme Name:  Astra Child
-Template:    astra
-Version:     1.0.0
-Description: Child theme for Astra
-Text Domain: astra-child
+Theme Name: Astra Child
+Template: astra
+Version: 1.0.0
+Description: Child theme for site customisations
 */</code></pre>
-<h3>Step 3: Add functions.php and enqueue the stylesheets</h3>
-<p>Create a functions.php file that loads the child theme's stylesheet after the parent's. Many modern themes, Astra included, already load their own stylesheet, so you only need to enqueue the child's, with the parent's stylesheet handle as a dependency. Astra's handle is astra-theme-css at the time of writing; check your theme's documentation for its own.</p>
+<ol start="4">
+<li>Create functions.php to load the parent and child styles:</li>
+</ol>
 <pre><code>&lt;?php
-add_action( 'wp_enqueue_scripts', 'astra_child_enqueue_styles', 15 );
-function astra_child_enqueue_styles() {
-    wp_enqueue_style(
-        'astra-child-style',
-        get_stylesheet_uri(),
-        array( 'astra-theme-css' ),
-        wp_get_theme()-&gt;get( 'Version' )
-    );
-}</code></pre>
-<p>Some older themes load style.css with a function that, once a child theme is active, picks up the child's file instead of the parent's. In that case, load the parent's stylesheet explicitly first, as the WordPress theme handbook shows:</p>
-<pre><code>&lt;?php
-add_action( 'wp_enqueue_scripts', 'my_child_enqueue_styles' );
-function my_child_enqueue_styles() {
-    $theme = wp_get_theme();
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), $theme-&gt;parent()-&gt;get( 'Version' ) );
-    wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ), $theme-&gt;get( 'Version' ) );
-}</code></pre>
-<h3>Step 4: Upload and activate</h3>
-<p>Zip the folder and upload it under Appearance &gt; Themes &gt; Add New Theme &gt; Upload Theme, or copy the folder over SFTP. Then activate the child theme and check the site.</p>
-<h3>The quicker way: WP-CLI or a generator</h3>
-<p>With WP-CLI, one command creates the folder, style.css and functions.php, and can activate it:</p>
-<pre><code>wp scaffold child-theme astra-child --parent_theme=astra --theme_name="Astra Child" --activate</code></pre>
-<p>Many theme vendors also offer a ready-made child theme or a generator, and for block themes the Create Block Theme plugin can make a child theme from the Site Editor.</p>
+add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ), wp_get_theme()-&gt;get( 'Version' ) );
+} );</code></pre>
+<ol start="5">
+<li>Optionally add a screenshot.png (1200 by 900 pixels) so it is easy to recognise in Appearance, Themes.</li>
+<li>Zip the folder and upload it from Appearance, Themes, Add New, or upload it by FTP or the hosting file manager.</li>
+<li>Activate it on staging and check the site.</li>
+</ol>
+<p>Some themes load their own stylesheet in a different way, so the parent style line may already be handled. If the site looks doubled or styles load twice, check the parent theme's documentation; many popular themes provide a ready-made child theme download, which is the safest starting point.</p>
 
 <h2 id="before-you-switch-a-live-site-to-a-child-theme">Before you switch a live site to a child theme</h2>
-<p>WordPress stores many Customizer settings per theme, so a newly activated child theme can start without your parent theme's header, colours, menu locations or widgets. Some themes keep their settings in a way that carries over; others don't. Note or export your settings first, using the theme's own export option or a Customizer export plugin, and make the switch on a staging copy before doing it live; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+<p>WordPress treats the child as a different theme, so some settings stored per theme do not carry across automatically:</p>
+<ul>
+<li>Menu locations may need reassigning in Appearance, Menus.</li>
+<li>Customizer settings (colours, logo, layout options) may reset; many themes offer an export and import tool for these.</li>
+<li>Widgets in classic themes may move to inactive widgets.</li>
+<li>Caching and CSS optimisation plugins need their cache cleared.</li>
+</ul>
+<p>Make a list of the current settings, switch on staging, compare page by page, then repeat on live at a quiet hour. Our guide to <a href="/blog/staging-sites-explained/">staging sites</a> covers how to push the result live.</p>
 
 <h2 id="moving-existing-edits-out-of-the-parent-theme">Moving existing edits out of the parent theme</h2>
-<p>If someone has already edited the parent theme directly, move those changes into the child before the next update overwrites them:</p>
-<ol>
-  <li><strong>Find what changed.</strong> Download a fresh copy of the same parent version from the vendor and compare the folders, for example with diff -rq over SSH or a desktop comparison tool.</li>
-  <li><strong>Copy each edited template</strong> into the child theme at the same path.</li>
-  <li><strong>Move added CSS</strong> into the child's style.css, and added PHP functions into the child's functions.php. Because the child's functions.php loads first, a parent function wrapped in a function_exists check can be replaced by defining a function with the same name in the child; any other duplicate name causes a fatal error.</li>
-  <li><strong>Activate the child on staging,</strong> restore Customizer settings and menus, and test key pages, forms and checkout.</li>
-  <li><strong>Replace the parent</strong> with a clean copy of the latest version, then test again before going live.</li>
-</ol>
+<p>If someone already edited the parent theme directly, do not update it yet. First find what changed. Download a fresh copy of the same parent version and compare folders with a diff tool, or ask the developer who made the edits. Then:</p>
+<ul>
+<li>Move CSS changes into the child's style.css.</li>
+<li>Move added functions into the child's functions.php (or a plugin).</li>
+<li>Copy edited template files into the child at the same path.</li>
+</ul>
+<p>Only then update the parent. If you skip this step, the update deletes the edits and you are left rebuilding from memory, which is also why we ask for this during a <a href="/blog/website-handover-checklist/">website handover</a>.</p>
 
 <h2 id="overriding-template-files">Overriding template files</h2>
-<p>To change a template, copy it from the parent theme into the same path in the child theme and edit the copy. For WooCommerce, copy templates from wp-content/plugins/woocommerce/templates/ into a woocommerce folder in the child theme. WooCommerce &gt; Status later warns you when a copied template is out of date.</p>
-<p>Copied templates don't receive the parent's fixes, so keep them to a minimum. Where your theme or WordPress offers a hook or filter, use that in functions.php instead. For example, this changes the length of post excerpts without touching a single template:</p>
-<pre><code>add_filter( 'excerpt_length', function () {
-    return 30;
-} );</code></pre>
+<p>To change a template, copy it from the parent to the same relative path in the child and edit the copy. For WooCommerce, copy files from the plugin's templates folder into a woocommerce folder in your child theme.</p>
+<p>Keep overrides to a minimum. Every copied file is frozen at the version you copied, so when the parent or WooCommerce improves that template, your site does not get the improvement. WooCommerce shows outdated template overrides in WooCommerce, Status; check it after each major update. Where possible, use hooks and filters in functions.php instead of copying whole templates.</p>
 
 <h2 id="child-themes-for-block-themes">Child themes for block themes</h2>
-<p>Block themes can have child themes too. A child's theme.json changes colours, fonts and spacing, and HTML files in its templates and parts folders override the parent's. Changes you make in the Site Editor are saved in the database rather than in theme files, so they survive parent updates anyway; a child theme is mainly useful when you want those changes stored as files you control. See <a href="/blog/block-themes-full-site-editing/">block themes explained</a>.</p>
+<p>Block themes such as Twenty Twenty-Four and many modern themes work with child themes too. The child can contain its own theme.json (which merges with the parent's), templates and template parts as HTML files, and patterns. Changes made in the Site Editor are saved in the database, not in files, so they already survive updates; a child theme is mainly useful when you want those changes stored in code for version control. The Create Block Theme plugin can export Site Editor changes into a child theme for you. See <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a> for the wider picture.</p>
+
+<h2 id="child-themes-with-elementor-and-other-builders">Child themes with Elementor and other builders</h2>
+<p>Elementor, Divi and similar builders store page designs in the database, so a child theme is not needed for page content. It is still useful for custom PHP, extra fonts or code that hooks into the builder. Hello Elementor has an official child theme for this. If you are choosing a base theme, see our notes on <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
 
 <h2 id="common-child-theme-problems-and-fixes">Common child theme problems and fixes</h2>
-<table>
-  <thead><tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr></thead>
-  <tbody>
-    <tr><td>"The parent theme is missing"</td><td>The Template line doesn't match the parent's folder name, or the parent isn't installed</td><td>Correct the Template line or install the parent</td></tr>
-    <tr><td>Site looks unstyled or styles load twice</td><td>The stylesheets are enqueued the wrong way for this parent</td><td>Use the right example above and the correct handle</td></tr>
-    <tr><td>CSS changes don't show</td><td>Browser, plugin or CDN cache, or the version number hasn't changed</td><td>Clear caches and bump the Version; see <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a></td></tr>
-    <tr><td>White screen or critical error after editing functions.php</td><td>A PHP syntax error</td><td>Fix the file over SFTP, or rename the child theme folder so WordPress falls back; see <a href="/blog/fix-wordpress-critical-error/">fixing a critical error</a></td></tr>
-    <tr><td>Header, colours or menus reset after activating</td><td>Customizer settings are stored per theme</td><td>Re-import or reassign them</td></tr>
-    <tr><td>Template edits are ignored</td><td>Wrong path, or the page is built with a page builder template instead</td><td>Check the path matches the parent exactly</td></tr>
-  </tbody>
-</table>
+<ul>
+<li><strong>"The parent theme is missing":</strong> the Template line does not match the parent folder name exactly, including case.</li>
+<li><strong>Styles not changing:</strong> a cache or optimisation plugin is serving old CSS; clear it and bump the Version number in style.css. Our guide to <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a> has more fixes.</li>
+<li><strong>White screen after activation:</strong> a PHP error in functions.php, often a missing semicolon or a duplicate function name. Rename the child folder by FTP to fall back to the parent, then fix the code.</li>
+<li><strong>Layout looks broken:</strong> parent styles are not loading, or loading twice; check the enqueue code against the theme's documentation.</li>
+</ul>
+<p>If you need a child theme set up properly or custom edits rescued from a parent theme before an update, I handle this under <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
+
+<h2 id="keeping-the-child-theme-in-version-control">Keeping the child theme in version control</h2>
+<p>Because the child theme now holds your custom code, treat it like code. Keep it in a Git repository, note each change in a short changelog, and deploy it through staging. If you ever hand the site to another developer, the repository shows exactly what was customised and why.</p>
+
+<h2 id="the-quicker-way-wp-cli-or-a-generator">The quicker way: WP-CLI or a generator</h2>
+<p>If your host offers SSH, WP-CLI can create the child theme for you with a single scaffold command naming the parent folder; it writes the folder, style.css and functions.php. Several themes also offer a child theme download in their documentation or dashboard, and small generator plugins can create one from the admin. Generator plugins are fine to use once: create the child, check the files, then remove the plugin.</p>
+
+<h2 id="will-a-child-theme-slow-down-my-site">Will a child theme slow down my site?</h2>
+<p>Not in any noticeable way. WordPress checks one extra folder for templates, and the child adds one small stylesheet. The only real cost comes from mistakes, such as loading the parent stylesheet twice or importing it with an @import rule in CSS, which delays rendering. Enqueue styles in functions.php as shown above and the impact is negligible.</p>
+
+<h2 id="what-happens-when-the-parent-theme-updates">What happens when the parent theme updates</h2>
+<p>The parent folder is replaced and your child folder stays as it is. Your CSS and functions keep working in most cases. Two things can still go wrong: a template file you copied into the child may now be outdated compared with the new parent version, and a parent function or hook you rely on may be renamed or removed. Read the parent's changelog, update on staging first, and compare any overridden templates. A child theme cannot have its own child theme, so if you need another layer of customisation, use a plugin for it.</p>
+
+<h2 id="back-up-the-child-theme-separately">Back up the child theme separately</h2>
+<p>Most backup plugins include the themes folder, but check that yours does. Also keep a downloaded copy of the child theme folder, or better, keep it in Git, so that if the site is ever hacked or rebuilt, your customisations can be restored in minutes instead of being recreated from scratch.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>What is a child theme in WordPress?</h3>
-<p>A theme that inherits everything from another theme, its parent, and contains only your changes. It lets you customise the theme's code and templates while still updating the parent safely.</p>
-<h3>Do I need a child theme with Elementor?</h3>
-<p>Not if you only <a href="/elementor-developer/">build pages and templates in Elementor</a>, because those are stored in the database and survive theme updates. Add a child theme when you start adding custom PHP or template changes; see <a href="/blog/best-theme-for-elementor/">choosing a theme for Elementor</a>.</p>
-<h3>Will a child theme slow down my site?</h3>
-<p>Not noticeably. It usually adds one small stylesheet. A child theme full of heavy custom code is a different matter, but that's the code, not the child theme.</p>
-<h3>What happens to my child theme when the parent updates?</h3>
-<p>The child theme itself is untouched. After a major parent update, check any templates you copied into the child, because the parent's versions may have changed.</p>
-<h3>Can I create a child theme without a plugin?</h3>
-<p>Yes. You only need a folder with style.css and functions.php, as shown above. WP-CLI and theme vendors' generators are simply quicker.</p>
-<h3>Can a child theme have its own child theme?</h3>
-<p>No. WordPress supports one level only: a parent and a child. If you need more separation, move functionality into a custom plugin or consider a <a href="/blog/custom-wordpress-theme-development/">custom theme</a>.</p>
-
-<p>Need edits moved out of a parent theme, a child theme set up or a theme customised properly? See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
+<p>It is a theme that inherits the design and functions of a parent theme and stores only your changes. Updating the parent no longer overwrites your custom code.</p>
+<h3>Do I need a child theme for small CSS changes?</h3>
+<p>No. Use Additional CSS in the Customizer or custom CSS in the Site Editor. A child theme is worth it when you edit template files, functions.php or WooCommerce templates.</p>
+<h3>How do I create a child theme in WordPress?</h3>
+<p>Create a folder, add a style.css with Theme Name and Template lines, add a functions.php that enqueues the parent stylesheet, then upload and activate it. Test on staging first.</p>
+<h3>Will I lose my settings when I activate a child theme?</h3>
+<p>Some theme settings, menu locations and widgets can reset because WordPress treats the child as a new theme. Export Customizer settings first and reassign menus after switching.</p>
+<h3>Can I use a child theme with Elementor?</h3>
+<p>Yes. Elementor pages are stored in the database, so they work the same. A child theme of Hello Elementor is useful for custom PHP or extra code.</p>
+<h3>Do block themes need child themes?</h3>
+<p>Not for changes made in the Site Editor, because those are saved in the database. A child block theme helps when you want templates and theme.json changes kept in code.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -344,7 +341,13 @@ function my_child_enqueue_styles() {
               <li><a href="#moving-existing-edits-out-of-the-parent-theme">Moving existing edits out of the parent theme</a></li>
               <li><a href="#overriding-template-files">Overriding template files</a></li>
               <li><a href="#child-themes-for-block-themes">Child themes for block themes</a></li>
+              <li><a href="#child-themes-with-elementor-and-other-builders">Child themes with Elementor and other builders</a></li>
               <li><a href="#common-child-theme-problems-and-fixes">Common child theme problems and fixes</a></li>
+              <li><a href="#keeping-the-child-theme-in-version-control">Keeping the child theme in version control</a></li>
+              <li><a href="#the-quicker-way-wp-cli-or-a-generator">The quicker way: WP-CLI or a generator</a></li>
+              <li><a href="#will-a-child-theme-slow-down-my-site">Will a child theme slow down my site?</a></li>
+              <li><a href="#what-happens-when-the-parent-theme-updates">What happens when the parent theme updates</a></li>
+              <li><a href="#back-up-the-child-theme-separately">Back up the child theme separately</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

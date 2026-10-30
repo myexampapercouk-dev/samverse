@@ -375,7 +375,7 @@
     <link>https://samverse.space/blog/website-brief-template/</link>
     <guid>https://samverse.space/blog/website-brief-template/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>A free website brief template: goals, audience, pages, features, content, examples, budget, timeline and access, plus how to use it to compare quotes.</description>
+    <description>A website brief template with a copy-and-fill version: what to tell your web developer about goals, pages, features, content and budget for an accurate quote.</description>
   </item>
   <item>
     <title>On-Page SEO Checklist: 15 Things to Check on Every Page You Publish, From Search Intent and Titles to Schema and Speed</title>
@@ -1516,7 +1516,7 @@
     <link>https://samverse.space/blog/wordpress-database-optimization/</link>
     <guid>https://samverse.space/blog/wordpress-database-optimization/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.</description>
+    <description>WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.</description>
   </item>
   <item>
     <title>Website Design Contract Checklist: Scope, Revisions, Payments, Ownership, Support and Everything Else to Agree Before Work Starts</title>
@@ -1740,7 +1740,7 @@
     <link>https://samverse.space/blog/website-bug-vs-change-request/</link>
     <guid>https://samverse.space/blog/website-bug-vs-change-request/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website bug vs change request: clear definitions, examples, grey areas, how to report a bug with steps and screenshots, and how post-launch support works.</description>
+    <description>Bug vs change request: how to tell them apart, what post-launch support and warranty usually cover, and how to report website issues so they get fixed fast.</description>
   </item>
   <item>
     <title>Outsource WordPress Development to India: A Practical Guide for Agencies and Businesses</title>
@@ -2076,7 +2076,7 @@
     <link>https://samverse.space/blog/wordpress-child-theme-explained/</link>
     <guid>https://samverse.space/blog/wordpress-child-theme-explained/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress child theme explained: when you need one, how to create it with style.css and functions.php enqueue code, template overrides and common fixes.</description>
+    <description>A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.</description>
   </item>
   <item>
     <title>WordPress Block Themes and Full Site Editing Explained: theme.json, Templates, Patterns and When Agencies Should Use Them</title>
@@ -2097,7 +2097,7 @@
     <link>https://samverse.space/blog/custom-post-types-fields/</link>
     <guid>https://samverse.space/blog/custom-post-types-fields/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Custom post types and custom fields in WordPress explained with examples, ACF and similar tools, code to register a post type, templates and SEO.</description>
+    <description>Custom post types and custom fields in WordPress explained with real examples, ACF and code options, templates, archive pages and SEO for structured content.</description>
   </item>
   <item>
     <title>Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table</title>

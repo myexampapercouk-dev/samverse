@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clean Up Your WordPress Database Safely: Optimisation Guide</title>
-  <meta name="description" content="Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.">
+  <title>WordPress Database Optimisation: Clean Up and Speed It Up</title>
+  <meta name="description" content="WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-database-optimization/">
-  <meta property="og:title" content="Clean Up Your WordPress Database Safely: Optimisation Guide">
-  <meta property="og:description" content="Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.">
+  <meta property="og:title" content="WordPress Database Optimisation: Clean Up and Speed It Up">
+  <meta property="og:description" content="WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-database-optimization.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-database-optimization/#article",
       "headline": "WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely",
-      "description": "Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.",
+      "description": "WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-database-optimization/",
       "image": "https://samverse.space/assets/og/blog-wordpress-database-optimization.png",
       "articleSection": "Speed",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Speed</a>
           <h1>WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely</h1>
-          <p class="post-dek">Clean up your WordPress database safely: back up, remove revisions, transients, spam and leftovers with WP-Optimize, WP-CLI or SQL, and fix autoload.</p>
+          <p class="post-dek">WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Database%20Optimisation%3A%20How%20to%20Clean%20Up%20and%20Speed%20Up%20Your%20Database%20Safely%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-database-optimization%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,46 +164,47 @@
               <li><a href="#woocommerce-stores-need-extra-care">WooCommerce stores need extra care</a></li>
               <li><a href="#what-optimise-tables-actually-does">What "optimise tables" actually does</a></li>
               <li><a href="#how-often-to-clean-the-database">How often to clean the database</a></li>
+              <li><a href="#when-the-problem-is-really-the-hosting">When the problem is really the hosting</a></li>
+              <li><a href="#wp-optimize-vs-advanced-database-cleaner">WP-Optimize vs Advanced Database Cleaner</a></li>
+              <li><a href="#woocommerce-built-in-tools">WooCommerce built-in tools</a></li>
+              <li><a href="#what-transients-are-in-plain-words">What transients are, in plain words</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Always take a full backup first, then remove revisions, auto-drafts, trash, spam and expired transients, which are safe to delete on almost every site.</li>
-              <li>Large autoloaded options and leftover plugin data cause more slowness than revisions, but delete them only once you know which plugin created them.</li>
-              <li>Limit revisions and trash days in wp-config.php, trim plugin logs and never delete WooCommerce orders, then repeat the clean-up every few months.</li>
+              <li>Take a tested backup before any cleanup; database changes cannot be undone with the browser back button.</li>
+              <li>Large autoloaded options from old plugins usually slow a site more than revisions or spam, so check the autoload size before deleting anything else.</li>
+              <li>Limit revisions, clear expired transients on a schedule and remove leftover plugin tables so the database stays lean without frequent manual cleanups.</li>
             </ul>
           </div>
-<p>To clean up a WordPress database safely, take a full backup first, then remove old post revisions, auto-drafts, trashed posts, spam comments and expired transients with a plugin such as WP-Optimize or Advanced Database Cleaner, check for large autoloaded options, and limit revisions so the clutter doesn't build up again. Leave anything you're unsure about, such as leftover plugin tables, until you've confirmed what created them.</p>
-<p>A clean-up helps most on older or busier sites, where it can make the dashboard and uncached pages noticeably quicker. It won't fix a heavy theme or weak hosting. Database and autoload clean-up is one part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service, alongside caching, images and plugins.</p>
+<p>WordPress database optimisation means removing data the site no longer needs (old revisions, expired transients, spam comments, leftovers from deleted plugins) and fixing the heavy settings that load on every page, so queries run faster and backups shrink. Done safely, it is a short job: back up, check what is actually large, clean with a plugin or WP-CLI, then put limits in place so the clutter does not return.</p>
+<p>The important word is safely. A careless cleanup can delete WooCommerce sessions mid-checkout or remove settings a plugin still needs. This guide shows the order I follow on client sites and what to leave alone.</p>
 
 <h2 id="signs-your-database-needs-attention">Signs your database needs attention</h2>
 <ul>
-  <li>The dashboard is slow to load or save, even when the public site feels fast</li>
-  <li>Site Health warns about autoloaded options</li>
-  <li>Backups take much longer than they used to, or fail part-way</li>
-  <li>Your host warns about database size or slow queries</li>
-  <li>The site has run for years, with many plugins installed and removed along the way</li>
+<li>The WordPress admin feels slow even on simple screens such as the dashboard or Posts list.</li>
+<li>Time to first byte is high on uncached pages, while static files load quickly.</li>
+<li>Backups take much longer or have grown far bigger than your content suggests.</li>
+<li>Site Health warns about autoloaded options, or your host flags heavy database usage.</li>
+<li>The site has been running for years with many plugins installed and removed along the way.</li>
 </ul>
-<p>If visitors see slow pages but the dashboard is fine, the database is rarely the main cause. Page caching, hosting, images and scripts usually matter more; see <a href="/blog/why-is-my-wordpress-site-slow/">why WordPress sites are slow</a> and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
+<p>If pages are slow but the admin is fast, the cause is more often images, scripts or hosting. Run a proper test first; our guide to <a href="/blog/website-speed-test-tools-explained/">website speed test tools</a> explains how to read the results.</p>
 
 <h2 id="what-bloats-a-wordpress-database">What bloats a WordPress database</h2>
 <table>
-  <thead><tr><th>Item</th><th>Where it lives</th><th>Safe to remove?</th></tr></thead>
-  <tbody>
-    <tr><td>Post revisions</td><td>wp_posts</td><td>Yes, keeping a few recent ones</td></tr>
-    <tr><td>Auto-drafts and trashed posts</td><td>wp_posts</td><td>Yes, after a quick look at the trash</td></tr>
-    <tr><td>Spam and trashed comments</td><td>wp_comments</td><td>Yes</td></tr>
-    <tr><td>Expired transients</td><td>wp_options</td><td>Yes; plugins rebuild them when needed</td></tr>
-    <tr><td>Orphaned post and comment meta</td><td>wp_postmeta, wp_commentmeta</td><td>Usually, with a backup</td></tr>
-    <tr><td>Leftover plugin tables and options</td><td>Their own tables, wp_options</td><td>Only once you know which plugin created them</td></tr>
-    <tr><td>Large autoloaded options</td><td>wp_options</td><td>Fix the cause rather than just deleting</td></tr>
-    <tr><td>Plugin logs (security, email, redirects)</td><td>Usually their own tables</td><td>Trim through the plugin's settings</td></tr>
-    <tr><td>WooCommerce orders, customers and products</td><td>Several tables</td><td>Never, as part of a clean-up</td></tr>
-  </tbody>
+<thead><tr><th>Data</th><th>Where it lives</th><th>Safe to remove?</th></tr></thead>
+<tbody>
+<tr><td>Post revisions and auto-drafts</td><td>wp_posts, wp_postmeta</td><td>Yes, keep a few recent revisions</td></tr>
+<tr><td>Expired transients</td><td>wp_options</td><td>Yes, they are temporary cache</td></tr>
+<tr><td>Spam and trashed comments</td><td>wp_comments, wp_commentmeta</td><td>Yes</td></tr>
+<tr><td>Orphaned post meta</td><td>wp_postmeta</td><td>Usually, after a backup</td></tr>
+<tr><td>Leftover plugin tables and options</td><td>Custom tables, wp_options</td><td>Only once you confirm the plugin is gone for good</td></tr>
+<tr><td>Logs from security, email or redirect plugins</td><td>Custom tables</td><td>Trim old entries, keep recent ones</td></tr>
+<tr><td>WooCommerce sessions and action scheduler logs</td><td>Custom tables</td><td>Clear old completed actions; leave active sessions</td></tr>
+</tbody>
 </table>
-<p>Your table prefix may not be wp_; many hosts and installers use a different one. Check $table_prefix in wp-config.php.</p>
 
 <aside class="inline-cta">
   <strong>Need help with speed optimization?</strong>
@@ -212,90 +213,89 @@
 </aside>
 
 <h2 id="check-the-database-size-first">Check the database size first</h2>
-<p>Tools &gt; Site Health &gt; Info &gt; Directories and Sizes shows the total database size. For a per-table breakdown, open phpMyAdmin from your hosting panel, or run this read-only query in its SQL tab:</p>
-<pre><code>SELECT table_name, ROUND((data_length + index_length) / 1024 / 1024, 1) AS size_mb
-FROM information_schema.tables
-WHERE table_schema = DATABASE()
-ORDER BY (data_length + index_length) DESC;</code></pre>
-<p>Unusually large options, postmeta, log or scheduled action tables tell you where to look first.</p>
+<p>Do not guess. Open phpMyAdmin from your hosting panel (on Hostinger it is under Databases), select the database and sort tables by size. Look for any table that is far bigger than the rest. Common culprits are wp_options, wp_postmeta, log tables from a security or redirect plugin, and wp_actionscheduler_logs on WooCommerce stores.</p>
+<p>Also check the autoload size, explained in step 4. That single number explains more slow WordPress admins than everything else on this page.</p>
 
 <h2 id="step-1-back-up-and-know-how-to-restore">Step 1: Back up, and know how to restore</h2>
-<p>Database clean-up deletes data permanently. Take a full backup with UpdraftPlus or your host's backup tool, download a copy, and make sure you know how to restore it; see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>. Developers can export the database with one command before starting:</p>
-<pre><code>wp db export before-cleanup.sql</code></pre>
-<p>Work at a quiet time, especially on a store, because table optimisation can briefly slow things down.</p>
+<p>Take a full database backup with your backup plugin or the host's tool, download a copy, and make sure you know how to restore it. A backup you have never restored is a hope, not a plan. Our <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> walks through it. On a busy store, do the work at a quiet hour or on a <a href="/blog/staging-sites-explained/">staging site</a> first.</p>
 
 <h2 id="step-2-clean-up-with-a-plugin">Step 2: Clean up with a plugin</h2>
-<h3>WP-Optimize</h3>
-<p>The Database tab lists each clean-up task with a count of items: revisions, auto-drafts, trashed posts, spam and trashed comments, expired transients, orphaned data and table optimisation. Tick the ones you want and run them. You can tell it to keep a set number of recent revisions, and it can run on a schedule.</p>
-<p>On a first run, start with the safe items: revisions, auto-drafts, trash, spam and expired transients. Leave anything labelled orphaned or unused for a second pass, once you've looked at what it would remove.</p>
-<p>WP-Optimize also includes page caching and image compression. If you already use a caching plugin such as LiteSpeed Cache or WP Rocket, leave those modules switched off so you don't run two caches.</p>
-<h3>Advanced Database Cleaner</h3>
-<p>Its strength is leftovers: it lists tables, options and scheduled tasks that remain after plugins are removed, and its paid version tries to identify which plugin each one belongs to at the time of writing. Delete only items you're sure about, and keep the backup handy.</p>
-<p>If you only need a clean-up occasionally, deactivate and delete the plugin afterwards. One fewer plugin is one less thing to update.</p>
+<p>For most site owners a cleanup plugin is the safest route. WP-Optimize and Advanced Database Cleaner are popular; several caching plugins (including LiteSpeed Cache and WP Rocket) also include database tools. Typical safe choices:</p>
+<ul>
+<li>Delete post revisions, keeping the last few per post if the option exists.</li>
+<li>Delete auto-drafts and trashed posts.</li>
+<li>Delete spam and trashed comments.</li>
+<li>Delete expired transients.</li>
+<li>Remove orphaned post meta and comment meta.</li>
+</ul>
+<p>Avoid "delete all transients" on a live WooCommerce store during trading hours, and do not tick options you do not understand. Run the cleanup once, check the site front end and admin, then remove the cleanup plugin if you will not schedule it, since an unused plugin is one more thing to update.</p>
 
 <h2 id="step-3-the-wp-cli-way">Step 3: The WP-CLI way</h2>
-<p>With SSH access, WP-CLI does the same jobs quickly and shows exactly what it's doing:</p>
-<pre><code>wp post list --post_type=revision --format=count
-wp post delete $(wp post list --post_type=revision --format=ids) --force
-wp comment delete $(wp comment list --status=spam --format=ids) --force
+<p>If your host offers SSH (most managed and VPS plans do), WP-CLI is faster and more precise. Useful commands:</p>
+<pre><code>wp db export before-cleanup.sql
 wp transient delete --expired
+wp post list --post_type=revision --format=count
+wp comment delete $(wp comment list --status=spam --format=ids) --force
 wp db optimize</code></pre>
-<p>On a site with tens of thousands of revisions, delete them in batches rather than all at once.</p>
+<p>Count before you delete, and export first every time. If you are not comfortable with the command line, the plugin route gives the same result for typical sites.</p>
 
 <h2 id="step-4-find-and-fix-large-autoloaded-options">Step 4: Find and fix large autoloaded options</h2>
-<p>Options marked to autoload are loaded on every single request, front end and dashboard alike. When a plugin stores large amounts of data that way, every page pays the price. Recent versions of WordPress warn about this in Site Health. To see the biggest offenders:</p>
-<pre><code>SELECT option_name, LENGTH(option_value) AS bytes
-FROM wp_options
-WHERE autoload IN ('yes', 'on', 'auto-on', 'auto')
-ORDER BY bytes DESC
-LIMIT 20;</code></pre>
-<ul>
-  <li>The option name usually starts with the plugin's prefix, which tells you where it came from.</li>
-  <li>If it belongs to an active plugin, look for a logging or cache setting that's storing too much, or replace the plugin.</li>
-  <li>If it belongs to a plugin you've already removed, a developer can switch its autoload off or delete it after a backup.</li>
-</ul>
-<p>Autoload problems often show up first as a slow dashboard; see <a href="/blog/wordpress-admin-slow/">why the WordPress admin is slow</a>. A persistent object cache such as Redis, where your host supports it, reduces repeated database queries, but it doesn't make bloated autoload data small.</p>
+<p>Every page load reads all options marked autoload in wp_options. If that set grows to several megabytes, every request carries the weight, cached or not, for the admin and checkout. Recent WordPress versions show a Site Health warning when the autoloaded total is large.</p>
+<p>In phpMyAdmin, sort wp_options rows with autoload set to yes (or on) by the length of option_value. Typical heavy items are settings from plugins you removed years ago, page builder caches, and statistics stored by SEO or security plugins. For each large row:</p>
+<ol>
+<li>Identify the plugin from the option name prefix.</li>
+<li>If the plugin is gone, delete the option (after the backup).</li>
+<li>If the plugin is active, check its settings for a "clear data" or log limit option, or set the option to not autoload if the plugin does not need it on every page.</li>
+</ol>
+<p>This is where an experienced developer earns their fee, because deleting the wrong option can reset a plugin's settings. If unsure, ask for help rather than guessing.</p>
 
 <h2 id="step-5-stop-the-clutter-coming-back">Step 5: Stop the clutter coming back</h2>
-<p>Add these two lines to wp-config.php above the line that says "That's all, stop editing", to keep the last five revisions of each post and empty the trash after seven days instead of the default 30:</p>
-<pre><code>define( 'WP_POST_REVISIONS', 5 );
-define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
 <ul>
-  <li>Stop spam at the source with form and comment protection, or turn comments off if you don't use them.</li>
-  <li>Set log retention in security, email and redirect plugins, which can quietly fill tables.</li>
-  <li>When removing a plugin, check its settings for an option to delete its data on uninstall.</li>
+<li>Limit revisions by adding define('WP_POST_REVISIONS', 5); to wp-config.php.</li>
+<li>Set log retention in security, email and redirect plugins to 30 to 90 days.</li>
+<li>Uninstall plugins properly; some have a "delete data on uninstall" setting you must tick first.</li>
+<li>Schedule a monthly cleanup of expired transients and spam.</li>
+<li>Use an object cache (Redis or Memcached) if your host supports it, so repeated queries are not run on every request.</li>
 </ul>
+<p>A real system cron, explained in our <a href="/blog/wordpress-cron-explained/">WordPress cron guide</a>, also helps scheduled cleanup and WooCommerce actions run on time instead of piling up.</p>
 
 <h2 id="woocommerce-stores-need-extra-care">WooCommerce stores need extra care</h2>
-<ul>
-  <li><strong>WooCommerce &gt; Status &gt; Tools</strong> has buttons to clear transients and expired transients. "Clear customer sessions" empties active carts, so only use it at a quiet time and when you have a reason.</li>
-  <li><strong>Scheduled actions:</strong> WooCommerce &gt; Status &gt; Scheduled Actions can hold large numbers of completed and failed actions. Completed ones are cleaned up automatically after a while; a growing pile of past-due actions usually means WP-Cron isn't running properly; see <a href="/blog/wordpress-cron-explained/">WP-Cron explained</a>.</li>
-  <li><strong>Never delete orders, customers or order notes</strong> to save space. They're your accounting and GST records.</li>
-</ul>
-<p>Store databases grow faster than brochure sites, which is one reason they need their own tuning; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
+<p>Stores grow databases fastest because each order, customer and scheduled action adds rows. Turn on High-Performance Order Storage if your extensions support it, so orders live in dedicated tables rather than wp_posts and wp_postmeta. Clear completed and failed scheduled actions older than a month from WooCommerce, Status, Scheduled Actions. Never delete orders to save space; GST records and customer history depend on them. Our <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a> covers the rest of the store side.</p>
 
 <h2 id="what-optimise-tables-actually-does">What "optimise tables" actually does</h2>
-<p>After lots of deletions, tables keep the empty space. Optimising rebuilds each table to reclaim it. On modern InnoDB tables the speed gain is usually modest, and very large tables can be briefly locked while they rebuild, so run it off-peak. It's the last step after a clean-up, not a fix on its own.</p>
+<p>The optimise button runs OPTIMIZE TABLE, which rebuilds a table to reclaim space left by deleted rows. On modern InnoDB tables the speed gain is usually small; the cleanup before it matters more. It can briefly lock large tables, so run it at a quiet time. If your tables still use the old MyISAM engine, converting them to InnoDB (with a backup and ideally on staging) is often a bigger improvement.</p>
 
 <h2 id="how-often-to-clean-the-database">How often to clean the database</h2>
-<p>For most business sites, every few months is plenty. A busy blog or store benefits from a monthly check of revisions, transients, logs and autoload size. It belongs on the same routine as updates and backups; see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
-<p>If the site can't reach its database at all, that's a connection problem rather than bloat; see <a href="/blog/error-establishing-database-connection-fix/">fixing "Error establishing a database connection"</a>.</p>
+<p>For a typical business site, a light cleanup every month and a proper review of autoloaded options and leftover tables once or twice a year is enough. Busy stores and sites with heavy logging may need the light cleanup weekly. Include it in your <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> so it happens without anyone remembering.</p>
+<p>If your WordPress admin is slow and you want it looked at properly, database work is part of my <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a>, or it can run monthly under <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
+<h2 id="when-the-problem-is-really-the-hosting">When the problem is really the hosting</h2>
+<p>If the database is already lean and queries are still slow, the limit may be the server: shared plans with little memory, an old MySQL or MariaDB version, or a busy neighbour on the same server. Check your PHP and database versions in Site Health and compare plans in our guide to <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a> before spending more time on cleanup.</p>
+
+<h2 id="wp-optimize-vs-advanced-database-cleaner">WP-Optimize vs Advanced Database Cleaner</h2>
+<p><strong>WP-Optimize</strong> combines database cleanup with caching and image compression. Its database tab lists each cleanup type with the number of items found, and you can schedule cleanups. It suits owners who want one tool and a simple interface. If you already use another caching plugin, use only its database features and leave its cache switched off, so two caches do not fight.</p>
+<p><strong>Advanced Database Cleaner</strong> focuses only on the database. Its strength is showing orphaned tables, options and cron jobs left by removed plugins, which is exactly the clutter other tools miss. Check carefully before deleting anything it marks as orphaned, because detection is based on names and can be wrong for plugins that are still active.</p>
+<p>Whichever you use, run it manually the first time and read every item. Once you trust the result, schedule only the safe items (revisions beyond your limit, spam, expired transients).</p>
+
+<h2 id="woocommerce-built-in-tools">WooCommerce built-in tools</h2>
+<p>WooCommerce, Status, Tools has buttons that are safer than generic cleaners for store data: clear expired transients, clear customer sessions (logs out active carts, so use it at a quiet hour), regenerate product lookup tables and delete orphaned variations. Use these first on a store. Never delete orders, customers or order notes; they are business and tax records, and reports, refunds and GST invoices depend on them.</p>
+
+<h2 id="what-transients-are-in-plain-words">What transients are, in plain words</h2>
+<p>Transients are temporary cached values plugins store in the database, such as a social feed or an API response, each with an expiry time. Expired ones should be removed automatically, but on sites where WordPress cron does not run reliably they pile up. Deleting expired transients is always safe; deleting active ones is also safe in principle because plugins rebuild them, but it causes a short burst of slower pages while they are recreated.</p>
 
 <h2 id="faqs">FAQs</h2>
-<h3>How do I clean up my WordPress database?</h3>
-<p>Take a full backup, then use WP-Optimize or Advanced Database Cleaner to remove revisions, auto-drafts, trashed posts, spam comments and expired transients, and optimise the tables. Check autoloaded options, and limit revisions in wp-config.php so the clutter doesn't return.</p>
+<h3>How do I optimise my WordPress database?</h3>
+<p>Back up first, check which tables and options are largest, then remove revisions, expired transients, spam and orphaned data with a plugin such as WP-Optimize or with WP-CLI. Finally fix heavy autoloaded options and set limits so the clutter does not return.</p>
 <h3>Is it safe to delete post revisions?</h3>
-<p>Yes. Revisions are earlier saved versions of your posts and pages, and deleting them doesn't affect what's published. Keep a few recent ones if you like the option of rolling back an edit.</p>
-<h3>Will cleaning the database speed up my site?</h3>
-<p>It helps most where the database is genuinely bloated, especially with large autoloaded options, and it shows mainly in the dashboard and uncached pages. Visitors seeing cached pages may notice little difference, because caching, hosting, images and scripts matter more for them.</p>
-<h3>What are transients, and can I delete them?</h3>
-<p>Transients are temporary cached data that plugins store, often in the options table, with an expiry time. Expired ones are safe to delete, and even active ones are rebuilt when needed, though deleting them all may make the next few page loads slightly slower.</p>
-<h3>Is WP-Optimize safe to use?</h3>
-<p>Yes, for the standard clean-up tasks, as long as you take a backup first. Be more careful with options that remove orphaned or leftover data, and don't enable its caching module alongside another caching plugin.</p>
+<p>Yes, after a backup. Revisions are old copies of your content. Keeping the last few per post is sensible, and you can limit future revisions in wp-config.php.</p>
+<h3>Will database optimisation make my site faster?</h3>
+<p>It helps most when the admin is slow, uncached pages have a high server response time, or autoloaded options are large. If the slowness comes from images, scripts or hosting, database cleanup alone will not fix it.</p>
+<h3>What are autoloaded options in WordPress?</h3>
+<p>They are settings in the wp_options table that WordPress loads on every request. When old or bloated plugins store large data there, every page load slows down, so trimming them is often the biggest single gain.</p>
+<h3>Can I delete tables left by old plugins?</h3>
+<p>Yes, once you are sure the plugin will not be reinstalled and you have a backup. Check the table prefix matches the removed plugin, and test the site afterwards.</p>
 <h3>How often should I optimise the WordPress database?</h3>
-<p>Every few months for a typical business site, and monthly for busy blogs and stores. Scheduling it as part of regular maintenance stops the problem returning.</p>
-
-<p>Dashboard crawling, or not sure whether the database is the problem? I find out what's actually slowing the site, clean up the database and autoload data safely after a backup, and fix the rest; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>, or keep it tidy every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+<p>A light cleanup monthly is enough for most business sites, with a deeper review once or twice a year. Busy WooCommerce stores may need weekly cleanup of sessions and scheduled actions.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -342,6 +342,10 @@ define( 'EMPTY_TRASH_DAYS', 7 );</code></pre>
               <li><a href="#woocommerce-stores-need-extra-care">WooCommerce stores need extra care</a></li>
               <li><a href="#what-optimise-tables-actually-does">What "optimise tables" actually does</a></li>
               <li><a href="#how-often-to-clean-the-database">How often to clean the database</a></li>
+              <li><a href="#when-the-problem-is-really-the-hosting">When the problem is really the hosting</a></li>
+              <li><a href="#wp-optimize-vs-advanced-database-cleaner">WP-Optimize vs Advanced Database Cleaner</a></li>
+              <li><a href="#woocommerce-built-in-tools">WooCommerce built-in tools</a></li>
+              <li><a href="#what-transients-are-in-plain-words">What transients are, in plain words</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
