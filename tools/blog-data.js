@@ -20277,10 +20277,10 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
   {
     slug: 'ethical-link-building-small-business',
     seoTitle: 'Ethical Link Building for Small Businesses: What Works',
-    title: 'Ethical Link Building for Small Businesses in India: Suppliers, Associations, Local News, Useful Resources and What to Avoid',
-    description: 'Ethical link building for Indian small businesses: links from suppliers, partners, associations, local news and useful resources, and what to avoid.',
+    title: 'Ethical Link Building for Small Businesses: Practical Ways to Earn Backlinks Without Risk',
+    description: 'Ethical link building for small businesses in India: earn backlinks from suppliers, associations, local press and useful resources, without paid link schemes.',
     date: '2026-09-27',
-    updated: '2026-10-16',
+    updated: '2026-10-30',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-developer-for-agencies', 'website-redesign'],
     body: `
@@ -20371,6 +20371,25 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
   <li>Log every request and result in a sheet: site, contact, date asked, outcome, link URL.</li>
 </ol>
 
+<h2>Link ideas by type of business</h2>
+<p>The best link opportunities depend on what you do. Here are realistic starting points for common small businesses in India; none of them involve paying for a link.</p>
+<table>
+  <thead><tr><th>Business</th><th>Where genuine links usually come from</th></tr></thead>
+  <tbody>
+    <tr><td>Manufacturer or distributor</td><td>Brands you stock or supply to (dealer and distributor locator pages), trade associations, industrial park or MIDC association sites, trade fair exhibitor lists</td></tr>
+    <tr><td>Doctor or clinic</td><td>Hospitals where you hold visiting privileges, medical association member pages, health camps run with local organisations, interviews in local news on seasonal health topics</td></tr>
+    <tr><td>Restaurant or cafe</td><td>Local food bloggers and city guides, event venues and caterers you partner with, food festival listings</td></tr>
+    <tr><td>Consultant, CA or lawyer</td><td>Professional body directories, articles or quotes for business publications, talks at chambers of commerce, co-authored guides with other professionals</td></tr>
+    <tr><td>Builder or interior designer</td><td>Material suppliers' project galleries, architects you work with, awards and design publications, housing society or project pages</td></tr>
+    <tr><td>School or coaching institute</td><td>Exam and education portals, alumni pages, inter-school competitions and events, local news coverage of results and activities</td></tr>
+    <tr><td>Temple, trust or NGO</td><td>Partner organisations, CSR partners' websites, volunteer platforms, local news on festivals and drives</td></tr>
+  </tbody>
+</table>
+<h3>How to ask</h3>
+<p>Keep outreach short and specific. Name the page where a link would fit, explain why it helps their readers (for example, a dealer page that sends their customers to an authorised stockist), and give the exact URL. One personal email to the right person works better than a template sent to fifty sites. Follow up once; if there's no reply, move on.</p>
+<h3>Track what you earn</h3>
+<p>Keep a simple sheet: date, site, page, contact, status and whether the link is live. Check new links in Search Console's Links report every month or two. It's slow, but each real link from a relevant site in your city or industry tends to be worth more than many directory listings.</p>
+
 <h2>FAQs</h2>
 <h3>What is ethical link building?</h3>
 <p>Earning links that a site would give you anyway because of a real relationship or something genuinely useful, rather than paying, swapping or building fake sites to create them.</p>
@@ -20382,8 +20401,10 @@ RewriteRule ^old-services/?$ https://example.com/services/ [R=301,L]</code></pre
 <p>There is no target number. A few relevant links from suppliers, associations and local sites usually matter more than a large count of unrelated ones.</p>
 <h3>Can I exchange links with a business partner?</h3>
 <p>Mentioning a genuine partner where it helps your customers is fine. Swapping links at scale with sites purely to rank is a link scheme.</p>
+<h3>Is buying backlinks safe for a small business website?</h3>
+<p>No. Paying for links meant to pass ranking credit goes against Google's spam policies, and links from sites that sell them are often low quality anyway. The safer path is links earned through partners, associations, press and useful content.</p>
 
-<p>Want your site's foundations ready for the links you earn, with honest advice on where those links can come from? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
+<p>Want your site's foundations ready for the links you earn, with honest advice on where those links can come from? See my WordPress SEO services, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -20875,9 +20896,9 @@ Category:       Dentist</code></pre>
     slug: 'business-email-options',
     seoTitle: 'Business Email Options: Google Workspace, Zoho, M365 & More',
     title: 'Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email',
-    description: 'Compare business email options: Google Workspace, Microsoft 365, the Zoho Mail free plan and hosting email like Hostinger, plus how to choose and set up.',
+    description: 'Compare business email options for small businesses in India: Google Workspace, Microsoft 365, Zoho Mail and hosting email, with setups by team size.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
@@ -20955,6 +20976,20 @@ Zoho Mail (India): v=spf1 include:zoho.in ~all</code></pre>
 
 <h2>Don't forget your website's emails</h2>
 <p>Contact forms and WooCommerce order emails are sent by your website, not your mailbox. Send them through an authenticated SMTP service or your email provider, or they often land in spam; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
+
+<h2>Practical setups by team size</h2>
+<p>Most small businesses in India fall into one of a few patterns. These are the setups I usually suggest; the provider matters less than getting the structure right.</p>
+<h3>A sole owner or two partners</h3>
+<p>One paid mailbox per person is enough. Add aliases such as info@, sales@ and accounts@ to the owner's mailbox so every public address lands in one place. Use a different address on the website contact page from the one you use for banking and government portals, so spam aimed at the public address never buries important mail.</p>
+<h3>A team of three to fifteen</h3>
+<p>Give each person their own mailbox and never share one login between several people. Shared logins make it impossible to remove one person's access when they leave, and they defeat two-step verification. For role addresses, use a group (each member gets a copy) when one person should pick up the enquiry, or a shared mailbox when the team needs to see who has replied.</p>
+<h3>Businesses with staff joining and leaving</h3>
+<p>Plan for offboarding from day one. When someone leaves, reset their password, sign them out of all devices, and either convert the mailbox to a shared one or forward it to a manager for a few months before deleting it. Workspace and Microsoft 365 both let an admin transfer or keep a departing user's data; check how your plan handles this before you need it.</p>
+<h3>Tools that send email as your domain</h3>
+<p>Billing and accounting software, GST invoicing tools, newsletter platforms, CRMs and your website's contact forms all send mail that claims to come from your domain. Each one needs to be included in your single SPF record and should have its own DKIM record where the tool supports it. Make a short list of every service that sends as your domain and review it whenever you add a new tool; a forgotten sender is one of the most common reasons invoices and order emails go to spam.</p>
+<h3>Who should own the admin account</h3>
+<p>The admin login should belong to the business, use an address on a different domain or a personal Gmail as the recovery email, and have two-step verification switched on. Keep a second admin for emergencies. If a developer or IT person set it up, ask them to make you a super admin and hand over the recovery details.</p>
+<p>If you work with an outside developer on your website, give them access to DNS only when a change is needed, and ask for a note of every record they add. See <a href="/blog/website-handover-checklist/">the website handover checklist</a> for the full list of logins a business should hold itself.</p>
 
 <h2>FAQs</h2>
 <h3>Which business email is best for a small business in India?</h3>
@@ -27473,10 +27508,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   {
     slug: 'website-for-wholesalers-distributors',
     seoTitle: 'Wholesaler and Distributor Website: Catalogue and Dealers',
-    title: 'Websites for Wholesalers and Distributors: Trade Catalogues, Price on Request, Dealer Logins, Bulk RFQs and B2B Ordering',
-    description: 'Plan a wholesaler or distributor website: a trade catalogue, price on request or dealer login, bulk RFQs, dealer registration and WooCommerce B2B ordering.',
+    title: 'Website for Wholesalers and Distributors: Catalogue, Dealer Login, Bulk Enquiries and B2B Ordering',
+    description: 'Plan a website for wholesalers and distributors in India: trade catalogue, dealer login, bulk enquiries, quick reorder forms and B2B ordering with WooCommerce.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-manufacturers', 'woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -27585,6 +27620,20 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>A dealer portal launched before anyone has agreed to use it</li>
 </ul>
 
+<h2>Making repeat orders easy</h2>
+<p>Most of a distributor's business is repeat orders from the same retailers, so the website should make the second order faster than the first. A few features matter more than design here.</p>
+<h3>Quick order form</h3>
+<p>A quick order page lists products in a compact table with SKU, pack size, a quantity box and an add button, so a retailer who knows what they want can fill a cart in a minute instead of opening twenty product pages. It works well on desktop for shop owners placing a weekly order, and should still be usable on a phone with a search box at the top.</p>
+<h3>Reorder and saved lists</h3>
+<p>Logged-in dealers should be able to see past orders and repeat one with a single click, then adjust quantities. Saved lists, such as "monthly stock" or "festival order", help retailers who order the same set of items at regular intervals.</p>
+<h3>Pack sizes and minimum quantities</h3>
+<p>Sell in the units the trade actually buys: cartons, boxes, dozens or cases. Show the pack size clearly, enforce minimum order quantities per product or per order, and make quantity steps match the pack, so nobody orders 7 units of a product sold in packs of 6.</p>
+<h3>Credit, payment terms and order approval</h3>
+<p>Many trade customers buy on credit or pay against invoice. A B2B store can offer a "pay later" or "bank transfer" method only to approved dealers, while new or retail buyers pay online. If orders need checking for stock or credit limits before they're confirmed, mark them as "awaiting approval" and send the dealer a clear message about what happens next.</p>
+<h3>WhatsApp as a backup channel</h3>
+<p>Some retailers will always prefer to send a list on WhatsApp. Give them a button that opens a chat with the cart or enquiry details already filled in, so your sales team receives structured information rather than a photo of a handwritten list. Keep the website as the source of truth for products, pack sizes and current availability.</p>
+<p>Features like these are usually built on WooCommerce with a few carefully chosen extensions and small custom additions; the right mix depends on how many dealers you have and how your pricing works.</p>
+
 <h2>FAQs</h2>
 <h3>Should a wholesaler show prices on the website?</h3>
 <p>Usually not publicly, because trade prices depend on volume, customer and terms. Price on request with fast replies, or a dealer login showing each account its own prices, works better for most distributors.</p>
@@ -27596,8 +27645,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Prepare them in a spreadsheet with SKUs, categories, pack sizes and specifications, and import them in one go. Updating the spreadsheet and re-importing is the easiest way to keep a large range current.</p>
 <h3>Should we list brands we distribute?</h3>
 <p>Yes, accurately. Say which brands you are authorised for and which you simply stock, and use logos and official images only with the brand's permission.</p>
+<h3>Can dealers reorder from their past orders online?</h3>
+<p>Yes. With a dealer login, a WooCommerce store can show order history and let a dealer repeat a previous order, then change quantities before checkout. Saved lists and a quick order table make regular stock orders faster still.</p>
 
-<p>Planning a distributor or wholesale website with a trade catalogue, dealer registration and bulk enquiries that reach the right salesperson? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B companies</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for B2B ordering, starting with a free review and a fixed quote.</p>
+<p>Planning a distributor or wholesale website with a trade catalogue, dealer registration and bulk enquiries that reach the right salesperson? See websites for manufacturers and B2B companies, or WooCommerce development for B2B ordering, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -27960,10 +28011,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   {
     slug: 'website-chatbot-worth-it',
     seoTitle: 'Do You Need a Chatbot on Your Website? Chatbot vs WhatsApp',
-    title: 'Do You Need a Chatbot on Your Business Website? Chatbots vs Live Chat vs WhatsApp, AI Accuracy, Speed, Privacy and Cost',
-    description: 'Is a website chatbot worth it? Chatbots vs live chat vs WhatsApp for Indian businesses, AI accuracy risks, speed, privacy, costs and a decision table.',
+    title: 'Do You Need a Chatbot on Your Website? Chatbots vs WhatsApp vs a Simple Form',
+    description: 'Is a website chatbot worth it for a small business? Compare chatbots, WhatsApp and forms on cost, speed and leads, and how to make a bot give right answers.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
@@ -28075,6 +28126,23 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>Measure the result</h2>
 <p>After a month or two, compare enquiries, chats started, how many chats turned into enquiries, and page speed with the period before. Keep the chatbot if it brings more business or saves more staff time than it costs; otherwise remove it and put the questions it received onto your pages.</p>
 
+<h2>Building the bot's knowledge base</h2>
+<p>An AI chatbot is only as good as what you give it to read. Most wrong answers come from missing, outdated or contradictory information, not from the technology. Before switching one on, prepare its source material.</p>
+<h3>What to include</h3>
+<ul>
+  <li><strong>Services and what's not offered.</strong> Bots tend to say yes to everything. State clearly what you don't do and which areas you don't serve.</li>
+  <li><strong>Hours, locations and contact routes.</strong> Including holiday closures and how quickly you reply.</li>
+  <li><strong>Policies.</strong> Delivery, returns, cancellations, appointment rescheduling and payment methods, worded exactly as on your website.</li>
+  <li><strong>Prices, carefully.</strong> If prices depend on the job, tell the bot to explain what affects the price and offer a quote, rather than letting it guess a number.</li>
+  <li><strong>Your top 20 to 30 real questions,</strong> taken from WhatsApp chats, emails and calls, with the answer you would give.</li>
+</ul>
+<h3>What to keep out</h3>
+<p>Don't feed it internal documents, customer data, staff phone numbers or anything you wouldn't publish. For clinics, legal and financial services, the bot should not give personal advice; set it to share general information and direct people to book a consultation.</p>
+<h3>Set the hand-off rules</h3>
+<p>Decide when the bot stops and a person takes over: a complaint, a refund request, a medical or legal question, a large order, or any time the visitor asks for a human. The hand-off should collect a name and phone number or open WhatsApp, and tell the visitor when to expect a reply.</p>
+<h3>Review it every week at first</h3>
+<p>Read the conversation logs for the first few weeks. Each wrong or weak answer usually points to a missing line in your knowledge base or a page on your site that needs rewriting. Those fixes improve the website for every visitor, not just people who use the bot.</p>
+
 <h2>FAQs</h2>
 <h3>Is a chatbot better than WhatsApp for a small business?</h3>
 <p>Not usually. Customers already use WhatsApp, conversations continue after they leave your site, and you can reply from your phone. A chatbot helps mainly when question volumes are high.</p>
@@ -28086,8 +28154,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Not directly. Chat conversations aren't page content. Putting the answers people ask for onto your pages is what helps search.</p>
 <h3>Can a chatbot take bookings or orders?</h3>
 <p>Some can, by connecting to a booking system or your store. Test the full flow carefully, and keep the normal booking page or checkout as the main route.</p>
+<h3>How do I stop an AI chatbot giving wrong answers?</h3>
+<p>Limit it to your own approved content, write clear answers to your most common questions, tell it not to guess prices or give personal advice, and set a hand-off to a human. Then review conversation logs regularly and fix gaps.</p>
 
-<p>Want visitors to reach you in one tap instead of waiting on a bot? <a href="/landing-page-design/">Landing page design</a> builds campaign pages around one clear action, with WhatsApp, forms and tracking set up, and <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button on every site.</p>
+<p>Want visitors to reach you in one tap instead of waiting on a bot? Landing page design builds campaign pages around one clear action, with WhatsApp, forms and tracking set up, and <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button on every site.</p>
 `,
   },
   {
@@ -29455,10 +29525,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   {
     slug: 'own-website-vs-marketplaces',
     seoTitle: 'Own Website vs Amazon/Flipkart: Where Should You Sell?',
-    title: 'Own Website vs Amazon, Flipkart and Other Marketplaces: Where Should You Sell?',
-    description: 'Own website vs marketplaces for Indian sellers: compare control, fees, customer data, brand and SEO, and how a hybrid strategy lets you use both well.',
+    title: 'Own Website vs Amazon and Flipkart: Where Should Indian Sellers Sell Online?',
+    description: 'Own website vs Amazon and Flipkart for Indian sellers: costs, control, customer data, and and how to run a WooCommerce or Shopify store alongside them.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'shopify-developer', 'website-for-startups'],
     body: `
@@ -29566,6 +29636,28 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>When your own store isn't worth it yet: if you have no budget or time to bring traffic, sell only commodity products where price is the only factor, or can't yet handle payments, shipping and support yourself. In that case a simple brand website with links to where you sell may be the better first step.</p>
 <p>Thinking of running your own marketplace instead, with other sellers listing on your site? That is a different project; see <a href="/blog/woocommerce-multi-vendor-marketplace/">building a multi-vendor marketplace with WooCommerce</a>.</p>
 
+<h2>WooCommerce or Shopify for your own store?</h2>
+<p>Once you decide to run your own store alongside marketplaces, the next question is the platform. Both WooCommerce and Shopify work well for Indian sellers; the right one depends on how you work.</p>
+<table>
+  <thead><tr><th></th><th>WooCommerce</th><th>Shopify</th></tr></thead>
+  <tbody>
+    <tr><td>What it is</td><td>A free plugin on a WordPress site you host yourself</td><td>A hosted platform with a monthly subscription</td></tr>
+    <tr><td>Running it</td><td>You (or a developer) look after hosting, updates and backups</td><td>Shopify handles hosting, updates and security</td></tr>
+    <tr><td>Flexibility</td><td>Very high; almost any feature can be built</td><td>High through apps and themes, within Shopify's rules</td></tr>
+    <tr><td>Indian payments and COD</td><td>Razorpay, PhonePe, Cashfree and others via plugins; COD built in</td><td>Indian gateways supported; COD available as a manual payment method</td></tr>
+    <tr><td>Content and SEO</td><td>Strong: WordPress is built for blogs and content pages</td><td>Good for product pages; the blog is more basic</td></tr>
+    <tr><td>Good fit for</td><td>Brands that want full control, custom features or content-led growth</td><td>Sellers who want to launch quickly and avoid server management</td></tr>
+  </tbody>
+</table>
+<h3>Things to check whichever you choose</h3>
+<ul>
+  <li><strong>Inventory sync.</strong> If the same stock sells on Amazon, Flipkart and your store, you need one stock count. Look at multichannel tools or your inventory software's integrations before launch, not after the first oversell.</li>
+  <li><strong>Shipping.</strong> Aggregators such as Shiprocket connect to both platforms and give you several couriers from one dashboard, including COD collection.</li>
+  <li><strong>GST invoices.</strong> Make sure order invoices show your GSTIN and the right tax breakdown; both platforms can do this with the right settings or an app.</li>
+  <li><strong>Pricing.</strong> Decide whether your store matches marketplace prices or offers something marketplaces can't, such as bundles, exclusive variants or free gifts.</li>
+</ul>
+<p>I build stores on both; see <a href="/shopify-developer/">Shopify store development</a> if you'd rather not manage hosting, or the WooCommerce option if you want full control.</p>
+
 <h2>FAQs</h2>
 <h3>Is it better to sell on marketplaces or my own website?</h3>
 <p>It depends on your products and goals. Marketplaces suit fast sales of known or price-led products; your own store suits branded products, repeat customers and better margins. Many brands use both.</p>
@@ -29577,6 +29669,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Product details can usually be exported and imported, but marketplace listings normally need reworking into proper product pages, with your own descriptions, photos and specifications.</p>
 <h3>Is my own store cheaper than paying marketplace fees?</h3>
 <p>Per order it usually is, because there's no commission. Overall it depends on how much you spend bringing shoppers to the store, so compare what you keep per order on each channel.</p>
+<h3>Should I use Shopify or WooCommerce alongside Amazon and Flipkart?</h3>
+<p>Shopify suits sellers who want a quick launch with hosting and updates handled for them. WooCommerce suits brands that want full control, custom features and strong content for SEO. Both can work with Indian payment gateways, COD and shipping aggregators.</p>
 
 <p>Ready to sell on your own website? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I build fast, mobile-friendly stores with Indian payment gateways, COD and shipping rules, order and stock management, and your existing product list imported from a spreadsheet. Send me what you sell and roughly how many products you have for a free review and a fixed quote, and use the <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a> to prepare.</p>
 `,
@@ -30164,10 +30258,10 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   {
     slug: 'secure-wordpress-login',
     seoTitle: 'How to Secure Your WordPress Login: 2FA, Passkeys & More',
-    title: 'How to Secure Your WordPress Login: Two-Factor Authentication, Passkeys, Login Limits, Turnstile and the Login URL Question',
-    description: 'Secure your WordPress login: two-factor authentication, passkeys, strong passwords, login limits, Cloudflare Turnstile and whether to move wp-login.php.',
+    title: 'How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection',
+    description: 'Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -30259,6 +30353,23 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Login alerts from places you've never been</li>
 </ul>
 <p>If you see any of these, use Log Out Everywhere Else in your profile, change your password from a clean device, remove the unknown accounts and treat the site as possibly compromised. The <a href="/blog/wordpress-user-accounts-audit/">user account audit</a> explains how to review every account properly. If you've simply locked yourself out, <a href="/blog/wordpress-login-not-working-fix/">fixing WordPress login problems</a> covers safe ways back in.</p>
+
+<h2>Giving access to staff, agencies and developers safely</h2>
+<p>Many WordPress logins get compromised not through attacks on wp-admin, but through shared or forgotten accounts. If several people work on your site, these habits matter as much as any plugin.</p>
+<h3>One person, one account</h3>
+<p>Never share the main admin login, even with a trusted developer. Create a separate account for each person so you can see who did what and remove one person without changing everyone's password. The activity log, if you use one, only makes sense when each account belongs to one human.</p>
+<h3>The lowest role that does the job</h3>
+<ul>
+  <li><strong>Content writers:</strong> Author or Contributor, so they can't publish or edit other people's work without review.</li>
+  <li><strong>Marketing staff updating pages:</strong> Editor.</li>
+  <li><strong>Shop staff processing orders:</strong> WooCommerce's Shop Manager role, not Administrator.</li>
+  <li><strong>Developers and agencies:</strong> Administrator only while they need it, ideally on a staging copy first.</li>
+</ul>
+<h3>Temporary access with an end date</h3>
+<p>For one-off jobs, create the account when the work starts and delete it, or downgrade it, when it ends. Some security and user plugins can create temporary logins that expire automatically. Ask any freelancer or agency to use their own email address on the account, with 2FA switched on, so a reset never goes to a shared inbox.</p>
+<h3>Hosting, DNS and email logins too</h3>
+<p>Your WordPress login is only one key. Hosting control panels, the domain registrar, Cloudflare and the email admin console can all be used to take over a site. Keep these in the business's name, turn on 2FA on each, and store the recovery codes somewhere safe that isn't the same phone.</p>
+<p>If you're an agency handing client sites to a developer, the same rules apply in both directions; I work this way with <a href="/wordpress-developer-for-agencies/">agencies that outsource WordPress development</a>, using named accounts and removing access once a project is handed over.</p>
 
 <h2>FAQs</h2>
 <h3>What is the best way to secure a WordPress login?</h3>
@@ -33959,10 +34070,10 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   {
     slug: 'this-site-may-be-hacked-google',
     seoTitle: '"This Site May Be Hacked" Google Warning: How to Remove It',
-    title: '"This Site May Be Hacked" in Google Results: What It Means and How to Remove It',
-    description: 'What Google\'s "This site may be hacked" label means, how to confirm it in Search Console, clean up your WordPress site, request a review and stop it returning.',
+    title: '"This Site May Be Hacked" Google Warning: How to Remove It Step by Step',
+    description: 'Remove the "This site may be hacked" label from Google: confirm it in Search Console, clean the hack, request a review and protect customers while you wait.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
     body: `
@@ -33997,7 +34108,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Check the <strong>Manual actions</strong> report too, since a separate spam penalty needs its own fix</li>
   <li>Look at the Performance report for unfamiliar queries or pages, especially in other languages</li>
 </ol>
-<p>Google's Safe Browsing site status page, part of its Transparency Report, is a useful second check. For a tour of the other reports, see <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>.</p>
+<p>Google's Safe Browsing site status page, part of its Transparency Report, is a useful second check. For a tour of the other reports, see Search Console reports explained.</p>
 
 <h2>Step 2: Lock the attacker out</h2>
 <ul>
@@ -34055,11 +34166,11 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Never install nulled (pirated) themes or plugins</li>
   <li>Use unique passwords and two-factor login for every admin and hosting account</li>
   <li>Give each person only the access they need, and remove old accounts</li>
-  <li>Add a firewall; see <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a></li>
+  <li>Add a firewall; see WordPress firewalls explained</li>
   <li>Keep automatic off-site backups, so a clean restore point always exists</li>
   <li>Make sure Search Console alerts reach an inbox someone actually reads</li>
 </ul>
-<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the full set of protections.</p>
+<p>The WordPress security checklist covers the full set of protections.</p>
 
 <h2>Common mistakes</h2>
 <ul>
@@ -34069,6 +34180,19 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Restoring a backup that was already infected</li>
   <li>Missing a rogue Search Console owner who keeps submitting spam sitemaps</li>
 </ul>
+
+<h2>Protecting your business while the label is up</h2>
+<p>Cleanup and review take time, and meanwhile some searchers will see the warning next to your name. A few steps limit the damage.</p>
+<h3>Tell the people who already know you</h3>
+<p>Regular customers, patients or dealers may see the label when they search for you. A short message on WhatsApp or email saying the issue is known, is being fixed and that your phone number and address are unchanged prevents worried calls and lost bookings. Don't share technical details; just confirm the right ways to reach you.</p>
+<h3>Check your Google Business Profile</h3>
+<p>Your Business Profile still shows your phone number, directions and reviews even when the website result carries a label. Make sure the phone and hours are correct, and post an update if you're taking orders or bookings by phone or WhatsApp for a while.</p>
+<h3>Ads, social links and QR codes</h3>
+<p>If you run Google Ads, ads pointing to a compromised site can be disapproved; pause campaigns that send traffic to affected pages until the site is clean. Check that links in your social profiles, email signatures and printed QR codes go to pages that load properly, not to a hacked redirect.</p>
+<h3>Payments and customer data</h3>
+<p>If your site takes payments or stores customer details, check whether checkout pages or forms were changed. Change the API keys for your payment gateway, and if there's any sign that personal data was accessed, get advice on your obligations under current Indian data protection rules before contacting customers.</p>
+<h3>Keep a record</h3>
+<p>Note the date the label appeared, what you found, what was removed and when you requested review. If it happens again, or a hosting company or bank asks, this record saves time and shows you acted promptly.</p>
 
 <h2>FAQs</h2>
 <h3>How long does it take to remove "This site may be hacked"?</h3>
@@ -34081,8 +34205,10 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Delete them so they return a 404 or 410. Redirecting spam URLs to your homepage or other pages can confuse Google and keep them in the index longer.</p>
 <h3>I have a security plugin. Why was my site still hacked?</h3>
 <p>Security plugins reduce risk but can't fix an outdated plugin, a reused password or a nulled theme. Updates, strong logins and good backups matter as much as the plugin.</p>
+<h3>Should I tell customers my website was hacked?</h3>
+<p>Tell regular customers briefly that a website issue is being fixed and how to reach you meanwhile. If payment or personal data may have been exposed, take advice on what the law requires you to tell them before you send anything.</p>
 
-<p>Need the hack cleaned and the label removed without the guesswork? I clean hacked WordPress sites, close the entry point, prepare the review request and help you recover traffic afterwards. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<p>Need the hack cleaned and the label removed without the guesswork? I clean hacked WordPress sites, close the entry point, prepare the review request and help you recover traffic afterwards. See WordPress malware removal.</p>
 `,
   },
   {
@@ -37172,7 +37298,7 @@ add_action( 'init', function () {
     title: 'Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table',
     description: 'Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-10-30',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -37275,6 +37401,24 @@ add_action( 'after_setup_theme', function () {
   <li>Problems that appear after every update, a sign of conflicts; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a>.</li>
 </ul>
 
+<h2>How to brief a developer for a custom feature</h2>
+<p>If the decision lands on custom code, a clear brief saves time and keeps the result maintainable. Before asking for quotes, write down:</p>
+<ol>
+  <li><strong>The job, in business terms.</strong> For example: "When a dealer submits the quote form, create a record with their GST number and send the quote to the right regional manager." Describe the outcome, not the technology.</li>
+  <li><strong>What you have tried.</strong> List any plugins you tested and where they fell short. This stops a developer rebuilding something a setting could have solved.</li>
+  <li><strong>The data involved.</strong> What is stored, who can see it, and whether it must sync with another system such as a CRM, an accounting tool or a courier.</li>
+  <li><strong>Who uses it.</strong> Admins, editors, customers or dealers, and on which devices.</li>
+  <li><strong>What should happen when things go wrong.</strong> An API is down, a field is empty, a payment fails.</li>
+</ol>
+<p>Then ask the developer how the work will be delivered. A good answer includes: a separate site plugin rather than theme edits, code in version control, testing on a staging copy, a short readme describing what the plugin does and which hooks it uses, and confirmation that you own the code. If a developer plans to put business logic in functions.php or edit another plugin's files, ask why.</p>
+<h3>Questions to ask about an existing plugin first</h3>
+<ul>
+  <li>Does it have a setting, an add-on or a documented filter that already does this?</li>
+  <li>Does its developer offer a paid support channel where a feature request might be answered?</li>
+  <li>Would a small add-on plugin that hooks into it be enough, instead of replacing it?</li>
+</ul>
+<p>Asking these first often turns a large custom build into a small extension. It also keeps you on the plugin's update path, so security fixes keep arriving without extra work from you.</p>
+
 <h2>FAQs</h2>
 <h3>How many plugins is too many for WordPress?</h3>
 <p>There's no fixed number. What matters is quality: whether each plugin is maintained, needed, and light on the pages where it loads. Remove any you don't use rather than just deactivating them.</p>
@@ -37286,8 +37430,10 @@ add_action( 'after_setup_theme', function () {
 <p>Well-built plugins that use WordPress's own functions and hooks rarely do, but they still need checking after major WordPress and PHP updates, just like any plugin.</p>
 <h3>Should I replace plugins with custom code to speed up my site?</h3>
 <p>Only where a plugin is genuinely heavy for what it does. Usually the bigger speed wins are hosting, caching, images and third-party scripts. Measure first, then replace the plugins that actually cost time.</p>
+<h3>Should I use a plugin or custom code for WooCommerce changes?</h3>
+<p>For checkout, payments and shipping, start with WooCommerce's own settings and well-maintained extensions. Use snippets for small text or display changes through WooCommerce's filters, and a custom plugin only for rules specific to your store, such as pricing or dealer logic.</p>
 
-<p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of <a href="/wordpress-website-development/">WordPress website development</a>. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
+<p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of WordPress website development. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
 `,
   },
   {

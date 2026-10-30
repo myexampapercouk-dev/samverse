@@ -43,7 +43,7 @@
       "headline": "Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table",
       "description": "Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-19",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/plugin-vs-custom-code-wordpress/",
       "image": "https://samverse.space/assets/og/blog-plugin-vs-custom-code-wordpress.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-19">19 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Plugin%20or%20Custom%20Code%20in%20WordPress%3F%20When%20to%20Use%20a%20Plugin%2C%20a%20Code%20Snippet%20or%20a%20Custom%20Plugin%2C%20With%20a%20Decision%20Table%20https%3A%2F%2Fsamverse.space%2Fblog%2Fplugin-vs-custom-code-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,15 +161,16 @@
               <li><a href="#weighing-it-up-five-questions">Weighing it up: five questions</a></li>
               <li><a href="#a-decision-table">A decision table</a></li>
               <li><a href="#red-flags-on-an-existing-site">Red flags on an existing site</a></li>
+              <li><a href="#how-to-brief-a-developer-for-a-custom-feature">How to brief a developer for a custom feature</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Use a well-maintained plugin for common jobs, a small snippet for tiny tweaks, and a custom plugin for features specific to your business.</li>
-              <li>Judge every option on who will maintain it, what it loads, how secure it is and what happens to your data if you remove it.</li>
-              <li>Custom code belongs in a site plugin, a child theme or a carefully managed snippets plugin, never in the parent theme's files.</li>
+              <li>Use a maintained plugin for common needs, a snippet for a few lines, and a custom plugin for features specific to your business.</li>
+              <li>Functionality belongs in a plugin and design in the theme, so features survive a redesign.</li>
+              <li>Decide by asking who maintains it, what it loads, what it costs over years and what happens if you remove it.</li>
             </ul>
           </div>
 <p>Use an existing plugin when the need is common, such as forms, SEO, backups, caching or e-commerce, and a reputable, actively maintained plugin does it well; use a small code snippet when the change is a few lines and a plugin would load far more than you need. Build a custom plugin when the feature is specific to your business, connects to your own systems, or would otherwise need several plugins glued together. The deciding questions are who will maintain it, what it loads, and what happens if you remove it.</p>
@@ -277,6 +278,24 @@ add_action( 'after_setup_theme', function () {
   <li>Problems that appear after every update, a sign of conflicts; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">finding and fixing plugin conflicts</a>.</li>
 </ul>
 
+<h2 id="how-to-brief-a-developer-for-a-custom-feature">How to brief a developer for a custom feature</h2>
+<p>If the decision lands on custom code, a clear brief saves time and keeps the result maintainable. Before asking for quotes, write down:</p>
+<ol>
+  <li><strong>The job, in business terms.</strong> For example: "When a dealer submits the quote form, create a record with their GST number and send the quote to the right regional manager." Describe the outcome, not the technology.</li>
+  <li><strong>What you have tried.</strong> List any plugins you tested and where they fell short. This stops a developer rebuilding something a setting could have solved.</li>
+  <li><strong>The data involved.</strong> What is stored, who can see it, and whether it must sync with another system such as a CRM, an accounting tool or a courier.</li>
+  <li><strong>Who uses it.</strong> Admins, editors, customers or dealers, and on which devices.</li>
+  <li><strong>What should happen when things go wrong.</strong> An API is down, a field is empty, a payment fails.</li>
+</ol>
+<p>Then ask the developer how the work will be delivered. A good answer includes: a separate site plugin rather than theme edits, code in version control, testing on a staging copy, a short readme describing what the plugin does and which hooks it uses, and confirmation that you own the code. If a developer plans to put business logic in functions.php or edit another plugin's files, ask why.</p>
+<h3>Questions to ask about an existing plugin first</h3>
+<ul>
+  <li>Does it have a setting, an add-on or a documented filter that already does this?</li>
+  <li>Does its developer offer a paid support channel where a feature request might be answered?</li>
+  <li>Would a small add-on plugin that hooks into it be enough, instead of replacing it?</li>
+</ul>
+<p>Asking these first often turns a large custom build into a small extension. It also keeps you on the plugin's update path, so security fixes keep arriving without extra work from you.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How many plugins is too many for WordPress?</h3>
 <p>There's no fixed number. What matters is quality: whether each plugin is maintained, needed, and light on the pages where it loads. Remove any you don't use rather than just deactivating them.</p>
@@ -288,8 +307,10 @@ add_action( 'after_setup_theme', function () {
 <p>Well-built plugins that use WordPress's own functions and hooks rarely do, but they still need checking after major WordPress and PHP updates, just like any plugin.</p>
 <h3>Should I replace plugins with custom code to speed up my site?</h3>
 <p>Only where a plugin is genuinely heavy for what it does. Usually the bigger speed wins are hosting, caching, images and third-party scripts. Measure first, then replace the plugins that actually cost time.</p>
+<h3>Should I use a plugin or custom code for WooCommerce changes?</h3>
+<p>For checkout, payments and shipping, start with WooCommerce's own settings and well-maintained extensions. Use snippets for small text or display changes through WooCommerce's filters, and a custom plugin only for rules specific to your store, such as pricing or dealer logic.</p>
 
-<p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of <a href="/wordpress-website-development/">WordPress website development</a>. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
+<p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of WordPress website development. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -333,6 +354,7 @@ add_action( 'after_setup_theme', function () {
               <li><a href="#weighing-it-up-five-questions">Weighing it up: five questions</a></li>
               <li><a href="#a-decision-table">A decision table</a></li>
               <li><a href="#red-flags-on-an-existing-site">Red flags on an existing site</a></li>
+              <li><a href="#how-to-brief-a-developer-for-a-custom-feature">How to brief a developer for a custom feature</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
