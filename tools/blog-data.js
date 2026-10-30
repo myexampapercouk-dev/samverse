@@ -990,11 +990,11 @@ wp plugin verify-checksums --all</code></pre>
   },
   {
     slug: 'wordpress-maintenance-checklist',
-    seoTitle: 'WordPress Maintenance Checklist: Weekly to Yearly Schedule',
+    seoTitle: 'WordPress Maintenance Schedule: Weekly to Yearly Checklist',
     title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly, Quarterly and Yearly',
-    description: 'A WordPress maintenance checklist and schedule: the weekly, monthly, quarterly and yearly tasks for updates, backups, security, speed and SEO, in a table.',
+    description: 'A WordPress maintenance schedule and checklist: weekly, monthly, quarterly and yearly tasks for updates, backups, security and SEO, with a calendar.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -1093,6 +1093,20 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   <li><strong>Membership or booking site:</strong> test logins, sign-ups and bookings after every update.</li>
 </ul>
 
+<h2>A sample monthly maintenance calendar</h2>
+<p>A schedule only works if it lands on real dates. Here is one way to spread the tasks across a month so no single day takes long. Move the days to suit your business, but keep updates away from your busiest selling days and never run them just before a weekend or holiday when nobody is watching the site.</p>
+<table>
+<thead><tr><th>When</th><th>Tasks</th><th>Effort</th></tr></thead>
+<tbody>
+<tr><td>Every Monday</td><td>Confirm last night's backup exists, apply plugin and theme updates on staging or after a fresh backup, check the homepage, a key page and the contact form</td><td>Short, once set up</td></tr>
+<tr><td>Every Thursday</td><td>Read uptime and security alerts, glance at form entries and orders to confirm they are still arriving</td><td>A few minutes</td></tr>
+<tr><td>First week of the month</td><td>Security scan, admin user review, Site Health, Search Console coverage and Core Web Vitals, spam and revision clean-up</td><td>Longer; block out time</td></tr>
+<tr><td>Last week of the month</td><td>Check expiry dates for domain, hosting, SSL and licences due in the next 60 days, and note anything to fix next month</td><td>Short</td></tr>
+<tr><td>Once a quarter</td><td>Restore a backup to staging, audit plugins, check the PHP version, test every form and the checkout end to end</td><td>The longest session</td></tr>
+</tbody>
+</table>
+<p>Keep a simple log of what you did and when, even a shared spreadsheet. When something breaks, the first question is always "what changed?", and the log answers it.</p>
+
 <h2>Doing it yourself or handing it over</h2>
 <p>A small brochure site with a handful of well-maintained plugins can be looked after by an owner who is comfortable in the dashboard and sticks to the routine. It gets harder with a store, custom code, a page builder with many add-ons, or a site nobody has updated for a year. If you hand it over, ask for a monthly report that lists updates, backups, uptime and issues found. Freelance plans in India typically cost about ₹1,500 to ₹6,000 a month; <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> explains what moves the price.</p>
 
@@ -1109,6 +1123,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>It's a list of maintenance tasks with how often each one is done, like the table above. Writing it down, with a log of when each task was last done, is what makes maintenance consistent.</p>
 <h3>Can I maintain my WordPress site myself?</h3>
 <p>Yes, if the site is simple and you follow the schedule. Always back up before updating, and get help if an update breaks the layout, forms stop sending or Search Console reports a security issue.</p>
+<h3>What day of the week is best for WordPress updates?</h3>
+<p>Early in the working week, at a quiet hour, so someone is around for a few days to spot problems. Avoid Fridays, the day before a sale or festival, and your busiest trading hours.</p>
 
 <p>Prefer to have it done for you? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates with a backup first and testing afterwards, off-site backups, security checks, uptime monitoring and a short monthly report.</p>
 `,
@@ -4388,15 +4404,15 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'industrial-website-product-catalogue',
-    seoTitle: 'Industrial Product Catalogue Website: How to Structure It',
+    seoTitle: 'Industrial Catalog Website: How to Structure Your Catalogue',
     title: 'How to Build a Product Catalogue Website for an Industrial Company: Categories, Spec Tables, Datasheets and RFQs',
-    description: 'Structure an industrial product catalogue website: categories, spec tables, datasheet PDFs, RFQ baskets, WooCommerce catalogue mode, filters and schema.',
+    description: 'How to build an industrial catalog website: category structure, spec tables, datasheets, RFQ baskets, WooCommerce catalogue mode, filters and a checklist.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-30',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>To build an industrial product catalogue website, plan the category structure first (product type, then family, then model), give every product family its own page with a text specification table, drawings, a downloadable datasheet and a Request a Quote button, and let buyers filter by the specifications they actually use, such as capacity, size or material. For most manufacturers, a catalogue without prices, where buyers add products to an enquiry list and send one RFQ, works better than a shop. On WordPress, WooCommerce in catalogue mode handles this well.</p>
+<p>An industrial catalog website is a set of web pages, not just a PDF, where every product family has its own page with specifications, drawings, a datasheet and a quote button. To build one, plan the category structure first (product type, then family, then model), give every product family its own page with a text specification table, drawings, a downloadable datasheet and a Request a Quote button, and let buyers filter by the specifications they actually use, such as capacity, size or material. For most manufacturers, a catalogue without prices, where buyers add products to an enquiry list and send one RFQ, works better than a shop. On WordPress, WooCommerce in catalogue mode handles this well.</p>
 <p>This post is the practical how-to for the catalogue itself. If you'd like it planned and built for you, along with capability pages, certifications and RFQ routing, see my <a href="/website-for-manufacturers/">websites for manufacturers and industrial suppliers</a>. For the wider strategy of winning B2B and export enquiries, see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a>.</p>
 
 <h2>Catalogue, quote basket or online store?</h2>
@@ -4418,8 +4434,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li><strong>Names buyers search for,</strong> not internal codes. Check your enquiry emails and Search Console for the words buyers use, including common alternatives such as "SS" and "stainless steel".</li>
   <li><strong>Two or three levels deep</strong> for most catalogues. Deeper trees make buyers click more and spread thin content across too many pages.</li>
 </ul>
-<p><a href="/work/india-automation-hub/">India Automation Hub</a>, an industrial automation news portal I built, shows the same principle on the content side: its subjects are grouped into six families, such as Control Systems and Automation with PLC, DCS, SCADA and HMI beneath it, and each category has its own archive page showing how many articles it holds. Grouping things the way engineers think about their work is exactly what a product catalogue needs.</p>
-
 <h2>Family pages or one page per model?</h2>
 <p>If models differ only by size, rating or capacity, one product family page with a full specification table usually works better than dozens of near-identical pages. Thin, repetitive pages are hard to rank and harder to keep updated. Give a model its own page when buyers search for it by model number, or when it has distinct applications, drawings and certifications.</p>
 
@@ -4474,6 +4488,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <pre><code>add_filter( 'woocommerce_is_purchasable', '__return_false' );</code></pre>
 <p>If you later want to sell spares online alongside the catalogue, the same setup grows into a store; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
+
 <p>Packaging suppliers use the same approach; see <a href="/blog/website-for-printing-packaging-companies/">websites for printing and packaging companies</a>.</p>
 
 <h2>Filters and search</h2>
@@ -4488,10 +4503,27 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li><strong>Redirects for discontinued products</strong> to the replacement or the category, rather than leaving 404 pages.</li>
 </ul>
 
+<h2>Industrial catalog website checklist</h2>
+<p>Use this table to check an existing catalogue, or to brief a developer on a new one.</p>
+<table>
+<thead><tr><th>Area</th><th>What a good industrial catalog website has</th><th>Quick test</th></tr></thead>
+<tbody>
+<tr><td>Structure</td><td>Product type, then family, then model, with a category page at each level</td><td>Can a buyer reach any model in three clicks from the menu?</td></tr>
+<tr><td>Product pages</td><td>One page per family with an intro, applications, a spec table and photos</td><td>Does each family page say what the product is for in the first lines?</td></tr>
+<tr><td>Specifications</td><td>HTML tables with units, not images or only a PDF</td><td>Can you select and copy a value from the spec table?</td></tr>
+<tr><td>Downloads</td><td>Datasheets, drawings and certificates linked from the relevant page, with clear file names</td><td>Is the datasheet for a model reachable from that model's page?</td></tr>
+<tr><td>Enquiries</td><td>Request a Quote on every product, an enquiry basket for multiple items, and the RFQ fields buyers expect</td><td>Does the enquiry email tell sales which product and quantity were asked about?</td></tr>
+<tr><td>Filters and search</td><td>Filters on the specifications engineers choose by, and search that finds model numbers</td><td>Does searching a model number return that product?</td></tr>
+<tr><td>Mobile</td><td>Spec tables that scroll sideways, and tap-friendly quote buttons</td><td>Open a product on your phone: is the table readable?</td></tr>
+<tr><td>SEO</td><td>Unique titles per family, Product schema where it fits, and pages linked from categories</td><td>Search Google for a product name with your brand: is the right page indexed?</td></tr>
+</tbody>
+</table>
+
 <h2>Keeping the catalogue up to date</h2>
 <p>A catalogue goes stale quickly when only the developer can edit it. Keep a master spreadsheet of products and specifications, decide who in your team updates the site, and train them to add products, change specs and upload datasheets themselves. Review certifications and datasheets at least yearly.</p>
 
 <p>Selling abroad too? See <a href="/blog/website-for-export-businesses/">how exporters win international buyers online</a>.</p>
+
 
 <p>Suppliers of restaurant and hotel kitchen equipment face the same choice, plus layout and service needs; see <a href="/blog/website-for-commercial-kitchen-equipment-suppliers/">websites for commercial kitchen equipment suppliers</a>.</p>
 
@@ -4506,6 +4538,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>By product type first, then family and model, using the names buyers search for. Add applications and industries as a second route that links to the same product pages, and keep the tree two or three levels deep.</p>
 <h3>Do product pages without prices get rich results in Google?</h3>
 <p>Generally not product rich results, which need a price, review or rating. Product, Breadcrumb and Organization markup are still worth adding, because they help search engines understand your pages.</p>
+<h3>What should an industrial catalog website include?</h3>
+<p>A clear category tree, one page per product family with a text specification table, photos, drawings and a downloadable datasheet, a Request a Quote button or enquiry basket, filters on the specifications buyers use, and search that recognises model numbers.</p>
 
 <p>Have a product list or a PDF catalogue that needs to become a website buyers can search and enquire from? See <a href="/website-for-manufacturers/">websites for manufacturers</a> for how I plan and build them.</p>
 `,
@@ -28917,15 +28951,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'woocommerce-coupons-discounts',
-    seoTitle: 'WooCommerce Coupon Types and Discounts: A Practical Guide',
+    seoTitle: 'WooCommerce Coupon Discount Types Explained (With Examples)',
     title: 'WooCommerce Coupon Types and Discounts: Set Up Offers That Sell Without Killing Margins',
-    description: 'WooCommerce coupon discount types explained: percentage, fixed cart and fixed product, plus usage limits, free shipping coupons, auto-apply, BOGO and sale tips.',
+    description: 'WooCommerce coupon discount types explained: percentage, fixed cart and fixed product compared with examples, plus limits, free shipping and a checklist.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-30',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design', 'website-for-startups'],
     body: `
-<p>Discounts can bring first-time buyers, clear old stock and recover abandoned carts. Used carelessly, they train customers never to pay full price and eat into your profits. WooCommerce's built-in coupons give you plenty of control once you know what each setting does.</p>
+<p>WooCommerce has three coupon discount types: a percentage discount off the cart or selected products, a fixed cart discount that takes one amount off the whole order, and a fixed product discount that takes an amount off each qualifying item. Any of them can also grant free shipping, and usage restrictions decide who can use the code and on what.</p>
+<p>Discounts can bring first-time buyers, clear old stock and recover abandoned carts. Used carelessly, they train customers never to pay full price and eat into your profits, so it pays to pick the right type for each offer.</p>
 <p><strong>In short:</strong> WooCommerce has three coupon discount types, percentage discount, fixed cart discount and fixed product discount, and any coupon can also grant free shipping. You create them under Marketing, then Coupons, and control who can use them with usage restrictions and limits. Automatic discounts and "buy one, get one" offers need an extension. Menu names can change between versions, so check WooCommerce's current docs if something has moved.</p>
 
 <h2>The three WooCommerce coupon discount types</h2>
@@ -28939,6 +28974,19 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </table>
 <p>The difference between the two fixed types catches people out. A fixed cart discount applies once, however many items are in the cart. A fixed product discount applies to every eligible unit, so five T-shirts get five discounts. Use the "Limit usage to X items" setting to cap that.</p>
 <p>Coupons reduce a price, while gift cards and store credit hold value a customer has paid for or earned; for those, see <a href="/blog/woocommerce-gift-cards/">selling gift cards and store credit in WooCommerce</a>.</p>
+
+<h2>WooCommerce coupon discount types compared, with examples</h2>
+<p>The three types look similar in the settings screen but behave very differently once a customer has several items in the cart. This table shows how each one works, so you can choose before you create the code.</p>
+<table>
+<thead><tr><th>Discount type</th><th>How it is applied</th><th>Example offer</th><th>Best for</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td>Percentage discount</td><td>A percentage off the cart, or off only the products and categories you allow</td><td>A welcome percentage off for first-time buyers</td><td>Store-wide sales, welcome codes, category sales</td><td>On large carts the rupee discount grows with the order; set a maximum spend or exclude high-value items if margins are thin</td></tr>
+<tr><td>Fixed cart discount</td><td>One fixed amount off the whole order total</td><td>A flat amount off orders above a minimum spend</td><td>Raising order value with a minimum spend, apology or win-back codes</td><td>Without a minimum spend, a flat amount can wipe out the margin on a small order</td></tr>
+<tr><td>Fixed product discount</td><td>A fixed amount off each qualifying item, multiplied by quantity</td><td>A flat amount off every unit of one product line</td><td>Clearing a specific product, launch offers on one range</td><td>Quantity multiplies the discount; limit the number of items it applies to if bulk orders are a risk</td></tr>
+<tr><td>Free shipping (tick box)</td><td>Unlocks a free shipping method set up in your shipping zone</td><td>Free delivery with a code during a festival sale</td><td>Removing the delivery charge objection at checkout</td><td>Only works if the shipping zone has a free shipping method that accepts coupons</td></tr>
+</tbody>
+</table>
+<p>A quick rule of thumb: use a percentage when the offer is about the brand or a whole category, a fixed cart discount when you want a bigger basket, and a fixed product discount when the offer is about one product. If an offer does not fit any of these, such as "buy two, get one free" or tiered discounts, that is the point at which an extension or a little custom code is the cleaner route.</p>
 
 <h2>How to create a coupon in WooCommerce</h2>
 <ol>
@@ -28992,7 +29040,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Loyalty discounts</strong> for repeat customers, using allowed emails</li>
   <li><strong>Prepaid discounts</strong> to reduce COD; see <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery</a>. Core coupons can't restrict by payment method, so this needs a plugin or custom code</li>
 </ul>
-<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>. Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>
+<p>Coupons can also power a customer referral programme; see how to set up a referral programme on your website. Another way to raise order value without a coupon is to sell sensible sets or suggest the right add-ons; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles, upsells and cross-sells in WooCommerce</a>.</p>
 
 <h2>Festival-sale tips for Indian stores</h2>
 <p>Diwali, Navratri, Raksha Bandhan, Independence Day and end-of-season sales bring the biggest coupon traffic of the year. Plan them properly; see <a href="/blog/seasonal-festival-campaigns-website/">festival campaigns</a> for the wider campaign. For the coupons themselves:</p>
@@ -29002,14 +29050,26 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Use separate codes per channel:</strong> one for Instagram, one for email, one per influencer, so you can see which worked</li>
   <li><strong>Show the offer clearly:</strong> a banner with the code, the minimum spend and the end date reduces "code not working" messages</li>
   <li><strong>Check GST invoices:</strong> ask your CA how discounts should appear on invoices; see <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and invoices</a></li>
-  <li><strong>Test under load:</strong> run a full checkout with each code before launch, and make sure the store stays fast when traffic jumps; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a></li>
+  <li><strong>Test under load:</strong> run a full checkout with each code before launch, and make sure the store stays fast when traffic jumps; see WooCommerce speed optimisation</li>
 </ul>
+
+<p>Coupons can also power a customer referral programme; see <a href="/blog/referral-program-website/">how to set up a referral programme on your website</a>.</p>
 
 <h2>Watch out for</h2>
 <ul>
   <li><strong>Constant sales:</strong> shoppers learn to wait for the next discount</li>
   <li><strong>Hidden margins:</strong> calculate profit after discount, shipping and payment fees</li>
   <li><strong>Coupon field distraction:</strong> an obvious coupon box can send shoppers off searching for codes; consider making it less prominent</li>
+</ul>
+
+<h2>A coupon setup checklist before you launch</h2>
+<ul>
+<li>Discount type matches the offer (see the table above) and the amount is checked against your margin, not just your price</li>
+<li>Expiry date set, so a festival code does not keep working for months</li>
+<li>Minimum spend, allowed products and excluded sale items set where they matter</li>
+<li>"Individual use only" ticked unless you genuinely want codes to stack</li>
+<li>Usage limit per coupon and per customer set for welcome or one-time codes</li>
+<li>Tested on a real cart in a private window, including with COD and your usual payment gateway, before the code is shared</li>
 </ul>
 
 <h2>Measure results</h2>
@@ -29026,6 +29086,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Yes, by default. Tick "Individual use only" on a coupon to stop it being combined with others.</p>
 <h3>How do I limit a WooCommerce coupon to one use per customer?</h3>
 <p>Set "Usage limit per user" to 1 in the coupon's usage limits. For extra control, restrict it to allowed emails.</p>
+<h3>Which WooCommerce coupon discount type should I use for a sale?</h3>
+<p>For a store-wide or category sale, a percentage discount is usually simplest. Use a fixed cart discount with a minimum spend if you want to raise order value, and a fixed product discount when the sale is about one product line.</p>
 
 <p>Need coupon rules, festival offers or a discount plugin set up and tested properly? I build and fix WooCommerce stores; see <a href="/woocommerce-developer/">WooCommerce developer in India</a>.</p>
 `,
@@ -65799,15 +65861,15 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'landing-page-cost-factors',
-    seoTitle: 'How Much Is a Landing Page? Cost Factors in India',
+    seoTitle: 'What Is a Good Cost per Landing Page? India Guide',
     title: 'How Much Is a Landing Page? What Drives the Cost to Build One, and What a Good Cost per Lead Looks Like',
-    description: 'How much is a landing page in India? What drives the build cost: copy, design, forms, tracking, A/B tests and revisions, and why cost per lead is separate.',
+    description: 'What is a good cost per landing page? What drives the build cost in India, how to judge a quote, and why cost per lead is a separate number to track.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-10-30',
     category: 'Pricing',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
-<p>How much is a landing page? According to my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a>, one landing page typically comes to about ₹5,000 to ₹15,000, compared with ₹15,000 to ₹40,000 for a typical small business site. Where your page falls depends on who writes the copy, whether the design is adapted or custom, what the form connects to, how much tracking is set up and how many changes are included. That is the cost to build. The cost per lead is a different number, driven mostly by your ads and offer, and I cover it separately below.</p>
+<p>A good cost per landing page is one your campaign can recover in leads: a price that covers focused copy, mobile speed, a tested form and conversion tracking, because those are what lower your cost per lead from ads. How much is a landing page? According to my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a>, one landing page typically comes to about ₹5,000 to ₹15,000, compared with ₹15,000 to ₹40,000 for a typical small business site. Where your page falls depends on who writes the copy, whether the design is adapted or custom, what the form connects to, how much tracking is set up and how many changes are included. That is the cost to build. The cost per lead is a different number, driven mostly by your ads and offer, and I cover it separately below.</p>
 <p>If you want a quote for your own campaign, <a href="/landing-page-design/">landing page design</a> lists what I include. The rest of this article explains each cost driver so you can compare quotes fairly.</p>
 
 <h2>Two different costs: to build, and per lead</h2>
@@ -65865,6 +65927,21 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li><strong>Follow-up:</strong> slow replies waste leads you have already paid for</li>
 </ul>
 <p>A practical way to set your own target: work out what a customer is worth to you, how many leads you typically need to win one, and the most you can pay per lead while still making money. Then track actual cost per lead and, more importantly, cost per customer. <a href="/blog/google-ads-budget-small-business/">Google Ads budget for small businesses</a> walks through the arithmetic.</p>
+
+<h2>Is your cost per landing page good? A quick way to judge</h2>
+<p>Instead of comparing one landing page price with another in isolation, compare what each quote includes against what the page has to do. A low price that leaves out tracking or mobile speed is not good value, because you will pay for it in wasted ad spend. A higher price is only worth it if the extras will be used.</p>
+<table>
+<thead><tr><th>Question</th><th>Good sign</th><th>Warning sign</th></tr></thead>
+<tbody>
+<tr><td>Who writes the copy?</td><td>Copy is written or edited around one offer and one audience</td><td>Placeholder text you are expected to fill in later</td></tr>
+<tr><td>Is it tested on mobile?</td><td>Fast on a mid-range phone, form usable with a thumb</td><td>Only shown as a desktop preview</td></tr>
+<tr><td>Where do leads go?</td><td>Email alert plus a sheet or CRM, tested before launch</td><td>"The form will work" with no test</td></tr>
+<tr><td>Is tracking included?</td><td>Conversion tracking for the ad platforms you use, checked with a test lead</td><td>Tracking left to "your ads person"</td></tr>
+<tr><td>What changes are included?</td><td>A stated number of revision rounds and campaign edits</td><td>Every change billed separately with no estimate</td></tr>
+<tr><td>Can it be reused?</td><td>A template you can copy for the next offer or city</td><td>A one-off build nobody else can edit</td></tr>
+</tbody>
+</table>
+<p>If a quote ticks the good-sign column at a price within your budget, it is a good cost per landing page, even if it is not the cheapest one you were offered.</p>
 
 <h2>How to brief a landing page so quotes compare</h2>
 <ol>
@@ -65928,6 +66005,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>No. Ad spend is paid to the platform and is separate from the build.</p>
 <h3>Why do landing page quotes vary so much?</h3>
 <p>Each developer assumes a different scope. A shared brief makes quotes comparable.</p>
+<h3>What is a good cost per landing page?</h3>
+<p>One that includes focused copy, mobile speed, a tested form and conversion tracking at a price your campaign can recover in leads. Going by the cost guide here, a single landing page typically falls in the ₹5,000 to ₹15,000 range, with the scope deciding where in that range.</p>
 
 <p>Planning a campaign? See <a href="/landing-page-design/">landing page design</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if the page should sit inside a new site.</p>
 `,
