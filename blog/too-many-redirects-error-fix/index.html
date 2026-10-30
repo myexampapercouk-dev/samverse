@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Fix ERR_TOO_MANY_REDIRECTS in WordPress | Samverse</title>
-  <meta name="description" content="Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.">
+  <title>ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix It</title>
+  <meta name="description" content="How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/too-many-redirects-error-fix/">
-  <meta property="og:title" content="How to Fix ERR_TOO_MANY_REDIRECTS in WordPress | Samverse">
-  <meta property="og:description" content="Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.">
+  <meta property="og:title" content="ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix It">
+  <meta property="og:description" content="How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-too-many-redirects-error-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/too-many-redirects-error-fix/#article",
-      "headline": "ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It",
-      "description": "Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.",
+      "headline": "ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix the Redirect Loop, Step by Step",
+      "description": "How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-28",
+      "dateModified": "2026-10-30",
       "mainEntityOfPage": "https://samverse.space/blog/too-many-redirects-error-fix/",
       "image": "https://samverse.space/assets/og/blog-too-many-redirects-error-fix.png",
       "articleSection": "Maintenance",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It",
+          "name": "ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix the Redirect Loop, Step by Step",
           "item": "https://samverse.space/blog/too-many-redirects-error-fix/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
-          <h1>ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It</h1>
-          <p class="post-dek">Site redirected you too many times? Fix redirect loops in WordPress step by step: site URL settings, Cloudflare SSL mode, .htaccess, plugins and cookies.</p>
+          <h1>ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix the Redirect Loop, Step by Step</h1>
+          <p class="post-dek">How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/too-many-redirects-error-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-too-many-redirects-error-fix.webp" alt="ERR_TOO_MANY_REDIRECTS on WordPress: Causes and How to Fix It" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-too-many-redirects-error-fix.webp" alt="ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix the Redirect Loop, Step by Step" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -164,15 +164,16 @@
               <li><a href="#after-a-domain-change-or-migration">After a domain change or migration</a></li>
               <li><a href="#redirect-loops-on-woocommerce-and-shopify-stores">Redirect loops on WooCommerce and Shopify stores</a></li>
               <li><a href="#preventing-redirect-loops">Preventing redirect loops</a></li>
+              <li><a href="#fixing-err-too-many-redirects-when-you-are-locked-out-of-wp-admin">Fixing ERR_TOO_MANY_REDIRECTS when you are locked out of wp-admin</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>ERR_TOO_MANY_REDIRECTS means the site keeps sending the browser between addresses in a loop, usually because of an HTTPS, www or redirect rule conflict.</li>
-              <li>The most common WordPress causes are mismatched site URL settings, Cloudflare Flexible SSL, duplicate HTTPS rules in .htaccess or hosting, and redirect plugins.</li>
-              <li>Fix one layer at a time, clearing cookies and caches between checks, and keep a single place responsible for each type of redirect.</li>
+              <li>ERR_TOO_MANY_REDIRECTS in WordPress means two settings disagree about the final address and keep redirecting each other.</li>
+              <li>Check cookies, Cloudflare SSL mode, the WordPress Address and Site Address, .htaccess and redirect plugins, in that order.</li>
+              <li>If wp-admin is locked, set the site URLs in wp-config.php and rename the plugins folder through your hosting file manager.</li>
             </ul>
           </div>
 <p>ERR_TOO_MANY_REDIRECTS, shown as &quot;This page isn't working: redirected you too many times&quot;, means your site is stuck in a redirect loop: one rule sends visitors to address A, another sends them back to B, and the browser gives up. On WordPress, the usual fix is to make the site URL settings, SSL setup, Cloudflare mode, .htaccess rules and redirect plugins agree on one final address, such as https with or without www.</p>
@@ -205,7 +206,7 @@
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
   <p>Website maintenance packages for WordPress sites in India: updates, backups, security, uptime checks and small content changes on a monthly plan.</p>
-  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
 <h2 id="step-2-check-cloudflare-ssl-mode">Step 2: check Cloudflare SSL mode</h2>
@@ -260,6 +261,24 @@ RewriteRule . /index.php [L]
 <li>Take a backup before editing .htaccess or wp-config.php.</li>
 </ul>
 
+<h2 id="fixing-err-too-many-redirects-when-you-are-locked-out-of-wp-admin">Fixing ERR_TOO_MANY_REDIRECTS when you are locked out of wp-admin</h2>
+<p>A redirect loop often blocks the dashboard too, so you cannot change settings the normal way. You can still fix it through your hosting file manager or FTP:</p>
+<ol>
+<li><strong>Back up wp-config.php and .htaccess</strong> by downloading copies first.</li>
+<li><strong>Set the site address in wp-config.php.</strong> Add these two lines above the line that says to stop editing, using your real final address:
+<pre><code>define( 'WP_HOME', 'https://www.example.com' );
+define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
+This overrides whatever is saved in the database, which is useful when a wrong URL was saved there.</li>
+<li><strong>Behind Cloudflare or another proxy,</strong> WordPress may not realise the visit is HTTPS. Many hosts recommend adding this to wp-config.php:
+<pre><code>if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) &amp;&amp; $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
+  $_SERVER['HTTPS'] = 'on';
+}</code></pre>
+</li>
+<li><strong>Disable plugins without the dashboard</strong> by renaming the wp-content/plugins folder to plugins-off. If the loop stops, rename it back and rename plugin folders one at a time to find the culprit.</li>
+<li><strong>Reset .htaccess</strong> to the default WordPress block if you suspect a bad rule, then save permalinks again once you can log in.</li>
+</ol>
+<p>Once the site loads, remove any temporary changes you no longer need and record what fixed it, so the next person does not reintroduce the same loop. If the error appeared alongside a security warning, see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>, and for other error messages, <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and how to fix them</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I fix ERR_TOO_MANY_REDIRECTS in WordPress?</h3>
 <p>Clear cookies and caches, set Cloudflare SSL to Full or Full (strict), make the WordPress Address and Site Address match, remove duplicate HTTPS rules in .htaccess or the hosting panel, then check redirect plugins.</p>
@@ -273,22 +292,24 @@ RewriteRule . /index.php [L]
 <p>If it lasts, yes, because Google cannot reach the pages. Fix it quickly and check Search Console for crawl errors afterwards.</p>
 
 <p>If you cannot find the loop or the site is down for customers, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Pune can see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page.</p>
+<h3>How do I fix too many redirects in WordPress without access to wp-admin?</h3>
+<p>Use your hosting file manager or FTP. Set WP_HOME and WP_SITEURL in wp-config.php to your final HTTPS address, add the HTTPS detection lines if you use Cloudflare, rename the plugins folder to disable all plugins, and reset .htaccess to the default WordPress rules. Then log in and fix the setting properly.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step&url=https%3A%2F%2Fsamverse.space%2Fblog%2Ftoo-many-redirects-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/too-many-redirects-error-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -299,7 +320,7 @@ RewriteRule . /index.php [L]
           </div>
 
           <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
-            <a class="post-nav-prev" href="/blog/mixed-content-warnings-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>How to Fix Mixed Content Warnings in WordPress: Find HTTP Links, Update URLs and Get the Padlock Back</strong></a>
+            <a class="post-nav-prev" href="/blog/mixed-content-warnings-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>Mixed Content Warning in WordPress: How to Fix Mixed Content Errors, HTTP Links and the Missing Padlock</strong></a>
             <a class="post-nav-next" href="/blog/wordpress-not-sending-emails-smtp/"><span>Next in Speed, security &amp; maintenance →</span><strong>WordPress Not Sending Emails? How to Fix It With SMTP</strong></a>
           </nav>
         </div>
@@ -319,6 +340,7 @@ RewriteRule . /index.php [L]
               <li><a href="#after-a-domain-change-or-migration">After a domain change or migration</a></li>
               <li><a href="#redirect-loops-on-woocommerce-and-shopify-stores">Redirect loops on WooCommerce and Shopify stores</a></li>
               <li><a href="#preventing-redirect-loops">Preventing redirect loops</a></li>
+              <li><a href="#fixing-err-too-many-redirects-when-you-are-locked-out-of-wp-admin">Fixing ERR_TOO_MANY_REDIRECTS when you are locked out of wp-admin</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -326,7 +348,7 @@ RewriteRule . /index.php [L]
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20on%20WordPress%3A%20Causes%20and%20How%20to%20Fix%20It%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22ERR_TOO_MANY_REDIRECTS%20in%20WordPress%3A%20How%20to%20Fix%20the%20Redirect%20Loop%2C%20Step%20by%20Step%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
