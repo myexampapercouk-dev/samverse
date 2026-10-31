@@ -19967,10 +19967,12 @@ Disallow: /</code></pre>
     title: 'Duplicate Content Explained: What It Is, the Penalty Myth and How to Fix It',
     description: 'What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.',
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-10-31',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer', 'website-redesign'],
     body: `
+<p><strong>Short answer:</strong> duplicate content is the same or very similar text available at more than one URL, and the "duplicate content penalty" is largely a myth. Google does not punish a site for ordinary duplication; it picks one version to show and filters the rest. Only deliberate copying, scraping or mass-produced near-identical pages can lead to spam action. The practical risk is quieter: diluted signals and the wrong URL ranking.</p>
+
 <p>"Duplicate content" worries many business owners, usually because they've heard there's a Google penalty for it. The truth is more nuanced: normal technical duplication rarely causes penalties, but some kinds of duplication do hold sites back, and deliberate copying can get a site into real trouble. This guide explains what duplicate content is, what Google actually says about the "penalty", the common causes on WordPress sites and how to fix each one.</p>
 
 <h2>What is duplicate content?</h2>
@@ -20070,6 +20072,31 @@ Disallow: /</code></pre>
 </ul>
 
 <p>Copying the same questions onto every page is a quiet form of duplication. The guide to <a href="/blog/faq-page-seo/">FAQ SEO</a> explains how to keep answers unique and useful.</p>
+
+<h2>Duplicate content myth or real issue? A quick check</h2>
+<p>If Search Console or an SEO tool has flagged duplicate content, use this table to decide whether it is a myth to ignore or an issue worth fixing:</p>
+<table>
+  <thead><tr><th>What you found</th><th>Myth or real issue?</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>"Alternate page with proper canonical tag" in Search Console</td><td>Usually fine</td><td>Nothing, as long as the canonical points to the page you want</td></tr>
+    <tr><td>Same footer, disclaimer or address block on every page</td><td>Myth</td><td>Nothing; boilerplate is expected</td></tr>
+    <tr><td>"Duplicate, Google chose different canonical than user"</td><td>Real issue</td><td>Align redirects, internal links and the sitemap with your canonical</td></tr>
+    <tr><td>Site loads on both the .in and .com domain, or with and without www</td><td>Real issue</td><td>Pick one and 301 redirect the others site-wide</td></tr>
+    <tr><td>City pages that differ only by the city name</td><td>Real issue</td><td>Merge them, or give each page genuinely local details</td></tr>
+    <tr><td>Your article copied by a scraper site</td><td>Usually myth</td><td>Ignore unless the copy outranks you</td></tr>
+  </tbody>
+</table>
+
+<h2>Step-by-step: cleaning up duplicate content on a WordPress site</h2>
+<ol>
+  <li><strong>Choose one preferred address.</strong> Decide on https, www or non-www, and one domain if you own both a .in and a .com, then redirect everything else to it. See <a href="/blog/in-vs-com-domain/">.in vs .com domains</a>.</li>
+  <li><strong>Export the Pages report from Search Console</strong> and list every URL in the duplicate statuses.</li>
+  <li><strong>Group the URLs by cause:</strong> parameters, archives, staging, near-duplicate pages or copied text.</li>
+  <li><strong>Apply one fix per group</strong> using the table above: redirect, merge, canonical, noindex or rewrite.</li>
+  <li><strong>Update internal links and the XML sitemap</strong> so they only point to preferred URLs.</li>
+  <li><strong>Re-check after two to four weeks</strong> with URL Inspection to confirm Google now selects your canonical.</li>
+</ol>
+<p>Indian business sites often pick up duplicates from a mix of these at once: an old .com that still loads, a developer's staging copy and a set of city pages built from one template. Cleaning the domain and staging issues first usually gives the clearest result.</p>
 
 <h2>The principle</h2>
 <p>Each page should exist for a reason and offer something unique. If two pages would answer the same question, combine them into one better page.</p>
@@ -26486,10 +26513,12 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
     title: 'WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)',
     description: 'WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-31',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
+<p><strong>Short answer:</strong> WordPress cache is a saved copy of work WordPress has already done, such as a finished HTML page, a database result or compiled PHP, so the next visitor gets it instantly. For most sites the best setup is server-side page caching from the host (or one caching plugin), browser caching for files, and object caching on stores and membership sites.</p>
+
 <p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. <strong>Caching</strong> saves the result of that work so it can be reused instead of rebuilt. Done right, it's one of the biggest speed improvements you can make; done wrong, it shows visitors stale pages or breaks forms and carts.</p>
 <p>In short: most business websites need <strong>page caching</strong> (from the host or one plugin), <strong>browser caching</strong> for files, and often a <strong>CDN</strong>. Online stores, membership sites and busy admin areas also benefit from <strong>object caching</strong> with Redis or Memcached. <strong>OPcache</strong> runs at server level and is usually switched on by your host. Here is what each one does, how to choose a setup, what never to cache, and how to clear and test it.</p>
 
@@ -26556,6 +26585,31 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </table>
 <p>Whatever you choose, use only one page-caching plugin. Two caching plugins fighting each other cause strange errors and stale pages.</p>
 
+<h2>Server-side caching vs plugin caching in WordPress</h2>
+<p>"Server-side caching" in WordPress usually means the web server or host stores and serves the cached page, while plugin caching means a WordPress plugin writes the cached files. Many setups combine both, with the plugin acting as a control panel for the server cache.</p>
+<table>
+  <thead><tr><th>Point</th><th>Server-side caching</th><th>Plugin-only caching</th></tr></thead>
+  <tbody>
+    <tr><td>Who serves the cached page</td><td>The web server (LiteSpeed, Nginx, Varnish) before PHP runs</td><td>The server reads files the plugin saved, often via rewrite rules</td></tr>
+    <tr><td>Speed</td><td>Usually the fastest</td><td>Fast, but depends on the server configuration</td></tr>
+    <tr><td>Setup</td><td>Enabled by the host; controlled from the panel or a companion plugin</td><td>Install and configure the plugin yourself</td></tr>
+    <tr><td>Best for</td><td>LiteSpeed hosting, managed WordPress hosting, VPS setups</td><td>Shared hosting without a built-in cache</td></tr>
+  </tbody>
+</table>
+
+<h2>How to set up WordPress caching step by step</h2>
+<ol>
+  <li><strong>Check what your host already provides</strong> in the hosting panel or documentation: server cache, object cache, CDN.</li>
+  <li><strong>Remove extra caching plugins</strong> so only one page cache remains.</li>
+  <li><strong>Turn on page caching</strong> with preloading and automatic purging on updates.</li>
+  <li><strong>Confirm exclusions</strong> for cart, checkout, My Account, login and logged-in users.</li>
+  <li><strong>Enable browser caching</strong> for static files, keeping HTML short-lived.</li>
+  <li><strong>Add object caching</strong> with Redis or Memcached if you run a store or membership site and the host supports it.</li>
+  <li><strong>Switch on file optimisation one option at a time</strong> (minify, defer, delay) and check the layout after each.</li>
+  <li><strong>Test while logged out</strong> using the checks below, and submit every form.</li>
+</ol>
+<p>For Indian sites on shared hosting, steps 1 and 2 solve more problems than any single setting: a host cache plus a second caching plugin is a common cause of stale pages and broken checkouts.</p>
+
 <h2>What not to cache</h2>
 <ul>
   <li><strong>WooCommerce cart, checkout and My Account pages:</strong> these are different for every shopper, and caching them can show one customer another's cart or details</li>
@@ -26608,6 +26662,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <p>A cached copy is still being served somewhere. Purge the plugin, server and CDN caches, then hard refresh or check in a private window.</p>
 <h3>Does caching help SEO?</h3>
 <p>Indirectly. Faster server responses help page experience and make it easier for Google to crawl your site, but caching won't make up for weak content.</p>
+
+<h3>What is server-side caching in WordPress?</h3>
+<p>It is caching handled by the web server or host rather than only by a plugin. Servers such as LiteSpeed, Nginx or Varnish serve a saved copy of the page before WordPress loads, which is usually the fastest option. A companion plugin may control it from the dashboard.</p>
 
 <p>Want caching set up properly for your host, without breaking forms or the checkout? I configure and test caching layer by layer, then measure the result. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 `,
@@ -52566,12 +52623,33 @@ Support:           who to contact, and on what terms</code></pre>
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
     description: 'How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.',
     date: '2026-09-30',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
 <p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed change log of admin activity by default. An activity log (also called an audit log or change log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
 <p><strong>In short:</strong> a WordPress activity log is a plugin that records events inside WordPress, such as logins, content edits, plugin updates and settings changes, with the user, time and IP address. It isn't the same as an error log or a server log, which record different things in different places; the table below shows which one answers which question.</p>
+
+<h2>How to check the WordPress change log</h2>
+<p>To see a WordPress change log, install an activity log plugin, then open its log screen in the dashboard and filter by user, date or event type. Revisions only cover page and post content, so for anything else the plugin's log is the place to look. Remember that a log only shows events from the moment it was switched on; it cannot recover history from before.</p>
+<ol>
+  <li><strong>Check whether a logging plugin is already active</strong> under Plugins. Some security plugins include a basic activity log.</li>
+  <li><strong>If there is none, install one now</strong> so future changes are recorded.</li>
+  <li><strong>Open the log screen</strong> and filter by the date range when the problem appeared.</li>
+  <li><strong>Narrow by event type:</strong> content, plugin, user, settings or WooCommerce.</li>
+  <li><strong>Note the user, time and IP address</strong> of the relevant entry, and export it if it relates to a security issue.</li>
+  <li><strong>For content changes, open the page's revisions</strong> to compare the old and new text and restore if needed.</li>
+</ol>
+<table>
+  <thead><tr><th>Question</th><th>Where to look first</th></tr></thead>
+  <tbody>
+    <tr><td>Who changed this product price?</td><td>Activity log (WooCommerce events)</td></tr>
+    <tr><td>What did this page say last week?</td><td>Revisions, then a backup</td></tr>
+    <tr><td>Which plugin update broke the site?</td><td>Activity log, then the error log</td></tr>
+    <tr><td>Who logged in last night?</td><td>Activity log login events</td></tr>
+    <tr><td>Are bots attacking the login page?</td><td>Activity log failed logins, then the server access log</td></tr>
+  </tbody>
+</table>
 
 <h2>Activity log vs error log vs server log</h2>
 <p>"WordPress logs" can mean several different things. Knowing which one you need saves a lot of searching:</p>
