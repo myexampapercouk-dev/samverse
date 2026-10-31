@@ -450,11 +450,11 @@ module.exports = [
   },
   {
     slug: 'signs-wordpress-site-hacked',
-    seoTitle: 'How to Tell if Your WordPress Site Has Been Hacked',
-    title: 'How to Tell if Your WordPress Site Has Been Hacked: Warning Signs, Quick Checks and What to Do First',
-    description: 'How to tell if your WordPress site has been hacked: the warning signs, 10 quick checks you can run today, and the first steps to take if you find a problem.',
+    seoTitle: 'Check if Your WordPress Site Is Hacked: Signs and Checks',
+    title: 'How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
+    description: 'Check if your WordPress site is hacked: warning signs, 10 quick checks you can run today, extra checks for online stores, and the first steps to take.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -546,6 +546,26 @@ module.exports = [
 
 <p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>
 
+<h2>How to check if a WordPress store or payment page is hacked</h2>
+<p>Online stores need a few extra checks, because attackers who get into a WooCommerce site often target money rather than search rankings. These hacks can stay hidden for weeks because the shop keeps working normally while customer data or payments are quietly diverted.</p>
+<ul>
+<li><strong>Checkout scripts:</strong> view the source of the checkout page and look for scripts loading from domains you do not recognise. Card and payment skimmers sit here. See <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce checkout skimmer malware</a>.</li>
+<li><strong>Payment settings:</strong> open each payment gateway's settings and confirm the account details, API keys and any UPI ID shown to customers are still yours.</li>
+<li><strong>Contact details:</strong> check that the phone number, WhatsApp link and bank details on the contact page, order emails and invoice templates have not been changed.</li>
+<li><strong>Orders and customers:</strong> look for unusual admin-created orders, coupons you did not create, or new shop manager accounts.</li>
+<li><strong>Emails:</strong> place a test order and read the customer email carefully for added links or changed text.</li>
+</ul>
+<p>If anything here looks wrong, treat it as urgent: put the checkout into maintenance mode, tell your payment provider, and follow the clean-up steps above before taking orders again.</p>
+<h2>A monthly hack check you can do in 15 minutes</h2>
+<p>Most owners only check when something already looks broken. A short monthly routine catches problems earlier, while they are cheaper to fix:</p>
+<ol>
+<li>Run a site: search for your domain and skim the titles.</li>
+<li>Open Search Console and check Security Issues and the Pages report for a sudden jump in indexed pages.</li>
+<li>Review the Users list and the Plugins list for anything you do not recognise.</li>
+<li>Confirm your latest off-site backup exists and is recent. Our <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> explains what a usable backup looks like.</li>
+<li>Visit the site from a Google result on your phone using mobile data.</li>
+</ol>
+<p>This fits naturally into a regular maintenance routine. If you would rather not do it yourself, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include it.</p>
 <h2>FAQs</h2>
 <h3>How do I tell if my WordPress site has been hacked?</h3>
 <p>Look for redirects to unrelated sites, spam pages when you search site:yourdomain.com, unknown admin users, Google or browser warnings, and unexpected file changes. Then confirm with Search Console's Security Issues report and a malware scan.</p>
@@ -9037,9 +9057,9 @@ site:example.com/blog/ "net metering"</code></pre>
     slug: 'technical-seo-audit-wordpress',
     seoTitle: 'WordPress SEO Audit: A Practical Step-by-Step Checklist',
     title: 'WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)',
-    description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, plus what to fix first.',
+    description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -9146,6 +9166,25 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
 
+<h2>What a useful WordPress SEO audit report contains</h2>
+<p>An audit only helps if someone acts on it. A long export from a crawler with hundreds of warnings rarely gets fixed. A useful report is short and sorted, and each finding has five parts:</p>
+<ul>
+<li><strong>The issue,</strong> in plain words, such as "category filter URLs are indexable".</li>
+<li><strong>The pages affected,</strong> with a few example URLs and a count.</li>
+<li><strong>Why it matters,</strong> linked to the priority levels in the table above.</li>
+<li><strong>The fix,</strong> including where it is done: WordPress settings, SEO plugin, theme, hosting or content.</li>
+<li><strong>Owner and status,</strong> so you can see what is done and what is waiting.</li>
+</ul>
+<p>Keep the raw crawl export as an appendix rather than the main document. Note the date and the Search Console figures at the time of the audit, such as indexed pages, clicks and impressions, so later checks compare like with like.</p>
+<h2>When to run a WordPress SEO audit again</h2>
+<p>Beyond the yearly check, some events should always trigger a quick audit, because they are where rankings are most often lost:</p>
+<ul>
+<li><strong>After a redesign or theme change:</strong> titles, headings, schema and internal links often change without anyone noticing. See <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a>.</li>
+<li><strong>After moving host or domain:</strong> check redirects, HTTPS, robots.txt and the sitemap on the first day.</li>
+<li><strong>After a sudden traffic drop:</strong> start with indexing, security and tracking before changing content, and work through the checks in Step 1 again.</li>
+<li><strong>After installing or replacing an SEO plugin:</strong> settings for noindex, archives and schema do not always carry over.</li>
+</ul>
+<p>A short repeat audit takes far less time than the first one, because you already have a baseline to compare against. Search Console's reports, explained in our <a href="/blog/google-search-console-reports-explained/">Search Console reports guide</a>, are the fastest place to start.</p>
 <h2>FAQs</h2>
 <h3>How do I do a WordPress SEO audit?</h3>
 <p>Check indexing in Search Console, crawl the site for errors and redirects, review WordPress and SEO plugin settings, test speed, review on-page SEO and structured data, then prioritise fixes by impact.</p>
@@ -40164,11 +40203,11 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'woocommerce-speed-optimization',
-    seoTitle: 'Speed Up WooCommerce: Performance Optimization Guide',
-    title: 'How to Speed Up WooCommerce: A Practical WooCommerce Performance Optimization Guide',
-    description: 'How to speed up WooCommerce: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed, in a practical step-by-step guide.',
+    seoTitle: 'WooCommerce Performance Optimization: Speed Up Your Store',
+    title: 'WooCommerce Performance Optimization: A Practical Guide to Speed Up Your WooCommerce Store',
+    description: 'WooCommerce performance optimization step by step: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
@@ -40280,6 +40319,21 @@ add_action( 'after_setup_theme', function () {
 <li>Re-test and keep monitoring after every update.</li>
 </ol>
 
+<h2>WooCommerce performance optimization: match the fix to the symptom</h2>
+<p>A common mistake is installing another speed plugin before working out where the time actually goes. WooCommerce performance problems fall into a few patterns, and each one has a different first fix:</p>
+<table>
+<thead><tr><th>What you see</th><th>Likely cause</th><th>Fix first</th></tr></thead>
+<tbody>
+<tr><td>Every page waits a long time before anything appears</td><td>Slow server response: weak hosting, no caching, heavy database queries</td><td>Hosting, page caching and object caching</td></tr>
+<tr><td>Product and category pages fast, cart and checkout slow</td><td>Uncached dynamic pages, payment or shipping plugins, too few PHP workers</td><td>Object caching, plugin review, checkout scripts</td></tr>
+<tr><td>Page starts quickly but the main image appears late</td><td>Large product images, lazy loading the main image, render-blocking files</td><td>Image sizes and formats. See <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a></td></tr>
+<tr><td>Page loads but buttons respond slowly</td><td>Too much JavaScript: chat widgets, pixels, sliders, page builder add-ons</td><td>Remove or delay third-party scripts</td></tr>
+<tr><td>Admin and order screens are slow</td><td>Database bloat, Action Scheduler backlog, autoloaded options</td><td>Database clean-up and HPOS</td></tr>
+</tbody>
+</table>
+<p>Fix the row that matches your store, re-test the same pages, and only then move on. Changing several things at once makes it impossible to know what helped.</p>
+<h2>When WooCommerce speed work is worth paying for</h2>
+<p>Many stores can handle the basics themselves: compressing images, removing unused plugins and turning on caching with the right exclusions. It is worth bringing in a developer when the server response stays slow after caching, when checkout is slow or failing, or when speed problems appeared after a theme or plugin update you cannot easily roll back. A careful developer works on a staging copy, measures each change and leaves you with notes on what was done. If checkout is broken rather than slow, start with <a href="/blog/woocommerce-checkout-not-working-fix/">fixing WooCommerce checkout problems</a>, and for ongoing store work see our <a href="/woocommerce-developer/">WooCommerce developer</a> service.</p>
 <h2>FAQs</h2>
 <h3>How do I speed up my WooCommerce store?</h3>
 <p>Start with good hosting and correct caching, then optimise images, remove unnecessary plugins and scripts, clean the database and fix WooCommerce-specific issues like cart fragments and slow filters.</p>
@@ -46142,11 +46196,11 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'How to Reduce Font Load and Speed Up Web Fonts',
-    title: 'How to Reduce Font Load on Your Website: Faster Web Fonts in WordPress and Shopify',
-    description: 'How to reduce font load on a website: fewer font files, WOFF2, self-hosting, font-display swap, preloading fonts and subsetting in WordPress and Shopify.',
+    seoTitle: 'Business Website Web Font Performance: Cut Font Load',
+    title: 'Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify',
+    description: 'Improve business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preloading and subsetting in WordPress and Shopify.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
@@ -46240,6 +46294,20 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Match fallback fonts to reduce layout shift.</li>
 <li>Re-test with PageSpeed Insights and real devices.</li>
 </ol>
+<h2>A simple font budget for a business website</h2>
+<p>The easiest way to keep web font performance under control is to agree a font budget before design starts, and check it whenever the site changes. A budget turns "use fewer fonts" into a rule everyone on the project can follow, including the designer, the developer and whoever adds plugins later.</p>
+<p>A practical budget for most service businesses, clinics, shops and agencies looks like this:</p>
+<ul>
+<li><strong>Families:</strong> one for body text and at most one for headings. A system font stack for body text counts as zero downloads.</li>
+<li><strong>Weights:</strong> two or three in total across the whole site, for example regular and bold for body plus one heading weight.</li>
+<li><strong>Format and source:</strong> WOFF2 only, served from your own domain or CDN, with font-display: swap on every font-face rule.</li>
+<li><strong>Preloads:</strong> one, or two at most, and only for text that appears above the fold on mobile.</li>
+<li><strong>Icons:</strong> inline SVG instead of an icon font.</li>
+</ul>
+<p>Write the budget into your design notes or website brief so a future redesign does not quietly add a third family. When a new plugin, page builder widget or theme update arrives, open the Network tab filtered by Font and compare the list with the budget. Anything extra is either removed or deliberately replaces something else.</p>
+<p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and <a href="/blog/reduce-server-response-time-ttfb/">slow server response</a>.</p>
+<h2>How to test web font changes properly</h2>
+<p>Font fixes are easy to undo by accident, so test in a repeatable way. Run PageSpeed Insights on mobile for the homepage and one key service or product page before you change anything and note LCP, CLS and font requests. Make one change at a time, clear any page cache and CDN cache, then test again. Finally, open the page on a mid-range Android phone over mobile data and watch the first few seconds: text should appear at once and should not jump when the web font arrives.</p>
 <h2>FAQs</h2>
 <h3>How do I reduce font load on my website?</h3>
 <p>Web fonts can slow a site because each file is an extra download that can delay text. Reduce font load by using one or two families, removing unused weights, serving WOFF2 from your own domain, adding font-display: swap and preloading only the main font.</p>
