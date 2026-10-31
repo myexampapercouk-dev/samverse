@@ -275,6 +275,8 @@ server: cloudflare
 cf-cache-status: HIT</code></pre>
 <p>Header names vary: Cloudflare uses cf-cache-status, BunnyCDN uses cdn-cache, QUIC.cloud uses x-qc-cache, and several others use x-cache. HIT means the edge served it; MISS means it went to your server. Cloudflare shows DYNAMIC for HTML pages it isn't caching, which is normal on the free plan unless you add page caching rules.</p>
 
+<p>Proxying a Shopify store through Cloudflare can stop its SSL certificate from being issued; see <a href="/blog/shopify-domain-not-connecting/">Shopify domain and SSL pending fixes</a>.</p>
+
 <h2 id="common-cdn-problems-and-fixes">Common CDN problems and fixes</h2>
 <ul>
   <li><strong>Changes not showing:</strong> purge the CDN cache as well as your caching plugin; <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows how the layers fit together.</li>

@@ -4775,6 +4775,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </table>
 <p>Keep the logins in a password manager and remove access when someone stops working on the site.</p>
 
+<p>Pointing a domain to Shopify is a common place for these mistakes; see <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a> for the exact A and CNAME records and how to keep email working.</p>
+
 <h2>Mistakes that take websites offline</h2>
 <ul>
   <li><strong>An expired domain,</strong> usually because auto-renew was off or the card on file had expired.</li>
@@ -13955,6 +13957,8 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ol>
 <p>Reports arrive as XML attachments that are hard to read by hand. Free and paid DMARC report services turn them into a list of who sends as your domain and whether each source passes. Send them to a separate address, not your main inbox.</p>
 
+<p>Shopify stores have one extra step: authenticating the sender domain inside Shopify. See <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a> for the setup.</p>
+
 <h2>What Gmail and Yahoo now expect</h2>
 <p>At the time of writing, Gmail and Yahoo require everyone sending to their users to authenticate mail, with stricter rules for bulk senders: SPF, DKIM, a DMARC record, aligned From addresses, easy unsubscribing and low complaint rates. Microsoft has announced similar requirements for high-volume senders. Details change, so check each provider's current sender guidelines, but unauthenticated mail is increasingly filtered even at low volumes.</p>
 
@@ -14774,6 +14778,8 @@ HTTP/2 200
 server: cloudflare
 cf-cache-status: HIT</code></pre>
 <p>Header names vary: Cloudflare uses cf-cache-status, BunnyCDN uses cdn-cache, QUIC.cloud uses x-qc-cache, and several others use x-cache. HIT means the edge served it; MISS means it went to your server. Cloudflare shows DYNAMIC for HTML pages it isn't caching, which is normal on the free plan unless you add page caching rules.</p>
+
+<p>Proxying a Shopify store through Cloudflare can stop its SSL certificate from being issued; see <a href="/blog/shopify-domain-not-connecting/">Shopify domain and SSL pending fixes</a>.</p>
 
 <h2>Common CDN problems and fixes</h2>
 <ul>
@@ -47008,6 +47014,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Google Analytics answers how many people visited, from where, and what they did in numbers. Heatmaps and recordings answer how they behaved on a page. Together they give a fuller picture. For example, analytics might show that a service page has many visits but few enquiries; a scroll map might show most visitors never reach the enquiry button; and recordings might show a pop-up covering it on mobile.</p>
 <p>See <a href="/blog/website-analytics-metrics-that-matter/">website analytics metrics that matter</a> for which numbers to watch.</p>
 
+<p>If recordings show shoppers tapping Add to cart with nothing happening, work through <a href="/blog/woocommerce-add-to-cart-not-working/">fixes for a WooCommerce add to cart button that does not work</a>.</p>
+
 <h2>Heatmaps for WooCommerce and Shopify stores</h2>
 <p>For online stores, the most useful pages to watch are collection or category pages, product pages, the cart and checkout. Look for shoppers who open many products but never add to cart, filters that get tapped but do not respond on mobile, size charts or delivery details that are hard to find, and drop-off at shipping or payment steps.</p>
 <p>In India, payment and delivery questions often decide a purchase. If recordings show people hunting for COD availability, delivery time or return policy, make those details visible on the product page, near the add-to-cart button. If the checkout is slow on mobile, that affects every order; the <a href="/woocommerce-developer/">WooCommerce developer</a> page covers store work.</p>
@@ -48646,6 +48654,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <li>A plugin update that resets a from address or adds a second mailer</li>
 </ul>
 <p>The mail log usually shows the error. After any hosting or domain change, send a test email as part of your checklist. If you are planning a move, <a href="/wordpress-migration/">website migration</a> should include email and DNS checks.</p>
+
+<p>Running a Shopify store as well? <a href="/blog/shopify-emails-going-to-spam/">Fixing Shopify order emails that land in spam</a> covers sender email and domain authentication there.</p>
 
 <h2>Keep website email working</h2>
 <p>Once fixed, a little monitoring prevents the problem from returning:</p>
@@ -51290,6 +51300,8 @@ Support:           who to contact, and on what terms</code></pre>
 <h2>Write and design for mobile</h2>
 <p>Most people read email on their phones. Use a simple single-column template, a clear subject line that says what is inside, short paragraphs and one main button. Avoid sending the whole newsletter as one large image: it loads slowly, can't be read with images off and tends to land in spam.</p>
 
+<p>If you send newsletters from Shopify, poor list hygiene can push order emails into spam too; see <a href="/blog/shopify-emails-going-to-spam/">why Shopify emails go to spam and how to fix it</a>.</p>
+
 <h2>Measure what matters</h2>
 <p>Open rates are less reliable than they used to be because of privacy features in email apps, so look at clicks, replies, enquiries and orders. Add <a href="/blog/utm-tags-explained/">UTM tags</a> to links so your analytics shows which visits and enquiries came from the newsletter. Remove contacts who have not opened or clicked for a long time; a smaller, engaged list delivers better than a large, cold one.</p>
 
@@ -52682,6 +52694,8 @@ Support:           who to contact, and on what terms</code></pre>
 <tr><td>Review date</td><td>When the plan and the last restore test were checked</td></tr>
 </tbody>
 </table>
+
+<p>If you run a Shopify store, include the DNS records in your access list; <a href="/blog/shopify-domain-not-connecting/">fixing a Shopify domain that will not connect</a> shows which records the store depends on.</p>
 
 <h2>Scenarios to plan for</h2>
 <ul>
@@ -67516,6 +67530,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </table>
 <p>Made-to-order products are a slightly different case. If everything is made after ordering, it's usually clearer to keep them "in stock" and state the making time, rather than labelling them as backordered.</p>
 
+<p>If the button disappears or a product says it cannot be purchased after changing stock settings, see <a href="/blog/woocommerce-add-to-cart-not-working/">why WooCommerce add to cart stops working</a>.</p>
+
 <h2>Setting up backorders in WooCommerce</h2>
 <p>Backorders are a built-in setting on each product's Inventory tab. With "Manage stock" ticked, you'll see "Allow backorders?" with three choices:</p>
 <ul>
@@ -72049,6 +72065,8 @@ or a cookie name starts with:
   <li>Pages with WooCommerce cookies bypass the cache.</li>
 </ul>
 <p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the layers, and the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare WordPress setup guide</a> shows safe rules for stores.</p>
+<p>If the problem starts earlier, with products not reaching the cart at all, see <a href="/blog/woocommerce-add-to-cart-not-working/">WooCommerce add to cart not working</a>.</p>
+
 <h2>JavaScript and plugin conflicts</h2>
 <p>Optimisation plugins that minify, combine, defer or delay JavaScript are a frequent cause. Checkout relies on WooCommerce scripts loading in the right order; delaying them until user interaction can leave the Place Order button dead. Exclude WooCommerce, jQuery and your payment gateway scripts from these features, or switch them off on checkout.</p>
 <p>If that does not solve it, test for a conflict on a staging copy:</p>
@@ -76545,6 +76563,308 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>The main site is usually best in English because purchase teams work in English. A short Marathi or Hindi section can help with local traders and job-work enquiries.</p>
 <h3>Is WordPress good for an industrial supplier website?</h3>
 <p>Yes. WordPress handles capability pages, catalogues, downloadable datasheets and RFQ forms well, and your team can update machines and certifications without a developer.</p>
+`,
+  },
+  {
+    slug: 'shopify-domain-not-connecting',
+    seoTitle: 'Shopify Domain Not Connecting? DNS Fixes for India',
+    title: 'Shopify Domain Not Connecting? How to Fix DNS, Verification and SSL Errors With GoDaddy, Hostinger and BigRock',
+    description: 'Shopify domain not connecting or stuck on SSL pending? Check the A and CNAME records, remove conflicts, fix Cloudflare and keep your email working.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india', 'woocommerce-developer'],
+    body: `
+<p>If your Shopify domain is not connecting, the cause is almost always DNS: the root domain is not pointing to Shopify's A record, the www subdomain is not a CNAME to Shopify, or an old record is still sending visitors to your previous host. Fix those records at the company that manages your DNS, wait for them to update, then press Verify connection in Shopify.</p>
+<p>This guide covers the exact checks for domains bought from GoDaddy, Hostinger, BigRock, Namecheap and similar registrars in India, plus the SSL, redirect and email problems that appear after the domain finally connects.</p>
+<h2>Shopify domain not connecting: the quick fix</h2>
+<p>Work through these steps in order. Most stores are fixed by the first three.</p>
+<ol>
+<li><strong>Find who manages your DNS.</strong> Look up the nameservers for your domain. If they belong to your registrar, edit DNS there. If they point to Cloudflare, your old hosting company or a website builder, edit DNS at that service instead.</li>
+<li><strong>Set the root (@) A record</strong> to the IP address Shopify shows on the domain connection screen in your admin (Settings, then Domains). Shopify's published value has long been 23.227.38.65, but always copy the value Shopify shows you.</li>
+<li><strong>Set www as a CNAME</strong> to shops.myshopify.com. If www is currently an A record, delete it and create the CNAME.</li>
+<li><strong>Delete conflicting records.</strong> Remove any other A or AAAA records on @ and www that point to your old host, parked page or website builder.</li>
+<li><strong>Wait, then verify.</strong> Changes often show within an hour but can take up to 48 hours. Then click Verify connection in Shopify.</li>
+<li><strong>Set the primary domain.</strong> Choose www or the root as primary so the other one redirects to it.</li>
+</ol>
+<p>If you followed Shopify's own guide during setup, our <a href="/blog/shopify-store-setup-india/">Shopify store setup guide for India</a> explains where the domain step fits in the wider launch.</p>
+<h2>Why a Shopify custom domain fails to connect</h2>
+<p>When you add a third-party domain, Shopify checks two things: that the root domain resolves to its IP address and that www points to its servers. Verification fails when either check fails. The common reasons are:</p>
+<ul>
+<li><strong>Records edited in the wrong place.</strong> Many owners change DNS at the registrar while the nameservers point somewhere else, so nothing changes. This is the most frequent cause.</li>
+<li><strong>Two A records on the root.</strong> The old hosting IP and Shopify's IP both exist, so visitors and Shopify's checker see different answers.</li>
+<li><strong>A leftover AAAA record.</strong> An IPv6 record pointing to the old host can win on some networks, including many Indian mobile networks that prefer IPv6.</li>
+<li><strong>www set as an A record or a forwarding rule.</strong> Registrar "domain forwarding" or "website redirect" features override the records you added.</li>
+<li><strong>Typing mistakes.</strong> A CNAME value with the wrong target, such as www pointing to your-store.myshopify.com instead of shops.myshopify.com, or a host name entered twice.</li>
+<li><strong>Caching of old answers.</strong> Your own phone or office network may still show the old site for a while even after the records are correct.</li>
+</ul>
+<p>If DNS concepts such as A records, CNAMEs and nameservers are new to you, read <a href="/blog/domain-hosting-ssl-explained/">domain, hosting, DNS and SSL explained</a> first; it makes the rest of this fix much quicker.</p>
+<h2>Fixing the records at GoDaddy, Hostinger and BigRock</h2>
+<p>The menu names differ, but the edit is the same at every registrar.</p>
+<h3>GoDaddy</h3>
+<p>Open the domain, go to DNS, and edit the existing A record with the name @. GoDaddy often has a default "Parked" A record and a www CNAME pointing to @; change the A record value to Shopify's IP and change the www CNAME value to shops.myshopify.com. Also check the Forwarding section and remove any forwarding you added earlier. GoDaddy also offers a one-click Shopify connection; if it fails, edit the records by hand.</p>
+<h3>Hostinger</h3>
+<p>In hPanel, open Domains, then DNS / Nameservers. If the domain also had a Hostinger website, the root A record and the www record will point to the hosting server. Change them to the Shopify values and delete any duplicate A or AAAA records. Do not delete the MX, SPF or DKIM records if you use Hostinger email.</p>
+<h3>BigRock, Namecheap and others</h3>
+<p>Look for DNS Management or Advanced DNS. Some older panels require the root to be written as the domain name itself rather than @. Remove URL redirect records that point the root to a different address.</p>
+<h2>Should you change nameservers or just records?</h2>
+<p>For most Indian businesses, keep the nameservers where they are and edit the A and CNAME records. Changing nameservers moves all DNS to a new provider, and every record you forget to copy breaks something, usually business email first.</p>
+<p>Shopify also lets you buy a domain inside Shopify or transfer one in. Transferring is only worth doing if you want Shopify to manage renewals; it adds a step and a lock period, and you should still copy every email record before moving. Our guide to <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain without downtime</a> covers that process.</p>
+<h2>Keep your business email working</h2>
+<p>Connecting a domain to Shopify only changes where the website lives. Your email is controlled by the MX, SPF, DKIM and DMARC records, and those should stay exactly as they are. Before you edit anything:</p>
+<ul>
+<li>Take a screenshot or export of every DNS record.</li>
+<li>Note the MX records (Google Workspace, Zoho, Microsoft 365 or Hostinger mail).</li>
+<li>Note the TXT records for SPF, verification and DMARC, and any DKIM CNAME or TXT records.</li>
+</ul>
+<p>If email stops after a change, compare the current records with your screenshot. For Hostinger mailboxes, the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup guide</a> lists the records to restore.</p>
+<h2>Shopify SSL pending or "not secure" after connecting</h2>
+<p>Shopify issues a free SSL certificate once both records point to it. If the domain is connected but SSL stays pending:</p>
+<ul>
+<li><strong>Check for a proxy.</strong> If Cloudflare manages your DNS and the records are proxied (orange cloud), Shopify may not be able to issue its certificate and visitors can see errors or redirect loops. Set the Shopify records to DNS only (grey cloud) unless you have a specific, tested reason to proxy. Our <a href="/blog/what-is-a-cdn/">CDN guide</a> explains what a proxy does and when it gets in the way.</li>
+<li><strong>Remove extra A and AAAA records</strong> that point elsewhere, even if they look harmless.</li>
+<li><strong>Check CAA records.</strong> A CAA record that allows only one certificate authority can stop Shopify's certificate. Either remove it or add the authority Shopify uses, as listed in Shopify's help pages.</li>
+<li><strong>Give it time.</strong> Certificates usually appear within hours of correct DNS, but can take up to 48 hours.</li>
+</ul>
+<p>For general certificate warnings, such as a mismatched name or an expired certificate shown on an old subdomain, see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors and how to fix them</a>.</p>
+<h2>Too many redirects or the wrong site loading</h2>
+<p>After connecting, some stores loop between www and the root or show the old website on one version. Common causes:</p>
+<ul>
+<li>A redirect rule at the registrar or old host sends the root to www while Shopify sends www to the root.</li>
+<li>Cloudflare has an "Always use HTTPS" or page rule that conflicts with Shopify's own redirects while the record is proxied.</li>
+<li>The old WordPress site is still on the root A record, so one version shows the store and the other shows the old site.</li>
+</ul>
+<p>Remove external redirects and let Shopify handle the redirect between www and the root through the primary domain setting. Our <a href="/blog/too-many-redirects-error-fix/">too many redirects guide</a> has more checks if the loop continues.</p>
+<h2>Moving an existing website to Shopify on the same domain</h2>
+<p>If the domain already had a WordPress or custom site with Google rankings, plan the switch rather than just pointing the records:</p>
+<ol>
+<li>List the old URLs that get traffic, from Search Console or analytics.</li>
+<li>Create URL redirects in Shopify (Online Store, then Navigation, then URL redirects) from old paths to the new product, collection and page URLs.</li>
+<li>Switch the DNS records at a quiet time, after the store, payments and shipping are tested and the store password is ready to remove.</li>
+<li>Submit the new sitemap in Search Console and watch the indexing reports for errors.</li>
+</ol>
+<p>The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers titles, canonicals and the sitemap once the store is live.</p>
+<h2>How to check that the domain is really connected</h2>
+<ul>
+<li>Use a public DNS lookup tool to check the A record for the root and the CNAME for www from several locations.</li>
+<li>Open the domain on mobile data, not only your office Wi-Fi, to avoid a cached answer.</li>
+<li>In Shopify, the domain should show as Connected with SSL active.</li>
+<li>Open both www and non-www versions with http and https; all four should land on the primary https address.</li>
+<li>Send a test email to and from your business address to confirm mail still flows.</li>
+</ul>
+<h2>When to get help</h2>
+<p>If records look correct but the store still shows "This store is unavailable", SSL stays pending for more than two days, or email broke during the change, it is worth having someone review the full DNS zone. We connect domains, migrate stores and fix DNS for Indian brands as part of our <a href="/shopify-developer/">Shopify development service</a>, and we work with businesses across the country through our <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer service in India</a>.</p>
+<h2>FAQs</h2>
+<h3>Why is my Shopify domain not connecting?</h3>
+<p>Usually because the root A record or the www CNAME is wrong, an old record still points to a previous host, or you edited DNS at the registrar while the nameservers point to another provider. Fix the records where DNS is actually managed, then verify again.</p>
+<h3>How long does it take for a domain to connect to Shopify?</h3>
+<p>Often under an hour, but DNS changes can take up to 48 hours to spread everywhere. SSL is issued after the records are correct and can take a few more hours.</p>
+<h3>What DNS records does Shopify need?</h3>
+<p>An A record for the root domain pointing to the Shopify IP shown in your admin, and a CNAME for www pointing to shops.myshopify.com. Remove other A or AAAA records on those names.</p>
+<h3>Will connecting my domain to Shopify break my email?</h3>
+<p>Not if you only change the A record and the www CNAME. Email depends on MX, SPF, DKIM and DMARC records, which you should leave unchanged. Problems usually come from switching nameservers without copying those records.</p>
+<h3>Why does my Shopify store say SSL pending?</h3>
+<p>The records may not have updated yet, a Cloudflare proxy may be active on the Shopify records, or an extra AAAA or restrictive CAA record is interfering. Correct those and wait for Shopify to issue the certificate.</p>
+<h3>Can I use a .in domain with Shopify?</h3>
+<p>Yes. A .in or .co.in domain connects to Shopify the same way as a .com, using the same A and CNAME records at your DNS provider.</p>
+`,
+  },
+  {
+    slug: 'shopify-emails-going-to-spam',
+    seoTitle: 'Shopify Emails Going to Spam? How to Fix It in India',
+    title: 'Shopify Emails Going to Spam? Fixing Order Confirmations and Notifications With Sender Email and Domain Authentication',
+    description: 'Shopify order emails going to spam? Set a sender email on your domain, authenticate it with DNS records, add DMARC and clean up your email templates.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india', 'woocommerce-developer'],
+    body: `
+<p>If your Shopify emails are going to spam, start with the sender email: use an address on your own domain (such as orders@yourbrand.in), not a Gmail or Yahoo address, then authenticate that domain in Shopify by adding the DNS records it shows you. Add a DMARC record for the domain. These three steps fix most cases of order confirmations, shipping updates and Shopify Email campaigns landing in spam or not arriving.</p>
+<p>Below is the full fix, the checks to run when emails still go missing, and how to keep customers in India receiving order and COD confirmation emails reliably.</p>
+<h2>Shopify emails going to spam: the quick fix</h2>
+<ol>
+<li><strong>Set a sender email on your domain.</strong> In Shopify admin, open the Notifications settings (in some admin versions the sender email sits under Store details) and set the sender email to an address on your own domain.</li>
+<li><strong>Authenticate the domain.</strong> Shopify will show a prompt to authenticate. It gives you a set of CNAME records to add at your DNS provider. Add them exactly as shown.</li>
+<li><strong>Publish a DMARC record.</strong> Add a TXT record at _dmarc on your domain. A starting policy of p=none with a reporting address is common, then tighten it later.</li>
+<li><strong>Wait and verify.</strong> Return to Shopify and confirm the domain shows as authenticated. DNS changes can take up to 48 hours.</li>
+<li><strong>Send a test order.</strong> Place a test order with Gmail and Outlook addresses and check where the confirmation lands.</li>
+</ol>
+<p>If SPF, DKIM and DMARC are new terms, our guide to <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does and how to test them.</p>
+<h2>Why Shopify emails land in spam</h2>
+<p>Inbox providers such as Gmail decide where a message goes based on whether the sending domain is verified, the reputation of that domain, and what recipients do with your mail. For Shopify stores, the usual problems are:</p>
+<ul>
+<li><strong>A free email as sender.</strong> If the sender is yourbrand@gmail.com, Shopify cannot send as Gmail on your behalf. It sends from its own address and puts yours as the reply-to, which looks less trustworthy and can confuse customers.</li>
+<li><strong>Domain not authenticated.</strong> Without the DKIM records Shopify provides, messages are not signed for your domain, and Gmail and Yahoo treat unauthenticated mail claiming to be from your brand with suspicion.</li>
+<li><strong>No DMARC record.</strong> Large inbox providers now expect bulk senders to have DMARC. Even small stores benefit, because it tells receivers how to treat mail that fails checks.</li>
+<li><strong>Marketing reputation spilling over.</strong> If newsletters from the same domain get many spam complaints or go to old, purchased or unengaged lists, the domain's reputation drops and order emails can suffer too.</li>
+<li><strong>Template content.</strong> Image-heavy emails, many links, all-caps subject lines or heavy discount wording in order notifications look like promotions.</li>
+<li><strong>Wrong or mistyped customer emails.</strong> Some "not received" cases are simply addresses like name@gmial.com typed at checkout.</li>
+</ul>
+<h2>Set the sender email properly</h2>
+<p>Choose an address customers recognise and that someone actually reads, such as orders@ or support@ on your domain. That mailbox can live in Google Workspace, Zoho Mail, Microsoft 365 or your hosting email; Shopify only needs to send as that address after authentication. If you do not yet have mailboxes on your domain, compare <a href="/blog/business-email-options/">business email options</a> before choosing one.</p>
+<p>Keep the same domain for the sender as your store domain where possible. A store on yourbrand.in sending from a completely different domain is a common source of mismatch and confusion.</p>
+<h2>Authenticate your domain in Shopify</h2>
+<p>When you enter a sender email on your own domain, Shopify asks you to authenticate it. The admin shows the DNS records you need, usually several CNAME records for DKIM signing. Copy them into the DNS panel where your domain is managed (GoDaddy, Hostinger, BigRock, Cloudflare and so on).</p>
+<ul>
+<li>Some DNS panels add your domain to the end of the host name automatically. If Shopify shows a full host name, you may need to enter only the part before your domain.</li>
+<li>Do not delete your existing SPF, MX or DKIM records for your mailbox provider. Shopify's records sit alongside them.</li>
+<li>If the domain was bought through Shopify, the records may be added for you automatically.</li>
+</ul>
+<p>For a Hostinger mailbox, the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup guide</a> shows where MX, SPF and DKIM sit so you can add Shopify's records without disturbing them.</p>
+<h2>Add DMARC and check SPF</h2>
+<p>A basic DMARC record is a TXT record on the host _dmarc with a value such as v=DMARC1; p=none; rua=mailto:dmarc@yourbrand.in. Start with p=none to collect reports, then move to quarantine once you know every service that sends mail for your domain, such as Shopify, your mailbox provider, any marketing tool and any invoicing software.</p>
+<p>Your domain should have only one SPF record. If you see two TXT records that start with v=spf1, merge them into one. Shopify's DKIM authentication is what aligns Shopify mail with your domain for DMARC, so you normally do not need to add Shopify to SPF unless its current help pages ask you to.</p>
+<h2>Fix the content of your notification templates</h2>
+<p>Shopify's default notification templates are clean. Problems usually start after heavy editing. In the Notifications settings:</p>
+<ul>
+<li>Keep order confirmations mostly text: order number, items, amount, payment method (prepaid or cash on delivery), delivery address and expected dispatch time.</li>
+<li>Avoid turning order emails into sales emails with large banners, many product links and discount codes.</li>
+<li>Use a plain subject such as "Order #1234 confirmed" rather than capital letters or emojis.</li>
+<li>Make the reply-to address a monitored mailbox, so customers can answer instead of marking mail as spam.</li>
+<li>Add your phone or WhatsApp support number in the footer so customers can confirm orders another way.</li>
+</ul>
+<p>If you also run a WooCommerce store, the same principles appear in our guide to <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a>.</p>
+<h2>COD confirmations and customers who never see the email</h2>
+<p>For cash on delivery orders, a missed confirmation email can lead to refused deliveries. Do not rely on email alone:</p>
+<ul>
+<li>Send order and COD confirmation by SMS or WhatsApp through an approved app, alongside email.</li>
+<li>Show a clear thank-you page with the order number and what happens next.</li>
+<li>Ask customers to check the Promotions and Spam folders in Gmail if they report a missing email, and to mark your message as Not spam.</li>
+</ul>
+<p>Our guide to <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify in India</a> covers confirmation flows that reduce return-to-origin orders.</p>
+<h2>Shopify Email newsletters and domain reputation</h2>
+<p>Marketing email from the same domain affects how inboxes treat all your mail. To protect order emails:</p>
+<ul>
+<li>Only email customers who agreed to receive marketing, and honour unsubscribes.</li>
+<li>Never upload bought or scraped lists.</li>
+<li>Remove addresses that bounce or have not opened anything for many months.</li>
+<li>Send at a steady pace rather than sudden large blasts during sales.</li>
+</ul>
+<p>For list building and consent, see <a href="/blog/email-newsletter-small-business/">email newsletters for small businesses</a>.</p>
+<h2>How to test where your emails land</h2>
+<ol>
+<li>Place test orders using a Gmail, an Outlook and a company address.</li>
+<li>In Gmail, open the message, use Show original, and check that SPF, DKIM and DMARC say PASS and that DKIM is signed for your domain.</li>
+<li>Check the sender line. It should show your domain address, not a Shopify address with "via" text.</li>
+<li>Repeat after any change to DNS, sender email or templates.</li>
+</ol>
+<p>Be careful with emails that claim your domain has delivery problems and offer paid fixes; many are scams. See <a href="/blog/domain-seo-scam-emails/">fake domain and SEO emails</a> for how to spot them.</p>
+<h2>When to get help</h2>
+<p>If records look correct but Gmail still shows failures, or your DNS has several services competing for SPF and DKIM, a short audit of the whole zone usually finds the conflict. We set up sender domains, notifications and store email for Indian brands as part of our <a href="/shopify-developer/">Shopify development service</a>, and businesses anywhere in the country can work with us through our <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer service in India</a>.</p>
+<h2>FAQs</h2>
+<h3>Why are my Shopify emails going to spam?</h3>
+<p>Usually because the sender email is a free address or a domain that is not authenticated in Shopify, there is no DMARC record, or the domain's reputation has been hurt by marketing emails. Fix the sender and authentication first.</p>
+<h3>How do I authenticate my domain in Shopify?</h3>
+<p>Set a sender email on your own domain in the notification settings, copy the CNAME records Shopify shows you into your DNS panel, then return to Shopify to confirm the domain is authenticated.</p>
+<h3>Can I use a Gmail address as my Shopify sender email?</h3>
+<p>You can enter one, but Shopify will not send as Gmail. It sends from its own address with yours as reply-to, which is more likely to land in spam. Use an address on your own domain.</p>
+<h3>Why are Shopify order confirmation emails not being received?</h3>
+<p>Check the customer's email address for typos, look in Spam and Promotions, confirm the notification is enabled, and verify your domain authentication. Also check that your DNS has only one SPF record.</p>
+<h3>Does Shopify need an SPF record?</h3>
+<p>Shopify relies on the DKIM records it gives you for authentication, so most stores do not add Shopify to SPF. Keep a single valid SPF record for your mailbox provider and follow any current instructions in Shopify's admin.</p>
+<h3>Do I need DMARC for a small Shopify store?</h3>
+<p>Yes, it is recommended. Gmail and Yahoo expect DMARC from bulk senders, and a simple p=none record also gives you reports showing which services send mail for your domain.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-add-to-cart-not-working',
+    seoTitle: 'WooCommerce Add to Cart Not Working? How to Fix It',
+    title: 'WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and "Cannot Be Purchased" Errors',
+    description: 'WooCommerce add to cart not working? Fix caching, cart fragments, JavaScript conflicts, stock and price settings, variable products and empty carts.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If WooCommerce add to cart is not working, first check three things: that the cart, checkout and my account pages are excluded from every cache, that no JavaScript error appears in the browser console when you click the button, and that the product has a price, stock and (for variable products) a selected variation. These cover most cases of buttons that do nothing, carts that stay empty and mini carts that never update.</p>
+<p>Below is a symptom-by-symptom fix list, followed by a safe testing routine you can use on a live Indian store without losing orders.</p>
+<h2>WooCommerce add to cart not working: match the symptom</h2>
+<table>
+<thead><tr><th>What you see</th><th>Most likely cause</th></tr></thead>
+<tbody>
+<tr><td>Button does nothing when clicked</td><td>JavaScript error or conflict from a plugin, theme or minification</td></tr>
+<tr><td>Product added, but cart page is empty</td><td>Cart page cached, session cookie blocked, or www/https mismatch</td></tr>
+<tr><td>Header mini cart count does not change</td><td>Cart fragments disabled or cached by a speed plugin or CDN</td></tr>
+<tr><td>Button missing on a product</td><td>No price, out of stock, or catalogue mode settings</td></tr>
+<tr><td>"Please select some product options"</td><td>Variable product with no variation chosen or broken variation data</td></tr>
+<tr><td>"Sorry, this product cannot be purchased"</td><td>Missing price, product not published, or a plugin restricting purchase</td></tr>
+<tr><td>Works on desktop but not on mobile</td><td>Separate mobile cache, a mobile-only script, or an overlay covering the button</td></tr>
+</tbody>
+</table>
+<h2>1. Exclude cart pages from caching</h2>
+<p>Cached pages are the most common cause. If the cart page is cached, visitors can see someone else's cart or an empty one. Check each cache layer:</p>
+<ul>
+<li><strong>Caching plugin</strong> such as LiteSpeed Cache, WP Rocket or W3 Total Cache: confirm the cart, checkout and my account pages are excluded. Most plugins detect WooCommerce pages, but custom cart page URLs or a translated slug can be missed.</li>
+<li><strong>Hosting cache</strong> on Hostinger, SiteGround, Cloudways and similar hosts: check the server cache settings and exclusions.</li>
+<li><strong>CDN or Cloudflare</strong>: a "cache everything" rule will cache the cart. Bypass cache for cart, checkout, my account and any request carrying WooCommerce cart or session cookies.</li>
+</ul>
+<p>After changing exclusions, clear every cache layer in order; our guide to <a href="/blog/wordpress-changes-not-showing/">changes not showing on WordPress</a> explains the clearing order. If you use a CDN, the <a href="/blog/what-is-a-cdn/">CDN guide</a> covers what to bypass.</p>
+<h2>2. Check cart fragments and the mini cart</h2>
+<p>WooCommerce uses a small script, cart fragments, to refresh the cart count and mini cart in the header without reloading the page. Speed plugins often disable it to save a request. If the mini cart stops updating after a speed change, re-enable cart fragments, at least on shop and product pages. Some themes provide their own mini cart that depends on this script.</p>
+<p>Also check that the request WooCommerce uses to refresh fragments (the wc-ajax request) is not cached by the CDN or blocked by a firewall rule.</p>
+<h2>3. Look for JavaScript errors and plugin conflicts</h2>
+<p>Open the product page in Chrome, press F12, go to Console and click Add to cart. A red error usually names the file causing it. Common culprits:</p>
+<ul>
+<li>JavaScript minification, combining or "delay JavaScript" features in speed plugins that break the order scripts load in.</li>
+<li>Two plugins loading different versions of the same library.</li>
+<li>Product add-on, wishlist, quick view, side cart or pincode checker plugins that hook into the add to cart button.</li>
+<li>A page builder template that replaced the WooCommerce product form with a custom widget.</li>
+</ul>
+<p>Turn off JavaScript optimisation first. If that fixes it, exclude WooCommerce scripts (and jQuery) from delay and combine settings rather than leaving optimisation off.</p>
+<h2>4. Check WooCommerce settings</h2>
+<ul>
+<li><strong>Pages:</strong> under WooCommerce, then Settings, then Advanced, confirm the Cart and Checkout pages are set and published.</li>
+<li><strong>Cart behaviour:</strong> under WooCommerce, then Settings, then Products, check "Redirect to the cart page after successful addition" and "Enable AJAX add to cart buttons on archives". Turning AJAX off temporarily is a quick test: if adding works with a full page reload, the problem is JavaScript or fragments.</li>
+<li><strong>Cart block or shortcode:</strong> newer stores use the Cart block. Some older themes and plugins only work with the classic shortcode. If the cart displays oddly after an update, test the other version on staging.</li>
+</ul>
+<h2>5. Check the product itself</h2>
+<p>When the button is missing or a product "cannot be purchased", the issue is usually the product data:</p>
+<ul>
+<li><strong>No price.</strong> A simple product with an empty regular price has no add to cart button. Some stores do this deliberately for enquiry-only items.</li>
+<li><strong>Stock.</strong> If stock management is on and stock is zero with backorders off, the product is out of stock. See <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory and stock management</a>.</li>
+<li><strong>Variable products.</strong> Each variation needs its own price and stock status, and must be enabled. A variation with no price makes that option unavailable. Our <a href="/blog/woocommerce-product-variations/">product variations guide</a> covers the setup.</li>
+<li><strong>Catalogue or enquiry plugins</strong> that hide the button for some users or categories.</li>
+<li><strong>Visibility and status:</strong> draft, private or scheduled products cannot be bought by customers.</li>
+</ul>
+<h2>6. Empty cart after adding: sessions and cookies</h2>
+<p>If the notice says the product was added but the cart is empty, WooCommerce cannot keep the session:</p>
+<ul>
+<li>Make sure the site uses one address. If some links go to http or to the non-www version, the cookie set on one version is not read on the other. Fix the WordPress Address and Site Address settings and redirect everything to one https version.</li>
+<li>Check that a cookie consent tool is not blocking WooCommerce's essential cookies. Session and cart cookies are needed for the store to work.</li>
+<li>Look at the database: a crashed sessions table, or a host that has run out of database space, can stop sessions saving.</li>
+<li>Security plugins or a web application firewall can block the AJAX request. Check their logs for blocked admin-ajax or wc-ajax requests.</li>
+</ul>
+<h2>7. Outdated theme templates</h2>
+<p>Go to WooCommerce, then Status, and scroll to Templates. If your theme overrides WooCommerce templates and they are marked outdated, an old cart or product template may not match the current WooCommerce code. Update the theme or ask your developer to update the overrides in the child theme.</p>
+<h2>A safe test routine for a live store</h2>
+<ol>
+<li>Take a full backup, including the database.</li>
+<li>Create a staging copy if your host offers one, and do the testing there.</li>
+<li>Switch to a default theme such as Storefront on staging and test add to cart.</li>
+<li>Deactivate plugins one by one, starting with speed, cart, checkout and product add-on plugins, testing after each.</li>
+<li>When you find the cause, fix the setting or replace the plugin, then apply the same change on the live store.</li>
+<li>Place a real test order through the payment gateway, including UPI and COD if you offer them.</li>
+</ol>
+<p>If checkout also fails after adding to cart, continue with the <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout troubleshooting guide</a>. For the wider list of errors and their first checks, see <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
+<h2>Stop it happening again</h2>
+<ul>
+<li>Test add to cart, cart, checkout and payment after every plugin or theme update.</li>
+<li>Make speed changes on staging first, because aggressive optimisation is a frequent cause.</li>
+<li>Keep a simple weekly check in your <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</li>
+<li>When tuning performance, follow a store-safe approach such as our <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a>.</li>
+</ul>
+<h2>When to get help</h2>
+<p>Every hour the add to cart button fails costs sales, especially during festival offers. If you cannot find the conflict quickly, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can diagnose and fix it on a staging copy first, and our <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include tested updates so the store keeps selling.</p>
+<h2>FAQs</h2>
+<h3>Why is my WooCommerce add to cart button not working?</h3>
+<p>The usual causes are cached cart pages, a JavaScript conflict from a plugin or speed optimisation, or product data such as a missing price, zero stock or an incomplete variation. Check the browser console and your cache exclusions first.</p>
+<h3>Why is my WooCommerce cart empty after adding a product?</h3>
+<p>The cart page may be cached, the session cookie may be blocked, or the site may be switching between www and non-www or http and https. Use one https address and exclude cart pages from caching.</p>
+<h3>Why is the WooCommerce mini cart not updating?</h3>
+<p>Cart fragments are usually disabled by a speed plugin or the fragment request is cached by a CDN. Re-enable fragments and bypass cache for that request.</p>
+<h3>Why does WooCommerce say "Sorry, this product cannot be purchased"?</h3>
+<p>The product or variation has no price, is not published, or a plugin is restricting purchase. Check the product's price, status and any catalogue or membership plugins.</p>
+<h3>Why is the add to cart button missing in WooCommerce?</h3>
+<p>Products without a price, out-of-stock products with backorders off, and products hidden by catalogue mode plugins do not show the button. Some themes also hide it on shop pages.</p>
+<h3>Can a caching plugin break WooCommerce add to cart?</h3>
+<p>Yes. Page caching on cart and checkout pages and JavaScript delay or combine features are among the most common causes. Exclude WooCommerce pages and scripts from those features.</p>
 `,
   },
 ];

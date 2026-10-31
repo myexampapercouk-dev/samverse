@@ -113,7 +113,7 @@
  "blog-website-for-real-estate-agents-brokers": "18db8613ceb88e08166848646dc36cb2fcb08451",
  "blog-common-wordpress-errors-fixes": "a2f31e09afc256780afd2f0826632b1a23436b6c",
  "blog-ssl-certificate-errors-fix": "a6b7c59066d6ca19711b87ac731bef2e999ddc5d",
- "blog-what-is-a-cdn": "774910ad0c7ab6521ada8cd695a62c94fcfcc100",
+ "blog-what-is-a-cdn": "0bddcae42dd18f1f857622d3044194ae388bb7e6",
  "blog-google-maps-on-website": "4ef6ba7b0e10998320df9a8526248507d83af803",
  "blog-website-analytics-metrics-that-matter": "357bd1d56b1259c3244b88bde9f4222614386d82",
  "blog-mobile-first-design-explained": "f8ad2b40bc86ca45f789d31c57fa3fe6d11e2886",
@@ -419,7 +419,7 @@
  "blog-mixed-content-warnings-fix": "413b7aba272a6d346ba228cf8275cd0149135a74",
  "blog-too-many-redirects-error-fix": "264e6ae6d7bbc454ab6d7ba2eb3ca9c55d27bcc9",
  "blog-wordpress-not-sending-emails-smtp": "5860650d8ba1b9ba85824c71d003020a2a5b3092",
- "blog-ecommerce-website-cost-india": "ea27c8496426838dcd0813a70cb4c367b7763ba2",
+ "blog-ecommerce-website-cost-india": "93c0dc99b63ac7f144c0ad60ca1a6269446eb08f",
  "blog-cheap-website-risks": "6ef3fce9a18a4bd736e910b3ea5480cb7045b87b",
  "blog-website-refresh-vs-redesign": "2aec48b59f3030cbd1eb6d52cbc210075d7af6f7",
  "blog-dpdp-act-website-basics": "4a5be93a7c4cb4c2a58c8a278e0f47d33e1654ea",
@@ -500,7 +500,7 @@
  "blog-wordpress-plugin-conflicts-troubleshooting": "a75b589d77da9e76604689934e86b3ce9fb44bd8",
  "blog-website-for-gym-equipment-sellers": "f77a0b60cf18f2ba3565decd464efb8d3e872875",
  "blog-website-for-lab-scientific-equipment-suppliers": "dfd5d102da5b17c695d6f5ca211c0a6ac7e5e9ec",
- "blog-rebranding-your-website": "b00fdfc05436593bc69df4476da0faffb2e7faae",
+ "blog-rebranding-your-website": "6ae92cf7d80e453f9f225dc472ce2b33db874b77",
  "blog-website-for-drone-services": "38cd5d89c78fd4b3a8a93f05f864308e1a8a2f91",
  "blog-website-for-aquarium-shops": "fdee2f77210ee7c5ca0a0ffcf842758cb175beb8",
  "blog-website-for-musical-instrument-stores": "da9dcfec56870de7e024a8d53d41ea0e5fc359d0",
@@ -666,5 +666,8 @@
  "blog-wordpress-revisions-not-showing": "e69279c9e2b4c236a3bf957746e355f6821b5559",
  "blog-marathi-website-design": "769b3f1310fd302321ac4503177eda97a79f35b6",
  "blog-website-amc-contract-india": "e8e7db2989541590cddf4ae4fb0f767b04d8c4fa",
- "blog-website-for-pune-industrial-suppliers": "1a78de6891e21ba3d6f4a24c2dab9a2df58535d8"
+ "blog-website-for-pune-industrial-suppliers": "1a78de6891e21ba3d6f4a24c2dab9a2df58535d8",
+ "blog-shopify-domain-not-connecting": "9bbe537a6e99ea7aa49747dced14ce6e24b64b06",
+ "blog-shopify-emails-going-to-spam": "5121724f56c9b063b05f48afbd7ca22ca5035de7",
+ "blog-woocommerce-add-to-cart-not-working": "3240c38c3a6830014e5e607783e3546ea0d397d8"
 }

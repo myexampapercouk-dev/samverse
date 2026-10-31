@@ -4262,5 +4262,26 @@
     <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
     <description>Website for industrial suppliers in Pune and PCMC: capability pages, catalogues, vendor registration details, RFQ forms and local SEO for MIDC buyers.</description>
   </item>
+  <item>
+    <title>Shopify Domain Not Connecting? How to Fix DNS, Verification and SSL Errors With GoDaddy, Hostinger and BigRock</title>
+    <link>https://samverse.space/blog/shopify-domain-not-connecting/</link>
+    <guid>https://samverse.space/blog/shopify-domain-not-connecting/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Shopify domain not connecting or stuck on SSL pending? Check the A and CNAME records, remove conflicts, fix Cloudflare and keep your email working.</description>
+  </item>
+  <item>
+    <title>Shopify Emails Going to Spam? Fixing Order Confirmations and Notifications With Sender Email and Domain Authentication</title>
+    <link>https://samverse.space/blog/shopify-emails-going-to-spam/</link>
+    <guid>https://samverse.space/blog/shopify-emails-going-to-spam/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Shopify order emails going to spam? Set a sender email on your domain, authenticate it with DNS records, add DMARC and clean up your email templates.</description>
+  </item>
+  <item>
+    <title>WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and &quot;Cannot Be Purchased&quot; Errors</title>
+    <link>https://samverse.space/blog/woocommerce-add-to-cart-not-working/</link>
+    <guid>https://samverse.space/blog/woocommerce-add-to-cart-not-working/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>WooCommerce add to cart not working? Fix caching, cart fragments, JavaScript conflicts, stock and price settings, variable products and empty carts.</description>
+  </item>
 </channel>
 </rss>
