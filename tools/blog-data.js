@@ -12580,6 +12580,8 @@ function my_only_free_shipping( $rates ) {
 
 <p>Setting up a Shopify store instead? <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers profiles, zones, pin code checks, courier apps, NDR and RTO there.</p>
 
+<p>Running a Shopify store instead? The guide to <a href="/blog/shopify-pincode-checker-india/">Shopify pin code and COD checkers</a> covers the same serviceability question on that platform.</p>
+
 <h2>Couriers and shipping aggregators</h2>
 <p>Aggregators let you ship with several couriers from one dashboard; a direct courier account can suit stores with steady volumes. At the time of writing, Shiprocket, Delhivery and iThink Logistics all offer ways to connect a WooCommerce store, through a plugin or a channel connection in their own dashboard. Depending on the provider, an integration can:</p>
 <ul>
@@ -19257,14 +19259,16 @@ Target:  https://example.com/$1/</code></pre>
   },
   {
     slug: 'migrate-shopify-to-woocommerce',
-    seoTitle: 'How to Migrate From Shopify to WooCommerce (Step by Step)',
-    title: 'How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover',
-    description: 'Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.',
+    seoTitle: 'Migrate Shopify to WooCommerce: Step-by-Step Guide for India',
+    title: 'How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover',
+    description: 'How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-migration', 'shopify-developer'],
     body: `
+<p>You can migrate Shopify to WooCommerce without losing your products, customers or most of your search traffic, as long as the data is checked and every old URL is redirected. The work is a rebuild on WordPress plus a careful data move, done on staging while the Shopify store keeps selling.</p>
+
 <p>To move from Shopify to WooCommerce, export your products, customers and orders from Shopify, build the new store on WooCommerce in a staging copy, import and check the data, and set up payments, shipping and taxes for India. Then map every old Shopify URL, especially /products/ and /collections/ addresses, to its new page with 301 redirects, test real orders end to end, and switch the domain during a quiet sales period, keeping Shopify running until you have verified everything.</p>
 <p>Moving a store from Shopify is something I handle as part of <a href="/woocommerce-developer/">WooCommerce development</a>: products, categories and images are moved across, along with customers and past orders where Shopify's exports allow, and old URLs are redirected to protect your search visibility. The domain switch and redirects follow my <a href="/wordpress-migration/">website migration</a> process, so the old store stays live until the new one is tested.</p>
 <p>Not sure you should switch at all? <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares running costs, payments, COD and GST first.</p>
@@ -19300,7 +19304,7 @@ Target:  https://example.com/$1/</code></pre>
     <tr><td>SEO titles and descriptions</td><td>Mapped into your SEO plugin's fields during import</td><td>Check a sample of products afterwards</td></tr>
   </tbody>
 </table>
-<p>Paid migration tools can move products, customers and orders in one pass, and suit large catalogues. Whichever route you use, check samples by hand: a simple product, a product with several variants, a product on sale, a customer with several addresses and an old order. Planning attributes before the import keeps filters clean; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+<p>Paid migration tools can move products, customers and orders in one pass, and suit large catalogues. Whichever route you use, check samples by hand: a simple product, a product with several variants, a product on sale, a customer with several addresses and an old order. Planning attributes such as size and colour before the import keeps filters and variations clean.</p>
 
 <h2>Step 2: Build the WooCommerce store on staging</h2>
 <ol>
@@ -19362,6 +19366,26 @@ Target:  https://example.com/products/$1/</code></pre>
 </ol>
 <p>Keep the Shopify store open, password-protected, for a week or two in case anything was missed, and download any remaining exports before you close it.</p>
 
+<h2>How long a Shopify to WooCommerce migration takes</h2>
+<p>There is no fixed timeline, because it depends on a few things you can judge in advance:</p>
+<ul>
+<li><strong>Catalogue size and variants.</strong> A small catalogue of simple products moves quickly; thousands of products with many options need more reshaping and checking.</li>
+<li><strong>Design.</strong> Matching the current look closely takes longer than building on a well-chosen WooCommerce theme with light changes.</li>
+<li><strong>Apps to replace.</strong> Each Shopify app you rely on needs a plugin, a setting or custom work on WooCommerce, and each one needs testing.</li>
+<li><strong>Orders and customers.</strong> Moving past orders adds a tool, a sync before cutover and more checks.</li>
+<li><strong>Content.</strong> Many blog posts and pages mean more redirects and more pages to recreate.</li>
+</ul>
+<p>Plan the cutover around your sales calendar rather than a deadline, so the switch never lands in a festival season.</p>
+
+<h2>Common mistakes when moving off Shopify</h2>
+<ul>
+<li>Closing the Shopify store before every export, image and invoice record has been saved.</li>
+<li>Importing products before deciding the permalink structure, then having to redirect everything.</li>
+<li>Sending every old URL to the homepage instead of its closest match.</li>
+<li>Forgetting the payment gateway webhook, so paid orders stay pending.</li>
+<li>Skipping test orders on a phone with real COD and prepaid flows.</li>
+</ul>
+
 <h2>After the move</h2>
 <p>For the first weeks, check Search Console for 404 errors and fix them with redirects, compare traffic and orders for your top products with the weeks before the move, and watch the gateway dashboard for failed payments. Expect some ranking movement while Google recrawls the store. <a href="/blog/woocommerce-seo-guide/">The WooCommerce SEO guide</a> covers what to improve once things settle.</p>
 
@@ -19374,6 +19398,8 @@ Target:  https://example.com/products/$1/</code></pre>
 <p>Yes, with a migration tool or order import plugin. WooCommerce's built-in importer handles products only, so orders and customers need one of those.</p>
 <h3>Can I keep the same /products/ URLs?</h3>
 <p>Mostly. Set the product base to /products/ and the category base to "collections" in Settings &gt; Permalinks, and keep the same handles. Nested collection URLs and pages still need redirects.</p>
+<h3>How long does it take to migrate Shopify to WooCommerce?</h3>
+<p>It depends on the number of products and variants, how closely the design must match, how many apps need replacing and whether past orders move too. Plan the cutover for a quiet sales period rather than a fixed date.</p>
 <h3>Should I cancel Shopify straight after the switch?</h3>
 <p>No. Keep it for a week or two, password-protected, so you can check anything missed, and export everything you need before closing it.</p>
 
@@ -44580,6 +44606,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li><strong>Tracking:</strong> add a GA4 event on WhatsApp button clicks so you know which pages generate chats. <a href="/blog/ga4-events-explained/">GA4 events explained</a> covers this.</li>
 </ul>
 
+<p>If you sell on Shopify, WhatsApp can also take the order itself rather than just start the conversation. <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify in India</a> explains how chat orders, carts and payment links fit with the store.</p>
+
 <h2>WhatsApp, ads and Instagram</h2>
 <p>Click-to-WhatsApp ads on Facebook and Instagram can bring direct conversations, but they also bring many low-intent chats. Whether to send ad traffic to WhatsApp or your website depends on what you sell and how quickly you can reply; <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs your website</a> compares the two. Organic Instagram followers can be invited to WhatsApp updates through a link in your bio.</p>
 
@@ -62532,6 +62560,8 @@ if ( ! $link ) {
 <h2>Opt-in, and not spamming</h2>
 <p>Ask for consent at checkout with a clear checkbox, such as "Send me order updates on WhatsApp". Record that consent with the order. Keep order updates separate from marketing: a customer who agreed to delivery updates did not necessarily agree to offers. Make it easy to stop messages, and mention WhatsApp and SMS updates in your privacy policy. For marketing messages, see <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
 
+<p>Some stores go a step further and let customers place the order on WhatsApp in the first place. The guide to <a href="/blog/shopify-whatsapp-ordering-india/">taking Shopify orders on WhatsApp</a> covers how those orders reach the admin.</p>
+
 <h2>Shopify stores</h2>
 <p>Shopify has built-in email notifications and supports WhatsApp and SMS through apps that connect to the same Business Platform and DLT rules. The approach above applies; the setup happens in the app instead of a WooCommerce plugin. If you are choosing a platform, compare them in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
@@ -72891,6 +72921,8 @@ done</code></pre>
 </table>
 <p>In India, pin codes matter more than zones. Couriers don't reach every pin code, and COD is available on fewer of them. Most shipping aggregators and couriers offer a Shopify app that pulls in orders, prints labels, books pickups and sends tracking, and many add a pin code checker to the product page so shoppers know before ordering whether you deliver to them and roughly when. Test that checker with a few real pin codes, including one that should fail.</p>
 
+<p>Once zones and couriers are set, consider adding a <a href="/blog/shopify-pincode-checker-india/">pin code delivery and COD checker</a> so shoppers can confirm delivery to their address before they order.</p>
+
 <h2>Step 6: Policies customers and gateways look for</h2>
 <p>Payment providers usually check for policy pages during KYC, and shoppers read them before a first order from a brand they don't know. Shopify can generate policy templates, but a template is not your policy. Write four pages in plain language:</p>
 <ul>
@@ -73485,14 +73517,16 @@ done</code></pre>
   },
   {
     slug: 'shopify-cash-on-delivery-india',
-    seoTitle: 'Shopify Cash on Delivery India: Setup, Fees and RTO',
-    title: 'Cash on Delivery on Shopify in India: Setting It Up, COD Fees, Order Confirmation, RTO and Partial Prepaid',
-    description: 'Set up Shopify cash on delivery in India: the manual payment method, COD fees, pin code and order-value limits, confirmation, RTO and partial prepaid.',
+    seoTitle: 'Shopify Cash on Delivery in India: Setup, COD Fees and RTO',
+    title: 'Shopify Cash on Delivery in India: Setting Up COD, Fees, Pin Code Limits, Order Confirmation, RTO and Partial Prepaid',
+    description: 'Shopify cash on delivery in India: enabling COD, fees and pin code limits through apps, aggregator remittance, order confirmation, RTO and partial prepaid.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
+<p>Shopify cash on delivery in India is switched on as a manual payment method, and every COD order then waits as unpaid until the courier sends you the cash. The setup takes minutes; the real work is limiting where COD is offered, confirming orders and keeping returned parcels low.</p>
+
 <p>You switch on cash on delivery in Shopify by adding it as a manual payment method in the payments settings; each COD order then arrives unpaid and is marked as paid once the courier passes the cash on to you. Charging a COD fee, limiting COD by order value or pin code, or confirming orders over WhatsApp needs an app, because Shopify does not do those things by itself. The bigger job is keeping refused parcels, known as RTO, low enough that COD stays profitable.</p>
 
 <p>Many Indian shoppers still prefer to pay on delivery, especially for a first order from an unfamiliar brand, so most stores offer it in some form. This guide covers the setup and the controls around it. If you want it configured and tested for you, it is part of my <a href="/shopify-developer/">Shopify store setup service</a>, along with payments, shipping and invoices. For the wider launch steps, see <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a>.</p>
@@ -73530,6 +73564,18 @@ done</code></pre>
 </table>
 <p>A COD fee is the bluntest tool. It discourages casual orders but also puts off genuine first-time buyers, so many stores prefer to offer a small saving for prepaid orders instead. Either way, the fee or discount has to appear correctly on the invoice, which is covered in <a href="/blog/shopify-gst-invoices-india/">GST on Shopify</a>.</p>
 <p>Pin code rules matter because couriers collect cash in fewer places than they deliver. If a shopper can choose COD for an address your courier cannot collect from, the order fails before it starts. <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> explains how serviceability lists work.</p>
+
+<h2>Shipping aggregators, couriers and COD remittance</h2>
+<p>Many Indian Shopify stores ship COD orders through a courier account or a shipping aggregator such as Shiprocket, which usually connects to Shopify through an app, pulls in new orders and books pickups across several couriers. The aggregator or courier collects the cash at the door and passes it on to you later, after deducting its own charges, on a schedule set in its terms.</p>
+<p>A few things are worth checking before you rely on one:</p>
+<ul>
+<li>whether orders are marked as paid in Shopify automatically when cash is remitted, or whether someone still does it by hand;</li>
+<li>how the remittance report lists orders, so it can be matched against Shopify order numbers;</li>
+<li>whether the serviceability check covers COD separately from prepaid delivery for each pin code;</li>
+<li>how non-delivery reports reach you, and how quickly you must respond;</li>
+<li>what happens to the order in Shopify when a parcel is returned to origin.</li>
+</ul>
+<p>Terms and features differ between providers and change over time, so read the current agreement rather than relying on a comparison written months ago.</p>
 
 <h2>RTO: why COD parcels come back</h2>
 <p>Return to origin happens when a parcel cannot be delivered and goes back to you. On a COD order you usually pay for the outward journey and the return, collect nothing, and may get the product back damaged. The common causes are:</p>
@@ -73598,14 +73644,16 @@ done</code></pre>
   },
   {
     slug: 'shopify-gst-invoices-india',
-    seoTitle: 'Shopify GST Invoice India: Tax Settings, HSN and Apps',
-    title: 'GST on Shopify for Indian Sellers: Tax Settings, HSN Codes, GST Invoice Apps and B2B GSTIN Capture',
-    description: 'Shopify GST invoice setup for India: tax settings, tax-inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture and a checklist for your CA.',
+    seoTitle: 'Shopify GST Invoices in India: Tax Settings, HSN and Apps',
+    title: 'Shopify GST Invoices in India: Tax Settings, HSN Codes, GST Invoice Apps, B2B GSTIN Capture and Common Mistakes',
+    description: 'Shopify GST invoices in India: tax settings, inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture, CGST, SGST and IGST, and mistakes.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
+<p>Shopify GST invoices in India normally come from an invoice app, because Shopify calculates tax at checkout but does not issue a GST-compliant invoice by itself at the time of writing. Set the tax options and HSN codes correctly first, then let the app build each invoice from the order.</p>
+
 <p>To handle GST on Shopify, you set India's tax options in the taxes and duties settings, decide whether prices include tax, add overrides where products carry different rates, store an HSN code on each product and install a GST invoice app, because Shopify does not issue a GST-compliant invoice by itself at the time of writing. Business buyers need a way to give their GSTIN at checkout. Your CA should confirm the rates and invoice format before you take real orders.</p>
 
 <p>This guide covers the Shopify side of that work: where the settings are, what to check in an invoice app and where the common mistakes happen. It is not tax advice, and the rules change, so treat every tax point here as something to confirm. If you want the settings and invoice app configured and tested, that is part of my <a href="/shopify-developer/">Shopify store setup service</a>. The same ideas on WooCommerce are explained in the <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup guide</a>, which goes further into CGST, SGST and IGST.</p>
@@ -73671,6 +73719,19 @@ done</code></pre>
 <p>In broad terms, a sale within your own state usually carries CGST and SGST, and a sale to another state usually carries IGST. In practice the split depends on the place of supply, which for goods sent to a customer is generally where they are delivered, with exceptions. Shopify's checkout shows the tax amount, but the split printed on the invoice normally comes from the invoice app comparing the delivery state with your registered state.</p>
 <p>That makes three things worth testing: an order to your own state, one to another state, and one where the billing and shipping states differ. Show the results to your CA. If you sell to customers abroad, ask separately how exports should be invoiced; that is outside this guide.</p>
 
+<h2>Common GST mistakes on Shopify stores</h2>
+<p>Most invoice problems come from the setup rather than the app. Watch for these:</p>
+<ul>
+<li><strong>Leaving the pre-filled default rate.</strong> The rate Shopify suggests may not match your products, and every order then carries the wrong tax.</li>
+<li><strong>Mixing inclusive and exclusive prices.</strong> Switching the prices-include-tax option after products are listed changes what shoppers pay, so decide once before launch.</li>
+<li><strong>HSN codes in two places.</strong> Codes kept in both a metafield and the customs field drift apart, and the invoice shows whichever one the app reads.</li>
+<li><strong>Discounts applied in different ways.</strong> A discount code, an automatic discount and a prepaid offer from an app may each change the taxable value differently; check each on a test invoice.</li>
+<li><strong>Deleting invoices for refunds.</strong> A refund or a refused COD parcel normally needs a credit note, not a deleted or edited invoice.</li>
+<li><strong>Manual and draft orders.</strong> Orders created by staff in the admin, for example for WhatsApp or phone customers, still need the same tax settings and invoice; test one.</li>
+<li><strong>No one checking the first month.</strong> Small errors repeat on every order until your CA reviews a sample.</li>
+</ul>
+<p>Rules and app features change, so recheck the setup with your CA whenever rates, your registration or your invoice app change.</p>
+
 <h2>A GST checklist before you go live</h2>
 <ol>
 <li>Rates, HSN codes, invoice format and treatment of shipping, COD fees and discounts confirmed by your CA.</li>
@@ -73686,7 +73747,7 @@ done</code></pre>
 
 <p>GST works alongside payments and pricing. <a href="/blog/shopify-payment-gateways-india/">Payment gateways on Shopify in India</a> covers how money reaches you, and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> covers invoice apps among your running costs. If you need help with tax settings, HSN data or an invoice app, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
 
-<p>Sellers in central India can read about <a href="/wordpress-shopify-developer-indore/">Shopify development in Indore</a> and <a href="/wordpress-shopify-developer-nagpur/">Shopify development in Nagpur</a>, where GST setup is part of the store launch.</p>
+<p>Sellers in central India can read about <a href="/wordpress-shopify-developer-indore/">Shopify development in Indore</a>, where GST setup is part of the store launch.</p>
 
 <h2>FAQs</h2>
 <h3>How do I create a Shopify GST invoice in India?</h3>
@@ -73779,6 +73840,8 @@ done</code></pre>
 <li><strong>Chargebacks</strong> come through the provider. Keep proof of delivery from your courier, because it is the evidence you will be asked for.</li>
 </ul>
 
+<p>Orders taken on WhatsApp still need to be paid through your gateway, usually with a payment link or a draft order. <a href="/blog/shopify-whatsapp-ordering-india/">Shopify WhatsApp ordering in India</a> shows how to keep those payments matched to orders.</p>
+
 <h2>A payment setup checklist</h2>
 <ol>
 <li>Provider account opened in your business name, KYC complete, settlement bank account confirmed.</li>
@@ -73858,6 +73921,8 @@ done</code></pre>
 <li><strong>A manual check</strong> during order confirmation, for small stores without an app.</li>
 </ul>
 <p>Test the checker with a city pin code, a remote one and one that should fail. The <a href="/blog/pincode-delivery-checker-woocommerce/">guide to pin code delivery checkers</a> is written for WooCommerce, but its points about wording and delivery estimates apply on Shopify as well. For limiting cash on delivery by pin code, see <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify</a>.</p>
+
+<p>Shoppers also want to know before checkout whether you deliver to them. A <a href="/blog/shopify-pincode-checker-india/">pin code checker on Shopify</a> shows delivery and COD availability on the product page.</p>
 
 <h2>Connecting a courier or shipping aggregator</h2>
 <p>Most Indian stores do not book parcels on Shopify itself. At the time of writing, Shopify's own label service is not offered for Indian stores, so they connect either a single courier or an aggregator, which is a service that lets you book with several couriers from one dashboard. Most of them provide a Shopify app. The usual flow is:</p>
@@ -74071,14 +74136,16 @@ done</code></pre>
   },
   {
     slug: 'shopify-theme-change-without-losing-seo',
-    seoTitle: 'How to Change Shopify Theme Without Losing SEO',
-    title: 'Changing Your Shopify Theme Without Losing SEO: Duplicate, Preview, App Embeds, Templates, Redirects and Launch Checks',
-    description: 'How to change Shopify theme without losing SEO: what a theme controls, benchmarking, an unpublished copy, app embeds, metafields, redirects, launch checks.',
+    seoTitle: 'Change Shopify Theme Without Losing SEO: Step-by-Step Guide',
+    title: 'How to Change Your Shopify Theme Without Losing SEO: Benchmark, Unpublished Theme, App Embeds, Templates and Launch Checks',
+    description: 'How to change your Shopify theme without losing SEO: what the theme controls, building on an unpublished copy, app embeds, templates and launch checks.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['shopify-developer', 'website-redesign'],
     body: `
+<p>You can change your Shopify theme without losing SEO if you rebuild everything the theme controls before you publish it. Your URLs, products and collections stay in the admin, so the real risk sits in titles, headings, structured data, section text, custom templates and app embeds.</p>
+
 <p>Changing a Shopify theme does not move your products, collections, pages or blog posts, so their URLs stay the same. What can change is everything the theme controls: title tags, headings, structured data, internal links, the text and images placed in sections, custom templates and app embeds. Build the new theme as an unpublished copy, check those items against the current store, publish in a quiet period and watch Search Console for a few weeks, and rankings normally hold.</p>
 
 <p>This guide covers that process step by step. It applies to a move to a new theme and to a major redesign of the current one. If you would rather have the switch handled for you, it is a regular part of my <a href="/shopify-developer/">Shopify theme and customisation work</a>, done on an unpublished theme so the live store keeps selling throughout. For redesigns on any platform, <a href="/blog/redesign-website-without-losing-rankings/">redesigning a website without losing rankings</a> covers the wider method.</p>
@@ -74134,6 +74201,19 @@ done</code></pre>
 </ul>
 <p><a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains why permanent redirects are the right choice here.</p>
 
+<h2>Common mistakes that cost rankings after a Shopify theme change</h2>
+<p>Most drops after a switch come from a short list of avoidable slips. Check for each of these on the unpublished theme:</p>
+<ul>
+<li><strong>Homepage and collection text left out.</strong> The new theme looks cleaner because the introduction text that helped the page rank was never rebuilt in a section.</li>
+<li><strong>Collection pages without a description block.</strong> Some themes hide the collection description by default, so the text stored in the admin is no longer shown.</li>
+<li><strong>Menus and footer links rebuilt with fewer links.</strong> Internal links to important collections and guides quietly disappear, and those pages lose some of their support.</li>
+<li><strong>Duplicate or missing product structured data.</strong> A theme that outputs its own product data alongside a reviews or SEO app can create two conflicting sets.</li>
+<li><strong>Image alt text not displayed.</strong> The alt text is stored in the admin, but a custom section that uses its own image setting may leave it out.</li>
+<li><strong>A slower theme.</strong> Large sliders, video backgrounds and many app blocks can make a fresh theme heavier than the old one on mobile data.</li>
+<li><strong>Tracking lost.</strong> Analytics or ad pixels that lived in the old theme files stop firing, so you cannot see whether traffic really changed.</li>
+</ul>
+<p>None of these needs a developer to spot. Comparing a handful of key pages side by side, old theme against new preview, catches most of them before launch.</p>
+
 <h2>Launch day and the weeks after</h2>
 <ol>
 <li>Publish in a quiet sales period. The old theme stays in the library, so you can switch back if something goes wrong.</li>
@@ -74148,7 +74228,7 @@ done</code></pre>
 </ol>
 <p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> shows which reports to watch.</p>
 
-<p>A theme change is a good moment to fix other things. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> covers paid theme and app costs, and <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a> covers the bigger job when the platform changes too. For a theme switch handled with SEO checks, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
+<p>If you would rather hand the switch to someone, the guide to <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a> explains what to ask before you choose. A theme change is also a good moment to fix other things. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> covers paid theme and app costs, and the guide to moving from WooCommerce to Shopify covers the bigger job when the platform changes too. For a theme switch handled with SEO checks, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I change my Shopify theme without losing SEO?</h3>

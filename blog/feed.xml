@@ -1078,11 +1078,11 @@
     <description>Move from Blogger to WordPress step by step: export and import posts, move images, keep or redirect Blogger URLs, switch your domain and check SEO.</description>
   </item>
   <item>
-    <title>How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover</title>
+    <title>How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover</title>
     <link>https://samverse.space/blog/migrate-shopify-to-woocommerce/</link>
     <guid>https://samverse.space/blog/migrate-shopify-to-woocommerce/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.</description>
+    <description>How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.</description>
   </item>
   <item>
     <title>XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress</title>
@@ -4102,18 +4102,18 @@
     <description>A practical Shopify SEO checklist for Indian stores: titles, product URLs, canonicals, filters, alt text, structured data, sitemaps and Search Console.</description>
   </item>
   <item>
-    <title>Cash on Delivery on Shopify in India: Setting It Up, COD Fees, Order Confirmation, RTO and Partial Prepaid</title>
+    <title>Shopify Cash on Delivery in India: Setting Up COD, Fees, Pin Code Limits, Order Confirmation, RTO and Partial Prepaid</title>
     <link>https://samverse.space/blog/shopify-cash-on-delivery-india/</link>
     <guid>https://samverse.space/blog/shopify-cash-on-delivery-india/</guid>
     <pubDate>Tue, 27 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Set up Shopify cash on delivery in India: the manual payment method, COD fees, pin code and order-value limits, confirmation, RTO and partial prepaid.</description>
+    <description>Shopify cash on delivery in India: enabling COD, fees and pin code limits through apps, aggregator remittance, order confirmation, RTO and partial prepaid.</description>
   </item>
   <item>
-    <title>GST on Shopify for Indian Sellers: Tax Settings, HSN Codes, GST Invoice Apps and B2B GSTIN Capture</title>
+    <title>Shopify GST Invoices in India: Tax Settings, HSN Codes, GST Invoice Apps, B2B GSTIN Capture and Common Mistakes</title>
     <link>https://samverse.space/blog/shopify-gst-invoices-india/</link>
     <guid>https://samverse.space/blog/shopify-gst-invoices-india/</guid>
     <pubDate>Tue, 27 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Shopify GST invoice setup for India: tax settings, tax-inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture and a checklist for your CA.</description>
+    <description>Shopify GST invoices in India: tax settings, inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture, CGST, SGST and IGST, and mistakes.</description>
   </item>
   <item>
     <title>Payment Gateways on Shopify in India: How They Connect, Fees, UPI, Failed Payments and Refunds</title>
@@ -4137,11 +4137,11 @@
     <description>Before you hire a Shopify developer in India: what they do, freelancer vs agency, what to send for a quote, questions to ask, access and red flags.</description>
   </item>
   <item>
-    <title>Changing Your Shopify Theme Without Losing SEO: Duplicate, Preview, App Embeds, Templates, Redirects and Launch Checks</title>
+    <title>How to Change Your Shopify Theme Without Losing SEO: Benchmark, Unpublished Theme, App Embeds, Templates and Launch Checks</title>
     <link>https://samverse.space/blog/shopify-theme-change-without-losing-seo/</link>
     <guid>https://samverse.space/blog/shopify-theme-change-without-losing-seo/</guid>
     <pubDate>Tue, 27 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How to change Shopify theme without losing SEO: what a theme controls, benchmarking, an unpublished copy, app embeds, metafields, redirects, launch checks.</description>
+    <description>How to change your Shopify theme without losing SEO: what the theme controls, building on an unpublished copy, app embeds, templates and launch checks.</description>
   </item>
   <item>
     <title>Meta Title and Description for a Flash Sale Collection: Templates for Shopify and WooCommerce Stores</title>

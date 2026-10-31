@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Migrate From Shopify to WooCommerce (Step by Step)</title>
-  <meta name="description" content="Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.">
+  <title>Migrate Shopify to WooCommerce: Step-by-Step Guide for India</title>
+  <meta name="description" content="How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/migrate-shopify-to-woocommerce/">
-  <meta property="og:title" content="How to Migrate From Shopify to WooCommerce (Step by Step)">
-  <meta property="og:description" content="Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.">
+  <meta property="og:title" content="Migrate Shopify to WooCommerce: Step-by-Step Guide for India">
+  <meta property="og:description" content="How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-migrate-shopify-to-woocommerce.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/migrate-shopify-to-woocommerce/#article",
-      "headline": "How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover",
-      "description": "Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.",
+      "headline": "How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover",
+      "description": "How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-17",
+      "dateModified": "2026-10-31",
       "mainEntityOfPage": "https://samverse.space/blog/migrate-shopify-to-woocommerce/",
       "image": "https://samverse.space/assets/og/blog-migrate-shopify-to-woocommerce.png",
       "articleSection": "E-commerce",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover",
+          "name": "How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover",
           "item": "https://samverse.space/blog/migrate-shopify-to-woocommerce/"
         }
       ]
@@ -129,22 +129,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
-          <h1>How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover</h1>
-          <p class="post-dek">Migrate from Shopify to WooCommerce step by step: what transfers, mapping /products/ and /collections/ URLs with 301s, Indian payments, testing and cutover.</p>
+          <h1>How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover</h1>
+          <p class="post-dek">How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-17">17 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/migrate-shopify-to-woocommerce/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-migrate-shopify-to-woocommerce.webp" alt="How to Move From Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-migrate-shopify-to-woocommerce.webp" alt="How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -161,6 +161,8 @@
               <li><a href="#step-4-payments-shipping-and-gst-for-india">Step 4: Payments, shipping and GST for India</a></li>
               <li><a href="#step-5-test-before-you-switch">Step 5: Test before you switch</a></li>
               <li><a href="#step-6-cutover-day">Step 6: Cutover day</a></li>
+              <li><a href="#how-long-a-shopify-to-woocommerce-migration-takes">How long a Shopify to WooCommerce migration takes</a></li>
+              <li><a href="#common-mistakes-when-moving-off-shopify">Common mistakes when moving off Shopify</a></li>
               <li><a href="#after-the-move">After the move</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -168,11 +170,13 @@
           <div class="takeaways">
             <strong>Key takeaways</strong>
             <ul>
-              <li>Export everything from Shopify first, rebuild the store on WooCommerce staging, and check products, variants, customers and orders in samples before going further.</li>
-              <li>Map every Shopify URL, especially /products/ and /collections/, to its WooCommerce equivalent with 301 redirects, or match the old URL bases in WooCommerce permalinks.</li>
-              <li>Set up and test an Indian payment gateway, shipping, COD and GST invoices on staging, then switch in a quiet period and keep Shopify until everything is verified.</li>
+              <li>Export products, customers, orders, content and every URL from Shopify before you start, and keep the store open until the new one is verified.</li>
+              <li>Setting the WooCommerce product base to /products/ and the category base to collections keeps most URLs, and a pattern redirect handles nested collection URLs.</li>
+              <li>Rebuild payments, COD, shipping and GST invoices for India, test real orders on a phone, then switch the domain in a quiet sales period.</li>
             </ul>
           </div>
+<p>You can migrate Shopify to WooCommerce without losing your products, customers or most of your search traffic, as long as the data is checked and every old URL is redirected. The work is a rebuild on WordPress plus a careful data move, done on staging while the Shopify store keeps selling.</p>
+
 <p>To move from Shopify to WooCommerce, export your products, customers and orders from Shopify, build the new store on WooCommerce in a staging copy, import and check the data, and set up payments, shipping and taxes for India. Then map every old Shopify URL, especially /products/ and /collections/ addresses, to its new page with 301 redirects, test real orders end to end, and switch the domain during a quiet sales period, keeping Shopify running until you have verified everything.</p>
 <p>Moving a store from Shopify is something I handle as part of <a href="/woocommerce-developer/">WooCommerce development</a>: products, categories and images are moved across, along with customers and past orders where Shopify's exports allow, and old URLs are redirected to protect your search visibility. The domain switch and redirects follow my <a href="/wordpress-migration/">website migration</a> process, so the old store stays live until the new one is tested.</p>
 <p>Not sure you should switch at all? <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares running costs, payments, COD and GST first.</p>
@@ -197,7 +201,7 @@
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
   <p>Hire a WooCommerce developer to build your online store on WordPress: products, payment gateways like Razorpay, shipping, and a fast mobile checkout.</p>
-  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/woocommerce-developer/" class="link-inline">See Online Stores →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
 <h2 id="what-transfers-and-how">What transfers, and how</h2>
@@ -214,7 +218,7 @@
     <tr><td>SEO titles and descriptions</td><td>Mapped into your SEO plugin's fields during import</td><td>Check a sample of products afterwards</td></tr>
   </tbody>
 </table>
-<p>Paid migration tools can move products, customers and orders in one pass, and suit large catalogues. Whichever route you use, check samples by hand: a simple product, a product with several variants, a product on sale, a customer with several addresses and an old order. Planning attributes before the import keeps filters clean; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>.</p>
+<p>Paid migration tools can move products, customers and orders in one pass, and suit large catalogues. Whichever route you use, check samples by hand: a simple product, a product with several variants, a product on sale, a customer with several addresses and an old order. Planning attributes such as size and colour before the import keeps filters and variations clean.</p>
 
 <h2 id="step-2-build-the-woocommerce-store-on-staging">Step 2: Build the WooCommerce store on staging</h2>
 <ol>
@@ -276,6 +280,26 @@ Target:  https://example.com/products/$1/</code></pre>
 </ol>
 <p>Keep the Shopify store open, password-protected, for a week or two in case anything was missed, and download any remaining exports before you close it.</p>
 
+<h2 id="how-long-a-shopify-to-woocommerce-migration-takes">How long a Shopify to WooCommerce migration takes</h2>
+<p>There is no fixed timeline, because it depends on a few things you can judge in advance:</p>
+<ul>
+<li><strong>Catalogue size and variants.</strong> A small catalogue of simple products moves quickly; thousands of products with many options need more reshaping and checking.</li>
+<li><strong>Design.</strong> Matching the current look closely takes longer than building on a well-chosen WooCommerce theme with light changes.</li>
+<li><strong>Apps to replace.</strong> Each Shopify app you rely on needs a plugin, a setting or custom work on WooCommerce, and each one needs testing.</li>
+<li><strong>Orders and customers.</strong> Moving past orders adds a tool, a sync before cutover and more checks.</li>
+<li><strong>Content.</strong> Many blog posts and pages mean more redirects and more pages to recreate.</li>
+</ul>
+<p>Plan the cutover around your sales calendar rather than a deadline, so the switch never lands in a festival season.</p>
+
+<h2 id="common-mistakes-when-moving-off-shopify">Common mistakes when moving off Shopify</h2>
+<ul>
+<li>Closing the Shopify store before every export, image and invoice record has been saved.</li>
+<li>Importing products before deciding the permalink structure, then having to redirect everything.</li>
+<li>Sending every old URL to the homepage instead of its closest match.</li>
+<li>Forgetting the payment gateway webhook, so paid orders stay pending.</li>
+<li>Skipping test orders on a phone with real COD and prepaid flows.</li>
+</ul>
+
 <h2 id="after-the-move">After the move</h2>
 <p>For the first weeks, check Search Console for 404 errors and fix them with redirects, compare traffic and orders for your top products with the weeks before the move, and watch the gateway dashboard for failed payments. Expect some ranking movement while Google recrawls the store. <a href="/blog/woocommerce-seo-guide/">The WooCommerce SEO guide</a> covers what to improve once things settle.</p>
 
@@ -288,6 +312,8 @@ Target:  https://example.com/products/$1/</code></pre>
 <p>Yes, with a migration tool or order import plugin. WooCommerce's built-in importer handles products only, so orders and customers need one of those.</p>
 <h3>Can I keep the same /products/ URLs?</h3>
 <p>Mostly. Set the product base to /products/ and the category base to "collections" in Settings &gt; Permalinks, and keep the same handles. Nested collection URLs and pages still need redirects.</p>
+<h3>How long does it take to migrate Shopify to WooCommerce?</h3>
+<p>It depends on the number of products and variants, how closely the design must match, how many apps need replacing and whether past orders move too. Plan the cutover for a quiet sales period rather than a fixed date.</p>
 <h3>Should I cancel Shopify straight after the switch?</h3>
 <p>No. Keep it for a week or two, password-protected, so you can check anything missed, and export everything you need before closing it.</p>
 
@@ -298,16 +324,16 @@ Target:  https://example.com/products/$1/</code></pre>
             <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/migrate-shopify-to-woocommerce/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -335,6 +361,8 @@ Target:  https://example.com/products/$1/</code></pre>
               <li><a href="#step-4-payments-shipping-and-gst-for-india">Step 4: Payments, shipping and GST for India</a></li>
               <li><a href="#step-5-test-before-you-switch">Step 5: Test before you switch</a></li>
               <li><a href="#step-6-cutover-day">Step 6: Cutover day</a></li>
+              <li><a href="#how-long-a-shopify-to-woocommerce-migration-takes">How long a Shopify to WooCommerce migration takes</a></li>
+              <li><a href="#common-mistakes-when-moving-off-shopify">Common mistakes when moving off Shopify</a></li>
               <li><a href="#after-the-move">After the move</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -343,7 +371,7 @@ Target:  https://example.com/products/$1/</code></pre>
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Move%20From%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
