@@ -257,6 +257,8 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>Don't update until they're moved. Create a child theme, then move each change to the right place: CSS into the child theme's style.css or the Customizer's Additional CSS, PHP functions into the child theme's functions.php or a small custom plugin, and edited template files into the child theme at the same path. Then update the parent.</p>
 <p>Switching an existing site to a child theme can reset some Customizer settings and menu locations, so note or export them first and do the switch on staging. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> has the setup code.</p>
 
+<p>If the update seems to have changed nothing, the old version may still be served from a cache. See <a href="/blog/wordpress-changes-not-showing/">how to fix WordPress updates not showing on the site</a>.</p>
+
 <h2 id="if-something-breaks-after-the-update">If something breaks after the update</h2>
 <ul>
   <li><strong>Roll back first, investigate second.</strong> Restore the backup, or swap the old theme folder back if you used Option 3, so the live site works while you find the cause.</li>

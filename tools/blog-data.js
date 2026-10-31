@@ -12441,6 +12441,8 @@ wp option update blog_public 0</code></pre>
   <li>Add a short FAQ near the call to action with the questions you hear most.</li>
 </ul>
 
+<p>Unanswered questions are often what stops a buyer, and a short FAQ section near the call to action can handle them. See <a href="/blog/faq-page-seo/">how to write an FAQ for a sales page</a>.</p>
+
 <h2>9. Copy that could be on any competitor's site</h2>
 <p>Paste your homepage text into a competitor's site in your head. If it still works, it isn't doing its job.</p>
 <p><strong>Before:</strong> "We provide quality coaching with experienced faculty and a proven methodology."</p>
@@ -12815,6 +12817,8 @@ function my_only_free_shipping( $rates ) {
   <li><strong>Schema:</strong> use LocalBusiness markup with the address on pages for real branches. For areas without an address, describe coverage with areaServed in your Organization or Service markup rather than inventing addresses; see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</li>
   <li><strong>Hreflang isn't needed:</strong> it tells Google about language or country versions of the same page. A Pune page and a Nashik page in English aren't alternate versions of each other, so they don't need it. It only matters if you also publish Hindi or Marathi versions; see hreflang for Indian websites.</li>
 </ul>
+
+<p>Local questions about areas served, visit charges or timings are one way to make each location page genuinely different. <a href="/blog/faq-page-seo/">Writing FAQs for SEO on service and local pages</a> covers how to pick and phrase them.</p>
 
 <h2>Building location pages in WordPress without making doorways</h2>
 <p>Use a template for the structure, not the words. A custom post type for locations, with custom fields for the address, hours, areas covered, team, projects and reviews, keeps every page consistent and makes the gaps obvious: if a location has no projects or reviews to fill the fields, it isn't ready to publish. See <a href="/blog/custom-post-types-fields/">custom post types and custom fields</a> for how that works.</p>
@@ -21368,6 +21372,8 @@ Category:       Dentist</code></pre>
   <li><strong>Who will manage it?</strong> Make sure the admin account is in the business's name, not a staff member's or developer's, and add the renewal to your <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</li>
 </ol>
 
+<p>Your email address will use the same extension as your website, so choose it with both in mind. <a href="/blog/in-vs-com-domain/">.in vs .com for an Indian business</a> covers the brand and email angle.</p>
+
 <h2>Setting up business email on your domain</h2>
 <ol>
   <li>Sign up with the provider and verify your domain, usually with a TXT record.</li>
@@ -21502,6 +21508,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   </tbody>
 </table>
 <p>Third-party scripts are a common cause of both variation and slow pages; see <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a>.</p>
+
+<p>If a page is cached, the first test may miss the cache and make the server look slower than it is. <a href="/blog/wordpress-caching-explained/">How to test that WordPress caching works</a> explains what to check.</p>
 
 <h2>A simple testing routine</h2>
 <ol>
@@ -21699,6 +21707,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 
 <h2>"SEO for your domain" invoices</h2>
 <p>A close cousin of the fake renewal: an email titled something like "Domain SEO service expiration" or "Search engine submission for yourbusiness.in", warning that your site will lose visibility unless you pay. There's no such thing as renewing SEO for a domain. Google finds sites by crawling links and sitemaps, and submitting your sitemap in Search Console is free. Paying gets you, at most, a listing on directories nobody visits. If you want to know how a real SEO provider works, and what a fair monthly retainer covers, see <a href="/blog/seo-red-flags-scams/">SEO red flags and how to choose an SEO provider</a>.</p>
+
+<p>If you are wondering whether to register more extensions anyway, decide on your own terms. See <a href="/blog/in-vs-com-domain/">.in vs .com vs .co.in: which domain to choose</a>.</p>
 
 <h2>"Someone wants to register your brand" emails</h2>
 <p>You get an email from a self-styled registrar in Asia saying a company has applied to register your brand name in extensions such as .cn, .asia or .hk, and asking whether you've authorised it. If not, you're invited to register them all yourself, through them, quickly. There's no other applicant. Unless you genuinely trade in those markets, ignore it. If you do, register the domains you need through your usual registrar.</p>
@@ -24172,6 +24182,8 @@ Description: Buy %title% online. %excerpt%</code></pre>
 </ul>
 <p>Then view the page source (right-click, View Page Source, search for &lt;title&gt;) and confirm there is exactly one title tag and one meta description. Two SEO plugins, or a theme adding its own tags, can create duplicates.</p>
 
+<p>On a multilingual site, write the title and description in each page's own language and link the versions together with <a href="/blog/hreflang-multilingual-seo-india/">hreflang codes for Indian languages</a>.</p>
+
 <h2>Common mistakes</h2>
 <ul>
   <li>The same title or description on many pages, often from a theme default; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a></li>
@@ -25194,6 +25206,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li>Check spam protection is switched on, and that it doesn't block your own test from a phone</li>
 </ul>
 <p>If anything here fails, <a href="/blog/contact-form-not-getting-enquiries/">why a contact form stops getting enquiries</a> walks through the usual causes.</p>
+
+<p>Test every form end to end before launch, including where it sends people afterwards. <a href="/blog/thank-you-pages-forms/">Setting up a thank-you page for your forms</a> also covers keeping that page out of Google.</p>
 
 <h2>SEO settings that break launches</h2>
 <p>Most launch disasters are settings, not design. A site can look perfect and still be invisible to Google:</p>
@@ -26291,6 +26305,8 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   <li><strong>Review after a week</strong> in Traffic acquisition, then note what worked in the sheet so the next campaign starts from evidence.</li>
 </ol>
 <p>Agencies and freelancers posting on your behalf should use the same sheet; mixed naming from different people is the most common reason UTM reports become unreadable within a few months.</p>
+
+<p>To see which campaigns actually produce enquiries, you need a reliable conversion to report against. A <a href="/blog/thank-you-pages-forms/">lead form thank-you page that counts each enquiry once</a> gives you one.</p>
 
 <h2>Reading UTM data in GA4</h2>
 <ol>
@@ -27704,6 +27720,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>An email notification is a doorbell, not a record of your leads. Most of these plugins can also send each entry to a CRM, a Google Sheet or an email list, either through their own add-ons or a webhook to an automation tool, and these connections are often a paid feature. If your team replies on WhatsApp, a thank-you message with a WhatsApp link, or a form that opens WhatsApp with the details already typed, keeps the conversation where your customers prefer it. <a href="/blog/connect-website-forms-to-crm/">Connecting WordPress forms to a CRM or Google Sheets</a> covers the options.</p>
 <p>If you want to take a payment through a form, such as a booking fee, check which gateways the plugin supports in India before you commit. Payment support differs a lot between plugins and plans.</p>
 
+<p>Most of these plugins can send people to a separate page after they submit. <a href="/blog/thank-you-pages-forms/">How to redirect a lead form to a thank-you page</a> shows the setting in each plugin and what to put on that page.</p>
+
 <h2>Conditional logic and multi-step forms</h2>
 <p>Conditional logic shows or hides fields based on earlier answers: choose "Generator rental" and a capacity field appears; choose "Maintenance" and it doesn't. Multi-step forms split a long form into short screens. Both help when you need several qualifying questions, and both are overkill for a name, phone and message. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> explains when they earn their place.</p>
 
@@ -28063,6 +28081,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>A speaking enquiry form that asks for the event date, city, audience and format</li>
 </ul>
 <p>Use publication logos only where you appeared in that publication, and check whether the publisher allows its logo to be used.</p>
+
+<p>Before booking a discovery call, people want to know about fees, format and who the program suits. Answer them on the offer page itself; <a href="/blog/faq-page-seo/">FAQ pages for SEO and sales pages</a> explains whether to use a separate FAQ page or put FAQs on each page.</p>
 
 <h2>Proof without exaggeration</h2>
 <p>Client stories persuade far more than a wall of short quotes, but they need consent and honesty. A simple structure works: where the client was, what you worked on together, what changed, and what they did themselves. Ask permission in writing, agree whether they want their full name, first name or only their role shown, and let them read the story before it goes live. <a href="/blog/write-case-studies-business-website/">Writing case studies for a business website</a> covers the interview and layout.</p>
@@ -28827,6 +28847,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>"Near me":</strong> common on phones, but Google works out location itself; don't stuff "near me" into headings</li>
 </ul>
 <p>One page can cover close variants; you don't need a page per spelling. Build separate Hindi or Marathi pages only if you can serve customers properly in that language, with translations written or checked by a fluent speaker; <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites in Hindi and English</a> covers how.</p>
+
+<p>If Hindi or Marathi keywords justify full translated pages rather than a few phrases, those versions need to be connected properly; see <a href="/blog/hreflang-multilingual-seo-india/">hreflang tags for Hindi and regional-language pages</a>.</p>
 
 <h2>Map keyword groups to pages by intent</h2>
 <table>
@@ -32237,6 +32259,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Do you need a child theme?</h2>
 <p>Elementor stores your designs in the database, not in theme files, so a theme update won't wipe your Elementor pages. You need a child theme only if you add custom PHP in functions.php, override template files or add custom CSS to theme files. Hello Elementor has an official child theme for exactly this. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how to create one, with code.</p>
 
+<p>If your edits do not appear after switching, regenerate the Elementor CSS files and clear the caches. <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing: every cause and fix</a> lists the order to check things in.</p>
+
 <h2>Switching themes on an existing Elementor site</h2>
 <p>Your Elementor page content survives a theme switch, but anything the old theme controlled does not: its header and footer, Customizer settings, menu locations, sidebar widgets, blog layouts, container widths and default fonts. To switch safely:</p>
 <ol>
@@ -34456,6 +34480,8 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 
 <p>Before working out the cause, confirm there is a compromise at all. This checklist explains <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site has been hacked</a>.</p>
 
+<p>Investigation is much easier if a log was already running before the incident. <a href="/blog/wordpress-activity-logs/">A WordPress activity and change log</a> records logins, new users and plugin changes, though it won't catch files changed over FTP.</p>
+
 <h2>How to work out how your site was hacked</h2>
 <p>Finding the entry point is what stops the same hack happening twice. The evidence that helps most:</p>
 <ul>
@@ -36322,6 +36348,8 @@ Notes:                (price changes, plans to move)</code></pre>
 
 <p>Renewal costs are easier to judge when you know the normal range; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> by plan type.</p>
 
+<p>If you own both the .in and the .com, both need to be on the renewal calendar. <a href="/blog/in-vs-com-domain/">Which domain extension to choose, and whether to buy both</a> explains how to set up the second one.</p>
+
 <h2>Who should own the billing</h2>
 <table>
   <thead><tr><th>Item</th><th>Account and billing should be with</th><th>Your developer's role</th></tr></thead>
@@ -37398,6 +37426,8 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>Don't update until they're moved. Create a child theme, then move each change to the right place: CSS into the child theme's style.css or the Customizer's Additional CSS, PHP functions into the child theme's functions.php or a small custom plugin, and edited template files into the child theme at the same path. Then update the parent.</p>
 <p>Switching an existing site to a child theme can reset some Customizer settings and menu locations, so note or export them first and do the switch on staging. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> has the setup code.</p>
 
+<p>If the update seems to have changed nothing, the old version may still be served from a cache. See <a href="/blog/wordpress-changes-not-showing/">how to fix WordPress updates not showing on the site</a>.</p>
+
 <h2>If something breaks after the update</h2>
 <ul>
   <li><strong>Roll back first, investigate second.</strong> Restore the backup, or swap the old theme folder back if you used Option 3, so the live site works while you find the cause.</li>
@@ -37803,6 +37833,8 @@ add_action( 'wp_enqueue_scripts', function () {
 <p>Elementor, Divi and similar builders store page designs in the database, so a child theme is not needed for page content. It is still useful for custom PHP, extra fonts or code that hooks into the builder. Hello Elementor has an official child theme for this. If you are choosing a base theme, see our notes on <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
 
 <p>Choosing between a builder and blocks changes how much a child theme matters. See <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> for how each approach handles design.</p>
+
+<p>If an edit to the child theme appears to do nothing, caching or a different template is usually the cause. Work through <a href="/blog/wordpress-changes-not-showing/">why WordPress changes are not showing on your website</a>.</p>
 
 <h2>Common child theme problems and fixes</h2>
 <ul>
@@ -42835,6 +42867,8 @@ add_action( 'after_setup_theme', function () {
 <p>WordPress adds <code>/category/</code> to category archive URLs and WooCommerce adds <code>/product/</code> and <code>/product-category/</code> to store URLs. These defaults are fine. Some plugins can remove the base, but doing so on a live site creates a lot of redirects and possible conflicts, so it is rarely worth it.</p>
 <p>For stores, the bigger question is whether a product sits in one category or many. WooCommerce keeps one URL per product regardless of category, which avoids duplicate pages. Keep product slugs simple, such as <code>/product/kanjivaram-silk-saree-red/</code>, and avoid adding SKUs or stock codes that mean nothing to buyers. The guide to <a href="/blog/category-tag-pages-seo/">category and tag pages for SEO</a> covers archive pages in more detail.</p>
 <p>On Shopify, URL prefixes like <code>/products/</code> and <code>/collections/</code> are fixed, but you can still edit the handle (Shopify's name for the slug) on each product and collection. The same rules apply: short, lowercase and descriptive. When you edit a handle, Shopify offers to create a redirect automatically, and you should leave that option ticked.</p>
+
+<p>If you plan Hindi or regional-language versions, choose the URL structure early. <a href="/blog/hreflang-multilingual-seo-india/">Multilingual SEO and hreflang for India</a> compares the URL structure options.</p>
 
 <h2>Planning a URL structure for a business site</h2>
 <p>Before a new site goes live, sketch the URL structure on paper alongside the menu. A clear structure makes the site easier to navigate, easier to extend and easier for Google to understand. A simple plan for a typical Indian service business might look like this:</p>
@@ -49219,6 +49253,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li><strong>No unknown users.</strong> Remove test accounts and anyone you don't recognise.</li>
   <li><strong>Two-factor authentication</strong> on every Administrator account, where the site supports it.</li>
 </ul>
+
+<p>An activity log makes a handover easier to audit, because it shows which accounts made which changes. See <a href="/blog/wordpress-activity-logs/">the WordPress activity log guide</a> for what to record.</p>
 
 <h2>Backups</h2>
 <ul>
@@ -57661,6 +57697,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ol>
 <p>Also review how many thumbnail sizes WordPress, your theme and plugins generate. Unused sizes waste storage and, with credit-based plugins, use up quota.</p>
 
+<p>Browser and CDN caching decide how often those images are downloaded again. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers page, browser and CDN caching.</p>
+
 <h2>Compression is only part of image speed</h2>
 <p>Even perfectly compressed images can slow a page if they are used badly. Also check:</p>
 <ul>
@@ -64155,6 +64193,8 @@ any unused part of the advance refunded as agreed</code></pre>
 </ul>
 <p>The recommendations line matters most for the agency. It is where small upsells come from naturally, without any hard selling, because the client can see why the work is needed.</p>
 
+<p>When a client says something changed, a log of logins, updates and edits answers the question in minutes. <a href="/blog/wordpress-activity-logs/">Track who changed what on a WordPress site</a> with an activity log plugin.</p>
+
 <h2>Handling urgent issues and response times</h2>
 <p>Every plan should say what happens when something goes wrong. Define a few levels in plain words: critical (site down, checkout broken, hacked), important (a form or feature not working) and routine (text changes, new images). Then state the expected response for each level in each tier, and who the client contacts.</p>
 <p>When the work is outsourced, the agency stays the first point of contact. The developer needs a reliable way to receive urgent alerts, such as a shared ticket inbox or a dedicated chat channel, and the agency needs a clear note of what was done so it can update the client. Write this flow down once and reuse it for every client on a plan.</p>
@@ -67544,6 +67584,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>The article on <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a> explains how to plan for the second-year jump.</p>
 
 <p>Network installs outgrow shared plans sooner than single sites. Before upgrading, check the other ways to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>.</p>
+
+<p>Before upgrading, check your caching is set up properly: hosts such as Hostinger offer server-level caching that a shared plan can already use. See <a href="/blog/wordpress-caching-explained/">how page, object and server caching work in WordPress</a>.</p>
 
 <h2>Signs you have outgrown your current hosting</h2>
 <ol>
