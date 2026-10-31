@@ -227,6 +227,8 @@
 <h2 id="when-the-form-works-but-no-email-arrives">When the form "works" but no email arrives</h2>
 <p>A lot of reports of reCAPTCHA not working turn out to be email problems. If the form shows a success message but nothing reaches your inbox, reCAPTCHA has passed and the issue is delivery. Check spam, set up SMTP with your business email provider and configure SPF and DKIM. Saving form entries in the WordPress database as well means a missing email never loses an enquiry. <a href="/blog/contact-form-not-getting-enquiries/">Why your contact form isn't getting enquiries</a> covers the wider checks.</p>
 
+<p>If spam keeps arriving even with a working bot check, and your site is also sending emails you did not write, the form may not be the cause. See <a href="/wordpress-malware-removal/">how we clean hacked WordPress sites</a>.</p>
+
 <h2 id="is-recaptcha-the-right-spam-protection">Is reCAPTCHA the right spam protection?</h2>
 <p>reCAPTCHA is popular but not the only option, and it adds Google scripts to every page that shows a form. Some sites use alternatives such as Cloudflare Turnstile or simple honeypot fields, alone or together. A sensible layered approach looks like this:</p>
 <table>
