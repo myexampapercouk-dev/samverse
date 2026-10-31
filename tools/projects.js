@@ -10,7 +10,6 @@ module.exports = [
   { name: 'Vansh Group',           url: 'https://vansh.group/',             study: '/work/vansh-group/',           tag: 'Electronics Manufacturing',                                            color: '#0EA5E9' },
   { name: 'Studio Agama Interiors', url: 'https://interiorstudioagama.com/', study: '/work/studio-agama-interiors/', tag: 'Interior Design Studio',                                             color: '#A16207' },
   { name: 'Dr. Sunaina Dental Care', url: 'https://drsunainadentalcare.com/', study: '/work/dr-sunaina-dental-care/', tag: 'Dental Clinic',                                                      color: '#0891B2' },
-  { name: 'India Automation Hub',  url: 'https://indiaautomationhub.com/',  study: '/work/india-automation-hub/',  tag: 'Industrial Media Portal',                                              color: '#F59E0B' },
   { name: 'Streak Creative',       url: 'https://streakcreative.in/',       study: '/work/streak-creative/',       tag: 'Growth Marketing Agency',   thumb: '/assets/work/streakcreative.svg', color: '#E8254B' },
   { name: 'Dr. Nitish Gupta',      url: 'https://agrapulmonologist.com/',   study: '/work/dr-nitish-gupta-pulmonologist/', tag: 'Pulmonology Clinic',                                           color: '#2563EB' },
   { name: 'Our Temples',           url: 'https://ourtemples.info/',         study: '/work/our-temples/',           tag: 'Temple Directory',                                                     color: '#F97316' },

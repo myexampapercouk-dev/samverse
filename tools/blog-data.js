@@ -1438,7 +1438,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     <tr><td>Company or model name</td><td>Your brand or a model number</td><td>Homepage and product pages, consistent with your marketplace listings</td></tr>
   </tbody>
 </table>
-<p>Articles work for manufacturers when they answer questions engineers and buyers actually ask. <a href="/work/india-automation-hub/">India Automation Hub</a>, a news and resource portal for the automation industry that I built, groups its archive into families such as control systems, robotics and industrial software, and publishes pieces like a comparison of DCS and PLC for refinery, pharma and chemical plants: the depth technical readers expect. Vansh Group's Insights articles take a buyer's angle instead, covering how companies are diversifying supply chains and what to check on a factory visit before signing with an OEM, and end by inviting readers to arrange a consultation and a facility tour.</p>
+<p>Articles work for manufacturers when they answer questions engineers and buyers actually ask. India Automation Hub, a news and resource portal for the automation industry that I built, groups its archive into families such as control systems, robotics and industrial software, and publishes pieces like a comparison of DCS and PLC for refinery, pharma and chemical plants: the depth technical readers expect. Vansh Group's Insights articles take a buyer's angle instead, covering how companies are diversifying supply chains and what to check on a factory visit before signing with an OEM, and end by inviting readers to arrange a consultation and a facility tour.</p>
 <p>Trade publications are another route to buyers. India Automation Hub, for example, has a separate address for vendors' product releases, and coverage in publications your buyers read brings visitors who already trust the source.</p>
 
 <h2>Mistakes that cost manufacturers enquiries</h2>
@@ -5908,7 +5908,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>Real examples</h2>
 <ul>
   <li><strong><a href="/work/streak-creative/">Streak Creative</a>,</strong> a growth marketing agency: a "Get Your LOOP Growth Blueprint" request form and the Streak Signals monthly newsletter, with separate sections for e-commerce, real estate and manufacturing, both placed beside the "Let's Talk" buttons rather than replacing them.</li>
-  <li><strong><a href="/work/india-automation-hub/">India Automation Hub</a>,</strong> an industrial automation publisher: newsletter sign-up forms in several places, and an About page that says what subscribers will receive.</li>
+  <li><strong>India Automation Hub,</strong> an industrial automation publisher: newsletter sign-up forms in several places, and an About page that says what subscribers will receive.</li>
   <li><strong>Dr. Sudhir Arora's self-assessment</strong> and this site's cost calculator, described above: useful results first, contact optional.</li>
 </ul>
 
@@ -19151,7 +19151,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   <li><strong>Event organisers, schools and colleges</strong> want your topics, a speaking video and how to book you</li>
   <li><strong>Journalists and podcast hosts</strong> want a short bio, photos and a fast way to reach you</li>
 </ul>
-<p>Give each group its own page and form, or at least an enquiry type dropdown that sends each kind of message to the right inbox. <a href="/work/india-automation-hub/">India Automation Hub</a>, an industry publication I built, takes this approach: its contact page separates editorial outreach and press releases from advertising and general queries, so each lands with the right person.</p>
+<p>Give each group its own page and form, or at least an enquiry type dropdown that sends each kind of message to the right inbox. India Automation Hub, an industry publication I built, takes this approach: its contact page separates editorial outreach and press releases from advertising and general queries, so each lands with the right person.</p>
 
 <h2>For authors: a proper page for every book</h2>
 <p>Each book deserves a page of its own, because readers search for titles and Google needs something to show:</p>

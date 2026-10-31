@@ -983,7 +983,7 @@ ${projectCards()}
           <h3>Doctors and clinics</h3>
           <p><a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a>, <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a> and <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta</a> show credentials, services and easy appointment booking. See <a href="/wordpress-website-for-doctors/">website design for doctors and clinics</a>.</p>
           <h3>Manufacturers, B2B and industrial</h3>
-          <p><a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM, <a href="/work/india-automation-hub/">India Automation Hub</a>, an industrial automation media portal, and <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental company. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a>.</p>
+          <p><a href="/work/vansh-group/">Vansh Group</a>, an electronics OEM, India Automation Hub, an industrial automation media portal, and <a href="/work/sahni-power-solutions/">Sahni Power Solutions</a>, a generator rental company. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a>.</p>
           <h3>Agencies</h3>
           <p><a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency, and <a href="/work/streak-creative/">Streak Creative</a>, a growth marketing agency. See <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>.</p>
           <h3>Directories, temples and local businesses</h3>

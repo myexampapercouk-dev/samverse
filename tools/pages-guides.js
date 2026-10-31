@@ -303,7 +303,7 @@ module.exports = {
 <h2>How long it takes</h2>
 <p>Most sites take a few working days. What stretches that: the number of different page templates, a heavy page builder, a large store with years of order data, waiting for hosting access, no staging site on your plan, or a hosting move. Database clean-up on a big store is done carefully, in steps; <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> shows why.</p>
 <h2>Who this is for</h2>
-<p>Business sites built with Elementor or a premium theme that have grown slow over time, WooCommerce stores, and content-heavy sites. A magazine-style portal like <a href="/work/india-automation-hub/">India Automation Hub</a>, with thumbnails, category filtering and recent-post widgets on every page, pulls in a lot per page view, so caching and image handling need particular care.</p>
+<p>Business sites built with Elementor or a premium theme that have grown slow over time, WooCommerce stores, and content-heavy sites. A magazine-style portal like India Automation Hub, with thumbnails, category filtering and recent-post widgets on every page, pulls in a lot per page view, so caching and image handling need particular care.</p>
 <h2>How to prepare</h2>
 <ul>
 <li>Tell me which pages earn money: the ones your ads point to, your top service pages and best-selling products.</li>
@@ -350,7 +350,7 @@ module.exports = {
 <p>If you need branding, copywriting and advertising run by one team, an agency may genuinely suit you better. <a href="/blog/freelancer-vs-agency-web-developer/">Freelancer vs agency</a> includes ten questions worth asking whoever you speak to.</p>
 <h2>What to check before you hire anyone, including me</h2>
 <ul>
-<li><strong>Live work, and what they did on it.</strong> Open their sites on your phone and ask what they personally built. My case studies spell it out, from the magazine-style layout and deep category structure of <a href="/work/india-automation-hub/">India Automation Hub</a> to the <a href="/work/our-temples/">Our Temples</a> directory, searchable by state and by deity, with registration for guests and temple owners.</li>
+<li><strong>Live work, and what they did on it.</strong> Open their sites on your phone and ask what they personally built. My case studies spell it out, from the magazine-style layout and deep category structure of India Automation Hub to the <a href="/work/our-temples/">Our Temples</a> directory, searchable by state and by deity, with registration for guests and temple owners.</li>
 <li><strong>Whose name the accounts are in.</strong> The domain, hosting and WordPress administrator account should belong to you, not the developer. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists every account to confirm.</li>
 <li><strong>A written scope and fair payment terms.</strong> Pages, features, revisions, exclusions and milestones should be agreed before work starts; see <a href="/blog/website-payment-terms-milestones/">fair payment terms for a website project</a>.</li>
 <li><strong>Licensed software.</strong> Premium themes and plugins should be genuine licences, never "nulled" copies.</li>
@@ -592,7 +592,7 @@ module.exports = {
 <li><strong>B2B and manufacturing.</strong> For <a href="/work/vansh-group/">Vansh Group</a>, an electronics manufacturer, each engineering and manufacturing service has its own page, the contact form has a service-type dropdown so enquiries arrive pre-qualified, and a downloadable company profile supports credibility with large buyers.</li>
 <li><strong>Lead generation.</strong> Sahni Power Solutions organises its generator fleet by capacity and type, with "Enquire Now" and "Request a Call Back" buttons, a detailed FAQ and compliance information.</li>
 <li><strong>Personal brands.</strong> Dr. Sudhir Arora's site has a page for each life challenge his programs address and a free anxiety self-assessment tool to engage visitors.</li>
-<li><strong>Directories and portals.</strong> Our Temples lists temples by state and by deity, with user registration and Telugu content, while <a href="/work/india-automation-hub/">India Automation Hub</a> organises a large volume of technical news into a deep category structure.</li>
+<li><strong>Directories and portals.</strong> Our Temples lists temples by state and by deity, with user registration and Telugu content, while India Automation Hub organises a large volume of technical news into a deep category structure.</li>
 </ul>
 <h2>A freelancer or a WordPress development company?</h2>
 <p>If you searched for a WordPress development company in India, you should know what you are getting here: one developer, not a company with departments. You talk directly to the person building your site, with no account manager in between and no agency overheads in the price. That suits business websites, catalogues and portals with one clear decision-maker. If you need branding, copywriting, photography and ads handled by one team at the same time, a larger agency may suit you better.</p>
@@ -915,7 +915,7 @@ module.exports = {
 <h3>Schema markup</h3>
 <p>Structured data for your business, services, products, articles and breadcrumbs, checked with Google's testing tools. To be honest about it: schema helps Google understand a page, but it does not guarantee rich results, and FAQ rich results have been limited to a small group of sites since 2023. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers what is still worth adding.</p>
 <h3>Internal links</h3>
-<p>Pages with no links pointing to them, key pages buried several clicks deep, and blog posts that never link to the service they relate to. Internal links are one of the few ranking signals entirely in your control. On <a href="/work/india-automation-hub/">India Automation Hub</a>, every subcategory, from PLC and SCADA to OT security, has its own archive, and each post card carries its category tag, so readers and crawlers can move between related articles.</p>
+<p>Pages with no links pointing to them, key pages buried several clicks deep, and blog posts that never link to the service they relate to. Internal links are one of the few ranking signals entirely in your control. On India Automation Hub, every subcategory, from PLC and SCADA to OT security, has its own archive, and each post card carries its category tag, so readers and crawlers can move between related articles.</p>
 <h2>On-page work</h2>
 <ul>
 <li><strong>One page per search.</strong> I map each target search to one page, so two pages do not compete for the same phrase.</li>

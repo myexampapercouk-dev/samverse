@@ -119,63 +119,6 @@ module.exports = [
     related: ['website-for-manufacturers', 'website-redesign', 'wordpress-seo-services'],
   },
   {
-    slug: 'india-automation-hub',
-    noindex: true, // kept out of Google at the owner's request (21 Oct 2026)
-    name: 'India Automation Hub',
-    url: 'https://indiaautomationhub.com/',
-    industry: 'Industrial Automation Media',
-    summary: 'A content-rich news and resource portal for India\'s industrial automation community, covering robotics, control systems and Industry 4.0.',
-    client: 'India Automation Hub publishes news, special reports, webinars and thought leadership for automation professionals, engineers, plant managers and technology vendors.',
-    goals: [
-      'Organise a large volume of technical content so readers can find topics quickly',
-      'Grow a subscriber base for newsletters and reports',
-      'Give vendors and advertisers a credible, professional platform',
-    ],
-    built: [
-      'Magazine-style layout with clear visual hierarchy and thumbnails',
-      'Deep category structure: control systems (PLC, DCS, SCADA), robotics, IIoT, OT cybersecurity, sensors and more',
-      'Sections for industry roundups, special reports, webinars and leadership moves',
-      'Newsletter subscribe form and site-wide search',
-      'Recent posts widgets and category filtering',
-      'Social integration including LinkedIn and podcast links',
-    ],
-    sections: [
-      {
-        "h": "How the site is organised",
-        "p": [
-          "The homepage reads like the front page of a trade magazine. A Featured block of three stories leads into the Industrial Automation Roundup, Industry News, Editor's Picks, Recent Articles, Industry Leadership Moves and Popular sections, each laid out with thumbnails, headlines and bylines so a reader can scan the latest news in seconds. The tagline describes the site as covering industrial automation, robotics and smart manufacturing.",
-          "The main menu stays short: Automation & Tech, Products & Solutions, Industry Roundup, Special Reports, Contact and Webinar. Special Reports presents the Industrial Automation Review as a flipbook, Webinar collects session write-ups, and the About page explains who the site is for (manufacturers, plant leaders, automation professionals, technology buyers, OEMs, system integrators and technology providers) and what each of its platforms offers, from the website and newsletter to webinars, podcasts and industry reports."
-        ]
-      },
-      {
-        "h": "Making a large technical archive easy to browse",
-        "p": [
-          "The real organising work is in the Automation & Tech menu, which groups the subject into six families, each with its own subcategories. Control Systems & Automation covers PLC, DCS, SCADA and HMI, control architectures and safety systems; Machines & Robotics covers industrial robots and robotic cells; Industrial Software & Data covers AI in manufacturing, predictive maintenance, MES, digital twins and simulation. Connectivity & IIoT, Cybersecurity (OT security) and Industrial Components & Technologies, from sensors and machine vision to motion control, complete the set, while Products & Solutions adds factory, warehouse and logistics, process and smart factory automation.",
-          "Each category has its own archive page, so a control engineer can go straight to articles such as a comparison of DCS and PLC for refinery, pharma and chemical plants, or a piece on centralised versus distributed control in Indian smart factories, without wading through robotics news. Each archive shows how many articles it holds, and every post card carries a thumbnail, a category tag and the author's name.",
-          "Readers who know what they want can use the site-wide search, and the sidebars repeat Latest, Popular and an \"Explore IAH\" list of category links, so a reader who finishes one article always has the next one in view."
-        ]
-      },
-      {
-        "h": "Newsletter, webinars and a platform for vendors",
-        "p": [
-          "Growing a subscriber base was one of the main goals, so the newsletter appears in several places: \"Subscribe to Updates\" and \"Join Our Newsletter\" blocks on the homepage and in the sidebars, and \"Join the inner circle. Stay in the know.\" on the contact page. The About page tells readers what they will receive: industry news, product launches and leadership moves.",
-          "Webinar write-ups, the Special Reports flipbook and a podcast on Spotify give the site formats beyond daily news. A webinar banner in the archive sidebars links to a recording on YouTube, and Facebook, LinkedIn and Spotify links appear on every page.",
-          "For vendors and advertisers, the contact page separates editorial outreach and product releases, which go to the editor's address, from advertising and general queries, which go to the main address or the form, and promises a reply within one business day. The About page adds routes for companies to join the site's listing and to collaborate on campaigns, so a technology provider can see how to get involved before writing in."
-        ]
-      },
-      {
-        "h": "What other industry publishers can take from this",
-        "p": [
-          "If you publish a lot of technical content, design the category tree before the homepage. Group subjects the way your readers think about their work, give every subcategory its own archive, and show the category tag on every post card so readers can move sideways to related articles.",
-          "Ask for newsletter sign-ups in more than one place, say exactly what subscribers will get, and give vendors a separate, clearly labelled route for press releases and advertising. This site does that with WordPress, Elementor, the Newsfy theme and Yoast SEO."
-        ]
-      }
-    ],
-    reading: ["news-magazine-websites-wordpress","category-tag-pages-seo","email-newsletter-small-business","improve-wordpress-site-search","topic-clusters-pillar-pages"],
-    stack: ['WordPress', 'Elementor', 'Newsfy theme', 'Yoast SEO'],
-    related: ['website-for-manufacturers', 'wordpress-speed-optimization', 'wordpress-seo-services'],
-  },
-  {
     slug: 'streak-creative',
     name: 'Streak Creative',
     url: 'https://streakcreative.in/',

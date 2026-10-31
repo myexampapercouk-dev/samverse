@@ -21,7 +21,7 @@ const PAGES = [
     ],
     getsTitle: 'What I can take off your plate',
     gets: ['Business & corporate websites', 'Landing pages for ad campaigns', 'WooCommerce stores', 'Theme & Elementor customization', 'Speed optimization & Core Web Vitals', 'Site migrations & redesigns', 'Monthly maintenance for your clients', 'Bug fixes & urgent updates'],
-    projects: ['Third Eye Social', 'Streak Creative', 'Vansh Group', 'India Automation Hub'],
+    projects: ['Third Eye Social', 'Streak Creative', 'Vansh Group'],
     faqs: [
       ['Do you work under NDA?', 'Yes. I\'m happy to sign an NDA, and I never contact your clients directly or add my credit to the sites I build for you.'],
       ['How do you price agency work?', 'Each project gets a fixed quote based on the pages and features in your brief. Regular partners get priority scheduling.'],
@@ -83,7 +83,7 @@ const PAGES = [
     ],
     getsTitle: 'What your company website includes',
     gets: ['Company profile & infrastructure', 'Product catalogue with specifications', 'Request-a-quote forms', 'Brochure & datasheet downloads', 'Certifications & client logos', 'Industries served pages', 'SEO for product keywords', 'Fast, mobile-friendly design'],
-    projects: ['India Automation Hub', 'Sahni Power Solutions', 'Vansh Group'],
+    projects: ['Sahni Power Solutions', 'Vansh Group'],
     faqs: [
       ['Can I add and update products myself?', 'Yes. Products are managed from the WordPress dashboard, so you can add items, change specifications and upload brochures without code.'],
       ['Do you build catalogues without online payments?', 'Yes. Most B2B sites use a catalogue with "Request a Quote" instead of a cart, and I can set up either.'],
@@ -208,7 +208,7 @@ const PAGES = [
     ],
     getsTitle: 'What your real estate website includes',
     gets: ['Project & property pages', 'Floor plans & price lists', 'Photo & video galleries', 'Site-visit booking form', 'Brochure download with lead capture', 'Location maps & nearby places', 'RERA & approvals section', 'Landing pages for ads'],
-    projects: ['Vansh Group', 'India Automation Hub', 'Sahni Power Solutions'],
+    projects: ['Vansh Group', 'Sahni Power Solutions'],
     faqs: [
       ['Can I add property listings myself?', 'Yes. Projects and listings are managed from the dashboard. You can add photos, prices and status (available, sold) anytime.'],
       ['Can buyers download a brochure after entering their details?', 'Yes. I can set up gated brochure downloads so you capture the name and phone number of every interested buyer.'],
@@ -363,7 +363,7 @@ const PAGES = [
     ],
     getsTitle: 'What your startup website includes',
     gets: ['Modern homepage & product pages', 'Pricing & features pages', 'Demo / sign-up forms', 'Campaign landing pages', 'Blog for content marketing', 'Analytics & event tracking', 'CRM & email integrations', 'Speed & SEO optimization'],
-    projects: ['Third Eye Social', 'Streak Creative', 'India Automation Hub'],
+    projects: ['Third Eye Social', 'Streak Creative'],
     faqs: [
       ['Why WordPress for a startup?', 'It\'s fast to build, cheap to run, easy for non-developers to edit, and it has integrations for almost every marketing tool.'],
       ['Can you connect forms to our CRM?', 'Yes. I can connect forms to HubSpot, Zoho, Mailchimp, Google Sheets and many others.'],
@@ -394,7 +394,7 @@ const PAGES = [
     ],
     getsTitle: 'What your website includes',
     gets: ['Products & solutions pages', 'Quote request form', 'Savings / subsidy information', 'Completed projects gallery', 'Certifications & partners', 'Service area pages', 'WhatsApp enquiry button', 'Local SEO setup'],
-    projects: ['Sahni Power Solutions', 'India Automation Hub'],
+    projects: ['Sahni Power Solutions'],
     faqs: [
       ['Can the quote form ask for details like monthly bill?', 'Yes. Forms can collect monthly electricity bill, location, roof type and more, and email it to you instantly.'],
       ['Can I show government subsidy information?', 'Yes. I can add pages explaining subsidy schemes and the process for customers.'],
@@ -458,7 +458,7 @@ const PAGES = [
     ],
     getsTitle: 'Ways to work with me',
     gets: ['Fixed-price website projects', 'Redesigns & migrations', 'Monthly maintenance plans', 'White-label work for agencies', 'Speed & SEO fixes', 'WooCommerce stores', 'Elementor & Figma builds', 'Urgent bug fixes'],
-    projects: ['Third Eye Social', 'Streak Creative', 'India Automation Hub', 'Our Temples'],
+    projects: ['Third Eye Social', 'Streak Creative', 'Our Temples'],
     faqs: [
       ['Can I outsource WordPress development to India?', 'Yes. Agencies and businesses in other countries outsource WordPress builds, fixes and white-label work here, with a fixed quote, agreed timeline and updates on WhatsApp or email.'],
       ['How do I get started?', 'Send your requirements on WhatsApp or through the form. I reply with questions if needed, then a fixed quote and timeline, usually within 24 hours.'],
@@ -556,7 +556,7 @@ const PAGES = [
     ],
     getsTitle: 'What speed optimization includes',
     gets: ['Full speed audit of key pages', 'Before & after speed report', 'Hosting & server response checks', 'Caching setup (LiteSpeed / WP Rocket)', 'Image compression, resizing & WebP', 'Lazy loading & font optimization', 'CSS & JS minification and deferral', 'Third-party script cleanup', 'Plugin audit & cleanup', 'Database & autoload cleanup', 'WooCommerce cart & checkout tuning', 'Core Web Vitals fixes (LCP, INP, CLS)'],
-    projects: ['India Automation Hub', 'Third Eye Social', 'Sahni Power Solutions'],
+    projects: ['Third Eye Social', 'Sahni Power Solutions'],
     faqs: [
       ['Is your WordPress speed optimisation service available for sites outside India?', 'Yes. The work is done remotely, so it suits sites hosted anywhere. The audit and before-and-after report cover the same checks for every site.'],
       ['How much faster will my site get?', 'It depends on your hosting, theme and plugins. I share a before-and-after report from PageSpeed Insights so you can see the improvement.'],
@@ -655,7 +655,7 @@ const PAGES = [
     ],
     getsTitle: 'What\'s included',
     gets: ['Figma, XD, PSD & Sketch', 'Elementor or Gutenberg build', 'Responsive tablet & mobile', 'Animations & interactions', 'Forms & integrations', 'Blog & dynamic templates', 'Speed optimization', 'Cross-browser testing'],
-    projects: ['Streak Creative', 'Third Eye Social', 'India Automation Hub'],
+    projects: ['Streak Creative', 'Third Eye Social'],
     faqs: [
       ['What do you need to start?', 'Access to the Figma/XD file (or exported PSDs), fonts, and any content or brand assets.'],
       ['What if my design has no mobile version?', 'I create sensible mobile and tablet layouts based on your desktop design and share them for approval.'],
@@ -716,7 +716,7 @@ const PAGES = [
     ],
     getsTitle: 'What SEO setup includes',
     gets: ['SEO audit report', 'Rank Math / Yoast setup', 'Titles & meta descriptions', 'Heading & URL structure', 'Schema markup', 'XML sitemap & robots.txt', 'Search Console & GA4 setup', 'Internal linking'],
-    projects: ['Dr. Sudhir Arora', 'India Automation Hub', 'Sahni Power Solutions'],
+    projects: ['Dr. Sudhir Arora', 'Sahni Power Solutions'],
     faqs: [
       ['How soon will I see results?', 'Technical fixes take effect as Google recrawls your site, usually over a few weeks. Rankings grow over months with good content.'],
       ['Do you guarantee first-page rankings?', 'No honest SEO can guarantee rankings. I make sure your site is technically sound and optimized to compete.'],

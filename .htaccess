@@ -11,6 +11,9 @@ AddType application/manifest+json .webmanifest
 	RewriteCond %{HTTP_HOST} ^www\.samverse\.space$ [NC]
 	RewriteRule ^ https://samverse.space%{REQUEST_URI} [L,R=301]
 
+	# Removed case study (owner request, 31 Oct 2026)
+	RewriteRule ^work/india-automation-hub/?$ - [G,L]
+
 	# The whole repo is deployed, so hide project files from the web
 	RewriteRule ^(\.git|node_modules|netlify|tools|docs)(/|$) - [R=404,L]
 	RewriteRule ^(package\.json|package-lock\.json|netlify\.toml|README\.md|\.gitignore|\.gitattributes|server\.js|\.htaccess)$ - [R=404,L]
