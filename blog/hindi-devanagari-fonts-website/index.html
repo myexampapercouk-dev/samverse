@@ -43,7 +43,7 @@
       "headline": "Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested",
       "description": "Choosing Hindi fonts for a website: use Unicode text, pick a readable Devanagari font, pair it with English, set sizes, load it fast and test it on phones.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-10-31",
       "mainEntityOfPage": "https://samverse.space/blog/hindi-devanagari-fonts-website/",
       "image": "https://samverse.space/assets/og/blog-hindi-devanagari-fonts-website.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Hindi%20and%20Devanagari%20Fonts%20on%20Your%20Website%3A%20Readable%2C%20Fast%20and%20Tested%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhindi-devanagari-fonts-website%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -159,6 +159,7 @@
               <li><a href="#sizes-line-height-and-spacing">Sizes, line height and spacing</a></li>
               <li><a href="#loading-devanagari-fonts-efficiently">Loading Devanagari fonts efficiently</a></li>
               <li><a href="#setting-it-up-in-wordpress">Setting it up in WordPress</a></li>
+              <li><a href="#how-to-add-a-hindi-font-in-wordpress-step-by-step">How to add a Hindi font in WordPress, step by step</a></li>
               <li><a href="#test-on-real-phones">Test on real phones</a></li>
               <li><a href="#fonts-in-forms-pdfs-and-emails">Fonts in forms, PDFs and emails</a></li>
               <li><a href="#common-problems-and-fixes">Common problems and fixes</a></li>
@@ -254,6 +255,31 @@
 </ol>
 <p>If the site has separate Hindi and English versions, a multilingual plugin can apply different fonts per language. <a href="/blog/multilingual-wordpress-website-hindi-english/">Multilingual WordPress websites in Hindi and English</a> covers the plugin side, and <a href="/blog/hreflang-multilingual-seo-india/">hreflang for multilingual SEO in India</a> covers how Google finds each version.</p>
 
+<h2 id="how-to-add-a-hindi-font-in-wordpress-step-by-step">How to add a Hindi font in WordPress, step by step</h2>
+<p>For a typical WordPress site with a block theme or a theme like Astra or Hello Elementor, the setup takes under an hour:</p>
+<ol>
+  <li><strong>Choose the font</strong> and download the WOFF2 files for the regular and bold weights, with the Devanagari subset included.</li>
+  <li><strong>Add the files locally.</strong> In a block theme, open Appearance, Editor, Styles, Typography and upload them to the font library. In Elementor, use Custom Fonts under Elementor. In other themes, use the theme's custom font option or a local fonts plugin.</li>
+  <li><strong>Set the font stack</strong> so Hindi falls back sensibly if the file fails, for example:</li>
+</ol>
+<pre><code>body { font-family: "Mukta", "Noto Sans Devanagari", sans-serif; }
+:lang(hi) { line-height: 1.7; }</code></pre>
+<ol start="4">
+  <li><strong>Turn off remote Google Fonts</strong> in the theme or optimisation plugin so the same font is not loaded twice.</li>
+  <li><strong>Check the lang attribute</strong> in the page source: hi for Hindi pages, mr for Marathi.</li>
+  <li><strong>Clear caches and test</strong> on a phone over mobile data, then run the page through a speed test to confirm the font is not the largest file.</li>
+</ol>
+<table>
+  <thead><tr><th>Where you build</th><th>Where Hindi fonts are set</th></tr></thead>
+  <tbody>
+    <tr><td>Block theme (Site Editor)</td><td>Styles, Typography, font library</td></tr>
+    <tr><td>Elementor</td><td>Custom Fonts, then Site Settings, Global Fonts</td></tr>
+    <tr><td>Classic theme</td><td>Customiser or theme options, plus Additional CSS</td></tr>
+    <tr><td>WooCommerce PDFs and emails</td><td>The invoice or email plugin's own font setting</td></tr>
+  </tbody>
+</table>
+<p>If fonts are part of a wider slow site, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers fonts, images and caching together.</p>
+
 <h2 id="test-on-real-phones">Test on real phones</h2>
 <p>Fonts that look fine on a large desktop monitor can struggle on a small Android screen. Test on at least one mid-range Android phone and one iPhone if possible:</p>
 <ul>
@@ -291,6 +317,9 @@
 <p>Devanagari usually needs more line height than English, often around 1.6 to 1.8 for body text. Adjust by eye on real devices.</p>
 <h3>Will Hindi pages rank in Google?</h3>
 <p>Unicode Hindi text can be indexed and ranked like any other language, provided the content is useful and the language is set correctly on the page.</p>
+<h3>How do I add a Hindi font in WordPress?</h3>
+<p>Upload the Devanagari font files locally through the Site Editor font library, Elementor Custom Fonts or your theme's font settings, set it as the body or heading font, add a fallback font in the stack, and set the page language to hi. Then clear caches and test on a phone.</p>
+
 
 <p>Building a Hindi, Marathi or bilingual site? <a href="/wordpress-website-development/">WordPress website development</a> from Samverse covers fonts, speed and multilingual setup, and businesses nearby can work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
@@ -334,6 +363,7 @@
               <li><a href="#sizes-line-height-and-spacing">Sizes, line height and spacing</a></li>
               <li><a href="#loading-devanagari-fonts-efficiently">Loading Devanagari fonts efficiently</a></li>
               <li><a href="#setting-it-up-in-wordpress">Setting it up in WordPress</a></li>
+              <li><a href="#how-to-add-a-hindi-font-in-wordpress-step-by-step">How to add a Hindi font in WordPress, step by step</a></li>
               <li><a href="#test-on-real-phones">Test on real phones</a></li>
               <li><a href="#fonts-in-forms-pdfs-and-emails">Fonts in forms, PDFs and emails</a></li>
               <li><a href="#common-problems-and-fixes">Common problems and fixes</a></li>

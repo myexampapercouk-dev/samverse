@@ -43,7 +43,7 @@
       "headline": "Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again",
       "description": "Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-10-31",
       "mainEntityOfPage": "https://samverse.space/blog/elementor-layout-broken-after-update/",
       "image": "https://samverse.space/assets/og/blog-elementor-layout-broken-after-update.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Elementor%20Layout%20Broken%20After%20an%20Update%3F%20How%20to%20Fix%20It%2C%20Roll%20Back%20Safely%20and%20Stop%20It%20Happening%20Again%20https%3A%2F%2Fsamverse.space%2Fblog%2Felementor-layout-broken-after-update%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,7 @@
               <li><a href="#fix-6-check-site-settings-fonts-breakpoints-and-the-theme">Fix 6: Check Site Settings, fonts, breakpoints and the theme</a></li>
               <li><a href="#fix-7-roll-back-elementor-temporarily">Fix 7: Roll back Elementor temporarily</a></li>
               <li><a href="#fix-8-restore-the-pre-update-backup">Fix 8: Restore the pre-update backup</a></li>
+              <li><a href="#elementor-broken-after-a-wordpress-php-or-theme-update">Elementor broken after a WordPress, PHP or theme update</a></li>
               <li><a href="#how-to-update-elementor-without-breaking-the-layout">How to update Elementor without breaking the layout</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -270,6 +271,20 @@
 
 <p>Repeated breakage after updates is one reason some sites move to the block editor. The <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> comparison covers the trade-offs.</p>
 
+<h2 id="elementor-broken-after-a-wordpress-php-or-theme-update">Elementor broken after a WordPress, PHP or theme update</h2>
+<p>Sometimes Elementor itself didn't change at all. The layout broke because WordPress core, the PHP version on the server or the theme updated, often automatically overnight. The fixes above still apply, but start from what actually changed:</p>
+<table>
+  <thead><tr><th>What updated</th><th>Typical symptom</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress core</td><td>Editor panels misbehave, some widgets stop saving</td><td>Update Elementor and Pro to versions that support the new WordPress release, then run fix 1</td></tr>
+    <tr><td>PHP version (changed by the host)</td><td>Blank widgets, critical errors, editor won't load</td><td>Check the error log, update old add-ons, or temporarily switch PHP back in the hosting panel</td></tr>
+    <tr><td>Theme or child theme</td><td>Header, footer, fonts or widths change</td><td>Test with Hello Elementor on staging, then check child theme CSS</td></tr>
+    <tr><td>Caching or optimisation plugin</td><td>Broken only for visitors, or only on mobile</td><td>Turn off CSS and JavaScript combining and delaying, then purge caches</td></tr>
+  </tbody>
+</table>
+<p>To see what changed and when, check the plugin and theme update history in your hosting panel or an activity log plugin. If the host moved the site to a newer PHP version, <a href="/blog/update-php-version-wordpress/">updating your WordPress PHP version safely</a> explains how to check compatibility before switching back and forth.</p>
+<p>If you'd rather not debug this yourself, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to find and fix the conflict on a staging copy first.</p>
+
 <h2 id="how-to-update-elementor-without-breaking-the-layout">How to update Elementor without breaking the layout</h2>
 <ol>
   <li>Take a full backup.</li>
@@ -294,6 +309,9 @@
 <p>No. Safe Mode only changes how the editor loads for you, so visitors keep seeing the normal site. Turn it off when you've finished testing.</p>
 <h3>Why does my Elementor page look different logged in and logged out?</h3>
 <p>Logged-in users usually bypass the page cache, so you see fresh CSS while visitors get a cached copy. Purge every cache layer: plugin, server and CDN.</p>
+<h3>Should I turn off auto-updates for Elementor?</h3>
+<p>On a business site, yes for major Elementor and Elementor Pro releases. Update them yourself or through a maintenance plan, after a backup and a test on staging. Keep security updates moving, though: leaving Elementor on an old version for months is riskier than a careful monthly update.</p>
+
 
 <p>Layout still broken? Send me the page link and the versions you updated, and I'll tell you what it needs; see <a href="/elementor-developer/">Elementor development</a>.</p>
 
@@ -341,6 +359,7 @@
               <li><a href="#fix-6-check-site-settings-fonts-breakpoints-and-the-theme">Fix 6: Check Site Settings, fonts, breakpoints and the theme</a></li>
               <li><a href="#fix-7-roll-back-elementor-temporarily">Fix 7: Roll back Elementor temporarily</a></li>
               <li><a href="#fix-8-restore-the-pre-update-backup">Fix 8: Restore the pre-update backup</a></li>
+              <li><a href="#elementor-broken-after-a-wordpress-php-or-theme-update">Elementor broken after a WordPress, PHP or theme update</a></li>
               <li><a href="#how-to-update-elementor-without-breaking-the-layout">How to update Elementor without breaking the layout</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

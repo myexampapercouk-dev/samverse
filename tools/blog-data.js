@@ -26537,7 +26537,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
     title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
     description: 'WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-31',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
     body: `
@@ -26646,6 +26646,22 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li>Refund a test order and check the credit note.</li>
 </ol>
 <p>These sit alongside the payment and email checks in the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a>.</p>
+
+<h2>Common WooCommerce GST setup mistakes</h2>
+<p>Most GST problems on WooCommerce stores come from a handful of settings. If invoices or tax totals look wrong, check these first:</p>
+<table>
+  <thead><tr><th>Mistake</th><th>What happens</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Store address in the wrong state</td><td>Every order is treated as interstate, or none are</td><td>Set the registered state in WooCommerce &gt; Settings &gt; General</td></tr>
+    <tr><td>Tax based on billing or shop base address</td><td>Wrong CGST/SGST vs IGST split when billing and delivery states differ</td><td>Calculate tax on the customer shipping address</td></tr>
+    <tr><td>CGST and SGST on the same priority</td><td>Only one of them is charged</td><td>Give them priorities 1 and 2</td></tr>
+    <tr><td>IGST row above the home-state rows</td><td>Home-state customers are charged IGST</td><td>Move home-state rows to the top</td></tr>
+    <tr><td>Products left on the Standard class</td><td>Wrong rate on some items</td><td>Bulk edit the tax class and check imports</td></tr>
+    <tr><td>Prices entered without tax by mistake</td><td>Shoppers pay GST on top of the displayed price</td><td>Match the "Prices entered with tax" setting to how you typed prices</td></tr>
+  </tbody>
+</table>
+<p>Changing tax settings does not change orders already placed, so fix the settings first and then ask your CA how to correct past invoices, usually with credit notes.</p>
+<p>If you want this checked before launch, a <a href="/hire-wordpress-developer/">WordPress developer in India</a> who has set up GST stores can review the tax tables, invoice template and test orders in a few hours, using the rates your CA gives you.</p>
 
 <h2>Reports for GST filing</h2>
 <p>WooCommerce &gt; Analytics &gt; Taxes shows tax collected by rate for any period, and an order export with the shipping state and tax lines gives your accountant what they need for returns. Many invoice plugins can export invoices in bulk. Agree a monthly routine with your CA: export orders and invoices, reconcile them with payment gateway settlements, and keep everything organised by financial year.</p>
@@ -36808,7 +36824,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
     description: 'Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.',
     date: '2026-09-28',
-    updated: '2026-10-12',
+    updated: '2026-10-31',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'website-redesign'],
     body: `
@@ -36901,6 +36917,20 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 
 <p>Repeated breakage after updates is one reason some sites move to the block editor. The <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a> comparison covers the trade-offs.</p>
 
+<h2>Elementor broken after a WordPress, PHP or theme update</h2>
+<p>Sometimes Elementor itself didn't change at all. The layout broke because WordPress core, the PHP version on the server or the theme updated, often automatically overnight. The fixes above still apply, but start from what actually changed:</p>
+<table>
+  <thead><tr><th>What updated</th><th>Typical symptom</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress core</td><td>Editor panels misbehave, some widgets stop saving</td><td>Update Elementor and Pro to versions that support the new WordPress release, then run fix 1</td></tr>
+    <tr><td>PHP version (changed by the host)</td><td>Blank widgets, critical errors, editor won't load</td><td>Check the error log, update old add-ons, or temporarily switch PHP back in the hosting panel</td></tr>
+    <tr><td>Theme or child theme</td><td>Header, footer, fonts or widths change</td><td>Test with Hello Elementor on staging, then check child theme CSS</td></tr>
+    <tr><td>Caching or optimisation plugin</td><td>Broken only for visitors, or only on mobile</td><td>Turn off CSS and JavaScript combining and delaying, then purge caches</td></tr>
+  </tbody>
+</table>
+<p>To see what changed and when, check the plugin and theme update history in your hosting panel or an activity log plugin. If the host moved the site to a newer PHP version, <a href="/blog/update-php-version-wordpress/">updating your WordPress PHP version safely</a> explains how to check compatibility before switching back and forth.</p>
+<p>If you'd rather not debug this yourself, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to find and fix the conflict on a staging copy first.</p>
+
 <h2>How to update Elementor without breaking the layout</h2>
 <ol>
   <li>Take a full backup.</li>
@@ -36925,6 +36955,9 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>No. Safe Mode only changes how the editor loads for you, so visitors keep seeing the normal site. Turn it off when you've finished testing.</p>
 <h3>Why does my Elementor page look different logged in and logged out?</h3>
 <p>Logged-in users usually bypass the page cache, so you see fresh CSS while visitors get a cached copy. Purge every cache layer: plugin, server and CDN.</p>
+<h3>Should I turn off auto-updates for Elementor?</h3>
+<p>On a business site, yes for major Elementor and Elementor Pro releases. Update them yourself or through a maintenance plan, after a backup and a test on staging. Keep security updates moving, though: leaving Elementor on an old version for months is riskier than a careful monthly update.</p>
+
 
 <p>Layout still broken? Send me the page link and the versions you updated, and I'll tell you what it needs; see <a href="/elementor-developer/">Elementor development</a>.</p>
 `,
@@ -59510,7 +59543,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
     description: 'Choosing Hindi fonts for a website: use Unicode text, pick a readable Devanagari font, pair it with English, set sizes, load it fast and test it on phones.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-10-31',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
@@ -59589,6 +59622,31 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ol>
 <p>If the site has separate Hindi and English versions, a multilingual plugin can apply different fonts per language. <a href="/blog/multilingual-wordpress-website-hindi-english/">Multilingual WordPress websites in Hindi and English</a> covers the plugin side, and <a href="/blog/hreflang-multilingual-seo-india/">hreflang for multilingual SEO in India</a> covers how Google finds each version.</p>
 
+<h2>How to add a Hindi font in WordPress, step by step</h2>
+<p>For a typical WordPress site with a block theme or a theme like Astra or Hello Elementor, the setup takes under an hour:</p>
+<ol>
+  <li><strong>Choose the font</strong> and download the WOFF2 files for the regular and bold weights, with the Devanagari subset included.</li>
+  <li><strong>Add the files locally.</strong> In a block theme, open Appearance, Editor, Styles, Typography and upload them to the font library. In Elementor, use Custom Fonts under Elementor. In other themes, use the theme's custom font option or a local fonts plugin.</li>
+  <li><strong>Set the font stack</strong> so Hindi falls back sensibly if the file fails, for example:</li>
+</ol>
+<pre><code>body { font-family: "Mukta", "Noto Sans Devanagari", sans-serif; }
+:lang(hi) { line-height: 1.7; }</code></pre>
+<ol start="4">
+  <li><strong>Turn off remote Google Fonts</strong> in the theme or optimisation plugin so the same font is not loaded twice.</li>
+  <li><strong>Check the lang attribute</strong> in the page source: hi for Hindi pages, mr for Marathi.</li>
+  <li><strong>Clear caches and test</strong> on a phone over mobile data, then run the page through a speed test to confirm the font is not the largest file.</li>
+</ol>
+<table>
+  <thead><tr><th>Where you build</th><th>Where Hindi fonts are set</th></tr></thead>
+  <tbody>
+    <tr><td>Block theme (Site Editor)</td><td>Styles, Typography, font library</td></tr>
+    <tr><td>Elementor</td><td>Custom Fonts, then Site Settings, Global Fonts</td></tr>
+    <tr><td>Classic theme</td><td>Customiser or theme options, plus Additional CSS</td></tr>
+    <tr><td>WooCommerce PDFs and emails</td><td>The invoice or email plugin's own font setting</td></tr>
+  </tbody>
+</table>
+<p>If fonts are part of a wider slow site, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers fonts, images and caching together.</p>
+
 <h2>Test on real phones</h2>
 <p>Fonts that look fine on a large desktop monitor can struggle on a small Android screen. Test on at least one mid-range Android phone and one iPhone if possible:</p>
 <ul>
@@ -59626,6 +59684,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Devanagari usually needs more line height than English, often around 1.6 to 1.8 for body text. Adjust by eye on real devices.</p>
 <h3>Will Hindi pages rank in Google?</h3>
 <p>Unicode Hindi text can be indexed and ranked like any other language, provided the content is useful and the language is set correctly on the page.</p>
+<h3>How do I add a Hindi font in WordPress?</h3>
+<p>Upload the Devanagari font files locally through the Site Editor font library, Elementor Custom Fonts or your theme's font settings, set it as the body or heading font, add a fallback font in the stack, and set the page language to hi. Then clear caches and test on a phone.</p>
+
 
 <p>Building a Hindi, Marathi or bilingual site? <a href="/wordpress-website-development/">WordPress website development</a> from Samverse covers fonts, speed and multilingual setup, and businesses nearby can work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
