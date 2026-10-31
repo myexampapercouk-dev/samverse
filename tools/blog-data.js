@@ -4875,6 +4875,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <li>Learn simple text edits yourself and leave updates and security to the plan.</li>
 </ul>
 
+<p>Some owners skip a plan and pay for changes by the hour instead; see <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a> for how hourly work is usually billed.</p>
+
 <h2>Freelancer, agency, host or do it yourself?</h2>
 <table>
 <thead><tr><th>Option</th><th>Suits</th><th>Watch out for</th></tr></thead>
@@ -27344,6 +27346,8 @@ wp db optimize</code></pre>
 </ol>
 <p>This is where an experienced developer earns their fee, because deleting the wrong option can reset a plugin's settings. If unsure, ask for help rather than guessing.</p>
 
+<p>Limit revisions rather than deleting them all every week, or editors lose their undo history; <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a> explains the settings involved.</p>
+
 <h2>Step 5: Stop the clutter coming back</h2>
 <ul>
 <li>Limit revisions by adding define('WP_POST_REVISIONS', 5); to wp-config.php.</li>
@@ -30726,6 +30730,8 @@ LIMIT 20;</code></pre>
   <li><strong>Look at the flagged URLs safely.</strong> Use a private window where you are not logged in to WordPress, or a URL scanner, rather than your everyday admin browser.</li>
 </ol>
 
+<p>For a step-by-step method to trace and delete the page, then clear it from Google, see <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a>.</p>
+
 <h2>Step 2: Find the phishing pages and how they got there</h2>
 <p>Phishing kits are usually uploaded as a zip file and unpacked into a folder, so they sit outside WordPress and don't show up in your Pages list. Look in these places:</p>
 <ul>
@@ -31137,6 +31143,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   </tbody>
 </table>
 <p>Domain, hosting and premium licences are extra, and are usually paid yearly. For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+
+<p>If you are comparing hourly quotes from Indian developers, <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a> explains what pushes rates up or down and what to ask before you agree.</p>
 
 <h2>How hourly billing works</h2>
 <p>You pay an agreed rate for the time actually spent, usually tracked with a timer or a timesheet and reported weekly or at the end of the job. Freelance platforms often support both models: hourly contracts with time tracking, and fixed-price contracts paid by milestone.</p>
@@ -31607,6 +31615,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Licensed themes and plugins only, never "nulled" copies</li>
   <li>Easy for your client to edit, with global styles and a tidy page structure</li>
 </ul>
+<p>For the factors behind hourly figures and how to compare them fairly, see <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a>.</p>
+
 <h2>How pricing is usually structured</h2>
 <p>Rates vary widely with experience and scope, so compare how a developer prices as well as how much.</p>
 <table>
@@ -33823,6 +33833,8 @@ wp option get home</code></pre>
 </ul>
 <p>Faking Googlebot with a browser extension doesn't always work, because some cloaking checks Google's real IP addresses. The live test comes from Google itself.</p>
 
+<p>If you have found a single unfamiliar page rather than thousands of spam URLs, see <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a>.</p>
+
 <h2>Step 4: Find and remove the spam generator</h2>
 <p>The generator is rarely a WordPress page you can delete from the dashboard. Look in these places:</p>
 <ul>
@@ -34825,6 +34837,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li><strong>Passwords:</strong> change WordPress, hosting, SFTP/FTP, database and email passwords, and reset the security keys (salts) in wp-config.php to log everyone out</li>
   <li><strong>Take a copy of the hacked site</strong> before cleaning, so you can investigate what happened if needed</li>
 </ul>
+
+<p>Each fake page can live in the dashboard, in a file or in injected code; <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a> shows how to check each place.</p>
 
 <h2>Step 3: Find the hacked content</h2>
 <ul>
@@ -36985,6 +36999,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   </tbody>
 </table>
 <p>Phone numbers, addresses and opening hours often sit here, so update them carefully and check a few pages afterwards.</p>
+
+<p>If the Revisions option is missing from the editor, see <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a> for the usual causes and fixes.</p>
 
 <h2>Revisions, undo and getting a page back</h2>
 <ul>
@@ -52413,6 +52429,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>Don't log more than you need,</strong> and mention it in your privacy policy if you log customers or other users, not only staff</li>
 </ul>
 <p>India's DPDP Act sets general expectations around the purpose, security and retention of personal data, and its rules are being phased in. Separately, CERT-In directions issued in 2022 include log-keeping requirements for many organisations. Whether and how these apply depends on your business, so see the DPDP Act and your website and confirm the specifics with your lawyer or adviser.</p>
+
+<p>To get the earlier text of a page back, you need revisions or a backup. If revisions have vanished, see <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
 
 <h2>What activity logs can't do</h2>
 <p>A WordPress activity log records what happens inside WordPress. It won't catch files changed over FTP or a compromised hosting account; your host's logs cover some of that. It also doesn't block attacks on its own. Treat it as one layer alongside prompt updates, strong logins, a firewall and tested backups.</p>
@@ -75479,6 +75497,300 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>It can, if it loads a large script on every page. A plain link in the theme adds almost nothing. Check speed before and after installing, as described in <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a>.</p>
 
 <p>If you want WhatsApp chat, COD confirmation and order updates set up on your store and tested on real orders, my <a href="/shopify-developer/">Shopify developer service</a> starts with a free review and a fixed quote. Brands looking for a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> can see how I work with stores in other cities too.</p>
+`,
+  },
+  {
+    slug: 'remove-fake-pages-wordpress-site',
+    seoTitle: 'How to Remove a Fake Web Page on a WordPress Site',
+    title: 'How to Remove a Fake Web Page on Your WordPress Site and Get It Out of Google',
+    description: 'How to remove a fake web page on a WordPress site: find where it lives, delete it safely, close the hole that created it and clear it from Google results.',
+    date: '2026-10-31',
+    category: 'Security',
+    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>To remove a fake web page on a WordPress site, first find out how it got there: a page or post in the dashboard, a file uploaded to the server, a rule that generates spam URLs, or a rogue user account. Delete that source, close the security hole that allowed it, make the URL return a 404 or 410, and then ask Google to drop it from search results. Deleting only the visible page often fails, because the same hole is used to create it again.</p>
+<p>This guide is for business owners who have found a page on their site they did not create: a fake offer, a phishing login, a casino or pharmacy page, a page in another language, or a strange URL showing in Google under their domain.</p>
+
+<h2>What counts as a fake web page?</h2>
+<p>A fake page is any page served from your domain that you or your team did not publish. Common examples:</p>
+<ul>
+<li>Spam pages selling pills, betting, loans or replica goods, often in Japanese or other languages.</li>
+<li>Phishing pages imitating a bank, courier, payment app or email login.</li>
+<li>Fake offers or job posts using your brand to collect money or personal details.</li>
+<li>Doorway pages full of keywords that redirect visitors elsewhere.</li>
+<li>Old test pages or forgotten landing pages that look abandoned but are still live.</li>
+</ul>
+<p>The last type is not an attack, just housekeeping. The others mean someone has access they should not have, and the site should be treated as compromised. If you are unsure, start with <a href="/blog/signs-wordpress-site-hacked/">how to know if your WordPress site has been hacked</a>.</p>
+
+<h2>Step 1: Record what you found</h2>
+<p>Before deleting anything, note the exact URLs, take screenshots, and check whether the pages appear in Google with a site search for your domain. Also check Search Console under Pages and Security issues. This evidence helps you confirm later that everything has gone, and helps a developer trace how the pages were created.</p>
+<p>Take a full backup of the files and database now, even though the site is infected. If cleanup goes wrong, you need something to go back to. Keep this backup separate from your clean backups.</p>
+
+<h2>Step 2: Find where the fake page lives</h2>
+<p>Fake pages are created in a few different ways, and each needs a different fix.</p>
+<table>
+<thead><tr><th>Where it lives</th><th>How to check</th><th>What it suggests</th></tr></thead>
+<tbody>
+<tr><td>A page or post in the dashboard</td><td>Search Pages and Posts, including drafts and trash, for the title or URL</td><td>A user account was used, possibly a compromised or rogue one</td></tr>
+<tr><td>A standalone file on the server</td><td>Look in the file manager for unfamiliar HTML or PHP files and folders, often in uploads or the site root</td><td>Server access through a vulnerable plugin, theme or stolen hosting login</td></tr>
+<tr><td>Generated URLs that do not exist as files</td><td>Thousands of spam URLs with no matching page or file</td><td>Injected code or rewrite rules creating pages on the fly</td></tr>
+<tr><td>A different site on the same hosting</td><td>Check other folders and addon domains in the hosting account</td><td>An old, unmaintained site infecting the account</td></tr>
+<tr><td>A legitimate but forgotten page</td><td>It appears in Pages with a real author and old date</td><td>Housekeeping, not a hack</td></tr>
+</tbody>
+</table>
+<p>If thousands of Japanese or foreign-language pages appear in Google, see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">the Japanese keyword hack fix</a>, which covers that specific pattern. If visitors are being sent to other sites, see <a href="/blog/fix-wordpress-redirect-hack/">how to fix a WordPress redirect hack</a>.</p>
+
+<h2>Step 3: Remove the page and everything behind it</h2>
+<ol>
+<li><strong>Dashboard pages and posts.</strong> Move them to trash, then empty the trash. Check the author and remove that user if it is not someone you know.</li>
+<li><strong>Unknown users.</strong> Go to Users and remove any administrator or editor accounts you do not recognise. Reassign their content to yourself when asked, then delete the fake content.</li>
+<li><strong>Server files.</strong> Delete unfamiliar files and folders only when you are sure they are not part of WordPress, your theme or a plugin. Compare against fresh copies if unsure.</li>
+<li><strong>Injected code.</strong> Spam that generates URLs dynamically usually lives in modified core files, theme files, the .htaccess file or the database. Replacing WordPress core, themes and plugins with fresh copies removes most of it.</li>
+<li><strong>Backdoors.</strong> Attackers usually leave hidden files that let them return. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing WordPress backdoors</a> explains where to look.</li>
+</ol>
+<p>For a complete process, follow <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
+
+<h2>Step 4: Close the hole so fake pages do not come back</h2>
+<ul>
+<li>Update WordPress core, all plugins and themes, and delete any you do not use.</li>
+<li>Remove nulled (pirated) themes and plugins, which often contain hidden code.</li>
+<li>Change passwords for all WordPress admins, hosting, FTP or SFTP, the database and email accounts linked to the site.</li>
+<li>Turn on two-factor login for administrators.</li>
+<li>Generate new security keys in wp-config.php so existing logins are signed out.</li>
+<li>Check other sites in the same hosting account; one neglected site can reinfect the rest.</li>
+<li>Run a malware scan after cleanup and again a few days later.</li>
+</ul>
+<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers longer-term hardening.</p>
+
+<h2>Step 5: Remove the fake page from Google</h2>
+<p>Deleting a page from your site does not remove it from Google straight away. To speed things up:</p>
+<ol>
+<li><strong>Make the URL return a 404 or 410.</strong> Visit the old fake URL. It should show your not-found page, not a redirect to your homepage. A 410 status (gone) can make Google drop it slightly faster, but a correct 404 also works. Do not redirect spam URLs to real pages.</li>
+<li><strong>Use the Removals tool in Search Console</strong> to hide urgent URLs, such as a phishing page, from results while Google recrawls. The removal is temporary; the 404 or 410 makes it permanent.</li>
+<li><strong>Check your sitemap</strong> does not list the fake URLs. If spam was injected into the sitemap, regenerate it and resubmit it.</li>
+<li><strong>Request a review</strong> if Search Console shows a security issue or manual action, after the cleanup is complete.</li>
+</ol>
+<p>If browsers show a red &quot;Deceptive site ahead&quot; warning because of a phishing page, also read <a href="/blog/deceptive-site-ahead-warning-fix/">the deceptive site warning fix</a>.</p>
+
+<h2>Tell the people who may have been affected</h2>
+<p>If the fake page collected payments, login details or personal information, think about who saw it. Customers may have received a link to it by email, SMS or WhatsApp, and some may already have entered details. A short, factual notice on your real website and social profiles, warning customers not to trust the page and explaining how you contact them, protects both them and your reputation.</p>
+<p>Also check whether your own email accounts sent the links. Attackers who get into a hosting account sometimes use the site to send spam or phishing emails, which can get your domain blocked by email providers. If customers report strange emails from your domain, see <a href="/blog/wordpress-site-sending-spam-emails/">why a WordPress site sends spam emails</a>.</p>
+<p>Where money or personal data was involved, Indian businesses can report cybercrime through the national cybercrime reporting portal, and should keep records of what happened, when it was found and what was done.</p>
+
+<h2>Step 6: Monitor for a few weeks</h2>
+<p>Check Search Console Pages and Security issues each week, search Google for your domain plus spam words, and keep an eye on new users and new files. If fake pages reappear, the entry point is still open and a deeper cleanup is needed. Regular updates, backups and monitoring as part of <a href="/wordpress-maintenance/">WordPress maintenance</a> reduce the chance of this happening again.</p>
+
+<h2>When to get professional help</h2>
+<p>If fake pages keep coming back, if there are thousands of spam URLs, if a phishing page is live, or if your host has suspended the site, a professional cleanup is usually quicker and safer. Samverse offers <a href="/wordpress-malware-removal/">WordPress malware removal</a> for businesses in India and abroad, including cleanup, hardening and Google review requests.</p>
+
+<h2>FAQs</h2>
+<h3>How do I remove a fake web page on my WordPress site?</h3>
+<p>Find whether it is a dashboard page, a server file or injected code, delete that source, remove unknown users, update everything and change passwords, then make the URL return 404 or 410 and use Search Console to drop it from Google.</p>
+<h3>Why does the fake page come back after I delete it?</h3>
+<p>The attacker still has a way in, such as a backdoor file, a vulnerable plugin, a rogue admin account or a stolen hosting password. Close the entry point, not just the page.</p>
+<h3>How long does Google take to remove fake pages?</h3>
+<p>It varies. The Removals tool hides URLs quickly but temporarily; permanent removal happens after Google recrawls and sees a 404 or 410. Large spam attacks can take weeks to clear fully.</p>
+<h3>Should I redirect fake pages to my homepage?</h3>
+<p>No. Let them return 404 or 410. Redirecting spam URLs keeps them alive in Google and can look like a soft 404.</p>
+<h3>Someone made a fake website copying my business. Is that the same problem?</h3>
+<p>No. That is a separate site on another domain. Report it to the host or registrar of that domain and to Google, and keep records of the copied content.</p>
+<h3>Can a security plugin remove fake pages automatically?</h3>
+<p>Scanners can find many infected files and suspicious code, but they do not always find database injections or rogue users. Use a scanner as one step of a full cleanup, not the whole fix.</p>
+`,
+  },
+  {
+    slug: 'wordpress-developer-hourly-rate-india',
+    seoTitle: 'WordPress Developer Hourly Rate in India: What Drives It',
+    title: 'WordPress Developer Hourly Rate in India: What Affects It and How to Compare Quotes',
+    description: 'WordPress developer hourly rate in India explained: what pushes rates up or down, hourly vs fixed price, hidden hours to ask about, and how to compare quotes.',
+    date: '2026-10-31',
+    category: 'Pricing',
+    related: ['hire-wordpress-developer', 'wordpress-developer-pune', 'wordpress-website-development'],
+    body: `
+<p>There is no single WordPress developer hourly rate in India. Rates vary widely with experience, the kind of work (a content fix versus custom plugin code), how urgent the job is, and whether you are paying a freelancer directly or an agency with project management on top. The useful question is not &quot;what is the rate?&quot; but &quot;how many hours will this take, and what do I get for them?&quot;</p>
+<p>This guide explains what drives hourly rates, when hourly billing makes sense, and how to compare quotes from Indian developers without being misled by the headline number. It does not list rate figures, because any number quoted online is out of date quickly and rarely matches your project.</p>
+
+<h2>WordPress developer hourly rate in India: what actually sets it</h2>
+<p>Developers set their rates from a mix of skill, demand and the risk they carry. The main factors are below.</p>
+<ul>
+<li><strong>Skill level and depth.</strong> Someone who installs themes and edits pages is doing different work from someone who writes custom plugins, debugs PHP errors, tunes databases or cleans hacked sites. The second group usually charges more per hour and often finishes faster.</li>
+<li><strong>Type of task.</strong> Content changes, layout fixes and plugin setup are simpler than WooCommerce customisation, API integrations, speed work or security cleanup. Many developers charge different rates for different kinds of work.</li>
+<li><strong>Urgency.</strong> Same-day or weekend fixes, such as a site down during a sale, normally cost more than scheduled work.</li>
+<li><strong>Accountability.</strong> A developer who offers a warranty period, backups before changes, written handover notes and a clear point of contact is pricing in responsibility, not just keystrokes.</li>
+<li><strong>Who you hire.</strong> A freelancer, a small studio and a larger agency have different overheads. Agencies add project managers, designers and testers, which raises the hourly figure but can reduce your own management time.</li>
+<li><strong>Location and clients.</strong> Developers who mostly serve overseas clients often price closer to those markets, even when they are based in India.</li>
+</ul>
+<p>For a wider view of the trade-offs, see <a href="/blog/freelancer-vs-agency-web-developer/">freelance web developer vs agency</a>.</p>
+
+<h2>Hourly rate vs fixed price: which suits your job?</h2>
+<p>Hourly billing and fixed-price billing each have a place. Hourly suits work where the scope is unclear until someone looks: debugging, small ongoing changes, investigating a slow site or a broken plugin conflict. Fixed price suits work you can describe fully in advance, such as a new five-page business website or a defined set of WooCommerce features.</p>
+<table>
+<thead><tr><th>Situation</th><th>Hourly usually fits</th><th>Fixed price usually fits</th></tr></thead>
+<tbody>
+<tr><td>New website with a clear brief</td><td></td><td>Yes</td></tr>
+<tr><td>Bug or error you cannot explain</td><td>Yes</td><td></td></tr>
+<tr><td>Small monthly changes and updates</td><td>Yes, or a monthly plan</td><td></td></tr>
+<tr><td>Custom feature with a written spec</td><td></td><td>Yes</td></tr>
+<tr><td>Speed or security investigation</td><td>Yes, for the audit stage</td><td>Yes, for the agreed fixes</td></tr>
+</tbody>
+</table>
+<p>The detailed pros and cons are in <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing for website projects</a>. Many projects mix the two: a fixed fee for the build and an hourly rate for changes after launch.</p>
+
+<h2>Why a low hourly rate can cost more</h2>
+<p>A cheaper rate looks attractive, but the bill is rate multiplied by hours. A developer who is less familiar with WordPress may take longer, solve the problem with extra plugins that slow the site, or leave issues that need fixing later. Common hidden costs include:</p>
+<ul>
+<li>Time spent explaining the same thing several times because there is no written brief or task list.</li>
+<li>Rework after launch, when forms, payments or mobile layouts turn out not to work properly.</li>
+<li>Heavy page builders and plugin stacks that later need a separate speed optimisation job.</li>
+<li>Missing access or ownership: domain, hosting or theme licences registered to the developer rather than to you.</li>
+<li>No backups before changes, so one mistake becomes a much bigger job.</li>
+</ul>
+<p>An experienced developer at a higher rate who finishes in fewer hours, documents the work and stands behind it can be the cheaper option overall.</p>
+
+<h2>What should be included in the hours you pay for?</h2>
+<p>Before you agree to an hourly arrangement, ask what counts as billable time. Typical questions:</p>
+<ul>
+<li>Are calls, emails and WhatsApp messages billed, or only hands-on work?</li>
+<li>Is testing on mobile and in different browsers included?</li>
+<li>Is a backup taken before changes, and is that billed?</li>
+<li>What is the minimum billing unit: 15 minutes, 30 minutes or an hour?</li>
+<li>Is there a minimum monthly charge or a retainer?</li>
+<li>How are hours reported: a simple task log, a time-tracking report or just a total?</li>
+<li>Is GST added on top, and will you get a proper invoice?</li>
+</ul>
+<p>Clear answers to these questions matter more than a small difference in the rate.</p>
+
+<h2>How to estimate hours before you hire</h2>
+<p>You do not need to be technical to get a sensible estimate. Write down what you want in plain words, list the pages or features, attach screenshots and links, and say what &quot;done&quot; looks like. Our <a href="/blog/website-brief-template/">website brief template</a> gives a format you can copy.</p>
+<p>Then ask each developer for an estimate broken down by task, with a range (for example, a low and high number of hours) and a cap that they will not exceed without asking you first. A breakdown shows whether they understood the job. A single round number with no explanation is a warning sign.</p>
+<p>For new builds, also ask for a timeline with milestones, so you can see how the hours are spread across design, build, content and testing.</p>
+
+<h2>Comparing quotes from Indian WordPress developers</h2>
+<p>Quotes for the same job can look very different. That is normal: developers assume different scopes, tools and levels of finish. To compare fairly:</p>
+<ol>
+<li>Send every developer the same written brief.</li>
+<li>Ask each for hours per task, the hourly rate and what is excluded.</li>
+<li>Check how they handle backups, staging sites and testing.</li>
+<li>Ask who owns the code, the theme licence and the accounts at the end.</li>
+<li>Ask what support you get after the work is delivered, and at what rate.</li>
+<li>Look at real examples of similar work and speak to them on a call.</li>
+</ol>
+<p>Our guide to <a href="/blog/compare-website-quotes/">why website quotes are so different</a> goes through this in more detail, and the <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> guide covers the full budget, not just developer time.</p>
+
+<h2>Hourly work after launch: maintenance and small changes</h2>
+<p>Once a site is live, most businesses need a few hours a month for updates, small content changes, plugin checks and backups. You can pay for these hourly as they come up, or move to a monthly plan with a set number of hours or tasks. A plan usually makes budgeting easier and means someone checks the site regularly instead of only when it breaks.</p>
+<p>See <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> for how monthly plans are usually structured, and <a href="/wordpress-maintenance/">WordPress maintenance</a> if you want ongoing care rather than one-off hours.</p>
+
+<h2>Red flags when hiring by the hour</h2>
+<ul>
+<li>No written estimate, or refusal to give a cap.</li>
+<li>Asking for your main admin password over chat instead of a separate user account.</li>
+<li>No mention of backups or a staging copy before risky changes.</li>
+<li>Vague time reports such as &quot;fixes: 9 hours&quot; with no task list.</li>
+<li>Pressure to pay a large amount upfront for open-ended hourly work.</li>
+<li>Installing nulled (pirated) premium plugins to save licence costs.</li>
+</ul>
+
+<h2>When to hire an hourly developer vs a WordPress partner</h2>
+<p>If you only need occasional small fixes, an hourly arrangement with a reliable developer is simple and fair. If you have a business that depends on the site for enquiries or orders, you may be better served by one developer or studio that knows your site, keeps it backed up and updated, and handles builds, speed and security as one relationship. For businesses outsourcing from abroad, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers how such arrangements usually work.</p>
+<p>Samverse works with businesses across India and overseas on fixed-price builds and hourly or monthly support. If you want a written estimate for your job, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through our service page, or see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
+
+<h2>FAQs</h2>
+<h3>What is the typical WordPress developer hourly rate in India?</h3>
+<p>It varies widely with skill, task type, urgency and whether you hire a freelancer or an agency. Rather than relying on a figure from the internet, send the same brief to a few developers and compare their hours per task and total cost.</p>
+<h3>Is it cheaper to hire a WordPress developer in India by the hour or at a fixed price?</h3>
+<p>For a clearly defined project, a fixed price is usually easier to budget. For debugging, investigations and small ongoing changes, hourly billing is often fairer because nobody knows the full scope in advance.</p>
+<h3>Why do some Indian WordPress developers charge much more per hour than others?</h3>
+<p>Experience, specialisation (custom code, WooCommerce, speed, security), accountability such as warranties and backups, overheads and the markets they normally serve all affect the rate.</p>
+<h3>Do WordPress developers charge GST on hourly work?</h3>
+<p>Registered businesses add GST to their invoices. Ask whether the quoted rate includes or excludes GST and whether you will receive a proper tax invoice.</p>
+<h3>How many hours does a small WordPress fix take?</h3>
+<p>It depends on the cause. A simple content or layout change can be quick, while a plugin conflict or error may need investigation first. Ask for an estimate with a cap so you approve anything beyond it.</p>
+<h3>Should I pay hourly or choose a monthly maintenance plan?</h3>
+<p>If you need changes only now and then, hourly works. If the site needs regular updates, backups and small edits, a monthly plan is usually more predictable and keeps the site checked between requests.</p>
+`,
+  },
+  {
+    slug: 'wordpress-revisions-not-showing',
+    seoTitle: 'WordPress Revisions Not Showing? Causes and Fixes',
+    title: 'WordPress Revisions Not Showing? Why the Revisions Option Disappears and How to Get It Back',
+    description: 'WordPress revisions not showing? Check the editor panel, wp-config limits, cleanup plugins, post type support and page builders, then restore an older version.',
+    date: '2026-10-31',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-developer-pune'],
+    body: `
+<p>If WordPress revisions are not showing, the usual reasons are simple: the post has only been saved once, revisions are disabled or limited in wp-config.php, a database cleanup plugin has deleted them, or the content type (or page builder) does not use WordPress revisions. Work through the checks below in order and you will usually find the cause in a few minutes.</p>
+<p>This guide is for business owners and editors who want to restore an earlier version of a page or post, and for anyone who has noticed the Revisions option has vanished from the editor.</p>
+
+<h2>Where WordPress revisions normally appear</h2>
+<p>In the block editor (Gutenberg), open the post or page, make sure the <strong>Post</strong> or <strong>Page</strong> tab is selected in the right sidebar, and look for <strong>Revisions</strong> with a number next to it. Clicking it opens the revisions screen, where you can compare versions with a slider and restore one.</p>
+<p>In the classic editor, revisions appear in the <strong>Publish</strong> box as &quot;Revisions: number&quot; with a Browse link, and optionally in a Revisions box below the editor. If that box is missing, open <strong>Screen Options</strong> at the top right of the screen and tick Revisions.</p>
+<p>Revisions only show once a post has been saved at least twice with changes. A brand-new page published in one go has nothing to compare, so the option will not appear yet. If you need help finding your way around the editor, see <a href="/blog/edit-website-content-wordpress/">how to edit your website content in WordPress</a>.</p>
+
+<h2>WordPress revisions not showing: the common causes</h2>
+<table>
+<thead><tr><th>Cause</th><th>How to spot it</th><th>Fix</th></tr></thead>
+<tbody>
+<tr><td>Only one save so far</td><td>New post, no Revisions count</td><td>Save a change; the option appears from the second save</td></tr>
+<tr><td>Revisions disabled in wp-config.php</td><td>No revisions on any post, even old ones</td><td>Change or remove the WP_POST_REVISIONS setting</td></tr>
+<tr><td>Revisions limited to a small number</td><td>Only the latest few versions exist</td><td>Raise the limit to a sensible number</td></tr>
+<tr><td>Cleanup plugin deleting revisions</td><td>Revisions vanish after a scheduled cleanup</td><td>Change the plugin settings to keep recent revisions</td></tr>
+<tr><td>Post type without revision support</td><td>Revisions work on posts but not on products or a custom type</td><td>Add revision support in code, or accept a different history method</td></tr>
+<tr><td>Page builder content</td><td>Page edited in Elementor or another builder</td><td>Use the builder's own history or revisions panel</td></tr>
+<tr><td>User role restrictions</td><td>Editors see revisions, contributors do not</td><td>Check the user's role and permissions</td></tr>
+</tbody>
+</table>
+
+<h2>Check wp-config.php for revision settings</h2>
+<p>WordPress lets site owners control revisions with a setting called WP_POST_REVISIONS in the wp-config.php file. Some hosts, developers or performance guides set it to false (no revisions at all) or to a small number to keep the database smaller.</p>
+<p>To check, open wp-config.php through your hosting file manager or SFTP and search for WP_POST_REVISIONS. If it is set to false or 0, revisions are switched off. If it is set to a number, WordPress keeps only that many revisions per post. Remove the line to return to the default (unlimited), or set a reasonable number such as 10 to 20, which keeps useful history without bloating the database.</p>
+<p>Always take a backup before editing wp-config.php. A typing mistake in this file can take the whole site offline. Our <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> explains how.</p>
+
+<h2>Check database cleanup and optimisation plugins</h2>
+<p>Many performance and cleanup plugins include an option to delete post revisions, sometimes on a schedule. Caching suites, database optimisation tools and some security plugins all offer this. If revisions existed and then disappeared, this is the most likely cause.</p>
+<p>Open each such plugin's database or cleanup settings and look for options about post revisions. Either stop automatic deletion or set it to keep a number of recent revisions. Deleted revisions cannot be brought back from inside WordPress; the only way to recover them is from a backup taken before the cleanup.</p>
+<p>Cleaning old revisions is a reasonable part of <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>, but it should keep recent history rather than wiping it every week.</p>
+
+<h2>Products, custom post types and revisions</h2>
+<p>Revisions only work for content types that declare support for them. Posts and pages support revisions by default. WooCommerce products and many custom post types created by themes or plugins (portfolios, team members, listings) may not, so the option never appears for them.</p>
+<p>A developer can add revision support to a custom post type with a small code change in a site-specific plugin. For WooCommerce products, think carefully: product data such as price and stock lives partly outside the main content, so a revision would not restore everything. An activity log is often more useful for tracking who changed a product and when; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
+
+<h2>Elementor and other page builders</h2>
+<p>Page builders store their layout data in their own format, and they offer their own history tools. In Elementor, open the History panel inside the editor to see recent actions and saved revisions, and restore from there. Restoring a WordPress revision for a page built with a page builder may not restore the layout correctly, so use the builder's own tools first.</p>
+<p>If Elementor itself will not open, see <a href="/blog/elementor-not-loading-fix/">Elementor not loading</a>. If a layout broke after a plugin update rather than after an edit, the cause is different and a backup or rollback is usually the faster fix.</p>
+
+<h2>User roles and permissions</h2>
+<p>Users can only see and restore revisions for content they are allowed to edit. A contributor or author may not see revisions on a page they cannot edit. If one person sees revisions and another does not, compare their roles. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> describes what each role can do.</p>
+
+<h2>Revisions exist but changes are not showing on the site</h2>
+<p>Sometimes the revision has been restored but the live page still looks old. That is usually caching: a page cache, a CDN or the browser is serving the earlier version. Clear the cache in your caching plugin and hosting panel, then check in a private window. <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> walks through every cache layer.</p>
+
+<h2>How to restore an older version safely</h2>
+<ol>
+<li>Open the post or page and click Revisions.</li>
+<li>Use the slider or arrows to find the version you want, and compare it with the current one.</li>
+<li>Click <strong>Restore This Revision</strong>. WordPress saves the current version as a new revision first, so you can undo the restore.</li>
+<li>Check the page on the front end, on mobile and desktop, and clear caches.</li>
+</ol>
+<p>Restoring a revision only changes that post's content, title and excerpt. It does not restore menus, widgets, settings, images that were deleted from the media library, or plugin data.</p>
+
+<h2>Revisions are not backups</h2>
+<p>Revisions help with editing mistakes on a single page. They do not protect you from a failed update, a hacked site, a deleted page or a broken plugin. For that you need regular off-site backups that you have actually tested. A monthly care plan normally covers backups, updates and checks like these; see <a href="/wordpress-maintenance/">WordPress maintenance</a> if you would rather not manage it yourself.</p>
+<p>If you need someone to investigate missing revisions, restore lost content from backup or tidy up the database safely, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
+
+<h2>FAQs</h2>
+<h3>Why are WordPress revisions not showing in the block editor?</h3>
+<p>Check the Post or Page tab in the right sidebar. If there is no Revisions count, the post may have been saved only once, revisions may be disabled in wp-config.php, or a cleanup plugin may have deleted them.</p>
+<h3>How do I enable revisions in WordPress?</h3>
+<p>Remove or change the WP_POST_REVISIONS line in wp-config.php so it is not false or 0, and make sure no plugin is deleting revisions automatically. Take a backup first.</p>
+<h3>Can I recover WordPress revisions after they were deleted?</h3>
+<p>Not from inside WordPress. The only way is to restore the database, or extract the content, from a backup taken before the revisions were removed.</p>
+<h3>Why do WooCommerce products not show revisions?</h3>
+<p>Products do not support revisions by default. A developer can add support, but much product data sits outside the main content, so an activity log is often a better way to track changes.</p>
+<h3>How many revisions should WordPress keep?</h3>
+<p>There is no fixed rule. Many sites keep somewhere around 10 to 20 per post, which gives useful history without making the database much larger.</p>
+<h3>Do revisions slow down a WordPress site?</h3>
+<p>Revisions are stored in the database but are not loaded on normal page views. Very large numbers can make the database bigger and some admin queries slower, which is why many sites limit them.</p>
 `,
   },
 ];
