@@ -2789,6 +2789,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Should you move at all?</h2>
 <p>Businesses usually leave Wix for more control over SEO and site structure, features Wix apps don't cover well, a store without platform limits, or to own the website outright on hosting they choose. If your Wix site is small, rarely updated and already bringing enquiries, moving may cost more effort than it saves. If it's holding you back, plan the move properly rather than rushing it.</p>
 
+<p>On Squarespace rather than Wix? The trade-offs are similar; see <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace for a business website</a>, which also covers moving to WordPress later.</p>
+
 <h2>What moves, and how</h2>
 <table>
   <thead><tr><th>Item</th><th>How it moves</th><th>Watch out for</th></tr></thead>
@@ -9709,6 +9711,8 @@ site:example.com/blog/ "net metering"</code></pre>
   </tbody>
 </table>
 
+<p>Some teams look at Webflow for the same reasons they consider headless. <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow for a business website</a> covers CMS limits, hosting and ownership.</p>
+
 <h2>Alternatives that get most of the benefit</h2>
 <h3>A well-built traditional WordPress site</h3>
 <p>Good hosting, a lightweight theme, page caching, optimised images and a careful plugin list make WordPress fast enough for nearly every small business, and pass Core Web Vitals on real devices. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> and what a CDN does cover the two biggest levers.</p>
@@ -12194,6 +12198,8 @@ wp option update blog_public 0</code></pre>
 
 <h2>Finding developers in India</h2>
 <p>WordPress developers are easy to find in India at every budget, which keeps support affordable and means you're never dependent on one person. Webflow specialists exist but are fewer, often designers or agencies, and their rates reflect that. If a Webflow site's builder moves on, finding a replacement can take longer.</p>
+
+<p>Also considering Squarespace? <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> compares ownership, cost over time and Indian payments.</p>
 
 <h2>WordPress vs Webflow: which should you choose?</h2>
 <h3>Choose WordPress if</h3>
@@ -16534,6 +16540,8 @@ cf-cache-status: HIT</code></pre>
 <h3>For working professionals</h3>
 <p>Cover commute times to the office areas you serve, flexible meal plans, Wi-Fi that copes with video calls, late entry for shift workers if you allow it, housekeeping and laundry, and the notice period. If an outside laundry collects from the building, say on which days; <a href="/blog/website-for-laundry-dry-cleaning/">websites for laundry and dry cleaning services</a> shows what such services offer PG owners.</p>
 
+<p>Many students also look for a quiet place to study near where they live. <a href="/blog/website-for-study-centres-libraries/">Websites for self-study centres and reading libraries</a> covers seat booking, plans, shifts and branch pages.</p>
+
 <h2>Location and commute, measured honestly</h2>
 <p>"Walking distance from the metro" is a line people have learned to distrust. Measure the journeys residents will actually make, at the times they will make them:</p>
 <ul>
@@ -16890,6 +16898,8 @@ cf-cache-status: HIT</code></pre>
   <li><strong>Testimonials:</strong> from real parents and students, with permission, never written for them</li>
   <li><strong>Children's data:</strong> collect only what you need on forms, and avoid publishing children's photos; under India's Digital Personal Data Protection Act, handling a child's personal data generally needs verifiable consent from a parent, so read <a href="/blog/dpdp-act-website-basics/">the DPDP Act and your website</a> and check the current rules</li>
 </ul>
+
+<p>Running a self-study space or reading library rather than classes? See <a href="/blog/website-for-study-centres-libraries/">websites for study centres and libraries</a>.</p>
 
 <h2>Getting found by local and online students</h2>
 <ul>
@@ -18255,6 +18265,8 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   <li><strong>Your own enquiries:</strong> ask the last ten customers how they found you and which page they looked at.</li>
 </ol>
 <p>For most small business sites, the same handful of pages come up every time. They are your phase one.</p>
+
+<p>To decide what the budget has to fix, run through <a href="/blog/website-design-mistakes/">these 15 website design mistakes</a>; many can be fixed without a full redesign.</p>
 
 <h2>Where a small budget goes furthest</h2>
 <table>
@@ -25759,6 +25771,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     <tr><td>Slow loading from huge images or video</td><td>Compressed, properly sized images and no autoplay</td></tr>
   </tbody>
 </table>
+
+<p>The homepage is only one page. <a href="/blog/website-design-mistakes/">The 15 website design mistakes that cost small businesses customers</a> covers the rest of the site, with a 30-minute self-audit.</p>
 
 <h2>How to tell if your homepage works</h2>
 <p>Opinions about a homepage are cheap; enquiries are the real test. In GA4, check how many sessions that start on the homepage lead to a key event, such as a form submission, call or WhatsApp click, and which links people click from it. A free heatmap tool, such as Microsoft Clarity, shows how far people scroll and where they tap. Change one thing at a time, such as the headline or the order of sections, and compare a few weeks before and after. <a href="/blog/conversion-rate-optimization-basics/">Conversion rate optimisation basics</a> explains the method.</p>
@@ -47915,6 +47929,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Both platforms let you edit titles, descriptions and URLs, create sitemaps and publish blogs, so either can rank. Squarespace handles many technical basics automatically but gives less control. WordPress, with an SEO plugin, gives full control over schema, redirects, indexing and site structure, which matters more as the site grows.</p>
 <p>Speed depends mostly on how the site is built. Squarespace sites are reasonably fast by default but heavy templates and large images can slow them. WordPress speed depends on hosting, theme and plugins; a lean build on good hosting is fast, while a bloated one is slow. If your WordPress site is already slow, WordPress speed optimization can usually fix it without a rebuild.</p>
 
+<p>Comparing a design-led builder with more control? <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a> compares cost, CMS limits, editing and finding developers in India.</p>
+
 <h2>Who will look after the site?</h2>
 <p>A practical question that often decides the platform is who will keep the site running after launch. On Squarespace, the platform handles hosting, security and software updates, and you edit content in its editor. If something is missing, you mostly wait for Squarespace to add it or work around it.</p>
 <p>On WordPress, someone needs to update WordPress, the theme and plugins, take backups and watch security. Many owners do simple content edits themselves and leave updates to a developer on a monthly plan. In India it is easy to find help for this, and you can change who looks after the site at any time because you own it.</p>
@@ -48967,6 +48983,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>You need features, such as bookings or a store, the current setup can't support</li>
 </ul>
 <p>For more warning signs, see <a href="/blog/signs-you-need-a-new-website/">signs your business needs a new website</a>.</p>
+
+<p>Before deciding, list what is actually wrong. <a href="/blog/website-design-mistakes/">Common website design mistakes and how to fix each one</a> groups them into first impressions, mobile and speed, navigation and conversion.</p>
 
 <h2>The 10-minute decision test</h2>
 <p>Run a quick check first; the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> works well. Then answer these:</p>
@@ -53716,6 +53734,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>If you prepare method statements, risk assessments or job safety analyses for clients, say so and offer a sample on request. Consultants reading the page are often deciding whether your documentation will pass their own review, and a short, specific description reassures them more than a list of values.</p>
 <p>Photos of your team in proper PPE on real sites support the words. Do not claim an accident-free record unless you track it properly and can show the records.</p>
 
+<p>Contractors who also install CCTV or access control can borrow from <a href="/blog/website-for-cctv-security-installers/">how security system installers structure their websites</a>, which covers survey requests and AMC pages.</p>
+
 <h2>AMC and maintenance contracts</h2>
 <p>AMCs keep you close to clients between projects. Give them their own page with a scope table:</p>
 <table>
@@ -54113,6 +54133,8 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Avoid fear-based copy; calm, clear explanations build more trust.</li>
 </ul>
 <p>The guide on <a href="/blog/eeat-explained-small-business/">E-E-A-T for small business websites</a> explains why accurate claims matter for search as well as for customers.</p>
+
+<p>If you also install CCTV, alarms or access control, see <a href="/blog/website-for-cctv-security-installers/">websites for CCTV and security system installers</a>, including turning visitors into site survey requests.</p>
 
 <h2>Website for fire safety companies: getting found locally</h2>
 <p>Most fire safety searches include a city or area: fire extinguisher refilling in a particular city, fire alarm installation near an industrial area, fire safety AMC for housing societies. To appear for these:</p>
@@ -58919,6 +58941,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Email signatures, sender names, chat widgets and booking confirmations</li>
 </ul>
 <p>A search of the database on a staging copy catches most of these, and a crawl of the live site catches the rest. For the markup side, see <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
+
+<p>A rebrand usually means new boards and shop signs too. If you make them, see <a href="/blog/website-for-signage-companies/">what a signage company website should include</a>.</p>
 
 <h2>Google Business Profile and listings</h2>
 <ul>
@@ -64399,6 +64423,8 @@ any unused part of the advance refunded as agreed</code></pre>
 </table>
 <p>Build on a <a href="/blog/staging-sites-explained/">staging site</a> wherever possible, so the client reviews a working copy and the live site is only touched at launch.</p>
 
+<p>If the site being handed over is your agency's own, <a href="/blog/website-for-digital-marketing-agencies/">websites for digital marketing agencies</a> has a pre-launch checklist.</p>
+
 <h2>Choosing a build approach before you hand over</h2>
 <p>Agree the build method at handoff, not halfway through. Elementor suits clients who want to edit layouts visually; a block theme or custom blocks suit clients who want speed and tighter control of the design. The trade-offs are covered in <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress: Elementor, block theme or Bricks</a>. Whatever you choose, tell the developer how much editing freedom the client should have, because that changes how pages are built.</p>
 <p>If you are still deciding whether to outsource at all, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers how agencies usually structure the relationship, and the <a href="/hire-wordpress-developer/">hire a WordPress developer</a> page explains how remote projects are run across time zones. One habit worth copying from agencies that outsource well: keep the handoff as a reusable template, update it after every project with the questions that came up, and the next handoff gets faster each time.</p>
@@ -66314,6 +66340,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <li><strong>Design help</strong>: the customer describes what they want and your team creates the design, with a proof for approval.</li>
 </ol>
 <p>Whatever you choose, state the artwork requirements clearly: preferred file types, minimum resolution, and what happens if the file is low quality. A proof approval step, by email or WhatsApp, prevents most disputes.</p>
+
+<p>Corporate buyers often order signage and branding at the same time. Signage businesses can see <a href="/blog/website-for-signage-companies/">websites for signage, LED board and branding companies</a> for portfolios, quote forms and multi-location rollout pages.</p>
 
 <h2>Bulk and corporate orders</h2>
 <p>Bulk orders are often the most valuable part of a printing business and rarely fit a normal cart. Give them a dedicated page and quote form with fields for:</p>
@@ -69527,6 +69555,8 @@ RewriteRule . /index.php [L]
 </table>
 <p>Treat this as a starting point and confirm the exact hours with your developer, since some people choose to shift their day for a regular client.</p>
 
+<p>If you are new to working with a developer at all, start with <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does and when to hire one</a>.</p>
+
 <h2>Async updates that keep work moving</h2>
 <p>Because much of the work happens while you are offline, the end-of-day update carries most of the communication. A useful update is short and always follows the same format:</p>
 <ul>
@@ -69684,6 +69714,8 @@ RewriteRule . /index.php [L]
   <li>Response time expectations for urgent issues, such as a broken live site</li>
   <li>Who has authority to approve extra scope and cost</li>
 </ul>
+
+<p>For the agency's own site, see <a href="/blog/website-for-digital-marketing-agencies/">what a digital marketing agency website needs</a>, including how to talk about a development partner.</p>
 
 <h2>How pricing usually works</h2>
 <p>Pricing models vary by partner. Common ones:</p>
@@ -70315,6 +70347,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   </tbody>
 </table>
 <p>Ask, too, how the partner handles plugin licences and premium themes, because licences bought on a partner account can lapse if the relationship ends. Start with a small, well-defined job to test communication and quality before moving important clients over. Agree a written service level for response times, a named contact on each side and a monthly call to review open work. Agencies abroad should also check how public holidays such as Diwali affect availability, and plan campaign launches around them rather than discovering the gap a week before go-live. If you are weighing India-based partners, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers how such relationships usually run, and the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page describes remote working arrangements.</p>
+
+<p>Your own website is part of the pitch. <a href="/blog/website-for-digital-marketing-agencies/">Websites for digital marketing agencies</a> covers positioning, service pages, case studies with permission and qualifying lead forms.</p>
 
 <h2>Selling website work to existing clients</h2>
 <p>The easiest reseller revenue comes from clients you already serve. A few natural openings:</p>
@@ -76034,6 +76068,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li>Is GST added on top, and will you get a proper invoice?</li>
 </ul>
 <p>Clear answers to these questions matter more than a small difference in the rate.</p>
+
+<p>Hours are easier to judge when you know what the work involves. <a href="/blog/what-does-wordpress-developer-do/">What a WordPress developer actually does day to day</a> explains the roles, skills and how a typical project runs.</p>
 
 <h2>How to estimate hours before you hire</h2>
 <p>You do not need to be technical to get a sensible estimate. Write down what you want in plain words, list the pages or features, attach screenshots and links, and say what &quot;done&quot; looks like. Our <a href="/blog/website-brief-template/">website brief template</a> gives a format you can copy.</p>
