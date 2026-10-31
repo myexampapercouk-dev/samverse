@@ -30526,6 +30526,8 @@ dig yourdomain.com +short</code></pre>
   <li>Tell staff what to say to customers who call.</li>
 </ul>
 
+<p>If you pay for a yearly support contract, check it states response times for a site that is down; see <a href="/blog/website-amc-contract-india/">what a website annual maintenance contract should include</a>.</p>
+
 <h2>Prevent the next outage</h2>
 <ul>
   <li><strong>Uptime monitoring</strong> with SSL and domain expiry alerts, so you hear about problems first; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a>.</li>
@@ -31645,6 +31647,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <li><strong>Content added later:</strong> long titles or large images added by the client break a design that worked with the original content. A robust design should cope with reasonable variation, so this deserves discussion.</li>
 </ul>
 <p>The easiest way to avoid grey areas is a detailed brief and scope at the start. Our <a href="/blog/website-brief-template/">website brief template</a> lists what to agree up front.</p>
+
+<p>After the warranty ends, many Indian developers offer a yearly contract; <a href="/blog/website-amc-contract-india/">website AMC in India</a> explains how to define the included changes so bugs and change requests are handled fairly.</p>
 
 <h2>How post-launch support and warranty periods usually work</h2>
 <p>Most developers and agencies include a bug-fix warranty after launch, commonly a few weeks to a few months. Typically it covers defects in the work delivered, not new requests, content updates or problems caused by later changes. Read your contract for:</p>
@@ -39107,6 +39111,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Keep each guide honest and practical. Explain the likely causes and options, mention when a site visit is needed to judge properly, and end with a link to the matching product page and the site measurement form. Add a photo or simple diagram where it helps. One well-written guide a month, based on questions your team actually hears, builds a useful library over a year.</p>
 
+<p>Units that also take industrial job work in the Pune MIDC belts can see <a href="/blog/website-for-pune-industrial-suppliers/">industrial supplier websites for Pune and PCMC</a> for RFQ forms and capability pages.</p>
+
 <h2>Local SEO and speed</h2>
 <p>Most enquiries come from local searches such as &quot;uPVC windows in Pune&quot;, &quot;aluminium fabricator near me&quot; or &quot;glass partition Wakad&quot;. Keep a complete Google Business Profile with the right categories, project photos and reviews; see the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. If you serve several cities or areas, build pages around real projects and genuine local details rather than copies with the city name changed; see <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a>.</p>
 <p>Project galleries can get heavy, so compress photos, use modern image formats and lazy-load long galleries. Keep project pages light enough to open quickly on a site visit, and avoid autoplay videos on the home page. Test the site on a phone over mobile data, because many enquiries come from people standing at a site.</p>
@@ -39210,6 +39216,8 @@ add_action( 'after_setup_theme', function () {
 <h2>Responding to RFQs fast</h2>
 <p>A fabrication website brings enquiries of very different quality: a serious RFQ with drawings, a student asking for a project quote, a trader asking for rates on standard sections. Plan how each is handled. Tag RFQs with drawings as priority and route them to the estimating team, reply to vague enquiries with a short request for drawings, quantity and location, and keep a simple tracker of status from received to quoted, won or lost. Over a few months, the tracker shows which capabilities and industries bring real orders, which tells you which pages deserve more photos, case studies and detail.</p>
 <p>Update the website when the business changes: a new laser cutter, a larger crane, a new certification or a completed landmark project. Fresh, specific updates keep the site credible for repeat buyers who check it before each new order.</p>
+
+<p>Fabricators in Bhosari, Chakan or Talegaon can find location-specific advice in <a href="/blog/website-for-pune-industrial-suppliers/">websites for Pune and PCMC industrial suppliers</a>.</p>
 
 <h2>SEO for fabricators</h2>
 <p>Buyers search by process, product and place: &quot;steel fabrication in [city]&quot;, &quot;sheet metal fabrication [industrial area]&quot;, &quot;laser cutting service near me&quot;, &quot;MS structure fabricator [city]&quot; or &quot;PEB shed manufacturer [state]&quot;. Your capability and product pages are what rank for these, so give each a clear title, specific content and photos of real work.</p>
@@ -47567,6 +47575,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li><strong>Licences:</strong> whether premium plugin and theme renewals are included or billed to you.</li>
 </ul>
 <p>For typical ranges and what is usually included, read <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>. Ask every provider to quote the same written scope so you are comparing like with like.</p>
+
+<p>If the provider offers a yearly contract rather than a monthly plan, read <a href="/blog/website-amc-contract-india/">what a website AMC contract should cover</a> before you sign.</p>
 
 <h2>Questions to ask before you sign</h2>
 <ol>
@@ -58084,6 +58094,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Whether prasad is sent by post afterwards, to which areas and at what charge, only if you offer it</li>
 </ol>
 
+<p>If many of your families read Marathi, <a href="/blog/marathi-website-design/">building a website in Marathi</a> explains fonts, translation checks and how to add Marathi pages on WordPress.</p>
+
 <h2>Languages, traditions and regions</h2>
 <p>Many families want a pandit who follows their regional practice and can explain the ritual in their language. Say precisely which traditions and languages you work in, for example Marathi, Hindi, Telugu or Bengali, and which areas you travel to. Avoid listing languages you cannot actually conduct a puja in.</p>
 <p>If you write in more than one language, put each language on its own pages rather than only translating the menu. On the <a href="/work/our-temples/">Our Temples</a> directory I built, temple pages carry sections in Hindi and Telugu as well as English, and some stotrams are given in Telugu script, so readers find content in their language rather than a translated menu. <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi, English and regional language websites</a> covers the setup, and <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts</a> helps keep the text readable on phones.</p>
@@ -59834,6 +59846,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     body: `
 <p>The best Hindi fonts for a website are Unicode Devanagari fonts that stay readable at small sizes on phones, pair well with your English font and load quickly. Use real Unicode text, never images of Hindi or old non-Unicode fonts, give Hindi a slightly larger size and more line height than English, and load only the weights you need.</p>
 <p>This guide covers choosing, pairing, sizing and loading Devanagari fonts, setting them up in WordPress and testing them. It applies to Hindi, Marathi and other languages written in Devanagari, which many Indian business, education, government-facing and community websites need.</p>
+
+<p>The same rules apply to Marathi. If you are planning a site mainly for Maharashtra customers, see <a href="/blog/marathi-website-design/">Marathi website design</a> for language structure, URLs and Marathi SEO.</p>
 
 <h2>Start with Unicode text, not images or legacy fonts</h2>
 <p>Some older Hindi websites still use legacy fonts where Hindi characters are mapped onto English letter codes, or images of Hindi text. Both cause problems:</p>
@@ -62807,6 +62821,8 @@ if ( ! $link ) {
 </tbody>
 </table>
 <p>Grouping nearby localities often works better than one page per locality. For example, one page for PCMC (Pimpri, Chinchwad, Nigdi, Akurdi, Bhosari), one for west Pune (Baner, Balewadi, Aundh, Pashan), and one for east Pune (Kharadi, Viman Nagar, Wagholi, Hadapsar). See <a href="/blog/service-area-business-seo/">SEO for service area businesses</a> for more on structure.</p>
+
+<p>For the build itself, including Marathi-only versus bilingual sites, see <a href="/blog/marathi-website-design/">Marathi website design for WordPress and Shopify</a>.</p>
 
 <h2>Language: English, Marathi or Hindi</h2>
 <p>Many Pune searches are in English, but some customers search in Marathi or Hindi, or type Hinglish phrases. If your customers speak Marathi, a few key pages in Marathi can help, as long as they are properly written rather than machine-translated.</p>
@@ -68398,6 +68414,8 @@ RewriteRule . /index.php [L]
   <li><strong>Spares:</strong> burners, knobs, gaskets, thermostats and similar parts listed by product, with an enquiry button</li>
   <li><strong>Service areas:</strong> the cities your technicians actually cover</li>
 </ul>
+
+<p>If you also supply industrial buyers around Pune, <a href="/blog/website-for-pune-industrial-suppliers/">a website for industrial suppliers in Pune and PCMC</a> covers capability pages, vendor details and MIDC local SEO.</p>
 
 <h2>Local search, trust and speed</h2>
 <p>Buyers search for terms like "commercial kitchen equipment manufacturer in Pune", "SS kitchen fabrication in Bengaluru" or "hotel kitchen equipment supplier". Build pages for your main categories, and for cities only where you have real projects or service coverage there; the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a> explains how. Keep your Google Business Profile filled with workshop, showroom and installation photos.</p>
@@ -76274,6 +76292,223 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>There is no fixed rule. Many sites keep somewhere around 10 to 20 per post, which gives useful history without making the database much larger.</p>
 <h3>Do revisions slow down a WordPress site?</h3>
 <p>Revisions are stored in the database but are not loaded on normal page views. Very large numbers can make the database bigger and some admin queries slower, which is why many sites limit them.</p>
+`,
+  },
+  {
+    slug: 'marathi-website-design',
+    seoTitle: 'Marathi Website Design: WordPress and Shopify in Marathi',
+    title: 'Marathi Website Design: Building a WordPress or Shopify Site in Marathi for Maharashtra Customers',
+    description: 'Marathi website design for Maharashtra businesses: Marathi-only or bilingual, fonts, URLs, typing, SEO for Marathi searches and WordPress or Shopify setup.',
+    date: '2026-10-31',
+    category: 'Guides',
+    related: ['wordpress-developer-pune', 'wordpress-website-development', 'shopify-developer'],
+    body: `
+<p>Marathi website design means building a site whose main text, menus, forms and buttons are in Marathi, in proper Unicode Devanagari, so customers in Maharashtra can read it easily and find it when they search in Marathi. Both WordPress and Shopify handle Marathi well; the real work is in choosing the language structure, the font, the URLs and who writes the copy.</p>
+<p>This guide is for shops, clinics, schools, co-operative societies, farm-input sellers, temples, builders and service businesses in Pune and across Maharashtra who are thinking about a Marathi or bilingual website.</p>
+<h2>Who needs a website in Marathi?</h2>
+<p>A Marathi website makes sense when a large share of your customers are more comfortable reading Marathi than English. Common cases include:</p>
+<ul><li>Local service businesses in Pune, Pimpri-Chinchwad, Nashik, Kolhapur, Satara and smaller towns, where customers phone and WhatsApp in Marathi.</li><li>Agri-input, dairy and rural retail businesses whose buyers are farmers.</li><li>Schools, coaching classes and colleges where parents prefer Marathi.</li><li>Temples, trusts, mandals, NGOs and co-operative societies.</li><li>Clinics and hospitals explaining procedures to patients and families.</li><li>Builders and plot sellers whose buyers come from nearby towns and villages.</li></ul>
+<p>If your buyers are mostly corporate purchase teams or export customers, English stays the main language and Marathi may only be useful for a few local pages.</p>
+<h2>Marathi-only, English-first or bilingual?</h2>
+<p>This is the most important decision, because it changes the build.</p>
+<table><thead><tr><th>Structure</th><th>Good for</th><th>What it involves</th></tr></thead><tbody>
+<tr><td>Marathi-only</td><td>Temples, local societies, rural sellers, Marathi publications</td><td>One language, simplest build, WordPress or Shopify set to Marathi</td></tr>
+<tr><td>Marathi-first with a few English pages</td><td>Local shops and clinics with some English-speaking visitors</td><td>Main site in Marathi, a small English section or summary page</td></tr>
+<tr><td>Fully bilingual (Marathi and English)</td><td>Schools, hospitals, builders, larger brands</td><td>Every page in both languages, a translation plugin or Shopify Markets, hreflang tags, double the content upkeep</td></tr>
+</tbody></table>
+<p>Bilingual sites cost more to run, not just to build, because every new page, offer and price change has to be updated twice. Be honest about who will keep the Marathi side current. A half-translated site, where new pages appear only in English, looks neglected. For the wider picture of running several languages, see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites in Hindi, English and regional languages</a>.</p>
+<h2>Marathi on WordPress</h2>
+<p>WordPress supports Marathi as an admin and site language. Under Settings, General, you can set the site language to Marathi, which translates the built-in parts of WordPress and many themes, such as date formats and some buttons.</p>
+<ul><li><strong>Marathi-only site:</strong> set the site language, write every page in Marathi and check the theme, contact form and footer for leftover English labels.</li><li><strong>Bilingual site:</strong> use a multilingual plugin such as Polylang or WPML, which links each Marathi page to its English twin and adds a language switcher.</li><li><strong>Forms:</strong> translate field labels, placeholder text, error messages and the thank-you message. These are often forgotten.</li><li><strong>Page builders:</strong> Elementor and the block editor both handle Devanagari text; test headings and buttons on a phone because Marathi words can be longer than the English ones the design was made for.</li></ul>
+<p>If you want help setting this up, a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> who reads Marathi can check details that a developer elsewhere might miss, such as wrong conjuncts or awkward line breaks.</p>
+<h2>Marathi on Shopify</h2>
+<p>Shopify lets you add Marathi as a store language and translate products, collections, pages and theme text with the Translate and Adapt app. Checkout text is translated by Shopify where the language is supported, so test a full order in Marathi before launch. If the language is not fully covered in checkout, keep checkout in English and say so clearly on the cart page.</p>
+<p>For Marathi product pages, write the product name the way customers say it, then add the English or brand name in brackets if buyers search both ways. A <a href="/shopify-developer/">Shopify developer</a> can set up separate Marathi URLs and a language switcher so Google sees both versions.</p>
+<h2>Fonts: making Marathi text look right</h2>
+<p>Marathi uses the Devanagari script. Many English-focused themes load a Latin-only font, so the browser falls back to a system font and the Marathi text looks mismatched. Pick a font that includes Devanagari and test it.</p>
+<ul><li>Free Google Fonts with Devanagari support include Mukta, Noto Sans Devanagari, Hind, Baloo 2, Tiro Devanagari Marathi and Yatra One for display headings.</li><li>Load only the weights you use, usually regular and bold, to keep pages fast.</li><li>Check conjuncts and the Marathi letters ळ and the eyelash ra (र्‍) render correctly in your chosen font.</li><li>Increase line height slightly; Devanagari has marks above and below the line that can collide.</li></ul>
+<p>More detail on font choices, loading and testing is in <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a>; the same advice applies to Marathi.</p>
+<h2>Never use legacy fonts or text in images</h2>
+<p>Some older Marathi content is typed in legacy fonts such as Shree-Lipi or Kruti Dev, where the letters only look Marathi because of the font; underneath, the text is English characters. Google cannot read it, phones show gibberish, and copy-paste breaks. Convert any such text to Unicode before it goes on the site, and check by copying a line into a plain text editor.</p>
+<p>The same applies to Marathi text inside banners, pamphlet images and scanned PDFs. Search engines and screen readers cannot read it well. Put the key information in real text on the page and use images only for decoration or photos.</p>
+<h2>URLs and slugs for Marathi pages</h2>
+<p>You have two options for page addresses:</p>
+<ul><li><strong>English or transliterated slugs</strong>, such as /seva/ or /services/. These are short, easy to share on WhatsApp and do not turn into long encoded strings.</li><li><strong>Marathi slugs</strong>, such as a URL written in Devanagari. These work, but when copied they often become long percent-encoded strings that look broken in messages.</li></ul>
+<p>Most businesses are better off with short English or transliterated slugs and Marathi page titles and headings. For bilingual sites, a folder per language such as /mr/ for Marathi and /en/ for English is the clearest setup.</p>
+<h2>SEO for Marathi searches</h2>
+<p>People search in three ways: in Marathi script, in Marathi typed in English letters (for example &quot;pune madhye dentist&quot;), and in English. Your pages should cover the way your customers actually search.</p>
+<ul><li>Put the main Marathi phrase in the page title, the main heading and the first paragraph.</li><li>Write a Marathi meta description; Google may show it for Marathi searches.</li><li>Use your exact business name and address the same way everywhere, including Google Business Profile, in both scripts if you use both.</li><li>For bilingual sites, add hreflang tags so Google shows the Marathi page to Marathi searchers. See <a href="/blog/hreflang-multilingual-seo-india/">hreflang tags for India</a>.</li><li>Find Marathi and transliterated keywords with free tools, as shown in <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>.</li></ul>
+<p>For local visibility in Pune specifically, combine this with <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>: Google Business Profile, reviews and area pages matter as much as language.</p>
+<h2>Who should write the Marathi content?</h2>
+<p>Machine translation is a useful first draft but should not go live unchecked. It often picks formal or Hindi-influenced words, gets honorifics wrong and mistranslates product terms. Customers notice, and it weakens trust.</p>
+<ul><li>Best: write the Marathi copy first, in the voice you use with customers, then create English from it if needed.</li><li>Good: translate from English, then have a fluent Marathi speaker who knows your trade review every page.</li><li>Keep a short glossary of trade words, product names and preferred spellings so every page uses the same terms.</li></ul>
+<p>Decide in advance who supplies and approves the Marathi text. Writing it into your website brief avoids delays at the end of the project.</p>
+<h2>Typing and editing Marathi in the dashboard</h2>
+<p>Whoever updates the site needs a way to type Marathi. Options include the Marathi keyboard on Android and iPhone, Google Input Tools style transliteration, and the built-in Marathi keyboards in Windows and macOS. Test that your team can edit a page and publish it without the text breaking. Copying from Word documents typed in legacy fonts is the most common cause of garbled pages.</p>
+<h2>Launch checklist for a Marathi website</h2>
+<ol><li>Language structure decided: Marathi-only, Marathi-first or bilingual.</li><li>All text in Unicode, no legacy fonts, no key text inside images.</li><li>A Devanagari font loaded and tested on Android and iPhone.</li><li>Menus, forms, error messages, footer, cookie notice and WhatsApp button text translated.</li><li>Marathi page titles and meta descriptions written.</li><li>Language switcher and hreflang tags if bilingual.</li><li>Google Business Profile details consistent with the site.</li><li>A test enquiry and, for stores, a test order placed in Marathi.</li><li>Enquiries from Marathi pages tracked separately in analytics.</li></ol>
+<p>If you are planning a Marathi or bilingual website and want it built on WordPress or Shopify, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or ask Samverse for a quote with your page list and language plan.</p>
+<h2>FAQs</h2>
+<h3>Can a WordPress website be fully in Marathi?</h3>
+<p>Yes. Set the site language to Marathi, write every page in Unicode Marathi, and translate the theme, form and footer labels. WordPress itself has a Marathi translation for its interface.</p>
+<h3>Does Shopify support Marathi?</h3>
+<p>Shopify lets you add Marathi as a store language and translate products, pages and theme text. Test checkout in Marathi before launch and keep English as a fallback where translation is incomplete.</p>
+<h3>Which font is best for a Marathi website?</h3>
+<p>Choose a free Unicode Devanagari font such as Mukta, Noto Sans Devanagari or Hind, load only the weights you need and test the text on real phones.</p>
+<h3>Will a Marathi website rank on Google?</h3>
+<p>Marathi pages can rank for Marathi and transliterated searches if the text is real Unicode, the titles and headings use the phrases people search, and the site has the usual local SEO basics in place.</p>
+<h3>Should I use Marathi or English URLs?</h3>
+<p>Short English or transliterated URLs are usually better because Marathi URLs turn into long encoded strings when shared. Keep page titles and headings in Marathi.</p>
+<h3>How much more does a bilingual Marathi and English website cost?</h3>
+<p>It depends on the number of pages and who writes the translations. Expect extra work for the translation plugin, both sets of content and ongoing updates, so ask for the Marathi side to be quoted separately.</p>
+`,
+  },
+  {
+    slug: 'website-amc-contract-india',
+    seoTitle: 'Website AMC in India: What the Contract Should Cover',
+    title: 'Website AMC in India: What an Annual Maintenance Contract for Your Website Should Cover',
+    description: 'Website AMC contract in India explained: what an annual maintenance contract should include, exclusions, response times, renewal, ownership and red flags.',
+    date: '2026-10-31',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-developer-pune'],
+    body: `
+<p>A website AMC (annual maintenance contract) is a yearly agreement in which a developer or agency keeps your website updated, backed up, secure and working, and makes an agreed amount of small changes. Whether an AMC is good value depends almost entirely on what is written in the contract: scope, response times, exclusions and exit terms.</p>
+<p>This guide explains what a website AMC contract in India should cover, so you can compare offers and avoid paying every year for a vague promise.</p>
+<h2>What is a website AMC?</h2>
+<p>AMC is a familiar term in India for equipment such as lifts, ACs and computers. For websites it means the same idea: a fixed yearly fee for routine care, paid upfront or in instalments, instead of paying each time something is needed. Many businesses are offered a website AMC by the developer who built the site, often starting a year after launch.</p>
+<p>An AMC is different from:</p>
+<ul><li><strong>Domain and hosting renewal</strong>, which are separate yearly charges paid to the registrar and host, even if the developer collects them.</li><li><strong>A monthly maintenance plan</strong>, which covers similar work but is billed monthly and is easier to cancel.</li><li><strong>New development</strong>, such as new sections, features or a redesign, which is usually quoted separately.</li></ul>
+<h2>What a website AMC should include</h2>
+<p>A useful AMC for a WordPress site covers these areas. Ask for each one to be written in the contract, not just mentioned on a call.</p>
+<table><thead><tr><th>Area</th><th>What to look for in writing</th></tr></thead><tbody>
+<tr><td>Updates</td><td>WordPress core, theme and plugin updates, how often, and testing after updates</td></tr>
+<tr><td>Backups</td><td>Frequency, where they are stored (off the server), how long they are kept and a restore test</td></tr>
+<tr><td>Security</td><td>Monitoring, firewall or security plugin, and what happens if the site is hacked</td></tr>
+<tr><td>Uptime</td><td>Monitoring and who is alerted when the site goes down</td></tr>
+<tr><td>Content changes</td><td>A clear number of small changes or hours per month or year</td></tr>
+<tr><td>Support</td><td>How to raise a request, working hours and response times</td></tr>
+<tr><td>Reports</td><td>A monthly or quarterly summary of updates, backups and issues</td></tr>
+</tbody></table>
+<p>For the tasks behind each line, see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>. A contract that only says &quot;complete website maintenance&quot; without these details is hard to enforce.</p>
+<h2>Website AMC and Shopify stores</h2>
+<p>Shopify handles hosting, core updates and server security itself, so a Shopify AMC is mostly about app reviews, theme updates, product and banner changes, speed checks and help with payment or shipping settings. If a Shopify AMC charges heavily for updates and backups, ask what exactly is being done, because Shopify already covers much of that.</p>
+<h2>Response times and support</h2>
+<p>Response time is the part most AMCs leave vague. A good contract separates urgent and routine requests:</p>
+<ul><li><strong>Urgent:</strong> site down, hacked, checkout or enquiry form broken. State the target time for the first response and for starting work.</li><li><strong>Routine:</strong> text changes, new images, adding a product or blog post. State a normal turnaround in working days.</li><li><strong>Channel:</strong> email, a ticket form or WhatsApp. Written requests make it easier to track what was asked and done.</li><li><strong>Hours:</strong> working days and hours, and what happens on holidays and festivals.</li></ul>
+<h2>How many changes are included?</h2>
+<p>Disputes usually start here. One side thinks &quot;unlimited small changes&quot;, the other means &quot;a few text edits&quot;. Ask for one of these in writing:</p>
+<ul><li>A fixed number of hours per month or quarter, with whether unused hours carry forward.</li><li>A fixed number of change requests, with an example of what one request means.</li><li>A list of included tasks, with everything else quoted separately.</li></ul>
+<p>Also ask for the rate for extra work beyond the AMC, so you are not surprised later.</p>
+<h2>Common exclusions to check</h2>
+<p>Every AMC has exclusions. They are fine as long as you know them before signing. Typical ones are:</p>
+<ul><li>New pages, new features, new plugins or redesign work.</li><li>Domain, hosting, premium plugin and theme licence renewals.</li><li>Content writing, photography and translation.</li><li>Malware cleanup after a hack, or only partly included.</li><li>Problems caused by changes you or another developer made.</li><li>SEO, ads and social media work.</li></ul>
+<p>Hack recovery deserves special attention. Ask directly: if the site is hacked during the AMC, is cleanup included, and how fast will it start? If it is excluded, know who you would call; a <a href="/wordpress-malware-removal/">WordPress malware removal service</a> is the usual fallback.</p>
+<h2>Ownership and access</h2>
+<p>An AMC should never make you dependent on the provider for access to your own website. Before and during the contract, make sure:</p>
+<ul><li>The domain is registered in your business name and you hold the registrar login.</li><li>The hosting account is yours, or you have full admin access to it.</li><li>You have your own WordPress admin login.</li><li>Premium plugin and theme licences are in your name or transferable.</li><li>Backups can be handed to you on request.</li></ul>
+<p>The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists every account to confirm. If your previous developer holds everything and is unresponsive, read how to <a href="/blog/regain-website-access-old-developer/">regain control of your website from a previous developer</a> before signing a new AMC.</p>
+<h2>Pricing, payment and GST</h2>
+<p>Website AMC charges vary widely with the size of the site, whether it is a store, how many changes are included and the response time promised. Instead of comparing only the yearly figure, compare what each provider will actually do each month. For typical ranges and what drives them, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
+<ul><li>Ask whether the fee is paid upfront for the year, half-yearly or quarterly.</li><li>If the provider is GST-registered, ask for proper GST invoices.</li><li>Check whether the price is fixed for the year and how renewal pricing is decided.</li></ul>
+<h2>AMC or monthly maintenance plan?</h2>
+<p>Both can cover the same work. The difference is commitment and flexibility.</p>
+<table><thead><tr><th></th><th>Yearly AMC</th><th>Monthly plan</th></tr></thead><tbody>
+<tr><td>Payment</td><td>Usually upfront or in a few instalments</td><td>Monthly</td></tr>
+<tr><td>Commitment</td><td>A full year</td><td>Often month to month or with short notice</td></tr>
+<tr><td>Budgeting</td><td>One yearly expense, simple for accounts</td><td>Spread out</td></tr>
+<tr><td>Switching provider</td><td>Harder mid-year unless the contract allows it</td><td>Easier</td></tr>
+</tbody></table>
+<p>If you are trying a new provider, a few months on a monthly plan before committing to a yearly AMC is a sensible test. The <a href="/blog/monthly-website-maintenance-plan/">guide to monthly website maintenance packages</a> explains what a good plan should include.</p>
+<h2>Renewal, termination and handover</h2>
+<ul><li><strong>Renewal:</strong> is it automatic, and how much notice is given of a price change?</li><li><strong>Termination:</strong> can either side end the AMC early, with what notice, and is any fee refunded?</li><li><strong>Handover:</strong> on exit, the provider should hand over all logins they created, the latest backup and a note of any custom work or plugins they added.</li></ul>
+<p>A clean exit clause protects both sides. Providers who are confident in their service rarely object to it. The <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers similar clauses for the original build.</p>
+<h2>Red flags in a website AMC</h2>
+<ul><li>No written scope, only a yearly figure.</li><li>The provider refuses to share admin, hosting or domain access.</li><li>Backups stored only on the same server as the site.</li><li>No reports, so you cannot tell whether any work was done.</li><li>Updates never run because &quot;the site might break&quot;, with no testing plan.</li><li>Large charges for tasks the platform already handles, such as Shopify hosting.</li></ul>
+<h2>Questions to ask before you sign</h2>
+<ol><li>What exactly do you do each month, and will I get a report?</li><li>How often are backups taken, where are they stored, and have you tested a restore?</li><li>How many changes or hours are included, and what is the rate after that?</li><li>What is your response time for urgent and routine requests?</li><li>Is hack cleanup included?</li><li>Will I keep full access to the domain, hosting and WordPress admin?</li><li>How do renewal and early termination work?</li></ol>
+<p>Samverse offers <a href="/wordpress-maintenance/">WordPress maintenance</a> with written scope and reports, and businesses in Maharashtra can also work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for AMC-style support. Send your site address and what you need covered to get a quote.</p>
+<h2>FAQs</h2>
+<h3>What is a website AMC?</h3>
+<p>A website AMC is an annual maintenance contract: a yearly agreement in which a developer keeps your site updated, backed up, secure and working, and makes an agreed number of small changes.</p>
+<h3>What should a website AMC contract include?</h3>
+<p>Updates, off-server backups, security and uptime monitoring, a defined number of changes or hours, response times for urgent and routine issues, regular reports, exclusions, renewal terms and an exit clause.</p>
+<h3>Is hosting included in a website AMC?</h3>
+<p>Usually not. Domain and hosting renewals are separate yearly charges, even if the developer collects and pays them for you. Ask for them to be listed separately.</p>
+<h3>Is a website AMC better than a monthly maintenance plan?</h3>
+<p>Neither is better in every case. An AMC suits businesses that prefer one yearly payment; a monthly plan is easier to cancel and is a good way to test a new provider first.</p>
+<h3>Does a website AMC cover hacking?</h3>
+<p>Only if the contract says so. Many AMCs exclude or limit malware cleanup, so ask directly whether hack recovery is included and how quickly it starts.</p>
+<h3>Do I need an AMC for a Shopify store?</h3>
+<p>Shopify manages hosting and core security, so a Shopify AMC is mainly for theme updates, app reviews, product and content changes and speed checks. Pay only for work you actually need.</p>
+`,
+  },
+  {
+    slug: 'website-for-pune-industrial-suppliers',
+    seoTitle: 'Website for Pune and PCMC Industrial Suppliers (MIDC)',
+    title: 'Websites for Pune and PCMC Industrial Suppliers: Chakan, Bhosari, Talegaon and Ranjangaon MIDC',
+    description: 'Website for industrial suppliers in Pune and PCMC: capability pages, catalogues, vendor registration details, RFQ forms and local SEO for MIDC buyers.',
+    date: '2026-10-31',
+    category: 'Industries',
+    related: ['website-for-manufacturers', 'wordpress-developer-pune', 'wordpress-website-development'],
+    body: `
+<p>A website for an industrial supplier in Pune or Pimpri-Chinchwad (PCMC) has one main job: help a purchase or vendor development engineer decide quickly that you can make or supply what they need, to their standard, from a location that suits them. That means clear capability pages, a catalogue or process list, certifications you actually hold, and an easy way to send drawings for a quote.</p>
+<p>This guide is for machine shops, fabricators, press shops, casting and forging units, tool rooms, packaging suppliers, electrical panel makers, traders and job-work units in Bhosari, Chakan, Talegaon, Ranjangaon, Hinjewadi, Kurkumbh, Shirwal and nearby areas.</p>
+<h2>Why industrial suppliers in Pune need a website</h2>
+<p>Much industrial business still comes from references and visits. A website does not replace that, but it changes what happens after a reference:</p>
+<ul><li>The buyer searches your company name before calling. No website, or an outdated one, raises doubts.</li><li>Vendor development teams look for machine lists, capacity and quality systems before a plant visit.</li><li>New buyers search for a process plus a place, such as &quot;CNC machining Chakan&quot; or &quot;sheet metal fabrication Bhosari&quot;.</li><li>Larger customers and export buyers expect to download a company profile and see certifications.</li></ul>
+<p>For the broader strategy for manufacturers, including export enquiries, see <a href="/blog/b2b-manufacturer-website-guide/">how manufacturers can get more B2B and export enquiries from their website</a>. This guide focuses on suppliers serving the Pune industrial belt.</p>
+<h2>Pages an industrial supplier website needs</h2>
+<table><thead><tr><th>Page</th><th>What it should show</th></tr></thead><tbody>
+<tr><td>Home</td><td>What you make or supply, for which industries, where you are, and a quote button</td></tr>
+<tr><td>Capabilities or processes</td><td>One section or page per process: turning, VMC, laser cutting, bending, welding, powder coating, assembly</td></tr>
+<tr><td>Machines and facilities</td><td>Machine list with make, bed size or capacity, inspection equipment and shop floor area</td></tr>
+<tr><td>Products or catalogue</td><td>Standard parts or traded items, with specifications and datasheets</td></tr>
+<tr><td>Industries served</td><td>Automotive, engineering, pharma equipment, packaging and others you genuinely supply</td></tr>
+<tr><td>Quality</td><td>Certifications held, inspection process, documents you can provide with parts</td></tr>
+<tr><td>About and location</td><td>Plant address, MIDC area, map, years in operation, team size if you wish</td></tr>
+<tr><td>Request a quote</td><td>An RFQ form that accepts drawings</td></tr>
+</tbody></table>
+<h2>Capability pages buyers can trust</h2>
+<p>Purchase engineers want specifics. &quot;We provide quality precision components&quot; tells them nothing. Instead, for each process, say:</p>
+<ul><li>Materials you work with, such as mild steel, stainless steel, aluminium, brass or plastics.</li><li>Size range and typical tolerances you can hold, if you are confident of them.</li><li>Batch sizes you prefer: prototypes, small batches or volume production.</li><li>Secondary operations you do in-house or through trusted partners.</li><li>Photos of real parts and your own shop floor, not stock images.</li></ul>
+<p>If you supply standard items or a large range, a structured catalogue helps. <a href="/blog/industrial-website-product-catalogue/">Building a product catalogue website for an industrial company</a> covers categories, spec tables and datasheets.</p>
+<h2>Certifications and customer names: state only what is true</h2>
+<p>Show certificates you hold, with the certifying body and validity, and link to a PDF copy if you are comfortable. Do not imply an approval you do not have. If you supply to well-known OEMs or Tier 1 companies, check whether you are allowed to name them or show their logos; many purchase agreements restrict this. Wording such as &quot;supplying to automotive Tier 1 and Tier 2 companies in the Pune region&quot; is often safer than a logo wall.</p>
+<h2>The RFQ form: designed for drawings</h2>
+<p>Most industrial enquiries arrive with a drawing. A good request-for-quote form should:</p>
+<ul><li>Accept PDF, DWG, DXF and STEP files, with a sensible upload size limit.</li><li>Ask for material, quantity, required date and delivery location.</li><li>Ask for company name and GSTIN only if you need them at this stage; long forms reduce enquiries.</li><li>Send a copy to a shared sales email and, if useful, an alert on WhatsApp.</li><li>Show what happens next, for example that you will reply after reviewing the drawing.</li></ul>
+<p>Many buyers will still prefer to email or WhatsApp a drawing, so show your sales email and a WhatsApp button beside the form.</p>
+<h2>Vendor registration details on the site</h2>
+<p>Vendor registration teams often ask for the same information. A simple &quot;company details&quot; section or downloadable company profile saves time. It can include legal name, registered and works address, GSTIN, MSME (Udyam) registration if applicable, bank details on request only, key contacts and the certifications above. Keep anything sensitive, such as bank details, out of public pages.</p>
+<h2>Local SEO for PCMC and MIDC areas</h2>
+<p>Buyers often look for suppliers close to their plant to save on logistics and allow quick visits. Make your location obvious:</p>
+<ul><li>Put your exact MIDC area and plot address in the footer and on the contact page.</li><li>Use the place in page titles where it is true, such as &quot;Sheet Metal Fabrication in Bhosari, Pune&quot;.</li><li>Create a Google Business Profile for the plant with the right category, photos and working hours.</li><li>Ask satisfied customers for Google reviews where appropriate.</li><li>If you serve several belts, say so in text rather than creating thin copy-paste pages for every area.</li></ul>
+<p><a href="/blog/local-seo-pune-businesses/">Local SEO for Pune businesses</a> explains Google Business Profile and reviews across Pune and Pimpri-Chinchwad in more detail.</p>
+<h2>Marathi, Hindi and English</h2>
+<p>Purchase teams usually work in English, so the main site should be in English. A short Marathi or Hindi section can still help for local traders, contractors or job-work enquiries. See <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a> if you want a Marathi or Hindi version.</p>
+<h2>Speed, phones and plant Wi-Fi</h2>
+<p>Engineers often open supplier sites on a phone on the shop floor or in a meeting. Keep pages fast: compress photos, avoid heavy sliders and auto-playing videos, and make datasheets light PDFs. A simple WordPress site built with care loads quickly and is easy for your team to update when you add a machine or a certification.</p>
+<h2>WordPress or something else?</h2>
+<p>For most industrial suppliers, WordPress is a good fit: it handles capability pages, catalogues, downloads and RFQ forms, and your team can edit text and add machines without a developer. Shopify is only worth considering if you sell standard items online with prices and payments. If you sell spares or consumables to small buyers online, WooCommerce can sit inside the same WordPress site.</p>
+<h2>Measuring enquiries from the website</h2>
+<p>Industrial enquiries are few but valuable, so track each one. Set up a thank-you page after the RFQ form, record form submissions and WhatsApp clicks as events in Google Analytics, and ask new buyers how they found you. After a few months you will know which capability pages bring real RFQs and which need better photos or detail. Review the list of processes at least twice a year: when you add a new machine, a second shift or a new certification, update the site the same week so buyers see your current capacity, not the capacity you had last year.</p>
+<p>If you sell spares, consumables or standard items to smaller buyers who prefer to order online, a <a href="/woocommerce-developer/">WooCommerce developer</a> can add a simple store with GST invoices to the same WordPress site, while larger buyers continue to use the RFQ route. When you are ready to ask for quotes, a written brief helps every developer price the same job; the <a href="/blog/website-brief-template/">website brief template</a> shows what to include.</p>
+<h2>What to prepare before you contact a developer</h2>
+<ol><li>Your list of processes, machines and inspection equipment.</li><li>Real photos of parts, machines and the plant.</li><li>Certificates and their validity dates.</li><li>Industries you serve and any customer names you are allowed to show.</li><li>Your company profile PDF, if you have one.</li><li>Who will receive and answer RFQs.</li></ol>
+<p>Samverse builds <a href="/website-for-manufacturers/">websites for manufacturers</a> and works as a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for industrial suppliers across PCMC and the MIDC belts. If you are comparing options, <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a> lists the checks to make before hiring anyone.</p>
+<h2>FAQs</h2>
+<h3>Do industrial suppliers in Pune really need a website?</h3>
+<p>Yes, in most cases. Buyers and vendor development teams check a supplier website before calling or visiting, and new buyers search for a process and an area such as Chakan or Bhosari.</p>
+<h3>What should a website for a PCMC industrial supplier include?</h3>
+<p>Capability pages for each process, a machine list, products or catalogue, industries served, quality and certifications, the plant location and a request-for-quote form that accepts drawings.</p>
+<h3>Can I show my OEM customers on my website?</h3>
+<p>Only if you are allowed to. Many purchase agreements restrict using customer names or logos, so check first or describe customers by type instead.</p>
+<h3>How do I get found by buyers in Chakan, Bhosari or Talegaon?</h3>
+<p>Use your real MIDC area in page titles and the footer, create a Google Business Profile for the plant, collect genuine reviews and publish specific capability pages.</p>
+<h3>Should my industrial website be in Marathi?</h3>
+<p>The main site is usually best in English because purchase teams work in English. A short Marathi or Hindi section can help with local traders and job-work enquiries.</p>
+<h3>Is WordPress good for an industrial supplier website?</h3>
+<p>Yes. WordPress handles capability pages, catalogues, downloadable datasheets and RFQ forms well, and your team can update machines and certifications without a developer.</p>
 `,
   },
 ];
