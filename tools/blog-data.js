@@ -248,6 +248,8 @@ module.exports = [
   <li><strong>Very small site you'll build and run yourself:</strong> Wix is fine to start with, as long as you accept that moving later means a rebuild.</li>
 </ul>
 
+<p>If Shopify looks like the right fit and you want the theme, products, payments and shipping set up for you, see <a href="/shopify-developer/">Shopify store setup and customisation</a>.</p>
+
 <h2>Already on Wix or Shopify?</h2>
 <p>You can move to WordPress. Pages and content are rebuilt, products and customers are imported, and every old URL is redirected to protect your rankings. See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> or <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
 
@@ -19511,6 +19513,8 @@ Target:  https://example.com/products/$1/</code></pre>
 <li>Forgetting the payment gateway webhook, so paid orders stay pending.</li>
 <li>Skipping test orders on a phone with real COD and prepaid flows.</li>
 </ul>
+
+<p>Not sure yet whether to leave Shopify? Sometimes a slow theme or too many apps is the real problem, and a <a href="/shopify-developer/">Shopify developer</a> can fix that on your current store before you commit to a migration.</p>
 
 <h2>After the move</h2>
 <p>For the first weeks, check Search Console for 404 errors and fix them with redirects, compare traffic and orders for your top products with the weeks before the move, and watch the gateway dashboard for failed payments. Expect some ranking movement while Google recrawls the store. <a href="/blog/woocommerce-seo-guide/">The WooCommerce SEO guide</a> covers what to improve once things settle.</p>
@@ -44199,6 +44203,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 
 <p>To find which of your own pages still link to those missing URLs, and to decide between updating the link, a redirect or a 410, see <a href="/blog/find-fix-broken-links-wordpress/">how to find and fix broken links on WordPress</a>.</p>
 
+<p>On a Shopify store, many of these statuses come from theme templates, filters and apps. If you would rather have them looked at for you, a <a href="/shopify-developer/">Shopify developer in India</a> can handle the SEO fixes.</p>
+
 <h2>Fixing, validating and checking monthly</h2>
 <ol>
   <li>Click a reason in the report to see example URLs.</li>
@@ -45283,6 +45289,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <h2>Refunds, failed payments and disputes</h2>
 <p>How a gateway handles things going wrong matters as much as how it handles successful payments. Ask how refunds work for each method, how long they take to reach the customer and whether they can be issued in part. For UPI, ask what happens when money is debited but the payment shows as failed, and how quickly such amounts are reversed or reconciled to an order.</p>
 <p>Chargebacks and disputes are less common for small Indian stores than for international sellers, but they do happen, especially with cards. Ask how disputes are notified, what evidence you need to submit and how much time you get to respond. Keep delivery proof and order records for each order so you can answer quickly. Clear refund and cancellation policies on your website, written in plain language, also reduce disputes because customers know what to expect before they pay.</p>
+
+<p>Selling on Shopify rather than WooCommerce? Indian gateways such as Razorpay, PayU and Cashfree connect there too, and you can <a href="/shopify-developer/">get help setting up payments on a Shopify store</a>.</p>
 
 <h2>A UPI QR code or a full gateway?</h2>
 <p>Very small businesses sometimes start with a static UPI QR code or a payment link instead of a full gateway. That works for occasional orders taken over phone or WhatsApp, but it does not connect payments to website orders automatically, so someone has to check each payment by hand. Once you take regular orders on the website, a gateway integrated with your checkout saves time and avoids mistakes, because the order status updates as soon as payment succeeds.</p>
@@ -47443,6 +47451,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 
 <h2>What about Shopify stores?</h2>
 <p>Shopify handles hosting and much of the platform performance, but INP problems still appear, mostly from apps and theme customisations. Each app can inject scripts on every page, and some leave code behind after being uninstalled. Review installed apps, remove those you no longer use, check the theme for leftover snippets, and test product option changes and cart drawers on a phone. The guide to <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> covers this.</p>
+
+<p>If your Shopify store still feels sluggish after removing unused apps, <a href="/shopify-developer/">hire a Shopify developer</a> to audit what each app loads and lighten the theme.</p>
 
 <h2>Retest and monitor</h2>
 <p>Field data in Search Console is based on a rolling 28-day window, so improvements take a few weeks to show. After making changes:</p>
@@ -62392,6 +62402,8 @@ if ( ! $link ) {
 </ul>
 <p>Put a size chart link right next to the size selector on every product page, not only in the footer. If you sell both men&#39;s and women&#39;s ranges, keep separate charts.</p>
 
+<p>Weighing Shopify for your footwear store? See <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>, from the plan and apps to payment fees.</p>
+
 <h2>Product variants on Shopify and WooCommerce</h2>
 <p>Each shoe usually has size and colour options. On <strong>Shopify</strong>, these are product variants, each with its own SKU, stock and price if needed. Shopify has limits on the number of options and variants per product, so check current limits if you have many sizes and colours, and consider splitting colours into separate products. On <strong>WooCommerce</strong>, these are variable products with attributes for size and colour; large catalogues need a good setup so variation stock stays accurate and pages stay fast.</p>
 <table>
@@ -64833,6 +64845,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <h2>WooCommerce and Shopify considerations</h2>
 <p>On WooCommerce, never delay or remove scripts on cart, checkout and account pages without thorough testing. Payment gateways such as Razorpay rely on their scripts loading correctly, and a broken checkout costs far more than a slower score. Exclude these pages from aggressive optimisation and focus on product and category pages. <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers store-specific steps.</p>
 <p>On Shopify, you cannot install WordPress optimisation plugins, but the same ideas apply: remove apps you do not use (and their leftover code in the theme), load app scripts only where needed, limit fonts and keep theme customisations lean.</p>
+
+<p>On Shopify you cannot change the hosting, so most gains come from the theme and apps. For help with that, see <a href="/shopify-developer/">Shopify speed and theme work</a>.</p>
 
 <h2>Hosting, caching and third-party scripts</h2>
 <p>Render-blocking fixes work best on a solid base. If the server takes a long time to send the first byte of HTML, deferring scripts will not hide that delay. Page caching, a reasonably fast Indian or Asia-region server and a CDN for static files all shorten the time before the browser can even start reading your CSS and JavaScript. <a href="/blog/choose-wordpress-hosting-india/">Choosing WordPress hosting in India</a> covers what to look for.</p>
@@ -67585,6 +67599,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 
 <h2>WooCommerce vs Shopify running costs in India</h2>
 <p>With WooCommerce you pay for hosting, domain and any plugins you choose, and you are responsible for maintenance. With Shopify you pay a monthly platform subscription that includes hosting and security, plus paid apps and, depending on your setup, transaction fees. Shopify plans and app prices change and are billed differently, so check Shopify&apos;s pricing page for current figures. In general, WooCommerce gives more control and can cost less at a fixed level, while Shopify trades a higher monthly subscription for less technical upkeep. The guide to <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> compares them in detail.</p>
+
+<p>If the comparison points you towards a hosted platform instead, see <a href="/shopify-developer/">our Shopify development service</a> for store setup, apps and launch checks.</p>
 
 <h2>Putting it together: a running-cost sheet</h2>
 <ol>
@@ -72412,6 +72428,8 @@ or a cookie name starts with:
 <h2>Shopify sites and robots.txt</h2>
 <p>Shopify generates a default robots.txt that blocks paths such as cart, checkout, account and some filtered collection URLs. Seeing these listed as blocked is normal. If an important product or collection page appears, check whether a theme or app has added a custom robots.txt template with extra rules. Changes on Shopify are made through the robots.txt.liquid theme template, so edit with care and keep a copy of the original. The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the wider setup.</p>
 
+<p>Shopify store owners who want robots.txt, filter pages and other SEO settings checked can <a href="/shopify-developer/">work with a Shopify developer on speed and SEO fixes</a>.</p>
+
 <h2>When the warning is harmless</h2>
 <p>Not every listed URL needs fixing. Leave it alone when:</p>
 <ul>
@@ -73545,6 +73563,8 @@ done</code></pre>
 
 <p>Before choosing someone, read <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a> for the questions to ask, how access should work and the red flags to avoid.</p>
 
+<p>Planning to switch themes altogether rather than edit the current one? Read <a href="/blog/shopify-theme-change-without-losing-seo/">how to change your Shopify theme without losing SEO</a> first.</p>
+
 <h2>When to hire a developer</h2>
 <p>You don't need a developer to change images, text, colours or the order of sections; the editor exists for that. It's worth bringing one in when:</p>
 <ul>
@@ -73636,6 +73656,8 @@ done</code></pre>
 <p>Images are where a theme's build quality shows. Upload images large enough for the biggest slot they will fill, not straight from a camera, then make sure the theme asks Shopify's CDN for a suitable width on each screen. Well-built themes request several widths and let the browser pick, so a phone receives a much smaller file than a large monitor. Custom sections written in a hurry often skip this and send one large image to every device.</p>
 <p>The main image near the top of a page, usually the product photo or the home page banner, should load straight away: no lazy loading, and ideally a higher fetch priority. Images further down the page should be lazy loaded. Set a width and height on each image so nothing shifts while they load. The <a href="/blog/image-optimization-wordpress/">image optimisation guide</a> is written for WordPress, but its advice on sizes, formats and lazy loading carries straight across.</p>
 <p>For fonts, a system font stack costs nothing to load. If the brand needs its own typeface, use one family for headings and one for body text at most, limit the weights to the ones the design really uses, and check that text stays visible while the font loads. <a href="/blog/web-fonts-performance/">Web fonts and website speed</a> explains the trade-offs in more detail.</p>
+
+<p>Speed is only one part of how a store ranks. Work through the <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> for titles, canonicals, filters and structured data.</p>
 
 <h2>Keep it fast after the clean-up</h2>
 <p>Speed tends to slip back as apps are added for each campaign. A few habits stop that:</p>
@@ -74080,6 +74102,8 @@ done</code></pre>
 <li>fake or prank orders, sometimes several from the same number.</li>
 </ul>
 <p>Most of these are caught by checking the order before it ships, keeping delivery quick and making it easy to prepay. Your courier's non-delivery reports also give you a short window to fix an address or arrange a second attempt, which is covered in the shipping guide.</p>
+
+<p>You can stop many failed COD orders before checkout by telling shoppers early whether COD reaches them; see <a href="/blog/shopify-pincode-checker-india/">how to add a pincode checker to a Shopify store</a>.</p>
 
 <h2>Confirming orders before you ship</h2>
 <p>A confirmation step costs a few minutes per order and saves the price of a parcel going both ways. Pick the lightest method that works for your volume:</p>
@@ -74683,6 +74707,8 @@ done</code></pre>
 <p>Text and images in sections, such as the homepage introduction, collection descriptions shown in a section, FAQs and trust badges, belong to the theme. Rebuild them in the new theme, keeping the wording on pages that rank unless you have a reason to change it. Collection descriptions entered in the collection's own description field are stored in the admin and carry across, which is a good reason to keep important text there.</p>
 <h3>Metafields</h3>
 <p>Product details held in metafields, such as fabric, care instructions or dispatch time, keep their values. In an Online Store 2.0 theme you connect them to blocks as dynamic sources. Check a few products of each type to confirm every detail still appears.</p>
+
+<p>Moving to Shopify from another platform rather than changing themes? URL mapping matters even more there; see <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify step by step</a>.</p>
 
 <h2>Custom templates, URLs and redirects</h2>
 <p>Products and pages assigned to a custom template keep the assignment by name. If the new theme has no template with that name, they display with the default template instead, which can hide size charts, specifications or wholesale forms without any warning. Create matching templates in the new theme before publishing, and check one product or page of each kind.</p>
@@ -75783,6 +75809,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Delivery estimates also need care. Promise a range, not a date, unless your process can hit exact dates. Missed promises lead to more "where is my order" chats than no estimate at all.</p>
 <p>Think about the edge cases too. A product that ships from a different warehouse, a heavy item only some couriers carry, or a made-to-order piece with a longer lead time may need its own message. Most apps and custom sections can read a product tag or metafield to adjust the estimate, so set those up for the products that differ rather than giving every product the slowest estimate.</p>
 
+<p>Some shoppers will still have questions about delivery before they buy. A <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp chat button and order updates on Shopify</a> can answer them quickly.</p>
+
 <h2>Speed and design</h2>
 <p>A checker sits on every product page, so its weight matters. Prefer a checker that loads its script only on product pages and only after the main content. Avoid apps that add a popup asking for the pin code on page load; it blocks the product and annoys shoppers on mobile.</p>
 <p>Design-wise, the input should open the numeric keypad on phones, accept exactly six digits, show the result in the same place, and remember the pin code for the session. If you show a delivery charge, make sure it matches the checkout. For broader speed issues, see <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> and <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
@@ -75880,6 +75908,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li>The paid order then follows the same route as a website order: GST invoice, courier booking, tracking and WhatsApp updates.</li>
 </ol>
 <p>Some apps let shoppers build a cart on the website and send it to you on WhatsApp instead of checking out. That suits stores where every order needs a conversation, but it adds a manual step to every sale, so most stores keep it for wholesale or custom work only.</p>
+
+<p>Taking orders on WhatsApp still means collecting payment. Read <a href="/blog/shopify-payment-gateways-india/">how payment gateways connect to Shopify in India</a>, including UPI and refunds.</p>
 
 <h2>Mistakes to avoid</h2>
 <ul>
