@@ -252,6 +252,8 @@
 <li><strong>HPOS compatibility:</strong> older integrations may not read orders from the new tables.</li>
 </ul>
 <p>A quick test is to change a test order's status manually and see whether it appears in the integration. If it does, the integration only reads certain statuses; if it does not, the connection itself is broken. When a single integration is the problem, check its own logs and support documentation before changing WooCommerce settings.</p>
+<p>Stuck statuses also affect stock: unpaid orders that never cancel keep holding it. See <a href="/blog/woocommerce-stock-not-updating/">fixes for WooCommerce stock that does not update</a>.</p>
+
 <h2 id="scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</h2>
 <p>WooCommerce uses scheduled actions for tasks such as cancelling unpaid orders, sending some emails and syncing data. If WP-Cron is not running reliably, these tasks pile up and orders can sit in the wrong status. Check WooCommerce, Status, Scheduled Actions for many past-due or failed actions. WordPress cron explained covers how to set up a real server cron job so tasks run on time even on low-traffic stores.</p>
 <p>Also review the "Hold stock" setting under WooCommerce, Settings, Products, Inventory. If it is too short, unpaid orders may be cancelled before slower payments such as UPI or net banking complete, which looks to the customer like their order disappeared.</p>

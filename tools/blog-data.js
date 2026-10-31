@@ -25443,6 +25443,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <h3>People and team photos</h3>
 <p>Natural shots of people at work feel more trustworthy than stiff poses. For team portraits, use the same background and framing for everyone, so the page looks consistent and new staff can be added later in the same style.</p>
 
+<p>For WooCommerce stores, these sizes need to match the shop's crop settings; <a href="/blog/woocommerce-product-images-wrong-size/">fixing WooCommerce product images that are the wrong size</a> shows where to set them.</p>
+
 <h2>Sizes and aspect ratios</h2>
 <p>Upload photos at roughly the largest size they'll be displayed, allowing a little extra for sharp high-density screens:</p>
 <table>
@@ -27707,6 +27709,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Accounts in your name:</strong> the domain, hosting, Google accounts and premium licences, bought with your business email. The <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists each one.</li>
 </ul>
 <p>How intellectual property passes from one party to another depends on the wording and the law that applies to your agreement, so this is the clause most worth a lawyer's eye.</p>
+
+<p>For Shopify projects, agree who removes the store password and when; <a href="/blog/shopify-remove-password-page/">removing the Shopify password page and launching safely</a> lists the checks to run first.</p>
 
 <h2>Testing, launch and acceptance</h2>
 <p>Write down what will be tested before launch: pages on phones and desktops, the browsers that matter, every form with emails confirmed as arriving, test orders for a store, and speed. Then define "complete": for example, the site is live on your hosting, the agreed scope is delivered and you've approved it in writing. A short acceptance period, during which you report anything that doesn't match the scope, avoids arguments later.</p>
@@ -30083,6 +30087,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 <p>Public codes leak to coupon websites quickly. For private offers, use unique codes per customer, an allowed-emails list or a low usage limit.</p>
 
+<p>A free shipping coupon only works if the zone has a Free shipping method set to accept coupons; if nothing appears, see <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">why WooCommerce shipping is not showing at checkout</a>.</p>
+
 <h2>Free shipping coupons</h2>
 <p>Free shipping needs two settings working together, which is why it often "doesn't work":</p>
 <ol>
@@ -30240,6 +30246,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Titles matter most for which searches you show up for. Use the words shoppers search, not internal codes, and put the important attributes early.</p>
 <h2>Step 4: Set shipping and returns</h2>
 <p>In Merchant Center's shipping and returns settings, add a shipping service for India with your costs, any free-shipping threshold and realistic delivery times (handling time plus transit time). Add your return policy: the return window, whether returns are free, and the policy URL. If Google for WooCommerce syncs shipping from your WooCommerce zones, check the result, because complex rules don't always translate. Whatever you enter has to match what a shopper sees at checkout; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<p>Availability mismatches often start with wrong stock counts in the store itself; <a href="/blog/woocommerce-stock-not-updating/">why WooCommerce stock is not updating</a> covers the usual causes.</p>
+
+<p>Running a Shopify store instead? The fixes are made in Shopify rather than in a plugin; see <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Google Merchant Center</a>.</p>
+
 <h2>Common disapprovals and how to fix them</h2>
 <p>Check the products that need attention in Merchant Center, and the diagnostics in Google for WooCommerce, every week at first:</p>
 <table>
@@ -41270,6 +41280,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>The setup for WooCommerce is in <a href="/blog/woocommerce-product-reviews/">collecting WooCommerce product reviews</a>; Shopify has several review apps that do the same.</p>
 
+<p>If orders stop after launch, work through <a href="/blog/shopify-checkout-not-working/">fixes for a Shopify checkout that is not working</a> before changing anything else.</p>
+
 <h2>Checkout, COD and GST for Indian beauty stores</h2>
 <p>Beauty orders are often small and impulsive, so a slow or confusing checkout costs sales. Things to get right:</p>
 <ul>
@@ -45938,6 +45950,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Fire the Lead event on a real success, such as a thank-you page, rather than on the button click, so failed submissions are not counted. The guide on <a href="/blog/thank-you-pages-forms/">thank-you pages for forms</a> explains why this matters.</p>
 
+<p>If you also list products on Google, keep that feed healthy too; <a href="/blog/shopify-google-merchant-center-disapproved/">fixing Shopify Google Merchant Center disapprovals</a> covers price, GTIN and policy issues.</p>
+
 <h2>Meta Pixel and Conversions API setup on Shopify</h2>
 <p>Shopify has an official Facebook and Instagram sales channel that connects your store to Meta. When you connect it, you can choose a data-sharing level, and the higher setting sends events through both the pixel and the Conversions API without custom code. Standard e-commerce events such as product views, add-to-cart, checkout and purchase are handled by the integration.</p>
 <p>A few things to check on Shopify:</p>
@@ -46497,6 +46511,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Load the real embed only when the visitor clicks.</li>
 </ol>
 <p>Several WordPress performance plugins offer this for YouTube. For maps on a contact page, a simple static image linking to Google Maps is often enough and loads instantly. More in <a href="/blog/video-on-business-website/">using video on a business website</a>.</p>
+
+<p>If product images look blurry or load at the wrong size in the shop grid, the cause is often the image sizes rather than lazy loading; see <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images wrong size or blurry</a>.</p>
 
 <h2>Lazy loading on WooCommerce and Shopify stores</h2>
 <p>Category pages with many product thumbnails benefit a lot, since visitors scroll through and only some images matter at first. Keep the first row of products eager and lazy-load the rest. On product pages, load the main image eagerly and lazy-load gallery thumbnails, related products and review photos. Shopify themes built on Online Store 2.0 generally include native lazy loading, but custom sections and apps may not follow the same rules, so check them. For store-wide speed work, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
@@ -53292,6 +53308,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ul>
 <p>Keep the list short; every status needs a clear owner and a next step, or it becomes a place where orders are forgotten. A Shipped status also fixes the common problem of the Completed email arriving days before the parcel; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>. After adding custom statuses, check that WooCommerce Analytics still counts those orders in sales reports.</p>
 
+<p>Stock is reduced when an order reaches Processing or On hold. If quantities stay the same after orders, see <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>The flow from payment to dispatch</h2>
 <ol>
   <li><strong>Check payments.</strong> Filter by Processing (and On hold for bank transfers), oldest first. Compare anything unusual with the gateway dashboard.</li>
@@ -58296,6 +58314,8 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Check that the email lands in the inbox rather than spam, because a missing gift card turns a gift into a complaint. Sending store emails through proper SMTP with SPF and DKIM set up helps; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> for the template side.</p>
 <p>On the product page, show sample card designs, explain how delivery works and when the code arrives, and let buyers choose a delivery date for birthdays or anniversaries. Add a balance check page where recipients can enter a code and see what is left, which cuts down support messages.</p>
 
+<p>On a new Shopify store, gift cards cannot be bought until the store is open; see <a href="/blog/shopify-remove-password-page/">Shopify store password page removal</a> for the launch checklist.</p>
+
 <h2>Testing before you launch</h2>
 <ol>
 <li>Buy a card with each payment method you allow and confirm the code arrives only after payment.</li>
@@ -59734,6 +59754,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li><strong>Category:</strong> Google or Meta product category where the plugin supports it.</li>
 </ul>
 <p>Good product pages help here too; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a> for setting up sizes and colours cleanly.</p>
+
+<p>Low-resolution product images are a frequent cause of rejection. If your store's photos are small or cropped badly, see <a href="/blog/woocommerce-product-images-wrong-size/">how to fix WooCommerce product image sizes</a>.</p>
 
 <h2>Common rejection and sync problems</h2>
 <table>
@@ -67339,9 +67361,13 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </table>
 <p>Check that your payment gateway, COD rules, pincode checker and invoice plugins all support the checkout type you choose before switching.</p>
 
+<p>If shoppers reach checkout and see no delivery charge at all, the cause is usually a zone or method setting; see <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">WooCommerce shipping not showing at checkout</a>.</p>
+
 <h2>Show delivery charges and dates early</h2>
 <p>Surprise costs at the last step drive people away. Show delivery charges in the cart, show any free delivery threshold, and let people check delivery to their pincode on the product page. A <a href="/blog/pincode-delivery-checker-woocommerce/">pincode delivery checker</a> also helps when you cannot ship everywhere or COD is limited to certain areas.</p>
 <p>If you can give an estimated delivery window, show it. Shipping zones, courier integrations and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+
+<p>On Shopify, missing payment options are often a set-up fault rather than a choice; see <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a> for gateway, COD and shipping rate checks.</p>
 
 <h2>Offer the payment options Indian shoppers expect</h2>
 <p>Most Indian shoppers look for UPI first, followed by cards, net banking and wallets. Cash on delivery remains important for many categories, especially first-time buyers. Choose a gateway that supports these methods cleanly inside WooCommerce, and show the accepted methods before the final step.</p>
@@ -67440,6 +67466,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li>How disputes and chargebacks are handled</li>
 </ul>
 <p>For a fuller checklist, see <a href="/blog/payment-gateways-india-compared/">how to choose a payment gateway in India</a>. Turn off Cash on Delivery for international shipping zones, and look carefully at unusual international orders, such as large first orders with inconsistent details, before you dispatch.</p>
+
+<p>After adding new countries, place a test order from each one. If overseas customers get no rates, work through <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">fixes for missing WooCommerce shipping options</a>.</p>
 
 <h2>Shipping rates and courier options</h2>
 <p>Set up international shipping zones in WooCommerce, grouping countries your courier prices similarly, for example the USA, the UK and Europe, the Gulf, and Australia. Weight-based rates usually work better than flat rates abroad, and volumetric weight matters a lot on air shipments, so compact packaging saves money. The basics of zones and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
@@ -72910,6 +72938,8 @@ or a cookie name starts with:
 <li><strong>HPOS compatibility:</strong> older integrations may not read orders from the new tables.</li>
 </ul>
 <p>A quick test is to change a test order's status manually and see whether it appears in the integration. If it does, the integration only reads certain statuses; if it does not, the connection itself is broken. When a single integration is the problem, check its own logs and support documentation before changing WooCommerce settings.</p>
+<p>Stuck statuses also affect stock: unpaid orders that never cancel keep holding it. See <a href="/blog/woocommerce-stock-not-updating/">fixes for WooCommerce stock that does not update</a>.</p>
+
 <h2>Scheduled tasks and stuck statuses</h2>
 <p>WooCommerce uses scheduled actions for tasks such as cancelling unpaid orders, sending some emails and syncing data. If WP-Cron is not running reliably, these tasks pile up and orders can sit in the wrong status. Check WooCommerce, Status, Scheduled Actions for many past-due or failed actions. WordPress cron explained covers how to set up a real server cron job so tasks run on time even on low-traffic stores.</p>
 <p>Also review the "Hold stock" setting under WooCommerce, Settings, Products, Inventory. If it is too short, unpaid orders may be cancelled before slower payments such as UPI or net banking complete, which looks to the customer like their order disappeared.</p>
@@ -74959,6 +74989,8 @@ done</code></pre>
 <p>A better setup is one permanent collection, for example /collections/sale, that you fill with the current sale products and re-label for each event. The URL keeps any links and history it has built, and you only change the heading, the intro text and the meta fields. When there is no sale running, keep the page live with a short note and a link to new arrivals or bestsellers rather than an empty grid.</p>
 <p>If you do need separate event pages, redirect each old one to the permanent sale page when the event ends. <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a> explains which redirect to use.</p>
 
+<p>Sale prices that change after the page loads can get products disapproved in Google Shopping; see <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify Google Merchant Center price mismatch fixes</a>.</p>
+
 <h2>Where to edit the fields in Shopify and WooCommerce</h2>
 <h3>Shopify</h3>
 <p>Open Products, then Collections, choose the collection and scroll to the search engine listing section. Edit the page title, meta description and URL handle there. Changing the handle on an existing collection can create a redirect automatically if you tick the option, but it is better to settle on a permanent handle once. Our <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers collection pages, filters and canonicals in more detail.</p>
@@ -76661,6 +76693,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li>Submit the new sitemap in Search Console and watch the indexing reports for errors.</li>
 </ol>
 <p>The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers titles, canonicals and the sitemap once the store is live.</p>
+<p>If the domain loads but visitors see a password screen, the store is still locked; see <a href="/blog/shopify-remove-password-page/">how to remove the Shopify password page</a>.</p>
+
 <h2>How to check that the domain is really connected</h2>
 <ul>
 <li>Use a public DNS lookup tool to check the A record for the root and the CNAME for www from several locations.</li>
@@ -76740,6 +76774,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li>Add your phone or WhatsApp support number in the footer so customers can confirm orders another way.</li>
 </ul>
 <p>If you also run a WooCommerce store, the same principles appear in our guide to <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a>.</p>
+<p>If customers report that the order never went through at all, the problem is earlier; see <a href="/blog/shopify-checkout-not-working/">why Shopify checkout fails and how to fix it</a>.</p>
+
 <h2>COD confirmations and customers who never see the email</h2>
 <p>For cash on delivery orders, a missed confirmation email can lead to refused deliveries. Do not rely on email alone:</p>
 <ul>
@@ -77046,6 +77082,565 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h3>Why do only some of my Elementor changes save?</h3><p>A low max_input_vars value can make the server drop part of a large page. Ask your host to raise it, and split very long pages into smaller ones.</p>
 <h3>How do I recover Elementor changes that did not save?</h3><p>Open History, Revisions in the editor and check for an autosave. If nothing is there, check WordPress page revisions or restore a recent backup on staging and copy the content across.</p>
 <h3>Can someone fix Elementor saving problems for me?</h3><p>Yes. A developer can check the logs, server limits, firewall and plugins, fix the cause and test saving on staging, so you can edit the site again without losing work.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-product-images-wrong-size',
+    seoTitle: 'WooCommerce Product Images Wrong Size or Blurry? Fixes',
+    title: 'WooCommerce Product Images Wrong Size, Blurry or Cropped? Fixing Thumbnails, Gallery and Shop Images',
+    description: 'WooCommerce product images the wrong size, blurry, cropped or uneven? Fix image size settings, regenerate thumbnails, theme sizes and gallery zoom step by step.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-speed-optimization', 'wordpress-maintenance'],
+    body: `
+<p>If WooCommerce product images are the wrong size, blurry, cropped or uneven on the shop page, the usual cause is a mismatch between your uploaded photos, the WooCommerce image settings and the image sizes your theme asks for. Changing a setting does not resize images already uploaded, so old thumbnails also need to be regenerated.</p>
+<p>Start with the quick fixes below; they solve most stores.</p>
+<h2>Quick fix: try these first</h2>
+<ol>
+<li>Go to Appearance, Customize, WooCommerce, Product Images and set "Thumbnail cropping" to 1:1 or a custom ratio that matches your photos.</li>
+<li>Check the "Main image width" and "Thumbnail width" values there. Very small numbers make images blurry when the theme shows them larger.</li>
+<li>Regenerate thumbnails with a regenerate thumbnails plugin, or let WooCommerce do it in the background, then clear all caches.</li>
+<li>Check the original photos: if they are smaller than the space they fill, nothing will make them sharp.</li>
+<li>Test on mobile and desktop in a private window after clearing the page cache and CDN.</li>
+</ol>
+<h2>How WooCommerce product image sizes work</h2>
+<p>When you upload a photo, WordPress keeps the original and creates several resized copies. WooCommerce adds three of its own:</p>
+<ul>
+<li><strong>Single (main) image:</strong> the large photo on the product page, not cropped by default.</li>
+<li><strong>Thumbnail:</strong> the image in shop, category and related product grids, cropped to the ratio you choose.</li>
+<li><strong>Gallery thumbnail:</strong> the small images under the main photo, usually square.</li>
+</ul>
+<p>Your theme decides which size appears where, and many themes declare their own widths. If the theme asks for a 300 pixel thumbnail but shows it 450 pixels wide on a large screen, it looks soft. If the crop is 1:1 and your photos are portrait, tops and bottoms get cut off. Our <a href="/blog/image-optimization-wordpress/">WordPress image optimisation guide</a> explains the size system for the rest of WordPress.</p>
+<h2>WooCommerce product images wrong size: the common causes</h2>
+<h3>1. Mixed photo shapes</h3>
+<p>Product images of different ratios (some square, some portrait, some landscape) make the shop grid look uneven, with cards at different heights. Either crop all thumbnails to one ratio in the Customizer, or prepare photos at the same ratio before upload. Square works for most stores; fashion stores often prefer 3:4 portrait.</p>
+<h3>2. Thumbnails were never regenerated</h3>
+<p>Changing the crop ratio or width only affects new uploads unless thumbnails are regenerated. WooCommerce can regenerate in the background on some hosts, but it often stalls when WP-Cron is not running. Run a regenerate thumbnails plugin manually, or use WP-CLI if your host supports it. If background tasks never finish, see <a href="/blog/wordpress-cron-explained/">why WP-Cron tasks fail</a>.</p>
+<h3>3. The theme overrides the sizes</h3>
+<p>Many themes register their own product image sizes and hide the Customizer options. If the Product Images panel is missing, the theme controls the sizes. Check the theme options panel, or add a small code snippet in a child theme to change them.</p>
+<h3>4. Small or low-quality originals</h3>
+<p>A photo uploaded at 600 pixels wide cannot fill a 1000 pixel main image without looking blurry. Upload originals at about 1200 to 2000 pixels on the longest side. Larger than that only wastes storage and upload time.</p>
+<h3>5. Compression set too high</h3>
+<p>Image optimisation plugins with "lossy" or "glossy" modes and heavy WebP conversion can make product photos look smudged, especially on fabrics, jewellery and text on packaging. Try a gentler setting on a few products and compare.</p>
+<h3>6. CDN or lazy loading serving the wrong size</h3>
+<p>Some CDNs and lazy loading scripts resize images on the fly or pick the wrong size from srcset. If the image looks right with the CDN off, adjust its resize settings. If images jump in size while loading, set width and height attributes; see <a href="/blog/fix-cls-layout-shift/">how to fix layout shift on WordPress</a>.</p>
+<h3>7. Page builder widgets</h3>
+<p>Elementor and other builders let you choose an image size per widget. A product grid widget set to "thumbnail" (150 pixels) will be blurry; set it to the WooCommerce thumbnail or medium-large size instead.</p>
+<h2>Gallery and zoom problems</h2>
+<p>If the main product image is blurry only when zoomed, the zoom uses the full-size original, so the original is too small. If zoom, the lightbox or the gallery slider is missing, the theme may have turned off WooCommerce's gallery features, or a script conflict is stopping them. Test with a default theme on staging, and check the browser console for JavaScript errors.</p>
+<p>Gallery images that load slowly on mobile usually mean full-size originals are being loaded instead of resized copies. That hurts speed as much as appearance; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</p>
+<h2>How to check which image size is being served</h2>
+<p>Guessing wastes time, so check what the browser actually loads. On desktop Chrome, right-click a product image in the shop grid and choose Inspect. The img tag shows the file name, which usually ends with the size, such as -300x300.jpg. Compare that with the size the image is displayed at, shown when you hover over the element. If a 300 pixel file fills a 450 pixel box, the generated size is too small. If a 2000 pixel original fills a 300 pixel card, the theme is loading the full image and slowing the page.</p>
+<p>Repeat the check on a phone-sized view, because themes often switch to a two-column grid on mobile with larger images per card. Also look at the srcset attribute: it lists the sizes available. If your new size is missing from the list, thumbnails have not been regenerated yet.</p>
+<h2>Fixing an existing catalogue without starting over</h2>
+<p>For a store with hundreds of products, re-shooting is rarely practical. A sensible order is: set the crop ratio and widths, regenerate thumbnails on staging first and review the shop grid, then run it on the live site during a quiet hour. Next, replace only the worst originals, starting with your best-selling products. Products with a plain background can often be padded to a square canvas in a bulk image editor, which avoids awkward cropping. Keep file names descriptive while you do this; <a href="/blog/image-seo-guide/">image SEO basics</a> explains why.</p>
+<h2>Uploads failing or images missing</h2>
+<p>If images will not upload at all, or show an HTTP error, the problem is the server rather than sizes; follow <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error image upload fix</a>. If old thumbnails show a broken image after a migration, the resized files may not have been copied; regenerating thumbnails recreates them from the originals.</p>
+<h2>Recommended photo setup for Indian stores</h2>
+<table>
+<thead><tr><th>Item</th><th>Suggested setting</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Original upload</td><td>1200 to 2000 pixels, one fixed ratio</td><td>Sharp on all screens without huge files</td></tr>
+<tr><td>Thumbnail crop</td><td>1:1, or 3:4 for clothing</td><td>Even shop grid on mobile</td></tr>
+<tr><td>Background</td><td>Same plain background for a range</td><td>Grid looks consistent</td></tr>
+<tr><td>Format</td><td>JPEG or WebP, moderate compression</td><td>Small files without visible damage</td></tr>
+<tr><td>File names and alt text</td><td>Describe the product</td><td>Image search and accessibility</td></tr>
+</tbody>
+</table>
+<p>Good photos sell more than any setting. For layout and what shoppers look for, read <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimisation</a>.</p>
+<h2>When to get help</h2>
+<p>If images are still uneven after setting the crop and regenerating, the theme or a builder is usually forcing its own sizes, and fixing it means editing theme settings or code. A <a href="/woocommerce-developer/">WooCommerce developer</a> can set consistent sizes and regenerate safely, a <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> can make sure the right sizes are served fast, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates from undoing the fix. Samverse handles all three for stores across India.</p>
+<h2>FAQs</h2>
+<h3>Why are my WooCommerce product images the wrong size?</h3>
+<p>The theme, the WooCommerce image settings and your photos disagree, or old thumbnails were not regenerated after a change. Set the crop ratio, regenerate thumbnails and clear caches.</p>
+<h3>Why are WooCommerce product images blurry?</h3>
+<p>The displayed image is larger than the size generated, the originals are too small, or compression is too strong. Raise the thumbnail width, upload larger originals and use gentler compression.</p>
+<h3>How do I stop WooCommerce from cropping product images?</h3>
+<p>In Appearance, Customize, WooCommerce, Product Images, choose "Uncropped" for thumbnails, then regenerate thumbnails. Expect uneven grid heights if photo shapes differ.</p>
+<h3>Where are the WooCommerce image size settings?</h3>
+<p>Appearance, Customize, WooCommerce, Product Images. If that panel is missing, your theme controls the sizes through its own options or code.</p>
+<h3>Do I need to regenerate thumbnails after changing image sizes?</h3>
+<p>Yes. Changes only affect new uploads until existing images are regenerated, either in the background by WooCommerce or with a regenerate thumbnails tool.</p>
+<h3>What size should WooCommerce product photos be?</h3>
+<p>About 1200 to 2000 pixels on the longest side, all at the same ratio, with moderate compression. That keeps zoom sharp and files reasonably small.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-shipping-not-showing-at-checkout',
+    seoTitle: 'WooCommerce Shipping Not Showing at Checkout? Fixes',
+    title: 'WooCommerce Shipping Not Showing at Checkout? Fixing "No Shipping Options", Missing Rates and Wrong Zones',
+    description: 'WooCommerce shipping not showing at checkout or "no shipping options were found"? Fix zones, pin codes, weights, shipping classes, caches and plugin conflicts.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If WooCommerce shipping is not showing at checkout, the store could not match the customer's address to a shipping zone that has an enabled shipping method, or a rule on that method (weight, shipping class, minimum order or a coupon requirement) removed every rate. The message is usually "No shipping options were found" or "There are no shipping options available".</p>
+<p>The fix is almost always in WooCommerce, Settings, Shipping. Work through the checks below in order; most stores are fixed by the first three.</p>
+<h2>Quick fix: try these first</h2>
+<ol>
+<li>Open WooCommerce, Settings, Shipping and confirm at least one zone covers the customer's country, state or pin code.</li>
+<li>Open that zone and confirm it has a shipping method that is switched on (Flat rate, Free shipping or Local pickup).</li>
+<li>Check WooCommerce, Settings, General: "Shipping location(s)" must include India (or the customer's country), and shipping must not be disabled.</li>
+<li>Edit the product and confirm it is not marked Virtual, and that it has a weight if your rates depend on weight.</li>
+<li>Test in a private window with a real address and pin code, after clearing your page cache.</li>
+</ol>
+<h2>Why WooCommerce shipping is not showing at checkout</h2>
+<p>WooCommerce works out shipping in a fixed sequence. It reads the shipping address, finds the first zone in the list that matches it, and then shows the enabled methods inside that zone. If no zone matches, it falls back to "Locations not covered by your other zones". If that fallback has no methods, the customer sees no options and cannot place the order.</p>
+<p>So the question is always the same: which zone did this address match, and did that zone have a method that applied to this cart? Our <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup guide for India</a> explains how zones and rates should be set up from scratch. This post is about finding what broke.</p>
+<h2>1. The address does not match any zone</h2>
+<p>Zones are matched by country, state and postcode. Common mistakes:</p>
+<ul>
+<li><strong>Wrong state:</strong> the zone lists Maharashtra but the customer chose a different state, or the state list was edited by a plugin.</li>
+<li><strong>Pin code format:</strong> postcode ranges must be written like 411001...411062, and wildcards like 4110* only work for the start of a code. A space or a typo makes the whole line fail.</li>
+<li><strong>Zone order:</strong> WooCommerce uses the first matching zone from the top. A narrow zone (for example "Pune pin codes" with only Local pickup) placed above a wider "All India" zone means Pune customers see only pickup, or nothing if pickup is off.</li>
+<li><strong>Empty fallback:</strong> "Locations not covered by your other zones" has no methods, so anyone outside your zones sees nothing.</li>
+</ul>
+<p><strong>Fix:</strong> drag zones so the most specific ones sit at the top, check the regions on each, and give the fallback zone at least one method, even a higher flat rate, so nobody is blocked.</p>
+<h2>2. The method is there, but its conditions remove it</h2>
+<h3>Free shipping with a minimum order</h3>
+<p>Free shipping set to "A minimum order amount" disappears below that amount. If it is the only method in the zone, carts under the minimum get no option at all. Add a Flat rate alongside it. Also note the minimum is compared before or after coupon discounts depending on a setting, so a coupon can push a cart under the limit.</p>
+<h3>Flat rate with shipping classes</h3>
+<p>If a product has a shipping class and the flat rate has "No shipping class cost" or a class cost left in a broken format, the rate can fail to calculate. Costs must be numbers or valid formulas such as 50 + ( 10 * [qty] ). A stray currency symbol or comma breaks the calculation silently.</p>
+<h3>Weight-based and table rate plugins</h3>
+<p>Rules that depend on weight return nothing when the product has no weight or when the cart is heavier than your highest band. Add weights to every physical product, including each variation, and add a final band with no upper limit.</p>
+<h2>3. The product is set up as virtual or has no shipping</h2>
+<p>A product marked Virtual (or Downloadable on its own) does not need shipping, so WooCommerce hides the shipping section. If every item in the cart is virtual, there is no shipping step. If one variation is accidentally virtual, it behaves differently from the others. Check the Virtual box on the product and on each variation; see <a href="/blog/woocommerce-product-variations/">how WooCommerce product variations are set up</a> for where those settings hide.</p>
+<h2>4. Store settings that switch shipping off</h2>
+<p>In WooCommerce, Settings, General, "Shipping location(s)" can be set to "Disable shipping and shipping calculations". Some themes or setup wizards change this. "Selling location(s)" can also exclude a country, which stops the address from being accepted at all.</p>
+<p>In the Shipping options tab, "Hide shipping costs until an address is entered" is fine, but customers on mobile sometimes stop before typing the pin code and think shipping is missing. Make the pin code field obvious on the checkout.</p>
+<h2>5. Pin code and courier plugins</h2>
+<p>Indian stores often use a pin code checker or a courier plugin (Shiprocket, Delhivery and similar) that returns live rates. When the courier API fails, the API key expires, the pickup pin code is wrong or the parcel dimensions are missing, these plugins return no rates and the checkout shows nothing.</p>
+<ul>
+<li>Check the plugin's log or status page for API errors.</li>
+<li>Confirm the pickup address and pin code in the courier dashboard match the plugin settings.</li>
+<li>Add a fallback flat rate in the same zone so the checkout still works when the API is down.</li>
+</ul>
+<p>If you limit delivery by pin code, read <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers for WooCommerce</a> to make sure the checker and the zones agree.</p>
+<h2>6. Caching, sessions and the block checkout</h2>
+<p>Shipping rates are stored in the customer's session. A page cache that caches the cart or checkout page, or a CDN rule that caches it, can show old or empty rates. Exclude cart, checkout and my-account pages from caching, and do not cache pages for logged-in users or for visitors with the WooCommerce cart cookies. Our <a href="/blog/wordpress-caching-explained/">guide to WordPress caching</a> lists what should never be cached.</p>
+<p>For a quick test, go to WooCommerce, Settings, Shipping, Shipping options and enable debug mode. It bypasses the shipping rate cache and shows which zone matched on the cart page (for admins). Turn it off afterwards.</p>
+<p>The newer block-based checkout also behaves differently from the classic shortcode checkout. Some shipping plugins do not support the block checkout yet, so their rates never appear. If a plugin's rates vanished after you switched, test with the classic checkout shortcode on a staging copy.</p>
+<h2>7. Plugin or theme conflicts</h2>
+<p>If the settings look right and rates still do not appear, a plugin or the theme may be filtering shipping methods. Checkout field editors, conditional shipping plugins, multi-currency plugins and "hide shipping when free shipping is available" snippets are the usual suspects. Copy the site to staging, switch to a default theme and disable plugins one by one. See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find a WordPress plugin conflict safely</a>.</p>
+<h2>Shipping not showing at checkout: a table of symptoms</h2>
+<table>
+<thead><tr><th>What you see</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+<tbody>
+<tr><td>No options for one state or city</td><td>Zone regions or pin code ranges</td><td>Shipping zones, zone order</td></tr>
+<tr><td>No options for small orders only</td><td>Free shipping minimum is the only method</td><td>Zone methods</td></tr>
+<tr><td>No options for some products</td><td>Shipping class or missing weight</td><td>Product shipping tab</td></tr>
+<tr><td>Rates appear and vanish randomly</td><td>Courier API or cached checkout</td><td>Plugin log, cache exclusions</td></tr>
+<tr><td>Shipping section missing entirely</td><td>Virtual product or shipping disabled</td><td>Product data, General settings</td></tr>
+<tr><td>Broke after switching checkout</td><td>Plugin not compatible with block checkout</td><td>Plugin docs, staging test</td></tr>
+</tbody>
+</table>
+<h2>Stop it happening again</h2>
+<ul>
+<li>Keep a fallback method in "Locations not covered by your other zones".</li>
+<li>Give every physical product and variation a weight and the right shipping class.</li>
+<li>Place a test order with a real pin code from each zone after every plugin update; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> includes this.</li>
+<li>Watch checkout errors and abandoned carts; a sudden rise often means shipping broke. If customers also report checkout failures, see <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a>.</li>
+</ul>
+<h2>When to get help</h2>
+<p>If you have checked zones, methods, products and caches and customers still see no shipping options, the cause is usually a plugin, a courier integration or custom code. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace it on staging without risking live orders, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates from breaking checkout again. If you would rather hand the whole store over, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse.</p>
+<h2>FAQs</h2>
+<h3>Why does WooCommerce say "no shipping options were found"?</h3>
+<p>The address did not match a zone with an enabled method, or every method's conditions (minimum order, weight, class) excluded the cart. Check the zone order and give the fallback zone a method.</p>
+<h3>Why is WooCommerce shipping not showing at checkout for some pin codes?</h3>
+<p>Pin code ranges or wildcards in the zone are wrong, or a narrower zone above it matches first. Courier plugins also return nothing for pin codes they cannot serve.</p>
+<h3>Why does free shipping not show in WooCommerce?</h3>
+<p>The cart is below the minimum amount, a coupon is required, or discounts are applied before the minimum is checked. Free shipping also only appears in the zone where it is added.</p>
+<h3>Why is shipping not calculated until the customer enters an address?</h3>
+<p>The "Hide shipping costs until an address is entered" option is on. That is normal; make the pin code field clear so customers fill it in.</p>
+<h3>Can caching stop shipping rates from showing?</h3>
+<p>Yes. If the cart or checkout page is cached, customers see stale or empty rates. Exclude cart, checkout and account pages from page and CDN caching.</p>
+<h3>Shipping disappeared after a plugin update. What should I do?</h3>
+<p>Roll back the plugin on staging or test it there, check whether it supports the block checkout, and add a fallback flat rate so customers can still order meanwhile.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-stock-not-updating',
+    seoTitle: 'WooCommerce Stock Not Updating After Orders? Fixes',
+    title: 'WooCommerce Stock Not Updating? Fixing Stock That Does Not Reduce, Wrong Quantities and Out of Stock Errors',
+    description: 'WooCommerce stock not updating after orders, or showing wrong quantities? Fix stock settings, order statuses, variations, caching, sync plugins and cron jobs.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If WooCommerce stock is not updating, the store is not reducing (or restoring) quantities when orders change. The usual causes are stock management being off for the product, orders that never reach a status that reduces stock (for example payments stuck in Pending), stock set on the parent product instead of the variations, or a sync plugin or cache overwriting the numbers.</p>
+<p>Work through the checks below in order; the first three fix most stores.</p>
+<h2>Quick fix: try these first</h2>
+<ol>
+<li>Go to WooCommerce, Settings, Products, Inventory and confirm "Enable stock management" is ticked.</li>
+<li>Edit the product, open the Inventory tab and confirm "Track stock quantity" (Manage stock) is on, with a number entered.</li>
+<li>For variable products, check stock on each variation, not just the parent.</li>
+<li>Open a recent order: if it is Pending payment, stock has not been reduced yet. Look at the order notes for "Stock levels reduced".</li>
+<li>Clear the page cache and check the product in a private window.</li>
+</ol>
+<h2>When WooCommerce reduces stock</h2>
+<p>Understanding the timing solves half of these problems. WooCommerce reduces stock when an order moves to Processing, On hold or Completed, which normally happens when payment is confirmed or a cash on delivery or bank transfer order is placed. It writes a note on the order such as "Stock levels reduced". When an order is cancelled or refunded with restock ticked, it adds stock back.</p>
+<p>Pending payment orders hold stock for a limited time (the "Hold stock" setting, 60 minutes by default) and then cancel, returning the stock. If that setting is empty, unpaid orders never release stock. Our <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory and stock management guide</a> covers every setting in detail.</p>
+<h2>WooCommerce stock not updating: the common causes</h2>
+<h3>1. Stock management is off</h3>
+<p>Global stock management can be off, or the product may have "Track stock quantity" unticked and only a stock status (In stock or Out of stock). Without a quantity, there is nothing to reduce. Turn it on and enter the real count.</p>
+<h3>2. Orders stay in Pending payment</h3>
+<p>If the payment gateway does not send its confirmation back to the store, orders stay Pending even when the customer paid, so stock is not reduced. This is common with Indian gateways when webhooks or callback URLs are wrong, or when a firewall blocks them. Fix the gateway first; see <a href="/blog/woocommerce-payment-gateway-not-working-india/">fixing payment gateways that leave orders pending</a>.</p>
+<h3>3. Manually created or edited orders</h3>
+<p>Orders created in the admin do not always reduce stock automatically. Adding items to an existing order also may not. In newer WooCommerce versions, changing quantities in an order offers to adjust stock, but older orders and some plugins skip this. Check the order notes, and adjust stock manually if needed.</p>
+<h3>4. Variations versus the parent product</h3>
+<p>If stock is managed at the parent level, all sizes and colours share one number. If each variation has its own stock but the parent also has "Manage stock" on, it can get confusing. Decide on one approach. Most clothing and footwear stores need per-variation stock; see <a href="/blog/woocommerce-product-variations/">setting up WooCommerce variations</a>.</p>
+<h3>5. Backorders and stock status rules</h3>
+<p>If backorders are allowed, stock can go below zero and the product stays purchasable, which looks like stock not updating. The "Out of stock threshold" also decides when a product flips to Out of stock.</p>
+<h3>6. Sync plugins overwriting stock</h3>
+<p>Stock sync with Tally, a POS in your shop, a marketplace or a supplier feed can overwrite WooCommerce quantities on a schedule. If the store reduces stock after an order and the sync later writes back the old number, stock appears not to update. Pick one source of truth, sync in one direction where possible, and check the sync logs. Stores with several suppliers or a physical shop have this problem most often.</p>
+<p>A simple rule helps: if the shop counter sells from the same stock, the POS should reduce WooCommerce stock as each bill is made, and WooCommerce orders should reduce the POS stock in return. A nightly full overwrite in either direction is where counts go wrong, because every sale between two syncs is lost. If a two-way sync is not possible, keep a small buffer, for example by setting the out of stock threshold to 1 or 2, so the website stops selling just before the real shelf is empty.</p>
+<p>Also watch for product matching. Sync tools match products by SKU. If a SKU is missing, duplicated or different between systems, that product silently stops syncing while others work. Export your products, sort by SKU and fix blanks and duplicates before blaming the plugin.</p>
+<h3>7. Caching shows old stock</h3>
+<p>The stock count may be correct in the admin but the product page is cached, so shoppers see "5 in stock" after it sold out. Purge the product page after stock changes, or let your cache plugin's WooCommerce integration do it, and exclude cart and checkout from caching. If the add to cart button then fails, see <a href="/blog/woocommerce-add-to-cart-not-working/">WooCommerce add to cart not working</a>.</p>
+<h3>8. Scheduled tasks not running</h3>
+<p>Cancelling unpaid orders, imports and some sync plugins rely on WP-Cron and Action Scheduler. If they stop, held stock is never released and scheduled syncs never run. Check WooCommerce, Status, Scheduled Actions for failed or past-due tasks.</p>
+<h3>9. Plugin conflicts and custom code</h3>
+<p>Checkout plugins, order editors, custom snippets and some multi-vendor or bundle plugins change how stock is reduced. If stock works on a default theme with only WooCommerce active on staging, add plugins back one at a time. See <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to find a plugin conflict</a>.</p>
+<h2>Symptoms and where to look</h2>
+<table>
+<thead><tr><th>Symptom</th><th>Likely cause</th><th>Check</th></tr></thead>
+<tbody>
+<tr><td>No order reduces stock</td><td>Stock management off</td><td>Inventory settings, product Inventory tab</td></tr>
+<tr><td>Only online payments fail to reduce</td><td>Orders stuck in Pending</td><td>Gateway webhooks, order notes</td></tr>
+<tr><td>One size sells out but others change</td><td>Parent versus variation stock</td><td>Variation stock fields</td></tr>
+<tr><td>Stock goes back up later</td><td>Sync plugin overwriting</td><td>Sync logs, schedule</td></tr>
+<tr><td>Admin correct, shop wrong</td><td>Page cache</td><td>Cache purge rules</td></tr>
+<tr><td>Unpaid orders never release stock</td><td>Hold stock empty or cron broken</td><td>Hold stock setting, Scheduled Actions</td></tr>
+</tbody>
+</table>
+<h2>Correct the counts after fixing the cause</h2>
+<p>Once the cause is fixed, do a physical count, update quantities (a CSV export and import works for large catalogues), and place a test order with cash on delivery to confirm the order note says stock was reduced. Then cancel it and confirm stock returns.</p>
+<p>It also helps to make stock changes traceable. The order notes show reductions and restocks, and some inventory plugins keep a stock history per product showing who or what changed the number and when. When a count is wrong again, that log tells you straight away whether an order, a staff edit, an import or a sync caused it. Give staff the Shop Manager role rather than Administrator, and agree who is allowed to edit quantities; <a href="/blog/woocommerce-order-management-workflow/">a simple order management workflow</a> sets this out for small teams.</p>
+<p>Add this test to your routine with the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<h2>When to get help</h2>
+<p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix.</p>
+<h2>FAQs</h2>
+<h3>Why is WooCommerce stock not updating after an order?</h3>
+<p>Stock management is off for the product, or the order has not reached Processing, On hold or Completed. Check the order notes for "Stock levels reduced".</p>
+<h3>Why does WooCommerce not reduce stock for pending orders?</h3>
+<p>Pending payment orders only hold stock for the hold time. Stock is reduced when payment is confirmed. If paid orders stay pending, the gateway callback is failing.</p>
+<h3>Why is my WooCommerce product out of stock when stock is available?</h3>
+<p>The stock status is set manually, the variation has zero stock, the out of stock threshold is higher than the quantity, or a cached page is showing an old status.</p>
+<h3>How do I fix WooCommerce variation stock not updating?</h3>
+<p>Turn on stock management for each variation and enter quantities there, and make sure the parent product is not also managing a shared stock number.</p>
+<h3>Can a sync plugin cause WooCommerce stock to be wrong?</h3>
+<p>Yes. If Tally, a POS or a marketplace writes quantities back on a schedule, it can undo reductions. Choose one source of truth and check the sync logs.</p>
+<h3>Does WooCommerce restore stock when an order is cancelled?</h3>
+<p>Yes, when an order is cancelled, or refunded with restock selected. If it does not, check the order notes and look for a plugin or custom code that changes stock handling.</p>
+`,
+  },
+  {
+    slug: 'shopify-checkout-not-working',
+    seoTitle: 'Shopify Checkout Not Working? Fixes for Indian Stores',
+    title: 'Shopify Checkout Not Working? How to Fix Payment, COD, Shipping Rate and Cart Errors',
+    description: 'Shopify checkout not working? Check the payment gateway, shipping zones, COD rules and app conflicts in this order to find and fix the fault fast.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india', 'woocommerce-developer'],
+    body: `
+<p>If your Shopify checkout is not working, start by placing a test order yourself in a private browser window. In most Indian stores the cause is one of five things: the payment provider is not fully activated, a shipping zone does not cover the customer's address, an app or theme script is breaking the cart, a discount or inventory setting is blocking the order, or the store is still behind its password page.</p>
+<p>This guide gives the checks in the order that finds the fault fastest, then covers the less obvious causes: COD rules, UPI payments that fail, pincodes with no shipping rate and apps that change the cart.</p>
+<h2>Shopify checkout not working: the quick fix</h2>
+<ol>
+<li><strong>Reproduce it.</strong> Open the store in an incognito window on your phone, add a product, and go as far as you can. Note the exact step where it fails and the exact message on screen. Take a screenshot.</li>
+<li><strong>Check Settings, then Payments.</strong> Your payment provider (Razorpay, PayU, Cashfree, CCAvenue or another gateway) must show as active, not pending verification or in test mode. If you see a banner asking for documents or bank details, finish that first.</li>
+<li><strong>Check Settings, then Shipping and delivery.</strong> Make sure India, and every state you sell to, sits inside a shipping zone that has at least one rate. A missing rate is one of the most common reasons a checkout says it cannot ship to an address.</li>
+<li><strong>Check the store is open.</strong> Confirm the password page is off and that your plan is a paid plan that allows sales.</li>
+<li><strong>Turn off recent changes.</strong> If the problem started after installing an app, editing the theme or adding a cart drawer, switch back to the previous theme or disable that app and test again.</li>
+<li><strong>Test a simple order.</strong> One physical product, no discount code, a common metro pincode, and COD or UPI. If that works, add the other conditions back one at a time.</li>
+</ol>
+<p>Most broken checkouts are found by step five. The sections below explain each cause in more detail.</p>
+<h2>Why Shopify checkout fails: the main causes</h2>
+<p>Shopify hosts the checkout itself, so a completely broken checkout page is rare. What usually fails is something around it: the cart before checkout, the payment step, the shipping step, or a rule you set without realising its effect.</p>
+<table>
+<thead><tr><th>Symptom</th><th>Likely cause</th><th>Where to look</th></tr></thead>
+<tbody>
+<tr><td>Checkout button does nothing</td><td>Theme or app script error in the cart</td><td>Theme code, cart drawer apps</td></tr>
+<tr><td>No shipping rates available</td><td>Address outside every shipping zone, or weight outside rate limits</td><td>Settings, Shipping and delivery</td></tr>
+<tr><td>Payment fails or loops back</td><td>Gateway not activated, wrong keys, UPI timeout</td><td>Settings, Payments and the gateway dashboard</td></tr>
+<tr><td>Cash on delivery missing</td><td>Manual payment method removed, or hidden by an app rule</td><td>Settings, Payments, manual methods</td></tr>
+<tr><td>Wrong currency or prices</td><td>Markets settings</td><td>Settings, Markets</td></tr>
+<tr><td>Some products cannot be bought</td><td>Out of stock, not published to the Online Store channel, or not available in that market</td><td>Product page in admin</td></tr>
+</tbody>
+</table>
+<h2>Payment problems: gateway, UPI and failed payments</h2>
+<p>Payment issues are the most common checkout complaint from Indian store owners. Check these in order.</p>
+<h3>The gateway is not fully live</h3>
+<p>Gateways such as Razorpay, PayU and Cashfree verify your business before they allow live payments. Until that is complete, the account can stay in test mode, and real customers see errors or no payment option at all. Log in to the gateway's own dashboard, not just Shopify, and confirm the account is activated for live payments and that the website you registered matches your Shopify domain. If you recently changed domain, update it with the gateway too.</p>
+<h3>UPI payments failing or timing out</h3>
+<p>UPI payments depend on the customer approving the request in their UPI app. If they take too long, switch apps or lose network, the payment can fail or remain pending even though money left their account. These payments usually settle or reverse automatically according to the gateway's rules. Check the payment status in the gateway dashboard before telling the customer anything, and never mark an order paid in Shopify unless the gateway shows it captured.</p>
+<p>For a full explanation of how each gateway connects and how refunds work, read <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a>.</p>
+<h3>Orders stuck as abandoned after payment</h3>
+<p>If a customer says they paid but you only see an abandoned checkout, the gateway may not have sent its confirmation back to Shopify. Find the transaction in the gateway dashboard using the customer's phone number or email, and contact the gateway's support with the transaction ID. Do not ask the customer to pay again until you know what happened to the first payment.</p>
+<h2>Cash on delivery not showing at checkout</h2>
+<p>COD on Shopify is a manual payment method. If it has vanished, check:</p>
+<ul>
+<li>That Cash on Delivery is still added under Settings, then Payments, in the manual payment methods section.</li>
+<li>Whether an app that controls COD (pincode rules, order value limits, COD fees) is hiding it for that cart. Many stores set COD to disappear above a cart value or for certain pincodes and later forget the rule.</li>
+<li>Whether a payment customisation is hiding payment methods. These are set under Settings, then Payments or Checkout, depending on your plan and apps.</li>
+</ul>
+<p>Our guide to <a href="/blog/shopify-cash-on-delivery-india/">Shopify cash on delivery in India</a> explains COD fees, confirmation and limits in detail.</p>
+<h2>Shipping errors: no shipping rates and pincode problems</h2>
+<p>When checkout says shipping is not available, Shopify could not match the address to any shipping rate. Common reasons:</p>
+<ul>
+<li><strong>The zone is too narrow.</strong> You created a zone for a few states while testing and never added the rest of India.</li>
+<li><strong>Weight-based rates have gaps.</strong> If your rates cover 0 to 2 kg and 2 to 5 kg, a 6 kg order has no rate. Add an upper band.</li>
+<li><strong>Product weights are wrong.</strong> A product with a large default weight can push the cart over every limit, while a missing weight can make rates look odd.</li>
+<li><strong>A shipping app returns no rates.</strong> Carrier-calculated rates from a shipping aggregator need a working connection. If the app fails, checkout can show no options. Keep one flat backup rate so a failed connection never blocks sales.</li>
+<li><strong>A pincode checker blocks the order.</strong> If you use a pincode serviceability app, check whether its list is out of date.</li>
+</ul>
+<p>For zone and rate setup, see <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a>.</p>
+<h2>Theme and app conflicts in the cart</h2>
+<p>If the checkout button does nothing, or the cart page shows an empty cart after adding a product, the fault is almost always in the theme or an app, not in Shopify's checkout.</p>
+<ol>
+<li>In Online Store, then Themes, preview the store with a fresh copy of a free Shopify theme. If checkout works there, the problem is in your theme or an app embed.</li>
+<li>In the theme editor, open App embeds and switch embeds off one by one. Cart drawers, upsell popups, sticky add to cart bars and currency converters are the usual suspects.</li>
+<li>If you or a developer edited theme code, compare the cart template and cart scripts with an earlier copy of the theme.</li>
+<li>Open the browser console on your computer while clicking checkout. A red JavaScript error often names the app or file responsible.</li>
+</ol>
+<p>Heavy apps also slow the cart, which shoppers experience as a broken button. If your store is generally slow, read <a href="/blog/shopify-store-slow-fix/">how to fix a slow Shopify store</a>. Theme edits that touch the cart are covered in <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a>.</p>
+<h2>Discounts, inventory and other settings that block orders</h2>
+<ul>
+<li><strong>Discount codes that error.</strong> A code can fail because it has expired, reached its usage limit, needs a minimum order, or does not combine with another discount. Check the discount's conditions and its combination settings.</li>
+<li><strong>Markets.</strong> If you sell in India only, keep India as the primary market. Extra markets with different currencies or duties can change what the checkout shows.</li>
+<li><strong>Products not on the Online Store channel.</strong> A product visible through a direct link may still be unavailable for sale if it is not published to that sales channel.</li>
+<li><strong>Inventory.</strong> If quantity tracking is on and selling when out of stock is off, a product with zero stock cannot be checked out.</li>
+<li><strong>Customer accounts.</strong> If accounts are required, some shoppers give up at the login step. Make them optional unless you have a strong reason.</li>
+</ul>
+<h2>Checkout works but customers still do not finish</h2>
+<p>Sometimes the checkout is technically fine and the real issue is drop-off. Look at abandoned checkouts in the Orders section. If many stop at shipping, your delivery charges may be a surprise; show them on the product or cart page. If many stop at payment, check that UPI, cards and COD are all offered and that the gateway is reliable. Make sure the order confirmation email actually reaches customers, too: <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a> covers that fix.</p>
+<h2>How to test checkout properly before and after a fix</h2>
+<ul>
+<li>Use a phone and a computer, on mobile data and Wi-Fi.</li>
+<li>Test each payment method: UPI, a card, netbanking if offered, and COD.</li>
+<li>Test a metro pincode and a smaller town pincode.</li>
+<li>Test with and without a discount code.</li>
+<li>Check that the order appears in Shopify, the gateway shows the payment, and the confirmation email arrives.</li>
+<li>Cancel and refund real test orders straight away, so your reports stay clean.</li>
+</ul>
+<p>Many gateways offer a test mode with test card numbers. Use it for card flows, but always run at least one small real UPI payment after going live, because test mode does not prove that your live keys work.</p>
+<h2>When to get help</h2>
+<p>Get help when you cannot reproduce the error yourself, when payments are leaving customers' accounts without orders being created, or when the fault sits inside custom theme code. Every hour of a broken checkout costs orders. A <a href="/shopify-developer/">Shopify developer</a> can check the theme, apps, gateway and shipping set-up together and fix the cause rather than the symptom. If you are deciding who to bring in, our guide on how to <a href="/blog/hire-shopify-developer-india/">hire a Shopify developer in India</a> lists what to ask, and you can work with a <a href="/wordpress-shopify-developer-india/">Shopify developer anywhere in India</a> remotely.</p>
+<h2>FAQs</h2>
+<h3>Why is my Shopify checkout not working?</h3>
+<p>Usually because the payment gateway is not fully activated, the address has no shipping rate, an app or theme script is breaking the cart, or a setting such as the password page or inventory tracking is blocking the sale. Test an order yourself to find the exact step that fails.</p>
+<h3>Why does Shopify say no shipping rates are available?</h3>
+<p>The customer's address or cart weight does not match any rate in your shipping zones. Add every state you sell to into a zone, close gaps in weight bands, and keep a flat backup rate in case a shipping app fails.</p>
+<h3>Why is cash on delivery not showing on my Shopify checkout?</h3>
+<p>COD has been removed from manual payment methods, or an app or payment customisation is hiding it for that cart, for example above a set order value or for certain pincodes.</p>
+<h3>A customer paid by UPI but there is no order. What should I do?</h3>
+<p>Find the payment in your gateway dashboard first. If it is captured, contact the gateway with the transaction ID and create the order manually. If it is pending or failed, it usually reverses to the customer automatically under the gateway's rules.</p>
+<h3>Why does the checkout button do nothing on my Shopify store?</h3>
+<p>A JavaScript error from the theme or an app is stopping the cart. Preview a fresh theme and switch off app embeds one by one to find the conflict.</p>
+<h3>Can I test Shopify checkout without paying?</h3>
+<p>Yes. Use your gateway's test mode or Shopify's test gateway for card flows, and use COD for a full order test. After going live, place one small real payment to confirm the live keys work, then refund it.</p>
+`,
+  },
+  {
+    slug: 'shopify-google-merchant-center-disapproved',
+    seoTitle: 'Shopify Products Disapproved in Google Merchant Center',
+    title: 'Shopify Products Disapproved in Google Merchant Center? How to Fix Price, GTIN, Image and Misrepresentation Issues',
+    description: 'Shopify products disapproved in Google Merchant Center? Read the exact issue, fix price, stock, GTIN and policy problems in Shopify, then request a review.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india', 'woocommerce-developer'],
+    body: `
+<p>If your Shopify products are disapproved in Google Merchant Center, open Merchant Center, go to the products section and read the exact issue Google lists for each product. In Indian stores the usual causes are a price or availability mismatch between the feed and the product page, missing GTIN or brand details, missing shipping or return settings, unverified contact details, or a website that fails Google's checks on policies and checkout.</p>
+<p>This guide explains how the Shopify to Google connection works, how to read the disapproval reasons, and how to fix the most common ones without re-sending the same broken data.</p>
+<h2>Shopify Google Merchant Center products disapproved: the quick fix</h2>
+<ol>
+<li><strong>Find the reason.</strong> In Merchant Center, open Products and filter by disapproved or limited items. Click one product to see the specific issue, which attribute is affected and whether it applies to free listings, Shopping ads or both.</li>
+<li><strong>Fix it in Shopify, not in Merchant Center.</strong> Shopify sends product data to Google through the Google and YouTube app. Edits made only in Merchant Center are usually overwritten at the next sync.</li>
+<li><strong>Check the account-level issues first.</strong> If the whole account is suspended or has a misrepresentation warning, product fixes will not help until the account issue is resolved.</li>
+<li><strong>Wait for the next sync, then request a review</strong> where Merchant Center offers one. Product updates can take some time to be processed.</li>
+</ol>
+<h2>How Shopify connects to Google Merchant Center</h2>
+<p>Most stores use Shopify's Google and YouTube app (sometimes still called the Google channel). It creates or links a Merchant Center account, verifies and claims your domain, and syncs products from your Shopify catalogue. Before checking individual products, open the app in Shopify and confirm:</p>
+<ul>
+<li>The correct Merchant Center account is linked, and it is the only feed sending these products. Two feeds, for example from the app and an old third-party feed app, can conflict.</li>
+<li>Your store is set to sell in India, with INR as the currency.</li>
+<li>Products are published to the Google sales channel. A product not available on the channel will not sync.</li>
+<li>The domain shown is your primary custom domain, not the myshopify address.</li>
+</ul>
+<h2>Common product disapprovals and how to fix them</h2>
+<table>
+<thead><tr><th>Issue shown</th><th>What it usually means</th><th>Fix in Shopify</th></tr></thead>
+<tbody>
+<tr><td>Mismatched value (price)</td><td>The price Google saw on the page differs from the feed</td><td>Remove price-changing scripts, check sale prices and currency apps</td></tr>
+<tr><td>Mismatched value (availability)</td><td>Feed says in stock, page says out of stock, or the reverse</td><td>Fix inventory tracking and variant availability</td></tr>
+<tr><td>Missing or invalid GTIN</td><td>Branded product without a valid barcode</td><td>Add the barcode in the variant's Barcode field, or set correct brand data for products without one</td></tr>
+<tr><td>Missing shipping information</td><td>No shipping service set for India</td><td>Set shipping in Merchant Center or let the app import it</td></tr>
+<tr><td>Image issues</td><td>Watermarks, promotional text, placeholder or too small images</td><td>Replace the main image with a clean product photo</td></tr>
+<tr><td>Restricted or prohibited product</td><td>Product category falls under Google's shopping policies</td><td>Read the policy; some products cannot be listed at all</td></tr>
+</tbody>
+</table>
+<h3>Price mismatches</h3>
+<p>Google compares the price in your feed with the price on your product page. Mismatches happen when a currency converter app changes displayed prices, when a discount app shows a different price after the page loads, or when the theme shows a price that differs from the variant Google receives. Keep one clear price for INR visitors, and if you run sales, use Shopify's compare-at price so the feed and page update together.</p>
+<h3>Availability mismatches</h3>
+<p>If quantity tracking is off, Shopify may tell Google a product is always in stock even when your page says sold out through an app or a manual badge. Turn on inventory tracking for each variant, or make sure the page and feed both reflect the same stock status.</p>
+<h3>GTIN, brand and identifier problems</h3>
+<p>For branded products sold by many retailers, Google expects a GTIN (the barcode number on the packaging). Enter it in the variant's Barcode field in Shopify. For your own brand, handmade products or custom items, there may be no GTIN; make sure the brand (vendor in Shopify) is filled in correctly and do not invent barcode numbers. Wrong GTINs cause more trouble than missing ones.</p>
+<h3>Image problems</h3>
+<p>The main product image should show the product clearly on a plain background, without logos, watermarks, price text or "sale" badges added on top. Lifestyle and promotional images can still be used as additional images.</p>
+<h2>Account-level issues: misrepresentation and website checks</h2>
+<p>When every product is disapproved, or the account shows a misrepresentation or website needs improvement warning, Google is judging the store, not individual items. Check:</p>
+<ul>
+<li><strong>Contact information.</strong> A real address, phone number and email address on a contact page, and matching business details in Merchant Center.</li>
+<li><strong>Policies.</strong> Clear refund and return, shipping, privacy and terms pages, linked from the footer, written for your business rather than copied text.</li>
+<li><strong>Checkout.</strong> Google checks that products can actually be bought. A store behind a password page, a broken checkout or a gateway in test mode fails this. If payments are failing, see <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a>, and remove the password page before connecting Google.</li>
+<li><strong>Honest claims.</strong> Remove claims you cannot support, fake countdown timers, exaggerated discounts or reviews you did not collect.</li>
+<li><strong>Secure site.</strong> The whole store should load on HTTPS on your custom domain.</li>
+</ul>
+<p>After fixing these, request a review from the account issue in Merchant Center. Do not request reviews repeatedly without changes, because repeated failed reviews can add waiting time.</p>
+<h2>Shipping and returns settings for India</h2>
+<p>Merchant Center needs shipping costs and, increasingly, return policy details. Set a shipping service for India that matches your Shopify rates: free shipping over a threshold, a flat fee, or rates by weight. If your Shopify rates and Merchant Center shipping disagree, shoppers see a different cost at checkout, which can cause disapprovals. Add your return window and return cost under the return policy settings. For the Shopify side of shipping, see <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a>.</p>
+<h2>Improve data so products show more often</h2>
+<p>Approved is not the same as visible. To give products a better chance in free listings and Shopping results:</p>
+<ul>
+<li>Write product titles that start with what the item is, then brand, key attribute, size or colour. Avoid titles that are only a design name.</li>
+<li>Fill in product type and Google product category where the app allows it.</li>
+<li>Add variant details (size, colour, material) as proper variant options instead of putting them only in the description.</li>
+<li>Keep descriptions factual and specific.</li>
+</ul>
+<p>The same data improves your normal search results too; see the <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a>. If you also run a WooCommerce store, the approach differs; our <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a> guide covers that side.</p>
+<h2>Before connecting a new store to Google</h2>
+<p>Connecting a store that is not ready is the fastest route to disapprovals. Before installing the Google and YouTube app, make sure the store is open to the public, payments work, every product has a real price, stock status and main image, and the footer links to your policies. Our guide to <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> lists the steps in order. If products load slowly, Google may also struggle to crawl them, so check <a href="/blog/shopify-store-slow-fix/">how to fix a slow Shopify store</a> as well.</p>
+<h2>How long fixes take</h2>
+<p>After you edit products in Shopify, the app syncs changes to Merchant Center, and Google then re-processes and may re-crawl the pages. Product-level fixes are often reflected within a few days. Account reviews can take longer. Check the diagnostics page rather than editing the same product again and again.</p>
+<h2>When to get help</h2>
+<p>Get help if the account is suspended for misrepresentation, if hundreds of products show mismatches caused by apps or theme code, or if you sell many variants and need a cleaner product structure. A <a href="/shopify-developer/">Shopify developer</a> can audit the feed, theme and apps together and fix the root cause. If you are comparing options, read how to <a href="/blog/hire-shopify-developer-india/">hire a Shopify developer in India</a>, or work with a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> remotely.</p>
+<h2>FAQs</h2>
+<h3>Why are my Shopify products disapproved in Google Merchant Center?</h3>
+<p>Each product lists its own reason. Common ones are price or availability mismatches, missing GTIN or brand, image problems, missing shipping settings, or account-level issues such as unclear policies or a checkout that does not work.</p>
+<h3>How do I fix a price mismatch in Google Merchant Center on Shopify?</h3>
+<p>Make sure the price on the product page matches the price Shopify sends. Currency converters, discount apps and theme scripts that change prices after loading are the usual cause.</p>
+<h3>What is a GTIN and do I need one on Shopify?</h3>
+<p>A GTIN is the product's barcode number. Branded products from other manufacturers usually need one, entered in the Barcode field. Your own brand or handmade products may not have one; fill in the brand instead and never invent numbers.</p>
+<h3>What does misrepresentation mean in Google Merchant Center?</h3>
+<p>Google is not confident the store is trustworthy. Add full contact details, clear refund and shipping policies, a working checkout and honest claims, then request a review.</p>
+<h3>Should I edit products in Merchant Center or in Shopify?</h3>
+<p>In Shopify. The Google and YouTube app syncs data from Shopify, so changes made only in Merchant Center are usually overwritten.</p>
+<h3>How long does Google take to approve Shopify products after a fix?</h3>
+<p>Product fixes often show within a few days after the next sync and review. Account-level reviews can take longer, so make all the changes before requesting one.</p>
+`,
+  },
+  {
+    slug: 'shopify-remove-password-page',
+    seoTitle: 'How to Remove the Shopify Password Page (and Launch)',
+    title: 'How to Remove the Shopify Store Password Page, Fix It When It Will Not Go Away, and Launch Safely',
+    description: 'Remove the Shopify password page from Online Store Preferences. If it will not turn off, pick a paid plan. Plus a launch checklist for Indian stores.',
+    date: '2026-10-31',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india', 'woocommerce-developer'],
+    body: `
+<p>To remove the password page from a Shopify store, go to Online Store, then Preferences, scroll to Password protection, untick Restrict access to visitors with the password, and save. If the option is greyed out or the store still asks for a password, you are almost certainly on a trial or have not picked a paid plan yet: Shopify keeps the password page on until a plan is selected.</p>
+<p>This guide covers both cases, what to check before you open the store, and the problems people hit after removing the password, such as the store still showing the password page, Google not finding it, or orders failing.</p>
+<h2>How to remove the Shopify password page, step by step</h2>
+<ol>
+<li>Log in to your Shopify admin.</li>
+<li>Go to Online Store, then Preferences. In newer admin layouts the same setting may also be reached from Settings or the Online Store section; search for "password" in the admin search bar if you cannot find it.</li>
+<li>Find the Password protection section.</li>
+<li>Untick the box that restricts access to visitors with the password.</li>
+<li>Click Save.</li>
+<li>Open the store in a private browser window to confirm the home page loads without a password.</li>
+</ol>
+<p>That is all if your plan is already active. If the box will not untick, read the next section.</p>
+<h2>Shopify store password page will not go away</h2>
+<p>The most common reason is the plan. During the free trial, and on some starter or trial offers, Shopify keeps the online store behind a password. You must choose a paid plan before the password can be removed.</p>
+<ol>
+<li>Go to Settings, then Plan (or click Select a plan in the banner at the top of the admin).</li>
+<li>Choose a plan that fits the store. Compare features on Shopify's own pricing page, because plans and prices change and differ by country.</li>
+<li>Add a billing method and confirm.</li>
+<li>Return to the Preferences page and untick the password option.</li>
+</ol>
+<p>Other reasons the password page keeps appearing:</p>
+<ul>
+<li><strong>Browser or CDN cache.</strong> Your own browser may show the old page. Use a private window or another device.</li>
+<li><strong>A coming soon or maintenance app.</strong> Some apps add their own lock screen on top of the theme. Disable the app or its app embed.</li>
+<li><strong>A theme section that looks like a password page.</strong> A custom landing template can be set as the home page. Check the home page template in the theme editor.</li>
+<li><strong>The store is paused or frozen.</strong> If billing failed or the store was paused, the storefront can close. Check the banner in the admin and the billing section.</li>
+<li><strong>The domain points somewhere else.</strong> If your custom domain still points to an old host or holding page, you will not see the Shopify store at all. See <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>.</li>
+</ul>
+<h2>Before you remove the password: a launch checklist</h2>
+<p>Removing the password makes the store public and lets Google and customers in. Check these first, because problems are harder to fix with real orders coming in.</p>
+<h3>Payments and checkout</h3>
+<ul>
+<li>Your payment gateway (Razorpay, PayU, Cashfree, CCAvenue or another) is activated for live payments, not test mode.</li>
+<li>Cash on delivery is added if you plan to offer it, with any COD limits set.</li>
+<li>You have placed a full test order and refunded it.</li>
+</ul>
+<p>If anything fails at this stage, check the gateway set-up in <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a> before going live.</p>
+<h3>Shipping, taxes and invoices</h3>
+<ul>
+<li>Every state you deliver to is inside a shipping zone with a rate.</li>
+<li>GST settings are agreed with your CA and invoices show the details they need. Our <a href="/blog/shopify-gst-invoices-india/">Shopify GST invoices guide</a> explains the settings.</li>
+<li>Product weights are filled in if your rates depend on weight.</li>
+</ul>
+<h3>Domain, email and legal pages</h3>
+<ul>
+<li>Your custom domain is connected and set as the primary domain, with SSL active.</li>
+<li>Order notification emails come from your own domain and have been tested. If they land in spam, see <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>.</li>
+<li>Refund, privacy, shipping and terms pages are written for your business and linked in the footer. Payment gateways often check these before approving an account.</li>
+<li>Contact details, including a phone or WhatsApp number and an email address, are visible.</li>
+</ul>
+<h3>Content and SEO</h3>
+<ul>
+<li>Placeholder products, demo text and sample images from the theme are removed.</li>
+<li>Each product and collection has a clear title, description and meta description.</li>
+<li>The home page title and description in Preferences are set.</li>
+<li>Analytics and any pixels you use are installed and recording.</li>
+</ul>
+<p>The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> goes deeper on titles, URLs and structured data.</p>
+<h2>After removing the password: getting found on Google</h2>
+<p>While the password page is on, search engines cannot see your products. After removing it:</p>
+<ol>
+<li>Verify your domain in Google Search Console.</li>
+<li>Submit the sitemap Shopify generates at your domain followed by /sitemap.xml.</li>
+<li>Use URL inspection to request indexing of the home page and your main collections.</li>
+<li>Check that no app or theme setting adds a noindex tag to pages you want found.</li>
+</ol>
+<p>Indexing takes time. New stores often see pages appear over days or weeks, not hours. Keep adding useful product detail and collection text in the meantime.</p>
+<h2>Using the password page on purpose</h2>
+<p>The password page is useful, not only a barrier. Store owners use it to:</p>
+<ul>
+<li>Run a pre-launch page that collects email sign-ups. The password page template can be edited in the theme editor to show your logo, a message and a newsletter form.</li>
+<li>Share a private preview with a few customers, a partner or a reviewer by giving them the password.</li>
+<li>Close the store briefly during a major change, though for short maintenance it is usually better to keep selling and make changes on an unpublished theme copy.</li>
+</ul>
+<p>To change the message customers see, edit the password page in the theme editor and set the message under Preferences. Keep it short, say when the store opens, and give a way to contact you.</p>
+<h2>Should you put the password back during redesigns?</h2>
+<p>Usually not. Putting a live store behind a password stops orders and can affect how search engines treat your pages if it lasts long. Instead, duplicate your theme, make the changes on the copy, preview it, and publish when ready. If you are changing themes on an established store, read <a href="/blog/shopify-theme-change-without-losing-seo/">how to change a Shopify theme without losing SEO</a>.</p>
+<h2>Common mistakes on launch day</h2>
+<ul>
+<li><strong>Opening with a gateway still in test mode.</strong> Customers see a payment page that fails or never loads. Confirm the gateway dashboard says the account is live.</li>
+<li><strong>Forgetting the myshopify address.</strong> Set your custom domain as primary so every visitor and every link ends up on the same address.</li>
+<li><strong>Leaving demo content.</strong> Sample reviews, placeholder prices and theme demo images look careless and can mislead customers. Remove them all.</li>
+<li><strong>No stock entered.</strong> If inventory is tracked and quantities are zero, products show as sold out the moment the password comes off.</li>
+<li><strong>Announcing before testing on a phone.</strong> Most Indian shoppers will arrive on mobile. Walk through the home page, a collection, a product and checkout on your own phone before you share the link.</li>
+</ul>
+<p>If the store feels slow once it is public, see <a href="/blog/shopify-store-slow-fix/">how to fix a slow Shopify store</a>.</p>
+<h2>Setting up a new store properly</h2>
+<p>If you are still setting up, the password page is your safety net: leave it on until payments, shipping, GST and the domain are all tested. Our step-by-step guide to <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers the order to do things in.</p>
+<h2>When to get help</h2>
+<p>Most store owners can remove the password themselves. Get help if the store is ready but checkout, the domain or the gateway is not, or if you want the launch done in one go without missing steps. A <a href="/shopify-developer/">Shopify developer</a> can run the full pre-launch check, fix what fails and take the store live, and you can work with a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> remotely from any city.</p>
+<h2>FAQs</h2>
+<h3>How do I remove the password page on Shopify?</h3>
+<p>Go to Online Store, then Preferences, untick the option that restricts access to visitors with the password, and save. You need an active paid plan for this to work.</p>
+<h3>Why can I not remove my Shopify store password?</h3>
+<p>Usually because the store is still on a free trial or no plan has been selected. Pick a paid plan under Settings, then Plan, and the option becomes available.</p>
+<h3>Why does my Shopify store still show the password page after I removed it?</h3>
+<p>Your browser may be showing a cached page, a coming soon app may be adding its own lock screen, or the domain may still point elsewhere. Check in a private window and disable lock screen apps.</p>
+<h3>Can Google index my Shopify store while the password page is on?</h3>
+<p>No. Products and collections are hidden behind the password. Remove it, then submit your sitemap in Search Console.</p>
+<h3>How do I edit the Shopify password page message?</h3>
+<p>Set the message under Online Store, then Preferences, and edit the password page layout in the theme editor to add your logo or an email sign-up form.</p>
+<h3>Should I put my live Shopify store behind a password while redesigning?</h3>
+<p>Generally no. Work on a duplicate theme, preview it, and publish when it is ready, so the store keeps taking orders.</p>
 `,
   },
 ];
