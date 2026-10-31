@@ -315,7 +315,15 @@
 </tbody>
 </table>
 <p>A caching plugin is a good start, but it only speeds up pages that can be cached, and stacking several optimization plugins usually causes conflicts. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows which layers matter for your site. To keep results from slipping later, a <a href="/wordpress-maintenance/">maintenance plan</a> includes regular speed checks.</p>
-<h2>WooCommerce speed optimization for Indian stores</h2>
+<h2>WooCommerce speed optimization service</h2>
+<p>A store is slower than a brochure site for a simple reason: cart, checkout and account pages cannot be served from the page cache, so every visit there runs WordPress, WooCommerce and every active plugin. My WooCommerce speed optimization service works on the parts caching cannot reach:</p>
+<ul>
+<li><strong>Cart fragments.</strong> The mini-cart refresh request can run on every page, including blog posts. It is limited to the pages that actually show a cart, so cached pages stay cached.</li>
+<li><strong>Product filters and search.</strong> Filter plugins can run heavy queries on large catalogues. Filters are reviewed, lookup tables rebuilt where WooCommerce provides them, and slow queries traced to their source.</li>
+<li><strong>Checkout scripts.</strong> Payment, shipping and tracking scripts are loaded only where they are needed, and checkout is tested with a test order after each change.</li>
+<li><strong>Order table cleanup.</strong> Old sessions, expired transients and finished or failed scheduled actions are cleared in steps, after a backup, without touching real orders.</li>
+</ul>
+<h3>Extra checks for Indian stores</h3>
 <p>Stores slow down in ways brochure sites do not, and Indian stores have a few extra moving parts. Things I look at closely:</p>
 <ul>
 <li><strong>Plugins that load everywhere.</strong> Pin code delivery checkers, COD fee rules, GST invoice plugins and WhatsApp order notifications are all useful, but many load scripts or run queries on every page instead of only where they are needed.</li>

@@ -117,6 +117,17 @@ module.exports = {
 </tbody>
 </table>
 <p>Auto-updates are not a bad idea on their own; <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a> explains which ones are safe to switch on. What they lack is the backup beforehand and someone checking afterwards.</p>
+<h2>Website maintenance packages</h2>
+<p>Website maintenance packages are usually built from the same core tasks, with more frequency and more checks as a site gets busier. A monthly package typically covers:</p>
+<ul>
+<li><strong>Updates done safely:</strong> WordPress core, theme and plugins, with a backup taken first and key pages, forms and checkout tested afterwards.</li>
+<li><strong>Off-site backups</strong> on a schedule that suits how often the site changes, kept separate from your hosting.</li>
+<li><strong>Security and uptime monitoring,</strong> so problems are spotted early rather than reported by a customer.</li>
+<li><strong>Speed and health checks,</strong> including broken links, failing scheduled tasks and SSL renewal.</li>
+<li><strong>Small content changes</strong> such as text, images and prices each month.</li>
+<li><strong>A monthly report</strong> listing what was updated, checked and fixed.</li>
+</ul>
+<p>Store packages add test orders through the payment flow and order email checks. Larger packages mainly differ in backup frequency, the amount of content work and how many sites are covered.</p>
 <h2>What website maintenance costs in India, and what drives the price</h2>
 <p>I do not publish one price, because two sites that look similar can need very different amounts of care. You get a fixed monthly quote after a free review of your site. What decides it:</p>
 <ul>
@@ -265,7 +276,15 @@ module.exports = {
 </tbody>
 </table>
 <p>A caching plugin is a good start, but it only speeds up pages that can be cached, and stacking several optimization plugins usually causes conflicts. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows which layers matter for your site. To keep results from slipping later, a <a href="/wordpress-maintenance/">maintenance plan</a> includes regular speed checks.</p>
-<h2>WooCommerce speed optimization for Indian stores</h2>
+<h2>WooCommerce speed optimization service</h2>
+<p>A store is slower than a brochure site for a simple reason: cart, checkout and account pages cannot be served from the page cache, so every visit there runs WordPress, WooCommerce and every active plugin. My WooCommerce speed optimization service works on the parts caching cannot reach:</p>
+<ul>
+<li><strong>Cart fragments.</strong> The mini-cart refresh request can run on every page, including blog posts. It is limited to the pages that actually show a cart, so cached pages stay cached.</li>
+<li><strong>Product filters and search.</strong> Filter plugins can run heavy queries on large catalogues. Filters are reviewed, lookup tables rebuilt where WooCommerce provides them, and slow queries traced to their source.</li>
+<li><strong>Checkout scripts.</strong> Payment, shipping and tracking scripts are loaded only where they are needed, and checkout is tested with a test order after each change.</li>
+<li><strong>Order table cleanup.</strong> Old sessions, expired transients and finished or failed scheduled actions are cleared in steps, after a backup, without touching real orders.</li>
+</ul>
+<h3>Extra checks for Indian stores</h3>
 <p>Stores slow down in ways brochure sites do not, and Indian stores have a few extra moving parts. Things I look at closely:</p>
 <ul>
 <li><strong>Plugins that load everywhere.</strong> Pin code delivery checkers, COD fee rules, GST invoice plugins and WhatsApp order notifications are all useful, but many load scripts or run queries on every page instead of only where they are needed.</li>
