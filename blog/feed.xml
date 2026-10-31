@@ -4283,5 +4283,26 @@
     <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
     <description>WooCommerce add to cart not working? Fix caching, cart fragments, JavaScript conflicts, stock and price settings, variable products and empty carts.</description>
   </item>
+  <item>
+    <title>Elementor Header or Footer Not Showing? How to Fix Theme Builder Templates That Do Not Appear</title>
+    <link>https://samverse.space/blog/elementor-header-footer-not-showing/</link>
+    <guid>https://samverse.space/blog/elementor-header-footer-not-showing/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Elementor header or footer not showing on your site? Fix display conditions, theme support, Pro licence issues and caching, with the checks in the right order.</description>
+  </item>
+  <item>
+    <title>Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones</title>
+    <link>https://samverse.space/blog/elementor-mobile-view-not-working/</link>
+    <guid>https://samverse.space/blog/elementor-mobile-view-not-working/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Elementor mobile view not working or the site looks different on a real phone? Fix responsive settings, breakpoints, caching and overflow, step by step.</description>
+  </item>
+  <item>
+    <title>Elementor Not Saving Changes? How to Fix the Update Button, Server Errors and Lost Edits</title>
+    <link>https://samverse.space/blog/elementor-not-saving-changes/</link>
+    <guid>https://samverse.space/blog/elementor-not-saving-changes/</guid>
+    <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
+    <description>Elementor not saving changes or the Update button keeps spinning? Fix server errors, memory limits, security rules and conflicts, and stop losing edits.</description>
+  </item>
 </channel>
 </rss>

@@ -669,5 +669,8 @@
  "blog-website-for-pune-industrial-suppliers": "1a78de6891e21ba3d6f4a24c2dab9a2df58535d8",
  "blog-shopify-domain-not-connecting": "9bbe537a6e99ea7aa49747dced14ce6e24b64b06",
  "blog-shopify-emails-going-to-spam": "5121724f56c9b063b05f48afbd7ca22ca5035de7",
- "blog-woocommerce-add-to-cart-not-working": "3240c38c3a6830014e5e607783e3546ea0d397d8"
+ "blog-woocommerce-add-to-cart-not-working": "3240c38c3a6830014e5e607783e3546ea0d397d8",
+ "blog-elementor-header-footer-not-showing": "aa9a8a4c0d1552fbcbab09cacb52f5b63e7b81b2",
+ "blog-elementor-mobile-view-not-working": "9daf1e643e5302c7621a1d888f9ab643a000fa5a",
+ "blog-elementor-not-saving-changes": "d6fb7e4544160a0a83d67b5b308b4453a45e838e"
 }

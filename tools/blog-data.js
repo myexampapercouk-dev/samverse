@@ -1554,6 +1554,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Updates and maintenance</h2>
 <p>Gutenberg improves with each WordPress release, so there's one less plugin to update. Elementor releases updates often, and major ones occasionally change how layouts render, so test on a staging copy before updating a live site; see <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
 
+<p>One common Elementor support job is a header or footer that disappears after a change; <a href="/blog/elementor-header-footer-not-showing/">how to fix an Elementor header or footer not showing</a> explains the usual causes.</p>
+
 <h2>Gutenberg vs Elementor: the same page built both ways</h2>
 <p>A comparison of features only goes so far. This is how common jobs on a typical Indian small business site, such as a clinic, a coaching institute or a manufacturer, play out in each editor:</p>
 <table>
@@ -15125,6 +15127,8 @@ cf-cache-status: HIT</code></pre>
   <li><strong>Mobile menus:</strong> test the menu toggle, submenus and closing the menu with a real thumb.</li>
   <li><strong>Theme choice:</strong> a lightweight theme makes mobile speed far easier to achieve than a heavy multipurpose one.</li>
 </ul>
+
+<p>If your Elementor site still looks wrong on phones after you change the mobile settings, see <a href="/blog/elementor-mobile-view-not-working/">how to fix Elementor mobile view not working</a>.</p>
 
 <h2>How to test</h2>
 <ol>
@@ -32246,6 +32250,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h3>Custom code, fonts and the Role Manager</h3>
 <p>Smaller features that add up: custom CSS on a single element, uploading brand fonts and icons, and the Role Manager, which can restrict a staff account to editing content so text and images change while the layout stays put.</p>
 
+<p>If a Theme Builder header or footer has stopped appearing, see <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a> for display conditions and theme support checks.</p>
+
 <h2>Licences and renewals: what to know before you buy</h2>
 <ul>
   <li><strong>It's a yearly licence,</strong> priced by the number of sites. Check the renewal price as well as the first-year price, and count it as a running cost alongside hosting for as long as the site uses Pro.</li>
@@ -32440,6 +32446,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Option 1: Elementor and Elementor Pro</h2>
 <p>Elementor is the most familiar choice for agencies and businesses. A good build uses global colours and fonts taken from the Figma styles, saved templates for headers, footers and repeated sections, and the theme builder for post and archive templates. Done this way, editors can create new landing pages from existing sections without breaking the design.</p>
 <p>The downsides are page weight and editor freedom. A poorly built Elementor site with nested containers, unused widgets and many add-on plugins becomes slow and inconsistent. Modern Elementor with flexbox containers and careful asset loading can still be fast. For agency builds, the same structure applies whether the work is white-label or direct, and <a href="/elementor-developer/">Elementor development</a> covers the service.</p>
+
+<p>If the Theme Builder header from your design does not appear on the live site, see <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>.</p>
 
 <h2>Option 2: Block theme with custom blocks and patterns</h2>
 <p>A block theme uses WordPress's own editor (Gutenberg) and full site editing. The Figma design becomes a theme.json file (colours, typography, spacing), block patterns for repeated sections and, where needed, custom blocks for complex components such as pricing tables or sliders. Editors work in the native editor with locked patterns that keep the design intact.</p>
@@ -47405,6 +47413,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>For Elementor pages that are slow as well as jumpy, see <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
 
+<p>If Elementor sections look broken on phones even after loading finishes, read <a href="/blog/elementor-mobile-view-not-working/">how to fix Elementor responsive settings that do not show on mobile</a>.</p>
+
 <h2>Cookie banners, offer bars and sticky headers</h2>
 <p>Cookie notices, festival offer strips, "free delivery above" bars and app banners are frequent causes on business sites. When one is inserted at the top after the page has rendered, everything moves down.</p>
 <ul>
@@ -47856,6 +47866,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     <tr><td>500 or 503 errors, or a "resource limit reached" page on shared hosting</td><td>The hosting account hit its overall limits, not just PHP's per-request limit</td></tr>
   </tbody>
 </table>
+
+<p>In the Elementor editor, a low memory limit often shows up as a save that fails; see <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a> for the other causes too.</p>
 
 <h2>Common causes</h2>
 <ul>
@@ -58595,6 +58607,8 @@ Support:           who to contact, and on what terms</code></pre>
   </tbody>
 </table>
 <p>A blank page with no message at all is covered in <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>; "allowed memory size exhausted" messages are a hosting limit rather than a clash. If forms submit but no email arrives, the cause is usually delivery rather than a conflict.</p>
+<p>If the symptom is the Elementor Update button failing or spinning, start with <a href="/blog/elementor-not-saving-changes/">how to fix Elementor not saving changes</a>, because firewalls and server limits are just as likely as a conflict.</p>
+
 <h2>Before you touch anything: a five-minute safety routine</h2>
 <ol>
   <li><strong>Take a fresh backup</strong> of files and database. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers the options.</li>
@@ -70185,6 +70199,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 </ol>
 <p>If the layout broke after an Elementor update rather than after your edit, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>. Too many plugin and Elementor CSS files also slow pages down; <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> explains the trade-offs.</p>
 
+<p>If Elementor will not save the change at all, the problem is not caching; see <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a> for server errors and lost edits.</p>
+
 <h2>Child theme and loading order</h2>
 <p>Where you put your CSS decides when it loads, and later rules win when specificity is equal.</p>
 <ul>
@@ -72761,6 +72777,8 @@ or a cookie name starts with:
 
 <h2>Mobile menus, popups and sticky bars</h2>
 <p>Mega menus built for desktop often load all their content on mobile too, even though it is hidden. Use a simpler mobile menu. Popups that appear immediately on page load cost speed and annoy visitors; if you use one, delay it and make sure it is easy to close. Sticky headers, WhatsApp bars and cookie banners should be light and should not cover the content or shift the layout.</p>
+
+<p>If the problem is the layout rather than speed, <a href="/blog/elementor-mobile-view-not-working/">Elementor mobile view not working</a> covers device settings, breakpoints and horizontal scroll.</p>
 
 <h2>Fonts and layout shift on small screens</h2>
 <p>Each font family and weight is another download. Limit yourself to one or two families and only the weights you use, host them on your own server and set them to show fallback text immediately. Icon font libraries can often be replaced by a few inline SVG icons. <a href="/blog/web-fonts-performance/">Web fonts and performance</a> has the details.</p>
@@ -76865,6 +76883,169 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Products without a price, out-of-stock products with backorders off, and products hidden by catalogue mode plugins do not show the button. Some themes also hide it on shop pages.</p>
 <h3>Can a caching plugin break WooCommerce add to cart?</h3>
 <p>Yes. Page caching on cart and checkout pages and JavaScript delay or combine features are among the most common causes. Exclude WooCommerce pages and scripts from those features.</p>
+`,
+  },
+  {
+    slug: 'elementor-header-footer-not-showing',
+    seoTitle: 'Elementor Header or Footer Not Showing? How to Fix It',
+    title: 'Elementor Header or Footer Not Showing? How to Fix Theme Builder Templates That Do Not Appear',
+    description: 'Elementor header or footer not showing on your site? Fix display conditions, theme support, Pro licence issues and caching, with the checks in the right order.',
+    date: '2026-10-31',
+    category: 'Maintenance',
+    related: ['elementor-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If your Elementor header or footer is not showing, first open Templates, Theme Builder and check the template is published and has a display condition such as Entire Site. A header saved as a draft, or published without conditions, will never appear. If the conditions are correct, check that Elementor Pro is active and that your theme supports Elementor header and footer locations.</p>
+<p>Those three checks fix most cases. The rest of this guide covers what to do when they do not, including duplicate headers, a theme header showing instead of yours and footers that vanish only on some pages.</p>
+<h2>Quick fix: check these first</h2>
+<ol><li>Go to Templates, Theme Builder, Header (or Footer). Confirm the template status is Published, not Draft.</li><li>Hover the template and choose Edit Conditions. Add Include, Entire Site, unless you want it only on some pages.</li><li>Go to Plugins and confirm Elementor Pro is active. Theme Builder templates do not work with the free plugin alone.</li><li>Go to Elementor, Tools and use Regenerate CSS and Data, then clear your caching plugin, server cache and CDN.</li><li>Open the page in a private tab to see what logged-out visitors see.</li></ol>
+<h2>Why the Elementor header or footer is not showing</h2>
+<h3>1. Display conditions are missing or too narrow</h3>
+<p>Every Theme Builder template needs conditions that tell Elementor where to use it. When you publish a new header, Elementor asks for conditions; if you close that window, the template is published but used nowhere. Conditions can also be narrower than you think, for example only the front page, only posts or only a single page that has since been deleted.</p>
+<p>Also check exclusions. An Exclude rule for a page, a category or the 404 page removes the header there. If the header vanishes on blog posts or WooCommerce pages only, look for exclusions or a separate template that wins for those page types.</p>
+<h3>2. Another template has higher priority</h3>
+<p>When two headers have conditions that overlap, Elementor uses the more specific condition. A header for Singular, Page will beat an Entire Site header on pages. If an old test header exists with a specific condition, it may be the one showing, or it may be blank. Review every template under Theme Builder, delete or unpublish the ones you no longer use and keep one clear default.</p>
+<h3>3. Elementor Pro is inactive, expired or out of step</h3>
+<p>Theme Builder is a Pro feature. If Elementor Pro is deactivated, removed during a cleanup or broken by an update, custom headers and footers stop appearing and the theme default header returns. An expired licence normally keeps existing templates working but stops updates; a mismatched pair of Elementor and Elementor Pro versions can cause errors. Keep both plugins up to date together. If you are unsure whether Pro is worth keeping, read <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it</a>.</p>
+<h3>4. The theme does not support Elementor locations</h3>
+<p>Elementor replaces the header and footer through theme locations. Hello Elementor, Astra, GeneratePress, Kadence, OceanWP and many other popular themes support this. Some older or bundled premium themes do not, so the theme header prints and the Elementor one never appears, or both appear. Options:</p>
+<ul><li>Switch to a theme with full support, such as Hello Elementor (test on staging first).</li><li>Use the theme setting that disables its own header and footer, if it has one.</li><li>Ask a developer to register the Elementor locations in a child theme.</li></ul>
+<p>See <a href="/blog/best-theme-for-elementor/">the best theme for Elementor</a> for a comparison of how each theme works with Theme Builder.</p>
+<h3>5. Page settings hide the header</h3>
+<p>In the page editor, Page Settings, Page Layout set to Elementor Canvas removes the header and footer on that page. This is useful for landing pages but confusing if someone set it by mistake. Switch to Default or Elementor Full Width. Some themes also have a per-page option such as Disable Header in their own meta box under the editor.</p>
+<h3>6. Caching and optimisation</h3>
+<p>A header published a moment ago may not show because the page cache still holds the old version. Optimisation plugins that combine CSS or delay JavaScript can also break sticky headers, menus and mobile dropdowns, so the header appears to be missing when it is actually hidden or collapsed. Clear caches and test with optimisation features turned off. <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> covers each cache layer in detail.</p>
+<h3>7. A plugin conflict or PHP error</h3>
+<p>If the header area is blank and the rest of the page loads, a PHP error inside a widget or a plugin conflict may be stopping output. Turn on debug logging on staging and check for errors, or deactivate plugins one at a time. Our guide to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">troubleshooting plugin conflicts</a> shows a safe order. If the whole site shows a critical error message, fix that first, because the header problem is only a symptom.</p>
+<h2>Elementor footer not showing on some pages</h2>
+<p>When the footer is missing only on certain pages, compare a working page with a broken one:</p>
+<ul><li>Is the broken page using the Canvas layout or a different page template?</li><li>Is it a WooCommerce page, archive, search page or 404 page with its own condition?</li><li>Is the page very long, with a section that has a broken HTML widget or an unclosed tag that swallows the footer?</li><li>Is a popup or full-height section covering the footer?</li></ul>
+<p>An HTML or shortcode widget with broken markup is a common hidden cause. Remove recently added custom HTML and check again.</p>
+<h2>Elementor header not showing on mobile</h2>
+<p>If the header appears on desktop but not on phones, open the header template in the mobile view and check Advanced, Responsive for Hide on Mobile on the container or widgets. Some headers use a separate mobile container that was hidden or deleted. Also check the sticky settings: a sticky header with an offset or a transparent background over a white section can look missing. Finally, test with optimisation plugins paused, because delayed scripts can stop the mobile menu toggle from rendering until the visitor scrolls or taps.</p>
+<p>Where both a desktop header and a separate mobile header exist, consider merging them into one responsive container. One header is simpler to keep correct after updates.</p>
+<h2>Elementor header showing twice</h2>
+<p>Two headers usually means the theme header and the Elementor header are both printing. The theme does not fully support Elementor locations, or a theme option to hide its header has been turned back on after an update. Turn off the theme header in its settings, or switch to a theme with proper support. If two Elementor headers appear, check for a header widget placed inside page content as well as a Theme Builder header.</p>
+<h2>How to prevent header and footer problems</h2>
+<ul><li>Keep one default header and one default footer, with clear names and Entire Site conditions.</li><li>Name special templates by purpose, such as Landing page header, so others know why they exist.</li><li>Update Elementor and Elementor Pro together, on a <a href="/blog/staging-sites-explained/">staging site</a> first.</li><li>After updates, check the home page, a blog post, a shop page and the contact page.</li><li>Follow <a href="/blog/update-wordpress-safely/">a safe WordPress update routine</a> with a backup before each update.</li></ul>
+<p>If the problem started straight after an update and more than the header is broken, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
+<h2>When to get help</h2>
+<p>If templates look correct but the header still does not appear, the cause is usually in the theme or custom code. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the Theme Builder setup cleanly, move the site to a supported theme and test every page type. If you prefer someone to look after updates so this does not happen again, see our <a href="/wordpress-maintenance/">WordPress maintenance service</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
+<h2>FAQs</h2><h3>Why is my Elementor header not showing?</h3><p>The usual causes are a header template that is still a draft, no display conditions, Elementor Pro being inactive or a theme that does not support Elementor header locations. Check Theme Builder conditions first, then Pro, then the theme.</p>
+<h3>How do I set an Elementor header for the entire site?</h3><p>Go to Templates, Theme Builder, Header, hover your template and choose Edit Conditions. Add Include, Entire Site and save. Remove or unpublish older headers with overlapping conditions.</p>
+<h3>Why is my Elementor footer not showing on some pages?</h3><p>Check whether those pages use the Elementor Canvas layout, have their own template conditions or exclusions, or contain an HTML widget with broken markup. Compare a working page with a broken one.</p>
+<h3>Do I need Elementor Pro for a custom header and footer?</h3><p>For Theme Builder headers and footers, yes. The free plugin can build page content, and some themes offer their own header builder, but Elementor Theme Builder templates need Elementor Pro.</p>
+<h3>Why does my site show two headers?</h3><p>The theme header and the Elementor header are both printing. Turn off the theme header in its settings or switch to a theme that fully supports Elementor locations, such as Hello Elementor.</p>
+<h3>Can a developer fix my Elementor Theme Builder setup?</h3><p>Yes. A developer can check conditions, theme support, Pro versions and custom code, clean up duplicate templates and test every page type on staging before making changes live.</p>
+`,
+  },
+  {
+    slug: 'elementor-mobile-view-not-working',
+    seoTitle: 'Elementor Mobile View Not Working? How to Fix It',
+    title: 'Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones',
+    description: 'Elementor mobile view not working or the site looks different on a real phone? Fix responsive settings, breakpoints, caching and overflow, step by step.',
+    date: '2026-10-31',
+    category: 'Maintenance',
+    related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
+    body: `
+<p>If Elementor mobile view is not working, the usual cause is one of three things: the change was made on the desktop or tablet setting instead of mobile, a cached CSS file is still being served, or the site uses breakpoints that do not match the phone you are testing on. Go to Elementor, Tools, click Regenerate CSS and Data, clear every cache, then open the page on your phone in a private tab. That fixes a large share of cases in a few minutes.</p>
+<p>If it does not, work through the checks below in order. Each one rules out a cause before you start changing the design.</p>
+<h2>Quick fix: the 5-minute checklist</h2>
+<ol><li>In the editor, check which device icon is active at the bottom of the left panel (or in the top bar in newer versions). Settings with a small device icon next to them only apply to that device.</li><li>Click Update, then go to Elementor, Tools, General and use Regenerate CSS and Data (older versions call it Regenerate Files and Data).</li><li>Clear your caching plugin (LiteSpeed Cache, WP Rocket, W3 Total Cache and similar), any server cache in hPanel or cPanel, and Cloudflare if you use it.</li><li>Open the page on your phone in a private or incognito tab so the phone browser cache does not hide the change.</li><li>If it still looks wrong, temporarily switch Elementor, Settings, Performance or Features options back to their defaults and test again.</li></ol>
+<p>If you want the background on why caches cause so much confusion, see <a href="/blog/wordpress-changes-not-showing/">why WordPress changes are not showing</a>. The rest of this guide covers problems that are specific to Elementor responsive editing.</p>
+<h2>Why Elementor mobile view is not working: the common causes</h2>
+<h3>1. You edited the wrong device</h3>
+<p>Elementor lets most settings differ by device: padding, margin, font size, column width, alignment, background images and visibility. When you switch to the mobile view in the editor and change a value, that value only applies to mobile. When you change a value while desktop is active, it cascades down to tablet and mobile unless they already have their own value.</p>
+<p>So if someone set a mobile font size months ago, changing the desktop size today will not touch mobile. Open the mobile view, find the setting and look for a value in the field. Clear it to inherit again, or set the mobile value directly.</p>
+<h3>2. Cached CSS or a caching plugin</h3>
+<p>Elementor writes each page style to a CSS file in the uploads folder. Caching and optimisation plugins then minify and combine those files. If the old file is still served, the editor shows the new design but the live page does not. Regenerate CSS, then clear the plugin cache, server cache and CDN cache, in that order. Our guide to <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing in WordPress</a> explains each cache layer.</p>
+<h3>3. Breakpoints do not match the phone</h3>
+<p>Under Site Settings, Layout, Breakpoints, Elementor defines when the mobile and tablet styles start. If someone changed the mobile breakpoint to a small number, a larger phone or a phone in landscape may receive the tablet styles. Newer versions also allow extra breakpoints such as mobile extra and laptop. If extra breakpoints are switched on, check the new device in the editor too, because a value set only on mobile will not reach mobile extra.</p>
+<p>Unless you have a reason, keep the default breakpoints. Changing them later can shift every page on the site.</p>
+<h3>4. Hidden elements and duplicated sections</h3>
+<p>A common older pattern is to build one section for desktop and a copy for mobile, then hide each on the other device under Advanced, Responsive. When someone later edits only the desktop copy, phones still show the old copy. Use the Navigator panel to find hidden elements (they appear faded). Where possible, merge duplicates into one container with device-specific settings, which is also lighter for the page.</p>
+<h3>5. Fixed widths and horizontal scroll</h3>
+<p>If the page scrolls sideways on mobile or a white strip appears on the right, something is wider than the screen. Usual suspects:</p>
+<ul><li>A container or column with a fixed width in pixels instead of percent or auto.</li><li>Negative margins, often added to make a section touch the edge.</li><li>Large headings with long words and no reduced mobile font size.</li><li>Embedded maps, iframes, tables or sliders with fixed widths.</li><li>Entrance animations that slide in from the side.</li></ul>
+<p>Find the element by removing sections one at a time in a staging copy, or use your browser developer tools in phone mode. As a short-term fix, set Overflow to Hidden on the affected section, but fix the real cause too, because hidden overflow can cut off content.</p>
+<h3>6. Theme or custom CSS overrides</h3>
+<p>Your theme stylesheet, the Customizer additional CSS box or a child theme may contain media queries that fight with Elementor. A rule with high specificity or important will win. Switch temporarily to the Hello Elementor theme on staging; if mobile looks correct, the theme CSS is the cause. Our comparison of the <a href="/blog/best-theme-for-elementor/">best theme for Elementor</a> explains why a light theme gives fewer of these conflicts.</p>
+<h3>7. Mobile menu or header issues</h3>
+<p>If the problem is the header, check the Nav Menu widget breakpoint (the point where it switches to a hamburger), the mobile dropdown settings and whether the header template has separate mobile containers. A sticky header with a fixed height can also cover the first section on phones.</p>
+<h3>8. Plugins and optimisation settings</h3>
+<p>Delay JavaScript, remove unused CSS and lazy-load features can break Elementor mobile menus, tabs, accordions and sliders, especially when the page relies on scripts that are delayed until the user scrolls. Exclude Elementor scripts and the frontend CSS from those features, or turn them off and retest. For a careful method to isolate a plugin, see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to troubleshoot WordPress plugin conflicts</a>.</p>
+<h2>Elementor responsive mode not showing in the editor</h2>
+<p>Sometimes the issue is the editor itself: the device switcher does nothing, the preview stays at desktop width or the mobile preview is blank. Try these:</p>
+<ul><li>Update Elementor and Elementor Pro to matching versions.</li><li>Clear the browser cache or open the editor in a private window.</li><li>Disable browser extensions that inject scripts, such as ad blockers and translators.</li><li>Check the browser console for errors and the PHP memory limit; low memory often breaks the editor preview.</li></ul>
+<p>If the editor does not load at all, follow <a href="/blog/elementor-not-loading-fix/">the Elementor loading fix guide</a> first.</p>
+<h2>How to test mobile layouts properly</h2>
+<p>The editor preview is a resized desktop browser. It does not behave exactly like a phone: fonts render differently, the address bar changes the viewport height and touch menus behave differently. Before you sign off a change:</p>
+<ul><li>Test on at least one real Android phone and one iPhone if you can.</li><li>Use a private tab, so you are not logged in and see the cached page that visitors see.</li><li>Test both portrait and landscape.</li><li>Load the page on mobile data, not office Wi-Fi, because slow loading can make layouts jump.</li><li>Check forms, menus, WhatsApp and call buttons, which matter most on phones.</li></ul>
+<p>Most visitors to Indian business sites arrive on phones, so a layout that only looks right on desktop costs enquiries. If your site is also slow on phones, read <a href="/blog/wordpress-site-slow-on-mobile-fix/">why a WordPress site can be slow on mobile but fast on desktop</a>. If text or buttons move while the page loads, fix the image and font sizes that cause layout shift.</p>
+<h2>How to stop mobile problems coming back</h2>
+<ul><li>Build with containers and flexbox rather than fixed-width columns.</li><li>Set font sizes in global typography with mobile values, instead of on each widget.</li><li>Avoid duplicate desktop and mobile sections; use responsive settings on one element.</li><li>Make design changes on a <a href="/blog/staging-sites-explained/">staging site</a> and check all devices before pushing live.</li><li>After every Elementor update, check the home page, a service page and the contact page on a phone.</li></ul>
+<h2>When to get help</h2>
+<p>If the layout breaks only on certain phones, the cause is buried in theme CSS, or the page has years of duplicated sections, it is often quicker to have it cleaned up than to keep patching. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the problem sections with containers, remove duplicates and test on real devices. If speed is part of the problem, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> covers mobile performance as well. For ongoing fixes after updates, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+<h2>FAQs</h2><h3>Why is Elementor mobile view not working after I make changes?</h3><p>Usually the change was made with the desktop or tablet device active, or the mobile setting already had its own value. Check the device icon next to the setting, set the mobile value directly, click Update, regenerate CSS and clear all caches.</p>
+<h3>Why does my Elementor site look different on a real phone than in the editor?</h3><p>The editor preview is a resized desktop browser. Real phones use different widths, fonts and browser bars, and visitors see the cached page. Check breakpoints, clear caches and test in a private tab on the phone itself.</p>
+<h3>How do I fix horizontal scrolling on mobile in Elementor?</h3><p>Find the element wider than the screen: fixed pixel widths, negative margins, long headings, iframes or side entrance animations. Fix its width or margin on mobile. Overflow hidden on the section is a short-term fix only.</p>
+<h3>Should I change Elementor breakpoints?</h3><p>Only with a clear reason. The defaults suit most phones and tablets. Changing breakpoints affects every page, so test the whole site on staging before you change them on a live site.</p>
+<h3>Why is the Elementor mobile menu not working?</h3><p>Check the Nav Menu widget breakpoint and dropdown settings, then check optimisation plugins that delay or combine JavaScript. Excluding Elementor scripts from delay and minify settings often fixes a menu that will not open on phones.</p>
+<h3>Can someone fix my Elementor mobile layout for me?</h3><p>Yes. Share the page links and screenshots from your phone. A developer can rebuild the broken sections with responsive settings, remove duplicate mobile sections and test on real devices before going live.</p>
+`,
+  },
+  {
+    slug: 'elementor-not-saving-changes',
+    seoTitle: 'Elementor Not Saving Changes? How to Fix Update Errors',
+    title: 'Elementor Not Saving Changes? How to Fix the Update Button, Server Errors and Lost Edits',
+    description: 'Elementor not saving changes or the Update button keeps spinning? Fix server errors, memory limits, security rules and conflicts, and stop losing edits.',
+    date: '2026-10-31',
+    category: 'Maintenance',
+    related: ['elementor-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If Elementor is not saving changes, the editor is failing to send your page to the server. The most common causes are a server error (often shown as 500, 403 or a generic Server Error message), a PHP memory or input limit, a security or firewall rule blocking the request, or a plugin conflict. Before you try anything, copy important text to a document, then check the Revisions panel so you do not lose work.</p>
+<p>Then go through the checks below in order. Most sites are fixed by the first four.</p>
+<h2>Quick fix: try these first</h2>
+<ol><li>Note the exact message: Server Error 500, 403 Forbidden, 413, Request Timeout, or the Update button simply spinning.</li><li>Open the History panel, Revisions, and make sure a recent version exists before you reload.</li><li>Log out, clear the browser cache, log back in and try again in a private window with extensions off.</li><li>Raise the WordPress memory limit (ask your host if you cannot edit wp-config.php).</li><li>Temporarily pause the security plugin firewall or ask your host whether ModSecurity blocked the request, then try saving.</li></ol>
+<h2>Elementor not saving changes: what each error means</h2>
+<h3>Server Error 500</h3>
+<p>A 500 error means PHP crashed while saving. The cause is often a memory limit, a plugin error or a timeout. Check the PHP error log in hPanel or cPanel, or turn on WordPress debug logging on staging. If the log shows memory exhausted, read <a href="/blog/wordpress-memory-limit-errors/">how to fix WordPress memory limit errors</a>. If it names a plugin file, that plugin is your suspect.</p>
+<h3>403 Forbidden</h3>
+<p>A 403 while saving almost always means a firewall rule blocked the request. Elementor sends a large block of page data, and some content, such as code in an HTML widget, script tags or words that look like database commands, can trigger security rules. Wordfence, Sucuri, Cloudflare WAF and server ModSecurity are the usual sources. Look at the firewall log for a blocked request at the time you saved, then whitelist it or remove the content that triggered it.</p>
+<h3>413 Request Entity Too Large or timeouts</h3>
+<p>These mean the saved data was larger, or slower to process, than the server allows. Big pages with many sections, large galleries or pasted content from Word can hit this. Ask your host to raise the upload and post size limits and the execution time, and consider splitting the page.</p>
+<h3>The Update button keeps spinning</h3>
+<p>If nothing appears and the button spins forever, open the browser developer tools, Network tab, then click Update again. The admin-ajax request will show its status code. That code tells you which section above applies. A request that never finishes usually means a timeout or a very slow server.</p>
+<h2>The main causes, in the order to check them</h2>
+<h3>1. PHP memory and input limits</h3>
+<p>Elementor recommends a higher memory limit than a basic WordPress site needs. Check Elementor, System Info for the current memory limit and PHP version. Also look at max_input_vars: when a page has many widgets, a low value can make the server silently drop part of the data, so some changes save and others vanish. Your host can raise these values; on most Indian shared hosting plans this is a setting in the control panel.</p>
+<h3>2. Security plugins and firewalls</h3>
+<p>If saving fails only on one page, or only after you add a particular widget, a firewall rule is a strong suspect. Test by pausing the firewall briefly, saving, then turning it back on and whitelisting the rule. Never leave the firewall switched off.</p>
+<h3>3. Plugin and theme conflicts</h3>
+<p>Add-on packs for Elementor, old optimisation plugins and some form or SEO plugins can break the save request. On a staging copy, deactivate plugins except Elementor and Elementor Pro, test saving, then reactivate one at a time. <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">Our plugin conflict guide</a> explains how to do this without taking the live site down. Make sure Elementor and Elementor Pro are on matching versions.</p>
+<h3>4. Caching of admin requests</h3>
+<p>Some cache or CDN settings wrongly cache admin-ajax or REST requests, so the editor receives an old response. Make sure the admin area, admin-ajax.php and the REST API are excluded from caching in your plugin and in Cloudflare. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers which pages must never be cached.</p>
+<h3>5. Page size and structure</h3>
+<p>A page with hundreds of widgets, many nested inner sections and copied blocks is heavy to save and to load. Signs include slow editing and saving that works only after removing a few sections. Split long pages, convert old sections to containers, reuse global widgets or templates and set fonts and colours as global styles. The same steps help the issues in <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a>.</p>
+<h3>6. Session, login and SSL issues</h3>
+<p>If you are logged out while editing, or the site address uses http in one setting and https in another, the save request can fail authentication. Check that WordPress Address and Site Address in Settings, General both use https and the same domain, and that you are not editing from a staging or old URL.</p>
+<h2>Elementor not saving on shared hosting</h2>
+<p>Many small business sites in India run on shared hosting plans from providers such as Hostinger, GoDaddy, Bigrock or similar. These plans often start with conservative PHP limits and aggressive security rules. If saving fails, open the hosting control panel and look for PHP options or PHP configuration. There you can usually raise memory_limit, max_input_vars, max_execution_time and post_max_size without editing files. If you cannot find them, raise a support ticket that names the exact error code and the time you clicked Update; that makes it easier for the host to find the blocked request in their logs.</p>
+<p>If the host refuses to raise limits that Elementor needs, or saving remains slow on every page, the plan may simply be too small for the site. Moving to a better plan is often cheaper than hours of editing time lost to failed saves.</p>
+<h2>Elementor changes saved but not showing</h2>
+<p>If Update succeeds but the live page does not change, the save worked and the problem is caching or CSS. Regenerate CSS and Data under Elementor, Tools, then clear all caches. See <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a> for the details.</p>
+<h2>How to recover lost Elementor edits</h2>
+<ul><li>Open History, Revisions in the editor; Elementor keeps a revision each time you save and autosaves while you work.</li><li>If the editor offers an autosave newer than the saved version when you reopen it, review it before accepting.</li><li>Check the WordPress revisions screen for the page if Elementor revisions are missing.</li><li>Restore from your latest backup on staging and copy the content across if nothing else works.</li></ul>
+<p>This is why daily backups matter on a site that is edited often; see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> for a routine that includes them.</p>
+<h2>How to stop it happening again</h2>
+<ul><li>Keep PHP, Elementor and Elementor Pro updated, and test updates on a <a href="/blog/staging-sites-explained/">staging site</a>.</li><li>Ask your host for memory and input limits that suit Elementor before you build large pages.</li><li>Whitelist the Elementor editor in your firewall instead of disabling rules wholesale.</li><li>Save often while editing and avoid pasting formatted text straight from Word.</li></ul>
+<h2>When to get help</h2>
+<p>If saving fails even with plugins disabled and limits raised, the cause is usually on the server or in custom code. An <a href="/elementor-developer/">Elementor developer</a> can read the error logs, work with your host on limits and firewall rules and rebuild heavy pages so they save reliably. For regular care, see our <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
+<h2>FAQs</h2><h3>Why is Elementor not saving my changes?</h3><p>The editor cannot send the page data to the server. Usual causes are a PHP error or memory limit, a firewall rule, a plugin conflict, caching of admin requests or a very large page. The error code tells you where to start.</p>
+<h3>How do I fix Elementor Server Error 500 when saving?</h3><p>Check the PHP error log. Raise the memory limit if it says memory exhausted, or disable the plugin named in the log on staging. Ask your host to raise execution time if the request times out.</p>
+<h3>Why does Elementor show 403 Forbidden when I click Update?</h3><p>A security rule blocked the save request, often because of code in an HTML widget or certain words in the content. Check your security plugin, Cloudflare or host firewall log and whitelist the rule.</p>
+<h3>Why do only some of my Elementor changes save?</h3><p>A low max_input_vars value can make the server drop part of a large page. Ask your host to raise it, and split very long pages into smaller ones.</p>
+<h3>How do I recover Elementor changes that did not save?</h3><p>Open History, Revisions in the editor and check for an autosave. If nothing is there, check WordPress page revisions or restore a recent backup on staging and copy the content across.</p>
+<h3>Can someone fix Elementor saving problems for me?</h3><p>Yes. A developer can check the logs, server limits, firewall and plugins, fix the cause and test saving on staging, so you can edit the site again without losing work.</p>
 `,
   },
 ];
