@@ -709,3 +709,7 @@ main, footer, section { max-width: 100vw; }
 .review-head .g-logo { width: 20px; height: 20px; flex: none; }
 .review-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--violet); color: #fff; display: grid; place-items: center; font-weight: 700; flex: none; }
 .review:hover { border-color: var(--violet); }
+.review-text { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.review-text.open { display: block; -webkit-line-clamp: unset; }
+.review-more { align-self: flex-start; background: none; border: 0; padding: 0; color: var(--violet); font-weight: 600; cursor: pointer; font: inherit; font-weight: 600; }
+.review-more:hover { text-decoration: underline; }
