@@ -10072,6 +10072,8 @@ site:example.com/blog/ "net metering"</code></pre>
 </ul>
 <p>Some professions have rules about what they may say publicly, including restrictions on testimonials or advertising. If you're a doctor, advocate or other regulated professional, check your professional body's current guidance; <a href="/blog/personal-brand-website-professionals/">personal brand websites for professionals</a> covers this in more depth.</p>
 
+<p>For temples, religious trusts and NGOs, the About page sits next to the donation page, so the story, the trustees and the causes need to be clear. See <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>.</p>
+
 <h2>Examples by business type</h2>
 <p>All of the following are fictional, to show how the opening and the proof change with the business:</p>
 <table>
@@ -38968,6 +38970,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Whatever you show, make it clear that it is indicative and that the final quote follows measurement and design. See <a href="/blog/show-prices-on-website/">should you show prices on your website</a> for the trade-offs.</p>
 
+<p>If you supply kitchens to builders for new projects, their own sites need project pages, floor plans and enquiry forms. That is covered under <a href="/real-estate-website-design/">real estate website design for builders and agents</a>.</p>
+
 <h2>Build trust beyond the photos</h2>
 <ul>
 <li><strong>Showroom page:</strong> address, map, timings, parking, and photos of the displays so people know the visit is worthwhile</li>
@@ -39390,6 +39394,8 @@ add_action( 'after_setup_theme', function () {
 </table>
 <p>Each problem page should explain the cause in plain language, show two or three real jobs, describe your process step by step and end with the same clear call to action. Avoid copying manufacturer text: Google sees it on hundreds of sites, and owners can tell.</p>
 
+<p>Builders and property agents have different website needs from contractors: project pages, listings and site visit enquiries. See <a href="/real-estate-website-design/">websites for builders and property agents</a>.</p>
+
 <h2>Make the site inspection the main goal</h2>
 <p>Waterproofing work is almost never priced from a phone call. The inspection is where you assess the source of the leak, measure the area and recommend a method. So the website should make that first step feel easy and low-risk.</p>
 <ul>
@@ -39474,6 +39480,8 @@ add_action( 'after_setup_theme', function () {
   </tbody>
 </table>
 <p>During peak weeks, a banner such as "Next available slots from Thursday" saves frustration on both sides. <a href="/blog/seasonal-festival-campaigns-website/">Seasonal campaigns on your website</a> covers the planning side.</p>
+
+<p>Firms that handle wiring, inverters or solar installation as well as AC work can follow the same pattern. See <a href="/website-for-solar-and-power-companies/">website design for solar and electrical companies</a>.</p>
 
 <h2>Service pages and installation pages</h2>
 <p>People search for specific jobs, so each gets its own page:</p>
@@ -39614,6 +39622,8 @@ add_action( 'after_setup_theme', function () {
 </tbody>
 </table>
 <p>Many of these visitors are not technical. They will not search for &quot;4MP IP bullet camera&quot;; they search for &quot;CCTV camera installation for shop in Andheri&quot; or &quot;CCTV for society near me&quot;. Write for them first and keep the technical specifications on deeper pages.</p>
+
+<p>If your business also covers solar, inverters or general electrical work, those services need their own pages and quote forms; see <a href="/website-for-solar-and-power-companies/">websites for solar, power and electrical companies</a>.</p>
 
 <h2>Pages a website for CCTV installers needs</h2>
 <ul>
@@ -42380,6 +42390,8 @@ add_action( 'after_setup_theme', function () {
 </ol>
 <p>Avoid inflated claims such as guaranteed productivity gains. Buyers in HR see many of these and tend to trust specific, modest descriptions more.</p>
 
+<p>Training firms that also sell consulting can present experience and practice areas the same way; see <a href="/website-for-lawyers-and-consultants/">professional websites for consultants</a>.</p>
+
 <h2>Trainer profiles and proof of work</h2>
 <p>For many buyers, the trainer matters as much as the company. A good trainer profile includes a professional photo, years of experience, industries worked in, programme areas, languages and any certifications the trainer genuinely holds. A short video clip of the trainer speaking can help a buyer picture them in front of their team.</p>
 <p>For proof, case studies are the strongest asset, but corporate clients often restrict what can be said publicly. Ask permission before naming a company or using its logo. If a client prefers to stay unnamed, describe the industry and size instead, such as "a mid-sized manufacturing company in Pune". The guides on <a href="/blog/collect-display-customer-testimonials/">collecting testimonials</a> and the <a href="/blog/website-trust-signals-checklist/">website trust signals checklist</a> cover how to present proof without overstating it.</p>
@@ -43587,6 +43599,8 @@ add_action( 'after_setup_theme', function () {
 <h2>Real people and real photos</h2>
 <p>Stock photos of smiling strangers make a site feel generic. Replace them with real photos of your team, workshop, clinic, office, products or completed projects. Even simple phone photos, taken in good light, build more trust than polished stock images.</p>
 <p>An about page should say who runs the business, how long you have been working, where you are based and what you specialise in. The guide on how to <a href="/blog/write-about-page-that-builds-trust/">write an about page that builds trust</a> walks through it.</p>
+
+<p>Donors look for the same proof before they give. Temples and NGOs can show it with secure donation pages, emailed receipts and event updates; see <a href="/website-for-temples-and-ngos/">website design for temples, trusts and NGOs</a>.</p>
 
 <h2>Reviews, testimonials and proof of work</h2>
 <p>Proof from other customers often matters more than anything you say about yourself. Good options include:</p>
@@ -50241,6 +50255,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li>If you use glass bottles, explain the deposit, how empties are collected and what happens to broken ones</li>
 </ul>
 
+<p>Dairies that also run a sweet shop, bakery or cafe need menu pages, photos and ordering; see <a href="/website-for-restaurants/">websites for restaurants, cafes and food brands</a>.</p>
+
 <h2>The farm story, stated honestly</h2>
 <p>For a dairy, where the milk comes from is part of the product, and customers can tell when a story is vague. Specific details persuade; big adjectives do not.</p>
 <table>
@@ -50911,6 +50927,8 @@ Support:           who to contact, and on what terms</code></pre>
 
 <h2>Winning overseas work</h2>
 <p>Many Indian studios work for firms in the UK, US, Australia and the Middle East. For those clients, add a page that covers time-zone overlap, communication channels, file formats (Revit, SketchUp, 3ds Max, AutoCAD), confidentiality and payment methods. Show prices and turnaround in the client's terms where possible. A short sample-project offer, such as one test view on a fixed brief, lets a new overseas client judge quality before committing to a larger contract, and a page describing how files are stored and deleted after delivery answers the confidentiality question that many firms ask first. <a href="/blog/website-for-export-businesses/">Websites for export businesses</a> has more on building trust with international buyers.</p>
+
+<p>Your renders often end up on a builder's project pages. When a builder client needs that website too, with galleries, floor plans and lead capture, point them to <a href="/real-estate-website-design/">real estate websites for builders and developers</a>.</p>
 
 <h2>Local search for builders and architects</h2>
 <p>Many builders still search locally, for example "3D rendering services in Pune" or "architectural visualisation Mumbai". A Google Business Profile with real work photos, a services page per main offering (exterior rendering, interior rendering, walkthrough animation) and mentions of the cities you serve help you appear for those searches. Studios in large markets can learn from the <a href="/wordpress-shopify-developer-mumbai/">web developer in Mumbai</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a> pages, which describe how local projects are handled.</p>
@@ -55395,6 +55413,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ol>
 <p>Always get client permission before naming a project or showing drawings. Where you cannot name a client, describe the project type and city instead. For more on structure, see <a href="/blog/write-case-studies-business-website/">writing case studies for your business website</a>.</p>
 
+<p>The same approach applies to other professional practices. See <a href="/website-for-lawyers-and-consultants/">website design for consultants and professional firms</a>.</p>
+
 <h2>Credentials and trust signals done honestly</h2>
 <p>Engineering is a trust-heavy purchase, and buyers will check what you claim. Keep this section accurate:</p>
 <ul>
@@ -56853,6 +56873,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Share a few photos from the walk if guests agreed to be photographed.</li>
   <li>Add a "recommended next" section on each walk page, such as a food walk after a heritage walk.</li>
 </ul>
+
+<p>Hotels, resorts and homestays that run their own walks or tours need room pages and booking enquiries as well; see <a href="/hotel-website-design/">hotel and homestay website design</a>.</p>
 
 <h2>How it fits with travel businesses</h2>
 <p>If you also run multi-day tours, transport or packages, your site starts to look more like a travel agency site. <a href="/blog/website-for-travel-agencies/">Websites for travel agencies</a> covers itineraries and package pages, and <a href="/blog/website-for-homestays-bnbs/">websites for homestays</a> is useful if you host guests as well.</p>
@@ -59099,6 +59121,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li>How pricing is worked out, even if you do not publish fixed prices.</li>
 </ul>
 
+<p>If your drone business is a new startup that needs a credible site quickly, see <a href="/website-for-startups/">websites for startups and new businesses</a>.</p>
+
 <h2>Website for drone services: the pages to build</h2>
 <p>Separate pages let each audience find its own answers and give Google a clear page to rank for each search, such as &quot;drone survey company in Pune&quot; or &quot;drone shoot for wedding&quot;.</p>
 <table>
@@ -60754,6 +60778,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </tbody>
 </table>
 
+<p>If you also run a homestay or guest house, room bookings need their own pages and enquiry forms. See <a href="/hotel-website-design/">websites for hotels, resorts and homestays</a>.</p>
+
 <h2>Online booking for a bike rental business</h2>
 <p>A good booking system saves time for both you and the rider. On WordPress, a booking or rental plugin can handle this, often with WooCommerce for payments. The flow usually looks like this:</p>
 <ol>
@@ -61458,6 +61484,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Keep the site fast and simple on mobile, with tap-to-call and WhatsApp easy to find</li>
 </ul>
 <p>Insurance agents and investment advisors face similar trust and compliance questions; see <a href="/blog/website-for-insurance-financial-advisors/">websites for insurance agents and financial advisors</a>.</p>
+
+<p>Chartered accountants and financial consultants have similar needs: clear service pages, credentials and consultation requests. See <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>.</p>
 
 <h2>Website for loan agents: the pages to build first</h2>
 <p>A loan agent or DSA website does not need many pages to start. A focused structure works better than a long list of every product:</p>
@@ -65789,6 +65817,8 @@ any unused part of the advance refunded as agreed</code></pre>
 </table>
 <p>Treat this as a sequence, not a deadline. Some sites move faster, many move slower, depending on competition and the authority you can earn.</p>
 
+<p>If you are a startup building your first site, see <a href="/website-for-startups/">startup website development</a>: landing and product pages, a blog and analytics, on a WordPress site your team can edit.</p>
+
 <h2>Which pages to build first</h2>
 <p>Start where search intent is clear and competition is beatable:</p>
 <ol>
@@ -66277,6 +66307,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <li><strong>Fees and what is included:</strong> if you prefer not to publish fees, say what a package covers and how to get the current rates.</li>
 </ul>
 <p>A site that hides these behind a single &quot;Contact us&quot; page loses people to the academy that answered them openly.</p>
+
+<p>Schools and coaching institutes that offer swimming alongside academics need admission enquiries, courses and notice boards too; see <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>.</p>
 
 <h2>Pages a swimming class website needs</h2>
 <table>
@@ -69393,6 +69425,8 @@ RewriteRule . /index.php [L]
 </tbody>
 </table>
 <p>Shopify suits brands wanting a quick, reliable launch with less technical upkeep. WooCommerce suits stores that want more control, a strong content section, or custom delivery and pricing rules. See <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> and <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> to compare the practical side.</p>
+
+<p>If you also run a cafe or a food brand, a menu that works on phones and table or order enquiries matter more than a catalogue. See <a href="/website-for-restaurants/">restaurant and cafe websites</a>.</p>
 
 <h2>Catalogue and product pages</h2>
 <p>Organise categories the way customers shop: staples, grains and millets, pulses, oils and ghee, spices, sweeteners, snacks, personal care, and fresh produce if you sell it. Each product page should include:</p>
@@ -75640,6 +75674,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li><strong>Low-cost or free offers</strong> where explaining more would only add friction.</li>
 </ul>
 <p>A squeeze page only pays off if there is a follow-up. Without an email sequence or a sales call process, you are simply collecting addresses. Set up the follow-up first; our guide on <a href="/blog/email-newsletter-small-business/">email newsletters for small businesses</a> covers the basics.</p>
+
+<p>Startups usually need several landing pages for sign-ups and demo requests. See <a href="/website-for-startups/">startup websites built to convert</a>.</p>
 
 <h2>When a full landing page is the better choice</h2>
 <ul>
