@@ -10635,6 +10635,8 @@ wp option update blog_public 0</code></pre>
 
 <p>Staging is also the safest way to test a host change. Here is how to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a> and check everything before switching DNS.</p>
 
+<p>Staging is also the safe place to test speed changes such as caching settings; see <a href="/blog/hostinger-website-slow-fix/">why a Hostinger site is slow and what to fix first</a>.</p>
+
 <h2>Pushing changes from staging to live</h2>
 <p>Always take a fresh backup of the live site first; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</p>
 <h3>Brochure and business sites</h3>
@@ -11813,6 +11815,8 @@ wp option update blog_public 0</code></pre>
 <h2>Finance, insurance and exchange enquiries</h2>
 <p>Buyers often want to know whether they can get a loan or trade in their current car before they visit. An enquiry form for each is useful, but be careful with wording. Unless you are a lender, say that you help arrange finance through banks or finance companies, that approval and interest rates are decided by the lender, and that figures shown are examples. Do not show a "guaranteed approval" message or an EMI that assumes a rate nobody has offered. For insurance, describe whether you assist with renewal or transfer, and through whom.</p>
 <p>An exchange form should ask for make, model, year, kilometres, ownership and a few photos, and should make clear that the final value is given after inspection.</p>
+
+<p>When a dealership switches manufacturer or a workshop renames itself, the website, Google listing and signage all need to change together; see <a href="/blog/rebranding-your-website/">how to rebrand your website without losing rankings</a>.</p>
 
 <h2>Local search for showrooms and workshops</h2>
 <p>Most car business customers search near where they live or work. A Google Business Profile for each location, with the right primary category, accurate hours and photos of your actual premises and team, matters as much as the website. On the site, give every branch its own page with its address, map, services and phone number, and keep the name, address and phone number identical across the site and profiles. <a href="/blog/google-business-profile-checklist/">The Google Business Profile checklist</a> goes through the settings. If you also sell spares, <a href="/blog/website-for-auto-parts-dealers/">websites for auto parts dealers</a> covers part lookups and catalogues.</p>
@@ -21918,6 +21922,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 </ol>
 <p>Health questionnaires collect sensitive personal data, so ask for them after the enquiry, through a secure form or the consultation itself, rather than on the public enquiry form. Advances can be collected through a payment gateway or a payment link; <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a> covers the options, including international cards.</p>
 
+<p>Residential retreats that sell room nights on OTAs as well as their own site face the same double-booking risk as hotels. <a href="/blog/hotel-booking-engine-channel-manager/">How a booking engine and channel manager work together</a> explains how to keep availability in sync.</p>
+
 <h2>Photos and design that match the experience</h2>
 <p>Calm design fits the subject, but rich imagery can make a site slow, which hurts guests on mobile data abroad as much as at home. Use real photos of treatment rooms, the dining area, rooms and grounds, compressed properly, and a short video of the daily routine. Yoga is part of many programmes; if you also run regular classes for local students, <a href="/blog/website-for-yoga-studios-teachers/">websites for yoga studios and teachers</a> covers timetables and batches.</p>
 
@@ -25762,6 +25768,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <h2>Regulated professions and legal points</h2>
 <p>Some professions, such as law and medicine, have rules on advertising and on how fees can be presented. Check your professional body's current guidelines before publishing fees. If you sell directly to consumers, check the current rules on showing prices, including taxes and charges; your CA or lawyer can confirm what applies to you.</p>
 
+<p>The same thinking applies when you are the buyer: prices for the same brief can vary widely, and the gaps usually come from scope. Here is <a href="/blog/compare-website-quotes/">why website quotes are so different, and how to compare them</a>.</p>
+
 <h2>How to tell whether it's working</h2>
 <p>Add price guidance to one important page, then compare the following month or two with the period before: the number of enquiries, how many were a good fit, and how many became customers. Track form submissions, calls and WhatsApp clicks as key events, as <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows, and keep a simple lead sheet with the source and outcome of each enquiry. Fewer but better enquiries is often a good result. <a href="/blog/conversion-rate-optimization-basics/">Conversion rate optimisation basics</a> covers testing one change at a time.</p>
 
@@ -26908,6 +26916,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li><strong>Mailboxes sit inside the developer's Google Workspace or Zoho account,</strong> so your business email depends on their subscription.</li>
 </ul>
 <p>Most of these began as shortcuts, not bad intent, and they're far easier to fix while the relationship is good.</p>
+
+<p>Ownership terms are one of the quiet differences between a cheap quote and a fair one. When you <a href="/blog/compare-website-quotes/">compare website quotes side by side</a>, check who will own the domain, hosting and theme licences.</p>
 
 <h2>Make ownership part of the project from day one</h2>
 <p>Ownership is easiest to get right before work starts. Ask for these in writing:</p>
@@ -31272,6 +31282,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   </tbody>
 </table>
 <p>Each clear version says where the problem is, what's wrong and why it matters, so the designer can find it and suggest the right fix.</p>
+
+<p>How many revision rounds are included is often what separates two quotes for the same site, so check it before you sign. See <a href="/blog/compare-website-quotes/">how to compare quotes from web developers</a>.</p>
 
 <h2>What to review at each stage</h2>
 <p>Feedback is most useful when it matches the stage the project is at:</p>
@@ -35977,6 +35989,8 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 </table>
 <p>Whatever you decide, make sure renewal emails go to an address someone reads and that the card on file won't expire before the date.</p>
 
+<p>If speed is part of the reason you want to leave, check whether the plan or the site is the bottleneck first. <a href="/blog/hostinger-website-slow-fix/">Fixing a slow WordPress site on Hostinger</a> walks through the checks.</p>
+
 <h2>Is switching hosts worth it?</h2>
 <p>Moving every few years to chase introductory pricing can work, but each move takes effort and carries some risk to email, DNS and SSL if it's done carelessly. For a business site, reliability, speed and helpful support usually matter more than saving a small amount a year.</p>
 <p>Moving makes sense when:</p>
@@ -36400,6 +36414,8 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>Send the plugin's test email, then submit your real contact form and check the inbox.</li>
 </ol>
 <p>Mailboxes have sending limits, so a busy store sending order emails may need a transactional email service instead. <a href="/blog/wordpress-not-sending-emails-smtp/">Fixing WordPress emails with SMTP</a> covers that choice, and <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a> covers the problems that aren't about email.</p>
+
+<p>If the site itself feels sluggish on the same plan, work through <a href="/blog/hostinger-website-slow-fix/">how to fix a slow Hostinger website</a> before deciding to move.</p>
 
 <h2>Switching providers or moving hosts</h2>
 <p>Email and website hosting are separate services, and most email disasters happen when one is changed without thinking about the other.</p>
@@ -37876,6 +37892,8 @@ add_action( 'wp_enqueue_scripts', function () {
   <li><strong>Choose a classic or custom theme</strong> when the build depends on complex PHP templates, heavy custom fields or plugins that don't yet support block templates well, or when you are extending an existing classic site; <a href="/blog/custom-wordpress-theme-development/">custom theme development</a> covers that route.</li>
 </ul>
 <p>Check plugin support before committing. Most current plugins work with block themes, and WooCommerce provides block templates for the shop, product, cart and checkout, but some older plugins still assume classic theme hooks or widgets. <a href="/blog/figma-to-wordpress-approaches/">Choosing a build approach for a Figma design</a> compares all the options in more depth.</p>
+
+<p>Agencies without an in-house developer often hand block theme builds to a partner. For what to check before you do, see <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>
 
 <h2>A sensible workflow for agency block theme builds</h2>
 <ol>
@@ -39705,6 +39723,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Describe only what you can genuinely deliver. If you rely on partner installers outside your city, say so; procurement teams will ask anyway.</p>
 
+<p>Rollout clients are often in the middle of a rebrand, and their website has to change on the same date as their shopfronts. Sharing <a href="/blog/rebranding-your-website/">a website rebranding checklist</a> with them is a useful way to start the conversation.</p>
+
 <h2>Local SEO for signage businesses</h2>
 <p>Most signage enquiries come from local searches. Get the basics right:</p>
 <ul>
@@ -40084,6 +40104,8 @@ add_action( 'after_setup_theme', function () {
   <li>Eligibility, upcoming dates and an application form with a few screening questions</li>
 </ul>
 <p>Registration schemes and their requirements change, so check the current rules of any body you mention, and don't suggest a certificate qualifies graduates for something it doesn't.</p>
+
+<p>If your retreats include accommodation listed on booking sites, see <a href="/blog/hotel-booking-engine-channel-manager/">booking engine vs channel manager for hotels and retreats</a> before you add a booking form.</p>
 
 <h2>Safety, health claims and disclaimers</h2>
 <p>People often search for yoga alongside back pain, stress, PCOS, thyroid problems or diabetes. You can describe classes designed for particular groups, but be careful with the wording:</p>
@@ -45945,6 +45967,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Recent WooCommerce versions also include a block-based email editor and a live preview. If your version has it, it is the easiest way to adjust layout and wording without code.</p>
 
+<p>Use the same logo file in your emails that your site header uses, sized for small screens. <a href="/blog/logo-favicon-brand-basics-website/">Which logo files and favicon sizes a website needs</a> covers the formats to keep ready.</p>
+
 <h2>What to put in Indian order emails</h2>
 <ul>
   <li><strong>Clear order summary:</strong> items, variants, quantities, prices and totals including tax and shipping.</li>
@@ -49026,6 +49050,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>Doctors, lawyers and financial advisers may be subject to professional rules on what they can say and promise online. Check those with your professional body or lawyer before publishing.</p>
 
+<p>Your terms should match how you actually bill. For stores, <a href="/blog/woocommerce-gst-invoices-india/">setting up GST-compliant invoices in WooCommerce</a> covers the GSTIN, HSN codes and invoice numbering your terms may refer to.</p>
+
 <h2>Where to place your terms on the website</h2>
 <ul>
 <li><strong>Footer link</strong> on every page, next to privacy policy and contact.</li>
@@ -50158,6 +50184,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Give each service page a distinct title, description and heading structure</li>
 </ul>
 <p>If the metrics are new to your team, <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> is a plain-English starting point.</p>
+
+<p>Small brand details give a careless impression when they are missing, such as a blurry header logo or the default browser icon. Check them against <a href="/blog/logo-favicon-brand-basics-website/">this logo, favicon and brand basics checklist</a>.</p>
 
 <h2>A pre-launch checklist for an agency website</h2>
 <ul>
@@ -53236,6 +53264,8 @@ Support:           who to contact, and on what terms</code></pre>
 </ul>
 <p>The guide on <a href="/blog/payment-gateways-india-compared/">payment gateways in India compared</a> compares the main options.</p>
 
+<p>If you sell courses through WooCommerce, set up compliant tax invoices from the first sale; see <a href="/blog/woocommerce-gst-invoices-india/">GST invoices in WooCommerce for Indian sellers</a>.</p>
+
 <h2>Video hosting and protecting your content</h2>
 <p>Uploading lecture videos directly to your WordPress media library is one of the most common mistakes. Large video files slow the site, eat hosting space and are easy to download. A better approach is to host videos on a dedicated video platform and embed them in lessons.</p>
 <p>When choosing a video host, check that it can restrict playback to your own domain, hide the video from public search, play smoothly on mobile networks and offer adaptive quality for slower connections. No method makes videos impossible to copy, but these settings make casual sharing much harder.</p>
@@ -55490,6 +55520,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>Site name setting:</strong> WordPress Settings, General, Site Title should be your business name, which Google may use as the site name in results.</li>
 </ul>
 
+<p>A clear logo in the header and a proper favicon also help Google connect your site to your brand in results; see <a href="/blog/logo-favicon-brand-basics-website/">logo and favicon basics for your website</a>.</p>
+
 <h2>Step 3: add Organization or LocalBusiness structured data</h2>
 <p>Structured data tells search engines your official name, logo, address, phone and social profiles in a machine-readable way. Most SEO plugins can add Organization or LocalBusiness markup. Make sure it includes:</p>
 <ul>
@@ -55960,6 +55992,8 @@ Support:           who to contact, and on what terms</code></pre>
     body: `
 <p>A website for franchise brands has to serve two audiences: customers looking for products and the nearest outlet, and prospective partners deciding whether to invest. The franchise section should explain each format, break down costs honestly, describe support, qualify applicants with a short form and show where you already operate. A single &quot;Contact us for franchise&quot; banner sends serious investors elsewhere.</p>
 <p>This guide covers consumer franchise brands in India: food and beverage, retail, education, salons, fitness and services. If you run a PCD pharma franchise company appointing distributors, see <a href="/blog/website-for-pharma-franchise-companies/">websites for PCD pharma franchise companies</a> instead.</p>
+
+<p>Franchise networks that update their logo or name need every outlet page to change together. <a href="/blog/rebranding-your-website/">Rebranding your website step by step</a> covers the order to do it in.</p>
 
 <h2>Two audiences, one website</h2>
 <ul>
@@ -56779,6 +56813,8 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>GST:</strong> Indian business buyers want a GST invoice; ask for the GSTIN only if you need it at quote stage.</li>
   <li><strong>Export enquiries:</strong> add country, incoterms preference and port if you sell abroad. <a href="/blog/website-for-export-businesses/">Websites for export businesses</a> covers international buyers' expectations.</li>
 </ul>
+
+<p>B2B buyers who order online will need a proper tax invoice for input credit. <a href="/blog/woocommerce-gst-invoices-india/">How to generate GST invoices in WooCommerce</a> shows how to capture the buyer's GSTIN at checkout.</p>
 
 <h2>Routing, acknowledgement and storage</h2>
 <p>What happens after submit decides whether the form wins business:</p>
@@ -70180,6 +70216,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 </table>
 <p>Many agencies combine them, for example an outcome-based maintenance scope for ten care-plan sites plus a small hours bank for ad hoc requests. The billing trade-offs are similar to <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly projects</a>.</p>
 
+<p>If you are still choosing who would carry the retainer, read <a href="/blog/outsource-wordpress-development-india/">how to outsource WordPress development to India</a> first; it covers how to choose a partner and agree payment terms.</p>
+
 <h2>Writing the scope</h2>
 <table>
   <thead><tr><th>Usually inside the retainer</th><th>Usually quoted separately</th></tr></thead>
@@ -74900,6 +74938,8 @@ done</code></pre>
 <p>Some products follow a daily rate, such as precious metal items or commodities. Here one rate is entered each day and every linked product recalculates from weight and making charges. The plugin should record which rate applied to each order.</p>
 <h3>B2B orders with GST details</h3>
 <p>Business buyers expect prices shown before tax, GSTIN captured at checkout and a proper tax invoice. The pricing plugin needs to work alongside your invoice plugin rather than against it. <a href="/blog/rfq-forms-b2b-websites/">Request-for-quote forms</a> are a good companion when some orders are too large or complex for fixed prices.</p>
+
+<p>Many store owners and agencies have custom plugins like this built by a remote team. <a href="/blog/outsource-wordpress-development-india/">Outsource WordPress development in India</a> explains how to scope, test and pay for that kind of work safely.</p>
 
 <h2>How to brief a developer</h2>
 <p>Send your rules document, a list of affected products, screenshots of how you want prices displayed, and any sample price files. Mention which plugins you already use for tax, invoices, subscriptions or multi-currency, because pricing must work with them. Ask the developer to confirm the rules back to you in their own words before quoting. Misunderstandings found at that stage cost nothing to fix.</p>
