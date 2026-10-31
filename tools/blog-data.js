@@ -1857,7 +1857,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
     description: 'How long does it take to build a WordPress website? Timelines by site type, from landing pages to WooCommerce stores, each stage, and what causes delays.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-31',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
@@ -1944,6 +1944,21 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Can a WordPress website be built faster?</h2>
 <p>Yes, within reason. A landing page or a small site can go live in a few days if content is ready and decisions are quick. For urgent launches, the best approach is to launch the essential pages first, usually home, services, about and contact, and add the rest in a second phase. What I don't recommend is skipping testing: a form that silently fails or a broken mobile menu costs far more than the day it saved.</p>
 <p>Ready-made themes and page builders like Elementor are a big part of why WordPress is quick to build with. If you're weighing WordPress against a fully custom build, <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a> compares time to launch as well as cost and editing.</p>
+
+<h2>A sample week-by-week timeline for a small business website</h2>
+<p>For a 5–8 page business website where the content is ready on day one, a realistic schedule looks like this:</p>
+<table>
+  <thead><tr><th>When</th><th>What happens</th><th>What you do</th></tr></thead>
+  <tbody>
+    <tr><td>Days 1–2</td><td>Brief agreed, sitemap and page list fixed</td><td>Send text, photos, logo and logins</td></tr>
+    <tr><td>Days 3–5</td><td>Homepage design, then inner page layouts</td><td>Give one round of combined feedback</td></tr>
+    <tr><td>Days 6–9</td><td>Pages built, forms, WhatsApp and maps added</td><td>Check contact details and service names</td></tr>
+    <tr><td>Days 10–12</td><td>Testing on phones, speed checks, final fixes</td><td>Review on your own phone and approve</td></tr>
+    <tr><td>Launch day</td><td>Domain connected, sitemap submitted</td><td>Send a test enquiry</td></tr>
+  </tbody>
+</table>
+<p>For a WooCommerce store, add roughly one to two weeks to this plan for products, payment gateway approval such as Razorpay, shipping zones, GST settings and test orders. For a landing page, the same steps simply happen faster, often within a single working week. Either way, the order of work stays the same: brief, design, build, content, testing and launch, and skipping the testing step to save a day usually costs more time after launch.</p>
+<p>Each day of late content or slow feedback moves the launch by about a day. If you need a dependable date, it helps to <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> who agrees the schedule in writing at the start.</p>
 
 <h2>Plan your launch date backwards</h2>
 <p>If you need the site live for a campaign, an exhibition or the festival season, work backwards from that date:</p>
@@ -8100,7 +8115,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Portfolio Websites for Freelancers, Photographers and Creatives: What to Include and How to Win Clients',
     description: 'How to build a portfolio website as a freelancer, photographer or designer: what to include, curating work, case studies, pricing signals, speed and SEO.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-10-31',
     category: 'Growth',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
@@ -8221,6 +8236,28 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <h2>Which platform to build it on</h2>
 <p>WordPress suits most freelancers who want to grow the site over time: portfolio themes and Elementor give you full control of the layout, you can add a blog, client galleries or a shop later, and you own everything. Hosted builders such as Squarespace or Wix are quicker to start with, but give you less control and are harder to move away from. My own site is a static, custom-coded build because I'm a developer and publish a lot of pages; for most creatives, that's more work than it's worth, because every update needs code.</p>
+
+<h2>How to structure a portfolio project page, step by step</h2>
+<p>Most portfolio sites show pretty thumbnails and then a page of images with no words. Clients hiring a freelancer want to know whether you can solve a problem like theirs, so give every featured project the same simple structure:</p>
+<ol>
+  <li><strong>Title and one-line summary:</strong> the client type, what you made and the outcome, in plain words.</li>
+  <li><strong>The brief:</strong> two or three sentences on what the client needed and any constraints, such as budget, deadline or brand rules.</li>
+  <li><strong>Your role:</strong> what you did yourself and what others did, so nobody is misled.</li>
+  <li><strong>Process:</strong> a few sketches, drafts or before-and-after shots that show your thinking.</li>
+  <li><strong>Final work:</strong> your strongest images first, sized for phones.</li>
+  <li><strong>Result or feedback:</strong> only what actually happened or what the client really said.</li>
+  <li><strong>Next step:</strong> a short line and a button to enquire about a similar project.</li>
+</ol>
+<table>
+  <thead><tr><th>Portfolio mistake</th><th>Better approach</th></tr></thead>
+  <tbody>
+    <tr><td>Showing every project you've done</td><td>Show 6–12 that match the work you want</td></tr>
+    <tr><td>Images with no context</td><td>Add the brief, your role and the outcome</td></tr>
+    <tr><td>Contact page hidden in the footer</td><td>Put an enquiry button on every project page</td></tr>
+    <tr><td>Huge uncompressed photos</td><td>Resize and serve WebP</td></tr>
+  </tbody>
+</table>
+<p>If you'd rather have this set up for you, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build reusable project page templates so adding new work takes minutes.</p>
 
 <h2>A launch checklist for your portfolio</h2>
 <ul>
@@ -10564,7 +10601,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely',
     description: 'Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-10-31',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'website-redesign', 'wordpress-migration'],
     body: `
@@ -10649,6 +10686,26 @@ wp option update blog_public 0</code></pre>
   <li><strong>For big changes</strong>, such as a redesign, plan the switch for a quiet hour, keep a short list of settings to apply, and test a real order afterwards.</li>
 </ul>
 <p>Stores have more to check than other sites; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine.</p>
+
+<h2>Staging site vs local site vs backup: which do you need?</h2>
+<p>People often mix up these three. They do different jobs, and a careful setup uses more than one:</p>
+<table>
+  <thead><tr><th>Option</th><th>What it is</th><th>Best for</th><th>Limits</th></tr></thead>
+  <tbody>
+    <tr><td>Staging site</td><td>A private copy on your hosting server</td><td>Testing updates, redesigns and new plugins on the same server setup as live</td><td>Uses hosting space; pushing to live needs care on stores</td></tr>
+    <tr><td>Local site</td><td>A copy on your own computer, using a tool like Local or XAMPP</td><td>Developers building features or themes offline</td><td>Server settings differ from your host, so some problems only appear live</td></tr>
+    <tr><td>Backup</td><td>A saved snapshot of files and database</td><td>Rolling back when something breaks</td><td>Doesn't let you test anything before visitors see it</td></tr>
+  </tbody>
+</table>
+<p>For most small business sites, the simple answer is: always take a backup, and use staging for anything bigger than routine minor updates. Local sites matter mainly to developers.</p>
+<h3>Signs your change should go through staging first</h3>
+<ul>
+  <li>A major update to WordPress, WooCommerce, your page builder or theme.</li>
+  <li>A PHP version change suggested by your host.</li>
+  <li>A new plugin that touches checkout, forms, caching or security.</li>
+  <li>Design changes to the header, menu or homepage.</li>
+</ul>
+<p>If you don't have the time to manage staging yourself, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to test and push changes for you.</p>
 
 <h2>A safe staging workflow</h2>
 <ol>
