@@ -100,7 +100,8 @@ form.addEventListener("submit", async e => {
   e.preventDefault();
   const f = e.target;
   // Bots fill the hidden field or submit instantly: silently ignore them
-  if (f["bot-field"].value || Date.now() - loadedAt < 3000) return;
+  if (f["bot-field"].value) return;
+  if (Date.now() - loadedAt < 3000) { setMsg("Please check your details and press Send again."); return; }
   if (parseInt(captchaInput.value, 10) !== captchaAnswer) {
     formError.textContent = "That answer isn't right. Please try the new question.";
     newCaptcha();
