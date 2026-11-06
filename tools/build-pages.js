@@ -166,7 +166,7 @@ const render = p => {
     '@graph': [
       {
         '@type': 'Service', '@id': `${url}#service`, name: plainH1, serviceType: p.nav, description: p.description, url,
-        areaServed: p.areaServed ? p.areaServed.map(name => ({ '@type': 'City', name })) : 'Worldwide',
+        areaServed: p.areaServed ? p.areaServed.map(name => typeof name === 'string' ? { '@type': 'City', name } : name) : 'Worldwide',
         provider: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/`, telephone: '+91-7417049145' },
       },
       {

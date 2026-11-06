@@ -1863,6 +1863,28 @@ module.exports = {
 <p>Send me your current website or social page for a free review and a fixed quote.</p>
 `,
   'shopify-developer': `
+<h2>Shopify services, one developer</h2>
+<ul>
+<li><strong>Store setup.</strong> A new store set up from scratch: theme, products and collections, payments, shipping, taxes, domain and launch checks. <a href="/blog/shopify-store-setup-india/">How to set up a Shopify store in India</a> walks through the steps.</li>
+<li><strong>Theme customisation and Figma to Shopify.</strong> Sections and templates edited in Liquid, CSS and JavaScript, or a Figma design turned into a working Online Store 2.0 theme. See <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a>.</li>
+<li><strong>App setup and clean-up.</strong> Only the apps the store needs, configured properly, with unused apps and their leftover code removed.</li>
+<li><strong>Speed.</strong> Scripts, images and widgets trimmed so the store loads quickly on phones. <a href="/blog/shopify-store-slow-fix/">Why a Shopify store is slow</a> covers the usual causes.</li>
+<li><strong>Shopify SEO.</strong> Titles, descriptions, collection pages, structured data and redirects. The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> lists what gets checked.</li>
+<li><strong>Migration.</strong> Stores moved from WooCommerce, WordPress or Wix to Shopify, or the other way, with 301 redirects. See <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a>.</li>
+<li><strong>Monthly support.</strong> Theme edits, new banners and sections, app checks and fixes when something breaks, on an agreed monthly scope.</li>
+</ul>
+<h2>Shopify developer in Pune, working with stores across India</h2>
+<p>Samverse is based in Pune and works remotely with Shopify stores across India, over WhatsApp, calls and screen sharing, so the city you sell from makes no difference to how the project runs. If you are in Pune and prefer to meet in person, that can be arranged. For other cities, see Shopify store development in <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-bangalore/">Bangalore</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, or the <a href="/wordpress-shopify-developer-india/">India-wide page</a>.</p>
+<h2>What a Shopify project costs</h2>
+<p>Every project gets a fixed quote after a free review, so you know the full price before work starts. The total is made of these parts:</p>
+<ul>
+<li><strong>Your Shopify plan</strong>, billed by Shopify, plus GST on Shopify's charges.</li>
+<li><strong>A theme</strong>: a free Shopify theme or a one-time paid Theme Store theme.</li>
+<li><strong>Apps</strong>: many are free and many are billed monthly, so the list is kept short.</li>
+<li><strong>Payment gateway fees</strong> charged per order by Razorpay, PayU, Cashfree or similar, plus any Shopify transaction fee for third-party gateways on your plan.</li>
+<li><strong>Setup and customisation work</strong>: the one-time development work, quoted as a fixed price.</li>
+</ul>
+<p><a href="/blog/shopify-store-cost-india/">Shopify store cost in India</a> separates one-time and monthly costs in more detail.</p>
 <h2>How a Shopify project runs, step by step</h2>
 <p>Whether the store is brand new or already taking orders, the work follows the same order, so nothing reaches your customers before you have seen and approved it. On a recent Shopify build for a fashion brand, the work covered each of these stages: theme setup and customisation, products and collections, payments, shipping and checkout, and apps, speed and SEO basics.</p>
 <ol>

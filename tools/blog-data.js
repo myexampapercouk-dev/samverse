@@ -865,12 +865,25 @@ module.exports = [
     title: 'WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores',
     description: 'WooCommerce vs Shopify for Indian stores: running costs, transaction fees, Razorpay and UPI, GST invoices, COD, Shiprocket, apps vs plugins and ownership.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'shopify-developer', 'wordpress-speed-optimization'],
     body: `
 <p>For most small and growing Indian online stores, WooCommerce is the better fit: there is no platform fee, you pay only your payment gateway's charges, cash on delivery, GST and shipping rules can be set exactly how you work, and the store, data and content are fully yours. Shopify is the better fit if you want a hosted store where hosting, security and updates are handled for you, and you accept a monthly plan, monthly app costs and any Shopify transaction fee that applies to third-party gateways.</p>
 <p>I build WooCommerce stores, so read this with that in mind; if Shopify genuinely suits a store better, I say so. If you want a <a href="/woocommerce-developer/">WooCommerce developer in India</a> to set up payments, COD, GST and shipping properly, that page explains how I work. This comparison is store-specific; for business websites in general, including Wix, see <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
+
+<h2>Verdict by store type</h2>
+<table>
+  <thead><tr><th>Store type</th><th>Usually the better fit</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Small catalogue or D2C brand, nobody technical</td><td>Shopify</td><td>Hosting, security and updates are handled, and the admin is easy to learn</td></tr>
+    <tr><td>Small catalogue or D2C brand watching running costs</td><td>WooCommerce</td><td>No platform fee or transaction fee, only hosting and gateway charges</td></tr>
+    <tr><td>Large catalogue with many variants and filters</td><td>Either, planned carefully</td><td>Shopify needs apps for advanced filters; WooCommerce needs good hosting</td></tr>
+    <tr><td>Content-heavy store with guides and a blog</td><td>WooCommerce</td><td>Full WordPress for content and SEO</td></tr>
+    <tr><td>B2B or wholesale with dealer pricing</td><td>WooCommerce</td><td>Custom pricing rules and order flows without monthly app fees</td></tr>
+  </tbody>
+</table>
+<p>Leaning towards Shopify? See <a href="/shopify-developer/">Shopify store setup in Pune and across India</a>. Leaning towards WooCommerce? See <a href="/woocommerce-developer/">WooCommerce development</a>. The rest of this guide explains the reasoning behind each row.</p>
 
 <h2>WooCommerce vs Shopify for Indian stores at a glance</h2>
 <table>
@@ -970,6 +983,9 @@ module.exports = [
 <p>Platform fees are only one part of the budget. For build costs by type of store, see <a href="/blog/ecommerce-website-cost-india/">how much an e-commerce website costs in India</a>.</p>
 
 <p>I build on both platforms for businesses across India, for example in <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a> and <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>.</p>
+
+<h2>When to get help</h2>
+<p>If you have chosen a platform and want it set up properly, with Indian payments, COD, GST invoices and shipping tested before launch, get a fixed quote after a free review: <a href="/shopify-developer/">Shopify development in India</a> or <a href="/woocommerce-developer/">WooCommerce development</a>. Since Samverse builds on both, the advice is about your store, not a preference for one platform.</p>
 
 <h2>FAQs</h2>
 <h3>Is WooCommerce cheaper than Shopify in India?</h3>
@@ -8944,7 +8960,7 @@ wp cache flush</code></pre>
   <li><strong>Testing.</strong> Run key products through the Rich Results Test and the Schema Markup Validator, then watch the Product snippets and Merchant listings reports in Search Console.</li>
 </ul>
 
-<p>Running a Shopify store instead? The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the same ground there, including duplicate collection paths for products and tag pages.</p>
+<p>Running a Shopify store instead? The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the same ground there, including duplicate collection paths for products and tag pages, and <a href="/shopify-developer/">Shopify SEO and theme fixes</a> are part of the Shopify service.</p>
 
 <h2>Step 7: Control filter, sort and variation URLs</h2>
 <p>Every combination of colour, size, price and sort order can become a new URL, and thousands of near-identical pages waste Google's crawling. A sensible default:</p>
@@ -12857,7 +12873,7 @@ function my_only_free_shipping( $rates ) {
 <h2>Pin code serviceability</h2>
 <p>Zones limited to specific pin codes stop orders to areas you can't serve, but WooCommerce's default "no shipping options" message at checkout is unfriendly and comes late. A checker on the product page tells shoppers about delivery and COD before they reach checkout, using your own pin code list or your courier's live serviceability data; see <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers for WooCommerce</a>.</p>
 
-<p>Setting up a Shopify store instead? <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers profiles, zones, pin code checks, courier apps, NDR and RTO there.</p>
+<p>Setting up a Shopify store instead? <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers profiles, zones, pin code checks, courier apps, NDR and RTO there, and <a href="/shopify-developer/">Shopify store setup</a> can handle the configuration for you.</p>
 
 <p>Running a Shopify store instead? The guide to <a href="/blog/shopify-pincode-checker-india/">Shopify pin code and COD checkers</a> covers the same serviceability question on that platform.</p>
 
@@ -25265,7 +25281,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <li><strong>Hosting location and speed</strong> suit an Indian audience; test the site on mobile data, not just office Wi-Fi.</li>
 <li><strong>Email</strong> sent from the website (form notifications, order emails) actually reaches your inbox and not spam.</li>
 </ul>
-<p>If you are launching a Shopify store instead, check that the password page is removed, the payment provider is live, shipping rates and COD rules are correct for your delivery areas, and the store domain is connected with HTTPS.</p>
+<p>If you are launching a Shopify store instead, check that the password page is removed, the payment provider is live, shipping rates and COD rules are correct for your delivery areas, and the store domain is connected with HTTPS. <a href="/shopify-developer/">Shopify launch help</a> covers these checks if you want them done for you.</p>
 <p>Write the results down. A short launch log makes it much easier to fix problems that only show up after the first real visitors arrive.</p>
 
 <p>Not sure what your terms page should say? See <a href="/blog/website-terms-and-conditions/">what website terms and conditions usually cover</a>.</p>
@@ -26706,7 +26722,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li>Show the GSTIN on the invoice, the admin order screen and the order emails; see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce order emails</a>.</li>
 </ul>
 
-<p>On Shopify the tax ideas are the same but the tools differ; see <a href="/blog/shopify-gst-invoices-india/">GST on Shopify for Indian sellers</a> for tax settings, HSN codes and invoice apps.</p>
+<p>On Shopify the tax ideas are the same but the tools differ; see <a href="/blog/shopify-gst-invoices-india/">GST on Shopify for Indian sellers</a> for tax settings, HSN codes and invoice apps, or <a href="/shopify-developer/">hire a Shopify developer</a> to set them up and test them.</p>
 
 <h2>Step 6: Generate GST invoices</h2>
 <p>WooCommerce doesn't create tax invoices on its own. PDF Invoices &amp; Packing Slips for WooCommerce is a widely used free plugin that attaches a PDF invoice to order emails and handles numbering, and there are India-specific plugins that add HSN fields and CGST, SGST and IGST columns. Whichever you choose, check that it's actively maintained and compatible with WooCommerce's newer order storage (HPOS).</p>
@@ -26795,7 +26811,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>Many Indian shoppers still want COD, especially from a store they haven't bought from before, but every refused parcel costs you shipping both ways. In my <a href="/woocommerce-developer/">WooCommerce development</a> work, COD rules are set up to match how you actually operate: limited by order value or pin code, with any fee shown clearly at checkout and COD orders confirmed by phone or WhatsApp before dispatch.</p>
 <p>This guide covers COD only. Shipping zones, rates and courier integrations are in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
-<p>The costs below are the same on any platform; if you sell on Shopify, <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify</a> shows how to set up COD, fees and order confirmation there.</p>
+<p>The costs below are the same on any platform; if you sell on Shopify, <a href="/blog/shopify-cash-on-delivery-india/">cash on delivery on Shopify</a> shows how to set up COD, fees and order confirmation there, and <a href="/shopify-developer/">Shopify development in India</a> covers the full store setup.</p>
 
 <h2>What COD really costs</h2>
 <table>
@@ -30159,7 +30175,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>In Merchant Center's shipping and returns settings, add a shipping service for India with your costs, any free-shipping threshold and realistic delivery times (handling time plus transit time). Add your return policy: the return window, whether returns are free, and the policy URL. If Google for WooCommerce syncs shipping from your WooCommerce zones, check the result, because complex rules don't always translate. Whatever you enter has to match what a shopper sees at checkout; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 <p>Availability mismatches often start with wrong stock counts in the store itself; <a href="/blog/woocommerce-stock-not-updating/">why WooCommerce stock is not updating</a> covers the usual causes.</p>
 
-<p>Running a Shopify store instead? The fixes are made in Shopify rather than in a plugin; see <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Google Merchant Center</a>.</p>
+<p>Running a Shopify store instead? The fixes are made in Shopify rather than in a plugin; see <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Google Merchant Center</a>. A <a href="/shopify-developer/">Shopify developer in Pune</a> can fix the product data and theme markup if the feed keeps failing.</p>
 
 <h2>Common disapprovals and how to fix them</h2>
 <p>Check the products that need attention in Merchant Center, and the diagnostics in Google for WooCommerce, every week at first:</p>
@@ -45682,7 +45698,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Fonts are often one of several render-blocking resources; our guide to <a href="/blog/eliminate-render-blocking-resources/">eliminating render-blocking resources</a> covers the rest.</p>
 <h2>Web font performance in Shopify</h2>
-<p>Shopify themes usually use the Shopify font library, served from Shopify's own CDN, and many themes already apply font-display: swap. The main improvements are:</p>
+<p>Shopify themes usually use the Shopify font library, served from Shopify's own CDN, and many themes already apply font-display: swap (for theme code changes, see <a href="/shopify-developer/">Shopify theme customisation</a>). The main improvements are:</p>
 <ul>
 <li>Choose a body font from the system font options in the theme settings if you want the fastest result.</li>
 <li>Avoid apps or custom code that inject extra Google Fonts.</li>
@@ -51796,7 +51812,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   </tbody>
 </table>
 <p>For most small and mid-sized businesses, one store with roles is simpler to run. A separate portal makes sense when trade ordering works very differently, for example with no online payment at all, or when the trade catalogue differs heavily from retail.</p>
-<p>If you also sell on Shopify, note that trade pricing there is handled through apps or higher plans; compare the two platforms in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+<p>If you also sell on Shopify, note that trade pricing there is handled through apps or higher plans; compare the two platforms in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>, or ask a <a href="/shopify-developer/">Shopify developer in India</a> which apps fit your trade pricing.</p>
 
 <h2>Plugin or custom code, and testing</h2>
 <p>A good wholesale plugin covers most needs: roles, prices, minimums and registration. Custom code makes sense when you have customer-specific price lists synced from ERP or billing software, complex scheme rules, or very large catalogues where plugin performance suffers. Read <a href="/blog/plugin-vs-custom-code-wordpress/">plugin vs custom code</a> before deciding.</p>
@@ -52301,7 +52317,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Every recommendation block loads extra products, images and sometimes scripts. Limit rows to a handful of items, compress images, and check speed after adding a bundle plugin on a mid-range phone. Slow product pages lose more sales than an upsell will win back, especially for shoppers on patchy mobile data outside the big metros. <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers the details.</p>
 
 <h2>Shopify comparison</h2>
-<p>If you are deciding between platforms, Shopify handles upsells and bundles mostly through apps and its own bundle features, while WooCommerce gives you more control through plugins and code. Both can do the job; the difference is cost structure and flexibility, as explained in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+<p>If you are deciding between platforms, Shopify handles upsells and bundles mostly through apps and its own bundle features, while WooCommerce gives you more control through plugins and code. Both can do the job; the difference is cost structure and flexibility (see <a href="/shopify-developer/">Shopify store development</a> if you are on Shopify), as explained in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
 <h2>Measuring what works</h2>
 <p>Track average order value, the share of orders containing a bundle, and margin per order. A popular bundle that sells at a thin margin may not be worth pushing. Look at which cross-sells actually get added to carts and remove the ones nobody clicks. Change one placement at a time and compare similar periods, avoiding festival weeks that distort results. Returns matter as well: if bundle orders come back more often than single items, the bundle may be mixing products people do not really want together.</p>
@@ -64723,7 +64739,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>Surprise costs at the last step drive people away. Show delivery charges in the cart, show any free delivery threshold, and let people check delivery to their pincode on the product page. A <a href="/blog/pincode-delivery-checker-woocommerce/">pincode delivery checker</a> also helps when you cannot ship everywhere or COD is limited to certain areas.</p>
 <p>If you can give an estimated delivery window, show it. Shipping zones, courier integrations and rates are covered in <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 
-<p>On Shopify, missing payment options are often a set-up fault rather than a choice; see <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a> for gateway, COD and shipping rate checks.</p>
+<p>On Shopify, missing payment options are often a set-up fault rather than a choice; see <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a> for gateway, COD and shipping rate checks, or get <a href="/shopify-developer/">help with your Shopify checkout</a> from a developer.</p>
 
 <h2>Offer the payment options Indian shoppers expect</h2>
 <p>Most Indian shoppers look for UPI first, followed by cards, net banking and wallets. Cash on delivery remains important for many categories, especially first-time buyers. Choose a gateway that supports these methods cleanly inside WooCommerce, and show the accepted methods before the final step.</p>
@@ -69367,11 +69383,11 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-store-setup-india',
-    seoTitle: 'How to Set Up a Shopify Store in India, Step by Step',
+    seoTitle: 'How to Set Up a Shopify Store in India (Step by Step, 2026)',
     title: 'How to Set Up a Shopify Store in India, Step by Step: Plan, Domain, Payments, GST, Shipping and Launch',
     description: 'Set up a Shopify store in India step by step: plan costs, domain and email DNS, Razorpay or PayU and COD, GST invoices, pin code shipping, policies and launch.',
     date: '2026-10-25',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -69449,7 +69465,16 @@ or a cookie name starts with:
 <p>Add a contact page with a phone or WhatsApp number, email and address. For the privacy page, read <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for Indian websites</a>, and ask a lawyer to review it if you collect anything sensitive.</p>
 
 <h2>The launch checklist</h2>
-<p>Work through this on a phone, because that is how most of your shoppers will see the store.</p>
+<p>Before the store-level checks, make sure the India-specific paperwork is done, because these are the items that usually hold up a launch:</p>
+<ul>
+<li><strong>GST number</strong> entered in Shopify's tax settings and the invoice app, if you are registered, with rates confirmed by your CA.</li>
+<li><strong>Razorpay or PayU KYC</strong> completed and the account activated for live payments, not just test mode.</li>
+<li><strong>COD</strong> switched on as a manual payment method, with any order-value or pin code limits set.</li>
+<li><strong>Shipping app</strong> such as Shiprocket connected, with pickup address and package sizes saved.</li>
+<li><strong>Policies</strong> for refunds, shipping, privacy and terms published and linked in the footer; gateways check for these.</li>
+<li><strong>Domain</strong> connected, with email DNS records still working.</li>
+</ul>
+<p>Then work through this on a phone, because that is how most of your shoppers will see the store.</p>
 <ol>
 <li>Every product has a title, your own description, real photos, the right variants, price, weight, SKU and stock. If supplier text is still in place, see <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a>.</li>
 <li>Collections have a short introduction and are linked from the main menu.</li>
@@ -69463,6 +69488,9 @@ or a cookie name starts with:
 <p>In the first fortnight, watch failed payments, COD orders still unmarked and pin codes that keep failing; they show where the setup needs adjusting. When you want the store's look to go beyond the theme's settings, <a href="/blog/shopify-theme-customisation/">customising a Shopify theme safely</a> is the natural next step.</p>
 
 <p>Setting up a store from South India? The page on <a href="/wordpress-shopify-developer-chennai/">Shopify development in Chennai</a> explains how a remote setup is handled.</p>
+
+<h2>Want it done for you?</h2>
+<p>If the KYC, GST and theme work are more than you have time for, the <a href="/shopify-developer/">Shopify store setup service</a> covers every step above, from payments and COD to the launch checklist, with a fixed quote after a free review. The store, domain and payment accounts stay in your name.</p>
 
 <h2>FAQs</h2>
 <h3>How long does it take to set up a Shopify store in India?</h3>
@@ -69819,9 +69847,9 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
   },
   {
     slug: 'shopify-store-cost-india',
-    seoTitle: "Shopify Store Cost in India: Plans, Apps and Fees",
+    seoTitle: 'Shopify Store Cost in India (2026): Plan, Apps, Setup, GST',
     title: 'What a Shopify Store Costs in India: Plan, Apps, Payment Fees, Theme, Setup and Running Costs Explained',
-    description: "Shopify store cost in India: plan fee, apps, payment charges, theme, setup and running costs, plus a budgeting checklist before you sign up.",
+    description: 'What a Shopify store costs in India: plan, theme, apps, payment gateway fees, GST on Shopify bills and developer setup, with a checklist for budgeting.',
     date: '2026-10-27',
     updated: '2026-11-07',
     category: 'E-commerce',
@@ -69850,6 +69878,21 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 </tbody>
 </table>
 <p>The plan, apps and payment charges recur for as long as the store is open. The theme, setup and first round of content are paid once. The last row is not a Shopify cost at all, but for a store sending out many parcels it can outweigh the platform bill, so it belongs in the same budget.</p>
+
+<h2>Shopify store cost in India: one-time vs monthly</h2>
+<p>The easiest way to budget is to split the costs into what you pay once, before launch, and what keeps coming every month or on every order. Prices are left out on purpose: Shopify, app makers and gateways change them, so fill in the current figures from each provider's pricing page.</p>
+<table>
+<thead><tr><th>One-time costs</th><th>Monthly or per-order costs</th></tr></thead>
+<tbody>
+<tr><td>Paid theme, if you choose one over a free Shopify theme</td><td>Shopify plan, plus GST on Shopify's bill</td></tr>
+<tr><td>Store setup and theme customisation by a developer</td><td>Paid apps: reviews, filters, invoices, COD controls</td></tr>
+<tr><td>Product photos, descriptions and policy pages</td><td>Payment gateway charges on prepaid orders</td></tr>
+<tr><td>Migration from another platform, with redirects</td><td>Any Shopify fee on third-party gateways at your plan tier</td></tr>
+<tr><td>Domain registration for the first year</td><td>Business email mailboxes and domain renewal</td></tr>
+<tr><td>Custom sections or integrations</td><td>Courier charges, packaging and refused COD parcels</td></tr>
+</tbody>
+</table>
+<p>One point that catches many Indian store owners: at the time of writing, Shopify Payments is not available to businesses in India, so you connect a third-party gateway such as Razorpay, PayU or Cashfree and pay its fees on each prepaid order. Check Shopify's help centre and your plan's pricing for whether a Shopify transaction fee also applies, because that changes the monthly total more than the theme ever will.</p>
 
 <h2>The monthly bill: plan, apps and payment charges</h2>
 <h3>The plan</h3>
@@ -69946,7 +69989,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'Shopify SEO Checklist: Titles, Product URLs, Canonicals, Filters, Structured Data, Sitemaps and Search Console',
     description: 'A practical Shopify SEO checklist for Indian stores: titles, product URLs, canonicals, filters, alt text, structured data, sitemaps and Search Console.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'wordpress-seo-services'],
     body: `
@@ -70038,6 +70081,9 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <li>Blog posts answer pre-purchase questions and link to collections.</li>
 <li>Collection titles use the product names Indian shoppers search for, and product pages answer COD, delivery and returns questions.</li>
 </ol>
+
+<h2>When to get help</h2>
+<p>Most of this checklist can be done in the admin. Get help when the fixes need theme code, such as product grids linking to the long collection URLs, missing structured data or a slow theme, or when you are planning a redesign. Changing themes is the moment stores most often lose rankings; <a href="/blog/shopify-theme-change-without-losing-seo/">changing a Shopify theme without losing SEO</a> covers the checks. For hands-on work, a <a href="/shopify-developer/">Shopify developer in India</a> can audit the store and fix the theme on a duplicate copy, with a fixed quote after a free review.</p>
 
 <h2>FAQs</h2>
 <h3>Is Shopify good for SEO?</h3>
@@ -70535,9 +70581,9 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
   },
   {
     slug: 'hire-shopify-developer-india',
-    seoTitle: "Hire a Shopify Developer in India: What to Ask",
+    seoTitle: 'Hire a Shopify Developer in India: Freelancer vs Agency',
     title: 'Hiring a Shopify Developer in India: What They Do, When You Need One, What to Ask and Red Flags',
-    description: "How to hire a Shopify developer in India: what they do, when you need one, questions to ask, access and ownership, and red flags to avoid.",
+    description: 'How to hire a Shopify developer in India: freelancer vs agency vs marketplace, what to ask, red flags, ownership and how quotes are built.',
     date: '2026-10-27',
     updated: '2026-11-07',
     category: 'E-commerce',
@@ -70545,7 +70591,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     body: `
 <p>A Shopify developer sets up and changes the parts of a store that the admin and theme editor cannot: custom sections and templates in Liquid, theme fixes, app clean-ups, speed and SEO work, migrations and integrations. You need one when the job goes beyond settings and content, or when getting it wrong would cost sales. Hire on how they work on your live store, who owns the accounts and what is written in the quote, not on a portfolio alone.</p>
 
-<p>I am a freelance developer in Pune working on Shopify, WordPress and WooCommerce, so this guide is written from the developer's side of the table, but the questions in it are the ones I would want a client to ask anyone. You can see how I run Shopify projects on the <a href="/shopify-developer/">Shopify developer service page</a>; the last section here summarises it.</p>
+<p>I am a freelance developer in Pune working on Shopify, WordPress and WooCommerce, so this guide is written from the developer's side of the table, but the questions in it are the ones I would want a client to ask anyone. You can see how I run Shopify projects on the <a href="/shopify-developer/">Shopify developer service page</a>; the last section here summarises it. If you are looking for Shopify development in India from a Pune-based developer, you can send your store link for a free review and a fixed quote.</p>
 
 <h2>What a Shopify developer actually does</h2>
 <p>Shopify looks after hosting, security and the core platform, so a Shopify developer's work sits on top of that. Typical jobs include:</p>
@@ -70562,16 +70608,17 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <h2>Developer, listed Shopify partner or agency</h2>
 <p>Shopify runs a directory of service partners that store owners can browse, which has gone by names such as the Experts Marketplace and the Partner Directory; the name and the criteria for listing change from time to time. Being listed is one signal among several. Plenty of capable developers and agencies work outside it, and a listing does not tell you who will actually do the work on your store.</p>
 <table>
-<thead><tr><th></th><th>Freelance developer</th><th>Agency</th></tr></thead>
+<thead><tr><th></th><th>Freelance developer</th><th>Agency</th><th>Marketplace (Upwork, Partner directory)</th></tr></thead>
 <tbody>
-<tr><td>Who does the work</td><td>The person you speak to</td><td>A team; ask who specifically</td></tr>
-<tr><td>Suits</td><td>Setup, theme work, fixes, migrations for small and mid-sized stores</td><td>Large builds needing design, development, content and marketing together</td></tr>
-<tr><td>Communication</td><td>Direct, one point of contact</td><td>Through an account manager, with more process</td></tr>
-<tr><td>Cover when unavailable</td><td>Ask what happens during leave or illness</td><td>Usually built in</td></tr>
-<tr><td>Cost drivers</td><td>Scope and hours</td><td>Scope, hours and the agency&#39;s overheads</td></tr>
+<tr><td>Who does the work</td><td>The person you speak to</td><td>A team; ask who specifically</td><td>Whoever you pick from the listing</td></tr>
+<tr><td>Suits</td><td>Setup, theme work, fixes, migrations for small and mid-sized stores</td><td>Large builds needing design, development, content and marketing together</td><td>Small, clearly defined jobs</td></tr>
+<tr><td>Communication</td><td>Direct, one point of contact</td><td>Through an account manager, with more process</td><td>Through the platform's messages</td></tr>
+<tr><td>Cover when unavailable</td><td>Ask what happens during leave or illness</td><td>Usually built in</td><td>Depends on the person; check their history</td></tr>
+<tr><td>Cost drivers</td><td>Scope and hours</td><td>Scope, hours and the agency&#39;s overheads</td><td>Scope, hours and the platform's own fees</td></tr>
 </tbody>
 </table>
-<p>Neither is right for every store. The <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency guide</a> goes through the trade-offs in more depth; the reasoning is the same for Shopify.</p>
+<p>Marketplaces make it easy to compare profiles and reviews, but ratings come from many kinds of job, so read the reviews for work like yours. Whichever route you take, <strong>check live stores, not mockups</strong>: ask for two or three stores the developer worked on that are taking orders now, open them on your phone, add a product to the cart and go as far as checkout. A polished design file says little about how a real store loads, pays and ships.</p>
+<p>None of the three is right for every store. The <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency guide</a> goes through the trade-offs in more depth; the reasoning is the same for Shopify.</p>
 
 <h2>When you need a developer, and when you don't</h2>
 <p>You can probably manage without one if you are using a free theme with its existing sections, have a small catalogue, need only standard payments and shipping, and are comfortable following the <a href="/blog/shopify-store-setup-india/">step-by-step setup guide</a>. Shopify's admin is built for owners to run themselves.</p>
@@ -71311,7 +71358,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </tbody></table>
 <p>For the tasks behind each line, see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>. A contract that only says &quot;complete website maintenance&quot; without these details is hard to enforce.</p>
 <h2>Website AMC and Shopify stores</h2>
-<p>Shopify handles hosting, core updates and server security itself, so a Shopify AMC is mostly about app reviews, theme updates, product and banner changes, speed checks and help with payment or shipping settings. If a Shopify AMC charges heavily for updates and backups, ask what exactly is being done, because Shopify already covers much of that.</p>
+<p>Shopify handles hosting, core updates and server security itself, so a Shopify AMC is mostly about app reviews, theme updates, product and banner changes, speed checks and help with payment or shipping settings; <a href="/shopify-developer/">monthly Shopify support</a> is scoped this way. If a Shopify AMC charges heavily for updates and backups, ask what exactly is being done, because Shopify already covers much of that.</p>
 <h2>Response times and support</h2>
 <p>Response time is the part most AMCs leave vague. A good contract separates urgent and routine requests:</p>
 <ul><li><strong>Urgent:</strong> site down, hacked, checkout or enquiry form broken. State the target time for the first response and for starting work.</li><li><strong>Routine:</strong> text changes, new images, adding a product or blog post. State a normal turnaround in working days.</li><li><strong>Channel:</strong> email, a ticket form or WhatsApp. Written requests make it easier to track what was asked and done.</li><li><strong>Hours:</strong> working days and hours, and what happens on holidays and festivals.</li></ul>
