@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Multisite%3A%20What%20It%20Is%2C%20When%20a%20Business%20Needs%20It%2C%20and%20What%20It%20Means%20for%20SEO%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-multisite-when-needed%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,9 @@
               <li><a href="#hosting-plugins-and-performance">Hosting, plugins and performance</a></li>
               <li><a href="#how-to-set-up-wordpress-multisite">How to set up WordPress Multisite</a></li>
               <li><a href="#leaving-a-network-later">Leaving a network later</a></li>
+              <li><a href="#wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</a></li>
+              <li><a href="#why-wordpress-multisite-gets-slow-and-how-to-speed-it-up">Why WordPress multisite gets slow, and how to speed it up</a></li>
+              <li><a href="#what-wordpress-multisite-development-services-include">What WordPress multisite development services include</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -265,6 +268,30 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h2 id="leaving-a-network-later">Leaving a network later</h2>
 <p>Moving a site out of a network means exporting its content, media and users, recreating its settings on a new installation and redirecting any URLs that change. Some migration tools can extract a single subsite, often in their paid versions. It's very doable, but it's more work than moving a normal site, which is another reason to only build a network when the sites truly belong together. If you're stuck with a network that no longer fits, I can help untangle it as part of a <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
+<h2 id="wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</h2>
+<h3>Subdomain vs subdirectory multisite for SEO</h3>
+<p>Subdirectories (example.com/pune/) sit inside the main site and are simpler to manage. Subdomains (pune.example.com) are treated more like separate sites. For branches, regions or languages of one brand, subdirectories are usually the safer choice; for genuinely separate brands, use separate domains.</p>
+<h3>Settings to check on every site</h3>
+<ul>
+<li>An SEO plugin (Yoast, Rank Math and others support multisite) configured per site, not just network-activated and forgotten.</li>
+<li>A separate XML sitemap for each site, submitted in Search Console.</li>
+<li>Search Console coverage for each site: a domain property covers subdomains, and subdirectories can be added as URL-prefix properties for separate reports.</li>
+<li>Correct canonicals so near-identical branch pages do not compete. Write unique content for each city or branch rather than copying one site and changing the name.</li>
+<li>Hreflang tags only when sites are true language or country versions of each other.</li>
+<li>"Discourage search engines" switched off on every live site, and on for every staging site.</li>
+</ul>
+<h2 id="why-wordpress-multisite-gets-slow-and-how-to-speed-it-up">Why WordPress multisite gets slow, and how to speed it up</h2>
+<p>A network shares one database and one set of plugins, so one heavy plugin or bloated table slows every site. Work in this order:</p>
+<ol>
+<li><strong>Measure first:</strong> note page load times and admin speed on a few sites, and check server error logs.</li>
+<li><strong>Review network-activated plugins:</strong> activate plugins only on the sites that need them.</li>
+<li><strong>Add persistent object caching</strong> (Redis or Memcached) if your host supports it; it helps the admin and logged-in pages most.</li>
+<li><strong>Clean the database:</strong> old revisions, expired transients, spam comments and leftover tables from deleted sites.</li>
+<li><strong>Replace WP-Cron with a real server cron</strong>, so scheduled tasks for every site do not run on visitor page loads.</li>
+<li><strong>Check hosting and PHP:</strong> a current PHP version and enough memory. Multisite on basic shared hosting often hits limits quickly.</li>
+</ol>
+<h2 id="what-wordpress-multisite-development-services-include">What WordPress multisite development services include</h2>
+<p>A proper multisite project covers planning the structure (subdomain or subdirectory, domain mapping), choosing themes and plugins that work network-wide, user roles for site admins, SEO setup per site, hosting with backups that can restore a single site, and documentation so your team can add new sites. Before asking for a quote, prepare the list of sites, who will edit each, what is shared and what differs, and ask whether separate installs might be simpler.</p>
 <h2 id="faqs">FAQs</h2>
 <h3>What is a WordPress Multisite?</h3>
 <p>It's a feature built into WordPress that lets one installation run many websites. The sites share core files, themes, plugins and users, while each keeps its own content, media and settings. A Super Admin manages the whole network from a Network Admin dashboard.</p>
@@ -323,6 +350,9 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
               <li><a href="#hosting-plugins-and-performance">Hosting, plugins and performance</a></li>
               <li><a href="#how-to-set-up-wordpress-multisite">How to set up WordPress Multisite</a></li>
               <li><a href="#leaving-a-network-later">Leaving a network later</a></li>
+              <li><a href="#wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</a></li>
+              <li><a href="#why-wordpress-multisite-gets-slow-and-how-to-speed-it-up">Why WordPress multisite gets slow, and how to speed it up</a></li>
+              <li><a href="#what-wordpress-multisite-development-services-include">What WordPress multisite development services include</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

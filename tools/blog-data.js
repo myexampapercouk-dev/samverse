@@ -154,6 +154,27 @@ module.exports = [
   <li>Avoid paying for premium plugins that duplicate features you already have</li>
 </ul>
 
+<h2>The running costs after launch: a yearly ledger</h2>
+<p>The build quote is only the first-year bill. A WordPress site keeps costing money every year, and most surprises come from lines nobody wrote down. Before you accept any quote, list these and decide who pays for each:</p>
+<ul>
+<li><strong>Domain and hosting renewals.</strong> Renewal prices are often higher than the first-year offer. Ask for the renewal price, not the intro price.</li>
+<li><strong>Licences you may not know you have.</strong> Premium themes, page builders, form, backup and security plugins usually carry yearly licences. If a developer used their own agency licence, you may lose updates when you stop working with them. Ask for the licences to be bought in your name.</li>
+<li><strong>Business email.</strong> Email on your domain is usually charged per user per month, so it grows with your team. Free hosting mailboxes are fine to start with but often end up in spam folders.</li>
+<li><strong>SSL.</strong> Most hosts include a free certificate now. If a quote charges a yearly SSL fee, ask why.</li>
+<li><strong>Content.</strong> New photos, page updates, blog posts and translations are ongoing work, not a one-time job.</li>
+<li><strong>Getting visitors.</strong> A site does not bring enquiries on its own. SEO, Google Ads or social campaigns are a separate budget.</li>
+<li><strong>Payments.</strong> If you take money online, Razorpay, PayU and similar gateways charge a fee on each transaction, plus GST on that fee.</li>
+</ul>
+<h3>Costs that only appear when something goes wrong</h3>
+<p>A hacked site, a plugin update that breaks the layout, a lapsed domain or an expired card on the hosting account can each cost more than a year of maintenance. Keep the domain, hosting and licences in your own accounts, turn on auto-renew, and keep off-site backups. That alone removes most emergency bills.</p>
+<h3>Questions to ask before you accept a website quote</h3>
+<ul>
+<li>Which yearly renewals will I pay after the first year, and roughly how much?</li>
+<li>Are the theme and plugin licences in my name?</li>
+<li>Who owns the domain, hosting and admin logins?</li>
+<li>What happens, and what does it cost, if I need changes after launch?</li>
+<li>Is maintenance included, optional, or not offered?</li>
+</ul>
 <h2>FAQs</h2>
 <h3>How much does a WordPress domain cost in India?</h3>
 <p>A .com or .in domain usually costs about ₹500 to ₹1,200 a year, depending on the registrar and any first-year offer. Check the renewal price, and register the domain in your business's name so you always control it.</p>
@@ -1716,6 +1737,24 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Using Hostinger? See <a href="/blog/hostinger-wordpress-setup-guide/">setting up WordPress on Hostinger</a> and <a href="/blog/hostinger-website-slow-fix/">speeding up a Hostinger site</a>.</p>
 
+<h2>WordPress hosting price in India: read the price in four parts</h2>
+<p>A hosting price on a sales page is rarely what you pay over time. Break any plan into four parts before you compare: the <strong>intro price</strong>, the <strong>renewal price</strong>, the <strong>billing term</strong> you must commit to for that intro price, and the <strong>add-ons</strong> switched on at checkout.</p>
+<h3>WordPress domain cost and domain price in India</h3>
+<p>A free domain bundled with hosting is usually free for the first year only, and then renews at the normal rate. A .in and a .com renew at different prices, so check the renewal for the extension you want. Keep the domain in an account you control, even if the host offers it free.</p>
+<h3>WordPress yearly cost vs monthly cost</h3>
+<p>The lowest monthly figure usually needs a three- or four-year upfront payment. Monthly billing costs more per month but lets you leave if the host is slow. For a new business, a one-year term is a sensible middle ground.</p>
+<h3>Hidden add-ons that change the total</h3>
+<ul>
+<li>Paid backup or "site restore" add-ons that should be included.</li>
+<li>Paid security scanners or malware removal.</li>
+<li>Email accounts charged separately from hosting.</li>
+<li>Dedicated IP or premium SSL, which most small sites do not need.</li>
+<li>GST added at checkout on top of the displayed price.</li>
+</ul>
+<h3>Compare plans fairly: a three-year worksheet</h3>
+<p>For each plan you shortlist, write down the year 1 price, year 2 and 3 renewal prices, domain renewal, email cost, backup cost and GST, then add them up. The plan with the lowest first-year price is often not the cheapest over three years, and a slightly dearer plan with included backups and a data centre near your visitors is usually better value.</p>
+<h3>When to move host</h3>
+<p>Move when the site is slow even after caching and image optimisation, when support cannot fix repeated downtime, when you have outgrown the plan's limits, or when renewal makes it poor value. A careful migration keeps URLs, email and SEO intact.</p>
 <h2>FAQs</h2>
 <h3>Which hosting is best for WordPress in India?</h3>
 <p>There's no single best host. The right plan is the one that matches your site's type and traffic, has a data centre in or near India, runs current PHP with proper caching, keeps off-site backups, has WordPress-aware support and has a renewal price you can live with for years.</p>
@@ -3029,6 +3068,30 @@ Target:  https://example.com/$1/</code></pre>
 </ul>
 <p>If your profile is suspended, fix the cause first, then request reinstatement through Google's appeal process with evidence such as signage photos, a utility bill or a business registration document.</p>
 
+<h2>Google Business Profile posts: ideas and a weekly routine</h2>
+<p>Posts show on your profile and tell customers you are active. They are not a ranking shortcut, but a profile with recent posts and photos looks more trustworthy than one untouched for a year.</p>
+<h3>Google Business Profile post ideas</h3>
+<ul>
+<li>An offer with a clear end date (festive offers work well in India).</li>
+<li>A finished job or product with a real photo.</li>
+<li>An answer to a question customers often ask on the phone.</li>
+<li>Changed hours for holidays and festivals.</li>
+<li>A new service, with a link to that service page on your website.</li>
+</ul>
+<p>Keep each post short, lead with the useful point, add one real photo, and use a button such as Call or Learn more. Avoid phone numbers in the post text and avoid stuffing city names; posts that look spammy can be rejected.</p>
+<h3>A simple weekly routine</h3>
+<p>Once a week: add one post, upload two or three new photos, reply to every new review, and check the Q&amp;A section and your hours. Fifteen minutes a week is enough for most local businesses. Add UTM tags to the website link in posts so you can see visits from the profile in Google Analytics.</p>
+<h2>Google Business Profile photos: what to upload</h2>
+<p>Photos are the most underused part of the profile. Every profile should have a logo, a cover photo, the outside of the premises (so people can find the entrance), the inside, the team at work, and your products or finished work.</p>
+<ul>
+<li><strong>By business type:</strong> clinics show the reception and waiting area; restaurants show dishes and the menu; shops show the storefront and shelves; service businesses show work in progress and finished results.</li>
+<li><strong>Quality:</strong> real, well-lit photos taken in landscape on a phone, with no heavy filters, text overlays or stock images.</li>
+<li><strong>Frequency:</strong> add a few new photos every month rather than fifty at once.</li>
+<li><strong>Customer photos:</strong> you cannot delete them, but you can report ones that are offensive, irrelevant or of a different business.</li>
+<li><strong>Videos:</strong> short clips of the premises or your work are accepted and help customers.</li>
+<li><strong>Myths:</strong> adding GPS geotags to photos does not improve rankings.</li>
+</ul>
+<p>Use the same real photos on your website's contact and about pages so the profile and site clearly belong to the same business.</p>
 <h2>FAQs</h2>
 <h3>Is Google Business Profile the same as Google My Business?</h3>
 <p>Yes. Google My Business was renamed Google Business Profile, and the profile is now managed directly from Google Search and Maps. Any Google My Business checklist covers the same profile, though some menus have moved.</p>
@@ -3883,6 +3946,21 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>More on pricing models: <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly</a>.</p>
 
+<h2>Common white-label jobs: WooCommerce, Elementor and overflow work</h2>
+<h3>White-label WooCommerce development</h3>
+<p>Store projects need more than design. The partner should handle product setup or imports, payment gateways and shipping rules for the client's market (for India that usually means Razorpay or PayU, COD rules, GST settings and Shiprocket or similar), order emails and store speed. Your agency keeps the client relationship, the brief and the brand. Before handover, insist on a full checkout test: a low-value live order on each payment method, a COD order, a refund, and the order emails checked on mobile.</p>
+<h3>White-label Elementor development</h3>
+<p>For Elementor builds, agree up front whose Elementor Pro licence is used (ideally the client's, so updates continue after handover), that global colours, fonts and saved templates are set up so the client can edit pages without breaking them, and how many add-on plugins are allowed. Each extra widget pack slows the site, so a short approved list keeps builds fast. Designs handed over in Figma with mobile views and reusable sections build faster and cleaner.</p>
+<h3>Agency overflow WordPress work</h3>
+<p>An overflow partner makes sense when you have more projects than your team can deliver for a few months, but not enough steady work to hire. Hand over a written brief, design files, content, logins to a staging site (not live), and your quality standards. Test a new partner with one small, real job before you trust them with a launch.</p>
+<h2>WordPress reseller for marketing agencies</h2>
+<p>SEO, ads and social agencies often lose clients when the website becomes the problem. Reselling WordPress work lets you fix landing pages, speed and tracking without building a dev team. A few rules keep it safe:</p>
+<ul>
+<li><strong>Package offers clearly</strong>, for example landing page builds, site rebuilds, speed fixes and monthly care plans, each with a fixed scope.</li>
+<li><strong>Scope every job in writing</strong> so your margin does not disappear into unplanned changes.</li>
+<li><strong>Protect SEO and tracking.</strong> Keep URLs, redirects, meta titles, schema, Google Tag Manager and conversion tracking intact during any rebuild, and re-check GA4 events after launch.</li>
+<li><strong>Sell to existing clients first.</strong> Clients whose sites are slow or convert poorly are the easiest yes.</li>
+</ul>
 <h2>FAQs</h2>
 <h3>What is white-label WordPress development?</h3>
 <p>It's when a developer or studio builds WordPress websites for an agency, which sells them to its clients under its own brand. The client deals only with the agency, and the developer works behind the scenes under an NDA, with no credits on the site.</p>
@@ -5188,6 +5266,22 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>For a full health check, work through the <a href="/blog/technical-seo-audit-wordpress/">technical SEO audit checklist</a>.</p>
 
+<h2>WordPress site not showing on Google? Check these first</h2>
+<p>If a WordPress site is not appearing at all, the cause is often a setting, not a lack of time. Go through these checks before waiting longer:</p>
+<ol>
+<li><strong>Search site:yourdomain.com</strong> on Google. No results means nothing is indexed; some results means the problem is specific pages.</li>
+<li><strong>Search engine visibility setting.</strong> In Settings &gt; Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after a build.</li>
+<li><strong>Noindex tags.</strong> Check your SEO plugin's settings for pages, posts and categories, and view the page source for a robots noindex meta tag.</li>
+<li><strong>robots.txt.</strong> Open yourdomain.com/robots.txt and make sure it does not contain "Disallow: /".</li>
+<li><strong>Search Console.</strong> Verify the site, submit the sitemap and use URL Inspection on the homepage to see what Google reports.</li>
+<li><strong>Hacks and manual actions.</strong> Check Security issues and Manual actions in Search Console. Spam pages injected by a hack can get a site dropped.</li>
+<li><strong>Migrations and HTTPS.</strong> After moving domains or switching to HTTPS, make sure old URLs 301-redirect to the new ones and the new version is the one in your sitemap.</li>
+<li><strong>Hosting and firewalls.</strong> Some security plugins, firewalls or hosts block Googlebot or return server errors. Crawl stats in Search Console show this.</li>
+</ol>
+<h3>Crawled or discovered, but not indexed</h3>
+<p>If Search Console shows "Crawled - currently not indexed" or "Discovered - currently not indexed", Google can reach the page but has chosen not to index it yet. Improve the page so it answers its query better than similar pages, link to it from strong pages on your site, and merge near-duplicate pages rather than publishing many thin ones.</p>
+<h3>Shopify stores not showing on Google</h3>
+<p>On Shopify, check that the store password page is turned off (the store must be live), submit the automatic /sitemap.xml in Search Console, and make sure product and collection pages have unique titles and descriptions.</p>
 <h2>FAQs</h2>
 <h3>How do I get Google to index my website quickly?</h3>
 <p>Verify the site in Search Console, submit your sitemap, link new pages from your homepage and menu, request indexing for the key URLs and make sure each page is substantial and unique. That gives Google every reason to crawl and index promptly.</p>
@@ -6780,6 +6874,32 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 <h2>Accessibility also helps SEO and enquiries</h2>
 <p>Many fixes overlap with search optimisation: clear headings, descriptive links, alt text and fast, readable pages help Google understand your content too. Labelled forms and readable buttons also mean fewer abandoned enquiries. Accessibility isn't a ranking shortcut, but an accessible site is usually a clearer, better-converting one.</p>
 
+<h2>Accessibility for older users</h2>
+<p>Many visitors to Indian clinic, temple, NGO, insurance and local service websites are older people, or family members helping them. Small changes help them a lot:</p>
+<ul>
+<li><strong>Readable text:</strong> a body size of at least 16px, comfortable line spacing, and no light grey text on white.</li>
+<li><strong>Large tap targets:</strong> buttons big enough to tap without zooming, with space between them.</li>
+<li><strong>Plain language and simple menus:</strong> say "Book an appointment", not clever labels, and keep the main menu short.</li>
+<li><strong>Phone and WhatsApp next to forms:</strong> many older visitors would rather call. Make the number a tap-to-call link.</li>
+<li><strong>Short forms:</strong> ask only what you need, put clear labels above fields and explain errors in words.</li>
+<li><strong>Calm pages:</strong> no auto-playing sliders, pop-ups the moment the page loads, or moving text.</li>
+<li><strong>Reassurance:</strong> address, timings, a map and real photos build trust.</li>
+</ul>
+<p>The best test is to watch two or three older people try to find your phone number and book something on their own phones.</p>
+<h2>Website accessibility audit checklist</h2>
+<p>A basic audit takes an afternoon. Test your homepage, a main service or product page, the contact form and, for stores, the full checkout.</p>
+<ol>
+<li><strong>Keyboard:</strong> press Tab through each page. Can you reach every link, menu and button, see where focus is, and close pop-ups with Esc?</li>
+<li><strong>Colour, contrast and zoom:</strong> check contrast with a free checker, and zoom to 200% to make sure nothing overlaps or disappears.</li>
+<li><strong>Images:</strong> meaningful images have alt text; decorative ones have empty alt.</li>
+<li><strong>Forms:</strong> every field has a visible label, errors are explained in text, and the form works without a mouse.</li>
+<li><strong>Headings and links:</strong> one H1, headings in order, and link text that makes sense on its own (not "click here").</li>
+<li><strong>Screen reader basics:</strong> try NVDA on Windows or TalkBack on Android on one key page.</li>
+<li><strong>Media and motion:</strong> videos have captions, nothing flashes, and sliders can be paused.</li>
+<li><strong>Mobile:</strong> tap targets are big enough and the page works in both orientations.</li>
+</ol>
+<h3>Store and checkout checks for WooCommerce and Shopify</h3>
+<p>Make sure product options, quantity buttons, coupon fields, address fields and payment choices can all be used by keyboard and are labelled, and that checkout error messages are announced, not just shown in red. Record each problem with the page, the issue and a priority, then fix the ones that block enquiries or orders first.</p>
 <h2>FAQs</h2>
 <h3>What WCAG level should a small business website aim for?</h3>
 <p>Level AA. It is the level most guidance and laws refer to, and it covers contrast, keyboard access, labels, captions and the other basics in this guide. Level AAA is not expected across a whole site.</p>
@@ -17806,6 +17926,30 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h2>Leaving a network later</h2>
 <p>Moving a site out of a network means exporting its content, media and users, recreating its settings on a new installation and redirecting any URLs that change. Some migration tools can extract a single subsite, often in their paid versions. It's very doable, but it's more work than moving a normal site, which is another reason to only build a network when the sites truly belong together. If you're stuck with a network that no longer fits, I can help untangle it as part of a <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
+<h2>WordPress multisite SEO in more detail</h2>
+<h3>Subdomain vs subdirectory multisite for SEO</h3>
+<p>Subdirectories (example.com/pune/) sit inside the main site and are simpler to manage. Subdomains (pune.example.com) are treated more like separate sites. For branches, regions or languages of one brand, subdirectories are usually the safer choice; for genuinely separate brands, use separate domains.</p>
+<h3>Settings to check on every site</h3>
+<ul>
+<li>An SEO plugin (Yoast, Rank Math and others support multisite) configured per site, not just network-activated and forgotten.</li>
+<li>A separate XML sitemap for each site, submitted in Search Console.</li>
+<li>Search Console coverage for each site: a domain property covers subdomains, and subdirectories can be added as URL-prefix properties for separate reports.</li>
+<li>Correct canonicals so near-identical branch pages do not compete. Write unique content for each city or branch rather than copying one site and changing the name.</li>
+<li>Hreflang tags only when sites are true language or country versions of each other.</li>
+<li>"Discourage search engines" switched off on every live site, and on for every staging site.</li>
+</ul>
+<h2>Why WordPress multisite gets slow, and how to speed it up</h2>
+<p>A network shares one database and one set of plugins, so one heavy plugin or bloated table slows every site. Work in this order:</p>
+<ol>
+<li><strong>Measure first:</strong> note page load times and admin speed on a few sites, and check server error logs.</li>
+<li><strong>Review network-activated plugins:</strong> activate plugins only on the sites that need them.</li>
+<li><strong>Add persistent object caching</strong> (Redis or Memcached) if your host supports it; it helps the admin and logged-in pages most.</li>
+<li><strong>Clean the database:</strong> old revisions, expired transients, spam comments and leftover tables from deleted sites.</li>
+<li><strong>Replace WP-Cron with a real server cron</strong>, so scheduled tasks for every site do not run on visitor page loads.</li>
+<li><strong>Check hosting and PHP:</strong> a current PHP version and enough memory. Multisite on basic shared hosting often hits limits quickly.</li>
+</ol>
+<h2>What WordPress multisite development services include</h2>
+<p>A proper multisite project covers planning the structure (subdomain or subdirectory, domain mapping), choosing themes and plugins that work network-wide, user roles for site admins, SEO setup per site, hosting with backups that can restore a single site, and documentation so your team can add new sites. Before asking for a quote, prepare the list of sites, who will edit each, what is shared and what differs, and ask whether separate installs might be simpler.</p>
 <h2>FAQs</h2>
 <h3>What is a WordPress Multisite?</h3>
 <p>It's a feature built into WordPress that lets one installation run many websites. The sites share core files, themes, plugins and users, while each keeps its own content, media and settings. A Super Admin manages the whole network from a Network Admin dashboard.</p>
@@ -47638,6 +47782,22 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ol>
 <p>With this, developers can quote on the same scope, and you can compare quotes fairly; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>. For a quick ballpark first, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
+<h2>WooCommerce store cost per month: the running costs</h2>
+<p>The build is a one-time cost; the store then has running costs every month. Plan for these before you launch so the margins still work:</p>
+<ul>
+<li><strong>Hosting that suits a store.</strong> A store needs more server resources than a brochure site, because cart, checkout and account pages cannot be fully cached. Cheap shared plans often struggle during sales.</li>
+<li><strong>Payment gateway fees.</strong> Razorpay, PayU, Cashfree and others charge a percentage on each transaction, plus GST on the fee. International cards and some methods cost more. Check each provider's current rates.</li>
+<li><strong>Shipping and packaging.</strong> Courier aggregators such as Shiprocket charge per shipment by weight and zone. COD orders usually carry an extra COD fee, and boxes, tape and labels add up.</li>
+<li><strong>Plugin and extension renewals.</strong> Many WooCommerce extensions (subscriptions, bookings, product filters, invoices) have yearly licences.</li>
+<li><strong>Maintenance and security.</strong> Updates, backups and checkout testing after each update.</li>
+<li><strong>Marketing.</strong> Ads, SEO, email and social campaigns to bring shoppers in.</li>
+</ul>
+<h3>Returns, refunds and failed deliveries</h3>
+<p>Costs owners often forget: return-to-origin (RTO) charges on refused COD orders, reverse pickup fees, gateway fees that are not returned when you refund, and stock damaged in transit. Cutting RTO, for example by confirming COD orders on WhatsApp or limiting COD to some pin codes, often saves more than shaving the hosting bill.</p>
+<h3>WooCommerce vs Shopify running costs in India</h3>
+<p>WooCommerce has no platform subscription, but you pay for hosting, extensions and maintenance. Shopify has a monthly plan, may add its own transaction fee if you use a third-party gateway, and most stores add paid apps. Which is cheaper depends on how many paid apps or extensions you need, not just the headline plan.</p>
+<h3>Putting it together: a running-cost sheet</h3>
+<p>Make a simple sheet with fixed monthly costs (hosting, email, licences averaged per month, maintenance) and per-order costs (gateway fee, shipping, packaging, expected RTO). Per-order costs tell you your real margin on each product; fixed costs tell you how many orders a month you need to break even.</p>
 <h2>FAQs</h2>
 
 <h3>How much does an e-commerce website cost in India?</h3>
