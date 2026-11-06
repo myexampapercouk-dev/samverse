@@ -7589,6 +7589,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'website-for-interior-designers-architects',
+    noindex: true,
     seoTitle: 'Websites for Interior Designers and Architects That Win Work',
     title: 'Websites for Interior Designers and Architects: Portfolio-First Design, Project Pages, Fast Images and Enquiries That Qualify Clients',
     description: 'Portfolio-first websites for interior designers and architects: project pages, fast galleries, your process, qualifying enquiry forms and design partners.',
@@ -7707,6 +7708,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'website-for-gyms-fitness-studios',
+    noindex: true,
     seoTitle: 'Websites for Gyms, Fitness Studios and Yoga Studios',
     title: 'Websites for Gyms, Fitness Studios and Yoga Studios: Live Timetables, Membership Plans, a Trial Pass, Trainer Profiles and Honest Results',
     description: 'Plan a gym or studio website around a timetable members trust, clear plans, a trial pass, trainer profiles with real certifications and no body promises.',
@@ -8303,6 +8305,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'website-for-event-wedding-planners',
+    noindex: true,
     seoTitle: 'Websites for Event and Wedding Planners That Win Enquiries',
     title: 'Websites for Event and Wedding Planners: Event-by-Event Portfolios With Vendor Credits, Destination Pages, Your Process, Budget Talk and Enquiry Forms',
     description: 'Build a planner website that wins enquiries: event portfolios with vendor credits, destination pages, a clear process and a form asking date and guests.',
@@ -9385,6 +9388,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'website-for-export-businesses',
+    noindex: true,
     seoTitle: 'Websites for Export Businesses: Win International Buyers',
     title: 'Websites for Export Businesses: Specifications and HS Codes, MOQ and Incoterms Explained, Registrations and Certificates, Multilingual Pages and Enquiries From Abroad',
     description: 'Build an export website international buyers trust: full specs, MOQ and Incoterms explained, real certificates, multilingual pages and clear enquiries.',
@@ -9902,6 +9906,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'website-for-diagnostic-labs',
+    noindex: true,
     seoTitle: 'Websites for Diagnostic Labs and Pathology Centres',
     title: 'Websites for Diagnostic Labs and Pathology Centres: Test Catalogue and Preparation, Home Sample Collection, Report Download, Packages, Centres and Doctor Referrals',
     description: 'What a diagnostic lab website needs: a searchable test catalogue with preparation notes, home collection booking, report access, packages and centre pages.',
@@ -10757,6 +10762,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-logistics-transport-companies',
+    noindex: true,
     seoTitle: 'Website for Logistics and Transport Companies: B2B Guide',
     title: 'Websites for Logistics and Transport Companies: FTL, Part Load, Warehousing and Last Mile, Fleet and Coverage, Shipment Tracking, Quote Requests and Driver Recruitment',
     description: 'Plan a logistics or transport company website: FTL, part load, warehousing and last mile pages, lanes, fleet, tracking, quote forms and driver jobs.',
@@ -10864,6 +10870,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-salons-spas',
+    noindex: true,
     seoTitle: 'Website for Salons and Spas: Service Menus and Bookings',
     title: 'Websites for Salons and Spas: Service Menus With Durations, Booking by Stylist, Bridal Packages, Memberships, Real Galleries, Hygiene and Google Reviews',
     description: 'Plan a salon or spa website that gets bookings: service menus with durations, stylist choice, bridal packages, memberships, hygiene and Google reviews.',
@@ -10962,6 +10969,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-construction-companies',
+    noindex: true,
     seoTitle: 'Websites for Construction Companies and Contractors',
     title: 'Websites for Construction Companies and Contractors: Project Portfolios With Stage Photos, Capabilities and Equipment, Safety, Tender Documents, Careers and Site Visits',
     description: 'Plan a construction company website that gets you shortlisted: project portfolios with stage photos, equipment, safety, tender documents and careers pages.',
@@ -11071,6 +11079,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-furniture-businesses',
+    noindex: true,
     seoTitle: 'Website for Furniture Businesses: Catalogue, Quotes, Speed',
     title: 'Websites for Furniture Showrooms and Manufacturers: Made-to-Order and Ready Stock, Dimensions and Materials, Measuring Guides, Delivery and Assembly, Showroom Visits and Custom Quotes',
     description: 'Plan a furniture website: ready stock and made-to-order products, dimensions and materials, measuring guides, delivery, showroom visits and fast images.',
@@ -11545,6 +11554,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-fashion-boutiques',
+    noindex: true,
     seoTitle: 'Websites for Fashion Boutiques: Sizes, Lookbooks and Sales',
     title: 'Websites for Fashion Boutiques: Lookbooks, Size Guides, Variations, Instagram and WhatsApp Selling, COD and Returns',
     description: 'Plan a fashion boutique website: on-model photos, size charts, size and colour variations, lookbooks, Instagram and WhatsApp selling, COD and exchanges.',
@@ -11707,6 +11717,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-pharmacies',
+    noindex: true,
     seoTitle: 'Website for Pharmacies and Medical Stores: What to Include',
     title: 'Websites for Pharmacies and Medical Stores: What You Can Sell Online, Prescription Requests, OTC and Wellness Products, Home Delivery, Store Locator and Pharmacist Contact',
     description: 'Plan a pharmacy or medical store website: online medicine sale rules to check, prescription requests, OTC products, home delivery and a store locator.',
@@ -11806,6 +11817,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-car-dealers-workshops',
+    noindex: true,
     seoTitle: 'Website for Car Dealers and Workshops: Listings to Bookings',
     title: 'Websites for Car Dealers and Auto Workshops: Used and New Car Dealers, Independent Garages, Inventory Listings, Service Booking, Test Drives and Honest Brand Wording',
     description: 'Plan a website for a used car dealer, new car showroom or auto workshop: inventory listings, service booking, test drives, brand wording and local SEO.',
@@ -12047,6 +12059,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-security-facility-management',
+    noindex: true,
     seoTitle: 'Website for Security and Facility Management Companies',
     title: 'Websites for Security and Facility Management Companies: Service Pages, PSARA and Other Registrations, Sector Pages, Tender Enquiries and Recruitment',
     description: 'Plan a security or facility management website: guarding, housekeeping and technical services, licences shown only if held, tenders and recruitment.',
@@ -14180,6 +14193,7 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'website-for-insurance-financial-advisors',
+    noindex: true,
     seoTitle: 'Websites for Insurance Agents and Financial Advisors',
     title: 'Websites for Insurance Agents and Financial Advisors: Registrations Shown Precisely, Disclaimers, Calculators, Needs-Based Enquiries and Client Privacy',
     description: 'Plan an advisor website that shows registrations precisely, carries the right disclaimers, avoids return promises and asks about needs, not products.',
@@ -15172,6 +15186,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-home-services',
+    noindex: true,
     seoTitle: 'Home Services Websites: Plumbers, Electricians, AC Repair',
     title: 'Websites for Home Services: Plumbers, Electricians, Pest Control, Cleaning and AC Repair, With Call-First Design, Real Area Pages and Honest Visiting Charges',
     description: 'A home services website should make calling instant, give each service a real page, cover areas without doorway spam and explain charges before the visit.',
@@ -15303,6 +15318,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-cleaning-services',
+    noindex: true,
     seoTitle: 'Website for Cleaning Services: Checklists, Prices, Bookings',
     title: 'Websites for Cleaning Services: Published Checklists, Clear Pricing, Slot Booking and Honest Staff Checks',
     description: 'How to build a cleaning services website in India: published checklists, clear package pricing, slot booking, staff verification wording and service areas.',
@@ -15417,6 +15433,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-packers-movers',
+    noindex: true,
     seoTitle: 'Website for Packers and Movers: Trust, Quotes and Routes',
     title: 'Websites for Packers and Movers: Answering the Fraud Question, Quote Forms That Price Accurately, Clear Inclusions, Insurance and Honest Route Pages',
     description: 'Plan a packers and movers website: proof customers can check, detailed quote forms, clear inclusions, transit insurance explained and honest route pages.',
@@ -15532,6 +15549,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-hospitals',
+    noindex: true,
     seoTitle: 'Websites for Hospitals and Multi-Speciality Centres',
     title: 'Websites for Hospitals and Multi-Speciality Centres: Emergency Contact First, Departments, a Doctor Directory With OPD Schedules, Appointments, Insurance and Cashless Information',
     description: 'Plan a hospital website around urgency: emergency contact first, departments, a doctor directory with OPD timings, booking and cashless insurance lists.',
@@ -15639,6 +15657,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-physiotherapy-clinics',
+    noindex: true,
     seoTitle: 'Website for Physiotherapy Clinics: Conditions and Booking',
     title: 'Websites for Physiotherapy Clinics: Condition Pages, Assessment Booking, Home Visits, Sports Physio, Packages and Honest Recovery Wording',
     description: 'Plan a physiotherapy clinic website: pages for each condition, assessment booking, home visits, sports physio, fair packages and safe exercise videos.',
@@ -15758,6 +15777,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-eye-clinics-opticians',
+    noindex: true,
     seoTitle: 'Eye Clinic and Optician Website: Clinic, Store and Booking',
     title: 'Websites for Eye Clinics and Opticians: Keeping Clinic Services and the Optical Store Apart, Precise Doctor Credentials, Lens Guides and Appointment Booking',
     description: 'Plan an eye clinic and optician website: clinic and surgery pages under medical advertising rules, a frames and lens store, prescriptions and booking.',
@@ -15867,6 +15887,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-veterinary-pet-clinics',
+    noindex: true,
     seoTitle: 'Website for Vets and Pet Clinics: Emergencies and Booking',
     title: 'Websites for Veterinary and Pet Clinics: Emergency Hours, Species Pages, Vaccination Schedules, Appointment Booking and Vet Credentials',
     description: 'Plan a vet or pet clinic website: exact emergency hours, species you treat, vaccination schedules, booking, vet credentials, boarding and grooming.',
@@ -15989,6 +16010,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-bakeries-cake-shops',
+    noindex: true,
     seoTitle: 'Bakery and Cake Shop Website: Taking Cake Orders Online',
     title: 'Websites for Bakeries and Cake Shops: Custom Cake Orders, Delivery Dates and Slots, Eggless and Allergen Details, WhatsApp Orders and Festival Demand',
     description: 'Plan a bakery website that takes cake orders: custom cake forms, delivery dates and slots, eggless and allergen labels, pin code checks and WhatsApp.',
@@ -16135,6 +16157,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-florists-gift-shops',
+    noindex: true,
     seoTitle: 'Florist and Gift Shop Website: Same-Day Delivery Orders',
     title: 'Websites for Florists and Gift Shops: Same-Day Delivery Slots, Occasion Pages, Add-Ons, Message Cards, Corporate Gifting and Festival Peaks',
     description: 'Plan a florist or gift shop website: same-day delivery slots, occasion pages, add-ons and message cards, sender and recipient details, Valentine\'s peaks.',
@@ -16256,6 +16279,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-wedding-venues-banquet-halls',
+    noindex: true,
     seoTitle: 'Wedding Venue and Banquet Hall Website: Enquiry to Visit',
     title: 'Websites for Wedding Venues and Banquet Halls: Halls and Lawns With Capacities, Packages, Date Enquiries, Virtual Tours and the Path to a Site Visit',
     description: 'Plan a wedding venue or banquet hall website: halls and lawns with real capacities, per-plate packages, date checks, tours and a path to a site visit.',
@@ -16487,6 +16511,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-hostels-pg-accommodation',
+    noindex: true,
     seoTitle: 'Website for Hostels and PGs: Rooms, Rent, Rules and Visits',
     title: 'Websites for Hostels and PG Accommodation: Rooms and Sharing, Rent and Deposit, Food, House Rules, Safety and Visit Booking',
     description: 'Plan a hostel or PG website: room and sharing options, rent and deposit, food plans, house rules, safety, commute times, reviews and booking a visit.',
@@ -16619,6 +16644,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-driving-schools',
+    noindex: true,
     seoTitle: 'Driving School Website: Courses, Slot Booking, Licence Help',
     title: 'Websites for Driving Schools: Course Packages, Two-Wheeler and Car Training, Learner\'s Licence Help, Slot Booking, Instructors and Areas Served',
     description: 'What a driving school website needs: clear course packages, scooter and car pages, honest licence help, slot booking, instructors, cars and pickup areas.',
@@ -16732,6 +16758,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-music-dance-academies',
+    noindex: true,
     seoTitle: 'Website for Music and Dance Academies: Courses and Trials',
     title: 'Websites for Music and Dance Academies: Courses by Instrument and Style, Age Groups, Batch Timings, Trial Classes, Grade Exams, Recitals and Teacher Profiles',
     description: 'Plan a music or dance academy website: courses by instrument or style, age groups, batch timings, trial class booking, teachers, recitals and fees.',
@@ -16838,6 +16865,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-home-tutors-online-teachers',
+    noindex: true,
     seoTitle: 'Websites for Home Tutors and Online Teachers: Get Students',
     title: 'Websites for Home Tutors and Online Teachers: Honest Profiles, Subjects and Boards, Demo Class Booking, Fees, Online Classes, Parent Trust and Local Search',
     description: 'Plan a tutor website parents trust: honest credentials, subjects and boards, demo class booking, how to show fees, online classes, safety and local SEO.',
@@ -16961,6 +16989,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-handicraft-artisan-brands',
+    noindex: true,
     seoTitle: 'Handicraft and Artisan Brand Websites: Sell Handmade Online',
     title: 'Websites for Handicraft and Artisan Brands: Craft Stories, Product Photos, Handmade Variation, Fragile Shipping, Wholesale Enquiries and GI Labels',
     description: 'Plan a handicraft website: honest artisan stories, photos that show texture, handmade variation notes, shipping fragile pieces and wholesale enquiries.',
@@ -17079,6 +17108,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-agriculture-businesses',
+    noindex: true,
     seoTitle: 'Agriculture Business Website: Products, Dealers, Languages',
     title: 'Websites for Agriculture and Agri-Input Businesses: Crop-Wise Product Pages, Dealer Locators, Marathi and Hindi Content, WhatsApp and Label-Safe Claims',
     description: 'Plan an agriculture business website: crop-wise product pages, a dealer locator, Marathi or Hindi content, WhatsApp enquiries and label-safe product claims.',
@@ -17200,6 +17230,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-chemical-pharma-manufacturers',
+    noindex: true,
     seoTitle: 'Website for Chemical and Pharma Manufacturers: B2B Guide',
     title: 'Websites for Chemical and Pharma Manufacturers: Catalogues by CAS Number and Grade, TDS and SDS Downloads, Certifications You Hold, Export Enquiries and RFQ Forms',
     description: 'Plan a B2B chemical or pharma manufacturer website: CAS and grade catalogues, TDS and SDS downloads, real certifications, export and RFQ forms.',
@@ -17316,6 +17347,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-for-textile-manufacturers',
+    noindex: true,
     seoTitle: 'Website for Textile Manufacturers: Fabric Pages and Sampling',
     title: 'Websites for Textile Manufacturers and Exporters: Fabric Pages Buyers Can Spec From, Swatches and Sampling, MOQs, Certifications and Export Enquiries',
     description: 'Plan a textile manufacturer website: fabric pages with GSM, composition and width, swatches and sampling, MOQs, export RFQs, certifications and trade fairs.',
@@ -18827,6 +18859,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-for-taxi-car-rental',
+    noindex: true,
     seoTitle: 'Website for Taxi and Car Rental Services: Fares and Booking',
     title: 'Websites for Taxi and Car Rental Services: Trip Types, Fare Display, Pickup and Drop Booking, Drivers and Cars, Corporate Accounts and Honest Route Pages',
     description: 'Plan a taxi or car rental website: local, outstation and airport trips, clear fares or estimates, booking forms, corporate accounts and route pages.',
@@ -18934,6 +18967,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-for-immigration-visa-consultants',
+    noindex: true,
     seoTitle: 'Website for Immigration and Visa Consultants: Fees and Trust',
     title: 'Websites for Immigration and Visa Consultants: Visa Categories, Assessment Booking, Document Checklists, Clear Fees and Fraud Warnings',
     description: 'Plan an immigration or visa consultant website: services by visa type and country, assessment booking, checklists, clear fees and no guarantees.',
@@ -19056,6 +19090,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-for-medical-equipment-suppliers',
+    noindex: true,
     seoTitle: 'Website for Medical Equipment Suppliers: Catalogue and RFQs',
     title: 'Websites for Medical Equipment Suppliers and Distributors: Catalogues Hospitals Can Evaluate, Quotations and Tenders, Registrations and After-Sales Service',
     description: 'Plan a medical equipment supplier website: a catalogue hospitals can evaluate, spec sheets, RFQ and tender enquiries, registrations, AMC and dealer pages.',
@@ -19176,6 +19211,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-for-authors-content-creators',
+    noindex: true,
     seoTitle: 'Websites for Authors and Content Creators: What to Include',
     title: 'Websites for Authors, YouTubers and Content Creators: Book Pages, Newsletter, Media Kit, Collaboration and Speaking Enquiries, and Selling Direct',
     description: 'What an author or creator website needs: book and content pages, a newsletter you own, a media kit, collaboration and speaking enquiries and direct sales.',
@@ -20291,6 +20327,7 @@ Disallow: /</code></pre>
   },
   {
     slug: 'keep-visitors-engaged-website',
+    noindex: true,
     seoTitle: 'How to Keep Visitors Engaged on Your Website (and Enquiring)',
     title: 'How to Keep Visitors Engaged on Your Website: Match Intent, Load Fast, Make Pages Scannable, Offer a Next Step and Measure Engaged Sessions in GA4',
     description: 'Keep website visitors engaged and moving towards an enquiry: match intent, load fast, make pages scannable, add a next step and track engagement in GA4.',
@@ -21863,6 +21900,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-dermatology-skin-clinics',
+    noindex: true,
     seoTitle: 'Website for Dermatology and Skin Clinics: Treatments, Photos',
     title: 'Websites for Dermatology and Skin Clinics: Concern-Led Pages, Medical and Cosmetic Treatments, Before-and-After Consent and Local Search',
     description: 'Plan a dermatology or skin clinic website: concern-led pages, medical and cosmetic treatments, before-and-after photo consent, booking and local SEO.',
@@ -21985,6 +22023,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-ayurveda-wellness-centres',
+    noindex: true,
     seoTitle: 'Ayurveda and Wellness Centre Website: Retreats and Booking',
     title: 'Websites for Ayurveda and Wellness Centres: Day Treatments and Residential Retreats, Panchakarma Programmes, BAMS Credentials, Careful Claims and International Guests',
     description: 'Plan an Ayurveda or Panchakarma centre website: therapies, day treatments and retreats, BAMS credentials, claims that stay within the rules, and bookings.',
@@ -22098,6 +22137,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-fertility-clinics',
+    noindex: true,
     seoTitle: 'Website for Fertility and IVF Clinics: Discreet and Honest',
     title: 'Websites for Fertility and IVF Clinics: Discreet Design, Treatments Explained Without Promises, Careful Legal Wording and Private Booking',
     description: 'Plan a fertility or IVF clinic website: discreet design, IVF and IUI explained without success-rate claims, careful legal wording and private booking.',
@@ -22213,6 +22253,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-pest-control-companies',
+    noindex: true,
     seoTitle: 'Website for Pest Control Companies: Pages, Bookings and AMCs',
     title: 'Websites for Pest Control Companies: Pest and Property Pages, Inspection Booking, AMC Plans and Careful Safety Wording',
     description: 'How to plan a pest control company website: pages by pest and property, inspection booking, clear AMC plans, careful safety wording and honest photos.',
@@ -22476,6 +22517,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-mobile-laptop-repair',
+    noindex: true,
     seoTitle: 'Mobile and Laptop Repair Shop Website: Pages, Prices, Trust',
     title: 'Websites for Mobile and Laptop Repair Shops: Device and Fault Pages, Price Estimates, Pickup and Doorstep Repair, Status Tracking, Data Privacy and Near Me Search',
     description: 'Plan a mobile and laptop repair website: device and fault pages, honest estimates, pickup and doorstep repair, status updates, privacy and near me SEO.',
@@ -22581,6 +22623,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-laundry-dry-cleaning',
+    noindex: true,
     seoTitle: 'Laundry and Dry Cleaning Website: Prices, Pickups, Plans',
     title: 'Websites for Laundry and Dry Cleaning Services: Item Price Lists, Pickup Booking, Express Orders, Monthly Plans and WhatsApp Updates',
     description: 'Plan a laundry and dry cleaning website: per-kg and per-piece prices, pickup booking, express service, monthly plans, WhatsApp updates and bulk clients.',
@@ -22710,6 +22753,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-catering-services',
+    noindex: true,
     seoTitle: 'Catering Website: Menu Packages, Per-Plate Prices, Enquiries',
     title: 'Websites for Catering Services: Event Pages, Menu Packages, Per-Plate Pricing, Tasting Sessions and Enquiry Forms That Win Wedding and Corporate Orders',
     description: 'Plan a catering website that wins event orders: menu packages, per-plate pricing shown or on request, tastings, event galleries and a smart enquiry form.',
@@ -22820,6 +22864,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-tiffin-meal-subscriptions',
+    noindex: true,
     seoTitle: 'Tiffin Service Website: Meal Plans, Menus and Subscriptions',
     title: 'Websites for Tiffin and Meal Subscription Services: Weekly and Monthly Plans, Menus, Delivery Zones, Pausing and Skipping, Payments and Trial Meals',
     description: 'Plan a tiffin service website: weekly and monthly plans, a menu page, delivery zones, pausing and skipping, payments, WhatsApp updates and trial meals.',
@@ -22944,6 +22989,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-trekking-adventure-operators',
+    noindex: true,
     seoTitle: 'Trekking and Adventure Operator Websites: Treks to Bookings',
     title: 'Websites for Trekking and Adventure Tour Operators: Honest Trek Pages, Batch Dates and Seats, Deposits, Safety, Gear Lists and Group Treks',
     description: 'What a trekking or adventure operator website needs: honest trek pages, batch dates with seats left, deposits, safety and permits, gear lists and groups.',
@@ -23279,6 +23325,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-event-rental-businesses',
+    noindex: true,
     seoTitle: 'Event Rental Business Website: Catalogue, Dates and Quotes',
     title: 'Websites for Event Rental Businesses: Catalogue, Availability by Date, Bundle Quotes, Deposits, Setup and Trade Customers',
     description: 'Plan an event rental website: a catalogue of tents, furniture, sound and decor, availability by date, add-to-quote lists, deposits, setup and planner accounts.',
@@ -23384,6 +23431,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-sports-academies',
+    noindex: true,
     seoTitle: 'Website for Sports Academies: Programmes, Coaches, Trials',
     title: 'Websites for Sports Academies: Programme Grids, Coach Credentials, Trial Sessions, Safety and Parent Updates',
     description: 'Plan a sports academy website: programmes by sport and age group, precise coach credentials, trial booking, batch timings, facilities, safety and results.',
@@ -23645,6 +23693,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-tailoring-services',
+    noindex: true,
     seoTitle: 'Tailoring Website: Measurements, Designs and WhatsApp Orders',
     title: 'Websites for Tailoring and Stitching Services: Measurement Guides, Design Uploads, Alterations, Bridal Orders and WhatsApp Orders',
     description: 'How to plan a tailoring or stitching website in India: design photo uploads, measurement guides and home visits, alteration lists, bridal orders and WhatsApp.',
@@ -24990,6 +25039,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'repurpose-website-content-social-media',
+    noindex: true,
     seoTitle: 'How to Repurpose Website Content for Social Media',
     title: 'How to Repurpose Website Content for Social Media: Carousels, Reels, LinkedIn Posts, WhatsApp Broadcasts and Newsletters, With UTM Links and a Weekly Workflow',
     description: 'Turn one website article into carousels, reels, LinkedIn posts, WhatsApp broadcasts and a newsletter, link back with UTM tags and follow a weekly workflow.',
@@ -27161,6 +27211,7 @@ Last checked:</code></pre>
   },
   {
     slug: 'website-for-nutritionists-dietitians',
+    noindex: true,
     seoTitle: 'Website for Nutritionists and Dietitians: What to Include',
     title: 'Websites for Nutritionists and Dietitians: Consultation Formats, Programmes, Credentials Stated Precisely, Booking and Payments, and Content Clients Trust',
     description: 'What a nutritionist or dietitian website needs: online and clinic consultations, programmes, precise credentials, booking, payments and careful claims.',
@@ -27895,6 +27946,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-astrologers-vastu-consultants',
+    noindex: true,
     seoTitle: 'Website for Astrologers and Vastu Consultants: A Guide',
     title: 'Website for Astrologers, Numerologists and Vastu Consultants: Consultation Types, Booking and Payments, Honest Claims, Hindi and Regional Content, WhatsApp and Reviews',
     description: 'Plan a website for an astrologer or vastu consultant: consultation types, booking and online payment, honest claims, Hindi content and real reviews.',
@@ -28131,6 +28183,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-coaches-consultants',
+    noindex: true,
     seoTitle: 'Website for Coaches and Consultants: More Discovery Calls',
     title: 'Website for Business, Career and Life Coaches: A Clear Niche, Programme Pages, Discovery Call Booking, Lead Magnets and Honest Proof',
     description: 'How a coaching website turns visitors into discovery calls: a sharp niche, programme pages, easy booking, a lead magnet and claims you can stand behind.',
@@ -28548,6 +28601,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-elder-care-home-nursing',
+    noindex: true,
     seoTitle: 'Website for Elder Care and Home Nursing Services',
     title: 'Website for Elder Care, Home Nursing and Assisted Living Services: Writing for Families Far Away, Caregiver Vetting, Care Plans, Service Areas and Family Updates',
     description: 'Plan an elder care or home nursing website for families, including NRIs abroad: services, honest caregiver vetting, care plan enquiries and family updates.',
@@ -28668,6 +28722,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-sweet-shops-mithai',
+    noindex: true,
     seoTitle: 'Website for Sweet Shops: Festival Orders and Gift Boxes',
     title: 'Websites for Sweet Shops and Mithai Brands: Festival Seasons, Gift Boxes, Corporate Diwali Orders, Delivery Radius and Shelf Life, and Online or WhatsApp Ordering',
     description: 'Plan a sweet shop or mithai website: festival gift boxes, corporate Diwali orders, delivery radius by shelf life, online or WhatsApp ordering and FSSAI.',
@@ -38675,6 +38730,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-landscaping-gardening-services',
+    noindex: true,
     seoTitle: 'Website for Landscaping and Gardening Business in India',
     title: 'Websites for Landscaping, Gardening and Nursery Services: Projects, Maintenance Plans and Site Visits',
     description: 'Website for a landscaping or gardening business in India: project galleries, maintenance contracts, site-visit forms, nursery sales and local SEO by area.',
@@ -38789,6 +38845,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-water-purifier-ro-service',
+    noindex: true,
     seoTitle: 'Websites for Water Purifier and RO Service Businesses',
     title: 'Websites for Water Purifier and RO Service Businesses: Service or Sales Focus, AMC Plans, Quick Booking, Honest Area Pages and Careful Brand and Water-Quality Wording',
     description: 'What an RO and water purifier business needs online: a clear service or sales focus, AMC plans, quick booking, honest area pages and careful brand wording.',
@@ -39054,6 +39111,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-glass-aluminium-fabricators',
+    noindex: true,
     seoTitle: 'Website for Aluminium and uPVC Window Fabricators',
     title: 'Websites for Glass, Aluminium and uPVC Window Fabricators',
     description: 'How to plan a website for glass, aluminium and uPVC window fabricators in India: product pages, glass guides, site measurement, projects and local SEO.',
@@ -39178,6 +39236,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-steel-fabrication-companies',
+    noindex: true,
     seoTitle: 'Website for Steel Fabrication Company: Capability and RFQs',
     title: 'Website for Steel Fabrication Companies: Capability Pages, Machinery, Certifications, Projects and RFQs',
     description: 'How to plan a website for a steel fabrication company in India: capability and machinery pages, certifications, case studies and drawing RFQ forms.',
@@ -39289,6 +39348,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-painting-contractors',
+    noindex: true,
     seoTitle: 'Website for Painting Contractors in India: What to Include',
     title: 'Websites for Painting Contractors: Win More House and Commercial Jobs',
     description: 'What a website for painting contractors in India needs: services by job type, before-and-after galleries, site visit requests, WhatsApp and local SEO.',
@@ -39497,6 +39557,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-ac-repair-services',
+    noindex: true,
     seoTitle: 'Website for AC Repair Services: Bookings, AMC, Local SEO',
     title: 'Websites for AC Repair, Installation and AMC Businesses: Seasonal Demand, Booking Slots, Careful Brand Wording and Area Pages',
     description: 'A website for AC repair services: service and installation pages, booking slots, AMC plans, careful brand wording, area pages and off-season content.',
@@ -39778,6 +39839,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-it-hardware-computer-dealers',
+    noindex: true,
     seoTitle: 'Websites for Computer, Laptop and IT Hardware Dealers',
     title: 'Websites for Computer, Laptop and IT Hardware Dealers: Retail and B2B Paths, Large Catalogues, Price on Request, Brand Authorisation, AMC and GST Quotes',
     description: 'Plan a computer dealer website for walk-in buyers and companies: a catalogue that scales, price on request, precise brand status, AMC pages and GST quotes.',
@@ -40167,6 +40229,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-pharma-franchise-companies',
+    noindex: true,
     seoTitle: 'PCD Pharma Franchise Website: Products and Enquiries',
     title: 'Websites for PCD Pharma Franchise Companies: Products, Enquiries and Compliance',
     description: 'How a PCD pharma franchise website should list products, capture distributor enquiries by state and district, and stay careful with medical claims.',
@@ -40841,6 +40904,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-car-wash-detailing',
+    noindex: true,
     seoTitle: 'Car Wash and Detailing Website: Packages, Booking, Local SEO',
     title: 'Websites for Car Wash, Detailing, Ceramic Coating and PPF Studios: Honest Packages, Slot Booking, Memberships and Local SEO',
     description: 'What a car wash or detailing studio website needs: honest wash, detailing, ceramic coating and PPF packages, slot booking, doorstep visits and memberships.',
@@ -41212,6 +41276,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-beauty-cosmetics-brands',
+    noindex: true,
     seoTitle: 'Beauty Ecommerce Website in India: What to Build and Why',
     title: 'Website for a Cosmetics Brand in India: Skincare and Beauty Stores on Shopify or WooCommerce',
     description: 'How to build a beauty ecommerce website in India: Shopify or WooCommerce, ingredient pages, shade finders, honest claims, COD, GST and repeat orders.',
@@ -41627,6 +41692,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-video-production-companies',
+    noindex: true,
     seoTitle: 'Website for Video Production Companies: Showreel to Enquiry',
     title: 'Websites for Video Production Companies: Showreels, Services and Enquiries',
     description: 'What a website for video production companies needs: a fast showreel, service pages, case studies, a project brief form and local search visibility.',
@@ -41774,6 +41840,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-djs-live-bands',
+    noindex: true,
     seoTitle: 'Website for DJs and Live Bands: Get More Wedding Bookings',
     title: 'Websites for Wedding DJs, Live Bands and Performers',
     description: 'What a website for DJs and live bands needs to win wedding bookings: performance videos, clear packages, event pages, availability and fast enquiries.',
@@ -42020,6 +42087,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-book-publishers',
+    noindex: true,
     seoTitle: 'Website for Book Publishers in India: What to Include',
     title: 'Website for Book Publishers and Independent Presses: Catalogue, Submissions and Sales',
     description: 'Planning a website for book publishers in India? What to include: catalogue, author pages, manuscript submissions, and selling on WooCommerce or Shopify.',
@@ -42255,6 +42323,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-home-decor-stores',
+    noindex: true,
     seoTitle: 'Website for Home Decor and Furnishing Stores',
     title: 'Website for Home Decor and Furnishing Stores: Room and Style Browsing, Variants, Lifestyle Photos, Fragile Shipping, Returns, Instagram and Gifting',
     description: 'Build a home decor store website that sells: room and style browsing, clean variants, lifestyle and product photos, fragile shipping, returns and gifting.',
@@ -42384,6 +42453,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-corporate-training-companies',
+    noindex: true,
     seoTitle: 'Website for Corporate Training Companies in India',
     title: 'Website for Corporate Training Companies in India: Programmes, Trainers, Case Studies and B2B Enquiries',
     description: 'What a website for corporate training companies in India needs: programme pages, trainer profiles, delivery formats, proof of work and B2B enquiry forms.',
@@ -42649,6 +42719,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-ielts-spoken-english-institutes',
+    noindex: true,
     seoTitle: 'Websites for IELTS, PTE and Spoken English Institutes',
     title: 'Websites for IELTS, PTE and Spoken English Institutes: Courses by Goal, Demo Class Booking, Batch Timings, Mock Tests and Careful Exam Wording',
     description: 'Plan an English institute website by goal: IELTS, PTE, spoken and corporate English pages, demo booking, live batch timings and no band-score promises.',
@@ -43238,6 +43309,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'voice-search-local-seo',
+    noindex: true,
     seoTitle: 'Voice Search Local SEO: A Practical Guide for India',
     title: 'Voice Search for Local Businesses: How to Get Found When Customers Ask Out Loud',
     description: 'Voice search local SEO for Indian businesses: Google Business Profile, question-style FAQs, Hindi and Hinglish phrasing, schema and fast mobile pages.',
@@ -49978,6 +50050,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-furniture-appliance-rental',
+    noindex: true,
     seoTitle: 'Furniture and Appliance Rental Website in India',
     title: 'Websites for Furniture and Appliance Rental Businesses',
     description: 'Building a furniture and appliance rental website in India: tenure pricing, deposits, KYC, pincode delivery, WooCommerce or Shopify, clear terms.',
@@ -50102,6 +50175,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-auto-parts-dealers',
+    noindex: true,
     seoTitle: 'Auto Parts Website Development for Dealers in India',
     title: 'Auto Parts Website Development: Online Catalogues and Stores for Spare Parts Dealers in India',
     description: 'Auto parts website development for Indian dealers: search by make and model, part numbers, genuine vs aftermarket labels, garage pricing and WhatsApp.',
@@ -50242,6 +50316,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-dairy-milk-delivery',
+    noindex: true,
     seoTitle: 'Websites for Dairy Brands and Milk Delivery Services',
     title: 'Websites for Dairy Brands and Milk Delivery Services: Subscriptions, Pause and Vacation Mode, Prepaid Wallets, Delivery Slots and an Honest Farm Story',
     description: 'Plan a milk delivery website around subscribers: daily plans, evening cut-offs, vacation pause, a prepaid wallet, delivery areas and honest sourcing.',
@@ -50628,6 +50703,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-marriage-bureaus',
+    noindex: true,
     seoTitle: 'Websites for Marriage Bureaus and Matrimony Services',
     title: 'Websites for Marriage Bureaus: Matchmaking or Listing, Profile Privacy and Photo Consent, Honest Verification, Membership Plans, Community Focus and Fraud Warnings',
     description: 'What a marriage bureau website needs: matchmaking or listing model, private profiles, photo consent, honest verification, clear plans and a fraud page.',
@@ -50762,6 +50838,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-speech-therapy-child-development',
+    noindex: true,
     seoTitle: 'Website for Speech Therapy and Child Development Centres',
     title: 'Websites for Speech Therapy, Occupational Therapy and Child Development Centres',
     description: 'How to build a website for a speech therapy or child development centre in India: therapy pages, therapist credentials, assessment booking and privacy.',
@@ -51368,6 +51445,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'linkedin-b2b-website-traffic',
+    noindex: true,
     seoTitle: 'How to Get B2B Leads From LinkedIn to Your Website',
     title: 'How to Use LinkedIn to Bring B2B Visitors and Enquiries to Your Website',
     description: 'How to get B2B leads from LinkedIn to your website in India: profile links, posts that earn clicks, landing pages, UTM tracking and follow-up that works.',
@@ -51893,6 +51971,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-cafes-coffee-shops',
+    noindex: true,
     seoTitle: 'Website for Cafes and Coffee Shops: What to Include',
     title: 'Websites for Cafes and Coffee Shops: What Customers Look For',
     description: 'What a website for cafes and coffee shops needs: a fast menu page, real photos, hours, map, work-friendly details, events, beans for sale and local SEO.',
@@ -52001,6 +52080,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-hearing-aid-centres',
+    noindex: true,
     seoTitle: 'Website for Hearing Aid Centres and Audiologists in India',
     title: 'Websites for Hearing Aid Centres and Audiologists: Tests, Trials and Trust',
     description: 'What a website for hearing aid centres in India needs: test booking, trial explanations, device types, honest claims, accessibility and local SEO.',
@@ -52135,6 +52215,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-homeopathy-clinics',
+    noindex: true,
     seoTitle: 'Websites for Homeopathy Clinics: Claims and Credentials',
     title: 'Websites for Homeopathy Clinics: Condition Pages Without Cure Claims, Precise BHMS Credentials, Online Consultations and Booking That Fits Long First Visits',
     description: 'A homeopathy clinic website that stays within advertising rules: careful condition pages, precise BHMS credentials, online consultations and easy booking.',
@@ -52272,6 +52353,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'youtube-video-seo-small-business',
+    noindex: true,
     seoTitle: 'YouTube SEO for Small Business: Titles, Chapters, Schema',
     title: 'YouTube and Video SEO for Small Businesses: Titles, Chapters and Schema',
     description: 'YouTube SEO for small business in India: searchable titles, chapters and captions, embedding videos on your site with schema, and turning views into leads.',
@@ -54058,6 +54140,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-tempo-traveller-bus-rental',
+    noindex: true,
     seoTitle: 'Websites for Tempo Traveller and Bus Rental Operators',
     title: 'Websites for Tempo Traveller and Bus Rental Operators: Vehicles by Seating, Trip Types, Quote Forms, Clear Fares, Permits, Drivers and Corporate Contracts',
     description: 'Plan a tempo traveller or bus rental website around group size: vehicle pages by seating, trip types, a full quote form, clear fares and driver details.',
@@ -54322,6 +54405,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-recycling-ewaste-companies',
+    noindex: true,
     seoTitle: 'Website for E-Waste Recycling Companies in India',
     title: 'Websites for E-Waste, Scrap and Recycling Companies: Bulk Pickups, Compliance Wording, Certificates and B2B Enquiries',
     description: 'What a website for e-waste recycling companies in India needs: pickup forms, B2B pages, hedged compliance wording, certificates and local search.',
@@ -54808,6 +54892,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-kids-activity-classes',
+    noindex: true,
     seoTitle: 'Website for Kids Activity Classes and Summer Camps',
     title: 'Websites for Kids\' Activity Classes and Summer Camps',
     description: 'How to plan a website for kids activity classes and summer camps in India: programmes by age, batch calendars, trial classes, safety and parent privacy.',
@@ -54924,6 +55009,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-sports-bicycle-stores',
+    noindex: true,
     seoTitle: 'Website for Sports Shops and Bicycle Stores in India',
     title: 'Websites for Sports Goods and Bicycle Stores: Catalogue, Fitting and Servicing',
     description: 'What a website for a sports shop or bicycle store needs: a clear catalogue, size and fit guides, service booking, WhatsApp enquiries and local SEO.',
@@ -55053,6 +55139,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-electronics-appliance-stores',
+    noindex: true,
     seoTitle: 'Electronics Shop Website: Catalogue, EMI and Service',
     title: 'Websites for Electronics and Home Appliance Stores: Catalogue, Offers and Service',
     description: 'How to plan an electronics shop website in India: catalogue, EMI and offer wording, delivery and installation, WooCommerce vs Shopify and local SEO.',
@@ -55162,6 +55249,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-perfume-fragrance-brands',
+    noindex: true,
     seoTitle: 'Website for Perfume Brands in India: What to Include',
     title: 'Website for Perfume and Fragrance Brands in India: Store, Samples and Shipping',
     description: 'Plan a website for a perfume brand in India: scent descriptions, sample kits, gifting, honest labelling and shipping rules on WooCommerce or Shopify.',
@@ -55297,6 +55385,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-translation-services',
+    noindex: true,
     seoTitle: 'Website for Translation Services: Languages, Quotes, Trust',
     title: 'Websites for Translation and Interpretation Agencies',
     description: 'What a website for translation services needs: language pairs, document types, certified translation, secure file upload quotes and confidentiality.',
@@ -55582,6 +55671,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-lift-elevator-companies',
+    noindex: true,
     seoTitle: 'Website for Lift and Elevator Companies in India',
     title: 'Websites for Lift and Elevator Companies: Sales, AMC and Breakdown Support',
     description: 'What a website for lift and elevator companies in India needs: product pages, AMC and service enquiries, builder trust signals, local SEO and quote forms.',
@@ -56058,6 +56148,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-uniform-manufacturers',
+    noindex: true,
     seoTitle: 'Website for Uniform Manufacturers: Catalogue and Bulk Orders',
     title: 'Websites for Uniform Manufacturers: Catalogues, Sampling and Bulk Orders',
     description: 'What a website for a uniform manufacturer in India needs: catalogues, fabrics, size charts, sampling, bulk quotes and school stores on Shopify or Woo.',
@@ -56319,6 +56410,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-franchise-brands',
+    noindex: true,
     seoTitle: 'Website for Franchise Brands in India: Recruit Partners',
     title: 'Website for Franchise Brands: Model Pages, Applications, Outlet Locators and Disclosures',
     description: 'How to plan a website for franchise brands in India: clear model pages, honest investment details, qualifying forms, outlet locators and disclosures.',
@@ -56450,6 +56542,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-tiles-sanitaryware-showrooms',
+    noindex: true,
     seoTitle: 'Website for Tiles Showroom: Catalogue, Visits, Trade Leads',
     title: 'Website for Tiles and Sanitaryware Showrooms: Catalogues, Authorised Brands, Visits and Builder Enquiries',
     description: 'How to plan a website for a tiles showroom in India: catalogues by room and size, authorised brands, visit bookings and builder or contractor enquiries.',
@@ -56565,6 +56658,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-mattress-sleep-brands',
+    noindex: true,
     seoTitle: 'Website for Mattress Brands in India: Shopify or Woo',
     title: 'Mattress Brand Website in India: Comparisons, Trials, Sizes and Trust on Shopify or WooCommerce',
     description: 'A website for mattress brands in India: product pages that explain feel, a size guide for Indian beds, honest trials and warranty, EMI and delivery.',
@@ -56711,6 +56805,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'digital-pr-small-business',
+    noindex: true,
     seoTitle: 'Digital PR for Small Business in India: A Practical Guide',
     title: 'Digital PR for Small Businesses: Earning Press Mentions and Links the Right Way',
     description: 'Digital PR for small business in India: find story angles, pitch Indian journalists and trade sites, earn honest links and turn coverage into enquiries.',
@@ -56830,6 +56925,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-tour-guides-heritage-walks',
+    noindex: true,
     seoTitle: 'Website for Tour Guides and Heritage Walks in India',
     title: 'Websites for Tour Guides and Heritage Walk Operators',
     description: 'What a website for tour guides and heritage walks in India needs: walk pages, booking and UPI payments, languages, Google Maps, reviews and fast mobile pages.',
@@ -57609,6 +57705,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-baby-products-brands',
+    noindex: true,
     seoTitle: 'Website for Baby Products Brands: Shopify or WooCommerce',
     title: 'Websites for Baby Care and Baby Products Brands',
     description: 'Building a website for a baby products brand in India: ingredient and safety details, age guidance, careful claims, gifting and Shopify or WooCommerce.',
@@ -57739,6 +57836,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-inverter-battery-dealers',
+    noindex: true,
     seoTitle: 'Website for Inverter and Battery Dealers in India',
     title: 'Websites for Inverter, UPS and Battery Dealers',
     description: 'How to build a website for inverter and battery dealers in India: product pages, a backup calculator, battery exchange, service requests and local SEO.',
@@ -58119,6 +58217,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-pandit-puja-services',
+    noindex: true,
     seoTitle: 'Website for Pandits and Puja Booking Services',
     title: 'Websites for Pandits and Puja Booking Services: Puja Pages With What Is Included, Booking by Date and Muhurat, Samagri, Online Puja and Dakshina Wording',
     description: 'A website for pandits and puja booking services: pages for each puja, booking by date or muhurat, samagri lists, online puja and dakshina wording.',
@@ -58368,6 +58467,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-tractor-farm-equipment-dealers',
+    noindex: true,
     seoTitle: 'Tractor Dealer Website: What to Include and How to Build It',
     title: 'Websites for Tractor and Farm Equipment Dealers: Model Pages, Finance Enquiries, Service and Spares, and Reaching Rural Buyers',
     description: 'What a tractor dealer website needs: precise brand authorisation, model pages, careful finance and subsidy wording, service, spares and Hindi pages.',
@@ -58502,6 +58602,7 @@ Support:           who to contact, and on what terms</code></pre>
   },
   {
     slug: 'website-for-event-organisers-ticketing',
+    noindex: true,
     seoTitle: 'Websites for Event Organisers: Selling Tickets Online',
     title: 'Websites for Event Organisers: Event Pages, Selling Tickets on WooCommerce or a Ticketing Platform, QR Check-in, GST on Tickets, Recurring Events and Sponsors',
     description: 'How event organisers sell tickets from their own site: event pages, WooCommerce vs ticketing platforms, QR check-in, GST, recurring events, sponsors.',
@@ -58752,6 +58853,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-gym-equipment-sellers',
+    noindex: true,
     seoTitle: 'Website for Gym Equipment Sellers: Shopify or WooCommerce',
     title: 'Websites for Gym and Fitness Equipment Sellers: Home Ranges, Gym Setups and Service',
     description: 'Website for gym equipment sellers in India: Shopify or WooCommerce, home fitness product pages, gym setup quotes, heavy shipping, EMI, COD and service.',
@@ -59169,6 +59271,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-drone-services',
+    noindex: true,
     seoTitle: 'Website for Drone Services in India: Pages, Proof, Enquiries',
     title: 'Website for Drone Services: Aerial Shoots, Surveys, Inspections and Spraying in India',
     description: 'How to plan a website for drone services in India: service pages, sample deliverables, honest DGCA wording, coverage areas and enquiry forms.',
@@ -59283,6 +59386,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-aquarium-shops',
+    noindex: true,
     seoTitle: 'Aquarium Shop Website: Livestock, Store and Maintenance',
     title: 'Websites for Aquarium Shops: Livestock Lists, a WooCommerce Store for Dry Goods, Setup and Maintenance Bookings, and Care Guides',
     description: 'Plan an aquarium shop website: livestock vs dry goods, local-only live fish delivery, WooCommerce categories, maintenance bookings and care guides.',
@@ -59401,6 +59505,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-musical-instrument-stores',
+    noindex: true,
     seoTitle: 'Websites for Musical Instrument Stores',
     title: 'Websites for Musical Instrument Stores: Catalogue by Instrument and Brand, Precise Dealer Status, Demo Videos, Store Visits, Rentals, Repairs and Classes',
     description: 'What a musical instrument shop website needs: catalogue by instrument and brand, exact dealer status, demo videos, trial visits, rentals and repairs.',
@@ -59517,6 +59622,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-domestic-help-agencies',
+    noindex: true,
     seoTitle: 'Website for Maid and Nanny Agency in India: What to Include',
     title: 'Websites for Domestic Help, Nanny and Caretaker Placement Agencies',
     description: 'What a website for a maid, nanny or caretaker agency in India needs: service pages, verification process, replacement policy, enquiry forms and local SEO.',
@@ -59833,6 +59939,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-dog-trainers',
+    noindex: true,
     seoTitle: 'Website for Dog Trainers in India: Pages, Trust and Bookings',
     title: 'Websites for Dog Trainers and Behaviourists: Winning Owners\' Trust',
     description: 'What a website for dog trainers in India needs: training programme pages, your methods explained, real progress stories, easy booking and local SEO.',
@@ -60577,6 +60684,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-plumbers',
+    noindex: true,
     seoTitle: 'Website for Plumbers in India: Turn Searches Into Calls',
     title: 'Websites for Plumbers: Turning Urgent Searches Into Calls',
     description: 'What a website for plumbers in India needs to turn urgent searches into calls: click-to-call, WhatsApp, service and area pages, speed and reviews.',
@@ -60943,6 +61051,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-stationery-shops',
+    noindex: true,
     seoTitle: 'Website for Stationery Shops: School Kits and Office Orders',
     title: 'Websites for Stationery Shops: School Lists, Office Orders and Local Delivery',
     description: 'What a website for a stationery shop in India needs: school list kits, bulk office quotes, catalogue by brand, local delivery, WhatsApp, Shopify or Woo.',
@@ -61072,6 +61181,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-bookstores',
+    noindex: true,
     seoTitle: 'Website for Bookstores in India: WooCommerce or Shopify',
     title: 'Websites for Independent Bookstores: Stock, Search, Book Lists and Events',
     description: 'Building a website for bookstores in India: WooCommerce or Shopify, ISBN catalogues, search, curated lists, pre-orders, events and local SEO.',
@@ -61349,6 +61459,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-car-service-garages',
+    noindex: true,
     seoTitle: 'Websites for Car Service Centres and Independent Garages',
     title: 'Websites for Car Service Centres and Garages: Service Menus With Honest Estimates, Pickup and Drop, Slot Booking, Specialist Positioning and Insurance Claim Help',
     description: 'A garage website that earns bookings: honest estimates, each stage of the job, realistic slots, pickup and drop, careful brand wording and local SEO.',
@@ -61477,6 +61588,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'website-for-loan-agents-dsa',
+    noindex: true,
     seoTitle: 'Website for Loan Agents and DSAs in India: What to Include',
     title: 'Website for Loan Agents and DSAs in India: Pages, Forms and Trust',
     description: 'What a website for loan agents and DSAs in India needs: clear loan pages, document checklists, short enquiry forms, careful wording and safe data handling.',
@@ -62524,6 +62636,7 @@ if ( ! $link ) {
   },
   {
     slug: 'website-for-footwear-stores',
+    noindex: true,
     seoTitle: 'Website for Footwear Stores in India: Sizes and Exchanges',
     title: 'Websites for Shoe and Footwear Stores: Fit, Sizes and Exchanges',
     description: 'Building a website for footwear stores in India? Plan size variants, size charts, exchanges, COD rules and product photos on Shopify or WooCommerce.',
@@ -62622,6 +62735,7 @@ if ( ! $link ) {
   },
   {
     slug: 'website-for-saree-ethnic-wear-stores',
+    noindex: true,
     seoTitle: 'Saree Website Development: Online Store for Ethnic Wear',
     title: 'Saree Website Development: Building an Online Store for Sarees and Ethnic Wear in India',
     description: 'Saree website development for Indian stores: honest drape photos, fabric details, blouse stitching options, Shopify or WooCommerce, UPI, COD and returns.',
@@ -62749,6 +62863,7 @@ if ( ! $link ) {
   },
   {
     slug: 'website-for-watch-stores',
+    noindex: true,
     seoTitle: 'Websites for Watch Stores and Authorised Watch Retailers',
     title: 'Websites for Watch Stores and Authorised Watch Retailers: Dealer Status Stated Precisely, Collections by Brand, Product Photography, Servicing and Store Visits',
     description: 'Plan a watch store website around trust: dealer status stated precisely, collections by brand, honest photos, careful warranty wording and visit booking.',
@@ -63778,6 +63893,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-mehendi-artists',
+    noindex: true,
     seoTitle: 'Website for Mehendi Artists: Portfolio and Bookings',
     title: 'Websites for Mehendi Artists: Portfolios, Bookings and Travel',
     description: 'What a website for mehendi artists in India needs: bridal and party portfolios, packages, booking enquiries, travel details, reviews and local SEO.',
@@ -63916,6 +64032,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-chess-academies',
+    noindex: true,
     seoTitle: 'Website for Chess Academies: Online and Offline Classes',
     title: 'Website for Chess Academies: Levels, Online Classes, Tournaments and Enrolments in India',
     description: 'How to plan a website for chess academies in India: levels and batches, online class details, coach profiles, tournament news, demo bookings and local SEO.',
@@ -65509,6 +65626,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-wedding-decorators',
+    noindex: true,
     seoTitle: 'Website for Wedding Decorators in India: What to Include',
     title: 'Websites for Wedding and Event Decorators: Portfolios, Packages and Bookings',
     description: 'What a website for wedding decorators in India needs: a fast portfolio by event and theme, package guidance, date-check enquiries, WhatsApp and local SEO.',
@@ -65614,6 +65732,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-curtain-blinds-shops',
+    noindex: true,
     seoTitle: 'Website for Curtain and Blinds Shops: What to Include',
     title: 'Websites for Curtain and Blinds Shops: Swatches, Measuring and Installation',
     description: 'How to plan a website for a curtain and blinds shop in India: fabric swatches, blinds types, measuring visits, WooCommerce or Shopify, and local SEO.',
@@ -65724,6 +65843,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-upholstery-services',
+    noindex: true,
     seoTitle: 'Website for Upholstery and Sofa Repair Services',
     title: 'Websites for Upholstery and Sofa Repair Services: Repair vs Reupholster Advice, Fabric Catalogues, Home Visits and Before-and-After Galleries',
     description: 'What an upholstery or sofa repair website needs: repair vs reupholstery advice, a fabric catalogue, home visit booking and your own before-and-after work.',
@@ -65997,6 +66117,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'google-discover-small-business',
+    noindex: true,
     seoTitle: 'Google Discover for Small Business Websites in India',
     title: 'Google Discover for Small Business Websites in India: How It Works and What You Can Control',
     description: 'How Google Discover works for small business websites in India, what gets shown, the image and page basics to fix, and how to track Discover traffic.',
@@ -66243,6 +66364,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-sports-turfs',
+    noindex: true,
     seoTitle: 'Turf Booking Website: Box Cricket and Football Turfs',
     title: 'Websites for Box Cricket and Football Turfs: Slot Booking, Payments and Policies',
     description: 'How to build a turf booking website for box cricket and football turfs in India: live slot booking, UPI advance payments, clear policies and local SEO.',
@@ -66362,6 +66484,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-swimming-classes',
+    noindex: true,
     seoTitle: 'Website for Swimming Classes: Batches, Fees and Bookings',
     title: 'Website for Swimming Classes: Batches, Safety, Fees and Online Bookings for Indian Swim Schools',
     description: 'What a website for swimming classes in India needs: batch timetables, coach and safety details, summer camp pages, online booking and local SEO.',
@@ -66467,6 +66590,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-custom-tshirt-printing',
+    noindex: true,
     seoTitle: 'Custom T-Shirt Printing Website in India: Shopify or Woo',
     title: 'Websites for Custom T-Shirt Printing Businesses: Design Tools, Bulk Orders and Payments',
     description: 'How to plan a custom t-shirt printing website in India: product options, design upload, bulk quote forms, UPI and COD, GST, shipping and policies.',
@@ -67102,6 +67226,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'website-for-abacus-vedic-maths-classes',
+    noindex: true,
     seoTitle: 'Website for Abacus and Vedic Maths Classes in India',
     title: 'Website for Abacus and Vedic Maths Classes in India: Levels, Batches, Demo Classes and Parent Trust',
     description: 'What a website for abacus and Vedic maths classes in India needs: level pages, batch timings, online and centre options, demo class booking and local SEO.',
@@ -67222,6 +67347,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'website-for-pet-boarding-daycare',
+    noindex: true,
     seoTitle: 'Website for Pet Boarding and Dog Daycare: What to Include',
     title: 'Websites for Pet Boarding, Daycare and Pet Hotels: Trust, Bookings and Peak-Season Demand',
     description: 'Website for pet boarding or dog daycare in India: real facility photos, vaccination rules, daily routine, updates, bookings and festival-season demand.',
@@ -68441,6 +68567,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-commercial-kitchen-equipment-suppliers',
+    noindex: true,
     seoTitle: 'Commercial Kitchen Equipment Supplier Website Guide',
     title: 'Websites for Commercial Kitchen Equipment Suppliers: Spec-Led Catalogues, Turnkey Projects, Quotes and AMC',
     description: 'What a commercial kitchen equipment supplier website needs in India: specs by equipment type, turnkey project pages, precise brand wording, quotes and AMC.',
@@ -68567,6 +68694,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-car-accessories-shops',
+    noindex: true,
     seoTitle: 'Website for Car Accessories Shop in India: What to Include',
     title: 'Websites for Car Accessories Shops: Fitment, Installation and Honest Claims',
     description: 'Website for a car accessories shop in India: fitment by make and model, installation booking, WooCommerce or Shopify, COD and honest claims.',
@@ -68692,6 +68820,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-escape-room-gaming-zones',
+    noindex: true,
     seoTitle: 'Website for Escape Rooms and Gaming Zones: Booking Guide',
     title: 'Websites for Escape Rooms and Gaming Zones: Game Pages, Age and Group Size, Slot Booking With Deposits, Party Packages and Safety',
     description: 'A website for escape rooms and gaming zones: game pages with age and group size, slot booking with deposits, party packages, safety and local SEO.',
@@ -69102,6 +69231,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'qr-codes-for-business-website',
+    noindex: true,
     seoTitle: 'QR Code for Business Website: How to Use It in India',
     title: 'QR Codes for Your Business: Bringing Offline Customers to Your Website',
     description: 'How to use a QR code for your business website in India: where to place it, which page to link, tracking with UTM tags, design tips and mistakes to avoid.',
@@ -69216,6 +69346,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-ev-charging-stations',
+    noindex: true,
     seoTitle: 'Website for EV Charging Stations and Charger Installers',
     title: 'Websites for EV Charging Stations: Locations, Chargers and Installations',
     description: 'What a website for EV charging stations in India needs: location pages, charger details, home and society installation enquiries, maps and local SEO.',
@@ -69357,6 +69488,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-trophy-awards-shops',
+    noindex: true,
     seoTitle: 'Website for Trophy Shop: Catalogue, Engraving, Bulk Orders',
     title: 'Websites for Trophy and Awards Shops: Catalogue, Engraving and Bulk Orders',
     description: 'Website for a trophy and awards shop in India: catalogue by occasion, engraving options, bulk order quotes, WooCommerce or Shopify, and event deadlines.',
@@ -69468,6 +69600,7 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'website-for-organic-food-stores',
+    noindex: true,
     seoTitle: 'Website for Organic Food Store in India: Shopify or Woo',
     title: 'Websites for Organic Food Stores and Farm Brands: Trust, Subscriptions and Delivery',
     description: 'How to build a website for an organic food store in India on Shopify or WooCommerce: honest sourcing pages, local delivery, subscriptions, UPI and COD.',
@@ -71020,6 +71153,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   },
   {
     slug: 'website-for-personal-trainers',
+    noindex: true,
     seoTitle: 'Website for Personal Trainers: Packages, Leads and Trust',
     title: 'Websites for Personal Trainers: Packages, Consultations and Honest Results',
     description: 'What a website for personal trainers needs: clear packages, a free consultation form, honest results, online coaching, payments and links from Instagram.',
@@ -71131,6 +71265,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   },
   {
     slug: 'website-for-paint-dealers',
+    noindex: true,
     seoTitle: 'Website for Paint Dealers: Shades, Quantities and Orders',
     title: 'Websites for Paint Dealers and Paint Shops: Shades, Quantities and Contractor Orders',
     description: 'What a website for paint dealers needs: brands and ranges, shade help, a paint quantity guide, contractor orders, WhatsApp quotes and local search.',
@@ -71267,6 +71402,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   },
   {
     slug: 'website-for-ayurvedic-product-brands',
+    noindex: true,
     seoTitle: 'Website for Ayurvedic Product Brands: Claims and Reorders',
     title: 'Websites for Ayurvedic and Herbal Product Brands: Ingredients, Claims and Repeat Orders',
     description: 'A website for Ayurvedic product brands: ingredient pages, careful health claims, licence details, UPI and COD checkout, and easy repeat orders.',
@@ -74964,6 +75100,7 @@ done</code></pre>
   },
   {
     slug: 'flash-sale-collection-meta-title-description',
+    noindex: true,
     seoTitle: 'Meta Title and Description for Flash Sale Collection Pages',
     title: 'Meta Title and Description for a Flash Sale Collection: Templates for Shopify and WooCommerce Stores',
     description: 'How to write the meta title and description for a flash sale collection on Shopify or WooCommerce: templates, examples, dates, offers and one reusable URL.',
@@ -76584,6 +76721,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   },
   {
     slug: 'website-for-pune-industrial-suppliers',
+    noindex: true,
     seoTitle: 'Website for Pune and PCMC Industrial Suppliers (MIDC)',
     title: 'Websites for Pune and PCMC Industrial Suppliers: Chakan, Bhosari, Talegaon and Ranjangaon MIDC',
     description: 'Website for industrial suppliers in Pune and PCMC: capability pages, catalogues, vendor registration details, RFQ forms and local SEO for MIDC buyers.',
@@ -77980,6 +78118,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   },
   {
     slug: 'website-for-courier-services',
+    noindex: true,
     seoTitle: 'Website for Courier Services: Booking, Rates and Tracking',
     title: 'Websites for Courier and Parcel Services: Pickup Booking, Rate Pages, Tracking, Franchise Enquiries and Business Accounts',
     description: 'Website for a courier or parcel service in India: pickup booking, honest rate pages, shipment tracking, branch pages, business accounts and WhatsApp.',
@@ -78095,6 +78234,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   },
   {
     slug: 'website-for-mobile-phone-shops',
+    noindex: true,
     seoTitle: 'Website for Mobile Phone Shops: Stock, EMI and WhatsApp',
     title: 'Websites for Mobile Phone Shops: Model Pages, Stock and Price Updates, EMI Information, Exchange Offers, Accessories and Store Visits',
     description: 'Website for a mobile phone shop in India: model pages, live stock and price, EMI and exchange info, accessories, WhatsApp orders and local search.',
@@ -78196,6 +78336,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   },
   {
     slug: 'website-for-tax-consultants-gst-practitioners',
+    noindex: true,
     seoTitle: 'Website for Tax Consultants and GST Practitioners in India',
     title: 'Websites for Tax Consultants and GST Practitioners: Service Pages, Document Checklists, Careful Credentials, Secure Uploads and Filing-Season Enquiries',
     description: 'Website for a tax consultant or GST practitioner in India: service pages, document checklists, precise credentials, secure uploads and ITR season leads.',

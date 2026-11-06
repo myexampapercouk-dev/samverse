@@ -38,6 +38,7 @@ const waFloat = between('<a class="wa-float"', '</a>');
 const PAGES = require('./pages-data');
 const PROJECTS = require('./projects');
 const POSTS = require('./blog-data');
+const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and that we link to
 const SUMMARIES = require('./blog-summaries');
 
 // Static portfolio cards (crawlable links); script.js only manages the screenshots
@@ -112,7 +113,7 @@ ${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span
 // `readingFrom` lets a page (e.g. a location page) borrow another page's reading list
 const readingFor = p => {
   const key = p.readingFrom || p.slug;
-  const posts = POSTS.filter(x => x.related.includes(key))
+  const posts = LIVE_POSTS.filter(x => x.related.includes(key))
     .map((x, i) => ({ x, i, rank: x.related.indexOf(key) }))
     .sort((a, b) => a.rank - b.rank || a.i - b.i)
     .slice(0, 8).map(o => o.x);
@@ -449,18 +450,18 @@ const renderPost = (post, i) => {
   });
   // Most related posts: shared service pages count most, then same category, then links between the two posts
   // (a shared niche page like the doctors page counts more than a common one like SEO services)
-  const freq = s => POSTS.filter(p => p.related.includes(s)).length;
+  const freq = s => LIVE_POSTS.filter(p => p.related.includes(s)).length;
   const score = x => x.related.filter(s => post.related.includes(s)).reduce((sum, s) => sum + 12 / freq(s), 0)
     + (x.category === post.category ? 1 : 0)
     + (post.body.includes(`/blog/${x.slug}/`) || x.body.includes(`/blog/${post.slug}/`) ? 2 : 0);
-  const others = POSTS.filter(x => x !== post)
+  const others = LIVE_POSTS.filter(x => x !== post)
     .map((x, j) => ({ x, s: score(x), j }))
     .sort((a, b) => b.s - a.s || a.j - b.j)
     .slice(0, 3).map(o => o.x);
 
   // Topic group (for breadcrumb, category link and previous/next navigation)
   const topic = BLOG_TOPICS.find(t => t.cats.includes(post.category)) || BLOG_TOPICS[0];
-  const inTopic = POSTS.filter(p => topic.cats.includes(p.category) || (topic.id === 'planning' && !knownCats.includes(p.category)));
+  const inTopic = POSTS.filter(p => (p === post || !p.noindex) && (topic.cats.includes(p.category) || (topic.id === 'planning' && !knownCats.includes(p.category))));
   const at = inTopic.indexOf(post);
   const prev = inTopic.length > 1 ? inTopic[(at - 1 + inTopic.length) % inTopic.length] : null;
   const next = inTopic.length > 2 ? inTopic[(at + 1) % inTopic.length] : (inTopic.length === 2 ? prev : null);
@@ -655,7 +656,7 @@ const BLOG_TOPICS = [
     seoTitle: 'WordPress Guides for Agencies & Designers | Samverse Blog', seoDesc: 'White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.' },
 ];
 const knownCats = BLOG_TOPICS.flatMap(t => t.cats);
-const topicPosts = t => POSTS.filter(p => t.cats.includes(p.category) || (t.id === 'planning' && !knownCats.includes(p.category)))
+const topicPosts = t => LIVE_POSTS.filter(p => t.cats.includes(p.category) || (t.id === 'planning' && !knownCats.includes(p.category)))
   .sort((a, b) => b.date.localeCompare(a.date));
 const topicHref = t => `/blog/topic/${t.id}/`;
 const TOPIC_PREVIEW = 6; // cards per topic on /blog/; the hub page lists them all
@@ -668,7 +669,7 @@ const renderBlogIndex = () => {
   const schema = {
     '@context': 'https://schema.org', '@type': 'Blog', name: 'Samverse Blog', url,
     author: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
-    blogPost: POSTS.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.date })),
+    blogPost: LIVE_POSTS.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.date })),
   };
   return `${headCommon('WordPress & Website Tips for Business Owners | Samverse Blog', 'Practical guides on WordPress websites, costs, speed, security, SEO and online stores, written for business owners by a freelance WordPress developer.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
@@ -816,7 +817,7 @@ BLOG_TOPICS.filter(t => topicPosts(t).length).forEach(t => {
 POSTS.forEach((post, i) => {
   const dir = path.join(ROOT, 'blog', post.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), renderPost(post, i));
+  fs.writeFileSync(path.join(dir, 'index.html'), post.noindex ? renderPost(post, i).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex, follow">') : renderPost(post, i));
   console.log('built', `/blog/${post.slug}/`);
 });
 fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), renderBlogIndex());
@@ -829,7 +830,7 @@ fs.writeFileSync(path.join(ROOT, 'blog', 'feed.xml'), `<?xml version="1.0" encod
   <atom:link href="${SITE}/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>WordPress and website tips for business owners from Samverse.</description>
   <language>en-in</language>
-${POSTS.map(p => `  <item>\n    <title>${esc(p.title)}</title>\n    <link>${SITE}/blog/${p.slug}/</link>\n    <guid>${SITE}/blog/${p.slug}/</guid>\n    <pubDate>${new Date(p.date + 'T09:00:00+05:30').toUTCString()}</pubDate>\n    <description>${esc(p.description)}</description>\n  </item>`).join('\n')}
+${LIVE_POSTS.map(p => `  <item>\n    <title>${esc(p.title)}</title>\n    <link>${SITE}/blog/${p.slug}/</link>\n    <guid>${SITE}/blog/${p.slug}/</guid>\n    <pubDate>${new Date(p.date + 'T09:00:00+05:30').toUTCString()}</pubDate>\n    <description>${esc(p.description)}</description>\n  </item>`).join('\n')}
 </channel>
 </rss>
 `);
@@ -903,7 +904,7 @@ ${w.goals.map(g => `            <li>${tick} ${esc(g)}</li>`).join('\n')}
           <h2>What I built</h2>
           <ul class="cs-built">
 ${w.built.map(b => `            <li>${esc(b)}</li>`).join('\n')}
-          </ul>${(w.sections || []).map(s => `\n          <h2>${esc(s.h)}</h2>\n${s.p.map(t => `          <p>${esc(t)}</p>`).join('\n')}`).join('')}${(w.reading || []).length ? `\n          <h2>Related reading</h2>\n          <ul class="cs-built">\n${w.reading.map(r => POSTS.find(p => p.slug === r)).filter(Boolean).map(p => `            <li><a href="/blog/${p.slug}/" class="link-inline">${esc(p.title)}</a></li>`).join('\n')}\n          </ul>` : ''}
+          </ul>${(w.sections || []).map(s => `\n          <h2>${esc(s.h)}</h2>\n${s.p.map(t => `          <p>${esc(t)}</p>`).join('\n')}`).join('')}${(w.reading || []).length ? `\n          <h2>Related reading</h2>\n          <ul class="cs-built">\n${w.reading.map(r => LIVE_POSTS.find(p => p.slug === r)).filter(Boolean).map(p => `            <li><a href="/blog/${p.slug}/" class="link-inline">${esc(p.title)}</a></li>`).join('\n')}\n          </ul>` : ''}
         </div>
         <aside class="cs-side">
           <dl>
@@ -1083,11 +1084,11 @@ EXTRA.forEach(x => {
 // Homepage "From the blog": 3 pinned essentials + the 3 newest other articles
 {
   const PINNED = ['wordpress-website-cost-india', 'why-is-my-wordpress-site-slow', 'clinic-website-checklist-for-doctors'];
-  const order = new Map(POSTS.map((p, i) => [p.slug, i]));
-  const newest = POSTS.filter(p => !PINNED.includes(p.slug))
+  const order = new Map(LIVE_POSTS.map((p, i) => [p.slug, i]));
+  const newest = LIVE_POSTS.filter(p => !PINNED.includes(p.slug))
     .sort((a, b) => b.date.localeCompare(a.date) || order.get(b.slug) - order.get(a.slug))
     .slice(0, 3);
-  const picks = [...PINNED.map(s => POSTS.find(p => p.slug === s)).filter(Boolean), ...newest];
+  const picks = [...PINNED.map(s => LIVE_POSTS.find(p => p.slug === s)).filter(Boolean), ...newest];
   const cards = picks.map(p => `          <a class="post-card reveal" href="/blog/${p.slug}/">${cardImg(p)}<span class="work-tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p><span class="post-card-meta">Read article →</span></a>`).join('\n');
   const indexPath = path.join(ROOT, 'index.html');
   let home = fs.readFileSync(indexPath, 'utf8');
@@ -1100,7 +1101,7 @@ EXTRA.forEach(x => {
     'logo-favicon-brand-basics-website', 'compare-website-quotes', 'how-long-to-build-wordpress-website',
     'elementor-layout-broken-after-update', 'rebranding-your-website', 'hreflang-multilingual-seo-india',
     'hindi-devanagari-fonts-website', 'woocommerce-multi-vendor-marketplace', 'wordpress-activity-logs'];
-  const guides = POPULAR.map(s => POSTS.find(p => p.slug === s)).filter(Boolean)
+  const guides = POPULAR.map(s => LIVE_POSTS.find(p => p.slug === s)).filter(Boolean)
     .map(p => `            <li><a href="/blog/${p.slug}/">${esc(p.seoTitle || p.title)}</a></li>`).join('\n');
   const reG = /(<!-- home-guides:start -->)[\s\S]*?(<!-- home-guides:end -->)/;
   if (!reG.test(home)) throw new Error('index.html is missing the home-guides markers');
@@ -1138,7 +1139,7 @@ ${WORK.filter(w => !w.noindex).map(w => md(w.name, `${SITE}/work/${w.slug}/`, w.
 ${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => md(t.name, `${SITE}${topicHref(t)}`, t.seoDesc)).join('\n')}
 
 ## Blog
-${[...POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `${SITE}/blog/${p.slug}/`, p.description)).join('\n')}
+${[...LIVE_POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `${SITE}/blog/${p.slug}/`, p.description)).join('\n')}
 `);
 console.log('built llms.txt');
 
@@ -1154,7 +1155,7 @@ const now = new Date(); // local date (IST), matching post dates
 const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
-  ...POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
+  ...LIVE_POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
   { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
 
 // Pages without a post date get a lastmod that only moves when their <main> content changes,
