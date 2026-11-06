@@ -8998,6 +8998,8 @@ wp cache flush</code></pre>
   <li><strong>Visitors:</strong> a reader who finishes an article about a problem should be one click from the service that solves it.</li>
 </ul>
 
+<p>If your main menu has disappeared or stopped updating, see <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing or not saving</a>.</p>
+
 <h2>Navigation links vs contextual links</h2>
 <table>
   <thead><tr><th>Type</th><th>Where it appears</th><th>What it is good for</th></tr></thead>
@@ -13478,6 +13480,8 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 &lt;link rel="manifest" href="https://example.com/site.webmanifest"&gt;</code></pre>
 <p>Browsers cache favicons heavily, so a new one can take a while to appear even after you've changed it. Google can also take time to pick it up in search results, and at the time of writing it recommends a square icon larger than 48 by 48 pixels at a stable, crawlable address.</p>
 
+<p>If a post shares with no image or the wrong one on WhatsApp or Facebook, <a href="/blog/wordpress-featured-image-not-showing-fix/">fixing a missing featured image</a> covers Open Graph tags and cached previews.</p>
+
 <h2>Social share images</h2>
 <p>When someone pastes your link into WhatsApp, LinkedIn or Facebook, the preview shows a title, a description and an image taken from your page's Open Graph tags. Without one, the platform picks a random image or shows nothing.</p>
 <ol>
@@ -13599,6 +13603,8 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   <li>Avoid actions that only appear on hover, swipe-only galleries and tiny "x" buttons for closing things.</li>
   <li>Label icons with words. A phone icon alone is less clear than a phone icon with "Call us".</li>
 </ul>
+
+<p>Check that the menu also works on phones; if the mobile menu is missing or does nothing, <a href="/blog/wordpress-menu-not-showing-fix/">these WordPress menu fixes</a> cover the usual causes.</p>
 
 <h2>Plain language and simple navigation</h2>
 <p>Use the words visitors would use themselves: "Timings", "Doctors", "How to reach", "Donate", "Book appointment", not "Solutions", "Engage" or "Connect". Keep the main menu short, keep it in the same place on every page, and use a visible "Menu" label next to the icon on phones. Breadcrumbs and a clear Home link help people who land on an inner page from Google or a WhatsApp forward find their way.</p>
@@ -29570,6 +29576,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Specific over vague:</strong> "replace the filter every two weeks in summer" beats "maintain your AC regularly", as long as it's accurate.</li>
 </ul>
 
+<p>Set a featured image on every post. If it doesn't appear on the post or the blog page, see <a href="/blog/wordpress-featured-image-not-showing-fix/">WordPress featured image not showing</a>.</p>
+
 <h2>Step 6: Internal links and images</h2>
 <p>Link to the relevant service page early in the post, where a reader would naturally want help, and to two or three related posts where the topic comes up. Then do the step most people skip: edit older posts on the same subject and add a link to the new one. A new post with no links pointing to it can wait a long time to be crawled. <a href="/blog/topic-clusters-pillar-pages/">Topic clusters and pillar pages</a> shows how to organise posts around your services so the links follow a plan.</p>
 <p>Use original images where you can, such as photos of jobs, before-and-after shots or annotated screenshots. Compress them, give them descriptive file names and write alt text that describes what the image shows. <a href="/blog/image-seo-guide/">Image SEO</a> covers formats, alt text and getting images found.</p>
@@ -35397,6 +35405,8 @@ stat -c "%a %U %n" wp-config.php</code></pre>
   </tbody>
 </table>
 <p>Start with generous limits and tighten them only if attacks get through. Set them too strict and customers on office or mobile networks, who can share one IP address, get blocked.</p>
+
+<p>A common false positive is the block editor's save request, which shows up as <a href="/blog/wordpress-updating-failed-error-fix/">WordPress "Updating failed. The response is not a valid JSON response"</a>.</p>
 
 <h2>False positives: when the firewall blocks the wrong thing</h2>
 <p>Every firewall blocks something legitimate eventually. Common cases:</p>
@@ -66650,6 +66660,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Keep WordPress and plugins updated, since API vulnerabilities are usually fixed in updates.</li>
 </ul>
 <p>Treat the REST API as part of your general hardening, alongside the steps in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+<p>The most visible REST API error is in the block editor itself; if pages won't save, see <a href="/blog/wordpress-updating-failed-error-fix/">how to fix the WordPress "Updating failed" error</a>.</p>
+
 <h2>Common REST API errors</h2>
 <table>
   <thead><tr><th>Error or symptom</th><th>Likely cause</th><th>What to check</th></tr></thead>
@@ -72474,6 +72486,8 @@ or a cookie name starts with:
 </ul>
 <p>Don't deactivate an offload plugin as a quick test. Check whether local copies exist and use the plugin's own option to bring files back first.</p>
 
+<p>Missing sizes also leave blank or blurry thumbnails on the blog page; see <a href="/blog/wordpress-featured-image-not-showing-fix/">why a WordPress featured image is not showing</a>.</p>
+
 <h2>Regenerate missing thumbnails</h2>
 <p>WordPress creates resized copies of every upload: thumbnail, medium, large and any sizes your theme or plugins add. Grey boxes, or blurry or oddly cropped images, can mean those copies are missing or don't match the current theme, typically after a theme change, new sizes in Settings → Media, or a migration that copied only the originals.</p>
 <p>A thumbnail regeneration plugin, or WP-CLI's <code>wp media regenerate</code> (add <code>--only-missing</code> to skip existing sizes), rebuilds them. It's heavy work, so take a backup and run it at a quiet time, in batches for large libraries. If the originals are missing, restore them from a backup.</p>
@@ -73026,6 +73040,8 @@ or a cookie name starts with:
 </ul>
 <p>Some menus also disappear by design. If wp-config.php contains DISALLOW_FILE_EDIT, the theme and plugin file editors are hidden. If it contains DISALLOW_FILE_MODS, you cannot install or update plugins and themes from the dashboard at all. Those are hardening settings, not faults.</p>
 
+<p>This section is about dashboard menus. If it's the menu on your website that is missing or not saving, see <a href="/blog/wordpress-menu-not-showing-fix/">how to fix a WordPress menu not showing</a>.</p>
+
 <h2>Plugins that hide menus, and plugin conflicts</h2>
 <p>Admin menu editors, white-label plugins, client dashboard plugins and some page builders let site owners hide menus from certain users. If someone set them up and forgot, menus can be hidden even from administrators. Check the settings of any such plugin, or rename its folder over FTP or the file manager to test.</p>
 <p>A plugin that throws a PHP error during admin loading can also stop menus registering. If menus vanished right after an update, test plugins one at a time on staging; <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">plugin conflict troubleshooting</a> shows the method.</p>
@@ -73043,6 +73059,8 @@ or a cookie name starts with:
   <li>Migration plugins usually handle this. Manual SQL imports often do not.</li>
 </ul>
 <p>Make these database changes on a backup first, or ask a developer if you are not comfortable with phpMyAdmin.</p>
+
+<p>If the dashboard loads but posts won't save, the same plugins may be blocking the REST API; see <a href="/blog/wordpress-updating-failed-error-fix/">fixes for WordPress updating failed</a>.</p>
 
 <h2>A security plugin hiding or blocking wp-admin</h2>
 <p>Security plugins can change the login address, block wp-admin for certain IP addresses or countries, or lock out users after failed attempts. If wp-admin returns a 404 or a block message:</p>
@@ -77641,6 +77659,305 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Set the message under Online Store, then Preferences, and edit the password page layout in the theme editor to add your logo or an email sign-up form.</p>
 <h3>Should I put my live Shopify store behind a password while redesigning?</h3>
 <p>Generally no. Work on a duplicate theme, preview it, and publish when it is ready, so the store keeps taking orders.</p>
+`,
+  },
+  {
+    slug: 'wordpress-featured-image-not-showing-fix',
+    seoTitle: 'WordPress Featured Image Not Showing? How to Fix It',
+    title: 'WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares',
+    description: 'WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.',
+    date: '2026-11-06',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If your WordPress featured image is not showing, first check whether one is actually set in the post sidebar, then check your theme's settings, because many themes let you hide featured images on single posts, archives or both. If the image is set and enabled but the space is blank, broken or blurry, the cause is usually missing image sizes, a lazy loading or CDN setting, or a page builder template that doesn't include the featured image. Wrong images on WhatsApp or Facebook shares are a separate issue with Open Graph tags.</p>
+
+<h2>WordPress featured image not showing: quick diagnosis</h2>
+<table>
+  <thead><tr><th>Where it's missing</th><th>Likely cause</th><th>First check</th></tr></thead>
+  <tbody>
+    <tr><td>On the single post page</td><td>Theme option hides it, or the template lacks it</td><td>Customizer or theme options for single posts</td></tr>
+    <tr><td>On the blog page and archives</td><td>Archive layout setting, or builder loop template</td><td>Theme blog settings, archive template</td></tr>
+    <tr><td>Blank box or broken icon</td><td>File missing, wrong URL after migration, or lazy loading</td><td>Open the image URL directly</td></tr>
+    <tr><td>Blurry or badly cropped</td><td>Thumbnail sizes not regenerated after a theme change</td><td>Regenerate thumbnails</td></tr>
+    <tr><td>No "Featured image" box in the editor</td><td>Panel hidden, or post type doesn't support it</td><td>Editor Preferences &gt; Panels</td></tr>
+    <tr><td>Wrong or no image on WhatsApp, Facebook, LinkedIn</td><td>Open Graph tags or cached preview</td><td>SEO plugin social settings, sharing debugger</td></tr>
+  </tbody>
+</table>
+
+<h2>Fix 1: Confirm the featured image is set and the panel is visible</h2>
+<p>Open the post, click the Post tab in the right sidebar and look for Featured image. If the panel is missing, open the three-dot menu, choose Preferences, then Panels, and switch Featured image on. Set or replace the image and click Update.</p>
+<p>On custom post types such as portfolio items, services or team members, the panel only appears if the post type was registered with thumbnail support. If it's missing there, the developer who built the post type needs to add it.</p>
+
+<h2>Fix 2: Check the theme's featured image settings</h2>
+<p>Most themes have switches for featured images in Appearance &gt; Customize, usually under Blog, Single Post or Post Layout. Look for options such as "Show featured image", "Post header layout" or "Image position". It's common for a theme to show the image on the blog page but hide it on the post itself, or to place it behind the title as a background where it's easy to miss.</p>
+<p>Block themes control this in the template. Go to Appearance &gt; Editor &gt; Templates, open Single Posts, and check that a Featured Image block is present. For the blog page, open the Blog Home or Index template and check the Post Featured Image block inside the Query Loop.</p>
+<p>If you've changed theme recently, expect these settings to need setting again, so check a single post and the blog page straight after any switch.</p>
+
+<h2>Fix 3: Page builder templates</h2>
+<p>When Elementor or another builder controls single posts or archives, the theme's settings no longer apply. Edit the single post template and make sure it contains the builder's Featured Image widget, and that the Posts or Loop widget on archive templates has "Image" switched on. Also check the template's display conditions, so it's applied to all posts rather than one category.</p>
+
+<h2>Fix 4: Blank, broken or missing images</h2>
+<p>Right-click the empty space, choose Inspect, and find the img tag. Copy the image URL and open it in a new tab.</p>
+<ul>
+  <li><strong>The image opens:</strong> the file is fine, so lazy loading, CSS or a script is hiding it. Go to Fix 6.</li>
+  <li><strong>404 error:</strong> the file is missing. This is common after a migration or a cleanup plugin deleted "unused" sizes. Re-upload it, or regenerate thumbnails if the original exists.</li>
+  <li><strong>The URL uses http or the old domain:</strong> the site moved and the database still points at old addresses. A search-and-replace of the old URL fixes it; take a backup first. For the http case, also check for mixed content warnings.</li>
+</ul>
+<p>If images also fail to load in Media &gt; Library, follow <a href="/blog/wordpress-media-library-not-loading-fix/">the media library not loading fixes</a> first, because the cause is shared.</p>
+
+<h2>Fix 5: Blurry, stretched or wrongly cropped thumbnails</h2>
+<p>When you upload an image, WordPress creates several resized copies at the sizes your theme asks for. Change the theme, or its image settings, and old images don't get new sizes automatically. The theme then falls back to the nearest size, which can look blurry or cropped.</p>
+<ol>
+  <li>Install a thumbnail regeneration plugin and regenerate all sizes, ideally outside business hours on a large library.</li>
+  <li>Upload featured images at the width your theme suggests, usually at least 1200 pixels wide for full-width post headers, and keep the same aspect ratio across posts.</li>
+  <li>Check Settings &gt; Media and the theme's image size settings if crops are still wrong.</li>
+</ol>
+<p><a href="/blog/image-seo-guide/">The image SEO guide</a> covers file names, formats and alt text, which matter for featured images because Google and social apps reuse them.</p>
+
+<h2>Fix 6: Lazy loading, CDN and cache conflicts</h2>
+<p>Speed plugins often replace image addresses with placeholders and swap in the real image with JavaScript. If that script is delayed or broken, the featured image never appears. Excluding the first image on the page from lazy loading is also good practice, because it is usually the largest element above the fold.</p>
+<ul>
+  <li>Temporarily switch off lazy loading in your speed or caching plugin and test. If the image returns, exclude featured images or the first image from lazy loading.</li>
+  <li>If you use a CDN or image optimisation service, check whether the image URL points at the CDN and loads there. Purge the CDN cache.</li>
+  <li>Clear all caches after any fix, then test in a private window.</li>
+</ul>
+<p><a href="/blog/lazy-loading-explained/">Lazy loading explained</a> shows what to exclude and why. If you've changed the image and the old one still appears, <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> walks through each cache layer.</p>
+
+<h2>Fix 7: Featured image not showing on WhatsApp, Facebook or LinkedIn</h2>
+<p>When you share a post link, the app reads the page's Open Graph tags (og:image) to pick a preview image. If the preview is missing or shows your logo instead:</p>
+<ul>
+  <li>Make sure only one plugin outputs Open Graph tags. Yoast SEO, Rank Math, All in One SEO and some themes and social plugins all can; two sets of tags confuse the apps.</li>
+  <li>In your SEO plugin's social settings, set a default image and check the post's own social image, which overrides the featured image.</li>
+  <li>Use an image at least 1200 by 630 pixels, under a few hundred KB, in JPG or PNG, and not blocked by a firewall or hotlink protection.</li>
+  <li>Previews are cached. Facebook's Sharing Debugger and LinkedIn's Post Inspector let you refresh them. WhatsApp keeps its own cache for a while; sharing the link with a harmless query string such as ?v=2 shows a fresh preview.</li>
+</ul>
+<p><a href="/blog/logo-favicon-brand-basics-website/">Logo, favicon and brand basics</a> covers default social share images, so posts without their own still share well.</p>
+
+<h2>Preventing featured image problems</h2>
+<ul>
+  <li>Agree a standard size and ratio for featured images and stick to it.</li>
+  <li>Compress before uploading, but don't upload tiny images; WordPress can't make small images sharp.</li>
+  <li>After a theme change, migration or speed plugin change, check a single post, the blog page and a share preview. After moving to HTTPS, also follow <a href="/blog/mixed-content-warnings-fix/">the mixed content fixes</a>, because http image URLs are a common cause of missing images.</li>
+</ul>
+<p>Featured image problems after a migration or redesign are routine fixes in a <a href="/wordpress-maintenance/">WordPress maintenance plan</a>. If the fix needs template changes, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to edit the theme or builder template properly.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WordPress featured image not showing?</h3>
+<p>Usually the theme hides it on single posts or archives, a page builder template doesn't include it, or no featured image is set. Check the post sidebar, the theme's Customizer settings and any builder templates.</p>
+<h3>Why is my featured image not showing on the blog page?</h3>
+<p>The blog or archive layout has images switched off, or a builder's posts widget has the image option off. In block themes, check that the Query Loop in the blog template contains a Post Featured Image block.</p>
+<h3>Why is the featured image option missing in WordPress?</h3>
+<p>The panel may be hidden in the editor's Preferences, or the post type was created without thumbnail support. Switch the panel on in Preferences &gt; Panels, or ask a developer to add support to the custom post type.</p>
+<h3>Why does my featured image look blurry?</h3>
+<p>The image is smaller than the space the theme gives it, or WordPress is serving an old size after a theme change. Upload a larger image and regenerate thumbnails.</p>
+<h3>Why is my featured image not showing when I share on WhatsApp?</h3>
+<p>WhatsApp reads the og:image tag, and caches previews. Check that one SEO plugin outputs a correct og:image of a suitable size, then share the link with a query string to see a fresh preview.</p>
+<h3>Does the featured image affect SEO?</h3>
+<p>Indirectly. Google can use it in Discover and search results, and social apps use it for previews, which affects clicks. Use a relevant, well-sized image with a descriptive file name and alt text.</p>
+`,
+  },
+  {
+    slug: 'wordpress-menu-not-showing-fix',
+    seoTitle: 'WordPress Menu Not Showing or Not Saving? Fixes',
+    title: 'WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus',
+    description: 'WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.',
+    date: '2026-11-06',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>If your WordPress menu is not showing, the menu usually exists but is not assigned to the theme's menu location, or your theme has changed and now builds its header with a Navigation block or a page builder. If the menu shows but your changes are not appearing, a cache is serving the old version. If items disappear when you click Save Menu, a server limit called max_input_vars is cutting the save short. Each has a quick fix, set out below.</p>
+
+<h2>WordPress menu not showing: quick diagnosis</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Where to fix</th></tr></thead>
+  <tbody>
+    <tr><td>No menu in the header at all, or a list of every page</td><td>Menu not assigned to a location</td><td>Appearance &gt; Menus &gt; Manage Locations</td></tr>
+    <tr><td>No Appearance &gt; Menus screen</td><td>Block theme using the Site Editor</td><td>Appearance &gt; Editor &gt; Navigation</td></tr>
+    <tr><td>Changes saved but visitors see the old menu</td><td>Page, server or CDN cache</td><td>Purge every cache layer</td></tr>
+    <tr><td>Items vanish or order resets after Save Menu</td><td>max_input_vars limit</td><td>PHP settings in hosting panel</td></tr>
+    <tr><td>Menu works on desktop, not on mobile</td><td>Theme or builder mobile menu setting, or a JavaScript error</td><td>Header builder, browser console</td></tr>
+    <tr><td>Menu disappeared after a theme or plugin update</td><td>Location names changed, or a plugin conflict</td><td>Re-assign location, conflict test</td></tr>
+  </tbody>
+</table>
+
+<h2>Fix 1: Assign the menu to the right location</h2>
+<p>Classic themes show menus in "locations" such as Primary, Header, Footer or Mobile. A menu you build in Appearance &gt; Menus only appears once it is assigned to one.</p>
+<ol>
+  <li>Go to Appearance &gt; Menus and select your menu.</li>
+  <li>Under Menu Settings at the bottom, tick the location, for example Primary Menu. Or open the Manage Locations tab and pick the menu for each location.</li>
+  <li>Click Save Menu and reload the site in a private window.</li>
+</ol>
+<p>If your header shows every page in a plain list, WordPress is falling back to an automatic page list because no menu is assigned. Assigning one fixes it.</p>
+<p>After switching themes, locations nearly always need re-assigning, because each theme names them differently. Check the header on desktop and mobile after any theme switch.</p>
+
+<h2>Fix 2: Block themes use the Navigation block, not Appearance &gt; Menus</h2>
+<p>If Appearance &gt; Menus is missing, you are probably on a block theme such as Twenty Twenty-Four or Twenty Twenty-Five. These build the header in the Site Editor, and the menu is a Navigation block.</p>
+<ol>
+  <li>Go to Appearance &gt; Editor, then Navigation.</li>
+  <li>Choose the menu, add or reorder links, and save.</li>
+  <li>If the header still shows the wrong menu, open the header template part, select the Navigation block and pick the correct menu in its settings.</li>
+</ol>
+<p>Classic menus can be imported into the Navigation block from the same menu. <a href="/blog/block-themes-full-site-editing/">Block themes and Full Site Editing explained</a> covers where templates and template parts live.</p>
+
+<h2>Fix 3: Elementor or another builder controls the header</h2>
+<p>When a page builder draws the header, its Nav Menu widget picks which WordPress menu to show. If someone created a new menu, the widget may still point at the old one, or at nothing.</p>
+<ul>
+  <li>Edit the header template in the builder, select the menu widget and choose the right menu.</li>
+  <li>Check the template's display conditions, so the header is applied to the entire site.</li>
+  <li>Check the widget's breakpoint and dropdown settings for tablet and mobile.</li>
+</ul>
+<p>If the whole header has disappeared rather than just the menu, see <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>.</p>
+
+<h2>Fix 4: Menu changes not showing? Clear every cache</h2>
+<p>If the menu looks right when you are logged in but visitors still see the old links, a cache is serving an older copy of the page. Menus appear on every page, so every cached page shows the old one until it is purged.</p>
+<ol>
+  <li>Purge your caching plugin (LiteSpeed Cache, WP Rocket, W3 Total Cache and so on).</li>
+  <li>Purge the host's server cache from the hosting panel.</li>
+  <li>Purge Cloudflare or any other CDN.</li>
+  <li>Test in a private window on mobile data, not your office Wi-Fi.</li>
+</ol>
+<p><a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through each cache layer and how to tell which one is stale. If only the styling of the menu is old, see <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+
+<h2>Fix 5: WordPress menu not saving or losing items</h2>
+<p>This is the classic large-menu problem. Each menu item sends around a dozen fields when you click Save Menu. PHP's max_input_vars setting caps how many fields the server will accept, and the default on many hosts is 1000. With a big menu, WordPress quietly drops everything past that limit, so the last items vanish, the order resets or the save seems to do nothing.</p>
+<ol>
+  <li>Open your hosting panel's PHP settings (MultiPHP INI Editor in cPanel, PHP Configuration in hPanel) and raise max_input_vars, for example to 3000 or 5000.</li>
+  <li>If you can't change it, ask hosting support. Some hosts also need suhosin limits raised.</li>
+  <li>Save the menu again and check that the last item stayed.</li>
+</ol>
+<p>Very large menus are also hard for visitors to use. If your menu has grown past a few dozen items, it may be better to restructure it; <a href="/blog/website-navigation-structure/">how to structure your website navigation</a> shows a simpler approach.</p>
+
+<h2>Fix 6: Menu not showing on mobile</h2>
+<p>When the desktop menu works but the mobile hamburger does nothing or is missing:</p>
+<ul>
+  <li>Check whether the theme has a separate Mobile Menu location that needs its own menu assigned.</li>
+  <li>Check the header builder's mobile settings, where the menu may be hidden on small screens.</li>
+  <li>Open the site in Chrome, press F12 and look in the Console for red errors. Mobile menus depend on JavaScript; a broken script, or a speed plugin delaying or combining scripts, stops the toggle working. Exclude the theme's menu script from delay and minify settings and test again.</li>
+</ul>
+
+<h2>Fix 7: Menu items or the Menus screen missing in the dashboard</h2>
+<p>If you can't see Appearance &gt; Menus at all on a classic theme, your user role may lack permission, or a plugin is hiding admin menus. Only administrators (and roles given the edit_theme_options capability) can manage menus. See <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a>, and if menus vanished after an update, test for a conflict with <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">the plugin conflict method</a>.</p>
+<p>Also check Screen Options at the top of the Menus screen. Categories, custom links, products or custom post types only appear in the left panel once ticked there.</p>
+
+<h2>Keeping menus healthy on a business site</h2>
+<ul>
+  <li>Keep one main menu and one footer menu; avoid several near-identical copies that nobody remembers to update.</li>
+  <li>After a theme change, plugin update or new header design, check desktop and mobile menus on the live site.</li>
+  <li>Give staff Editor rather than Administrator access if they only edit content, and let one person own menu changes.</li>
+</ul>
+<p>If menus keep breaking after updates, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> includes post-update checks of the header and mobile menu. For a one-off fix or a header rebuild, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a>; businesses in Maharashtra can also look at <a href="/wordpress-developer-pune/">a WordPress developer in Pune</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Why is my WordPress menu not showing?</h3>
+<p>Usually because the menu is not assigned to the theme's menu location, the theme was changed, or a block theme or page builder now controls the header. Assign the menu in Manage Locations, the Navigation block or the builder's menu widget.</p>
+<h3>Why is my WordPress menu not saving?</h3>
+<p>On large menus, the PHP max_input_vars limit cuts off the save, so items vanish or the order resets. Raise it in your hosting panel's PHP settings or ask your host to do it.</p>
+<h3>Why don't I see Appearance &gt; Menus in WordPress?</h3>
+<p>Block themes manage menus in Appearance &gt; Editor &gt; Navigation instead. On a classic theme, a missing Menus screen usually means your user role lacks permission or a plugin is hiding it.</p>
+<h3>Why are my menu changes not showing on the live site?</h3>
+<p>A page cache, server cache or CDN is still serving the old pages. Purge every cache layer and check in a private window on mobile data.</p>
+<h3>Why is my WordPress mobile menu not working?</h3>
+<p>Mobile menus often need their own location or header builder setting, and they rely on JavaScript. Check for a separate mobile menu location and for console errors caused by script delay or minify settings.</p>
+<h3>How do I add pages to a WordPress menu?</h3>
+<p>In Appearance &gt; Menus, tick the pages in the left panel and click Add to Menu, then drag to order and save. In a block theme, add a Page Link inside the Navigation block in the Site Editor.</p>
+`,
+  },
+  {
+    slug: 'wordpress-updating-failed-error-fix',
+    seoTitle: 'WordPress "Updating Failed" Error? How to Fix It',
+    title: 'WordPress "Updating Failed" or "Publishing Failed"? How to Fix the Not a Valid JSON Response Error',
+    description: 'Fix the WordPress "Updating failed" and "Publishing failed. The response is not a valid JSON response" errors: permalinks, SSL, firewalls, plugins and REST API.',
+    date: '2026-11-06',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
+    body: `
+<p>When WordPress shows "Updating failed" or "Publishing failed. The response is not a valid JSON response", the block editor tried to save your page through the WordPress REST API and got something other than the answer it expected. The fix is usually one of five things: re-save your permalinks, make the WordPress and Site Address URLs match your real HTTPS address, allow the request in your firewall or security plugin, find a plugin that prints errors into the response, or fix a server rule in .htaccess.</p>
+<p>Before you try anything, copy the text of the post you are editing into a plain text file. The editor keeps an autosave in some cases, but not always, and the error often appears exactly when you have written the most.</p>
+
+<h2>WordPress updating failed: quick diagnosis table</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Most likely cause</th><th>First fix</th></tr></thead>
+  <tbody>
+    <tr><td>"Updating failed. The response is not a valid JSON response" on every page</td><td>Permalinks or .htaccess broken, so REST API URLs return 404</td><td>Settings &gt; Permalinks &gt; Save Changes</td></tr>
+    <tr><td>Error started after moving to HTTPS or a new domain</td><td>Site URLs still on http or the old domain</td><td>Match both URLs in Settings &gt; General</td></tr>
+    <tr><td>Only some posts fail, often ones with code, scripts or certain words</td><td>Firewall or security plugin blocking the request</td><td>Check the firewall log and allow the request</td></tr>
+    <tr><td>Error started after a plugin or theme update</td><td>PHP notice or extra output breaking the JSON</td><td>Plugin conflict test</td></tr>
+    <tr><td>"Updating failed. You are probably offline"</td><td>Connection dropped, or a timeout on slow hosting</td><td>Check your connection, then the server error log</td></tr>
+    <tr><td>Error only when uploading an image inside the editor</td><td>Upload limits or the image library</td><td>See the image upload fixes below</td></tr>
+  </tbody>
+</table>
+
+<h2>Why the block editor shows "not a valid JSON response"</h2>
+<p>The block editor (Gutenberg) does not submit a normal form when you click Update. It sends your content to an address such as /wp-json/wp/v2/pages/123 and expects a short reply written in JSON. If that address returns a 404 page, a firewall block page, a login redirect, a PHP warning or an HTML error page instead, the editor cannot read it and shows the generic error.</p>
+<p>So the message does not tell you what went wrong; it tells you that something sat between the editor and WordPress. If you want the background, <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> covers what these requests are and why you should restrict the REST API rather than switch it off.</p>
+
+<h2>Fix 1: Re-save your permalinks</h2>
+<p>This is the quickest fix and solves a large share of cases. Go to Settings &gt; Permalinks and click Save Changes without changing anything. WordPress rewrites its URL rules, including the ones for /wp-json/.</p>
+<p>Then open yourdomain.com/wp-json/ in a browser. You should see a page of structured text starting with the site name. If you see your theme's 404 page instead, the rewrite rules are still not working. On Apache or LiteSpeed hosting, check that the .htaccess file in the site root contains the standard WordPress block. If ordinary pages also show 404 errors, follow <a href="/blog/wordpress-pages-404-permalinks-fix/">the fix for WordPress pages showing 404</a> first, because it is the same problem.</p>
+<p>If you use the "Plain" permalink setting, the REST API lives at ?rest_route=/ instead. Switching to "Post name" is better for SEO anyway, but set up redirects if the site already has traffic.</p>
+
+<h2>Fix 2: Make the site URLs match your HTTPS address</h2>
+<p>Open Settings &gt; General and look at WordPress Address (URL) and Site Address (URL). Both should show the exact address visitors use, including https and either www or no www. A mismatch is common after installing an SSL certificate, moving hosting or changing domain.</p>
+<p>When they don't match, the editor sends its save request to one address and the server redirects it to another. Browsers don't carry the request body across that redirect in a way WordPress accepts, so the save fails. If changing these fields causes a redirect loop and locks you out, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>, and check for padlock warnings once it saves again.</p>
+
+<h2>Fix 3: Check your firewall and security plugin</h2>
+<p>Security tools are the most common cause when only some posts fail. A web application firewall reads every request, and a post containing an iframe, a script tag, a SQL example or words that look like an attack can match a rule and be blocked. The editor then receives a block page instead of JSON.</p>
+<ol>
+  <li>Open your security plugin's firewall or activity log (Wordfence, Sucuri, Solid Security, All In One WP Security or similar) and look for blocked requests to /wp-json/ at the time you clicked Update.</li>
+  <li>If you find one, use the plugin's option to allow that specific request or rule for logged-in administrators, rather than turning the firewall off.</li>
+  <li>Check settings that "disable the REST API" or "restrict REST API to logged-in users". Restricting it to logged-in users is fine; disabling it entirely breaks the editor.</li>
+  <li>Check server-level tools too: ModSecurity in cPanel or hPanel, Cloudflare WAF rules and your host's own firewall. Hosting support can see ModSecurity hits in the server logs and whitelist the rule ID.</li>
+</ol>
+<p><a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers the difference between plugin, server and DNS-level firewalls, and how to deal with false positives without lowering protection for everyone.</p>
+
+<h2>Fix 4: Look for a plugin or theme conflict</h2>
+<p>If the error started after an update, a plugin or the theme may be printing a PHP warning, a blank line or extra HTML before the JSON reply. One stray character is enough to break it.</p>
+<ol>
+  <li>Open the editor, press F12 and choose the Network tab. Click Update, then click the failed request (it usually has the post ID in its name) and read the Response tab. A PHP warning naming a plugin folder tells you the culprit straight away.</li>
+  <li>If nothing obvious shows, install Health Check &amp; Troubleshooting and use Troubleshooting Mode. It disables plugins and switches to a default theme for your login only, so visitors see nothing.</li>
+  <li>Re-enable plugins one at a time and try to update a test draft after each.</li>
+</ol>
+<p>The full method, including how to test safely on a live site, is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts safely</a>. Plugins that add SEO meta boxes, custom fields, page builders, caching and security headers are the usual suspects, because they all hook into saving.</p>
+
+<h2>Fix 5: Check the server error log and PHP limits</h2>
+<p>If the Network tab shows a 500 status, the server crashed while saving. Open the error log in your hosting panel and look for lines around that time. "Allowed memory size exhausted" means PHP memory is too low; "Maximum execution time" means the save took too long, which happens on very long pages or slow shared hosting. A 403 status means a permission or server rule refused it. <a href="/blog/wordpress-500-internal-server-error-fix/">The WordPress 500 error guide</a> walks through reading those logs.</p>
+
+<h2>Fix 6: Use Site Health to confirm the REST API works</h2>
+<p>Go to Tools &gt; Site Health. If WordPress cannot reach its own REST API, it shows a critical issue such as "The REST API encountered an error" with the HTTP status code. Fix that issue and the editor usually saves again. Run the check again after every change so you know which fix worked.</p>
+
+<h2>"Updating failed" when uploading images in the editor</h2>
+<p>If the message appears only when you drag an image into the editor, the problem is the upload rather than the save. Large photos straight from a phone, low upload limits and missing image libraries on the server all cause it. See <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error when uploading images</a> fix and resize images before upload.</p>
+
+<h2>Errors on Indian shared hosting</h2>
+<p>Many Indian business sites run on shared plans where ModSecurity rules, low PHP memory and aggressive caching are set by the host. Two things come up often on these plans:</p>
+<ul>
+  <li><strong>ModSecurity false positives.</strong> Pages that embed a Google Map, a YouTube video or a WhatsApp chat link can trigger generic rules. Raise a ticket with the exact time of the failed save and ask the host to check ModSecurity logs.</li>
+  <li><strong>Caching of /wp-json/.</strong> Some server caches or CDN rules cache everything. The REST API should never be cached for logged-in users, so exclude /wp-json/ and wp-admin from page cache and Cloudflare cache rules.</li>
+</ul>
+
+<h2>How to stop "Updating failed" coming back</h2>
+<ul>
+  <li>Update plugins in small groups and test saving a draft afterwards, ideally on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li>Keep only one security plugin, and keep its REST API option on "logged-in users only" rather than "disabled".</li>
+  <li>After any SSL, domain or hosting change, check both site URLs and re-save permalinks.</li>
+  <li>Watch Site Health once a month. It flags REST API and loopback problems before editors notice them.</li>
+</ul>
+<p>If the editor keeps failing and you can't find the cause, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> covers this kind of fault, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. I'd start with the browser's Network tab and the server log, because together they name the cause in most cases.</p>
+
+<h2>FAQs</h2>
+<h3>What does "Updating failed. The response is not a valid JSON response" mean?</h3>
+<p>The block editor saves through the REST API and expects a JSON reply. It received something else, such as a 404 page, a firewall block page, a redirect or a PHP error. The message is generic; the cause is whatever replaced the reply.</p>
+<h3>Why does WordPress say "Publishing failed" on a new post?</h3>
+<p>It is the same error as "Updating failed", shown when the post has not been published yet. Work through the same fixes: permalinks, site URLs, firewall, plugins and server logs.</p>
+<h3>Will switching to the Classic Editor fix updating failed?</h3>
+<p>It often hides the symptom, because the classic editor saves through a normal form instead of the REST API. But anything else that uses the REST API, including some plugins and forms, may still be broken, so fix the cause rather than switching.</p>
+<h3>Can a security plugin cause the WordPress updating failed error?</h3>
+<p>Yes. Firewall rules can block a save that contains scripts, iframes or code samples, and options that disable the REST API break the block editor entirely. Check the plugin's log and allow the request for administrators.</p>
+<h3>Will I lose my content when updating fails?</h3>
+<p>The text stays in the editor while the tab is open, and WordPress may keep an autosave. Copy the content somewhere safe before refreshing or testing fixes, and check Revisions afterwards.</p>
+<h3>Why does updating fail only on one page?</h3>
+<p>When one page fails and others save, the content of that page is usually the trigger: an embed, a script, a very long table or a code sample matching a firewall rule. Try saving a copy with half the content removed to find the block responsible.</p>
 `,
   },
 ];

@@ -235,6 +235,8 @@
 </ul>
 <p>Don't deactivate an offload plugin as a quick test. Check whether local copies exist and use the plugin's own option to bring files back first.</p>
 
+<p>Missing sizes also leave blank or blurry thumbnails on the blog page; see <a href="/blog/wordpress-featured-image-not-showing-fix/">why a WordPress featured image is not showing</a>.</p>
+
 <h2 id="regenerate-missing-thumbnails">Regenerate missing thumbnails</h2>
 <p>WordPress creates resized copies of every upload: thumbnail, medium, large and any sizes your theme or plugins add. Grey boxes, or blurry or oddly cropped images, can mean those copies are missing or don't match the current theme, typically after a theme change, new sizes in Settings → Media, or a migration that copied only the originals.</p>
 <p>A thumbnail regeneration plugin, or WP-CLI's <code>wp media regenerate</code> (add <code>--only-missing</code> to skip existing sizes), rebuilds them. It's heavy work, so take a backup and run it at a quiet time, in batches for large libraries. If the originals are missing, restore them from a backup.</p>

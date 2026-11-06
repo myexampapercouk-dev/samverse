@@ -678,5 +678,8 @@
  "blog-woocommerce-stock-not-updating": "302f0fde7ee7bbe2c02775bd1e113c7ec42a3b9e",
  "blog-shopify-checkout-not-working": "005b3eadfb478f25fe7854503829bb9dc85395de",
  "blog-shopify-google-merchant-center-disapproved": "38edba601bbd7cfe2f59b08aab04e37a81d38f74",
- "blog-shopify-remove-password-page": "f22d5e644e00ab0d6a373edfa6253307e650a86c"
+ "blog-shopify-remove-password-page": "f22d5e644e00ab0d6a373edfa6253307e650a86c",
+ "blog-wordpress-featured-image-not-showing-fix": "8fd01eb201113b9072be483bee7b473886e35298",
+ "blog-wordpress-menu-not-showing-fix": "fab9ce2b381d4ac6c9142259c622e074f0119faf",
+ "blog-wordpress-updating-failed-error-fix": "24c2e4ac12124fc0736759df5af2ecdbc2d2e466"
 }

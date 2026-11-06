@@ -216,6 +216,8 @@
 </ul>
 <p>Some menus also disappear by design. If wp-config.php contains DISALLOW_FILE_EDIT, the theme and plugin file editors are hidden. If it contains DISALLOW_FILE_MODS, you cannot install or update plugins and themes from the dashboard at all. Those are hardening settings, not faults.</p>
 
+<p>This section is about dashboard menus. If it's the menu on your website that is missing or not saving, see <a href="/blog/wordpress-menu-not-showing-fix/">how to fix a WordPress menu not showing</a>.</p>
+
 <h2 id="plugins-that-hide-menus-and-plugin-conflicts">Plugins that hide menus, and plugin conflicts</h2>
 <p>Admin menu editors, white-label plugins, client dashboard plugins and some page builders let site owners hide menus from certain users. If someone set them up and forgot, menus can be hidden even from administrators. Check the settings of any such plugin, or rename its folder over FTP or the file manager to test.</p>
 <p>A plugin that throws a PHP error during admin loading can also stop menus registering. If menus vanished right after an update, test plugins one at a time on staging; <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">plugin conflict troubleshooting</a> shows the method.</p>
@@ -233,6 +235,8 @@
   <li>Migration plugins usually handle this. Manual SQL imports often do not.</li>
 </ul>
 <p>Make these database changes on a backup first, or ask a developer if you are not comfortable with phpMyAdmin.</p>
+
+<p>If the dashboard loads but posts won't save, the same plugins may be blocking the REST API; see <a href="/blog/wordpress-updating-failed-error-fix/">fixes for WordPress updating failed</a>.</p>
 
 <h2 id="a-security-plugin-hiding-or-blocking-wp-admin">A security plugin hiding or blocking wp-admin</h2>
 <p>Security plugins can change the login address, block wp-admin for certain IP addresses or countries, or lock out users after failed attempts. If wp-admin returns a 404 or a block message:</p>
@@ -352,9 +356,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-menu-not-showing-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-menu-not-showing-fix.webp" alt="WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus</h3><p>WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.</p><span class="post-card-meta">6 November 2026 · 7 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-updating-failed-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h3><p>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p><span class="post-card-meta">6 November 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-plugin-conflicts-troubleshooting/"><img class="post-card-img" src="/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.webp" alt="How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention</h3><p>Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.</p><span class="post-card-meta">1 October 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-login-not-working-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-login-not-working-fix.webp" alt="WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords</h3><p>WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>Check if your WordPress site is hacked: warning signs, 10 quick checks you can run today, extra checks for online stores, and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

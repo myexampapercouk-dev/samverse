@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress &quot;Updating Failed&quot; Error? How to Fix It | Samverse</title>
+  <meta name="description" content="Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/blog/wordpress-updating-failed-error-fix/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/blog/wordpress-updating-failed-error-fix/">
+  <meta property="og:title" content="WordPress &quot;Updating Failed&quot; Error? How to Fix It | Samverse">
+  <meta property="og:description" content="Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.">
+  <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-updating-failed-error-fix.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og/blog-wordpress-updating-failed-error-fix.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=d8206b22">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-11-06">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://samverse.space/blog/wordpress-updating-failed-error-fix/#article",
+      "headline": "WordPress \"Updating Failed\" or \"Publishing Failed\"? How to Fix the Not a Valid JSON Response Error",
+      "description": "Fix the WordPress \"Updating failed\" and \"Publishing failed. The response is not a valid JSON response\" errors: permalinks, SSL, firewalls, plugins and REST API.",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "mainEntityOfPage": "https://samverse.space/blog/wordpress-updating-failed-error-fix/",
+      "image": "https://samverse.space/assets/og/blog-wordpress-updating-failed-error-fix.png",
+      "articleSection": "Maintenance",
+      "inLanguage": "en-IN",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Samverse",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samverse.space/assets/icon-512.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://samverse.space/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Speed, security & maintenance",
+          "item": "https://samverse.space/blog/topic/speed-security/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WordPress \"Updating Failed\" or \"Publishing Failed\"? How to Fix the Not a Valid JSON Response Error",
+          "item": "https://samverse.space/blog/wordpress-updating-failed-error-fix/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/blog-data.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
+  <main>
+    <article class="post">
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
+          <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
+          <h1>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h1>
+          <p class="post-dek">Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Samverse</a>
+              <span><time datetime="2026-11-06">6 November 2026</time> · 9 min read</span>
+            </div>
+            <div class="share share-top">
+              <a href="https://wa.me/?text=WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-updating-failed-error-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+          <figure class="post-cover"><img src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" fetchpriority="high"></figure>
+        </div>
+      </header>
+
+      <div class="post-layout container">
+        <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#wordpress-updating-failed-quick-diagnosis-table">WordPress updating failed: quick diagnosis table</a></li>
+              <li><a href="#why-the-block-editor-shows-not-a-valid-json-response">Why the block editor shows "not a valid JSON response"</a></li>
+              <li><a href="#fix-1-re-save-your-permalinks">Fix 1: Re-save your permalinks</a></li>
+              <li><a href="#fix-2-make-the-site-urls-match-your-https-address">Fix 2: Make the site URLs match your HTTPS address</a></li>
+              <li><a href="#fix-3-check-your-firewall-and-security-plugin">Fix 3: Check your firewall and security plugin</a></li>
+              <li><a href="#fix-4-look-for-a-plugin-or-theme-conflict">Fix 4: Look for a plugin or theme conflict</a></li>
+              <li><a href="#fix-5-check-the-server-error-log-and-php-limits">Fix 5: Check the server error log and PHP limits</a></li>
+              <li><a href="#fix-6-use-site-health-to-confirm-the-rest-api-works">Fix 6: Use Site Health to confirm the REST API works</a></li>
+              <li><a href="#updating-failed-when-uploading-images-in-the-editor">"Updating failed" when uploading images in the editor</a></li>
+              <li><a href="#errors-on-indian-shared-hosting">Errors on Indian shared hosting</a></li>
+              <li><a href="#how-to-stop-updating-failed-coming-back">How to stop "Updating failed" coming back</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </details>
+          <div class="takeaways">
+            <strong>Key takeaways</strong>
+            <ul>
+              <li>The block editor saves through the REST API, so &quot;Updating failed&quot; means that request was blocked, redirected or broken.</li>
+              <li>Most cases are fixed by re-saving permalinks, matching the site URLs to HTTPS, or allowing the request in a firewall or security plugin.</li>
+              <li>Copy your content before testing, then check Site Health, the browser console and plugin conflicts in that order.</li>
+            </ul>
+          </div>
+<p>When WordPress shows "Updating failed" or "Publishing failed. The response is not a valid JSON response", the block editor tried to save your page through the WordPress REST API and got something other than the answer it expected. The fix is usually one of five things: re-save your permalinks, make the WordPress and Site Address URLs match your real HTTPS address, allow the request in your firewall or security plugin, find a plugin that prints errors into the response, or fix a server rule in .htaccess.</p>
+<p>Before you try anything, copy the text of the post you are editing into a plain text file. The editor keeps an autosave in some cases, but not always, and the error often appears exactly when you have written the most.</p>
+
+<h2 id="wordpress-updating-failed-quick-diagnosis-table">WordPress updating failed: quick diagnosis table</h2>
+<table>
+  <thead><tr><th>What you see</th><th>Most likely cause</th><th>First fix</th></tr></thead>
+  <tbody>
+    <tr><td>"Updating failed. The response is not a valid JSON response" on every page</td><td>Permalinks or .htaccess broken, so REST API URLs return 404</td><td>Settings &gt; Permalinks &gt; Save Changes</td></tr>
+    <tr><td>Error started after moving to HTTPS or a new domain</td><td>Site URLs still on http or the old domain</td><td>Match both URLs in Settings &gt; General</td></tr>
+    <tr><td>Only some posts fail, often ones with code, scripts or certain words</td><td>Firewall or security plugin blocking the request</td><td>Check the firewall log and allow the request</td></tr>
+    <tr><td>Error started after a plugin or theme update</td><td>PHP notice or extra output breaking the JSON</td><td>Plugin conflict test</td></tr>
+    <tr><td>"Updating failed. You are probably offline"</td><td>Connection dropped, or a timeout on slow hosting</td><td>Check your connection, then the server error log</td></tr>
+    <tr><td>Error only when uploading an image inside the editor</td><td>Upload limits or the image library</td><td>See the image upload fixes below</td></tr>
+  </tbody>
+</table>
+
+<h2 id="why-the-block-editor-shows-not-a-valid-json-response">Why the block editor shows "not a valid JSON response"</h2>
+<p>The block editor (Gutenberg) does not submit a normal form when you click Update. It sends your content to an address such as /wp-json/wp/v2/pages/123 and expects a short reply written in JSON. If that address returns a 404 page, a firewall block page, a login redirect, a PHP warning or an HTML error page instead, the editor cannot read it and shows the generic error.</p>
+<p>So the message does not tell you what went wrong; it tells you that something sat between the editor and WordPress. If you want the background, <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> covers what these requests are and why you should restrict the REST API rather than switch it off.</p>
+
+<aside class="inline-cta">
+  <strong>Need help with website maintenance?</strong>
+  <p>Website maintenance packages for WordPress sites in India: updates, backups, security, uptime checks and small content changes on a monthly plan.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
+<h2 id="fix-1-re-save-your-permalinks">Fix 1: Re-save your permalinks</h2>
+<p>This is the quickest fix and solves a large share of cases. Go to Settings &gt; Permalinks and click Save Changes without changing anything. WordPress rewrites its URL rules, including the ones for /wp-json/.</p>
+<p>Then open yourdomain.com/wp-json/ in a browser. You should see a page of structured text starting with the site name. If you see your theme's 404 page instead, the rewrite rules are still not working. On Apache or LiteSpeed hosting, check that the .htaccess file in the site root contains the standard WordPress block. If ordinary pages also show 404 errors, follow <a href="/blog/wordpress-pages-404-permalinks-fix/">the fix for WordPress pages showing 404</a> first, because it is the same problem.</p>
+<p>If you use the "Plain" permalink setting, the REST API lives at ?rest_route=/ instead. Switching to "Post name" is better for SEO anyway, but set up redirects if the site already has traffic.</p>
+
+<h2 id="fix-2-make-the-site-urls-match-your-https-address">Fix 2: Make the site URLs match your HTTPS address</h2>
+<p>Open Settings &gt; General and look at WordPress Address (URL) and Site Address (URL). Both should show the exact address visitors use, including https and either www or no www. A mismatch is common after installing an SSL certificate, moving hosting or changing domain.</p>
+<p>When they don't match, the editor sends its save request to one address and the server redirects it to another. Browsers don't carry the request body across that redirect in a way WordPress accepts, so the save fails. If changing these fields causes a redirect loop and locks you out, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>, and check for padlock warnings once it saves again.</p>
+
+<h2 id="fix-3-check-your-firewall-and-security-plugin">Fix 3: Check your firewall and security plugin</h2>
+<p>Security tools are the most common cause when only some posts fail. A web application firewall reads every request, and a post containing an iframe, a script tag, a SQL example or words that look like an attack can match a rule and be blocked. The editor then receives a block page instead of JSON.</p>
+<ol>
+  <li>Open your security plugin's firewall or activity log (Wordfence, Sucuri, Solid Security, All In One WP Security or similar) and look for blocked requests to /wp-json/ at the time you clicked Update.</li>
+  <li>If you find one, use the plugin's option to allow that specific request or rule for logged-in administrators, rather than turning the firewall off.</li>
+  <li>Check settings that "disable the REST API" or "restrict REST API to logged-in users". Restricting it to logged-in users is fine; disabling it entirely breaks the editor.</li>
+  <li>Check server-level tools too: ModSecurity in cPanel or hPanel, Cloudflare WAF rules and your host's own firewall. Hosting support can see ModSecurity hits in the server logs and whitelist the rule ID.</li>
+</ol>
+<p><a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers the difference between plugin, server and DNS-level firewalls, and how to deal with false positives without lowering protection for everyone.</p>
+
+<h2 id="fix-4-look-for-a-plugin-or-theme-conflict">Fix 4: Look for a plugin or theme conflict</h2>
+<p>If the error started after an update, a plugin or the theme may be printing a PHP warning, a blank line or extra HTML before the JSON reply. One stray character is enough to break it.</p>
+<ol>
+  <li>Open the editor, press F12 and choose the Network tab. Click Update, then click the failed request (it usually has the post ID in its name) and read the Response tab. A PHP warning naming a plugin folder tells you the culprit straight away.</li>
+  <li>If nothing obvious shows, install Health Check &amp; Troubleshooting and use Troubleshooting Mode. It disables plugins and switches to a default theme for your login only, so visitors see nothing.</li>
+  <li>Re-enable plugins one at a time and try to update a test draft after each.</li>
+</ol>
+<p>The full method, including how to test safely on a live site, is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts safely</a>. Plugins that add SEO meta boxes, custom fields, page builders, caching and security headers are the usual suspects, because they all hook into saving.</p>
+
+<h2 id="fix-5-check-the-server-error-log-and-php-limits">Fix 5: Check the server error log and PHP limits</h2>
+<p>If the Network tab shows a 500 status, the server crashed while saving. Open the error log in your hosting panel and look for lines around that time. "Allowed memory size exhausted" means PHP memory is too low; "Maximum execution time" means the save took too long, which happens on very long pages or slow shared hosting. A 403 status means a permission or server rule refused it. <a href="/blog/wordpress-500-internal-server-error-fix/">The WordPress 500 error guide</a> walks through reading those logs.</p>
+
+<h2 id="fix-6-use-site-health-to-confirm-the-rest-api-works">Fix 6: Use Site Health to confirm the REST API works</h2>
+<p>Go to Tools &gt; Site Health. If WordPress cannot reach its own REST API, it shows a critical issue such as "The REST API encountered an error" with the HTTP status code. Fix that issue and the editor usually saves again. Run the check again after every change so you know which fix worked.</p>
+
+<h2 id="updating-failed-when-uploading-images-in-the-editor">"Updating failed" when uploading images in the editor</h2>
+<p>If the message appears only when you drag an image into the editor, the problem is the upload rather than the save. Large photos straight from a phone, low upload limits and missing image libraries on the server all cause it. See <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error when uploading images</a> fix and resize images before upload.</p>
+
+<h2 id="errors-on-indian-shared-hosting">Errors on Indian shared hosting</h2>
+<p>Many Indian business sites run on shared plans where ModSecurity rules, low PHP memory and aggressive caching are set by the host. Two things come up often on these plans:</p>
+<ul>
+  <li><strong>ModSecurity false positives.</strong> Pages that embed a Google Map, a YouTube video or a WhatsApp chat link can trigger generic rules. Raise a ticket with the exact time of the failed save and ask the host to check ModSecurity logs.</li>
+  <li><strong>Caching of /wp-json/.</strong> Some server caches or CDN rules cache everything. The REST API should never be cached for logged-in users, so exclude /wp-json/ and wp-admin from page cache and Cloudflare cache rules.</li>
+</ul>
+
+<h2 id="how-to-stop-updating-failed-coming-back">How to stop "Updating failed" coming back</h2>
+<ul>
+  <li>Update plugins in small groups and test saving a draft afterwards, ideally on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
+  <li>Keep only one security plugin, and keep its REST API option on "logged-in users only" rather than "disabled".</li>
+  <li>After any SSL, domain or hosting change, check both site URLs and re-save permalinks.</li>
+  <li>Watch Site Health once a month. It flags REST API and loopback problems before editors notice them.</li>
+</ul>
+<p>If the editor keeps failing and you can't find the cause, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> covers this kind of fault, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. I'd start with the browser's Network tab and the server log, because together they name the cause in most cases.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What does "Updating failed. The response is not a valid JSON response" mean?</h3>
+<p>The block editor saves through the REST API and expects a JSON reply. It received something else, such as a 404 page, a firewall block page, a redirect or a PHP error. The message is generic; the cause is whatever replaced the reply.</p>
+<h3>Why does WordPress say "Publishing failed" on a new post?</h3>
+<p>It is the same error as "Updating failed", shown when the post has not been published yet. Work through the same fixes: permalinks, site URLs, firewall, plugins and server logs.</p>
+<h3>Will switching to the Classic Editor fix updating failed?</h3>
+<p>It often hides the symptom, because the classic editor saves through a normal form instead of the REST API. But anything else that uses the REST API, including some plugins and forms, may still be broken, so fix the cause rather than switching.</p>
+<h3>Can a security plugin cause the WordPress updating failed error?</h3>
+<p>Yes. Firewall rules can block a save that contains scripts, iframes or code samples, and options that disable the REST API break the block editor entirely. Check the plugin's log and allow the request for administrators.</p>
+<h3>Will I lose my content when updating fails?</h3>
+<p>The text stays in the editor while the tab is open, and WordPress may keep an autosave. Copy the content somewhere safe before refreshing or testing fixes, and check Revisions afterwards.</p>
+<h3>Why does updating fail only on one page?</h3>
+<p>When one page fails and others save, the content of that page is usually the trigger: an embed, a script, a very long table or a code sample matching a firewall rule. Try saving a copy with half the content removed to find the block responsible.</p>
+
+          <div class="post-cta">
+            <h2>Need help with your website?</h2>
+            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Get a Free Quote</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            </div>
+          </div>
+
+          <div class="post-share-end">
+            <strong>Found this useful? Share it:</strong>
+            <div class="share share-end">
+              <a href="https://wa.me/?text=WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-updating-failed-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-updating-failed-error-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+
+          <div class="post-author">
+            <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
+            <div><strong><a href="/about/">Samverse</a></strong><p>Freelance WordPress development, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
+          </div>
+
+          <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
+            <a class="post-nav-prev" href="/blog/wordpress-menu-not-showing-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus</strong></a>
+            <a class="post-nav-next" href="/blog/why-is-my-wordpress-site-slow/"><span>Next in Speed, security &amp; maintenance →</span><strong>Slow WordPress Site? Why It Happens and How to Fix It (Front End and Admin)</strong></a>
+          </nav>
+        </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#wordpress-updating-failed-quick-diagnosis-table">WordPress updating failed: quick diagnosis table</a></li>
+              <li><a href="#why-the-block-editor-shows-not-a-valid-json-response">Why the block editor shows "not a valid JSON response"</a></li>
+              <li><a href="#fix-1-re-save-your-permalinks">Fix 1: Re-save your permalinks</a></li>
+              <li><a href="#fix-2-make-the-site-urls-match-your-https-address">Fix 2: Make the site URLs match your HTTPS address</a></li>
+              <li><a href="#fix-3-check-your-firewall-and-security-plugin">Fix 3: Check your firewall and security plugin</a></li>
+              <li><a href="#fix-4-look-for-a-plugin-or-theme-conflict">Fix 4: Look for a plugin or theme conflict</a></li>
+              <li><a href="#fix-5-check-the-server-error-log-and-php-limits">Fix 5: Check the server error log and PHP limits</a></li>
+              <li><a href="#fix-6-use-site-health-to-confirm-the-rest-api-works">Fix 6: Use Site Health to confirm the REST API works</a></li>
+              <li><a href="#updating-failed-when-uploading-images-in-the-editor">"Updating failed" when uploading images in the editor</a></li>
+              <li><a href="#errors-on-indian-shared-hosting">Errors on Indian shared hosting</a></li>
+              <li><a href="#how-to-stop-updating-failed-coming-back">How to stop "Updating failed" coming back</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need help with this?</strong>
+            <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20%22Updating%20Failed%22%20or%20%22Publishing%20Failed%22%3F%20How%20to%20Fix%20the%20Not%20a%20Valid%20JSON%20Response%20Error%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+
+    <section class="section related">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
+        <div class="industries related-grid reveal">
+          <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>Website maintenance packages for WordPress sites in India: updates, backups, security, uptime checks and small content changes on a monthly plan.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/hire-wordpress-developer/"><h3>Hire a WordPress Developer</h3><p>Hire a freelance WordPress developer in India for new sites, fixes, monthly support or white-label agency work.</p><span class="ind-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
+        <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-500-internal-server-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-500-internal-server-error-fix.webp" alt="500 Internal Server Error in WordPress: How to Find the Cause and Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</h3><p>Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-admin-bar-dashboard-missing-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-admin-bar-dashboard-missing-fix.webp" alt="WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;</h3><p>WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/staging-sites-explained/"><img class="post-card-img" src="/assets/og/blog-staging-sites-explained.webp" alt="Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely</h3><p>Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145" target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145" class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

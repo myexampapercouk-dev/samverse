@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://samverse.space/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -278,43 +278,43 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/planning/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/seo-growth/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/speed-security/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/ecommerce/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/industries/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/agencies/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -4035,6 +4035,24 @@
   <url>
     <loc>https://samverse.space/blog/shopify-remove-password-page/</loc>
     <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/wordpress-featured-image-not-showing-fix/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/wordpress-menu-not-showing-fix/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/blog/wordpress-updating-failed-error-fix/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

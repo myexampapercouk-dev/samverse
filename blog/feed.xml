@@ -4346,5 +4346,26 @@
     <pubDate>Sat, 31 Oct 2026 03:30:00 GMT</pubDate>
     <description>Remove the Shopify password page from Online Store Preferences. If it will not turn off, pick a paid plan. Plus a launch checklist for Indian stores.</description>
   </item>
+  <item>
+    <title>WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares</title>
+    <link>https://samverse.space/blog/wordpress-featured-image-not-showing-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-featured-image-not-showing-fix/</guid>
+    <pubDate>Fri, 06 Nov 2026 03:30:00 GMT</pubDate>
+    <description>WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.</description>
+  </item>
+  <item>
+    <title>WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus</title>
+    <link>https://samverse.space/blog/wordpress-menu-not-showing-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-menu-not-showing-fix/</guid>
+    <pubDate>Fri, 06 Nov 2026 03:30:00 GMT</pubDate>
+    <description>WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.</description>
+  </item>
+  <item>
+    <title>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</title>
+    <link>https://samverse.space/blog/wordpress-updating-failed-error-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-updating-failed-error-fix/</guid>
+    <pubDate>Fri, 06 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</description>
+  </item>
 </channel>
 </rss>
