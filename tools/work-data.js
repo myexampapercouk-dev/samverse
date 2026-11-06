@@ -1,30 +1,40 @@
 // Case studies for /work/<slug>/ — describe only what is verifiably on each live site.
 // `thumb`: optional local screenshot; otherwise a live screenshot is used.
-// `related`: landing page slugs from tools/pages-data.js.
+// `seoTitle` / `metaDescription`: search title (<=60) and description (<=160) naming industry and platform.
+// `sections`: The problem first, then page detail, The result and a "Want something similar?" close.
+// `reading`: blog slugs, first two most relevant; `related`: landing page slugs from tools/pages-data.js, first is the main service.
 module.exports = [
   {
-    slug: 'third-eye-social',
-    name: 'Third Eye Social',
-    url: 'https://thirdeye.social/',
-    industry: 'AI Automation Agency',
-    thumb: '/assets/work/thirdeye.svg',
-    summary: 'A bold, dark-themed website for an AI automation agency that helps businesses deploy AI agents across sales, support, finance, HR and operations.',
-    client: 'Third Eye Social builds AI agents that automate repetitive work for mid-size and large businesses in healthcare, finance, insurance, manufacturing, real estate and e-commerce.',
-    goals: [
-      'Explain a complex offer (AI agents) simply to business decision-makers',
-      'Show the range of agent types and industry use cases',
-      'Build credibility with case studies and client testimonials',
-      'Turn visitors into booked calls',
+    "slug": "third-eye-social",
+    "name": "Third Eye Social",
+    "url": "https://thirdeye.social/",
+    "industry": "AI Automation Agency",
+    "thumb": "/assets/work/thirdeye.svg",
+    "seoTitle": "AI Agency Website Design on WordPress: Third Eye Social",
+    "metaDescription": "AI automation agency website design on WordPress and Elementor: agent use cases, case studies, FAQs and WhatsApp booking calls. See how it was built.",
+    "summary": "A bold, dark-themed website for an AI automation agency that helps businesses deploy AI agents across sales, support, finance, HR and operations.",
+    "client": "Third Eye Social builds AI agents that automate repetitive work for mid-size and large businesses in healthcare, finance, insurance, manufacturing, real estate and e-commerce.",
+    "goals": [
+      "Explain a complex offer (AI agents) simply to business decision-makers",
+      "Show the range of agent types and industry use cases",
+      "Build credibility with case studies and client testimonials",
+      "Turn visitors into booked calls"
     ],
-    built: [
-      'Striking dark design with orange accents and animated headline treatment',
-      'Use case sections for each agent type: customer service, sales, finance, HR, legal, marketing and lead generation',
-      'Case study cards and client testimonials',
-      'FAQ section addressing common concerns about adopting AI',
-      'Insights (blog) section for thought leadership',
-      '"Book a Call" calls to action throughout, plus WhatsApp',
+    "built": [
+      "Striking dark design with orange accents and animated headline treatment",
+      "Use case sections for each agent type: customer service, sales, finance, HR, legal, marketing and lead generation",
+      "Case study cards and client testimonials",
+      "FAQ section addressing common concerns about adopting AI",
+      "Insights (blog) section for thought leadership",
+      "\"Book a Call\" calls to action throughout, plus WhatsApp"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An AI automation agency had a technical offer that most operations heads find hard to picture, and needed a website that explained AI agents simply and turned visitors into booked calls."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -54,35 +64,69 @@ module.exports = [
           "If your offer is technical, break it into the jobs it does for each department and name the software it connects to. That tells a buyer more than a paragraph about capabilities. Lead with the business outcome in the headline and leave the technical detail to the cards and case studies.",
           "Write every case study in the same order, with outcomes first, and give each one its own page with the client type and the process in the heading. Answer integration and control worries in a FAQ, and if your buyers are happy to chat, let \"Book a Call\" open WhatsApp. This site does that with WordPress, Elementor, the Hello Elementor theme and Yoast SEO."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site now explains twelve agent types with the software each one works with, gives each case study its own page with outcomes first, answers adoption worries in a FAQ, and sends every \"Book A Call\" button to a WhatsApp chat."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a AI Automation Agency website like this on WordPress, see the WordPress development for agencies page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["write-case-studies-business-website","website-for-it-software-companies","whatsapp-on-business-website","faq-page-seo","write-service-pages-that-convert"],
-    stack: ['WordPress', 'Elementor', 'Hello Elementor theme', 'Yoast SEO'],
-    related: ['wordpress-developer-for-agencies', 'website-for-startups', 'elementor-developer'],
+    "reading": [
+      "write-case-studies-business-website",
+      "faq-page-seo",
+      "website-for-it-software-companies",
+      "whatsapp-on-business-website",
+      "write-service-pages-that-convert"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Hello Elementor theme",
+      "Yoast SEO"
+    ],
+    "related": [
+      "wordpress-developer-for-agencies",
+      "elementor-developer",
+      "website-for-startups"
+    ]
   },
   {
-    slug: 'vansh-group',
-    name: 'Vansh Group',
-    url: 'https://vansh.group/',
-    industry: 'Electronics Manufacturing (OEM)',
-    metaDescription: 'Case study: a professional B2B website for an electronics OEM, presenting product development services, infrastructure and brand partnerships.',
-    summary: 'A professional B2B website for an electronics OEM with decades of experience, presenting its product development services, infrastructure and brand partnerships.',
-    client: 'Vansh is an electronics original equipment manufacturer offering end-to-end product development and manufacturing from facilities in North India, serving well-known electrical and lighting brands.',
-    goals: [
-      'Present a wide range of engineering and manufacturing services clearly',
-      'Prove capability to large B2B buyers',
-      'Make it easy for prospects to enquire about a specific service',
-      'Support credibility with a downloadable company profile',
+    "slug": "vansh-group",
+    "name": "Vansh Group",
+    "url": "https://vansh.group/",
+    "industry": "Electronics Manufacturing (OEM)",
+    "seoTitle": "Electronics Manufacturer Website Design on WordPress",
+    "metaDescription": "B2B electronics manufacturer website design on WordPress: in-house capabilities, brand testimonials, a service-based enquiry form and a company profile PDF.",
+    "summary": "A professional B2B website for an electronics OEM with decades of experience, presenting its product development services, infrastructure and brand partnerships.",
+    "client": "Vansh is an electronics original equipment manufacturer offering end-to-end product development and manufacturing from facilities in North India, serving well-known electrical and lighting brands.",
+    "goals": [
+      "Present a wide range of engineering and manufacturing services clearly",
+      "Prove capability to large B2B buyers",
+      "Make it easy for prospects to enquire about a specific service",
+      "Support credibility with a downloadable company profile"
     ],
-    built: [
-      'Services section covering PCB and circuit development, electrical appliance development, sheet metal, injection moulded parts and tool & die development',
-      'Infrastructure and About sections showcasing facilities and experience',
-      'Client and brand testimonial carousel',
-      'Contact form with a service-type dropdown so enquiries arrive pre-qualified',
-      'Company profile download and prominent phone and email calls to action',
-      'Insights blog for industry articles',
+    "built": [
+      "Services section covering PCB and circuit development, electrical appliance development, sheet metal, injection moulded parts and tool & die development",
+      "Infrastructure and About sections showcasing facilities and experience",
+      "Client and brand testimonial carousel",
+      "Contact form with a service-type dropdown so enquiries arrive pre-qualified",
+      "Company profile download and prominent phone and email calls to action",
+      "Insights blog for industry articles"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An electronics OEM selling to large electrical and lighting brands needed a website that proved its in-house manufacturing capability and made it easy to enquire about a specific service."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -112,35 +156,69 @@ module.exports = [
           "Name your machines and facilities instead of describing them in general terms: a tool room, an SMT room and moulding machines tell a buyer more than \"state-of-the-art infrastructure\". Say how many units you run and where they are, show testimonials with the person's name, title and company, and introduce the people who run the business.",
           "Add a service dropdown to your enquiry form so requests arrive sorted, and offer your company profile and catalogues as downloads, because the person who finds your website is often not the person who approves a new supplier. Keep the full list of services on the homepage so nobody has to hunt for it. This site does that with WordPress, Elementor and the Arkito theme."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site sets out five product development services, names the facilities behind them, quotes people from established brands, sorts enquiries with a service dropdown and offers the 2025 company profile as a download."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Electronics Manufacturing website like this on WordPress, see the websites for manufacturers page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["b2b-manufacturer-website-guide","rfq-forms-b2b-websites","industrial-website-product-catalogue","seo-for-pdfs-brochures","website-trust-signals-checklist"],
-    stack: ['WordPress', 'Elementor', 'Arkito theme'],
-    related: ['website-for-manufacturers', 'website-redesign', 'wordpress-seo-services'],
+    "reading": [
+      "b2b-manufacturer-website-guide",
+      "rfq-forms-b2b-websites",
+      "industrial-website-product-catalogue",
+      "seo-for-pdfs-brochures",
+      "website-trust-signals-checklist"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Arkito theme"
+    ],
+    "related": [
+      "website-for-manufacturers",
+      "website-redesign",
+      "wordpress-seo-services"
+    ]
   },
   {
-    slug: 'streak-creative',
-    name: 'Streak Creative',
-    url: 'https://streakcreative.in/',
-    industry: 'Growth Marketing Agency',
-    thumb: '/assets/work/streakcreative.svg',
-    summary: 'A modern, editorial website for a growth marketing agency, built around its proprietary LOOP methodology and industry-specific offers.',
-    client: 'Streak Creative builds repeatable growth systems for category leaders in e-commerce, real estate and B2B manufacturing, combining strategy, AI-driven creativity and performance.',
-    goals: [
-      'Position the agency as a premium, systems-driven partner',
-      'Explain the LOOP methodology and services clearly',
-      'Capture leads with a blueprint offer and a newsletter',
-      'Showcase case studies and industry expertise',
+    "slug": "streak-creative",
+    "name": "Streak Creative",
+    "url": "https://streakcreative.in/",
+    "industry": "Growth Marketing Agency",
+    "thumb": "/assets/work/streakcreative.svg",
+    "seoTitle": "Marketing Agency Website Design on WordPress: Streak",
+    "metaDescription": "Growth marketing agency website design on WordPress and Elementor: editorial design, methodology pages, case studies, a journal and newsletter sign-up.",
+    "summary": "A modern, editorial website for a growth marketing agency, built around its proprietary LOOP methodology and industry-specific offers.",
+    "client": "Streak Creative builds repeatable growth systems for category leaders in e-commerce, real estate and B2B manufacturing, combining strategy, AI-driven creativity and performance.",
+    "goals": [
+      "Position the agency as a premium, systems-driven partner",
+      "Explain the LOOP methodology and services clearly",
+      "Capture leads with a blueprint offer and a newsletter",
+      "Showcase case studies and industry expertise"
     ],
-    built: [
-      'Editorial design with serif headlines, bold red accents and 3D imagery',
-      'Service navigation for strategy, production and distribution',
-      'Dedicated LOOP methodology pages with industry-specific applications',
-      'Case studies, About and the Streak Journal blog',
-      '"Streak Signals" newsletter sign-up and "Get Your LOOP Growth Blueprint" lead magnet',
-      'Clear "Let\'s Talk" calls to action',
+    "built": [
+      "Editorial design with serif headlines, bold red accents and 3D imagery",
+      "Service navigation for strategy, production and distribution",
+      "Dedicated LOOP methodology pages with industry-specific applications",
+      "Case studies, About and the Streak Journal blog",
+      "\"Streak Signals\" newsletter sign-up and \"Get Your LOOP Growth Blueprint\" lead magnet",
+      "Clear \"Let's Talk\" calls to action"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A growth marketing agency needed a website that looked as considered as its own work, explained its method clearly and gave visitors a reason to stay in touch before they were ready to talk."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -169,34 +247,69 @@ module.exports = [
           "If you sell a methodology, explain it twice: a short version on the homepage that fits on one screen, and a full page that shows what you do and what the client gets at each stage. Then give each industry you serve its own page, with the problem, your approach and your proof in that order.",
           "Let visitors filter case studies by sector, and offer something between \"read the blog\" and \"book a call\", such as a blueprint or an industry newsletter, for people who are interested but not ready to talk. This site does that with WordPress, Elementor, the Ohio theme and Yoast SEO."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site has an editorial design, service navigation for strategy, production and distribution, dedicated LOOP methodology pages, case studies, the Streak Journal blog and a \"Streak Signals\" newsletter sign-up."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Growth Marketing Agency website like this on WordPress, see the WordPress development for agencies page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["website-for-digital-marketing-agencies","lead-magnets-newsletter-small-business","write-case-studies-business-website","write-service-pages-that-convert","email-newsletter-small-business"],
-    stack: ['WordPress', 'Elementor', 'Ohio theme', 'Yoast SEO'],
-    related: ['wordpress-developer-for-agencies', 'figma-to-wordpress', 'landing-page-design'],
+    "reading": [
+      "website-for-digital-marketing-agencies",
+      "write-case-studies-business-website",
+      "lead-magnets-newsletter-small-business",
+      "write-service-pages-that-convert",
+      "email-newsletter-small-business"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Ohio theme",
+      "Yoast SEO"
+    ],
+    "related": [
+      "wordpress-developer-for-agencies",
+      "figma-to-wordpress",
+      "landing-page-design"
+    ]
   },
   {
-    slug: 'our-temples',
-    name: 'Our Temples',
-    url: 'https://ourtemples.info/',
-    industry: 'Temple Directory & Travel Guide',
-    summary: 'A large directory and travel guide of Hindu temples across India and abroad, searchable by state and by deity, with videos, slokas and a blog.',
-    client: 'Our Temples helps devotees, pilgrims and travellers discover temples and plan visits, with hundreds of temples catalogued across Indian states and international destinations.',
-    goals: [
-      'Organise hundreds of temple listings so visitors can browse easily',
-      'Let people search by location and by deity',
-      'Build a community around videos, slokas and festival guides',
-      'Allow temple owners and guests to register',
+    "slug": "our-temples",
+    "name": "Our Temples",
+    "url": "https://ourtemples.info/",
+    "industry": "Temple Directory & Travel Guide",
+    "seoTitle": "Temple Directory Website Design on WordPress",
+    "metaDescription": "Temple directory and travel guide website on WordPress: temples by state and deity, location search, slokas, festival blog posts and user registration.",
+    "summary": "A large directory and travel guide of Hindu temples across India and abroad, searchable by state and by deity, with videos, slokas and a blog.",
+    "client": "Our Temples helps devotees, pilgrims and travellers discover temples and plan visits, with hundreds of temples catalogued across Indian states and international destinations.",
+    "goals": [
+      "Organise hundreds of temple listings so visitors can browse easily",
+      "Let people search by location and by deity",
+      "Build a community around videos, slokas and festival guides",
+      "Allow temple owners and guests to register"
     ],
-    built: [
-      'Directory structure with temples by state and by deity (25+ deity categories)',
-      'Search and browse by location, deity or state',
-      '"Recently added" temples with photos',
-      'Videos and slokas/mantras sections',
-      'Blog with festival guides and pilgrimage routes',
-      'User login and registration for guests and temple owners, and multilingual (Telugu) content',
+    "built": [
+      "Directory structure with temples by state and by deity (25+ deity categories)",
+      "Search and browse by location, deity or state",
+      "\"Recently added\" temples with photos",
+      "Videos and slokas/mantras sections",
+      "Blog with festival guides and pilgrimage routes",
+      "User login and registration for guests and temple owners, and multilingual (Telugu) content"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A temple directory and travel guide needed a structure that let pilgrims find temples by state, deity or location, with room to grow as new temples were added."
+        ]
+      },
       {
         "h": "How the directory is organised",
         "p": [
@@ -225,34 +338,69 @@ module.exports = [
           "Decide how people will search before building the directory, and give each route its own archive: here that means deity, state and country, each with a visible count so visitors know how much they will find. Add filters, sorting and a map view to any archive with more than a page of results.",
           "Use one template for every listing so each entry answers the same questions, such as timings, directions, dress code and festivals, and publish occasion-based guides that send readers back into the directory. If your audience reads more than one language, put it in the listings themselves, not just the menu. This site does that with WordPress, Elementor, the Golo directory theme and Rank Math SEO."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site organises temples by state and by more than 25 deity categories, offers search by location, deity or state, shows recently added temples with photos, and adds videos, slokas and a blog of festival guides and pilgrimage routes."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Temple Directory & Travel Guide website like this on WordPress, see the websites for temples and NGOs page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["directory-website-wordpress","temple-ngo-website-online-donations","multilingual-wordpress-website-hindi-english","seasonal-festival-campaigns-website","category-tag-pages-seo"],
-    stack: ['WordPress', 'Elementor', 'Golo directory theme', 'Rank Math SEO'],
-    related: ['website-for-temples-and-ngos', 'wordpress-seo-services', 'hotel-website-design'],
+    "reading": [
+      "directory-website-wordpress",
+      "temple-ngo-website-online-donations",
+      "multilingual-wordpress-website-hindi-english",
+      "seasonal-festival-campaigns-website",
+      "category-tag-pages-seo"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Golo directory theme",
+      "Rank Math SEO"
+    ],
+    "related": [
+      "website-for-temples-and-ngos",
+      "wordpress-seo-services",
+      "wordpress-website-development"
+    ]
   },
   {
-    slug: 'dr-sudhir-arora',
-    name: 'Dr. Sudhir Arora',
-    url: 'https://drsudhirarora.com/',
-    industry: 'Healthcare & Wellness',
-    summary: 'A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.',
-    client: 'Dr. Sudhir Arora (MBBS) offers an educational, non-medicinal approach to managing stress, anxiety, anger and negative thinking, mainly for busy professionals and business owners.',
-    goals: [
-      'Build trust with a clear profile, credentials and experience',
-      'Explain each life challenge the programs address',
-      'Engage visitors with a free self-assessment',
-      'Convert visitors into consultations and course enrolments',
+    "slug": "dr-sudhir-arora",
+    "name": "Dr. Sudhir Arora",
+    "url": "https://drsudhirarora.com/",
+    "industry": "Healthcare & Wellness",
+    "seoTitle": "Counselling and Wellness Website Design on WordPress",
+    "metaDescription": "Counselling and wellness website design on WordPress: a doctor profile, pages for each life challenge, a free anxiety self-assessment and online consultations.",
+    "summary": "A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.",
+    "client": "Dr. Sudhir Arora (MBBS) offers an educational, non-medicinal approach to managing stress, anxiety, anger and negative thinking, mainly for busy professionals and business owners.",
+    "goals": [
+      "Build trust with a clear profile, credentials and experience",
+      "Explain each life challenge the programs address",
+      "Engage visitors with a free self-assessment",
+      "Convert visitors into consultations and course enrolments"
     ],
-    built: [
-      'Doctor profile with qualifications and registration details',
-      'Pages for each life challenge: anxiety, stress, anger, depression, fears, negative thinking and low confidence',
-      'Free anxiety self-assessment tool',
-      'Online consultation and personal counselling pages',
-      'Life coaching program pages with course structure',
-      'Blog and contact page',
+    "built": [
+      "Doctor profile with qualifications and registration details",
+      "Pages for each life challenge: anxiety, stress, anger, depression, fears, negative thinking and low confidence",
+      "Free anxiety self-assessment tool",
+      "Online consultation and personal counselling pages",
+      "Life coaching program pages with course structure",
+      "Blog and contact page"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A counsellor and life coach needed a website that built trust with people looking for help, and gave them a gentle first step before booking."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -282,34 +430,68 @@ module.exports = [
           "Organise the site around the problems people arrive with, give each one its own page with an FAQ, and offer a short self-assessment that shows a result without asking for an email first. State your qualifications precisely, and be just as clear about what your service does not replace.",
           "If your clients prefer to message, make WhatsApp the booking route and pre-fill the first message so that starting the conversation takes one tap. This site does that with WordPress, Elementor and the Hello Elementor theme."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site has a doctor profile with qualifications and registration details, a page for each life challenge from anxiety to low confidence, a free anxiety self-assessment and pages for online consultation and coaching programmes."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Healthcare & Wellness website like this on WordPress, see the WordPress websites for doctors page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["website-for-psychologists-counsellors","website-for-coaches-consultants","website-quiz-lead-generation","personal-brand-website-professionals","whatsapp-on-business-website"],
-    stack: ['WordPress', 'Elementor', 'Hello Elementor theme'],
-    related: ['wordpress-website-for-doctors', 'landing-page-design', 'wordpress-seo-services'],
+    "reading": [
+      "website-for-psychologists-counsellors",
+      "personal-brand-website-professionals",
+      "website-for-coaches-consultants",
+      "website-quiz-lead-generation",
+      "whatsapp-on-business-website"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Hello Elementor theme"
+    ],
+    "related": [
+      "wordpress-website-for-doctors",
+      "landing-page-design",
+      "wordpress-seo-services"
+    ]
   },
   {
-    slug: 'dr-sunaina-dental-care',
-    name: 'Dr. Sunaina Dental Care',
-    url: 'https://drsunainadentalcare.com/',
-    industry: 'Dental Clinic',
-    summary: 'A warm, trust-focused website for a dental clinic and implant centre in Agra, built to explain treatments clearly and turn visitors into booked appointments.',
-    client: 'Dr. Sunaina Dental Care & Implant Center is a dental clinic in Rajpur Chungi, Agra, offering teeth cleaning and whitening, braces and clear aligners, root canal treatment, implants, crowns and full mouth rehabilitation for patients of all ages.',
-    goals: [
-      'Reassure nervous patients with a gentle, personal tone',
-      'Explain the main treatments in plain language',
-      'Build local trust with patient testimonials and clear clinic information',
-      'Make booking an appointment or calling the clinic effortless on mobile',
+    "slug": "dr-sunaina-dental-care",
+    "name": "Dr. Sunaina Dental Care",
+    "url": "https://drsunainadentalcare.com/",
+    "industry": "Dental Clinic",
+    "seoTitle": "Dental Clinic Website Design on WordPress",
+    "metaDescription": "Dental clinic website design on WordPress and Elementor: a local headline, treatment pages, the clinic story and Book Appointment calls to action.",
+    "summary": "A warm, trust-focused website for a dental clinic and implant centre in Agra, built to explain treatments clearly and turn visitors into booked appointments.",
+    "client": "Dr. Sunaina Dental Care & Implant Center is a dental clinic in Rajpur Chungi, Agra, offering teeth cleaning and whitening, braces and clear aligners, root canal treatment, implants, crowns and full mouth rehabilitation for patients of all ages.",
+    "goals": [
+      "Reassure nervous patients with a gentle, personal tone",
+      "Explain the main treatments in plain language",
+      "Build local trust with patient testimonials and clear clinic information",
+      "Make booking an appointment or calling the clinic effortless on mobile"
     ],
-    built: [
-      'Home page with a clear local headline and "Book Appointment" and contact calls to action',
-      'Services page covering cleaning and whitening, braces and aligners, single-sitting root canals, zirconia crowns and bridges, implants and full mouth rehabilitation',
-      'About page with the clinic\'s vision, mission and strengths',
-      'Patient testimonials and an FAQ section answering common questions about pain, booking and location',
-      'Dedicated appointment page plus a contact form',
-      'Click-to-chat WhatsApp button, click-to-call phone number and social links',
+    "built": [
+      "Home page with a clear local headline and \"Book Appointment\" and contact calls to action",
+      "Services page covering cleaning and whitening, braces and aligners, single-sitting root canals, zirconia crowns and bridges, implants and full mouth rehabilitation",
+      "About page with the clinic's vision, mission and strengths",
+      "Patient testimonials and an FAQ section answering common questions about pain, booking and location",
+      "Dedicated appointment page plus a contact form",
+      "Click-to-chat WhatsApp button, click-to-call phone number and social links"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A dental clinic needed a website that told local patients which treatments it offered and made booking an appointment the obvious next step."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -339,35 +521,69 @@ module.exports = [
           "Put your city and neighbourhood in the main headline, describe each treatment by what the patient actually wants to know (how many visits, whether it hurts, which material), and answer the pain question directly in an FAQ. Short, plain answers are easier to scan on a phone than a long list of procedures.",
           "If your patients already message you on WhatsApp, make that the main booking button and keep a short form as a backup. Give your address with landmarks, repeat your contact details at the end of every page, and connect each testimonial to a treatment. This site does all of that with WordPress, Elementor and the Hello Elementor theme."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site leads with a clear local headline and \"Book Appointment\" calls to action, and has a services page covering cleaning and whitening, braces and aligners, root canals, crowns, implants and full mouth rehabilitation."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Dental Clinic website like this on WordPress, see the WordPress websites for doctors page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["website-for-dentists","clinic-website-checklist-for-doctors","whatsapp-on-business-website","online-appointment-booking-website","faq-page-seo"],
-    stack: ['WordPress', 'Elementor', 'Hello Elementor theme'],
-    related: ['wordpress-website-for-doctors', 'elementor-developer', 'wordpress-seo-services'],
+    "reading": [
+      "website-for-dentists",
+      "online-appointment-booking-website",
+      "clinic-website-checklist-for-doctors",
+      "whatsapp-on-business-website",
+      "faq-page-seo"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Hello Elementor theme"
+    ],
+    "related": [
+      "wordpress-website-for-doctors",
+      "elementor-developer",
+      "wordpress-seo-services"
+    ]
   },
   {
-    slug: 'studio-agama-interiors',
-    name: 'Studio Agama Interiors',
-    url: 'https://interiorstudioagama.com/',
-    industry: 'Interior Design Studio',
-    summary: 'A visual, lead-focused website for a Hyderabad interior design and turnkey execution studio, showcasing services and projects and driving free quote requests.',
-    client: 'Studio Agama Interiors is an interior design studio based in Hyderabad offering modular kitchens and wardrobes, full home turnkey interiors, luxury and commercial interiors, renovations, custom furniture, 3D visualisation and project management, with blog content covering Hyderabad, Vizag and Vijayawada.',
-    goals: [
-      'Present a wide range of residential and commercial interior services clearly',
-      'Let the work speak with an attractive, browsable project gallery',
-      'Turn visitors into free quote requests and consultations',
-      'Recruit designers and partners through a dedicated page',
-      'Build local search visibility in the cities they serve',
+    "slug": "studio-agama-interiors",
+    "name": "Studio Agama Interiors",
+    "url": "https://interiorstudioagama.com/",
+    "industry": "Interior Design Studio",
+    "seoTitle": "Interior Design Website on WordPress: Studio Agama",
+    "metaDescription": "Interior design studio website on WordPress and Elementor Pro: service pages, testimonials, brand partners and Get A Free Quote calls to action.",
+    "summary": "A visual, lead-focused website for a Hyderabad interior design and turnkey execution studio, showcasing services and projects and driving free quote requests.",
+    "client": "Studio Agama Interiors is an interior design studio based in Hyderabad offering modular kitchens and wardrobes, full home turnkey interiors, luxury and commercial interiors, renovations, custom furniture, 3D visualisation and project management, with blog content covering Hyderabad, Vizag and Vijayawada.",
+    "goals": [
+      "Present a wide range of residential and commercial interior services clearly",
+      "Let the work speak with an attractive, browsable project gallery",
+      "Turn visitors into free quote requests and consultations",
+      "Recruit designers and partners through a dedicated page",
+      "Build local search visibility in the cities they serve"
     ],
-    built: [
-      'Home page with service highlights, reasons to choose the studio, testimonials, brand partners and "Get A Free Quote" calls to action throughout',
-      'Services covering modular interiors, full home turnkey interiors, luxury, commercial, renovation, room planning, custom furniture, hospitality, 3D visualisation and project management',
-      'Project gallery showcasing completed interiors',
-      '"Become a Design Partner" page with a partner enquiry form',
-      'Blog with location-focused articles for Hyderabad, Vizag and Vijayawada',
-      'Contact page with operational and registered addresses and enquiry forms',
+    "built": [
+      "Home page with service highlights, reasons to choose the studio, testimonials, brand partners and \"Get A Free Quote\" calls to action throughout",
+      "Services covering modular interiors, full home turnkey interiors, luxury, commercial, renovation, room planning, custom furniture, hospitality, 3D visualisation and project management",
+      "Project gallery showcasing completed interiors",
+      "\"Become a Design Partner\" page with a partner enquiry form",
+      "Blog with location-focused articles for Hyderabad, Vizag and Vijayawada",
+      "Contact page with operational and registered addresses and enquiry forms"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An interior design studio offering everything from modular kitchens to commercial fit-outs needed a website that presented each service clearly and turned interest into quote requests."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -397,34 +613,68 @@ module.exports = [
           "Caption your project photos by style and room so visitors can match your work to their own home, give every service a one-line description, and answer comparison questions in an FAQ: modular or full home, one room or the whole house, how many revisions, and how payment works.",
           "Ask for enquiry type, project stage and budget in your enquiry form so you know what each lead needs before you call, and keep partner and recruitment enquiries on a separate page. This site does that with WordPress, Elementor Pro and the Hello Elementor theme."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site shows service highlights, reasons to choose the studio, testimonials and brand partners on the home page, covers modular, turnkey, luxury, commercial and renovation work, and repeats \"Get A Free Quote\" throughout."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Interior Design Studio website like this on WordPress, see the Elementor development page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["website-for-interior-designers-architects","website-for-modular-kitchen-companies","multi-step-forms-lead-qualification","local-landing-pages-without-doorway-pages","website-for-3d-visualisation-studios"],
-    stack: ['WordPress', 'Elementor Pro', 'Hello Elementor theme'],
-    related: ['elementor-developer', 'wordpress-website-development', 'wordpress-seo-services'],
+    "reading": [
+      "website-for-modular-kitchen-companies",
+      "multi-step-forms-lead-qualification",
+      "website-for-interior-designers-architects",
+      "local-landing-pages-without-doorway-pages",
+      "website-for-3d-visualisation-studios"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor Pro",
+      "Hello Elementor theme"
+    ],
+    "related": [
+      "elementor-developer",
+      "wordpress-website-development",
+      "website-redesign"
+    ]
   },
   {
-    slug: 'southern-flavours',
-    name: 'Southern Flavours',
-    url: 'https://southernflavours.co.uk/',
-    industry: 'Indian Restaurant (UK)',
-    summary: 'A warm, appetite-led website for an Indian restaurant in Solihull, UK, built around table reservations, the menu and its weekend South Indian breakfast buffet.',
-    client: 'Southern Flavours is an Indian restaurant on Stratford Road in Shirley, Solihull, serving South and North Indian dishes, from dosas and idli to curries, tandoori specialities and cocktails, with an unlimited South Indian breakfast buffet at weekends.',
-    goals: [
-      'Make booking a table quick and easy on any device',
-      'Showcase signature dishes and the weekend breakfast buffet',
-      'Give diners the practical details they look for: address, phone and opening hours',
-      'Support online ordering and build a list of regular customers',
+    "slug": "southern-flavours",
+    "name": "Southern Flavours",
+    "url": "https://southernflavours.co.uk/",
+    "industry": "Indian Restaurant (UK)",
+    "seoTitle": "Restaurant Website Design on WordPress: Southern Flavours",
+    "metaDescription": "Indian restaurant website design on WordPress and WooCommerce: signature dishes, a weekend buffet section and table reservations with instant confirmation.",
+    "summary": "A warm, appetite-led website for an Indian restaurant in Solihull, UK, built around table reservations, the menu and its weekend South Indian breakfast buffet.",
+    "client": "Southern Flavours is an Indian restaurant on Stratford Road in Shirley, Solihull, serving South and North Indian dishes, from dosas and idli to curries, tandoori specialities and cocktails, with an unlimited South Indian breakfast buffet at weekends.",
+    "goals": [
+      "Make booking a table quick and easy on any device",
+      "Showcase signature dishes and the weekend breakfast buffet",
+      "Give diners the practical details they look for: address, phone and opening hours",
+      "Support online ordering and build a list of regular customers"
     ],
-    built: [
-      'Home page with the restaurant\'s story, signature dishes and a clear "Table Reservations" call to action',
-      'Dedicated weekend breakfast buffet section',
-      'Table reservation form with party size and date selection and an instant confirmation message',
-      'Menu, gallery and About pages telling the restaurant\'s story',
-      'WooCommerce shop and cart for online ordering',
-      'Opening hours, address and phone on every page, and a newsletter sign-up',
+    "built": [
+      "Home page with the restaurant's story, signature dishes and a clear \"Table Reservations\" call to action",
+      "Dedicated weekend breakfast buffet section",
+      "Table reservation form with party size and date selection and an instant confirmation message",
+      "Menu, gallery and About pages telling the restaurant's story",
+      "WooCommerce shop and cart for online ordering",
+      "Opening hours, address and phone on every page, and a newsletter sign-up"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An Indian restaurant in the UK needed a website that told its story, showed its food and let guests reserve a table without phoning."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -454,35 +704,69 @@ module.exports = [
           "Put your two main actions, booking and ordering, in the hero, and give your most distinctive offer its own section near the top with the days and times spelled out. Show dishes from every part of your menu so first-time visitors know what to expect, and keep your address, phone number and hours next to the booking form.",
           "Keep the reservation form short, confirm the request on screen straight away, and show prices on your online menu. This site does that with WordPress, Elementor, the Hello Elementor theme and WooCommerce."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site has the restaurant story and signature dishes on the home page, a weekend breakfast buffet section, menu and gallery pages, and a table reservation form with party size, date selection and an instant confirmation message."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Indian Restaurant website like this on WordPress and WooCommerce, see the websites for restaurants page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["restaurant-website-online-ordering","restaurant-menu-on-website","online-appointment-booking-website","email-newsletter-small-business","own-website-vs-marketplaces"],
-    stack: ['WordPress', 'Elementor', 'Hello Elementor theme', 'WooCommerce'],
-    related: ['website-for-restaurants', 'woocommerce-developer', 'elementor-developer'],
+    "reading": [
+      "restaurant-website-online-ordering",
+      "own-website-vs-marketplaces",
+      "restaurant-menu-on-website",
+      "online-appointment-booking-website",
+      "email-newsletter-small-business"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Hello Elementor theme",
+      "WooCommerce"
+    ],
+    "related": [
+      "website-for-restaurants",
+      "woocommerce-developer",
+      "elementor-developer"
+    ]
   },
   {
-    slug: 'dr-nitish-gupta-pulmonologist',
-    name: 'Dr. Nitish Gupta',
-    url: 'https://agrapulmonologist.com/',
-    industry: 'Pulmonology Clinic',
-    metaDescription: 'Case study: a trust-building WordPress website for an interventional pulmonologist in Agra, with credentials, lung services and appointment booking.',
-    summary: 'A detailed, trust-building website for an interventional pulmonologist in Agra, presenting his credentials, chest and lung services and diagnostic facilities, with easy appointment booking.',
-    client: 'Dr. Nitish Gupta is a consultant physician and interventional pulmonologist at Niramaya Care Center in Agra, treating lung, chest, allergy and sleep disorders, with services including bronchoscopy, spirometry and sleep studies.',
-    goals: [
-      'Build trust with a clear doctor profile, qualifications and professional memberships',
-      'Explain a wide range of specialised services in patient-friendly language',
-      'Help patients find information about specific diseases and procedures',
-      'Make booking an appointment or calling the clinic effortless',
+    "slug": "dr-nitish-gupta-pulmonologist",
+    "name": "Dr. Nitish Gupta",
+    "url": "https://agrapulmonologist.com/",
+    "industry": "Pulmonology Clinic",
+    "seoTitle": "Pulmonologist Website Design on WordPress",
+    "metaDescription": "Pulmonology clinic website design on WordPress: doctor credentials, lung, sleep and allergy services, diagnostics explained and appointment booking.",
+    "summary": "A detailed, trust-building website for an interventional pulmonologist in Agra, presenting his credentials, chest and lung services and diagnostic facilities, with easy appointment booking.",
+    "client": "Dr. Nitish Gupta is a consultant physician and interventional pulmonologist at Niramaya Care Center in Agra, treating lung, chest, allergy and sleep disorders, with services including bronchoscopy, spirometry and sleep studies.",
+    "goals": [
+      "Build trust with a clear doctor profile, qualifications and professional memberships",
+      "Explain a wide range of specialised services in patient-friendly language",
+      "Help patients find information about specific diseases and procedures",
+      "Make booking an appointment or calling the clinic effortless"
     ],
-    built: [
-      'Doctor profile covering education, past academic role and memberships of national and international chest societies',
-      'Services section for chest, sleep, tuberculosis and allergy care, video bronchoscopy, pleural procedures and vaccination',
-      'Diagnostics section explaining pulmonary function tests, peak flow monitoring, pulse oximetry, polysomnography, the six-minute walk test and sputum tests',
-      'Dedicated Bronchoscopy, Diseases, Gallery, Appointment and Contact sections',
-      'Top bar with email, phone and a "Book an Appointment" button on every page',
-      'Site search to help patients find information quickly',
+    "built": [
+      "Doctor profile covering education, past academic role and memberships of national and international chest societies",
+      "Services section for chest, sleep, tuberculosis and allergy care, video bronchoscopy, pleural procedures and vaccination",
+      "Diagnostics section explaining pulmonary function tests, peak flow monitoring, pulse oximetry, polysomnography, the six-minute walk test and sputum tests",
+      "Dedicated Bronchoscopy, Diseases, Gallery, Appointment and Contact sections",
+      "Top bar with email, phone and a \"Book an Appointment\" button on every page",
+      "Site search to help patients find information quickly"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An interventional pulmonologist in Agra needed a website that showed his credentials, explained specialist lung services in plain terms and made booking easy."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -512,34 +796,68 @@ module.exports = [
           "Lead with credentials a patient can check: degrees with the university and year, past teaching roles and named professional societies say far more than \"experienced specialist\". Then explain every test and procedure you offer in two or three plain sentences, because a patient who has been told to get a lung function test or a sleep study will usually look it up before booking.",
           "Give each condition you treat its own heading, keep the phone number and booking button at the top of the page, and ask for a preferred date and session in the booking form. If your practice already has Google reviews, show them through a widget linked to your profile instead of retyping quotes. None of this needs a complicated build: this site runs on WordPress with Elementor and the OceanWP theme."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site has a doctor profile with education and society memberships, a services section for chest, sleep, tuberculosis and allergy care and procedures such as video bronchoscopy, and a diagnostics section explaining tests such as pulmonary function tests."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Pulmonology Clinic website like this on WordPress, see the WordPress websites for doctors page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["clinic-website-checklist-for-doctors","website-for-specialist-doctors","online-appointment-booking-website","google-reviews-on-website","google-business-profile-checklist"],
-    stack: ['WordPress', 'Elementor', 'OceanWP theme'],
-    related: ['wordpress-website-for-doctors', 'elementor-developer', 'wordpress-seo-services'],
+    "reading": [
+      "clinic-website-checklist-for-doctors",
+      "online-appointment-booking-website",
+      "website-for-specialist-doctors",
+      "google-reviews-on-website",
+      "google-business-profile-checklist"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "OceanWP theme"
+    ],
+    "related": [
+      "wordpress-website-for-doctors",
+      "elementor-developer",
+      "wordpress-seo-services"
+    ]
   },
   {
-    slug: 'sahni-power-solutions',
-    name: 'Sahni Power Solutions',
-    url: 'https://sahnipowersolutions.com/',
-    industry: 'Generator Rental',
-    summary: 'A lead-focused website for a diesel generator rental company, presenting its full fleet from small portable units to large silent gensets.',
-    client: 'Sahni Power Solutions rents diesel generators for commercial, industrial, institutional, event and infrastructure needs, on daily, weekly, monthly and annual terms.',
-    goals: [
-      'Show the full range of generator capacities clearly',
-      'Serve very different customers: factories, hospitals, events, construction sites',
-      'Generate enquiries and callback requests quickly',
-      'Build trust with experience, projects and compliance details',
+    "slug": "sahni-power-solutions",
+    "name": "Sahni Power Solutions",
+    "url": "https://sahnipowersolutions.com/",
+    "industry": "Generator Rental",
+    "seoTitle": "Generator Rental Website Design on WordPress",
+    "metaDescription": "Generator rental website design on WordPress: a range by capacity and type, industry pages, Enquire Now and call-back calls to action and trust signals.",
+    "summary": "A lead-focused website for a diesel generator rental company, presenting its full fleet from small portable units to large silent gensets.",
+    "client": "Sahni Power Solutions rents diesel generators for commercial, industrial, institutional, event and infrastructure needs, on daily, weekly, monthly and annual terms.",
+    "goals": [
+      "Show the full range of generator capacities clearly",
+      "Serve very different customers: factories, hospitals, events, construction sites",
+      "Generate enquiries and callback requests quickly",
+      "Build trust with experience, projects and compliance details"
     ],
-    built: [
-      'Generator range organised by capacity and type: portable, silent, welding, mobile and industrial',
-      'Industry-specific service descriptions for each customer type',
-      'Prominent "Enquire Now" and "Request a Call Back" calls to action',
-      'Trust indicators: years in business, projects completed and running',
-      'Installation photo gallery',
-      'Detailed FAQ section and compliance information (CPCB-IV+, noise norms)',
+    "built": [
+      "Generator range organised by capacity and type: portable, silent, welding, mobile and industrial",
+      "Industry-specific service descriptions for each customer type",
+      "Prominent \"Enquire Now\" and \"Request a Call Back\" calls to action",
+      "Trust indicators: years in business, projects completed and running",
+      "Installation photo gallery",
+      "Detailed FAQ section and compliance information (CPCB-IV+, noise norms)"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A generator rental company needed a website that let buyers find the right machine quickly and get in touch before calling a competitor."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -569,36 +887,70 @@ module.exports = [
           "Organise your fleet the way customers specify it, by capacity first, and give each band its own page with typical uses, what affects the price and the questions specific to that size. Name the industries you serve so visitors can see their own work on the page.",
           "Keep a call-back button in the header, put an enquiry button at the end of every section, and state compliance standards plainly. Write FAQs in the words people search with, including your city and the localities you cover. This site does that with WordPress, Elementor, the Astra theme and Rank Math SEO."
         ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site organises generators by capacity and type (portable, silent, welding, mobile and industrial), describes the service for each customer type, and shows \"Enquire Now\" and \"Request a Call Back\" calls to action alongside trust indicators."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Generator Rental website like this on WordPress, see the websites for solar and power companies page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
       }
     ],
-    reading: ["equipment-rental-website-guide","website-for-event-rental-businesses","service-area-business-seo","faq-page-seo","get-more-enquiries-from-your-website"],
-    stack: ['WordPress', 'Elementor', 'Astra theme', 'Rank Math SEO'],
-    related: ['website-for-solar-and-power-companies', 'website-for-manufacturers', 'landing-page-design'],
+    "reading": [
+      "equipment-rental-website-guide",
+      "service-area-business-seo",
+      "website-for-event-rental-businesses",
+      "faq-page-seo",
+      "get-more-enquiries-from-your-website"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Astra theme",
+      "Rank Math SEO"
+    ],
+    "related": [
+      "website-for-solar-and-power-companies",
+      "wordpress-seo-services",
+      "landing-page-design"
+    ]
   },
   {
-    slug: 'samverse',
-    name: 'Samverse (this website)',
-    url: 'https://samverse.space/',
-    industry: 'Portfolio & Lead Generation',
-    thumb: '/assets/og-image.png',
-    metaDescription: 'Case study: samverse.space, a fast, custom-coded portfolio and lead generation site with service pages, a blog, case studies and a cost calculator.',
-    summary: 'The site you\'re reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog, case studies and a cost calculator.',
-    client: 'Samverse is my own freelance WordPress development business. The website needed to explain services clearly to very different buyers, prove experience with real work, rank for high-intent searches and turn visitors into enquiries.',
-    goals: [
-      'Give every service and industry its own focused page',
-      'Show real experience through case studies',
-      'Rank for informational and commercial searches with genuinely useful content',
-      'Capture enquiries reliably by email and WhatsApp, without spam',
+    "slug": "samverse",
+    "name": "Samverse (this website)",
+    "url": "https://samverse.space/",
+    "industry": "Portfolio & Lead Generation",
+    "thumb": "/assets/og-image.png",
+    "seoTitle": "Freelance Portfolio Website Case Study: Samverse",
+    "metaDescription": "Case study: samverse.space, a fast, custom-coded portfolio and lead generation site with service pages, a blog, case studies and WhatsApp enquiries.",
+    "summary": "The site you're reading: a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog and case studies.",
+    "client": "Samverse is my own freelance WordPress development business. The website needed to explain services clearly to very different buyers, prove experience with real work, rank for high-intent searches and turn visitors into enquiries.",
+    "goals": [
+      "Give every service and industry its own focused page",
+      "Show real experience through case studies",
+      "Rank for informational and commercial searches with genuinely useful content",
+      "Capture enquiries reliably by email and WhatsApp, without spam"
     ],
-    built: [
-      'Dozens of service, industry, case study and article pages generated from simple data files, so adding content is quick and consistent',
-      'Contact form that emails enquiries through a small PHP script on the server, then opens WhatsApp, with honeypot and math-question spam protection',
-      'Structured data on every page: business, services, FAQs, articles, breadcrumbs and case studies',
-      'Internal linking between services, articles and case studies, plus sitemap, RSS feed and llms.txt',
-      'Free website cost calculator, glossary and key takeaways on every article',
-      'Per-page social share images, mobile-first design and Lighthouse SEO score of 100',
+    "built": [
+      "Dozens of service, industry, case study and article pages generated from simple data files, so adding content is quick and consistent",
+      "Contact form that emails enquiries through a small PHP script on the server, then opens WhatsApp, with honeypot and math-question spam protection",
+      "Structured data on every page: business, services, FAQs, articles, breadcrumbs and case studies",
+      "Internal linking between services, articles and case studies, plus sitemap, RSS feed and llms.txt",
+      "Glossary and key takeaways on every article",
+      "Per-page social share images, mobile-first design and Lighthouse SEO score of 100"
     ],
-    sections: [
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A freelance web business needed a fast portfolio site that could hold many service, industry and article pages without a CMS, and turn readers into enquiries."
+        ]
+      },
       {
         "h": "How the site is organised",
         "p": [
@@ -610,7 +962,7 @@ module.exports = [
         "h": "Hundreds of pages from simple data files",
         "p": [
           "The site has no CMS and no database. Service pages, articles and case studies are entries in plain JavaScript data files, and a Node.js build script turns them into static HTML that Hostinger serves as ordinary files. I set it up this way so that adding a page takes one entry and one build, and the header, footer, contact form and styling stay identical everywhere.",
-          "The same build writes structured data for each type of page: Service, FAQPage and BreadcrumbList on the landing pages, BlogPosting on articles, CreativeWork on case studies, WebApplication on the cost calculator and DefinedTermSet on the glossary. It also regenerates the sitemap, the blog's RSS feed and an llms.txt file that describes the site for AI assistants. A separate script creates a 1200 by 630 pixel share image for every article, landing page and case study, and another submits every URL in the sitemap to IndexNow so that Bing and Yandex hear about new pages after a deploy.",
+          "The same build writes structured data for each type of page: Service, FAQPage and BreadcrumbList on the landing pages, BlogPosting on articles, CreativeWork on case studies and DefinedTermSet on the glossary. It also regenerates the sitemap, the blog's RSS feed and an llms.txt file that describes the site for AI assistants. A separate script creates a 1200 by 630 pixel share image for every article, landing page and case study, and another submits every URL in the sitemap to IndexNow so that Bing and Yandex hear about new pages after a deploy.",
           "The blog holds more than 570 articles grouped into six topics: planning and costs, SEO and growth, speed, security and maintenance, e-commerce, industry guides, and guides for agencies. Each article shows its read time, three key takeaways, an \"On this page\" contents list, a FAQ, related articles and services, and previous and next links within its topic."
         ]
       },
@@ -619,19 +971,46 @@ module.exports = [
         "p": [
           "Many business owners would rather talk on WhatsApp than wait for an email reply, so the contact form is built around it. It asks for a name, a phone or WhatsApp number, an optional email, a project type and a message. When it is sent, a small PHP script on the server emails the enquiry to me, and the browser then opens WhatsApp with the same details already typed in. If the email step fails, WhatsApp still opens, so a mail error never costs an enquiry.",
           "Spam protection works without reCAPTCHA. The form has a hidden honeypot field that only bots fill in, a simple addition question with a button for a new one, and a check that quietly drops anything submitted within three seconds of the page loading.",
-          "The free website cost calculator is a second way in. A visitor picks a landing page, a business website, a large B2B site or a WooCommerce store, sets the number of pages (and products, for a store), ticks extras such as a booking system, online payments or multiple languages, and watches a price range in rupees update as they go. The \"Get an Exact Quote on WhatsApp\" button sends that selection as a message, so the conversation starts with a brief. Alongside it, a 40-term glossary explains words like DNS, caching and Core Web Vitals in plain English."
+          "A 40-term glossary explains words like DNS, caching and Core Web Vitals in plain English."
         ]
       },
       {
         "h": "What other freelancers and small businesses can take from this",
         "p": [
-          "Give each service and each type of customer its own page instead of one long services page, and link everything together: articles point to the services they relate to, service pages list relevant articles and case studies, and case studies link back to services. If you publish prices, label them clearly as a guide, as the calculator does.",
+          "Give each service and each type of customer its own page instead of one long services page, and link everything together: articles point to the services they relate to, service pages list relevant articles and case studies, and case studies link back to services.",
           "If your enquiries usually move to WhatsApp, send them there straight from the form while keeping an email copy, and try light spam checks before adding a captcha that real visitors find annoying. A static build is not right for every business, but for a content-heavy site run by one person it keeps hosting simple and every page consistent."
+        ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site is built from plain data files into static HTML, with service, industry and case study pages, a blog grouped by topic, structured data on every page type, and a contact form that emails each enquiry and opens WhatsApp."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a Portfolio & Lead Generation website like this on a fast, search-friendly build, see the WordPress SEO services page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
         ]
       }
     ],
-    reading: ["portfolio-website-freelancers-creatives","schema-markup-explained","website-calculators-lead-generation","stop-contact-form-spam","internal-linking-explained"],
-    stack: ['HTML, CSS & JavaScript', 'Node.js build scripts', 'Hostinger hosting', 'PHP form handler'],
-    related: ['wordpress-seo-services', 'landing-page-design', 'hire-wordpress-developer'],
-  },
+    "reading": [
+      "portfolio-website-freelancers-creatives",
+      "internal-linking-explained",
+      "schema-markup-explained",
+      "website-calculators-lead-generation",
+      "stop-contact-form-spam"
+    ],
+    "stack": [
+      "HTML, CSS & JavaScript",
+      "Node.js build scripts",
+      "Hostinger hosting",
+      "PHP form handler"
+    ],
+    "related": [
+      "wordpress-seo-services",
+      "landing-page-design",
+      "hire-wordpress-developer"
+    ]
+  }
 ];
