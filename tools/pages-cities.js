@@ -8,8 +8,16 @@ const wa = city => `Hi, I found your ${city} page. I need help with a WordPress 
 const commonFaqs = city => [
   [`Do you build both WordPress and Shopify websites for ${city} businesses?`, `Yes. WordPress suits service businesses, clinics, manufacturers and content-led sites, and WooCommerce adds a store when you need one. Shopify suits product brands that want a hosted store with payments, shipping and apps ready to go. I help you choose based on what you sell and how you want to manage it, then build on that platform.`],
   [`Can you work with my ${city} business without meeting in person?`, `Yes. Projects run over WhatsApp, phone and video calls with screen sharing. You see progress on a private staging link from your own phone, and approve each step before launch.`],
-  ['How much will my website cost?', 'It depends on the number of pages, features and whether you need a store. The website cost calculator gives a quick estimate, or send a short note on WhatsApp for a fixed quote, usually within 24 hours.'],
+  ['How much will my website cost?', 'It depends on the number of pages, features and whether you need a store. Send a short note through the contact page or WhatsApp with what you need, and you get a fixed quote, usually within 24 hours.'],
   ['Will I own the website, domain and store?', 'Yes. The domain, hosting, Shopify store and payment accounts are registered in your business name, and you get full admin access. I work inside your accounts as a collaborator, so you are never locked in.'],
+];
+
+// Clear start-to-finish steps, worded for the city
+const startSteps = city => [
+  ['Free review', `Send your current site, Shopify store or a short note about your ${city} business on WhatsApp. I review it and suggest WordPress or Shopify, at no cost.`],
+  ['Fixed quote', 'You get a written scope, a fixed price and a timeline before any work starts, so there are no surprises.'],
+  ['Build on staging', 'The site or store is built on a private staging link you can check from your phone, with your feedback at each step.'],
+  ['Launch and handover', 'After your approval it goes live, and the logins, domain, hosting and store stay in your business name, with a short walkthrough for your team.'],
 ];
 
 const cityPage = c => ({
@@ -29,6 +37,8 @@ const cityPage = c => ({
   projects: c.projects,
   areaServed: c.areaServed,
   readingFrom: c.readingFrom || 'hire-wordpress-developer',
+  stepsTitle: `How to start your ${c.city} website`,
+  steps: startSteps(c.city),
   faqs: c.faqs.concat(commonFaqs(c.city)),
 });
 
@@ -480,12 +490,14 @@ const india = {
   projects: ['Vansh Group', 'Studio Agama Interiors', 'Dr. Sunaina Dental Care', 'Streak Creative'],
   areaServed: ['India'],
   readingFrom: 'hire-wordpress-developer',
+  stepsTitle: 'How to start',
+  steps: startSteps('India'),
   faqs: [
     ['Do you work with businesses outside Pune?', 'Yes. Most of my clients are elsewhere: Delhi NCR, Agra, Bengaluru, Hyderabad and the UK. Projects run over WhatsApp, calls and video, with a staging link you can check at any time.'],
     ['Should I choose WordPress or Shopify?', 'Shopify suits product brands that want a hosted store with payments and shipping handled. WordPress suits service businesses and content-led sites, and WooCommerce adds a store with more control. Tell me what you sell and I will recommend one.'],
     ['Why hire a freelancer instead of an agency?', 'You talk directly to the person building your site, decisions are quicker and there is no agency overhead. The trade-off is one person\'s capacity, so I take on a limited number of projects at a time and give clear timelines.'],
     ['Can you outsource WordPress development for my agency?', 'Yes. I work white-label with agencies in India and abroad: builds from your designs, fixes, speed work and maintenance.'],
-    ['How much does a website cost in India?', 'It depends on pages, features and whether you need a store. The website cost calculator gives a quick estimate, or message me for a fixed quote, usually within 24 hours.'],
+    ['How much does a website cost in India?', 'It depends on pages, features and whether you need a store. Send a short note through the contact page or WhatsApp for a fixed quote, usually within 24 hours.'],
     ['Will I own the website?', 'Yes. Domain, hosting, Shopify store and payment accounts are in your business name and you get full admin access.'],
   ],
 };

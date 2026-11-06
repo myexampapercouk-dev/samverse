@@ -16,8 +16,8 @@
 - [Shopify Stores](https://samverse.space/shopify-developer/): Hire a Shopify developer for store setup, theme customisation in Liquid, speed and SEO fixes, and migrations to or from WooCommerce, with Indian payments.
 - [WordPress Website Development](https://samverse.space/wordpress-website-development/): WordPress website development in India: business sites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy to update.
 - [Hire a WordPress Developer](https://samverse.space/hire-wordpress-developer/): Hire a freelance WordPress developer in India for new sites, fixes, monthly support or white-label agency work. Fixed quotes and direct contact.
-- [WordPress Developer in Pune](https://samverse.space/wordpress-developer-pune/): Freelance WordPress developer based in Pune: fast, SEO-ready business websites, WooCommerce stores, redesigns and maintenance for Pune and PCMC businesses.
-- [Website Redesign](https://samverse.space/website-redesign/): Outdated, slow or not mobile-friendly? Get a modern WordPress website redesign with faster speed and better SEO, without losing your Google rankings.
+- [WordPress Developer in Pune](https://samverse.space/wordpress-developer-pune/): Freelance WordPress and Shopify developer in Pune: fast business websites, WooCommerce and Shopify stores, redesigns and maintenance for Pune and PCMC.
+- [Website Redesign](https://samverse.space/website-redesign/): Outdated, slow or not mobile-friendly? Get a modern WordPress or Shopify redesign with faster speed and better SEO, without losing your Google rankings.
 - [Speed Optimization](https://samverse.space/wordpress-speed-optimization/): WordPress & WooCommerce speed optimization service: a full audit, caching, image, plugin, script and database fixes, and a before-and-after report.
 - [Website Maintenance](https://samverse.space/wordpress-maintenance/): Website maintenance packages for WordPress sites in India: updates, backups, security, uptime checks and small content changes on a monthly plan.
 - [Elementor Development](https://samverse.space/elementor-developer/): Hire an Elementor developer in India for Elementor Pro pages, Theme Builder templates, WooCommerce layouts, slow or broken site fixes and white-label work.
@@ -51,14 +51,14 @@
 ## Industries
 - [For Agencies](https://samverse.space/wordpress-developer-for-agencies/): A reliable white-label WordPress and Elementor developer in India for agencies: your brand, your client relationship, fixed quotes and on-time delivery.
 - [Doctors & Clinics](https://samverse.space/wordpress-website-for-doctors/): Professional WordPress websites for doctors, clinics and hospitals. Mobile-friendly, fast, found on Google, with appointment enquiries straight to WhatsApp.
-- [Manufacturers & B2B](https://samverse.space/website-for-manufacturers/): WordPress websites for manufacturers, industrial suppliers and B2B companies. Product catalogues, enquiry forms and SEO that bring in bulk and export enquiries.
-- [Restaurants & Cafes](https://samverse.space/website-for-restaurants/): Mouth-watering WordPress websites for restaurants, cafes, bakeries and food brands, with menus, table reservations, online ordering and Google Maps.
+- [Manufacturers & B2B](https://samverse.space/website-for-manufacturers/): WordPress websites for manufacturers and B2B suppliers: product catalogues, RFQ forms and SEO that bring bulk and export enquiries. Shopify for direct sales.
+- [Restaurants & Cafes](https://samverse.space/website-for-restaurants/): WordPress websites for restaurants, cafes and bakeries with menus, reservations and ordering, plus Shopify stores for packaged food brands.
 - [Real Estate & Builders](https://samverse.space/real-estate-website-design/): WordPress websites for real estate builders, developers and property agents, with project pages, property listings, floor plans and lead capture forms.
 - [Schools & Coaching](https://samverse.space/website-for-schools-and-coaching/): WordPress websites for schools, colleges, coaching centres and tutors, with admissions enquiries, courses, results, galleries and notice boards.
 - [Temples, Trusts & NGOs](https://samverse.space/website-for-temples-and-ngos/): WordPress websites for temples, religious trusts and NGOs, with online donations, event calendars, galleries and information for devotees and supporters.
 - [Hotels & Homestays](https://samverse.space/hotel-website-design/): WordPress websites for hotels, resorts, homestays and travel businesses, with room pages, booking enquiries, galleries and local SEO to win direct bookings.
 - [Lawyers, CAs & Consultants](https://samverse.space/website-for-lawyers-and-consultants/): Professional WordPress websites for lawyers, law firms, chartered accountants and consultants that build credibility and bring in client consultations.
-- [Startups](https://samverse.space/website-for-startups/): Launch your startup website fast on WordPress: modern design, landing and product pages, blog and analytics, built to grow and easy for your team to edit.
+- [Startups](https://samverse.space/website-for-startups/): Launch your startup website fast on WordPress, or a Shopify store for D2C brands: landing and product pages, blog and analytics, easy for your team to edit.
 - [Solar & Power Companies](https://samverse.space/website-for-solar-and-power-companies/): WordPress websites for solar installers, power solution providers and electrical companies: product and service pages, project galleries and quote forms.
 
 ## Case studies
