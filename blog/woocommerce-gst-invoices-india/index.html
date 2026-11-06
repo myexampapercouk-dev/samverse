@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WooCommerce GST Setup in India: Tax Rates and GST Invoices</title>
-  <meta name="description" content="WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.">
+  <title>WooCommerce GST Setup India: CGST, SGST, IGST and Invoices</title>
+  <meta name="description" content="Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-gst-invoices-india/">
-  <meta property="og:title" content="WooCommerce GST Setup in India: Tax Rates and GST Invoices">
-  <meta property="og:description" content="WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.">
+  <meta property="og:title" content="WooCommerce GST Setup India: CGST, SGST, IGST and Invoices">
+  <meta property="og:description" content="Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-gst-invoices-india.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-gst-invoices-india/#article",
       "headline": "WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices",
-      "description": "WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.",
+      "description": "Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-gst-invoices-india/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-gst-invoices-india.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices</h1>
-          <p class="post-dek">WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.</p>
+          <p class="post-dek">Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20GST%20Setup%20for%20Indian%20Stores%3A%20CGST%2C%20SGST%2C%20IGST%2C%20HSN%20Codes%20and%20GST%20Invoices%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-gst-invoices-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -165,6 +165,7 @@
               <li><a href="#test-before-you-go-live">Test before you go live</a></li>
               <li><a href="#common-woocommerce-gst-setup-mistakes">Common WooCommerce GST setup mistakes</a></li>
               <li><a href="#reports-for-gst-filing">Reports for GST filing</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -307,6 +308,11 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <h2 id="reports-for-gst-filing">Reports for GST filing</h2>
 <p>WooCommerce &gt; Analytics &gt; Taxes shows tax collected by rate for any period, and an order export with the shipping state and tax lines gives your accountant what they need for returns. Many invoice plugins can export invoices in bulk. Agree a monthly routine with your CA: export orders and invoices, reconcile them with payment gateway settlements, and keep everything organised by financial year.</p>
 
+<h2 id="when-to-get-help">When to get help</h2>
+<p>A simple store with one GST rate and no business buyers can usually follow the steps above. Get help when you sell at more than one rate, invoice B2B buyers who claim input tax credit, need e-invoices, or already have live orders with the wrong tax split, because correcting past invoices is an accounting job as well as a website one.</p>
+<p>A quick self-check first: place three test orders, one to an address in your home state, one to another state and one with a GSTIN entered, then compare every invoice line with what your CA expects. If a total is off by a rupee, or a local order shows IGST, the store address, the "Calculate tax based on" setting or the rounding option is usually the cause.</p>
+<p>I set up GST tax classes, GSTIN fields and invoices from your CA's figures, and test orders to different states, as part of <a href="/woocommerce-developer/">WooCommerce development</a>. Payment gateways are covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Does WooCommerce support GST?</h3>
 <p>Yes, through its standard tax settings. You create tax classes for each GST rate and add CGST, SGST and IGST rates by state. HSN codes, a GSTIN checkout field and GST-format invoices need a plugin or custom work.</p>
@@ -320,8 +326,6 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately.</p>
 <h3>Can WooCommerce generate e-invoices with an IRN?</h3>
 <p>Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store.</p>
-
-<p>Want GST, invoices and payments set up correctly before your store goes live? I configure tax classes and rates from your CA's figures, add GSTIN and HSN fields and GST invoices, and test orders to different states; see <a href="/woocommerce-developer/">WooCommerce development</a>. Payment gateways are covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -369,6 +373,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
               <li><a href="#test-before-you-go-live">Test before you go live</a></li>
               <li><a href="#common-woocommerce-gst-setup-mistakes">Common WooCommerce GST setup mistakes</a></li>
               <li><a href="#reports-for-gst-filing">Reports for GST filing</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

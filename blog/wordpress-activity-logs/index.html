@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Activity Log: Track Who Changed What on Your Site</title>
-  <meta name="description" content="How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.">
+  <title>WordPress Activity Log: See Who Changed What and When</title>
+  <meta name="description" content="WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-activity-logs/">
-  <meta property="og:title" content="WordPress Activity Log: Track Who Changed What on Your Site">
-  <meta property="og:description" content="How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.">
+  <meta property="og:title" content="WordPress Activity Log: See Who Changed What and When">
+  <meta property="og:description" content="WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-activity-logs.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-activity-logs/#article",
       "headline": "WordPress Activity Log and Change Log: Track Who Changed What on Your Site",
-      "description": "How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.",
+      "description": "WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.",
       "datePublished": "2026-09-30",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-activity-logs/",
       "image": "https://samverse.space/assets/og/blog-wordpress-activity-logs.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>WordPress Activity Log and Change Log: Track Who Changed What on Your Site</h1>
-          <p class="post-dek">How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.</p>
+          <p class="post-dek">WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Activity%20Log%20and%20Change%20Log%3A%20Track%20Who%20Changed%20What%20on%20Your%20Site%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-activity-logs%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,6 +164,7 @@
               <li><a href="#retention-and-privacy">Retention and privacy</a></li>
               <li><a href="#what-activity-logs-can-t-do">What activity logs can't do</a></li>
               <li><a href="#setting-up-a-wordpress-activity-log-for-a-team-in-india">Setting up a WordPress activity log for a team in India</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -175,7 +176,8 @@
               <li>Give every person their own login, log the events that matter, set a retention period and have a named person review the log weekly.</li>
             </ul>
           </div>
-<p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed change log of admin activity by default. An activity log (also called an audit log or change log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
+<p>WordPress doesn't keep a log of who changed what by default. To see who edited a page, changed a price or logged in, add an activity log plugin, which records logins, content edits, plugin, theme and setting changes with the user, time and IP address. For a single post or page, the Revisions panel in the editor already shows who saved each version.</p>
+<p>An activity log (also called an audit log or change log) answers questions like "who changed the price on this product?" or "did anyone log in last night?", and it helps with security, teamwork and troubleshooting.</p>
 <p><strong>In short:</strong> a WordPress activity log is a plugin that records events inside WordPress, such as logins, content edits, plugin updates and settings changes, with the user, time and IP address. It isn't the same as an error log or a server log, which record different things in different places; the table below shows which one answers which question.</p>
 
 <h2 id="how-to-check-the-wordpress-change-log">How to check the WordPress change log</h2>
@@ -297,6 +299,10 @@
 </ol>
 <p>If you would rather have this set up and checked as part of routine care, I handle it within <a href="/wordpress-maintenance/">WordPress maintenance</a>, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off audit of users, roles and logging.</p>
 
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the log shows logins you don't recognise, admin users nobody created, or plugin and file changes at odd hours. Treat those as a possible break-in: change passwords, remove unknown users and check the site before anything else. Also get help if the log table has grown large enough to slow the admin; a retention setting fixes that.</p>
+<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is the best WordPress activity log plugin?</h3>
 <p>There is no single best one. Choose an actively maintained plugin with a good support record, check that it logs the events you care about, and confirm it lets you set retention and export entries. Test it on a staging copy first if the site is busy.</p>
@@ -310,8 +316,6 @@
 <p>Only if an activity log was running at the time. Without one, check the trash, the page's revisions and, if needed, ask your host whether their logs show the request.</p>
 <h3>Do activity logs slow down WordPress?</h3>
 <p>Recording admin events adds very little load. Problems come from logging every visitor action or keeping entries forever, so limit what you log and set a retention period.</p>
-
-<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -358,6 +362,7 @@
               <li><a href="#retention-and-privacy">Retention and privacy</a></li>
               <li><a href="#what-activity-logs-can-t-do">What activity logs can't do</a></li>
               <li><a href="#setting-up-a-wordpress-activity-log-for-a-team-in-india">Setting up a WordPress activity log for a team in India</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

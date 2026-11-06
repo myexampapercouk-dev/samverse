@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Fatal Error or Critical Error? How to Fix It</title>
-  <meta name="description" content="WordPress fatal error or &quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins and check PHP.">
+  <title>WordPress Critical Error or Fatal Error? How to Fix It</title>
+  <meta name="description" content="&quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/fix-wordpress-critical-error/">
-  <meta property="og:title" content="WordPress Fatal Error or Critical Error? How to Fix It">
-  <meta property="og:description" content="WordPress fatal error or &quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins and check PHP.">
+  <meta property="og:title" content="WordPress Critical Error or Fatal Error? How to Fix It">
+  <meta property="og:description" content="&quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-fix-wordpress-critical-error.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/fix-wordpress-critical-error/#article",
       "headline": "WordPress Fatal Error: How to Fix \"There Has Been a Critical Error on This Website\", Step by Step",
-      "description": "WordPress fatal error or \"There has been a critical error on this website\"? Use the recovery email, read debug.log, disable plugins and check PHP.",
+      "description": "\"There has been a critical error on this website\"? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/fix-wordpress-critical-error/",
       "image": "https://samverse.space/assets/og/blog-fix-wordpress-critical-error.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>WordPress Fatal Error: How to Fix &quot;There Has Been a Critical Error on This Website&quot;, Step by Step</h1>
-          <p class="post-dek">WordPress fatal error or &quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins and check PHP.</p>
+          <p class="post-dek">&quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Fatal%20Error%3A%20How%20to%20Fix%20%22There%20Has%20Been%20a%20Critical%20Error%20on%20This%20Website%22%2C%20Step%20by%20Step%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffix-wordpress-critical-error%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,6 +164,7 @@
               <li><a href="#step-6-restore-a-backup-if-you-can-t-find-the-cause">Step 6: Restore a backup if you can't find the cause</a></li>
               <li><a href="#once-you-re-back-in-use-site-health">Once you're back in: use Site Health</a></li>
               <li><a href="#how-to-stop-it-happening-again">How to stop it happening again</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -285,6 +286,10 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   <li>Make sure the admin email is one somebody actually reads</li>
 </ul>
 
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help if the error returns after every update, the log points to WordPress core files or files you don't recognise, you have no recent backup, or it's a store losing orders while it's down. Switching PHP versions or reinstalling plugins at random on a live store usually makes the cause harder to find.</p>
+<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is a WordPress fatal error?</h3>
 <p>An error in PHP code that stops the page from loading, such as a call to a function that no longer exists or running out of memory. Since WordPress 5.2, visitors see the critical error message instead of a blank screen or raw error text.</p>
@@ -298,8 +303,6 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible.</p>
 <h3>Can a hack cause "There has been a critical error"?</h3>
 <p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
-
-<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -346,6 +349,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
               <li><a href="#step-6-restore-a-backup-if-you-can-t-find-the-cause">Step 6: Restore a backup if you can't find the cause</a></li>
               <li><a href="#once-you-re-back-in-use-site-health">Once you're back in: use Site Health</a></li>
               <li><a href="#how-to-stop-it-happening-again">How to stop it happening again</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

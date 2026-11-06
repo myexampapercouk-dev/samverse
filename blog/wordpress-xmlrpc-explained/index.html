@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress XML-RPC Explained: Should You Disable xmlrpc.php?</title>
-  <meta name="description" content="What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.">
+  <meta name="description" content="Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-xmlrpc-explained/">
   <meta property="og:title" content="WordPress XML-RPC Explained: Should You Disable xmlrpc.php?">
-  <meta property="og:description" content="What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.">
+  <meta property="og:description" content="Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-xmlrpc-explained.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-xmlrpc-explained/#article",
       "headline": "WordPress XML-RPC Explained: Should You Disable xmlrpc.php?",
-      "description": "What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.",
+      "description": "Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-xmlrpc-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-xmlrpc-explained.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>WordPress XML-RPC Explained: Should You Disable xmlrpc.php?</h1>
-          <p class="post-dek">What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.</p>
+          <p class="post-dek">Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20XML-RPC%20Explained%3A%20Should%20You%20Disable%20xmlrpc.php%3F%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-xmlrpc-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#test-afterwards">Test afterwards</a></li>
               <li><a href="#the-rest-api-xml-rpc-s-modern-replacement">The REST API: XML-RPC's modern replacement</a></li>
               <li><a href="#one-small-step-in-a-bigger-picture">One small step in a bigger picture</a></li>
+              <li><a href="#test-whether-xml-rpc-is-open">Test whether XML-RPC is open</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -173,7 +175,8 @@
               <li>Block it at the server or firewall to save resources, or switch it off with a security plugin or code snippet, then test Jetpack, apps and connected services; restrict instead of blocking if something needs it.</li>
             </ul>
           </div>
-<p>If you've looked at your security plugin's reports or your hosting logs, you may have noticed a file called xmlrpc.php being hit again and again. It's a part of WordPress that most business sites no longer use, yet it's switched on by default and bots love it. Here's what it is, how to tell whether anything on your site still relies on it, and how to switch it off or restrict it safely.</p>
+<p>Should you disable xmlrpc.php? On most business WordPress sites, yes, or at least restrict it. It's an old remote-publishing interface that is switched on by default, few modern tools still need it, and bots use it for password guessing and pingback abuse. Check first whether Jetpack, an older mobile app or a remote publishing tool relies on it, then block it at the server, firewall or with a security plugin.</p>
+<p>If you've seen xmlrpc.php hit again and again in your security reports or hosting logs, this guide explains what it is, how to tell whether anything still relies on it, and how to switch it off or restrict it safely.</p>
 <p><strong>The short answer:</strong> if nothing on your site uses XML-RPC, which is true for most business sites that don't use Jetpack or publish from an app, block it at the server or firewall, or at least turn it off with a security plugin. If you do rely on Jetpack or a publishing app, restrict it rather than blocking it outright.</p>
 
 <h2 id="what-xmlrpc-php-actually-is">What xmlrpc.php actually is</h2>
@@ -259,6 +262,14 @@
 <h2 id="one-small-step-in-a-bigger-picture">One small step in a bigger picture</h2>
 <p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
 
+<h2 id="test-whether-xml-rpc-is-open">Test whether XML-RPC is open</h2>
+<p>Run this from a terminal, replacing the domain:</p>
+<pre><code>curl -s -X POST -H "Content-Type: text/xml" -d '&lt;?xml version="1.0"?&gt;&lt;methodCall&gt;&lt;methodName&gt;system.listMethods&lt;/methodName&gt;&lt;/methodCall&gt;' https://yourdomain.com/xmlrpc.php</code></pre>
+<p>A long list of method names means XML-RPC is answering. A 403 or 404, or a firewall message, means the file is blocked. If you disabled it with the <code>xmlrpc_enabled</code> filter or a plugin that uses it, the list can still appear: that filter only stops methods that need a login, and pingbacks keep working. Block the file at the server or firewall if nothing needs it.</p>
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when xmlrpc.php requests keep using up hosting resources after you've blocked it, which usually means the block sits in the wrong place, or when Jetpack or an app breaks and you need a narrower rule. Repeated login attempts in your logs are also a reason to review the rest of your security, not just this one file.</p>
+<p>Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Is xmlrpc.php a virus or a sign of a hack?</h3>
 <p>No. It's a standard WordPress core file found on almost every WordPress site, and requests to it only mean bots are knocking. Unfamiliar PHP files with odd names in other folders are a different matter and worth investigating.</p>
@@ -268,8 +279,6 @@
 <p>No. Google doesn't use xmlrpc.php to crawl or index your site. Pingbacks have no real SEO value for a business site; you can switch them off under Settings &gt; Discussion, and see <a href="/blog/wordpress-comments-enable-or-disable/">whether a business site should enable comments</a>.</p>
 <h3>Why do I still see xmlrpc.php requests after disabling it?</h3>
 <p>Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall.</p>
-
-<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Get in touch if bots are slowing your site down.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -314,6 +323,8 @@
               <li><a href="#test-afterwards">Test afterwards</a></li>
               <li><a href="#the-rest-api-xml-rpc-s-modern-replacement">The REST API: XML-RPC's modern replacement</a></li>
               <li><a href="#one-small-step-in-a-bigger-picture">One small step in a bigger picture</a></li>
+              <li><a href="#test-whether-xml-rpc-is-open">Test whether XML-RPC is open</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

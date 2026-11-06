@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WooCommerce Product Reviews: Collect, Moderate and Display</title>
-  <meta name="description" content="How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.">
+  <title>WooCommerce Product Reviews: Setup, Requests and Fixes</title>
+  <meta name="description" content="Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-product-reviews/">
-  <meta property="og:title" content="WooCommerce Product Reviews: Collect, Moderate and Display">
-  <meta property="og:description" content="How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.">
+  <meta property="og:title" content="WooCommerce Product Reviews: Setup, Requests and Fixes">
+  <meta property="og:description" content="Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-product-reviews.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-product-reviews/#article",
       "headline": "WooCommerce Product Reviews: How to Enable, Collect, Moderate and Display Them (Verified Owners, Photos and Star Ratings)",
-      "description": "How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.",
+      "description": "Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-product-reviews/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-product-reviews.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>WooCommerce Product Reviews: How to Enable, Collect, Moderate and Display Them (Verified Owners, Photos and Star Ratings)</h1>
-          <p class="post-dek">How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.</p>
+          <p class="post-dek">Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Product%20Reviews%3A%20How%20to%20Enable%2C%20Collect%2C%20Moderate%20and%20Display%20Them%20(Verified%20Owners%2C%20Photos%20and%20Star%20Ratings)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-product-reviews%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#display-woocommerce-product-reviews-where-they-help">Display WooCommerce product reviews where they help</a></li>
               <li><a href="#product-schema-and-star-ratings-in-google">Product schema and star ratings in Google</a></li>
               <li><a href="#stay-honest">Stay honest</a></li>
+              <li><a href="#woocommerce-reviews-not-showing-quick-checks">WooCommerce reviews not showing? Quick checks</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -308,6 +310,18 @@
 </ul>
 <p>In India, the Bureau of Indian Standards has published a standard on online consumer reviews (IS 19000:2022) that sets out good practice for collecting, moderating and publishing them, and consumer protection rules cover misleading practices. Rules change, so check the current position or ask your lawyer if you're unsure.</p>
 
+<h2 id="woocommerce-reviews-not-showing-quick-checks">WooCommerce reviews not showing? Quick checks</h2>
+<ol>
+<li>Open the product's Advanced tab and confirm "Enable reviews" is ticked.</li>
+<li>Look in Products &gt; Reviews for reviews stuck as pending or marked as spam.</li>
+<li>In WooCommerce &gt; Settings &gt; Products, confirm reviews are enabled. If only verified owners may review, the reviewer must have bought the product with the same email address.</li>
+<li>On a staging copy, switch briefly to the Storefront theme. If the Reviews tab appears, your theme or page builder template is hiding it.</li>
+<li>If stars show on the page but not in Google, test the URL in the Rich Results Test and look for missing or duplicated Product schema.</li>
+</ol>
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when reviews vanish after a theme or builder change, a review plugin's request emails stop sending, or the Rich Results Test shows two conflicting Product schemas, usually one from the theme and one from an SEO or review plugin. Never import or write reviews buyers didn't leave: it breaks Google's policies and consumer protection rules.</p>
+<p>I set up review settings, request emails, moderation and product schema as part of <a href="/woocommerce-developer/">WooCommerce development</a>, tested on real phones alongside the checkout.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I enable product reviews in WooCommerce?</h3>
 <p>Go to WooCommerce &gt; Settings &gt; Products, tick "Enable product reviews", and turn on star ratings and the verified owner label. Then check that "Enable reviews" is ticked in each product's Advanced tab.</p>
@@ -321,8 +335,6 @@
 <p>Google decides whether to show them, even with valid markup. Check that the page has real, visible reviews, that the markup passes the Rich Results Test, and that only one plugin outputs Product schema.</p>
 <h3>How do I get more WooCommerce product reviews?</h3>
 <p>Ask after delivery, not after payment, with a one-tap link on a channel customers read, such as email or WhatsApp. Keep the form short and never offer rewards for positive reviews only.</p>
-
-<p>Want reviews that collect themselves and show up properly on your store? I can set up review settings, request emails, moderation and product schema as part of <a href="/woocommerce-developer/">WooCommerce development</a>, tested on real phones alongside the checkout. Send me your store address for a free review and a fixed quote.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -367,6 +379,8 @@
               <li><a href="#display-woocommerce-product-reviews-where-they-help">Display WooCommerce product reviews where they help</a></li>
               <li><a href="#product-schema-and-star-ratings-in-google">Product schema and star ratings in Google</a></li>
               <li><a href="#stay-honest">Stay honest</a></li>
+              <li><a href="#woocommerce-reviews-not-showing-quick-checks">WooCommerce reviews not showing? Quick checks</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

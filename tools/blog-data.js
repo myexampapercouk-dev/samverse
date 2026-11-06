@@ -1498,7 +1498,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Gutenberg vs Elementor: Which WordPress Editor Should You Use in 2026?',
     description: 'Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
@@ -1622,6 +1622,10 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
 
+<h2>When to get help</h2>
+<p>Get help when you're moving an existing site from one editor to the other, because pages don't convert automatically and each one is rebuilt; when an Elementor site has slowed down under several add-on packs; or when a handover is coming and the client needs to edit without breaking layouts.</p>
+<p>Not sure which suits your site, or need an existing build made faster? I build and fix both Elementor and block editor sites, including pixel-matched designs from Figma: see <a href="/elementor-developer/">Elementor development</a>, or <a href="/figma-to-wordpress/">Figma to WordPress</a> if you have a design ready.</p>
+
 <h2>FAQs</h2>
 <h3>Gutenberg vs Elementor: which is better?</h3>
 <p>Neither is better for every site, so the real question is Gutenberg or Elementor for your team. Gutenberg is better for blogs, content sites and lean business sites; Elementor is better when a non-technical team wants to design and edit marketing pages visually. Gutenberg is not replacing Elementor, and many sites use both.</p>
@@ -1636,8 +1640,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <h3>Which is better for a blog?</h3>
 <p>Gutenberg. Writing is faster, content stays native to WordPress, and post templates can be designed in the Site Editor or by your theme.</p>
-
-<p>Not sure which suits your site, or need an existing build made faster? I build and fix both Elementor and block editor sites, including pixel-matched designs from Figma: see <a href="/elementor-developer/">Elementor development</a>, or <a href="/figma-to-wordpress/">Figma to WordPress</a> if you have a design ready.</p>
 `,
   },
   {
@@ -13543,11 +13545,11 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'logo-favicon-brand-basics-website',
-    seoTitle: 'Favicon Sizes and Logo Sizes for Websites: Brand Basics',
+    seoTitle: 'Favicon Size, Logo Files and Brand Basics for a Website',
     title: 'Logo, Favicon and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
-    description: 'Favicon sizes, logo formats and brand basics for your website: favicon and app icon sizes, social share images, logo schema and consistency.',
+    description: 'Favicon sizes, logo file formats and brand basics for your website: favicon code, app icons, social share images, logo schema and a one-page brand sheet.',
     date: '2026-09-27',
-    updated: '2026-10-27',
+    updated: '2026-11-06',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
@@ -13659,6 +13661,16 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 </ol>
 <p>Put these in your <a href="/blog/website-brief-template/">website brief</a> so your developer can quote accurately.</p>
 
+<h2>Adding the favicon</h2>
+<p>In WordPress, upload a square image of at least 512 by 512 pixels as the Site Icon under Appearance &gt; Customize &gt; Site Identity, or turn on "Use as site icon" in the Site Logo block on block themes, and WordPress outputs the icon tags for you. On a hand-built site, these lines in the page head cover modern browsers and phones:</p>
+<pre><code>&lt;link rel="icon" href="/favicon.ico" sizes="32x32"&gt;
+&lt;link rel="icon" href="/icon.svg" type="image/svg+xml"&gt;
+&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;</code></pre>
+<p>Browsers can keep showing an old favicon for days, so check in a private window. Google refreshes the icon in results on its own schedule, which can take weeks.</p>
+<h2>When to get help</h2>
+<p>Get help when the logo looks blurry or makes the layout jump on mobile, Google still shows an old or generic favicon weeks after a change, WhatsApp previews show the wrong image, or your brand files exist only as one JPG from a printer. Most of these are small fixes once the right files exist.</p>
+<p>If your website no longer matches your brand, or you're rebranding, a <a href="/website-redesign/">website redesign</a> brings the logo, colours and fonts into one consistent, mobile-first design without losing the rankings you have. If you already have a finished design, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What size should a website logo be?</h3>
 <p>There is no single size, because themes display logos differently. Use SVG if possible. For PNG, export at twice the size the logo appears in the header, so a logo shown 200 pixels wide is exported 400 pixels wide.</p>
@@ -13670,8 +13682,6 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 <p>You can, but JPEG has no transparency, so it shows a box on coloured backgrounds, and text edges blur. Ask your designer for SVG and transparent PNG versions.</p>
 <h3>Do I need a new logo before I redesign my website?</h3>
 <p>Not necessarily. If your current logo is clear and works small, a redesign can use it. If you're changing it, finalise the logo before the website design starts, so the colours and layout are built around it.</p>
-
-<p>If your website no longer matches your brand, or you're rebranding, a <a href="/website-redesign/">website redesign</a> brings the logo, colours and fonts into one consistent, mobile-first design without losing the rankings you have. If you already have a finished design, see <a href="/figma-to-wordpress/">Figma to WordPress</a>.</p>
 `,
   },
   {
@@ -14029,11 +14039,11 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'FAQ SEO: How to Write FAQs for SEO and Sales Pages',
+    seoTitle: 'FAQ Pages for SEO: How to Write FAQs That Rank and Sell',
     title: 'FAQ SEO: How to Write FAQ Pages and FAQs for SEO on Service, Sales and Local Pages',
-    description: 'FAQ SEO step by step: are FAQs good for SEO, a separate FAQ page or FAQs on each page, how to write an FAQ for a sales page, and FAQ schema today.',
+    description: 'FAQ pages for SEO: are FAQs good for SEO, one FAQ page or FAQs on each page, how to write an FAQ for a sales page, and what FAQ schema does today.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -14162,6 +14172,10 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 
 <p>Answer-first writing also suits people who ask their phones questions out loud; see <a href="/blog/voice-search-local-seo/">voice search for local businesses</a>.</p>
 
+<h2>When to get help</h2>
+<p>Get help when your FAQs sit on one long page nobody visits, the same questions are copied word for word across many service pages, or the FAQ schema on the site no longer matches the visible answers. The fix is usually fewer, page-specific questions placed where the doubt comes up.</p>
+<p>Want FAQs written and structured properly on your service pages? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover question research, page structure and schema, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them into your site.</p>
+
 <h2>FAQs</h2>
 
 <h3>Should I add FAQs to product pages for SEO?</h3>
@@ -14179,7 +14193,6 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <h3>How do I write an FAQ page?</h3>
 <p>Collect real customer questions, group them by topic, answer each directly in the first sentence, link to deeper pages and add a contact option at the end. Review the page whenever your prices, policies or processes change.</p>
 
-<p>Want FAQs written and structured properly on your service pages? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover question research, page structure and schema, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them into your site.</p>
 <h3>Are FAQs good for SEO?</h3>
 <p>Yes, when they answer genuine questions clearly. They help a page match more of the ways people search and give search engines and AI assistants direct answers to quote. Filler FAQs written only for keywords add nothing.</p>
 `,
@@ -19517,7 +19530,7 @@ Target:  https://example.com/products/$1/</code></pre>
     title: 'XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress',
     description: 'XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-migration', 'website-redesign'],
     body: `
@@ -19634,6 +19647,10 @@ Target:  https://example.com/products/$1/</code></pre>
   <li><strong>Treating submission as indexing.</strong> A sitemap gets URLs discovered; internal links, quality and time get them indexed. <a href="/blog/get-website-indexed-google-faster/">How to get a new site indexed faster</a> covers what actually speeds that up.</li>
 </ul>
 
+<h2>When to get help</h2>
+<p>Get help when Search Console says the sitemap "Couldn't fetch", discovers far fewer pages than you have, or the sitemap lists noindexed, redirected or thin URLs, and when two plugins each produce their own sitemap. The fix is usually one sitemap source listing only the pages you want indexed.</p>
+<p>Not sure whether your sitemap is helping or confusing Google? A sitemap and indexing check, with the fixes made on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is an XML sitemap in SEO?</h3>
 <p>It is a file listing the URLs you want search engines to crawl, with optional last-modified dates. It helps Google and Bing discover your pages efficiently, but it doesn't guarantee indexing or improve rankings by itself.</p>
@@ -19645,8 +19662,6 @@ Target:  https://example.com/products/$1/</code></pre>
 <p>Once is enough. Google rechecks submitted sitemaps by itself, and new posts appear automatically because WordPress plugins update the sitemap as you publish. Resubmit only after a migration or a major restructure if you want to prompt a fresh read.</p>
 <h3>Do I also need an HTML sitemap?</h3>
 <p>It is optional. An HTML sitemap is a normal page of links for visitors, and it can help on large sites, but good navigation and internal links do the same job. It doesn't replace the XML sitemap.</p>
-
-<p>Not sure whether your sitemap is helping or confusing Google? A sitemap and indexing check, with the fixes made on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -19655,7 +19670,7 @@ Target:  https://example.com/products/$1/</code></pre>
     title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
     description: 'Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
@@ -19800,6 +19815,10 @@ Disallow: /</code></pre>
   <li><strong>Repeat after every launch, redesign or migration,</strong> as part of a wider check such as the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a>.</li>
 </ol>
 
+<h2>When to get help</h2>
+<p>Get help when Search Console shows important pages as "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule such as <code>Disallow: /</code> reached the live site, or when a WooCommerce store's filter URLs are eating crawl effort and you're unsure what is safe to block.</p>
+<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
+
 <h2>FAQs</h2>
 <h3>What is robots.txt used for?</h3>
 <p>It tells search engine crawlers which parts of a site they shouldn't request, which helps them avoid admin areas and endless URL variations, and it tells them where your sitemap is. It isn't a security tool and it doesn't remove pages from search results.</p>
@@ -19813,8 +19832,6 @@ Disallow: /</code></pre>
 <p>With Yoast SEO, use Tools &gt; File editor; with Rank Math, use General Settings &gt; Edit robots.txt. If your changes don't show at yourdomain/robots.txt, a physical file in the root folder is overriding them, so edit or delete that file through your host's file manager.</p>
 <h3>Where is the XML sitemap in WordPress?</h3>
 <p>Without an SEO plugin it is at /wp-sitemap.xml; with Yoast SEO or Rank Math it is usually /sitemap_index.xml. Add that full address as a Sitemap line in robots.txt and submit it in Search Console. If you have no robots.txt file at all, crawlers assume everything is allowed.</p>
-
-<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
 `,
   },
   {
@@ -20111,11 +20128,11 @@ Disallow: /</code></pre>
   },
   {
     slug: '301-vs-302-redirects',
-    seoTitle: '301 vs 302 Redirects: Which to Use and the SEO Impact',
+    seoTitle: '301 vs 302 Redirect: Which to Use and the SEO Difference',
     title: '301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
-    description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Learn which to use, how each affects SEO, common mistakes and how to set them up in WordPress.',
+    description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -20197,6 +20214,11 @@ Disallow: /</code></pre>
 <li>Crawl the site with an SEO crawler to list every redirect, chain and loop in one go.</li>
 </ul>
 
+<h3>Check from the command line</h3>
+<p>Browsers hide redirects, so check the status codes directly:</p>
+<pre><code>curl -sIL https://example.com/old-page/ | grep -iE "^HTTP|^location"</code></pre>
+<p>Each hop prints its status and destination. You want one 301 with a Location pointing at the final URL, then a 200. Two or more redirect lines is a chain to shorten, and a 302 for a permanent move should be changed to a 301. Test the http, https, www and non-www versions of your important URLs as well; each should reach the final address in one hop.</p>
+
 <h2>A simple redirect checklist</h2>
 <ol>
 <li>List every old URL that is changing, with its best new match.</li>
@@ -20206,6 +20228,10 @@ Disallow: /</code></pre>
 <li>Update internal links, menus, canonicals and the sitemap.</li>
 <li>Test a sample of old URLs, then watch Search Console's Pages report for a few weeks.</li>
 </ol>
+
+<h2>When to get help</h2>
+<p>Get help before a redesign, URL change or domain move, not after. The redirect map, old URL to new URL, should be built from your current sitemap, the Search Console Pages report and pages with backlinks, then tested before launch. Also get help if rankings dropped after a change and you find 302s, chains, or old URLs all sent to the home page.</p>
+<p>Planning a redesign, URL clean-up or domain move? Samverse handles redirect mapping and checks as part of <a href="/wordpress-migration/">website migration</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, so you keep the rankings you have built. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit existing redirects.</p>
 
 <h2>FAQs</h2>
 <h3>What is the difference between a 301 and 302 redirect?</h3>
@@ -20220,8 +20246,6 @@ Disallow: /</code></pre>
 <p>Only if the homepage is genuinely the best replacement. Otherwise redirect to the closest relevant page, or return a 404 or 410 with a helpful page.</p>
 <h3>Can too many redirects slow down my website?</h3>
 <p>A single redirect adds a small delay. Chains of several redirects add more and can stop crawlers following them, so always point old URLs straight to the final destination.</p>
-
-<p>Planning a redesign, URL clean-up or domain move? Samverse handles redirect mapping and checks as part of <a href="/wordpress-migration/">website migration</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, so you keep the rankings you have built. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit existing redirects.</p>
 `,
   },
   {
@@ -26561,11 +26585,11 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   },
   {
     slug: 'woocommerce-gst-invoices-india',
-    seoTitle: 'WooCommerce GST Setup in India: Tax Rates and GST Invoices',
+    seoTitle: 'WooCommerce GST Setup India: CGST, SGST, IGST and Invoices',
     title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
-    description: 'WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.',
+    description: 'Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.',
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-06',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
     body: `
@@ -26694,6 +26718,11 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <h2>Reports for GST filing</h2>
 <p>WooCommerce &gt; Analytics &gt; Taxes shows tax collected by rate for any period, and an order export with the shipping state and tax lines gives your accountant what they need for returns. Many invoice plugins can export invoices in bulk. Agree a monthly routine with your CA: export orders and invoices, reconcile them with payment gateway settlements, and keep everything organised by financial year.</p>
 
+<h2>When to get help</h2>
+<p>A simple store with one GST rate and no business buyers can usually follow the steps above. Get help when you sell at more than one rate, invoice B2B buyers who claim input tax credit, need e-invoices, or already have live orders with the wrong tax split, because correcting past invoices is an accounting job as well as a website one.</p>
+<p>A quick self-check first: place three test orders, one to an address in your home state, one to another state and one with a GSTIN entered, then compare every invoice line with what your CA expects. If a total is off by a rupee, or a local order shows IGST, the store address, the "Calculate tax based on" setting or the rounding option is usually the cause.</p>
+<p>I set up GST tax classes, GSTIN fields and invoices from your CA's figures, and test orders to different states, as part of <a href="/woocommerce-developer/">WooCommerce development</a>. Payment gateways are covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Does WooCommerce support GST?</h3>
 <p>Yes, through its standard tax settings. You create tax classes for each GST rate and add CGST, SGST and IGST rates by state. HSN codes, a GSTIN checkout field and GST-format invoices need a plugin or custom work.</p>
@@ -26707,8 +26736,6 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately.</p>
 <h3>Can WooCommerce generate e-invoices with an IRN?</h3>
 <p>Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store.</p>
-
-<p>Want GST, invoices and payments set up correctly before your store goes live? I configure tax classes and rates from your CA's figures, add GSTIN and HSN fields and GST invoices, and test orders to different states; see <a href="/woocommerce-developer/">WooCommerce development</a>. Payment gateways are covered in <a href="/blog/accept-online-payments-wordpress-india/">accepting online payments in India</a>.</p>
 `,
   },
   {
@@ -31032,9 +31059,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     slug: 'compare-website-quotes',
     seoTitle: 'Why Are Website Quotes Different? How to Compare Them',
     title: 'Why Are Website Quotes So Different? How to Compare Website Quotes Fairly',
-    description: 'Why are website quotes different? Each one prices a different job. How to compare website quotes in India line by line, with a checklist and 3-year costs.',
+    description: 'Why are website quotes different? Each one prices a different job. Compare website quotes in India line by line with one brief, a checklist and 3-year costs.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
@@ -31155,10 +31182,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Once you've chosen, put it in writing</h2>
 <p>Turn the winning quote into an agreement covering scope, revisions, timeline, payment milestones, ownership and licences, and support. The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> lists each clause. Tell the developers you didn't choose, too; it keeps the door open if you need them later.</p>
 
-<p>Comparing developers in a particular city? The <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page has local notes for Mumbai, Delhi NCR, Bengaluru, Pune and other cities.</p>
-
-
-
 <p>Comparing developers in Pune, Mumbai, Delhi NCR, Bengaluru or another city? The checks are the same everywhere: live sites you can open, a written scope, and logins in your name. There are local notes for <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers across India</a>.</p>
 
 <h2>How to compare website quotes: a quick checklist</h2>
@@ -31174,7 +31197,9 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins, or send your brief to a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for a fixed quote.</p>
 
-<p>Comparing developers outside Pune? There are local notes for <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-india/">other Indian cities</a>.</p>
+<h2>When to get help</h2>
+<p>Get help when quotes differ so much that you can't tell whether they cover the same job, or when none of them says who will own the domain, hosting and logins. A written scope, built from your brief, is what makes quotes comparable, and it is useful even if you hire someone else.</p>
+<p>Want a quote that is easy to compare? Send your requirements and you'll get a written scope with inclusions, exclusions, a fixed price and a timeline after a free review; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why are website quotes different?</h3>
@@ -31187,7 +31212,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>It should state clearly whether GST is included or added. If the developer is GST-registered, ask for a tax invoice; if you are registered, your CA can tell you whether you can claim the input credit.</p>
 <h3>What should a website quotation include?</h3>
 <p>A page list, the number of unique layouts, features, design approach and revision rounds, who supplies content, exclusions, a timeline with milestones, the price with GST status, payment terms, what you receive at handover and how out-of-scope changes are priced.</p>
-<p>Want a quote that is easy to compare? Send your requirements and you'll get a written scope with inclusions, exclusions, a fixed price and a timeline after a free review; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+
 <h3>How do I compare website quotes?</h3>
 <p>Send the same written brief to each developer, list every quote line by line in one sheet, note what each one excludes, then compare the three-year cost and the quality of their live work. Negotiate scope, not rate, if the best quote is over budget.</p>
 `,
@@ -31606,11 +31631,11 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development India: Process and Pricing',
+    seoTitle: 'Outsource WordPress Development to India: Safe Process',
     title: 'Outsource WordPress Development to India: A Practical Guide for Agencies, Resellers and Businesses',
-    description: 'Outsource WordPress development to India safely: which projects suit it, the process, white-label reselling, NDAs, time zones, pricing models and red flags.',
+    description: 'How to outsource WordPress development to India safely: projects that suit it, a paid test task, white-label and NDAs, time zones, pricing models and red flags.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer', 'figma-to-wordpress'],
     body: `
@@ -31749,6 +31774,12 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Resell WordPress development under your own brand</h2>
 <p>Many agencies outsource WordPress development to India so they can resell it: they sell the website to their client, and the developer builds it white-label behind the scenes. For that to work, the partner never contacts your client, uses your staging domain and accounts, writes handover notes you can send as your own, and keeps the code and logins in your client's name. Agree your margin and the developer's fixed price separately, so you can quote your client with confidence. The <a href="/blog/white-label-wordpress-development-agencies/">WordPress reseller guide for marketing agencies</a> covers pricing the resale and support afterwards.</p>
 
+<h2>A good first test task</h2>
+<p>Pick something small, real and checkable within a few days: one inner page built from your Figma file in your usual builder, a speed fix on a staging copy of a client site, or a WooCommerce product template change. Judge it on how closely it matches the design at mobile widths, whether the developer asked sensible questions before starting, how clear the handover notes are, and whether the agreed time held. Pay for it; a paid test shows normal work, not a rushed favour.</p>
+<h2>When to get help</h2>
+<p>Outsourcing makes sense once you're turning down or delaying WordPress jobs, or your designers spend hours fighting page builders. Keep the work in-house if you build only a few sites a year, or if it depends on daily client calls nobody else can take.</p>
+<p>I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, or send your next brief for a quote.</p>
+
 <h2>FAQs</h2>
 
 <h3>Is it safe to outsource WordPress development to India?</h3>
@@ -31769,9 +31800,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Looking for someone in a particular city? See the <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify developer in India</a> page, with notes for Mumbai, Delhi NCR, Bengaluru, Hyderabad and more.</p>
 <h3>Can I resell outsourced WordPress development under my agency's name?</h3>
 <p>Yes. That is what white-label work means: the developer builds and supports the site, and you present it, invoice it and own the client relationship. Put confidentiality, non-solicitation and code ownership in the agreement.</p>
-
-<h2>Working with me</h2>
-<p>I'm a freelance WordPress developer based in Pune, India. I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> for how it works, or send me your next brief for a quote.</p>
 `,
   },
   {
@@ -33285,13 +33313,12 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
     title: 'WordPress Hacked Redirect: Why Your Site Redirects to Spam and How to Remove the Malware',
     description: 'WordPress hacked redirect sending visitors to spam? Catch the hidden redirect, find the malware in .htaccess, files or the database and stop it returning.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
 <p>A WordPress hacked redirect happens when malware injected into your site sends some visitors to spam pages (gambling, dating, fake prizes or "your phone has a virus" warnings) instead of your content. If your WordPress site is redirecting to spam and you didn't set the redirect up, assume redirect malware: the code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
 <p><strong>Short answer:</strong> confirm the redirect on a phone from a Google result, back up, change every password, then clean .htaccess, wp-config.php, index.php, theme files, the database, rogue plugins and cron jobs, reinstall core, plugins and themes from clean copies, purge every cache and close the hole the attacker used. Skipping any of these is why redirects come back.</p>
-<p>Below: how to rule out harmless causes, how to catch the hidden redirect, where the malware lives, and a step-by-step removal checklist. If you would rather have it handled, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
 
 <h2>My WordPress website is redirecting: what to do in the first hour</h2>
 <ol>
@@ -33425,6 +33452,10 @@ wp option get home</code></pre>
 <h2>How to prevent redirect hacks</h2>
 <p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
 
+<h2>When to get help</h2>
+<p>Get help straight away if the redirect returns within days of cleaning, Google shows a "This site may be hacked" warning, or the site takes payments, because checkout pages may be affected too. Repeated reinfection almost always means a backdoor or the original entry point is still there.</p>
+<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review, for stores as well as business sites. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+
 <h2>FAQs</h2>
 
 <h3>Why is my WordPress site redirecting to spam?</h3>
@@ -33444,8 +33475,6 @@ wp option get home</code></pre>
 
 <h3>The redirect came back after I removed it. What now?</h3>
 <p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
-
-<p>If your site is redirecting visitors right now and you need it stopped quickly, I can find the redirect code, remove the backdoors behind it, close the entry point and help with the Google review, for stores as well as business sites. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -35258,11 +35287,11 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger Slow? Why Hostinger Is Slow and How to Fix It',
+    seoTitle: 'Hostinger Website Slow? How to Fix a Slow WordPress Site',
     title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
-    description: 'Hostinger slow? Check hPanel resource limits, LiteSpeed Cache, CDN, PHP and plugins with this step-by-step checklist, and know when to upgrade your plan.',
+    description: 'Hostinger website slow? Check hPanel limits, test the LiteSpeed cache header, fix CDN, PHP, plugins and bots, and know when upgrading the plan really helps.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -35374,6 +35403,18 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 </ul>
 <p>A higher shared tier or a cloud plan raises the limits; a VPS gives more control but needs someone to manage it. See <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. Upgrading an uncached, plugin-heavy site usually just moves the problem to a bigger plan.</p>
 
+<h2>A two-minute LiteSpeed cache check</h2>
+<p>Open your home page in a private window, open the browser's developer tools, go to the Network tab, reload, and click the first request (the page itself). In the response headers, look for <code>x-litespeed-cache</code>:</p>
+<ul>
+<li><strong>hit</strong>: the page came from the cache. If it still feels slow, the weight is in the page itself: images, scripts, fonts or the theme.</li>
+<li><strong>miss</strong> on every reload: caching is on but the page isn't being stored. Check that it isn't excluded in LiteSpeed Cache and that a cookie or query string isn't making every visit look unique.</li>
+<li><strong>No header at all</strong>: the page isn't going through LiteSpeed's cache, often because the plugin is off, another caching plugin is fighting it, or a CDN in front is answering instead.</li>
+</ul>
+<p>From a terminal, <code>curl -sI https://yourdomain.com/ | grep -i x-litespeed</code> shows the same header. Logged-in visitors and cart, checkout and account pages are not cached by design, so test logged out.</p>
+<h2>When to get help</h2>
+<p>Get help when hPanel shows the plan hitting its CPU or memory limit every day, the cache check says "hit" but pages still take several seconds, or the admin area is slow even with caching working, which points to plugins, the database or scheduled tasks rather than the host. Upgrading the plan first often just hides the problem for a few months.</p>
+<p>My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> measures first, fixes the real bottleneck with a backup taken beforehand, then re-tests so you can see the difference. If you're weighing a move, read <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a> first.</p>
+
 <h2>FAQs</h2>
 <h3>Why is Hostinger so slow?</h3>
 <p>Usually because the site is hitting its plan's resource limits or isn't being served from the LiteSpeed cache. Heavy plugins, an old PHP version, a bloated database and large images are the other common causes. Check hPanel's resource usage and your caching first.</p>
@@ -35387,8 +35428,6 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <p>The admin is never page-cached, so heavy plugins, a large database and missing object caching show up there first.</p>
 <h3>Is Hostinger slow, or is it my WordPress site?</h3>
 <p>If server response is slow on every page and resource graphs hit their limits, look at the plan, caching and plugins. If server response is fast but pages still load slowly, the cause is images, scripts or the theme, and a different host would not fix it.</p>
-
-<p>Want your Hostinger site diagnosed and fixed properly, without breaking anything? I measure first, fix the real bottleneck, then re-test so you can see the difference. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 `,
   },
   {
@@ -35950,11 +35989,11 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: 'WordPress Fatal Error or Critical Error? How to Fix It',
+    seoTitle: 'WordPress Critical Error or Fatal Error? How to Fix It',
     title: 'WordPress Fatal Error: How to Fix "There Has Been a Critical Error on This Website", Step by Step',
-    description: 'WordPress fatal error or "There has been a critical error on this website"? Use the recovery email, read debug.log, disable plugins and check PHP.',
+    description: '"There has been a critical error on this website"? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
@@ -36062,6 +36101,10 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   <li>Make sure the admin email is one somebody actually reads</li>
 </ul>
 
+<h2>When to get help</h2>
+<p>Get help if the error returns after every update, the log points to WordPress core files or files you don't recognise, you have no recent backup, or it's a store losing orders while it's down. Switching PHP versions or reinstalling plugins at random on a live store usually makes the cause harder to find.</p>
+<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
+
 <h2>FAQs</h2>
 <h3>What is a WordPress fatal error?</h3>
 <p>An error in PHP code that stops the page from loading, such as a call to a function that no longer exists or running out of memory. Since WordPress 5.2, visitors see the critical error message instead of a blank screen or raw error text.</p>
@@ -36075,8 +36118,6 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible.</p>
 <h3>Can a hack cause "There has been a critical error"?</h3>
 <p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
-
-<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks.</p>
 `,
   },
   {
@@ -44934,11 +44975,11 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'woocommerce-product-reviews',
-    seoTitle: 'WooCommerce Product Reviews: Collect, Moderate and Display',
+    seoTitle: 'WooCommerce Product Reviews: Setup, Requests and Fixes',
     title: 'WooCommerce Product Reviews: How to Enable, Collect, Moderate and Display Them (Verified Owners, Photos and Star Ratings)',
-    description: 'How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.',
+    description: 'Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services'],
     body: `
@@ -45071,6 +45112,18 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>In India, the Bureau of Indian Standards has published a standard on online consumer reviews (IS 19000:2022) that sets out good practice for collecting, moderating and publishing them, and consumer protection rules cover misleading practices. Rules change, so check the current position or ask your lawyer if you're unsure.</p>
 
+<h2>WooCommerce reviews not showing? Quick checks</h2>
+<ol>
+<li>Open the product's Advanced tab and confirm "Enable reviews" is ticked.</li>
+<li>Look in Products &gt; Reviews for reviews stuck as pending or marked as spam.</li>
+<li>In WooCommerce &gt; Settings &gt; Products, confirm reviews are enabled. If only verified owners may review, the reviewer must have bought the product with the same email address.</li>
+<li>On a staging copy, switch briefly to the Storefront theme. If the Reviews tab appears, your theme or page builder template is hiding it.</li>
+<li>If stars show on the page but not in Google, test the URL in the Rich Results Test and look for missing or duplicated Product schema.</li>
+</ol>
+<h2>When to get help</h2>
+<p>Get help when reviews vanish after a theme or builder change, a review plugin's request emails stop sending, or the Rich Results Test shows two conflicting Product schemas, usually one from the theme and one from an SEO or review plugin. Never import or write reviews buyers didn't leave: it breaks Google's policies and consumer protection rules.</p>
+<p>I set up review settings, request emails, moderation and product schema as part of <a href="/woocommerce-developer/">WooCommerce development</a>, tested on real phones alongside the checkout.</p>
+
 <h2>FAQs</h2>
 <h3>How do I enable product reviews in WooCommerce?</h3>
 <p>Go to WooCommerce &gt; Settings &gt; Products, tick "Enable product reviews", and turn on star ratings and the verified owner label. Then check that "Enable reviews" is ticked in each product's Advanced tab.</p>
@@ -45084,8 +45137,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Google decides whether to show them, even with valid markup. Check that the page has real, visible reviews, that the markup passes the Rich Results Test, and that only one plugin outputs Product schema.</p>
 <h3>How do I get more WooCommerce product reviews?</h3>
 <p>Ask after delivery, not after payment, with a one-tap link on a channel customers read, such as email or WhatsApp. Keep the form short and never offer rewards for positive reviews only.</p>
-
-<p>Want reviews that collect themselves and show up properly on your store? I can set up review settings, request emails, moderation and product schema as part of <a href="/woocommerce-developer/">WooCommerce development</a>, tested on real phones alongside the checkout. Send me your store address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -50368,7 +50419,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions',
     description: 'A hreflang generator for Indian languages: codes for Hindi, Tamil, Marathi and more, ready-to-copy tags for hi-IN, en-IN, ta-IN and x-default, and checks.',
     date: '2026-09-30',
-    updated: '2026-10-30',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -50517,6 +50568,10 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ol>
 <p>Search Console's old International Targeting report has been retired, so recheck with a crawler after adding pages, changing slugs or switching plugins.</p>
 
+<h2>When to get help</h2>
+<p>Get help when an audit tool reports missing return tags or invalid language codes, when your Hindi page ranks for English searches or the other way round, or before you choose between subfolders, subdomains and a translation plugin for a large site. Changing the URL structure later means redirects, so it's worth deciding once.</p>
+<p>Planning Hindi or regional versions of your site, or seeing hreflang errors in an audit? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the setup, or <a href="/wordpress-website-development/">WordPress website development</a> if you're building a multilingual site from scratch. Get in touch with the languages you need and I'll suggest the simplest setup that works.</p>
+
 <h2>FAQs</h2>
 <h3>Is there a hreflang generator for Indian languages?</h3>
 <p>Generic hreflang generators work for Indian languages as long as you enter valid codes such as hi-IN, ta-IN, mr-IN or en-IN. The ready-to-copy block in this guide does the same job: list each version, add its code and an x-default, and paste the identical set on every version.</p>
@@ -50528,8 +50583,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>It isn't mandatory, but it's recommended. It tells Google what to show searchers whose language you don't cover, such as a Tamil speaker on a site with only English and Hindi.</p>
 <h3>Does hreflang help my Hindi pages rank higher?</h3>
 <p>Not on its own. It helps Google show the right version to the right searcher. The Hindi pages still need useful content and natural translation.</p>
-
-<p>Planning Hindi or regional versions of your site, or seeing hreflang errors in an audit? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the setup, or <a href="/wordpress-website-development/">WordPress website development</a> if you're building a multilingual site from scratch. Get in touch with the languages you need and I'll suggest the simplest setup that works.</p>
 `,
   },
   {
@@ -51279,15 +51332,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'wordpress-activity-logs',
-    seoTitle: 'WordPress Activity Log: Track Who Changed What on Your Site',
+    seoTitle: 'WordPress Activity Log: See Who Changed What and When',
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
-    description: 'How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.',
+    description: 'WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.',
     date: '2026-09-30',
-    updated: '2026-10-31',
+    updated: '2026-11-06',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
-<p>"Who changed the price on this product?" "When did this page disappear?" "Did anyone log in last night?" On most WordPress sites, nobody can answer these questions, because WordPress doesn't keep a detailed change log of admin activity by default. An activity log (also called an audit log or change log) fills that gap. It's a small addition that helps with security, teamwork and troubleshooting.</p>
+<p>WordPress doesn't keep a log of who changed what by default. To see who edited a page, changed a price or logged in, add an activity log plugin, which records logins, content edits, plugin, theme and setting changes with the user, time and IP address. For a single post or page, the Revisions panel in the editor already shows who saved each version.</p>
+<p>An activity log (also called an audit log or change log) answers questions like "who changed the price on this product?" or "did anyone log in last night?", and it helps with security, teamwork and troubleshooting.</p>
 <p><strong>In short:</strong> a WordPress activity log is a plugin that records events inside WordPress, such as logins, content edits, plugin updates and settings changes, with the user, time and IP address. It isn't the same as an error log or a server log, which record different things in different places; the table below shows which one answers which question.</p>
 
 <h2>How to check the WordPress change log</h2>
@@ -51403,6 +51457,10 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ol>
 <p>If you would rather have this set up and checked as part of routine care, I handle it within <a href="/wordpress-maintenance/">WordPress maintenance</a>, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off audit of users, roles and logging.</p>
 
+<h2>When to get help</h2>
+<p>Get help when the log shows logins you don't recognise, admin users nobody created, or plugin and file changes at odd hours. Treat those as a possible break-in: change passwords, remove unknown users and check the site before anything else. Also get help if the log table has grown large enough to slow the admin; a retention setting fixes that.</p>
+<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best WordPress activity log plugin?</h3>
 <p>There is no single best one. Choose an actively maintained plugin with a good support record, check that it logs the events you care about, and confirm it lets you set retention and export entries. Test it on a staging copy first if the site is busy.</p>
@@ -51416,8 +51474,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Only if an activity log was running at the time. Without one, check the trash, the page's revisions and, if needed, ask your host whether their logs show the request.</p>
 <h3>Do activity logs slow down WordPress?</h3>
 <p>Recording admin events adds very little load. Problems come from logging every visitor action or keeping entries forever, so limit what you log and set a retention period.</p>
-
-<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -56528,11 +56584,11 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   {
     slug: 'website-for-tractor-farm-equipment-dealers',
     noindex: true,
-    seoTitle: 'Tractor Dealer Website: What to Include and How to Build It',
+    seoTitle: 'Tractor Dealer Website: Pages, Enquiries and Local SEO',
     title: 'Websites for Tractor and Farm Equipment Dealers: Model Pages, Finance Enquiries, Service and Spares, and Reaching Rural Buyers',
-    description: 'What a tractor dealer website needs: precise brand authorisation, model pages, careful finance and subsidy wording, service, spares and Hindi pages.',
+    description: 'What a tractor dealer website needs: exact brand authorisation, model pages, careful finance and subsidy wording, service, spares, branch leads and Hindi pages.',
     date: '2026-10-01',
-    updated: '2026-10-27',
+    updated: '2026-11-06',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services'],
     body: `
@@ -56645,6 +56701,10 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 
 <p>Farm machinery makers and dealers in Punjab can read about <a href="/wordpress-shopify-developer-ludhiana/">website development in Ludhiana</a>.</p>
 
+<h2>When to get help</h2>
+<p>A single-branch dealer can start with a home page, model pages, a service page and a WhatsApp button. Get help when you have several branches or brands, need Hindi or Punjabi pages kept in step with the English ones, or want enquiries routed properly: a form with a branch choice and an enquiry type (sales, finance, service, spares) that sends each lead to that branch's email or WhatsApp number saves a lot of forwarding and missed calls.</p>
+<p>See <a href="/website-for-manufacturers/">websites for manufacturers and B2B businesses</a> for how model catalogues and enquiry flows are built, and <a href="/wordpress-seo-services/">WordPress SEO services</a> to help each branch get found across its district.</p>
+
 <h2>FAQs</h2>
 <h3>What should a tractor dealer website include?</h3>
 <p>Model and implement pages, an on-road price and finance enquiry, service booking and spares enquiries, click-to-call and WhatsApp, branch details, and your authorisation stated clearly. Local-language pages and used tractor listings are common next steps.</p>
@@ -56656,8 +56716,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>In general terms. Support schemes vary by state, change over time and depend on eligibility, so offer help understanding current schemes and paperwork rather than promising amounts.</p>
 <h3>Does a dealer website need to be in Hindi or a regional language?</h3>
 <p>If many of your customers prefer it, yes. Start with the key pages, have them written or checked by a fluent speaker, and keep the language switcher easy to find.</p>
-
-<p>Want a fast, bilingual dealership website with model pages, finance and service enquiries and WhatsApp built in? See <a href="/website-for-manufacturers/">websites for manufacturers and B2B businesses</a>, and <a href="/wordpress-seo-services/">WordPress SEO services</a> to help it get found across your district.</p>
 `,
   },
   {
@@ -60664,11 +60722,11 @@ if ( ! $link ) {
   },
   {
     slug: 'local-seo-pune-businesses',
-    seoTitle: 'Local SEO for Pune and Pimpri-Chinchwad Businesses',
+    seoTitle: 'Local SEO for Pune Businesses: Maps, Reviews and Pages',
     title: 'Local SEO for Pune Businesses: Getting Found Across Pune and Pimpri-Chinchwad',
-    description: 'Local SEO for Pune and PCMC businesses: Google Business Profile, honest area pages, reviews, Marathi or English content and tracking real enquiries.',
+    description: 'Local SEO for Pune and PCMC businesses: Google Business Profile, service pages, honest area pages, reviews, Marathi or English content and tracking enquiries.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-11-06',
     category: 'SEO',
     related: ['wordpress-developer-pune', 'wordpress-seo-services'],
     body: `
@@ -60780,6 +60838,10 @@ if ( ! $link ) {
 <p>Keep a simple monthly log of what you changed and what enquiries came in. After three months, that log tells you far more than any ranking report.</p>
 <p>Local SEO is steady work rather than a one-time task. Small, regular improvements add up.</p>
 
+<h2>When to get help</h2>
+<p>You can run the Google Business Profile and ask for reviews yourself. Get help when the website is the weak link: one generic page for every service, nothing Google can match to a search like "physiotherapist in Wakad", slow loading on mobile data, or enquiry forms nobody tracks. Also get advice before creating a batch of area pages; pages that only swap the locality name rarely help and can drag the whole site down.</p>
+<p>If you want a local business website built or improved for Pune searches, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also read <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How does local SEO for Pune businesses work?</h3>
 <p>Google shows local results based on relevance, distance and prominence. You improve relevance with a complete Google Business Profile and clear service pages, and prominence with genuine reviews, consistent listings and local mentions.</p>
@@ -60791,8 +60853,6 @@ if ( ! $link ) {
 <p>Not always. If many customers search in Marathi, translating key pages properly can help. Start with your main services and contact page.</p>
 <h3>Can I do local SEO without a website?</h3>
 <p>A Google Business Profile alone can bring some calls, but a website with clear service pages strengthens relevance and gives customers more reasons to choose you.</p>
-
-<p>If you want a local business website built or improved for Pune searches, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also read <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -61685,13 +61745,14 @@ any unused part of the advance refunded as agreed</code></pre>
     slug: 'wordpress-xmlrpc-explained',
     seoTitle: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
     title: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
-    description: 'What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.',
+    description: 'Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.',
     date: '2026-10-01',
-    updated: '2026-10-11',
+    updated: '2026-11-06',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance'],
     body: `
-<p>If you've looked at your security plugin's reports or your hosting logs, you may have noticed a file called xmlrpc.php being hit again and again. It's a part of WordPress that most business sites no longer use, yet it's switched on by default and bots love it. Here's what it is, how to tell whether anything on your site still relies on it, and how to switch it off or restrict it safely.</p>
+<p>Should you disable xmlrpc.php? On most business WordPress sites, yes, or at least restrict it. It's an old remote-publishing interface that is switched on by default, few modern tools still need it, and bots use it for password guessing and pingback abuse. Check first whether Jetpack, an older mobile app or a remote publishing tool relies on it, then block it at the server, firewall or with a security plugin.</p>
+<p>If you've seen xmlrpc.php hit again and again in your security reports or hosting logs, this guide explains what it is, how to tell whether anything still relies on it, and how to switch it off or restrict it safely.</p>
 <p><strong>The short answer:</strong> if nothing on your site uses XML-RPC, which is true for most business sites that don't use Jetpack or publish from an app, block it at the server or firewall, or at least turn it off with a security plugin. If you do rely on Jetpack or a publishing app, restrict it rather than blocking it outright.</p>
 
 <h2>What xmlrpc.php actually is</h2>
@@ -61771,6 +61832,14 @@ any unused part of the advance refunded as agreed</code></pre>
 <h2>One small step in a bigger picture</h2>
 <p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
 
+<h2>Test whether XML-RPC is open</h2>
+<p>Run this from a terminal, replacing the domain:</p>
+<pre><code>curl -s -X POST -H "Content-Type: text/xml" -d '&lt;?xml version="1.0"?&gt;&lt;methodCall&gt;&lt;methodName&gt;system.listMethods&lt;/methodName&gt;&lt;/methodCall&gt;' https://yourdomain.com/xmlrpc.php</code></pre>
+<p>A long list of method names means XML-RPC is answering. A 403 or 404, or a firewall message, means the file is blocked. If you disabled it with the <code>xmlrpc_enabled</code> filter or a plugin that uses it, the list can still appear: that filter only stops methods that need a login, and pingbacks keep working. Block the file at the server or firewall if nothing needs it.</p>
+<h2>When to get help</h2>
+<p>Get help when xmlrpc.php requests keep using up hosting resources after you've blocked it, which usually means the block sits in the wrong place, or when Jetpack or an app breaks and you need a narrower rule. Repeated login attempts in your logs are also a reason to review the rest of your security, not just this one file.</p>
+<p>Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is xmlrpc.php a virus or a sign of a hack?</h3>
 <p>No. It's a standard WordPress core file found on almost every WordPress site, and requests to it only mean bots are knocking. Unfamiliar PHP files with odd names in other folders are a different matter and worth investigating.</p>
@@ -61780,8 +61849,6 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>No. Google doesn't use xmlrpc.php to crawl or index your site. Pingbacks have no real SEO value for a business site; you can switch them off under Settings &gt; Discussion, and see <a href="/blog/wordpress-comments-enable-or-disable/">whether a business site should enable comments</a>.</p>
 <h3>Why do I still see xmlrpc.php requests after disabling it?</h3>
 <p>Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall.</p>
-
-<p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Get in touch if bots are slowing your site down.</p>
 `,
   },
   {

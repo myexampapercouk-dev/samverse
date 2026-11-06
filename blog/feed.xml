@@ -648,7 +648,7 @@
     <link>https://samverse.space/blog/logo-favicon-brand-basics-website/</link>
     <guid>https://samverse.space/blog/logo-favicon-brand-basics-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Favicon sizes, logo formats and brand basics for your website: favicon and app icon sizes, social share images, logo schema and consistency.</description>
+    <description>Favicon sizes, logo file formats and brand basics for your website: favicon code, app icons, social share images, logo schema and a one-page brand sheet.</description>
   </item>
   <item>
     <title>How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email</title>
@@ -676,7 +676,7 @@
     <link>https://samverse.space/blog/faq-page-seo/</link>
     <guid>https://samverse.space/blog/faq-page-seo/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>FAQ SEO step by step: are FAQs good for SEO, a separate FAQ page or FAQs on each page, how to write an FAQ for a sales page, and FAQ schema today.</description>
+    <description>FAQ pages for SEO: are FAQs good for SEO, one FAQ page or FAQs on each page, how to write an FAQ for a sales page, and what FAQ schema does today.</description>
   </item>
   <item>
     <title>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</title>
@@ -851,7 +851,7 @@
     <link>https://samverse.space/blog/301-vs-302-redirects/</link>
     <guid>https://samverse.space/blog/301-vs-302-redirects/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Learn which to use, how each affects SEO, common mistakes and how to set them up in WordPress.</description>
+    <description>301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.</description>
   </item>
   <item>
     <title>How Long Does SEO Take to Work? What Affects the Timeline, What Usually Happens First and How to Tell It Is Working</title>
@@ -1103,7 +1103,7 @@
     <link>https://samverse.space/blog/woocommerce-gst-invoices-india/</link>
     <guid>https://samverse.space/blog/woocommerce-gst-invoices-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce GST setup for Indian stores: tax classes, CGST/SGST vs IGST rates, place of supply, HSN codes, GSTIN at checkout and GST invoice plugins.</description>
+    <description>Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.</description>
   </item>
   <item>
     <title>Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders</title>
@@ -1313,7 +1313,7 @@
     <link>https://samverse.space/blog/compare-website-quotes/</link>
     <guid>https://samverse.space/blog/compare-website-quotes/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Why are website quotes different? Each one prices a different job. How to compare website quotes in India line by line, with a checklist and 3-year costs.</description>
+    <description>Why are website quotes different? Each one prices a different job. Compare website quotes in India line by line with one brief, a checklist and 3-year costs.</description>
   </item>
   <item>
     <title>Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?</title>
@@ -1341,7 +1341,7 @@
     <link>https://samverse.space/blog/outsource-wordpress-development-india/</link>
     <guid>https://samverse.space/blog/outsource-wordpress-development-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Outsource WordPress development to India safely: which projects suit it, the process, white-label reselling, NDAs, time zones, pricing models and red flags.</description>
+    <description>How to outsource WordPress development to India safely: projects that suit it, a paid test task, white-label and NDAs, time zones, pricing models and red flags.</description>
   </item>
   <item>
     <title>Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need</title>
@@ -1537,7 +1537,7 @@
     <link>https://samverse.space/blog/hostinger-website-slow-fix/</link>
     <guid>https://samverse.space/blog/hostinger-website-slow-fix/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Hostinger slow? Check hPanel resource limits, LiteSpeed Cache, CDN, PHP and plugins with this step-by-step checklist, and know when to upgrade your plan.</description>
+    <description>Hostinger website slow? Check hPanel limits, test the LiteSpeed cache header, fix CDN, PHP, plugins and bots, and know when upgrading the plan really helps.</description>
   </item>
   <item>
     <title>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</title>
@@ -1572,7 +1572,7 @@
     <link>https://samverse.space/blog/fix-wordpress-critical-error/</link>
     <guid>https://samverse.space/blog/fix-wordpress-critical-error/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress fatal error or &quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins and check PHP.</description>
+    <description>&quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.</description>
   </item>
   <item>
     <title>WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template</title>
@@ -1950,7 +1950,7 @@
     <link>https://samverse.space/blog/woocommerce-product-reviews/</link>
     <guid>https://samverse.space/blog/woocommerce-product-reviews/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, display and star ratings.</description>
+    <description>Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.</description>
   </item>
   <item>
     <title>Customising WooCommerce Order Emails: Branding, Content and Deliverability</title>
@@ -2223,7 +2223,7 @@
     <link>https://samverse.space/blog/wordpress-activity-logs/</link>
     <guid>https://samverse.space/blog/wordpress-activity-logs/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How a WordPress activity log works, what to record, which plugins to consider and how Indian teams and agencies use change logs for security and accountability.</description>
+    <description>WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.</description>
   </item>
   <item>
     <title>Pin Code Delivery Checkers for Indian WooCommerce Stores</title>
@@ -2510,7 +2510,7 @@
     <link>https://samverse.space/blog/local-seo-pune-businesses/</link>
     <guid>https://samverse.space/blog/local-seo-pune-businesses/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Local SEO for Pune and PCMC businesses: Google Business Profile, honest area pages, reviews, Marathi or English content and tracking real enquiries.</description>
+    <description>Local SEO for Pune and PCMC businesses: Google Business Profile, service pages, honest area pages, reviews, Marathi or English content and tracking enquiries.</description>
   </item>
   <item>
     <title>Why Is My Business Not Showing on Google Maps? Causes and Fixes</title>
@@ -2552,7 +2552,7 @@
     <link>https://samverse.space/blog/wordpress-xmlrpc-explained/</link>
     <guid>https://samverse.space/blog/wordpress-xmlrpc-explained/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What xmlrpc.php does, what still uses it, how to spot attacks in your logs, and safe ways to disable or restrict XML-RPC in WordPress without breaking anything.</description>
+    <description>Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.</description>
   </item>
   <item>
     <title>How to Stop Spam User Registrations in WordPress and WooCommerce</title>

@@ -184,8 +184,8 @@ module.exports = [
   {
     slug: 'about',
     crumb: 'About',
-    title: 'About Samverse: Freelance WordPress Developer in Pune',
-    description: 'About Samverse, freelance WordPress development from Pune: fast, responsive, SEO-friendly websites for businesses and agencies since 2020.',
+    title: 'About Samverse: WordPress and Shopify Developer, Pune',
+    description: 'Samverse is a freelance WordPress, WooCommerce and Shopify developer in Pune, building fast, mobile-first websites for businesses and agencies since 2020.',
     eyebrow: 'About',
     h1: 'About <span class="grad">Samverse</span>',
     lead: 'I\'m a freelance WordPress developer in India. I build fast, responsive, SEO-friendly websites for businesses, professionals and agencies, and I\'ve been doing it since 2020.',
