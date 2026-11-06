@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Error Establishing a Database Connection: How to Fix It</title>
-  <meta name="description" content="Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.">
+  <meta name="description" content="Fix &quot;Error establishing a database connection&quot; in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/error-establishing-database-connection-fix/">
   <meta property="og:title" content="Error Establishing a Database Connection: How to Fix It">
-  <meta property="og:description" content="Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.">
+  <meta property="og:description" content="Fix &quot;Error establishing a database connection&quot; in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-error-establishing-database-connection-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/error-establishing-database-connection-fix/#article",
       "headline": "Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back",
-      "description": "Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.",
+      "description": "Fix \"Error establishing a database connection\" in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-27",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/error-establishing-database-connection-fix/",
       "image": "https://samverse.space/assets/og/blog-error-establishing-database-connection-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back</h1>
-          <p class="post-dek">Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.</p>
+          <p class="post-dek">Fix &quot;Error establishing a database connection&quot; in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-27">27 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
               <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
               <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
+              <li><a href="#quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -297,6 +299,15 @@ if ( ! $link ) {
 </ul>
 <p>Other common messages, such as the critical error notice or a white screen, are covered in <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
 
+<h2 id="quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</h2>
+<p>If you have SSH access, WP-CLI reads the details from wp-config.php and tests them for you. From the WordPress root, run:</p>
+<pre><code>wp config get DB_HOST
+wp db check</code></pre>
+<p>The first line confirms which database host WordPress is using, which catches a wrong host after a migration. <code>wp db check</code> connects with the stored user and password and checks every table: an access-denied message points to the username or password, a "can't connect" message points to the host or a stopped database server, and a table marked as crashed points to repair. Paste the exact message into your support ticket.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the database server is down on the host's side, when tables are damaged and you have no recent backup, or when the error started after moving hosts. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes uptime monitoring that usually spots this before customers do, and <a href="/wordpress-migration/">WordPress migration</a> covers moves where the database details change.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Have I lost my website content?</h3>
 <p>Usually not. The error means WordPress cannot reach the database, not that the database is gone. Only if the database was deleted or badly damaged do you need a backup, which is why a database export is the first thing to take when phpMyAdmin will open.</p>
@@ -308,8 +319,6 @@ if ( ! $link ) {
 <p>No. The repair page does not ask for a login, so anyone who knows the address could run it. Add the line, run the repair, and remove it straight away.</p>
 <h3>How can I tell whether it is my host's problem or my site's?</h3>
 <p>If phpMyAdmin will not connect either, or other sites on the same account are down, it is on the host's side. If phpMyAdmin works and the test script connects, the problem is in your WordPress settings or tables.</p>
-
-<p>If your site is down with this error now, or you are planning a host move and want to avoid it, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -355,6 +364,8 @@ if ( ! $link ) {
               <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
               <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
               <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
+              <li><a href="#quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -384,7 +395,7 @@ if ( ! $link ) {
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-backup-restore-guide/"><img class="post-card-img" src="/assets/og/blog-wordpress-backup-restore-guide.webp" alt="WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks</h3><p>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/uptime-monitoring-explained/"><img class="post-card-img" src="/assets/og/blog-uptime-monitoring-explained.webp" alt="Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do</h3><p>Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>
@@ -489,7 +500,6 @@ if ( ! $link ) {
             <li><a href="/#process">Process</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
             <li><a href="/wordpress-glossary/">Glossary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SSL Certificate Errors: What They Mean and How to Fix Them</title>
-  <meta name="description" content="SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.">
+  <title>SSL Certificate Errors: What They Mean and How to Fix</title>
+  <meta name="description" content="SSL certificate errors explained: &quot;Not secure&quot;, &quot;Your connection is not private&quot;, expired and name-mismatch certificates, mixed content, and how to fix each.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/ssl-certificate-errors-fix/">
-  <meta property="og:title" content="SSL Certificate Errors: What They Mean and How to Fix Them">
-  <meta property="og:description" content="SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.">
+  <meta property="og:title" content="SSL Certificate Errors: What They Mean and How to Fix">
+  <meta property="og:description" content="SSL certificate errors explained: &quot;Not secure&quot;, &quot;Your connection is not private&quot;, expired and name-mismatch certificates, mixed content, and how to fix each.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-ssl-certificate-errors-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/ssl-certificate-errors-fix/#article",
       "headline": "SSL Certificate Errors Explained: \"Not Secure\", \"Connection Not Private\" and How to Fix Them",
-      "description": "SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.",
+      "description": "SSL certificate errors explained: \"Not secure\", \"Your connection is not private\", expired and name-mismatch certificates, mixed content, and how to fix each.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/ssl-certificate-errors-fix/",
       "image": "https://samverse.space/assets/og/blog-ssl-certificate-errors-fix.png",
       "articleSection": "Security",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Security</a>
           <h1>SSL Certificate Errors Explained: &quot;Not Secure&quot;, &quot;Connection Not Private&quot; and How to Fix Them</h1>
-          <p class="post-dek">SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.</p>
+          <p class="post-dek">SSL certificate errors explained: &quot;Not secure&quot;, &quot;Your connection is not private&quot;, expired and name-mismatch certificates, mixed content, and how to fix each.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=SSL%20Certificate%20Errors%20Explained%3A%20%22Not%20Secure%22%2C%20%22Connection%20Not%20Private%22%20and%20How%20to%20Fix%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fssl-certificate-errors-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -158,6 +158,8 @@
               <li><a href="#how-to-fix-each-ssl-certificate-error">How to fix each SSL certificate error</a></li>
               <li><a href="#do-ssl-errors-hurt-seo">Do SSL errors hurt SEO?</a></li>
               <li><a href="#how-to-prevent-ssl-problems">How to prevent SSL problems</a></li>
+              <li><a href="#quick-check-read-the-certificate-from-the-command-line">Quick check: read the certificate from the command line</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -264,6 +266,14 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
   <li>Keep a note of where your domain, DNS and hosting are managed; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a></li>
 </ul>
 
+<h2 id="quick-check-read-the-certificate-from-the-command-line">Quick check: read the certificate from the command line</h2>
+<p>A terminal shows exactly which certificate your server is sending, without browser caching getting in the way:</p>
+<pre><code>openssl s_client -connect example.com:443 -servername example.com &lt;/dev/null 2&gt;/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName</code></pre>
+<p>Check three things: <code>notAfter</code> is in the future, the <code>subjectAltName</code> list includes both <code>example.com</code> and <code>www.example.com</code>, and the issuer is a public authority such as Let's Encrypt rather than a self-signed or hosting placeholder certificate. Run it for the www and non-www names; if Cloudflare is in front, you are seeing Cloudflare's certificate, not your host's.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the warning stays after reissuing the certificate, when the site loops between http and https, or when the problem started after a host or domain change. I can find the cause, fix the certificate and redirects, and clean up mixed content without breaking the site. See <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care, or <a href="/wordpress-migration/">WordPress migration</a> if the problem started after a move.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What causes SSL certificate errors?</h3>
 <p>The usual causes are a missing certificate, an expired one that failed to renew, a certificate that doesn't cover the exact domain name, an untrusted or incomplete certificate chain, and pages that load files over http. On the visitor's side, a wrong clock or antivirus software can also trigger warnings.</p>
@@ -277,8 +287,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <p>For most business websites and online stores, yes. A free Let's Encrypt certificate encrypts the connection just as well as a paid one. Paid certificates add things like business validation and a warranty, but browsers no longer show a special green bar for them, so visitors see the same padlock.</p>
 <h3>How long does SSL take to start working?</h3>
 <p>Issuing a certificate usually takes minutes once the domain points to your host. If you've just changed DNS, it can take longer until the change has spread, and browsers may cache the old error for a while, so test in a private window.</p>
-
-<p>Still seeing a certificate warning, or not sure which setting is behind it? I can find the cause, fix the certificate and redirects, and clean up mixed content without breaking the site. See <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care, or <a href="/wordpress-migration/">WordPress migration</a> if the problem started after a move.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -319,6 +327,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
               <li><a href="#how-to-fix-each-ssl-certificate-error">How to fix each SSL certificate error</a></li>
               <li><a href="#do-ssl-errors-hurt-seo">Do SSL errors hurt SEO?</a></li>
               <li><a href="#how-to-prevent-ssl-problems">How to prevent SSL problems</a></li>
+              <li><a href="#quick-check-read-the-certificate-from-the-command-line">Quick check: read the certificate from the command line</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -454,7 +464,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
             <li><a href="/#process">Process</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
             <li><a href="/wordpress-glossary/">Glossary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

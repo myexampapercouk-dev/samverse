@@ -11,7 +11,7 @@
     <link>https://samverse.space/blog/wordpress-website-cost-india/</link>
     <guid>https://samverse.space/blog/wordpress-website-cost-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress plans and pricing explained for India: WordPress.com plans vs free WordPress.org, build costs, yearly domain and hosting, and how to get a quote.</description>
+    <description>What a WordPress website costs in India: free WordPress.org vs WordPress.com plans, build cost, yearly domain and hosting, and how to get a fixed quote.</description>
   </item>
   <item>
     <title>WordPress vs Wix vs Shopify: Which Is Best for Your Business in India? Cost, UPI Payments, GST and Ownership Compared</title>
@@ -158,7 +158,7 @@
     <link>https://samverse.space/blog/migrate-wix-to-wordpress/</link>
     <guid>https://samverse.space/blog/migrate-wix-to-wordpress/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Migrate from Wix to WordPress step by step: what you can export, rebuilding the design, moving posts and images, 301 redirects, the domain and cutover.</description>
+    <description>How to migrate Wix to WordPress step by step: audit and export, rebuild on staging, move blog posts and images, 301 redirect Wix URLs, then switch the domain.</description>
   </item>
   <item>
     <title>Google Business Profile Checklist: Setup, Optimisation and Monthly Management</title>
@@ -270,7 +270,7 @@
     <link>https://samverse.space/blog/website-maintenance-cost-india/</link>
     <guid>https://samverse.space/blog/website-maintenance-cost-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Website maintenance cost in India: typical monthly plan charges, yearly WordPress running costs, what packages include, what costs extra and how to choose.</description>
+    <description>Website maintenance cost in India: what monthly plans and AMCs include, yearly domain and hosting costs, what costs extra, and how to choose a provider.</description>
   </item>
   <item>
     <title>Landing Page vs Website: The Key Differences, Where Squeeze Pages Fit, and Which You Need for Your Ads</title>
@@ -683,14 +683,14 @@
     <link>https://samverse.space/blog/common-wordpress-errors-fixes/</link>
     <guid>https://samverse.space/blog/common-wordpress-errors-fixes/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</description>
+    <description>Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.</description>
   </item>
   <item>
     <title>SSL Certificate Errors Explained: &quot;Not Secure&quot;, &quot;Connection Not Private&quot; and How to Fix Them</title>
     <link>https://samverse.space/blog/ssl-certificate-errors-fix/</link>
     <guid>https://samverse.space/blog/ssl-certificate-errors-fix/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.</description>
+    <description>SSL certificate errors explained: &quot;Not secure&quot;, &quot;Your connection is not private&quot;, expired and name-mismatch certificates, mixed content, and how to fix each.</description>
   </item>
   <item>
     <title>What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One</title>
@@ -816,7 +816,7 @@
     <link>https://samverse.space/blog/migrate-shopify-to-woocommerce/</link>
     <guid>https://samverse.space/blog/migrate-shopify-to-woocommerce/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.</description>
+    <description>How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.</description>
   </item>
   <item>
     <title>XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress</title>
@@ -1047,7 +1047,7 @@
     <link>https://samverse.space/blog/hire-developer-vs-diy-website/</link>
     <guid>https://samverse.space/blog/hire-developer-vs-diy-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Build your website yourself or hire a developer? DIY builders, freelancers and agencies compared on time, skills, cost and risk, with a decision table.</description>
+    <description>Hire a developer or build your website yourself? DIY builders vs a freelancer vs an agency compared on time, skills, cost and risk, with a decision table.</description>
   </item>
   <item>
     <title>How to Write a Homepage That Converts Visitors Into Enquiries: The Sections in Order, the First-Screen Test and Mobile</title>
@@ -1292,14 +1292,14 @@
     <link>https://samverse.space/blog/wordpress-admin-slow/</link>
     <guid>https://samverse.space/blog/wordpress-admin-slow/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress admin slow but the site is fast? Find the cause with Query Monitor, then fix heavy plugins, Heartbeat, autoloaded data, cron jobs and weak hosting.</description>
+    <description>Why the WordPress admin dashboard is slow: heavy plugins, outside requests, autoloaded data, Heartbeat, WP-Cron and hosting limits, and how to fix each.</description>
   </item>
   <item>
     <title>&quot;Deceptive Site Ahead&quot; Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It</title>
     <link>https://samverse.space/blog/deceptive-site-ahead-warning-fix/</link>
     <guid>https://samverse.space/blog/deceptive-site-ahead-warning-fix/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to remove deceptive site warning screens in Chrome: find the flagged phishing pages in Search Console, clean the site, close the hole, request review.</description>
+    <description>Remove the &quot;Deceptive site ahead&quot; warning: find the phishing pages in Search Console, clean the site, close the way in and request a Google review.</description>
   </item>
   <item>
     <title>How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection</title>
@@ -1425,7 +1425,7 @@
     <link>https://samverse.space/blog/remove-malware-wordpress-step-by-step/</link>
     <guid>https://samverse.space/blog/remove-malware-wordpress-step-by-step/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.</description>
+    <description>How to remove malware from WordPress step by step: contain, back up, reset access, scan, replace core and plugins, clean the database and clear Google warnings.</description>
   </item>
   <item>
     <title>WordPress Hacked Redirect: Why Your Site Redirects to Spam and How to Remove the Malware</title>
@@ -1439,7 +1439,7 @@
     <link>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</link>
     <guid>https://samverse.space/blog/fix-japanese-keyword-seo-spam-hack/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Fix the Japanese keyword hack on WordPress: confirm cloaked spam in Search Console, remove hacker-added owners, delete the generator and clear spam URLs.</description>
+    <description>Fix the Japanese keyword hack on WordPress: find the cloaked spam pages, remove the generator and backdoors, return 410 for spam URLs and request a review.</description>
   </item>
   <item>
     <title>How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check</title>
@@ -1460,7 +1460,7 @@
     <link>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</link>
     <guid>https://samverse.space/blog/woocommerce-checkout-skimmer-malware/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce checkout skimmer malware: how card skimmers hide, how to inspect your checkout scripts, what to tell customers and how a CSP helps prevent it.</description>
+    <description>How to spot a WooCommerce card skimmer on your checkout, what to do in the first hours, how to clean the store and protect customers with fewer scripts.</description>
   </item>
   <item>
     <title>Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One</title>
@@ -1488,14 +1488,14 @@
     <link>https://samverse.space/blog/hosting-suspended-malware/</link>
     <guid>https://samverse.space/blog/hosting-suspended-malware/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Hosting account suspended for malware? What the notice means, how to get access, clean every site, get reinstated by your host and stop it happening again.</description>
+    <description>Hosting account suspended for malware? What the notice means, how to get temporary access, clean every site, close the way in and ask for reinstatement.</description>
   </item>
   <item>
     <title>&quot;This Site May Be Hacked&quot; Google Warning: How to Remove It Step by Step</title>
     <link>https://samverse.space/blog/this-site-may-be-hacked-google/</link>
     <guid>https://samverse.space/blog/this-site-may-be-hacked-google/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Remove the &quot;This site may be hacked&quot; label from Google: confirm it in Search Console, clean the hack, request a review and protect customers while you wait.</description>
+    <description>Remove the &quot;This site may be hacked&quot; label from Google: confirm it in Search Console, lock out the attacker, clean the site, close the way in, request a review.</description>
   </item>
   <item>
     <title>WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors</title>
@@ -2083,7 +2083,7 @@
     <link>https://samverse.space/blog/too-many-redirects-error-fix/</link>
     <guid>https://samverse.space/blog/too-many-redirects-error-fix/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.</description>
+    <description>Fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL mode, site URLs, .htaccess rules and redirect plugins, and trace the chain.</description>
   </item>
   <item>
     <title>WordPress Not Sending Emails? How to Fix It With SMTP</title>
@@ -2097,7 +2097,7 @@
     <link>https://samverse.space/blog/ecommerce-website-cost-india/</link>
     <guid>https://samverse.space/blog/ecommerce-website-cost-india/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>What an e-commerce website costs in India: build vs running costs, what pushes the price up, and WooCommerce vs Shopify. Budget before you ask for quotes.</description>
+    <description>E-commerce website cost in India: what drives the price, one-time vs running costs, WooCommerce vs Shopify, per-order fees and how to get an accurate quote.</description>
   </item>
   <item>
     <title>The Real Risks of Very Cheap Websites: What Is Usually Left Out, Later Costs and How to Check an Offer</title>
@@ -2503,7 +2503,7 @@
     <link>https://samverse.space/blog/error-establishing-database-connection-fix/</link>
     <guid>https://samverse.space/blog/error-establishing-database-connection-fix/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.</description>
+    <description>Fix &quot;Error establishing a database connection&quot; in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.</description>
   </item>
   <item>
     <title>Local SEO for Pune Businesses: Getting Found Across Pune and Pimpri-Chinchwad</title>
@@ -2755,14 +2755,14 @@
     <link>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</link>
     <guid>https://samverse.space/blog/wordpress-500-internal-server-error-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.</description>
+    <description>Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.</description>
   </item>
   <item>
     <title>WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them</title>
     <link>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</link>
     <guid>https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How to fix a WordPress 502 bad gateway or 504 gateway timeout, what &quot;the gateway did not receive a timely response&quot; means and what to check or send your host.</description>
+    <description>Fix WordPress 502 Bad Gateway and 504 Gateway Timeout errors: PHP workers, slow plugins and queries, Cloudflare, hosting limits and what to tell your host.</description>
   </item>
   <item>
     <title>How to Set Up Cloudflare's Free Plan on WordPress, Step by Step: DNS, Nameservers, Full (Strict) SSL, Cache Rules and Troubleshooting</title>
@@ -2832,14 +2832,14 @@
     <link>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</link>
     <guid>https://samverse.space/blog/wordpress-site-slow-on-mobile-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>WordPress site slow on mobile but fine on desktop? Find out why scores differ and fix sliders, oversized images, third-party scripts, popups and fonts.</description>
+    <description>WordPress site slow on mobile but fast on desktop? Find the cause, then fix sliders, images, third-party scripts, popups and fonts for Indian phones.</description>
   </item>
   <item>
     <title>WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails</title>
     <link>https://samverse.space/blog/woocommerce-orders-not-showing-fix/</link>
     <guid>https://samverse.space/blog/woocommerce-orders-not-showing-fix/</guid>
     <pubDate>Sun, 11 Oct 2026 03:30:00 GMT</pubDate>
-    <description>WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.</description>
+    <description>WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.</description>
   </item>
   <item>
     <title>WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;</title>
@@ -2867,21 +2867,21 @@
     <link>https://samverse.space/blog/shopify-store-slow-fix/</link>
     <guid>https://samverse.space/blog/shopify-store-slow-fix/</guid>
     <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Why Shopify stores slow down, from app scripts and leftover code to images, fonts and sliders, how to diagnose it with free tools and which fixes come first.</description>
+    <description>Why your Shopify store is slow: apps, theme features, images and fonts. How to measure, find what each app loads and fix it in priority order.</description>
   </item>
   <item>
     <title>How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover</title>
     <link>https://samverse.space/blog/migrate-woocommerce-to-shopify/</link>
     <guid>https://samverse.space/blog/migrate-woocommerce-to-shopify/</guid>
     <pubDate>Sun, 25 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Move a WooCommerce store to Shopify step by step: export and import products and customers, bring orders across, map URLs to 301 redirects and plan the cutover.</description>
+    <description>How to migrate WooCommerce to Shopify: export and clean data, import products and customers, map URLs with 301 redirects, check SEO and cut over safely.</description>
   </item>
   <item>
     <title>What a Shopify Store Costs in India: Plan, Apps, Payment Fees, Theme, Setup and Running Costs Explained</title>
     <link>https://samverse.space/blog/shopify-store-cost-india/</link>
     <guid>https://samverse.space/blog/shopify-store-cost-india/</guid>
     <pubDate>Tue, 27 Oct 2026 03:30:00 GMT</pubDate>
-    <description>What a Shopify store in India really costs: plan, apps, gateway and Shopify fees, theme, setup and running costs, compared honestly with WooCommerce.</description>
+    <description>Shopify store cost in India: plan fee, apps, payment charges, theme, setup and running costs, plus a budgeting checklist before you sign up.</description>
   </item>
   <item>
     <title>Shopify SEO Checklist: Titles, Product URLs, Canonicals, Filters, Structured Data, Sitemaps and Search Console</title>
@@ -2923,7 +2923,7 @@
     <link>https://samverse.space/blog/hire-shopify-developer-india/</link>
     <guid>https://samverse.space/blog/hire-shopify-developer-india/</guid>
     <pubDate>Tue, 27 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Before you hire a Shopify developer in India: what they do, freelancer vs agency, what to send for a quote, questions to ask, access and red flags.</description>
+    <description>How to hire a Shopify developer in India: what they do, when you need one, questions to ask, access and ownership, and red flags to avoid.</description>
   </item>
   <item>
     <title>How to Change Your Shopify Theme Without Losing SEO: Benchmark, Unpublished Theme, App Embeds, Templates and Launch Checks</title>

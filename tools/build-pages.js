@@ -1024,7 +1024,7 @@ ${projectCards()}
           <h3>Directories, temples and local businesses</h3>
           <p><a href="/work/our-temples/">Our Temples</a>, a large temple directory and travel guide, <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, an interior design studio, and <a href="/work/southern-flavours/">Southern Flavours</a>, an Indian restaurant in the UK. See <a href="/website-for-temples-and-ngos/">websites for temples and NGOs</a> and <a href="/website-for-restaurants/">restaurant websites</a>.</p>
           <h3>This website</h3>
-          <p><a href="/work/samverse/">Samverse</a> is my own custom-coded portfolio and lead generation site, with service pages, a blog and a <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+          <p><a href="/work/samverse/">Samverse</a> is my own custom-coded portfolio and lead generation site, with service pages and a blog.</p>
           <p>Want something similar? Read <a href="/blog/wordpress-website-cost-india/">what a WordPress website costs in India</a>, or see how I handle <a href="/wordpress-website-development/">WordPress website development</a> from brief to launch.</p>
         </div>
       </div>

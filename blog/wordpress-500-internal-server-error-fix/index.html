@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>500 Internal Server Error in WordPress: How to Fix It</title>
-  <meta name="description" content="Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.">
+  <meta name="description" content="Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/wordpress-500-internal-server-error-fix/">
   <meta property="og:title" content="500 Internal Server Error in WordPress: How to Fix It">
-  <meta property="og:description" content="Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.">
+  <meta property="og:description" content="Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-wordpress-500-internal-server-error-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/#article",
       "headline": "500 Internal Server Error in WordPress: How to Find the Cause and Fix It",
-      "description": "Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.",
+      "description": "Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-500-internal-server-error-fix.png",
       "articleSection": "Maintenance",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
           <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
           <h1>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</h1>
-          <p class="post-dek">Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.</p>
+          <p class="post-dek">Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=500%20Internal%20Server%20Error%20in%20WordPress%3A%20How%20to%20Find%20the%20Cause%20and%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-500-internal-server-error-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#memory-php-version-and-server-limits">Memory, PHP version and server limits</a></li>
               <li><a href="#preventing-the-next-500-error">Preventing the next 500 error</a></li>
               <li><a href="#a-safe-fix-order-and-when-to-call-your-host">A safe fix order, and when to call your host</a></li>
+              <li><a href="#quick-check-switch-off-plugins-when-wp-admin-is-down">Quick check: switch off plugins when wp-admin is down</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -265,6 +267,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Call your host if there are no log entries at all, if even a plain test file in the site root gives a 500, or if the log shows server-level messages you do not recognise. Give them the exact time, URL and any log lines.</p>
 <p>Avoid reinstalling WordPress or restoring an old backup before finding the cause. A reinstall rarely fixes plugin errors, and an old backup can lose recent orders and enquiries.</p>
 
+<h2 id="quick-check-switch-off-plugins-when-wp-admin-is-down">Quick check: switch off plugins when wp-admin is down</h2>
+<p>When the dashboard itself returns a 500, WP-CLI can still work if you tell it to skip plugins and themes. Over SSH, from the WordPress root:</p>
+<pre><code>wp plugin list --status=active --skip-plugins --skip-themes
+wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre>
+<p>Deactivate the plugin named in the error log first; if there is no log entry, deactivate the most recently updated plugin and reload the site after each one. To check a theme or custom file you edited, <code>php -l wp-content/themes/your-theme/functions.php</code> reports a syntax error and its line number without loading WordPress.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the log makes no sense, when no log is being written, or when the site is down during business hours and takes orders. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, so the next 500 does not happen on the live site, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I fix a 500 internal server error in WordPress?</h3>
 <p>Take a backup, read the error log, then fix what it names: rename the faulty plugin or theme folder, reset .htaccess, raise the memory limit or switch PHP back. Change one thing at a time.</p>
@@ -276,8 +287,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Logging may be off, or the error is happening before PHP runs, for example in .htaccess or server configuration. Enable WP_DEBUG_LOG and ask your host for the server-level log.</p>
 <h3>Is a 500 error bad for SEO?</h3>
 <p>Briefly, no. If Google keeps getting 500 errors over days, it crawls less and can drop affected pages, so fix it promptly.</p>
-
-<p>If the log makes no sense or the site is down during business hours, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, look at <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -322,6 +331,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
               <li><a href="#memory-php-version-and-server-limits">Memory, PHP version and server limits</a></li>
               <li><a href="#preventing-the-next-500-error">Preventing the next 500 error</a></li>
               <li><a href="#a-safe-fix-order-and-when-to-call-your-host">A safe fix order, and when to call your host</a></li>
+              <li><a href="#quick-check-switch-off-plugins-when-wp-admin-is-down">Quick check: switch off plugins when wp-admin is down</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -351,7 +362,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-updating-failed-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h3><p>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p><span class="post-card-meta">6 November 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-backup-restore-guide/"><img class="post-card-img" src="/assets/og/blog-wordpress-backup-restore-guide.webp" alt="WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks</h3><p>How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>
@@ -456,7 +467,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
             <li><a href="/#process">Process</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
             <li><a href="/wordpress-glossary/">Glossary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

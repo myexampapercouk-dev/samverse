@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Migrate Shopify to WooCommerce: Step-by-Step Guide for India</title>
-  <meta name="description" content="How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.">
+  <title>Migrate Shopify to WooCommerce: Step-by-Step for India</title>
+  <meta name="description" content="How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/migrate-shopify-to-woocommerce/">
-  <meta property="og:title" content="Migrate Shopify to WooCommerce: Step-by-Step Guide for India">
-  <meta property="og:description" content="How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.">
+  <meta property="og:title" content="Migrate Shopify to WooCommerce: Step-by-Step for India">
+  <meta property="og:description" content="How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-migrate-shopify-to-woocommerce.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/migrate-shopify-to-woocommerce/#article",
       "headline": "How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover",
-      "description": "How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.",
+      "description": "How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/migrate-shopify-to-woocommerce/",
       "image": "https://samverse.space/assets/og/blog-migrate-shopify-to-woocommerce.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover</h1>
-          <p class="post-dek">How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.</p>
+          <p class="post-dek">How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Migrate%20Shopify%20to%20WooCommerce%2C%20Step%20by%20Step%3A%20Products%2C%20Customers%2C%20Orders%2C%20Redirects%2C%20Payments%20and%20Cutover%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmigrate-shopify-to-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,6 +164,8 @@
               <li><a href="#how-long-a-shopify-to-woocommerce-migration-takes">How long a Shopify to WooCommerce migration takes</a></li>
               <li><a href="#common-mistakes-when-moving-off-shopify">Common mistakes when moving off Shopify</a></li>
               <li><a href="#after-the-move">After the move</a></li>
+              <li><a href="#quick-check-test-your-redirects-from-the-command-line">Quick check: test your redirects from the command line</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -305,6 +307,15 @@ Target:  https://example.com/products/$1/</code></pre>
 <h2 id="after-the-move">After the move</h2>
 <p>For the first weeks, check Search Console for 404 errors and fix them with redirects, compare traffic and orders for your top products with the weeks before the move, and watch the gateway dashboard for failed payments. Expect some ranking movement while Google recrawls the store. <a href="/blog/woocommerce-seo-guide/">The WooCommerce SEO guide</a> covers what to improve once things settle.</p>
 
+<h2 id="quick-check-test-your-redirects-from-the-command-line">Quick check: test your redirects from the command line</h2>
+<p>After cutover, test a few old Shopify addresses yourself instead of trusting the redirect plugin's list. In a terminal, run:</p>
+<pre><code>curl -sI https://yourstore.in/products/old-product-handle | grep -iE "^(HTTP|location)"
+curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|location)"</code></pre>
+<p>Each should show <code>301</code> and a <code>location</code> pointing at the matching WooCommerce product or category, not the home page. Test a product, a collection, a collection-scoped product URL, a blog post and a page. Then take the Shopify URL list you saved during the audit and spot-check twenty of them the same way.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the store has many products with variants, years of orders, or rankings on product and collection pages, or when you need Indian payments, COD, shipping and GST invoices working on day one. Through <a href="/woocommerce-developer/">WooCommerce development</a>, I rebuild the store on staging, move products, customers and orders where Shopify's exports allow, and redirect your old URLs, after a free review and a fixed quote. For a wider move plan, see <a href="/wordpress-migration/">website migration</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Can I migrate from Shopify to WooCommerce without losing SEO?</h3>
 <p>You can protect most of it by keeping URLs where possible, redirecting every changed URL to its closest match with a 301, carrying over titles and descriptions, and monitoring Search Console after the switch. Some movement while Google recrawls is normal.</p>
@@ -318,8 +329,6 @@ Target:  https://example.com/products/$1/</code></pre>
 <p>It depends on the number of products and variants, how closely the design must match, how many apps need replacing and whether past orders move too. Plan the cutover for a quiet sales period rather than a fixed date.</p>
 <h3>Should I cancel Shopify straight after the switch?</h3>
 <p>No. Keep it for a week or two, password-protected, so you can check anything missed, and export everything you need before closing it.</p>
-
-<p>Planning a move from Shopify? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I can rebuild your store on WooCommerce, move products, customers and orders where Shopify's exports allow, set up Indian payments, COD, shipping and GST invoices, and redirect your old URLs. Send me your store address and roughly how many products you have for a free review and a fixed quote.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -366,6 +375,8 @@ Target:  https://example.com/products/$1/</code></pre>
               <li><a href="#how-long-a-shopify-to-woocommerce-migration-takes">How long a Shopify to WooCommerce migration takes</a></li>
               <li><a href="#common-mistakes-when-moving-off-shopify">Common mistakes when moving off Shopify</a></li>
               <li><a href="#after-the-move">After the move</a></li>
+              <li><a href="#quick-check-test-your-redirects-from-the-command-line">Quick check: test your redirects from the command line</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -394,7 +405,7 @@ Target:  https://example.com/products/$1/</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/migrate-woocommerce-to-shopify/"><img class="post-card-img" src="/assets/og/blog-migrate-woocommerce-to-shopify.webp" alt="How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover</h3><p>Move a WooCommerce store to Shopify step by step: export and import products and customers, bring orders across, map URLs to 301 redirects and plan the cutover.</p><span class="post-card-meta">25 October 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/migrate-woocommerce-to-shopify/"><img class="post-card-img" src="/assets/og/blog-migrate-woocommerce-to-shopify.webp" alt="How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover</h3><p>How to migrate WooCommerce to Shopify: export and clean data, import products and customers, map URLs with 301 redirects, check SEO and cut over safely.</p><span class="post-card-meta">25 October 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-vs-shopify-india/"><img class="post-card-img" src="/assets/og/blog-woocommerce-vs-shopify-india.webp" alt="WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores</h3><p>WooCommerce vs Shopify for Indian stores: running costs, transaction fees, Razorpay and UPI, GST invoices, COD, Shiprocket, apps vs plugins and ownership.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-store-launch-checklist/"><img class="post-card-img" src="/assets/og/blog-woocommerce-store-launch-checklist.webp" alt="WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps</h3><p>A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
         </div>
@@ -501,7 +512,6 @@ Target:  https://example.com/products/$1/</code></pre>
             <li><a href="/#process">Process</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
             <li><a href="/wordpress-glossary/">Glossary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

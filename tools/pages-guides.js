@@ -614,7 +614,7 @@ module.exports = {
 </ul>
 <p><a href="/blog/how-long-to-build-wordpress-website/">How long a WordPress website takes</a> gives typical ranges by type of site.</p>
 <h2>What it costs</h2>
-<p>I do not publish one price, because a five-page site on an adapted theme and a custom-designed catalogue are very different jobs. You get a fixed quote after a free review. The price moves with the number of unique templates, whether the design is custom, the features and integrations, extra languages, how much content help you need, and whether an old site has to be migrated. <a href="/blog/wordpress-website-cost-india/">What a WordPress website costs in India</a> breaks these down, the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate, and <a href="/blog/compare-website-quotes/">how to compare website quotes</a> helps if you are weighing several.</p>
+<p>I do not publish one price, because a five-page site on an adapted theme and a custom-designed catalogue are very different jobs. You get a fixed quote after a free review. The price moves with the number of unique templates, whether the design is custom, the features and integrations, extra languages, how much content help you need, and whether an old site has to be migrated. <a href="/blog/wordpress-website-cost-india/">What a WordPress website costs in India</a> breaks these down and <a href="/blog/compare-website-quotes/">how to compare website quotes</a> helps if you are weighing several.</p>
 <h2>Who it is for</h2>
 <ul>
 <li>Businesses getting their first proper website, or replacing a DIY site that no longer represents them.</li>

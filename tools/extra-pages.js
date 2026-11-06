@@ -165,23 +165,6 @@ const calculatorScript = `
 
 module.exports = [
   {
-    slug: 'website-cost-calculator',
-    crumb: 'Website Cost Calculator',
-    title: 'Website Cost Calculator India: Estimate Your WordPress Site | Samverse',
-    description: 'Free website cost calculator for India. Choose your website type, pages and features to get an instant estimate for a WordPress site or WooCommerce store.',
-    eyebrow: 'Free tool',
-    h1: 'Website <span class="grad">cost calculator</span>',
-    lead: 'Get an instant estimate for your WordPress website or online store. Pick what you need, and when you\'re ready, get an exact fixed quote on WhatsApp.',
-    main: calculatorMain,
-    script: calculatorScript,
-    priority: '0.9',
-    schema: url => ({
-      '@type': 'WebApplication', name: 'Website Cost Calculator (India)', url, applicationCategory: 'BusinessApplication',
-      operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
-      creator: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
-    }),
-  },
-  {
     slug: 'about',
     crumb: 'About',
     title: 'About Samverse: WordPress and Shopify Developer, Pune',

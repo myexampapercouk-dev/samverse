@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WooCommerce Orders Not Showing? How to Fix It | Samverse</title>
-  <meta name="description" content="WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.">
+  <meta name="description" content="WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/woocommerce-orders-not-showing-fix/">
   <meta property="og:title" content="WooCommerce Orders Not Showing? How to Fix It | Samverse">
-  <meta property="og:description" content="WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.">
+  <meta property="og:description" content="WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-woocommerce-orders-not-showing-fix.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/woocommerce-orders-not-showing-fix/#article",
       "headline": "WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails",
-      "description": "WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.",
+      "description": "WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-orders-not-showing-fix/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-orders-not-showing-fix.png",
       "articleSection": "E-commerce",
@@ -130,12 +130,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/ecommerce/">E-commerce</a></nav>
           <a class="post-cat" href="/blog/topic/ecommerce/">E-commerce</a>
           <h1>WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails</h1>
-          <p class="post-dek">WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.</p>
+          <p class="post-dek">WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Orders%20Not%20Showing%3F%20Missing%20Orders%2C%20Paid-but-No-Order%20and%20Missing%20Emails%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-orders-not-showing-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,7 +164,8 @@
               <li><a href="#scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</a></li>
               <li><a href="#woocommerce-orders-not-showing-after-a-migration-restore-or-update">WooCommerce orders not showing after a migration, restore or update</a></li>
               <li><a href="#preventing-missing-orders">Preventing missing orders</a></li>
-              <li><a href="#getting-help">Getting help</a></li>
+              <li><a href="#quick-check-the-gateway-log-and-order-storage-setting">Quick check: the gateway log and order storage setting</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -275,9 +276,14 @@
 <li>Use SMTP and an email log.</li>
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
-<h2 id="getting-help">Getting help</h2>
-<p>Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly. You can also <a href="/wordpress-shopify-developer-india/">hire a WooCommerce developer in India</a> for ongoing <a href="/wordpress-maintenance/">store maintenance</a>.</p>
 <p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
+<h2 id="quick-check-the-gateway-log-and-order-storage-setting">Quick check: the gateway log and order storage setting</h2>
+<p>Two screens answer most "paid but no order" cases. First, go to <strong>WooCommerce &gt; Status &gt; Logs</strong> and pick the log for your payment gateway (for example a Razorpay or PayU log) for the date of the missing order. Look for webhook or callback errors around the payment time, then compare it with the webhook section of your gateway's dashboard, which shows whether each notification reached your site and what response it got.</p>
+<p>Second, open <strong>WooCommerce &gt; Settings &gt; Advanced &gt; Features</strong> and note which order storage is active and whether compatibility mode (sync) is on. If you switched storage recently, orders created during the switch are the first ones to check.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when paid orders are missing, when orders disappear after a migration or update, or when you cannot tell whether the problem is the gateway, a plugin or the server. Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly, and <a href="/wordpress-maintenance/">store maintenance</a> keeps an eye on it afterwards.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why are WooCommerce orders not showing in my dashboard?</h3>
 <p>Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first.</p>
@@ -291,7 +297,6 @@
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
 <h3>Why are WooCommerce orders showing as pending payment?</h3>
 <p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
-<p>Orders going missing? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find out why and stop it happening again.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -338,7 +343,8 @@
               <li><a href="#scheduled-tasks-and-stuck-statuses">Scheduled tasks and stuck statuses</a></li>
               <li><a href="#woocommerce-orders-not-showing-after-a-migration-restore-or-update">WooCommerce orders not showing after a migration, restore or update</a></li>
               <li><a href="#preventing-missing-orders">Preventing missing orders</a></li>
-              <li><a href="#getting-help">Getting help</a></li>
+              <li><a href="#quick-check-the-gateway-log-and-order-storage-setting">Quick check: the gateway log and order storage setting</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -473,7 +479,6 @@
             <li><a href="/#process">Process</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/website-cost-calculator/">Cost Calculator</a></li>
             <li><a href="/wordpress-glossary/">Glossary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

@@ -5,21 +5,15 @@
 module.exports = [
   {
     slug: 'wordpress-website-cost-india',
-    seoTitle: 'WordPress Plans, Pricing and Website Cost in India',
+    seoTitle: "WordPress Website Cost in India: Plans and Pricing",
     title: 'WordPress Plans and Pricing: How Much Does a WordPress Website Cost in India? (2026 Guide)',
-    description: 'WordPress plans and pricing explained for India: WordPress.com plans vs free WordPress.org, build costs, yearly domain and hosting, and how to get a quote.',
+    description: "What a WordPress website costs in India: free WordPress.org vs WordPress.com plans, build cost, yearly domain and hosting, and how to get a fixed quote.",
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>WordPress plans are the paid hosting tiers sold by WordPress.com, but most Indian business websites don't need one: the WordPress.org software is free, and what you actually pay for is a domain, hosting and the build. For most small businesses in India, that means roughly ₹15,000 to ₹40,000 to build a professional WordPress website, plus a few thousand rupees a year for domain and hosting.</p>
-<p>"How much is WordPress?" is the first question almost every client asks, and the honest answer is: it depends on what the website needs to do. This guide breaks down WordPress pricing in India, both the one-time build and the yearly running costs, so you can budget properly and compare quotes with confidence.</p>
-
-<h2>The short answer</h2>
-<p>For most small businesses in India, a professional WordPress website costs between ₹15,000 and ₹40,000, plus a few thousand rupees a year for domain and hosting. Online stores and larger sites cost more. Focus on value, not the lowest price: a fast, mobile-friendly website that brings in enquiries pays for itself quickly.</p>
-<p>The rest of this guide explains where that money goes, what moves a project up or down the range, and what you'll keep paying every year.</p>
-
 <h2>Is WordPress free? WordPress pricing and plans explained</h2>
 <p>The WordPress software itself (from WordPress.org) is free and open source: there's no licence fee to use it, however big your site gets. What you pay for is everything around it:</p>
 <ul>
@@ -138,7 +132,6 @@ module.exports = [
   <li>Your deadline and budget range</li>
 </ol>
 <p>A clear brief gets you a clear price, and avoids surprises halfway through the project.</p>
-<p>Want a quick ballpark first? Try the free <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
 <p>Ready to request quotes? Use the <a href="/blog/website-brief-template/">website brief template</a> so every developer quotes on the same scope.</p>
 
@@ -175,6 +168,17 @@ module.exports = [
 <li>What happens, and what does it cost, if I need changes after launch?</li>
 <li>Is maintenance included, optional, or not offered?</li>
 </ul>
+<h2>Quick check: what will you pay at renewal?</h2>
+<p>Before you compare quotes, find out what you already pay and when it renews. Two checks take five minutes:</p>
+<ol>
+  <li><strong>Domain:</strong> run <code>whois yourdomain.in</code> in a terminal (or use your registrar's lookup page) and note the registrar and the expiry date. If the domain sits in a past developer's account rather than yours, fix that before anything else.</li>
+  <li><strong>Hosting:</strong> in your hosting panel, open the billing or services page and read the <em>renewal</em> price for your plan, not the first-term offer. Renewal is the number to budget every year.</li>
+</ol>
+<p>Write both in the yearly ledger above. A quote that leaves out renewals is not the full cost of the website.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the site has to bring in enquiries or sales, when you need payments, bookings or a store, or when you want a fixed price instead of an open-ended hourly bill. Through <a href="/wordpress-website-development/">WordPress website development</a> you send your page list, a few sites you like and the features you need, and get a written scope and a fixed quote with the domain, hosting and licences in your own name. For a store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How much does a WordPress domain cost in India?</h3>
 <p>A .com or .in domain usually costs about ₹500 to ₹1,200 a year, depending on the registrar and any first-year offer. Check the renewal price, and register the domain in your business's name so you always control it.</p>
@@ -188,8 +192,6 @@ module.exports = [
 <p>The WooCommerce plugin is free, but a store takes more work to build than a brochure site: products, payments, shipping, taxes and order emails all need setting up and testing. Payment gateways charge transaction fees and some extensions have yearly licences, so check current terms with each provider.</p>
 <h3>Is maintenance really necessary?</h3>
 <p>It's optional, but someone needs to update WordPress, plugins and themes, take backups and check the site regularly. If you don't do it yourself, a maintenance plan usually costs far less than cleaning up a hacked or broken site.</p>
-
-<p>Want a fixed quote for your WordPress website? Send me your page list, a few sites you like and the features you need, and I'll tell you exactly what it will cost and what's included. See <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -2816,11 +2818,11 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'migrate-wix-to-wordpress',
-    seoTitle: 'How to Migrate From Wix to WordPress Without Losing Traffic',
+    seoTitle: "Migrate Wix to WordPress Without Losing Traffic",
     title: 'How to Move From Wix to WordPress Step by Step: Content, Blog Posts, Images, URL Redirects, Domain and Cutover',
-    description: 'Migrate from Wix to WordPress step by step: what you can export, rebuilding the design, moving posts and images, 301 redirects, the domain and cutover.',
+    description: "How to migrate Wix to WordPress step by step: audit and export, rebuild on staging, move blog posts and images, 301 redirect Wix URLs, then switch the domain.",
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -2932,6 +2934,15 @@ Target:  https://example.com/$1/</code></pre>
 
 <p>For the basics of domains, DNS and SSL, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
 
+<h2>Quick check: test old Wix URLs after launch</h2>
+<p>Wix blog posts live under <code>/post/</code> and many product pages under <code>/product-page/</code>, so these are the addresses most likely to break. Once the domain points at WordPress, test a few from a terminal:</p>
+<pre><code>curl -sI https://example.com/post/old-post-slug | grep -iE "^(HTTP|location)"
+curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|location)"</code></pre>
+<p>Each should return <code>301</code> with a <code>location</code> pointing at the matching new page. If you see 404, check the rule in your redirect plugin; if you see 302, change it to a permanent 301. A week later, open <strong>Indexing &gt; Pages</strong> in Search Console and check the "Not found (404)" list for any Wix paths you missed.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the Wix site has many blog posts, a store or bookings, or rankings you cannot afford to lose. My <a href="/wordpress-migration/">website migration</a> service rebuilds the site on WordPress staging, maps and redirects every old URL, handles the domain, SSL and email records, and keeps the Wix site live until the new one is tested. Send your website address for a free review and a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Can I export my Wix site to WordPress?</h3>
 <p>Not as a complete site. Wix doesn't export its design or a file you can install on WordPress. Text, images, blog posts and products can be carried across, and the design is rebuilt.</p>
@@ -2943,8 +2954,6 @@ Target:  https://example.com/$1/</code></pre>
 <p>They can usually be imported from the blog's RSS feed or with a migration tool. Check that every post arrived, download images into WordPress, and redirect the old /post/ URLs or keep the same pattern.</p>
 <h3>Should I cancel my Wix plan before moving?</h3>
 <p>No. Keep it until the new site has been live and checked for a week or two, so you still have access to the old content if something was missed.</p>
-
-<p>Planning a move from Wix and want it done without losing content or rankings? My <a href="/wordpress-migration/">website migration</a> service rebuilds the site on WordPress staging, maps and redirects every old URL, handles the domain, SSL and email records, and keeps your Wix site live until the new one is tested. Send me your website address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -4894,11 +4903,11 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'website-maintenance-cost-india',
-    seoTitle: 'Website Maintenance Cost in India: Monthly and Yearly Costs',
+    seoTitle: "Website Maintenance Cost in India: Monthly and Yearly",
     title: 'Website Maintenance Cost in India: Monthly Plans, Yearly Running Costs and What\'s Included',
-    description: 'Website maintenance cost in India: typical monthly plan charges, yearly WordPress running costs, what packages include, what costs extra and how to choose.',
+    description: "Website maintenance cost in India: what monthly plans and AMCs include, yearly domain and hosting costs, what costs extra, and how to choose a provider.",
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -5028,6 +5037,13 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <li>Ask for a sample monthly report.</li>
 </ol>
 <p><a href="/blog/choose-wordpress-maintenance-provider/">How to choose a WordPress maintenance provider</a> and the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> help you compare. To see what a plan from me covers, visit <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or see the full cost of building a site in <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
+
+<h2>Quick check: how much maintenance does your site need?</h2>
+<p>Before you compare maintenance packages, measure your own site. In wp-admin, open <strong>Dashboard &gt; Updates</strong> and count the pending plugin, theme and core updates, then open <strong>Tools &gt; Site Health &gt; Info</strong> and note the PHP version and the number of active plugins. With SSH access, <code>wp plugin list --update=available</code> gives the same list in one line.</p>
+<p>A small brochure site with a handful of plugins and few pending updates needs a lighter plan than a WooCommerce store with dozens of plugins and months of skipped updates. Send these numbers with any quote request so every provider prices the same site, and ask each one how they test updates and how they would restore a backup.</p>
+
+<h2>When to get help</h2>
+<p>Get help when updates have been skipped for months, when the site takes orders or enquiries you cannot afford to lose, or when nobody on the team has time to check backups and security each month. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers tested updates with a backup first, uptime and security monitoring, small content changes and a monthly report, with hosting, domain and licences kept in your name. Send your website address and the numbers from the check above for a fixed monthly quote.</p>
 
 <h2>FAQs</h2>
 <h3>What are website maintenance charges in India?</h3>
@@ -5919,7 +5935,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h3>Can listing owners update their own listings?</h3>
 <p>Yes. Most directory themes and plugins offer front-end dashboards where owners register, claim and edit listings, usually with approval by you before changes go live.</p>
 <h3>How much does a directory website cost?</h3>
-<p>It depends on the number of listing types and fields, search and map features, accounts, payments and languages. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range, and a fixed quote follows a review of your plan.</p>
+<p>It depends on the number of listing types and fields, search and map features, accounts, payments and languages. A fixed quote follows a review of your plan.</p>
 
 <p>Planning a directory of temples, members, projects or local services? I can plan the data model and search routes with you and build it on WordPress, as I did for Our Temples; see <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>. For an existing directory that Google isn't indexing, start with <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
@@ -5965,7 +5981,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ul>
 
 <h2>Should you ask for details at all?</h2>
-<p>Not every useful tool needs a form in front of it. A calculator or self-assessment that shows its result straight away is often a better first step, with an optional "email me a copy" or "get an exact quote" afterwards. On <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's website</a>, a ten-question stress and anxiety score shows its result without asking for contact details, and the consultation page then books through WhatsApp with the first message already written. The <a href="/website-cost-calculator/">website cost calculator</a> on this site works the same way: the price range updates as you choose, and a button sends your selection on WhatsApp if you want an exact quote.</p>
+<p>Not every useful tool needs a form in front of it. A calculator or self-assessment that shows its result straight away is often a better first step, with an optional "email me a copy" or "get an exact quote" afterwards. On <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's website</a>, a ten-question stress and anxiety score shows its result without asking for contact details, and the consultation page then books through WhatsApp with the first message already written.</p>
 <p>Ask for details first when the resource has real substance, such as a detailed guide, a catalogue or a class, and when following up is genuinely useful to the person. <a href="/blog/website-calculators-lead-generation/">Website calculators for lead generation</a> covers that choice for calculators in more depth.</p>
 
 <h2>Email or WhatsApp?</h2>
@@ -7014,7 +7030,7 @@ Main contact person and best time to reach:</code></pre>
 <tr><td>Data migration</td><td>Moving old posts, products or customers needs mapping and checks</td><td>What moves, from which platform, and how many items</td></tr>
 </tbody>
 </table>
-<p>For more on how these factors turn into a price, read <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and <a href="/blog/wordpress-website-cost-india/">hidden website costs</a>, or get a rough range from the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>For more on how these factors turn into a price, read <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and <a href="/blog/wordpress-website-cost-india/">hidden website costs</a>.</p>
 
 <h2>Extra sections for redesigns, stores and agencies</h2>
 <p><strong>Redesigns:</strong> add your current traffic sources, top pages from Google Search Console, and what does not work on the current site. Note that existing URLs and rankings must be protected; see <a href="/blog/redesign-website-without-losing-rankings/">redesign without losing rankings</a>.</p>
@@ -9957,7 +9973,7 @@ site:example.com/blog/ "net metering"</code></pre>
 <li>Ad spend that sends traffic to the site</li>
 <li>Staff time spent handling website enquiries, if significant</li>
 </ul>
-<p><a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> lists what goes into the build cost, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a starting estimate.</p>
+<p><a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> lists what goes into the build cost.</p>
 
 <h2>Step 7: Calculate ROI and cost per lead</h2>
 <p>With the lead sheet and costs in place, calculate three numbers each month or quarter:</p>
@@ -14337,11 +14353,11 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
   },
   {
     slug: 'common-wordpress-errors-fixes',
-    seoTitle: 'Common WordPress Errors and How to Fix Them: Full List',
+    seoTitle: "Common WordPress Errors and How to Fix Them",
     title: 'Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start',
-    description: 'Common WordPress errors explained: critical error, white screen, 500, database connection, memory, 403, 404 and redirect loops, with safe first fixes.',
+    description: "Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.",
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
@@ -14453,6 +14469,13 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <p>Warnings caused by a hack? See <a href="/blog/remove-malware-wordpress-step-by-step/">removing WordPress malware step by step</a>.</p>
 
+<h2>Quick check: the two screens to open first</h2>
+<p>Whatever the error, two screens usually tell you where to start. If wp-admin loads, open <strong>Tools &gt; Site Health &gt; Info</strong> and expand <strong>Server</strong> and <strong>WordPress Constants</strong>: you will see the PHP version, memory limit and maximum upload size, which explain most memory, upload and white-screen errors. If wp-admin does not load, use the link in the recovery mode email WordPress sends to the admin address, or over SSH run <code>wp plugin list --status=active --skip-plugins --skip-themes</code> to see what is running.</p>
+<p>Note the exact error text and the time it started before you change anything; it is the most useful thing to give a developer or your host.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the site is down and takes orders or enquiries, when the error returns after each fix, or when the logs point to the server and the host will not help. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix, and <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update and monitor the site, so most of these errors are caught early.</p>
+
 <h2>FAQs</h2>
 <h3>What is the most common WordPress error?</h3>
 <p>The critical error and its relatives, the white screen and the 500 error, are among the most common. All three usually come down to a plugin or theme failing after an update or a PHP version change.</p>
@@ -14464,17 +14487,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>A short outage usually doesn't. If Google keeps getting server errors for days, it slows down crawling and can eventually drop affected pages from results. Fix errors quickly, then check the Pages report in Search Console.</p>
 <h3>Why do WordPress errors so often appear after updates?</h3>
 <p>Because an update changes code that other plugins, your theme or your PHP version depend on. Updating one thing at a time, after a backup, means you know exactly what to roll back.</p>
-
-<p>Most of these errors are preventable with careful updates, backups and monitoring, and quick to fix when someone knows the site. If you'd like that handled every month, see my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 `,
   },
   {
     slug: 'ssl-certificate-errors-fix',
-    seoTitle: 'SSL Certificate Errors: What They Mean and How to Fix Them',
+    seoTitle: "SSL Certificate Errors: What They Mean and How to Fix",
     title: 'SSL Certificate Errors Explained: "Not Secure", "Connection Not Private" and How to Fix Them',
-    description: 'SSL certificate errors explained: what Not Secure, connection not private and NET::ERR_CERT warnings mean, and how to fix each one on a WordPress site.',
+    description: "SSL certificate errors explained: \"Not secure\", \"Your connection is not private\", expired and name-mismatch certificates, mixed content, and how to fix each.",
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-migration', 'wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -14567,6 +14588,14 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
   <li>Keep a note of where your domain, DNS and hosting are managed; see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a></li>
 </ul>
 
+<h2>Quick check: read the certificate from the command line</h2>
+<p>A terminal shows exactly which certificate your server is sending, without browser caching getting in the way:</p>
+<pre><code>openssl s_client -connect example.com:443 -servername example.com &lt;/dev/null 2&gt;/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName</code></pre>
+<p>Check three things: <code>notAfter</code> is in the future, the <code>subjectAltName</code> list includes both <code>example.com</code> and <code>www.example.com</code>, and the issuer is a public authority such as Let's Encrypt rather than a self-signed or hosting placeholder certificate. Run it for the www and non-www names; if Cloudflare is in front, you are seeing Cloudflare's certificate, not your host's.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the warning stays after reissuing the certificate, when the site loops between http and https, or when the problem started after a host or domain change. I can find the cause, fix the certificate and redirects, and clean up mixed content without breaking the site. See <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care, or <a href="/wordpress-migration/">WordPress migration</a> if the problem started after a move.</p>
+
 <h2>FAQs</h2>
 <h3>What causes SSL certificate errors?</h3>
 <p>The usual causes are a missing certificate, an expired one that failed to renew, a certificate that doesn't cover the exact domain name, an untrusted or incomplete certificate chain, and pages that load files over http. On the visitor's side, a wrong clock or antivirus software can also trigger warnings.</p>
@@ -14580,8 +14609,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <p>For most business websites and online stores, yes. A free Let's Encrypt certificate encrypts the connection just as well as a paid one. Paid certificates add things like business validation and a warranty, but browsers no longer show a special green bar for them, so visitors see the same padlock.</p>
 <h3>How long does SSL take to start working?</h3>
 <p>Issuing a certificate usually takes minutes once the domain points to your host. If you've just changed DNS, it can take longer until the change has spread, and browsers may cache the old error for a while, so test in a private window.</p>
-
-<p>Still seeing a certificate warning, or not sure which setting is behind it? I can find the cause, fix the certificate and redirects, and clean up mixed content without breaking the site. See <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care, or <a href="/wordpress-migration/">WordPress migration</a> if the problem started after a move.</p>
 `,
   },
   {
@@ -18310,7 +18337,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Low quotes that quietly drop these items are the main risk of shopping on price alone; <a href="/blog/cheap-website-risks/">the real risks of very cheap websites</a> explains what tends to go missing.</p>
 
 <h2>Website redesign cost on a tight budget</h2>
-<p>A redesign is priced much like a new build: by the number of unique templates, whether the design is custom or an adapted theme, the features, how much content work is needed and whether the platform changes. For reference, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts a professionally built small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. A phased redesign spreads that cost over time, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own scope.</p>
+<p>A redesign is priced much like a new build: by the number of unique templates, whether the design is custom or an adapted theme, the features, how much content work is needed and whether the platform changes. For reference, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts a professionally built small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. A phased redesign spreads that cost over time.</p>
 <p>If you get several quotes, send everyone the same brief and compare the scope line by line; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> shows what to check.</p>
 
 <h2>FAQs</h2>
@@ -19375,11 +19402,11 @@ Target:  https://example.com/$1/</code></pre>
   },
   {
     slug: 'migrate-shopify-to-woocommerce',
-    seoTitle: 'Migrate Shopify to WooCommerce: Step-by-Step Guide for India',
+    seoTitle: "Migrate Shopify to WooCommerce: Step-by-Step for India",
     title: 'How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover',
-    description: 'How to migrate Shopify to WooCommerce: exporting data, rebuilding on staging, keeping /products/ URLs, 301 redirects, Indian payments, GST and cutover.',
+    description: "How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.",
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-migration', 'shopify-developer'],
     body: `
@@ -19507,6 +19534,15 @@ Target:  https://example.com/products/$1/</code></pre>
 <h2>After the move</h2>
 <p>For the first weeks, check Search Console for 404 errors and fix them with redirects, compare traffic and orders for your top products with the weeks before the move, and watch the gateway dashboard for failed payments. Expect some ranking movement while Google recrawls the store. <a href="/blog/woocommerce-seo-guide/">The WooCommerce SEO guide</a> covers what to improve once things settle.</p>
 
+<h2>Quick check: test your redirects from the command line</h2>
+<p>After cutover, test a few old Shopify addresses yourself instead of trusting the redirect plugin's list. In a terminal, run:</p>
+<pre><code>curl -sI https://yourstore.in/products/old-product-handle | grep -iE "^(HTTP|location)"
+curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|location)"</code></pre>
+<p>Each should show <code>301</code> and a <code>location</code> pointing at the matching WooCommerce product or category, not the home page. Test a product, a collection, a collection-scoped product URL, a blog post and a page. Then take the Shopify URL list you saved during the audit and spot-check twenty of them the same way.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the store has many products with variants, years of orders, or rankings on product and collection pages, or when you need Indian payments, COD, shipping and GST invoices working on day one. Through <a href="/woocommerce-developer/">WooCommerce development</a>, I rebuild the store on staging, move products, customers and orders where Shopify's exports allow, and redirect your old URLs, after a free review and a fixed quote. For a wider move plan, see <a href="/wordpress-migration/">website migration</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can I migrate from Shopify to WooCommerce without losing SEO?</h3>
 <p>You can protect most of it by keeping URLs where possible, redirecting every changed URL to its closest match with a 301, carrying over titles and descriptions, and monitoring Search Console after the switch. Some movement while Google recrawls is normal.</p>
@@ -19520,8 +19556,6 @@ Target:  https://example.com/products/$1/</code></pre>
 <p>It depends on the number of products and variants, how closely the design must match, how many apps need replacing and whether past orders move too. Plan the cutover for a quiet sales period rather than a fixed date.</p>
 <h3>Should I cancel Shopify straight after the switch?</h3>
 <p>No. Keep it for a week or two, password-protected, so you can check anything missed, and export everything you need before closing it.</p>
-
-<p>Planning a move from Shopify? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I can rebuild your store on WooCommerce, move products, customers and orders where Shopify's exports allow, set up Indian payments, COD, shipping and GST invoices, and redirect your old URLs. Send me your store address and roughly how many products you have for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -20788,7 +20822,7 @@ Disallow: /</code></pre>
 <h2>Create resources people want to link to</h2>
 <p>People link to things that save them time: a calculator, a checklist, a clear local guide or a well-explained process. Ideas that suit small businesses:</p>
 <ul>
-  <li><strong>Calculators:</strong> <a href="/website-for-solar-and-power-companies/">a solar savings estimate</a>, a paint quantity calculator or a project cost estimator; this site's <a href="/website-cost-calculator/">website cost calculator</a> is one example of the format</li>
+  <li><strong>Calculators:</strong> <a href="/website-for-solar-and-power-companies/">a solar savings estimate</a>, a paint quantity calculator or a project cost estimator</li>
   <li><strong>Checklists:</strong> a monsoon home maintenance checklist, a new clinic setup checklist, a school admission document list</li>
   <li><strong>Local guides:</strong> permits and approvals explained for your city, written carefully and kept up to date</li>
   <li><strong>Data from your own work:</strong> aggregated and anonymised, such as the most common repair issues by season, with the period and sample stated honestly</li>
@@ -21553,7 +21587,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li><strong>Every year:</strong> a domain at about ₹500 to ₹1,200 and hosting at roughly ₹2,500 to ₹15,000, depending on the plan.</li>
   <li><strong>Optional:</strong> a maintenance plan, typically ₹1,500 to ₹6,000 a month from a freelancer, or nothing if you handle updates yourself.</li>
 </ul>
-<p>To keep costs down, start small, supply your own photos and product list, and choose a simple design on reliable hosting. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own mix of pages and features.</p>
+<p>To keep costs down, start small, supply your own photos and product list, and choose a simple design on reliable hosting.</p>
 
 <h2>Decision table: what should your shop do first?</h2>
 <table>
@@ -23804,7 +23838,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>On a one-page site, every visit is to the same URL, so page reports in Google Analytics say very little about what interested people. Track clicks on the jump menu, scroll depth, and form submissions, calls and WhatsApp clicks as key events, so you can see which sections lead to enquiries. On a multi-page site, page-level data shows which services people look at and which pages lead to enquiries. <a href="/blog/ga4-events-explained/">GA4 events explained</a> shows how to set up both.</p>
 
 <h2>Cost and upkeep</h2>
-<p>A one-page site is usually cheaper because there's one layout to design and less content to write. As a guide, the <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> puts a professionally built landing page at ₹5,000 to ₹15,000, a small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. Domain, hosting and upkeep are much the same either way. The bigger difference is your time: every extra page needs content, photos and someone to keep it current. The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own plan.</p>
+<p>A one-page site is usually cheaper because there's one layout to design and less content to write. As a guide, the <a href="/blog/wordpress-website-cost-india/">WordPress cost guide</a> puts a professionally built landing page at ₹5,000 to ₹15,000, a small business site of five to eight pages at ₹15,000 to ₹40,000, and a larger business or B2B site at ₹35,000 to ₹80,000. Domain, hosting and upkeep are much the same either way. The bigger difference is your time: every extra page needs content, photos and someone to keep it current.</p>
 
 <h2>Decision table</h2>
 <table>
@@ -25420,11 +25454,11 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'hire-developer-vs-diy-website',
-    seoTitle: 'Hire a Developer or Build Your Website Yourself?',
+    seoTitle: "Hire a Developer or Build Your Website Yourself?",
     title: 'Hire a Developer or Build Your Website Yourself? DIY Builders vs a Freelancer vs an Agency, Compared on Time, Skills, Cost and Risk',
-    description: 'Build your website yourself or hire a developer? DIY builders, freelancers and agencies compared on time, skills, cost and risk, with a decision table.',
+    description: "Hire a developer or build your website yourself? DIY builders vs a freelancer vs an agency compared on time, skills, cost and risk, with a decision table.",
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
@@ -25500,7 +25534,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li>How much help you need with content.</li>
   <li>Whether an old site has to be migrated, with redirects for its URLs.</li>
 </ul>
-<p>The <a href="/website-cost-calculator/">website cost calculator</a> gives a rough range for your own mix of pages and features.</p>
+<p></p>
 
 <h2>The risks on each side, and how to reduce them</h2>
 <table>
@@ -25552,6 +25586,18 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 
 <p>Not sure what you'd be paying for? See <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does</a> and <a href="/blog/web-designer-vs-web-developer/">designer vs developer</a>.</p>
 
+<h2>Quick check: test the site you built yourself</h2>
+<p>If you go the DIY route, run three tests before you call it finished:</p>
+<ol>
+  <li><strong>Mobile speed:</strong> paste the address into PageSpeed Insights (pagespeed.web.dev) and read the mobile result, not desktop.</li>
+  <li><strong>Enquiries:</strong> submit your own contact form from your phone on mobile data, and check the email arrives in the inbox, not spam. Tap the phone and WhatsApp buttons too.</li>
+  <li><strong>Google:</strong> add the site to Google Search Console, submit the sitemap, and use <strong>URL Inspection</strong> on the home page to confirm it can be indexed.</li>
+</ol>
+<p>If any of the three fails and you cannot fix it in an evening, that is usually the point where a developer saves money.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the website needs to bring in enquiries or sales, needs payments, bookings or a store, or already has rankings you cannot afford to lose. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a fixed quote after a free review, with every account in your name, or see <a href="/wordpress-website-development/">WordPress website development</a> for a complete site you can still edit yourself.</p>
+
 <h2>FAQs</h2>
 <h3>Can I build a WordPress website myself without coding?</h3>
 <p>Yes. Themes and page builders such as Elementor let you build pages visually. What takes longer to learn is the rest: hosting, email delivery, speed, security and SEO settings, which no builder fully handles for you.</p>
@@ -25563,8 +25609,6 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <p>Yes, and many businesses do. Keep the domain in your name, keep your content and photos organised, and if you're on a hosted builder, expect the design to be rebuilt rather than moved when you switch platforms.</p>
 <h3>Will I be able to edit a website a developer builds?</h3>
 <p>You should be. Ask before you hire how the site will be built and whether you'll be shown how to edit it. A site you can't change without paying someone each time is a warning sign.</p>
-
-<p>If your website needs to bring in enquiries and you'd rather spend your time on the business, <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a fixed quote after a free review, with every account in your name. For a full new site you can edit yourself, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -25769,7 +25813,6 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <p>This site uses ranges and a calculator rather than fixed prices, because website projects vary but still fall into typical bands:</p>
 <ul>
   <li><strong>The cost guide</strong> gives typical freelance market ranges in India for each type of site, such as ₹5,000 to ₹15,000 for a single landing page and ₹15,000 to ₹40,000 for a small business website of five to eight pages, with examples of where different projects land.</li>
-  <li><strong>The <a href="/website-cost-calculator/">website cost calculator</a></strong> lets visitors pick a landing page, business website, larger B2B site or WooCommerce store, set the number of pages, tick extras such as bookings, payments or multiple languages, and see a rupee range update as they go.</li>
   <li><strong>Both are labelled as a guide, not a quote.</strong> The calculator's button sends the selection on WhatsApp, so the conversation starts with a brief, and each use is recorded as an event in GA4.</li>
 </ul>
 
@@ -30682,11 +30725,11 @@ dig yourdomain.com +short</code></pre>
   },
   {
     slug: 'wordpress-admin-slow',
-    seoTitle: 'WordPress Admin Slow? Causes and Fixes for a Slow Dashboard',
+    seoTitle: "WordPress Admin Slow? Fix a Slow Dashboard",
     title: 'Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It',
-    description: 'WordPress admin slow but the site is fast? Find the cause with Query Monitor, then fix heavy plugins, Heartbeat, autoloaded data, cron jobs and weak hosting.',
+    description: "Why the WordPress admin dashboard is slow: heavy plugins, outside requests, autoloaded data, Heartbeat, WP-Cron and hosting limits, and how to fix each.",
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -30779,6 +30822,15 @@ LIMIT 20;</code></pre>
 </ul>
 <p>For the shop front end, see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 
+<h2>Quick check: overdue cron jobs and expired transients</h2>
+<p>A backlog of background tasks can make every admin screen crawl. Over SSH, run:</p>
+<pre><code>wp cron event list --fields=hook,next_run_relative,recurrence
+wp transient delete --expired</code></pre>
+<p>In the first list, look for many events whose next run is in the past, or hooks from plugins you have already removed: both mean WP-Cron is falling behind or running leftovers. The second command clears expired transients, which some plugins leave in the options table. On WooCommerce stores, also open <strong>Tools &gt; Scheduled Actions</strong> and check the Pending and Failed tabs for a large backlog.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the dashboard stays slow after the checks above, when editors time out while saving, or when a WooCommerce store's orders screen takes too long to load. I can profile the dashboard, find the plugin, query or server limit responsible, and fix it in tested steps. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress admin so slow when the site is fast?</h3>
 <p>Visitors get cached pages, but the dashboard is never cached, so every admin screen runs your plugins and database queries live. A heavy plugin, slow outside requests, large autoloaded data or limited hosting resources show up in wp-admin first.</p>
@@ -30792,17 +30844,15 @@ LIMIT 20;</code></pre>
 <p>Saving runs every plugin hooked into it, such as SEO analysis, cache purges and page builder processing, and very long posts with many blocks take longer. Check Query Monitor while saving, and look for a plugin that purges or rebuilds a lot on every save.</p>
 <h3>Is it safe to disable the Heartbeat API?</h3>
 <p>On the front end and the dashboard, slowing or disabling it is usually fine. In the post editor, keep it running, or you'll lose autosave and the warning when someone else is editing the same post.</p>
-
-<p>Still waiting for every admin screen to load? I can profile your dashboard, find the plugin, query or server limit responsible, and fix it in tested steps. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
     slug: 'deceptive-site-ahead-warning-fix',
-    seoTitle: 'Remove Deceptive Site Warning: Step-by-Step Fix for Chrome',
+    seoTitle: "Deceptive Site Ahead Warning: How to Remove It",
     title: '"Deceptive Site Ahead" Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It',
-    description: 'How to remove deceptive site warning screens in Chrome: find the flagged phishing pages in Search Console, clean the site, close the hole, request review.',
+    description: "Remove the \"Deceptive site ahead\" warning: find the phishing pages in Search Console, clean the site, close the way in and request a Google review.",
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
@@ -30906,6 +30956,13 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li><strong>Email:</strong> if the kit was also used to send phishing emails from your server, check your domain and server IP on a blacklist lookup tool such as MXToolbox.</li>
 </ul>
 
+<h2>Quick check: Google's Safe Browsing status</h2>
+<p>Search Console is the main tool, but Google's public Safe Browsing site status page is a fast second opinion and works for any domain. Open <code>transparencyreport.google.com/safe-browsing/search</code> and enter your domain. It shows whether Google currently considers the site unsafe and, in broad terms, why.</p>
+<p>Check it before you start, so you know the starting state, and again after Search Console reports your review was accepted. If Search Console says the issue is resolved but the status page still shows a warning, give it a day or two to update, then clear the browser cache and test in a private window before assuming the review failed.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you cannot find the phishing files, when the warning returns after a review, or when the same server sends email for your business. <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers finding the phishing pages, closing the way in and the Google review, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to secure and maintain the site afterwards.</p>
+
 <h2>FAQs</h2>
 <h3>How do I remove deceptive site warning from my website?</h3>
 <p>Find the flagged URLs in Search Console's Security issues report, delete the phishing pages and the backdoor or weak login that let them in, update everything and change passwords, then click Request Review. Chrome stops warning once Google confirms the site is clean.</p>
@@ -30917,7 +30974,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>If it appears in Pages or Posts, delete it and empty the trash. If it's a folder of files, as most phishing pages are, delete it through File Manager or SFTP. Then look for the backdoor or stolen password that let it in, or it will reappear.</p>
 <h3>Will the warning hurt my Google rankings?</h3>
 <p>While the warning is up, most visitors won't get past it, so you lose traffic and enquiries regardless of rankings. Once it's cleared, rankings usually recover as Google recrawls the clean site; see <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
-<p>Seeing the red screen on your site right now? <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers finding the phishing pages, closing the way in and the Google review, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to secure the site afterwards.</p>
 `,
   },
   {
@@ -31258,7 +31314,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     <tr><td>WooCommerce online store</td><td>₹30,000 to ₹90,000 or more</td></tr>
   </tbody>
 </table>
-<p>Domain, hosting and premium licences are extra, and are usually paid yearly. For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>Domain, hosting and premium licences are extra, and are usually paid yearly.</p>
 
 <p>If you are comparing hourly quotes from Indian developers, WordPress developer hourly rate in India explains what pushes rates up or down and what to ask before you agree.</p>
 
@@ -33138,17 +33194,16 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   },
   {
     slug: 'remove-malware-wordpress-step-by-step',
-    seoTitle: 'How to Remove Malware From WordPress (Step-by-Step)',
+    seoTitle: "How to Remove Malware From WordPress, Step by Step",
     title: 'How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide',
-    description: 'WordPress malware removal step by step: contain the hack, reset access, replace files, clean the database, remove backdoors and get Google warnings removed.',
+    description: "How to remove malware from WordPress step by step: contain, back up, reset access, scan, replace core and plugins, clean the database and clear Google warnings.",
     date: '2026-09-27',
-    updated: '2026-10-10',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
-<p>Cleaning a hacked WordPress site isn't just deleting one bad file. Attackers usually leave several ways back in, so a quick clean-up often gets reinfected within days. This is the step-by-step process I follow for WordPress malware cleanup, including the part many guides skip: getting Google's warnings removed afterwards.</p>
-<p>If you're not comfortable working with files and databases, use this guide to understand what a proper clean-up involves, and get help. A mistake in the wrong file can take the whole site offline.</p>
-
+<p>To remove malware from WordPress, contain the site, back it up, reset every password, replace WordPress core, plugins and themes with clean copies, then hunt down the backdoors in uploads, the database and scheduled tasks and close the hole the attacker used. Deleting one bad file is not enough: attackers usually leave several ways back in, so a quick clean-up often gets reinfected within days.</p>
+<p>This is the step-by-step process I follow, including the part many guides skip: getting Google's warnings removed afterwards. If you are not comfortable working with files and databases, use it to understand what a proper clean-up involves and get help, because a mistake in the wrong file can take the whole site offline.</p>
 <p>This guide is for doing the clean-up yourself. If you prefer to hand it over, my <a href="/wordpress-malware-removal/">WordPress malware removal service</a> takes care of the clean-up and hardens the site afterwards.</p>
 
 <h2>Before you start: clean or restore?</h2>
@@ -33284,6 +33339,15 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
   <li>Check Search Console and rescan weekly for the first month</li>
 </ul>
 
+<h2>Quick check: PHP files where none should be</h2>
+<p>The uploads folder should hold images and documents, not code. Over SSH, from the WordPress root, run:</p>
+<pre><code>find wp-content/uploads -type f -name "*.php"
+wp user list --role=administrator --fields=ID,user_login,user_email,user_registered</code></pre>
+<p>The first command should normally return nothing; a few security plugins drop an empty <code>index.php</code>, but any other PHP file in uploads is a strong sign of a backdoor. The second lists every administrator with the date they were added: an account you do not recognise, or one created around the time of the hack, should be removed once you have noted its details for your records.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the site keeps getting reinfected, when Google or your host has flagged it, when it takes payments, or when you are not sure which files are safe to delete. My <a href="/wordpress-malware-removal/">WordPress malware removal</a> service cleans the site, removes the backdoors, closes the entry point and prepares the Google review. To keep it updated and monitored afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
 <h2>FAQs</h2>
 
 <h3>How long does WordPress malware removal take?</h3>
@@ -33303,8 +33367,6 @@ SELECT option_name FROM wp_options WHERE option_value LIKE '%&lt;script%';</code
 
 <h3>Why did the malware come back after cleaning?</h3>
 <p>Usually a missed backdoor, an unpatched plugin, a password that wasn't changed, a malicious cron job or another infected site in the same hosting account.</p>
-
-<p>If you'd rather have it handled for you, I clean hacked WordPress sites, remove the backdoors behind the infection, close the entry point and help with the Google review. See <a href="/wordpress-malware-removal/">WordPress malware removal</a>, and to keep the site updated and monitored afterwards, <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -33479,11 +33541,11 @@ wp option get home</code></pre>
   },
   {
     slug: 'fix-japanese-keyword-seo-spam-hack',
-    seoTitle: 'Japanese Keyword Hack on WordPress: How to Find and Fix It',
+    seoTitle: "Japanese Keyword Hack on WordPress: How to Fix It",
     title: 'Japanese Keyword Hack and SEO Spam on WordPress: How to Find the Cloaked Pages, Clean Your Site and Clear Google Results',
-    description: 'Fix the Japanese keyword hack on WordPress: confirm cloaked spam in Search Console, remove hacker-added owners, delete the generator and clear spam URLs.',
+    description: "Fix the Japanese keyword hack on WordPress: find the cloaked spam pages, remove the generator and backdoors, return 410 for spam URLs and request a review.",
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
     body: `
@@ -33587,6 +33649,15 @@ RewriteRule ^spam-folder/ - [G,L]</code></pre>
 <p>If the Security issues report lists a problem, request a review once the whole site is clean. The process and what to write are covered in <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked" from Google</a>. Google's guidance has said reviews for spam hacks can take longer than other security reviews, sometimes weeks.</p>
 <p>Spam URLs drop out gradually as Google recrawls them, so a large hack can take weeks or months to clear completely. For the next few weeks, repeat your site: searches, watch spam URLs move to Not found (404) in the Pages report, recheck Users and permissions and Sitemaps, and look for newly modified files on the server. New spam means something was missed. Once it has stopped, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a> covers getting your real pages back to where they were.</p>
 
+<h2>Quick check: see what Googlebot sees</h2>
+<p>Cloaking code shows normal pages to you and spam to Google, often by checking the user agent. A quick terminal test compares the two versions of one URL:</p>
+<pre><code>curl -s https://yourdomain.com/ | grep -i "&lt;title"
+curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" https://yourdomain.com/ | grep -i "&lt;title"</code></pre>
+<p>If the second title is in Japanese or full of brand and discount keywords, the site is cloaking. Repeat it on one of the spam URLs from your site: search. A clean result does not prove the site is clean, because some cloaking also checks Google's IP addresses, so the URL Inspection live test in Search Console stays the final proof.</p>
+
+<h2>When to get help</h2>
+<p>Get help when spam pages keep coming back, when there are thousands of them in Google, or when you find an unknown owner in Search Console. My <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers SEO spam hacks: the generator code, cloaking in theme files, backdoors, unknown owners and sitemaps, and the review request. Once it is clean, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and security monitoring running every month.</p>
+
 <h2>FAQs</h2>
 <h3>What is the Japanese keyword hack?</h3>
 <p>An SEO spam hack that creates large numbers of Japanese pages on your domain, usually advertising counterfeit or discounted goods. The attacker uses your site's reputation in Google to rank them and sends searchers on to their own shops.</p>
@@ -33598,8 +33669,6 @@ RewriteRule ^spam-folder/ - [G,L]</code></pre>
 <p>It can: spam pages compete with your real ones, a "This site may be hacked" label reduces clicks, and injected content drags genuine pages down. Rankings usually recover once the site is clean and recrawled, though nobody can promise how quickly.</p>
 <h3>The spam came back after I deleted it. Why?</h3>
 <p>Usually a backdoor, an owner still verified in Search Console, a cron job that reinstalls the files, or another infected site in the same hosting account. Remove all of them at once, then change every password.</p>
-
-<p>Japanese or pharma pages showing under your domain right now? Send me a screenshot of the site: search and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Once it's clean, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and security monitoring running every month.</p>
 `,
   },
   {
@@ -33833,11 +33902,11 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
   },
   {
     slug: 'woocommerce-checkout-skimmer-malware',
-    seoTitle: 'WooCommerce Card Skimmer Malware: How to Find and Remove It',
+    seoTitle: "WooCommerce Card Skimmer Malware: Find and Remove It",
     title: 'WooCommerce Card Skimming Malware: How to Spot a Checkout Skimmer, Respond and Protect Customers',
-    description: 'WooCommerce checkout skimmer malware: how card skimmers hide, how to inspect your checkout scripts, what to tell customers and how a CSP helps prevent it.',
+    description: "How to spot a WooCommerce card skimmer on your checkout, what to do in the first hours, how to clean the store and protect customers with fewer scripts.",
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -33945,6 +34014,14 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
   <li>Turn on file-change alerts and repeat the logged-out checkout inspection every month</li>
 </ul>
 
+<h2>Quick check: list every script your checkout loads</h2>
+<p>Fetch the checkout as a logged-out visitor and list every external script it pulls in:</p>
+<pre><code>curl -s https://yourstore.in/checkout/ | grep -oiE "&lt;script[^&gt;]+src=[^&gt;]+" | sort -u</code></pre>
+<p>Go through the list line by line. You should recognise every domain: your own site, your payment gateway, and any analytics you deliberately added. An unfamiliar domain, especially one that imitates a well-known name, or a script loaded from an odd path inside your own uploads folder, needs investigating. Inline skimmers will not show up here, so also open the checkout in a private window, press F12, and in the <strong>Network</strong> tab watch for requests sent while you type in the card fields.</p>
+
+<h2>When to get help</h2>
+<p>Get help straight away if you find an unknown script, customers report card fraud after buying from you, or your gateway contacts you. My <a href="/wordpress-malware-removal/">WordPress malware removal</a> service checks the checkout, payment settings, admin users and order emails and ends with a test order. Card-data forensics is a separate specialist job, so I handle the technical cleanup and give you notes for your gateway. For a rebuilt, tested checkout, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I know if my WooCommerce checkout has a skimmer?</h3>
 <p>Customers reporting card fraud after buying from you is the most common sign. Inspect the checkout in a private window with the Network tab open, and look for scripts or requests to domains you don't recognise.</p>
@@ -33956,8 +34033,6 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 <p>Possibly. Indian rules on cyber incident reporting and personal data breaches may apply, and the timelines can be short. Get legal advice straight away rather than waiting until the cleanup is finished.</p>
 <h3>Should I take the whole store offline?</h3>
 <p>Pausing card payments or the checkout is usually enough to protect customers while you clean. Take the whole site offline if visitors are also being redirected or the infection is widespread.</p>
-
-<p>Building or rebuilding a store? Payment gateways and the checkout are set up and tested as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If you think your checkout has been skimmed, act today; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -34375,11 +34450,11 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'hosting-suspended-malware',
-    seoTitle: 'Hosting Account Suspended for Malware? How to Get It Back',
+    seoTitle: "Hosting Account Suspended for Malware? Get It Back",
     title: 'Hosting Account Suspended for Malware? What the Notice Means and How to Get Your Site Back Online',
-    description: 'Hosting account suspended for malware? What the notice means, how to get access, clean every site, get reinstated by your host and stop it happening again.',
+    description: "Hosting account suspended for malware? What the notice means, how to get temporary access, clean every site, close the way in and ask for reinstatement.",
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
@@ -34485,6 +34560,14 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Keep a recovery kit ready before anything goes wrong</h2>
 <p>A suspension is far easier to handle when a few things live outside the hosting account. Keep an off-server backup of files and database that is updated automatically, a note of your registrar and DNS logins, the host's support and abuse contact details, and the email address the account is registered to. Store a copy of your important email elsewhere if mail runs on the same hosting. With those in place, you can clean, restore or move the site the same day instead of waiting for the host to grant access.</p>
 
+<h2>Quick check: find code hiding in every site's uploads</h2>
+<p>Hosts suspend the whole account, so check every site in it, not just the main one. Over SSH, list PHP files inside any uploads folder in the account:</p>
+<pre><code>find ~ -path "*/wp-content/uploads/*" -type f -name "*.php" 2&gt;/dev/null</code></pre>
+<p>Uploads should not contain PHP, apart from an occasional empty <code>index.php</code>. Note each folder that shows up: an old test site or forgotten subdomain is often where the infection started. Compare the result with the file list in the host's scan report, and include both in your reinstatement request so the host can see every flagged file has been dealt with.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the account holds several sites, when the host's report lists dozens of files, when it was suspended before, or when email on the same hosting is down too. My <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a> service covers suspended accounts: I clean the sites and close the way in, and then you or I ask the host to review and reinstate the account. Send the host's notice to start.</p>
+
 <h2>FAQs</h2>
 <h3>Why did my hosting provider suspend my account for malware?</h3>
 <p>Because its scanner found malicious files, or someone reported spam or a phishing page coming from your account. Hosts suspend first to protect the server, its IP addresses and other customers, then work with you to clean it. It doesn't mean they think you did it deliberately.</p>
@@ -34498,23 +34581,20 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Only if you know the backup was taken before the infection began, and you also close the hole the attacker used. Otherwise the restored site still contains the backdoor, and the next scan or the next attack brings the suspension back.</p>
 <h3>Will a hosting suspension hurt my Google rankings?</h3>
 <p>A short suspension usually has little lasting effect, but a site that stays down for days, or that Google flags as hacked, can lose visibility. Clean it quickly, remove spam pages, and request a review in Search Console if there is a security warning.</p>
-
-<p>Account suspended and need it sorted? Send me the host's notice and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>.</p>
 `,
   },
   {
     slug: 'this-site-may-be-hacked-google',
-    seoTitle: '"This Site May Be Hacked" Google Warning: How to Remove It',
+    seoTitle: "\"This Site May Be Hacked\" Warning: How to Remove It",
     title: '"This Site May Be Hacked" Google Warning: How to Remove It Step by Step',
-    description: 'Remove the "This site may be hacked" label from Google: confirm it in Search Console, clean the hack, request a review and protect customers while you wait.',
+    description: "Remove the \"This site may be hacked\" label from Google: confirm it in Search Console, lock out the attacker, clean the site, close the way in, request a review.",
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'wordpress-maintenance'],
     body: `
-<p>Seeing "This site may be hacked" under your website in Google's search results is alarming, and it makes searchers far less likely to click. Google shows this label when it believes a third party may have changed pages on your site or added new spam pages, often in other languages or stuffed with pharmacy, gambling or counterfeit-goods keywords.</p>
-<p>The short answer on removing it: confirm the problem in Google Search Console's <strong>Security issues</strong> report, lock out the attacker, clean the site completely and close the way they got in, then <strong>request a review</strong>. Once Google confirms the site is clean, the label is removed from results. The steps below cover each stage, how long it can take and how to stop it happening again.</p>
-
+<p>To remove "This site may be hacked" from Google, confirm the problem in Search Console's <strong>Security issues</strong> report, lock out the attacker, clean the site completely and close the way they got in, then <strong>request a review</strong>. Once Google confirms the site is clean, the label is removed from results.</p>
+<p>Google shows this label when it believes a third party may have changed pages on your site or added new spam pages, often in other languages or stuffed with pharmacy, gambling or counterfeit-goods keywords. It makes searchers far less likely to click, so it is worth fixing quickly. The steps below cover each stage, how long it can take and how to stop it happening again.</p>
 <p>If the warning is already showing in search results and you need the site cleaned and a review requested, see my <a href="/wordpress-malware-removal/">WordPress malware removal service</a>.</p>
 
 <h2>What the warning means</h2>
@@ -34631,6 +34711,14 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h3>Keep a record</h3>
 <p>Note the date the label appeared, what you found, what was removed and when you requested review. If it happens again, or a hosting company or bank asks, this record saves time and shows you acted promptly.</p>
 
+<h2>Quick check: does the site redirect visitors from Google?</h2>
+<p>Many hacks only misbehave for visitors who arrive from a search result, so the site looks fine when you type the address. Test it with a Google referrer from a terminal:</p>
+<pre><code>curl -sI -e "https://www.google.com/" https://yourdomain.com/ | grep -iE "^(HTTP|location)"</code></pre>
+<p>A clean site returns <code>200</code>, or a normal redirect to your own https address. A <code>location</code> pointing at an unknown domain means the hack is still active. Repeat it on two or three inner pages, and also check <strong>Settings &gt; Users and permissions</strong> in Search Console for owners you did not add.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you cannot find the hacked content, when the label returns after a review, or when the site takes payments or stores customer details. My <a href="/wordpress-malware-removal/">WordPress malware removal</a> service cleans the site, closes the entry point, prepares the review request and helps you recover traffic afterwards. For monthly updates and monitoring once it is clean, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How long does it take to remove "This site may be hacked"?</h3>
 <p>It depends on how quickly the site is cleaned and how long Google's review and recrawl take. Spam-hack reviews can take longer than other security reviews, sometimes weeks, so clean thoroughly first to avoid a rejected request.</p>
@@ -34644,8 +34732,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Security plugins reduce risk but can't fix an outdated plugin, a reused password or a nulled theme. Updates, strong logins and good backups matter as much as the plugin.</p>
 <h3>Should I tell customers my website was hacked?</h3>
 <p>Tell regular customers briefly that a website issue is being fixed and how to reach you meanwhile. If payment or personal data may have been exposed, take advice on what the law requires you to tell them before you send anything.</p>
-
-<p>Need the hack cleaned and the label removed without the guesswork? I clean hacked WordPress sites, close the entry point, prepare the review request and help you recover traffic afterwards. See WordPress malware removal.</p>
 `,
   },
   {
@@ -37100,7 +37186,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <h2>Examples of custom WordPress plugins</h2>
 <p>These are the kinds of bespoke plugins businesses most often need:</p>
 <ul>
-  <li><strong>Calculators and quote tools:</strong> price estimators, EMI, savings or material calculators that capture leads, like this site's <a href="/website-cost-calculator/">website cost calculator</a>; see <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a></li>
+  <li><strong>Calculators and quote tools:</strong> price estimators, EMI, savings or material calculators that capture leads; see <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a></li>
   <li><strong>Integrations:</strong> sending enquiries to a CRM, pushing WooCommerce orders to accounting software, or syncing stock with an inventory system, usually through each system's API and the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a></li>
   <li><strong>WooCommerce custom pricing:</strong> dealer or wholesale prices by user role, quantity tiers, customer-specific price lists and minimum order quantities</li>
   <li><strong>Checkout and shipping rules:</strong> COD only for certain pincodes or order values, extra checkout fields, custom delivery slots</li>
@@ -46968,7 +47054,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 
 <h2>Cost over time</h2>
 <p>Squarespace charges a recurring subscription, with hosting included, and the price depends on the plan and features you need. WordPress itself is free, but you pay for hosting, a domain, any premium theme or plugins, and usually a developer to build and maintain it.</p>
-<p>Neither is always cheaper. A simple site may cost less on Squarespace if you build it yourself. A site that needs custom features, Indian integrations or ongoing marketing work often costs less in the long run on WordPress, because you are not paying for a higher plan just to unlock one feature. Compare your own needs over three to five years, not just the first year. To estimate a WordPress build, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>Neither is always cheaper. A simple site may cost less on Squarespace if you build it yourself. A site that needs custom features, Indian integrations or ongoing marketing work often costs less in the long run on WordPress, because you are not paying for a higher plan just to unlock one feature. Compare your own needs over three to five years, not just the first year.</p>
 
 <h2>Indian payments and selling online</h2>
 <p>This is where the difference is clearest for Indian businesses. Customers expect UPI, cards, net banking, wallets and often cash on delivery, along with GST-compliant invoices and Indian courier integrations.</p>
@@ -47095,7 +47181,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 
 <h2>What drives the cost of each</h2>
 <p>Google Sites costs nothing beyond the domain if you connect one. The real cost is your time, and what the limits cost you in missed enquiries.</p>
-<p>With WordPress, you pay for a domain and hosting every year, the build, any premium plugin licences, and maintenance, whether you do it yourself or pay someone. The build is the biggest part, and it moves with the number of pages, the design, features such as payments or bookings, and how much content help you need. For a sense of scale, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India, such as ₹15,000 to ₹40,000 for a small business site of five to eight pages, and the <a href="/website-cost-calculator/">website cost calculator</a> gives a quick estimate for your own list of pages.</p>
+<p>With WordPress, you pay for a domain and hosting every year, the build, any premium plugin licences, and maintenance, whether you do it yourself or pay someone. The build is the biggest part, and it moves with the number of pages, the design, features such as payments or bookings, and how much content help you need. For a sense of scale, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India, such as ₹15,000 to ₹40,000 for a small business site of five to eight pages.</p>
 
 <h2>WordPress vs Google Sites: when the free option is enough</h2>
 <ul>
@@ -47420,11 +47506,11 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
   },
   {
     slug: 'too-many-redirects-error-fix',
-    seoTitle: 'ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix It',
+    seoTitle: "ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix It",
     title: 'ERR_TOO_MANY_REDIRECTS in WordPress: How to Fix the Redirect Loop, Step by Step',
-    description: 'How to fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL, site URLs, .htaccess and plugins, and fix it when wp-admin is locked.',
+    description: "Fix ERR_TOO_MANY_REDIRECTS in WordPress: clear cookies, check Cloudflare SSL mode, site URLs, .htaccess rules and redirect plugins, and trace the chain.",
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -47526,6 +47612,14 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Once the site loads, remove any temporary changes you no longer need and record what fixed it, so the next person does not reintroduce the same loop. If the error appeared alongside a security warning, see <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a>, and for other error messages, <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and how to fix them</a>.</p>
 
 <p>Once the redirect loop is fixed, check that every image and script also loads over https. If the padlock is missing, see how to fix a <a href="/blog/mixed-content-warnings-fix/">mixed content warning in WordPress</a>.</p>
+
+<h2>Quick check: print the redirect chain</h2>
+<p>A terminal shows the whole loop in one go, without browser cookies or cache getting in the way:</p>
+<pre><code>curl -sIL --max-redirs 10 http://example.com/ | grep -iE "^(HTTP|location)"</code></pre>
+<p>Read the <code>location</code> lines in order. If they bounce between http and https, look at the Cloudflare SSL mode and any force-HTTPS rule. If they bounce between www and non-www, compare the WordPress Address and Site Address with your host's or Cloudflare's domain redirect. A healthy result is at most two hops ending in a <code>200</code>. Run it again after each change.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you are locked out of wp-admin, when the loop started after a migration or domain change, or when Cloudflare, the host and plugins all add their own redirects. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to trace and fix the chain, or see <a href="/wordpress-migration/">WordPress migration</a> if the loop appeared after a move.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix ERR_TOO_MANY_REDIRECTS in WordPress?</h3>
@@ -47668,15 +47762,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'ecommerce-website-cost-india',
-    seoTitle: 'E-commerce Website Cost in India: What You Will Really Pay',
+    seoTitle: "E-commerce Website Cost in India: What You Will Pay",
     title: 'How Much Does an E-commerce Website Cost in India? What Affects the Price',
-    description: 'What an e-commerce website costs in India: build vs running costs, what pushes the price up, and WooCommerce vs Shopify. Budget before you ask for quotes.',
+    description: "E-commerce website cost in India: what drives the price, one-time vs running costs, WooCommerce vs Shopify, per-order fees and how to get an accurate quote.",
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['woocommerce-developer', 'shopify-developer', 'wordpress-website-development'],
     body: `
-<p>An online store is a bigger project than a regular business website. As well as pages about your brand, it needs a product catalogue, a cart, a checkout, payments, shipping rules, order emails and a way to manage it all every day. That's why quotes for "an e-commerce website" can vary so widely.</p>
+<p>The cost of an e-commerce website in India depends mainly on how many products and variations you sell, the platform (WooCommerce or Shopify), and the payment, shipping and integration features you need. Get fixed quotes against the same written feature list, and budget separately for the yearly running costs and per-order charges such as gateway fees, shipping and refused COD parcels.</p>
+<p>An online store is a bigger project than a regular business website: as well as pages about your brand, it needs a product catalogue, a cart, a checkout, payments, shipping rules, order emails and a way to manage it all every day. That is why quotes for "an e-commerce website" vary so widely.</p>
 <p>This guide explains what actually drives the cost of an e-commerce website in India, how costs differ by type of store, which costs are one-time and which keep coming, and how WooCommerce and Shopify compare, so you can plan a sensible budget and compare quotes on the same terms. For a regular business site, see <a href="/blog/wordpress-website-cost-india/">how much a WordPress website costs in India</a>.</p>
 
 <p>For a fixed quote on your own store, see my work as a <a href="/woocommerce-developer/">WooCommerce developer in India</a>.</p>
@@ -47826,7 +47921,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Share your rough budget, so the developer can suggest what fits within it</li>
   <li>Ask for an itemised quote that shows what's included, such as product upload, training and support after launch, and which licences and fees you'll pay separately</li>
 </ol>
-<p>With this, developers can quote on the same scope, and you can compare quotes fairly; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>. For a quick ballpark first, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>With this, developers can quote on the same scope, and you can compare quotes fairly; see <a href="/blog/compare-website-quotes/">how to compare website quotes</a>.</p>
 
 <h2>WooCommerce store cost per month: the running costs</h2>
 <p>The build is a one-time cost; the store then has running costs every month. Plan for these before you launch so the margins still work:</p>
@@ -47844,6 +47939,13 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>WooCommerce has no platform subscription, but you pay for hosting, extensions and maintenance. Shopify has a monthly plan, may add its own transaction fee if you use a third-party gateway, and most stores add paid apps. Which is cheaper depends on how many paid apps or extensions you need, not just the headline plan.</p>
 <h3>Putting it together: a running-cost sheet</h3>
 <p>Make a simple sheet with fixed monthly costs (hosting, email, licences averaged per month, maintenance) and per-order costs (gateway fee, shipping, packaging, expected RTO). Per-order costs tell you your real margin on each product; fixed costs tell you how many orders a month you need to break even.</p>
+<h2>Quick check: count your catalogue before asking for quotes</h2>
+<p>Most quote differences come from different guesses about the catalogue. Make it a number instead. If you already sell on WooCommerce, go to <strong>Products &gt; All Products &gt; Export</strong> and download the CSV; on Shopify, use <strong>Products &gt; Export</strong>. Count the rows for simple products and the variation rows separately. If you are starting fresh, list products in a spreadsheet with columns for sizes, colours, weight and price.</p>
+<p>Add three lines under the count: the payment methods you need (UPI, cards, COD), how you ship (one courier, an aggregator such as Shiprocket, or local delivery) and any system the store must talk to, such as billing or inventory software. Send the same sheet to every developer so the quotes are comparable.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the store has more than a few dozen products with variations, needs COD rules, pincode checks or GST invoices, or must connect to a courier or billing system. Through <a href="/woocommerce-developer/">WooCommerce development</a> you get a written scope and a fixed quote based on your product sheet, with the store and every account in your name. If you would rather not manage hosting and updates, <a href="/shopify-developer/">Shopify development</a> covers the same planning on Shopify.</p>
+
 <h2>FAQs</h2>
 
 <h3>How much does an e-commerce website cost in India?</h3>
@@ -47863,8 +47965,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 
 <h3>Why do e-commerce quotes vary so much?</h3>
 <p>Quotes often cover different things. One may include product upload, payment testing, speed optimisation and support after launch, while another leaves them out. Comparing itemised quotes for the same scope is the only fair comparison.</p>
-
-<p>Planning an online store? See <a href="/woocommerce-developer/">WooCommerce development</a> to talk through your products, payments and shipping before you commit to a budget. If you sell on Shopify, see <a href="/shopify-developer/">Shopify development</a>.</p>
 `,
   },
   {
@@ -47956,7 +48056,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li><strong>Launch the essentials first</strong> and add a blog, booking or store later.</li>
   <li><strong>Keep every account in your own name;</strong> the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> lists each one.</li>
 </ol>
-<p>For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p></p>
 
 <h2>Already have a cheap website that isn't working?</h2>
 <ol>
@@ -60233,11 +60333,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'error-establishing-database-connection-fix',
-    seoTitle: 'Error Establishing a Database Connection: How to Fix It',
+    seoTitle: "Error Establishing a Database Connection: How to Fix It",
     title: 'Error Establishing a Database Connection in WordPress: A Diagnosis Order That Finds the Cause, What to Tell Your Host, and How to Stop It Coming Back',
-    description: 'Fix the WordPress database connection error in order: wp-config.php details, DB host, server load, damaged tables, migrations, and what to ask your host.',
+    description: "Fix \"Error establishing a database connection\" in WordPress: check the database server, wp-config.php details, hosting limits, damaged tables and backups.",
     date: '2026-10-01',
-    updated: '2026-10-27',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -60358,6 +60458,15 @@ if ( ! $link ) {
 </ul>
 <p>Other common messages, such as the critical error notice or a white screen, are covered in <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
 
+<h2>Quick check: let WP-CLI test the connection</h2>
+<p>If you have SSH access, WP-CLI reads the details from wp-config.php and tests them for you. From the WordPress root, run:</p>
+<pre><code>wp config get DB_HOST
+wp db check</code></pre>
+<p>The first line confirms which database host WordPress is using, which catches a wrong host after a migration. <code>wp db check</code> connects with the stored user and password and checks every table: an access-denied message points to the username or password, a "can't connect" message points to the host or a stopped database server, and a table marked as crashed points to repair. Paste the exact message into your support ticket.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the database server is down on the host's side, when tables are damaged and you have no recent backup, or when the error started after moving hosts. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes uptime monitoring that usually spots this before customers do, and <a href="/wordpress-migration/">WordPress migration</a> covers moves where the database details change.</p>
+
 <h2>FAQs</h2>
 <h3>Have I lost my website content?</h3>
 <p>Usually not. The error means WordPress cannot reach the database, not that the database is gone. Only if the database was deleted or badly damaged do you need a backup, which is why a database export is the first thing to take when phpMyAdmin will open.</p>
@@ -60369,8 +60478,6 @@ if ( ! $link ) {
 <p>No. The repair page does not ask for a login, so anyone who knows the address could run it. Add the line, run the repair, and remove it straight away.</p>
 <h3>How can I tell whether it is my host's problem or my site's?</h3>
 <p>If phpMyAdmin will not connect either, or other sites on the same account are down, it is on the host's side. If phpMyAdmin works and the test script connects, the problem is in your WordPress settings or tables.</p>
-
-<p>If your site is down with this error now, or you are planning a host move and want to avoid it, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -62762,7 +62869,6 @@ any unused part of the advance refunded as agreed</code></pre>
 </tbody>
 </table>
 <p>A calculator does not help when every job is too different to estimate, when the inputs need an expert to judge, or when a rough figure would mislead more than inform. In those cases, a clear explanation of what drives cost works better; see <a href="/blog/show-prices-on-website/">should you show prices on your website</a>.</p>
-<p>For a working example, the <a href="/website-cost-calculator/">website cost calculator</a> on this site lets visitors pick the features they need and see what affects a WordPress build.</p>
 
 <h2>Keep the assumptions honest and visible</h2>
 <p>A calculator is only as trustworthy as its assumptions. Show them next to the result:</p>
@@ -67600,11 +67706,11 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   },
   {
     slug: 'wordpress-500-internal-server-error-fix',
-    seoTitle: '500 Internal Server Error in WordPress: How to Fix It',
+    seoTitle: "500 Internal Server Error in WordPress: How to Fix It",
     title: '500 Internal Server Error in WordPress: How to Find the Cause and Fix It',
-    description: 'Fix a 500 internal server error in WordPress: read the error log, enable WP_DEBUG_LOG, reset .htaccess, find the faulty plugin or theme, check PHP limits.',
+    description: "Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin and check PHP limits.",
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -67694,6 +67800,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Call your host if there are no log entries at all, if even a plain test file in the site root gives a 500, or if the log shows server-level messages you do not recognise. Give them the exact time, URL and any log lines.</p>
 <p>Avoid reinstalling WordPress or restoring an old backup before finding the cause. A reinstall rarely fixes plugin errors, and an old backup can lose recent orders and enquiries.</p>
 
+<h2>Quick check: switch off plugins when wp-admin is down</h2>
+<p>When the dashboard itself returns a 500, WP-CLI can still work if you tell it to skip plugins and themes. Over SSH, from the WordPress root:</p>
+<pre><code>wp plugin list --status=active --skip-plugins --skip-themes
+wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre>
+<p>Deactivate the plugin named in the error log first; if there is no log entry, deactivate the most recently updated plugin and reload the site after each one. To check a theme or custom file you edited, <code>php -l wp-content/themes/your-theme/functions.php</code> reports a syntax error and its line number without loading WordPress.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the log makes no sense, when no log is being written, or when the site is down during business hours and takes orders. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, so the next 500 does not happen on the live site, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix a 500 internal server error in WordPress?</h3>
 <p>Take a backup, read the error log, then fix what it names: rename the faulty plugin or theme folder, reset .htaccess, raise the memory limit or switch PHP back. Change one thing at a time.</p>
@@ -67705,17 +67820,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Logging may be off, or the error is happening before PHP runs, for example in .htaccess or server configuration. Enable WP_DEBUG_LOG and ask your host for the server-level log.</p>
 <h3>Is a 500 error bad for SEO?</h3>
 <p>Briefly, no. If Google keeps getting 500 errors over days, it crawls less and can drop affected pages, so fix it promptly.</p>
-
-<p>If the log makes no sense or the site is down during business hours, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, look at <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 `,
   },
   {
     slug: 'wordpress-502-504-gateway-timeout-fix',
-    seoTitle: 'WordPress 502 Bad Gateway and 504 Gateway Timeout: Fixes',
+    seoTitle: "WordPress 502 Bad Gateway and 504 Timeout: Fixes",
     title: 'WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them',
-    description: 'How to fix a WordPress 502 bad gateway or 504 gateway timeout, what "the gateway did not receive a timely response" means and what to check or send your host.',
+    description: "Fix WordPress 502 Bad Gateway and 504 Gateway Timeout errors: PHP workers, slow plugins and queries, Cloudflare, hosting limits and what to tell your host.",
     date: '2026-10-11',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -67825,6 +67938,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li>Is an outside API, such as a payment gateway, shipping rate service or social feed, slow or down?</li>
 </ol>
 <p>If it only happens on one heavy action, the fix is usually to make that task lighter, split it into batches or run it outside busy hours. If it happens everywhere, the site has outgrown its PHP workers or hosting plan, or something is flooding it with requests.</p>
+
+<h2>Quick check: time the server and see who answered</h2>
+<p>Two terminal commands tell you how slow PHP is and which layer is sending the error:</p>
+<pre><code>curl -s -o /dev/null -w "status %{http_code}  first byte %{time_starttransfer}s  total %{time_total}s" https://yourdomain.com/
+curl -sI https://yourdomain.com/ | grep -iE "^(server|cf-ray|cf-cache-status|x-litespeed-cache)"</code></pre>
+<p>Run the first one a few times, then again on a page that is not cached, such as the cart or a search URL. A first-byte time that climbs towards your host's timeout points to slow PHP. In the headers, a <code>cf-ray</code> line means Cloudflare is in front, so check whether the error page is Cloudflare's or your server's. Include these numbers in your message to the host.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the errors happen during checkout or busy hours, when the host says the problem is your code, or when you have already tried lighter tasks and caching. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers slow plugins, queries, PHP workers and caching, and <a href="/wordpress-maintenance/">WordPress maintenance</a> adds uptime monitoring so you hear about timeouts before customers do.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix a 502 bad gateway or 504 gateway timeout on WordPress?</h3>
@@ -68880,11 +69002,11 @@ or a cookie name starts with:
   },
   {
     slug: 'wordpress-site-slow-on-mobile-fix',
-    seoTitle: 'WordPress Site Slow on Mobile but Fast on Desktop? Fixes',
+    seoTitle: "WordPress Slow on Mobile but Fast on Desktop? Fixes",
     title: 'WordPress Site Slow on Mobile but Fast on Desktop? Causes and Fixes',
-    description: 'WordPress site slow on mobile but fine on desktop? Find out why scores differ and fix sliders, oversized images, third-party scripts, popups and fonts.',
+    description: "WordPress site slow on mobile but fast on desktop? Find the cause, then fix sliders, images, third-party scripts, popups and fonts for Indian phones.",
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
@@ -68980,6 +69102,14 @@ or a cookie name starts with:
 <h2>Keep mobile speed from slipping again</h2>
 <p>Mobile speed tends to get worse gradually as new plugins, banners and tracking codes are added. Before adding anything new, ask whether it needs to load on every page and on phones at all. Check the mobile score and the Core Web Vitals report once a month, and compare it with the previous month so a sudden drop is noticed quickly and traced to the change that caused it.</p>
 
+<h2>Quick check: run a mobile Lighthouse report yourself</h2>
+<p>PageSpeed Insights results can vary from run to run, so run Lighthouse locally a few times and compare. With Node.js installed, run:</p>
+<pre><code>npx lighthouse https://yourdomain.com/ --only-categories=performance --view</code></pre>
+<p>Lighthouse tests as a mobile phone by default, with a slower network and CPU. In the report, look at the diagnostics "Reduce JavaScript execution time", "Properly size images" and "Avoid an excessive DOM size": they list the exact scripts, images and sections that slow phones down. Run it on the home page and on your busiest service or product page, then again after each fix.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the mobile score stays low after removing sliders and resizing images, when the page builder or theme is the bottleneck, or when the site is a WooCommerce store. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for a full audit with fixes measured before and after, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing work.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress site slow on mobile but fast on desktop?</h3>
 <p>Phones have slower processors and connections. Sliders, large images, third-party scripts and fonts that a desktop handles easily take much longer on a phone, and mobile tests simulate those conditions.</p>
@@ -68991,17 +69121,15 @@ or a cookie name starts with:
 <p>No. A responsive theme with lighter mobile sections is easier to maintain. Separate mobile sites cause duplicate content and extra work.</p>
 <h3>How do I test my site's mobile speed?</h3>
 <p>Use PageSpeed Insights for lab and field data, then test on a real mid-range Android phone over mobile data.</p>
-
-<p>Need your site fast on phones without losing the design? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> from Samverse.</p>
 `,
   },
   {
     slug: 'woocommerce-orders-not-showing-fix',
-    seoTitle: 'WooCommerce Orders Not Showing? How to Fix It',
+    seoTitle: "WooCommerce Orders Not Showing? How to Fix It",
     title: 'WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails',
-    description: 'WooCommerce orders not showing? Find missing orders, fix paid-but-no-order problems, HPOS sync issues, pending payment filters and missing order emails.',
+    description: "WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.",
     date: '2026-10-11',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -69098,9 +69226,14 @@ or a cookie name starts with:
 <li>Use SMTP and an email log.</li>
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
-<h2>Getting help</h2>
-<p>Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly. You can also <a href="/wordpress-shopify-developer-india/">hire a WooCommerce developer in India</a> for ongoing <a href="/wordpress-maintenance/">store maintenance</a>.</p>
 <p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
+<h2>Quick check: the gateway log and order storage setting</h2>
+<p>Two screens answer most "paid but no order" cases. First, go to <strong>WooCommerce &gt; Status &gt; Logs</strong> and pick the log for your payment gateway (for example a Razorpay or PayU log) for the date of the missing order. Look for webhook or callback errors around the payment time, then compare it with the webhook section of your gateway's dashboard, which shows whether each notification reached your site and what response it got.</p>
+<p>Second, open <strong>WooCommerce &gt; Settings &gt; Advanced &gt; Features</strong> and note which order storage is active and whether compatibility mode (sync) is on. If you switched storage recently, orders created during the switch are the first ones to check.</p>
+
+<h2>When to get help</h2>
+<p>Get help when paid orders are missing, when orders disappear after a migration or update, or when you cannot tell whether the problem is the gateway, a plugin or the server. Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly, and <a href="/wordpress-maintenance/">store maintenance</a> keeps an eye on it afterwards.</p>
+
 <h2>FAQs</h2>
 <h3>Why are WooCommerce orders not showing in my dashboard?</h3>
 <p>Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first.</p>
@@ -69114,7 +69247,6 @@ or a cookie name starts with:
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
 <h3>Why are WooCommerce orders showing as pending payment?</h3>
 <p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
-<p>Orders going missing? A <a href="/woocommerce-developer/">WooCommerce developer</a> can find out why and stop it happening again.</p>
 `,
   },
   {
@@ -69469,14 +69601,15 @@ or a cookie name starts with:
   },
   {
     slug: 'shopify-store-slow-fix',
-    seoTitle: 'Why Is My Shopify Store Slow? Causes and Fixes',
+    seoTitle: "Why Is My Shopify Store Slow? Causes and Fixes",
     title: 'Why Is My Shopify Store Slow? How to Find the Cause and Fix It, in Priority Order',
-    description: 'Why Shopify stores slow down, from app scripts and leftover code to images, fonts and sliders, how to diagnose it with free tools and which fixes come first.',
+    description: "Why your Shopify store is slow: apps, theme features, images and fonts. How to measure, find what each app loads and fix it in priority order.",
     date: '2026-10-25',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'wordpress-speed-optimization'],
     body: `
-<p>Shopify runs your store on fast infrastructure with a global CDN, so a slow Shopify store is rarely a server problem. It is almost always something added on top: apps, theme features, images, fonts and widgets that each seemed harmless when they went in. The good news is that this makes the cause findable, and most of the fixes are removals rather than rebuilds.</p>
+<p>A slow Shopify store is almost always caused by what has been added on top of Shopify, mainly apps, theme features, large images, fonts and widgets, not by Shopify's servers. Measure first, find what each app and section loads, and fix the heaviest items first; most of the fixes are removals rather than rebuilds.</p>
 
 <p>This guide covers where the slowness comes from, how to diagnose it with free tools and what to fix first. It is the same audit I run as part of my <a href="/shopify-developer/">Shopify speed and clean-up work</a>. For the general picture of how outside code slows pages, <a href="/blog/third-party-scripts-slow-website/">how third-party scripts slow your website</a> is a useful companion read.</p>
 
@@ -69544,6 +69677,13 @@ or a cookie name starts with:
 </ul>
 <p>If you are still choosing which apps a new store needs, <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> covers the essentials, and <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares how each platform adds features and what that means for speed.</p>
 
+<h2>Quick check: find code left behind by removed apps</h2>
+<p>Uninstalled apps often leave scripts in the theme that still load on every page. On a duplicate of your theme, go to <strong>Online Store &gt; Themes</strong>, click <strong>...</strong> next to the theme and choose <strong>Edit code</strong>. Open <code>layout/theme.liquid</code> and search for <code>&lt;script</code> and <code>render</code>. For each line, ask which app or feature it belongs to. Also look in the <code>snippets</code> folder for files named after apps you no longer use.</p>
+<p>Before deleting anything, check in a private window with the browser's Network tab whether that script still loads, remove it on the duplicate theme, preview the store, and publish only once the cart, product pages and checkout all work.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the store is slow on phones, the theme has been edited by several people, or you are not sure which code is safe to remove. Through my <a href="/shopify-developer/">Shopify developer service</a>, I list what each app loads, remove what is not earning its place on a duplicate theme, and measure before and after, starting with a free review and a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Is Shopify's hosting the reason my store is slow?</h3>
 <p>Rarely. Shopify's servers and CDN are quick; the slowness usually comes from what runs in the shopper's browser, which means apps, theme code, images and widgets.</p>
@@ -69555,20 +69695,20 @@ or a cookie name starts with:
 <p>Usually not. Removing unused apps and leftover code, fixing images and trimming fonts and widgets come first. A new theme is worth considering only if measurements show the theme itself is the main cost.</p>
 <h3>Are speed optimisation apps worth installing?</h3>
 <p>Be cautious. An app that promises speed still adds its own code, and some mainly change how test tools score a page rather than how fast it feels to shoppers. Removing what you don't need is the more reliable route.</p>
-
-<p>If your store has slowed down and you want the apps, theme code and images audited properly, see my <a href="/shopify-developer/">Shopify developer service</a>. I list what each app loads, remove what isn't earning its place on a duplicate theme, and measure before and after. Share the store's address, and the first step is a free review followed by a fixed quote.</p>
 `,
   },
   {
     slug: 'migrate-woocommerce-to-shopify',
-    seoTitle: 'How to Move From WooCommerce to Shopify, Step by Step',
+    seoTitle: "Migrate WooCommerce to Shopify: Step-by-Step Guide",
     title: 'How to Move From WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover',
-    description: 'Move a WooCommerce store to Shopify step by step: export and import products and customers, bring orders across, map URLs to 301 redirects and plan the cutover.',
+    description: "How to migrate WooCommerce to Shopify: export and clean data, import products and customers, map URLs with 301 redirects, check SEO and cut over safely.",
     date: '2026-10-25',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'wordpress-migration'],
     body: `
-<p>Stores move from WooCommerce to Shopify for sensible reasons. Nobody on the team wants to manage hosting, plugin updates and security any more, or the store has outgrown a setup patched together over several years. Shopify takes hosting and upkeep off your hands in return for monthly plan and app costs. If that trade suits you, the move itself is manageable, as long as you protect three things: your data, your URLs and your customers' ability to sign in.</p>
+<p>To migrate WooCommerce to Shopify, export and clean your products, customers and orders, import them into Shopify, map every old WooCommerce URL to its new Shopify address with 301 redirects, and switch the domain only after test orders work. The move is manageable as long as you protect three things: your data, your URLs and your customers' ability to sign in.</p>
+<p>Stores usually move because nobody wants to manage hosting, plugin updates and security any more, or the store has outgrown a setup patched together over several years. Shopify takes that upkeep off your hands in return for monthly plan and app costs.</p>
 
 <p>This guide is the reverse of my <a href="/blog/migrate-shopify-to-woocommerce/">Shopify to WooCommerce migration guide</a>, and follows the order I work in when moving a store as part of my <a href="/shopify-developer/">Shopify development service</a>. If you are not yet sure the move is right for you, <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> weighs the two platforms on cost, payments and control.</p>
 
@@ -69655,6 +69795,15 @@ or a cookie name starts with:
 </ol>
 <p>In the weeks after, watch Search Console for 404 errors and add redirects for anything missed, and compare organic traffic to key pages with the period before. Some movement while Google recrawls is common; a sustained drop on particular pages usually points to a missing redirect or content that didn't come across. For the setup work every new Shopify store needs anyway, from domain to policies, see <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a>.</p>
 
+<h2>Quick check: confirm the redirects are live</h2>
+<p>Shopify keeps redirects under <strong>Online Store &gt; Navigation &gt; URL Redirects</strong> (in newer admins, under <strong>Content &gt; Menus</strong>). You can import them in bulk from a CSV with two columns, the old path and the new path. Once the domain points to Shopify, test old WooCommerce addresses from a terminal:</p>
+<pre><code>curl -sI https://yourstore.in/product/old-product/ | grep -iE "^(HTTP|location)"
+curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|location)"</code></pre>
+<p>You want <code>301</code> and a <code>location</code> on <code>/products/</code> or <code>/collections/</code>. A 404 means the path in the CSV did not match exactly, often because of a missing or extra trailing slash.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the store has many variable products, subscriptions or customer accounts, or when organic traffic to product pages matters to sales. Through my <a href="/shopify-developer/">Shopify development service</a>, I review the WooCommerce store, list what moves and what needs replacing, and carry out the move with every product, customer and URL accounted for, after a free review and a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Will I lose Google rankings when moving to Shopify?</h3>
 <p>Not if every old URL redirects to its closest new page and the content is at least as good. Ranking losses after a migration usually trace back to missing redirects, thinner product pages or titles and descriptions that didn't come across.</p>
@@ -69666,16 +69815,15 @@ or a cookie name starts with:
 <p>It depends on the size of the catalogue, how clean the data is, how many plugin features need replacing and how much content there is. The import itself is quick; testing, redirects and replacing features take most of the time.</p>
 <h3>Should I redesign the store at the same time?</h3>
 <p>It is tempting, but doing both at once makes problems harder to trace. Where possible, move first with a theme close to your current look, then redesign once traffic has settled.</p>
-
-<p>If you want the move planned and carried out for you, with every product, customer and URL accounted for, see my <a href="/shopify-developer/">Shopify developer service</a>. I will review your WooCommerce store, list what moves and what needs replacing, and send a free review and a fixed quote.</p>
 `,
   },
   {
     slug: 'shopify-store-cost-india',
-    seoTitle: 'What a Shopify Store Costs in India: The Cost Drivers',
+    seoTitle: "Shopify Store Cost in India: Plans, Apps and Fees",
     title: 'What a Shopify Store Costs in India: Plan, Apps, Payment Fees, Theme, Setup and Running Costs Explained',
-    description: 'What a Shopify store in India really costs: plan, apps, gateway and Shopify fees, theme, setup and running costs, compared honestly with WooCommerce.',
+    description: "Shopify store cost in India: plan fee, apps, payment charges, theme, setup and running costs, plus a budgeting checklist before you sign up.",
     date: '2026-10-27',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -69772,6 +69920,13 @@ or a cookie name starts with:
 
 <p>If you sell from north Maharashtra, the page on <a href="/wordpress-shopify-developer-nashik/">Shopify development in Nashik</a> explains how a store project is scoped.</p>
 
+<h2>Quick check: read your real Shopify bill</h2>
+<p>If the store is already open, the admin shows exactly what you pay. Go to <strong>Settings &gt; Plan</strong> to see the plan and billing cycle, then <strong>Settings &gt; Billing</strong> to see the upcoming bill, past bills and every app subscription and usage charge listed separately. Open <strong>Settings &gt; Apps and sales channels</strong> and compare the installed apps with the bill: anything installed but unused is a cost to cancel.</p>
+<p>For payment costs, open your gateway or Shopify Payments payouts page and divide last month's fees by the number of orders. That per-order figure, added to shipping and packaging, tells you what each sale really costs.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you are choosing between plans and apps before launch, when the app bill keeps growing, or when you need Indian payments, COD controls and GST invoices set up properly. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review of your plans and a fixed quote for the setup, with the store, domain and every subscription in your own name.</p>
+
 <h2>FAQs</h2>
 <h3>Is Shopify cheaper than WooCommerce in India?</h3>
 <p>Not automatically. Shopify bundles hosting and security into the plan but adds apps and possibly its own fee on outside gateways. WooCommerce has no platform fee but needs hosting, upkeep and sometimes paid plugins. Work out both from your expected orders rather than from headline prices.</p>
@@ -69783,8 +69938,6 @@ or a cookie name starts with:
 <p>Usually only a few. A GST invoice app is common for registered sellers, and a courier app saves manual work. Reviews, upsells and loyalty apps can wait until you have orders to judge them by.</p>
 <h3>What does it cost to have a developer set up the store?</h3>
 <p>It depends on the catalogue, the theme work and the integrations, so I don't publish a figure. Send your requirements; you get a free review back, then a fixed quote with the scope in writing.</p>
-
-<p>If you want a clear budget before you commit, send me a short note on what you sell, roughly how many products you have and how customers will pay. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review of your plans and a fixed quote for the setup, with the store, domain and every subscription in your own name.</p>
 `,
   },
   {
@@ -70382,11 +70535,11 @@ or a cookie name starts with:
   },
   {
     slug: 'hire-shopify-developer-india',
-    seoTitle: 'Hire a Shopify Developer in India: Questions to Ask',
+    seoTitle: "Hire a Shopify Developer in India: What to Ask",
     title: 'Hiring a Shopify Developer in India: What They Do, When You Need One, What to Ask and Red Flags',
-    description: 'Before you hire a Shopify developer in India: what they do, freelancer vs agency, what to send for a quote, questions to ask, access and red flags.',
+    description: "How to hire a Shopify developer in India: what they do, when you need one, questions to ask, access and ownership, and red flags to avoid.",
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'hire-wordpress-developer'],
     body: `
@@ -70508,6 +70661,13 @@ or a cookie name starts with:
 
 <p>City notes for Shopify brands: <a href="/wordpress-shopify-developer-surat/">Surat</a> textiles, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a> jewellery and handicrafts, <a href="/wordpress-shopify-developer-lucknow/">Lucknow</a> chikankari and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a> hosiery.</p>
 
+<h2>Quick check: give access the safe way</h2>
+<p>Never share your owner login. Shopify has a built-in way to give a developer access: go to <strong>Settings &gt; Users and permissions</strong>, scroll to <strong>Collaborators</strong> and choose who can send collaborator requests. You can require a collaborator request code; share that code with the developer, approve their request, and tick only the permissions the job needs, such as themes and products. When the work is finished, remove the collaborator from the same screen.</p>
+<p>Before any theme work starts, ask the developer to duplicate the live theme (<strong>Online Store &gt; Themes</strong>, then <strong>...</strong> and <strong>Duplicate</strong>) and work on the copy, so the published theme stays untouched until you approve the changes.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the job goes beyond the theme editor, such as custom sections, app clean-ups, speed fixes, migrations or Indian payment and COD setup, or when a mistake on the live store would cost sales. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review, a written scope and a fixed quote, with collaborator access only and every account in your name from the start.</p>
+
 <h2>FAQs</h2>
 <h3>Where can I hire a Shopify developer in India?</h3>
 <p>You can hire a Shopify developer in India through Shopify's partner directory, freelance platforms, referrals from other store owners or directly from a developer's own website. Whichever route you take, ask the questions above and check how they handle access and ownership. If you want to talk about your store, see my <a href="/shopify-developer/">Shopify developer services</a>.</p>
@@ -70521,8 +70681,6 @@ or a cookie name starts with:
 <p>A freelancer suits setup, theme work, fixes and migrations where you want one point of contact. An agency suits larger projects that bundle design, development, content and marketing.</p>
 <h3>Who owns the theme code a developer writes?</h3>
 <p>Agree it in writing. Custom sections built for your store should be yours to keep and edit, and they stay in your theme after the project ends.</p>
-
-<p>If you are weighing up who should work on your store, send the address or a short note on what you plan to sell. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review, a written scope and a fixed quote, with every account in your own name from the start.</p>
 `,
   },
   {
@@ -72714,7 +72872,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h3>How do I attract e-commerce sellers as courier clients?</h3>
 <p>Give them a dedicated page covering pickups, COD remittance, returns, GST invoicing and tracking links, with an enquiry form asking for monthly volume and destinations.</p>
 
-<p>Want a courier website that takes pickup bookings and answers tracking questions without extra calls? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-cost-calculator/">estimate your website cost</a> with your branch list and services.</p>
+<p>Want a courier website that takes pickup bookings and answers tracking questions without extra calls? See <a href="/wordpress-website-development/">WordPress website development</a>, and send your branch list and services for a fixed quote.</p>
 `,
   },
   {
@@ -72816,7 +72974,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h3>What is the best platform for a mobile shop website?</h3>
 <p>WordPress suits a catalogue with WhatsApp enquiries; add WooCommerce if you want online orders. Shopify also works well for accessories and online stores.</p>
 
-<p>Need a site that keeps model pages, prices and stock easy to update? <a href="/website-cost-calculator/">Estimate your website cost</a> with your brands and branches, and we will suggest the simplest setup that fits.</p>
+<p>Need a site that keeps model pages, prices and stock easy to update? Send your brands and branches for a <a href="/#contact">free quote</a>, and we will suggest the simplest setup that fits.</p>
 `,
   },
   {
@@ -72926,7 +73084,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h3>How can a GST practitioner get more clients online?</h3>
 <p>Build service pages that match searches like GST registration consultant in your city, keep the Google Business Profile complete, prepare before filing peaks and make WhatsApp and booking easy.</p>
 
-<p>Planning a site for your tax practice? <a href="/website-cost-calculator/">Estimate your website cost</a> and we can set up service pages, booking and secure document sharing on WordPress.</p>
+<p>Planning a site for your tax practice? <a href="/#contact">Ask for a free quote</a> and we can set up service pages, booking and secure document sharing on WordPress.</p>
 `,
   },
 ];
