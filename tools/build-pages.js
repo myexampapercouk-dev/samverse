@@ -876,7 +876,7 @@ const shotFor = w => w.thumb || `https://s.wordpress.com/mshots/v1/${encodeURICo
 
 const renderWork = (w, i) => {
   const url = `${SITE}/work/${w.slug}/`;
-  const title = `${w.name} Website Case Study | Samverse`;
+  const title = w.seoTitle || `${w.name} Website Case Study | Samverse`;
   const next = WORK[(i + 1) % WORK.length];
   const schema = {
     '@context': 'https://schema.org',
