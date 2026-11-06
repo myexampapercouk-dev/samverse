@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=d8206b22">
+  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-28">
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
       "headline": "WooCommerce Performance Optimization: A Practical Guide to Speed Up Your WooCommerce Store",
       "description": "WooCommerce performance optimization step by step: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-speed-optimization/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-speed-optimization.png",
       "articleSection": "E-commerce",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Performance%20Optimization%3A%20A%20Practical%20Guide%20to%20Speed%20Up%20Your%20WooCommerce%20Store%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-speed-optimization%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -166,7 +166,7 @@
               <li><a href="#step-10-keep-the-store-fast-after-launch">Step 10: Keep the store fast after launch</a></li>
               <li><a href="#woocommerce-performance-optimization-checklist">WooCommerce performance optimization checklist</a></li>
               <li><a href="#woocommerce-performance-optimization-match-the-fix-to-the-symptom">WooCommerce performance optimization: match the fix to the symptom</a></li>
-              <li><a href="#when-woocommerce-speed-work-is-worth-paying-for">When WooCommerce speed work is worth paying for</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -178,9 +178,8 @@
               <li>Match the fix to the symptom: slow server response points to hosting and database, while slow loading after the first byte points to images, scripts, fonts and theme.</li>
             </ul>
           </div>
-<p>To speed up WooCommerce, put the store on hosting with enough PHP workers and server caching, cache product and category pages while excluding cart, checkout and account pages, compress and lazy load product images, remove plugins you do not need, and clean up the database. Then deal with WooCommerce-specific slowdowns such as cart fragments, slow product filters, heavy themes and third-party scripts on product and checkout pages.</p>
-
-<p><strong>Short answer:</strong> WooCommerce performance optimization is mostly hosting, caching, images, plugins and database, in that order. Measure product, category and checkout pages before and after each change.</p>
+<p>To speed up WooCommerce, put the store on hosting with enough PHP workers and an object cache, page-cache product and category pages while excluding cart, checkout and account pages, compress product images and remove plugins you do not need. Then fix the WooCommerce-specific slowdowns: cart fragments, unindexed product filters, a bloated Action Scheduler and third-party scripts on product and checkout pages.</p>
+<p>Measure the same product, category and checkout pages before and after each change.</p>
 
 <h2 id="why-woocommerce-stores-get-slow">Why WooCommerce stores get slow</h2>
 <p>A WooCommerce store does more work than a brochure site. Carts, stock, prices, taxes, shipping and sessions all change per visitor, so some pages cannot be cached, and every uncached request runs PHP and database queries. Typical causes of a slow store are:</p>
@@ -245,7 +244,7 @@
 
 <h2 id="step-6-fix-woocommerce-specific-slowdowns">Step 6: Fix WooCommerce-specific slowdowns</h2>
 <h3>Cart fragments</h3>
-<p>WooCommerce uses an AJAX request to update the mini-cart count. On some setups it runs on every page and adds a slow uncached request. Recent WooCommerce versions load it only where the mini-cart is used, and many performance plugins let you restrict it further. Test that the cart count still updates correctly.</p>
+<p>WooCommerce uses an AJAX request to update the mini-cart count. On some setups it runs on every page and adds a slow uncached request. Recent WooCommerce versions load it only where the mini-cart is used, and many performance plugins let you restrict it further. To check, open the Network tab on a product or blog page and filter for <code>wc-ajax</code>: a <code>get_refreshed_fragments</code> request on every page, taking a second or more, is worth restricting. Test that the cart count still updates correctly after adding a product.</p>
 <h3>Product filters and search</h3>
 <p>Filter plugins can run heavy queries on large catalogues. Use a filter plugin that builds its own index, and limit the number of filter combinations. See <a href="/blog/woocommerce-product-filters/">WooCommerce product filters</a>.</p>
 <h3>Variations</h3>
@@ -255,11 +254,11 @@
 
 <h2 id="step-7-clean-and-optimise-the-database">Step 7: Clean and optimise the database</h2>
 <ul>
-<li>Delete expired transients and old customer sessions.</li>
+<li>Delete expired transients and old customer sessions from WooCommerce, Status, Tools ("Clear transients", "Clear expired transients" and "Clear customer sessions"). Clearing sessions empties live carts, so do it at a quiet time.</li>
 <li>Limit post revisions and clean old ones.</li>
 <li>Check autoloaded options; large autoloaded data from removed plugins slows every page.</li>
-<li>Enable WooCommerce's High-Performance Order Storage (HPOS) if your plugins support it.</li>
-<li>Check the Action Scheduler for huge numbers of failed or pending tasks.</li>
+<li>Enable High-Performance Order Storage (HPOS) in WooCommerce, Settings, Advanced, Features, once your plugins support it. The same screen warns you about incompatible plugins; keep compatibility mode (sync) on until you have tested orders, refunds and emails.</li>
+<li>Check the Action Scheduler in Tools, Scheduled Actions. Tens of thousands of completed or failed actions, often from email, feed or subscription plugins, bloat the <code>wp_actionscheduler_actions</code> table. Fix the plugin causing failures, then let old completed actions be purged.</li>
 </ul>
 <p>Always take a backup first. See <a href="/blog/wordpress-database-optimization/">WordPress database optimization</a>.</p>
 
@@ -305,8 +304,8 @@
 </tbody>
 </table>
 <p>Fix the row that matches your store, re-test the same pages, and only then move on. Changing several things at once makes it impossible to know what helped.</p>
-<h2 id="when-woocommerce-speed-work-is-worth-paying-for">When WooCommerce speed work is worth paying for</h2>
-<p>Many stores can handle the basics themselves: compressing images, removing unused plugins and turning on caching with the right exclusions. It is worth bringing in a developer when the server response stays slow after caching, when checkout is slow or failing, or when speed problems appeared after a theme or plugin update you cannot easily roll back. A careful developer works on a staging copy, measures each change and leaves you with notes on what was done. If checkout is broken rather than slow, start with <a href="/blog/woocommerce-checkout-not-working-fix/">fixing WooCommerce checkout problems</a>, and for ongoing store work see our <a href="/woocommerce-developer/">WooCommerce developer</a> service.</p>
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Many stores can handle the basics themselves: compressing images, removing unused plugins and turning on caching with the right exclusions. It is worth bringing in a developer when the server response stays slow after caching, when checkout is slow or failing, or when speed problems appeared after a theme or plugin update you cannot easily roll back. A careful developer works on a staging copy, measures each change and leaves you with notes on what was done. If checkout is broken rather than slow, start with <a href="/blog/woocommerce-checkout-not-working-fix/">fixing WooCommerce checkout problems</a>, and for ongoing store work see our <a href="/woocommerce-developer/">WooCommerce developer</a> service. For a one-off speed fix, Samverse's <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a> covers hosting, caching, images, plugins, database and checkout, with before-and-after measurements.</p>
 <h2 id="faqs">FAQs</h2>
 <h3>How do I speed up my WooCommerce store?</h3>
 <p>Start with good hosting and correct caching, then optimise images, remove unnecessary plugins and scripts, clean the database and fix WooCommerce-specific issues like cart fragments and slow filters.</p>
@@ -320,8 +319,6 @@
 <p>No single plugin fixes everything. A good caching plugin, an image optimisation plugin and an asset manager help, but hosting and removing unnecessary plugins usually make the biggest difference.</p>
 <h3>Is WooCommerce slower than Shopify?</h3>
 <p>Not necessarily. A well-hosted, well-optimised WooCommerce store can be very fast. Shopify handles hosting for you, while WooCommerce speed depends on your setup. See our <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify comparison</a>.</p>
-
-<p>If your store is still slow, Samverse offers <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a>, and you can <a href="/woocommerce-developer/">hire a WooCommerce developer</a> for ongoing store work and performance checks.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -370,7 +367,7 @@
               <li><a href="#step-10-keep-the-store-fast-after-launch">Step 10: Keep the store fast after launch</a></li>
               <li><a href="#woocommerce-performance-optimization-checklist">WooCommerce performance optimization checklist</a></li>
               <li><a href="#woocommerce-performance-optimization-match-the-fix-to-the-symptom">WooCommerce performance optimization: match the fix to the symptom</a></li>
-              <li><a href="#when-woocommerce-speed-work-is-worth-paying-for">When WooCommerce speed work is worth paying for</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

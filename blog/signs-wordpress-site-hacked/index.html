@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=d8206b22">
+  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-27">
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
       "headline": "How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First",
       "description": "Check if your WordPress site is hacked: warning signs, 10 quick checks you can run today, extra checks for online stores, and the first steps to take.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/signs-wordpress-site-hacked/",
       "image": "https://samverse.space/assets/og/blog-signs-wordpress-site-hacked.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Check%20if%20Your%20WordPress%20Site%20Is%20Hacked%3A%20Warning%20Signs%2C%20Quick%20Checks%20and%20What%20to%20Do%20First%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsigns-wordpress-site-hacked%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -156,6 +156,7 @@
               <li><a href="#warning-signs-that-your-wordpress-site-has-been-hacked">Warning signs that your WordPress site has been hacked</a></li>
               <li><a href="#how-to-know-if-your-wordpress-site-has-been-hacked-10-quick-checks">How to know if your WordPress site has been hacked: 10 quick checks</a></li>
               <li><a href="#how-to-check-if-a-wordpress-site-is-hacked-without-logging-in">How to check if a WordPress site is hacked without logging in</a></li>
+              <li><a href="#how-to-check-a-wordpress-site-for-hacks-with-wp-cli-or-ssh">How to check a WordPress site for hacks with WP-CLI or SSH</a></li>
               <li><a href="#hacked-or-just-broken-common-false-alarms">Hacked or just broken? Common false alarms</a></li>
               <li><a href="#what-to-do-first-if-your-wordpress-site-has-been-hacked">What to do first if your WordPress site has been hacked</a></li>
               <li><a href="#why-restoring-an-old-backup-is-not-always-enough">Why restoring an old backup is not always enough</a></li>
@@ -163,6 +164,7 @@
               <li><a href="#how-to-check-if-a-wordpress-store-or-payment-page-is-hacked">How to check if a WordPress store or payment page is hacked</a></li>
               <li><a href="#a-monthly-hack-check-you-can-do-in-15-minutes">A monthly hack check you can do in 15 minutes</a></li>
               <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
             </ol>
           </details>
           <div class="takeaways">
@@ -173,9 +175,8 @@
               <li>If you find a problem, back up the infected copy, change every password, clean core, plugins and database, hunt for backdoors and close the entry point before asking Google for a review.</li>
             </ul>
           </div>
-<p>You can tell your WordPress site has been hacked when you see signs such as visitors being redirected to spam or scam sites, unfamiliar pages or Japanese and pharma keywords appearing in Google results, admin users you did not create, or a "This site may be hacked" or "Deceptive site ahead" warning. To know for sure, run a few quick checks: search Google for your domain, open the Security Issues report in Search Console, review your WordPress users, and scan the files with a malware scanner.</p>
-
-<p><strong>Short answer:</strong> a hack usually shows up in one of four places: what visitors see (redirects, pop-ups, warnings), what Google shows (spam pages, odd titles), what the admin shows (new users, unknown plugins, changed settings) and what the server shows (modified files, high resource use, spam emails). Check all four, because many hacks hide from logged-in admins and only show to visitors from Google.</p>
+<p>You can tell your WordPress site has been hacked if visitors are redirected to spam or scam sites, Google shows pages you never created (often Japanese or pharma keywords), there are admin users you did not add, or Chrome or Google shows "Deceptive site ahead" or "This site may be hacked". To check for sure, search <code>site:yourdomain.com</code> in Google, open Security Issues in Search Console, review your administrator accounts and scan the files.</p>
+<p>Check from the outside as well as the inside: many hacks hide from logged-in admins and only show to visitors arriving from Google on a phone.</p>
 
 <h2 id="warning-signs-that-your-wordpress-site-has-been-hacked">Warning signs that your WordPress site has been hacked</h2>
 <p>These are the symptoms owners most often notice first. One sign on its own can have an innocent cause, but two or more together almost always means you should investigate properly.</p>
@@ -188,7 +189,7 @@
 <li><strong>Hosting suspension or warning email:</strong> your host suspends the account or emails you about malware or abuse.</li>
 <li><strong>Spam emails sent from your domain:</strong> bounce messages you never sent, or your host limiting outgoing mail.</li>
 <li><strong>Sudden slowness or high CPU usage:</strong> hidden scripts mining, sending spam or attacking other sites use server resources.</li>
-<li><strong>Changed content or defacement:</strong> new links in the footer, injected text, or your homepage replaced.</li>
+<li><strong>Changed content or defacement:</strong> new links in the footer, injected text, or your homepage replaced. A red "Deceptive site ahead" screen needs its own steps: see <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</li>
 <li><strong>Locked out of the admin:</strong> your password no longer works and the reset email never arrives because the admin email was changed.</li>
 </ul>
 
@@ -223,6 +224,19 @@
 <li>Run an external website scanner, which checks the public pages for known malware and blacklist status.</li>
 </ul>
 <p>External checks only see what is served publicly. A backdoor that is waiting quietly will not show up, so a full check still needs file and database access.</p>
+
+<h2 id="how-to-check-a-wordpress-site-for-hacks-with-wp-cli-or-ssh">How to check a WordPress site for hacks with WP-CLI or SSH</h2>
+<p>If your host gives you SSH access (most VPS, cloud and many managed plans do), these commands are faster and more reliable than clicking through a file manager. Run them from the WordPress folder:</p>
+<ul>
+<li><code>wp core verify-checksums</code> compares every WordPress core file with the official copy and lists anything changed or added. A clean core prints "Success".</li>
+<li><code>wp plugin verify-checksums --all</code> does the same for plugins from wordpress.org (premium plugins will show as unverifiable, which is normal).</li>
+<li><code>wp user list --role=administrator</code> lists every admin with their email and registration date.</li>
+<li><code>find wp-content/uploads -name "*.php"</code> should return nothing on most sites. A PHP file in uploads is almost always malicious.</li>
+<li><code>find . -name "*.php" -mtime -7</code> lists PHP files changed in the last seven days. Compare it with the dates you actually updated anything.</li>
+<li><code>grep -rl "eval(base64_decode" wp-content</code> finds the most common pattern used to hide injected code. Legitimate plugins rarely use it.</li>
+<li><code>wp db search "&lt;script" wp_options wp_posts</code> finds script tags injected into settings and content.</li>
+</ul>
+<p>Also look for a <code>wp-content/mu-plugins</code> folder you did not create. Must-use plugins load automatically and do not appear in the normal Plugins list, which makes them a favourite hiding place.</p>
 
 <h2 id="hacked-or-just-broken-common-false-alarms">Hacked or just broken? Common false alarms</h2>
 <p>Not every problem is a hack. Before you panic, rule out these common causes:</p>
@@ -265,8 +279,6 @@
 </ul>
 <p>Our full <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> goes through each step.</p>
 
-<p>Seeing a red browser warning? See <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</p>
-
 <h2 id="how-to-check-if-a-wordpress-store-or-payment-page-is-hacked">How to check if a WordPress store or payment page is hacked</h2>
 <p>Online stores need a few extra checks, because attackers who get into a WooCommerce site often target money rather than search rankings. These hacks can stay hidden for weeks because the shop keeps working normally while customer data or payments are quietly diverted.</p>
 <ul>
@@ -278,15 +290,7 @@
 </ul>
 <p>If anything here looks wrong, treat it as urgent: put the checkout into maintenance mode, tell your payment provider, and follow the clean-up steps above before taking orders again.</p>
 <h2 id="a-monthly-hack-check-you-can-do-in-15-minutes">A monthly hack check you can do in 15 minutes</h2>
-<p>Most owners only check when something already looks broken. A short monthly routine catches problems earlier, while they are cheaper to fix:</p>
-<ol>
-<li>Run a site: search for your domain and skim the titles.</li>
-<li>Open Search Console and check Security Issues and the Pages report for a sudden jump in indexed pages.</li>
-<li>Review the Users list and the Plugins list for anything you do not recognise.</li>
-<li>Confirm your latest off-site backup exists and is recent. Our <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> explains what a usable backup looks like.</li>
-<li>Visit the site from a Google result on your phone using mobile data.</li>
-</ol>
-<p>This fits naturally into a regular maintenance routine. If you would rather not do it yourself, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include it.</p>
+<p>Repeat checks 1, 2, 4, 5 and 6 from the list above once a month, and confirm your latest off-site backup exists and restores (see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>). A <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include this routine if you would rather not do it yourself.</p>
 <h2 id="faqs">FAQs</h2>
 <h3>How do I tell if my WordPress site has been hacked?</h3>
 <p>Look for redirects to unrelated sites, spam pages when you search site:yourdomain.com, unknown admin users, Google or browser warnings, and unexpected file changes. Then confirm with Search Console's Security Issues report and a malware scan.</p>
@@ -301,7 +305,8 @@
 <h3>Should I fix a hacked WordPress site myself or hire someone?</h3>
 <p>If you are comfortable with SFTP, databases and file comparison, you can follow a careful process. If the site handles payments or enquiries, or the hack keeps coming back, professional help is usually quicker and safer.</p>
 
-<p>If your checks point to a hack, Samverse offers <a href="/wordpress-malware-removal/">hacked WordPress site repair and security</a>, including clean-up, backdoor removal and getting Google warnings lifted. For ongoing protection, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off security review.</p>
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help quickly if the site takes payments or enquiries, if Google or Chrome is already showing a warning, if you cannot find how the attacker got in, or if the hack comes back after a clean-up (a sign a backdoor was missed). If your checks point to a hack, Samverse offers <a href="/wordpress-malware-removal/">hacked WordPress site repair and security</a>, including clean-up, backdoor removal and getting Google warnings lifted. For ongoing protection, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off security review.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -340,6 +345,7 @@
               <li><a href="#warning-signs-that-your-wordpress-site-has-been-hacked">Warning signs that your WordPress site has been hacked</a></li>
               <li><a href="#how-to-know-if-your-wordpress-site-has-been-hacked-10-quick-checks">How to know if your WordPress site has been hacked: 10 quick checks</a></li>
               <li><a href="#how-to-check-if-a-wordpress-site-is-hacked-without-logging-in">How to check if a WordPress site is hacked without logging in</a></li>
+              <li><a href="#how-to-check-a-wordpress-site-for-hacks-with-wp-cli-or-ssh">How to check a WordPress site for hacks with WP-CLI or SSH</a></li>
               <li><a href="#hacked-or-just-broken-common-false-alarms">Hacked or just broken? Common false alarms</a></li>
               <li><a href="#what-to-do-first-if-your-wordpress-site-has-been-hacked">What to do first if your WordPress site has been hacked</a></li>
               <li><a href="#why-restoring-an-old-backup-is-not-always-enough">Why restoring an old backup is not always enough</a></li>
@@ -347,6 +353,7 @@
               <li><a href="#how-to-check-if-a-wordpress-store-or-payment-page-is-hacked">How to check if a WordPress store or payment page is hacked</a></li>
               <li><a href="#a-monthly-hack-check-you-can-do-in-15-minutes">A monthly hack check you can do in 15 minutes</a></li>
               <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
             </ol>
           </nav>
           <div class="side-cta">

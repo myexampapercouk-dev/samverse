@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=d8206b22">
+  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-27">
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
       "headline": "WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)",
       "description": "How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-06",
       "mainEntityOfPage": "https://samverse.space/blog/technical-seo-audit-wordpress/",
       "image": "https://samverse.space/assets/og/blog-technical-seo-audit-wordpress.png",
       "articleSection": "SEO",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20SEO%20Audit%3A%20A%20Practical%20Step-by-Step%20Checklist%20(With%20WooCommerce%20Checks)%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftechnical-seo-audit-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -168,6 +168,7 @@
               <li><a href="#what-a-useful-wordpress-seo-audit-report-contains">What a useful WordPress SEO audit report contains</a></li>
               <li><a href="#when-to-run-a-wordpress-seo-audit-again">When to run a WordPress SEO audit again</a></li>
               <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
             </ol>
           </details>
           <div class="takeaways">
@@ -178,9 +179,8 @@
               <li>Write every finding into a short report with the pages affected, impact, owner and status, and run a quick audit after any redesign, migration or traffic drop.</li>
             </ul>
           </div>
-<p>A WordPress SEO audit is a structured check of whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. To do one, start with Google Search Console and a site crawl to find indexing and technical problems, then check WordPress settings, speed, on-page SEO, structured data and (for stores) WooCommerce-specific issues, and fix them in order of impact.</p>
-
-<p><strong>Short answer:</strong> check indexing, crawlability, speed, on-page basics, structured data and content quality, in that order. Blockers such as a site-wide noindex, broken redirects or pages excluded from the index come first; title tweaks come last.</p>
+<p>A WordPress SEO audit checks whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. Start with Search Console's Pages report and a full site crawl, then check WordPress and SEO plugin settings, robots.txt and the sitemap, speed, on-page SEO, structured data and (for stores) WooCommerce issues.</p>
+<p>Fix blockers first, such as a site-wide noindex, broken redirects or important pages left out of the index; title tweaks come last.</p>
 
 <h2 id="what-you-need-before-you-start">What you need before you start</h2>
 <ul>
@@ -210,7 +210,8 @@
 
 <h2 id="step-2-check-wordpress-settings-that-block-seo">Step 2: Check WordPress settings that block SEO</h2>
 <ul>
-<li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch.</li>
+<li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
+<li><strong>Hidden noindex:</strong> view the source of a key page and search for <code>name="robots"</code>; it should not say noindex. Then run <code>curl -I https://yourdomain.com/</code> and check there is no <code>X-Robots-Tag: noindex</code> header, which some security and staging plugins add at server level where no plugin setting shows it.</li>
 <li><strong>Permalinks:</strong> use a readable structure such as post name, not ?p=123.</li>
 <li><strong>SEO plugin settings:</strong> check which post types and taxonomies are set to noindex, and that only one SEO plugin is active.</li>
 <li><strong>Attachment pages:</strong> media attachment pages should redirect to the file or parent post, not be indexed as thin pages.</li>
@@ -285,7 +286,7 @@
 </table>
 <p>Re-run the crawl and check Search Console after fixes. Technical improvements often show within weeks, while content changes can take longer.</p>
 
-<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a>, <a href="/blog/duplicate-content-explained/">duplicate content</a> and <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects</a>.</p>
+<p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a> and <a href="/blog/duplicate-content-explained/">duplicate content</a>.</p>
 
 <h2 id="what-a-useful-wordpress-seo-audit-report-contains">What a useful WordPress SEO audit report contains</h2>
 <p>An audit only helps if someone acts on it. A long export from a crawler with hundreds of warnings rarely gets fixed. A useful report is short and sorted, and each finding has five parts:</p>
@@ -320,7 +321,8 @@
 <h3>What should a WooCommerce SEO audit include?</h3>
 <p>Everything in a WordPress audit plus filter and sort URLs, product and category content, out-of-stock handling, product schema and noindexing cart, checkout and account pages.</p>
 
-<p>Want an expert to run the audit and fix what it finds? Samverse offers <a href="/wordpress-seo-services/">WordPress SEO services</a>, including technical audits for WooCommerce stores, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for the performance issues an audit uncovers.</p>
+<h2 id="when-to-get-help">When to get help</h2>
+<p>You can run most of this checklist yourself. Get help when the Pages report shows large numbers of important pages "Crawled, currently not indexed", after a migration or redesign that lost traffic, or when fixes need theme, server or redirect changes you are not comfortable making. Want an expert to run the audit and fix what it finds? Samverse offers <a href="/wordpress-seo-services/">WordPress SEO services</a>, including technical audits for WooCommerce stores, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for the performance issues an audit uncovers.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -371,6 +373,7 @@
               <li><a href="#what-a-useful-wordpress-seo-audit-report-contains">What a useful WordPress SEO audit report contains</a></li>
               <li><a href="#when-to-run-a-wordpress-seo-audit-again">When to run a WordPress SEO audit again</a></li>
               <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
             </ol>
           </nav>
           <div class="side-cta">
