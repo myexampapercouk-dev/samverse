@@ -1220,7 +1220,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Then turn those numbers into rupees; see how to measure website ROI.</p>
 <p>See how to collect and display testimonials that actually convince people.</p>
 <h2>Fix the enquiry handling, not only the website</h2>
-<p>Sometimes the website is producing enquiries and they are being lost after they arrive. Before redesigning anything, check what happens to a form submission or a WhatsApp message once it leaves the site.</p>
+<p>Sometimes the website is producing enquiries and they are being lost after they arrive. Before redesigning anything, check what happens to a form submission or a WhatsApp message once it leaves the site. If the checks show the site itself is the problem, a <a href="/website-redesign/">website redesign</a> built around clear calls to action is the next step.</p>
 <h3>Send a test enquiry and time the reply</h3>
 <p>Fill in your own form and send a message to your own WhatsApp number from a different phone. Note whether the form email arrives at all, whether it lands in spam, and how long it takes for someone to reply. Form emails failing silently is a common and easily fixed problem on WordPress sites, usually solved by sending mail through a proper SMTP service.</p>
 <h3>Make sure enquiries reach a person</h3>
@@ -26980,7 +26980,7 @@ Last checked:</code></pre>
 <h3>What should I do if the domain is registered in a former employee's name?</h3>
 <p>Ask them, while you are still in touch, to change the registrant details to the business or start a transfer to your own registrar account. If they cannot be reached, contact the registrar with proof of business ownership and follow its dispute or change-of-registrant process.</p>
 
-<p>Planning a new site or taking over an existing one? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, every account stays in your name and you get a written handover at the end. If your site is still on a previous developer's server, <a href="/wordpress-migration/">WordPress migration</a> moves it to hosting you own without downtime.</p>
+<p>Planning a new site or taking over an existing one? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, every account stays in your name and you get a written handover at the end. Pune businesses can also meet a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> directly. If your site is still on a previous developer's server, <a href="/wordpress-migration/">WordPress migration</a> moves it to hosting you own without downtime.</p>
 `,
   },
   {
@@ -31174,7 +31174,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 <p>If you still want a lower price, negotiate scope rather than rate: drop a feature, reduce unique templates, phase the work or supply your own content and photos.</p>
 
-<p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins.</p>
+<p>Comparing developers in Pune? See <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>, from checking live sites to who owns the logins, or send your brief to a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for a fixed quote.</p>
 
 <p>Comparing developers outside Pune? There are local notes for <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-india/">other Indian cities</a>.</p>
 

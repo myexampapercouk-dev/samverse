@@ -713,3 +713,8 @@ main, footer, section { max-width: 100vw; }
 .review-text.open { display: block; -webkit-line-clamp: unset; }
 .review-more { align-self: flex-start; background: none; border: 0; padding: 0; color: var(--violet); font-weight: 600; cursor: pointer; font: inherit; font-weight: 600; }
 .review-more:hover { text-decoration: underline; }
+
+/* Landing page hero: what you get / best for / how to start */
+.lp-glance { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 8px; max-width: 680px; }
+.lp-glance li { line-height: 1.5; }
+.lp-glance strong { color: var(--text); }

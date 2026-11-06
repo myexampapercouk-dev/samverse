@@ -111,12 +111,41 @@ ${d.items.map(([h, t], i) => `          <article class="depth-item reveal"><span
 // Blog posts that recommend this landing page
 // Up to 8 supporting articles per landing page (topic cluster links): posts that name this page first come first
 // `readingFrom` lets a page (e.g. a location page) borrow another page's reading list
+// Page-specific "How it works" steps (replaces the generic homepage process when set)
+const stepsFor = p => `<section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">How it works</span><h2>${esc(p.stepsTitle || 'How it works')}</h2></div>
+        <div class="depth-grid">
+${p.steps.map(([h, t], i) => `          <article class="depth-item reveal"><span class="depth-num">0${i + 1}</span><h3>${esc(h)}</h3><p>${esc(t)}</p></article>`).join('\n')}
+        </div>
+        <p class="related-all"><a href="#contact" class="btn">Get a Free Quote</a></p>
+      </div>
+    </section>`;
+// Proof: what was actually built for named case studies (facts from tools/work-data.js)
+const proofFor = p => {
+  if (!p.proof) return '';
+  const items = p.proof.map(([name, text]) => {
+    const pr = PROJECTS.find(x => x.name === name);
+    if (!pr || !pr.study) throw new Error('proof project without case study: ' + name);
+    return `          <li>${tick} <span><a href="${pr.study}" class="link-inline">${esc(name)}</a>: ${esc(text)}</span></li>`;
+  }).join('\n');
+  return `    <section class="section">
+      <div class="container faq-wrap">
+        <div class="section-head reveal"><span class="eyebrow">Proof</span><h2>${esc(p.proofTitle || 'What I have built')}</h2></div>
+        <ul class="checklist reveal">
+${items}
+        </ul>
+      </div>
+    </section>
+`;
+};
 const readingFor = p => {
   const key = p.readingFrom || p.slug;
-  const posts = LIVE_POSTS.filter(x => x.related.includes(key))
+  const picked = (p.reading || []).map(s => { const x = LIVE_POSTS.find(y => y.slug === s); if (!x) throw new Error('reading post missing or noindex: ' + s); return x; });
+  const rest = LIVE_POSTS.filter(x => x.related.includes(key) && !picked.includes(x))
     .map((x, i) => ({ x, i, rank: x.related.indexOf(key) }))
-    .sort((a, b) => a.rank - b.rank || a.i - b.i)
-    .slice(0, 8).map(o => o.x);
+    .sort((a, b) => a.rank - b.rank || a.i - b.i).map(o => o.x);
+  const posts = picked.concat(rest).slice(0, 8);
   if (!posts.length) return "";
   return `    <section class="section reading">
       <div class="container faq-wrap">
@@ -202,7 +231,12 @@ ${JSON.stringify(schema, null, 2)}
           <span class="pill"><span class="dot"></span> ${esc(p.eyebrow)}</span>
           <h1>${p.h1}</h1>
           <p class="lead">${esc(p.lead)}</p>
-          <div class="hero-cta">
+${p.glance ? `          <ul class="lp-glance">
+            <li><strong>What you get:</strong> ${esc(p.glance.get)}</li>
+            <li><strong>Best for:</strong> ${esc(p.glance.who)}</li>
+            <li><strong>How to start:</strong> send the short quote form or a WhatsApp message with your website address. You get a reply with a plan and a fixed quote, usually within 24 hours.</li>
+          </ul>
+` : ''}          <div class="hero-cta">
             <a href="#contact" class="btn">Get a Free Quote</a>
             <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
           </div>
@@ -242,7 +276,7 @@ ${p.gets.map(g => `          <li>${tick} ${esc(g)}</li>`).join('\n')}
     </section>
 
 ${depthFor(p)}
-    <section class="section" id="work">
+${proofFor(p)}    <section class="section" id="work">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Related work</span>
@@ -255,7 +289,7 @@ ${projectCards(p.projects)}
       </div>
     </section>
 
-    ${process_}
+    ${p.steps ? stepsFor(p) : process_}
 
     <section class="section" id="faq">
       <div class="container faq-wrap">
