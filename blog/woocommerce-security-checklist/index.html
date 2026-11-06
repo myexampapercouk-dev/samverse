@@ -43,7 +43,7 @@
       "headline": "WooCommerce Security Checklist: Payments, Checkout, Card-Testing Bots, Staff Accounts and Customer Data",
       "description": "A WooCommerce security checklist: admin roles, payment gateways, PCI basics, card skimmers, card-testing bots, fake orders and protecting customer data.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-security-checklist/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-security-checklist.png",
       "articleSection": "E-commerce",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Security%20Checklist%3A%20Payments%2C%20Checkout%2C%20Card-Testing%20Bots%2C%20Staff%20Accounts%20and%20Customer%20Data%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-security-checklist%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#watch-the-checkout-for-skimmers">Watch the checkout for skimmers</a></li>
               <li><a href="#protect-customer-data">Protect customer data</a></li>
               <li><a href="#a-store-security-routine">A store security routine</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -286,6 +288,12 @@
 </table>
 <p>This fits into the wider <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>. If you suspect a hack, turn off online payments or put the checkout into maintenance, inform your gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require certain cyber incidents to be reported quickly, so take advice promptly.</p>
 
+<h2 id="quick-check">Quick check</h2>
+<p>Go to <strong>Users &gt; All Users</strong> and filter by Administrator and Shop Manager; remove anyone who no longer needs access. Then check <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong> and revoke any API keys you don't recognise or no longer use, especially ones with Read/Write access.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If you find unknown API keys, orders you didn't expect, or payment pages behaving oddly, get the store checked straight away; if it has already been hit, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Secure gateway setup and checkout testing are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Is WooCommerce secure?</h3>
 <p>Yes, when it's maintained. WooCommerce is actively developed and security fixes are released regularly. Most store compromises come from outdated plugins, weak or shared logins, nulled software and poor hosting.</p>
@@ -299,8 +307,6 @@
 <p>Use one reputable security plugin, such as Wordfence or Solid Security, ideally alongside a cloud firewall. Running two security plugins often causes conflicts and slows the checkout.</p>
 <h3>How do I know if my checkout has been skimmed?</h3>
 <p>Customers reporting card fraud after buying from you is the most common sign. Also look for unexpected payment forms and unfamiliar external scripts on the checkout page. Act immediately: take card payments offline, tell your gateway and have the store cleaned.</p>
-
-<p>Building a new store or moving to WooCommerce? Payment gateways, COD rules and the checkout are set up and tested as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If your store has already been hit, <a href="/wordpress-malware-removal/">malware removal and hardening</a> covers the cleanup, extra checks on the checkout and payment settings, and a test order.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -346,6 +352,8 @@
               <li><a href="#watch-the-checkout-for-skimmers">Watch the checkout for skimmers</a></li>
               <li><a href="#protect-customer-data">Protect customer data</a></li>
               <li><a href="#a-store-security-routine">A store security routine</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -373,8 +381,8 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/woocommerce-store-launch-checklist/"><img class="post-card-img" src="/assets/og/blog-woocommerce-store-launch-checklist.webp" alt="WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps</h3><p>A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/woocommerce-cash-on-delivery-india/"><img class="post-card-img" src="/assets/og/blog-woocommerce-cash-on-delivery-india.webp" alt="Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders</h3><p>Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-store-launch-checklist/"><img class="post-card-img" src="/assets/og/blog-woocommerce-store-launch-checklist.webp" alt="WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps</h3><p>A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-cash-on-delivery-india/"><img class="post-card-img" src="/assets/og/blog-woocommerce-cash-on-delivery-india.webp" alt="Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders</h3><p>Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.</p><span class="post-card-meta">27 September 2026 · 11 min read</span></a>
           <a class="post-card" href="/blog/payment-gateways-india-compared/"><img class="post-card-img" src="/assets/og/blog-payment-gateways-india-compared.webp" alt="How to Choose a Payment Gateway for Your Indian Website: What to Compare" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>How to Choose a Payment Gateway for Your Indian Website: What to Compare</h3><p>Payment gateways in India compared on what matters: UPI and card methods, fee structure, settlements, KYC, international cards and WooCommerce support.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
         </div>
       </div>

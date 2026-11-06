@@ -43,7 +43,7 @@
       "headline": "WordPress Security Checklist: 25 Steps to Harden a Business Website",
       "description": "A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-security-checklist/",
       "image": "https://samverse.space/assets/og/blog-wordpress-security-checklist.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-11">11 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Security%20Checklist%3A%2025%20Steps%20to%20Harden%20a%20Business%20Website%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-security-checklist%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#backups-and-hosting">Backups and hosting</a></li>
               <li><a href="#how-to-tell-if-hardening-came-too-late">How to tell if hardening came too late</a></li>
               <li><a href="#a-monthly-security-routine">A monthly security routine</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -281,6 +283,13 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>
 
+<h2 id="quick-check">Quick check</h2>
+<p>In <strong>Users &gt; All Users</strong>, filter by Administrator and remove or downgrade any account you don't recognise or no longer need. Then open <strong>Tools &gt; Site Health</strong> and fix anything listed under security, such as outdated plugins or a PHP version that no longer gets updates. With WP-CLI you can list admins in one line:</p>
+<pre><code>wp user list --role=administrator --fields=ID,user_login,user_email,user_registered</code></pre>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If you find admin accounts you didn't create, files you don't recognise or redirects you can't explain, stop hardening and get the site cleaned first; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For updates with a backup first, security scans and monitoring every month, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Is WordPress secure enough for a business website?</h3>
 <p>Yes, when it's maintained. WordPress core is actively maintained and security fixes are released regularly. Most hacks come from outdated plugins, weak passwords, nulled software and poor hosting, all of which this checklist addresses.</p>
@@ -294,8 +303,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Check updates weekly or fortnightly and run through a routine like the one above monthly. Review users whenever someone leaves or a project with an outside developer ends.</p>
 <h3>What should I do if my WordPress site is already hacked?</h3>
 <p>Don't just restore an old backup or delete the obvious files. Find and remove the malware and any backdoors, change every password, update everything, and then harden the site. A hack that isn't fully cleaned usually comes back.</p>
-
-<p>Rather have someone else handle it? My maintenance plans cover updates with a backup first, security scans and monitoring, off-site backups and uptime checks every month; see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If your site has already been hacked, see <a href="/wordpress-malware-removal/">malware removal and hardening</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -340,6 +347,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
               <li><a href="#backups-and-hosting">Backups and hosting</a></li>
               <li><a href="#how-to-tell-if-hardening-came-too-late">How to tell if hardening came too late</a></li>
               <li><a href="#a-monthly-security-routine">A monthly security routine</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

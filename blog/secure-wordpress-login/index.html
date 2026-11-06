@@ -43,7 +43,7 @@
       "headline": "How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection",
       "description": "Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/secure-wordpress-login/",
       "image": "https://samverse.space/assets/og/blog-secure-wordpress-login.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Secure%20Your%20WordPress%20Login%3A%202FA%2C%20Passkeys%2C%20Login%20Limits%20and%20Bot%20Protection%20https%3A%2F%2Fsamverse.space%2Fblog%2Fsecure-wordpress-login%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,6 +164,8 @@
               <li><a href="#login-alerts-sessions-and-roles">Login alerts, sessions and roles</a></li>
               <li><a href="#signs-someone-has-already-logged-in">Signs someone has already logged in</a></li>
               <li><a href="#giving-access-to-staff-agencies-and-developers-safely">Giving access to staff, agencies and developers safely</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -289,6 +291,15 @@
 <p>Your WordPress login is only one key. Hosting control panels, the domain registrar, Cloudflare and the email admin console can all be used to take over a site. Keep these in the business's name, turn on 2FA on each, and store the recovery codes somewhere safe that isn't the same phone.</p>
 <p>If you're an agency handing client sites to a developer, the same rules apply in both directions; I work this way with <a href="/wordpress-developer-for-agencies/">agencies that outsource WordPress development</a>, using named accounts and removing access once a project is handed over.</p>
 
+<h2 id="quick-check">Quick check</h2>
+<p>List every user who can change the site and check each has 2FA turned on:</p>
+<pre><code>wp user list --role=administrator --fields=user_login,user_email,user_registered
+wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
+<p>Without WP-CLI, use <strong>Users &gt; All Users</strong> and filter by role. Then log in from a private window to confirm the 2FA prompt actually appears.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If unknown admin accounts have appeared, you're locked out, or you think someone has logged in without permission, treat it as a possible hack, not a login settings problem. Cleanup and access review are part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is the best way to secure a WordPress login?</h3>
 <p>Two-factor authentication for everyone who can change the site, unique passwords from a password manager, login limits and a bot check. Together those stop most login attacks.</p>
@@ -302,8 +313,6 @@
 <p>Use a backup code, or ask another administrator to reset your 2FA. If neither is possible, temporarily disabling the 2FA plugin by renaming its folder over SFTP gets you back in; set 2FA up again straight away.</p>
 <h3>Is Cloudflare Turnstile better than reCAPTCHA?</h3>
 <p>For most sites it is easier on visitors, rarely showing a puzzle, and it doesn't require the Cloudflare CDN. Both work; what matters is that the check is on every login form.</p>
-
-<p>For updates and security monitoring every month, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If unknown admins have already appeared or you think someone has logged in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -350,6 +359,8 @@
               <li><a href="#login-alerts-sessions-and-roles">Login alerts, sessions and roles</a></li>
               <li><a href="#signs-someone-has-already-logged-in">Signs someone has already logged in</a></li>
               <li><a href="#giving-access-to-staff-agencies-and-developers-safely">Giving access to staff, agencies and developers safely</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -380,7 +391,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-user-roles-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-user-roles-explained.webp" alt="WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which</h3><p>WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/why-wordpress-sites-get-hacked/"><img class="post-card-img" src="/assets/og/blog-why-wordpress-sites-get-hacked.webp" alt="Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One</h3><p>Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, weak hosting and admin access, plus the fix that prevents each one.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

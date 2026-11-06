@@ -43,7 +43,7 @@
       "headline": "Business Email Deliverability: SPF, DKIM and DMARC Explained, With Example Records and a Fix for Website Form Emails",
       "description": "Why business and website form emails land in spam, and how SPF, DKIM and DMARC fix it: example records, SMTP for WordPress forms and a step-by-step fix.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-19",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/",
       "image": "https://samverse.space/assets/og/blog-business-email-deliverability-spf-dkim-dmarc.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-19">19 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Business%20Email%20Deliverability%3A%20SPF%2C%20DKIM%20and%20DMARC%20Explained%2C%20With%20Example%20Records%20and%20a%20Fix%20for%20Website%20Form%20Emails%20https%3A%2F%2Fsamverse.space%2Fblog%2Fbusiness-email-deliverability-spf-dkim-dmarc%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#website-form-emails-php-mail-vs-authenticated-smtp">Website form emails: PHP mail() vs authenticated SMTP</a></li>
               <li><a href="#how-to-test-your-setup">How to test your setup</a></li>
               <li><a href="#a-step-by-step-fix">A step-by-step fix</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -283,6 +285,15 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ol>
 <p>DNS changes can take a few hours to spread, occasionally longer, so test again the next day before deciding something hasn't worked.</p>
 
+<h2 id="quick-check">Quick check</h2>
+<p>Look up your domain's records from any terminal:</p>
+<pre><code>nslookup -type=txt yourdomain.com
+nslookup -type=txt _dmarc.yourdomain.com</code></pre>
+<p>You should see exactly one record starting <code>v=spf1</code> and one starting <code>v=DMARC1</code>. Then send an email from your domain to a Gmail address, open it, choose <strong>Show original</strong>, and check that SPF, DKIM and DMARC all say PASS.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If any of the three fail, you have two SPF records, or website enquiries and order emails still land in spam, get the DNS and SMTP setup traced. Fixing email delivery and checking forms every month is part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Do I need SPF, DKIM and DMARC for a small business?</h3>
 <p>Yes. Even a business sending a few emails a day benefits, because major mailbox providers now expect authenticated mail, and DMARC also makes it harder for scammers to send fake emails using your domain.</p>
@@ -294,8 +305,6 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <p>Usually because the form sends through the web server's PHP mail function instead of your email provider. Send it through an authenticated SMTP account, with the From address matching that account.</p>
 <h3>Can I send WordPress form emails through Gmail?</h3>
 <p>Yes, with an SMTP plugin and a Gmail app password, which needs 2-Step Verification turned on. The email will come from that Gmail address, which is fine when enquiries only go to you. For mail from your own domain, use a domain mailbox or a transactional service.</p>
-
-<p>If your enquiries or order emails are going missing, I can trace where they fail, fix the SPF, DKIM, DMARC and SMTP setup, and keep checking your forms every month as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Moving host or domain? Email records are preserved and tested as part of <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -340,6 +349,8 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
               <li><a href="#website-form-emails-php-mail-vs-authenticated-smtp">Website form emails: PHP mail() vs authenticated SMTP</a></li>
               <li><a href="#how-to-test-your-setup">How to test your setup</a></li>
               <li><a href="#a-step-by-step-fix">A step-by-step fix</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

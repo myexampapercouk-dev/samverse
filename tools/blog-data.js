@@ -1270,7 +1270,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Local SEO for Small Businesses in India: A Step-by-Step Guide to Google Maps, Reviews, Citations, Local Pages and Tracking',
     description: 'Local SEO for small businesses in India: set up your Google Business Profile, earn reviews, fix NAP and citations, build local pages and track results.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -1382,6 +1382,12 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Wondering how long it all takes? See <a href="/blog/how-long-does-seo-take/">how long SEO takes to work</a>.</p>
 
+<h2>Quick check</h2>
+<p>Search for your main service plus your area (for example "AC repair Kothrud") from a phone in a private window, and note whether your Business Profile appears in the map results. Then open your website's contact page and footer and confirm the business name, address and phone number match the profile exactly. Mismatches here are one of the most common local SEO problems to fix first.</p>
+
+<h2>When to get help</h2>
+<p>If your profile and website are set up but you still don't appear in nearby searches, or you serve several areas and aren't sure how to build pages for them without creating thin duplicates, get a local SEO review. That work is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>What is local SEO?</h3>
 <p>It is improving your Google Business Profile, reviews, listings and website so your business appears when people nearby search for what you offer, in the map pack, Google Maps and normal results.</p>
@@ -1393,8 +1399,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Only for areas you genuinely serve and can say something specific about, such as local work, timings or travel. Near-identical pages with the area name swapped can be treated as doorway pages.</p>
 <h3>Can I use a virtual office address on my profile?</h3>
 <p>Generally not. Google's guidelines, at the time of writing, say a virtual or shared office shouldn't be used unless it is staffed during your business hours. If you travel to customers, use a service area instead; profiles with ineligible addresses risk suspension.</p>
-
-<p>Want your Business Profile and website working together, with accurate details, proper service and area pages and tracking you can read? That's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -1666,7 +1670,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How to Choose WordPress Hosting in India: Hosting Types, Server Location, Speed, Backups, Support and Renewals',
     description: 'How to choose WordPress hosting in India: shared, cloud, VPS or managed, server location, LiteSpeed, PHP, backups, support, renewals and red flags.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
@@ -1772,6 +1776,14 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>For each plan you shortlist, write down the year 1 price, year 2 and 3 renewal prices, domain renewal, email cost, backup cost and GST, then add them up. The plan with the lowest first-year price is often not the cheapest over three years, and a slightly dearer plan with included backups and a data centre near your visitors is usually better value.</p>
 <h3>When to move host</h3>
 <p>Move when the site is slow even after caching and image optimisation, when support cannot fix repeated downtime, when you have outgrown the plan's limits, or when renewal makes it poor value. A careful migration keeps URLs, email and SEO intact.</p>
+<h2>Quick check</h2>
+<p>Test how fast your current server responds before you decide to move. Run this from any terminal and look at the time to first byte:</p>
+<pre><code>curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\\n" https://yourdomain.com/</code></pre>
+<p>Run it a few times. A cached page that regularly takes well over a second to start responding usually points to slow or overloaded hosting rather than a heavy theme. In WordPress, <strong>Tools &gt; Site Health &gt; Info &gt; Server</strong> also shows your PHP version and memory limit.</p>
+
+<h2>When to get help</h2>
+<p>If your site is slow even after caching, your host keeps suspending the account, or the renewal price no longer makes sense, get the hosting reviewed before you move. Recommending the right type of hosting and moving the site without downtime is part of <a href="/wordpress-migration/">website migration and hosting setup</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Which hosting is best for WordPress in India?</h3>
 <p>There's no single best host. The right plan is the one that matches your site's type and traffic, has a data centre in or near India, runs current PHP with proper caching, keeps off-site backups, has WordPress-aware support and has a renewal price you can live with for years.</p>
@@ -1785,8 +1797,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Not always, but stores need more server power than brochure sites because cart and checkout pages can't be cached. Managed WordPress, cloud or a managed VPS is usually a safer starting point than entry shared hosting.</p>
 <h3>Can I change hosting later without losing my site or rankings?</h3>
 <p>Yes. A host-to-host move keeps every URL the same, so Google sees no change. The risks are email and forms breaking after the DNS switch, which careful planning avoids.</p>
-
-<p>Not sure your hosting fits your site, or ready to move? Through <a href="/wordpress-migration/">website migration and hosting setup</a>, I can review your current plan, recommend the right type of hosting for your traffic and budget, and move the site with a full backup, DNS and SSL set up, email records preserved and every form tested. Send me your website address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -2443,7 +2453,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
     title: 'WordPress Security Checklist: 25 Steps to Harden a Business Website',
     description: 'A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -2549,6 +2559,13 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <p>Server-side hardening: <a href="/blog/wordpress-file-permissions/">file permissions</a> and <a href="/blog/harden-wp-config-php/">wp-config.php settings</a>.</p>
 
+<h2>Quick check</h2>
+<p>In <strong>Users &gt; All Users</strong>, filter by Administrator and remove or downgrade any account you don't recognise or no longer need. Then open <strong>Tools &gt; Site Health</strong> and fix anything listed under security, such as outdated plugins or a PHP version that no longer gets updates. With WP-CLI you can list admins in one line:</p>
+<pre><code>wp user list --role=administrator --fields=ID,user_login,user_email,user_registered</code></pre>
+
+<h2>When to get help</h2>
+<p>If you find admin accounts you didn't create, files you don't recognise or redirects you can't explain, stop hardening and get the site cleaned first; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For updates with a backup first, security scans and monitoring every month, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Is WordPress secure enough for a business website?</h3>
 <p>Yes, when it's maintained. WordPress core is actively maintained and security fixes are released regularly. Most hacks come from outdated plugins, weak passwords, nulled software and poor hosting, all of which this checklist addresses.</p>
@@ -2562,8 +2579,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Check updates weekly or fortnightly and run through a routine like the one above monthly. Review users whenever someone leaves or a project with an outside developer ends.</p>
 <h3>What should I do if my WordPress site is already hacked?</h3>
 <p>Don't just restore an old backup or delete the obvious files. Find and remove the malware and any backdoors, change every password, update everything, and then harden the site. A hack that isn't fully cleaned usually comes back.</p>
-
-<p>Rather have someone else handle it? My maintenance plans cover updates with a backup first, security scans and monitoring, off-site backups and uptime checks every month; see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If your site has already been hacked, see <a href="/wordpress-malware-removal/">malware removal and hardening</a>.</p>
 `,
   },
   {
@@ -2978,7 +2993,7 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
     title: 'Google Business Profile Checklist: Setup, Optimisation and Monthly Management',
     description: 'A Google Business Profile checklist for service businesses: setup, categories, services, photos, reviews and a monthly management routine to rank in Maps.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -3116,6 +3131,12 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
 <li><strong>Myths:</strong> adding GPS geotags to photos does not improve rankings.</li>
 </ul>
 <p>Use the same real photos on your website's contact and about pages so the profile and site clearly belong to the same business.</p>
+<h2>Quick check</h2>
+<p>Search your exact business name on Google Maps from a phone while logged out (a private window works). Check that the name, address or service area, phone number, hours and website link match your website's contact page word for word, and that the primary category is the most specific one available. Then click the website link on the profile and confirm it opens the right page over HTTPS.</p>
+
+<h2>When to get help</h2>
+<p>If your profile is suspended, stuck in verification, showing the wrong details or not appearing for nearby searches despite being complete, it helps to have the profile and website reviewed together. Profile audits, matching service and location pages and LocalBusiness schema are part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Is Google Business Profile the same as Google My Business?</h3>
 <p>Yes. Google My Business was renamed Google Business Profile, and the profile is now managed directly from Google Search and Maps. Any Google My Business checklist covers the same profile, though some menus have moved.</p>
@@ -3129,8 +3150,6 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
 <p>Yes, if you serve customers at their location. Set it up as a service-area business, list the areas you cover and hide your address. You still need a real address for verification, but it won't be shown publicly.</p>
 <h3>Should my developer or agency own my Google Business Profile?</h3>
 <p>No. The business should be the primary owner, with developers and agencies added as managers. That way you keep the profile and its reviews if you change agency, and you can remove access at any time.</p>
-
-<p>Want your Google Business Profile and website working together? I can audit the profile, fix categories and details, set up matching service and location pages with schema, and give you a simple routine to keep it fresh. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -6074,7 +6093,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps',
     description: 'A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
@@ -6207,6 +6226,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Still deciding on a platform? See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
+<h2>Quick check</h2>
+<p>Place one test order for each payment method before launch, including cash on delivery, from a phone using a customer account and as a guest. Then check <strong>WooCommerce &gt; Orders</strong> for the right status, <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong> for failed actions, and both inboxes (yours and the customer's) for the order emails. Cancel and refund the test orders afterwards so stock and reports stay accurate.</p>
+
+<h2>When to get help</h2>
+<p>If test orders fail, payments succeed but orders stay pending, or order emails don't arrive, fix that before the first real customer. Setting up and testing gateways, shipping, taxes and order emails is part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How do I take a WooCommerce store live?</h3>
 <p>Switch the payment gateway from test to live keys, turn off Coming soon mode, untick "Discourage search engines", clear caches, then place and refund one real low-value order to confirm payments, emails and stock all work.</p>
@@ -6220,8 +6245,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Terms and conditions, a privacy policy, a refund and cancellation policy, a shipping policy and a contact page with your business details. Gateways often check for them, and your CA or lawyer should review the wording.</p>
 <h3>Can I launch with only a few products?</h3>
 <p>Yes. A small catalogue with complete, well-photographed product pages sells better than a large one full of gaps. Add products in batches once orders are flowing.</p>
-
-<p>Want your store set up and tested before the first real customer arrives? In my <a href="/woocommerce-developer/">WooCommerce development</a> process, prepaid and COD test orders, including failed and cancelled payments, come first; then live keys go in and a real low-value order confirms the whole flow. You get a full backup taken at launch, with the test orders cleared out.</p>
 `,
   },
   {
@@ -7256,7 +7279,7 @@ Main contact person and best time to reach:</code></pre>
     title: 'Why Your Website Contact Form Isn\'t Getting Enquiries: Broken, Blocked or Ignored?',
     description: 'Contact form not getting enquiries? Find out if it is broken, blocked by spam filters or ignored by visitors, then fix email delivery, spam checks and design.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-maintenance', 'landing-page-design', 'website-redesign'],
     body: `
@@ -7346,6 +7369,12 @@ Additional headers: Reply-To: [your-email]</code></pre>
 
 <p>And confirm every submission properly with a <a href="/blog/thank-you-pages-forms/">thank-you page</a>.</p>
 
+<h2>Quick check</h2>
+<p>Submit your own form from a phone on mobile data, then check three places: the success message on screen, the stored entry in the form plugin (for example <strong>WPForms &gt; Entries</strong> or <strong>Flamingo &gt; Inbound Messages</strong>), and your inbox including spam. If the entry is stored but no email arrives, the problem is email delivery; if there is no entry at all, the form itself is failing.</p>
+
+<h2>When to get help</h2>
+<p>If test submissions vanish, emails land in spam, or enquiries dropped after an update and you cannot see why, get the form and its email path checked properly. Form testing and SMTP setup are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why am I not receiving emails from my website contact form?</h3>
 <p>Usually because WordPress is sending through the server's unauthenticated mail function, so messages are rejected or filtered as spam. Set up SMTP with a mailbox on your domain, send from your own address with the visitor in Reply-To, and check your SPF and DKIM records.</p>
@@ -7359,8 +7388,6 @@ Additional headers: Reply-To: [your-email]</code></pre>
 <p>It can. Puzzle challenges put some visitors off, strict v3 scores can reject real people, and the script may not load for visitors who decline cookies on some setups. A honeypot, a time check or Cloudflare Turnstile is often enough.</p>
 <h3>My form works, so why is my website not getting enquiries?</h3>
 <p>Then visitors aren't being persuaded, or there aren't enough of the right ones. Check your traffic in Analytics first, then shorten the form, add WhatsApp and phone, show proof and a reply time near it, and put calls to action on every service page.</p>
-
-<p>Not sure whether your form is broken, blocked or simply ignored? I can test it end to end, fix email delivery and spam protection, and check it after every update so it can't fail silently again. Form checks after updates are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and if the page around the form needs rethinking, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -8603,7 +8630,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks',
     description: 'How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
@@ -8716,6 +8743,14 @@ wp cache flush</code></pre>
 </ul>
 <p>Backups are one part of being ready for a bad day; a simple website disaster recovery plan covers logins, contacts and who does what.</p>
 
+<h2>Quick check</h2>
+<p>A backup you have never restored is only a hope. Once a quarter, restore your latest backup to a staging site or a subdomain and click through the homepage, a form and (for stores) the checkout. To check that the database can be exported cleanly, run this with WP-CLI and confirm the file is not empty:</p>
+<pre><code>wp db export backup-test.sql
+ls -lh backup-test.sql</code></pre>
+
+<h2>When to get help</h2>
+<p>If a restore has failed, your backups are stored only on the same hosting account, or you're not sure what your backup plugin actually saves, get it checked before you need it. Off-site backups kept separate from your hosting are part of <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Are my hosting company's backups enough?</h3>
 <p>They're a good first layer, but not enough on their own. They're stored with the host, so a suspended or compromised account can take them too, and retention on cheaper plans can be short. Add an off-site backup you control.</p>
@@ -8727,8 +8762,6 @@ wp cache flush</code></pre>
 <p>Only as part of a cleanup. A backup from before the hack removes the malware, but not the outdated plugin or stolen password that let it in, so the site can be reinfected within days.</p>
 <h3>Does a backup include my emails?</h3>
 <p>Usually not. WordPress backups cover the website's files and database. Email hosted with your web host, Google Workspace or Zoho is stored separately and needs its own backup arrangement.</p>
-
-<p>If you'd rather know your backups are running, stored off-site and restorable without checking yourself, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include regular off-site backups kept separate from your hosting. You can ask for a copy at any time, and you take the latest one with you if you ever leave. For the full monthly routine, see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
 `,
   },
   {
@@ -8877,7 +8910,7 @@ wp cache flush</code></pre>
     title: 'WooCommerce SEO: A Practical Guide to Ranking Your Product and Category Pages',
     description: 'WooCommerce SEO guide: keyword mapping, category content, Rank Math or Yoast settings, product schema, filter URLs, out-of-stock pages and store speed.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
@@ -9006,6 +9039,12 @@ wp cache flush</code></pre>
 
 <p>Industry examples: <a href="/blog/website-for-fashion-boutiques/">fashion boutiques</a>, <a href="/blog/website-for-d2c-food-brands/">D2C food brands</a> and <a href="/blog/website-for-jewellers/">jewellers</a>.</p>
 
+<h2>Quick check</h2>
+<p>Paste one product URL into Google's Rich Results Test (search.google.com/test/rich-results) and confirm it detects a Product with price and availability and no errors. Then open <strong>Indexing &gt; Pages</strong> in Search Console and look for filter, sort and add-to-cart URLs (with <code>?orderby=</code>, <code>?filter_</code> or <code>?add-to-cart=</code>) that have been indexed by mistake.</p>
+
+<h2>When to get help</h2>
+<p>If product schema keeps failing, filter URLs are filling the index, or category pages get impressions but no clicks, get the store audited. Store structure, product schema and speed are handled in <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Is WooCommerce good for SEO?</h3>
 <p>Yes. Because it runs on WordPress you control every title, URL, redirect and piece of content, and it outputs basic product schema by default. Rankings depend on how you set it up: category content, unique product pages, controlled filter URLs and speed.</p>
@@ -9019,8 +9058,6 @@ wp cache flush</code></pre>
 <p>Not if they're coming back. Keep them indexed with a clear out-of-stock message and alternatives. Redirect discontinued products to their replacement or closest match, and only let pages 404 when there is nothing relevant to send people to.</p>
 <h3>How long does WooCommerce SEO take to work?</h3>
 <p>Technical fixes take effect as Google recrawls the store, usually over a few weeks. Rankings for competitive categories build over months as content, reviews and links grow. Nobody can honestly guarantee a position or a date.</p>
-
-<p>Want your store set up or audited properly? I build and fix WooCommerce stores with SEO, speed and product schema handled from the start; see <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/wordpress-seo-services/">WordPress SEO services</a> for an audit of an existing store.</p>
 `,
   },
   {
@@ -9665,7 +9702,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'Why Elementor Sites Get Slow, and How to Fix Them (Pages and the Editor)',
     description: 'Why is Elementor so slow? The real causes, from nested containers and add-on packs to fonts and hosting, and the Elementor settings and fixes that speed it up.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['elementor-developer', 'wordpress-speed-optimization', 'website-redesign'],
     body: `
@@ -9766,6 +9803,12 @@ site:example.com/blog/ "net metering"</code></pre>
 <h2>Should you switch away from Elementor?</h2>
 <p>Usually not. Your team keeps easy drag-and-drop editing, and most of the fixes above work on the existing site. A rebuild makes sense when the site is so heavy that fixing it would cost more than starting again, or when it's being redesigned anyway. Even then, a clean Elementor rebuild with containers and global styles is often the right answer; the block editor or a custom theme suits sites with strict performance targets or locked-down editing. See <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</p>
 
+<h2>Quick check</h2>
+<p>Open a slow page, right-click, choose Inspect, then open the <strong>Network</strong> tab and reload. Filter by JS and CSS and count the files loaded from <code>/wp-content/plugins/</code>: several add-on packs, each loading its own scripts on every page, are a common culprit. In Elementor, also check <strong>Elementor &gt; Settings &gt; Features</strong> and make sure performance options such as improved asset loading are active.</p>
+
+<h2>When to get help</h2>
+<p>If the site is still slow after caching and image fixes, or you're unsure whether to clean up or rebuild sections, have the build reviewed. Finding what slows an Elementor site and fixing it in tested rounds is part of <a href="/elementor-developer/">Elementor development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why is Elementor so slow?</h3>
 <p>Usually because of how the site was built: nested containers, add-on packs, full-size images, animations and too many fonts, often on a heavy theme and basic hosting. Elementor adds some overhead of its own, but a lean Elementor page on good hosting can load quickly.</p>
@@ -9779,8 +9822,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Long pages with many widgets, low PHP memory, weak hosting and plugins loading code into the editor are the usual causes. Use Safe Mode under Elementor &gt; Tools to test without other plugins, and check System Info for your memory limit.</p>
 <h3>Will a caching plugin fix a slow Elementor site?</h3>
 <p>It helps pages arrive faster, but it doesn't reduce what the browser has to download and run once they do. Heavy layouts, add-ons and images still need fixing, and caching does nothing for the editor.</p>
-
-<p>Want your Elementor site faster without losing easy editing? I can find what's slowing it down, fix it in tested rounds and rebuild only the sections that need it. See <a href="/elementor-developer/">Elementor development</a>, or <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for hosting, caching and database work.</p>
 `,
   },
   {
@@ -12794,7 +12835,7 @@ wp option update blog_public 0</code></pre>
     title: 'WooCommerce Shipping Setup for India: Zones, Weight-Based Rates, Free Shipping, COD and Courier Integrations',
     description: 'Set up WooCommerce shipping for India: zones by state and pin code, flat and weight-based rates, free-shipping thresholds, COD rules and courier integrations.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
@@ -12905,6 +12946,12 @@ function my_only_free_shipping( $rates ) {
 </ol>
 <p>These checks sit alongside the payment and email tests in the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a>.</p>
 
+<h2>Quick check</h2>
+<p>Add a test product to the cart and enter three real pin codes at checkout: one local, one in another state and one remote area you treat differently. Confirm each shows the shipping method and rate you expect, and that COD appears only where you allow it. If the wrong zone matches, reorder the zones under <strong>WooCommerce &gt; Settings &gt; Shipping</strong>, because WooCommerce uses the first zone that fits.</p>
+
+<h2>When to get help</h2>
+<p>If shipping charges come out wrong, COD shows where it shouldn't, or a courier integration is breaking orders, get the setup tested with real pin codes. Zones, rates, COD rules and courier connections are set up in <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up shipping zones in WooCommerce for India?</h3>
 <p>Go to WooCommerce &gt; Settings &gt; Shipping &gt; Shipping zones and add zones from most to least specific: local pin codes, your state, any remote regions, then India as a whole. WooCommerce uses the first zone that matches the address, so the order matters.</p>
@@ -12918,8 +12965,6 @@ function my_only_free_shipping( $rates ) {
 <p>Limit your zones to the pin codes you serve so checkout offers no shipping elsewhere, and add a pin code checker on product pages so shoppers find out before they reach checkout.</p>
 <h3>Why is WooCommerce showing the wrong shipping charge?</h3>
 <p>Usually because a broader zone sits above a specific one, products are missing weights or shipping classes, or an old rate is cached. Turn on shipping debug mode to see which zone and method matched.</p>
-
-<p>Want shipping that charges correctly and doesn't scare buyers off? Zones, weight-based rates, COD rules and a courier connection can all be set up and tested with real pin codes as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If shipping costs are still surprising shoppers at the last step, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a>.</p>
 `,
   },
   {
@@ -13827,7 +13872,7 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
     title: 'How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work',
     description: 'Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-website-development', 'wordpress-malware-removal'],
     body: `
@@ -13923,6 +13968,12 @@ function my_limit_links( $result, $tag ) {
 
 <p>Blog comment spam is a similar problem; see <a href="/blog/wordpress-comments-enable-or-disable/">should a business site enable comments?</a></p>
 
+<h2>Quick check</h2>
+<p>Open your form in a private browser window on mobile data and send a test enquiry with one link in the message, then a second test with five links. The first should arrive in your inbox and in stored entries; the second should be rejected with a visible error. If you use Contact Form 7, check <strong>Flamingo &gt; Inbound Messages</strong> and its spam folder to confirm nothing genuine was filtered.</p>
+
+<h2>When to get help</h2>
+<p>If spam keeps getting through after a honeypot and Turnstile, or real customers say their messages never reach you, have the form tested end to end. Form protection, stored entries and email delivery can be set up and checked after every update through <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why am I suddenly getting so much contact form spam?</h3>
 <p>Bots find forms by crawling the web, and once your form is on a spam list the volume tends to grow. A plugin update or a change of form plugin can also switch off a protection that used to be on, so check the settings first.</p>
@@ -13936,8 +13987,6 @@ function my_limit_links( $result, $tag ) {
 <p>Those messages are usually typed by people or sent by advanced bots, so CAPTCHAs don't stop them. Akismet and keyword filters catch many of them. Don't reply or click their links; <a href="/blog/domain-seo-scam-emails/">domain and SEO scam emails</a> explains the common tricks.</p>
 <h3>Can contact form spam harm my website?</h3>
 <p>Mostly it wastes time, but an auto-reply that bots can abuse can damage your domain's email reputation, and stored spam fills your database over time. The bigger risk is a spam fix that blocks genuine customers without anyone noticing.</p>
-
-<p>Tired of sorting spam from real enquiries? I can set up and test form protection, entry storage and email delivery, and form checks after every update are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Still choosing a form plugin? See <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
 `,
   },
   {
@@ -13946,7 +13995,7 @@ function my_limit_links( $result, $tag ) {
     title: 'Business Email Deliverability: SPF, DKIM and DMARC Explained, With Example Records and a Fix for Website Form Emails',
     description: 'Why business and website form emails land in spam, and how SPF, DKIM and DMARC fix it: example records, SMTP for WordPress forms and a step-by-step fix.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-maintenance', 'wordpress-migration', 'woocommerce-developer'],
     body: `
@@ -14054,6 +14103,15 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 </ol>
 <p>DNS changes can take a few hours to spread, occasionally longer, so test again the next day before deciding something hasn't worked.</p>
 
+<h2>Quick check</h2>
+<p>Look up your domain's records from any terminal:</p>
+<pre><code>nslookup -type=txt yourdomain.com
+nslookup -type=txt _dmarc.yourdomain.com</code></pre>
+<p>You should see exactly one record starting <code>v=spf1</code> and one starting <code>v=DMARC1</code>. Then send an email from your domain to a Gmail address, open it, choose <strong>Show original</strong>, and check that SPF, DKIM and DMARC all say PASS.</p>
+
+<h2>When to get help</h2>
+<p>If any of the three fail, you have two SPF records, or website enquiries and order emails still land in spam, get the DNS and SMTP setup traced. Fixing email delivery and checking forms every month is part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Do I need SPF, DKIM and DMARC for a small business?</h3>
 <p>Yes. Even a business sending a few emails a day benefits, because major mailbox providers now expect authenticated mail, and DMARC also makes it harder for scammers to send fake emails using your domain.</p>
@@ -14065,8 +14123,6 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <p>Usually because the form sends through the web server's PHP mail function instead of your email provider. Send it through an authenticated SMTP account, with the From address matching that account.</p>
 <h3>Can I send WordPress form emails through Gmail?</h3>
 <p>Yes, with an SMTP plugin and a Gmail app password, which needs 2-Step Verification turned on. The email will come from that Gmail address, which is fine when enquiries only go to you. For mail from your own domain, use a domain mailbox or a transactional service.</p>
-
-<p>If your enquiries or order emails are going missing, I can trace where they fail, fix the SPF, DKIM, DMARC and SMTP setup, and keep checking your forms every month as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Moving host or domain? Email records are preserved and tested as part of <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -18027,7 +18083,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
     title: 'Website Security Headers Explained: HSTS, CSP, X-Frame-Options and How to Add Them to WordPress',
     description: 'Security headers explained: what HSTS, CSP, X-Frame-Options, Referrer-Policy and Permissions-Policy do, and how to add them in .htaccess or Cloudflare.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -18115,6 +18171,14 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h2>Headers are one layer, not the whole wall</h2>
 <p>Updates, strong passwords with two-factor authentication, tested backups and a firewall do far more to keep a site safe than any header. Add headers alongside the basics in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>, not instead of them.</p>
 
+<h2>Quick check</h2>
+<p>Check which headers your site sends from any terminal:</p>
+<pre><code>curl -sI https://yourdomain.com/ | grep -iE "strict-transport|content-security|x-frame|x-content-type|referrer-policy|permissions-policy"</code></pre>
+<p>Each missing line is a header you are not sending. Add them one at a time and test forms, payment pages and embedded videos after each change.</p>
+
+<h2>When to get help</h2>
+<p>If adding a Content-Security-Policy breaks your forms or checkout, or you're hardening a site after a hack, get the headers set up and tested properly. Header setup is included in hardening after <a href="/wordpress-malware-removal/">malware removal</a>, and ongoing checks are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Which security headers should a WordPress site have?</h3>
 <p>Start with X-Content-Type-Options, X-Frame-Options set to SAMEORIGIN, Referrer-Policy and a simple Permissions-Policy, then add HSTS once HTTPS works everywhere. Add a Content-Security-Policy after testing it in report-only mode.</p>
@@ -18126,8 +18190,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Modern browsers follow frame-ancestors when both are present, but sending X-Frame-Options as well covers older browsers. Use SAMEORIGIN, not DENY, so WordPress previews keep working.</p>
 <h3>Can security headers stop my site being hacked?</h3>
 <p>No. They make some browser-based attacks harder, but most WordPress hacks come through outdated plugins and stolen passwords, which headers do nothing about. Treat them as one layer of hardening.</p>
-
-<p>Want security headers added and tested without breaking your forms or checkout? I can set them up as part of hardening after a <a href="/wordpress-malware-removal/">malware cleanup</a>, and my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> keep updates, backups and security monitoring running every month.</p>
 `,
   },
   {
@@ -26803,7 +26865,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
     title: 'Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders',
     description: 'Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups', 'landing-page-design'],
     body: `
@@ -26912,6 +26974,12 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>The courier or aggregator collects the cash and pays it to you after delivery, on a cycle set in your agreement. Some offer faster remittance for an extra fee at the time of writing, and aggregators often deduct shipping and RTO charges from what they pay you. Before choosing one, check the remittance cycle, the COD charge, what gets deducted and the reports you receive.</p>
 <p>Reconcile every week: match the remittance report against your WooCommerce orders, mark matched orders Completed, and chase anything delivered but not paid. Over time, track the share of orders on COD and the RTO rate by product, pin code, traffic source and courier. Those figures show exactly where to tighten rules and where COD is working well.</p>
 
+<h2>Quick check</h2>
+<p>Go to <strong>WooCommerce &gt; Settings &gt; Payments &gt; Cash on delivery</strong> and check "Enable for shipping methods". If it is empty, COD is offered on every method. Then place a test COD order with a cart above and below any limit you have set, and confirm the order lands as Processing with the right order email sent.</p>
+
+<h2>When to get help</h2>
+<p>If COD orders are causing high returns, COD shows up where it shouldn't, or you want limits and confirmation steps that standard settings can't do, get the checkout set up and tested. That is part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How do I enable cash on delivery in WooCommerce?</h3>
 <p>Go to WooCommerce &gt; Settings &gt; Payments, open Cash on delivery, enable it, and set the title, description and the shipping methods it applies to. Check that your courier supports COD for the areas you allow.</p>
@@ -26925,8 +26993,6 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>Create a shipping zone limited to those pin codes with its own shipping method, then allow COD only for that method. For many pin codes, or for live courier serviceability, use a pin code or conditional payments plugin.</p>
 <h3>When does the courier pay me the COD money?</h3>
 <p>After delivery, on the remittance cycle in your courier or aggregator agreement, usually with charges deducted. Check the cycle and deductions before you sign up, and reconcile each payment against your orders.</p>
-
-<p>Want COD that brings orders without draining your margin? Payment gateways, COD rules, shipping and order emails are set up and tested with real orders as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If shoppers are dropping out before they even choose a payment method, see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 `,
   },
   {
@@ -30099,7 +30165,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Google Merchant Center for WooCommerce and WordPress: Set Up Free Listings and Fix Disapprovals',
     description: 'Set up Google Merchant Center for WooCommerce and WordPress: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -30205,6 +30271,12 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>WooCommerce adds basic Product structured data to product pages, and SEO plugins can extend it. Google uses it to cross-check your feed, and Merchant Center's automatic item updates can use it to correct price and availability when they drift. Test a few product pages after any theme or plugin change; see <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
 <h2>From free listings to Shopping ads</h2>
 <p>Once products are approved and stable, link Google Ads and the same data can run Shopping or Performance Max campaigns. Set up purchase tracking first, so you can see which products and campaigns actually make money; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>. Start with your best sellers and products with healthy margins. The same product data can also feed Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
+<h2>Quick check</h2>
+<p>In Merchant Center, open the products report and filter for items that need attention or are disapproved, then sort by the most common issue. Open one affected product on your store and check that the price, stock status and shipping cost match what the feed says, because mismatches are a common reason for disapprovals.</p>
+
+<h2>When to get help</h2>
+<p>If products keep getting disapproved, the account is suspended for misrepresentation, or stock stops syncing, get the store and feed reviewed together. Merchant Center setup and store fixes are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How do I connect WooCommerce to Google Merchant Center?</h3>
 <p>Install the free Google for WooCommerce extension, open Marketing &gt; Google for WooCommerce, connect your Google account and Merchant Center, choose India as your selling country, set shipping, and let it sync your products. Alternatively, use a feed plugin to create a feed URL and add it to Merchant Center as a scheduled file.</p>
@@ -30218,7 +30290,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>The most common reasons are price or stock that don't match the product page, prices without GST, missing shipping details, images with text or watermarks, and incorrect identifiers. Account-level suspensions are usually misrepresentation: missing contact details, policies or business information. Merchant Center lists the exact issue for each product.</p>
 <h3>How long does it take for products to show on Google?</h3>
 <p>New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually.</p>
-<p>Want your products on Google without fighting feeds and disapprovals? I can set up Merchant Center and Google for WooCommerce, fix the store's prices, shipping and policies so products get approved, and make sure stock stays in sync. See <a href="/woocommerce-developer/">WooCommerce development</a>, and for organic rankings, the <a href="/blog/woocommerce-seo-guide/">WooCommerce SEO guide</a>.</p>
 `,
   },
   {
@@ -30998,7 +31069,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection',
     description: 'Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -31110,6 +31181,15 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Your WordPress login is only one key. Hosting control panels, the domain registrar, Cloudflare and the email admin console can all be used to take over a site. Keep these in the business's name, turn on 2FA on each, and store the recovery codes somewhere safe that isn't the same phone.</p>
 <p>If you're an agency handing client sites to a developer, the same rules apply in both directions; I work this way with <a href="/wordpress-developer-for-agencies/">agencies that outsource WordPress development</a>, using named accounts and removing access once a project is handed over.</p>
 
+<h2>Quick check</h2>
+<p>List every user who can change the site and check each has 2FA turned on:</p>
+<pre><code>wp user list --role=administrator --fields=user_login,user_email,user_registered
+wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
+<p>Without WP-CLI, use <strong>Users &gt; All Users</strong> and filter by role. Then log in from a private window to confirm the 2FA prompt actually appears.</p>
+
+<h2>When to get help</h2>
+<p>If unknown admin accounts have appeared, you're locked out, or you think someone has logged in without permission, treat it as a possible hack, not a login settings problem. Cleanup and access review are part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best way to secure a WordPress login?</h3>
 <p>Two-factor authentication for everyone who can change the site, unique passwords from a password manager, login limits and a bot check. Together those stop most login attacks.</p>
@@ -31123,8 +31203,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Use a backup code, or ask another administrator to reset your 2FA. If neither is possible, temporarily disabling the 2FA plugin by renaming its folder over SFTP gets you back in; set 2FA up again straight away.</p>
 <h3>Is Cloudflare Turnstile better than reCAPTCHA?</h3>
 <p>For most sites it is easier on visitors, rarely showing a puzzle, and it doesn't require the Cloudflare CDN. Both work; what matters is that the check is on every login form.</p>
-
-<p>For updates and security monitoring every month, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. If unknown admins have already appeared or you think someone has logged in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -33822,7 +33900,7 @@ wp db search "eval(" --all-tables</code></pre>
     title: 'Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists',
     description: 'Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -33901,6 +33979,14 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
   <li>Use strong, unique mailbox passwords, keep plugins updated and keep an eye on sending volume.</li>
 </ul>
 
+<h2>Quick check</h2>
+<p>Look for PHP files in the uploads folder, where they should not exist, using SSH or your host's terminal:</p>
+<pre><code>find wp-content/uploads -name "*.php" -mtime -30</code></pre>
+<p>Any result is suspicious. Also check your hosting panel's mail logs or email queue for large batches sent to addresses you don't know, and change the passwords of every email account on the domain.</p>
+
+<h2>When to get help</h2>
+<p>If your host has suspended email, you find scripts you didn't upload, or spam restarts after you delete files, have the site cleaned and the entry point closed. Tracing whether it is a script, a stolen password or a form is part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my website sending spam emails?</h3>
 <p>Usually because a malicious script was uploaded after a hack, a mailbox or SMTP password was stolen, or a form is being abused. The message headers and your host's mail logs show which.</p>
@@ -33912,8 +33998,6 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <p>That is spoofing: another server is forging your From address. You can't stop the sending itself, but SPF, DKIM and a DMARC policy of quarantine or reject tell receivers to bin it.</p>
 <h3>Will changing my email password stop the spam?</h3>
 <p>Only if a stolen mailbox password is the cause. If a script on the website is sending it, the spam continues until the script and its backdoor are removed.</p>
-
-<p>Host complaining about spam from your account? I can trace whether it is a script, a stolen password or a form, clean the site and close the hole; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. To keep it from happening again, <a href="/wordpress-maintenance/">WordPress maintenance</a> covers updates and security monitoring every month.</p>
 `,
   },
   {
@@ -34057,7 +34141,7 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
     title: 'Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One',
     description: 'Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, weak hosting and admin access, plus the fix that prevents each one.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -34177,6 +34261,14 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 <p>A simple test: list every person, plugin and folder that can touch your site, then remove anything you cannot explain. If you also run a Shopify store, the platform handles server security for you, but staff accounts and third-party apps still need the same review.</p>
 <p>The aim is not to buy more security tools. It is to shrink the number of doors, keep the ones you need locked and updated, and keep a clean off-site backup so a bad day is a restore rather than a rebuild.</p>
 
+<h2>Quick check</h2>
+<p>Check how far behind your site is on updates. In <strong>Dashboard &gt; Updates</strong>, note any plugin or theme with a pending update, and in <strong>Plugins</strong> look for anything its developer hasn't updated in over a year. With WP-CLI:</p>
+<pre><code>wp plugin list --update=available
+wp theme list --update=available</code></pre>
+
+<h2>When to get help</h2>
+<p>If you find abandoned plugins you depend on, or updates keep breaking the site so you avoid them, get them handled safely with a backup first; if the site is already hacked, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Monthly updates and monitoring are what is covered by <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why do hackers target small business websites?</h3>
 <p>Mostly they don't target anyone in particular. Bots scan for known weaknesses across the internet, and any site that matches gets used for spam, redirects, phishing or email abuse, whatever its size.</p>
@@ -34190,9 +34282,6 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 <p>No. It reduces risk, but it can't fix an unpatched plugin, a reused password or a nulled theme. Updates and strong logins do more of the work, and a <a href="/blog/wordpress-firewall-waf-explained/">firewall</a> adds another layer.</p>
 <h3>How often should a small business check its WordPress site for security problems?</h3>
 <p>Check updates at least weekly, review admin users and plugins monthly, and test that you can restore a backup every few months. A maintenance plan can handle this routine for you.</p>
-
-
-<p>Most of these causes come down to upkeep: updates with a backup first, user reviews and monitoring, which is what <a href="/wordpress-maintenance/">WordPress maintenance</a> covers every month. If your site has already been hacked, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -34201,7 +34290,7 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
     title: 'Nulled WordPress Themes and Plugins: Why Pirated Plugins Are Dangerous and How to Clean Up',
     description: 'Why nulled WordPress themes and plugins are dangerous: hidden malware, no updates, SEO spam and legal risk, plus how to check your site and replace them.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'elementor-developer'],
     body: `
@@ -34319,6 +34408,14 @@ find wp-content/uploads -name "*.php"</code></pre>
 </ul>
 <p>A good developer will be happy to answer. Vague replies, or a promise of &quot;all premium plugins included free&quot;, are a reason to check before going ahead.</p>
 
+<h2>Quick check</h2>
+<p>Look for code commonly hidden in nulled products by searching your themes and plugins folders over SSH:</p>
+<pre><code>grep -rlE "eval\\(base64_decode|gzinflate\\(base64_decode" wp-content/themes wp-content/plugins</code></pre>
+<p>Some legitimate plugins use these functions, so a match is a reason to inspect the file, not proof of malware. Also check each premium product against your purchase records: if you can't find a receipt or licence key, assume it is nulled.</p>
+
+<h2>When to get help</h2>
+<p>If you find nulled software, spam pages or code you can't explain, get every theme and plugin checked and replaced with licensed or free alternatives. That is part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Are nulled WordPress plugins illegal?</h3>
 <p>Using them generally breaks the developer's licence terms and may infringe copyright or trademarks, depending on the product and where you are. The GPL makes the picture more complicated for some code, so ask a lawyer if you need a definite answer. The security risk is reason enough to avoid them.</p>
@@ -34332,8 +34429,6 @@ find wp-content/uploads -name "*.php"</code></pre>
 <p>Not necessarily. Backdoors and admin users created by the plugin can remain after it's gone, which is why you need to scan the rest of the site and reset passwords.</p>
 <h3>Will a nulled theme hurt my SEO?</h3>
 <p>It can. Hidden spam links, cloaked pages and redirects can damage rankings and trigger warnings in search results, sometimes long before you notice anything wrong.</p>
-
-<p>Found nulled software, spam pages or suspicious code on your site? I can check every theme and plugin, remove malicious code and backdoors, and replace pirated products with licensed or free alternatives: see <a href="/wordpress-malware-removal/">WordPress malware removal</a>, and <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep everything updated afterwards.</p>
 `,
   },
   {
@@ -34342,7 +34437,7 @@ find wp-content/uploads -name "*.php"</code></pre>
     title: 'WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera',
     description: 'WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, how each scans, what they miss and how to choose one.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -34446,6 +34541,15 @@ find wp-content/uploads -name "*.php"</code></pre>
 </ul>
 <p>The practical combination for most small sites is a host scanner for files, a plugin or remote scan that also checks the database, and Google Search Console for warnings that only Google sees.</p>
 
+<h2>Quick check</h2>
+<p>Run a server-side check alongside any plugin scanner, because plugin scanners can be fooled by malware that hides from WordPress. With WP-CLI, compare core and plugin files with the official copies:</p>
+<pre><code>wp core verify-checksums
+wp plugin verify-checksums --all</code></pre>
+<p>Any file listed as modified or unexpected, outside your own customisations, is worth inspecting. Then run an external scan such as Sucuri SiteCheck on your homepage to see what visitors and Google see.</p>
+
+<h2>When to get help</h2>
+<p>If a scanner flags files you can't explain, malware returns after you delete it, or Google shows a "This site may be hacked" warning, a scan alone won't fix it. A full cleanup, backdoor removal and Google review request are part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Which is the best free malware scanner for WordPress?</h3>
 <p>There isn't one best tool for every site. A free plugin scanner such as Wordfence checks files from the inside, Sucuri SiteCheck gives a quick outside view, and your host's scanner may already cover the whole account. An inside and an outside scan together beat relying on either.</p>
@@ -34460,8 +34564,6 @@ find wp-content/uploads -name "*.php"</code></pre>
 
 <h3>Does my hosting company scan my WordPress site for malware?</h3>
 <p>Many hosts do, especially those using Imunify360 or similar tools, but coverage differs. Ask your host what is scanned, how often, and whether infected files are cleaned, quarantined or only reported.</p>
-
-<p>Scanner flagged something, or Google says hacked while your scan says clean? Send me what you're seeing and I'll tell you what's involved; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For regular scans and monitoring afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -35133,7 +35235,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     title: 'How to Recover Google Rankings After Your Website Was Hacked: Manual Actions, Spam URLs and a Realistic Timeline',
     description: 'Recover Google rankings after a hack: security issues vs manual actions, review requests, clearing spam URLs, fixing SEO damage and a realistic timeline.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -35244,6 +35346,13 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <p>For a business in India that depends on local searches, check your branded search first: search your business name with your city and see whether your real homepage and contact page show with the right title. That usually recovers before broader service keywords do, and it is the clearest early sign that Google trusts the site again.</p>
 <p>Keep a simple log of these dates. If rankings stay low weeks after everything is ticked, the log helps you see whether the problem is still the hack or something unrelated, such as an algorithm update or a competitor.</p>
 
+<h2>Quick check</h2>
+<p>Search Google for <code>site:yourdomain.com casino</code> (and other spam words you saw, or Japanese characters), and open Search Console's <strong>Security &amp; Manual Actions</strong> report. Then check that spam URLs now return 404 or 410, not a redirect or a 200:</p>
+<pre><code>curl -sI https://yourdomain.com/spam-url-example | head -1</code></pre>
+
+<h2>When to get help</h2>
+<p>If spam pages keep reappearing, Google still shows a warning, or rankings haven't moved weeks after cleanup, get the site checked for leftover infection and redirects. Cleanup and Google review requests are part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How long does it take to recover rankings after a hack?</h3>
 <p>It varies. Small infections cleaned quickly can recover soon after Google recrawls, while large spam hacks or manual actions take longer. Nobody can honestly promise a timeline, but a thorough first cleanup is the biggest factor you control.</p>
@@ -35257,9 +35366,6 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <p>Either Google hasn't recrawled them yet, or they still return content to Googlebot because the cloaking code is active. Check with the URL Inspection live test, then use the Removals tool to hide them while Google catches up.</p>
 <h3>Should I redirect hacked spam URLs to my homepage?</h3>
 <p>No. Let spam URLs return a 404 or 410 so Google drops them. Redirecting thousands of junk URLs to your homepage can look like soft 404s and slows the clean-up.</p>
-
-
-<p>Rankings dropped after a hack? I can confirm the site is clean, remove leftover spam pages and redirects, and handle the review requests; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For the ranking side once the site is clean, see <a href="/wordpress-seo-services/">WordPress SEO</a>.</p>
 `,
   },
   {
@@ -35538,7 +35644,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     title: 'Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)',
     description: 'Hostinger site migration step by step: hPanel\'s migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'website-redesign'],
     body: `
@@ -35666,6 +35772,14 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 
 <h2>Migrating a WooCommerce store to Hostinger</h2>
 <p>A store needs one extra step: orders placed on the old host after you copy the site would be lost. Choose a quiet time, put the shop in maintenance mode or pause checkout for a short window, take the final copy, switch DNS and reopen. After the move, place a test order with each payment method, confirm that order emails arrive, and check that payment gateway webhooks such as Razorpay or Cashfree point to the right URL and still return success. If you also use Shiprocket or another shipping plugin, confirm its API connection after the switch.</p>
+
+<h2>Quick check</h2>
+<p>Before you change DNS, preview the copied site on Hostinger by pointing your own computer at the new server. Add a line to your hosts file (on Windows, <code>C:\\Windows\\System32\\drivers\\etc\\hosts</code>) with the Hostinger IP shown in hPanel:</p>
+<pre><code>203.0.113.10  yourdomain.com www.yourdomain.com</code></pre>
+<p>Replace the example IP with your own, then browse the site, submit a form and log in. Remove the line once you have switched DNS.</p>
+
+<h2>When to get help</h2>
+<p>If the migration tool fails, the site breaks after the move, or email is on the same domain and you can't risk downtime, have the move handled and tested. That is part of <a href="/wordpress-migration/">WordPress migration</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
 <h2>FAQs</h2>
 <h3>Does Hostinger migrate websites for free?</h3>
@@ -36361,7 +36475,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded"? How to Fix the Elementor Loading Problem',
     description: 'Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -36458,6 +36572,13 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </table>
 <p>If you would rather not experiment on a live business site, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to find the cause on a staging copy first.</p>
 
+<h2>Quick check</h2>
+<p>Open <strong>Elementor &gt; System Info</strong> and check the PHP memory limit and PHP version; a low memory limit is a common cause of a stuck editor. Then open the editor with the browser console open (right-click, Inspect, Console) and note the first red error, which often names the plugin causing the conflict. To test for a plugin conflict quickly on a staging copy:</p>
+<pre><code>wp plugin deactivate --all --exclude=elementor,elementor-pro</code></pre>
+
+<h2>When to get help</h2>
+<p>If the editor still won't load after raising memory and disabling plugins, or you can't test safely on a live site, get the conflict found on staging. Fixing Elementor editor, plugin and server issues is the job of an <a href="/elementor-developer/">Elementor developer</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Why is Elementor stuck on the loading screen?</h3>
 <p>Usually low PHP memory, a plugin conflict, a server firewall blocking the editor's requests, or caching and CDN scripts. The browser console and Safe Mode will tell you which.</p>
@@ -36471,8 +36592,6 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>Rarely on its own, because the cause is usually around Elementor. Diagnose first; reinstalling the same version over itself only helps if its files were damaged.</p>
 <h3>How do I fix Elementor not loading after a WordPress update?</h3>
 <p>Update Elementor, Elementor Pro and any Elementor add-ons together, clear every cache, then test in Safe Mode. If the editor opens there, an add-on or theme is not compatible yet; roll it back on staging until its developer releases a fix.</p>
-
-<p>Still stuck, or don't want to experiment on a live site? I fix Elementor editor problems and the plugin, server and caching issues behind them; get help from an <a href="/elementor-developer/">Elementor developer</a>. If the editor loads but the design has changed, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>.</p>
 `,
   },
   {
@@ -39854,7 +39973,7 @@ add_action( 'after_setup_theme', function () {
     title: 'WooCommerce Security Checklist: Payments, Checkout, Card-Testing Bots, Staff Accounts and Customer Data',
     description: 'A WooCommerce security checklist: admin roles, payment gateways, PCI basics, card skimmers, card-testing bots, fake orders and protecting customer data.',
     date: '2026-09-28',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-malware-removal'],
     body: `
@@ -39964,6 +40083,12 @@ add_action( 'after_setup_theme', function () {
 </table>
 <p>This fits into the wider <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>. If you suspect a hack, turn off online payments or put the checkout into maintenance, inform your gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require certain cyber incidents to be reported quickly, so take advice promptly.</p>
 
+<h2>Quick check</h2>
+<p>Go to <strong>Users &gt; All Users</strong> and filter by Administrator and Shop Manager; remove anyone who no longer needs access. Then check <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong> and revoke any API keys you don't recognise or no longer use, especially ones with Read/Write access.</p>
+
+<h2>When to get help</h2>
+<p>If you find unknown API keys, orders you didn't expect, or payment pages behaving oddly, get the store checked straight away; if it has already been hit, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Secure gateway setup and checkout testing are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>Is WooCommerce secure?</h3>
 <p>Yes, when it's maintained. WooCommerce is actively developed and security fixes are released regularly. Most store compromises come from outdated plugins, weak or shared logins, nulled software and poor hosting.</p>
@@ -39977,8 +40102,6 @@ add_action( 'after_setup_theme', function () {
 <p>Use one reputable security plugin, such as Wordfence or Solid Security, ideally alongside a cloud firewall. Running two security plugins often causes conflicts and slows the checkout.</p>
 <h3>How do I know if my checkout has been skimmed?</h3>
 <p>Customers reporting card fraud after buying from you is the most common sign. Also look for unexpected payment forms and unfamiliar external scripts on the checkout page. Act immediately: take card payments offline, tell your gateway and have the store cleaned.</p>
-
-<p>Building a new store or moving to WooCommerce? Payment gateways, COD rules and the checkout are set up and tested as part of <a href="/woocommerce-developer/">WooCommerce development</a>. If your store has already been hit, <a href="/wordpress-malware-removal/">malware removal and hardening</a> covers the cleanup, extra checks on the checkout and payment settings, and a test order.</p>
 `,
   },
   {
@@ -43245,7 +43368,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'Search Console Page Indexing Errors: What Each Status Means and What to Do',
     description: 'Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.',
     date: '2026-09-28',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance'],
     body: `
@@ -43347,6 +43470,14 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ol>
 <p>Once a month, check the submitted-pages view and the trend of indexed pages. A sudden drop usually means an accidental noindex, a robots change or server errors after an update.</p>
 
+<h2>Quick check</h2>
+<p>In Search Console, open <strong>Indexing &gt; Pages</strong>, click a reason such as "Crawled - currently not indexed", and run <strong>URL Inspection</strong> on one example URL. Then confirm the page is not blocked by a noindex header or tag:</p>
+<pre><code>curl -sI https://yourdomain.com/page/ | grep -i x-robots-tag
+curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
+
+<h2>When to get help</h2>
+<p>If important pages stay out of Google for weeks, or the same error keeps returning after you click Validate fix, get an indexing audit with the fixes made on your site. That is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix Search Console page indexing errors?</h3>
 <p>Filter to submitted pages, decide which URLs should be indexed, fix real errors such as 5xx, 404s on live pages and accidental noindex, improve thin or duplicate pages, then click Validate fix.</p>
@@ -43358,8 +43489,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>It varies with the number of URLs and how often Google crawls your site, from days to several weeks. You get an email when it finishes.</p>
 <h3>Does requesting indexing guarantee a page gets indexed?</h3>
 <p>No. It asks Google to crawl the page soon. Google still decides whether to index it.</p>
-
-<p>If important pages are stuck out of Google, an indexing audit with the fixes made on your site is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Need hands-on help with a WordPress or Shopify site? <a href="/wordpress-shopify-developer-india/">Hire a WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {

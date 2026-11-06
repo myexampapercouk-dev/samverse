@@ -43,7 +43,7 @@
       "headline": "WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks",
       "description": "How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-backup-restore-guide/",
       "image": "https://samverse.space/assets/og/blog-wordpress-backup-restore-guide.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Backup%20and%20Restore%3A%20How%20to%20Back%20Up%20Your%20Site%2C%20Store%20Copies%20Safely%20and%20Restore%20It%20When%20Something%20Breaks%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-backup-restore-guide%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#restoring-a-woocommerce-store-without-losing-orders">Restoring a WooCommerce store without losing orders</a></li>
               <li><a href="#test-your-backups">Test your backups</a></li>
               <li><a href="#backup-mistakes-to-avoid">Backup mistakes to avoid</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -288,6 +290,14 @@ wp cache flush</code></pre>
 </ul>
 <p>Backups are one part of being ready for a bad day; a simple website disaster recovery plan covers logins, contacts and who does what.</p>
 
+<h2 id="quick-check">Quick check</h2>
+<p>A backup you have never restored is only a hope. Once a quarter, restore your latest backup to a staging site or a subdomain and click through the homepage, a form and (for stores) the checkout. To check that the database can be exported cleanly, run this with WP-CLI and confirm the file is not empty:</p>
+<pre><code>wp db export backup-test.sql
+ls -lh backup-test.sql</code></pre>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>If a restore has failed, your backups are stored only on the same hosting account, or you're not sure what your backup plugin actually saves, get it checked before you need it. Off-site backups kept separate from your hosting are part of <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Are my hosting company's backups enough?</h3>
 <p>They're a good first layer, but not enough on their own. They're stored with the host, so a suspended or compromised account can take them too, and retention on cheaper plans can be short. Add an off-site backup you control.</p>
@@ -299,8 +309,6 @@ wp cache flush</code></pre>
 <p>Only as part of a cleanup. A backup from before the hack removes the malware, but not the outdated plugin or stolen password that let it in, so the site can be reinfected within days.</p>
 <h3>Does a backup include my emails?</h3>
 <p>Usually not. WordPress backups cover the website's files and database. Email hosted with your web host, Google Workspace or Zoho is stored separately and needs its own backup arrangement.</p>
-
-<p>If you'd rather know your backups are running, stored off-site and restorable without checking yourself, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include regular off-site backups kept separate from your hosting. You can ask for a copy at any time, and you take the latest one with you if you ever leave. For the full monthly routine, see the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -345,6 +353,8 @@ wp cache flush</code></pre>
               <li><a href="#restoring-a-woocommerce-store-without-losing-orders">Restoring a WooCommerce store without losing orders</a></li>
               <li><a href="#test-your-backups">Test your backups</a></li>
               <li><a href="#backup-mistakes-to-avoid">Backup mistakes to avoid</a></li>
+              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
