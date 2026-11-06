@@ -72,7 +72,7 @@ module.exports = [
 <p>Ask what's included in each quote, because two quotes can cover very different amounts of this list.</p>
 
 <h3>What you pay every year</h3>
-<p>The yearly cost of a WordPress website is mostly your domain and hosting renewals, plus any premium licences and maintenance you choose. Many hosts include a free SSL certificate, and business email may be included or charged separately depending on the plan. Two things catch people out: hosting that was discounted in the first year renews at a higher price, and premium plugins stop getting updates if the licence lapses. See <a href="/blog/hidden-website-costs/">hidden website costs</a> for everything you'll pay after launch, and why hosting renewals cost more.</p>
+<p>The yearly cost of a WordPress website is mostly your domain and hosting renewals, plus any premium licences and maintenance you choose. Many hosts include a free SSL certificate, and business email may be included or charged separately depending on the plan. Two things catch people out: hosting that was discounted in the first year renews at a higher price, and premium plugins stop getting updates if the licence lapses. See hidden website costs for everything you'll pay after launch, and why hosting renewals cost more.</p>
 
 <h2>Typical price ranges by type of website</h2>
 <p>These are typical freelance market ranges in India. Agencies usually charge more; very cheap offers often cut corners on speed, security or mobile design.</p>
@@ -618,7 +618,7 @@ module.exports = [
   <li><strong>Genuine reviews.</strong> A widget showing your Google rating and recent reviews is more credible than retyped quotes, because every review can be traced; see <a href="/blog/google-reviews-on-website/">showing Google reviews on your website</a>.</li>
   <li><strong>Affiliations and memberships.</strong> Hospitals where you consult, professional societies and teaching roles, listed factually.</li>
 </ol>
-<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists usually need more depth, including procedure pages and a second-opinion page; see <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a>.</p>
+<p>Specialists such as orthopaedic surgeons, cardiologists and gynaecologists usually need more depth, including procedure pages and a second-opinion page; see websites for specialist doctors.</p>
 
 <h2>Information patients look for</h2>
 <ol start="6">
@@ -888,7 +888,7 @@ module.exports = [
     <tr><td>Build</td><td>About ₹30,000 to ₹90,000 or more for a professionally built store</td><td>Varies with theme and app setup</td></tr>
   </tbody>
 </table>
-<p>For many small Indian stores, WooCommerce costs less to run over time, while Shopify saves time on technical upkeep. As order volume grows, percentage-based fees and monthly apps start to matter more than the platform fee. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> breaks down the WooCommerce side in detail.</p>
+<p>For many small Indian stores, WooCommerce costs less to run over time, while Shopify saves time on technical upkeep. As order volume grows, percentage-based fees and monthly apps start to matter more than the platform fee. <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a> breaks down the WooCommerce side in detail.</p>
 
 <h2>Payment gateways, UPI and transaction fees</h2>
 <p>Both platforms can take UPI, cards, net banking and wallets through Indian gateways. The difference is in the fees and the setup:</p>
@@ -1069,7 +1069,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <ul>
   <li><strong>Brochure site that rarely changes:</strong> fortnightly updates and the monthly list are usually enough.</li>
   <li><strong>Busy blog or news site:</strong> daily backups, closer comment and spam checks, and a regular look at the database size.</li>
-  <li><strong>WooCommerce store:</strong> add test orders after updates, payment gateway and order email checks, and more frequent backups; see the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</li>
+  <li><strong>WooCommerce store:</strong> add test orders after updates, payment gateway and order email checks, and more frequent backups; see the WooCommerce maintenance checklist.</li>
   <li><strong>Membership or booking site:</strong> test logins, sign-ups and bookings after every update.</li>
 </ul>
 
@@ -1633,7 +1633,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     related: ['wordpress-migration', 'wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
 <p>To choose WordPress hosting in India, first decide which type of hosting your site needs: shared, managed WordPress, cloud or VPS. Then compare plans of that type on server location (in or near India), server software and caching, PHP version, backups, support and the renewal price, not the first-year offer. For most small business websites, a well-run shared plan or entry-level managed WordPress hosting is enough; busy WooCommerce stores and sites with many logged-in users need more.</p>
-<p>Hosting comes up in almost every project I take on through <a href="/wordpress-migration/">website migration and hosting setup</a>: I can suggest reliable hosting based on your traffic and budget, set it up and move your site across without downtime. This guide is the checklist behind that advice. It deliberately quotes no prices, because hosts change plans and offers often; <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what drives the cost.</p>
+<p>Hosting comes up in almost every project I take on through <a href="/wordpress-migration/">website migration and hosting setup</a>: I can suggest reliable hosting based on your traffic and budget, set it up and move your site across without downtime. This guide is the checklist behind that advice. It deliberately quotes no prices, because hosts change plans and offers often; WordPress hosting price in India explains what drives the cost.</p>
 <p>If the words domain, DNS and SSL still blur together, start with <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>, then come back here.</p>
 
 <h2>Which hosting suits which website</h2>
@@ -2126,7 +2126,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 <h3>Should I redirect deleted pages to the homepage?</h3>
 <p>No. Redirect each page to its closest equivalent. If nothing relevant exists, letting it return a 404 or 410 is better than a homepage redirect.</p>
 
-<p>Planning a redesign and want to keep the rankings you've built? I rebuild on a staging site, keep important URLs, map and test redirects, carry over SEO settings and check Search Console daily for the first two weeks; see <a href="/website-redesign/">website redesign</a>. Not sure you need a full redesign? Read <a href="/blog/website-refresh-vs-redesign/">refresh vs redesign</a> first.</p>
+<p>Planning a redesign and want to keep the rankings you've built? I rebuild on a staging site, keep important URLs, map and test redirects, carry over SEO settings and check Search Console daily for the first two weeks; see <a href="/website-redesign/">website redesign</a>. Not sure you need a full redesign? Read <a href="/blog/signs-you-need-a-new-website/">refresh vs redesign</a> first.</p>
 `,
   },
   {
@@ -2271,7 +2271,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
     body: `
 <p>Your business needs a new website if it is hard to use on a phone, loads slowly, looks out of date, can't be edited without a developer, keeps getting hacked, gets visitors but no enquiries, or no longer describes what you sell. One or two of these can often be fixed without starting again. Three or more, especially poor mobile use, unsafe updates or a changed business, usually mean a redesign will cost less over time than patching.</p>
 <p>When a business owner sends me their site for a <a href="/website-redesign/">website redesign</a> review, the first job is working out which of these signs actually apply, and whether a smaller refresh would do. This guide shows how to check each sign yourself, so you can go into that conversation knowing what is wrong.</p>
-<p>If you already know the site needs work and are choosing between the two options, <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> has a short decision test. Here the focus is on spotting the problems in the first place.</p>
+<p>If you already know the site needs work and are choosing between the two options, website refresh vs redesign has a short decision test. Here the focus is on spotting the problems in the first place.</p>
 
 <h2>1. It's hard to use on a phone</h2>
 <p>Most of your visitors are probably on phones, and Google mainly looks at the mobile version of your pages when deciding how to rank them. Open your site on your own phone, ideally on mobile data, and try to do what a customer would: find a service, check the price or area, and contact you.</p>
@@ -2974,7 +2974,7 @@ Target:  https://example.com/$1/</code></pre>
   <li>Finished work, products or before-and-after results where appropriate for your industry</li>
   <li>A few new real photos every month; stock images add nothing</li>
 </ul>
-<p>More on choosing photos, customer uploads and myths like geotagging in <a href="/blog/google-business-profile-photos/">Google Business Profile photos explained</a>.</p>
+<p>More on choosing photos, customer uploads and myths like geotagging in Google Business Profile photos explained.</p>
 
 <h2>5. Reviews: the biggest ongoing factor</h2>
 <ol>
@@ -2987,7 +2987,7 @@ Target:  https://example.com/$1/</code></pre>
 
 <h2>6. Posts and updates</h2>
 <ul>
-  <li><strong>Posts:</strong> share updates, offers, events or recent work with a photo and a button. A short weekly or fortnightly post keeps the profile looking active; see <a href="/blog/google-business-profile-posts/">Google Business Profile posts and offers</a>.</li>
+  <li><strong>Posts:</strong> share updates, offers, events or recent work with a photo and a button. A short weekly or fortnightly post keeps the profile looking active; see Google Business Profile posts and offers.</li>
   <li><strong>Questions:</strong> Google has been changing how questions and answers appear on profiles, so check what yours currently shows and make sure the information customers see is accurate.</li>
   <li><strong>Messages:</strong> Google ended the built-in chat on Business Profiles in 2024, so make sure your phone number and website contact options are what customers use.</li>
 </ul>
@@ -3281,7 +3281,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <h2>Fix, refresh or redesign?</h2>
 <ul>
   <li><strong>Quick fixes:</strong> headline, calls to action, contact buttons, form fields, photos and outdated content can often be fixed in a few days.</li>
-  <li><strong>A refresh:</strong> if the site works on phones, updates safely and still matches what you sell, new content, photos, buttons and speed work may be enough; see <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a>.</li>
+  <li><strong>A refresh:</strong> if the site works on phones, updates safely and still matches what you sell, new content, photos, buttons and speed work may be enough; see <a href="/blog/signs-you-need-a-new-website/">website refresh vs redesign</a>.</li>
   <li><strong>A redesign:</strong> if it isn't built for phones, runs on an abandoned theme, or you can't update it yourself, a redesign usually costs less over time than patching. The <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a> help you decide, and <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> covers keeping your Google traffic.</li>
 </ul>
 
@@ -3503,7 +3503,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Show the perk on the room page, in the booking widget and in the confirmation, and honour it every time. A perk staff forget at check-in does more harm than no perk.</p>
 
 <h2>Room pages that match or beat the OTA listing</h2>
-<p>Open your OTA listing next to your own room page. Your website should show at least as much: every photo of that room, including the bathroom and view, how many guests it sleeps and in what beds, your rules on extra beds and children, inclusions such as breakfast, and the rate with taxes stated. Write the cancellation and payment terms in plain words beside the booking button, because guests compare those as closely as the price. Small properties have a few extras to consider, such as the hosts' story and house rules; <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a> covers them.</p>
+<p>Open your OTA listing next to your own room page. Your website should show at least as much: every photo of that room, including the bathroom and view, how many guests it sleeps and in what beds, your rules on extra beds and children, inclusions such as breakfast, and the rate with taxes stated. Write the cancellation and payment terms in plain words beside the booking button, because guests compare those as closely as the price. Small properties have a few extras to consider, such as the hosts' story and house rules; websites for homestays and B&amp;Bs covers them.</p>
 
 <h2>Google: your name, your listing and reviews</h2>
 <ul>
@@ -3580,7 +3580,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>The homepage then becomes a set of clear routes into those pages, rather than a paragraph about the firm's philosophy.</p>
 
 <h2>What the rules allow you to say</h2>
-<p>What you may say is governed by your professional body far more than by design choices. For advocates, the Bar Council of India's rules prohibit soliciting work and advertising, but factual details on a website, such as who you are, how to reach you, your enrolment, your qualifications and the areas you practise in, are permitted; <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a> covers this in detail. Chartered accountants follow the ICAI Code of Ethics, along with the institute's guidelines on what members' and firms' websites may carry, which also limit promotional content. Read the latest version before you go live, as these rules are revised from time to time. In practice, that usually means:</p>
+<p>What you may say is governed by your professional body far more than by design choices. For advocates, the Bar Council of India's rules prohibit soliciting work and advertising, but factual details on a website, such as who you are, how to reach you, your enrolment, your qualifications and the areas you practise in, are permitted; what the Bar Council rules allow covers this in detail. Chartered accountants follow the ICAI Code of Ethics, along with the institute's guidelines on what members' and firms' websites may carry, which also limit promotional content. Read the latest version before you go live, as these rules are revised from time to time. In practice, that usually means:</p>
 <ul>
   <li>No "best", "top", "leading" or "expert" used to promote yourself</li>
   <li>No success rates, case wins or promised outcomes</li>
@@ -3670,7 +3670,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
 <p>A solar company's website has to do what your best salesperson does in a first meeting: show whether solar suits this property, explain the subsidy and net metering process, give an honest idea of system size and savings, and prove that you are the installer to trust with a system that will sit on the roof for many years. When it does that, the natural next step for the visitor is to book a site survey or ask for a quote.</p>
-<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> with solutions pages, quote request forms, savings and subsidy information, a completed projects gallery, certifications and partners, service area pages, WhatsApp and local SEO. This guide covers what each part of the site should contain. For bringing in traffic and following up enquiries, see <a href="/blog/solar-company-lead-generation/">solar lead generation</a>.</p>
+<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> with solutions pages, quote request forms, savings and subsidy information, a completed projects gallery, certifications and partners, service area pages, WhatsApp and local SEO. This guide covers what each part of the site should contain. For bringing in traffic and following up enquiries, see solar lead generation.</p>
 
 <h2>The pages a solar website needs</h2>
 <table>
@@ -3794,7 +3794,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     <tr><td>Hiring in-house</td><td>Your agency</td><td>Enough steady WordPress work to keep a full-time developer busy</td></tr>
   </tbody>
 </table>
-<p>In practice white-label and overflow work often run together. <a href="/blog/agency-overflow-wordpress-work/">Agency overflow WordPress work</a> covers when to use a partner for extra capacity, and <a href="/blog/wordpress-reseller-for-marketing-agencies/">reselling WordPress development</a> covers packaging it for marketing clients.</p>
+<p>In practice white-label and overflow work often run together. Agency overflow WordPress work covers when to use a partner for extra capacity, and reselling WordPress development covers packaging it for marketing clients.</p>
 
 <h2>Who does what</h2>
 <table>
@@ -3856,11 +3856,11 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li><strong>A written update rhythm,</strong> such as a note at the end of each working session with staging links, so work moves even when working hours barely overlap.</li>
   <li><strong>Agreed response times</strong> for problems on live sites, not just for build work.</li>
 </ul>
-<p>Working with a partner in India from the UK, US or Australia? <a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore developer across time zones</a> covers overlap hours and urgent fixes, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers contracts and red flags.</p>
+<p>Working with a partner in India from the UK, US or Australia? <a href="/blog/outsource-wordpress-development-india/">Working with an offshore developer across time zones</a> covers overlap hours and urgent fixes, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers contracts and red flags.</p>
 
 <h2>Quality control before your client sees anything</h2>
 <p>Two layers of QA work best. The partner checks the build against the design on desktop, tablet and real phones, tests every form and integration end to end, and checks speed and SEO basics. Then your team reviews it as your client would, spending its time on judgement calls rather than broken links. A shared checklist keeps both layers consistent; see the <a href="/blog/website-qa-checklist-before-launch-agencies/">website QA checklist for agencies</a>.</p>
-<p>Specialised builds need extra checks: payment gateways, shipping and test orders for stores, covered in <a href="/blog/white-label-woocommerce-development/">white-label WooCommerce development</a>, and editable layouts and global styles for page builder sites, covered in <a href="/blog/white-label-elementor-development/">white-label Elementor development</a>.</p>
+<p>Specialised builds need extra checks: payment gateways, shipping and test orders for stores, covered in white-label WooCommerce development, and editable layouts and global styles for page builder sites, covered in white-label Elementor development.</p>
 
 <h2>What a good handover includes</h2>
 <ul>
@@ -3993,7 +3993,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     <tr><td>Owner "list your property" form</td><td>Not needed</td><td>Not needed</td><td>Not needed</td><td>Essential</td></tr>
   </tbody>
 </table>
-<p>Brokers have a second audience, property owners, and a content strategy built on area guides; <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a> covers both.</p>
+<p>Brokers have a second audience, property owners, and a content strategy built on area guides; websites for real estate agents and brokers covers both.</p>
 
 <h2>Features that can wait, and ones to skip</h2>
 <ul>
@@ -4515,7 +4515,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Developer access checked</li>
   <li>A page and template list, with integrations such as CRM, newsletter or payments</li>
 </ol>
-<p>Agencies sending work to an outside developer will find the commercial side, such as access, scope and sign-off, in the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a>, and <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> explains how builds under your brand usually work.</p>
+<p>Agencies sending work to an outside developer will find the commercial side, such as access, scope and sign-off, in the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a>, and <a href="/blog/white-label-wordpress-development-agencies/">white-label Elementor development</a> explains how builds under your brand usually work.</p>
 
 <p>Agencies outsourcing builds should also read <a href="/blog/white-label-wordpress-development-agencies/">how white-label WordPress development works</a>.</p>
 
@@ -4787,7 +4787,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li><strong>Cancelling old hosting before checking</strong> that the site, forms and email work on the new one.</li>
   <li><strong>Ignoring renewal and expiry emails,</strong> or the opposite: paying fake "domain renewal" invoices from companies you've never used.</li>
 </ul>
-<p>Keeping every date in one place prevents most of these; the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a> is a template for it.</p>
+<p>Keeping every date in one place prevents most of these; the <a href="/blog/hosting-renewal-price-increase/">domain and hosting renewal checklist</a> is a template for it.</p>
 
 <h2>A setup checklist for a new website</h2>
 <ol>
@@ -4839,7 +4839,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <tr><td>Business email</td><td>Per user, monthly or yearly</td><td>Depends on the provider and users</td></tr>
 </tbody>
 </table>
-<p>Watch hosting renewals in particular: introductory prices are often much lower than renewal prices. <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> and <a href="/blog/hosting-renewal-price-increase/">why hosting renewal prices go up</a> explain what to check before you buy.</p>
+<p>Watch hosting renewals in particular: introductory prices are often much lower than renewal prices. <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a> and <a href="/blog/hosting-renewal-price-increase/">why hosting renewal prices go up</a> explain what to check before you buy.</p>
 
 <h2>What a website maintenance package includes</h2>
 <p>A proper package should cover:</p>
@@ -4885,7 +4885,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Other costs that surprise site owners include email, paid plugin renewals and SSL on some hosts; check each one before you renew.</p>
 
 <h2>How costs differ for WooCommerce and Shopify stores</h2>
-<p>A WooCommerce store usually sits at the higher end of the maintenance range because there is more to test and more that can break: payment gateways such as Razorpay, COD rules, shipping integrations like Shiprocket, GST invoices and stock sync. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> lists the extra checks. A Shopify store has no core or hosting updates to manage, so maintenance is mainly app reviews, theme updates, speed checks and content changes; the cost is usually lower, but paid apps become the running cost to watch.</p>
+<p>A WooCommerce store usually sits at the higher end of the maintenance range because there is more to test and more that can break: payment gateways such as Razorpay, COD rules, shipping integrations like Shiprocket, GST invoices and stock sync. The <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a> lists the extra checks. A Shopify store has no core or hosting updates to manage, so maintenance is mainly app reviews, theme updates, speed checks and content changes; the cost is usually lower, but paid apps become the running cost to watch.</p>
 
 <h2>One-time costs before a maintenance plan starts</h2>
 <p>Many sites need catch-up work before regular maintenance is practical. Typical one-time tasks include updating plugins that are months or years behind, replacing abandoned plugins, moving to a supported PHP version, removing unused themes and admin accounts, fixing a broken backup setup and cleaning malware if the site was compromised. A good provider audits the site first and quotes this separately, so the monthly charge reflects ongoing care rather than past neglect. If your site was built long ago and never updated, expect this step.</p>
@@ -4902,7 +4902,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <li>Learn simple text edits yourself and leave updates and security to the plan.</li>
 </ul>
 
-<p>Some owners skip a plan and pay for changes by the hour instead; see <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a> for how hourly work is usually billed.</p>
+<p>Some owners skip a plan and pay for changes by the hour instead; see <a href="/blog/fixed-price-vs-hourly-website-projects/">WordPress developer hourly rate in India</a> for how hourly work is usually billed.</p>
 
 <h2>Freelancer, agency, host or do it yourself?</h2>
 <table>
@@ -5104,7 +5104,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     body: `
 <p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
 <p>Sites whose pages sit in "Discovered" or "Crawled, currently not indexed" are exactly who my <a href="/wordpress-seo-services/">WordPress SEO services</a> are for. Common causes are weak internal links, too many low-value URLs competing for Google's attention and a new domain Google doesn't trust yet, often all three at once.</p>
-<p>This guide is about speeding up a site Google can already reach. If your site doesn't appear on Google at all, rule out blocks first with <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>. For what each status means, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>, and if your sitemap shows an error, <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
+<p>This guide is about speeding up a site Google can already reach. If your site doesn't appear on Google at all, rule out blocks first with why a WordPress site isn't showing on Google. For what each status means, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>, and if your sitemap shows an error, <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
 
 <h2>From unknown to indexed: the stages</h2>
 <table>
@@ -5333,7 +5333,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     body: `
 <p>Online ordering on your restaurant website means customers choose dishes from your own menu and send the order straight to you, with no platform commission. There are three practical routes: a WhatsApp ordering button for small menus, a WooCommerce ordering system with add-ons, delivery areas and UPI payments for higher volumes, or a booking or ordering tool you already pay for, linked from the site. The right choice depends less on technology than on who in your team will answer each order, and how quickly.</p>
 <p>Direct ordering is one of the things I set up as part of <a href="/website-for-restaurants/">restaurant website design</a>: WhatsApp ordering for simple needs, or a full <a href="/woocommerce-developer/">WooCommerce ordering system</a> with online payments and delivery areas, with ordering that pauses outside your opening hours. This guide explains how each piece works, so you can decide what your restaurant needs before anyone builds anything.</p>
-<p>Selling packaged products such as pickles or masalas across India too? See <a href="/blog/website-for-d2c-food-brands/">websites for D2C food brands</a>. For the menu page itself, see <a href="/blog/restaurant-menu-on-website/">putting your restaurant menu online</a>; for delivery-only brands and the apps-versus-direct question, see <a href="/blog/website-for-cloud-kitchens/">websites for cloud kitchens</a>.</p>
+<p>Selling packaged products such as pickles or masalas across India too? See <a href="/blog/website-for-d2c-food-brands/">websites for D2C food brands</a>. For the menu page itself, see putting your restaurant menu online; for delivery-only brands and the apps-versus-direct question, see <a href="/blog/website-for-cloud-kitchens/">websites for cloud kitchens</a>.</p>
 
 <h2>Three ways to take orders on your own website</h2>
 <table>
@@ -5477,7 +5477,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     <tr><td>Coaches and consultants</td><td>Method, experience, case studies, testimonials, fees or packages</td><td>No single regulator, but rules against misleading claims still apply</td><td>Discovery call, assessment or lead magnet</td></tr>
   </tbody>
 </table>
-<p>Advocates have the narrowest limits; <a href="/blog/website-for-advocates-bar-council-rules/">what the Bar Council rules allow</a> explains them in detail. For doctors, avoid "best doctor in the city", promised outcomes and before-and-after claims unless current guidance clearly permits them.</p>
+<p>Advocates have the narrowest limits; <a href="/blog/website-for-lawyers-and-chartered-accountants/">what the Bar Council rules allow</a> explains them in detail. For doctors, avoid "best doctor in the city", promised outcomes and before-and-after claims unless current guidance clearly permits them.</p>
 
 <h2>The pages a personal brand site needs</h2>
 <h3>Home</h3>
@@ -6078,7 +6078,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Watch stock levels against what's actually on your shelves.</li>
   <li>Turn repeated customer questions into answers on product pages or an FAQ.</li>
 </ul>
-<p>After that, settle into the routine in the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<p>After that, settle into the routine in the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 
 <p>Still deciding on a platform? See <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
@@ -6609,7 +6609,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 
 <h2>Step 3: Compress, with one tool</h2>
 <p>Lossy compression removes detail most people never notice and gives much bigger savings than lossless, so it is usually the right choice for photos. Use lossless or a high quality setting for screenshots, images containing text, and product photos where fine detail sells the product. Before bulk-processing the whole library, compare a few faces, product shots and text-heavy images at full size.</p>
-<p>The most important rule is to run one image optimization tool. Two plugins compressing the same files, or a plugin and a CDN both converting formats, wastes credits and causes odd, hard-to-trace results. <a href="/blog/image-compression-plugins-compared/">WordPress image compression plugins compared</a> covers ShortPixel, Imagify, EWWW and Smush in detail, including how each delivers WebP.</p>
+<p>The most important rule is to run one image optimization tool. Two plugins compressing the same files, or a plugin and a CDN both converting formats, wastes credits and causes odd, hard-to-trace results. WordPress image compression plugins compared covers ShortPixel, Imagify, EWWW and Smush in detail, including how each delivers WebP.</p>
 
 <h2>Step 4: Serve responsive sizes with srcset</h2>
 <p>Every upload is saved in several sizes, and for images added through the editor WordPress outputs <code>srcset</code> and <code>sizes</code> attributes so a phone can download a 768-pixel version instead of the full 1600-pixel one. That only works when the theme or page builder uses those attributes. Common ways it breaks:</p>
@@ -6706,7 +6706,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
     body: `
 <p>Website accessibility means people can use your site whatever their eyesight, hearing, movement or the device they're on: text they can read, images described for screen readers, menus that work without a mouse, forms with clear labels and videos with captions. The international standard is WCAG, the Web Content Accessibility Guidelines, and level AA is the usual target. For a small business, most of the work is a handful of basics done properly, and nearly all of them make the site easier for everyone.</p>
 <p>The cheapest time to fix accessibility is when templates are being rebuilt anyway, so if you're planning a <a href="/website-redesign/">website redesign</a>, put the checks in this guide into the brief. If you're starting from scratch, the same applies to a new site through <a href="/wordpress-website-development/">WordPress website development</a>.</p>
-<p>This guide covers the basics for every visitor. If many of your customers are older, also read <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
+<p>This guide covers the basics for every visitor. If many of your customers are older, also read making your website easy for older visitors.</p>
 
 <h2>Who accessibility is for</h2>
 <p>It's easy to picture accessibility as something for a small group of blind users. In practice it covers far more people:</p>
@@ -6761,7 +6761,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   <li><strong>Form test.</strong> Submit the form empty and with a wrong email address. Do the errors explain what to fix?</li>
   <li><strong>Screen reader taste test.</strong> Turn on TalkBack on Android or VoiceOver on an iPhone, or the free NVDA on Windows, and listen to your homepage for a minute. Unlabelled buttons and images stand out quickly.</li>
 </ol>
-<p>For a thorough, page-by-page version, use the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
+<p>For a thorough, page-by-page version, use the website accessibility audit checklist.</p>
 
 <h2>WordPress-specific fixes</h2>
 <ul>
@@ -6895,7 +6895,7 @@ Main contact person and best time to reach:</code></pre>
 <tr><td>Data migration</td><td>Moving old posts, products or customers needs mapping and checks</td><td>What moves, from which platform, and how many items</td></tr>
 </tbody>
 </table>
-<p>For more on how these factors turn into a price, read <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and <a href="/blog/hidden-website-costs/">hidden website costs</a>, or get a rough range from the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
+<p>For more on how these factors turn into a price, read <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and <a href="/blog/wordpress-website-cost-india/">hidden website costs</a>, or get a rough range from the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
 <h2>Extra sections for redesigns, stores and agencies</h2>
 <p><strong>Redesigns:</strong> add your current traffic sources, top pages from Google Search Console, and what does not work on the current site. Note that existing URLs and rankings must be protected; see <a href="/blog/redesign-website-without-losing-rankings/">redesign without losing rankings</a>.</p>
@@ -8563,7 +8563,7 @@ wp cache flush</code></pre>
   <li>Letting the Google Drive or Dropbox account fill up, so new backups silently fail</li>
   <li>Storing backups in an account that belongs to a former developer or employee</li>
 </ul>
-<p>Backups are one part of being ready for a bad day; <a href="/blog/website-disaster-recovery-plan/">a simple website disaster recovery plan</a> covers logins, contacts and who does what.</p>
+<p>Backups are one part of being ready for a bad day; a simple website disaster recovery plan covers logins, contacts and who does what.</p>
 
 <h2>FAQs</h2>
 <h3>Are my hosting company's backups enough?</h3>
@@ -10063,7 +10063,7 @@ site:example.com/blog/ "net metering"</code></pre>
 <h3>2. Your story, briefly</h3>
 <p>Two or three short paragraphs are enough: why you started, what you've learned, and how that shapes the way you work today. Specific moments persuade more than general passion. "We started after our own home renovation went badly" says more than "we are passionate about quality".</p>
 <h3>3. People and photos</h3>
-<p>People trust faces more than logos. Show the founder, the team, the workshop, the clinic or the office, photographed properly in good light. <a href="/blog/stock-photos-vs-real-photos/">Stock photos vs real photos</a> explains why real ones matter. If you have more than a few people, give them their own page; see <a href="/blog/meet-the-team-page/">how to create a meet the team page</a>.</p>
+<p>People trust faces more than logos. Show the founder, the team, the workshop, the clinic or the office, photographed properly in good light. <a href="/blog/stock-photos-vs-real-photos/">Stock photos vs real photos</a> explains why real ones matter. If you have more than a few people, give them their own page; see how to create a meet the team page.</p>
 <h3>4. Credentials, stated honestly</h3>
 <p>Covered in detail below. The short version: be specific, be accurate, and leave out anything you'd be uncomfortable being asked to prove.</p>
 <h3>5. How you work</h3>
@@ -10321,7 +10321,7 @@ site:example.com/blog/ "net metering"</code></pre>
 <h3>Written quotes</h3>
 <p>The workhorse. Use a short pull quote with the full text available, the person's name and detail, and a photo or company logo if they agreed. Specific beats long: one sentence about a real result outweighs a paragraph of general praise.</p>
 <h3>Video</h3>
-<p>A customer talking on camera is hard to fake and easy to believe, and a phone is enough to record it. Add captions and a short written summary beside each video, and load the player only when someone taps play so the page stays fast. <a href="/blog/video-testimonials-website/">Video testimonials for your website</a> covers recording, editing and hosting.</p>
+<p>A customer talking on camera is hard to fake and easy to believe, and a phone is enough to record it. Add captions and a short written summary beside each video, and load the player only when someone taps play so the page stays fast. Video testimonials for your website covers recording, editing and hosting.</p>
 <h3>WhatsApp screenshots</h3>
 <p>Screenshots of happy WhatsApp messages are popular in India because they feel unpolished and real. Use them only with the sender's consent, crop or blur phone numbers, profile photos and anything else in the chat, and never edit the text. Add the same words as real text beside the image, so they can be read on small screens, by screen readers and by search engines. Never use made-up chats from screenshot generator apps; it is the same as writing fake reviews.</p>
 <h3>Photos of the customer or the finished work</h3>
@@ -10682,7 +10682,7 @@ wp option update blog_public 0</code></pre>
   <li><strong>Tick "Discourage search engines"</strong> under Settings, Reading on the staging copy only. It asks search engines not to index the site, but it's a request, not a lock, which is why the password matters.</li>
   <li><strong>Check the live site after every push.</strong> Pushing a staging database can carry the "discourage" setting over to the live site, quietly telling Google to drop your pages. It's a classic cause of sites disappearing from search.</li>
 </ul>
-<p>If pages have already dropped out after a launch or push, see <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>.</p>
+<p>If pages have already dropped out after a launch or push, see <a href="/blog/robots-txt-explained/">robots.txt explained</a> and <a href="/blog/get-website-indexed-google-faster/">why a WordPress site isn't showing on Google</a>.</p>
 
 <h2>Stop staging from emailing customers or taking payments</h2>
 <p>A staging copy has your real customer list and settings, so it can do real things.</p>
@@ -10708,7 +10708,7 @@ wp option update blog_public 0</code></pre>
   <li><strong>Push selected tables</strong> only if you know exactly which tables changed, and never the tables holding orders, customers and stock.</li>
   <li><strong>For big changes</strong>, such as a redesign, plan the switch for a quiet hour, keep a short list of settings to apply, and test a real order afterwards.</li>
 </ul>
-<p>Stores have more to check than other sites; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine.</p>
+<p>Stores have more to check than other sites; the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine.</p>
 
 <h2>Staging site vs local site vs backup: which do you need?</h2>
 <p>People often mix up these three. They do different jobs, and a careful setup uses more than one:</p>
@@ -10938,7 +10938,7 @@ wp option update blog_public 0</code></pre>
   <li>Never use stock or competitor images as your own work</li>
   <li>Compress images so the gallery loads quickly on mobile</li>
 </ul>
-<p><a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers which of these images also belong on your profile.</p>
+<p><a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a> covers which of these images also belong on your profile.</p>
 
 <h2>Hygiene, products and safety</h2>
 <p>Since the pandemic, many clients look for a few words on cleanliness before they book, especially for spa treatments, waxing and nail services. Describe what you actually do: how tools are sterilised or disposed of, whether single-use files and buffers are used, how often towels and linen are changed, and how rooms are cleaned between clients. Name the product brands you use if clients ask for them, and say how you handle allergies and patch tests for colour and chemical treatments. Keep these claims accurate; one review that contradicts them does more harm than not mentioning them.</p>
@@ -11048,7 +11048,7 @@ wp option update blog_public 0</code></pre>
 <p>A page per client sector, such as healthcare, education, industrial, hospitality or residential, lets you speak to each one directly. A hospital client cares about working near live wards and infection control; an industrial client cares about shutdown windows and plant safety. Link each sector page to the relevant projects. These pages also bring in searches like "industrial construction company in Pune" more naturally than a single services list. If you also take on design work, or partner with consultants, <a href="/blog/website-for-civil-engineering-consultants/">websites for civil engineering consultants</a> covers how that side presents itself.</p>
 
 <h2>Careers and recruitment</h2>
-<p>Construction firms hire constantly: site engineers, supervisors, safety officers, quantity surveyors, skilled trades. A careers page with current openings, the locations involved, whether accommodation or site allowances apply, and a simple application route can save on recruitment costs. Keep old openings removed. A <a href="/blog/meet-the-team-page/">team page</a> with your project leaders helps both clients and candidates see who they will work with.</p>
+<p>Construction firms hire constantly: site engineers, supervisors, safety officers, quantity surveyors, skilled trades. A careers page with current openings, the locations involved, whether accommodation or site allowances apply, and a simple application route can save on recruitment costs. Keep old openings removed. A <a href="/blog/write-about-page-that-builds-trust/">team page</a> with your project leaders helps both clients and candidates see who they will work with.</p>
 
 <h2>Site visits</h2>
 <p>For builders, a site-visit booking form is the main conversion: preferred date and time, number of visitors, the project, and a phone number. For contractors, the equivalent is an invitation for a client to see an ongoing site. Either way, state the safety requirements: closed footwear, helmets provided, children not allowed past a certain point, and who will accompany them.</p>
@@ -11380,7 +11380,7 @@ wp option update blog_public 0</code></pre>
   <li><strong>Ownership:</strong> who owns the code and accounts, and how handover works if the engagement ends</li>
   <li><strong>Contracts and payments:</strong> the currencies you invoice in and the governing terms you usually work under, stated generally</li>
 </ul>
-<p>The article on <a href="/blog/offshore-wordpress-developer-time-zones/">offshore developers and time zones</a> looks at scheduling from the client's point of view, and is a useful reference for how buyers think about it.</p>
+<p>The article on <a href="/blog/outsource-wordpress-development-india/">offshore developers and time zones</a> looks at scheduling from the client's point of view, and is a useful reference for how buyers think about it.</p>
 
 <h2>RFP and project enquiry forms</h2>
 <p>A general contact form is not enough for project enquiries. A short structured form helps your sales team reply with something useful:</p>
@@ -12200,7 +12200,7 @@ wp option update blog_public 0</code></pre>
 <h2>Cost: how each platform charges</h2>
 <p>The cost models are different, so compare the total over three to five years rather than the first month.</p>
 <ul>
-  <li><strong>WordPress:</strong> the software is free. You pay for hosting, roughly ₹2,500 to ₹15,000 a year depending on the plan, a domain at about ₹500 to ₹1,200 a year, and any premium theme or plugin licences. Add maintenance if someone else keeps it updated. <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what the hosting money buys.</li>
+  <li><strong>WordPress:</strong> the software is free. You pay for hosting, roughly ₹2,500 to ₹15,000 a year depending on the plan, a domain at about ₹500 to ₹1,200 a year, and any premium theme or plugin licences. Add maintenance if someone else keeps it updated. <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a> explains what the hosting money buys.</li>
   <li><strong>Webflow:</strong> you pay Webflow a site plan for each published website, with higher tiers for more CMS items, traffic and e-commerce, and workspace plans if several people design and build. Features such as translated versions of the site are paid add-ons at the time of writing. Webflow's plans and prices change, so check its pricing page for the current figures in your currency.</li>
 </ul>
 <p>For a small brochure site the two can come out similar. The gap usually widens with more content, more languages, a store, or several sites. Build costs are separate in both cases; see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
@@ -12734,7 +12734,7 @@ function my_only_free_shipping( $rates ) {
   <li>Send the tracking number back to the WooCommerce order and update its status</li>
   <li>Show live rates or serviceability at checkout</li>
 </ul>
-<p>Before choosing, compare rates by slab and zone, the volumetric divisor, COD charges and how quickly COD money is remitted, return-to-origin charges, how weight disputes are handled and how reliable pickups are in your area. Photographing packed parcels on the scale with their dimensions helps when a courier disputes a weight. Many integrations connect using WooCommerce REST API keys, created under <strong>Settings &gt; Advanced &gt; REST API</strong>; revoke a key when you stop using that service. Shipping, packaging and RTO costs belong in your budget too; see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>
+<p>Before choosing, compare rates by slab and zone, the volumetric divisor, COD charges and how quickly COD money is remitted, return-to-origin charges, how weight disputes are handled and how reliable pickups are in your area. Photographing packed parcels on the scale with their dimensions helps when a courier disputes a weight. Many integrations connect using WooCommerce REST API keys, created under <strong>Settings &gt; Advanced &gt; REST API</strong>; revoke a key when you stop using that service. Shipping, packaging and RTO costs belong in your budget too; see <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a>.</p>
 
 <h2>Tracking, emails and your shipping policy</h2>
 <ul>
@@ -12877,7 +12877,7 @@ function my_only_free_shipping( $rates ) {
 </ol>
 <p>Question 6 is the reverse test: you want the answer yes, because local text that only fits one place is exactly what a doorway lacks. Search Console helps with question 9: filter Performance by page to see which location pages earn anything. Pages that score well are worth improving; pages that score badly are usually better merged into a single areas page. The same test applies to our own city pages, such as <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, which is built around where work is actually done.</p>
 
-<p>If each branch runs as a separate subsite rather than a page, the same doorway risks apply; see <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> for how to keep a network of sites distinct.</p>
+<p>If each branch runs as a separate subsite rather than a page, the same doorway risks apply; see <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite SEO</a> for how to keep a network of sites distinct.</p>
 
 <h2>How to fix existing doorway pages</h2>
 <ol>
@@ -13115,7 +13115,7 @@ function my_only_free_shipping( $rates ) {
 </ul>
 <p>Whatever the role, each person gets their own account. Shared logins make it impossible to remove one person without changing the password for everyone, and activity logs can't tell you who did what.</p>
 
-<p>Planning a network where Super Admins and site Administrators need different rights? See what <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a> cover, including roles and access across sites.</p>
+<p>Planning a network where Super Admins and site Administrators need different rights? See what <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite development services</a> cover, including roles and access across sites.</p>
 
 <h2>How to change a user's role</h2>
 <ol>
@@ -13144,7 +13144,7 @@ wp cap list editor</code></pre>
 <p>A sensible role limits the damage a stolen password can do, but the account still needs protecting:</p>
 <ul>
   <li>Two-factor authentication on every Administrator, Editor and Shop Manager account; see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</li>
-  <li>Remove or downgrade accounts the same day someone leaves or a project ends. For a full clean-up of old accounts, follow the <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</li>
+  <li>Remove or downgrade accounts the same day someone leaves or a project ends. For a full clean-up of old accounts, follow the WordPress user accounts audit.</li>
   <li>An activity log that records logins, role changes and new users; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</li>
   <li>Treat any administrator nobody recognises as a sign the site may be compromised. Note its details before deleting it, because the registration date can show when the break-in happened.</li>
 </ul>
@@ -13299,7 +13299,7 @@ wp cap list editor</code></pre>
 <h3>Is free uptime monitoring good enough for a small business website?</h3>
 <p>For a brochure site, a free plan with a five-minute check, email alerts and SSL expiry warnings is usually enough. A store taking payments benefits from shorter intervals, keyword checks on cart and checkout pages, and alerts to a phone, which often need a paid plan.</p>
 
-<p>If you'd rather have someone else watching, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, security scans and a monthly report, so problems are caught early and the site can be restored quickly if needed. For the renewals that cause many outages, see the <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a>.</p>
+<p>If you'd rather have someone else watching, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, security scans and a monthly report, so problems are caught early and the site can be restored quickly if needed. For the renewals that cause many outages, see the <a href="/blog/hosting-renewal-price-increase/">domain and hosting renewal checklist</a>.</p>
 `,
   },
   {
@@ -13557,131 +13557,6 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 `,
   },
   {
-    slug: 'website-accessibility-older-users',
-    seoTitle: 'Website Accessibility for Older Users: A Practical Guide',
-    title: 'Making Your Website Easy for Older Visitors: Text Size, Contrast, Tap Targets, Plain Language and Phone or WhatsApp Options',
-    description: 'Make your website easy for older visitors: larger text, strong contrast, big tap targets, plain words, short forms, calm pages, and phone or WhatsApp.',
-    date: '2026-09-27',
-    updated: '2026-10-19',
-    category: 'Guides',
-    related: ['website-redesign', 'wordpress-website-for-doctors', 'website-for-temples-and-ngos'],
-    body: `
-<p>To make a website easy for older visitors, use larger body text with strong contrast, big buttons with space between them, plain familiar words, a short menu, and short forms with clear labels, and always offer a tap-to-call number and WhatsApp next to the form. Remove auto-playing videos, rotating sliders and pop-ups, and make sure the site respects the larger text size many older people set on their phones. Then watch an older relative use it, because that one test shows more than any checklist.</p>
-<p>These changes matter most where older people are the main visitors or decision-makers: clinics and hospitals, temples and trusts, pharmacies, insurance and elder care. If your current site fails them, a <a href="/website-redesign/">website redesign</a> lets you fix text, layout and forms at the template level instead of page by page. For clinics specifically, see <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
-<p>This guide builds on <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, which covers the standards and a quick audit. Here the focus is on what older visitors find hard, and what to do about it.</p>
-
-<h2>Why older visitors struggle with websites</h2>
-<p>Ageing brings gradual changes that many websites ignore:</p>
-<ul>
-  <li><strong>Eyesight:</strong> small print becomes harder to read, low contrast becomes harder to see, and glare on a phone screen makes both worse.</li>
-  <li><strong>Hands:</strong> tremors and stiffness make small links, tiny close buttons and precise swipes difficult.</li>
-  <li><strong>Hearing:</strong> phone calls and videos without captions can be hard to follow.</li>
-  <li><strong>Unfamiliar patterns:</strong> icons without labels, hidden menus and swipe-only galleries assume habits not everyone has.</li>
-  <li><strong>Caution:</strong> many older people are, rightly, wary of scams, so an unclear page or a pushy pop-up makes them leave.</li>
-</ul>
-<p>None of this means older visitors aren't capable online. It means a site that makes them work harder than necessary will lose them, and often lose the family members who help them decide.</p>
-
-<h2>Quick reference: what to change</h2>
-<table>
-  <thead><tr><th>Area</th><th>Common problem</th><th>What to do instead</th></tr></thead>
-  <tbody>
-    <tr><td>Text size</td><td>Body text of 14px or smaller, thin fonts</td><td>Body text of around 18px, a regular or medium weight, generous line spacing</td></tr>
-    <tr><td>Contrast</td><td>Grey text on white, text over photos</td><td>Near-black text on a light background; text over photos only with a solid backing</td></tr>
-    <tr><td>Tap targets</td><td>Small links packed together</td><td>Buttons at least the height of a fingertip, with space between them</td></tr>
-    <tr><td>Navigation</td><td>Long menus, icon-only menu button</td><td>A short menu with familiar words, and a button labelled "Menu"</td></tr>
-    <tr><td>Forms</td><td>Many fields, placeholder-only labels</td><td>Few fields, labels above each, clear errors</td></tr>
-    <tr><td>Contact</td><td>Form is the only option</td><td>Tap-to-call, WhatsApp and the number written out in full</td></tr>
-    <tr><td>Motion</td><td>Auto-playing video, sliders, pop-ups</td><td>Still pages; video only when tapped</td></tr>
-  </tbody>
-</table>
-
-<h2>Text that's easy to read</h2>
-<ul>
-  <li><strong>Size:</strong> around 18px for body text on phones and computers is a comfortable default; 16px is the minimum. Headings should be clearly larger.</li>
-  <li><strong>Spacing:</strong> line height of about one and a half times the text size, and short paragraphs.</li>
-  <li><strong>Weight and style:</strong> avoid thin and light font weights, long passages in italics, and whole sentences in capital letters.</li>
-  <li><strong>Line length:</strong> on a computer, keep lines from stretching right across a wide screen.</li>
-  <li><strong>Respect the phone's text size.</strong> Many older people increase the text size in their phone settings. Build with flexible text sizes so the site follows that setting, never disable pinch-to-zoom, and check that larger text doesn't overlap buttons or cut off menu items.</li>
-  <li><strong>Regional languages:</strong> Hindi, Marathi, Telugu and other scripts usually need a slightly larger size than English text to read comfortably.</li>
-</ul>
-
-<h2>Contrast and colour</h2>
-<p>Use dark text on a light background for anything people need to read: timings, fees, addresses and instructions. WCAG's minimum contrast ratio for normal text is 4.5:1; for an older audience, aim comfortably above it rather than just passing. Avoid placing text directly on photographs, avoid pale grey for "less important" text, and never rely on colour alone, such as red for "closed", without a word to go with it.</p>
-
-<h2>Buttons, links and tap targets</h2>
-<ul>
-  <li>Make buttons look like buttons: a solid shape with a clear text label, such as "Book appointment" or "Call the clinic".</li>
-  <li>Give them room. A large target with space around it is easier for shaky hands; WCAG 2.2 sets a minimum of 24 by 24 CSS pixels, and 44 to 48 pixels is far more comfortable.</li>
-  <li>Underline links in paragraphs so they don't depend on colour.</li>
-  <li>Avoid actions that only appear on hover, swipe-only galleries and tiny "x" buttons for closing things.</li>
-  <li>Label icons with words. A phone icon alone is less clear than a phone icon with "Call us".</li>
-</ul>
-
-<p>Check that the menu also works on phones; if the mobile menu is missing or does nothing, <a href="/blog/wordpress-menu-not-showing-fix/">these WordPress menu fixes</a> cover the usual causes.</p>
-
-<h2>Plain language and simple navigation</h2>
-<p>Use the words visitors would use themselves: "Timings", "Doctors", "How to reach", "Donate", "Book appointment", not "Solutions", "Engage" or "Connect". Keep the main menu short, keep it in the same place on every page, and use a visible "Menu" label next to the icon on phones. Breadcrumbs and a clear Home link help people who land on an inner page from Google or a WhatsApp forward find their way.</p>
-<p>In the content itself, put the most-asked information near the top of each page, use one idea per paragraph, explain any medical, legal or technical term in plain words, and turn steps such as "how to book a puja" into a numbered list.</p>
-
-<h2>Phone and WhatsApp alongside forms</h2>
-<p>Many older visitors would rather talk than type, and many family members enquire on a parent's behalf. Give them every route:</p>
-<ul>
-  <li><strong>Tap-to-call</strong> buttons that open the dialler, with the number also written out in full so people can dial it from a landline.</li>
-  <li><strong>WhatsApp</strong> with a pre-filled first message, which also helps visitors with hearing loss who find calls difficult; see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</li>
-  <li><strong>The hours someone answers,</strong> so people don't call at lunch and give up.</li>
-  <li><strong>A form for those who prefer it,</strong> with an option such as "I am booking for a family member".</li>
-</ul>
-
-<h2>Forms older visitors can finish</h2>
-<ol>
-  <li>Ask only for what you need to respond: name, phone number and a short message is often enough.</li>
-  <li>Put labels above fields, and make fields large.</li>
-  <li>Use the right keyboard, such as the number pad for phone numbers.</li>
-  <li>Accept phone numbers with or without spaces and country codes, instead of rejecting them.</li>
-  <li>Show errors next to the field in plain words, and keep everything already typed.</li>
-  <li>Avoid puzzle CAPTCHAs and short time limits.</li>
-  <li>Finish on a thank-you page that says what happens next and when.</li>
-</ol>
-<p>For appointment booking, a short request form with a call back often suits older patients better than a full calendar; <a href="/blog/online-appointment-booking-website/">online appointment booking</a> compares the options.</p>
-
-<h2>Calm pages with fewer surprises</h2>
-<ul>
-  <li>No auto-playing video or sound; play video only when tapped.</li>
-  <li>No sliders that change while someone is reading. One clear image and message is easier to follow.</li>
-  <li>No pop-ups on arrival, and nothing that covers the page on a phone.</li>
-  <li>Keep chat bubbles and sticky bars small, so they don't cover buttons or text.</li>
-  <li>Respect the "reduce motion" setting on phones and computers for any animation.</li>
-</ul>
-
-<p>For visitors with hearing loss, a phone call can be the hardest way to reach you, so always offer WhatsApp, email or a form as well; see <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a>.</p>
-
-<h2>Trust and reassurance</h2>
-<p>Show the details a cautious visitor checks before calling: a full address with a map, real photos of the place and people, names and qualifications where relevant, fees or a clear note on what affects them, and plain policies. Avoid countdown timers, "only two slots left" banners and anything that feels like pressure. <a href="/blog/website-trust-signals-checklist/">The website trust signals checklist</a> covers the rest.</p>
-
-<h2>Clinics, temples and NGOs: what to put first</h2>
-<ul>
-  <li><strong>Clinics and hospitals:</strong> doctor names and specialties, timings, how to book, how to reach, parking and lift or wheelchair access. The <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a> lists the essentials.</li>
-  <li><strong>Temples and trusts:</strong> darshan and aarti timings, festival dates, how to reach, and simple donation steps, ideally in the languages devotees read. Large readable text, clear menus and fast loading on basic phones are part of how I approach <a href="/website-for-temples-and-ngos/">websites for temples, trusts and NGOs</a>.</li>
-  <li><strong>Elder care and home nursing:</strong> written as much for the adult children researching on a parent's behalf as for the parents themselves.</li>
-</ul>
-
-<h2>Test with real people</h2>
-<p>Ask an older relative, customer or patient to do three real tasks on their own phone, with their usual text size: find your timings, find how to reach you, and send an enquiry. Watch without helping, and note every pause, wrong tap and question. Fix those first, then repeat with someone else.</p>
-
-<h2>FAQs</h2>
-<h3>What font size should a website use for older visitors?</h3>
-<p>Around 18px for body text is a comfortable default, with 16px as the minimum, and headings clearly larger. Just as important, the site should grow with the text size people set on their phones without breaking the layout.</p>
-<h3>Should I add buttons to make the text bigger?</h3>
-<p>They rarely get used, and phones and browsers already have text-size and zoom settings. A comfortable default size and a layout that respects those settings help more than a resize button.</p>
-<h3>Is designing for older visitors the same as accessibility?</h3>
-<p>It overlaps heavily. Accessibility standards cover contrast, tap targets, labels and motion, which all help older visitors. Designing for older people adds plain language, phone and WhatsApp options, and extra attention to trust.</p>
-<h3>How can I test my website with older users?</h3>
-<p>Ask two or three older people to complete real tasks on their own phones while you watch without helping. Note where they hesitate or tap the wrong thing, fix those points, and test again.</p>
-
-<p>Want a website that older patients, devotees or customers find easy? I can rebuild your templates with readable text, clear buttons, short forms and tap-to-call and WhatsApp on every page through a <a href="/website-redesign/">website redesign</a>, or build a new clinic site through <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
-`,
-  },
-  {
     slug: 'regain-website-access-old-developer',
     seoTitle: 'Get Your Website Back From an Old Developer: Step by Step',
     title: 'How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email',
@@ -13750,7 +13625,7 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 </ol>
 <pre><code>wp user list --role=administrator --fields=ID,user_login,user_email
 wp user create newowner owner@example.com --role=administrator --send-email</code></pre>
-<p>Once you have your own Administrator account, demote or delete the developer's. When deleting, attribute their content to your account so no pages disappear, then review everyone else with the <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</p>
+<p>Once you have your own Administrator account, demote or delete the developer's. When deleting, attribute their content to your account so no pages disappear, then review everyone else with the <a href="/blog/wordpress-user-roles-explained/">WordPress user accounts audit</a>.</p>
 
 <h2>Step 5: Search Console, Analytics and Business Profile</h2>
 <p><strong>Search Console:</strong> with control of DNS, you don't need the developer. Add a domain property in your own Google account and verify it with the TXT record Google provides. To remove the old owner, delete their verification token (TXT record, HTML file or meta tag) first, then remove them under Settings, Users and permissions, or they stay verified.</p>
@@ -13769,7 +13644,7 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
 </ol>
 
 <h2>Make sure it can't happen again</h2>
-<p>Keep every account above in a password manager the business controls, with the login email, renewal date and who else has access. Developers should get their own user accounts, never your master logins, and every project should end with a written handover. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to receive.</p>
+<p>Keep every account above in a password manager the business controls, with the login email, renewal date and who else has access. Developers should get their own user accounts, never your master logins, and every project should end with a written handover. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to receive.</p>
 
 <h2>FAQs</h2>
 <h3>Can a developer legally keep my website or domain?</h3>
@@ -13859,7 +13734,7 @@ function my_limit_links( $result, $tag ) {
 <p>If a bot hammers the form hundreds of times an hour, stop it before it reaches WordPress. A cloud firewall such as Cloudflare can rate-limit requests to the address your form posts to: Contact Form 7 submits through the WordPress REST API, while many other plugins use admin-ajax.php. Be careful with admin-ajax.php, because other features on your site use it too, so set limits generously and test. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers rate limiting and false positives.</p>
 <p>Blocking whole countries is tempting but risky. If you get enquiries from NRIs, export buyers or overseas clients, a country block turns them away without either of you knowing.</p>
 
-<p>The spam tools available depend on the plugin you use; <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> covers how each one handles anti-spam options.</p>
+<p>The spam tools available depend on the plugin you use; <a href="/blog/wordpress-form-plugins-compared/">Gravity Forms vs Contact Form 7</a> covers how each one handles anti-spam options.</p>
 
 <h2>Close the other routes into your inbox</h2>
 <ul>
@@ -14327,124 +14202,6 @@ TXT    _dmarc   v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com</code></p
 <p>I advise against it. Collect contact details and the broad need through the form, and handle documents through the secure process your principal company or practice already uses.</p>
 
 <p>If you want a website that presents your registrations precisely, explains how you work and brings in calm, needs-based enquiries, see the <a href="/website-for-lawyers-and-consultants/">website design for consultants and professionals</a> page. You write or approve every regulated statement, and I make sure it is easy to find and easy to read.</p>
-`,
-  },
-  {
-    slug: 'website-for-real-estate-agents-brokers',
-    seoTitle: 'Website for Real Estate Agents and Property Brokers in India',
-    title: 'Websites for Real Estate Agents and Property Brokers: Listings Without an IDX Feed, Locality Guides, RERA Agent Registration, WhatsApp Leads and Resale vs New Projects',
-    description: 'Plan a real estate agent or broker website in India: listing options without IDX, locality guides, RERA agent details, WhatsApp leads and owner listings.',
-    date: '2026-09-27',
-    updated: '2026-10-24',
-    category: 'Industries',
-    related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
-    body: `
-<p>A real estate agent's or broker's website cannot outdo the big property portals on volume, so it has to win on what portals cannot offer: listings that are current and accurate, real knowledge of a few localities, a named and registered person to deal with, and a reply on WhatsApp within minutes. Built around those strengths, your own site turns portal browsers who search your name, and owners looking for an agent, into enquiries.</p>
-<p>The tools are the ones I set up on <a href="/real-estate-website-design/">real estate websites</a> for builders and agents: listings you manage from the dashboard with photos, prices and an available or sold status, site-visit forms, brochure downloads, WhatsApp on every page and RERA details where they apply. If you promote a particular project or locality with ads, a focused <a href="/landing-page-design/">landing page for that campaign</a> keeps the ad's promise and asks for one thing, a call back or a site visit.</p>
-
-<h2>Resale broker or new-project channel partner?</h2>
-<p>Most Indian agents lean one way or the other, and the website should follow how you actually earn:</p>
-<table>
-  <thead>
-    <tr><th></th><th>Resale and rental broker</th><th>New-project channel partner</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Where listings come from</td><td>Owners who give you their property</td><td>Developers whose projects you are authorised to sell</td></tr>
-    <tr><td>What buyers need to see</td><td>Real photos, exact details, availability, the society and locality</td><td>Project details, configurations, price sheet, possession timeline, RERA number</td></tr>
-    <tr><td>Compliance on the page</td><td>Your own registration where required, accurate area figures</td><td>The project's RERA number and the state RERA website on every project listing</td></tr>
-    <tr><td>Main call to action</td><td>WhatsApp about this property, or book a viewing</td><td>Book a site visit, or download the brochure</td></tr>
-    <tr><td>Content that helps</td><td>Locality guides, rental and resale advice</td><td>Project comparisons within the area, buying process guides</td></tr>
-  </tbody>
-</table>
-<p>If you do both, keep them in separate sections. Use developers' renders, logos and brochures only with their permission, and never list a project you are not authorised to sell.</p>
-
-<h2>Listings in India: options without an IDX feed</h2>
-<p>Agent websites in the US often pull listings automatically from a shared MLS database through an IDX feed. India has no national equivalent at the time of writing, so listings have to come from your own records. These are the realistic options:</p>
-<table>
-  <thead>
-    <tr><th>Method</th><th>How it works</th><th>Suits</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Manual entry in WordPress</td><td>Each listing is added from the dashboard with fixed fields, photos and a status</td><td>Agents with up to a few dozen live listings</td></tr>
-    <tr><td>Spreadsheet import</td><td>Listings kept in a sheet are imported in bulk and updated in batches</td><td>Teams that already track inventory in Excel or Google Sheets</td></tr>
-    <tr><td>Feed or embed from a real estate CRM</td><td>Some CRMs can publish listings to a website through a feed, plugin or embed; check with your provider</td><td>Larger brokerages already using a CRM for leads</td></tr>
-    <tr><td>Links to your portal profiles</td><td>Your site links to your listings on portals rather than repeating them</td><td>A stopgap, not a replacement for your own listings</td></tr>
-  </tbody>
-</table>
-<p>Whatever the method, do not copy listings, photos or descriptions from portals or other brokers. Portals' terms forbid it, owners object, and duplicated text does nothing for your search visibility.</p>
-
-<h2>What every listing should state</h2>
-<p>Buyers and tenants filter ruthlessly, and vague listings waste everyone's time. Use the same fields on every listing:</p>
-<ul>
-  <li><strong>Area, with the measure named:</strong> carpet area, built-up or super built-up, because figures quoted without the measure cause disputes, and RERA requires carpet area for registered projects</li>
-  <li><strong>Configuration, floor and total floors, facing</strong></li>
-  <li><strong>Price or rent,</strong> and for rentals the deposit and monthly maintenance</li>
-  <li><strong>Age of the building</strong> and, for resale, whether it has an occupancy certificate as the owner states it</li>
-  <li><strong>Parking, furnishing, lift and power backup</strong></li>
-  <li><strong>Availability:</strong> immediate, from a date, or the possession timeline for new projects</li>
-  <li><strong>RERA number</strong> for listings in registered projects</li>
-  <li><strong>A property ID</strong> that appears in every enquiry</li>
-</ul>
-<p>Use real photos taken in good light, mark sold or let properties promptly, and remove them after a short period. A site full of "sold" badges from two years ago looks abandoned.</p>
-
-<h2>Locality guides that prove you know the area</h2>
-<p>Locality knowledge is what an agent sells, and a good guide shows it better than any slogan. For each area you genuinely work in, write about:</p>
-<ul>
-  <li>The kinds of homes available, such as older societies, new towers or independent houses, and who tends to live there</li>
-  <li>Commute options to the main business districts, with the routes residents actually use</li>
-  <li>Schools, hospitals, markets and parks, named</li>
-  <li>Water supply, traffic pinch points and other honest drawbacks residents mention</li>
-  <li>Price and rent trends described in words, or with a cited source and date, rather than figures you cannot support</li>
-  <li>Announced infrastructure such as metro lines or road projects, linked to the official announcement and described as planned until it is built</li>
-</ul>
-<p>Link each guide to your current listings in that locality. Writing guides for areas you do not work in, or swapping the area name into the same text, creates doorway pages that help neither buyers nor rankings; <a href="/blog/local-landing-pages-without-doorway-pages/">local pages done right</a> explains the difference.</p>
-
-<h2>RERA registration and other trust details</h2>
-<p>Under the Real Estate (Regulation and Development) Act, agents who facilitate sales in registered projects generally have to register with the state RERA authority and quote their registration number. How this applies to resale and rental work, and the details of display, differ between states, so confirm with your state authority. Where you hold a registration, show the number and state in the footer and on your profile, and link to the authority's search page so visitors can check it.</p>
-<p>Other details that help: your office address with a photo of the frontage, the people in your team with their roles, your GST number if registered, how brokerage is charged for buyers, sellers, tenants and owners, and genuine Google reviews displayed through a widget linked to your profile.</p>
-
-<h2>Lead capture that respects buyers</h2>
-<p>Buyers browse at night and on weekends, mostly on phones, and many prefer WhatsApp to a phone call. Lead capture should fit that:</p>
-<ul>
-  <li>A WhatsApp button on every listing that opens a message with the property ID and title already filled in, so you know exactly what they saw</li>
-  <li>A short form asking for name, phone and preferred viewing time, without forcing an email address</li>
-  <li>A "tell us what you are looking for" form for buyers with no listing in mind, asking locality, budget range, configuration and timeline</li>
-  <li>Brochure downloads in exchange for a phone number only for new projects, where the brochure is genuinely valuable</li>
-  <li>An EMI calculator on listing pages, if your buyers rely on home loans; <a href="/blog/website-calculators-lead-generation/">calculators for lead generation</a> explains how to use one without hiding results behind a form</li>
-</ul>
-<p>Pre-filled WhatsApp messages, tracking and business hours are covered in <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>.</p>
-<h3>A form for owners who want an agent</h3>
-<p>Owners are your supply. Give them a "list your property with us" page explaining how you market a property, how you screen buyers or tenants, how viewings are arranged, and how brokerage works. The form should ask for locality, property type and size, sale or rent, expected price or rent, and the best time to call. Ownership documents can wait until you meet.</p>
-
-<h2>A weekly routine that keeps the site believable</h2>
-<p>An agent's website loses trust faster than most because listings change every week. A short routine, done on the same day each week by the same person, keeps it current:</p>
-<ol>
-  <li>Mark properties that sold or let during the week, and remove those marked earlier</li>
-  <li>Add new listings with their own photos, using the fixed fields above</li>
-  <li>Update prices or rents that owners have changed</li>
-  <li>Check that every enquiry from the website and WhatsApp received a reply</li>
-  <li>Reply to new Google reviews and add one fresh photo or post to your profile</li>
-</ol>
-<p>For a small brokerage this rarely takes long, and it is what separates an agent's site that brings enquiries from one that only exists.</p>
-
-<h2>Where the agent site ends and others begin</h2>
-<p>If you manage rented homes for owners after letting them, that is a different service with its own reporting; <a href="/blog/website-for-property-management-companies/">websites for property management companies</a> covers it. Developers building a full project site have different needs again, set out in <a href="/blog/real-estate-website-must-have-features/">real estate website must-haves</a> and <a href="/blog/real-estate-project-microsite/">project microsites</a>.</p>
-
-<p>Agents and brokers in growing property markets can read about <a href="/wordpress-shopify-developer-indore/">website development in Indore</a> and <a href="/wordpress-shopify-developer-chandigarh/">website development in Chandigarh</a>, including local search setup.</p>
-
-<h2>FAQs</h2>
-<h3>Can an Indian agent's website pull listings automatically like IDX?</h3>
-<p>There is no national shared listing feed at the time of writing. Listings can be added from the dashboard, imported from a spreadsheet, or fed from a real estate CRM that supports it.</p>
-<h3>Do real estate agents need to show a RERA number on their website?</h3>
-<p>Agents dealing in registered projects generally need RERA registration and should quote it, and project listings need the project's RERA number. Rules differ by state, so check with your state authority.</p>
-<h3>Should brokers show prices on listings?</h3>
-<p>For resale and rentals, yes where the owner agrees, because buyers filter by budget. For new projects, a starting price shown with the configuration and carpet area tells buyers early whether the project fits their budget.</p>
-<h3>Can I copy listings from property portals onto my site?</h3>
-<p>No. Portal terms generally forbid it, owners may object, and duplicated content does not help search visibility. Add your own listings with your own photos.</p>
-<h3>Is WhatsApp better than a contact form for property enquiries?</h3>
-<p>Offer both. A WhatsApp button with the property ID pre-filled suits most phone users, and a short form suits those who prefer a call back.</p>
-
-<p>If your website still shows last year's listings and no sign of the localities you know best, I can rebuild it with listings you can keep current, locality guides, RERA details and WhatsApp on every property. The <a href="/real-estate-website-design/">real estate website design</a> page sets out what these projects include.</p>
 `,
   },
   {
@@ -15622,7 +15379,7 @@ cf-cache-status: HIT</code></pre>
 <p>Hospital groups and networks with satellite clinics need a page per location: address, map, departments available there, emergency availability, OPD schedules and phone numbers, matched to each location's Google Business Profile. Doctors who consult at several locations should show the timings for each. Keep the location name, address and phone identical everywhere they appear, because mismatched details confuse both patients and map listings.</p>
 
 <h2>Speed and accessibility are not optional</h2>
-<p>Many visitors are older, anxious or on a weak mobile connection inside the hospital itself. Keep pages light, avoid heavy sliders and autoplay video, use large readable text and strong contrast, and make sure the site works with a screen reader and keyboard. <a href="/blog/website-accessibility-older-users/">Websites for older users</a> lists practical checks. Regional language versions of key pages, such as emergency, visiting hours and appointments, help patients who are not comfortable reading English.</p>
+<p>Many visitors are older, anxious or on a weak mobile connection inside the hospital itself. Keep pages light, avoid heavy sliders and autoplay video, use large readable text and strong contrast, and make sure the site works with a screen reader and keyboard. <a href="/blog/website-accessibility-basics/">Websites for older users</a> lists practical checks. Regional language versions of key pages, such as emergency, visiting hours and appointments, help patients who are not comfortable reading English.</p>
 
 <h2>Redesigning an existing hospital site</h2>
 <p>An older hospital site often has hundreds of pages, some of them ranking for doctor names and procedures. Before changing anything:</p>
@@ -15824,7 +15581,7 @@ cf-cache-status: HIT</code></pre>
     <tr><td>Optician</td><td>Helps choose frames and lenses, takes measurements, fits and adjusts glasses</td><td>Their training and the services they handle at the counter</td></tr>
   </tbody>
 </table>
-<p>Registration arrangements for optometrists in India have been changing, so list a registration only where the person actually holds one. <a href="/blog/website-for-specialist-doctors/">Websites for specialist doctors</a> covers credentials, procedure pages and second opinions in more depth.</p>
+<p>Registration arrangements for optometrists in India have been changing, so list a registration only where the person actually holds one. <a href="/blog/clinic-website-checklist-for-doctors/">Websites for specialist doctors</a> covers credentials, procedure pages and second opinions in more depth.</p>
 
 <h2>The optical side</h2>
 <h3>Frames and sunglasses</h3>
@@ -15863,7 +15620,7 @@ cf-cache-status: HIT</code></pre>
   <li>Large buttons for calling and booking, and a phone number that is always easy to find</li>
   <li>Plain words, short sentences and headings that describe what follows</li>
 </ul>
-<p><a href="/blog/website-accessibility-older-users/">Making your website easy for older visitors</a> goes through these in detail. Hearing care practices face a very similar mix of clinical testing and device sales; <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a> handles it from that side.</p>
+<p><a href="/blog/website-accessibility-basics/">Making your website easy for older visitors</a> goes through these in detail. Hearing care practices face a very similar mix of clinical testing and device sales; <a href="/blog/website-for-hearing-aid-centres/">websites for hearing aid centres</a> handles it from that side.</p>
 
 <h2>Local search for both halves</h2>
 <p>People search for each half separately: "eye hospital in Kothrud", "cataract surgery in Pune", "optical shop near me", "eye test near me". Give each its own pages and headings in those words. Whether the clinic and the store need separate Google Business Profiles depends on how they are set up in reality, such as separate entrances, hours and phone numbers, so follow Google's current guidelines rather than creating extra listings for the sake of it. Structured data can then describe the clinic and the optical store separately, each with its own hours.</p>
@@ -16343,7 +16100,7 @@ cf-cache-status: HIT</code></pre>
   <li>A short walk-through video of each space, from the gate to the stage, answers more questions than twenty photos</li>
   <li>A 360-degree tour helps out-of-town families, as long as it loads quickly on a phone</li>
 </ul>
-<p>Drone footage is popular, but drone flights need the registrations and permissions the current rules require, and some areas are restricted, so check before commissioning it. Keep videos on YouTube or a similar host and embed them so they do not slow the page; <a href="/blog/video-on-business-website/">video on your business website</a> explains when video helps. The same photos should go on your Google Business Profile, which <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers in detail.</p>
+<p>Drone footage is popular, but drone flights need the registrations and permissions the current rules require, and some areas are restricted, so check before commissioning it. Keep videos on YouTube or a similar host and embed them so they do not slow the page; <a href="/blog/video-on-business-website/">video on your business website</a> explains when video helps. The same photos should go on your Google Business Profile, which <a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a> covers in detail.</p>
 
 <h2>Catering and decor partners</h2>
 <p>Families need to know early whether they can bring their own caterer or decorator, because it changes their whole budget. State your policy plainly:</p>
@@ -16625,7 +16382,7 @@ cf-cache-status: HIT</code></pre>
 <h2>Photos and reviews from real residents</h2>
 <p>Use photos of the actual rooms, bathrooms, kitchen, dining area and common spaces, taken in daylight on an ordinary day, and replace them after any renovation. Caption shared rooms with their room type so nobody mistakes a triple for a double. Ask satisfied residents, including those moving out, to review you on Google, and show those reviews through a widget rather than retyped quotes; <a href="/blog/google-reviews-on-website/">showing Google reviews on your website</a> compares the options. Reply to critical reviews calmly, since parents read the replies too, and never write reviews yourself or offer discounts for good ones.</p>
 
-<p>Running a homestay instead? See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</p>
+<p>Running a homestay instead? See <a href="/blog/hotel-website-direct-bookings/">websites for homestays and B&amp;Bs</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Should a PG website show the rent?</h3>
@@ -17905,7 +17662,7 @@ cf-cache-status: HIT</code></pre>
 </ul>
 <p>If several of these apply, start with the quick wins in <a href="/blog/get-more-enquiries-from-your-website/">ways to get more enquiries from your website</a>, then decide whether to handle the ongoing work in-house or hand it to someone.</p>
 
-<p>If you only want updates, backups and security handled, a narrower plan may be enough; see <a href="/blog/wordpress-update-and-security-service/">what a WordPress update and security service covers</a>.</p>
+<p>If you only want updates, backups and security handled, a narrower plan may be enough; see <a href="/blog/website-maintenance-cost-india/">what a WordPress update and security service covers</a>.</p>
 
 <h2>Common combinations</h2>
 <ul>
@@ -18010,7 +17767,7 @@ cf-cache-status: HIT</code></pre>
 </ul>
 
 <h2>WordPress Multisite SEO</h2>
-<p>Most multi-site WordPress SEO problems come from treating the network as one site. Google doesn't see a network; it sees separate sites, each needing its own signals. My full <a href="/blog/wordpress-multisite-seo/">WordPress Multisite SEO guide</a> covers this in depth; the essentials are below:</p>
+<p>Most multi-site WordPress SEO problems come from treating the network as one site. Google doesn't see a network; it sees separate sites, each needing its own signals. My full WordPress Multisite SEO guide covers this in depth; the essentials are below:</p>
 <h3>Subdomains or subdirectories?</h3>
 <p>Google has said it can crawl and rank both, so neither structure is a ranking trick. Subdirectories suit branches or departments of one organisation that should feel like one website. Subdomains suit sites that are genuinely separate in content or audience. Decide before launch, because switching later changes every URL and needs a full set of 301 redirects.</p>
 <h3>SEO plugin settings on each site</h3>
@@ -18061,7 +17818,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h3>Should I use Multisite for a multilingual website?</h3>
 <p>Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams.</p>
 <h3>Why is my WordPress Multisite slow?</h3>
-<p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite is slow</a>. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
+<p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in why WordPress Multisite is slow. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
 
 <p>Planning a network of sites, or wondering whether the one you have is worth keeping? Tell me how many sites you run and who manages them, and I'll recommend the simplest setup that works. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/hire-wordpress-developer/">hire me</a> for Multisite development and support.</p>
 `,
@@ -18127,7 +17884,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <pre><code>Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.youtube-nocookie.com</code></pre>
 <p>Be honest with yourself about 'unsafe-inline'. Most WordPress sites need it, and it means injected inline scripts can still run. The policy still blocks scripts from domains you haven't approved, which is a real improvement, but it isn't the strict CSP security guides describe.</p>
 
-<p>Headers are one layer. For ongoing patching, monitoring and clean-up, see <a href="/blog/wordpress-update-and-security-service/">WordPress update and security service</a>.</p>
+<p>Headers are one layer. For ongoing patching, monitoring and clean-up, see <a href="/blog/website-maintenance-cost-india/">WordPress update and security service</a>.</p>
 
 <h2>How to add security headers</h2>
 <h3>.htaccess on Apache or LiteSpeed hosting</h3>
@@ -18320,7 +18077,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <h2>First, check what the budget has to fix</h2>
 <p>Before deciding what to spend, write down what is actually wrong. An hour with the <a href="/blog/diy-website-audit/">DIY website audit</a> is enough to sort problems into three groups:</p>
 <ul>
-  <li><strong>Specific fixes:</strong> slow pages, dated photos, weak buttons, an old phone number. These often need a refresh rather than a redesign; <a href="/blog/website-refresh-vs-redesign/">website refresh vs redesign</a> helps you decide which you need.</li>
+  <li><strong>Specific fixes:</strong> slow pages, dated photos, weak buttons, an old phone number. These often need a refresh rather than a redesign; <a href="/blog/signs-you-need-a-new-website/">website refresh vs redesign</a> helps you decide which you need.</li>
   <li><strong>Structural problems:</strong> the site doesn't work on phones, the menu no longer matches what you sell, or nobody can edit it. These need a redesign of at least the key pages.</li>
   <li><strong>Wish-list items:</strong> animations, a new blog layout, a booking system. These can usually wait for a later phase.</li>
 </ul>
@@ -18462,7 +18219,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   <li><strong>Ad-only versions:</strong> if you run ads with offer-specific variations, those pages can be kept out of Google, so they don't compete with the permanent page you want to rank.</li>
 </ul>
 
-<p>If the goal of a festival campaign is to collect sign-ups for early offers rather than sell straight away, a simpler opt-in page may fit better; see <a href="/blog/squeeze-page-vs-landing-page/">squeeze page vs landing page</a>.</p>
+<p>If the goal of a festival campaign is to collect sign-ups for early offers rather than sell straight away, a simpler opt-in page may fit better; see <a href="/blog/landing-page-vs-website/">squeeze page vs landing page</a>.</p>
 
 <h2>What a festival landing page needs</h2>
 <ol>
@@ -18517,7 +18274,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   <li><strong>Track what matters:</strong> form submissions, WhatsApp clicks, phone taps and purchases as key events in GA4.</li>
   <li><strong>Set up Google Ads conversion tracking</strong> before the campaign starts, so automated bidding has real conversions to learn from; <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> covers the options.</li>
   <li><strong>Send WhatsApp messages only to people who agreed</strong> to hear from you, and keep festival messages few and useful.</li>
-  <li><strong>Update your Google Business Profile</strong> with festival opening hours and an offer post; see <a href="/blog/google-business-profile-posts/">Google Business Profile posts and offers</a>.</li>
+  <li><strong>Update your Google Business Profile</strong> with festival opening hours and an offer post; see <a href="/blog/google-business-profile-checklist/">Google Business Profile posts and offers</a>.</li>
 </ul>
 
 <h2>A campaign timeline</h2>
@@ -18563,7 +18320,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
     body: `
 <p>A website content calendar is a simple plan of what you'll publish, when and why. Pick three to five themes tied to the services you sell, place topics in the months when customers search for them (including festivals and seasons), choose a pace you can keep for a whole year, and track every piece in one spreadsheet with its topic, target page, owner and dates. Review it monthly against Search Console, and update old posts as well as adding new ones.</p>
 <p>A calendar works best on a site Google can already crawl and understand. <a href="/wordpress-seo-services/">WordPress SEO services</a> cover the technical and on-page side; I don't write your blog, but I tell you which pages or answers are missing and what each should cover, which is a ready-made list for your calendar. If you're launching a new business, <a href="/website-for-startups/">websites for startups</a> launch with a blog template your team can publish to, because two or three genuinely useful articles beat an empty blog.</p>
-<p>This guide is the planning stage. For a ready-made monthly routine to copy, see the <a href="/blog/website-content-calendar-small-business/">sample content calendar for small businesses</a>, and for writing each piece, <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>
+<p>This guide is the planning stage. For a ready-made monthly routine to copy, see the sample content calendar for small businesses, and for writing each piece, <a href="/blog/write-blog-posts-that-rank/">how to write blog posts that rank</a>.</p>
 
 <h2>What a content calendar is for</h2>
 <p>Without a plan, small business blogs tend to start with a burst of posts and then go quiet, or fill up with topics nobody searches for. A calendar fixes three things:</p>
@@ -18704,7 +18461,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
     body: `
 <p>Video helps a business website most where seeing beats reading: a short explainer on the homepage or a service page, customer testimonials, product demos and tours of your premises. Host videos on YouTube or Vimeo rather than your web hosting, embed them with a click-to-play preview image so the heavy player loads only when someone taps it, add captions and a short written summary, and keep autoplaying background videos off important pages, especially for visitors on phones.</p>
 <p>Video embeds are a common reason pages feel heavy. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds what's slowing each key page, including embeds and third-party scripts, fixes it with lazy loading and script clean-up, and shows the before-and-after results. On campaign pages built through <a href="/landing-page-design/">landing page design</a>, I keep the top of the page light, with no video backgrounds, and offer video as a play button instead.</p>
-<p>For collecting customer videos, see <a href="/blog/video-testimonials-website/">video testimonials for your website</a>, and for the technical detail of deferred loading, <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
+<p>For collecting customer videos, see <a href="/blog/collect-display-customer-testimonials/">video testimonials for your website</a>, and for the technical detail of deferred loading, <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
 
 <h2>Where video helps</h2>
 <table>
@@ -19883,7 +19640,7 @@ Disallow: /</code></pre>
 
 <h2>Common robots.txt mistakes</h2>
 <ul>
-  <li><strong>"Disallow: /" left over from development.</strong> The classic launch mistake, and one of the first causes to rule out in <a href="/blog/wordpress-site-not-showing-on-google/">why a WordPress site isn't showing on Google</a>.</li>
+  <li><strong>"Disallow: /" left over from development.</strong> The classic launch mistake, and one of the first causes to rule out in <a href="/blog/get-website-indexed-google-faster/">why a WordPress site isn't showing on Google</a>.</li>
   <li><strong>Blocking theme, plugin or upload folders,</strong> which breaks how Google renders your pages and hides your images.</li>
   <li><strong>Blocking pages you want removed</strong> instead of noindexing them, which keeps them in results with no description.</li>
   <li><strong>Listing private paths,</strong> which tells everyone where they are.</li>
@@ -21187,133 +20944,6 @@ Category:       Dentist</code></pre>
 `,
   },
   {
-    slug: 'website-for-property-management-companies',
-    seoTitle: 'Property Management Company Website: Owners and Tenants',
-    title: 'Websites for Property Management Companies: Separate Owner and Tenant Journeys, Service Packages, Rent and Maintenance, NRI Owners and Reporting',
-    description: 'Plan a property management website: separate owner and tenant journeys, clear packages, rent and maintenance requests, NRI owners and honest reporting.',
-    date: '2026-09-27',
-    updated: '2026-10-24',
-    category: 'Industries',
-    related: ['real-estate-website-design', 'wordpress-website-development', 'wordpress-seo-services'],
-    body: `
-<p>A property management company's website has two audiences who want opposite things. Owners, many of them living in another city or country, are deciding whom to trust with a valuable asset and a monthly income; tenants want a decent flat at a fair rent and repairs that actually get done. The websites that work give each group its own path, explain packages and reporting precisely, and treat NRI owners as the distinct audience they are.</p>
-<p>Much of the build overlaps with the <a href="/real-estate-website-design/">real estate websites I design</a>: listings you manage from the dashboard with photos, rent and an available or let status, enquiry forms, WhatsApp on every page, and maps of the localities you cover. Around that sits a service business site, built along the lines of my <a href="/wordpress-website-development/">WordPress website development</a> work, with package pages, an owner enquiry form, a maintenance request form and content for owners.</p>
-
-<h2>Two front doors on the homepage</h2>
-<p>Put the choice at the top of the homepage in plain words: "I own a property" and "I am looking to rent" or "I am a current tenant". Everything after that click should speak to one audience only.</p>
-<ul>
-  <li><strong>The owner path</strong> leads to packages, how you find and screen tenants, how rent reaches the owner, maintenance handling, sample reports, NRI services and an enquiry form</li>
-  <li><strong>The tenant path</strong> leads to available rentals, how applications work, what documents are needed after a viewing, the maintenance request form and move-out rules</li>
-</ul>
-<p>Mixing the two is a common mistake. A tenant reading about your management fee, or an owner scrolling past twenty rental listings to find your services, leaves with the wrong impression.</p>
-
-<h2>Packages owners can compare at a glance</h2>
-<p>Owners shopping for a manager compare scope before price. One table, adapted to your own services, saves a dozen phone calls:</p>
-<table>
-  <thead>
-    <tr><th>Package</th><th>What you handle</th><th>What stays with the owner</th><th>How it is usually charged</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Tenant placement</td><td>Listing, viewings, screening, agreement coordination, move-in inspection</td><td>Rent collection, repairs and renewals</td><td>A one-time fee when a tenant moves in</td></tr>
-    <tr><td>Rent and maintenance</td><td>Rent follow-up, routine repairs through your vendors, tenant queries</td><td>Major repairs approval, tax and legal matters</td><td>A monthly fee or a share of the rent</td></tr>
-    <tr><td>Full management</td><td>Everything above, plus periodic inspections, renewals, move-outs and deposit settlement</td><td>Approvals above an agreed spending limit</td><td>A monthly fee or a share of the rent, plus placement</td></tr>
-    <tr><td>Vacant property care</td><td>Regular visits, cleaning, airing, bill payments, photos after each visit</td><td>Decisions on letting or selling</td><td>A fixed monthly or per-visit fee</td></tr>
-  </tbody>
-</table>
-<p>Under the table, answer the questions it raises: the spending limit for repairs you can approve without asking, how vendor bills are shown, what happens if the tenant stops paying, how long the management agreement runs and how either side can end it. Whether to publish the actual fees is a business decision; <a href="/blog/show-prices-on-website/">showing prices on your website</a> weighs it up.</p>
-
-<h2>The owner journey, from first call to first rent</h2>
-<p>Owners who have never used a manager want to know what happens next. Set it out as numbered steps:</p>
-<ol>
-  <li>The owner submits the enquiry form or messages on WhatsApp</li>
-  <li>You visit the property, or the owner's representative shows it on a video call</li>
-  <li>You prepare a condition report with dated photos of every room, fittings and meter readings</li>
-  <li>You advise on rent based on comparable homes nearby, and on any repairs that would help it let</li>
-  <li>The property is listed on your site and wherever else you advertise</li>
-  <li>Applicants are screened, and the owner approves the tenant</li>
-  <li>The agreement is prepared and signed, and the tenant moves in after a joint inspection</li>
-  <li>Rent arrives, and the first monthly statement follows</li>
-</ol>
-<h3>What the owner enquiry form should ask</h3>
-<p>Ask for the property's city and locality, type and size, whether it is furnished, whether it is vacant or tenanted, the owner's country and time zone, the package they are interested in and the best way to reach them. Leave out ownership documents, PAN and bank details; those are collected after the owner signs up, through a secure channel. <a href="/blog/dpdp-act-website-basics/">The DPDP Act and your website</a> explains why collecting less at the enquiry stage is the safer habit.</p>
-
-<p>NRI owners also ask about tax on rental income. If you refer them to a tax professional, or are one, see <a href="/blog/website-for-tax-consultants-gst-practitioners/">websites for tax consultants and GST practitioners</a>.</p>
-
-<h2>NRI owners: the questions they ask from abroad</h2>
-<p>Owners living overseas are often the most valuable clients and the most anxious. A dedicated page should answer what they ask on the first call:</p>
-<ul>
-  <li><strong>Communication:</strong> who their single point of contact is, which hours that person is reachable in their time zone, and how quickly messages are answered</li>
-  <li><strong>Seeing the property:</strong> video walk-throughs on request and photo reports after every inspection</li>
-  <li><strong>Money:</strong> how rent reaches them, into which kind of account as advised by their bank or CA, and how expenses are deducted and shown</li>
-  <li><strong>Tax:</strong> Indian tax rules generally require a tenant paying rent to a non-resident owner to deduct tax at source, which many tenants do not know; say that you explain this to tenants and coordinate with the owner's CA, without giving tax advice on the site</li>
-  <li><strong>Authority:</strong> whether you need a power of attorney or a narrower letter of authority for particular tasks, and that its scope should be drafted by the owner's lawyer</li>
-  <li><strong>Bills and dues:</strong> property tax, society maintenance and utility bills paid on their behalf, with receipts</li>
-</ul>
-
-<h2>The tenant side: listings, applications and repairs</h2>
-<p>Rental listings should carry the details tenants filter on: rent, deposit, monthly society maintenance and who pays it, available-from date, furnishing, floor, parking, and any rules the housing society sets. Describe the home, not the tenant you want. Avoid wording that excludes people by religion, caste, community or food habits; if a society has its own rules, state them as the society's rules and keep your listing neutral. Mark let properties as let promptly, because stale listings make the whole site look neglected.</p>
-<p>Applications should start with a viewing request, not a document upload. Ask for documents only after a viewing, and only those the owner and the law require.</p>
-<h3>Maintenance requests that reach the right person</h3>
-<table>
-  <thead>
-    <tr><th>Field</th><th>Why it matters</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Property and flat number</td><td>Links the request to the right owner and file</td></tr>
-    <tr><td>Category: plumbing, electrical, appliance, carpentry, pest, other</td><td>Routes it to the right vendor</td></tr>
-    <tr><td>Urgency: emergency, within days, routine</td><td>A burst pipe and a loose cupboard hinge need different responses</td></tr>
-    <tr><td>Photo or short video, sent on WhatsApp</td><td>The vendor arrives with the right parts</td></tr>
-    <tr><td>Times the tenant is available</td><td>Saves repeat visits</td></tr>
-  </tbody>
-</table>
-<p>Each request should create a reference number and an acknowledgement, and land in a sheet or system your team actually checks; <a href="/blog/connect-website-forms-to-crm/">connecting forms to a CRM or Google Sheets</a> shows how. Publish your emergency number for genuine emergencies such as leaks, electrical faults and lockouts.</p>
-
-<h2>Agreements, verification and deposits, in general terms</h2>
-<p>Owners expect a manager to know the paperwork, but the rules vary by state and change, so your website should describe your process rather than state the law:</p>
-<ul>
-  <li>Rental agreement formats, registration and stamp duty differ between states; in some states, such as Maharashtra, leave and licence agreements are commonly registered online. Say that you coordinate the agreement as your state requires</li>
-  <li>The Model Tenancy Act is a central model law that states may adopt in their own form, so avoid quoting it as if it applied everywhere</li>
-  <li>Many city police forces ask owners to register tenant details, often online; say that you help complete it</li>
-  <li>Explain how the deposit is held, what deductions can be made at move-out, and how disputes are handled</li>
-</ul>
-<p>Add a line suggesting owners take legal advice on their specific agreement.</p>
-
-<h2>Reporting owners can trust</h2>
-<p>A sample report, with names and addresses removed, is the strongest proof a property manager can publish. It shows exactly what the owner will receive:</p>
-<table>
-  <thead>
-    <tr><th>Section</th><th>What it shows</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Rent</td><td>Amount due, amount received, date received, any arrears</td></tr>
-    <tr><td>Expenses</td><td>Each repair or bill, with the vendor invoice attached</td></tr>
-    <tr><td>Net amount</td><td>What was transferred to the owner and when</td></tr>
-    <tr><td>Requests</td><td>Maintenance requests raised, closed and pending</td></tr>
-    <tr><td>Inspection</td><td>Date, findings and photos, for the months with a visit</td></tr>
-    <tr><td>Upcoming</td><td>Agreement renewal date, deposit or rent revision, planned work</td></tr>
-  </tbody>
-</table>
-<p>If you use property management software with an owner login, link to it from the site; if you send statements by email, say so. Either is fine, as long as the description matches what owners actually get.</p>
-
-<h2>Locality pages, only where you manage homes</h2>
-<p>Owners search for "property management in Kharadi" or "rental management for NRIs in Whitefield". Write a locality page only where you genuinely manage properties, with local rent trends in words, typical property types, the societies you know and response arrangements for that area; pages that only swap the locality name are what Google calls doorway pages, and <a href="/blog/local-landing-pages-without-doorway-pages/">the guide to local landing pages</a> shows how to avoid them. If owners also ask you to sell, or tenants to help them buy, <a href="/blog/website-for-real-estate-agents-brokers/">websites for real estate agents and brokers</a> covers the brokerage side, and <a href="/blog/website-for-housing-societies-rwas/">websites for housing societies</a> covers managing a whole complex.</p>
-
-<h2>FAQs</h2>
-<h3>Should a property management website show its fees?</h3>
-<p>It should at least show how each package is charged and what it includes. Exact figures are a business decision, but owners trust managers whose structure is clear.</p>
-<h3>Can tenants raise maintenance requests on the website?</h3>
-<p>Yes. A short form with category, urgency and availability, plus photos on WhatsApp, can create a reference number and alert your team.</p>
-<h3>What should a page for NRI owners include?</h3>
-<p>A named contact and hours in their time zone, video inspections, how rent and expenses are handled, and general notes on tax deduction and authority documents, with advice to consult their CA and lawyer.</p>
-<h3>Should rental listings be on our own website?</h3>
-<p>Yes, alongside portals. Your own listings carry your contact details, link to your other homes and show owners that you market properties actively.</p>
-<h3>Can owners log in to see reports?</h3>
-<p>If you use property management software with an owner portal, the site can link to it. Otherwise, emailed monthly statements work well when they are consistent.</p>
-
-<p>If your website talks to owners and tenants in the same breath, I can separate the two journeys, set out your packages and reporting clearly, and give NRI owners the page they are looking for. The <a href="/real-estate-website-design/">real estate website design</a> page shows how I approach property sites, from listings to enquiry forms.</p>
-`,
-  },
-  {
     slug: 'write-product-descriptions-that-sell',
     seoTitle: 'How to Write Product Descriptions That Sell (and Rank)',
     title: 'How to Write Product Descriptions That Sell and Rank: A Framework, Specs Tables and Examples for Indian Stores',
@@ -21472,7 +21102,7 @@ Category:       Dentist</code></pre>
 <h2>Zoho Mail</h2>
 <p>Zoho is an Indian company with data centres in India, and Zoho Mail is the most affordable of the three big providers. At the time of writing, its Forever Free plan covers up to five users on one domain with a modest amount of storage each, but only through the web and Zoho's mobile apps, without IMAP or POP access for other email apps. The paid Mail Lite and Premium plans add storage, email app access and more admin features at a low price per user. It's a sensible choice for small teams that mostly need email, and Zoho Workplace adds documents and meetings if you need them.</p>
 
-<p>Email bundled with a hosting plan affects what that plan is worth; compare <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> before deciding where email should live.</p>
+<p>Email bundled with a hosting plan affects what that plan is worth; compare <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a> before deciding where email should live.</p>
 
 <h2>Email from your web hosting</h2>
 <p>Many hosts, including Hostinger and most cPanel hosts, include mailboxes or sell them cheaply. That's fine for one or two basic addresses, but there are catches:</p>
@@ -21491,7 +21121,7 @@ Category:       Dentist</code></pre>
   <li><strong>How many real mailboxes do you need?</strong> Use aliases, groups or shared mailboxes for role addresses instead of paying for each one.</li>
   <li><strong>Do you need email apps such as Outlook or the iPhone Mail app?</strong> That rules out Zoho's free plan.</li>
   <li><strong>How much does reliable delivery matter?</strong> If quotes and invoices go by email, avoid relying on cheap shared hosting mail.</li>
-  <li><strong>Who will manage it?</strong> Make sure the admin account is in the business's name, not a staff member's or developer's, and add the renewal to your <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</li>
+  <li><strong>Who will manage it?</strong> Make sure the admin account is in the business's name, not a staff member's or developer's, and add the renewal to your <a href="/blog/hosting-renewal-price-increase/">renewal checklist</a>.</li>
 </ol>
 
 <p>Your email address will use the same extension as your website, so choose it with both in mind. <a href="/blog/in-vs-com-domain/">.in vs .com for an Indian business</a> covers the brand and email angle.</p>
@@ -21535,7 +21165,7 @@ Zoho Mail (India): v=spf1 include:zoho.in ~all</code></pre>
 <p>Billing and accounting software, GST invoicing tools, newsletter platforms, CRMs and your website's contact forms all send mail that claims to come from your domain. Each one needs to be included in your single SPF record and should have its own DKIM record where the tool supports it. Make a short list of every service that sends as your domain and review it whenever you add a new tool; a forgotten sender is one of the most common reasons invoices and order emails go to spam.</p>
 <h3>Who should own the admin account</h3>
 <p>The admin login should belong to the business, use an address on a different domain or a personal Gmail as the recovery email, and have two-step verification switched on. Keep a second admin for emergencies. If a developer or IT person set it up, ask them to make you a super admin and hand over the recovery details.</p>
-<p>If you work with an outside developer on your website, give them access to DNS only when a change is needed, and ask for a note of every record they add. See <a href="/blog/website-handover-checklist/">the website handover checklist</a> for the full list of logins a business should hold itself.</p>
+<p>If you work with an outside developer on your website, give them access to DNS only when a change is needed, and ask for a note of every record they add. See <a href="/blog/website-ownership-checklist/">the website handover checklist</a> for the full list of logins a business should hold itself.</p>
 
 <h2>FAQs</h2>
 <h3>Which business email is best for a small business in India?</h3>
@@ -21852,7 +21482,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 
 <h2>How to protect your business from these emails</h2>
 <ul>
-  <li>Keep a list of your registrar, host, email provider and renewal dates, with logins in a password manager; a <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a> helps.</li>
+  <li>Keep a list of your registrar, host, email provider and renewal dates, with logins in a password manager; a <a href="/blog/hosting-renewal-price-increase/">renewal checklist</a> helps.</li>
   <li>Turn on auto-renew with your real registrar, and keep the payment card up to date.</li>
   <li>Make sure the domain is registered to the business, with an email address you'll still have in five years; see <a href="/blog/regain-website-access-old-developer/">regaining control of your website</a> if a former developer holds it.</li>
   <li>Use the registrar's transfer lock, so nobody can move the domain without the authorisation code.</li>
@@ -22206,7 +21836,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 </ul>
 
 <h2>Doctors, embryologists and counsellors</h2>
-<p>Patients want to know who will treat them and who will look after their embryos. Give each person a profile with facts that can be checked: degrees with the university and year, training or fellowships in reproductive medicine, the registration number for doctors, and memberships of named professional bodies. When I built the site for <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta</a>, <a href="/wordpress-shopify-developer-agra/">a chest specialist in Agra</a>, every degree carried its university and year and every society was named in full; a fertility specialist's profile deserves the same care. <a href="/blog/website-for-specialist-doctors/">Websites for specialist doctors</a> has more on writing credentials.</p>
+<p>Patients want to know who will treat them and who will look after their embryos. Give each person a profile with facts that can be checked: degrees with the university and year, training or fellowships in reproductive medicine, the registration number for doctors, and memberships of named professional bodies. When I built the site for <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta</a>, <a href="/wordpress-shopify-developer-agra/">a chest specialist in Agra</a>, every degree carried its university and year and every society was named in full; a fertility specialist's profile deserves the same care. <a href="/blog/clinic-website-checklist-for-doctors/">Websites for specialist doctors</a> has more on writing credentials.</p>
 <p>The embryologist is often invisible on clinic websites, yet patients ask about the lab. A profile with their qualifications and a plain account of what the lab does, from fertilisation and culture to freezing and record-keeping, answers that. If you have a counsellor, introduce them as well and say when patients can see them. A named person reassures more than a line about "emotional support", and <a href="/blog/website-for-psychologists-counsellors/">websites for psychologists and counsellors</a> shows how to write about that kind of help carefully.</p>
 
 <h2>Booking and contact that protect privacy</h2>
@@ -22806,7 +22436,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 </ul>
 <h3>Live counters and add-ons</h3>
 <p>Live counters are often what guests remember, and they change the cost and the space you need at the venue. List each one you run, such as dosa, chaat, pasta, tandoor or a jalebi counter, with a photo, the space and power it needs, and whether it carries an extra charge per plate or a flat fee. Do the same for add-ons like welcome drinks served by staff, a paan counter or late-night snacks for a sangeet. Customers can then build a package up instead of asking for everything and being surprised by the quote.</p>
-<p>Alongside the packages, offer a "build your own menu" route: a list of dishes by course, with a note that the per-plate price is confirmed in the quote. Put menus on proper web pages so they load quickly and Google can read them; <a href="/blog/restaurant-menu-on-website/">putting a menu online</a> compares PDFs, images and web pages.</p>
+<p>Alongside the packages, offer a "build your own menu" route: a list of dishes by course, with a note that the per-plate price is confirmed in the quote. Put menus on proper web pages so they load quickly and Google can read them; <a href="/blog/restaurant-website-online-ordering/">putting a menu online</a> compares PDFs, images and web pages.</p>
 
 <h2>Per-plate pricing: shown, a starting price, or on request?</h2>
 <p>Many caterers worry that showing prices invites bargaining or scares people off. Not showing them has a cost too: people who cannot judge your range often move on to someone who shows one. There are three honest options:</p>
@@ -23149,7 +22779,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li>Preferred countries and intake</li>
   <li>A budget band covering tuition and living costs together</li>
 </ol>
-<p>Then return guidance, not a verdict. "Your profile fits the entry requirements of many taught master's courses in this subject; a counsellor can shortlist universities with you" is useful. "You are eligible for admission" is a promise nobody outside the university can make. Under every result, add a line saying that admission decisions rest with universities and visa decisions with immigration authorities. <a href="/blog/website-quiz-lead-generation/">Website quizzes for lead generation</a> covers how to design result screens that help rather than oversell.</p>
+<p>Then return guidance, not a verdict. "Your profile fits the entry requirements of many taught master's courses in this subject; a counsellor can shortlist universities with you" is useful. "You are eligible for admission" is a promise nobody outside the university can make. Under every result, add a line saying that admission decisions rest with universities and visa decisions with immigration authorities. <a href="/blog/website-calculators-lead-generation/">Website quizzes for lead generation</a> covers how to design result screens that help rather than oversell.</p>
 
 <h2>Visa guidance: helpful, hedged and sourced</h2>
 <p>Students value help with visa paperwork, and this is where consultant websites most often overreach. Phrases such as "guaranteed visa", "assured approval" or "visa in [number] days" cause trouble, because only the destination government decides, and processing times are outside your control.</p>
@@ -25098,7 +24728,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li><strong>Reels and Shorts:</strong> show something real in the first seconds, add captions because many people watch without sound, and keep it to one point</li>
   <li><strong>LinkedIn:</strong> lead with the insight in plain text, use short paragraphs, and add the link in the post or the first comment, testing which works better for you; see <a href="/blog/linkedin-b2b-website-traffic/">using LinkedIn to bring B2B visitors</a></li>
   <li><strong>WhatsApp:</strong> short, personal and occasional, sent only to people who agreed to hear from you, with one link; <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a> covers broadcast lists and consent</li>
-  <li><strong>Google Business Profile:</strong> a photo, a few lines and a "Learn more" button to the article; <a href="/blog/google-business-profile-posts/">Business Profile posts</a> explains the post types</li>
+  <li><strong>Google Business Profile:</strong> a photo, a few lines and a "Learn more" button to the article; <a href="/blog/google-business-profile-checklist/">Business Profile posts</a> explains the post types</li>
   <li><strong>Newsletter:</strong> the context and why it matters now, then the link; <a href="/blog/email-newsletter-small-business/">starting an email newsletter</a> covers tools and consent</li>
 </ul>
 <p>For Instagram in particular, the profile bio link, Stories and Highlights all need to point somewhere useful; <a href="/blog/instagram-to-website-enquiries/">turning Instagram followers into website enquiries</a> covers that.</p>
@@ -25215,7 +24845,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li><strong>3 to 1</strong> for large text, roughly 24 pixels and above, or about 19 pixels if bold.</li>
   <li><strong>3 to 1</strong> for button outlines, form field borders, icons and other parts people need to see to use the page.</li>
 </ul>
-<p>Use a free contrast checker such as WebAIM's, or the contrast reading in your browser's developer tools. A typical case: a bright orange that looks great in the logo might measure around 3 to 1 against white, so white button text fails for normal-sized text. Either darken the orange for buttons or use dark text on it. Then test on your own phone outdoors, at reduced screen brightness, because that's how many customers will see it. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the other checks, and <a href="/blog/website-accessibility-older-users/">designing for older visitors</a> explains why contrast and size matter even more for them.</p>
+<p>Use a free contrast checker such as WebAIM's, or the contrast reading in your browser's developer tools. A typical case: a bright orange that looks great in the logo might measure around 3 to 1 against white, so white button text fails for normal-sized text. Either darken the orange for buttons or use dark text on it. Then test on your own phone outdoors, at reduced screen brightness, because that's how many customers will see it. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the other checks, and <a href="/blog/website-accessibility-basics/">designing for older visitors</a> explains why contrast and size matter even more for them.</p>
 
 <h2>Choosing fonts that read well</h2>
 <h3>One family or two</h3>
@@ -25450,7 +25080,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 <h3>Should I take my old website down before launching the new one?</h3>
 <p>No. Replace it on the same domain at launch, with redirects from old page addresses to their new equivalents. Taking the old site down early leaves customers and Google with nothing to find.</p>
 <h3>Why isn't my new website showing on Google?</h3>
-<p>New pages can take days or weeks to appear. If nothing shows after that, check the "Discourage search engines" setting, noindex tags and robots.txt first; see <a href="/blog/wordpress-site-not-showing-on-google/">a WordPress site not showing on Google</a> for the full list.</p>
+<p>New pages can take days or weeks to appear. If nothing shows after that, check the "Discourage search engines" setting, noindex tags and robots.txt first; see <a href="/blog/get-website-indexed-google-faster/">a WordPress site not showing on Google</a> for the full list.</p>
 <h3>Should I test payments before launching my website?</h3>
 <p>Yes. Switch the payment gateway to live mode, make a small real payment, check the order and email confirmation, then refund it. Test mode alone does not prove live payments work.</p>
 
@@ -25485,7 +25115,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     <tr><td>Case studies</td><td>Real projects from start to finish</td><td>Landscape</td></tr>
   </tbody>
 </table>
-<p>The same photos are useful on your Google Business Profile too; <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers what that needs.</p>
+<p>The same photos are useful on your Google Business Profile too; <a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a> covers what that needs.</p>
 
 <h2>Phone photography tips</h2>
 <p>A recent phone is enough for most business websites if you follow a few habits:</p>
@@ -26157,7 +25787,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     <tr><td>Below 9, or 0 in mobile, contact or security</td><td>Problems that cost enquiries now</td><td>Urgent fixes first, then consider a redesign</td></tr>
   </tbody>
 </table>
-<p>This is a rough guide rather than a precise measure. The pattern matters more than the total: low scores in mobile, speed, trust and Google visibility together usually mean the site's foundations need rebuilding, while one or two low scores can often be fixed on their own. <a href="/blog/website-refresh-vs-redesign/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a> describes each warning sign in more depth.</p>
+<p>This is a rough guide rather than a precise measure. The pattern matters more than the total: low scores in mobile, speed, trust and Google visibility together usually mean the site's foundations need rebuilding, while one or two low scores can often be fixed on their own. <a href="/blog/signs-you-need-a-new-website/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/signs-you-need-a-new-website/">signs you need a new website</a> describes each warning sign in more depth.</p>
 
 <h2>Fix in this order</h2>
 <ol>
@@ -26606,7 +26236,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <p>In a WooCommerce store, the thank-you page is the order received page at the end of checkout. It is where purchase tracking fires, so use a tracking plugin or integration that records each order once even if the shopper refreshes. It is also worth customising: confirm delivery expectations, explain what happens next for cash on delivery orders, and give a WhatsApp link for questions. Block themes let you edit it as the Order Confirmation template under Appearance &gt; Editor; classic themes need a developer or a plugin. A smooth path to that page matters too; see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
 
 <h2>The thank-you page is only the first reply</h2>
-<p>The page reassures the visitor, but the enquiry still needs a person. Make sure the notification reaches someone who acts on it, send a short automatic email that repeats what the page promised, and follow up if the first attempt doesn't connect. <a href="/blog/follow-up-website-leads-fast/">Following up website leads</a> sets out a simple sequence.</p>
+<p>The page reassures the visitor, but the enquiry still needs a person. Make sure the notification reaches someone who acts on it, send a short automatic email that repeats what the page promised, and follow up if the first attempt doesn't connect. <a href="/blog/respond-to-website-enquiries-fast/">Following up website leads</a> sets out a simple sequence.</p>
 
 <h2>FAQs</h2>
 <h3>What is a thank-you page on a website?</h3>
@@ -26682,7 +26312,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
 </ul>
 
-<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>
+<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-when-needed/">why WordPress Multisite gets slow</a>.</p>
 
 <h2>OPcache</h2>
 <p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
@@ -26746,7 +26376,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   <li><strong>CDN cache:</strong> purge the changed files or the whole site from the CDN dashboard</li>
   <li><strong>Browser cache:</strong> hard refresh (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) or check in a private window</li>
 </ol>
-<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a>.</p>
 
 <h2>How to test that caching works</h2>
 <ol>
@@ -26966,7 +26596,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
     <tr><td>Staff time</td><td>Confirming orders and chasing failed deliveries</td><td>Automated confirmations once volumes grow</td></tr>
   </tbody>
 </table>
-<p>Check your courier or aggregator's rate card for its COD charge and RTO terms, and put both in your budget; <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> shows where they fit.</p>
+<p>Check your courier or aggregator's rate card for its COD charge and RTO terms, and put both in your budget; <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a> shows where they fit.</p>
 
 <h2>Step 1: Enable COD in WooCommerce</h2>
 <p>Go to <strong>WooCommerce &gt; Settings &gt; Payments</strong>. In recent versions, cash on delivery sits in a section for offline payment methods; the menu layout has changed between versions, so look for it there at the time of writing. The settings:</p>
@@ -27131,7 +26761,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li><strong>Search your inbox</strong> for "renewal", "invoice" and "receipt" with the names of your registrar and host. Whoever receives those emails is usually the account holder.</li>
   <li><strong>Look up the domain</strong> to find the registrar, then log in there with your business email. If the domain isn't in your account, it's in someone else's.</li>
   <li><strong>Find where DNS lives</strong> with a nameserver lookup. If the nameservers point to Cloudflare or a host you don't have a login for, someone else controls your DNS.</li>
-  <li><strong>Check WordPress users.</strong> Under Users, filter by Administrator. You should see your own account, and you should recognise every other one. Old developers who still have Administrator access are a security risk as well as an ownership one; <a href="/blog/wordpress-user-accounts-audit/">auditing your WordPress user accounts</a> walks through the clean-up.</li>
+  <li><strong>Check WordPress users.</strong> Under Users, filter by Administrator. You should see your own account, and you should recognise every other one. Old developers who still have Administrator access are a security risk as well as an ownership one; <a href="/blog/wordpress-user-roles-explained/">auditing your WordPress user accounts</a> walks through the clean-up.</li>
   <li><strong>Open each Google tool with your business Google account</strong> and note your role. "Full user" in Search Console or "Viewer" in Analytics means someone else is in charge.</li>
   <li><strong>Check licences and payment accounts.</strong> In WordPress, open each premium plugin's licence screen and note the account email. In the payment gateway, check the business name and settlement bank account.</li>
 </ol>
@@ -27172,7 +26802,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <ul>
   <li>The domain, hosting and premium licences are bought in your business name, with your email, even if the developer sets them up.</li>
   <li>You own the website, its content and the design once it's paid for, in whatever form your agreement sets out. The <a href="/blog/website-design-contract-checklist/">website contract checklist</a> covers how to word this, and a lawyer can review anything important.</li>
-  <li>At the end you receive every login, a full backup and documentation, using the <a href="/blog/website-handover-checklist/">website handover checklist</a>.</li>
+  <li>At the end you receive every login, a full backup and documentation, using the website handover checklist.</li>
 </ul>
 
 <h2>Keep an ownership record</h2>
@@ -27187,7 +26817,7 @@ Two-factor authentication on? (yes / no)
 Renewal date and amount:
 Paid by (card or account):
 Last checked:</code></pre>
-<p>Switch on two-factor authentication wherever it's offered, make sure recovery emails and phone numbers belong to the business rather than a former employee, and put every renewal date in a shared calendar. The <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting, email and licence renewals checklist</a> helps you track them. Review the record once a year, and whenever a developer, agency or staff member leaves.</p>
+<p>Switch on two-factor authentication wherever it's offered, make sure recovery emails and phone numbers belong to the business rather than a former employee, and put every renewal date in a shared calendar. The <a href="/blog/hosting-renewal-price-increase/">domain, hosting, email and licence renewals checklist</a> helps you track them. Review the record once a year, and whenever a developer, agency or staff member leaves.</p>
 
 <h2>What to do when a staff member who managed the website leaves</h2>
 <p>Ownership problems often start inside the business, not with a developer. When the person who set up the domain, email or Google accounts leaves, check the ownership record the same week: confirm each account's owner is a role address such as admin@ rather than their personal email, remove their user accounts, change shared passwords and move two-step verification to a company phone.</p>
@@ -27781,7 +27411,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>After launch: bug fixes, support and maintenance</h2>
 <ul>
   <li><strong>A bug-fix period:</strong> how long it lasts, and that it covers defects in the agreed work, not new features or problems caused by later changes made by someone else.</li>
-  <li><strong>Training and handover:</strong> a walkthrough, documentation, every login and a full backup; the <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to receive.</li>
+  <li><strong>Training and handover:</strong> a walkthrough, documentation, every login and a full backup; the <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to receive.</li>
   <li><strong>Maintenance:</strong> optional and usually separate, with what's included and how it's billed.</li>
 </ul>
 
@@ -27868,7 +27498,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   </tbody>
 </table>
 
-<p>Choosing between two of the most common options? See <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> for a head-to-head comparison.</p>
+<p>Choosing between two of the most common options? See Gravity Forms vs Contact Form 7 for a head-to-head comparison.</p>
 
 <h2>Each plugin in brief</h2>
 <h3>Contact Form 7</h3>
@@ -28343,7 +27973,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 <p>Only call yourself an "authorised distributor" for a brand if you hold that status, and use brand logos and official product images only with permission. <a href="/blog/industrial-website-product-catalogue/">How to build a product catalogue website</a> covers category trees, spec tables and WooCommerce in catalogue mode in detail.</p>
 
-<p>If each dealer has negotiated rates that standard plugins cannot express, see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+<p>If each dealer has negotiated rates that standard plugins cannot express, see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce custom pricing plugin development</a>.</p>
 
 <h2>Showing prices: public, on request or behind a dealer login</h2>
 <table>
@@ -28380,7 +28010,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 <p>Keep this separate from customer enquiries. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a studio I built a website for, has a "Become a Design Partner" page with its own form, so partner applications never get mixed up with customer quote requests. If brands approach you about distribution, a short "For brands" page explaining your reach, warehouse and sales team, with its own enquiry form, does the same job.</p>
 
-<p>Distributors that stock lines from several brands often need supplier fields, stock feeds and order routing; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
+<p>Distributors that stock lines from several brands often need supplier fields, stock feeds and order routing; see <a href="/blog/woocommerce-multi-vendor-marketplace/">WooCommerce with multiple suppliers</a>.</p>
 
 <h2>Online B2B ordering with WooCommerce</h2>
 <p>Once regular customers reorder the same products every week, an ordering portal saves both sides time. WooCommerce can work as a B2B store for approved accounts:</p>
@@ -28657,7 +28287,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Ongoing supervision visits and refresher training</li>
 </ol>
 <p>If a step does not apply to everyone, say so. A family that later discovers a step was skipped will trust nothing else on the site. Requirements for placement agencies, nurse registration and home care services differ by state and change over time, so confirm what applies to your business with an adviser and state it accurately.</p>
-<p>A page introducing your care coordinators and senior nurses by name and role helps families picture who they will deal with. <a href="/blog/meet-the-team-page/">Writing a meet-the-team page</a> covers how to do it well.</p>
+<p>A page introducing your care coordinators and senior nurses by name and role helps families picture who they will deal with. <a href="/blog/write-about-page-that-builds-trust/">Writing a meet-the-team page</a> covers how to do it well.</p>
 
 <h2>Supervision, replacements and leave</h2>
 <p>The questions families worry about most are the ones many sites skip. Answer them plainly:</p>
@@ -28703,7 +28333,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>If you run a residence rather than home care, the site needs more of what families would see on a visit: room types with real photos, meals and dietary options, daily routine and activities, nursing cover by day and night, visiting arrangements, and the nearest hospital. A video walkthrough helps families abroad who cannot visit before deciding.</p>
 
 <h2>Written for older readers too</h2>
-<p>The person receiving care may also read the site. Use large text, strong contrast, simple navigation and a visible phone number, and avoid wording that treats older people as helpless. <a href="/blog/website-accessibility-older-users/">Websites for older users</a> lists practical checks. If your work overlaps with domestic staffing, such as cooks or housekeepers, <a href="/blog/website-for-domestic-help-agencies/">websites for domestic help agencies</a> covers that side.</p>
+<p>The person receiving care may also read the site. Use large text, strong contrast, simple navigation and a visible phone number, and avoid wording that treats older people as helpless. <a href="/blog/website-accessibility-basics/">Websites for older users</a> lists practical checks. If your work overlaps with domestic staffing, such as cooks or housekeepers, <a href="/blog/website-for-domestic-help-agencies/">websites for domestic help agencies</a> covers that side.</p>
 
 <h2>FAQs</h2>
 <h3>How can an elder care website build trust with NRI families?</h3>
@@ -30424,7 +30054,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>The store needs looking after: updates, backups and security.</li>
 </ul>
 
-<p>Some businesses go further and run a marketplace of their own on WooCommerce. That means recruiting and approving sellers; see <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a> for how that process works.</p>
+<p>Some businesses go further and run a marketplace of their own on WooCommerce. That means recruiting and approving sellers; see <a href="/blog/woocommerce-multi-vendor-marketplace/">WooCommerce vendor onboarding</a> for how that process works.</p>
 
 <h2>Which suits you?</h2>
 <table>
@@ -30446,9 +30076,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>On a marketplace:</strong> the sale price minus commission or referral fees, fixed or closing fees, shipping and fulfilment charges, the cost of returns under the marketplace's policy, and any money spent on marketplace ads.</li>
   <li><strong>On your own store:</strong> the sale price minus gateway charges, shipping, packaging, COD and RTO costs, and a share of your hosting, plugins, maintenance and marketing.</li>
 </ul>
-<p>The marketing line is the one owners underestimate. A store with no traffic costs money every month and sells nothing. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> lists every ongoing cost so you can build the sheet.</p>
+<p>The marketing line is the one owners underestimate. A store with no traffic costs money every month and sells nothing. <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a> lists every ongoing cost so you can build the sheet.</p>
 
-<p>If your own store will sell products from several suppliers, plan stock sync and order routing early; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
+<p>If your own store will sell products from several suppliers, plan stock sync and order routing early; see <a href="/blog/woocommerce-multi-vendor-marketplace/">WooCommerce with multiple suppliers</a>.</p>
 
 <h2>A hybrid strategy that works</h2>
 <ol>
@@ -30625,7 +30255,7 @@ dig yourdomain.com +short</code></pre>
   <li><strong>Auto-renew</strong> on the domain and hosting, with a card that won't expire, and renewal reminders going to an inbox someone reads.</li>
   <li><strong>Automatic off-site backups,</strong> so a restore is possible even if the server is lost.</li>
   <li><strong>Careful updates,</strong> with a backup first and big changes tested on staging.</li>
-  <li><strong>A written plan</strong> listing logins, contacts and who does what; see <a href="/blog/website-disaster-recovery-plan/">a simple website disaster recovery plan</a>.</li>
+  <li><strong>A written plan</strong> listing logins, contacts and who does what; see <a href="/blog/wordpress-backup-restore-guide/">a simple website disaster recovery plan</a>.</li>
 </ul>
 
 <h2>FAQs</h2>
@@ -30725,7 +30355,7 @@ dig yourdomain.com +short</code></pre>
   <li><strong>Register the domain in your business name and your own account,</strong> not your developer's. See the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</li>
   <li><strong>Renew for several years</strong> at a time for your main domain. A .com or .in typically costs roughly ₹500 to ₹1,200 a year, so it's a small cost against the risk.</li>
   <li><strong>Turn on two-factor authentication</strong> for the registrar account.</li>
-  <li><strong>Keep a renewals list</strong> of domain, hosting, email and licences with dates and owners; the <a href="/blog/domain-hosting-renewal-checklist/">renewals checklist</a> has a template.</li>
+  <li><strong>Keep a renewals list</strong> of domain, hosting, email and licences with dates and owners; the <a href="/blog/hosting-renewal-price-increase/">renewals checklist</a> has a template.</li>
 </ul>
 
 <h2>Expired domain or something else?</h2>
@@ -30969,7 +30599,7 @@ LIMIT 20;</code></pre>
 <h3>8. Upgrade hosting when you've outgrown it</h3>
 <p>If the dashboard is still slow with a lean plugin list, a clean database and current PHP, the server is the limit. Cheap shared plans give each site a small share of CPU and few PHP workers, so admin requests queue behind visitors and bots. A better plan, a VPS or managed WordPress hosting is the fix; see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a>.</p>
 
-<p>On a network install, one busy subsite can slow the dashboard for all of them. See how to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a> when the shared database is the bottleneck.</p>
+<p>On a network install, one busy subsite can slow the dashboard for all of them. See how to <a href="/blog/wordpress-multisite-when-needed/">speed up WordPress multisite</a> when the shared database is the bottleneck.</p>
 
 <h2>WooCommerce admin and page builder editors</h2>
 <ul>
@@ -31047,7 +30677,7 @@ LIMIT 20;</code></pre>
   <li><strong>Look at the flagged URLs safely.</strong> Use a private window where you are not logged in to WordPress, or a URL scanner, rather than your everyday admin browser.</li>
 </ol>
 
-<p>For a step-by-step method to trace and delete the page, then clear it from Google, see <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a>.</p>
+<p>For a step-by-step method to trace and delete the page, then clear it from Google, see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">how to remove a fake web page on a WordPress site</a>.</p>
 
 <h2>Step 2: Find the phishing pages and how they got there</h2>
 <p>Phishing kits are usually uploaded as a zip file and unpacked into a folder, so they sit outside WordPress and don't show up in your Pages list. Look in these places:</p>
@@ -31220,7 +30850,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>The admin email address changed under Settings &gt; General</li>
   <li>Login alerts from places you've never been</li>
 </ul>
-<p>If you see any of these, use Log Out Everywhere Else in your profile, change your password from a clean device, remove the unknown accounts and treat the site as possibly compromised. The <a href="/blog/wordpress-user-accounts-audit/">user account audit</a> explains how to review every account properly. If you've simply locked yourself out, <a href="/blog/wordpress-login-not-working-fix/">fixing WordPress login problems</a> covers safe ways back in.</p>
+<p>If you see any of these, use Log Out Everywhere Else in your profile, change your password from a clean device, remove the unknown accounts and treat the site as possibly compromised. The <a href="/blog/wordpress-user-roles-explained/">user account audit</a> explains how to review every account properly. If you've simply locked yourself out, <a href="/blog/wordpress-login-not-working-fix/">fixing WordPress login problems</a> covers safe ways back in.</p>
 
 <h2>Giving access to staff, agencies and developers safely</h2>
 <p>Many WordPress logins get compromised not through attacks on wp-admin, but through shared or forgotten accounts. If several people work on your site, these habits matter as much as any plugin.</p>
@@ -31351,7 +30981,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   </tbody>
 </table>
 <p>To sanity-check the build prices themselves, my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> gives typical freelance ranges in India: ₹5,000 to ₹15,000 for a landing page, ₹15,000 to ₹40,000 for a small business site of five to eight pages, ₹35,000 to ₹80,000 for a larger business or B2B site and ₹30,000 to ₹90,000 or more for a WooCommerce store. A quote far outside the range for your type of site deserves a closer look at its scope.</p>
-<p>A low build price paired with hosting locked in the developer's account at a high renewal rate, or a site you can't edit yourself, often costs more by year three. <a href="/blog/hidden-website-costs/">Hidden website costs</a> lists everything you pay after launch.</p>
+<p>A low build price paired with hosting locked in the developer's account at a high renewal rate, or a site you can't edit yourself, often costs more by year three. <a href="/blog/wordpress-website-cost-india/">Hidden website costs</a> lists everything you pay after launch.</p>
 
 <h2>Step 5: Weigh what isn't on the price list</h2>
 <ul>
@@ -31463,7 +31093,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </table>
 <p>Domain, hosting and premium licences are extra, and are usually paid yearly. For a rough figure for your own project, try the <a href="/website-cost-calculator/">website cost calculator</a>.</p>
 
-<p>If you are comparing hourly quotes from Indian developers, <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a> explains what pushes rates up or down and what to ask before you agree.</p>
+<p>If you are comparing hourly quotes from Indian developers, WordPress developer hourly rate in India explains what pushes rates up or down and what to ask before you agree.</p>
 
 <h2>How hourly billing works</h2>
 <p>You pay an agreed rate for the time actually spent, usually tracked with a timer or a timesheet and reported weekly or at the end of the job. Freelance platforms often support both models: hourly contracts with time tracking, and fixed-price contracts paid by milestone.</p>
@@ -31675,7 +31305,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 <h2>Feedback after launch</h2>
 <p>Feedback does not end at go-live. In the first weeks you will notice things that only appear with real visitors: a form that customers misunderstand, a page that gets calls asking the same question, a menu item nobody clicks. Keep a running list rather than sending each one as it occurs, and agree with your developer whether these fall under the original project, a warranty period or a maintenance plan. Anything that is broken is a bug; anything that is new is a change, and the earlier step on keeping them apart applies after launch too.</p>
-<p>At handover, ask for the admin logins, backups and a short guide to editing common content, so small text changes do not need a developer at all. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to collect. If you are still choosing who to work with, it helps to <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> who explains the feedback process and revision rounds before the project starts, not after the first draft.</p>
+<p>At handover, ask for the admin logins, backups and a short guide to editing common content, so small text changes do not need a developer at all. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to collect. If you are still choosing who to work with, it helps to <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> who explains the feedback process and revision rounds before the project starts, not after the first draft.</p>
 <h3>Giving feedback as a team</h3>
 <p>When partners, family members or department heads all review the site, collect their comments into one list before sending it. Resolve disagreements internally first; if two people ask for opposite changes, the developer can only guess which one wins.</p>
 
@@ -31913,7 +31543,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Name one decision-maker on your side to avoid conflicting feedback</li>
 </ul>
 
-<p>For response times on live issues, urgent fixes outside the overlap and the tools that keep async work moving, see <a href="/blog/offshore-wordpress-developer-time-zones/">working with an offshore WordPress developer across time zones</a>.</p>
+<p>For response times on live issues, urgent fixes outside the overlap and the tools that keep async work moving, see working with an offshore WordPress developer across time zones.</p>
 
 <h2>What to send your developer</h2>
 <p>The quality of the brief decides the quality of the estimate. Before asking for a quote, gather:</p>
@@ -31938,7 +31568,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Licensed themes and plugins only, never "nulled" copies</li>
   <li>Easy for your client to edit, with global styles and a tidy page structure</li>
 </ul>
-<p>For the factors behind hourly figures and how to compare them fairly, see <a href="/blog/wordpress-developer-hourly-rate-india/">WordPress developer hourly rate in India</a>.</p>
+<p>For the factors behind hourly figures and how to compare them fairly, see <a href="/blog/fixed-price-vs-hourly-website-projects/">WordPress developer hourly rate in India</a>.</p>
 
 <h2>How pricing is usually structured</h2>
 <p>Rates vary widely with experience and scope, so compare how a developer prices as well as how much.</p>
@@ -31975,7 +31605,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 
 <h2>Resell WordPress development under your own brand</h2>
-<p>Many agencies outsource WordPress development to India so they can resell it: they sell the website to their client, and the developer builds it white-label behind the scenes. For that to work, the partner never contacts your client, uses your staging domain and accounts, writes handover notes you can send as your own, and keeps the code and logins in your client's name. Agree your margin and the developer's fixed price separately, so you can quote your client with confidence. The <a href="/blog/wordpress-reseller-for-marketing-agencies/">WordPress reseller guide for marketing agencies</a> covers pricing the resale and support afterwards.</p>
+<p>Many agencies outsource WordPress development to India so they can resell it: they sell the website to their client, and the developer builds it white-label behind the scenes. For that to work, the partner never contacts your client, uses your staging domain and accounts, writes handover notes you can send as your own, and keeps the code and logins in your client's name. Agree your margin and the developer's fixed price separately, so you can quote your client with confidence. The <a href="/blog/white-label-wordpress-development-agencies/">WordPress reseller guide for marketing agencies</a> covers pricing the resale and support afterwards.</p>
 
 <h2>FAQs</h2>
 
@@ -32587,7 +32217,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>What should stay the same whichever you choose</h2>
 <p>Every approach should deliver global styles that match the Figma tokens, reusable components, responsive layouts checked against each Figma frame, accessible markup (headings in order, alt text, focus states), compressed images, a staging site for review and a short handover guide for editors. If you have a design ready, see my <a href="/figma-to-wordpress/">Figma to WordPress</a> service.</p>
 
-<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-elementor-development/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>
+<p>Agencies that design in-house and hand the build to a partner can see how <a href="/blog/white-label-wordpress-development-agencies/">white-label Elementor development</a> works, from global styles to what clients are allowed to edit.</p>
 
 <h2>FAQs</h2>
 <h3>What is the best way to convert Figma to WordPress?</h3>
@@ -32723,118 +32353,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 `,
   },
   {
-    slug: 'restaurant-menu-on-website',
-    seoTitle: 'Restaurant Menu on Your Website: PDF vs Web Page',
-    title: 'Putting Your Restaurant Menu Online: PDF vs Web Page, Prices, Dietary Labels, QR Codes and Menu SEO',
-    description: 'How to put your restaurant menu on your website: web page vs PDF, prices, veg and allergen labels, photos, menu SEO, QR menus and multiple outlets.',
-    date: '2026-09-27',
-    updated: '2026-10-21',
-    category: 'Industries',
-    related: ['website-for-restaurants', 'wordpress-seo-services', 'landing-page-design'],
-    body: `
-<p>Your restaurant menu should be a proper web page: dish names, descriptions, prices and veg or non-veg markers written as text, organised into sections with jump links, quick to read on a phone and easy for your staff to update. A PDF or a photo of the printed card is slow to open, hard to read on a small screen and largely invisible to Google. Keep a PDF only as a printable extra, and point your QR codes and Google listing at the web page.</p>
-<p>The menu is the first thing I plan on <a href="/website-for-restaurants/">restaurant websites</a>: a mobile-friendly digital menu your team can change from the dashboard, linked to table reservations, WhatsApp or online ordering, Google Maps and opening hours. This guide covers the menu page in detail, from how each dish is written to schema, QR codes and menus for more than one outlet. For taking orders from the menu, see <a href="/blog/restaurant-website-online-ordering/">online ordering on your restaurant website</a>.</p>
-
-<h2>Web page, PDF or a photo of the menu card?</h2>
-<table>
-  <thead><tr><th></th><th>Menu as a web page</th><th>PDF menu</th><th>Photo of the printed card</th></tr></thead>
-  <tbody>
-    <tr><td>On a phone</td><td>Text fits the screen, with jump links to sections</td><td>Opens a download or viewer, then needs zooming</td><td>Needs zooming, often blurry</td></tr>
-    <tr><td>Google</td><td>Dish names can be read and searched</td><td>Can be indexed, but rarely shows for dish searches</td><td>Text is not reliably read</td></tr>
-    <tr><td>Changing a price</td><td>Edit one dish in the dashboard</td><td>Edit the design file, export and re-upload</td><td>Reprint and re-photograph</td></tr>
-    <tr><td>Screen readers</td><td>Read it properly</td><td>Depends on how the file was made</td><td>Can't read it</td></tr>
-    <tr><td>Printing</td><td>Possible, but not designed for it</td><td>Best</td><td>Poor</td></tr>
-  </tbody>
-</table>
-<p>The web page is the menu; the PDF, if you keep one, is for people who want to print it for an office lunch order or a party.</p>
-
-<h2>Anatomy of a menu item</h2>
-<p>Write every dish the same way, so diners can scan quickly and nothing important is missing:</p>
-<table>
-  <thead><tr><th>Field</th><th>Example</th><th>Tip</th></tr></thead>
-  <tbody>
-    <tr><td>Name</td><td>Chettinad chicken</td><td>Use the name on your printed menu, so staff and diners mean the same dish</td></tr>
-    <tr><td>Description</td><td>Chicken cooked in a peppery roasted-spice gravy</td><td>One line on how it is cooked and what is in it, especially for regional dishes newcomers may not know</td></tr>
-    <tr><td>Portion</td><td>Half or full; serves two</td><td>Say what a portion is if prices differ by size</td></tr>
-    <tr><td>Price</td><td>Shown beside the name</td><td>State once, at the top, whether prices include taxes</td></tr>
-    <tr><td>Veg or non-veg marker</td><td>The familiar green or brown symbol</td><td>Use it on every dish, not only some</td></tr>
-    <tr><td>Dietary labels</td><td>Jain, eggless, vegan</td><td>Only where your kitchen can genuinely make it that way</td></tr>
-    <tr><td>Spice level</td><td>Mild, medium, hot</td><td>A word reads better than a row of icons</td></tr>
-    <tr><td>Availability</td><td>Weekends only; seasonal</td><td>Mark sold-out or seasonal dishes rather than deleting and re-adding them</td></tr>
-  </tbody>
-</table>
-
-<h2>Prices: show them, and keep them true</h2>
-<p>Diners use the menu to decide whether you fit their budget, so a menu without prices sends them to a delivery app to find out. Show the price on every dish, and say clearly whether taxes are included and whether a service charge applies, following current consumer guidelines on service charges. If your delivery-app prices differ from dine-in prices, say which menu the website shows. For restaurants abroad, show the local currency: on <a href="/work/southern-flavours/">Southern Flavours</a>, an Indian restaurant in Solihull, UK that I built a site for, every dish in the online shop shows its price in pounds.</p>
-
-<h2>Dietary labels and allergens</h2>
-<p>Indian diners rely on veg and non-veg markers, and many look for Jain, no onion and garlic, eggless or vegan options. Allergies are more serious still: nuts, dairy, gluten, egg and sesame can make someone ill. A few rules:</p>
-<ul>
-  <li>Put a short key at the top of the menu explaining every symbol and label you use.</li>
-  <li>Take allergen and dietary information from your kitchen, dish by dish, and update it when a recipe changes.</li>
-  <li>Avoid absolute claims such as "gluten-free" or "nut-free" if the kitchen can't prevent cross-contact; "made without wheat, prepared in a kitchen that uses wheat" is honest.</li>
-  <li>Add a line inviting guests with allergies to tell staff before ordering.</li>
-  <li>For longer menus, a "veg only" toggle saves vegetarian diners a lot of scrolling.</li>
-</ul>
-<p>FSSAI's labelling and display rules include menu requirements for some food businesses, particularly larger chains, so ask your FSSAI consultant what applies to your licence and number of outlets. Cafes have a few labels of their own, such as plant milks and eggless bakes; see <a href="/blog/website-for-cafes-coffee-shops/">websites for cafes and coffee shops</a>.</p>
-
-<h2>Photos: the dishes that sell the restaurant</h2>
-<p>You don't need a photo of every dish. A photo beside each signature dish, and a small gallery of the rest, keeps the menu fast and makes the best dishes stand out. Southern Flavours does this with a "Signature Creations" section of eight dishes that mixes South and North Indian cooking, from idli and dosa to dal tarka and saag paneer, which tells a first-time visitor the restaurant is not only for South Indian food. Shoot in daylight, on the plates you actually serve, and compress every image so the menu still loads quickly on mobile data.</p>
-
-<h2>Easy to use on a phone</h2>
-<ul>
-  <li>Section jump links that stay at the top of the screen as diners scroll</li>
-  <li>Sections in the order people eat: starters, mains, breads and rice, desserts, drinks</li>
-  <li>Text large enough to read without zooming, with the price aligned so it is easy to compare</li>
-  <li>A search box once the menu runs to more than a few screens</li>
-  <li>A "Book a table" or "Order" button near the menu, so the decision leads straight to action; Southern Flavours puts a "Menu &amp; Ordering" button in the hero, next to "Table Reservations"</li>
-</ul>
-
-<h2>Menu SEO and schema</h2>
-<p>People search for dishes as well as restaurants: "best Chettinad chicken in Koregaon Park" or "South Indian breakfast near me". A text menu lets Google see that you serve them. To help it further:</p>
-<ul>
-  <li>Give the menu page a clear title with your name and area, such as "Menu | Restaurant name, Area".</li>
-  <li>Write fuller descriptions for the dishes you are known for, rather than one-word entries.</li>
-  <li>Give a distinct menu its own page when people search for it, such as a weekend breakfast buffet, a thali lunch or a party menu.</li>
-  <li>Link your Google Business Profile's menu link to the menu page, and keep the two consistent.</li>
-  <li>Add Restaurant schema with a link to your menu page, so search engines connect the menu with the restaurant.</li>
-</ul>
-<p>Schema.org also has markup for menus, sections and individual dishes. At the time of writing, Google doesn't show a special search feature for it, so treat it as a help to understanding rather than a way to rank; <a href="/blog/schema-markup-explained/">schema markup explained</a> covers what structured data can and can't do.</p>
-
-<h2>Keeping the menu current</h2>
-<p>An out-of-date menu causes awkward moments at the table and bad reviews online. Decide who updates it and when:</p>
-<ol>
-  <li>Change prices on the website the same day the printed menu changes.</li>
-  <li>Mark dishes unavailable for the day from the dashboard instead of leaving them on the page.</li>
-  <li>Add seasonal and festival dishes with an "available until" note, then switch them off.</li>
-  <li>Check the website menu against your Google Business Profile and delivery apps once a month.</li>
-</ol>
-<p>If you also take orders online, building the ordering menu from the same dish data saves keeping two lists in step.</p>
-
-<h2>QR code menus that never need reprinting</h2>
-<p>A table QR code should open your menu web page, not a PDF. Point it at a stable address such as yourrestaurant.com/menu/, so changing dishes or prices never means reprinting the codes, and add <a href="/blog/utm-tags-explained/">UTM tags</a> so you can see how many scans you get in analytics; <a href="/blog/qr-codes-for-business-website/">QR codes for your business</a> explains how. Keep printed menus available for guests who prefer them, including older diners.</p>
-
-<h2>Menus for more than one outlet</h2>
-<p>If all outlets serve the same dishes at the same prices, one menu page with a note on any outlet-only items is enough. If dishes or prices differ, give each outlet its own menu page linked from its own location page and its own Google Business Profile, so a diner in one area doesn't order a dish only served in another. Each outlet's hours, phone and booking link belong on the same page; <a href="/blog/multi-location-business-website/">websites for businesses with several branches</a> covers location pages in more depth.</p>
-
-<p>Restaurants and cafes in West Bengal can see the page on <a href="/wordpress-shopify-developer-kolkata/">website development in Kolkata</a> for how a menu-led site is built remotely.</p>
-
-<h2>FAQs</h2>
-<h3>Is a PDF menu bad for my restaurant website?</h3>
-<p>As the only menu, yes: it is slow and awkward on phones and does little for search. As a printable extra beside a web page menu, it is fine.</p>
-<h3>Should I show prices on my online menu?</h3>
-<p>Yes. Diners use prices to decide where to eat, and a menu without them often sends people elsewhere to check. State whether taxes are included.</p>
-<h3>Can I update the menu myself?</h3>
-<p>Yes. On the sites I build, the menu is managed from the WordPress dashboard, so staff can add dishes, change prices or mark items unavailable without a developer.</p>
-<h3>Does menu schema help my restaurant rank?</h3>
-<p>Restaurant schema with a link to your menu helps search engines understand your site. At the time of writing, Google doesn't display a special feature for menu markup, so a clear, text-based menu page matters more.</p>
-<h3>Where should my table QR codes point?</h3>
-<p>To your menu web page at a fixed address, so you can change the menu without reprinting the codes.</p>
-
-<p>If diners currently have to zoom into a photographed menu card, I can turn it into a fast, searchable menu page your staff can update. See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, and share your current menu and Google Maps listing for a free review and a fixed quote.</p>
-`,
-  },
-  {
     slug: 'website-for-cloud-kitchens',
     seoTitle: 'Cloud Kitchen Website: Direct Orders Beyond Delivery Apps',
     title: 'Websites for Cloud Kitchens: Direct Ordering, WhatsApp Orders, Multiple Brands, Delivery Areas and FSSAI Details',
@@ -32892,7 +32410,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 
 <h2>Menu pages that can be found on Google</h2>
-<p>A menu uploaded as an image or PDF can't be read well by Google and is awkward on a phone. Build each brand's menu as a web page, with sections, dish names, short descriptions, prices, veg or non-veg markers, spice level, portion size or "serves", and allergen notes supplied by your kitchen. <a href="/blog/restaurant-menu-on-website/">Putting your menu online</a> explains why a web page beats a PDF.</p>
+<p>A menu uploaded as an image or PDF can't be read well by Google and is awkward on a phone. Build each brand's menu as a web page, with sections, dish names, short descriptions, prices, veg or non-veg markers, spice level, portion size or "serves", and allergen notes supplied by your kitchen. <a href="/blog/restaurant-website-online-ordering/">Putting your menu online</a> explains why a web page beats a PDF.</p>
 <p>People search for dishes and areas, such as "biryani delivery in Kharadi", "healthy lunch box near me" or "late night food delivery Baner". Use those words naturally in page titles and headings, give your signature dishes a section or page of their own, and add Restaurant structured data with a link to the menu page where it fits.</p>
 
 <h2>Giving customers a reason to order direct</h2>
@@ -33132,7 +32650,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 
 <h2>Do you need all three?</h2>
 <ul>
-  <li><strong>A small homestay on one or two platforms</strong> may manage with a booking engine and calendar (iCal) sync. iCal is one-way per link and updates on a delay, so overbookings are possible when dates sell on two sites at once. See <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</li>
+  <li><strong>A small homestay on one or two platforms</strong> may manage with a booking engine and calendar (iCal) sync. iCal is one-way per link and updates on a delay, so overbookings are possible when dates sell on two sites at once. See <a href="/blog/hotel-website-direct-bookings/">websites for homestays and B&amp;Bs</a>.</li>
   <li><strong>A hotel or resort selling on several OTAs</strong> needs a channel manager with real two-way connections.</li>
   <li><strong>Properties with a front desk, housekeeping team and billing</strong> benefit from a PMS connected to both.</li>
 </ul>
@@ -33330,323 +32848,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 `,
   },
   {
-    slug: 'solar-company-lead-generation',
-    seoTitle: 'Solar Lead Generation: How Installers Get Quality Leads',
-    title: 'Solar Lead Generation: How Rooftop Solar Companies Can Get More Enquiries Online, Qualify Them and Turn Them Into Site Surveys',
-    description: 'Solar lead generation for installers: ad landing pages, forms asking roof type and bill range, WhatsApp follow-up, call tracking and local SEO.',
-    date: '2026-09-27',
-    updated: '2026-10-30',
-    category: 'Industries',
-    related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
-    body: `
-<p>Solar lead generation works when three things line up: the right channels bring people who are actually considering solar, a focused page and a short qualifying form turn them into enquiries your team can price, and fast follow-up turns those enquiries into site surveys before a competitor gets there. Most installers who complain about lead quality have a problem in one of those three places, not a shortage of traffic.</p>
-<p>I build <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and landing pages for ad campaigns, with quote forms, WhatsApp and conversion tracking set up. The <a href="/blog/solar-company-website-guide/">solar company website guide</a> covers the pages on the main site. This guide covers the pipeline around it: where leads come from, how to qualify them and what to do in the hours after one arrives.</p>
-
-<h2>Where solar leads come from</h2>
-<p>Each channel brings a different kind of buyer, and each needs a different landing point:</p>
-<table>
-  <thead><tr><th>Channel</th><th>Buyer's state of mind</th><th>Where to send them</th><th>What to watch</th></tr></thead>
-  <tbody>
-    <tr><td>Google search ads</td><td>Actively comparing installers or prices</td><td>A landing page for that audience: homes, societies or businesses</td><td>Search terms from job seekers, students and people wanting only scheme information</td></tr>
-    <tr><td>Google Maps and your Business Profile</td><td>Looking for someone nearby they can trust</td><td>Calls, WhatsApp and your website from the profile</td><td>Reviews, photos and service areas kept current</td></tr>
-    <tr><td>Facebook and Instagram ads</td><td>Interested, but often not yet researching</td><td>A landing page or an instant form with qualifying questions</td><td>A high share of casual or unreachable leads</td></tr>
-    <tr><td>Click-to-WhatsApp ads</td><td>Happy to chat, rarely ready for a form</td><td>A WhatsApp conversation with quick qualifying questions</td><td>Chats that go nowhere without a fast first reply</td></tr>
-    <tr><td>Articles and city pages</td><td>Researching subsidy, savings or suitability</td><td>The article, then the calculator or survey booking</td><td>Slow to build, but leads arrive without ad spend</td></tr>
-    <tr><td>Referrals and neighbours</td><td>Already trusts you through someone they know</td><td>A referral page or a direct call</td><td>Asking at handover, when customers are happiest</td></tr>
-    <tr><td>Listing sites</td><td>Mixed; often sent to several suppliers</td><td>Your own site when they check you</td><td>Shared leads that need very quick follow-up</td></tr>
-  </tbody>
-</table>
-<p>If you are choosing between a WhatsApp-only campaign and a landing page, <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a landing page</a> compares the trade-offs.</p>
-
-<h2>Landing pages built for solar campaigns</h2>
-<p>Sending ad clicks to the homepage asks a homeowner to find their own way through commercial projects and battery products. Give each campaign a page about one audience and one offer:</p>
-<ul>
-  <li><strong>Homes:</strong> the subsidy process as you handle it, what a survey involves, photos of installations on similar homes in that city, and a survey booking form.</li>
-  <li><strong>Housing societies:</strong> what solar can power in common areas, how committee approval works and a request for a presentation to the committee.</li>
-  <li><strong>Businesses:</strong> capacity examples from your own projects, the assumptions behind any payback estimate, monitoring and AMC, and a site assessment request.</li>
-</ul>
-<p>Keep claims checkable. "Free electricity", "zero bill" or a fixed savings figure in an ad sets up a disappointed customer, and ad platforms review misleading claims too. Show the process, real projects and an honest estimate instead, and keep the page light enough to load quickly on mobile data, because every visitor who leaves while it loads has already cost you the click.</p>
-
-<h2>Qualifying forms: what to ask</h2>
-<p>A solar lead your team can't price is just a phone number. A few well-chosen questions let sales prepare before the first call and spot enquiries you can't serve:</p>
-<table>
-  <thead><tr><th>Question</th><th>Why it matters</th><th>How to ask it</th></tr></thead>
-  <tbody>
-    <tr><td>Property type</td><td>Decides the proposal and who signs off</td><td>Buttons: independent house, flat in a society, shop or office, factory</td></tr>
-    <tr><td>PIN code</td><td>Confirms you serve the area and which DISCOM applies</td><td>A short text field</td></tr>
-    <tr><td>Monthly bill range</td><td>A first guide to system size</td><td>A dropdown of ranges your team chooses, with "not sure"</td></tr>
-    <tr><td>Roof type</td><td>Affects the mounting structure and the survey</td><td>RCC, metal sheet, tiled, or "no roof access"</td></tr>
-    <tr><td>Do you own the roof?</td><td>Tenants and flat owners usually need permission</td><td>Yes, no, or society-owned</td></tr>
-    <tr><td>Subsidy interest</td><td>Tells sales which process to explain</td><td>Yes, no or not sure</td></tr>
-    <tr><td>Best time to call</td><td>Raises the chance of reaching them</td><td>Morning, afternoon or evening</td></tr>
-  </tbody>
-</table>
-<p>On a phone, split these into two or three short steps, with property type and PIN code first and contact details last; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> explains why that order helps. Ask for an electricity bill or roof photos later, on WhatsApp, rather than on a public form. For Meta instant forms, keep to two or three qualifying questions, because every extra field there costs completions.</p>
-
-<h2>A follow-up playbook for the first days</h2>
-<p>Solar buyers often contact several installers, and the first company to have a useful conversation is at an advantage. A simple sequence:</p>
-<ol>
-  <li><strong>Instantly:</strong> an automatic WhatsApp or email reply confirming the request, naming who will call and when, within your real working hours.</li>
-  <li><strong>As soon as possible:</strong> the first call, with the form answers in front of the caller, so the conversation starts with their roof and bill rather than "how can I help?".</li>
-  <li><strong>If they don't answer:</strong> a WhatsApp message with your name, a link to projects in their area and a request for a convenient time.</li>
-  <li><strong>Before the survey:</strong> ask for a recent bill and roof photos on WhatsApp, and confirm the date and surveyor.</li>
-  <li><strong>After the survey:</strong> send the proposal with its assumptions stated, then follow up on agreed dates rather than every day.</li>
-</ol>
-<p>Give every lead one owner and a status (new, contacted, survey booked, proposal sent, won, lost with a reason), in a shared sheet or CRM. If you message customers through the WhatsApp Business Platform, follow-ups sent long after the customer's last message generally need pre-approved templates under Meta's current rules, so prepare them in advance. <a href="/blog/follow-up-website-leads-fast/">How to follow up website leads</a> covers alerts and auto-replies. On a busy day, call first the leads whose answers fit your best customers: own roof, a bill range worth a system, and a PIN code you serve.</p>
-
-<h2>Tracking calls, chats and real outcomes</h2>
-<p>Form submissions, WhatsApp clicks and calls should all be counted as conversions in GA4 and your ad accounts, and every ad link should carry UTM tags. Calls need extra care, because a tap on the call button doesn't tell you whether the call connected; <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a> explains tracking numbers per source and how to use them without upsetting your Google listing.</p>
-<p>The figure that matters is not cost per lead but cost per survey booked and per order. Record which source each surveyed and signed customer came from, review it monthly, and move budget toward the campaigns that produce surveys. Google Ads can also accept offline conversions, so the platform learns from sales rather than form fills once you have enough of them.</p>
-
-<h2>Local SEO for steady leads without ads</h2>
-<ul>
-  <li><strong>Google Business Profile:</strong> the closest category Google offers, your service areas, photos of real installations and a link to your survey booking page.</li>
-  <li><strong>Reviews:</strong> ask every customer after handover and reply to each one; genuine reviews mentioning the work done carry weight with the next buyer.</li>
-  <li><strong>City or district pages:</strong> only where you have genuinely installed, each with local projects, the DISCOM and anything specific to that area; <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers how to do this without thin copies.</li>
-  <li><strong>Articles:</strong> the subsidy process in your state, net metering with your DISCOM, monsoon performance and cleaning, each linking to the calculator or survey booking.</li>
-</ul>
-<p>Write FAQs in the words customers use, including the localities and districts you cover, and answer the questions your sales team hears on every call: how long installation takes, what happens on cloudy days, who handles the subsidy paperwork and what maintenance involves.</p>
-
-<h2>Residential, housing society and commercial leads need different paths</h2>
-<p>A homeowner wanting a rooftop system, a housing society committee and a factory owner each ask different questions and decide in different ways. Sending all three to one generic page and one form lowers the quality of every lead.</p>
-<table>
-<thead><tr><th>Buyer</th><th>What they need to see</th><th>What the form should ask</th></tr></thead>
-<tbody>
-<tr><td>Homeowner</td><td>How subsidy applications work in general terms, the process from survey to net metering, payment and finance options, and nearby installations</td><td>Monthly electricity bill range, roof type, own or rented, city and pincode</td></tr>
-<tr><td>Housing society</td><td>Common-area use cases, how decisions are documented, examples of society projects, and who handles approvals</td><td>Society name, number of flats, contact role (committee member or resident), area</td></tr>
-<tr><td>Commercial or industrial</td><td>Capacity range you handle, open access or captive options where relevant, maintenance contracts and project references</td><td>Sanctioned load or bill range, roof or land area, company name, timeline</td></tr>
-</tbody>
-</table>
-<p>Give each buyer its own landing page and form. The ad or search query decides which page they see first, and the sales team gets leads already sorted by type.</p>
-<h3>WhatsApp as a lead channel</h3>
-<p>Many rooftop solar enquiries in India start on WhatsApp, often with a photo of the electricity bill. That is useful: the bill answers the qualifying questions. Put a click-to-chat button on every solar page with a pre-filled message such as "I want a rooftop solar quote for my home in Pune", so you know where the lead came from. Track those clicks as events, and respond with a fixed set of questions. The guide to <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> explains buttons, pre-filled messages and tracking.</p>
-<h3>Subsidy and policy wording</h3>
-<p>Subsidy schemes, net metering rules and DISCOM processes change and differ by state. Explain them in general terms, link to the official portal, and add a line that eligibility is confirmed at survey. Promising a subsidy amount or payback period on a landing page creates complaints when the rules or the roof don't match.</p>
-
-<h2>FAQs</h2>
-<h3>What is the best way to get solar leads?</h3>
-<p>For most installers, a mix: Google search ads and a strong Google Business Profile for buyers who are ready now, articles and city pages that keep bringing researchers, and referrals from happy customers. Whatever the channel, a focused landing page and fast follow-up decide how many become surveys.</p>
-<h3>Are bought or shared solar leads worth it?</h3>
-<p>They can be, but shared leads are often sold to several installers at once, so the fastest caller usually wins. Test a small batch, track how many become surveys and orders, and compare that with your own campaigns.</p>
-<h3>What should a solar lead form ask?</h3>
-<p>Property type, PIN code, a monthly bill range, roof type, whether they own the roof and a good time to call. Ask for bills and photos later on WhatsApp.</p>
-<h3>How quickly should we contact a solar lead?</h3>
-<p>As soon as you reasonably can during working hours, with an instant automatic reply in the meantime. Buyers comparing installers tend to go with the first one who gives them useful answers.</p>
-<h3>Google Ads or Facebook ads for solar?</h3>
-<p>Google search ads reach people already looking for an installer, so leads tend to be closer to buying. Facebook and Instagram can reach more people at a lower cost per lead, but they need stronger qualification. Many installers test both and judge them by surveys booked.</p>
-
-<h3>Should we ask for the electricity bill in the website form?</h3>
-<p>An optional upload or a bill range question works better than a required upload, which puts many people off. Ask for the bill on WhatsApp or at the call stage, once the lead has shown real interest.</p>
-
-<p>If your leads are plentiful but rarely turn into surveys, the fix is usually the page, the form and the follow-up. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> for the full site, or <a href="/landing-page-design/">landing page design</a> for campaign pages with tracking, and share your current site or ads for a free review and a fixed quote.</p>
-`,
-  },
-  {
-    slug: 'website-for-advocates-bar-council-rules',
-    seoTitle: 'Website for Advocates in India: Bar Council Rules Guide',
-    title: 'Website for Advocates in India: What the Bar Council Rules Allow, What a Compliant Site Contains, the Entry Disclaimer and Practice Areas Described Factually',
-    description: 'How advocates in India can have a website within Bar Council rules: permitted information, the entry disclaimer, factual practice areas and what to avoid.',
-    date: '2026-09-27',
-    updated: '2026-10-25',
-    category: 'Industries',
-    related: ['website-for-lawyers-and-consultants', 'wordpress-website-development', 'wordpress-seo-services'],
-    body: `
-<p>Yes, an advocate in India can have a website, but it must inform rather than advertise. Under the Bar Council of India rules, as I understand them at the time of writing, advocates may not solicit work or advertise, though a website may set out a limited set of facts about you: who you are, how to reach you, when you enrolled, what you studied and which areas of law you practise in. A well-built site stays within those limits and is still genuinely useful to someone looking for an advocate.</p>
-<p>Technically, the build matches the <a href="/website-for-lawyers-and-consultants/">law firm and consultant websites I build</a>: a profile with qualifications, practice area pages, a contact form, office location and an articles section. For advocates, though, the content rules shape every page, and several features that work for consultants, such as testimonials and client logos, are left out entirely. This guide explains what I understand the rules to allow and how that turns into pages. It is not legal advice, and the rules and their interpretation can change, so check the current position with your State Bar Council or a senior colleague before launch.</p>
-
-<h2>The rule, in plain terms</h2>
-<p>The relevant provision sits in the Bar Council of India Rules on standards of professional conduct, commonly referred to as Rule 36. In its original form it prohibited advocates from soliciting work or advertising directly or indirectly, including through circulars, advertisements, touts, personal communications and interviews, and from producing or encouraging newspaper comments or photographs about their cases. It also restricted sign boards and name plates to a reasonable size.</p>
-<p>A later amendment added a proviso allowing advocates to furnish certain information on their websites: name, address, telephone numbers and email, enrolment number and date, professional and academic qualifications, and areas of practice. Many advocates also add a declaration that the information is accurate and provided by them. Everything else on the site should be judged against the general ban on solicitation and advertising.</p>
-<p>Two practical points follow. First, the site should read like a professional record, not a sales page. Second, the same discipline applies wherever the information appears, including social media and directory listings.</p>
-
-<h2>What a compliant site contains, page by page</h2>
-<table>
-  <thead>
-    <tr><th>Page</th><th>What it can contain</th><th>What to leave out</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Entry disclaimer</td><td>A notice that the site is for information only, is not solicitation or advertising, and that the visitor is accessing it at their own request</td><td>Anything that reads as an offer or invitation</td></tr>
-    <tr><td>Profile</td><td>Name, enrolment number and date, State Bar Council, degrees with institutions and years, courts where you practise, languages</td><td>Words like "top", "leading", "renowned" or "expert"; awards presented as promotion</td></tr>
-    <tr><td>Areas of practice</td><td>A factual description of each area of law you handle</td><td>Promises, outcomes, case wins, "guaranteed" or "fast" results</td></tr>
-    <tr><td>Team</td><td>Each advocate's name, enrolment and qualifications, and associates' roles</td><td>Comparisons with other advocates or firms</td></tr>
-    <tr><td>Articles</td><td>General explanations of legal topics and updates, clearly dated</td><td>Commentary on your own cases, or articles that end with a sales pitch</td></tr>
-    <tr><td>Contact</td><td>Office address, map, phone, email and hours</td><td>Fee offers, discounts, "free consultation" banners</td></tr>
-  </tbody>
-</table>
-<p>Leave out client testimonials, ratings, client names and logos, success rates, case counts and media mentions about your cases. Even where these are common on law firm sites abroad, they sit uncomfortably with the Indian rules.</p>
-
-<h2>The entry disclaimer, and how to implement it</h2>
-<p>Most advocates' and law firms' websites in India show a disclaimer before the visitor enters, with an "I agree" button. The wording usually states that the Bar Council of India does not permit advertisement or solicitation, that the visitor is seeking information on their own initiative, that nothing on the site is legal advice or creates an advocate and client relationship, and that the firm is not liable for action taken on the basis of the content. The wording should come from you or your firm; I can format and place it.</p>
-<p>How it is built matters for usability and search:</p>
-<ul>
-  <li>Show it as an overlay on first visit, remembered for that browser, so returning visitors are not asked every time</li>
-  <li>Keep the actual page content in the HTML underneath, so search engines can still read and index it</li>
-  <li>Make it readable on a phone, with a clear button and no tiny print</li>
-  <li>Repeat a short version of the disclaimer in the footer of every page</li>
-  <li>If the overlay uses a cookie or local storage to remember consent, mention it in the privacy policy</li>
-</ul>
-
-<h2>Practice areas: describe the work, do not sell it</h2>
-<p>Practice area pages are where most compliant sites go wrong, because the habit of marketing copy creeps in. The test is simple: would the sentence still make sense in a law school handout? Compare:</p>
-<blockquote>
-<p>Avoid: "Facing a bounced cheque case? Our expert team wins cheque bounce matters quickly. Call now for a free consultation."</p>
-<p>Write instead: "Cheque dishonour matters under Section 138 of the Negotiable Instruments Act: the notice period, the complaint process before the magistrate, and the options available to the drawer and the payee. The practice handles matters for both complainants and accused."</p>
-</blockquote>
-<p>Each page can explain the area of law, the kinds of matters the practice handles, the forums involved, and general stages of the process. It should not describe outcomes, fees as an incentive, or anything that urges the reader to act. Linking to statutes and official sources adds value without adding promotion.</p>
-
-<h2>Things that quietly cross the line</h2>
-<p>The website is rarely the only channel, and several common marketing habits sit poorly with the rules. Check each with your Bar Council or senior colleagues before using it:</p>
-<ul>
-  <li><strong>Paid search and social ads</strong> that target people looking for a lawyer</li>
-  <li><strong>Search phrases such as "best divorce lawyer in Pune"</strong> placed in titles and headings to rank, since the wording itself is promotional</li>
-  <li><strong>Google reviews</strong>, especially asking clients for them or displaying ratings on the site</li>
-  <li><strong>Paid directory listings</strong> that rank lawyers or present them as recommended</li>
-  <li><strong>WhatsApp broadcasts and bulk messages</strong> to people who have not asked for information</li>
-  <li><strong>Posts about specific cases</strong> or client wins on social media</li>
-</ul>
-<p>A Google Business Profile with the office address, hours and phone number can help clients find you, but whether and how to use reviews on it is a decision to take with advice, not by default.</p>
-
-<h2>Articles that inform</h2>
-<p>An articles section is one of the most useful parts of an advocate's site, and one of the safest when written carefully. General explanations, such as how to register a will, what a legal notice is, or what changed in a recent amendment, help readers and show your understanding of an area of law. Keep each article factual and dated, cite the statute or judgment, avoid giving advice on individual situations, and add a short line saying it is general information and not legal advice.</p>
-<p>Plain writing, short sections and clear headings make articles easier to read on a phone, which is where most readers will find them.</p>
-
-<h2>Enquiries without collecting case papers</h2>
-<p>A contact form should collect only a name, phone number, email and a short outline of the matter. Ask visitors not to send documents or confidential details through the form, because nothing is agreed until you accept the brief, and conflict checks come first. Explain in the privacy policy how enquiry details are stored and who sees them; <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for Indian websites</a> covers what to include, and <a href="/blog/dpdp-act-website-basics/">a plain guide to the DPDP Act</a> explains consent.</p>
-
-<h2>Firm details, accessibility and the rest</h2>
-<p>Show the firm's name, office addresses, and each advocate's enrolment details consistently on every page where they appear. An about page written in a measured, factual voice also helps; <a href="/blog/write-about-page-that-builds-trust/">writing an about page that builds trust</a> has pointers, though leave out its testimonial suggestions. Use real photographs of the advocates and the office rather than stock images of gavels and scales, which add nothing. Make text large enough and contrast strong enough for older visitors; <a href="/blog/website-accessibility-basics/">website accessibility basics</a> lists the essentials. A modest, clean design suits the professional tone the rules require, and it loads quickly on any phone.</p>
-<p>Chartered accountants and other professionals have different rules from advocates, so if your practice works alongside them, see <a href="/blog/website-for-lawyers-and-chartered-accountants/">websites for lawyers and chartered accountants</a> for how a combined or referral relationship can be presented.</p>
-
-<p>Advocates practising in Delhi can read the notes for <a href="/wordpress-shopify-developer-delhi/">website development in Delhi NCR</a>, which covers compliant practice sites.</p>
-
-<h2>FAQs</h2>
-<h3>Are advocates in India allowed to have a website?</h3>
-<p>Yes, within limits. The Bar Council of India rules, as amended, allow a site that lists your identity, contact details, enrolment, degrees and practice areas, while still prohibiting solicitation and advertising.</p>
-<h3>Can an advocate's website show client testimonials?</h3>
-<p>Testimonials and ratings are generally treated as promotional, so most compliant sites leave them out. Check the current position with your Bar Council before adding any.</p>
-<h3>Is the disclaimer pop-up compulsory?</h3>
-<p>It is widely used rather than a specific requirement I can point to, and it makes clear the visitor is seeking information on their own initiative. Take advice on wording.</p>
-<h3>Can I publish articles on legal topics?</h3>
-<p>Yes, as general information. Keep them factual and dated, cite your sources, avoid advice on individual cases and do not use them to promote your services.</p>
-<h3>Can I use SEO to bring visitors to my website?</h3>
-<p>Basic technical SEO, accurate titles and useful articles are generally fine. Avoid promotional phrases such as "best" or "top" and take advice before running paid ads.</p>
-
-<p>If your current website reads like an advertisement, it can be rewritten into a factual, well-organised record of your practice that is easier to defend and easier to read. I build these on WordPress, as described on the <a href="/wordpress-website-development/">WordPress website development</a> page, and my page on <a href="/website-for-lawyers-and-consultants/">websites for legal and advisory practices</a> covers the process for law firms.</p>
-`,
-  },
-  {
-    slug: 'website-for-homestays-bnbs',
-    seoTitle: 'Website for Homestays and B&Bs: Get More Direct Bookings',
-    title: 'Website for Homestays and B&Bs: Winning Direct Bookings Alongside OTAs, Room Pages, House Rules, Directions, Booking Options and Local Experiences',
-    description: 'Plan a homestay or B&B website that wins direct bookings: room pages, house rules, directions, booking or enquiry options, calendar sync and local guides.',
-    date: '2026-09-27',
-    updated: '2026-10-25',
-    category: 'Industries',
-    related: ['hotel-website-design', 'landing-page-design', 'wordpress-seo-services'],
-    body: `
-<p>A homestay or B&amp;B website earns its keep by turning guests who already know your name into direct bookings: people who saw you on a booking platform and then searched for you, past guests coming back, and friends they sent your way. It does that by answering every question a guest would otherwise ask on WhatsApp, and by making the booking step simple and trustworthy.</p>
-<p>The build has a lot in common with the <a href="/hotel-website-design/">hotel and homestay websites</a> I make: room pages, a booking enquiry or engine, galleries, policies and local SEO. A homestay is smaller and more personal, though, so the hosts, the house and the surroundings carry more of the story than amenities lists do.</p>
-
-<h2>Where direct bookings actually come from</h2>
-<p>Online travel platforms are good at reaching people who have never heard of you. Many of those guests then look you up before booking, to see more photos, check the location or find a phone number. That search is your opening. If they find a clear site with the same rooms and a simple way to book, some will book with you instead.</p>
-<table>
-  <thead>
-    <tr><th>Guest type</th><th>How they find you</th><th>What the website should give them</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>First-time guest from a platform</td><td>Searches your property name after seeing a listing</td><td>Matching photos and room names, a direct-booking reason, a quick enquiry route</td></tr>
-    <tr><td>Repeat guest</td><td>Saved your number or remembers the name</td><td>A returning-guest note, easy dates check, the same host contact</td></tr>
-    <tr><td>Referral</td><td>A friend sends a link</td><td>A homepage that explains the place in a minute, with directions</td></tr>
-    <tr><td>Searcher</td><td>"Homestay in [place]" on Google or Maps</td><td>Local SEO, a Google Business Profile and a page about the area</td></tr>
-  </tbody>
-</table>
-<p>So list on the platforms and build the website. They do different jobs. The guide to <a href="/blog/hotel-website-direct-bookings/">getting more direct bookings for hotels</a> covers the perks and policies side in more detail.</p>
-
-<h2>Room pages: one per room, not one for the whole house</h2>
-<p>Small properties often put every room on a single page with a few photos. Guests then ask which room has the balcony, whether the twin beds can be joined, and whether the bathroom is attached. Give each room its own page with:</p>
-<ul>
-  <li>Bed type and size, maximum guests, and whether an extra mattress can be added and at what charge</li>
-  <li>Attached or shared bathroom, hot water arrangement, and whether there is a geyser or solar heater</li>
-  <li>View, floor, and whether stairs are involved, which matters for older guests</li>
-  <li>Heating, fan or air conditioning, and any hours the power backup does not cover</li>
-  <li>The rate, stating clearly whether taxes and meals are included</li>
-  <li>Eight to twelve photos taken in daylight, including the bathroom</li>
-</ul>
-<p>Use the same room names as your platform listings, so a guest comparing the two knows they are looking at the same room. <a href="/blog/prepare-photos-for-website/">Preparing photos for a website</a> explains how to shoot and size them without slowing the site.</p>
-
-<h2>House rules, written as a page of their own</h2>
-<p>House rules protect your home and set expectations, and guests read them more carefully than you might think. Put them on a page linked from every room and from the booking form, written in a friendly but plain tone:</p>
-<ul>
-  <li>Check-in and check-out times, and what happens if a guest arrives late at night</li>
-  <li>ID required at check-in, and who must show it</li>
-  <li>Your policy on unmarried couples, visitors, pets, children, smoking and alcohol, stated without judgement</li>
-  <li>Quiet hours, especially if your family lives on the property</li>
-  <li>Kitchen access, if any, and meal timings</li>
-  <li>The cancellation policy, with dates and amounts expressed simply</li>
-</ul>
-<p>A guest who disagrees with a rule is better off finding out before booking than at your gate.</p>
-
-<h2>Getting there, in more detail than a map pin</h2>
-<p>Many homestays sit off the main road: up a hill, down a lane, past a village. A map pin alone often leaves guests calling from the last junction. A "Getting here" page should cover:</p>
-<ol>
-  <li>The nearest airport, railway station and bus stand, with rough travel time by road</li>
-  <li>The last stretch: road condition, whether a small car can manage it, where to park if vehicles cannot reach the door</li>
-  <li>Landmarks at each turn, with a photo of the final turning if it is easy to miss</li>
-  <li>Seasonal notes, such as monsoon landslides, winter snow or a stream that rises after rain</li>
-  <li>Whether you arrange pick-ups, and from where</li>
-  <li>Mobile network coverage at the property, and whether there is Wi-Fi</li>
-</ol>
-<p>Embed a map as well, set to load only when the visitor scrolls down to it, so the rest of the page stays quick on a weak connection.</p>
-
-<h2>Taking bookings: pick the method you can run</h2>
-<p>There is no single right booking setup. The best one is the one you will keep up to date.</p>
-<h3>Enquiry form and WhatsApp</h3>
-<p>The guest sends dates and number of guests; you reply with availability and a payment link for an advance. This suits homestays with two or three rooms where the host manages everything by phone. <a href="/blog/whatsapp-on-business-website/">Putting WhatsApp on a business website</a> describes the options.</p>
-<h3>A booking plugin with calendar sync</h3>
-<p>A WordPress booking plugin shows live availability and takes payment. Many can import and export calendars with booking platforms using iCal. iCal syncs at intervals rather than instantly, so a booking on one platform may take a while to block the dates elsewhere. With a few rooms on one or two platforms this is often manageable; check how often your plugin and each platform refresh before relying on it.</p>
-<h3>Booking engine with a channel manager</h3>
-<p>Once the same rooms are sold on several platforms, a channel manager that keeps rates and availability in step, with its own booking engine embedded on your site, is the safer option. You pay the provider; I connect it to the site. <a href="/blog/hotel-booking-engine-channel-manager/">Booking engines and channel managers</a> compares the setups.</p>
-<p>Whichever route you choose, advances can be paid by UPI, card or net banking through a payment gateway. <a href="/blog/accept-online-payments-wordpress-india/">Accepting online payments on WordPress in India</a> explains the choices.</p>
-
-<h2>A reason to book direct</h2>
-<p>Guests need a small reason to leave the platform they trust. Offer something you can sustain: a welcome meal, free pick-up from the bus stand, early check-in when the room is free, or a flexible cancellation window. Show it beside the booking button, not buried on an offers page.</p>
-
-<h2>Local experiences: the content platforms cannot match</h2>
-<p>A listing on a platform shows rooms and a review score. Your own site can show why someone should stay in your valley rather than the next one. Write short pages on things you actually help guests do:</p>
-<ul>
-  <li>Walks and treks from the door, with distance, difficulty and the best time of day</li>
-  <li>Food: what is cooked at home, local dishes, and whether guests can join in the kitchen</li>
-  <li>Nearby villages, markets, temples, waterfalls or tea estates, with travel time</li>
-  <li>Seasonal events: harvest, festivals, bird migration, snowfall</li>
-  <li>Guides or drivers you trust, if you work with any</li>
-</ul>
-<p>These pages help guests plan, and they give search engines more reasons to show your site to people searching for the area. If your stay is on a working farm, <a href="/blog/website-for-farm-stays-agritourism/">websites for farm stays and agritourism</a> covers the farm activities side.</p>
-
-<h2>Registration and guest data</h2>
-<p>Many Indian states run homestay or bed and breakfast schemes through their tourism departments, with registration, classification or approval. The rules differ by state and change over time, so check what applies to your property with your state tourism department. If you are registered, show the registration on the site.</p>
-<p>Guest registration and police intimation rules may also apply, particularly for foreign guests. Collect ID documents at check-in rather than through a website form, and keep the booking form to name, phone, dates and guests. A short privacy note and consent line on the form fits what India's data protection law expects; <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for websites</a> covers the essentials.</p>
-
-<h2>Running seasonal campaigns</h2>
-<p>If you advertise a monsoon or winter package, send the ad to a page about that package, not the homepage. A focused <a href="/landing-page-design/">landing page</a> with the dates, inclusions, price and one enquiry button turns more of those clicks into conversations.</p>
-
-<p>Homestays in Kerala can read about <a href="/wordpress-shopify-developer-kochi/">website development in Kochi</a>, including direct booking setups.</p>
-
-<h2>FAQs</h2>
-<h3>Does a small homestay need its own website?</h3>
-<p>If guests search your name, yes. A website with room pages, rules, directions and a direct enquiry route gives those searchers somewhere to book without a platform in between.</p>
-<h3>Can the website calendar sync with booking platforms?</h3>
-<p>Many booking plugins support iCal import and export. Syncing happens at intervals, so check the refresh timing, and consider a channel manager if you sell on several platforms.</p>
-<h3>Should I show the same rates as on the platforms?</h3>
-<p>Check each platform's current terms on rate parity before deciding. Many hosts keep the rate the same and add a direct-booking perk instead.</p>
-<h3>Can guests pay an advance on the website?</h3>
-<p>Yes. Through a payment gateway, guests can pay a deposit with UPI, a card or net banking, either on the booking page or through a payment link sent after confirming availability.</p>
-<h3>Do I need state registration to run a homestay?</h3>
-<p>It depends on your state and your property. Check the current scheme with your state tourism department, and show your registration on the site if you have one.</p>
-
-<p>If guests keep messaging the same questions, or find you on a platform and cannot find a way to book directly, a well-planned site fixes both. My <a href="/hotel-website-design/">hotel and homestay website</a> page lists what a build includes.</p>
-`,
-  },
-  {
     slug: 'online-appointment-booking-website',
     seoTitle: 'Online Appointment Booking for Websites: Tools and Setup',
     title: 'Online Appointment Booking on Your Website: Which Tool to Use, How to Set It Up and How to Cut No-Shows',
@@ -33812,7 +33013,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Generate new security keys (salts) in wp-config.php, which logs everyone out.</li>
   <li>Rotate API keys stored on the site, such as payment gateway or email sending keys, if they could have been read.</li>
 </ul>
-<p>Change passwords once more after the clean-up is complete, in case anything was captured during it. See <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a>.</p>
+<p>Change passwords once more after the clean-up is complete, in case anything was captured during it. See <a href="/blog/wordpress-user-roles-explained/">auditing WordPress user accounts</a>.</p>
 
 <h2>Step 4: Scan and map the infection</h2>
 <ul>
@@ -34170,7 +33371,7 @@ wp option get home</code></pre>
 </ul>
 <p>Faking Googlebot with a browser extension doesn't always work, because some cloaking checks Google's real IP addresses. The live test comes from Google itself.</p>
 
-<p>If you have found a single unfamiliar page rather than thousands of spam URLs, see <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a>.</p>
+<p>If you have found a single unfamiliar page rather than thousands of spam URLs, see how to remove a fake web page on a WordPress site.</p>
 
 <h2>Step 4: Find and remove the spam generator</h2>
 <p>The generator is rarely a WordPress page you can delete from the dashboard. Look in these places:</p>
@@ -34299,7 +33500,7 @@ grep -rlF "eval(" --include="*.php" .</code></pre>
 <h3>5. Check users, application passwords and scheduled events</h3>
 <pre><code>wp user list --role=administrator --fields=ID,user_login,user_email,user_registered
 wp cron event list</code></pre>
-<p>Compare the administrator count with the number shown in the dashboard; a hidden account makes them differ. Open each admin's profile and check the Application Passwords section for entries nobody recognises. The <a href="/blog/wordpress-user-accounts-audit/">WordPress user account audit</a> explains what each person should have.</p>
+<p>Compare the administrator count with the number shown in the dashboard; a hidden account makes them differ. Open each admin's profile and check the Application Passwords section for entries nobody recognises. The <a href="/blog/wordpress-user-roles-explained/">WordPress user account audit</a> explains what each person should have.</p>
 <h3>6. Search the database</h3>
 <pre><code>wp db search "base64_decode" --all-tables
 wp db search "eval(" --all-tables</code></pre>
@@ -35181,7 +34382,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li><strong>Take a copy of the hacked site</strong> before cleaning, so you can investigate what happened if needed</li>
 </ul>
 
-<p>Each fake page can live in the dashboard, in a file or in injected code; <a href="/blog/remove-fake-pages-wordpress-site/">how to remove a fake web page on a WordPress site</a> shows how to check each place.</p>
+<p>Each fake page can live in the dashboard, in a file or in injected code; <a href="/blog/fix-japanese-keyword-seo-spam-hack/">how to remove a fake web page on a WordPress site</a> shows how to check each place.</p>
 
 <h2>Step 3: Find the hacked content</h2>
 <ul>
@@ -36264,7 +35465,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   <li>18% GST on all of it</li>
   <li>For a move: the migration cost or your time, and the risk</li>
 </ol>
-<p>On this site, I put typical WordPress hosting at roughly ₹2,500 to ₹15,000 a year depending on the type of plan; <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> explains what moves a plan up or down that range.</p>
+<p>On this site, I put typical WordPress hosting at roughly ₹2,500 to ₹15,000 a year depending on the type of plan; <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a> explains what moves a plan up or down that range.</p>
 
 <h2>Hosting renewal shock: a 30-day action plan</h2>
 <table>
@@ -36313,7 +35514,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   <li>Set a calendar reminder 30 days before every renewal.</li>
   <li>Keep the domain at a separate registrar, so hosting decisions never put the domain at risk.</li>
   <li>Keep the hosting account in the business's name, with a card that won't expire before the renewal.</li>
-  <li>Track all renewals in one place; see the <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting and email renewal checklist</a>.</li>
+  <li>Track all renewals in one place; see the domain, hosting and email renewal checklist.</li>
 </ul>
 <p>Whatever you decide, don't let hosting expire while you think about it. Expired hosting takes your website, and any email on it, offline.</p>
 
@@ -36381,7 +35582,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <h2>Backups, and restores</h2>
 <p>A backup stored only on the same server is not a backup; if the server fails or the site is hacked, it can go too. Ask for daily backups kept off-site, a retention period (for example, the last 30 days), and a test restore at least occasionally. For WooCommerce stores with orders arriving all day, more frequent database backups are sensible. The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> covers what to ask for.</p>
 
-<p>Some providers sell updates and security as a smaller plan on their own; see <a href="/blog/wordpress-update-and-security-service/">WordPress update and security service</a> for what it should include.</p>
+<p>Some providers sell updates and security as a smaller plan on their own; see <a href="/blog/website-maintenance-cost-india/">WordPress update and security service</a> for what it should include.</p>
 
 <h2>Security monitoring</h2>
 <p>Security in a plan should mean more than an installed plugin. Expect malware scanning, login protection (limited attempts, two-factor authentication for admins), removal of unused plugins and admin accounts, file change alerts and someone who actually reads the alerts. Check whether malware cleanup is included if something gets through, or charged as a separate job.</p>
@@ -36465,146 +35666,6 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <p>Most monthly plans can be cancelled with notice. Before you leave, make sure you have admin access, hosting and domain logins, licence details and a recent full backup.</p>
 <h3>Do I need a plan if my website rarely changes?</h3>
 <p>Yes, usually. Plugins, WordPress and PHP still change even if your content doesn't, and an unpatched, unmonitored site is the most common target for hacks and silent form failures.</p>
-`,
-  },
-  {
-    slug: 'domain-hosting-renewal-checklist',
-    seoTitle: 'WordPress Domain Renewal Price and Renewal Checklist',
-    title: 'Domain, Hosting, SSL, Email and Licence Renewals: A Checklist That Keeps Your Website Online',
-    description: 'WordPress domain renewal price explained: what a .in or .com renewal typically costs, why year two costs more, plus a checklist for hosting, SSL and email.',
-    date: '2026-09-28',
-    updated: '2026-10-30',
-    category: 'Guides',
-    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-migration'],
-    body: `
-<p>The WordPress domain renewal price is set by your domain registrar, not by WordPress, and a .com or .in domain typically renews for about ₹500 to ₹1,200 a year, depending on the registrar and any first-year discount you had. Expect the second year to cost more than the first if you bought on an offer or got the domain "free" with hosting.</p>
-<p>The domain is only one of five renewals that can take a website offline: hosting, SSL, business email and premium theme and plugin licences matter too. This checklist covers what each costs, what happens if it lapses and how to keep them all running.</p>
-<p>When I take on a site for <a href="/wordpress-maintenance/">WordPress maintenance</a>, the first health check includes SSL renewal and whether premium licences are active and in your name, because an expired licence is one of the most common reasons updates quietly stop arriving. The renewals themselves are paid to the providers, ideally in your name, and this checklist helps you keep track of them.</p>
-<p>Renewals are only part of what a site costs to run; <a href="/blog/hidden-website-costs/">hidden website costs</a> covers the rest, from email to content and marketing.</p>
-
-<h2>What renews, and what happens if it lapses</h2>
-<table>
-  <thead><tr><th>Item</th><th>Usual billing</th><th>If it lapses</th><th>Auto-renew?</th></tr></thead>
-  <tbody>
-    <tr><td>Domain name</td><td>Yearly, or several years at once</td><td>Website and email stop; after the grace and redemption periods, anyone can register it</td><td>Yes, always</td></tr>
-    <tr><td>Hosting</td><td>Monthly to multi-year terms</td><td>Site suspended; files and backups may be deleted after a grace period</td><td>Yes, unless you're moving</td></tr>
-    <tr><td>SSL certificate</td><td>Free certificates renew automatically every few months; paid ones yearly</td><td>Browsers show a full-page security warning</td><td>Free ones renew themselves; paid ones, yes</td></tr>
-    <tr><td>Business email</td><td>Monthly or yearly, per mailbox</td><td>Mail stops arriving; mailboxes may be deleted later</td><td>Yes</td></tr>
-    <tr><td>Premium theme and plugin licences</td><td>Usually yearly</td><td>Updates and support stop; some features may stop being editable</td><td>Yes, for licences you still use</td></tr>
-    <tr><td>CDN, backup storage, uptime and security services</td><td>Monthly or yearly</td><td>Protection or backups stop, often without anyone noticing</td><td>Yes, if you still need them</td></tr>
-    <tr><td>Usage-billed services, such as a maps API, SMS or WhatsApp messaging</td><td>Monthly, by usage or prepaid credits</td><td>Maps, OTPs or order notifications stop working</td><td>Check the billing account and credit balance</td></tr>
-  </tbody>
-</table>
-
-<h2>Why renewals fail</h2>
-<p>Most lapses aren't a decision to stop paying. They usually come from one of these:</p>
-<ul>
-  <li><strong>An expired or replaced card.</strong> The card on file expired, was reissued after a fraud alert, or belonged to someone who has left.</li>
-  <li><strong>Recurring payment rules.</strong> Indian banks apply extra authentication to recurring card payments, so an automatic renewal can be declined unless the card or mandate is set up for it. Check with your bank and the provider, and act on any "payment failed" email.</li>
-  <li><strong>Auto-renew switched off,</strong> sometimes by default on promotional plans.</li>
-  <li><strong>Renewal emails going to the wrong person:</strong> a former employee, a developer, or a personal inbox nobody checks.</li>
-  <li><strong>Accounts in someone else's name.</strong> If a developer or reseller holds the domain or hosting, your renewal depends on them remembering and paying; the <a href="/blog/website-ownership-checklist/">website ownership checklist</a> shows how to check.</li>
-  <li><strong>Different dates and providers,</strong> so nobody has the full picture.</li>
-</ul>
-
-<h2>WordPress domain renewal price: what you actually pay</h2>
-<p>WordPress itself is free software, so there is no "WordPress domain". Your domain is registered with a registrar, either directly or through your host, and that company sets the renewal price. The typical yearly ranges used across this site are:</p>
-<table>
-<thead><tr><th>Renewal</th><th>Typical yearly cost</th><th>Why it changes</th></tr></thead>
-<tbody>
-<tr><td>Domain (.com or .in)</td><td>About ₹500 to ₹1,200</td><td>Registrar, extension, first-year offers ending</td></tr>
-<tr><td>Hosting</td><td>About ₹2,500 to ₹15,000</td><td>Plan size, introductory pricing ending, add-ons</td></tr>
-<tr><td>Premium themes and plugins</td><td>About ₹0 to ₹6,000</td><td>How many paid licences the site relies on</td></tr>
-</tbody>
-</table>
-<p>Prices on Indian invoices usually have GST added. Three things make a domain renewal look higher than expected:</p>
-<ul>
-<li><strong>First-year discounts end.</strong> The advertised price often applies only to year one.</li>
-<li><strong>"Free domain with hosting" ends.</strong> The domain is free for the first term, then renews at the normal rate.</li>
-<li><strong>Bundled extras.</strong> Privacy protection, email or SEO add-ons may be ticked by default.</li>
-</ul>
-<p>Before buying, look up the renewal price, not just the offer. If your current registrar's renewal is high, you can <a href="/blog/transfer-domain-to-another-registrar/">transfer the domain to another registrar</a>, which normally adds a year to the registration.</p>
-
-<h2>The renewal checklist</h2>
-<ol>
-  <li><strong>List every paid service</strong> the website depends on, with the provider, what it covers, the login email, renewal date, term and amount.</li>
-  <li><strong>Confirm each account is in the business name,</strong> and that you, not only a developer, can log in.</li>
-  <li><strong>Switch on auto-renew</strong> for the domain, hosting and email, and for licences you still use.</li>
-  <li><strong>Check every payment method's expiry date,</strong> and replace any card belonging to someone who has left.</li>
-  <li><strong>Set billing contacts to an address the business monitors,</strong> such as accounts@ on your domain, plus a backup address.</li>
-  <li><strong>Keep the domain's contact details accurate</strong> and its transfer lock on. Registrars can suspend domains whose contact details fail verification.</li>
-  <li><strong>Consider renewing the domain for several years at once,</strong> so one failed payment can't take it offline.</li>
-  <li><strong>Remove add-ons you don't use,</strong> such as spare mailboxes, old domains or licences for sites that no longer exist.</li>
-  <li><strong>Put every date in a shared calendar</strong> with reminders, as below.</li>
-  <li><strong>Keep the invoices together</strong> for your accountant, particularly if you claim GST input credit.</li>
-</ol>
-
-<h2>A renewal calendar you can copy</h2>
-<p>Add each renewal to a calendar the business shares, with reminders at 60, 30 and 7 days. Use the first to check prices and decide whether to stay, the second to confirm auto-renew and the card, and the last to check the renewal actually went through.</p>
-<pre><code>RENEWAL RECORD
-Service:              (e.g. domain example.com)
-Provider:
-Account login email:
-Account owner:        (business name)
-What it covers:
-Renewal date:
-Term and amount:
-Auto-renew:           (on / off)
-Payment method:       (card ending, expiry month)
-Reminders set:        (60 / 30 / 7 days)
-Who checks it:
-Notes:                (price changes, plans to move)</code></pre>
-<p>Once a year, review the whole list in one sitting, ideally in the month with the most renewals.</p>
-
-<p>Renewal costs are easier to judge when you know the normal range; see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> by plan type.</p>
-
-<p>If you own both the .in and the .com, both need to be on the renewal calendar. <a href="/blog/in-vs-com-domain/">Which domain extension to choose, and whether to buy both</a> explains how to set up the second one.</p>
-
-<h2>Who should own the billing</h2>
-<table>
-  <thead><tr><th>Item</th><th>Account and billing should be with</th><th>Your developer's role</th></tr></thead>
-  <tbody>
-    <tr><td>Domain</td><td>The business, in a registrar account under your email</td><td>Help with DNS changes, not hold the account</td></tr>
-    <tr><td>Hosting</td><td>The business</td><td>Shared or collaborator access while working on the site</td></tr>
-    <tr><td>Business email</td><td>The business</td><td>Help with DNS records and setup</td></tr>
-    <tr><td>Premium licences</td><td>The business, bought with your email</td><td>Add the licence key to the site and run the updates</td></tr>
-    <tr><td>Maintenance plan</td><td>Invoiced to the business</td><td>Flag expiring licences and SSL problems</td></tr>
-  </tbody>
-</table>
-<p>Some developers and agencies bundle hosting, domains and licences into one bill. It can be convenient, but agree in writing that the accounts are in your name, or that they'll be moved to you whenever you ask. Licences bought on a developer's account usually can't be transferred, and when that licence lapses, updates stop for your site too; <a href="/blog/update-premium-theme-safely/">updating a premium theme safely</a> explains what that means for bundled plugins.</p>
-
-<h2>Renewals when you move host or change developer</h2>
-<ul>
-  <li><strong>Moving host:</strong> don't cancel the old hosting until the site has been live and checked on the new host for a week or two, so you have a fallback. Do check its renewal date, so you aren't charged for another year while you wait, and switch its auto-renew off once the move is confirmed.</li>
-  <li><strong>Changing developer:</strong> update the billing contact and payment method on every account they managed, and check that no renewal still goes to their card or inbox.</li>
-  <li><strong>A staff member leaving:</strong> move renewal emails, cards and calendar reminders from their name to a role address before their last day.</li>
-</ul>
-
-<h2>Watch out for fake renewal notices</h2>
-<p>Scam emails and letters copy the look of real domain renewal notices, expiry warnings and "SEO for your domain" invoices. Never pay from a link in an email. Log in to your registrar or host directly and check the date there. <a href="/blog/domain-seo-scam-emails/">Domain renewal and SEO scam emails</a> shows how to spot them.</p>
-
-<h2>If something has already lapsed</h2>
-<ul>
-  <li><strong>Domain:</strong> log in to the registrar now. Most offer a grace period after expiry when you can renew at the normal price, then a redemption period that costs more; the timings vary by registrar and extension. <a href="/blog/domain-expired-what-to-do/">Domain name expired?</a> walks through each stage.</li>
-  <li><strong>Hosting:</strong> pay the invoice and ask support to restore the account. If files were deleted, restore from your own off-site backup.</li>
-  <li><strong>SSL:</strong> a free certificate that failed to renew can usually be reissued from the hosting panel once the cause, often a DNS change, is fixed; <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> helps with the warnings.</li>
-  <li><strong>Email:</strong> renew, then check mail flows both ways; messages sent during the gap may have bounced.</li>
-  <li><strong>Licences:</strong> renew, then run the updates you missed, after a backup.</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>Should I turn on auto-renew for my domain?</h3>
-<p>Yes. It's the simplest protection against losing the domain. Pair it with a payment method that won't expire soon and a renewal email you check, because auto-renew still fails if the payment is declined.</p>
-<h3>Do SSL certificates need to be renewed manually?</h3>
-<p>Not usually. Free certificates from most hosts renew automatically every few months, as long as the domain still points to the host. Certificate lifetimes are being shortened across the industry, which makes automatic renewal more important. Paid certificates are renewed with the provider and then installed.</p>
-<h3>What happens if a premium plugin licence expires?</h3>
-<p>The plugin usually keeps working, but updates and support stop, which becomes a security risk over time, and some plugins restrict features. Renew the licences you depend on and remove plugins you no longer use.</p>
-<h3>What is the WordPress domain renewal price?</h3>
-<p>WordPress doesn't set it: your registrar does. A .com or .in domain typically renews for about ₹500 to ₹1,200 a year, plus GST on Indian invoices. Check the renewal rate before you buy, because first-year offers and free domains with hosting end after the first term.</p>
-<h3>Can my developer pay the renewals for me?</h3>
-<p>Yes, if they invoice you and the accounts stay in your name. The risk is accounts held only by them: if they stop paying or stop working with you, the site goes with them.</p>
-
-<p>Want renewals, updates and backups handled so nothing lapses? <a href="/wordpress-maintenance/">WordPress maintenance</a> plans include renewal tracking, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit your domain, hosting and licences.</p>
 `,
   },
   {
@@ -36887,7 +35948,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'elementor-developer'],
     body: `
 <p>When WordPress changes don't show on your website, the cause is almost always one of three things: the change didn't actually save, a cache is still serving the old version, or you edited something other than what visitors see, such as a template, a staging copy or the wrong language. Check the page in a private window first, clear your caches in order (plugin, server, CDN, then browser), and if it's still old, trace where that part of the page really comes from.</p>
-<p>It's one of the most frequent support requests I get, and this is the checklist I work through. If styling is the only thing missing, the narrower guide to <a href="/blog/wordpress-css-changes-not-showing/">WordPress CSS changes not showing</a> goes deeper into stylesheets. If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
+<p>It's one of the most frequent support requests I get, and this is the checklist I work through. If styling is the only thing missing, the narrower guide to WordPress CSS changes not showing goes deeper into stylesheets. If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
 
 <h2>Find your symptom first</h2>
 <p>Where the change is missing tells you which layer to look at:</p>
@@ -37791,7 +36852,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <li><strong>Languages.</strong> If a Hindi, Marathi or other regional version is planned, say so now; it affects fonts, layouts and plugin choice.</li>
 </ol>
 <h3>What you should receive at the end</h3>
-<p>A custom theme should arrive with its source code in a repository you can access, a short document listing the templates, blocks and custom fields, the build steps if any assets are compiled, and the list of plugins it depends on. Admin logins, hosting access and licence keys belong in the handover too. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists everything to ask for, so a future developer is not starting from zero.</p>
+<p>A custom theme should arrive with its source code in a repository you can access, a short document listing the templates, blocks and custom fields, the build steps if any assets are compiled, and the list of plugins it depends on. Admin logins, hosting access and licence keys belong in the handover too. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists everything to ask for, so a future developer is not starting from zero.</p>
 <h3>Questions to ask a developer before you agree</h3>
 <ul>
 <li>Will the theme work with the standard block editor, and which blocks will be custom?</li>
@@ -38030,7 +37091,7 @@ add_action( 'wp_enqueue_scripts', function () {
 <li>Move added functions into the child's functions.php (or a plugin).</li>
 <li>Copy edited template files into the child at the same path.</li>
 </ul>
-<p>Only then update the parent. If you skip this step, the update deletes the edits and you are left rebuilding from memory, which is also why we ask for this during a <a href="/blog/website-handover-checklist/">website handover</a>.</p>
+<p>Only then update the parent. If you skip this step, the update deletes the edits and you are left rebuilding from memory, which is also why we ask for this during a <a href="/blog/website-ownership-checklist/">website handover</a>.</p>
 
 <h2>Overriding template files</h2>
 <p>To change a template, copy it from the parent to the same relative path in the child and edit the copy. For WooCommerce, copy files from the plugin's templates folder into a woocommerce folder in your child theme.</p>
@@ -38049,7 +37110,7 @@ add_action( 'wp_enqueue_scripts', function () {
 <h2>Common child theme problems and fixes</h2>
 <ul>
 <li><strong>"The parent theme is missing":</strong> the Template line does not match the parent folder name exactly, including case.</li>
-<li><strong>Styles not changing:</strong> a cache or optimisation plugin is serving old CSS; clear it and bump the Version number in style.css. Our guide to <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a> has more fixes.</li>
+<li><strong>Styles not changing:</strong> a cache or optimisation plugin is serving old CSS; clear it and bump the Version number in style.css. Our guide to <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a> has more fixes.</li>
 <li><strong>White screen after activation:</strong> a PHP error in functions.php, often a missing semicolon or a duplicate function name. Rename the child folder by FTP to fall back to the parent, then fix the code.</li>
 <li><strong>Layout looks broken:</strong> parent styles are not loading, or loading twice; check the enqueue code against the theme's documentation.</li>
 </ul>
@@ -38597,135 +37658,6 @@ add_action( 'after_setup_theme', function () {
 <p>For checkout, payments and shipping, start with WooCommerce's own settings and well-maintained extensions. Use snippets for small text or display changes through WooCommerce's filters, and a custom plugin only for rules specific to your store, such as pricing or dealer logic.</p>
 
 <p>Not sure whether a feature needs a plugin, a snippet or something custom? I can help you choose as part of WordPress website development. For an existing site, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> starts with an inventory of every plugin and whether its developer still maintains it, then keeps them updated and tested.</p>
-`,
-  },
-  {
-    slug: 'website-for-farm-stays-agritourism',
-    seoTitle: 'Website for Farm Stays and Agritourism in India',
-    title: 'Websites for Farm Stays and Agritourism: Selling Experiences',
-    description: 'What a website for farm stays and agritourism in India needs: experience pages, day visit and stay bookings, directions, photos, reviews and local SEO.',
-    date: '2026-09-28',
-    updated: '2026-10-29',
-    category: 'Industries',
-    related: ['hotel-website-design', 'landing-page-design'],
-    body: `
-<p>A website for farm stays and agritourism in India should sell the experience: what guests do, eat and see across a day or weekend, along with clear booking options, directions and real photos. Families from Pune, Mumbai, Bengaluru or Delhi looking for a weekend escape compare several farms on their phones, and the one that answers their questions quickly usually gets the booking.</p>
-<p>This guide covers the pages, booking setup, content and local SEO a farm stay or agritourism centre needs.</p>
-
-<h2>Who books farm stays and what they want</h2>
-<ul>
-<li><strong>Families with children</strong> who want open space, animals, simple activities and safe food.</li>
-<li><strong>Groups of friends</strong> looking for a relaxed weekend with bonfire, music and outdoor games.</li>
-<li><strong>Schools and colleges</strong> planning educational day trips about farming, water or rural life.</li>
-<li><strong>Corporate teams</strong> booking an outing or offsite with activities and meals.</li>
-<li><strong>Couples and solo travellers</strong> who want quiet, nature and good food.</li>
-</ul>
-<p>Each group asks different questions. Families ask about safety and food; schools ask about learning activities and per-student costs; corporates ask about capacity and transport. The website should make it easy for each to find their answers.</p>
-
-<h2>Pages a website for farm stays and agritourism needs</h2>
-<table>
-<thead><tr><th>Page</th><th>What it answers</th></tr></thead>
-<tbody>
-<tr><td>Home</td><td>Where you are, what makes the farm special, main booking buttons</td></tr>
-<tr><td>Stays</td><td>Room or cottage types, capacity, bathrooms, what is included</td></tr>
-<tr><td>Day visits</td><td>Timings, activities, meals, what to bring</td></tr>
-<tr><td>Activities and experiences</td><td>Farming activities, animals, walks, games, seasonal events</td></tr>
-<tr><td>Food</td><td>Meal types, local dishes, veg or non-veg, Jain options if offered</td></tr>
-<tr><td>Groups, schools and corporates</td><td>Capacity, packages, enquiry form</td></tr>
-<tr><td>Gallery</td><td>Real photos and short videos across seasons</td></tr>
-<tr><td>How to reach</td><td>Map, route from nearby cities, road conditions, parking</td></tr>
-<tr><td>FAQs and policies</td><td>Pets, alcohol, check-in times, cancellation, monsoon access</td></tr>
-</tbody>
-</table>
-
-<h2>Sell the experience, not just the room</h2>
-<p>A farm stay competes with resorts and hotels on comfort but wins on experience. Show a sample day: morning milking or feeding animals, a walk through the fields, harvesting vegetables in season, bullock cart rides, pottery or rural games, an evening bonfire. Describe these honestly; if an activity is seasonal, say which months.</p>
-<p>Photos matter more than adjectives. Use real images of your farm, food and rooms, and refresh them across seasons. A monsoon photo of green fields and a winter photo of a bonfire both help guests imagine their visit. Short video clips from a phone work well, as long as they are compressed so the page stays fast.</p>
-
-<h2>Seasons and events</h2>
-<p>Agritourism in India is strongly seasonal. Mango season, strawberry picking, grape harvest, monsoon greenery and winter bonfires all attract different guests. A seasonal calendar page, or a section on the home page, helps guests plan and gives you content to promote each season.</p>
-<p>For special events such as harvest festivals, Diwali weekends or New Year, create a dedicated page with dates, inclusions and booking. Update or remove it after the event so outdated offers do not confuse visitors.</p>
-
-<h2>Bookings: direct, enquiry, or both</h2>
-<p>Farm stays usually handle three types of booking:</p>
-<ol>
-<li><strong>Overnight stays</strong>, which can use an online booking system with availability, or a booking request form.</li>
-<li><strong>Day visits</strong>, often booked per person, with a date and headcount.</li>
-<li><strong>Group and school packages</strong>, which need an enquiry form because each one is customised.</li>
-</ol>
-<p>For smaller farms, an enquiry form plus WhatsApp is often enough at first. As bookings grow, a booking engine with Razorpay or UPI payment and automatic confirmation emails saves time. If you also list on booking platforms, a channel manager can keep availability in sync. The guides on <a href="/blog/hotel-booking-engine-channel-manager/">booking engines and channel managers</a> and <a href="/blog/hotel-website-direct-bookings/">getting direct bookings from your website</a> explain the options.</p>
-<p>Whatever the system, state clearly what is included, the check-in and check-out times, advance payment terms, and the cancellation policy, including what happens if heavy rain blocks the road.</p>
-
-<h2>Presenting packages clearly</h2>
-<p>Guests compare farms quickly, so each package should be easy to read at a glance. For every stay, day visit or group package, list:</p>
-<ul>
-<li>Timings, such as arrival and departure for a day visit.</li>
-<li>Meals included: breakfast, lunch, evening snacks, dinner.</li>
-<li>Activities included and any that cost extra.</li>
-<li>Who it suits: families, couples, groups, students.</li>
-<li>Minimum headcount for group packages.</li>
-<li>What to bring: comfortable shoes, extra clothes for children, mosquito repellent.</li>
-</ul>
-<p>A simple comparison of day visit vs overnight stay vs group package helps undecided guests choose. If prices are shown, keep them updated each season and say whether taxes are included; GST treatment can vary, so check with your CA.</p>
-
-<h2>Content ideas that bring visitors</h2>
-<p>A short blog keeps the site fresh and answers questions people search before planning a trip. Useful ideas include what children learn on a farm visit, what to pack for a monsoon farm stay, a seasonal produce calendar, recipes from your kitchen, and a school trip planning checklist for teachers. Each article can end with a link to the matching package. Write from real experience on your farm rather than general travel copy; it is more useful and more believable.</p>
-
-<h2>Directions and practical details</h2>
-<p>Farms are often off the main road, and guests getting lost is a common complaint. A good &quot;How to reach&quot; page includes:</p>
-<ul>
-<li>An embedded Google Map and a pinned location link to share on WhatsApp.</li>
-<li>Route notes from the nearest big cities, with landmarks for the last few kilometres.</li>
-<li>Road conditions in monsoon and whether small cars can reach.</li>
-<li>Nearest railway station or bus stand, and whether pickup can be arranged.</li>
-<li>Mobile network and internet notes, so guests are not surprised.</li>
-<li>Parking space and whether buses can enter, which matters for schools.</li>
-</ul>
-<p>These details reduce repetitive phone calls and set honest expectations.</p>
-
-<h2>Trust: reviews, safety and food</h2>
-<p>Families need to feel safe. Show:</p>
-<ul>
-<li>Genuine Google reviews, embedded or linked.</li>
-<li>Safety arrangements such as fenced water bodies, supervised activities and first aid, described accurately.</li>
-<li>Kitchen and food practices: fresh produce from the farm, drinking water source.</li>
-<li>Any registration or approval you genuinely hold, such as state tourism registration. Rules vary by state, so check current requirements rather than assuming.</li>
-</ul>
-
-<h2>Local SEO for farm stays</h2>
-<p>People search for &quot;farm stay near Pune&quot;, &quot;agritourism near Mumbai&quot;, &quot;one day picnic spot near Nashik&quot; or &quot;farmhouse for school trip&quot;. To appear:</p>
-<ul>
-<li>Keep a complete Google Business Profile with the right category and plenty of fresh photos. See <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a>.</li>
-<li>Mention the nearby cities and distance naturally on the home and directions pages.</li>
-<li>Write helpful articles: things to do on a farm with kids, a monsoon weekend guide, a school trip checklist.</li>
-<li>Encourage reviews after each visit, with a direct link sent on WhatsApp.</li>
-</ul>
-<p>Avoid creating many near-identical &quot;farm stay near X&quot; pages for cities you are far from; one useful directions page covering main routes works better.</p>
-
-<h2>Speed and mobile</h2>
-<p>Guests often browse on mobile data, sometimes from areas with weak signal. Heavy galleries and auto-playing videos slow the site. Compress images, lazy-load galleries and keep the booking button visible. The guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> covers practical steps.</p>
-
-<h2>WhatsApp and follow-up</h2>
-<p>Many guests prefer to ask on WhatsApp before booking. Add a WhatsApp button with a pre-filled message such as &quot;Hi, I want to know about a farm stay for 4 adults and 2 kids on...&quot;. See <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a>. Reply quickly; weekend plans are made fast, and a slow reply often means a lost booking.</p>
-
-<h2>Keeping the site up to date</h2>
-<p>A farm stay site goes stale quickly if last year&#39;s offers and photos stay up. Set a routine at the start of each season: update the activity calendar, swap in recent photos, check that booking dates and policies are current, and test the enquiry form and WhatsApp button. WordPress lets you or your team make these edits without a developer each time.</p>
-
-<p>Farm stays and vineyard stays around Nashik can see the page on <a href="/wordpress-shopify-developer-nashik/">website development in Nashik</a>.</p>
-
-<h2>FAQs</h2>
-<h3>What should a website for farm stays and agritourism include?</h3>
-<p>Pages for stays, day visits, activities, food, group packages, gallery and directions, plus clear policies and a booking or enquiry route. Real photos and honest seasonal information matter most.</p>
-<h3>Should a farm stay take online bookings?</h3>
-<p>It helps once bookings are regular. Smaller farms can start with an enquiry form and WhatsApp, then add a booking engine with UPI or card payment as volume grows.</p>
-<h3>How do farm stays get found on Google?</h3>
-<p>Through a complete Google Business Profile with photos and reviews, a website that mentions the nearby cities and routes naturally, and helpful articles about activities, seasons and trips.</p>
-<h3>Should I show prices on my farm stay website?</h3>
-<p>Showing starting prices or package inclusions helps guests decide, as long as you keep them updated. Group and school packages can stay on enquiry.</p>
-<h3>Is WordPress suitable for a farm stay website?</h3>
-<p>Yes. WordPress handles galleries, booking plugins, enquiry forms and blogs, and you can update seasonal offers yourself.</p>
-
-<p>If you run a farm stay or agritourism centre and need a booking-ready site, see <a href="/hotel-website-design/">websites for hotels, resorts and homestays</a> and <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>. Smaller properties can also read <a href="/blog/website-for-homestays-bnbs/">websites for homestays and B&amp;Bs</a>.</p>
 `,
   },
   {
@@ -40197,7 +39129,7 @@ add_action( 'after_setup_theme', function () {
   <li><strong>Announce it at the AGM or by circular,</strong> with a short guide to registering for a member account.</li>
   <li><strong>Move one habit at a time:</strong> first notices, then complaints, then bookings, so residents are not asked to change everything at once.</li>
 </ol>
-<p>Keep the design simple and text large enough to read comfortably; <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a> has practical tips that suit most societies.</p>
+<p>Keep the design simple and text large enough to read comfortably; <a href="/blog/website-accessibility-basics/">making your website easy for older visitors</a> has practical tips that suit most societies.</p>
 
 <h2>Features at a glance</h2>
 <table>
@@ -40283,7 +39215,7 @@ add_action( 'after_setup_theme', function () {
   <li>Experience in pharma marketing and whether they hold a drug licence, as simple options.</li>
   <li>An optional message.</li>
 </ol>
-<p>Send each enquiry to email and, where it helps, to a WhatsApp number your sales team checks. Store them in a simple list or CRM too, so none is lost if an inbox is missed. <a href="/blog/follow-up-website-leads-fast/">Following up website leads fast</a> covers the routine that turns these into calls, and <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> shows how to place a chat button without cluttering the page.</p>
+<p>Send each enquiry to email and, where it helps, to a WhatsApp number your sales team checks. Store them in a simple list or CRM too, so none is lost if an inbox is missed. <a href="/blog/respond-to-website-enquiries-fast/">Following up website leads fast</a> covers the routine that turns these into calls, and <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> shows how to place a chat button without cluttering the page.</p>
 <p>Expect some spam and some enquiries from people looking for jobs rather than franchises. A honeypot field and a clear "Careers" link elsewhere keep the sales inbox cleaner.</p>
 
 <h2>Ranking for "PCD pharma franchise" searches</h2>
@@ -40485,141 +39417,6 @@ add_action( 'after_setup_theme', function () {
 `,
   },
   {
-    slug: 'woocommerce-maintenance-checklist',
-    seoTitle: 'WooCommerce Maintenance Checklist: Daily to Quarterly',
-    title: 'WooCommerce Maintenance Checklist: Daily, Weekly, Monthly and Quarterly Tasks for Indian Online Stores',
-    description: 'A WooCommerce maintenance checklist by frequency: orders, payment reconciliation, stock, staging updates, backups, checkout tests, GST invoices, cleanup.',
-    date: '2026-09-28',
-    updated: '2026-10-30',
-    category: 'E-commerce',
-    related: ['woocommerce-developer', 'wordpress-maintenance'],
-    body: `
-<p>A WooCommerce store needs maintenance at four rhythms. Daily: check new, pending and failed orders, payment alerts and low stock. Weekly: place a test order, confirm order emails and backups, and scan the logs. Monthly: apply updates on a staging copy first, test every payment method and shipping rule, reconcile gateway settlements with orders, and spot-check GST invoices. Quarterly: test a backup restore, audit plugins and staff accounts, clean the database and review tax, policy and hosting settings.</p>
-<p>These are store-specific tasks on top of normal <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance</a>. They exist because payments, shipping, stock and order emails can each fail quietly after an update, and a broken checkout costs sales every hour it goes unnoticed. If you would rather hand this over, I look after stores through <a href="/woocommerce-developer/">WooCommerce development</a> and monthly <a href="/wordpress-maintenance/">WordPress maintenance</a> plans, which add a test order after updates and checks on order emails and invoices.</p>
-
-<h2>WooCommerce maintenance checklist at a glance</h2>
-<table>
-  <thead><tr><th>Frequency</th><th>Task</th><th>Who usually does it</th></tr></thead>
-  <tbody>
-    <tr><td>Daily</td><td>Review new, on-hold, pending and failed orders</td><td>Order desk</td></tr>
-    <tr><td>Daily</td><td>Check payment gateway alerts and the store inbox</td><td>Order desk</td></tr>
-    <tr><td>Daily</td><td>Low-stock and out-of-stock alerts for bestsellers</td><td>Owner or stock manager</td></tr>
-    <tr><td>Weekly</td><td>Place and refund a test order</td><td>Owner or developer</td></tr>
-    <tr><td>Weekly</td><td>Confirm order emails arrive (to you and to customers)</td><td>Owner or developer</td></tr>
-    <tr><td>Weekly</td><td>Confirm backups ran and are stored off-site</td><td>Developer</td></tr>
-    <tr><td>Weekly</td><td>Scan WooCommerce logs for fatal and gateway errors</td><td>Developer</td></tr>
-    <tr><td>Monthly</td><td>Updates on staging, then live, with checkout tests</td><td>Developer</td></tr>
-    <tr><td>Monthly</td><td>Test every payment method and shipping zone on a phone</td><td>Developer</td></tr>
-    <tr><td>Monthly</td><td>Reconcile gateway settlements with orders</td><td>Owner or accountant</td></tr>
-    <tr><td>Monthly</td><td>Spot-check GST invoices</td><td>Owner, with the CA</td></tr>
-    <tr><td>Monthly</td><td>Speed check on product, cart and checkout pages</td><td>Developer</td></tr>
-    <tr><td>Monthly</td><td>Review scheduled actions, coupons and outdated templates</td><td>Developer</td></tr>
-    <tr><td>Quarterly</td><td>Test a backup restore on staging</td><td>Developer</td></tr>
-    <tr><td>Quarterly</td><td>Audit plugins, licences and staff accounts</td><td>Developer and owner</td></tr>
-    <tr><td>Quarterly</td><td>Database cleanup and growth review</td><td>Developer</td></tr>
-    <tr><td>Quarterly</td><td>Review tax settings, policies, hosting and renewals</td><td>Owner, developer, CA</td></tr>
-  </tbody>
-</table>
-
-<h2>Daily: five minutes on orders, payments and stock</h2>
-<ul>
-  <li><strong>Orders by status.</strong> Look at Processing for what needs dispatch, On hold for bank transfers to confirm, and Pending payment and Failed for problems. A cluster of failed orders from different customers usually means a gateway or checkout issue, not bad luck.</li>
-  <li><strong>Gateway alerts.</strong> Payment providers email about failed webhooks, disputes and settlement issues. Someone should read them every day.</li>
-  <li><strong>Stock.</strong> Check low-stock alerts so bestsellers don't show as unavailable or get oversold.</li>
-  <li><strong>COD orders,</strong> if you offer them, confirmed before packing.</li>
-</ul>
-
-<h2>Weekly: prove the store still sells</h2>
-<ul>
-  <li><strong>A test order.</strong> Use a low-priced hidden test product, pay with UPI or a card, then refund it. This exercises the cart, checkout, payment, order status and emails in one go.</li>
-  <li><strong>Stuck orders.</strong> If the gateway dashboard shows a successful payment but the order is still Pending payment, the gateway's webhook or callback is probably not reaching your site. <a href="/blog/woocommerce-payment-gateway-not-working-india/">Payment gateway not working</a> covers the common causes.</li>
-  <li><strong>Order emails.</strong> Check the new-order alert to you and the confirmation to the customer arrive, and not in spam.</li>
-  <li><strong>Backups.</strong> Confirm they ran and that a copy lives away from your hosting server.</li>
-  <li><strong>Logs.</strong> Under WooCommerce, Status, Logs, look for new fatal errors or gateway errors.</li>
-  <li><strong>Uptime alerts,</strong> if you use monitoring: check any downtime was explained, not just recovered.</li>
-</ul>
-
-<h2>Monthly: updates, reconciliation and invoices</h2>
-<h3>Updates on staging first</h3>
-<p>Update WooCommerce, extensions, the gateway plugin and the theme on a <a href="/blog/staging-sites-explained/">staging site</a>, run a test order, then repeat on the live store at a quiet time. If WooCommerce asks to run a database update, take a fresh backup first. Update the most important plugins one at a time so you know which one caused any problem.</p>
-<h3>Outdated template files</h3>
-<p>The System Status report under WooCommerce, Status flags theme template overrides older than your WooCommerce version. Outdated overrides can break product pages, the cart or checkout after an update.</p>
-<h3>Payment methods and shipping</h3>
-<p>On a phone, test UPI, cards, net banking, wallets and Cash on Delivery if offered. Try addresses in different zones or pin codes, check free-shipping thresholds and compare your rates with what your courier actually charges.</p>
-<h3>Payment reconciliation</h3>
-<p>Export the month's settlements from your gateway and compare them with completed orders. You are looking for:</p>
-<ul>
-  <li>Payments with no matching order, or orders marked paid with no settlement</li>
-  <li>Duplicate payments for one order</li>
-  <li>Refunds issued in WooCommerce but not processed at the gateway, or the other way round</li>
-  <li>Gateway fees and any GST on those fees, for your accountant</li>
-  <li>COD remittances from your courier matched against delivered COD orders</li>
-</ul>
-<h3>GST invoice spot-check</h3>
-<p>Open a handful of invoices, including an intra-state and an inter-state order, and check the GSTIN, HSN codes, invoice numbering sequence, and that tax is split as CGST and SGST or charged as IGST as expected. Rules and formats are for your CA to confirm; the check is that the store is still producing what was agreed after the month's updates. <a href="/blog/woocommerce-gst-invoices-india/">GST invoices for WooCommerce stores</a> covers the setup.</p>
-<h3>Speed</h3>
-<p>Test a product page, the cart and checkout on mobile. New plugins, larger images and tracking scripts creep in over time. <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers what to fix when pages slow down.</p>
-<h3>Housekeeping</h3>
-<ul>
-  <li><strong>Scheduled actions:</strong> under WooCommerce, Status, Scheduled Actions, a growing pile of failed or past-due actions points to a problem worth investigating.</li>
-  <li><strong>Coupons and sales:</strong> remove expired coupons and check scheduled sale prices start and end as planned.</li>
-</ul>
-
-<h2>Quarterly: restore, audit and clean</h2>
-<ul>
-  <li><strong>Test a restore</strong> of a recent backup on staging. An untested backup may fail when you need it most.</li>
-  <li><strong>Audit plugins and extensions:</strong> remove what you no longer use, and check premium licences are active and in your name so updates keep arriving.</li>
-  <li><strong>Staff accounts:</strong> remove people who have left, and give order staff the Shop Manager role rather than Administrator.</li>
-  <li><strong>Security review:</strong> admin users, two-factor login, file changes and checkout scripts. <a href="/blog/woocommerce-security-checklist/">The WooCommerce security checklist</a> goes further.</li>
-  <li><strong>Database cleanup:</strong> clear expired transients and old sessions, review which tables are growing, and decide what to do with years of old orders and logs. See <a href="/blog/wordpress-database-optimization/">database optimisation</a>.</li>
-  <li><strong>PHP version and hosting resources:</strong> a store needs more capacity as the catalogue and order history grow.</li>
-  <li><strong>Tax, invoice and policy settings:</strong> confirm GST settings with your CA if anything has changed, and check that shipping, returns and privacy policies still match how you work.</li>
-  <li><strong>Renewals:</strong> domain, hosting, SSL and any paid gateway, shipping or invoicing services.</li>
-</ul>
-
-<h2>Backups and restores work differently for stores</h2>
-<p>Restoring yesterday's database on a store would wipe every order, customer account and stock change since. So:</p>
-<ul>
-  <li>Back up more often, or use a service that saves database changes in near real time</li>
-  <li>Never restore the whole live database to fix a design problem; restore only affected files, or fix it on staging</li>
-  <li>Never push a staging database over the live store without a plan for orders placed in between</li>
-  <li>If you must restore after a disaster, export recent orders first</li>
-</ul>
-<p>More in the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>.</p>
-
-<h2>Before festival sales and big campaigns</h2>
-<p>A couple of weeks before Diwali, Raksha Bandhan, an end-of-season sale or a large Instagram campaign:</p>
-<ol>
-  <li>Finish updates, then freeze non-essential changes until the sale ends</li>
-  <li>Test coupons, sale prices and free-shipping offers exactly as customers will use them</li>
-  <li>Update stock and confirm your courier can handle extra pickups</li>
-  <li>Ask your host whether your plan can cope with a traffic spike</li>
-  <li>Take a fresh backup, and make sure someone is available if checkout breaks</li>
-</ol>
-
-<p>Before a sale goes live, also update the sale page's search snippet; see the <a href="/blog/flash-sale-collection-meta-title-description/">flash sale collection meta title and description</a> templates.</p>
-
-<h2>Keep a maintenance log</h2>
-<p>A shared sheet with the date, task, plugin versions before and after, tests run and any issues. When something breaks, the log answers "what changed last?" in seconds, and it makes a handover to a new developer far easier.</p>
-
-<h2>FAQs</h2>
-<h3>How often should I update WooCommerce?</h3>
-<p>Security updates as soon as they have been tested; regular updates monthly, on staging first, followed by a test order on the live store. Avoid updating just before or during a big sale.</p>
-<h3>Why is an order pending when the customer has paid?</h3>
-<p>Usually the gateway's webhook or callback did not reach your site, so WooCommerce never heard the payment succeeded. Check the gateway dashboard and logs before marking the order paid manually.</p>
-<h3>How often should a WooCommerce store be backed up?</h3>
-<p>More often than a brochure site, because orders change the database all day. Busy stores benefit from near-real-time database backups, with copies stored off the hosting server.</p>
-<h3>What is payment reconciliation in WooCommerce?</h3>
-<p>Comparing gateway settlements and COD remittances with your completed and refunded orders, to catch missing, duplicate or mismatched payments early.</p>
-<h3>Do I need to check GST invoices after updates?</h3>
-<p>A quick spot-check is wise, because invoice plugins and tax settings can be affected by updates. Confirm rates and formats with your CA.</p>
-<h3>What should a WooCommerce maintenance checklist include?</h3>
-<p>Daily order, payment and stock checks; a weekly test order and backup check; monthly updates on staging, payment and shipping tests, reconciliation and a GST invoice spot-check; and a quarterly restore test, user audit and clean-up. Keep a log so each task has a date and an owner.</p>
-
-<p>Don't want to run this checklist yourself? See <a href="/woocommerce-developer/">WooCommerce development</a> for store work, and <a href="/wordpress-maintenance/">WordPress maintenance</a> for monthly plans that include updates, test orders and off-site backups.</p>
-`,
-  },
-  {
     slug: 'woocommerce-speed-optimization',
     seoTitle: 'WooCommerce Performance Optimization: Speed Up Your Store',
     title: 'WooCommerce Performance Optimization: A Practical Guide to Speed Up Your WooCommerce Store',
@@ -40723,7 +39520,7 @@ add_action( 'after_setup_theme', function () {
 <p>Our guide to <a href="/blog/wordpress-site-slow-on-mobile-fix/">fixing a WordPress site that is slow on mobile</a> goes into more detail.</p>
 
 <h2>Step 10: Keep the store fast after launch</h2>
-<p>Speed often slips after launch as new plugins, banners and tracking scripts are added. Re-test key pages after every major update or new plugin, review the plugin list every few months, and keep an eye on Search Console's Core Web Vitals report. A regular maintenance routine catches slowdowns before customers notice them. See the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<p>Speed often slips after launch as new plugins, banners and tracking scripts are added. Re-test key pages after every major update or new plugin, review the plugin list every few months, and keep an eye on Search Console's Core Web Vitals report. A regular maintenance routine catches slowdowns before customers notice them. See the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 
 <h2>WooCommerce performance optimization checklist</h2>
 <ol>
@@ -40883,7 +39680,7 @@ add_action( 'after_setup_theme', function () {
     <tr><td>Test restore of a backup</td><td>Quarterly</td></tr>
   </tbody>
 </table>
-<p>This fits into the wider <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>. If you suspect a hack, turn off online payments or put the checkout into maintenance, inform your gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require certain cyber incidents to be reported quickly, so take advice promptly.</p>
+<p>This fits into the wider <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>. If you suspect a hack, turn off online payments or put the checkout into maintenance, inform your gateway, keep a backup and logs as evidence, and have the store cleaned before reopening. Indian rules may require certain cyber incidents to be reported quickly, so take advice promptly.</p>
 
 <h2>FAQs</h2>
 <h3>Is WooCommerce secure?</h3>
@@ -41486,7 +40283,7 @@ add_action( 'after_setup_theme', function () {
   <li><strong>Group by occasion and look,</strong> such as traditional bridal, soft glam, HD or airbrush, South Indian bridal, so visitors can find their style.</li>
   <li><strong>Show real skin.</strong> Heavy filters make brides worry about how they will look in person and on camera. Add a few natural-light shots.</li>
   <li><strong>Credit photographers</strong> where images come from wedding shoots, and get the client's permission before posting their wedding photos.</li>
-  <li><strong>Compress images</strong> so galleries load fast on mobile data. <a href="/blog/image-compression-plugins-compared/">Image compression plugins compared</a> explains the options.</li>
+  <li><strong>Compress images</strong> so galleries load fast on mobile data. <a href="/blog/image-optimization-wordpress/">Image compression plugins compared</a> explains the options.</li>
 </ul>
 <p>Short before-and-after clips can sit on the portfolio page too, but host them on YouTube or Instagram and embed them, rather than uploading large video files to your hosting.</p>
 
@@ -41512,7 +40309,7 @@ add_action( 'after_setup_theme', function () {
   <li>Number of people needing makeup.</li>
   <li>Optional: a link to a reference look.</li>
 </ol>
-<p>Send each enquiry to your WhatsApp and email. A click-to-chat button with a pre-filled message ("Hi, I'd like to check availability for…") works well on mobile; <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a> shows how. Reply quickly: wedding families often message several artists on the same evening, and <a href="/blog/follow-up-website-leads-fast/">fast lead follow-up</a> explains why speed matters.</p>
+<p>Send each enquiry to your WhatsApp and email. A click-to-chat button with a pre-filled message ("Hi, I'd like to check availability for…") works well on mobile; <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a> shows how. Reply quickly: wedding families often message several artists on the same evening, and <a href="/blog/respond-to-website-enquiries-fast/">fast lead follow-up</a> explains why speed matters.</p>
 
 <h2>Local SEO for makeup artists</h2>
 <p>Brides search "bridal makeup artist in Pune" or "party makeup near me". To show up:</p>
@@ -41621,7 +40418,7 @@ add_action( 'after_setup_theme', function () {
 <ul>
 <li><strong>Organise by artist and style</strong> so visitors can jump straight to fine line or realism instead of scrolling through everything.</li>
 <li><strong>Use your own photos</strong> with good light and no heavy filters, and include healed work, which builds more trust than fresh, red skin.</li>
-<li><strong>Compress every image</strong> and serve modern formats; a gallery of large phone photos can make the page very slow on mobile data. See <a href="/blog/image-compression-plugins-compared/">image compression plugins compared</a>.</li>
+<li><strong>Compress every image</strong> and serve modern formats; a gallery of large phone photos can make the page very slow on mobile data. See <a href="/blog/image-optimization-wordpress/">image compression plugins compared</a>.</li>
 <li><strong>Use lazy loading</strong> so images further down the page load only when needed.</li>
 <li><strong>Write short captions</strong> with the style and placement, which also helps image search. The <a href="/blog/image-seo-guide/">image SEO guide</a> explains how.</li>
 </ul>
@@ -41749,7 +40546,7 @@ add_action( 'after_setup_theme', function () {
 <li><strong>The final video,</strong> embedded with a lightweight player.</li>
 <li><strong>What the client said,</strong> only if they gave a genuine quote you can use.</li>
 </ul>
-<p>Avoid inventing view counts or results. If a client shares real outcomes and agrees to publish them, include them accurately; otherwise describe the work itself. <a href="/blog/portfolio-website-freelancers-creatives/">Portfolio websites for creatives</a> has more on presenting work, and <a href="/blog/video-testimonials-website/">video testimonials</a> covers client interviews if you can get them.</p>
+<p>Avoid inventing view counts or results. If a client shares real outcomes and agrees to publish them, include them accurately; otherwise describe the work itself. <a href="/blog/portfolio-website-freelancers-creatives/">Portfolio websites for creatives</a> has more on presenting work, and <a href="/blog/collect-display-customer-testimonials/">video testimonials</a> covers client interviews if you can get them.</p>
 
 <h2>Explain your process and what affects cost</h2>
 <p>Buyers new to video production often do not know what to expect. A clear process page reduces nervousness and time spent explaining:</p>
@@ -42700,7 +41497,7 @@ add_action( 'after_setup_theme', function () {
 </table>
 <p>Keep the marketing website and the learning platform clearly separated if they are different systems, and link them simply.</p>
 
-<p>If your centre mainly teaches basic computing, Tally and accounting, or design courses to school students, job seekers and beginners, see <a href="/blog/website-for-computer-training-institutes/">websites for computer training institutes</a>.</p>
+<p>If your centre mainly teaches basic computing, Tally and accounting, or design courses to school students, job seekers and beginners, see websites for computer training institutes.</p>
 
 <h2>FAQs</h2>
 <h3>What should a website for software training institutes include?</h3>
@@ -43235,7 +42032,7 @@ add_action( 'after_setup_theme', function () {
   <li><strong>Photos:</strong> WebP is usually the best balance of quality and file size, and AVIF can be smaller still; JPEG is a safe fallback</li>
   <li><strong>Graphics with transparency:</strong> PNG or WebP</li>
   <li><strong>Logos and icons:</strong> SVG stays sharp at any size</li>
-  <li><strong>Compression:</strong> compress every upload, ideally automatically; see <a href="/blog/image-compression-plugins-compared/">image compression plugins compared</a></li>
+  <li><strong>Compression:</strong> compress every upload, ideally automatically; see <a href="/blog/image-optimization-wordpress/">image compression plugins compared</a></li>
   <li><strong>Dimensions:</strong> resize to roughly the largest size the image is shown at, rather than uploading straight from a camera or phone</li>
 </ul>
 <p>Google can index JPEG, PNG, WebP, GIF, SVG, BMP and AVIF, so format is mostly a speed decision rather than a ranking one. Always set width and height on images (WordPress does this for images inserted normally) so the page doesn't jump as they load; see <a href="/blog/fix-cls-layout-shift/">fixing layout shift</a>.</p>
@@ -43420,127 +42217,6 @@ add_action( 'after_setup_theme', function () {
 <p>Not directly. Track calls, direction requests and question-style queries instead, and ask new customers how they found you.</p>
 
 <p>Want your site and listings set up properly for local searches, spoken or typed? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-`,
-  },
-  {
-    slug: 'google-business-profile-posts',
-    seoTitle: 'Google Business Profile Posts: Ideas and How to Post',
-    title: 'How to Use Google Business Profile Posts, Offers and Photos to Win Local Customers',
-    description: 'How to use Google Business Profile posts, offers, events and photos to win local customers in India, with post ideas, a weekly routine and common mistakes.',
-    date: '2026-09-28',
-    updated: '2026-10-28',
-    category: 'SEO',
-    related: ['wordpress-seo-services', 'website-for-restaurants'],
-    body: `
-<p>Google Business Profile posts are short updates, offers and event notices that appear on your profile in Google Search and Maps. To use them well, post something useful every week, add real photos regularly, link each post to the right page on your website, and answer questions and reviews promptly. Together these show Google and customers that the business is active and worth contacting.</p>
-<p>For local businesses in India, from clinics and salons to hardware shops and coaching classes, the profile is often the first thing a customer sees. This guide covers the types of posts, what to write, a simple weekly routine and the mistakes to avoid.</p>
-
-<h2>What Google Business Profile posts are</h2>
-<p>Posts are mini-updates published from your profile dashboard or directly from Google Search when you are signed in as the owner. Each post can include text, a photo or video, and a button such as &quot;Call now&quot;, &quot;Book&quot;, &quot;Order online&quot; or &quot;Learn more&quot; linking to your website.</p>
-<p>The main post types are:</p>
-<table>
-<thead><tr><th>Type</th><th>Best for</th><th>Example</th></tr></thead>
-<tbody>
-<tr><td>Update</td><td>News, tips, new services, recent work</td><td>&quot;New weekend batch for Class 10 maths starting next month&quot;</td></tr>
-<tr><td>Offer</td><td>Promotions with a start and end date</td><td>&quot;Free AC servicing check with any repair this week&quot;</td></tr>
-<tr><td>Event</td><td>Workshops, open days, sales, launches</td><td>&quot;Free dental check-up camp on Sunday&quot;</td></tr>
-</tbody>
-</table>
-<p>Older posts move down the profile as new ones are added, so regular posting keeps fresh content visible. Google changes how and where posts are displayed from time to time, so check the current layout in your own profile rather than relying on old screenshots.</p>
-
-<h2>Why posts and photos matter for local customers</h2>
-<p>Posts are unlikely to be a large ranking factor on their own. Their real value is conversion: when someone compares three businesses on Maps, the one with recent posts, current photos and quick replies looks open, active and reliable. That is often what tips the decision.</p>
-<p>Posts also let you:</p>
-<ul>
-<li>Promote seasonal offers before Diwali, wedding season, monsoon or exams.</li>
-<li>Highlight services customers may not know you offer.</li>
-<li>Answer common questions before customers call.</li>
-<li>Send interested searchers to a specific page on your website rather than the homepage.</li>
-</ul>
-<p>If the profile is not appearing at all, posts will not help yet; fix that first with the guide on <a href="/blog/not-showing-on-google-maps/">why a business is not showing on Google Maps</a>.</p>
-
-<h2>Google Business Profile post ideas</h2>
-<p>Running out of ideas is the main reason businesses stop posting. Keep a list like this and rotate through it:</p>
-<ol>
-<li><strong>Recent work</strong>: a finished kitchen, a new haircut style, a repaired machine, with a short caption.</li>
-<li><strong>Tips</strong>: &quot;Three things to check before booking a pest control service&quot;.</li>
-<li><strong>Service spotlights</strong>: one service per post, with a link to its page on your website.</li>
-<li><strong>Seasonal offers</strong>: festivals, school terms, monsoon preparation, summer services.</li>
-<li><strong>Events</strong>: workshops, demo days, health camps, open houses.</li>
-<li><strong>Behind the scenes</strong>: your workshop, kitchen, clinic or team at work, with consent.</li>
-<li><strong>Answers to common questions</strong>: timings, parking, payment options such as UPI, home visits.</li>
-<li><strong>New stock or products</strong> for shops, with an &quot;Order online&quot; button to your store.</li>
-<li><strong>Review highlights</strong>: thank a customer for a review, without sharing personal details.</li>
-</ol>
-
-<h2>How to write a good post</h2>
-<ul>
-<li><strong>Lead with the point</strong>: the first line shows in the preview, so make it the offer or news.</li>
-<li><strong>Keep it short</strong>: a few sentences are enough.</li>
-<li><strong>Mention the area naturally</strong>, such as &quot;home visits across Kothrud and Karve Nagar&quot;, when it is genuinely relevant.</li>
-<li><strong>Use a real photo</strong>, not a stock image or a poster with lots of text.</li>
-<li><strong>Add one clear button</strong> to a relevant page, not just the homepage.</li>
-<li><strong>Avoid phone numbers in post text</strong>; use the call button instead, as Google may reject posts with contact details in the text.</li>
-</ul>
-<p>Write in the language your customers search in. Some businesses post in English and Hindi or a regional language on alternate weeks, which can work well if both audiences matter.</p>
-
-<h2>Photos: the most underused part of the profile</h2>
-<p>Photos often influence customers more than text. Add them regularly, not just once at setup:</p>
-<ul>
-<li>Exterior photos that help people recognise the shop or building.</li>
-<li>Interior photos showing the space, cleanliness and atmosphere.</li>
-<li>Work and product photos, updated as new work is done.</li>
-<li>Team photos, with consent.</li>
-<li>A logo and cover photo that match your website.</li>
-</ul>
-<p>Customers also add photos, and you cannot always control those. Adding good photos of your own keeps the overall impression accurate. The guide on <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers sizes, types and what to avoid.</p>
-
-<h2>A simple weekly routine</h2>
-<p>Consistency matters more than volume. A routine that takes a short time each week:</p>
-<ol>
-<li><strong>Monday</strong>: publish one post (rotate update, offer and tip).</li>
-<li><strong>Midweek</strong>: add a few new photos of recent work.</li>
-<li><strong>Daily or every other day</strong>: reply to new reviews and questions.</li>
-<li><strong>Monthly</strong>: check hours, holiday timings, services and phone number are correct.</li>
-<li><strong>Monthly</strong>: check the profile performance view for calls, direction requests and website clicks.</li>
-</ol>
-<p>Reviews are part of the same routine; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a> and <a href="/blog/handle-negative-reviews/">how to handle negative reviews</a>.</p>
-
-<h2>Linking posts to your website and tracking results</h2>
-<p>A post is most useful when the button leads to a page that matches it: an offer post to an offer landing page, a service post to that service page, a product post to the product in your store. Sending everyone to the homepage wastes the intent.</p>
-<p>To see what works, add UTM parameters to the post link, for example a source of &quot;google&quot;, a medium of &quot;gbp-post&quot; and a campaign name per post. Then you can see visits and enquiries from posts in Google Analytics, separate from regular search traffic. If the landing page is slow or confusing, fix that first; a post can only bring people to the door.</p>
-<p>For shops selling online, posts can link to a WooCommerce or Shopify product or collection page with UPI and COD clearly shown, so a Maps visitor can buy without visiting.</p>
-
-<h2>Products, services and the Q&amp;A section</h2>
-<p>Posts are only one part of the profile. Two other sections deserve the same attention because they appear in the same space and answer buying questions directly.</p>
-<p><strong>Products and services.</strong> Add your main services with short descriptions, and for shops, add key products or categories with photos. This helps customers see at a glance whether you offer what they need, such as &quot;inverter battery replacement&quot; or &quot;bridal makeup&quot;. Keep the names close to the words customers actually use, and avoid listing services you do not offer just to appear in more searches.</p>
-<p><strong>Questions and answers.</strong> Where the feature is available on your profile, anyone can ask a question, and anyone can answer it, which means a wrong answer from a stranger can sit there unnoticed. Check it regularly and reply as the owner. Some businesses seed it by asking and answering common questions themselves, such as parking, home visits, payment methods or whether appointments are needed.</p>
-<p><strong>Attributes and hours.</strong> Keep holiday hours updated before festivals, and set attributes like wheelchair access or online appointments accurately. A customer who arrives to a closed shop after trusting your listing rarely comes back.</p>
-<p>All of this should match your website exactly: the same name, address, phone number, hours and service names. Mismatches confuse customers and weaken the signals Google uses to trust the listing. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers the full setup.</p>
-
-<h2>Common mistakes with profile posts</h2>
-<ul>
-<li>Posting in bursts, then going quiet for months.</li>
-<li>Posters full of text that are hard to read on a phone.</li>
-<li>Expired offers left visible after the end date.</li>
-<li>Every button pointing to the homepage.</li>
-<li>Keyword-stuffed posts that read badly for customers.</li>
-<li>Ignoring questions and reviews while still posting.</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How often should I post on Google Business Profile?</h3>
-<p>Once a week is a sensible target for most local businesses. Regular, useful posts matter more than posting several times a day.</p>
-<h3>Do Google Business Profile posts help ranking?</h3>
-<p>They are unlikely to move rankings much on their own. Their main value is showing an active business and turning profile views into calls, visits and website clicks.</p>
-<h3>What are good Google Business Profile post ideas?</h3>
-<p>Recent work, tips, service spotlights, seasonal offers, events, behind-the-scenes photos and answers to common customer questions.</p>
-<h3>Why was my Google Business Profile post rejected?</h3>
-<p>Common reasons include phone numbers in the text, prohibited content, misleading offers or low-quality images. Check Google's current content policies and edit the post.</p>
-<h3>Should my posts link to my website?</h3>
-<p>Yes. Link each post to the most relevant page, and add UTM tracking so you can see which posts bring enquiries.</p>
-
-<p>Posts work best when the website behind them converts. For a site built around local enquiries, see <a href="/wordpress-seo-services/">WordPress SEO services</a> or the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for small businesses in India</a>. Local businesses in Maharashtra can see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page, and others the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
 `,
   },
   {
@@ -44077,7 +42753,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li><strong>Add service areas</strong> as cities, districts or pincodes you genuinely cover. Keep the list realistic.</li>
   <li><strong>Choose the most specific primary category</strong>, then add secondary categories for other main services.</li>
   <li><strong>List services</strong> with short descriptions, and add photos of real jobs, your team and vehicles.</li>
-  <li><strong>Use posts</strong> for seasonal offers or updates; see <a href="/blog/google-business-profile-posts/">Google Business Profile posts</a>.</li>
+  <li><strong>Use posts</strong> for seasonal offers or updates; see <a href="/blog/google-business-profile-checklist/">Google Business Profile posts</a>.</li>
 </ul>
 <p>The full field-by-field guide is the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. One honest caveat: service-area profiles tend to rank closest to the verified base location. Setting a wide service area does not make you appear everywhere in it.</p>
 
@@ -44736,7 +43412,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Status: new, replied, quoted, follow-up, won, lost</li>
   <li>Next follow-up date and notes</li>
 </ul>
-<p>When volume grows, form entries can flow into a CRM automatically; see <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>. Follow up politely the next day and again a few days later, then stop; <a href="/blog/follow-up-website-leads-fast/">following up website leads</a> gives a full sequence. Never add people to broadcast lists without consent.</p>
+<p>When volume grows, form entries can flow into a CRM automatically; see <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>. Follow up politely the next day and again a few days later, then stop; following up website leads gives a full sequence. Never add people to broadcast lists without consent.</p>
 
 <h2>Step 7: Measure response time</h2>
 <p>Once a month, from your log:</p>
@@ -44806,7 +43482,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>You want to know how many enquiries came from Google Ads versus organic search last month, and the answer is buried in emails.</li>
   <li>A staff member leaves and their inbox, with all its leads, goes with them.</li>
 </ul>
-<p>A CRM or even a shared Google Sheet turns each enquiry into a row or record with an owner, a status and a source. That is what makes fast follow-up possible; see <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a>. If enquiries are not arriving at all, fix that first with <a href="/blog/contact-form-not-getting-enquiries/">contact form not getting enquiries</a>.</p>
+<p>A CRM or even a shared Google Sheet turns each enquiry into a row or record with an owner, a status and a source. That is what makes fast follow-up possible; see <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a>. If enquiries are not arriving at all, fix that first with <a href="/blog/contact-form-not-getting-enquiries/">contact form not getting enquiries</a>.</p>
 
 <h2>How to connect website forms to a CRM: options at a glance</h2>
 <table>
@@ -44821,7 +43497,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </table>
 <p>Which form plugin you use affects your options; <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> covers which integrations each tends to offer.</p>
 
-<p>Some form plugins have far more CRM add-ons than others; see <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> if you are choosing a plugin with integrations in mind.</p>
+<p>Some form plugins have far more CRM add-ons than others; see <a href="/blog/wordpress-form-plugins-compared/">Gravity Forms vs Contact Form 7</a> if you are choosing a plugin with integrations in mind.</p>
 
 <h2>How the connection works</h2>
 <p>Whichever route you take, the flow is the same:</p>
@@ -44994,7 +43670,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li><strong>Route by answer</strong>: residential enquiries to one inbox, commercial to another.</li>
   <li><strong>Tag by priority</strong>: "this month" plus a higher budget range goes to the top of the list.</li>
   <li><strong>Send to a CRM or sheet</strong> so nothing sits in a mailbox. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
-  <li><strong>Reply fast</strong>: a short WhatsApp message the same day often decides whether you get the job. More in <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a>.</li>
+  <li><strong>Reply fast</strong>: a short WhatsApp message the same day often decides whether you get the job. More in <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a>.</li>
   <li><strong>Use the thank-you page</strong> to set expectations and offer a next step, as in <a href="/blog/thank-you-pages-forms/">thank-you pages for forms</a>.</li>
 </ul>
 
@@ -45012,7 +43688,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Add hidden fields for the page URL and campaign source, so you know where good leads come from.</li>
   <li>Test every branch on a phone, including back buttons and validation errors.</li>
 </ol>
-<p>For calculators and quiz-style flows, see <a href="/blog/website-quiz-lead-generation/">website quizzes for lead generation</a>.</p>
+<p>For calculators and quiz-style flows, see <a href="/blog/website-calculators-lead-generation/">website quizzes for lead generation</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I create a multi-step form in WordPress?</h3>
@@ -45093,7 +43769,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Your website and WhatsApp work best together:</p>
 <ul>
   <li><strong>Click-to-chat buttons</strong> on product, service and contact pages, with a pre-filled message naming the page. <a href="/blog/whatsapp-on-business-website/">How to add WhatsApp to your business website</a> has the exact setup.</li>
-  <li><strong>Enquiry forms</strong> that send each lead to WhatsApp as well as email, so you can reply within minutes. <a href="/blog/follow-up-website-leads-fast/">Following up website leads fast</a> explains why speed wins deals.</li>
+  <li><strong>Enquiry forms</strong> that send each lead to WhatsApp as well as email, so you can reply within minutes. <a href="/blog/respond-to-website-enquiries-fast/">Following up website leads fast</a> explains why speed wins deals.</li>
   <li><strong>Order notifications</strong> from WooCommerce or Shopify through an approved WhatsApp provider, so buyers get updates in the app they actually check.</li>
   <li><strong>Abandoned cart reminders</strong> by WhatsApp for customers who opted in at checkout; see <a href="/blog/woocommerce-abandoned-cart-recovery/">WooCommerce abandoned cart recovery</a>.</li>
   <li><strong>Tracking:</strong> add a GA4 event on WhatsApp button clicks so you know which pages generate chats. <a href="/blog/ga4-events-explained/">GA4 events explained</a> covers this.</li>
@@ -45234,7 +43910,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 
 <h2>Alternatives to a popup</h2>
-<p>Sometimes the better fix is not a popup at all. If many visitors leave a product page, the cause may be missing delivery information, unclear prices, slow loading or too few photos. If visitors leave a service page, they may not find a phone number or WhatsApp button. Before adding an exit popup, check that the page itself answers the obvious questions. Inline options, such as a call-to-action box halfway down a blog post, a sticky &quot;call now&quot; bar on mobile or a short quiz, can capture interest without interrupting anyone. The guide to <a href="/blog/website-quiz-lead-generation/">quizzes for lead generation</a> shows one such approach.</p>
+<p>Sometimes the better fix is not a popup at all. If many visitors leave a product page, the cause may be missing delivery information, unclear prices, slow loading or too few photos. If visitors leave a service page, they may not find a phone number or WhatsApp button. Before adding an exit popup, check that the page itself answers the obvious questions. Inline options, such as a call-to-action box halfway down a blog post, a sticky &quot;call now&quot; bar on mobile or a short quiz, can capture interest without interrupting anyone. The guide to <a href="/blog/website-calculators-lead-generation/">quizzes for lead generation</a> shows one such approach.</p>
 
 <h2>Mobile rules</h2>
 <p>Most Indian visitors browse on phones, so mobile behaviour matters more than desktop. Practical rules:</p>
@@ -45876,7 +44552,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <li>Missed calls and slow WhatsApp replies, and when they happen.</li>
 <li>Which services people call about most, so you can strengthen those pages.</li>
 </ol>
-<p>Speed matters too: a tracked enquiry that waits hours for a reply is often lost. The guide to <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> covers response routines, and <a href="/blog/lead-scoring-small-business/">lead scoring for small businesses</a> helps you prioritise callers. If you are deciding between sending ad traffic to a chat or a page, see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs website</a>.</p>
+<p>Speed matters too: a tracked enquiry that waits hours for a reply is often lost. The guide to <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a> covers response routines, and <a href="/blog/lead-scoring-small-business/">lead scoring for small businesses</a> helps you prioritise callers. If you are deciding between sending ad traffic to a chat or a page, see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs website</a>.</p>
 
 <h2>Tracking calls from offline and print marketing</h2>
 <p>Many Indian small businesses still spend on newspaper inserts, hoardings, pamphlets, auto-rickshaw ads, society notice boards and exhibition stalls. These rarely show up in website analytics at all, because people dial the number straight from the print. Two low-effort ways to measure them help a lot.</p>
@@ -46438,7 +45114,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li><strong>Launch, measure and expand.</strong> Track dispatch times, complaints and repeat buyers before adding categories or regions.</li>
 </ol>
 
-<p>If the store owns the listings and suppliers only fulfil orders, a marketplace plugin may be more than you need; see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a>.</p>
+<p>If the store owns the listings and suppliers only fulfil orders, a marketplace plugin may be more than you need; see WooCommerce with multiple suppliers.</p>
 
 <h2>Choosing a multi-vendor plugin</h2>
 <p>WooCommerce on its own sells one store's products. Well-known multi-vendor plugins include Dokan, WCFM Marketplace, MultiVendorX and WC Vendors, plus WooCommerce's own Product Vendors extension. Typical features include vendor registration and dashboards, store pages, commission and withdrawal settings, per-vendor orders and shipping, and product approval. Features differ by plan and change, so check each one's current feature list and pricing.</p>
@@ -46506,7 +45182,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   </tbody>
 </table>
 
-<p>For a detailed seller checklist, welcome emails and approval steps, see the guide to <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a>.</p>
+<p>For a detailed seller checklist, welcome emails and approval steps, see the guide to WooCommerce vendor onboarding.</p>
 
 <h2>GST, TCS and legal basics for Indian marketplaces</h2>
 <p>A marketplace in India carries obligations that a normal online store doesn't. In broad terms, and subject to current rules, which do change:</p>
@@ -46949,7 +45625,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>If the calculator says a test would need many months, choose a bolder change or use the low-traffic methods later in this guide.</p>
 
-<p>Sometimes the bigger question is the page format itself. Before testing headlines, check whether the offer suits a short opt-in page or a full page; see <a href="/blog/squeeze-page-vs-landing-page/">squeeze page vs landing page</a>.</p>
+<p>Sometimes the bigger question is the page format itself. Before testing headlines, check whether the offer suits a short opt-in page or a full page; see <a href="/blog/landing-page-vs-website/">squeeze page vs landing page</a>.</p>
 
 <h2>What to test first</h2>
 <p>Test the elements that change a visitor's decision, not just the decoration. Roughly in order of likely impact:</p>
@@ -47910,7 +46586,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 </ul>
 <p>Moving hosts is the usual moment these slip; it is part of the checklist I follow for <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
-<p>Networks run scheduled tasks per subsite, which adds up quickly. To <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>, a real server cron that loops over each site is usually one of the first fixes.</p>
+<p>Networks run scheduled tasks per subsite, which adds up quickly. To <a href="/blog/wordpress-multisite-when-needed/">speed up WordPress multisite</a>, a real server cron that loops over each site is usually one of the first fixes.</p>
 
 <h2>Monthly cron health checklist</h2>
 <ul>
@@ -48399,7 +47075,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
   <li><strong>Don't run two copies</strong> of the same website on both extensions; that creates duplicate content</li>
   <li><strong>Consider email forwarding</strong> on the second domain, so messages sent to the wrong extension still reach you</li>
 </ol>
-<p>Every extra domain is one more renewal to track; keep them on the <a href="/blog/domain-hosting-renewal-checklist/">renewal checklist</a>.</p>
+<p>Every extra domain is one more renewal to track; keep them on the <a href="/blog/hosting-renewal-price-increase/">renewal checklist</a>.</p>
 
 <h2>Switching extensions later</h2>
 <p>If you start on .co.in or .in and later move to a .com, it's very doable. Every old URL is 301-redirected to its new address, Search Console's Change of Address tool tells Google about the move, and your email, Google Business Profile, social profiles and printed material are updated. Expect some temporary ranking movement while Google processes the change, and keep the old domain renewed permanently so the redirects keep working. The full process is in <a href="/blog/change-domain-name-without-losing-seo/">how to change your domain name without losing SEO</a>.</p>
@@ -48916,7 +47592,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>A good way to control cost is to separate the must-haves for launch from features that can wait until the store is selling.</p>
 
-<p>Hosting is one of the largest ongoing costs for a store. For typical ranges, see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a> and what each plan includes.</p>
+<p>Hosting is one of the largest ongoing costs for a store. For typical ranges, see <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a> and what each plan includes.</p>
 
 <h2>One-time costs vs ongoing costs</h2>
 <p>Budget for running the store as well as building it. Some costs are paid once, some renew every month or year, and some grow with every order.</p>
@@ -48936,9 +47612,9 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     <tr><td>Marketing</td><td>Ongoing</td><td>Ads, SEO and content to bring shoppers to the store</td></tr>
   </tbody>
 </table>
-<p>A cheaper build with high monthly fees can cost more over two or three years than a slightly larger one-time investment, so compare total cost, not just the first invoice. For the costs owners most often forget, see <a href="/blog/hidden-website-costs/">hidden website costs</a>.</p>
+<p>A cheaper build with high monthly fees can cost more over two or three years than a slightly larger one-time investment, so compare total cost, not just the first invoice. For the costs owners most often forget, see <a href="/blog/wordpress-website-cost-india/">hidden website costs</a>.</p>
 
-<p>For a closer look at each running cost, from gateway fees and shipping to returns, see <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a>.</p>
+<p>For a closer look at each running cost, from gateway fees and shipping to returns, see WooCommerce store running costs.</p>
 
 <h2>How to keep the cost under control</h2>
 <ul>
@@ -49042,7 +47718,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     <tr><td>Lost enquiries</td><td>Every day, invisibly</td><td>Mobile testing, clear calls to action, tested forms</td></tr>
   </tbody>
 </table>
-<p><a href="/blog/hidden-website-costs/">Hidden website costs</a> lists everything a website costs after launch, whoever builds it.</p>
+<p><a href="/blog/wordpress-website-cost-india/">Hidden website costs</a> lists everything a website costs after launch, whoever builds it.</p>
 
 <h2>Five checks before you pay for a cheap website</h2>
 <ol>
@@ -49109,137 +47785,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>A builder you set up yourself at least keeps the account in your name. The trade-offs are your own time, limited flexibility and, with some builders, no way to move the site elsewhere later without rebuilding it.</p>
 
 <p>Want a website that's planned around your customers, tested on real phones and fully in your name? You get a fixed quote after a free review, with the scope written down before anything starts; see WordPress website development.</p>
-`,
-  },
-  {
-    slug: 'website-refresh-vs-redesign',
-    seoTitle: 'Website Refresh vs Redesign: Which Does Your Business Need?',
-    title: 'Website Refresh vs Redesign: Which Does Your Business Need? A Simple Test, Signs and Examples',
-    description: 'Website refresh vs redesign: what each involves, the signs that point to one or the other, a 10-minute decision test, examples and how to protect your SEO.',
-    date: '2026-09-28',
-    updated: '2026-10-30',
-    category: 'Pricing',
-    related: ['website-redesign', 'wordpress-speed-optimization'],
-    body: `
-<p>Choose a website refresh if your site works on phones, updates safely and still matches what you sell, and the problems are specific: dated photos, weak calls to action, old content or slow pages. Choose a redesign if the site isn't built for phones, runs on an abandoned theme or builder, keeps breaking, or no longer fits your business or customers. A refresh keeps the platform, structure and URLs; a redesign changes them, so it costs more and needs more care to protect your rankings.</p>
-<p>Many sites that "need a redesign" only need a refresh, and choosing correctly saves money and avoids risking rankings you've already earned. When you send me your site for a <a href="/website-redesign/">website redesign</a> review, I'll tell you if a refresh would do the job. Here's how to work it out yourself.</p>
-
-<h2>Website refresh vs redesign at a glance</h2>
-<table>
-  <thead><tr><th></th><th>Refresh</th><th>Redesign</th><th>Redesign with a platform move</th></tr></thead>
-  <tbody>
-    <tr><td>What changes</td><td>Content, photos, buttons, some design details, speed</td><td>Design, structure, navigation and key page content</td><td>Everything, including the system the site runs on</td></tr>
-    <tr><td>Platform and theme</td><td>Stay the same</td><td>Theme usually changes; platform often stays</td><td>Change, for example Wix to WordPress</td></tr>
-    <tr><td>URLs</td><td>Stay the same</td><td>Mostly kept; changed ones redirected</td><td>Usually change; every one redirected</td></tr>
-    <tr><td>Risk to rankings</td><td>Low</td><td>Moderate without a redirect map</td><td>Highest without a redirect map</td></tr>
-    <tr><td>Your time</td><td>Some content updates and approvals</td><td>Content, feedback rounds and sign-off</td><td>As for a redesign, plus checking moved content</td></tr>
-    <tr><td>Cost and time</td><td>Lowest; depends on the list of fixes</td><td>Higher; priced like a build</td><td>Highest</td></tr>
-    <tr><td>Best when</td><td>Problems are specific</td><td>The site fails on phones or no longer fits</td><td>The platform blocks what you need</td></tr>
-  </tbody>
-</table>
-
-<h2>What a website refresh involves</h2>
-<p>A refresh improves the website you already have. Typical work, grouped by goal:</p>
-<ul>
-  <li><strong>Content:</strong> current services and prices, new photos of your team and work, recent reviews and case studies, removal of out-of-date offers.</li>
-  <li><strong>Look and feel:</strong> a cleaner hero section, updated fonts and colours within the existing theme, better spacing, consistent buttons.</li>
-  <li><strong>Conversions:</strong> clearer calls to action, WhatsApp and tap-to-call buttons, a shorter enquiry form, trust signals near the form.</li>
-  <li><strong>Speed:</strong> compressed images, caching, removing plugins nobody uses.</li>
-  <li><strong>SEO touch-ups:</strong> better titles, descriptions and headings on key pages, fixed broken links.</li>
-  <li><strong>Housekeeping:</strong> updates to WordPress, the theme and plugins, and a working backup.</li>
-</ul>
-<p>Because the foundations stay in place, a refresh is quicker, cheaper and lower risk, and it can often be done page by page.</p>
-
-<h2>What a website redesign involves</h2>
-<ul>
-  <li>A new visual design, planned page by page</li>
-  <li>A new structure and navigation, based on how customers choose today</li>
-  <li>Rewritten or restructured content for key pages</li>
-  <li>A new theme or a rebuild, and sometimes a move to a new platform</li>
-  <li>A redirect map for every URL that changes, and monitoring after launch</li>
-</ul>
-<p>It is a bigger investment of money and of your own time, but it fixes problems that tweaks can't reach.</p>
-
-<h2>Signs a refresh is enough</h2>
-<ul>
-  <li>The menu still makes sense and visitors can find what they need</li>
-  <li>WordPress, the theme and the plugins update without breaking things</li>
-  <li>You or your team can edit pages without help</li>
-  <li>It works on phones, even if it could look better</li>
-  <li>The problems are specific: slow pages, dated photos, weak calls to action, old content</li>
-  <li>It already ranks and brings enquiries, and you don't want to disturb that</li>
-</ul>
-
-<h2>Signs you need a full redesign</h2>
-<ul>
-  <li>The site was never built for phones, so fixing the layout means rebuilding it anyway</li>
-  <li>It runs on an abandoned theme or builder that can't be updated safely</li>
-  <li>It keeps getting hacked or breaking after updates</li>
-  <li>The business has changed: new services, a new type of customer or a rebrand</li>
-  <li>Visitors get lost because the structure no longer fits what you sell</li>
-  <li>Heavy code or plugins make it slow in ways tuning can't fix</li>
-  <li>You need features, such as bookings or a store, the current setup can't support</li>
-</ul>
-<p>For more warning signs, see <a href="/blog/signs-you-need-a-new-website/">signs your business needs a new website</a>.</p>
-
-<p>Before deciding, list what is actually wrong. <a href="/blog/website-design-mistakes/">Common website design mistakes and how to fix each one</a> groups them into first impressions, mobile and speed, navigation and conversion.</p>
-
-<h2>The 10-minute decision test</h2>
-<p>Run a quick check first; the <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> works well. Then answer these:</p>
-<table>
-  <thead><tr><th>Question</th><th>If yes</th><th>If no</th></tr></thead>
-  <tbody>
-    <tr><td>Does the site work properly on a phone?</td><td>Refresh</td><td>Redesign</td></tr>
-    <tr><td>Can WordPress, the theme and plugins be updated safely?</td><td>Refresh</td><td>Redesign</td></tr>
-    <tr><td>Does the menu still match what you sell?</td><td>Refresh</td><td>Redesign</td></tr>
-    <tr><td>Can you edit content yourself?</td><td>Refresh</td><td>Redesign</td></tr>
-    <tr><td>Can speed be improved without rebuilding pages?</td><td>Refresh</td><td>Redesign</td></tr>
-    <tr><td>Does the site already bring steady enquiries or rankings?</td><td>Refresh, carefully</td><td>Either</td></tr>
-  </tbody>
-</table>
-<p>The first four questions are the core ones. If they all point to a refresh, start there. If two or more point to a redesign, patching the old site is likely to cost more over time than replacing it.</p>
-
-<h2>Three examples</h2>
-<p>These are typical situations rather than specific clients:</p>
-<ul>
-  <li><strong>A CA firm</strong> whose site works on phones and ranks for its city, but has stock photos, an old team list and a long form. A refresh: new photos, updated team and services, a shorter form and a WhatsApp button.</li>
-  <li><strong>A manufacturer</strong> whose site was built years ago on a theme that no longer updates, with a product list that is hard to use on a phone. A redesign, with a catalogue structure built around how buyers search and a redirect for every changed URL.</li>
-  <li><strong>A clinic</strong> that has added treatments and changed its name. A redesign combined with a rebrand, because the structure and the brand both change; <a href="/blog/rebranding-your-website/">rebranding your website</a> covers the extra steps.</li>
-</ul>
-
-<h2>The middle ground: refresh now, redesign in phases</h2>
-<p>You don't always have to choose one. Refresh the pages that matter most, such as the homepage, top services and the contact page, and plan a fuller redesign in stages as budget allows. That gets improvements live sooner and spreads the cost; <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to phase the work.</p>
-<p>If the platform itself is the problem, for example a Wix site you can't extend, a refresh won't solve it; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>. And if the only real complaint is slow pages, speed work on its own may be the right job: see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
-
-<h2>How long each takes, and what drives the cost</h2>
-<p>A refresh is priced on its list of fixes, so the more specific the list, the more accurate the quote. It can often go live page by page, with no switchover day at all. A redesign is priced much like a new build: the number of unique templates, whether the design is custom or an adapted theme, the features, how much content needs restructuring and whether the platform changes. On my redesign projects, most take 1 to 3 weeks once content is ready; large sites, platform moves, heavy rewriting and slow feedback stretch that.</p>
-<p>In both cases your own time matters: gathering photos, checking facts and approving pages. If you collect quotes for both options, make sure each one states exactly what is included; <a href="/blog/compare-website-quotes/">how to compare website quotes</a> gives a line-by-line sheet.</p>
-
-<h2>Protect what already works</h2>
-<ol>
-  <li>Take a full backup and record current traffic, rankings and enquiries from Search Console and GA4 as a baseline.</li>
-  <li>Make changes on a staging copy, not the live site.</li>
-  <li>Keep URLs the same where possible, and 301-redirect any that change to their closest new page.</li>
-  <li>Keep the content that already ranks, and improve it rather than trimming it for a cleaner look.</li>
-  <li>Check Search Console closely for the first few weeks after launch and compare against the baseline.</li>
-</ol>
-<p>The full checklist is in <a href="/blog/redesign-website-without-losing-rankings/">how to redesign without losing Google rankings</a>.</p>
-
-<h2>FAQs</h2>
-<h3>What is a website refresh?</h3>
-<p>A refresh updates an existing website without rebuilding it: new content and photos, design tweaks within the current theme, clearer calls to action and speed improvements. The platform, structure and page addresses stay the same.</p>
-<h3>How do I know if my website needs a redesign?</h3>
-<p>If it doesn't work properly on phones, can't be updated safely, no longer matches what you sell or can't be edited without a developer, a redesign is usually the better investment. If the problems are specific, a refresh is often enough.</p>
-<h3>Is a website refresh cheaper than a redesign?</h3>
-<p>Usually, because the structure, theme and URLs stay in place and the work is limited to a list of fixes. A redesign is priced more like a new build, by templates, design, features and content work.</p>
-<h3>Will a refresh or redesign affect my SEO?</h3>
-<p>A refresh carries little risk if URLs and ranking content stay. A redesign can affect rankings if pages are removed, URLs change without redirects or staging settings go live, which is why a baseline, a redirect map and monitoring matter.</p>
-<h3>How often should a website be redesigned?</h3>
-<p>There's no fixed cycle. Redesign when the signs appear, such as poor mobile use, an unmaintained theme or a changed business, and refresh content and photos regularly in between so the site doesn't date as quickly.</p>
-<h3>Can I refresh my website myself?</h3>
-<p>Much of it, yes: new photos, updated text, reviews and simple button changes in the editor. Theme changes, speed work and anything touching URLs are worth handing to a developer.</p>
-
-<p>Not sure which your site needs? Send me your website address for a free review: you'll get an honest answer on refresh or redesign and a fixed quote for whichever fits; see <a href="/website-redesign/">website redesign</a>. Based in Maharashtra? Meet a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -49477,173 +48022,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 `,
   },
   {
-    slug: 'website-handover-checklist',
-    seoTitle: 'Website Handover Checklist: What to Get at Project End',
-    title: 'Website Handover Checklist: What You Should Receive When Your Website Project Ends, From Logins and Backups to Documentation, Licences and Training',
-    description: 'Website handover checklist: the logins, admin users, backups, documentation, licences, training, source files and analytics to receive at launch.',
-    date: '2026-09-28',
-    updated: '2026-10-19',
-    category: 'Guides',
-    related: ['hire-wordpress-developer', 'wordpress-maintenance'],
-    body: `
-<p>At the end of a website project you should receive working access to every account the site depends on, your own WordPress Administrator login, a full backup stored somewhere you control, a short handover document, training on everyday edits, every licence in your business name, the design and source files, and analytics connected to your own Google account. Check each item yourself before you sign off. What you receive now decides how easily you can run, update and, if needed, move your website for years.</p>
-<p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, the handover is part of the job: a walkthrough on a video call, your logins confirmed, a full backup taken at launch, and any temporary access I used removed unless you keep me on for maintenance. This checklist is written for any project, though, whoever builds your site.</p>
-<p>Handover is different from making sure accounts are registered in your name in the first place; for that, see the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>. Handover is the moment you confirm you've actually received everything.</p>
-
-<h2>Agree the handover before work starts</h2>
-<p>The easiest time to agree what you'll receive is before the project begins. Add a short handover list to your quote or contract, alongside payment terms and ownership; the <a href="/blog/website-design-contract-checklist/">website design contract checklist</a> covers what else to agree. Then, on handover day, you're ticking off a list rather than negotiating.</p>
-
-<h2>The handover checklist at a glance</h2>
-<table>
-  <thead><tr><th>Item</th><th>What you should receive</th><th>How to check</th></tr></thead>
-  <tbody>
-    <tr><td>Accounts</td><td>Access to the domain, DNS, hosting, email and connected services, in your name</td><td>Log in to each one yourself</td></tr>
-    <tr><td>WordPress admin</td><td>Your own Administrator account with your email</td><td>Users &gt; All Users, filtered by Administrator</td></tr>
-    <tr><td>Backups</td><td>A launch backup in your storage, plus a schedule</td><td>Find the file and the schedule; ask when a restore was last tested</td></tr>
-    <tr><td>Documentation</td><td>A short note on how the site is built and run</td><td>Read it: would a new developer understand the site from it?</td></tr>
-    <tr><td>Licences</td><td>Premium themes and plugins licensed to you, with renewal dates</td><td>The licence screens in WordPress, or the vendor accounts</td></tr>
-    <tr><td>Training</td><td>A walkthrough, ideally recorded, and short written notes</td><td>Make a small change yourself while the developer watches</td></tr>
-    <tr><td>Source files</td><td>Design files, logos, original media and any custom code</td><td>Open them; check the code repository if one was used</td></tr>
-    <tr><td>Analytics</td><td>Search Console, GA4 and Business Profile under your Google account</td><td>Check your role in each: Owner or Administrator</td></tr>
-    <tr><td>Support terms</td><td>What's covered after launch, for how long and how to ask</td><td>It's written down, not just agreed on a call</td></tr>
-  </tbody>
-</table>
-
-<h2>Accounts and logins</h2>
-<p>You should receive, or already hold, working access to everything the site depends on:</p>
-<ul>
-  <li>Domain registrar and DNS, including Cloudflare or a similar service if used</li>
-  <li>The hosting control panel, which gives SFTP and database access</li>
-  <li>Business email admin</li>
-  <li>Payment gateway, courier, CRM, booking and email marketing accounts connected to the site</li>
-  <li>Any service used to send website emails (SMTP) or to block spam on forms</li>
-</ul>
-<p>Credentials should be shared securely, ideally through a password manager, not pasted into a WhatsApp chat or email. Log in to each one yourself before you sign off, then change any password that was shared.</p>
-
-<h2>WordPress admin users</h2>
-<ul>
-  <li><strong>Your own Administrator account,</strong> with your business email, not a shared "admin" login.</li>
-  <li><strong>The developer's own account,</strong> separate from yours. If they're maintaining the site, it stays; if not, change it to a lower role or delete it, attributing their content to your account.</li>
-  <li><strong>Staff accounts with the right roles,</strong> usually Editor for people who update content.</li>
-  <li><strong>No unknown users.</strong> Remove test accounts and anyone you don't recognise.</li>
-  <li><strong>Two-factor authentication</strong> on every Administrator account, where the site supports it.</li>
-</ul>
-
-<p>An activity log makes a handover easier to audit, because it shows which accounts made which changes. See <a href="/blog/wordpress-activity-logs/">the WordPress activity log guide</a> for what to record.</p>
-
-<h2>Backups</h2>
-<ul>
-  <li>A full backup, files and database, taken at launch and stored somewhere you control, not only on the same server</li>
-  <li>Automatic backups scheduled, with the frequency and retention written down</li>
-  <li>At least one test restore done, so you know the backups work</li>
-  <li>Instructions for restoring, or the name of whoever will do it</li>
-</ul>
-<p>The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> explains how to check each of these.</p>
-
-<h2>Documentation</h2>
-<p>A short handover document saves hours for you and for any developer who works on the site later. It doesn't need to be long. Something like this is enough:</p>
-<pre><code>WEBSITE HANDOVER NOTE: example.com
-Built with:        WordPress, theme, child theme (yes/no), Elementor or block editor
-Plugins:           name, what it does, free or licensed, whose licence
-Custom code:       where it lives and what it does
-Forms:             each form, who receives the emails, where entries are stored
-Integrations:      payments, WhatsApp, CRM, booking, and the account each uses
-Backups:           tool, schedule, where copies are stored, how to restore
-Caching and CDN:   what is used, how to clear it
-Scheduled tasks:   reminders, imports, feeds
-Do not change:     settings that would break something
-Known limitations: anything left for later
-Support:           who to contact, and on what terms</code></pre>
-<p>Passwords and API keys don't belong in this document. Keep them in your password manager instead.</p>
-
-<h2>Licences and renewals</h2>
-<table>
-  <thead><tr><th>Item</th><th>What to confirm</th></tr></thead>
-  <tbody>
-    <tr><td>Premium theme and page builder</td><td>Whose account holds the licence, the licence key and the renewal date</td></tr>
-    <tr><td>Premium plugins</td><td>The same; a lapsed licence usually means no more updates</td></tr>
-    <tr><td>Fonts and stock images</td><td>That the licence covers use on your business website</td></tr>
-    <tr><td>Domain and hosting</td><td>Renewal dates, auto-renew and the payment method on file</td></tr>
-    <tr><td>Other paid tools</td><td>Plans and who is billed for forms, booking, email or chat services</td></tr>
-  </tbody>
-</table>
-<p>If a licence stays in your developer's name, get that in writing, along with what happens if you part ways. Put every renewal date in a shared calendar; the <a href="/blog/domain-hosting-renewal-checklist/">domain, hosting, email and licence renewals checklist</a> helps you track them.</p>
-
-<h2>Training and a guide for your team</h2>
-<p>You should be able to handle everyday updates without calling your developer. A good handover includes a live walkthrough, ideally recorded, showing how to:</p>
-<ul>
-  <li>Edit text and images on pages</li>
-  <li>Add blog posts, team members, projects or products</li>
-  <li>Update menus and the footer</li>
-  <li>Manage orders, bookings or enquiries, if your site takes them</li>
-  <li>Check form entries and where they go</li>
-  <li>Get a page back from its revisions after a mistake</li>
-</ul>
-<p>Short written notes or screen recordings are useful when a new staff member takes over the website. <a href="/blog/edit-website-content-wordpress/">How to edit your WordPress website content yourself</a> makes a good written companion to the walkthrough.</p>
-
-<h2>Source files and design assets</h2>
-<ul>
-  <li>Design files, such as Figma files, if a designer was involved</li>
-  <li>Logo files in vector formats, plus brand colours and fonts</li>
-  <li>Original photos and videos, not only the compressed versions on the site</li>
-  <li>Custom theme or plugin code, and access to the code repository if one was used</li>
-  <li>Details of any staging site, how to use it, and confirmation that it's hidden from Google</li>
-</ul>
-
-<h2>Analytics, Search Console and tracking</h2>
-<ul>
-  <li><strong>Search Console</strong> verified, with your business Google account as Owner and the sitemap submitted.</li>
-  <li><strong>Google Analytics 4</strong> under your account, with you as Administrator, and form submissions, calls and WhatsApp clicks tracked as key events where they matter.</li>
-  <li><strong>Google Tag Manager,</strong> if used, with your account as Administrator.</li>
-  <li><strong>Google Business Profile</strong> linked to the new site, with you as primary owner.</li>
-  <li><strong>Search engine visibility switched on.</strong> Under Settings &gt; Reading, the option that discourages search engines should be unticked on the live site. It's often left on after a build.</li>
-</ul>
-<p><a href="/blog/setup-google-analytics-search-console/">Setting up GA4 and Search Console</a> explains each step if anything is missing.</p>
-
-<h2>Support terms after launch</h2>
-<p>Launch is rarely the end of small fixes. Before you sign off, be clear about:</p>
-<ul>
-  <li>How long the free bug-fix period lasts and what it covers</li>
-  <li>What counts as a bug and what counts as a new request; see <a href="/blog/website-bug-vs-change-request/">bug or change request?</a></li>
-  <li>How to report problems and the expected response</li>
-  <li>Who is responsible for WordPress, theme and plugin updates from now on</li>
-  <li>Maintenance plan options, if you want ongoing help</li>
-  <li>What happens in an emergency, such as the site going down or being hacked</li>
-</ul>
-
-<h2>Handover sign-off checklist</h2>
-<ol>
-  <li>I've logged in to WordPress, hosting, domain, email and Google accounts myself</li>
-  <li>Shared passwords are changed and stored in our password manager</li>
-  <li>The developer's access is removed or set to the role we agreed</li>
-  <li>I have the handover document and the training recording</li>
-  <li>Licences and renewal dates are listed, with the account each one is under</li>
-  <li>A launch backup is stored in our own storage, and scheduled backups are running</li>
-  <li>Design files, brand assets, original media and any custom code have been delivered</li>
-  <li>Search Console and GA4 are under our account, and search engines aren't blocked</li>
-  <li>Support terms are agreed in writing</li>
-</ol>
-<p>Only when every item is ticked is the project truly finished.</p>
-
-<h2>If your developer won't hand things over</h2>
-<p>Most handover gaps are oversights, and a polite list of what's missing usually fixes them. If a previous developer has gone quiet or refuses, start with the domain, because whoever controls it controls the website and email. <a href="/blog/regain-website-access-old-developer/">Regaining control from a previous developer</a> walks through the recovery, step by step.</p>
-
-<h2>FAQs</h2>
-<h3>What should a website handover include?</h3>
-<p>Access to every account, your own Administrator login, a launch backup you control, documentation, training, licences in your name, design and source files, analytics under your Google account and written support terms.</p>
-<h3>Should my developer keep admin access after launch?</h3>
-<p>Only if they're maintaining the site. Otherwise, change their account to a lower role or remove it, and invite them back when you need them.</p>
-<h3>Do I get the source code of my WordPress website?</h3>
-<p>You should. A full backup contains the WordPress files, theme, plugins and database, and any custom theme or plugin code should be handed over, with repository access if one was used. Who owns the code should be set out in your agreement.</p>
-<h3>What if my developer bought the theme or plugin licences?</h3>
-<p>Ask for them to be transferred to your account if the vendor allows it, or buy your own licence and add it to the site. Otherwise updates can stop when the developer's licence lapses.</p>
-<h3>How should passwords be shared at handover?</h3>
-<p>Through a password manager's sharing feature, not email or WhatsApp. Once you've logged in yourself, change any password that was shared.</p>
-
-<p>Want a developer who hands everything over properly? When you <a href="/hire-wordpress-developer/">hire a WordPress developer</a> through Samverse, you get your own administrator login, a walkthrough, a launch backup and every account in your name. For ongoing help after launch, see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
-`,
-  },
-  {
     slug: 'stock-photos-vs-real-photos',
     seoTitle: 'Stock Photos vs Real Photos for Your Business Website',
     title: 'Stock Photos vs Real Photos: Which Should Your Business Website Use?',
@@ -49713,7 +48091,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>For trades and service businesses such as painters, interior designers, salons, dentists or renovation firms, before-and-after photos are often the most persuasive content on the site. Take the before photo from the same angle and in similar light as the after photo, so the comparison is fair. Add a short caption with the type of job and the area, and keep any client details out unless you have permission. Health and beauty results may also be subject to advertising rules, so check what applies before publishing.</p>
 
 <h2>Real photos for local SEO and Google Business Profile</h2>
-<p>Real photos help beyond the website. Uploading your own photos to your Google Business Profile gives searchers a view of your business before they visit, and keeps the profile active. The guide to <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> lists what to upload.</p>
+<p>Real photos help beyond the website. Uploading your own photos to your Google Business Profile gives searchers a view of your business before they visit, and keeps the profile active. The guide to <a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a> lists what to upload.</p>
 <p>On your website, give each image a descriptive file name and alt text, such as &quot;modular kitchen installation in Baner, Pune&quot;, rather than <code>IMG_4521.jpg</code>. The <a href="/blog/image-seo-guide/">image SEO guide</a> explains how this helps images appear in search.</p>
 
 <h2>Keep photos fast on mobile</h2>
@@ -50572,7 +48950,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Speed checked on a mid-range phone over mobile data</li>
 </ul>
 
-<p>If clients ask for web design or maintenance your team doesn't do in-house, you can still offer it; see <a href="/blog/wordpress-reseller-for-marketing-agencies/">how marketing agencies can resell WordPress development</a> through a partner.</p>
+<p>If clients ask for web design or maintenance your team doesn't do in-house, you can still offer it; see <a href="/blog/white-label-wordpress-development-agencies/">how marketing agencies can resell WordPress development</a> through a partner.</p>
 
 <h2>FAQs</h2>
 <h3>Should a digital marketing agency publish its prices?</h3>
@@ -50680,7 +49058,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Students would rather message than call. Setting the WhatsApp link to open with a ready line, for example "Is a morning shift seat free this month?", saves typing and tells you what they need. Beyond enquiries, WhatsApp handles renewal reminders a few days before the month ends, holiday and maintenance notices, and waitlist updates. Keep a broadcast list only for students who have agreed to receive messages, and keep the website's notice section updated with the same information so new students can find it.</p>
 
 <h2>Google Maps and your Business Profile</h2>
-<p>For a library, the Business Profile is often seen before the website. Choose the closest matching category, set accurate hours (including round-the-clock access only if true), add photos of the hall, cabins and entrance, and link to your plans page. Add new photos when you renovate or add seats; <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a> covers what to upload. Ask students for honest reviews after their first month, and never offer discounts in exchange for them.</p>
+<p>For a library, the Business Profile is often seen before the website. Choose the closest matching category, set accurate hours (including round-the-clock access only if true), add photos of the hall, cabins and entrance, and link to your plans page. Add new photos when you renovate or add seats; <a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a> covers what to upload. Ask students for honest reviews after their first month, and never offer discounts in exchange for them.</p>
 <p>On the website, use the words students search naturally in titles and headings, such as "self study library in {area}", "reading room near {landmark}" or "AC library with cabins in {city}", and keep your name, address and phone consistent with the profile.</p>
 
 <h2>Built to update in minutes</h2>
@@ -50737,7 +49115,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Describe who you help, not who you exclude</li>
   <li>Create separate community or city pages only for communities you know well and can write about in depth; near-identical pages with a name swapped are the doorway pattern explained in <a href="/blog/local-landing-pages-without-doorway-pages/">local landing pages without doorway pages</a></li>
   <li>Offer Hindi or your regional language if families speak it at your office; see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a></li>
-  <li>Use larger text, clear buttons and simple menus, because many visitors are parents; <a href="/blog/website-accessibility-older-users/">making a website easier for older users</a> has practical tips</li>
+  <li>Use larger text, clear buttons and simple menus, because many visitors are parents; <a href="/blog/website-accessibility-basics/">making a website easier for older users</a> has practical tips</li>
 </ul>
 
 <h2>The profile lifecycle, from enquiry to deletion</h2>
@@ -51932,7 +50310,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Perfect hreflang won't rescue a poor translation. Google's spam policies list text translated by an automated tool without human review as an example of low-value, automatically generated content.</p>
 <p>Use native speakers for the pages that matter most, have a fluent reviewer edit any machine translation, and translate the whole experience: SEO titles, descriptions, menus, buttons, form messages and thank-you pages.</p>
 
-<p>Running each language as its own site in a network adds a few extra checks; see <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> for sitemaps, canonicals and domain mapping.</p>
+<p>Running each language as its own site in a network adds a few extra checks; see <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite SEO</a> for sitemaps, canonicals and domain mapping.</p>
 
 <h2>Common hreflang errors</h2>
 <table>
@@ -52018,7 +50396,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Add a few good photos of signature drinks and dishes, compressed for fast loading.</li>
   <li>Note seasonal specials and remove them when they end.</li>
 </ul>
-<p>Build the menu so staff can update it from the WordPress dashboard without touching the design. <a href="/blog/restaurant-menu-on-website/">How to put a restaurant menu on your website</a> covers the options in more detail.</p>
+<p>Build the menu so staff can update it from the WordPress dashboard without touching the design. <a href="/blog/restaurant-website-online-ordering/">How to put a restaurant menu on your website</a> covers the options in more detail.</p>
 
 <h2>Show the space as it really is</h2>
 <p>People choose cafes for the atmosphere as much as the coffee. Use real photos of your seating, counter, outdoor area and any special corners, taken in good light at the time of day you are busiest. Avoid stock images of coffee cups or people who were never in your cafe; regulars notice.</p>
@@ -52165,7 +50543,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li>No autoplay audio or video.</li>
   <li>Clear directions, including floor, lift access and nearby landmarks.</li>
 </ul>
-<p>These also improve the experience for everyone else, and often for search engines. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the essentials, and <a href="/blog/website-accessibility-older-users/">designing for older users</a> goes further.</p>
+<p>These also improve the experience for everyone else, and often for search engines. <a href="/blog/website-accessibility-basics/">Website accessibility basics</a> covers the essentials, and <a href="/blog/website-accessibility-basics/">designing for older users</a> goes further.</p>
 
 <h2>Content that answers the questions families ask</h2>
 <p>Helpful articles bring in people early in their research and show your centre knows its subject. Write about questions you hear every week, in plain language and reviewed by your audiologist:</p>
@@ -52430,7 +50808,7 @@ Support:           who to contact, and on what terms</code></pre>
 <li>Add the video to your Google Business Profile updates where it fits.</li>
 <li>Track clicks from YouTube to your site in GA4 using UTM tags on the links, and look at which videos lead to enquiries.</li>
 </ul>
-<p>Customer video testimonials can work well on the site, provided they are genuine and the customer has agreed; see <a href="/blog/video-testimonials-website/">video testimonials on a website</a>.</p>
+<p>Customer video testimonials can work well on the site, provided they are genuine and the customer has agreed; see <a href="/blog/collect-display-customer-testimonials/">video testimonials on a website</a>.</p>
 
 <h2>Common video SEO mistakes</h2>
 <ul>
@@ -52715,145 +51093,6 @@ Support:           who to contact, and on what terms</code></pre>
 `,
   },
   {
-    slug: 'website-disaster-recovery-plan',
-    seoTitle: 'Website Disaster Recovery Plan for Small Businesses',
-    title: 'Website Disaster Recovery Plan for Small Businesses: A Practical Template',
-    description: 'Build a website disaster recovery plan for a small business: backups, restore tests, access lists, a first-hour checklist and who to call when it breaks.',
-    date: '2026-09-30',
-    updated: '2026-10-28',
-    category: 'Maintenance',
-    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
-    body: `
-<p>Most small businesses only think about website disasters after one has happened: the site is down, a customer is on the phone and nobody can find the hosting login. A disaster recovery plan is simply a short document, written in advance, that answers "what do we do now?" It doesn't need to be long or technical. One or two pages, kept up to date, can turn a stressful week into an afternoon's work.</p>
-
-<h2>What can go wrong</h2>
-<p>Start by listing the realistic problems for your site. For most business websites, they look like this:</p>
-<table>
-  <thead><tr><th>What happens</th><th>Typical cause</th><th>Usual recovery</th></tr></thead>
-  <tbody>
-    <tr><td>Site shows an error after an update</td><td>Plugin, theme or PHP conflict</td><td>Roll back the update or restore a backup</td></tr>
-    <tr><td>Site hacked or redirecting to spam</td><td>Outdated plugin or weak password</td><td>Proper clean-up, then close the entry point</td></tr>
-    <tr><td>Website and email both stop working</td><td>Domain expired or DNS records changed</td><td>Renew the domain, correct the DNS</td></tr>
-    <tr><td>Hosting suspended or server down</td><td>Unpaid bill, resource limits or a host outage</td><td>Contact the host, or restore to new hosting</td></tr>
-    <tr><td>Pages, products or orders deleted</td><td>Human error or a bad import</td><td>Restore from a backup</td></tr>
-    <tr><td>Nobody can log in</td><td>Developer left, lost 2FA phone, forgotten passwords</td><td>Recover access through the account owner</td></tr>
-  </tbody>
-</table>
-<p>For what to check in the moment, see <a href="/blog/website-down-what-to-do/">what to do when your website is down</a>. This plan is about being ready before that moment arrives.</p>
-
-<h2>Decide how much downtime and data loss you can accept</h2>
-<p>Two questions shape the whole plan:</p>
-<ul>
-  <li><strong>How long can the site be offline before it really hurts?</strong> A consultant's brochure site might cope with a day. A WooCommerce store during a Diwali sale, or a clinic taking online appointments, probably can't.</li>
-  <li><strong>How much recent work can you afford to lose?</strong> If you restore yesterday's backup, anything added since (blog posts, orders, form entries) disappears from the website. For a store taking orders all day, that matters far more than for a site that changes once a month.</li>
-</ul>
-<p>Your answers decide how often you back up, how quickly your developer or host needs to respond, and how much it's worth spending on hosting and support.</p>
-
-<h2>Backups and restore testing</h2>
-<ul>
-  <li><strong>Automatic backups of files and database</strong>, at a frequency that matches your answers above</li>
-  <li><strong>At least one copy away from the server</strong>, such as cloud storage, so a hacked or failed server doesn't take your backups with it</li>
-  <li><strong>Several older copies kept</strong>, because hacks and mistakes are sometimes noticed days later</li>
-  <li><strong>An extra backup before every update</strong>, redesign or migration</li>
-</ul>
-<p>Then test. Every few months, restore a backup to a staging copy of the site and check that pages, images, forms and checkout work. Note how long the restore took; that's your realistic recovery time, not a guess. The <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a> covers the details.</p>
-
-<h2>Who does what</h2>
-<p>In a crisis, confusion wastes more time than the technical fix. Write down names, not just job titles, with a backup person for each role:</p>
-<table>
-  <thead><tr><th>Role</th><th>Responsible for</th></tr></thead>
-  <tbody>
-    <tr><td>Decision maker (usually the owner)</td><td>Approving a restore, spending money, deciding what to tell customers</td></tr>
-    <tr><td>Technical lead (developer or maintenance provider)</td><td>Diagnosing the problem, restoring backups, cleaning up hacks</td></tr>
-    <tr><td>Accounts holder</td><td>Logging in to the domain registrar and hosting, raising support tickets</td></tr>
-    <tr><td>Customer communication</td><td>Updating Google Business Profile, social media, WhatsApp and phone staff</td></tr>
-  </tbody>
-</table>
-<p>In a small business, one person may wear several hats. That's fine, as long as everyone knows who makes the final call.</p>
-
-<h2>Keep a contact and access list</h2>
-<p>This is the part most businesses are missing. Keep an up-to-date list of:</p>
-<ul>
-  <li>Domain registrar, hosting company and DNS provider, with account IDs and support contacts</li>
-  <li>Your developer or maintenance provider, with an emergency number</li>
-  <li>Business email provider, payment gateway and any booking or CRM tools connected to the site</li>
-  <li>Where backups are stored and how to reach them</li>
-  <li>Renewal dates for the domain, hosting, SSL and premium plugin licences</li>
-</ul>
-<p>Keep passwords and two-factor recovery codes in a password manager rather than in the plan itself, and make sure at least two trusted people can reach them. If a former developer still controls key accounts, fix that now using the <a href="/blog/website-ownership-checklist/">website ownership checklist</a>.</p>
-
-<h2>The first hour: a simple response order</h2>
-<ol>
-  <li>Confirm the problem from another device and network, and note the time and the exact error</li>
-  <li>Tell the technical lead and the decision maker</li>
-  <li>Stop further changes to the site so data and evidence aren't overwritten</li>
-  <li>Check the obvious: recent updates, domain and hosting renewals, emails from your host</li>
-  <li>Decide whether to fix in place or restore a known-good backup to get back online while the cause is investigated</li>
-  <li>Start customer updates if the outage will last more than a short while</li>
-  <li>Keep a brief log of what was done and when</li>
-</ol>
-<p>If the site was hacked, restoring a backup alone can bring back the same weakness. The way in has to be found and closed too.</p>
-
-<h2>Communicating with customers during downtime</h2>
-<p>Customers are usually forgiving if they know what's happening and can still reach you. Prepare these in advance:</p>
-<ul>
-  <li><strong>A short status message</strong> ready to post on your Google Business Profile, Instagram or Facebook, saying what's affected and how to reach you meanwhile</li>
-  <li><strong>A WhatsApp Business away or greeting message</strong> that points people to phone or WhatsApp orders</li>
-  <li><strong>A simple script for staff</strong> answering calls, so everyone gives the same answer</li>
-  <li><strong>For online stores:</strong> how to handle orders paid during the outage, and whom to contact if UPI or card payments look stuck</li>
-</ul>
-<p>Keep your phone number and WhatsApp independent of the website so enquiries don't stop. If customer data may have been exposed in a hack, take advice promptly on what you may need to report under current rules such as India's DPDP Act, rather than guessing.</p>
-
-<h2>Review and practise the plan</h2>
-<p>Update the plan whenever you change host, developer or key staff, and after every incident. Once a year, run a short drill: can the right people log in to the registrar and host, find the latest backup and restore it to staging? <a href="/blog/uptime-monitoring-explained/">Uptime monitoring</a> helps too, so you hear about problems before your customers do.</p>
-
-<h2>A website disaster recovery plan template</h2>
-<p>Your plan can be a two-page document. Copy this outline and fill it in for your own site:</p>
-<table>
-<thead><tr><th>Section</th><th>What to write</th></tr></thead>
-<tbody>
-<tr><td>Site summary</td><td>Domain, platform (WordPress, WooCommerce or Shopify), host, plan and renewal dates</td></tr>
-<tr><td>Recovery goals</td><td>How long the site can be down and how much data you can lose</td></tr>
-<tr><td>Backups</td><td>What is backed up, how often, where copies live and who checks them</td></tr>
-<tr><td>Access list</td><td>Where logins for domain, hosting, DNS, email and payment gateway are stored</td></tr>
-<tr><td>Contacts</td><td>Developer, host support, domain registrar, payment gateway and the internal owner</td></tr>
-<tr><td>First-hour steps</td><td>The response order from the section above</td></tr>
-<tr><td>Customer message</td><td>A ready-made note for WhatsApp, social media and email</td></tr>
-<tr><td>Review date</td><td>When the plan and the last restore test were checked</td></tr>
-</tbody>
-</table>
-
-<p>If you run a Shopify store, include the DNS records in your access list; <a href="/blog/shopify-domain-not-connecting/">fixing a Shopify domain that will not connect</a> shows which records the store depends on.</p>
-
-<h2>Scenarios to plan for</h2>
-<ul>
-<li><strong>Hacked site:</strong> take the site offline or into maintenance mode, change passwords, and restore from a backup taken before the infection, after finding how attackers got in; see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site is hacked</a>.</li>
-<li><strong>Failed update:</strong> roll back the plugin or restore the pre-update backup, then test the update on staging.</li>
-<li><strong>Hosting suspended or expired:</strong> check billing, renewal and any malware notice from the host.</li>
-<li><strong>Domain expired:</strong> renew immediately with the registrar; keep auto-renew on and contact details current.</li>
-<li><strong>Lost access:</strong> recover through the registrar or host with ownership proof, which is why the access list matters.</li>
-</ul>
-
-<h2>Online stores need extra care</h2>
-<p>A WooCommerce store changes every time someone orders, so a daily backup can lose a day of orders if you restore it. Stores usually need more frequent database backups, and before restoring you should export recent orders so they can be re-entered or reconciled. Your payment gateway dashboard is a useful record of what was paid while the site was down.</p>
-<p>On Shopify, the platform runs the servers, but your theme edits, products and content are still your responsibility. Keep a copy of the theme before edits, export products regularly, and consider a backup app if many people edit the store.</p>
-
-<h2>FAQs</h2>
-<h3>What is a website disaster recovery plan?</h3>
-<p>A short document that says how your website is backed up, who does what when it breaks, where logins are kept and the steps to bring it back online.</p>
-<h3>How often should I back up my website?</h3>
-<p>It depends on how often it changes. A brochure site may need weekly backups; an active store usually needs daily or more frequent database backups.</p>
-<h3>Where should backups be stored?</h3>
-<p>Away from the hosting server, in at least one separate location such as cloud storage, so a server problem does not take the backups with it.</p>
-<h3>How often should I test my disaster recovery plan?</h3>
-<p>Test a restore on a staging copy every few months and after major changes, and review contacts and access details at the same time.</p>
-<h3>Does Shopify need a disaster recovery plan?</h3>
-<p>Yes, a smaller one. Shopify keeps the platform running, but you still need copies of your theme, product data and content, plus account access.</p>
-
-<p>Backups, restore tests and monitoring are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and hacked sites can be cleaned through <a href="/wordpress-malware-removal/">malware removal</a>. To work with someone across the country, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
-`,
-  },
-  {
     slug: 'wordpress-activity-logs',
     seoTitle: 'WordPress Activity Log: Track Who Changed What on Your Site',
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
@@ -52933,7 +51172,7 @@ Support:           who to contact, and on what terms</code></pre>
 
 <h2>Why it helps with teamwork</h2>
 <p>Many business sites are edited by several people: the owner, a marketing executive, an agency and a developer. When something changes unexpectedly, a log replaces guesswork and blame with facts: who changed a price or phone number, which update happened just before a layout broke, and what an agency actually worked on.</p>
-<p>Logs only work when everyone has their own login. With a shared account, every entry just says "admin"; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for giving each person the right access, and <a href="/blog/wordpress-user-accounts-audit/">how to audit your WordPress user accounts</a> to clear out old logins.</p>
+<p>Logs only work when everyone has their own login. With a shared account, every entry just says "admin"; see <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> for giving each person the right access, and <a href="/blog/wordpress-user-roles-explained/">how to audit your WordPress user accounts</a> to clear out old logins.</p>
 
 <h2>Activity log plugins</h2>
 <p>Well-known options include the following. Features and free versus paid limits change, so check each plugin's current listing before choosing:</p>
@@ -52994,131 +51233,6 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Recording admin events adds very little load. Problems come from logging every visitor action or keeping entries forever, so limit what you log and set a retention period.</p>
 
 <p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
-`,
-  },
-  {
-    slug: 'website-accessibility-audit-checklist',
-    seoTitle: 'Website Accessibility Audit Checklist (DIY, WCAG AA)',
-    title: 'Website Accessibility Audit Checklist: A DIY Check for Business Owners in India',
-    description: 'A website accessibility audit checklist to run yourself: keyboard, contrast, zoom, alt text, forms, headings and screen readers, and what to fix first.',
-    date: '2026-09-30',
-    updated: '2026-10-28',
-    category: 'Guides',
-    related: ['wordpress-website-development', 'website-redesign'],
-    body: `
-<p>A website accessibility audit checklist lets you test your own site in an afternoon: run an automated scan, then check keyboard use, colour contrast, zoom, images, forms, headings and a quick screen reader pass on your key pages. Record each problem with who it affects, and fix anything that stops someone completing a task first.</p>
-<p>If you have read <a href="/blog/website-accessibility-basics/">website accessibility basics</a>, you know what an accessible site looks like. This guide is the hands-on next step, written for business owners rather than developers.</p>
-
-<h2>Why an accessibility audit is worth an afternoon</h2>
-<p>Accessible sites work better for everyone: people with low vision or colour blindness, people using only a keyboard, older customers, and anyone using a phone in bright sunlight or on a slow connection. Many of the same fixes also help SEO, because clear headings, descriptive links and alt text help search engines understand pages too.</p>
-<p>In India, accessibility requirements apply most clearly to government websites, while the Rights of Persons with Disabilities Act, 2016 covers accessibility more broadly. If you are unsure what applies to your business, check with a lawyer. Businesses that sell to overseas clients or large companies may also be asked about accessibility in vendor questionnaires.</p>
-
-<h2>Before you start</h2>
-<ul>
-<li><strong>Pick five to eight key pages:</strong> the homepage, a main service or product page, the contact page, a blog post, and any page with a form, booking or checkout.</li>
-<li><strong>Make a simple record:</strong> a spreadsheet with columns for page, problem, who it affects and priority.</li>
-<li><strong>Know the benchmark:</strong> the Web Content Accessibility Guidelines (WCAG) at level AA are what most organisations aim for. The checks below cover the most common problems.</li>
-<li><strong>Run an automated scan first</strong> with Lighthouse in Chrome DevTools or a browser extension such as WAVE or axe DevTools. Automated tools catch only some issues, so the manual checks matter more.</li>
-</ul>
-
-<h2>1. Keyboard check</h2>
-<p>Put the mouse aside and use only the keyboard: Tab to move forward, Shift+Tab to move back, Enter to follow links and Space to press buttons or tick boxes.</p>
-<ul>
-<li>Can you always see where you are? Each link and button should show a clear focus outline.</li>
-<li>Does focus move in a logical order, top to bottom and left to right?</li>
-<li>Can you open and use the menu, including dropdowns and the mobile menu?</li>
-<li>Can you close pop-ups, cookie banners and chat widgets with Esc or a reachable close button, without getting trapped?</li>
-<li>Can you complete the contact form, booking or checkout from start to finish?</li>
-<li>Is there a &quot;Skip to content&quot; link at the first Tab stop?</li>
-</ul>
-
-<h2>2. Colour, contrast and zoom</h2>
-<ul>
-<li>Check body text, buttons, links, placeholder text and text over images with a contrast checker. WCAG AA asks for at least 4.5:1 for normal text and 3:1 for large text.</li>
-<li>Look out for light grey text, white text on pale brand colours, and text over busy photos or sliders.</li>
-<li>Make sure colour is not the only signal: links in paragraphs should be underlined, and form errors should include text, not just a red border.</li>
-<li>Zoom the browser to 200%: does text grow without being cut off or overlapping?</li>
-<li>Zoom to 400% on a desktop: does content reflow into one column without sideways scrolling?</li>
-<li>On your phone, can you pinch to zoom? Some themes disable it.</li>
-</ul>
-<p>Picking accessible brand colours early is easier than fixing them later; see <a href="/blog/choose-website-colours-fonts/">choosing website colours and fonts</a>.</p>
-
-<h2>3. Images and alt text</h2>
-<ul>
-<li>Meaningful images, such as products, team photos and diagrams, need alt text describing what they show.</li>
-<li>Purely decorative images should have empty alt text so screen readers skip them.</li>
-<li>Images containing text, like offer banners, need the same words in the alt text or, better, as real text on the page.</li>
-<li>Icon-only buttons, such as WhatsApp, search or menu icons, need an accessible label.</li>
-</ul>
-<p>In WordPress you can fix alt text in the Media Library. The <a href="/blog/image-seo-guide/">image SEO guide</a> explains how to write alt text that helps both people and search.</p>
-
-<h2>4. Forms</h2>
-<ul>
-<li>Every field has a visible label that stays in place, not just placeholder text that vanishes when you type.</li>
-<li>Required fields are marked in words or with a clear symbol, not only with colour.</li>
-<li>Submit the form with mistakes: do error messages say what went wrong, next to the right field?</li>
-<li>After submitting, is there a clear confirmation message or thank-you page?</li>
-<li>If you use a CAPTCHA, is there an option that does not depend only on reading distorted images?</li>
-</ul>
-<p>Your contact form is often the most important part of the site; see <a href="/blog/contact-form-not-getting-enquiries/">why contact forms don't get enquiries</a> for more fixes.</p>
-
-<h2>5. Headings, links and page structure</h2>
-<ul>
-<li>Each page has one main heading (H1) that says what the page is about.</li>
-<li>Sections use H2 and sub-sections H3, in order, rather than headings picked for their size.</li>
-<li>Link text makes sense on its own, such as &quot;View AC service prices&quot; rather than &quot;click here&quot;.</li>
-<li>The page language is set correctly, especially on Hindi or regional-language pages.</li>
-</ul>
-<p>The WAVE extension shows a page's heading structure at a glance, which makes skipped headings easy to spot.</p>
-
-<h2>6. Screen reader basics</h2>
-<p>Ten minutes with a screen reader is eye-opening. NVDA is a free download for Windows, VoiceOver is built into Macs and iPhones, and TalkBack comes with Android phones, which is what most Indian visitors use.</p>
-<ul>
-<li>Does the homepage start with something meaningful, or a string of unlabelled links and icons?</li>
-<li>Jump between headings: do they outline the page sensibly?</li>
-<li>Do buttons announce what they do, such as &quot;Book appointment&quot;, rather than just &quot;button&quot;?</li>
-<li>Can you fill in and submit your contact form?</li>
-</ul>
-
-<h2>7. Media, motion and time limits</h2>
-<ul>
-<li>Videos with speech have captions, and important videos have a short text summary.</li>
-<li>Sliders and animations can be paused, and nothing flashes rapidly.</li>
-<li>Audio does not autoplay.</li>
-<li>Time-limited steps, such as OTP screens or booking holds, give enough time or a way to extend it.</li>
-</ul>
-
-<h2>8. Mobile and touch checks</h2>
-<p>Most Indian visitors arrive on a phone, so repeat the key checks on one. Are tap targets such as buttons, menu links and form fields large enough and spaced apart, so a thumb does not hit the wrong one? Does the sticky header, WhatsApp button or cookie bar cover content or form fields when the keyboard opens? Can you rotate the phone to landscape without the layout breaking? Are phone numbers and emails tappable links? Is text readable without zooming at normal size, typically around 16px for body text? Test with your phone font size set larger in settings, because many older users do this, and check that text grows rather than overflowing its boxes.</p>
-<p>Also check pages in Hindi or regional scripts, if you have them. Some fonts render conjuncts poorly at small sizes, and fallback fonts can change line height and push buttons out of place. The guide to <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts</a> covers this.</p>
-
-<h2>Store and checkout checks for WooCommerce and Shopify</h2>
-<p>Online stores need a few extra checks: product variation selectors (size, colour) should work by keyboard and announce the chosen option; out-of-stock states should be shown in text, not just greyed out; quantity buttons need labels; and the checkout, including payment gateway pop-ups for UPI or cards, should be completed once by keyboard. On Shopify, many themes are built with accessibility in mind, but apps and custom sections can add problems, so test after installing them.</p>
-
-<h2>Record, prioritise and fix</h2>
-<table>
-<thead><tr><th>Priority</th><th>Examples</th><th>Who usually fixes it</th></tr></thead>
-<tbody>
-<tr><td>Fix first</td><td>Forms you cannot submit by keyboard, pop-ups that trap focus, unlabelled fields, unreadable buttons</td><td>Developer</td></tr>
-<tr><td>Fix soon</td><td>Missing alt text, broken heading order, no visible focus outline, zoom disabled</td><td>Mix of you and a developer</td></tr>
-<tr><td>Improve over time</td><td>Clearer link text, captions for older videos, simpler wording</td><td>You or your content team</td></tr>
-</tbody>
-</table>
-<p>Re-run the audit after major changes and every six months or so. Avoid one-click &quot;accessibility overlay&quot; widgets as a replacement for real fixes; they rarely solve the underlying problems. If many of your customers are older, add the checks in <a href="/blog/website-accessibility-older-users/">making your website easy for older visitors</a>.</p>
-
-<h2>FAQs</h2>
-<h3>What should a website accessibility audit checklist include?</h3>
-<p>An automated scan, then manual checks for keyboard use, contrast and zoom, images and alt text, forms, headings and links, a screen reader pass, media and time limits, and checkout if you sell online.</p>
-<h3>Can I do an accessibility audit without technical skills?</h3>
-<p>Yes. Most checks only need a keyboard, a browser extension and a phone. A developer helps with fixes to themes, menus and focus styles.</p>
-<h3>Which WCAG level should a business website aim for?</h3>
-<p>Most organisations aim for WCAG level AA, which covers the most common barriers without being impractical.</p>
-<h3>Do accessibility overlay plugins make a site compliant?</h3>
-<p>No. They may change how a site looks but rarely fix underlying problems like unlabelled forms or keyboard traps. Fix the site itself.</p>
-<h3>How often should I audit my website for accessibility?</h3>
-<p>After any redesign or major feature, and roughly every six months, plus a quick check whenever you add new forms or pop-ups.</p>
-
-<p>Need help fixing what your audit finds, or want accessibility built in from the start? See <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/website-redesign/">website redesign</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for specific fixes.</p>
 `,
   },
   {
@@ -53274,7 +51388,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Keep the registration form short and ask for documents only if you really check them. Explain how long approval takes, and give a WhatsApp or phone contact for urgent orders.</p>
 <p>Decide who in your team approves accounts and how quickly. A dealer who registers and hears nothing for a week will go back to ordering by phone. A daily check of pending registrations, plus an email alert to the sales person for that region, keeps the process moving. Reject or hold doubtful applications politely with a reason.</p>
 
-<p>When tiers depend on contracts, formulas or data from another system, plugins can run out of options; see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+<p>When tiers depend on contracts, formulas or data from another system, plugins can run out of options; see WooCommerce custom pricing plugin development.</p>
 
 <h2>Setting up price tiers</h2>
 <p>Wholesale plugins usually let you set a price per role on each product or variation, or a global discount by role and category. Things to decide:</p>
@@ -54611,7 +52725,7 @@ Support:           who to contact, and on what terms</code></pre>
     <tr><td>Large site on a VPS</td><td>Server snapshots plus file and database backups to object storage</td></tr>
   </tbody>
 </table>
-<p>For store-specific checks, see the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<p>For store-specific checks, see the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 
 <h2>How to test a restore</h2>
 <ol>
@@ -54779,115 +52893,6 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Yes. A lean WordPress site with a few focused pages loads quickly on mobile data, is easy to update, and can include booking forms, call tracking and local SEO basics.</p>
 
 <p>Need a fast, call-first website for your ambulance service? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build it, see <a href="/wordpress-website-for-doctors/">websites for doctors and healthcare providers</a>, or <a href="/landing-page-design/">landing page design</a> if you run ads. Services across the country can also see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
-`,
-  },
-  {
-    slug: 'website-for-specialist-doctors',
-    seoTitle: 'Website for Specialist Doctors in India: What to Include',
-    title: 'Websites for Specialist Doctors in India: Credentials, Procedures, Hospitals and Second Opinions',
-    description: 'What a website for specialist doctors in India needs: verifiable credentials, procedure pages, hospital and insurance details, second opinions and booking.',
-    date: '2026-10-01',
-    updated: '2026-10-28',
-    category: 'Industries',
-    related: ['wordpress-website-for-doctors', 'wordpress-seo-services'],
-    body: `
-<p>A website for a specialist doctor in India has one job: help a worried patient, or their family, decide that you are the right doctor for their specific problem and book a consultation. That means verifiable credentials, clear pages for the conditions and procedures you handle, the hospital where you operate, and an easy way to book or ask for a second opinion.</p>
-<p>Patients rarely find a specialist by chance. A family doctor has suggested an orthopaedic surgeon, a check-up has flagged something for a cardiologist, or a pregnancy needs a gynaecologist the family can trust. By the time they reach your site, they are comparing you with two or three other names, and often a son or daughter in another city is doing the research for a parent. For timings, maps and the other basics every practice needs, start with the <a href="/blog/clinic-website-checklist-for-doctors/">clinic website checklist</a>.</p>
-
-<h2>What patients check before choosing a specialist</h2>
-<ul>
-<li>Is this doctor experienced in my specific problem, not just the broad speciality?</li>
-<li>Do they perform the procedure I have been told I may need?</li>
-<li>Which hospital would I be admitted to, and does it accept my insurance or cashless scheme?</li>
-<li>Can I get a second opinion before deciding on surgery?</li>
-<li>When and where can I see the doctor, and how do I book?</li>
-</ul>
-<p>Your site should answer each of these within a click or two of the homepage, and on a phone, because that is where most of this research happens.</p>
-
-<h2>Credentials that are specific and verifiable</h2>
-<p>Specialists have years of training behind them, and patients want to see it laid out clearly:</p>
-<ul>
-<li><strong>Degrees in full,</strong> such as MS (Orthopaedics), DM (Cardiology), MD or MS (Obstetrics and Gynaecology) or DNB, with the institution</li>
-<li><strong>Medical council registration number,</strong> so patients and referring doctors can verify it</li>
-<li><strong>Fellowships and special training,</strong> for example in joint replacement, interventional cardiology or high-risk pregnancy</li>
-<li><strong>Memberships</strong> of professional societies you genuinely belong to</li>
-<li><strong>Hospital affiliations</strong> and any teaching or academic roles</li>
-</ul>
-<p>Keep it factual. A clear list of qualifications reads as more trustworthy than adjectives like "best" or "top". Medical advertising in India is governed by professional conduct rules, so avoid claims of guaranteed results, comparisons with other doctors and patient-facing superlatives, and check the current rules with your medical council or association if you are unsure.</p>
-<p>The <a href="/work/dr-nitish-gupta-pulmonologist/">pulmonologist website in Agra</a> I built follows this pattern: a doctor profile covering education, a past academic role and memberships of national and international chest societies, placed where patients look before they book.</p>
-
-<h2>Pages for conditions and procedures</h2>
-<p>A single "Services" list with twenty items helps nobody. Give the main conditions and procedures their own sections or pages, written for patients rather than colleagues:</p>
-<ul>
-<li>What the condition or procedure is, in plain words</li>
-<li>Who it is usually suitable for, and when other options are tried first</li>
-<li>What happens before, during and after, including tests and hospital stay</li>
-<li>Typical recovery steps and follow-up visits</li>
-<li>Where it is done: clinic, day-care unit or partner hospital</li>
-</ul>
-<p>These pages also help search. A family searching for "knee replacement surgeon in Pune" or "bronchoscopy in Agra" is more likely to land on a focused page than a generic homepage. The pulmonology site, for example, has dedicated sections for bronchoscopy, diseases and diagnostics, explaining tests such as pulmonary function tests, polysomnography and the six-minute walk test in patient-friendly language.</p>
-
-<h2>What each speciality usually needs</h2>
-<table>
-<thead><tr><th>Speciality</th><th>Pages patients look for</th></tr></thead>
-<tbody>
-<tr><td>Orthopaedics</td><td>Joint replacement, sports injuries, spine, fracture care, recovery and physiotherapy</td></tr>
-<tr><td>Cardiology</td><td>Angiography and angioplasty, heart check-ups, ECG and echo, follow-up care</td></tr>
-<tr><td>Gynaecology and obstetrics</td><td>Pregnancy care, high-risk pregnancy, delivery options, laparoscopy</td></tr>
-<tr><td>Pulmonology</td><td>Asthma and COPD, sleep studies, bronchoscopy, lung function tests, TB care</td></tr>
-<tr><td>Dentistry</td><td>Root canal, implants, braces and aligners, crowns, full mouth rehabilitation</td></tr>
-<tr><td>Dermatology</td><td>Acne, pigmentation, hair loss, procedures and what to expect</td></tr>
-</tbody>
-</table>
-<p>For more on individual specialities, see the guides for <a href="/blog/website-for-dermatology-skin-clinics/">dermatology and skin clinics</a> and <a href="/blog/website-for-eye-clinics-opticians/">eye clinics</a>.</p>
-
-<h2>Hospitals, insurance and practical details</h2>
-<p>Many specialists consult in their own clinic and operate or admit at one or more hospitals. Make this clear:</p>
-<ul>
-<li>A list of where you consult and on which days, with addresses and maps</li>
-<li>The hospitals where procedures are done</li>
-<li>A note on insurance: which hospitals offer cashless treatment, and that patients should confirm with the hospital desk and their insurer</li>
-<li>What to bring to a first visit: previous reports, scans, prescriptions and referral letters</li>
-</ul>
-<p>Families travelling from smaller towns appreciate directions, parking notes and nearby landmarks. These details reduce phone calls asking the same questions.</p>
-
-<h2>Second opinions and online consultations</h2>
-<p>Patients told they need surgery often want another view first. If you offer second opinions, say so clearly and explain how it works: which reports to send, whether it is an in-person or video consultation, and how long a reply usually takes. A simple form where patients can describe their situation and request a call can be set up, with a clear note not to use it for emergencies.</p>
-<p>If you consult online, explain how booking, payment and the call itself work. Keep any report uploads private and limited to what you need, and ask a lawyer about current data protection obligations for health information.</p>
-
-<h2>Booking, calls and WhatsApp</h2>
-<p>A specialist site should make the next step obvious on every page. The <a href="/work/dr-sunaina-dental-care/">dental clinic website in Agra</a> uses a "Book Now" button beside a short menu, a dedicated appointment page, a contact form, and click-to-chat WhatsApp and click-to-call buttons, so a patient on any page ends next to a way to get in touch. The same approach works for any speciality.</p>
-<ul>
-<li>A visible "Book appointment" button in the header</li>
-<li>Click-to-call and WhatsApp for families who prefer to talk</li>
-<li>A short form asking for name, phone, concern and preferred location</li>
-<li>A confirmation message so patients know the request arrived</li>
-</ul>
-<p>For tips on chat buttons, read <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to a business website</a>.</p>
-
-<h2>Local search for specialists</h2>
-<p>Patients usually search with a city or area. Keep your Google Business Profile complete for each clinic, with the correct speciality category, timings and photos, and respond to reviews politely without sharing any patient details. On the site, mention each consulting location by name and keep phone numbers identical everywhere. If you consult in several cities, give each location its own section with timings and a map.</p>
-
-<h2>Answer the questions patients ask at every visit</h2>
-<p>Every specialist hears the same questions again and again: is this procedure painful, how long will I be in hospital, when can I return to work, can I travel after it, do I need to stop my regular medicines. Writing short, factual answers to these on your site helps patients arrive better prepared and gives families something to read together before deciding.</p>
-<p>An FAQ section on each procedure page works well, and a general FAQ covering booking, reports and parking handles the practical questions. The dental clinic site, for example, includes an FAQ answering common questions about pain, booking and location. Keep answers general, avoid promising outcomes, and add a line asking patients to discuss their own case at consultation. A site search, like the one on the pulmonology site, helps patients find the right answer quickly once you have many pages. For writing answers that also help search, see <a href="/blog/faq-page-seo/">FAQ pages for SEO</a>.</p>
-
-<h2>Speed, privacy and upkeep</h2>
-<p>Many patients and their parents browse on mid-range phones and patchy mobile data, so keep pages light, compress photos and avoid heavy sliders. Use HTTPS throughout, keep forms short, and do not ask for more health information than you need to arrange a call. Finally, keep the site current: a wrong timing or an old hospital address costs trust quickly, so update locations and days whenever they change.</p>
-
-<h2>FAQs</h2>
-<h3>What should a website for specialist doctors include?</h3>
-<p>Full credentials and registration, pages for the main conditions and procedures, consulting locations and hospital affiliations, second-opinion details, and easy booking with call and WhatsApp options.</p>
-<h3>Can doctors in India show patient testimonials on their website?</h3>
-<p>Rules on medical advertising and testimonials can change, so check the current guidance from your medical council or association before publishing them. Factual information about qualifications and services is the safer foundation.</p>
-<h3>Should a specialist publish consultation fees?</h3>
-<p>It is your choice. Some doctors list consultation fees to reduce calls; others explain what a first visit includes and share fees on booking. Procedure costs vary by case and hospital, so explain what affects them instead.</p>
-<h3>Is WordPress suitable for a doctor's website?</h3>
-<p>Yes. WordPress lets you update timings, locations and condition pages yourself, and appointment forms, WhatsApp buttons and site search can be added as needed.</p>
-<h3>How many pages does a specialist website need?</h3>
-<p>Start with home, about the doctor, the main conditions and procedures, locations and booking. Add pages over time for the questions patients ask most often at consultations.</p>
-
-<p>If you are a specialist planning a new site or a redesign, see <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>. I am based in Pune and work with doctors across India, including Agra; you can <a href="/wordpress-shopify-developer-agra/">hire a WordPress developer in Agra</a> or start from the <a href="/wordpress-developer-pune/">Pune developer page</a>.</p>
 `,
   },
   {
@@ -56106,7 +54111,7 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>Thin archive pages indexed:</strong> tag, author and date archives often add nothing and should usually be set to noindex.</li>
 <li><strong>Sitemap not submitted:</strong> submit the sitemap URL in Search Console and check it is read without errors. See <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</li>
 <li><strong>Wrong organisation details:</strong> business name, logo and contact details in the schema settings should match your Google Business Profile.</li>
-<li><strong>Search engine visibility box ticked:</strong> the WordPress setting that discourages search engines is sometimes left on after launch. The guide on a <a href="/blog/wordpress-site-not-showing-on-google/">WordPress site not showing on Google</a> covers this.</li>
+<li><strong>Search engine visibility box ticked:</strong> the WordPress setting that discourages search engines is sometimes left on after launch. The guide on a <a href="/blog/get-website-indexed-google-faster/">WordPress site not showing on Google</a> covers this.</li>
 </ol>
 
 <h2>How to switch SEO plugins without losing data</h2>
@@ -56191,7 +54196,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Most uniform websites show a few stock images and a phone number. Buyers want more. For each product, show real photos from your production, available colours, fabric options, size range and customisation possibilities. A fabric page that explains blends, weights and care in simple terms helps a school principal or hotel manager choose without needing to visit.</p>
 <p>Keep product titles specific, such as a cotton-blend chef coat with contrast piping, rather than generic names. This helps both buyers and search. The guide on <a href="/blog/industrial-website-product-catalogue/">industrial product catalogues</a> covers catalogue structure in more detail.</p>
 
-<p>Pricing that changes by school, size range and order quantity may need custom rules; see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
+<p>Pricing that changes by school, size range and order quantity may need custom rules; see <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce custom pricing plugin development</a>.</p>
 
 <h2>Sampling, bulk quotes and minimum order quantities</h2>
 <p>Bulk buyers rarely order without seeing a sample. Make the sample process clear:</p>
@@ -56514,7 +54519,7 @@ Support:           who to contact, and on what terms</code></pre>
 </ol>
 <p>Review the sources of applications every month. If a campaign brings many enquiries but few outlet visits, the issue may be the ad message, the form questions or the follow-up speed rather than the website itself.</p>
 
-<p>Brands that give each franchisee its own subsite often use a network install. Read about <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> before choosing that structure.</p>
+<p>Brands that give each franchisee its own subsite often use a network install. Read about <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite SEO</a> before choosing that structure.</p>
 
 <h2>Landing pages, SEO and speed</h2>
 <ul>
@@ -57039,7 +55044,7 @@ Support:           who to contact, and on what terms</code></pre>
 <p>Hotels, resorts and homestays that run their own walks or tours need room pages and booking enquiries as well; see <a href="/hotel-website-design/">hotel and homestay website design</a>.</p>
 
 <h2>How it fits with travel businesses</h2>
-<p>If you also run multi-day tours, transport or packages, your site starts to look more like a travel agency site. <a href="/blog/website-for-travel-agencies/">Websites for travel agencies</a> covers itineraries and package pages, and <a href="/blog/website-for-homestays-bnbs/">websites for homestays</a> is useful if you host guests as well.</p>
+<p>If you also run multi-day tours, transport or packages, your site starts to look more like a travel agency site. <a href="/blog/website-for-travel-agencies/">Websites for travel agencies</a> covers itineraries and package pages, and <a href="/blog/hotel-website-direct-bookings/">websites for homestays</a> is useful if you host guests as well.</p>
 
 <h2>FAQs</h2>
 <h3>What should a website for tour guides and heritage walks include?</h3>
@@ -57237,7 +55242,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li><strong>A quote basket</strong> for distributors with many SKUs, letting buyers add several products and quantities and send one request.</li>
 </ul>
 
-<p>File uploads, conditional fields and multi-step layouts are easier in some plugins than others; see <a href="/blog/gravity-forms-vs-contact-form-7/">Gravity Forms vs Contact Form 7</a> before building a detailed RFQ form.</p>
+<p>File uploads, conditional fields and multi-step layouts are easier in some plugins than others; see <a href="/blog/wordpress-form-plugins-compared/">Gravity Forms vs Contact Form 7</a> before building a detailed RFQ form.</p>
 
 <h2>File uploads: drawings, BOMs and specs</h2>
 <p>Engineering and fabrication buyers often have drawings, a bill of materials or a tender document. Allow uploads of PDF, DWG, DXF, STEP and spreadsheet files, with a clear size limit. For large files, offer a field for a shared link instead. Store uploads securely and make sure they reach the sales team, not just the website's media folder. Some buyers send confidential designs, so mention how you handle them, and offer an NDA if that is your practice.</p>
@@ -57685,7 +55690,7 @@ Support:           who to contact, and on what terms</code></pre>
 <li><strong>Too many signals:</strong> a model nobody can remember will not be used</li>
 <li><strong>Scoring on assumptions:</strong> base points on your own past enquiries, not on what you think a good customer looks like</li>
 <li><strong>Long forms to collect every signal:</strong> each extra field can cost enquiries, so ask only what changes your response</li>
-<li><strong>Slow follow-up for hot leads:</strong> a high score is worth little if nobody calls until the next day; see <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a></li>
+<li><strong>Slow follow-up for hot leads:</strong> a high score is worth little if nobody calls until the next day; see <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a></li>
 </ul>
 
 <h2>FAQs</h2>
@@ -57956,136 +55961,6 @@ Support:           who to contact, and on what terms</code></pre>
 `,
   },
   {
-    slug: 'image-compression-plugins-compared',
-    seoTitle: 'Best Image Compression Plugin for WordPress: Compared',
-    title: 'WordPress Image Compression Plugins Compared: ShortPixel, Imagify, EWWW and Smush',
-    description: 'Best image compression plugin for WordPress? ShortPixel, Imagify, EWWW and Smush compared on WebP, AVIF, bulk optimisation, local vs cloud and setup.',
-    date: '2026-10-01',
-    updated: '2026-10-29',
-    category: 'Speed',
-    related: ['wordpress-speed-optimization', 'woocommerce-developer'],
-    body: `
-<p>The best image compression plugin for WordPress depends on your site, but ShortPixel, Imagify, EWWW Image Optimizer and Smush are the four most commonly used, and all of them can shrink images, convert to WebP and optimise an existing media library in bulk. The main differences are where compression happens (on their cloud or your server), how they handle WebP and AVIF, how pricing and quotas work, and how much control you get.</p>
-<p>This comparison explains those differences in plain terms so you can choose one, set it up safely, and avoid common mistakes. Features and plans change, so always check each plugin&#39;s current details before buying.</p>
-
-<h2>Why image compression matters for Indian websites</h2>
-<p>Images are usually the heaviest part of a web page. Many visitors in India browse on mobile data, sometimes with patchy signal, so large photos slow down pages, hurt Core Web Vitals such as Largest Contentful Paint, and push people away before they see your products or services.</p>
-<p>Compression reduces file size while keeping images looking good. Done well, visitors rarely notice the difference in quality, but pages load faster. It helps most on image-heavy sites: online stores, portfolios, hotels, restaurants, <a href="/real-estate-website-design/">real estate</a> and interior designers.</p>
-
-<h2>Best image compression plugin for WordPress: quick comparison</h2>
-<table>
-<thead><tr><th>Plugin</th><th>Where compression happens</th><th>Next-gen formats</th><th>Good fit for</th></tr></thead>
-<tbody>
-<tr><td>ShortPixel</td><td>Cloud (their servers)</td><td>WebP and AVIF</td><td>Sites wanting strong compression with many options and credits-based plans</td></tr>
-<tr><td>Imagify</td><td>Cloud</td><td>WebP and AVIF in recent versions</td><td>Users who want a simple interface; pairs naturally with WP Rocket from the same company</td></tr>
-<tr><td>EWWW Image Optimizer</td><td>Local on your server, with optional cloud plans</td><td>WebP, and AVIF with its paid service</td><td>Developers and sites on hosting that allows local tools</td></tr>
-<tr><td>Smush</td><td>Cloud (free and Pro tiers)</td><td>WebP and AVIF in Pro</td><td>Beginners wanting a free start with lazy loading and resizing included</td></tr>
-</tbody>
-</table>
-<p>All four support bulk optimisation of existing images and automatic compression of new uploads. Check the current version notes for exact format support, file size limits and free tier rules, because these change over time.</p>
-
-<h2>ShortPixel</h2>
-<p>ShortPixel compresses images on its own servers and returns the optimised files to your site. It offers lossy, glossy and lossless modes, so you can choose how aggressive the compression is. It can create WebP and AVIF versions and serve them via the picture tag or server rules.</p>
-<ul>
-<li><strong>Strengths</strong>: strong compression options, next-gen format support, backups of originals, works on most hosting because processing is off-site.</li>
-<li><strong>Things to know</strong>: plans are based on image credits, and each thumbnail size can count, so large libraries with many sizes use credits faster. Check current plans.</li>
-</ul>
-
-<h2>Imagify</h2>
-<p>Imagify is made by the team behind WP Rocket. It offers a clean interface with a few compression levels and can create WebP and, in newer versions, AVIF images.</p>
-<ul>
-<li><strong>Strengths</strong>: simple to set up, fits well if you already use WP Rocket, can resize large uploads automatically.</li>
-<li><strong>Things to know</strong>: plans and quotas are based on usage; check what the free tier covers before bulk optimising a big library.</li>
-</ul>
-
-<h2>EWWW Image Optimizer</h2>
-<p>EWWW can compress images locally on your own server using built-in tools, which means no external quota for basic compression. It also offers paid cloud compression and an image CDN service.</p>
-<ul>
-<li><strong>Strengths</strong>: free local compression, many settings for developers, good for sites that prefer not to send images to an outside service.</li>
-<li><strong>Things to know</strong>: local compression uses your server&#39;s CPU, which can be slow or restricted on some shared hosting. Some advanced features need the paid service.</li>
-</ul>
-
-<h2>Smush</h2>
-<p>Smush, from WPMU DEV, is popular with beginners. The free version includes compression, resizing of large uploads and lazy loading. Smush Pro adds stronger compression, WebP and AVIF conversion and a CDN.</p>
-<ul>
-<li><strong>Strengths</strong>: easy setup, useful free features in one place.</li>
-<li><strong>Things to know</strong>: the strongest compression and format features are in Pro. If your theme or caching plugin already lazy-loads images, turn off one of them to avoid doubling up.</li>
-</ul>
-
-<h2>Lossy vs lossless: which to choose</h2>
-<ul>
-<li><strong>Lossless</strong> removes extra data without changing pixels. Savings are smaller, quality is identical.</li>
-<li><strong>Lossy</strong> removes some image detail. Savings are much larger, and at sensible settings most visitors cannot see the difference.</li>
-<li><strong>Glossy or balanced modes</strong>, where offered, sit in between and suit photography and product images.</li>
-</ul>
-<p>For most business websites, lossy or balanced compression works well. Use lossless for images where fine detail matters, such as technical drawings, and check a few product photos closely after optimising.</p>
-
-<h2>WebP and AVIF</h2>
-<p>WebP and AVIF are modern formats that are usually smaller than JPEG or PNG at similar quality. Current browsers support WebP widely, and AVIF support is broad in modern browsers. Plugins handle delivery in two main ways:</p>
-<ol>
-<li><strong>Picture tag</strong>: the plugin rewrites image HTML so browsers choose the best format. Works on most hosting.</li>
-<li><strong>Server rewrite rules</strong>: the server sends WebP or AVIF when the browser supports it. Faster, but depends on hosting setup and can conflict with some CDNs.</li>
-</ol>
-<p>After enabling next-gen formats, test your pages in a browser&#39;s developer tools to confirm the WebP or AVIF version is actually being served.</p>
-
-<h2>How to set up image compression safely</h2>
-<ol>
-<li><strong>Take a full backup</strong> of the site, including the uploads folder.</li>
-<li><strong>Install one compression plugin</strong>. Running two at once causes double compression and conflicts.</li>
-<li><strong>Enable backup of originals</strong> if the plugin offers it, so you can restore if quality is not right.</li>
-<li><strong>Set a maximum upload size</strong>, such as resizing very large uploads to a sensible width for your theme.</li>
-<li><strong>Choose compression level</strong> and test on a few images first.</li>
-<li><strong>Turn on WebP or AVIF</strong> and check delivery.</li>
-<li><strong>Run bulk optimisation</strong> on the existing library, ideally at a quiet time.</li>
-<li><strong>Check key pages</strong> on mobile and desktop for quality and layout.</li>
-</ol>
-<p>Also review how many thumbnail sizes WordPress, your theme and plugins generate. Unused sizes waste storage and, with credit-based plugins, use up quota.</p>
-
-<p>Browser and CDN caching decide how often those images are downloaded again. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers page, browser and CDN caching.</p>
-
-<h2>Compression is only part of image speed</h2>
-<p>Even perfectly compressed images can slow a page if they are used badly. Also check:</p>
-<ul>
-<li><strong>Correct dimensions</strong>: do not upload a very wide photo for a small thumbnail.</li>
-<li><strong>Lazy loading</strong> for images below the fold, but not for the main hero image. See <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</li>
-<li><strong>Width and height attributes</strong> to prevent layout shift.</li>
-<li><strong>A CDN</strong> to serve images from locations closer to visitors. See <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</li>
-<li><strong>Good hosting</strong>, because a slow server delays everything, including images.</li>
-</ul>
-<p>The broader guide to <a href="/blog/image-optimization-wordpress/">image optimisation in WordPress</a> covers each step, and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> shows how images affect scores.</p>
-
-<h2>WooCommerce and large stores</h2>
-<p>Online stores often have thousands of product images with many sizes each. Before bulk optimising, estimate the total number of images including thumbnails, check the plugin&#39;s quota, and run optimisation in batches. Make sure product zoom and gallery images still look sharp. The guide to <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> covers other store-specific fixes.</p>
-<p>If you are on Shopify, image compression works differently: Shopify serves images through its own CDN and generates sized versions automatically, so the main tasks are uploading sensibly sized images and keeping theme code from loading oversized versions.</p>
-
-<p>Running two optimisation plugins at once is a common cause of broken images and errors. If that happens, see how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> step by step.</p>
-
-<h2>Common mistakes</h2>
-<ul>
-<li>Running two compression plugins, or a compression plugin plus a host feature doing the same job.</li>
-<li>Bulk optimising without a backup.</li>
-<li>Choosing the most aggressive setting for product photos without checking quality.</li>
-<li>Enabling WebP but never checking whether it is actually served.</li>
-<li>Uploading screenshots or graphics as large PNG files when a compressed WebP or JPEG would look the same.</li>
-<li>Expecting compression alone to fix a slow site with heavy themes, many plugins or poor hosting.</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>What is the best image compression plugin for WordPress?</h3>
-<p>There is no single best for every site. ShortPixel and Imagify suit people who want cloud compression with simple setup, EWWW suits sites that prefer local processing, and Smush suits beginners wanting a free start. Choose based on format needs, library size and budget.</p>
-<h3>Can I use two image compression plugins together?</h3>
-<p>No. Use one. Two plugins can compress the same image twice, reduce quality and cause conflicts.</p>
-<h3>Will image compression reduce quality?</h3>
-<p>Lossless compression does not change pixels. Lossy compression removes some detail, but at sensible settings most visitors do not notice. Test on key images first.</p>
-<h3>Do I need WebP images in WordPress?</h3>
-<p>WebP usually gives smaller files than JPEG or PNG at similar quality and is widely supported, so it is worth enabling through your compression plugin and checking that it is served.</p>
-<h3>Does Shopify need an image compression app?</h3>
-<p>Often not. Shopify serves resized images through its CDN. Upload sensibly sized images and check your theme; an app may help with very large original files.</p>
-
-<p>If your WordPress or WooCommerce site is still slow after compressing images, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to review images, theme and hosting together. You can also read <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
-`,
-  },
-  {
     slug: 'website-for-wedding-choreographers',
     seoTitle: 'Website for Wedding Choreographers: Sangeet Bookings Guide',
     title: 'Website for Wedding and Sangeet Choreographers: Videos, Packages, Sessions and Enquiries',
@@ -58281,7 +56156,7 @@ Support:           who to contact, and on what terms</code></pre>
   <li>Whether prasad is sent by post afterwards, to which areas and at what charge, only if you offer it</li>
 </ol>
 
-<p>If many of your families read Marathi, <a href="/blog/marathi-website-design/">building a website in Marathi</a> explains fonts, translation checks and how to add Marathi pages on WordPress.</p>
+<p>If many of your families read Marathi, <a href="/blog/multilingual-wordpress-website-hindi-english/">building a website in Marathi</a> explains fonts, translation checks and how to add Marathi pages on WordPress.</p>
 
 <h2>Languages, traditions and regions</h2>
 <p>Many families want a pandit who follows their regional practice and can explain the ritual in their language. Say precisely which traditions and languages you work in, for example Marathi, Hindi, Telugu or Bengali, and which areas you travel to. Avoid listing languages you cannot actually conduct a puja in.</p>
@@ -59680,7 +57555,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <h2>Enquiry forms, WhatsApp and response time</h2>
 <p>Keep the family enquiry form short: name, phone, area, role needed, live-in or hourly, and preferred start date. Anything more can be asked on the call. Add a WhatsApp button so busy parents can message during work hours. See <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to a business website</a>.</p>
-<p>Speed matters in this business. A family that enquires in the evening may have called three agencies by morning. Set up instant email or WhatsApp notifications for every form, and reply quickly. The guide on <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> has practical ideas.</p>
+<p>Speed matters in this business. A family that enquires in the evening may have called three agencies by morning. Set up instant email or WhatsApp notifications for every form, and reply quickly. The guide on <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a> has practical ideas.</p>
 <p>Keep the worker registration form separate from the family form, so the two lists never mix and each gets the right follow-up.</p>
 
 <h2>Handling personal data responsibly</h2>
@@ -59778,7 +57653,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <h2>Gated brochures and lead capture</h2>
 <p>Some businesses ask for a name and phone number before the brochure downloads. This can produce leads, but a gated PDF is not indexed and some visitors leave rather than fill the form. A middle path is to keep the main content on the page, ungated, and offer the full detailed catalogue or price list in exchange for contact details.</p>
-<p>If you go this way, keep the form short and send the file instantly by email or WhatsApp. The guide to <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> covers how to make the offer worth it, and <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> covers what happens next.</p>
+<p>If you go this way, keep the form short and send the file instantly by email or WhatsApp. The guide to <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> covers how to make the offer worth it, and <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a> covers what happens next.</p>
 
 <h2>Checking whether your PDFs are indexed</h2>
 <p>Search Google for <code>site:yourdomain.com filetype:pdf</code> to see which PDFs are indexed. In Google Search Console, the URL Inspection tool works for PDF URLs too, and the Pages report lists PDFs alongside HTML pages. If an important brochure is missing, check that it is linked from a crawlable page, is not blocked by robots.txt, and contains real text.</p>
@@ -60050,7 +57925,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>The best Hindi fonts for a website are Unicode Devanagari fonts that stay readable at small sizes on phones, pair well with your English font and load quickly. Use real Unicode text, never images of Hindi or old non-Unicode fonts, give Hindi a slightly larger size and more line height than English, and load only the weights you need.</p>
 <p>This guide covers choosing, pairing, sizing and loading Devanagari fonts, setting them up in WordPress and testing them. It applies to Hindi, Marathi and other languages written in Devanagari, which many Indian business, education, government-facing and community websites need.</p>
 
-<p>The same rules apply to Marathi. If you are planning a site mainly for Maharashtra customers, see <a href="/blog/marathi-website-design/">Marathi website design</a> for language structure, URLs and Marathi SEO.</p>
+<p>The same rules apply to Marathi. If you are planning a site mainly for Maharashtra customers, see <a href="/blog/multilingual-wordpress-website-hindi-english/">Marathi website design</a> for language structure, URLs and Marathi SEO.</p>
 
 <h2>Start with Unicode text, not images or legacy fonts</h2>
 <p>Some older Hindi websites still use legacy fonts where Hindi characters are mapped onto English letter codes, or images of Hindi text. Both cause problems:</p>
@@ -60100,7 +57975,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     <tr><td>Bold</td><td>Fine for emphasis</td><td>Use a real bold weight, not a faked one</td></tr>
   </tbody>
 </table>
-<p>Treat these as starting points and adjust by eye on real devices. Avoid all-caps styling, letter spacing and very light weights on Devanagari. Larger sizes and good contrast also help older readers; <a href="/blog/website-accessibility-older-users/">website accessibility for older users</a> has more on that.</p>
+<p>Treat these as starting points and adjust by eye on real devices. Avoid all-caps styling, letter spacing and very light weights on Devanagari. Larger sizes and good contrast also help older readers; <a href="/blog/website-accessibility-basics/">website accessibility for older users</a> has more on that.</p>
 
 <h2>Loading Devanagari fonts efficiently</h2>
 <p>Devanagari font files are larger than Latin-only fonts because they contain many more glyphs. On Indian mobile networks this matters. To keep pages fast:</p>
@@ -60447,239 +58322,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually email delivery problems, spam filtering or form plugin errors. Set up SMTP, test the form regularly and store submissions on the site as a backup.</p>
 
 <p>If you want a contact page and website built around enquiries, see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
-`,
-  },
-  {
-    slug: 'meet-the-team-page',
-    seoTitle: 'How to Create a Meet the Team Page for a Small Business',
-    title: 'How to Create a Meet the Team Page for a Small Business',
-    description: 'How to create a meet the team page for a small business in India: who to include, real photos, honest bios, staff consent, and what to do if you work solo.',
-    date: '2026-10-01',
-    updated: '2026-10-28',
-    category: 'Growth',
-    related: ['wordpress-website-development', 'landing-page-design'],
-    body: `
-<p>A meet the team page shows visitors the real people behind your business: who they are, what they do and why they can be trusted. To create one, choose who to include, use genuine photos, write short bios focused on how each person helps customers, get each person's consent, and keep the page up to date.</p>
-<p>For small businesses in India, where many buyers still prefer to know who they are dealing with before calling, a good team page can be the difference between an enquiry and a closed tab. This guide covers what to include, how to write bios, and how to handle the page honestly if you are a solo business.</p>
-
-<h2>Why a meet the team page matters</h2>
-<p>People buy from people, especially for services. A clinic, a CA firm, an interior design studio or a coaching institute is really selling the expertise of specific individuals. When visitors can see those individuals, three things happen:</p>
-<ul>
-<li><strong>Trust increases</strong>, because there are real faces and names behind the brand.</li>
-<li><strong>Expertise becomes visible</strong>, since bios can show qualifications, experience and specialisms.</li>
-<li><strong>The first call feels easier</strong>, because the customer already knows who they will speak to.</li>
-</ul>
-<p>Team pages also help with search. Google looks for signs of experience and expertise, particularly on health, legal and finance topics. Clear author and team information supports that, alongside good content. The guide on <a href="/blog/eeat-explained-small-business/">E-E-A-T for small business websites</a> explains the idea in more depth.</p>
-
-<h2>How to create a meet the team page: step by step</h2>
-<ol>
-<li><strong>Decide who to include.</strong> Usually founders, senior staff and anyone customers deal with directly: doctors, consultants, designers, trainers or sales leads.</li>
-<li><strong>Get consent.</strong> Ask each person before publishing their photo, name and details. Keep a simple record of their agreement.</li>
-<li><strong>Arrange real photos.</strong> A consistent style, similar background and good lighting matter more than an expensive shoot.</li>
-<li><strong>Write short bios.</strong> Two to four sentences each, focused on what the person does for customers.</li>
-<li><strong>Choose a layout.</strong> A grid of cards works for most businesses; a longer profile page per person suits <a href="/website-for-lawyers-and-consultants/">doctors, lawyers and consultants</a>.</li>
-<li><strong>Link it properly.</strong> Add the page to the main menu or the about page, and link individual profiles from relevant service pages.</li>
-<li><strong>Set a review reminder</strong> so the page is updated when someone joins or leaves.</li>
-</ol>
-
-<h2>What to include for each team member</h2>
-<table>
-<thead><tr><th>Element</th><th>Include?</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>Name and role</td><td>Always</td><td>Use the title customers will recognise</td></tr>
-<tr><td>Photo</td><td>Strongly recommended</td><td>Real, recent and consistent in style</td></tr>
-<tr><td>Short bio</td><td>Always</td><td>Focus on how they help customers</td></tr>
-<tr><td>Qualifications</td><td>Where relevant</td><td>State exactly as held, with registration details only if required</td></tr>
-<tr><td>Experience</td><td>Optional</td><td>Areas of focus rather than vague years</td></tr>
-<tr><td>Languages spoken</td><td>Useful in India</td><td>Helps customers who prefer Hindi, Marathi, Tamil or others</td></tr>
-<tr><td>Direct contact</td><td>Optional</td><td>Many businesses route all enquiries through one number instead</td></tr>
-<tr><td>Personal touch</td><td>Optional</td><td>One line on interests can make a profile feel human</td></tr>
-</tbody>
-</table>
-
-<h2>Writing team bios that build trust</h2>
-<p>Most bios fail because they are either too formal or too vague. &quot;A passionate professional with years of experience&quot; tells the reader nothing. Instead, write about what the person actually does and who they help.</p>
-<p>A simple structure for each bio:</p>
-<ul>
-<li><strong>What they do</strong>: &quot;Leads kitchen and wardrobe design projects for apartments.&quot;</li>
-<li><strong>What they are good at</strong>: &quot;Focuses on storage planning for compact homes.&quot;</li>
-<li><strong>Relevant background</strong>: a qualification or a type of project, stated accurately.</li>
-<li><strong>Something human</strong> (optional): a line about languages spoken or what they enjoy.</li>
-</ul>
-<p>Write in the third person for a formal business, or first person if the brand is personal and friendly. Keep the same style across the page. And never inflate qualifications or claim memberships, awards or certifications the person does not genuinely hold; it damages trust quickly, and for regulated professions it can create real problems.</p>
-
-<h2>Photos: real people, consistent style</h2>
-<p>Stock photos on a team page are worse than no photos. Visitors can tell, and it suggests the team is not real. Use genuine photos of each person, ideally taken on the same day with similar framing and background.</p>
-<p>Practical tips:</p>
-<ul>
-<li>Shoot in natural light near a window if a professional photographer is not available.</li>
-<li>Keep backgrounds simple and consistent.</li>
-<li>Crop all photos to the same ratio, such as square or 4:5.</li>
-<li>Compress images before upload so the page stays fast on mobile data.</li>
-<li>Write descriptive alt text, such as the person's name and role.</li>
-</ul>
-<p>If someone does not want a photo online, respect that. Use a simple placeholder with initials, or leave them off the page.</p>
-
-<h2>Consent, privacy and staff turnover</h2>
-<p>Publishing staff details is a privacy matter. Ask for consent, explain where the information will appear, and let people choose what to share. Avoid personal phone numbers and personal email addresses; use role-based contacts instead. India's data protection rules are evolving, so check current requirements with your lawyer if you handle a lot of personal data.</p>
-<p>Staff turnover is the other practical issue. A team page that still shows someone who left a year ago looks careless. When someone leaves, remove their profile promptly, and if they had their own profile URL, redirect it to the main team page rather than leaving a broken link.</p>
-
-<h2>If you work solo: be honest</h2>
-<p>Many freelancers and small businesses are run by one person. Inventing a team to look bigger is tempting, but it backfires: clients find out on the first call, and fake profiles undermine everything else on the site.</p>
-<p>A solo business has real advantages to explain instead: the client deals directly with the person doing the work, there is no handover between departments, and decisions are quick. Write an about page that covers your process, your experience and the kind of work you take on. If you work with trusted specialists for certain jobs, such as a photographer or copywriter, say that in general terms rather than presenting them as staff.</p>
-<p>Samverse is an example: it is a solo WordPress and Shopify development practice, and the <a href="/about/">about page</a> explains how projects work rather than listing a team.</p>
-
-<h2>Building a team page in WordPress or Shopify</h2>
-<p>In WordPress, a team page can be built with blocks or a page builder using a simple grid of image, name, role and bio. For larger teams, a custom post type for team members makes updates easier: each person becomes an entry with fields, and the page displays them automatically. Individual profile pages can then link from relevant service pages, which is useful for clinics and consultancies.</p>
-<p>On Shopify, a team section can be added to an about page using theme sections or metaobjects, which keeps the layout consistent with the rest of the store. Either way, keep the page light and fast, with compressed images and no heavy sliders.</p>
-
-<h2>Team pages for different types of business</h2>
-<p>The right format depends on what customers are really choosing. A clinic patient chooses a doctor; a homeowner chooses a design studio; a parent chooses a teacher. Shape the page around that decision.</p>
-<ul>
-<li><strong>Clinics and hospitals</strong>: a profile per doctor with specialisation, qualifications as held, languages, consultation days and a booking link.</li>
-<li><strong>CA, legal and consulting firms</strong>: partner profiles with practice areas, plus a short line on support staff as a group.</li>
-<li><strong>Coaching institutes and schools</strong>: faculty cards by subject, with teaching focus rather than long histories.</li>
-<li><strong>Interior, architecture and agency studios</strong>: a small founder section plus the team as a group photo if individual profiles feel too formal.</li>
-<li><strong><a href="/website-for-restaurants/">Shops and restaurants</a></strong>: often a founder story is enough; staff profiles rarely influence buying.</li>
-</ul>
-<p>Pages like these also pair well with <a href="/blog/website-trust-signals-checklist/">other trust signals</a>, such as reviews and clear contact details.</p>
-
-<h2>Common mistakes on meet the team pages</h2>
-<ul>
-<li>Stock photos or mismatched selfies.</li>
-<li>Bios full of buzzwords and no specifics.</li>
-<li>People who left still listed.</li>
-<li>Qualifications stated loosely or inaccurately.</li>
-<li>The page hidden in the footer where nobody finds it.</li>
-<li>No link from the team page to the <a href="/blog/contact-page-that-gets-enquiries/">contact page</a>, so interested visitors have nowhere to go next.</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How do I create a meet the team page for a small business?</h3>
-<p>Choose who to include, get consent, use real and consistent photos, write short bios focused on how each person helps customers, and link the page from your menu or about page.</p>
-<h3>Should a small business have a team page?</h3>
-<p>If customers deal with specific people, yes. It builds trust and helps visitors feel comfortable before they call or book.</p>
-<h3>What should a team member bio include?</h3>
-<p>Their role, what they do for customers, relevant qualifications stated accurately, and optionally languages spoken or a personal line.</p>
-<h3>Can I use stock photos on a team page?</h3>
-<p>No. Stock photos make the team look fake. Use real photos, or initials placeholders for anyone who prefers not to be shown.</p>
-<h3>What if I run my business alone?</h3>
-<p>Say so. A strong about page explaining your process and experience builds more trust than an invented team.</p>
-
-<p>If you want a team or about page that builds trust and leads to enquiries, see <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Maharashtra can also see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page, and the <a href="/blog/write-about-page-that-builds-trust/">about us page guide</a> covers the companion page.</p>
-`,
-  },
-  {
-    slug: 'google-business-profile-photos',
-    seoTitle: 'Google Business Profile Photos: What to Upload and How Often',
-    title: 'Google Business Profile Photos: Which Photos to Upload, Sizes and Formats, Customer Photos, Videos and the Geotagging Myth',
-    description: 'Which Google Business Profile photos to upload, sizes and formats, how often to add more, handling customer photos, videos and why geotagging is a myth.',
-    date: '2026-10-01',
-    updated: '2026-10-16',
-    category: 'SEO',
-    related: ['wordpress-seo-services', 'landing-page-design'],
-    body: `
-<p>Upload a square logo, a cover photo that sums up the business, exterior photos taken from where customers actually arrive, interior, team and at-work photos, and real photos of your products or finished work. Add a few new ones whenever something changes, keep an eye on photos customers add, and ignore tricks such as geotagging, which has no confirmed ranking benefit. Photos mainly win the click, the call and the visit from people already looking at your profile.</p>
-<p>Photos are part of the Business Profile help in my <a href="/wordpress-seo-services/">WordPress SEO services</a>: alongside the right primary category, services, service areas or address and hours, the profile is linked to the most relevant page of your website, which should show the same real photos. The profile stays in your own business Google account.</p>
-<p>This guide goes deep on photos only. The <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> covers every other setting, and <a href="/blog/google-business-profile-posts/">Business Profile posts and offers</a> covers keeping the profile active week to week.</p>
-
-<h2>The photo set every profile needs</h2>
-<table>
-  <thead><tr><th>Photo</th><th>What to show</th><th>Tips</th></tr></thead>
-  <tbody>
-    <tr><td>Logo</td><td>Your logo as it appears on your signboard and website</td><td>Square, readable at small sizes, on a plain background</td></tr>
-    <tr><td>Cover</td><td>The single image that best represents you: shopfront, dining room, team at work or a signature project</td><td>Landscape, sharp, well lit, no text or offers on it</td></tr>
-    <tr><td>Exterior</td><td>How to recognise you on arrival</td><td>Shoot from the road and the approach customers use, with the signboard and a nearby landmark visible</td></tr>
-    <tr><td>Interior</td><td>Reception, waiting area, showroom, seating, treatment rooms</td><td>Lights on, clutter cleared, wide angle but not distorted</td></tr>
-    <tr><td>Team</td><td>The owner, doctor, chef or technicians</td><td>Natural, with consent; uniforms help</td></tr>
-    <tr><td>At work</td><td>The job being done</td><td>Hands and process rather than posed smiles</td></tr>
-    <tr><td>Products or work</td><td>Best sellers, popular dishes, finished projects, before and after</td><td>Real items you sell or work you did, never stock images</td></tr>
-  </tbody>
-</table>
-<p>Depending on your category, Google may offer extra types such as food and drink, menu, rooms or products. Google may also choose a different photo to show first, including a customer's, if it judges that more relevant to the search, so every photo in the set should represent you well.</p>
-
-<h2>Photo ideas by type of business</h2>
-<ul>
-  <li><strong>Clinics:</strong> the entrance and signboard, reception, a clean consultation room, equipment you mention on your website, and the doctor. Never photograph patients without explicit consent, and avoid anything that shows patient records on screens or desks.</li>
-  <li><strong>Restaurants and cafes:</strong> the dining area at a busy but tidy moment, signature dishes in natural light, the counter, outdoor seating and the menu board, kept current when prices change.</li>
-  <li><strong>Service-area businesses</strong> such as plumbers, pest control or AC repair: branded vehicles, uniforms, the team on site, tools and finished jobs. Skip exterior shots if you have no customer-facing premises.</li>
-  <li><strong>Shops and showrooms:</strong> the shopfront from the street, aisles and displays, popular products and the billing counter, refreshed when stock or layout changes.</li>
-  <li><strong><a href="/hotel-website-design/">Hotels and homestays</a>:</strong> every room type, bathrooms, the view, common areas, food and the approach road, which guests in hill and rural areas genuinely need.</li>
-  <li><strong>Manufacturers and B2B firms:</strong> the factory gate, production lines, quality checks, packing and dispatch, with permission for anything confidential.</li>
-  <li><strong>Coaching institutes and schools:</strong> classrooms, the library, labs and the building, with written consent for any students shown.</li>
-</ul>
-
-<h2>Sizes, formats and quality</h2>
-<p>At the time of writing, Google's help pages ask for JPG or PNG files between 10 KB and 5 MB, at least 250 pixels on each side, with 720 by 720 pixels recommended, in focus, well lit and without heavy filters or alterations. Video guidance is up to 30 seconds and 75 MB, at 720p or higher. Google updates these figures from time to time, so check the current help page before a big upload.</p>
-<p>In practice, a recent phone camera is more than enough. A few rules matter more than resolution:</p>
-<ul>
-  <li><strong>Real and recent:</strong> photos should show your business as it is now, not before the renovation or after a professional shoot that doesn't match reality.</li>
-  <li><strong>No text overlays:</strong> offers, phone numbers and slogans belong in posts, not in photos.</li>
-  <li><strong>Light editing only:</strong> straighten, crop and correct brightness; avoid filters that change colours.</li>
-  <li><strong>No stock or borrowed images:</strong> photos of someone else's work can be removed and undermine trust; see <a href="/blog/stock-photos-vs-real-photos/">stock photos vs real photos</a>.</li>
-</ul>
-<p>Uploads can take time to appear, and occasionally one isn't approved. If that happens, check it against the guidance above and try a sharper, more representative image.</p>
-
-<h2>How to take photos customers trust</h2>
-<p>The basics of lighting and framing are covered in <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>. For your profile specifically:</p>
-<ul>
-  <li>Shoot the exterior during opening hours with shutters up and lights on, so it looks like what customers will find</li>
-  <li>Take exterior shots from both directions of traffic, and one that includes the nearest landmark</li>
-  <li>Photograph the entrance up close if it is hard to find, such as a first-floor clinic or a shop inside a complex</li>
-  <li>Ask staff before photographing them, and take extra care with customers and children</li>
-  <li>Show the real size of the space; customers notice when a waiting room looks bigger online than in person</li>
-</ul>
-
-<h2>How often to add photos</h2>
-<p>Google gives no official number, and there's no evidence that uploading daily or in huge batches helps. A steady rhythm keeps the profile current and shows the business is active:</p>
-<ul>
-  <li><strong>When something changes:</strong> renovation, new signboard, new menu, new products or a new team member</li>
-  <li><strong>As work is completed:</strong> contractors, designers and installers can add finished jobs every few weeks</li>
-  <li><strong>Seasonally:</strong> festival displays, new collections or seasonal menus</li>
-  <li><strong>Every few months:</strong> review the full set and remove photos of old signboards, former staff or a branch that has closed</li>
-</ul>
-
-<h2>Customer photos: managing and reporting them</h2>
-<p>Customers can add photos to your profile on their own or with a review. They often persuade more than yours because they are unpolished and independent. You can't delete them, but you can manage them:</p>
-<ul>
-  <li>Check the customer photos tab in your profile regularly, not just your own uploads</li>
-  <li>Report photos that break Google's policies: offensive content, spam, a different business, or photos exposing someone's private information</li>
-  <li>Don't report photos simply because they're unflattering; fix the messy counter or faded signboard instead</li>
-  <li>Invite happy customers to add a photo with their review, but never offer anything in return</li>
-</ul>
-<p>Reporting doesn't guarantee removal, because Google reviews each report against its own policies. If a photo comes with an angry review, reply to the review calmly; <a href="/blog/handle-negative-reviews/">how to handle negative reviews</a> covers what to say.</p>
-
-<h2>Videos on your profile</h2>
-<p>Short videos work well for things photos can't show: a walkthrough from the entrance to the counter, a dish being plated, a machine running, or a before-and-after reveal. Keep them short, steady and silent-friendly, since many people watch without sound. A longer video belongs on YouTube and your website; <a href="/blog/video-on-business-website/">video on your business website</a> covers hosting and speed.</p>
-
-<h2>Geotagging and other photo myths</h2>
-<table>
-  <thead><tr><th>Myth</th><th>What is actually known</th></tr></thead>
-  <tbody>
-    <tr><td>Geotagging photos boosts local rankings</td><td>No confirmed benefit. Google hasn't said it uses photo GPS data for local rankings, and location data is widely reported to be stripped on upload. Your verified address or service area already tells Google where you are.</td></tr>
-    <tr><td>Keyword file names help the profile rank</td><td>No confirmed benefit on your profile. Descriptive file names do help images on your own website, which is a separate matter.</td></tr>
-    <tr><td>More photos means higher rankings</td><td>Google describes local results as based mainly on relevance, distance and prominence. Photos help people choose you once they see you.</td></tr>
-    <tr><td>Daily uploads keep you at the top</td><td>Batches of near-identical photos add nothing for customers. Useful, varied photos added over time do.</td></tr>
-  </tbody>
-</table>
-<p>Be wary of anyone selling photo tricks as a ranking shortcut. The reliable work is in accurate categories and details, genuine reviews and a website that backs up the profile, as the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide</a> explains.</p>
-
-<h2>Keep profile and website photos consistent</h2>
-<p>Customers often check the website after the profile, or the reverse. Use the same exterior photo on your contact page that you use on your profile, the same team photos on your About page, and the same product and project photos on service pages. For the website, compress and resize them, use WebP where possible and write descriptive alt text; <a href="/blog/image-seo-guide/">image SEO</a> covers file names, alt text and Google Images. When you take a new batch, update both places on the same day.</p>
-
-<h2>FAQs</h2>
-<h3>What size should Google Business Profile photos be?</h3>
-<p>At the time of writing, Google recommends JPG or PNG files of 720 by 720 pixels, with a minimum of 250 pixels on each side and a file size between 10 KB and 5 MB. Check the current help page, as the figures change occasionally.</p>
-<h3>Why isn't my chosen cover photo showing first?</h3>
-<p>Google may show a different photo, sometimes a customer's, if it judges it more relevant to the search. You can't fully control this, so make sure every photo represents you well.</p>
-<h3>Do geotagged photos help my profile rank?</h3>
-<p>There's no confirmed benefit. Location data is widely reported to be removed when photos are uploaded, and your verified address or service area already tells Google where you are.</p>
-<h3>Can I delete a photo a customer added?</h3>
-<p>No, but you can report it if it breaks Google's policies, for example if it is offensive, spam, shows a different business or exposes private information. Google decides whether to remove it.</p>
-<h3>How many photos should I add?</h3>
-<p>There's no magic number. Cover every photo type in the set above, then add a few new real photos whenever something changes or a job is finished.</p>
-
-<p>Want your Business Profile set up with the right category, services and photos, linked to a website page that shows the same real business? That's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -61912,7 +59554,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li><strong>Outdated template overrides:</strong> WooCommerce &gt; Status lists templates your theme overrides and flags outdated ones.</li>
   <li><strong>Payment, shipping and invoice extensions</strong> often need to move in step with WooCommerce, and a broken payment gateway may not show any visible error.</li>
 </ul>
-<p>For most stores the safe pattern is auto-updates off for WooCommerce, its extensions, payment gateways and the theme, with updates tested on staging, then applied live at a quiet time and followed by a test order. The <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine around this.</p>
+<p>For most stores the safe pattern is auto-updates off for WooCommerce, its extensions, payment gateways and the theme, with updates tested on staging, then applied live at a quiet time and followed by a test order. The <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a> covers the routine around this.</p>
 
 <h2>What to auto-update and what to update by hand</h2>
 <table>
@@ -62123,152 +59765,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>It depends on page count, features and how quickly content and approvals arrive, not on the city. A small business site is often a matter of weeks; stores and custom features take longer. See <a href="/blog/how-long-to-build-wordpress-website/">how long it takes to build a WordPress website</a> for the stages.</p>
 
 <p>If you are a Pune or PCMC business and want a second opinion on a proposal, or a quote of your own, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>. For other ways to work together, such as a batch of fixes or monthly support, see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
-`,
-  },
-  {
-    slug: 'website-content-calendar-small-business',
-    seoTitle: 'Content Calendar for a Small Business Website (India)',
-    title: 'A Realistic Content Calendar for Small Business Websites in India: Cadence, Festivals, Repurposing and a Template',
-    description: 'A content calendar a small Indian business can keep: how often to publish, festival hooks, repurposing, refreshing old posts and a ready-to-copy template.',
-    date: '2026-10-01',
-    updated: '2026-10-27',
-    category: 'Growth',
-    related: ['wordpress-seo-services', 'wordpress-website-development'],
-    body: `
-<p>A content calendar for a small business website is a simple monthly plan of what you will publish, when, and where it will be reused. For most owners in India a realistic version is one or two useful articles or case studies a month, one older page refreshed, a weekly Google Business Profile post, and festival or seasonal topics scheduled four to eight weeks before the date. Keep it in a spreadsheet, review it once a month in Search Console, and choose a pace you can sustain for a year rather than one that looks impressive in January.</p>
-<p>The calendar is the routine; the website is where the routine pays off. A site with clean page titles, internal links and Search Console set up gives each new article a fair chance in Google, which is the part I handle in <a href="/wordpress-seo-services/">WordPress SEO services</a>. I advise on which topics to write, but the knowledge in each piece has to come from you, because it is your customers asking the questions.</p>
-<p>If you want the planning method first, such as mapping topics to services, read <a href="/blog/website-content-calendar/">how to plan a website content calendar</a>. This article is the practical, filled-in version: cadence, a year of Indian seasonal hooks, a template you can copy and a monthly routine.</p>
-
-<h2>Step one: build a question bank before you build a calendar</h2>
-<p>A blank calendar invites guesswork. A question bank fills it with topics customers have already asked. Keep a single shared sheet or note and add to it every time someone asks something on a call, at the counter or on WhatsApp. Write the question in their words and note the service it relates to.</p>
-<ul>
-  <li><strong>A dental clinic:</strong> "Does a root canal hurt?" or "How many visits does an implant take?"</li>
-  <li><strong>A CA firm:</strong> "Which documents do I need for GST registration?"</li>
-  <li><strong>An interior designer:</strong> "How long does a 2BHK interior take?"</li>
-  <li><strong>An AC repair business:</strong> "Should I service my AC before summer or when it stops cooling?"</li>
-</ul>
-<p>After a month or two you will usually have more questions than you can write about. The calendar then becomes a matter of choosing which question goes in which week, not inventing topics.</p>
-
-<h2>How often to publish: pick a level you can keep</h2>
-<p>Consistency matters more than volume. Google does not reward a burst of ten posts followed by silence, and neither do customers who land on a blog whose latest article is two years old.</p>
-<table>
-  <thead><tr><th>Level</th><th>Website</th><th>Google Business Profile</th><th>Who it suits</th></tr></thead>
-  <tbody>
-    <tr><td>Light</td><td>One article a month, plus one refresh every two months</td><td>A post or new photos every week or two</td><td>Owners doing everything themselves</td></tr>
-    <tr><td>Steady</td><td>Two pieces a month (articles or case studies), plus one refresh a month</td><td>A post every week</td><td>Businesses with one person who can give it a few hours a month</td></tr>
-    <tr><td>Active</td><td>Weekly articles or page improvements, regular case studies</td><td>Weekly posts and regular photos</td><td>Competitive services, several branches or an online store</td></tr>
-  </tbody>
-</table>
-<p>If you are unsure, start at Light for three months. Moving up once the habit is in place is much easier than recovering from an abandoned plan.</p>
-
-<h2>Festival and seasonal hooks for an Indian business</h2>
-<p>Seasonal content works because people search before the occasion: a Diwali gifting guide is useful in September and October, not on Diwali morning. Many Indian festivals follow the lunar calendar, so their dates shift each year. Check the dates every January and plan the content four to eight weeks ahead. The <a href="/blog/seasonal-festival-campaigns-website/">festival and seasonal campaigns guide</a> covers landing pages and offers; this table is about content.</p>
-<table>
-  <thead><tr><th>Period (approximate)</th><th>Hooks</th><th>Example topics</th></tr></thead>
-  <tbody>
-    <tr><td>January</td><td>New year plans, Makar Sankranti, Pongal and Lohri, wedding season continues</td><td>"Planning a home renovation this year: what to decide first"</td></tr>
-    <tr><td>February to March</td><td>Board exams, financial year-end, Holi</td><td>"Year-end checklist for small businesses", "Exam-time study routines" for coaching classes</td></tr>
-    <tr><td>March to April</td><td>Gudi Padwa, Ugadi, new financial year, start of summer</td><td>"Pre-summer AC servicing: what is included", new price lists and service updates</td></tr>
-    <tr><td>April to June</td><td>Summer holidays, admissions, travel</td><td>Summer camps, holiday packages, admission guides</td></tr>
-    <tr><td>June to September</td><td>Monsoon</td><td>Waterproofing, pest control, car care in the rains, skin and hair care</td></tr>
-    <tr><td>August to September</td><td>Raksha Bandhan, Independence Day, Ganesh Chaturthi, Onam</td><td>Gift guides, decoration ideas, festival opening hours</td></tr>
-    <tr><td>September to November</td><td>Navratri, Durga Puja, Dussehra, Dhanteras, Diwali</td><td>"Diwali gifting for clients", home cleaning and painting before Diwali, festive offers</td></tr>
-    <tr><td>November to February</td><td>Wedding season, Christmas, year-end sales</td><td>Bridal services, venue and catering guides, year-in-review case studies</td></tr>
-  </tbody>
-</table>
-<p>Not every festival fits every business. A B2B manufacturer may care more about trade exhibitions, the financial year and budget cycles than about Holi. Pick the hooks your customers actually act on, and skip the rest.</p>
-
-<h2>A ready-to-copy calendar template</h2>
-<p>A spreadsheet is enough. Use one row per piece of content with these columns:</p>
-<table>
-  <thead><tr><th>Column</th><th>What to write</th><th>Example</th></tr></thead>
-  <tbody>
-    <tr><td>Publish week</td><td>The week it should go live</td><td>Week 2, September</td></tr>
-    <tr><td>Customer question</td><td>The question in the customer's words</td><td>"Can you paint the house before Diwali in two weeks?"</td></tr>
-    <tr><td>Type</td><td>Article, case study, FAQ addition, refresh</td><td>Article</td></tr>
-    <tr><td>Service page it supports</td><td>The page you will link to</td><td>Interior painting</td></tr>
-    <tr><td>Season or hook</td><td>Festival, weather, deadline or none</td><td>Diwali</td></tr>
-    <tr><td>Owner and due date</td><td>Who drafts it, and by when</td><td>Owner, 1 September</td></tr>
-    <tr><td>Status</td><td>Idea, drafting, review, scheduled, live</td><td>Drafting</td></tr>
-    <tr><td>Reuse</td><td>Where it goes after publishing</td><td>GBP post, two Instagram tips, WhatsApp status</td></tr>
-    <tr><td>Live link and review date</td><td>The URL, and when to check it again</td><td>Recheck in March</td></tr>
-  </tbody>
-</table>
-<p>The "service page it supports" column is the one people skip and later regret. Every article should send readers somewhere useful, usually the service page that answers "can you do this for me?"</p>
-
-<h2>A sample month at the Steady level</h2>
-<table>
-  <thead><tr><th>Week</th><th>Website</th><th>Google Business Profile</th><th>Social and WhatsApp</th></tr></thead>
-  <tbody>
-    <tr><td>1</td><td>Publish an article answering a common question</td><td>A post linking to it</td><td>The main tip as a short post or status</td></tr>
-    <tr><td>2</td><td>Refresh an older post, or add FAQs and photos to a service page</td><td>Photos of recent work</td><td>Behind-the-scenes photo or short video</td></tr>
-    <tr><td>3</td><td>Publish a second article, or a case study in alternate months</td><td>A post about the project</td><td>A before-and-after post linking to the case study</td></tr>
-    <tr><td>4</td><td>Monthly review and next month's plan</td><td>An offer or event post, if you have one</td><td>Reshare the most useful tip of the month</td></tr>
-  </tbody>
-</table>
-<p>Case studies deserve a regular slot because they are the content people read when they are close to deciding. <a href="/blog/write-case-studies-business-website/">How to write case studies</a> covers the structure. Google Business Profile posts are short signposts back to the fuller story; see <a href="/blog/google-business-profile-posts/">how to use Google Business Profile posts</a>.</p>
-
-<h2>Repurpose every piece at least three ways</h2>
-<p>Writing is the slow part, so get more from each piece. One article can become:</p>
-<ul>
-  <li>Three or four short tips for Instagram, Facebook or LinkedIn</li>
-  <li>A carousel walking through the main steps</li>
-  <li>A WhatsApp status, or a broadcast to customers who have opted in to updates</li>
-  <li>A one-minute video of you answering the question</li>
-  <li>A short answer added to the FAQ section of the matching service page</li>
-</ul>
-<p>Always link back to the full article on your website, where visitors can see your services and contact you. <a href="/blog/repurpose-website-content-social-media/">Repurposing website content for social media</a> goes further, including which formats suit which platform.</p>
-
-<h2>Updating old posts is part of the calendar</h2>
-<p>An article published two years ago with outdated prices, screenshots or rules can hurt more than help. Treat refreshes as calendar items, not as something you will get round to:</p>
-<ol>
-  <li>In Search Console, find posts with impressions but few clicks, or posts that have slipped.</li>
-  <li>Check facts that change: rules, fees, product names, your own services and contact details.</li>
-  <li>Answer the questions people now search for, which the Queries tab for that page often shows.</li>
-  <li>Improve the title and description if they do not match those queries.</li>
-  <li>Add links to newer articles and service pages.</li>
-  <li>Change the "updated" date only when the content has genuinely changed.</li>
-</ol>
-<p>The full method is in <a href="/blog/update-old-blog-posts/">how to update old blog posts</a>.</p>
-
-<h2>The 30-minute monthly review</h2>
-<p>Block half an hour in the last week of each month. In Search Console's Performance report, compare the last 28 days with the period before and note:</p>
-<ul>
-  <li>Pages that gained impressions or clicks: write more around those topics</li>
-  <li>Queries with impressions but few clicks: a clearer title or description may help</li>
-  <li>Questions you have no page for: add them to the question bank</li>
-  <li>Posts with almost no impressions after several months: improve, merge or retire them</li>
-</ul>
-<p>Also check which pages lead to calls, WhatsApp messages and form enquiries, not only visits. <a href="/blog/search-console-content-ideas/">Finding content ideas in Search Console</a> shows how to dig deeper.</p>
-
-<h2>Tools: keep them simple</h2>
-<p>Tools change and most have free tiers that come and go, so choose by habit rather than features. Google Sheets or Excel handles everything above. Trello, Notion or a similar board helps if two or three people share the work. WordPress itself can schedule posts: set a future date in the editor and the post publishes on time. Editorial calendar plugins exist too, but check they are maintained before adding another plugin to your site.</p>
-<p>If writing is the bottleneck, record a voice note answering the question as you would to a customer, then turn it into an article or ask someone to edit it. AI tools can help with outlines and editing, but the facts and examples should be yours; see <a href="/blog/ai-tools-website-content-responsibly/">using AI tools for website content responsibly</a>.</p>
-
-<h2>Checklist: is your calendar realistic?</h2>
-<ul>
-  <li>Every item answers a real customer question</li>
-  <li>Every item links to a service page</li>
-  <li>Festival topics are scheduled four to eight weeks ahead, with dates checked for this year</li>
-  <li>At least one refresh slot each month or two</li>
-  <li>Each piece has a named owner and due date</li>
-  <li>Reuse is planned, not improvised</li>
-  <li>A monthly review is booked in your diary</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How often should a small business publish blog posts?</h3>
-<p>One useful article a month is a sensible start for most small businesses, and two a month if someone has a few hours to give. A steady rhythm kept for a year usually does more than a burst of posts that stops.</p>
-<h3>How far ahead should I plan festival content?</h3>
-<p>Plan four to eight weeks ahead and publish at least a few weeks before the date, because people research early. Check dates every year, because festivals set by the lunar calendar fall on different dates each year.</p>
-<h3>Do Google Business Profile posts replace blog posts?</h3>
-<p>No. They are short and help your profile look active in Maps and local results, but they don't build lasting pages on your website. Use them to point people to your articles and case studies.</p>
-<h3>What should a content calendar template include?</h3>
-<p>Publish week, customer question, content type, the service page it supports, the seasonal hook, owner and due date, status, reuse plan, and the live link with a date to review it again.</p>
-<h3>Is it worth updating old blog posts instead of writing new ones?</h3>
-<p>Often, yes. An older post that already has impressions can improve with corrected facts, better answers and a clearer title. Give refreshes a regular slot in the calendar alongside new pieces.</p>
-
-<p>A calendar works best on a site that is easy to publish on and set up for search. For help with the technical side, see <a href="/wordpress-seo-services/">WordPress SEO services</a>. If your current site makes publishing a chore, <a href="/wordpress-website-development/">WordPress website development</a> covers a rebuild you can edit yourself.</p>
 `,
   },
   {
@@ -63041,7 +60537,7 @@ if ( ! $link ) {
 </table>
 <p>Grouping nearby localities often works better than one page per locality. For example, one page for PCMC (Pimpri, Chinchwad, Nigdi, Akurdi, Bhosari), one for west Pune (Baner, Balewadi, Aundh, Pashan), and one for east Pune (Kharadi, Viman Nagar, Wagholi, Hadapsar). See <a href="/blog/service-area-business-seo/">SEO for service area businesses</a> for more on structure.</p>
 
-<p>For the build itself, including Marathi-only versus bilingual sites, see <a href="/blog/marathi-website-design/">Marathi website design for WordPress and Shopify</a>.</p>
+<p>For the build itself, including Marathi-only versus bilingual sites, see <a href="/blog/multilingual-wordpress-website-hindi-english/">Marathi website design for WordPress and Shopify</a>.</p>
 
 <h2>Language: English, Marathi or Hindi</h2>
 <p>Many Pune searches are in English, but some customers search in Marathi or Hindi, or type Hinglish phrases. If your customers speak Marathi, a few key pages in Marathi can help, as long as they are properly written rather than machine-translated.</p>
@@ -63185,7 +60681,7 @@ if ( ! $link ) {
 </ul>
 <p>Reviews matter a lot. Ask every satisfied customer, make it easy with a direct review link sent on WhatsApp, and reply to every review. See <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>.</p>
 <p>Consistency matters too. Your business name, address and phone number should match across your website, Google profile and directories such as Justdial and IndiaMART. The guide on <a href="/blog/business-directories-citations-india/">business directories and citations in India</a> explains which to use.</p>
-<p>Activity helps conversion and keeps the profile current. Regular <a href="/blog/google-business-profile-posts/">Google Business Profile posts</a> and new photos show customers you are open and active.</p>
+<p>Activity helps conversion and keeps the profile current. Regular <a href="/blog/google-business-profile-checklist/">Google Business Profile posts</a> and new photos show customers you are open and active.</p>
 
 <h2>How your website affects Maps visibility</h2>
 <p>A Google profile without a website is weaker than one backed by a good site. The website should:</p>
@@ -63196,7 +60692,7 @@ if ( ! $link ) {
 <li>Use LocalBusiness schema markup with correct details.</li>
 <li>Load fast on mobile, since most local searches happen on phones.</li>
 </ol>
-<p>If the website itself is not indexed, fix that too; see <a href="/blog/wordpress-site-not-showing-on-google/">WordPress site not showing on Google</a>.</p>
+<p>If the website itself is not indexed, fix that too; see <a href="/blog/get-website-indexed-google-faster/">WordPress site not showing on Google</a>.</p>
 
 <h2>Duplicates and edits by others</h2>
 <p>Old listings created by previous owners, staff or customers can split reviews and confuse Google. Search for variations of your name and old phone numbers. Use the &quot;suggest an edit&quot; option to mark a duplicate or closed listing, or request ownership if the listing is genuinely yours.</p>
@@ -63538,7 +61034,7 @@ if ( ! $link ) {
   <li>You've reviewed and approved the complete site on staging before the final payment is due.</li>
   <li>The domain and hosting are registered in your name from the start, so the site can never be held back over a dispute.</li>
   <li>A short bug-fix period after launch covers anything that doesn't work as agreed, without a new invoice.</li>
-  <li>Handover follows promptly: administrator access, licences, a backup and documentation. The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists what to expect.</li>
+  <li>Handover follows promptly: administrator access, licences, a backup and documentation. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to expect.</li>
 </ul>
 
 <h2>Scope changes and extra work</h2>
@@ -63625,140 +61121,6 @@ any unused part of the advance refunded as agreed</code></pre>
 `,
   },
   {
-    slug: 'hidden-website-costs',
-    seoTitle: 'Hidden Website Costs: What to Budget After Launch',
-    title: 'Hidden Website Costs: Domain and Hosting Renewals, Plugin Licences, Email, SSL, Maintenance, Content, Ads and Payment Gateway Fees You Pay After the Build',
-    description: 'Hidden website costs after launch: hosting renewal prices, premium licences, business email, SSL, maintenance, content, ads and gateway fees in India.',
-    date: '2026-10-01',
-    updated: '2026-10-30',
-    category: 'Pricing',
-    related: ['wordpress-maintenance', 'wordpress-website-development'],
-    body: `
-<p>The build quote is the cost you see. The costs you do not see are the ones that renew: the domain, hosting at its full rather than introductory price, premium theme and plugin licences, business email per mailbox, maintenance, content updates, the ads or SEO that bring visitors, and, if you sell online, payment gateway fees on every order. None of these is unusual. They only become hidden when nobody lists them before the site goes live.</p>
-<p>This guide lists them so you can budget properly and compare quotes fairly. Where I give rupee figures, they are the same rough ranges I use across this site; prices change, so treat them as a guide and check current rates with each provider. If you would rather not track renewals and updates yourself, that is part of what a <a href="/wordpress-maintenance/">WordPress maintenance</a> plan covers.</p>
-
-<h2>Why the first-year bill is misleading</h2>
-<p>Two things make year one look cheaper than every year after it.</p>
-<ul>
-  <li><strong>Introductory hosting prices.</strong> Many hosts advertise a low price that applies only to the first term. The renewal is charged at the regular rate, which can be much higher. <a href="/blog/hosting-renewal-price-increase/">Why hosting renewals cost more</a> explains how this works and what to do about it.</li>
-  <li><strong>Bundled freebies.</strong> A domain thrown in with a hosting plan normally costs nothing in year one only. Free mailboxes may come with small storage limits. Theme licences bought by a developer may cover one year of updates.</li>
-</ul>
-<p>The fix is simple: whenever you compare offers, add up the cost over two or three years, using the renewal prices.</p>
-
-<h2>Hidden website costs: the running-cost ledger</h2>
-<p>Here is every recurring cost a typical WordPress business site can carry, with the ranges used elsewhere on this site where they exist. Items marked "varies" depend too much on the vendor or your choices to give a fair range.</p>
-<table>
-  <thead>
-    <tr><th>Cost</th><th>Rough range</th><th>Billed</th><th>Account should be in</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Domain (.com or .in)</td><td>₹500 to ₹1,200 a year</td><td>Yearly or multi-year</td><td>Your business name</td></tr>
-    <tr><td>Hosting (shared or managed)</td><td>₹2,500 to ₹15,000 a year</td><td>Yearly or multi-year</td><td>Your business name</td></tr>
-    <tr><td>Premium theme or page builder Pro licence</td><td>₹0 to ₹6,000 a year</td><td>Usually yearly</td><td>Your business email</td></tr>
-    <tr><td>Other premium plugins</td><td>Varies by vendor</td><td>Usually yearly</td><td>Your business email</td></tr>
-    <tr><td>Business email</td><td>Varies by provider and mailbox count</td><td>Monthly or yearly, per user</td><td>Your business</td></tr>
-    <tr><td>SSL certificate</td><td>Usually free with hosting</td><td>Renews automatically</td><td>Through your host</td></tr>
-    <tr><td>Maintenance (freelancer)</td><td>₹1,500 to ₹6,000 a month, or nothing if you do it yourself</td><td>Monthly</td><td>Agreement with you</td></tr>
-    <tr><td>Content, ads and SEO</td><td>Varies with ambition</td><td>Monthly or per piece</td><td>Ad and analytics accounts in your name</td></tr>
-    <tr><td>Payment gateway</td><td>Per-transaction fees</td><td>Deducted from each payment</td><td>Your business, with your KYC</td></tr>
-  </tbody>
-</table>
-<p>The last column matters as much as the price. A licence or hosting account in someone else's name is a cost you cannot control, and often a problem when that person moves on.</p>
-
-<h2>Licences you may not know you have</h2>
-<p>WordPress itself is free, and plenty of sites run well on free plugins. But a typical business build might quietly include a premium theme, a page builder's Pro version, a forms plugin, a backup tool, a caching or image plugin, and on a store, one or two WooCommerce extensions. Each may have its own yearly renewal.</p>
-<p>When a licence lapses, the software usually keeps working but stops getting updates and support. That is not an immediate emergency, but over months it becomes a security risk and, eventually, a compatibility problem after a WordPress update. Ask your developer for a list like this at handover:</p>
-<table>
-  <thead>
-    <tr><th>Item</th><th>Free or paid</th><th>Renewal date</th><th>Registered to</th><th>What happens if it lapses</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Theme</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>Page builder</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>Forms plugin</td><td></td><td></td><td></td><td></td></tr>
-    <tr><td>Backup plugin</td><td></td><td></td><td></td><td></td></tr>
-  </tbody>
-</table>
-<p>And never accept "nulled" copies of premium plugins. They are pirated, they cannot be updated, and some carry malware.</p>
-
-<h2>Email: the cost that grows with your team</h2>
-<p>An address at your own domain is not always included in a website quote. Some hosting plans include basic mailboxes; dedicated services charge per user, so the bill rises every time you add a person. Storage limits, shared inboxes and whether you need calendars and document tools all affect which option makes sense. <a href="/blog/business-email-options/">Business email options</a> compares the common choices.</p>
-
-<h2>SSL: usually not a cost any more</h2>
-<p>The padlock and https come from an SSL certificate. Most good hosts now include a free one that renews automatically, which is enough for nearly every business site. Be cautious about paid SSL add-ons offered at checkout unless you have a specific reason. The real hidden cost here is an expired certificate that nobody noticed, which puts a full-page browser warning in front of every visitor.</p>
-
-<h2>Keeping the site running</h2>
-<p>Updates, off-site backups, security checks, uptime monitoring and checking that forms still deliver are ongoing work. You can do it yourself, pay for individual tools, or use a plan. What is never free is skipping it: cleaning up a hacked site or rebuilding from scratch after data loss usually costs much more than steady care. <a href="/blog/website-maintenance-cost-india/">Website maintenance costs in India</a> breaks down what plans typically include.</p>
-<p>Content edits are a separate line to check. A price change, a new staff photo or a Diwali offer banner seems trivial, but if each one is billed separately they add up. Ask whether small edits are included in any maintenance arrangement.</p>
-
-<h2>Content you will keep paying for</h2>
-<ul>
-  <li><strong>Photography:</strong> new products, a new office, new staff</li>
-  <li><strong>Stock images and fonts:</strong> some are free; others need a paid licence, priced by use</li>
-  <li><strong>Writing:</strong> new service pages, product descriptions and articles, whether you pay a writer or spend your own hours</li>
-  <li><strong>Translations:</strong> if you run Hindi or regional language pages, each new page needs translating and checking</li>
-</ul>
-
-<h2>Getting visitors</h2>
-<p>A website does not bring visitors on its own. Budget for at least one way to reach people:</p>
-<ul>
-  <li><strong>Google or Meta ads:</strong> the ad budget itself, plus management fees if someone runs them for you</li>
-  <li><strong>SEO:</strong> ongoing work on content, technical health and your Google Business Profile</li>
-  <li><strong>Tools:</strong> email marketing, booking, chat or CRM subscriptions</li>
-</ul>
-<p>Ad spend and the fee for managing ads are different things. When comparing marketing quotes, check which one a number refers to.</p>
-
-<h2>If you take payments online</h2>
-<p>Selling or taking bookings adds costs that grow with your sales:</p>
-<ul>
-  <li><strong>Transaction fees:</strong> payment gateways usually charge a percentage of each payment, with rates that can differ for UPI, cards, international cards and wallets. Check the current pricing page of each gateway; <a href="/blog/payment-gateways-india-compared/">payment gateways in India compared</a> covers the differences.</li>
-  <li><strong>Tax on fees:</strong> GST is generally charged on the gateway's fee, so the deduction is a little more than the headline rate. Your CA can confirm how to account for it.</li>
-  <li><strong>Refunds:</strong> on many gateways, the original fee is not returned when you refund a customer, so check your gateway's terms</li>
-  <li><strong>Store extras:</strong> shipping integrations, invoice plugins and paid extensions</li>
-</ul>
-
-<h2>Costs that only appear when something goes wrong</h2>
-<p>These are the truly hidden ones, because you only meet them in a crisis:</p>
-<ul>
-  <li>Recovering a domain that expired, which can cost more than a normal renewal and is not always possible</li>
-  <li>Cleaning up after a hack, plus lost enquiries while the site was down</li>
-  <li>Rebuilding access when the previous developer held the hosting, domain or licence accounts; see regaining access from an old developer</li>
-  <li>Emergency fixes after an untested update broke the site</li>
-</ul>
-<p>Most of these come down to the same causes: renewals nobody tracked, accounts in the wrong name, and no backups. The <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a> prevents the first.</p>
-
-<h2>Questions to ask before you accept a website quote</h2>
-<ul>
-  <li>Which costs are one-time and which renew, and at what renewal price?</li>
-  <li>Which premium themes and plugins will the site use, and who buys the licences?</li>
-  <li>Are domain, hosting and email included, and for how long?</li>
-  <li>What does support cost after the first month, and are small edits included?</li>
-  <li>Will every account be in my business's name, with logins handed over at launch?</li>
-  <li>If I sell online, which gateway and extensions will be used, and what do they charge?</li>
-</ul>
-
-<p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see e-commerce website cost in India for what drives the price of a store.</p>
-
-<p>Selling online adds its own costs, such as payment gateway fees, shipping and paid extensions; see <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> for what drives the price of a store.</p>
-
-<h2>FAQs</h2>
-<h3>What is the yearly cost of running a small business website in India?</h3>
-<p>For a typical WordPress site, the fixed part is hosting at around ₹2,500 to ₹15,000 a year and the domain at around ₹500 to ₹1,200 a year. Premium licences, if the site uses any, are added on top. Maintenance, email, content and marketing come on top and depend on your choices.</p>
-<h3>Why did my hosting bill jump at renewal?</h3>
-<p>Most likely because the first term was billed at an introductory price and the renewal is at the regular rate. Check the renewal price before buying, and compare plans over several years.</p>
-<h3>Do I need to keep paying for premium plugins?</h3>
-<p>If the site depends on them, yes, to keep receiving updates and security fixes. Sometimes a paid plugin can be replaced with a well-maintained free one, which is worth reviewing once a year.</p>
-<h3>Is a paid SSL certificate necessary?</h3>
-<p>For most business websites, no. The free certificate most hosts include gives the same padlock. Just make sure it renews automatically.</p>
-<h3>How can I avoid surprise website costs?</h3>
-<p>Ask for a written list of every recurring cost and account at handover, keep it with renewal dates in a calendar, and make sure every account is in your business's name.</p>
-<h3>What are the hidden costs of a website?</h3>
-<p>The usual ones are higher hosting and domain renewal prices after the first term, yearly licences for premium themes and plugins, business email per user, maintenance and backups, content and photos, marketing, and payment gateway fees if you sell online. None are really hidden; they are simply left out of many build quotes, so ask for them in writing.</p>
-
-<p>For build prices, see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> or try the <a href="/website-cost-calculator/">website cost calculator</a>. If you are planning a new site, <a href="/wordpress-website-development/">WordPress website development</a> explains how projects are quoted. And to have updates, backups and renewals watched for you, see <a href="/wordpress-maintenance/">WordPress maintenance</a>. To have someone manage this for you, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
-`,
-  },
-  {
     slug: 'website-for-ice-cream-parlours',
     seoTitle: 'Ice Cream Parlour Websites: Flavour Menus and Party Orders',
     title: 'Websites for Ice Cream Parlours and Gelato Shops: Flavour Menus, Party Orders and Delivery',
@@ -63782,7 +61144,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>Put hours, location, a "Today's flavours" button and one-tap WhatsApp at the top of the homepage.</p>
 
 <h2>A flavour board built for rotation</h2>
-<p>A printed card or a photo of the menu board goes out of date within days. Build the menu as a web page staff can edit from a phone; our guide to <a href="/blog/restaurant-menu-on-website/">putting your menu online the right way</a> covers the basics. For ice cream, organise it as a flavour board with clear sections:</p>
+<p>A printed card or a photo of the menu board goes out of date within days. Build the menu as a web page staff can edit from a phone; our guide to <a href="/blog/restaurant-website-online-ordering/">putting your menu online the right way</a> covers the basics. For ice cream, organise it as a flavour board with clear sections:</p>
 <ul>
   <li><strong>Always on:</strong> core flavours that never leave the counter</li>
   <li><strong>On the counter today:</strong> rotating and limited flavours, each with an "available" or "sold out" switch</li>
@@ -63860,7 +61222,7 @@ any unused part of the advance refunded as agreed</code></pre>
   <li><strong>Franchise:</strong> only if you offer it</li>
   <li><strong>FAQs:</strong> storage, eggless options, delivery and advance orders</li>
 </ul>
-<p>Separate outlet pages help each location be found for "ice cream parlour in {area}" and keep timings clear when outlets close at different hours. Add structured data using schema.org's IceCreamShop type to each outlet page (see <a href="/blog/schema-markup-explained/">schema markup explained</a>), keep hours consistent across your website, Google and delivery apps, and share each new seasonal flavour as a <a href="/blog/google-business-profile-posts/">Google Business Profile post</a>.</p>
+<p>Separate outlet pages help each location be found for "ice cream parlour in {area}" and keep timings clear when outlets close at different hours. Add structured data using schema.org's IceCreamShop type to each outlet page (see <a href="/blog/schema-markup-explained/">schema markup explained</a>), keep hours consistent across your website, Google and delivery apps, and share each new seasonal flavour as a <a href="/blog/google-business-profile-checklist/">Google Business Profile post</a>.</p>
 
 <h2>Common mistakes on ice cream websites</h2>
 <ul>
@@ -63985,7 +61347,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <h2>Local SEO for mehendi artists</h2>
 <p>Brides search phrases such as &quot;bridal mehendi artist near me&quot;, &quot;mehendi artist in Pune&quot; or &quot;Arabic mehendi designer Delhi&quot;. To appear in these results:</p>
 <ul>
-<li>Create a Google Business Profile with the right category, service areas, timings and plenty of photos. See <a href="/blog/google-business-profile-photos/">Google Business Profile photos</a>.</li>
+<li>Create a Google Business Profile with the right category, service areas, timings and plenty of photos. See <a href="/blog/google-business-profile-checklist/">Google Business Profile photos</a>.</li>
 <li>Use your city and main style naturally in page titles and headings.</li>
 <li>Create city pages only where you genuinely work often, with real photos from events there.</li>
 <li>Write helpful articles: tips for a darker mehendi stain, how early to book a bridal artist, bridal mehendi trends you actually offer.</li>
@@ -64084,7 +61446,7 @@ any unused part of the advance refunded as agreed</code></pre>
 
 <h2>Demo classes, enquiries and follow-up</h2>
 <p>A free or low-cost demo is the natural first step for most chess academies. The booking form should be short: student name, age, current level (with a &quot;not sure&quot; option), online or offline preference, and preferred time. Send an automatic confirmation with the demo link or centre address.</p>
-<p>Then follow up fast. A WhatsApp message the same day, with a note on how the demo went and which batch suits the student, converts far better than waiting for the parent to call back. The guide on <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> covers simple ways to do this, and <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> explains the setup.</p>
+<p>Then follow up fast. A WhatsApp message the same day, with a note on how the demo went and which batch suits the student, converts far better than waiting for the parent to call back. The guide on <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a> covers simple ways to do this, and <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your website</a> explains the setup.</p>
 <p>If you collect fees online for monthly packages or tournament entries, a payment gateway with UPI and cards can be connected to the site. Keep refund and rescheduling rules written down on the site so there is no confusion later.</p>
 
 <h2>Tournaments, achievements and fresh content</h2>
@@ -64235,132 +61597,6 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall.</p>
 
 <p>Want this handled for you? Security hardening, including XML-RPC, is part of my <a href="/wordpress-malware-removal/">WordPress malware removal and security</a> service, and ongoing checks are included in my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Get in touch if bots are slowing your site down.</p>
-`,
-  },
-  {
-    slug: 'wordpress-user-accounts-audit',
-    seoTitle: 'How to Audit WordPress User Accounts (Step by Step)',
-    title: 'How to Audit WordPress User Accounts: Old Admins, Roles and Shared Logins',
-    description: 'How to audit WordPress user accounts step by step: remove old admins and ex-developers, fix roles, stop shared logins and spot unknown admin accounts.',
-    date: '2026-10-01',
-    updated: '2026-10-28',
-    category: 'Security',
-    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
-    body: `
-<p>To audit WordPress user accounts, open Users in the dashboard, list every account and its role, remove anyone who no longer works with you, downgrade the rest to the lowest role they need, replace shared logins with named accounts, and investigate any administrator you don't recognise. On most business sites this takes under an hour.</p>
-<p>Most WordPress sites collect user accounts the way a drawer collects old keys: a developer from the launch three years ago, a marketing intern who left, an agency you stopped working with, a shared "office" login half the team knows. Each one is a way into your website, and often nobody is checking them.</p>
-<p>If you're not sure what each role can do, read <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> first. This guide is about the clean-up itself.</p>
-
-<h2>Step 1: Get a full list of accounts</h2>
-<p>Go to <strong>Users</strong> in your dashboard. The links above the list show how many accounts each role has, such as Administrator (4) or Editor (2). Click through each role and note:</p>
-<ul>
-  <li>Who the account belongs to, and whether that person still works with you</li>
-  <li>The email address on it: a personal Gmail, an old agency address, or one you don't recognise at all?</li>
-  <li>The role, and whether it still matches what they do</li>
-</ul>
-<p>WordPress doesn't show when each user last logged in by default. An activity log or security plugin can record this, which makes future audits much easier; see <a href="/blog/wordpress-activity-logs/">WordPress activity logs</a>.</p>
-<p>One quick check: if the number next to Administrator doesn't match the administrators you can actually see in the list, something may be hiding an account. Ask a developer to check the database directly.</p>
-
-<h2>Step 2: Remove people who no longer need access</h2>
-<p>Accounts that commonly need removing:</p>
-<ul>
-  <li><strong>Former staff</strong>, including people who left on good terms</li>
-  <li><strong>Previous developers and agencies</strong> whose project or contract has ended</li>
-  <li><strong>Freelancers</strong> given access for a one-off job, such as a writer or SEO consultant</li>
-  <li><strong>Test and demo accounts</strong> created during the build</li>
-  <li><strong>Temporary support logins</strong> that some theme or plugin vendors create for troubleshooting</li>
-  <li><strong>An old "admin" username</strong>, once you've created a properly named replacement</li>
-</ul>
-<p>If you're unsure whether someone still needs access, change their role to Subscriber and reset their password instead of deleting straight away. If nobody asks about it within a few weeks, delete the account.</p>
-<p>A common situation for Indian small businesses: the site was built by a freelancer or agency who still holds the only administrator login, the hosting account and sometimes the domain. Before removing their access, make sure you have your own administrator account and control of hosting and domain; see <a href="/blog/regain-website-access-old-developer/">how to regain control of your website from a previous developer</a>.</p>
-
-<h2>Step 3: Apply least privilege</h2>
-<p>For everyone who stays, give the lowest role that still lets them do their job.</p>
-<table>
-  <thead><tr><th>Person</th><th>Usually needs</th></tr></thead>
-  <tbody>
-    <tr><td>Business owner</td><td>Administrator, on their own personal account</td></tr>
-    <tr><td>Current developer or maintenance provider</td><td>Administrator on a separate named account, removed when the work ends</td></tr>
-    <tr><td>Marketing manager editing pages and posts</td><td>Editor</td></tr>
-    <tr><td>Staff writer</td><td>Author or Contributor</td></tr>
-    <tr><td>Staff handling WooCommerce orders and products</td><td>Shop Manager</td></tr>
-    <tr><td>Customers and members</td><td>Customer or Subscriber</td></tr>
-  </tbody>
-</table>
-<p>For most small businesses, the owner plus one trusted developer is enough administrators. If you have five, ask why each one needs full control.</p>
-
-<h2>Step 4: Stop shared logins</h2>
-<p>A single "office" or "website" login used by several people is convenient, but it causes real problems:</p>
-<ul>
-  <li>You can't remove one person's access without changing the password for everyone</li>
-  <li>Activity logs only say "office" did something, never who</li>
-  <li>The password ends up in WhatsApp chats, notebooks and former employees' phones</li>
-  <li>Two-factor authentication becomes awkward, so it often gets switched off</li>
-</ul>
-<p>Create a separate account for each person, with their own work email, a strong password and 2FA. Then delete the shared account, moving its content to a real person as described below. For the login side, see <a href="/blog/secure-wordpress-login/">how to secure your WordPress login</a>.</p>
-
-<h2>Step 5: Delete users without losing content</h2>
-<p>When you delete a user who has written posts or pages, WordPress asks what to do with their content: delete it all, or attribute it to another user. Almost always choose <strong>Attribute all content to</strong> and pick a current account. Otherwise pages and blog posts can disappear along with the user.</p>
-<ul>
-  <li><strong>Take a backup first</strong>, so a wrong click can be undone</li>
-  <li><strong>Delete staff and admin accounts one at a time</strong>, reading the content question carefully each time</li>
-  <li><strong>Be careful with WooCommerce customers.</strong> Past orders are business records you may need for GST and accounts, so don't bulk-delete customer accounts without checking how your store handles orders from deleted users</li>
-  <li><strong>Think about bylines:</strong> if a former writer's name should stay on their articles, keep their account as a Subscriber with an email address you control and a new password, rather than deleting it</li>
-</ul>
-
-<h2>Step 6: Treat unknown admins as a warning sign</h2>
-<p>An administrator account nobody in your business created, especially one with an odd username or an email on an unfamiliar domain, is one of the classic <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a>. Attackers create these accounts so they can get back in later. If you find one:</p>
-<ol>
-  <li>Don't just delete it and move on. Note its username, email and registration date first; the date can show roughly when the site was compromised</li>
-  <li>Check your activity log, if you have one, for what the account did</li>
-  <li>Change the passwords of every remaining administrator, plus hosting and SFTP</li>
-  <li>Look for the hidden code that often comes with these accounts; see <a href="/blog/find-remove-wordpress-backdoors/">how to find and remove backdoors</a></li>
-</ol>
-<p>Deleting the account without closing the way in often means it reappears days later.</p>
-
-<h2>Beyond the Users screen</h2>
-<ul>
-  <li><strong>Application passwords:</strong> on each administrator's profile page, revoke any application passwords nobody recognises. They let apps and services access the site without the main password.</li>
-  <li><strong>Active sessions:</strong> after removing someone's access or spotting something odd, use the option on your profile to log out of all other sessions.</li>
-  <li><strong>Other accounts:</strong> hosting, SFTP, Google Search Console and Analytics users also need removing when people leave.</li>
-</ul>
-
-<h2>WordPress user accounts audit checklist</h2>
-<p>Use this as a quick reference each time you run the audit.</p>
-<table>
-  <thead><tr><th>Check</th><th>Where</th><th>Action if it fails</th></tr></thead>
-  <tbody>
-    <tr><td>Admin count matches the people you expect</td><td>Users, Administrator filter</td><td>Remove or downgrade extras; investigate unknown ones</td></tr>
-    <tr><td>Every account has a recognisable work email</td><td>Users list</td><td>Contact the person or downgrade and reset the password</td></tr>
-    <tr><td>No shared logins</td><td>Users list and team habits</td><td>Create named accounts, then delete the shared one</td></tr>
-    <tr><td>2FA on all admin and editor accounts</td><td>Security plugin settings</td><td>Turn it on and help each person set it up</td></tr>
-    <tr><td>No unknown application passwords</td><td>Each admin's profile</td><td>Revoke them</td></tr>
-    <tr><td>Hosting, SFTP and Search Console users current</td><td>Hosting panel and Google tools</td><td>Remove people who have left</td></tr>
-  </tbody>
-</table>
-
-<h2>Make it a routine</h2>
-<ul>
-  <li><strong>Whenever someone leaves or a project ends:</strong> remove or downgrade their account the same day</li>
-  <li><strong>Every quarter:</strong> repeat Steps 1 to 4 and compare with your last list</li>
-  <li><strong>Always on:</strong> alerts for new administrator accounts, so you don't wait for the next audit to spot one</li>
-  <li><strong>Once a year:</strong> review application passwords, hosting users and other connected accounts too</li>
-</ul>
-<p>Keep a short record of who has access and why. It makes each audit faster and helps when you hand the site to a new developer. If you work with an agency or an outsourced developer in India, ask them to use their own named account rather than yours, so their access can be removed cleanly when the work ends.</p>
-
-<h2>FAQs</h2>
-<h3>How do I audit WordPress user accounts?</h3>
-<p>List every account under Users, check who owns each one and its email, remove people who no longer need access, give the rest the lowest suitable role, replace shared logins and investigate any unknown administrators.</p>
-<h3>How often should I review WordPress users?</h3>
-<p>Remove access the same day someone leaves, review the full list every quarter, and keep an alert running for new administrator accounts so you don't wait for the next review.</p>
-<h3>Will deleting a WordPress user delete their posts?</h3>
-<p>Only if you choose that option. When deleting, pick "Attribute all content to" and choose a current user so the posts and pages stay published.</p>
-<h3>Should my developer have an administrator account?</h3>
-<p>Usually yes while they are working on the site, but on a separate named account with their own email, removed or downgraded when the work ends.</p>
-<h3>What should I do if I find an admin account I didn't create?</h3>
-<p>Treat it as a possible hack. Record its details, check activity logs, change all admin, hosting and SFTP passwords, and look for backdoor code before deleting it.</p>
-
-<p>Want these checks done every month? User reviews and security alerts are part of my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off security clean-up. Found an account you can't explain? Get help with <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -64560,7 +61796,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <li><strong>Agree an overlap window</strong> for urgent issues, and what counts as urgent (site down, checkout broken, hacked).</li>
 <li><strong>Keep a site log</strong> per client with hosting details, key plugins, custom code notes and past incidents.</li>
 </ul>
-<p>Time zones help more than they hurt. Updates can run overnight from the client's point of view, and the agency wakes up to a report. The guide on <a href="/blog/offshore-wordpress-developer-time-zones/">working with an offshore WordPress developer across time zones</a> covers handovers and communication in more detail.</p>
+<p>Time zones help more than they hurt. Updates can run overnight from the client's point of view, and the agency wakes up to a report. The guide on <a href="/blog/outsource-wordpress-development-india/">working with an offshore WordPress developer across time zones</a> covers handovers and communication in more detail.</p>
 
 <h2>Onboarding a new site onto a care plan</h2>
 <p>Do not promise care on a site nobody has checked. A short onboarding audit protects both the agency and the developer:</p>
@@ -64602,7 +61838,7 @@ any unused part of the advance refunded as agreed</code></pre>
 </ul>
 
 <h2>Care plans vs development retainers</h2>
-<p>A care plan keeps a site healthy. A retainer buys development time for new features, pages and campaigns. Many agencies offer both: a care plan for every client and a retainer for those with ongoing work. If your clients regularly ask for new pages or integrations, read about <a href="/blog/agency-development-retainer/">agency development retainers</a> and <a href="/blog/agency-overflow-wordpress-work/">handling overflow WordPress work</a>.</p>
+<p>A care plan keeps a site healthy. A retainer buys development time for new features, pages and campaigns. Many agencies offer both: a care plan for every client and a retainer for those with ongoing work. If your clients regularly ask for new pages or integrations, read about <a href="/blog/agency-development-retainer/">agency development retainers</a> and <a href="/blog/white-label-wordpress-development-agencies/">handling overflow WordPress work</a>.</p>
 
 <p>Thinking of a partner in India for this behind-the-scenes work? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> covers white-label and NDA basics, time zones and the quality checks to agree on.</p>
 
@@ -64860,7 +62096,7 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Link text makes sense out of context</li>
   <li>Page usable at 200% zoom</li>
 </ul>
-<p>For a fuller review, use the <a href="/blog/website-accessibility-audit-checklist/">website accessibility audit checklist</a>.</p>
+<p>For a fuller review, use the <a href="/blog/website-accessibility-basics/">website accessibility audit checklist</a>.</p>
 
 <h2>Pass 7: Analytics and consent</h2>
 <ul>
@@ -64906,7 +62142,7 @@ any unused part of the advance refunded as agreed</code></pre>
 </ul>
 <p>When the project then moves to the client or a maintenance team, the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> covers what to pass on.</p>
 
-<p>If you bring in a partner when your own team is at capacity, running their builds through this same checklist keeps quality consistent; see <a href="/blog/agency-overflow-wordpress-work/">using a development partner for overflow work</a>.</p>
+<p>If you bring in a partner when your own team is at capacity, running their builds through this same checklist keeps quality consistent; see <a href="/blog/white-label-wordpress-development-agencies/">using a development partner for overflow work</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How long should website QA take?</h3>
@@ -65248,123 +62484,6 @@ any unused part of the advance refunded as agreed</code></pre>
 `,
   },
   {
-    slug: 'follow-up-website-leads-fast',
-    seoTitle: 'How to Follow Up Website Leads: Alerts and a Simple Plan',
-    title: 'How to Follow Up Website Leads: Alerts, Auto-Replies and a Simple Sequence',
-    description: 'How to follow up website leads fast: instant alerts, a helpful auto-reply, a call and WhatsApp sequence, and a lead sheet so no enquiry is forgotten.',
-    date: '2026-10-01',
-    updated: '2026-10-29',
-    category: 'Growth',
-    related: ['wordpress-website-development', 'landing-page-design'],
-    body: `
-<p>To follow up website leads well, do three things: get each enquiry to the right person instantly, reply personally as quickly as you reasonably can, and follow a short, polite sequence for people who don't answer the first time. Most lost leads aren't lost because the business said the wrong thing. They're lost because the form went to an inbox nobody checked, or the reply came after the customer had already booked someone else.</p>
-<p>This guide sets out a simple system that works for a small business without expensive software: alerts, an auto-reply, a follow-up sequence and a basic lead record. For the first reply itself, see <a href="/blog/respond-to-website-enquiries-fast/">how to respond to website enquiries fast</a>.</p>
-
-<h2>Step 1: make sure every lead reaches you</h2>
-<p>Before thinking about follow-up, check that enquiries actually arrive. Many WordPress sites send form emails through the server's basic mail function, which often lands in spam or vanishes.</p>
-<ul>
-<li>Send form notifications through SMTP with your business email, with SPF and DKIM set up. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">Business email deliverability</a> explains how.</li>
-<li>Store every submission in the WordPress database as well, so an email failure never loses a lead.</li>
-<li>Send the notification to a shared address or two people, not one person who may be on leave.</li>
-<li>Test the form monthly from a phone. If enquiries have dropped suddenly, read <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</li>
-</ul>
-
-<h2>Step 2: instant alerts on the phone</h2>
-<p>Email alone is slow for most owners in India, who live on WhatsApp. Options for getting a lead onto your phone straight away:</p>
-<table>
-<thead><tr><th>Method</th><th>Good for</th><th>Watch out for</th></tr></thead>
-<tbody>
-<tr><td>Email app with priority notifications</td><td>Simple setups, one person</td><td>Easy to miss among other mail</td></tr>
-<tr><td>WhatsApp alert via the WhatsApp Business Platform or an approved provider</td><td>Owners who live on WhatsApp</td><td>Needs approved templates and has usage costs; check current terms</td></tr>
-<tr><td>Team chat (Slack, Google Chat) message</td><td>Teams that already use chat</td><td>Only useful if someone watches it</td></tr>
-<tr><td>CRM notification app</td><td>Businesses with several salespeople</td><td>Setup time and subscription</td></tr>
-<tr><td>SMS alert</td><td>Field staff with basic phones</td><td>DLT registration rules for business SMS in India</td></tr>
-</tbody>
-</table>
-<p>Pick one that matches how you already work. Forms can be connected to most of these with an automation tool or a small custom integration; <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a> covers the common routes.</p>
-
-<h2>Step 3: an honest auto-reply and thank-you page</h2>
-<p>An automatic email or message sent straight after the form is submitted reassures people that their enquiry arrived. Keep it short and honest:</p>
-<ul>
-<li>Thank them and confirm what they asked about.</li>
-<li>Say when they can realistically expect a personal reply, for example "within working hours today" only if that is true.</li>
-<li>Give one useful next step: a link to your prices or process page, a brochure, or what details to have ready for the call.</li>
-<li>Include a phone or WhatsApp number for urgent questions.</li>
-</ul>
-<p>Don't pretend the auto-reply is personal, and don't promise response times you can't keep. The <a href="/blog/thank-you-pages-forms/">thank-you page</a> after the form can repeat the same expectations and is also where you measure conversions.</p>
-
-<h2>Step 4: reply personally, fast</h2>
-<p>The first personal reply matters most. People often contact several businesses at once, and the first useful answer tends to start the conversation. A practical aim is to reply within the hour during working hours, and first thing the next morning for evening enquiries.</p>
-<p>Make it useful rather than generic:</p>
-<ul>
-<li>Use their name and refer to what they asked.</li>
-<li>Answer the main question, even partly, or ask the one or two questions you need to quote.</li>
-<li>Suggest a specific next step: a short call at a given time, a site visit, or a sample.</li>
-</ul>
-<p>If they gave a phone number, a quick call often works better than email, followed by a WhatsApp message summarising what you discussed. Adding a <a href="/blog/whatsapp-on-business-website/">WhatsApp button to your website</a> also gives visitors who prefer chat a faster route in.</p>
-
-<h2>Step 5: a simple follow-up sequence</h2>
-<p>Many people who don't reply are simply busy. A short sequence, spread over a week or two, brings many of them back without being pushy. One example you can adapt:</p>
-<ol>
-<li><strong>Day 0:</strong> instant auto-reply, then a personal call or message.</li>
-<li><strong>Day 1:</strong> if no answer, a WhatsApp or email with the key information they asked for.</li>
-<li><strong>Day 3:</strong> a short check-in with something useful, such as an answer to a common question or a relevant example of past work.</li>
-<li><strong>Day 7:</strong> a final friendly message saying you'll close the enquiry unless they'd like to continue, and how to reach you later.</li>
-</ol>
-<p>Stop when they say no or ask you to stop, and respect any marketing preferences. Saved message templates on your phone or in your email make this quick; personalise the first line each time.</p>
-
-<h2>Follow-up messages you can adapt</h2>
-<p>Short, specific messages work better than long sales emails. These examples show the tone; change the details to match your business and what the customer asked.</p>
-<h3>First personal reply</h3>
-<p>"Hi Priya, thanks for your enquiry about a kitchen renovation in Baner. To give you a realistic estimate I need two things: the approximate size of the kitchen and whether you want to keep the existing layout. Would a 10-minute call at 5 pm today or 11 am tomorrow suit you?"</p>
-<h3>Day 1, no answer</h3>
-<p>"Hi Priya, I tried calling earlier. I have sent our process and what affects the cost of a kitchen project to your email, so you can look at it when convenient. Happy to answer any questions here on WhatsApp too."</p>
-<h3>Day 3, something useful</h3>
-<p>"One question people often ask at this stage is how long the work takes and whether the kitchen can be used during it. Here is a short page that explains it. Let me know if you would like to arrange a site visit."</p>
-<h3>Day 7, closing the loop</h3>
-<p>"I will close this enquiry for now so I do not keep messaging you. If the project comes back on the table, just reply here and I will pick it up. Thanks again for getting in touch."</p>
-<p>Notice that each message gives the person an easy way to reply, offers something of value and never pressures them. The closing message also often prompts a reply from people who meant to answer but forgot.</p>
-
-<h2>Step 6: keep a lead record</h2>
-<p>Even a shared spreadsheet beats memory. For each enquiry, record:</p>
-<ul>
-<li>Date and time, name and contact details.</li>
-<li>Source: which page, form, ad or campaign it came from.</li>
-<li>What they asked for.</li>
-<li>Status: new, contacted, quote sent, won, lost, not suitable.</li>
-<li>Next follow-up date and who owns it.</li>
-</ul>
-<p>Hidden form fields can capture the page URL and campaign parameters automatically. Over a few months this shows which pages and campaigns bring real customers rather than just form fills, which is the basis of <a href="/blog/measure-website-roi/">measuring website ROI</a>. If enquiries vary a lot in quality, <a href="/blog/lead-scoring-small-business/">simple lead scoring</a> helps you decide who to call first.</p>
-<p>Treat this data carefully: only collect what you need, restrict who can see it and explain in your privacy policy how enquiry details are used.</p>
-
-<h2>Common follow-up mistakes</h2>
-<ul>
-<li>Leads going to one person's personal inbox, and nobody else knowing.</li>
-<li>Replying with only a price and no next step.</li>
-<li>Giving up after one unanswered call.</li>
-<li>Following up for weeks with the same message.</li>
-<li>Not asking lost leads why they chose someone else, which is often the most useful feedback you can get.</li>
-</ul>
-
-<h2>Getting it set up</h2>
-<p>The technical side, reliable form email, phone alerts, auto-replies, source tracking and a lead sheet or CRM connection, can be set up on an existing WordPress site in a short project. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for this, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you prefer someone local.</p>
-
-<h2>FAQs</h2>
-<h3>How do I follow up website leads quickly?</h3>
-<p>Get instant alerts on your phone, send an honest auto-reply, call or message personally as soon as you can, and follow a short sequence for people who don't answer. Record each lead so none are forgotten.</p>
-<h3>How fast should I respond to a website enquiry?</h3>
-<p>As soon as you reasonably can. Within the hour during working hours is a good aim, because many people contact several businesses at the same time.</p>
-<h3>How many times should I follow up a lead?</h3>
-<p>Three or four attempts over a week or two, using different channels and adding something useful each time, is usually enough. Stop if they decline.</p>
-<h3>Can website form enquiries go straight to WhatsApp?</h3>
-<p>Yes, through the WhatsApp Business Platform or an approved provider connected to your form. It needs approved message templates and has usage costs, so check current terms first.</p>
-<h3>Do I need a CRM to follow up leads?</h3>
-<p>Not at first. A shared spreadsheet with source, status and next follow-up date works for many small businesses. Move to a CRM when several people handle leads.</p>
-
-<p>Want every enquiry delivered, tracked and followed up without relying on memory? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to set up the alerts, auto-replies and lead records on your site.</p>
-`,
-  },
-  {
     slug: 'website-calculators-lead-generation',
     seoTitle: 'Website Calculators for Lead Generation: EMI and Quotes',
     title: 'Website Calculators for Lead Generation: EMI, Savings and Quote Estimators',
@@ -65483,148 +62602,6 @@ any unused part of the advance refunded as agreed</code></pre>
 `,
   },
   {
-    slug: 'website-quiz-lead-generation',
-    seoTitle: 'Website Quizzes for Lead Generation: Types and Design',
-    title: 'Website Quizzes for Lead Generation: Product Finders, Assessments and Calculator-Style Quizzes That Help Visitors Decide',
-    description: 'Plan a lead generation quiz: product finders, assessments and calculator-style quizzes, question design, consent, result pages and WhatsApp follow-up.',
-    date: '2026-10-01',
-    updated: '2026-10-27',
-    category: 'Growth',
-    related: ['wordpress-website-development', 'woocommerce-developer'],
-    body: `
-<p>A lead generation quiz is a short set of questions on your website that ends with a personalised answer: the product that fits, a score with next steps, or a rough estimate. It works when visitors face several similar options and want help choosing. The pattern that tends to work best is four to seven easy questions, an honest result shown on screen, then an optional offer to send the full result or talk to someone, with consent asked clearly. Answers and the result then go to your inbox or CRM so your team can follow up with context.</p>
-<p>On a WordPress site this can be built with a form plugin, a dedicated quiz plugin or a custom block, depending on how complex the rules are. I build these as part of <a href="/wordpress-website-development/">WordPress website development</a> for service businesses, and as product finders on stores through <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
-
-<h2>Three types of quiz, and what each is for</h2>
-<table>
-  <thead><tr><th>Type</th><th>What the visitor gets</th><th>Good examples</th><th>Watch out for</th></tr></thead>
-  <tbody>
-    <tr><td>Product or service finder</td><td>A recommended plan, product, package or course</td><td>Mattresses, internet plans, gym memberships, coaching batches, skincare ranges, interior packages</td><td>Recommending the priciest option to everyone</td></tr>
-    <tr><td>Assessment or readiness check</td><td>A score or category with next steps</td><td>"Is your website ready for ads?", "How export-ready is your business?", a home safety checklist</td><td>Scores that sound scientific but aren't</td></tr>
-    <tr><td>Calculator-style quiz</td><td>A rough range, quantity or size</td><td>Solar system size, paint quantity, tiffin plan cost, website budget range</td><td>Ranges presented as quotes</td></tr>
-  </tbody>
-</table>
-<p>If your visitors mainly want a number, a straight calculator may suit better than a quiz; <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a> covers that format. If you mainly need details to quote, a qualifying form is simpler; see <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms for lead qualification</a>.</p>
-
-<h2>When a quiz is worth building</h2>
-<ul>
-  <li>You have several options that look alike to an outsider</li>
-  <li>The right choice depends on things visitors know about themselves: budget, usage, space, goals or preferences</li>
-  <li>Customers already ask "which one should I take?" by phone or WhatsApp</li>
-  <li>You can write down the rules your best salesperson uses to recommend</li>
-</ul>
-<p>Skip it if you only have two or three options; a comparison table is quicker. Be very careful where a recommendation needs a professional, such as medical treatment, legal matters or financial products. A quiz can help someone decide whom to speak to, but it should not diagnose or advise.</p>
-
-<h2>Designing questions people finish</h2>
-<p>Every question should change the result. If an answer makes no difference, cut it.</p>
-<ul>
-  <li><strong>Few questions:</strong> four to seven is often plenty, one per screen on mobile</li>
-  <li><strong>Everyday language:</strong> "How does your skin feel by the afternoon?" is easier than "What is your skin type?"</li>
-  <li><strong>Tappable answers</strong> with simple icons or images, not typing</li>
-  <li><strong>A "Not sure" option,</strong> handled sensibly in the result</li>
-  <li><strong>Visible progress</strong> such as "Question 3 of 5", and a back button</li>
-  <li><strong>Easiest question first,</strong> sensitive ones (budget, health) later, and only if they matter</li>
-  <li><strong>Local options:</strong> Hindi or regional-language versions if your customers prefer them</li>
-</ul>
-<h3>An example: a mattress finder</h3>
-<ol>
-  <li>Who will sleep on it? (One person, two people, a child)</li>
-  <li>How do you usually sleep? (Back, side, stomach, it changes)</li>
-  <li>Do you wake with back or shoulder stiffness? (Often, sometimes, rarely)</li>
-  <li>Do you feel hot at night? (Yes, no, only in summer)</li>
-  <li>Which bed size? (Single, double, queen, king, not sure)</li>
-  <li>Your budget range (three bands plus "show me everything")</li>
-</ol>
-<p>Six questions, each of which changes the recommendation. Note what is missing: name and phone number. Those come after the result, if the visitor wants more.</p>
-
-<h2>Result pages that build trust</h2>
-<p>The result is the reason people take the quiz, so it carries most of the weight.</p>
-<ul>
-  <li><strong>Rules your team agrees with.</strong> Write a simple table mapping answer combinations to results, and review it when products or prices change.</li>
-  <li><strong>Explain why:</strong> "Because you sleep on your side and feel hot at night, we suggest..."</li>
-  <li><strong>Recommend the cheaper option when it genuinely fits.</strong> It earns more trust than an upsell.</li>
-  <li><strong>Show an alternative</strong> and a link to compare everything, so the quiz never feels like a funnel with one exit.</li>
-  <li><strong>Avoid claims you can't support,</strong> especially about health, beauty or money, and suggest a professional for anything persistent or serious.</li>
-  <li><strong>One clear next step:</strong> buy, book a visit, or message on WhatsApp with the result attached.</li>
-</ul>
-<table>
-  <thead><tr><th>If the answers include</th><th>Recommend</th><th>Also show</th></tr></thead>
-  <tbody>
-    <tr><td>Side sleeper, shoulder stiffness</td><td>Medium-soft comfort layer range</td><td>The medium range, for couples with different preferences</td></tr>
-    <tr><td>Back sleeper, feels hot</td><td>Medium-firm breathable range</td><td>A cooling topper as an add-on</td></tr>
-    <tr><td>Budget band 1, any position</td><td>The best-fitting entry range</td><td>The next range up, with the difference explained</td></tr>
-    <tr><td>"Not sure" to most questions</td><td>A store visit or a short call</td><td>The comparison page</td></tr>
-  </tbody>
-</table>
-
-<h2>Lead capture and consent</h2>
-<p>The fairest pattern is to show the result on screen, then offer something extra: the full result by email, a personalised plan on WhatsApp, or a short call to confirm the choice. People who want it share their details willingly. Hiding the result behind a compulsory phone number tends to bring fake numbers and frustrated visitors.</p>
-<ul>
-  <li>Say what they will receive and how you will contact them</li>
-  <li>Ask only for what you need, usually a name and one contact method</li>
-  <li>Keep marketing consent as a separate, unticked checkbox</li>
-  <li>Treat quiz answers as personal data, especially anything about health, finances or children, and mention the quiz in your privacy policy</li>
-  <li>Decide how long you keep answers, and delete them when they are no longer needed</li>
-</ul>
-<p>India's Digital Personal Data Protection Act sets general expectations around notice, consent and purpose, and its rules are still being phased in. For a plain-language overview, read <a href="/blog/dpdp-act-website-basics/">India's DPDP Act and your website</a>, and confirm what applies to your business with a lawyer.</p>
-
-<h2>Ways to build a quiz on WordPress</h2>
-<table>
-  <thead><tr><th>Approach</th><th>Suits</th><th>Trade-offs</th></tr></thead>
-  <tbody>
-    <tr><td>Form plugin with conditional logic</td><td>Simple finders and assessments with a few result paths</td><td>Quick to build; complex scoring gets messy</td></tr>
-    <tr><td>Dedicated quiz or product-recommendation plugin</td><td>Scoring, many results, store product matching</td><td>More features, but check maintenance, script weight and data storage</td></tr>
-    <tr><td>Custom block or small custom plugin</td><td>Branded experiences, complex rules, tight speed budgets</td><td>Most control and lightest output; needs a developer for changes</td></tr>
-  </tbody>
-</table>
-<p>Whichever you choose, check that the quiz is actively maintained, loads its scripts only on the page that uses it, runs smoothly on an ordinary Android phone using 4G, and stores answers somewhere you control. <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a> helps if you go the form plugin route.</p>
-<h3>On a WooCommerce store</h3>
-<ul>
-  <li>Map results to categories, tags or attributes rather than single products, so recommendations keep working as your range changes</li>
-  <li>Show live price, stock and an add-to-cart button on the result</li>
-  <li>Hide out-of-stock products, or show the next-best option</li>
-  <li>Offer a complete set where it makes sense using <a href="/blog/woocommerce-product-bundles-upsells/">bundles and cross-sells</a></li>
-</ul>
-
-<h2>Follow-up: CRM, email and WhatsApp</h2>
-<p>A quiz lead arrives with context, so use it. The notification to your team should include every answer and the result, not just a name and number.</p>
-<ul>
-  <li><strong>Send leads to one place:</strong> a shared inbox, a Google Sheet or a CRM. <a href="/blog/connect-website-forms-to-crm/">Connecting website forms to a CRM</a> covers the options.</li>
-  <li><strong>Reply quickly, with the result in hand:</strong> "You chose the medium-firm range; would a store visit on Saturday help?" lands better than a generic call. See <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a>.</li>
-  <li><strong>WhatsApp only with permission,</strong> and in line with WhatsApp's own business messaging policies, which change from time to time.</li>
-  <li><strong>Tag by result,</strong> so later messages are relevant rather than a blast to everyone.</li>
-</ul>
-
-<h2>Measuring whether it works</h2>
-<p>Using <a href="/blog/ga4-events-explained/">GA4 events</a>, track quiz starts, each question answered, completions, which results appear most, clicks from results to products or WhatsApp, and opt-ins. Then look at outcomes: if one result leads to frequent returns or "not what I expected" feedback, the mapping is probably wrong. If many people choose "Not sure" on one question, rewrite or remove it.</p>
-
-<h2>Pre-launch checklist</h2>
-<ul>
-  <li>Every question changes the result</li>
-  <li>Result shown before any contact form</li>
-  <li>Rules table reviewed by the people who sell</li>
-  <li>Consent wording and privacy policy updated</li>
-  <li>Answers and result included in lead notifications</li>
-  <li>Tested on a mid-range phone over mobile data</li>
-  <li>Tracking events firing for start, completion and next step</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How many questions should a lead generation quiz have?</h3>
-<p>Usually four to seven, one per screen. Keep only questions that change the result; each extra question gives people another reason to leave.</p>
-<h3>Should I ask for a phone number before showing the result?</h3>
-<p>Generally no. Show the result first and offer extra value, such as a detailed plan or a call, in exchange for contact details with clear consent. Forced capture tends to bring fake numbers.</p>
-<h3>Can a quiz recommend WooCommerce products automatically?</h3>
-<p>Yes. Map answers to categories, tags or attributes, then show matching in-stock products with prices and add-to-cart buttons on the result page.</p>
-<h3>Do quiz answers count as personal data?</h3>
-<p>They can, especially when linked to a name or number, or when they touch on health, money or children. Mention the quiz in your privacy policy, collect only what you need and check obligations with a lawyer.</p>
-<h3>Is a quiz better than a calculator?</h3>
-<p>It depends on the question. A quiz suits "which one is right for me"; a calculator suits "how much or how many". Some businesses use both on different pages.</p>
-
-<p>Want a product or service finder that is fast, honest and connected to your enquiry process or store? See <a href="/wordpress-website-development/">WordPress website development</a> for service businesses, or <a href="/woocommerce-developer/">WooCommerce development</a> for online stores.</p>
-`,
-  },
-  {
     slug: 'website-for-wedding-decorators',
     noindex: true,
     seoTitle: 'Website for Wedding Decorators in India: What to Include',
@@ -65679,7 +62656,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>Decor sites are photo-heavy, and slow galleries lose mobile visitors. A few practical steps:</p>
 <ol>
 <li>Resize photos before uploading; a full camera file is far larger than any screen needs.</li>
-<li>Use modern formats such as WebP and compress images. The <a href="/blog/image-compression-plugins-compared/">image compression plugins comparison</a> covers good options for WordPress.</li>
+<li>Use modern formats such as WebP and compress images. The <a href="/blog/image-optimization-wordpress/">image compression plugins comparison</a> covers good options for WordPress.</li>
 <li>Lazy load images below the first screen, so the page appears quickly.</li>
 <li>Avoid autoplay background videos on the home page; link to a reel instead.</li>
 <li>Use a lightweight gallery rather than a heavy slider plugin.</li>
@@ -67092,139 +64069,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 `,
   },
   {
-    slug: 'website-for-computer-training-institutes',
-    seoTitle: 'Website for Computer Training Institutes in India',
-    title: 'Websites for Computer Training Institutes: Basic Courses, Tally and Design',
-    description: 'How to build a website for a computer training institute in India: course pages with syllabus and duration, batch timings, demo class booking, local SEO.',
-    date: '2026-10-01',
-    updated: '2026-10-28',
-    category: 'Industries',
-    related: ['website-for-schools-and-coaching', 'landing-page-design'],
-    body: `
-<p>A website for a computer training institute should help students and parents find the right course, understand the syllabus, duration and batch timings, trust the institute, and book a free demo class or counselling call. That means one page per course, honest certificate and placement information, an easy enquiry path by WhatsApp, and strong local SEO for searches like &quot;Tally course near me&quot;.</p>
-<p>This guide covers the pages, course details, enquiry setup and SEO that suit computer institutes in India teaching basic computers, Tally and accounting, MS Office and Excel, graphic design, programming and digital skills.</p>
-
-<h2>Who visits a computer institute website</h2>
-<p>Your visitors usually fall into a few groups, each with different questions:</p>
-<ul>
-<li><strong>School and college students</strong> wanting a skill for jobs or college: they compare courses, duration and certificates.</li>
-<li><strong>Parents</strong> deciding for a child: they care about safety, timings, faculty and value.</li>
-<li><strong>Job seekers and working adults</strong> wanting Tally, Excel, accounting or design skills: they want evening or weekend batches and practical training.</li>
-<li><strong>Homemakers and older learners</strong> wanting basic computer skills: they need reassurance that classes are beginner-friendly.</li>
-<li><strong>Businesses</strong> wanting staff training: they want custom schedules and group options.</li>
-</ul>
-
-<h2>Website for computer training institutes: pages to include</h2>
-<table>
-<thead><tr><th>Page</th><th>What it covers</th></tr></thead>
-<tbody>
-<tr><td>Home</td><td>Courses offered, location, batch types, a &quot;Book a free demo&quot; button</td></tr>
-<tr><td>All courses</td><td>Grouped by category: basic computers, accounting, office skills, design, programming</td></tr>
-<tr><td>Individual course pages</td><td>Syllabus, duration, batches, mode, certificate, who it suits, software used</td></tr>
-<tr><td>Batch timings</td><td>Upcoming batches, morning, evening and weekend options</td></tr>
-<tr><td>Faculty</td><td>Trainers' experience and specialisations</td></tr>
-<tr><td>Facilities</td><td>Lab, systems, software versions, AC, seating, accessibility</td></tr>
-<tr><td>Certificates and placement</td><td>What certificate is issued, by whom, and what placement help means</td></tr>
-<tr><td>Student work and reviews</td><td>Design portfolios, projects and genuine Google reviews</td></tr>
-<tr><td>Corporate training</td><td>Group and on-site training for businesses</td></tr>
-<tr><td>Contact</td><td>Address, landmark, map, timings, phone, WhatsApp</td></tr>
-</tbody>
-</table>
-
-<h2>Course pages that answer every question</h2>
-<p>Each course deserves its own page, because people search for specific courses such as &quot;Tally Prime course&quot;, &quot;Advanced Excel classes&quot; or &quot;graphic design course&quot;. A strong course page includes:</p>
-<ol>
-<li><strong>Who it is for</strong> and any prerequisites.</li>
-<li><strong>Syllabus</strong> broken into modules, with what students will be able to do after each.</li>
-<li><strong>Duration and hours</strong> per week, and batch options.</li>
-<li><strong>Mode:</strong> classroom, online live, or both.</li>
-<li><strong>Software and versions</strong> taught, such as the current Tally version or design tools.</li>
-<li><strong>Projects or practicals</strong> students complete.</li>
-<li><strong>Certificate</strong> issued, described accurately.</li>
-<li><strong>Fees approach:</strong> show fees if you are comfortable, or say what affects them, and mention instalment options if offered.</li>
-<li><strong>Next step:</strong> book a demo, download the syllabus, or message on WhatsApp.</li>
-</ol>
-<p>Avoid copying syllabus text from software vendors or other institutes. Write it in your own words, based on how you actually teach.</p>
-
-<h2>Certificates, affiliations and placement claims</h2>
-<p>This is where institutes most often lose trust. Be precise:</p>
-<ul>
-<li>Say who issues the certificate: your institute, a software vendor's programme, or a recognised body. Only mention a vendor partnership, government scheme or affiliation if you genuinely hold it, and use their logos only as permitted.</li>
-<li>Do not promise jobs or guaranteed placement. Describe what you actually provide, such as resume help, mock interviews or sharing job openings.</li>
-<li>Do not publish placement figures you cannot back up with records.</li>
-<li>If you run courses under a government skilling scheme, check the scheme's current rules on how it may be described.</li>
-</ul>
-<p>Honest wording protects you from complaints and builds the reputation that brings referrals.</p>
-
-<h2>Demo classes, enquiries and follow-up</h2>
-<p>Most students want to see the classroom or attend a demo before paying. Make that easy:</p>
-<ul>
-<li>A short form asking for name, phone, course of interest and preferred batch time.</li>
-<li>A WhatsApp button on every course page, with a pre-filled message naming the course. See <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to a business website</a>.</li>
-<li>An online booking calendar for demo slots, if you prefer fixed times.</li>
-<li>A downloadable syllabus PDF in exchange for a phone number, if it suits your process.</li>
-</ul>
-<p>Speed of follow-up matters more than the form design. Students often enquire at several institutes the same day; the one that calls back first with clear answers usually wins. The guide on <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> covers simple routines.</p>
-
-<h2>Online fee payment and registrations</h2>
-<p>Registrations and fee payments can be taken online through an Indian payment gateway with UPI, cards and netbanking. Options include a simple payment form for a registration fee or a WooCommerce setup where each course batch is a product. Send a receipt automatically, and check GST treatment of fees with your CA. If you sell recorded courses, see <a href="/blog/online-course-website-wordpress/">building an online course website on WordPress</a>.</p>
-
-<h2>Local SEO for computer institutes</h2>
-<p>Many searches are local: &quot;computer classes near me&quot;, &quot;Tally course in Hadapsar&quot;, &quot;Excel classes in Nashik&quot;. To show up:</p>
-<ul>
-<li>Complete your <a href="/blog/google-business-profile-checklist/">Google Business Profile</a> with the right category, photos of the lab and classroom, timings and the website link.</li>
-<li>Use the course name and your area in page titles and headings naturally.</li>
-<li>Add LocalBusiness or EducationalOrganization schema with your address.</li>
-<li>Ask students for honest Google reviews after the course ends.</li>
-<li>If you have several branches, give each its own page with its own address, photos and batch timings.</li>
-</ul>
-<p>The <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian businesses</a> has the full process. For schools and larger coaching centres, see <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>.</p>
-
-<h2>Showing student work</h2>
-<p>For design, video editing and web courses, student portfolios are the strongest proof. Create a gallery of projects, with the student's permission and first name only if they agree. For Tally and Excel courses, show sample practical exercises instead. Keep images compressed so the gallery does not slow the site.</p>
-
-<h2>Blog content that brings students</h2>
-<p>Helpful articles answer the questions students search before they choose an institute, and they bring visitors who are not yet ready to enquire. Good topics for a computer institute include:</p>
-<ul>
-<li>Which course to choose after 10th or 12th, explained by goal rather than by course name.</li>
-<li>What a Tally course covers and who uses Tally at work.</li>
-<li>Basic versus advanced Excel: what the difference is and which jobs ask for each.</li>
-<li>How long it takes to learn graphic design basics, and what a beginner portfolio looks like.</li>
-<li>Typing speed tips, keyboard shortcuts and common beginner questions.</li>
-</ul>
-<p>Write each article in plain language, end it with a link to the matching course page, and keep it updated when software versions change. Articles in Hindi or Marathi can work well if many of your students prefer them, as long as you keep each language consistent.</p>
-
-<h2>Keeping the site current</h2>
-<p>An institute website goes out of date quickly: batches start and end, software versions change, trainers move on and fees are revised. Assign one person to check the batch timings page every week and the course pages every term. Remove finished batches, add new ones with real start dates, and update screenshots when software changes. Post batch announcements on your Google Business Profile too, so local searchers see that the institute is active.</p>
-<p>Also check the technical side every month or two: that enquiry forms still deliver to the right inbox, WhatsApp buttons open the correct number, and the site loads quickly on a mobile phone. A short maintenance routine prevents the common situation where enquiries silently stop for weeks because a form broke after an update.</p>
-
-<h2>Common mistakes on institute websites</h2>
-<ul>
-<li>One long page listing every course in a paragraph, with no individual course pages.</li>
-<li>Outdated batch dates that make the institute look closed.</li>
-<li>Logos of software companies or government schemes the institute is not part of.</li>
-<li>Promises like &quot;100% job guarantee&quot;.</li>
-<li>No address or landmark, which puts off parents.</li>
-<li>Slow, image-heavy pages that fail on students' phones.</li>
-<li>Enquiry forms that ask for too much, such as full address and qualifications, before a student has even seen the classroom or attended a demo class.</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>What should a website for a computer training institute include?</h3>
-<p>Separate course pages with syllabus, duration, batches and certificate details, batch timings, faculty, facilities, honest placement information, student work, reviews, and an easy demo booking or WhatsApp enquiry.</p>
-<h3>Should I show course fees on the website?</h3>
-<p>It is your choice. Showing fees saves time on calls; if you prefer not to, explain what affects fees and mention instalment options so students are not surprised.</p>
-<h3>Can students pay fees online?</h3>
-<p>Yes. A payment form or WooCommerce setup with an Indian payment gateway can accept UPI, cards and netbanking and send receipts automatically.</p>
-<h3>Can I mention placement assistance?</h3>
-<p>Yes, if you describe exactly what you provide. Avoid job guarantees and unsupported placement figures.</p>
-<h3>Do I need a separate page for each course?</h3>
-<p>Yes. Students search for specific courses, and a dedicated page gives each one a better chance to rank and convert.</p>
-
-<p>If you want a website that brings more demo bookings, see <a href="/wordpress-website-development/">WordPress website development</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Institutes in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-`,
-  },
-  {
     slug: 'website-for-abacus-vedic-maths-classes',
     noindex: true,
     seoTitle: 'Website for Abacus and Vedic Maths Classes in India',
@@ -67834,103 +64678,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 `,
   },
   {
-    slug: 'woocommerce-store-running-costs',
-    seoTitle: 'WooCommerce Store Cost Per Month in India: Running Costs',
-    title: 'WooCommerce Store Running Costs: What to Budget For After Launch',
-    description: 'WooCommerce store cost per month in India: hosting, domain, plugin renewals, gateway fees, shipping, maintenance and marketing, with a budgeting sheet.',
-    date: '2026-10-01',
-    updated: '2026-10-30',
-    category: 'Pricing',
-    related: ['woocommerce-developer', 'wordpress-maintenance'],
-    body: `
-<p>The WooCommerce store cost per month in India is made of two parts. Fixed costs are small: a domain (about ₹500 to ₹1,200 a year), hosting (about ₹2,500 to ₹15,000 a year), premium plugin renewals and, if you want one, a maintenance plan (typically ₹1,500 to ₹6,000 a month from a freelancer, with stores at the higher end). The bigger costs grow with every order: payment gateway fees, shipping, packaging, returns and marketing.</p>
-<p>WooCommerce itself is free, which is why many owners underestimate what a store costs to run. This guide lists every cost you should budget for after launch, explains what drives each one and ends with a simple running-cost sheet.</p>
-
-<h2>WooCommerce store cost per month: the overview</h2>
-<table>
-<thead><tr><th>Cost</th><th>Typical figure or driver</th><th>How it is paid</th></tr></thead>
-<tbody>
-<tr><td>Domain</td><td>About ₹500 to ₹1,200 a year</td><td>Yearly</td></tr>
-<tr><td>Hosting</td><td>About ₹2,500 to ₹15,000 a year; stores belong at the better end</td><td>Usually yearly or multi-year</td></tr>
-<tr><td>Premium theme or page builder Pro</td><td>₹0 to about ₹6,000 a year</td><td>Yearly licence</td></tr>
-<tr><td>Premium WooCommerce extensions</td><td>Depends on which ones you need</td><td>Mostly yearly licences</td></tr>
-<tr><td>Payment gateway fees</td><td>A percentage of each online payment, as per your gateway plan</td><td>Deducted per transaction</td></tr>
-<tr><td>Shipping and packaging</td><td>Weight, distance, courier and COD charges</td><td>Per order</td></tr>
-<tr><td>Maintenance plan (optional)</td><td>About ₹1,500 to ₹6,000 a month from a freelancer</td><td>Monthly</td></tr>
-<tr><td>Marketing</td><td>Your choice of ads, email, WhatsApp and SEO</td><td>Monthly budget</td></tr>
-<tr><td>Returns and failed deliveries</td><td>Return shipping, RTO on COD orders, damaged goods</td><td>Per incident</td></tr>
-</tbody>
-</table>
-<p>The first launch cost is separate. A professionally built WooCommerce store typically costs about ₹30,000 to ₹90,000 or more; the guide to <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> explains what drives that figure.</p>
-
-<h2>Hosting that suits a store</h2>
-<p>Stores need better hosting than brochure sites because cart, checkout and account pages cannot be fully cached, and every order writes to the database. Cheap shared plans often struggle during sales or festival traffic. Look for enough resources for your product count and traffic, daily backups, a staging site, good support and servers close to Indian visitors. Watch renewal prices too: introductory offers often renew at a much higher rate, so check the renewal rate before you buy. For plan comparisons, see <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a>.</p>
-
-<h2>Payment gateway fees</h2>
-<p>Gateways such as Razorpay, PayU, Cashfree and others charge a percentage of each online payment, which varies by payment method and plan, and GST applies on the fee. Rates and offers change, so check the current pricing page of your gateway rather than relying on any article. When comparing gateways, also look at settlement time, international card support, refund handling and how well the WooCommerce plugin is maintained.</p>
-<p>Because this cost scales with sales, budget it as a percentage of revenue, not a fixed monthly amount.</p>
-
-<h2>Shipping and packaging</h2>
-<p>For most Indian stores, shipping is one of the largest running costs. It depends on weight (including volumetric weight), distance, courier partner, and whether the order is prepaid or cash on delivery. Aggregators such as Shiprocket give access to several couriers through one account. Add packaging: boxes, mailers, tape, fillers and printed invoices.</p>
-<p>COD adds its own cost: COD handling charges and return-to-origin (RTO) shipping when buyers refuse orders. The guides to <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup in India</a> and <a href="/blog/woocommerce-cash-on-delivery-india/">cash on delivery for WooCommerce</a> explain how to control these.</p>
-
-<h2>Premium plugin and extension renewals</h2>
-<p>A basic store can run on free plugins, but many stores add premium extensions for subscriptions, bookings, product filters, advanced shipping rules, GST invoices or backups. Most are licensed yearly; if you stop renewing, the plugin usually keeps working but you lose updates and support, which becomes a security risk over time. Keep a list of every paid plugin, its renewal date and cost, and remove any you no longer use. Avoid nulled or pirated plugins; they often contain malware.</p>
-
-<h2>Maintenance and security</h2>
-<p>A store has more moving parts than a brochure site: WooCommerce updates, payment and shipping plugins, theme templates that need updating and a checkout that must never break. Maintenance covers updates tested on staging, backups, uptime and security monitoring, speed checks and fixing issues when something stops working.</p>
-<p>You can do this yourself if you have the time and skills, or use a maintenance plan. Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month, with stores and business-critical sites at the higher end. The guide to <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> explains what plans include, and the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> lists the tasks.</p>
-
-<h2>Marketing to bring shoppers in</h2>
-<p>A store with no visitors earns nothing, so most owners spend something on marketing: Google Shopping and search ads, Meta and Instagram ads, email and WhatsApp campaigns, influencer collaborations and SEO content. This budget is entirely your choice and should be judged against the profit each order brings, not revenue alone. Start small, track conversions and grow what works. Festival seasons such as Diwali often bring more competition for ad space, so plan those budgets early and decide in advance how much you are willing to spend to win each order.</p>
-
-<h2>Hidden costs owners often forget</h2>
-<p>Beyond the obvious items, a few smaller costs catch many store owners by surprise:</p>
-<ul>
-<li><strong>Business email:</strong> a professional address on your domain may be included with hosting or may be a separate monthly or yearly plan.</li>
-<li><strong>SMS and WhatsApp notifications:</strong> order and delivery messages sent through a provider are usually charged per message or by plan.</li>
-<li><strong>Email marketing tools:</strong> free tiers often have limits on contacts or sends, and paid plans grow with your list.</li>
-<li><strong>Product photography:</strong> new products need photos, and good images are an ongoing cost, not a one-time one.</li>
-<li><strong>Accounting and GST compliance:</strong> your CA&apos;s fees, invoicing tools and filing. Ask your CA what applies to your store.</li>
-<li><strong>Your own time:</strong> processing orders, answering customer questions, updating stock and handling returns. If you hire help, include it in the sheet.</li>
-</ul>
-<p>None of these is large on its own, but together they can change your margin, so list them alongside the main costs.</p>
-
-<h2>Returns, refunds and failed deliveries</h2>
-<p>Returns cost you twice: the original shipping and the return shipping, plus any damaged goods. Failed COD deliveries add RTO charges. Budget a share of revenue for this based on your own order history once you have a few months of data, and keep a clear returns policy to reduce disputes.</p>
-
-<h2>WooCommerce vs Shopify running costs in India</h2>
-<p>With WooCommerce you pay for hosting, domain and any plugins you choose, and you are responsible for maintenance. With Shopify you pay a monthly platform subscription that includes hosting and security, plus paid apps and, depending on your setup, transaction fees. Shopify plans and app prices change and are billed differently, so check Shopify&apos;s pricing page for current figures. In general, WooCommerce gives more control and can cost less at a fixed level, while Shopify trades a higher monthly subscription for less technical upkeep. The guide to <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> compares them in detail.</p>
-
-<p>If the comparison points you towards a hosted platform instead, see <a href="/shopify-developer/">our Shopify development service</a> for store setup, apps and launch checks.</p>
-
-<h2>Putting it together: a running-cost sheet</h2>
-<ol>
-<li><strong>Yearly fixed:</strong> domain, hosting, premium theme and plugin licences. Divide by 12 for a monthly figure.</li>
-<li><strong>Monthly fixed:</strong> maintenance plan, email marketing tool, any paid apps or services.</li>
-<li><strong>Per order:</strong> gateway fee, shipping, packaging, COD charges.</li>
-<li><strong>Percentage of revenue:</strong> returns and RTO allowance, marketing budget.</li>
-</ol>
-<p>Fill this in with your own quotes and gateway rates, then check that your product prices leave a margin after all four. Review it every few months, because renewal prices and shipping rates change.</p>
-
-<h2>FAQs</h2>
-<h3>What is the WooCommerce store cost per month in India?</h3>
-<p>Fixed costs are low: a domain at about ₹500 to ₹1,200 a year, hosting at about ₹2,500 to ₹15,000 a year and any plugin licences, plus an optional maintenance plan at about ₹1,500 to ₹6,000 a month. Gateway fees, shipping, returns and marketing then grow with your sales.</p>
-<h3>Is WooCommerce free to run?</h3>
-<p>The plugin is free, but a store needs hosting, a domain, usually some premium extensions, payment gateway fees, shipping and maintenance, so it always has running costs.</p>
-<h3>Is WooCommerce cheaper than Shopify in India?</h3>
-<p>Often at a fixed-cost level, because you avoid a monthly platform subscription, but you take on hosting and maintenance. The right choice depends on your products, team and how much control you need.</p>
-<h3>Do I need a maintenance plan for my WooCommerce store?</h3>
-<p>Not necessarily, if you can safely test updates, take backups and fix problems yourself. Many owners prefer a plan because a broken checkout costs sales immediately.</p>
-<h3>Which WooCommerce costs grow as my sales grow?</h3>
-<p>Payment gateway fees, shipping, packaging, COD charges, returns and usually marketing. Hosting may also need upgrading as traffic increases.</p>
-<h3>How can I lower my WooCommerce store cost per month?</h3>
-<p>Remove plugins you no longer use, check whether premium renewals still earn their keep, compare gateway and courier rates once a year, and keep the store fast so ad spend converts better. A regular <a href="/blog/woocommerce-maintenance-checklist/">maintenance routine</a> also prevents the costly emergency fixes that blow a monthly budget.</p>
-
-<p>If you want help keeping your store fast, secure and affordable to run, I work on stores as a <a href="/woocommerce-developer/">WooCommerce developer</a> and offer <a href="/wordpress-maintenance/">WordPress maintenance and support</a>. Store owners elsewhere in the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
-`,
-  },
-  {
     slug: 'shared-vs-vps-vs-managed-wordpress-hosting',
     seoTitle: 'Shared vs VPS vs Managed WordPress Hosting in India',
     title: 'Shared vs VPS vs Cloud vs Managed WordPress Hosting: Which Do You Need?',
@@ -67953,7 +64700,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <tr><td>Managed WordPress</td><td>Hosting tuned only for WordPress, with caching, backups and staging built in</td><td>Owners who want less maintenance work</td><td>Less freedom over server settings; some plugins may be restricted</td></tr>
 </tbody>
 </table>
-<p>For a typical Indian business site, hosting costs across these types range from roughly ₹2,500 to ₹15,000 a year, depending on the plan and the renewal terms. For a fuller breakdown, see the guide on <a href="/blog/wordpress-hosting-price-india/">WordPress hosting price in India</a>.</p>
+<p>For a typical Indian business site, hosting costs across these types range from roughly ₹2,500 to ₹15,000 a year, depending on the plan and the renewal terms. For a fuller breakdown, see the guide on <a href="/blog/choose-wordpress-hosting-india/">WordPress hosting price in India</a>.</p>
 
 <h2>Shared hosting: where most sites should start</h2>
 <p>Shared hosting puts your site on a server alongside many others. That keeps costs low, and for a five to fifteen page business website with an enquiry form, it is usually all you need. Modern shared plans often include free SSL, daily or weekly backups, email accounts and a one-click WordPress installer.</p>
@@ -68007,7 +64754,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </table>
 <p>The article on <a href="/blog/hosting-renewal-price-increase/">hosting renewal price increases</a> explains how to plan for the second-year jump.</p>
 
-<p>Network installs outgrow shared plans sooner than single sites. Before upgrading, check the other ways to <a href="/blog/wordpress-multisite-slow/">speed up WordPress multisite</a>.</p>
+<p>Network installs outgrow shared plans sooner than single sites. Before upgrading, check the other ways to <a href="/blog/wordpress-multisite-when-needed/">speed up WordPress multisite</a>.</p>
 
 <p>Before upgrading, check your caching is set up properly: hosts such as Hostinger offer server-level caching that a shared plan can already use. See <a href="/blog/wordpress-caching-explained/">how page, object and server caching work in WordPress</a>.</p>
 
@@ -68141,7 +64888,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </ol>
 <p>Then check every quote against the same list. <a href="/blog/compare-website-quotes/">How to compare website quotes</a> explains why quotes differ, and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> shows where cutting corners costs you later.</p>
 
-<p>A short email opt-in page is usually quicker to build than a full sales page, so name the format in the brief. <a href="/blog/squeeze-page-vs-landing-page/">Squeeze page vs landing page</a> explains how the two differ.</p>
+<p>A short email opt-in page is usually quicker to build than a full sales page, so name the format in the brief. <a href="/blog/landing-page-vs-website/">Squeeze page vs landing page</a> explains how the two differ.</p>
 
 <h2>Quote checklist</h2>
 <ul>
@@ -69033,7 +65780,7 @@ RewriteRule . /index.php [L]
 <li>Set up quick replies for common questions, and a greeting that shares a short brochure link or the landing page.</li>
 <li>Answer with a clear next step: a visit, a call or a booking.</li>
 </ul>
-<p>On a landing page, a short form with a few qualifying fields does this work for you. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> shows how to ask more without putting people off. Whichever route you use, speed matters; <a href="/blog/follow-up-website-leads-fast/">following up website leads fast</a> explains why.</p>
+<p>On a landing page, a short form with a few qualifying fields does this work for you. <a href="/blog/multi-step-forms-lead-qualification/">Multi-step forms for lead qualification</a> shows how to ask more without putting people off. Whichever route you use, speed matters; <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a> explains why.</p>
 
 <h2>Tracking and measuring results</h2>
 <p>With WhatsApp ads, Meta reports conversations started. Knowing which chats became sales usually means tagging chats manually or using a WhatsApp Business API tool with a CRM. That is possible but needs set-up and discipline.</p>
@@ -69090,143 +65837,6 @@ RewriteRule . /index.php [L]
 <p>Google Ads needs a landing page, but the page can include a WhatsApp button and you can track those clicks as conversions.</p>
 
 <p>Want a landing page that turns ad clicks into real enquiries? See <a href="/landing-page-design/">landing page design</a>.</p>
-`,
-  },
-  {
-    slug: 'video-testimonials-website',
-    seoTitle: 'How to Add Video Testimonials to Your Website',
-    title: 'Video Testimonials for Your Website: How to Collect, Edit and Use Them Honestly',
-    description: 'How to add video testimonials to your website: asking Indian customers, recording on a phone, consent, editing, fast embeds and where to place them.',
-    date: '2026-10-10',
-    updated: '2026-10-28',
-    category: 'Growth',
-    related: ['wordpress-website-development', 'landing-page-design'],
-    body: `
-<p>To add video testimonials to your website, ask happy customers for a 30 to 90 second phone video answering three simple questions, get written permission, trim it lightly, add captions, upload it to YouTube or your own host and embed it with a lightweight player on the pages where buyers make decisions. The rest of this guide covers each step for Indian businesses.</p>
-<p>Video works because people can see and hear a real customer. For clinics, coaching institutes, interior designers, builders, service businesses and online stores, that can do more to settle doubts than any amount of copy.</p>
-
-<h2>Why video testimonials build trust</h2>
-<p>Written reviews are easy to fake and easy to skim. A video shows a face, a voice, a real location and natural language, often in Hindi, Marathi, Tamil or a mix. Buyers in India often ask friends and family before deciding; a video testimonial is the closest thing your website has to that conversation.</p>
-<table>
-  <thead><tr><th>Format</th><th>Strength</th><th>Weakness</th></tr></thead>
-  <tbody>
-    <tr><td>Written testimonial</td><td>Quick to collect, easy to read</td><td>Easy to doubt, often generic</td></tr>
-    <tr><td>Google review embed</td><td>Independent platform, visible star rating</td><td>Short, no control over which appear</td></tr>
-    <tr><td>Photo plus quote</td><td>Adds a face to the words</td><td>Still feels edited</td></tr>
-    <tr><td>Video testimonial</td><td>Most personal and believable</td><td>Takes effort to collect and must load efficiently</td></tr>
-  </tbody>
-</table>
-<p>Use them together. <a href="/blog/collect-display-customer-testimonials/">How to collect and display customer testimonials</a> covers written ones, and <a href="/blog/google-reviews-on-website/">showing Google reviews on your website</a> covers review widgets.</p>
-
-<h2>How to ask customers for a video</h2>
-<p>The best moment is right after a good outcome: a delivered project, a cleared exam, a smooth handover, a repeat order. Ask personally, by WhatsApp or in person, rather than through a generic email blast.</p>
-<ul>
-  <li><strong>Keep the request small:</strong> "Could you record a one-minute video on your phone about your experience?"</li>
-  <li><strong>Offer a choice of language:</strong> people speak more naturally in the language they are comfortable with.</li>
-  <li><strong>Offer to record it yourself:</strong> at a handover, site visit or result day, with their agreement.</li>
-  <li><strong>Make it optional and pressure-free:</strong> a reluctant testimonial looks reluctant.</li>
-</ul>
-<h3>Three questions that produce a useful video</h3>
-<ol>
-  <li>What was the situation or worry before you came to us?</li>
-  <li>What was it like working with us?</li>
-  <li>What would you tell someone thinking of doing the same?</li>
-</ol>
-<p>These questions guide without scripting. Do not hand customers lines to read. Viewers can tell, and putting words in someone's mouth is misleading.</p>
-
-<h2>Recording tips for phone videos</h2>
-<ul>
-  <li>Hold the phone horizontally for website use, or vertically if you mainly plan to use Reels and Shorts; decide before recording.</li>
-  <li>Face a window or stand outdoors in shade for even light.</li>
-  <li>Choose a quiet spot; traffic and fans spoil audio more than a slightly shaky picture.</li>
-  <li>Keep the phone at eye level, about an arm's length away.</li>
-  <li>A cheap clip-on microphone improves sound a lot if you record many testimonials.</li>
-  <li>Record a little extra at the start and end so there is room to trim.</li>
-</ul>
-
-<h2>Consent and honesty rules</h2>
-<p>A testimonial is someone's personal data and likeness. Treat it carefully.</p>
-<ul>
-  <li><strong>Get written permission:</strong> a short form or WhatsApp message stating where the video will appear (website, social media, ads) and that they can ask for removal later.</li>
-  <li><strong>Be careful with sensitive sectors:</strong> clinics, hospitals and legal practices should check current professional and advertising rules before publishing patient or client testimonials. Ask your adviser if unsure.</li>
-  <li><strong>Children:</strong> for coaching institutes and schools, get a parent's consent for any student video.</li>
-  <li><strong>No paid opinions without disclosure:</strong> if you give a discount or gift for a video, say so.</li>
-  <li><strong>Do not cut meaning:</strong> trimming pauses is fine; stitching sentences to change what someone said is not.</li>
-  <li><strong>Honour removal requests promptly,</strong> including on social media copies.</li>
-</ul>
-<p>Your privacy policy should mention how you handle testimonial content. <a href="/blog/privacy-policy-cookie-basics-india/">Privacy policy and cookie basics for India</a> gives a starting point.</p>
-
-<h2>Editing: keep it light</h2>
-<ul>
-  <li>Trim the start and end, and long pauses.</li>
-  <li>Add the person's first name, city and what they used you for, with their permission.</li>
-  <li>Add captions. Many people watch on mute, and captions help viewers who prefer reading or speak another language. Add English captions to regional-language videos if your audience is mixed.</li>
-  <li>Keep your logo small, or leave it out.</li>
-  <li>Aim for 30 to 90 seconds per video. Longer stories can be a separate case study.</li>
-</ul>
-<p>Free phone editors are enough for most businesses. You do not need a studio look; too much polish can make a testimonial feel like an advert.</p>
-
-<h2>How to add video testimonials to your website without slowing it down</h2>
-<p>Video is heavy. A page with several standard embeds can load a lot of extra scripts before anyone presses play, which hurts speed on Indian mobile networks.</p>
-<table>
-  <thead><tr><th>Option</th><th>Good for</th><th>Watch out for</th></tr></thead>
-  <tbody>
-    <tr><td>YouTube embed (lazy loaded)</td><td>Most sites; free hosting and extra reach</td><td>Default embeds load scripts early; use a click-to-load facade</td></tr>
-    <tr><td>Vimeo or similar host</td><td>Cleaner player, no suggested videos</td><td>Paid plans for business use</td></tr>
-    <tr><td>Self-hosted MP4</td><td>Very short clips</td><td>Bandwidth on shared hosting, no adaptive quality</td></tr>
-    <tr><td>Shopify product media</td><td>Store product pages</td><td>Keep files short and compressed</td></tr>
-  </tbody>
-</table>
-<ul>
-  <li>Show a thumbnail image that loads the player only when clicked. Many WordPress performance plugins and some themes do this.</li>
-  <li>Never autoplay with sound.</li>
-  <li>Put a short text summary or quote under each video so the page still makes sense, and search engines can read it.</li>
-  <li>On WordPress, a simple custom post type or block for testimonials keeps them easy to reuse on several pages.</li>
-</ul>
-<p>For more on video formats and hosting, see <a href="/blog/video-on-business-website/">video on your business website</a>. If the page has already become slow, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> can help.</p>
-
-<h2>Where to place video testimonials</h2>
-<ul>
-  <li><strong>Next to the decision:</strong> beside the enquiry form, the pricing section or the "Book a consultation" button.</li>
-  <li><strong>On service pages:</strong> match the video to the service. A kitchen renovation video belongs on the kitchen page.</li>
-  <li><strong>On product pages:</strong> for Shopify or WooCommerce stores, a short customer unboxing or usage clip near the Add to Cart button.</li>
-  <li><strong>On a testimonials page:</strong> a full collection for visitors who want to see more.</li>
-  <li><strong>In follow-up messages:</strong> send a relevant video by WhatsApp to a prospect who is undecided.</li>
-</ul>
-<p>One strong video in the right place beats a wall of ten on the homepage.</p>
-
-<h2>Turning testimonials into a steady habit</h2>
-<p>Most businesses collect two or three videos in a burst of enthusiasm and then stop. A light routine keeps the collection fresh and relevant.</p>
-<ol>
-  <li><strong>Pick trigger moments:</strong> project handover, result day, a customer's third order, the end of a course batch. Put a reminder in your process for each.</li>
-  <li><strong>Keep a simple tracker:</strong> a spreadsheet with the customer, date, service, language, consent status and where the video is used.</li>
-  <li><strong>Store originals safely:</strong> keep raw files and signed consent in one shared folder, so you can re-edit later or remove a video quickly if asked.</li>
-  <li><strong>Review twice a year:</strong> retire videos that mention old prices, discontinued services or staff who have left.</li>
-  <li><strong>Reuse carefully:</strong> a website video can also become a short social clip or a WhatsApp follow-up, but only within the uses the customer agreed to.</li>
-</ol>
-<h3>Mark them up for search</h3>
-<p>Search engines cannot watch your video, but they can read text around it. Give each embed a descriptive title, the summary paragraph mentioned above and, where it fits, video structured data so the page is understood properly. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers the basics. Avoid adding star-rating markup for reviews you collected yourself on your own site, because Google restricts that kind of self-serving review markup.</p>
-<h3>What to avoid</h3>
-<ul>
-  <li>Stock footage of actors presented as customers</li>
-  <li>Testimonials from friends or staff presented as independent buyers</li>
-  <li>Old videos that promise results you no longer deliver</li>
-  <li>Music so loud the customer cannot be heard</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How do I add video testimonials to my website?</h3>
-<p>Upload the video to YouTube or another host, then embed it on the relevant page with a click-to-load player, a caption and a short text summary. On WordPress this is a block; on Shopify it can go in product media or a section.</p>
-<h3>How long should a video testimonial be?</h3>
-<p>Usually 30 to 90 seconds. Long enough to tell a short story, short enough that people watch to the end.</p>
-<h3>Can I offer a discount for a video testimonial?</h3>
-<p>You can thank customers, but if the reward could influence what they say, disclose it. Never ask for a positive script in return.</p>
-<h3>Do I need professional equipment?</h3>
-<p>No. A recent phone, good light and quiet surroundings are enough. A small clip-on microphone is the most useful upgrade.</p>
-<h3>Will videos slow down my website?</h3>
-<p>They can if embedded the default way. A thumbnail that loads the player only when clicked keeps the page fast.</p>
-
-<p>Want testimonials that load fast and sit where they help? I can build a testimonial section on WordPress or Shopify as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for an existing site.</p>
 `,
   },
   {
@@ -69645,7 +66255,7 @@ RewriteRule . /index.php [L]
 <tr><td>Custom rules and integrations</td><td>Limited to apps and theme</td><td>Full control</td></tr>
 </tbody>
 </table>
-<p>Shopify suits brands wanting a quick, reliable launch with less technical upkeep. WooCommerce suits stores that want more control, a strong content section, or custom delivery and pricing rules. See <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> and <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> to compare the practical side.</p>
+<p>Shopify suits brands wanting a quick, reliable launch with less technical upkeep. WooCommerce suits stores that want more control, a strong content section, or custom delivery and pricing rules. See <a href="/blog/shopify-store-setup-india/">setting up a Shopify store in India</a> and <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a> to compare the practical side.</p>
 
 <p>If you also run a cafe or a food brand, a menu that works on phones and table or order enquiries matter more than a catalogue. See <a href="/website-for-restaurants/">restaurant and cafe websites</a>.</p>
 
@@ -69728,391 +66338,6 @@ RewriteRule . /index.php [L]
 <p>Often yes. Regular staples and fresh boxes suit subscriptions, which bring predictable orders. Make pausing and skipping easy.</p>
 
 <p>If you want an organic food store built properly, see <a href="/shopify-developer/">Shopify developer</a> or <a href="/woocommerce-developer/">WooCommerce developer</a> services, and the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
-`,
-  },
-  {
-    slug: 'white-label-woocommerce-development',
-    seoTitle: 'White-Label WooCommerce Development for Agencies',
-    title: 'White-Label WooCommerce Development for Agencies: Who Does What',
-    description: 'White-label WooCommerce development for agencies: what the partner builds, what you keep, payments, shipping and tax by market, testing and support.',
-    date: '2026-10-10',
-    updated: '2026-10-29',
-    category: 'Agencies',
-    related: ['wordpress-developer-for-agencies', 'woocommerce-developer'],
-    body: `
-<p>White-label WooCommerce development means an outside developer builds and configures your client's online store under your agency's name. The partner handles the technical work, store setup, templates, payments, shipping, product imports, custom features and testing, while your agency keeps the client relationship, the brand, the design and the final sign-off.</p>
-<p>Selling a store is a bigger commitment than selling a brochure site, because checkout has to work on day one. This guide covers who does what, the market-specific decisions, testing and support after launch. For the general model, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development</a>; for working with Samverse, see <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>.</p>
-
-<h2>White-label WooCommerce development: who does what</h2>
-<table>
-  <thead><tr><th>Area</th><th>Your agency</th><th>Development partner</th></tr></thead>
-  <tbody>
-    <tr><td>Client relationship</td><td>Sales, calls, approvals, invoicing</td><td>Stays in the background unless invited</td></tr>
-    <tr><td>Design</td><td>Store design and brand</td><td>Builds it faithfully, flags anything that will not work well</td></tr>
-    <tr><td>Store setup</td><td>Confirms business rules with the client</td><td>Configures WooCommerce, checkout, stock and statuses</td></tr>
-    <tr><td>Payments and shipping</td><td>Gets client decisions and account access</td><td>Connects gateways, builds zones and rates</td></tr>
-    <tr><td>Products</td><td>Collects product data from the client</td><td>Imports, maps variations and categories</td></tr>
-    <tr><td>Testing</td><td>Final review and client UAT</td><td>Technical and checkout testing before handover</td></tr>
-  </tbody>
-</table>
-
-<h2>What the development partner handles</h2>
-<p>The partner takes on the technical work that turns an approved design into a working shop:</p>
-<ul>
-  <li><strong>Store setup:</strong> currency, store address, guest and account checkout, stock options and order statuses set the way the client trades.</li>
-  <li><strong>Templates:</strong> shop, category, product, cart, checkout, account and order confirmation pages built to your design on desktop and mobile.</li>
-  <li><strong>Payments and shipping</strong> configured for the client's market.</li>
-  <li><strong>Product imports</strong> from a spreadsheet, a supplier file or an old store.</li>
-  <li><strong>Custom features</strong> beyond what standard extensions do well.</li>
-  <li><strong>Order emails</strong> branded for the client and sent through a reliable email service.</li>
-  <li><strong>Technical checks:</strong> speed, mobile layout, security basics and checkout testing before your team reviews anything.</li>
-</ul>
-
-<h2>Payments and shipping for the client's market</h2>
-<p>Agencies with clients in the UK, US, Australia and India soon find that each market expects something different at checkout. A good partner asks where the client sells, who its customers are and how it ships before suggesting plugins.</p>
-<table>
-  <thead><tr><th>Decision</th><th>What varies by market</th><th>Who decides</th></tr></thead>
-  <tbody>
-    <tr><td>Payment methods</td><td>Cards everywhere; Indian stores usually also need UPI and often cash on delivery</td><td>The client, with advice on what integrates cleanly</td></tr>
-    <tr><td>Gateway account</td><td>Availability, verification, payout times and currencies differ by country</td><td>The client opens it in its own business name</td></tr>
-    <tr><td>Shipping</td><td>Zones by postcode, pincode, state or country; flat, weight-based or free-over-threshold rates</td><td>The client sets rules; the partner builds them</td></tr>
-    <tr><td>Tax</td><td>VAT, GST or sales tax, inclusive or exclusive prices, invoice rules</td><td>The client's accountant</td></tr>
-  </tbody>
-</table>
-<p>The tax row matters. A developer can set up rates and invoice templates, but should not decide what tax applies. Ask the client to get that from their accountant in writing. For stores selling abroad, <a href="/blog/woocommerce-sell-internationally/">selling internationally with WooCommerce</a> covers currencies and shipping.</p>
-
-<h2>Product imports and custom features</h2>
-<p>Product data is often the slowest part of a store project. Agree early who prepares the spreadsheet, in what format, with which columns for variations, attributes, images and stock. A partner can map and import it, but cannot invent missing descriptions, weights or sizes. Build a sample of ten products first, have the client check them, then import the rest.</p>
-<p>Custom features need a clear written scope: what triggers them, what the customer sees, what the admin sees and how to test them. Typical requests include wholesale pricing, product configurators, booking or rental logic, custom order statuses and integrations with inventory or accounting software. Ask the partner to say whether an existing, well-supported extension does the job before writing custom code, since custom code needs maintaining.</p>
-
-<p>If you're comparing development partners in India, the practical guide to <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> explains how projects usually run, how pricing is structured and which red flags to watch for.</p>
-
-<h2>What your agency keeps</h2>
-<ul>
-  <li>The client relationship and all client communication, unless you invite the partner onto a call under your agency's name.</li>
-  <li>Design decisions and brand standards.</li>
-  <li>Pricing and invoicing to the client.</li>
-  <li>Ownership of the work: the client's site, accounts and code should be handed over under your agreement with the client.</li>
-</ul>
-<p>Make sure the partner signs a confidentiality agreement and does not list your client's store in their own portfolio without permission.</p>
-
-<h2>Working across time zones</h2>
-<p>Many agencies use a partner in another country. With a partner in India on IST, UK and Australian agencies get some overlap in the working day, while US agencies usually see progress overnight. Agree a regular call slot, how urgent issues are handled, and a written update with staging links at the end of each working session. <a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore WordPress developer across time zones</a> covers the practical side.</p>
-
-<h2>Speed and security on client stores</h2>
-<p>Store pages are heavier than brochure pages, and cart, checkout and account pages cannot be fully cached. Ask the partner how they keep product and category pages fast: image sizes, the number of extensions, which scripts load on which pages, and how caching is set up so checkout is excluded. Agree a basic security setup too, covering strong admin passwords, two-factor login for admins, limited admin accounts, a firewall and off-site backups that include the order database.</p>
-<p>These are easy to skip under deadline pressure and expensive to fix after a client complains that the store is slow or has been compromised.</p>
-
-<h2>Questions to ask a white-label WooCommerce partner</h2>
-<ul>
-  <li>Which payment gateways and shipping integrations have you set up before, and for which markets?</li>
-  <li>How do you handle product imports and what format do you need the data in?</li>
-  <li>Do you build on block checkout or classic checkout, and how do you decide?</li>
-  <li>What does your checkout test plan include, and will you share the results?</li>
-  <li>How do you report progress, and how quickly do you respond to urgent store issues?</li>
-  <li>How do you handle code ownership, licences and confidentiality?</li>
-</ul>
-<p>Clear answers to these tell you more than a portfolio does, because they show how the partner will behave when something goes wrong on a live store.</p>
-
-<h2>Testing checkout before handover</h2>
-<p>Do not let a store reach the client until checkout has been tested properly. A good test plan covers:</p>
-<ol>
-  <li>A real order with every payment method, including a small live payment and cash on delivery if offered.</li>
-  <li>Orders to addresses in each shipping zone, checking rates and free delivery thresholds.</li>
-  <li>Coupons, sale prices, out-of-stock and backorder behaviour.</li>
-  <li>Customer and admin emails, invoices and order statuses.</li>
-  <li>Refunds from the WooCommerce admin and in the gateway.</li>
-  <li>The full flow on a phone over mobile data.</li>
-</ol>
-<p>Combine this with your general QA; <a href="/blog/website-qa-checklist-before-launch-agencies/">the agency QA checklist before launch</a> and the <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce store launch checklist</a> cover the rest.</p>
-
-<h2>Handover to the client</h2>
-<p>At handover the client should receive admin access, ownership of hosting, domain and gateway accounts, a short guide or video on adding products and handling orders, and a list of plugins and licences with renewal dates. The <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> lists what to include so nothing is missed.</p>
-
-<h2>Ongoing store support</h2>
-<p>Stores need more care than brochure sites: WooCommerce and extension updates, payment gateway changes, test orders after updates and order email checks. Decide before launch whether your agency offers a care plan and who does the work behind it. If you sell care plans, <a href="/blog/agency-wordpress-care-plans/">agency WordPress care plans</a> explains how to structure them. Agree response times for checkout problems, since a broken checkout costs the client sales every hour.</p>
-
-<h2>Starting a white-label store project</h2>
-<p>Before the first project, share a sample brief, your design files, your preferred hosting and how you want updates reported. Start with a smaller store or one part of a project so both sides can test the workflow. Review how the first project went, what slowed it down and what the brief missed, and update your brief template before the next one. Agencies looking for a partner based in India can also see the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
-
-<h2>FAQs</h2>
-<h3>What is white-label WooCommerce development?</h3>
-<p>It is when an outside developer builds and configures an online store for your client under your agency's brand. You keep the client and design; the partner does the technical work.</p>
-<h3>Will the developer contact my client directly?</h3>
-<p>Not unless you ask. A white-label partner works through your team, and joins client calls only as part of your agency if invited.</p>
-<h3>Who should own the payment gateway account?</h3>
-<p>The client, in its own business name. The partner connects the store to it but should not hold the account.</p>
-<h3>Can a white-label partner set up GST or VAT?</h3>
-<p>They can configure the rates and invoices the client's accountant specifies, but the decision on what tax applies belongs to the client and their accountant.</p>
-<h3>Who handles support after the store launches?</h3>
-<p>Agree this before launch. Many agencies offer a care plan to the client and have the partner do updates, test orders and fixes behind it.</p>
-
-<p>Need a partner for your next store project? See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/wordpress-developer-for-agencies/">white-label work for agencies</a> from Samverse.</p>
-`,
-  },
-  {
-    slug: 'offshore-wordpress-developer-time-zones',
-    seoTitle: 'Offshore WordPress Developer: Working Across Time Zones',
-    title: 'Working With an Offshore WordPress Developer in India Across Time Zones',
-    description: 'How agencies work with an offshore WordPress developer in India across time zones: overlap hours, async updates, staging reviews and urgent-fix plans.',
-    date: '2026-10-10',
-    updated: '2026-10-30',
-    category: 'Agencies',
-    related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer'],
-    body: `
-<p>Working with an offshore WordPress developer across time zones works well when three things are agreed up front: the hours both sides overlap, a written end-of-day update, and a plan for urgent fixes. With those in place, the time difference becomes an advantage: feedback you send at the end of your day can be done by your next morning.</p>
-<p>Without them, the usual frustrations appear: a question that waits a whole day for an answer, a live issue that lands while the developer is asleep, or a call slot nobody can make. This guide covers the working routine that avoids those problems, written for agencies in the UK, US, Australia and elsewhere working with a developer in India. For the time differences themselves and how outsourcing works in general, see <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a>.</p>
-
-<h2>Offshore WordPress developer: agree overlap hours and a call rhythm</h2>
-<p>Start by writing down the hours when both sides are reliably available. With India, that is usually your morning if you are in the UK, your afternoon if you are in eastern Australia, and a short early-morning or late-evening window, or none at all, if you are in the US. Then decide what the overlap is for:</p>
-<ul>
-<li><strong>Calls:</strong> a short weekly check-in, plus kick-off and review calls on bigger projects. Most other things can be written down.</li>
-<li><strong>Quick questions:</strong> the overlap is when blockers get cleared, so save questions for it rather than sending them just as the other side logs off</li>
-<li><strong>Live changes:</strong> schedule launches, DNS changes and big updates inside the overlap, so someone on each side is around if anything breaks</li>
-</ul>
-<p>Check the window again when clocks change. India does not use daylight saving, but the UK, the US and parts of Australia do, on different dates, so your overlap moves by an hour a couple of times a year.</p>
-
-<h2>Typical overlap with India by region</h2>
-<table>
-<thead><tr><th>Your location</th><th>Usual overlap with India</th><th>Best used for</th></tr></thead>
-<tbody>
-<tr><td>UK and Ireland</td><td>Your morning, India's afternoon</td><td>Daily questions, review calls, launches</td></tr>
-<tr><td>Western Europe</td><td>Your morning to early afternoon</td><td>Same as UK, with a slightly longer window</td></tr>
-<tr><td>Middle East</td><td>Most of the working day</td><td>Near real-time collaboration</td></tr>
-<tr><td>Eastern Australia and New Zealand</td><td>Your afternoon, India's morning</td><td>Calls and handovers at the start of India's day</td></tr>
-<tr><td>US East Coast</td><td>A short early-morning or late-evening window, by agreement</td><td>Weekly call; most work handled async</td></tr>
-<tr><td>US West Coast</td><td>Little or none without one side shifting hours</td><td>Fully async with a clear emergency path</td></tr>
-</tbody>
-</table>
-<p>Treat this as a starting point and confirm the exact hours with your developer, since some people choose to shift their day for a regular client.</p>
-
-<p>If you are new to working with a developer at all, start with <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer does and when to hire one</a>.</p>
-
-<h2>Async updates that keep work moving</h2>
-<p>Because much of the work happens while you are offline, the end-of-day update carries most of the communication. A useful update is short and always follows the same format:</p>
-<ul>
-<li><strong>Done:</strong> what was finished, with direct links to the staging pages</li>
-<li><strong>Next:</strong> what will be worked on in the next session</li>
-<li><strong>Questions:</strong> anything that needs your decision, numbered so you can answer quickly</li>
-<li><strong>Blocked:</strong> anything waiting on content, access or approval</li>
-</ul>
-<p>On your side, try to answer the questions before the developer's next working day starts. One unanswered question can cost a full day, and that, more than the hours themselves, is the real cost of a time difference. A clear <a href="/blog/website-brief-template/">website brief</a> at the start reduces how many questions come up at all.</p>
-
-<h2>Staging links your team can review without a call</h2>
-<p>Async work depends on seeing progress without a walkthrough. Ask for:</p>
-<ul>
-<li>A password-protected, noindexed staging site, at an address you are comfortable sharing with your client</li>
-<li>Links to specific pages and templates in every update, not just the homepage</li>
-<li>A short screen recording when a feature needs explaining, such as a filter, a form flow or the editing setup</li>
-<li>A note of anything not yet built, so your team does not report missing sections as bugs</li>
-</ul>
-<p>If staging is new to anyone on your team, <a href="/blog/staging-sites-explained/">staging sites explained</a> covers how they work.</p>
-
-<h2>Response-time expectations for live issues</h2>
-<p>On a build, a day's delay is usually fine. On a live client site, it may not be. Agree response times in writing, by severity, and say which hours they apply to:</p>
-<table>
-<thead><tr><th>Severity</th><th>Examples</th><th>What to agree</th></tr></thead>
-<tbody>
-<tr><td>Critical</td><td>Site down, checkout failing, signs of a hack</td><td>How alerts reach the developer out of hours, how quickly they acknowledge, and who acts if they cannot be reached</td></tr>
-<tr><td>High</td><td>Contact form not sending, a key page broken on mobile</td><td>A response within the developer's same or next working day</td></tr>
-<tr><td>Normal</td><td>Content edits, small layout fixes</td><td>A response within an agreed number of working days</td></tr>
-<tr><td>Low</td><td>Improvements and nice-to-haves</td><td>Scheduled into the next batch of work</td></tr>
-</tbody>
-</table>
-<p>A response means someone has looked at the issue and replied, not that it is fixed. Keep the two separate in what you promise clients, and never promise them a faster response than your partner has agreed with you.</p>
-
-<h2>Handling urgent fixes across time zones</h2>
-<p>Emergencies do not wait for the overlap, so prepare before one happens:</p>
-<ul>
-<li><strong>Alerts to both sides:</strong> uptime and security alerts go to your team and the developer, so whoever is awake sees them first</li>
-<li><strong>A first step your team can take:</strong> for example, restoring the last good backup from the hosting panel, or deactivating a plugin that was just updated</li>
-<li><strong>Access ready in advance:</strong> hosting, backups and DNS details for each client site, kept in a shared password manager rather than gathered in a hurry</li>
-<li><strong>One emergency channel:</strong> a phone number or messaging thread used only for genuine emergencies, so it never gets ignored</li>
-<li><strong>No risky changes at the end of anyone's day:</strong> updates and deployments go out when both sides can watch the result</li>
-<li><strong>A short incident note afterwards:</strong> what happened, what was done and how to prevent it, written so you can pass it to the client</li>
-</ul>
-<p>If you resell maintenance, build this path into your <a href="/blog/agency-wordpress-care-plans/">white-label care plans</a> rather than improvising it on the night.</p>
-
-<h2>Tools for tickets and feedback</h2>
-<p>You do not need special software, but you do need one agreed place for each kind of conversation:</p>
-<ul>
-<li><strong>Tickets:</strong> one ticket per issue on a shared project board, with the page URL, device and browser, a screenshot, and what you expected to happen</li>
-<li><strong>Visual feedback:</strong> a tool that pins comments to the staging page saves long descriptions of which button you mean</li>
-<li><strong>Chat:</strong> for quick questions during the overlap, with any decisions copied into the ticket</li>
-<li><strong>Screen recordings:</strong> for feedback that is easier to show than describe</li>
-<li><strong>A shared calendar:</strong> with both countries' public holidays, since a UK bank holiday, a US holiday weekend or a major Indian festival such as Diwali can quietly remove a working day</li>
-<li><strong>A password manager:</strong> for every login the developer needs</li>
-</ul>
-<p>Use the tools your agency already works in; a good partner will adapt. To help your team and clients write feedback a developer can act on first time, share <a href="/blog/give-website-feedback-developer/">how to give clear website feedback</a>.</p>
-
-<h2>Handovers and white-label boundaries</h2>
-<p>When the work is white-label, agree early how the developer appears to your client, if at all: whose name is on the staging site, who emails the client, and whether the developer ever joins a call. Keep the client relationship with your team and route questions through you. At the end of each project, a short handover covering logins, plugins, custom code and anything unfinished saves confusion months later; the <a href="/blog/agency-developer-handoff-checklist/">agency developer handoff checklist</a> lists what to include. For steady, recurring work, a <a href="/blog/agency-development-retainer/">development retainer</a> often suits better than quoting each job.</p>
-
-<h2>FAQs</h2>
-<h3>How do I work with an offshore WordPress developer across time zones?</h3>
-<p>Agree overlap hours, use a fixed end-of-day update, review progress on a staging site, and set response times by severity with a clear emergency path for live sites.</p>
-<h3>What hours overlap between India and the UK?</h3>
-<p>Usually the UK morning and India's afternoon. India does not change its clocks, so the overlap shifts by an hour when the UK moves between GMT and BST.</p>
-<h3>Can an Indian developer support US clients?</h3>
-<p>Yes, mostly through async work: updates, staging links and tickets, with a short agreed call window. Live-site emergencies need a plan agreed in advance.</p>
-<h3>How fast will an offshore developer fix an urgent issue?</h3>
-<p>It depends on what you agree. Set response times by severity in writing, and keep response separate from fix time when you promise clients anything.</p>
-<h3>Do I need special tools to work with an offshore developer?</h3>
-<p>No. A shared ticket board, a chat channel, screen recordings and a password manager cover most needs. Use what your agency already works in.</p>
-<h3>Is it cheaper to hire an offshore WordPress developer in India?</h3>
-<p>Often the hourly or project rate is lower, but the real saving depends on clear briefs, fewer revision rounds and a developer who communicates well. Compare quotes on scope and process, not rate alone. If you want to work with someone based in Pune, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-
-<p>I work white-label for agencies from Pune, India, and we can agree overlap hours, an update routine and an emergency path before the first project starts. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a single project.</p>
-`,
-  },
-  {
-    slug: 'agency-overflow-wordpress-work',
-    seoTitle: 'Agency Overflow WordPress Work: Using a Dev Partner',
-    title: 'Agency Overflow WordPress Work: When and How to Use a Development Partner',
-    description: 'How agencies can hand off overflow WordPress work to a development partner in India: when it makes sense, briefs, access, QA, white-label rules and costs.',
-    date: '2026-10-10',
-    updated: '2026-10-28',
-    category: 'Agencies',
-    related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer'],
-    body: `
-<p>Agency overflow WordPress work is development your agency has sold but cannot build in time with its own team. A development partner takes some of it on, often white-label, so you keep the client relationship and deadlines. It works best when you hand over clear designs and briefs, give staging access, agree on QA and keep one point of contact on each side.</p>
-<p>This guide is for design, marketing and branding agencies in India and abroad that sell WordPress websites and need dependable extra development capacity without hiring permanently.</p>
-
-<h2>When does agency overflow WordPress work need a development partner?</h2>
-<ul>
-  <li><strong>Seasonal peaks:</strong> festive campaigns, financial year-end launches, events and product launches often cluster.</li>
-  <li><strong>Uneven pipeline:</strong> three projects land at once, then nothing for a month. Hiring for the peak leaves people idle later.</li>
-  <li><strong>Specialist work:</strong> WooCommerce, custom blocks, speed fixes, migrations or integrations that your team rarely does.</li>
-  <li><strong>Maintenance load:</strong> updates, small changes and bug fixes from past clients that interrupt new projects.</li>
-  <li><strong>Leave and attrition:</strong> a developer leaves mid-project and you need continuity.</li>
-</ul>
-<p>It helps less when the main problem is unclear scoping or constant changes from clients. A partner cannot fix a brief that keeps moving.</p>
-
-<h2>Overflow partner vs hiring vs freelancer marketplace</h2>
-<table>
-  <thead><tr><th>Option</th><th>Good for</th><th>Trade-offs</th></tr></thead>
-  <tbody>
-    <tr><td>Hire a developer</td><td>Steady, predictable volume</td><td>Salary, training and management even in quiet months</td></tr>
-    <tr><td>Marketplace freelancer per job</td><td>One-off tasks</td><td>Quality varies; you onboard someone new each time</td></tr>
-    <tr><td>Ongoing development partner</td><td>Regular overflow and specialist work</td><td>Needs a clear process and trust built over a few projects</td></tr>
-    <tr><td>Larger outsourcing company</td><td>High volume across many projects</td><td>More layers between you and the person writing code</td></tr>
-  </tbody>
-</table>
-<p>For a wider view, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> and <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency developer</a> compare the models.</p>
-
-<h2>What to hand over</h2>
-<p>The quality of the handover decides most of the outcome. A good overflow brief includes:</p>
-<ul>
-  <li><strong>Designs:</strong> Figma or XD files with desktop and mobile layouts, and notes on hover states, animations and spacing.</li>
-  <li><strong>Content:</strong> final or near-final text and images, or at least a clear placeholder plan.</li>
-  <li><strong>Tech choices:</strong> theme or builder (block theme, Elementor, custom theme), required plugins, any you never use.</li>
-  <li><strong>Functionality:</strong> forms, integrations, WooCommerce setup, multilingual needs, with examples.</li>
-  <li><strong>Hosting and access:</strong> staging details, SFTP or panel access, and who owns live deployment.</li>
-  <li><strong>Deadlines:</strong> internal review date, client review date and launch date.</li>
-  <li><strong>Out of scope:</strong> what the partner should not do without asking.</li>
-</ul>
-<p>If you design in Figma, <a href="/blog/figma-to-wordpress-designer-guide/">the Figma to WordPress guide for designers</a> explains what developers need from files.</p>
-
-<h2>A workflow that keeps clients happy</h2>
-<ol>
-  <li><strong>Scope call:</strong> walk through the design and brief, list questions, agree on estimate and milestones.</li>
-  <li><strong>Staging build:</strong> all work happens on staging, never on the live client site. <a href="/blog/staging-sites-explained/">Staging sites explained</a> covers set-up.</li>
-  <li><strong>Milestone reviews:</strong> homepage first, then inner templates, so feedback arrives early.</li>
-  <li><strong>Internal QA:</strong> the partner checks responsiveness, forms, speed basics and browser testing before you see it.</li>
-  <li><strong>Agency QA:</strong> your team checks design fidelity and content before the client sees anything.</li>
-  <li><strong>Client feedback:</strong> collected by you, consolidated and passed on in one list.</li>
-  <li><strong>Launch:</strong> agreed checklist for DNS, SSL, redirects, analytics, backups and search settings.</li>
-  <li><strong>Handover:</strong> logins, plugin licences in the right account, and short documentation.</li>
-</ol>
-
-<h2>White-label and confidentiality rules</h2>
-<p>Most overflow work is white-label: the client sees your agency only. Agree these points in writing before the first project:</p>
-<ul>
-  <li>The partner does not contact your client directly unless you ask.</li>
-  <li>No partner branding in code comments, footers, theme names or admin screens.</li>
-  <li>Client data, logins and designs are confidential and deleted or returned when the work ends.</li>
-  <li>Who owns the code and designs once paid for, normally the agency or its client.</li>
-  <li>Whether the partner may show the work in a portfolio. Often the answer is no, or only with permission.</li>
-  <li>Non-solicitation of your clients.</li>
-</ul>
-<p><a href="/blog/white-label-wordpress-development-agencies/">White-label WordPress development for agencies</a> goes into more detail.</p>
-
-<h2>Communication and time zones</h2>
-<p>For agencies in India, a partner in the same time zone makes quick calls easy. For agencies in the UK, Europe, the Middle East or Australia, an India-based partner can work while your team is offline, so feedback sent in the evening can be addressed by morning. Agree:</p>
-<ul>
-  <li>One channel for project talk (Slack, email or a project tool), not scattered WhatsApp messages</li>
-  <li>A daily or every-other-day update during active builds</li>
-  <li>Response time expectations for urgent issues, such as a broken live site</li>
-  <li>Who has authority to approve extra scope and cost</li>
-</ul>
-
-<p>For the agency's own site, see <a href="/blog/website-for-digital-marketing-agencies/">what a digital marketing agency website needs</a>, including how to talk about a development partner.</p>
-
-<h2>How pricing usually works</h2>
-<p>Pricing models vary by partner. Common ones:</p>
-<table>
-  <thead><tr><th>Model</th><th>Suits</th><th>Watch for</th></tr></thead>
-  <tbody>
-    <tr><td>Fixed price per project</td><td>Clear designs and scope</td><td>Changes need a separate estimate</td></tr>
-    <tr><td>Hourly or daily rate</td><td>Changes, fixes and evolving work</td><td>Agree on a cap or regular reporting</td></tr>
-    <tr><td>Monthly retainer</td><td>Steady overflow and maintenance</td><td>Unused hours and rollover rules</td></tr>
-  </tbody>
-</table>
-<p>What affects the cost: number of templates, custom functionality, WooCommerce complexity, content entry, speed targets and how many revision rounds are included. Compare proposals on scope, not just headline price. <a href="/blog/compare-website-quotes/">Why website quotes are so different</a> is a useful reference for agency owners too, and <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly projects</a> helps you choose a model.</p>
-
-<h2>Quality standards to agree up front</h2>
-<p>Agencies are judged by the finished site, so write down what "done" means before work starts. A short shared checklist avoids most disputes.</p>
-<table>
-  <thead><tr><th>Area</th><th>What to agree</th></tr></thead>
-  <tbody>
-    <tr><td>Design fidelity</td><td>How closely spacing, fonts and breakpoints must match, and which devices to test</td></tr>
-    <tr><td>Editing experience</td><td>Clients can change text, images and menus without breaking layouts</td></tr>
-    <tr><td>Performance</td><td>Image sizes, script loading and a reasonable mobile speed target measured the same way by both sides</td></tr>
-    <tr><td>Accessibility basics</td><td>Headings in order, alt text fields, form labels, readable contrast</td></tr>
-    <tr><td>Plugins</td><td>An approved list, no nulled or unknown plugins, licences in the agency or client account</td></tr>
-    <tr><td>SEO basics</td><td>Titles, meta fields, redirects from old URLs, search visibility switched on at launch</td></tr>
-    <tr><td>Documentation</td><td>A short note on custom fields, templates and anything unusual</td></tr>
-  </tbody>
-</table>
-<h3>Maintenance after launch</h3>
-<p>Decide who looks after the site once it is live. Some agencies keep maintenance in-house and use the partner only for builds. Others pass ongoing updates, backups and small changes to the same partner, because they already know the code. Whichever you pick, put it in writing, including response times for a site that goes down and who pays for fixes caused by a client installing a new plugin. Separating bugs from change requests is a helpful way to frame that conversation with clients.</p>
-<h3>Agencies outside India</h3>
-<p>If your agency is in the UK, US, UAE or Australia, check how invoices, currency and tax paperwork will work before the first job, and agree a clear payment schedule tied to milestones. Clarity here protects both sides as much as a good brief does.</p>
-
-<h2>How to test a new partner</h2>
-<ul>
-  <li>Start with one small, well-scoped job: a landing page, a maintenance month or a template conversion.</li>
-  <li>Review the code and admin experience, not only the front end. Is it easy for your client to edit?</li>
-  <li>Check how they handle questions: do they ask early or guess?</li>
-  <li>Check whether deadlines and estimates were met, and how surprises were communicated.</li>
-  <li>Only then hand over a larger build or recurring work.</li>
-</ul>
-
-<h2>Common mistakes</h2>
-<ul>
-  <li>Handing over designs without mobile layouts</li>
-  <li>Changing builders or plugins mid-project</li>
-  <li>Passing raw client feedback without consolidating it</li>
-  <li>Building directly on the live site</li>
-  <li>Keeping plugin licences in the partner's account instead of the agency's or client's</li>
-  <li>No written agreement on white-label and ownership</li>
-  <li>Waiting until the week before a deadline to bring a partner in</li>
-</ul>
-<p>Most of these come down to the same thing: treating the partner as an emergency fix rather than part of the team. Agencies that share their calendar of upcoming launches, keep a standard brief template and hold a short review after each project tend to get faster, smoother builds over time, because the partner learns their standards, preferred plugins and the way their clients like to work.</p>
-
-<h2>FAQs</h2>
-<h3>What is agency overflow WordPress work?</h3>
-<p>It is WordPress development an agency has sold but cannot complete with its own team in time. A partner builds it, usually white-label, while the agency manages the client.</p>
-<h3>Is it safe to share client access with a partner?</h3>
-<p>Yes, with sensible controls: separate user accounts, staging-first work, a written confidentiality agreement and removing access when the project ends.</p>
-<h3>Can an overflow partner handle WooCommerce and Shopify?</h3>
-<p>Many can. Check their experience with stores, payment gateways such as Razorpay and Indian shipping set-ups before handing over e-commerce work.</p>
-<h3>How quickly can a partner start?</h3>
-<p>It depends on their schedule. Booking capacity a few weeks ahead of your busy season avoids last-minute delays.</p>
-<h3>Will my clients know I use a partner?</h3>
-<p>Not if you agree on white-label terms. Many agencies are open about it anyway; that is your choice.</p>
-
-<p>Need a reliable development partner for overflow WordPress or Shopify builds? See how I work with agencies on the <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> page, or read about <a href="/figma-to-wordpress/">Figma to WordPress</a> builds. Agencies in Pune can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -70257,7 +66482,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>Phone photos are often several thousand pixels wide. Resizing them uses a lot of memory, because the image is decompressed in full before WordPress creates each smaller copy. A photo that is modest in megabytes can still need a lot of memory to process.</p>
 <ul>
   <li>Resize photos to a sensible width before uploading. For most website use, a width around the largest size your theme displays is plenty.</li>
-  <li>Compress them; <a href="/blog/image-compression-plugins-compared/">image compression plugins compared</a> covers the options, and <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> explains sizes and formats.</li>
+  <li>Compress them; <a href="/blog/image-optimization-wordpress/">image compression plugins compared</a> covers the options, and <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> explains sizes and formats.</li>
   <li>Check the file name. Rename files with unusual characters, spaces or very long names to simple lowercase names with hyphens.</li>
   <li>If HEIC photos from iPhones fail, convert them to JPG or set the phone to save in a more compatible format.</li>
 </ul>
@@ -70326,404 +66551,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 `,
   },
   {
-    slug: 'wordpress-css-changes-not-showing',
-    seoTitle: 'WordPress CSS Changes Not Showing? How to Fix It',
-    title: 'WordPress CSS Changes Not Showing? Caches, Elementor and Overrides Explained',
-    description: 'WordPress CSS changes not showing? Find out if it is browser, page, CDN or Elementor cache, a minify plugin, load order or specificity, and fix it.',
-    date: '2026-10-11',
-    updated: '2026-10-29',
-    category: 'Maintenance',
-    related: ['wordpress-maintenance', 'elementor-developer'],
-    body: `
-<p>If your <strong>WordPress CSS changes are not showing</strong>, there are only two possibilities: an old copy of the stylesheet is still being served by a cache (browser, caching plugin, server, CDN or Elementor's generated CSS), or the new CSS is loading but another rule is overriding it. Open the page in a private window and inspect the element with your browser's developer tools; that tells you which of the two you have in under a minute, and saves clearing every cache blindly.</p>
-<p>Below: how to tell the difference, then each layer of caching and override in turn, and a safe order for clearing everything.</p>
-
-<h2>First, find out which problem you have</h2>
-<ol>
-  <li>Open the page in a private or incognito window, which ignores most of your browser cache.</li>
-  <li>Right-click the element you changed and choose <strong>Inspect</strong>.</li>
-  <li>In the Styles panel, look for your new rule.</li>
-</ol>
-<table>
-  <thead><tr><th>What you see in developer tools</th><th>What it means</th><th>Where to look</th></tr></thead>
-  <tbody>
-    <tr><td>Your rule is not listed at all</td><td>The browser received an old file, or your CSS is in a file that is not loaded</td><td>Caches, minify plugins, where you saved the CSS</td></tr>
-    <tr><td>Your rule is listed but crossed out</td><td>Another rule wins</td><td>Specificity, !important, load order</td></tr>
-    <tr><td>Your rule is listed and active, but the page looks the same</td><td>You targeted a different element or breakpoint</td><td>Selector, media queries, device mode</td></tr>
-    <tr><td>Change shows logged in but not logged out</td><td>Page or server cache serving visitors an older page</td><td>Caching plugin, host cache, CDN</td></tr>
-    <tr><td>Change shows on desktop but not mobile</td><td>Responsive rule overrides, or the phone has a cached copy</td><td>Media queries, Elementor responsive settings</td></tr>
-  </tbody>
-</table>
-
-<h2>Browser cache and version numbers</h2>
-<p>Browsers keep stylesheets for a while so pages load faster. WordPress adds a version number to each file URL, such as style.css?ver=1.2, and the browser fetches a fresh copy when that number changes. If you edit a theme file but the version stays the same, browsers may keep the old one.</p>
-<ul>
-  <li>Do a hard refresh: Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac.</li>
-  <li>In developer tools, Network tab, tick "Disable cache" while the tools are open.</li>
-  <li>For a child theme, bump the version in the stylesheet header or use the file's modified time as the version when enqueuing it.</li>
-</ul>
-<p>Clients on phones will not hard refresh, so a version change matters for anything visitors need to see straight away.</p>
-
-<h2>Page cache, server cache and CDN cache</h2>
-<p>A caching plugin stores the finished HTML of each page, including the links to the CSS files. If the HTML is cached, it may still point to an old combined CSS file even after you change the original. Then there may be a server-level cache from your host, such as LiteSpeed or Varnish, and a CDN like Cloudflare holding its own copies.</p>
-<ul>
-  <li>Purge the caching plugin's cache from its toolbar menu or settings.</li>
-  <li>Purge your host's cache from the hosting panel if they run one.</li>
-  <li>Purge Cloudflare or your CDN. In Cloudflare, "Purge Everything" or purge the specific CSS file URL; Development Mode bypasses the cache temporarily while you work. See <a href="/blog/cloudflare-wordpress-setup-guide/">the Cloudflare setup guide for WordPress</a>.</li>
-</ul>
-<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers how these layers stack and why one purge is not always enough.</p>
-
-<h2>Minification and combination plugins</h2>
-<p>Speed plugins often minify and combine CSS files into new files with random names stored in wp-content/cache or uploads. When you change the original, the combined file needs rebuilding. Most plugins rebuild when you clear their cache, but some keep the old file until a separate "clear minified files" button is used.</p>
-<ul>
-  <li>Clear the minified or optimised CSS separately if your plugin offers it.</li>
-  <li>Temporarily switch off CSS minify, combine and "remove unused CSS" features to test. Unused CSS removal in particular can strip a new class it did not see when it generated the reduced file.</li>
-  <li>Turn optimisation back on afterwards and regenerate.</li>
-</ul>
-
-<h2>Elementor's generated CSS</h2>
-<p>Elementor stores the styling you set in the editor as CSS files in wp-content/uploads/elementor/css, one per page plus global files. If these get out of sync, changes made in the editor do not appear on the live page.</p>
-<ol>
-  <li>Go to <strong>Elementor &gt; Tools</strong> and use the option to regenerate CSS and data (the button name has changed between versions).</li>
-  <li>Check the CSS print method under Elementor's performance or advanced settings. External file is normal; internal embedding can help test whether the files are the problem.</li>
-  <li>Clear all other caches afterwards, because they may hold the old Elementor file.</li>
-</ol>
-<p>If the layout broke after an Elementor update rather than after your edit, see <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a>. Too many plugin and Elementor CSS files also slow pages down; <a href="/blog/why-elementor-sites-slow/">why Elementor sites get slow</a> explains the trade-offs.</p>
-
-<p>If Elementor will not save the change at all, the problem is not caching; see <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a> for server errors and lost edits.</p>
-
-<h2>Child theme and loading order</h2>
-<p>Where you put your CSS decides when it loads, and later rules win when specificity is equal.</p>
-<ul>
-  <li><strong>Additional CSS</strong> in the Customizer loads late, so it usually wins. It is tied to the active theme, so it disappears if you switch theme.</li>
-  <li><strong>A child theme stylesheet</strong> survives parent theme updates, but must be enqueued correctly and after the parent's stylesheet. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how.</li>
-  <li><strong>Editing the parent theme directly</strong> works until the next update wipes it, which is a common reason changes "disappear". <a href="/blog/update-premium-theme-safely/">Updating a premium theme safely</a> covers moving edits out first.</li>
-  <li><strong>Page builder custom CSS</strong> applies only where you added it, at page, section or widget level.</li>
-</ul>
-<p>Check in developer tools which file your rule comes from. If it is the wrong file, or not loaded at all, the problem is placement rather than caching.</p>
-
-<h2>Specificity, !important and small mistakes</h2>
-<p>If your rule appears crossed out, a more specific rule is winning. A selector with an ID beats one with classes; more classes beat fewer; inline styles beat stylesheet rules; and !important beats everything except a later or more specific !important.</p>
-<pre><code>/* Loses to the theme's #header .menu a */
-.menu a { color: #1a1a1a; }
-
-/* Wins: equally specific, and loads later */
-#header .menu a { color: #1a1a1a; }</code></pre>
-<p>Prefer matching the theme's selector over adding !important everywhere, which makes future changes harder. Also check the small things:</p>
-<ul>
-  <li>A missing closing brace or semicolon earlier in the file breaks the rules after it.</li>
-  <li>The rule sits inside a media query for a different screen size.</li>
-  <li>A typo in the class name, or a class the builder renamed.</li>
-  <li>The style is set inline by the page builder, which beats your stylesheet.</li>
-</ul>
-
-<h2>Habits that stop the problem coming back</h2>
-<p>Once your change is showing, a few working habits make the next one painless:</p>
-<ul>
-  <li><strong>Keep custom CSS in one place.</strong> Pick the child theme stylesheet or the Additional CSS panel and stick to it, rather than spreading rules across theme options, page builder panels and plugins.</li>
-  <li><strong>Comment your rules</strong> with what they change and why, so you or a developer can find them later.</li>
-  <li><strong>Exclude the editor from caching.</strong> Make sure logged-in users and wp-admin are never cached, which most caching plugins do by default.</li>
-  <li><strong>Know your purge buttons.</strong> Note which caches your site has (plugin, host, CDN, Elementor) so you clear the right ones after each change.</li>
-  <li><strong>Check on a real phone.</strong> Mobile browsers and in-app browsers, such as the one inside WhatsApp or Instagram, can hold cached files longer than desktop ones.</li>
-  <li><strong>Avoid stacking optimisation plugins.</strong> Two plugins both minifying CSS make cache problems much harder to trace.</li>
-</ul>
-
-<h2>A safe order for clearing every layer</h2>
-<ol>
-  <li>Confirm in developer tools whether the rule is missing or overridden.</li>
-  <li>If overridden, fix specificity or placement; no cache clearing needed.</li>
-  <li>If missing, regenerate Elementor CSS (if used).</li>
-  <li>Clear the optimisation plugin's minified CSS, then its page cache.</li>
-  <li>Purge the host's server cache.</li>
-  <li>Purge Cloudflare or your CDN.</li>
-  <li>Hard refresh, then check in a private window and on a phone using mobile data.</li>
-</ol>
-<p>For larger CSS changes, work on a staging copy first so visitors never see a half-finished design; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
-
-<h2>FAQs</h2>
-<h3>Why are my WordPress CSS changes not showing?</h3>
-<p>Either a cache is serving an old copy of the stylesheet or page, or your new rule is loading but is overridden by a more specific or later rule. Developer tools show which.</p>
-<h3>Why do CSS changes show for me but not for visitors?</h3>
-<p>When you are logged in, most caching plugins show you a fresh page. Visitors get the cached version, which still links the old CSS. Purge the page cache, server cache and CDN.</p>
-<h3>How do I clear Elementor CSS cache?</h3>
-<p>Use the regenerate CSS and data option under Elementor &gt; Tools, then clear your caching plugin and CDN, because they may still hold the old file.</p>
-<h3>Should I use !important to force CSS changes?</h3>
-<p>Only as a last resort for a single stubborn rule. Matching or slightly beating the original selector is cleaner and easier to maintain.</p>
-<h3>Why did my CSS changes disappear after an update?</h3>
-<p>They were probably added directly to the parent theme or plugin files, which updates overwrite. Move custom CSS to a child theme or the Additional CSS panel.</p>
-
-<p>If styling is fighting you on an Elementor build, an <a href="/elementor-developer/">Elementor developer</a> can tidy the CSS and caching set-up. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for one-off fixes, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-`,
-  },
-  {
-    slug: 'white-label-elementor-development',
-    seoTitle: 'White-Label Elementor Development for Agencies',
-    title: 'White-Label Elementor Development for Design Agencies: Builds Clients Can Edit',
-    description: 'White-label Elementor development for agencies: how builds are scoped, kept editable and fast, handed over under your brand, and what to agree upfront.',
-    date: '2026-10-11',
-    updated: '2026-10-29',
-    category: 'Agencies',
-    related: ['wordpress-developer-for-agencies', 'elementor-developer'],
-    body: `
-<p>White-label Elementor development means a developer builds Elementor websites for your agency, from your designs and under your brand, while you keep the client relationship. Your client never deals with the developer; they get a site that looks like your work and that their team can edit. For design agencies without in-house WordPress developers, it is a way to take on more web projects without hiring.</p>
-<p>This guide covers what a good white-label Elementor build looks like, how projects usually run, what to agree upfront and how to keep sites fast and editable. Samverse works with agencies on this basis; see <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> and <a href="/elementor-developer/">Elementor development</a>.</p>
-
-<h2>What white-label Elementor development includes</h2>
-<p>Scope varies by agency, but typical work includes:</p>
-<ul>
-  <li>Converting Figma, XD or PDF designs into Elementor pages, on desktop, tablet and mobile.</li>
-  <li>Setting up global colours, fonts and spacing so the brand is consistent and editable.</li>
-  <li>Building theme templates: header, footer, single post, archive, 404 and any custom post type layouts.</li>
-  <li>Forms, popups and integrations with email marketing, CRMs or WhatsApp.</li>
-  <li>WooCommerce styling where the project includes a store.</li>
-  <li>Speed, basic on-page SEO setup, testing and launch.</li>
-  <li>Optional ongoing maintenance and change requests, still under your brand.</li>
-</ul>
-
-<h2>How a typical project runs</h2>
-<table>
-  <thead><tr><th>Stage</th><th>Agency</th><th>White-label developer</th></tr></thead>
-  <tbody>
-    <tr><td>Brief and design</td><td>Client meetings, design, content plan</td><td>Reviews designs for build issues before sign-off</td></tr>
-    <tr><td>Scoping</td><td>Shares designs, features and deadline</td><td>Confirms pages, templates, integrations and timeline</td></tr>
-    <tr><td>Build</td><td>Supplies content, logins, licences</td><td>Builds on a staging site, shares progress links</td></tr>
-    <tr><td>Review</td><td>Collects client feedback, sends consolidated changes</td><td>Makes changes within agreed rounds</td></tr>
-    <tr><td>Launch</td><td>Approves, informs client</td><td>Moves to live, checks forms, redirects, speed</td></tr>
-    <tr><td>After launch</td><td>Owns client relationship</td><td>Support, updates or training videos if agreed</td></tr>
-  </tbody>
-</table>
-<p>The developer working on a staging site under your agency's domain or the client's hosting, with no external branding in the admin area, keeps the arrangement invisible to the client.</p>
-
-<h2>Builds clients can edit without breaking them</h2>
-<p>The main complaint about Elementor sites is that clients break the layout when they edit. A good white-label build prevents that:</p>
-<ul>
-  <li><strong>Global colours and fonts</strong> in Site Settings, used everywhere instead of custom values on each widget.</li>
-  <li><strong>A small number of reusable templates and sections</strong>, so new pages follow the same design.</li>
-  <li><strong>Consistent naming</strong> of sections and containers in the Navigator.</li>
-  <li><strong>Dynamic content</strong> for repeated items such as team members, services or projects, often with custom post types and fields, so clients fill in a form rather than editing layouts. <a href="/blog/custom-post-types-fields/">Custom post types and fields</a> explains the approach.</li>
-  <li><strong>Limited editor roles</strong> for the client, where suitable, so they edit content but not templates. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> covers this.</li>
-  <li><strong>Short training videos</strong> recorded without third-party branding, showing the edits clients most often make.</li>
-</ul>
-
-<h2>Keeping Elementor sites fast</h2>
-<p>Elementor can produce fast sites, but it is easy to bloat. Good practice includes using flexbox containers rather than nested sections, a lightweight theme such as Hello Elementor, loading only the widgets and icon libraries that are used, compressing images and keeping plugins to a minimum. <a href="/blog/why-elementor-sites-slow/">Why Elementor sites get slow</a> and <a href="/blog/best-theme-for-elementor/">the best theme for Elementor</a> cover the details. Agree a speed target on mobile with your developer, and test before launch rather than after the client complains.</p>
-
-<h2>Licences, logins and ownership</h2>
-<p>Decide early who owns what:</p>
-<ul>
-  <li><strong>Elementor Pro and other premium plugins:</strong> usually bought in the client's name or under the agency's account, depending on how you bill. Avoid the developer's personal licences on client sites, since access can lapse when the relationship ends. <a href="/blog/elementor-pro-worth-it/">Is Elementor Pro worth it?</a> covers what Pro adds.</li>
-  <li><strong>Hosting and domain:</strong> ideally in the client's name, with agency access.</li>
-  <li><strong>Admin accounts:</strong> the developer's login should use an agency email and be removable after handover.</li>
-  <li><strong>Code and templates:</strong> agree that work produced belongs to the agency or client once paid.</li>
-</ul>
-
-<h2>What to agree before the first project</h2>
-<ol>
-  <li><strong>Confidentiality:</strong> no contact with your clients, no portfolio use without permission, no branding in the site.</li>
-  <li><strong>Scope format:</strong> how designs and requirements are shared, and what counts as a change request.</li>
-  <li><strong>Review rounds:</strong> how many rounds of changes are included per page or project.</li>
-  <li><strong>Timelines:</strong> typical turnaround for a page, a template and a full site.</li>
-  <li><strong>Communication:</strong> one channel, such as Slack, email or a project board, and overlap hours if you are in another time zone.</li>
-  <li><strong>Quality checklist:</strong> responsive checks, forms, speed, accessibility basics, SEO settings. <a href="/blog/agency-developer-handoff-checklist/">The agency developer handoff checklist</a> is a good starting point.</li>
-  <li><strong>Support after launch:</strong> bug-fix window and how ongoing changes are handled.</li>
-</ol>
-
-<h2>Preparing designs for a smooth Elementor build</h2>
-<p>Many delays in white-label projects come from designs that are hard to build or incomplete. A short checklist on the agency side saves days:</p>
-<ul>
-  <li><strong>Use a consistent grid and spacing scale</strong> in Figma, so containers can be built with global values rather than one-off margins.</li>
-  <li><strong>Define text styles</strong> for headings, body, buttons and captions; these become Elementor's global typography.</li>
-  <li><strong>Design mobile layouts</strong> for key pages, or at least note how sections should stack. Guessing mobile layouts is the most common cause of extra review rounds.</li>
-  <li><strong>Show every state</strong>: hover styles, form errors, empty search results, menus open and closed.</li>
-  <li><strong>Mark repeated items</strong> such as services, team members or case studies, so they can be built as dynamic content.</li>
-  <li><strong>Supply final content</strong> where possible, or agree that placeholder text will be swapped by the client later.</li>
-  <li><strong>Export assets</strong> in sensible formats: SVG for icons and logos, compressed images for photos.</li>
-</ul>
-<p>The developer should flag anything that will be slow, fragile or hard for the client to edit before the build starts, not after.</p>
-
-<h2>Quality checks before handover</h2>
-<p>Before the site goes back to you for client review, a careful developer checks:</p>
-<ul>
-  <li>Every page on common phone, tablet and desktop widths.</li>
-  <li>Forms send to the right inboxes and show a clear confirmation.</li>
-  <li>Mobile speed on the main templates, with images compressed and unused assets disabled.</li>
-  <li>Page titles, meta descriptions, headings and image alt text in place.</li>
-  <li>No leftover demo content, test pages or developer credits.</li>
-  <li>Backups and updates set up, if the developer is also handling care after launch.</li>
-</ul>
-<p>Ask for this list in writing for each project, so your team can spot-check rather than test everything again.</p>
-
-<h2>Pricing models</h2>
-<p>White-label Elementor work is usually priced per project, per page or template, or as a monthly retainer for a set amount of work. Cost depends on the number of unique templates, the complexity of interactions and integrations, whether WooCommerce is involved, content entry and how many review rounds are included. A retainer suits agencies with steady work; <a href="/blog/agency-development-retainer/">agency development retainers</a> explains how they work, and <a href="/blog/agency-overflow-wordpress-work/">handling overflow WordPress work</a> covers busy periods.</p>
-
-<h2>Elementor or something else?</h2>
-<p>Elementor suits agencies whose clients want to edit visually and whose designers are used to it. For some projects a block theme or another builder may be lighter or easier to maintain. <a href="/blog/figma-to-wordpress-approaches/">Figma to WordPress approaches</a> compares Elementor, block themes and other builders for agency work. A good white-label partner will say when Elementor is not the best fit for a brief.</p>
-
-<h2>Red flags when choosing a white-label partner</h2>
-<ul>
-  <li>Nulled or shared Pro licences.</li>
-  <li>Pages built with fixed pixel widths that break on mobile.</li>
-  <li>No staging site; changes made directly on live sites.</li>
-  <li>Developer branding or credit links left in footers or the admin area.</li>
-  <li>No written scope, so every change becomes a dispute.</li>
-</ul>
-<p>A small paid test project, such as one landing page from your design, is a fair way to check quality before committing. If you are comparing broader options, <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development for agencies</a> covers the wider model.</p>
-
-<p>Once a partner proves reliable, a shared template library and a written build standard make every later project faster and more consistent, which is where white-label work really starts to pay off for an agency.</p>
-
-<p>It also means your designers can plan with confidence, knowing which layouts and interactions build cleanly and which add time.</p>
-
-<p>Weighing up a partner based in India? See how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a>, including how communication works across time zones and what to check before you sign off a build.</p>
-
-<h2>FAQs</h2>
-<h3>What is white-label Elementor development?</h3>
-<p>A developer builds Elementor websites for an agency under the agency's brand. The agency handles the client; the developer handles the build quietly in the background.</p>
-<h3>Will my client know someone else built the site?</h3>
-<p>Not if it is set up properly: no developer branding, agency-owned logins, communication only through you, and a confidentiality agreement.</p>
-<h3>Can clients edit a white-label Elementor site themselves?</h3>
-<p>Yes, if it is built with global styles, reusable templates and dynamic content where needed. Short training videos help clients make common changes safely.</p>
-<h3>Who should own the Elementor Pro licence?</h3>
-<p>Usually the client or the agency, not the developer, so updates and support continue if the arrangement changes.</p>
-<h3>How long does a white-label Elementor build take?</h3>
-<p>It depends on the number of unique templates, integrations, content readiness and review rounds. Agree timelines per project once designs are final.</p>
-
-<p>Looking for a reliable Elementor partner behind your agency's brand? See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse.</p>
-`,
-  },
-  {
-    slug: 'wordpress-reseller-for-marketing-agencies',
-    seoTitle: 'WordPress Reseller for Marketing Agencies: How It Works',
-    title: 'WordPress Reseller for Marketing Agencies: Reselling Development and Maintenance Under Your Brand',
-    description: 'WordPress reseller for SEO and marketing agencies: what to resell, packaging and margins, scoping, white-label process and choosing a partner in India.',
-    date: '2026-10-11',
-    updated: '2026-10-30',
-    category: 'Agencies',
-    related: ['wordpress-developer-for-agencies', 'wordpress-maintenance'],
-    body: `
-<p>A WordPress reseller arrangement lets an SEO or marketing agency sell website development and maintenance under its own brand while a specialist partner does the technical work. The agency keeps the client relationship and sets the price; the partner builds, fixes and maintains sites to the agency's brief. Done well, it turns audit recommendations into finished work and makes client accounts stickier.</p>
-<p>Clients paying an agency each month soon ask for website work: a faster site, landing pages for a campaign, fixes from an SEO audit or a redesign. Without developers in-house, you can send them elsewhere and risk losing part of the relationship, or resell through a partner. For the white-label model itself, see <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development for agencies</a>. This guide covers packaging, scoping and managing the work.</p>
-
-<h2>Why website work fits alongside SEO and ads</h2>
-<ul>
-  <li><strong>Recommendations get done.</strong> Audit findings such as slow pages, broken redirects or missing schema stop sitting in the client's to-do list.</li>
-  <li><strong>Campaigns launch on time.</strong> Landing pages are ready when the ads are, built to your brief.</li>
-  <li><strong>Tracking stays reliable.</strong> Forms, thank-you pages and conversion events are set up and checked with your reporting in mind.</li>
-  <li><strong>One point of contact.</strong> Many clients prefer one agency for marketing and the website.</li>
-  <li><strong>Fewer surprises.</strong> No outside developer quietly changing the site in ways that affect rankings or tracking.</li>
-</ul>
-
-<h2>What a WordPress reseller for marketing agencies typically covers</h2>
-<table>
-  <thead><tr><th>Service</th><th>Typical trigger</th><th>How it is usually sold</th></tr></thead>
-  <tbody>
-    <tr><td>Technical SEO fixes</td><td>Audit findings: redirects, schema, indexing, Core Web Vitals</td><td>Fixed scope per audit, or hours from a monthly block</td></tr>
-    <tr><td>Speed optimisation</td><td>Poor PageSpeed scores, slow mobile pages</td><td>One-off project, then included in care</td></tr>
-    <tr><td>Landing pages</td><td>New Google or Meta campaigns</td><td>Per page, or a set number per month</td></tr>
-    <tr><td>Redesigns and new builds</td><td>Outdated site, rebrand, poor conversions</td><td>Fixed-price project with milestones</td></tr>
-    <tr><td>Maintenance and care plans</td><td>Updates, backups, security, small edits</td><td>Monthly retainer</td></tr>
-    <tr><td>WooCommerce work</td><td>E-commerce clients needing fixes or features</td><td>Project or hours</td></tr>
-  </tbody>
-</table>
-<p>Monthly care plans are often the easiest place to start because they create recurring revenue and a reason to stay in touch with the site. <a href="/blog/agency-wordpress-care-plans/">WordPress care plans for agencies</a> covers how to structure them.</p>
-
-<h2>Packaging and pricing your offers</h2>
-<p>Partner rates are your cost; your price reflects your account management, strategy, QA and the value to the client. Common models:</p>
-<ul>
-  <li><strong>Fixed-scope projects</strong> for builds, redesigns and audits, quoted after a clear brief.</li>
-  <li><strong>Monthly care plans</strong> at tiers, for example with or without content edits, with uptime monitoring and reporting.</li>
-  <li><strong>Hour blocks</strong> for ongoing small changes, which suit clients with unpredictable requests.</li>
-  <li><strong>Bundles with SEO retainers,</strong> where a set amount of technical implementation is included each month.</li>
-</ul>
-<p>Whatever the model, write down what is included and what isn't. Ambiguity is where margin disappears.</p>
-
-<h2>Scoping each job properly</h2>
-<p>Before quoting the client, send the partner enough to estimate accurately:</p>
-<ul>
-  <li>The site URL and access, or at least a staging copy.</li>
-  <li>The audit or brief, with priorities clearly marked.</li>
-  <li>What "done" means: the exact pages, the expected result, the browsers and devices to test.</li>
-  <li>Dependencies: hosting limits, plugins that can't be removed, other vendors touching the site.</li>
-  <li>Deadline, and whether it is tied to a campaign launch.</li>
-</ul>
-<p>Separate bugs from new requests early. <a href="/blog/website-bug-vs-change-request/">Website bug vs change request</a> is a useful reference to share with your account managers.</p>
-
-<h2>The white-label process</h2>
-<ol>
-  <li><strong>Brief:</strong> your account manager sends the scoped job to the partner.</li>
-  <li><strong>Estimate and timeline</strong> from the partner; you add margin and quote the client.</li>
-  <li><strong>Work on staging</strong> where possible, so nothing breaks the live site during a campaign.</li>
-  <li><strong>Internal QA</strong> by your team before the client sees it.</li>
-  <li><strong>Client review</strong> through your agency, under your brand.</li>
-  <li><strong>Launch and report:</strong> the partner documents what changed, so you can include it in your monthly report.</li>
-</ol>
-<p>The partner should never contact your client directly unless you have agreed it, and should use your agency's tools and naming conventions.</p>
-
-<h2>Keep SEO and tracking safe during development</h2>
-<p>Agencies selling SEO have the most to lose from careless development. Make these rules part of every job:</p>
-<ul>
-  <li>Check redirects before and after any URL change.</li>
-  <li>Never leave a staging site indexable, and never push "discourage search engines" to live.</li>
-  <li>Retest forms, thank-you pages, GA4 events and tags after each release.</li>
-  <li>Record changes with dates, so a ranking shift can be matched to what changed.</li>
-</ul>
-<p><a href="/blog/seo-reporting-what-to-track/">SEO reporting: what to track</a> helps tie the development work to results clients care about.</p>
-
-<h2>Choosing a reseller partner</h2>
-<table>
-  <thead><tr><th>Question to ask</th><th>Why it matters</th></tr></thead>
-  <tbody>
-    <tr><td>Do you work under our brand, with no direct client contact?</td><td>Protects your relationship</td></tr>
-    <tr><td>How do you handle access and accounts?</td><td>Accounts should stay with the client or agency</td></tr>
-    <tr><td>What is your working-hours overlap and response time?</td><td>Matters for overseas agencies and campaign deadlines</td></tr>
-    <tr><td>Can you show similar work and explain your QA?</td><td>Evidence of quality before you commit clients</td></tr>
-    <tr><td>How do you report on care plans?</td><td>You need material for client reports</td></tr>
-  </tbody>
-</table>
-<p>Ask, too, how the partner handles plugin licences and premium themes, because licences bought on a partner account can lapse if the relationship ends. Start with a small, well-defined job to test communication and quality before moving important clients over. Agree a written service level for response times, a named contact on each side and a monthly call to review open work. Agencies abroad should also check how public holidays such as Diwali affect availability, and plan campaign launches around them rather than discovering the gap a week before go-live. If you are weighing India-based partners, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers how such relationships usually run, and the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page describes remote working arrangements.</p>
-
-<p>Your own website is part of the pitch. <a href="/blog/website-for-digital-marketing-agencies/">Websites for digital marketing agencies</a> covers positioning, service pages, case studies with permission and qualifying lead forms.</p>
-
-<h2>Selling website work to existing clients</h2>
-<p>The easiest reseller revenue comes from clients you already serve. A few natural openings:</p>
-<ul>
-  <li><strong>After an SEO audit:</strong> present the technical fixes as a priced implementation package rather than a list the client must hand to someone else.</li>
-  <li><strong>Before a campaign:</strong> propose a dedicated landing page when the current page is weak, and show why it matters for cost per lead.</li>
-  <li><strong>During reporting:</strong> when you report on rankings or conversions, point out website issues holding results back, with a fix and a price.</li>
-  <li><strong>At renewal:</strong> add a care plan to the retainer so updates, backups and small changes stop being ad hoc.</li>
-</ul>
-<p>Keep the pitch tied to the marketing outcome the client already cares about. "Your mobile pages are slow, which is hurting conversions from ads" is easier to approve than "you need a developer".</p>
-
-<h2>Managing workload and quality</h2>
-<p>As resold work grows, a few habits keep it under control:</p>
-<ul>
-  <li>One ticket or task per request, in a shared tool your partner can access, rather than scattered WhatsApp messages.</li>
-  <li>A standard checklist for every release covering forms, tracking, redirects, mobile and speed.</li>
-  <li>A monthly review of time spent per client, so care plans that consistently overrun can be repriced.</li>
-  <li>A clear escalation route for urgent issues such as a hacked site or a broken checkout during a sale.</li>
-</ul>
-<p>Keep hosting, domains, plugin licences and analytics in the client's or agency's name. If you ever change partners, the handover should be a matter of removing one user account.</p>
-
-<h2>Contracts and confidentiality</h2>
-<p>A short agreement with your partner should cover confidentiality, non-solicitation of your clients, ownership of code and assets, payment terms and what happens if either side ends the arrangement. Make sure everything built can be handed over cleanly. Also agree how bugs found after launch are handled, for how long fixes are covered, and how scope changes are priced, so neither side argues about it in the middle of a client deadline. A one-page agreement that both sides actually read is better than a long template nobody follows.</p>
-
-<h2>FAQs</h2>
-<h3>What is a WordPress reseller for marketing agencies?</h3>
-<p>It is a partner who builds and maintains WordPress sites for your clients under your agency's brand. You sell and manage the work; the partner delivers it behind the scenes.</p>
-<h3>Can an SEO agency offer website development without hiring developers?</h3>
-<p>Yes. Many agencies resell development, speed work and maintenance through a white-label partner while keeping strategy, account management and QA in-house.</p>
-<h3>How should agencies price resold WordPress work?</h3>
-<p>Add a margin that covers your account management, QA and risk on top of the partner's cost, and package it as fixed projects, care plans or hour blocks.</p>
-<h3>Will the partner talk to my clients?</h3>
-<p>Only if you agree to it. In a typical white-label setup all client communication goes through your agency.</p>
-<h3>What is the safest first project to outsource?</h3>
-<p>A clearly scoped task such as speed fixes or a single landing page. It tests communication and quality without risking a whole client account.</p>
-<h3>Can a reseller partner also handle hacked or slow client sites?</h3>
-<p>A good partner should, because these are the urgent jobs that test an agency most. Agree up front how clean-ups such as <a href="/wordpress-malware-removal/">WordPress malware removal</a> and fixes like <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> are quoted, how fast they start, and who tells the client what happened.</p>
-
-<p>Looking for a WordPress partner who works quietly behind your agency brand? See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> if you want to start with care plans.</p>
-`,
-  },
-  {
     slug: 'agency-development-retainer',
     seoTitle: 'Agency Development Retainers: Models, Scope and Rollover',
     title: 'Agency Development Retainers With a WordPress Partner: Hours Banks, Reserved Capacity, Scope, Reporting and White-Label Etiquette',
@@ -70735,7 +66562,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
     body: `
 <p>An agency development retainer is a monthly arrangement in which your agency reserves a WordPress partner's time or an agreed scope of work, so requests can start without a fresh quote each time. The three common models are an hours bank (a set number of hours a month, logged against tasks), reserved capacity (a share of the partner's working week held for you) and an outcome-based scope (a defined list of deliverables, such as maintenance across named sites). Whichever you choose, put the scope, priorities, the response times you need, reporting, and rollover and overage rules in writing.</p>
 <p>This guide covers how such arrangements usually work between an agency and its development partner, the questions to settle before you start, and the etiquette that keeps a white-label relationship smooth. If you are still choosing a partner, <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a> explains how I run projects for agencies.</p>
-<p>A development retainer is different from a client-facing <a href="/blog/agency-wordpress-care-plans/">white-label care plan</a>, which is a product you sell, and from <a href="/blog/agency-overflow-wordpress-work/">occasional overflow work</a>, which is quoted project by project.</p>
+<p>A development retainer is different from a client-facing <a href="/blog/agency-wordpress-care-plans/">white-label care plan</a>, which is a product you sell, and from <a href="/blog/white-label-wordpress-development-agencies/">occasional overflow work</a>, which is quoted project by project.</p>
 
 <h2>Is a retainer the right fit yet?</h2>
 <p>Signs it is:</p>
@@ -70786,7 +66613,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
     <tr><td>Low</td><td>Improvements, backlog</td><td>Used in quiet weeks</td></tr>
   </tbody>
 </table>
-<p>If your partner works in India and you are in the UK, US or Australia, building often happens while you are offline, with a written update waiting in the morning. For agreeing overlap hours and a route for emergencies, read <a href="/blog/offshore-wordpress-developer-time-zones/">the time-zone guide for offshore WordPress work</a>.</p>
+<p>If your partner works in India and you are in the UK, US or Australia, building often happens while you are offline, with a written update waiting in the morning. For agreeing overlap hours and a route for emergencies, read <a href="/blog/outsource-wordpress-development-india/">the time-zone guide for offshore WordPress work</a>.</p>
 
 <h2>One queue, one prioritiser</h2>
 <ul>
@@ -71039,116 +66866,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>Create an event for the submission, either from a thank-you page view or a form-specific trigger in Tag Manager, and mark it as a key event in GA4. Test it in DebugView before relying on it.</p>
 
 <p>Want numbers you can trust, including which pages and campaigns bring enquiries? Tracking setup and checks are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
-`,
-  },
-  {
-    slug: 'wordpress-site-not-showing-on-google',
-    seoTitle: 'WordPress Site Not Showing on Google? What to Check',
-    title: 'WordPress Site Not Showing on Google at All? What to Check and How to Fix It',
-    description: 'WordPress site not showing on Google? Check search visibility, noindex, robots.txt, Search Console, sitemaps, hacks and new-site timing, in fix order.',
-    date: '2026-10-11',
-    updated: '2026-10-28',
-    category: 'SEO',
-    related: ['wordpress-seo-services', 'wordpress-website-development'],
-    body: `
-<p>If your WordPress site is not showing on Google at all, the cause is usually one of a few settings: the &quot;Discourage search engines from indexing this site&quot; box left ticked after launch, a noindex tag from an SEO plugin, a robots.txt rule that blocks Google, or a site that is simply too new and has not been discovered yet. Check those first, then use Google Search Console to see exactly what Google reports.</p>
-<p>This guide walks through the checks in the order I would do them on an Indian business site, from the two-minute fixes to the less common causes such as hacks and migrations.</p>
-
-<h2>Step 1: Check whether Google has indexed anything</h2>
-<p>Search Google for site:yourdomain.com (with your real domain). This shows a rough sample of pages Google has indexed.</p>
-<ul>
-<li><strong>No results:</strong> Google has not indexed the site, or something is blocking it. Continue with the steps below.</li>
-<li><strong>Some results, but not the pages you expect:</strong> specific pages are blocked, thin or not yet discovered.</li>
-<li><strong>Strange results, such as Japanese or pharmacy spam:</strong> the site may be hacked. Jump to step 7.</li>
-</ul>
-<p>Also search for your exact business name. If a directory or social profile appears but not your website, Google may not have found or trusted your site yet. Step 6 covers how to help Google connect your name to your site.</p>
-
-<h2>Why is my WordPress site not showing on Google?</h2>
-<table>
-<thead><tr><th>Cause</th><th>How to check</th><th>Fix</th></tr></thead>
-<tbody>
-<tr><td>Search engine visibility box ticked</td><td>Settings, Reading in the dashboard</td><td>Untick &quot;Discourage search engines&quot; and save</td></tr>
-<tr><td>Noindex on pages</td><td>SEO plugin settings, page source, URL Inspection</td><td>Set important pages to index</td></tr>
-<tr><td>robots.txt blocking</td><td>Open yourdomain.com/robots.txt</td><td>Remove the blocking rule</td></tr>
-<tr><td>New site not discovered</td><td>Search Console coverage and sitemap</td><td>Submit sitemap, request indexing, get a few links</td></tr>
-<tr><td>Hacked or spam pages</td><td>site: search, Security Issues report</td><td>Clean the hack, request review</td></tr>
-<tr><td>Migration or domain change</td><td>Redirects, old URLs, Search Console property</td><td>Fix redirects, update sitemap and property</td></tr>
-<tr><td>Thin or duplicate content</td><td>Crawled or discovered but not indexed status</td><td>Improve content and internal links</td></tr>
-</tbody>
-</table>
-
-<h2>Step 2: Check the WordPress search engine visibility setting</h2>
-<p>In the WordPress dashboard, go to Settings, then Reading. If &quot;Discourage search engines from indexing this site&quot; is ticked, untick it and save. This box is often ticked during development and forgotten at launch. It adds a noindex instruction across the whole site, so nothing else you do will help until it is off.</p>
-
-<h2>Step 3: Look for noindex tags</h2>
-<p>SEO plugins such as Yoast, Rank Math and All in One SEO let you set pages, posts, categories or the whole site to noindex. Check:</p>
-<ul>
-<li>The plugin&#39;s global settings for each content type.</li>
-<li>The advanced settings on individual important pages.</li>
-<li>The page source: search for &quot;noindex&quot; in the robots meta tag.</li>
-</ul>
-<p>Some page builders, maintenance-mode plugins and coming-soon plugins also add noindex while they are active. Switch off coming-soon mode once the site is live. The <a href="/blog/wordpress-seo-plugins-compared/">WordPress SEO plugins comparison</a> shows where each plugin keeps these settings.</p>
-
-<h2>Step 4: Check robots.txt</h2>
-<p>Open yourdomain.com/robots.txt in a browser. If you see &quot;Disallow: /&quot; under &quot;User-agent: *&quot;, the whole site is blocked from crawling. Remove that rule. Also check that important folders such as the uploads folder are not blocked. Remember that robots.txt controls crawling, not indexing; if you want a page out of Google, use noindex instead. The guide to <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> explains the difference.</p>
-
-<h2>Step 5: Set up Google Search Console</h2>
-<p>Search Console is the only reliable way to see what Google thinks of your site. If you have not set it up:</p>
-<ol>
-<li>Add your site as a Domain property, verified through DNS at your domain registrar, or a URL-prefix property.</li>
-<li>Submit your XML sitemap, usually at a sitemap index URL generated by your SEO plugin.</li>
-<li>Use URL Inspection on your homepage and key service pages to see whether they are indexed, and if not, why.</li>
-<li>Click Request Indexing for important pages once any blocking issue is fixed.</li>
-<li>Check the Pages report for the main reasons pages are not indexed.</li>
-</ol>
-<p>See <a href="/blog/setup-google-analytics-search-console/">setting up Google Analytics and Search Console</a> and <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> for the details.</p>
-
-<h2>Step 6: If the site is new, help Google find it</h2>
-<p>A brand-new website on a new domain can take time to be discovered and indexed. You can help:</p>
-<ul>
-<li>Submit the sitemap and request indexing for the homepage and main pages.</li>
-<li>Link to your website from your Google Business Profile, social profiles and business directories.</li>
-<li>Get a few genuine links from suppliers, partners or associations.</li>
-<li>Make sure every important page is linked from the menu or other pages, so none are orphaned.</li>
-<li>Publish useful, original content rather than a few thin pages.</li>
-</ul>
-<p>The guide on <a href="/blog/get-website-indexed-google-faster/">getting a website indexed faster</a> covers this in more depth. Indexing is not the same as ranking: once pages are indexed, they still need to earn positions for the searches you care about.</p>
-
-<h2>Step 7: Rule out hacks and manual actions</h2>
-<p>If an established site suddenly disappears, or spammy pages appear in a site: search, check for a hack. Look at the Security Issues and Manual Actions reports in Search Console. Hacked WordPress sites often have thousands of spam pages, cloaked redirects or injected links. Clean the site fully, update everything, change passwords and then request a review. See <a href="/blog/this-site-may-be-hacked-google/">&quot;This site may be hacked&quot; on Google</a> for the cleanup steps.</p>
-
-<h2>Step 8: Check migrations, domain changes and HTTPS</h2>
-<p>Pages often vanish after a move to new hosting, a switch from HTTP to HTTPS, a change from www to non-www, or a new domain. Check that:</p>
-<ul>
-<li>Old URLs redirect permanently, with a 301, to the matching new URLs.</li>
-<li>The Search Console property matches the version of the site you now use.</li>
-<li>The sitemap lists the new URLs, not the old ones.</li>
-<li>The staging site is not the one being indexed instead of the live site.</li>
-</ul>
-
-<h2>Step 9: If pages are crawled but not indexed</h2>
-<p>When Search Console shows pages as crawled or discovered but not indexed, Google has seen them but chosen not to index them yet. Common reasons are thin content, near-duplicate pages, weak internal linking or a new site with little trust. Improve the most important pages first: add genuine detail, link to them from related pages, and avoid publishing many similar, thin pages. Slow servers can also limit crawling, so check site speed on cheap shared hosting.</p>
-
-<h2>Hosting, firewalls and server errors</h2>
-<p>Sometimes the WordPress settings are fine but Google still cannot reach the site. Budget shared hosting can return server errors or time out when Googlebot crawls several pages at once. Some security plugins, hosting firewalls and CDN settings block unfamiliar bots too aggressively, and Googlebot gets caught in the net. In Search Console, look at Settings, then Crawl stats, for spikes in server errors or failed requests, and use URL Inspection to run a live test on a key page.</p>
-<p>If the live test fails while the page loads fine in your browser, ask your host whether any firewall rules or rate limits are blocking crawlers, and check the security plugin&#39;s blocked requests log. Moving to reliable hosting and enabling proper caching often fixes both speed and crawling problems at the same time. Also confirm the domain has not expired and that DNS points to the right server after any hosting change.</p>
-
-<h2>Shopify stores not showing on Google</h2>
-<p>Shopify stores have their own common causes: a store still password-protected after launch, a new store on a plan that keeps the storefront locked, or a theme or app adding noindex to certain pages. Remove the password, check the theme&#39;s robots settings and submit the sitemap in Search Console. The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the rest.</p>
-
-<h2>FAQs</h2>
-<h3>Why is my WordPress site not showing on Google?</h3>
-<p>The usual causes are the &quot;Discourage search engines&quot; setting, noindex tags from an SEO or coming-soon plugin, a robots.txt block, a site too new to be discovered, a hack, or a migration that broke URLs.</p>
-<h3>How long does it take for a new WordPress site to show on Google?</h3>
-<p>It varies. Some sites appear within days of submitting a sitemap and requesting indexing; others take weeks. Links from your Google Business Profile and directories can help Google find you sooner.</p>
-<h3>Does submitting a sitemap guarantee my site will be indexed?</h3>
-<p>No. A sitemap helps Google discover pages, but it still decides whether to index each one based on quality, duplication and technical signals.</p>
-<h3>My site shows on Google but not for my business name. Why?</h3>
-<p>Google may not yet be confident your site is the official one. Make sure your name appears clearly on the site, link to it from your Google Business Profile and profiles, and keep details consistent.</p>
-<h3>Can a hack remove my site from Google?</h3>
-<p>Yes. Google may show warnings, demote affected pages or apply a manual action. Cleaning the hack and requesting a review is the way back.</p>
-
-<p>If you have checked these and your site is still missing from Google, I can find and fix the cause. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off technical fix, including <a href="/wordpress-malware-removal/">hacked site repair</a> if spam is the problem.</p>
 `,
   },
   {
@@ -72747,7 +68464,7 @@ or a cookie name starts with:
 
 <h2>Staging sites, hosting panels and site migrations</h2>
 <p>Many Indian business sites are built on a staging copy first, often on a subdomain or a temporary folder on shared hosting. Developers sensibly block the staging site from search engines. The trouble starts when the site goes live and the same robots.txt, or the WordPress &quot;Discourage search engines&quot; setting, is carried across to the live domain. The opposite also happens: a staging subdomain is left open, Google finds it, and you end up with duplicate copies of your pages in the index.</p>
-<p>After any launch or migration, check three things on the live domain: the robots.txt file, the WordPress reading setting, and the noindex settings in your SEO plugin. For the staging copy, password protection is a safer block than robots.txt, because it stops both crawling and indexing. Some hosting control panels and caching or security plugins can also add their own rules, so if the file you see on the server does not match what Google reports, check those too. The guide on <a href="/blog/wordpress-site-not-showing-on-google/">a WordPress site not showing on Google</a> covers the launch checks in detail.</p>
+<p>After any launch or migration, check three things on the live domain: the robots.txt file, the WordPress reading setting, and the noindex settings in your SEO plugin. For the staging copy, password protection is a safer block than robots.txt, because it stops both crawling and indexing. Some hosting control panels and caching or security plugins can also add their own rules, so if the file you see on the server does not match what Google reports, check those too. The guide on <a href="/blog/get-website-indexed-google-faster/">a WordPress site not showing on Google</a> covers the launch checks in detail.</p>
 
 <h2>Shopify sites and robots.txt</h2>
 <p>Shopify generates a default robots.txt that blocks paths such as cart, checkout, account and some filtered collection URLs. Seeing these listed as blocked is normal. If an important product or collection page appears, check whether a theme or app has added a custom robots.txt template with extra rules. Changes on Shopify are made through the robots.txt.liquid theme template, so edit with care and keep a copy of the original. The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> covers the wider setup.</p>
@@ -73226,7 +68943,7 @@ or a cookie name starts with:
 <p>Login hardening is worth keeping once it works; <a href="/blog/secure-wordpress-login/">securing the WordPress login</a> covers settings that protect you without locking you out.</p>
 
 <h2>When missing menus are a security warning</h2>
-<p>Take it seriously if you find an administrator account you do not recognise, your own role downgraded without explanation, or new plugins you did not install. Attackers sometimes demote real admins and add their own. Change passwords, review users (see <a href="/blog/wordpress-user-accounts-audit/">auditing WordPress user accounts</a>), and look at <a href="/blog/signs-wordpress-site-hacked/">signs a WordPress site has been hacked</a>. If you confirm a compromise, <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers clean-up and hardening.</p>
+<p>Take it seriously if you find an administrator account you do not recognise, your own role downgraded without explanation, or new plugins you did not install. Attackers sometimes demote real admins and add their own. Change passwords, review users (see <a href="/blog/wordpress-user-roles-explained/">auditing WordPress user accounts</a>), and look at <a href="/blog/signs-wordpress-site-hacked/">signs a WordPress site has been hacked</a>. If you confirm a compromise, <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers clean-up and hardening.</p>
 
 <h2>Preventing lock-outs in future</h2>
 <p>A few simple habits make this much less likely to happen again:</p>
@@ -73262,433 +68979,6 @@ or a cookie name starts with:
 <p>Yes. Attackers sometimes downgrade real administrators and create hidden accounts. If roles changed without explanation, treat it as a possible compromise and check users, plugins and files.</p>
 
 <p>If you are locked out of your own dashboard, a developer can often restore access quickly once the cause is known. <a href="/wordpress-shopify-developer-india/">Hire a WordPress developer in India</a> for the fix, or keep updates, backups and security monitoring handled with <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
-`,
-  },
-  {
-    slug: 'wordpress-multisite-seo',
-    seoTitle: 'WordPress Multisite SEO: Sitemaps, Canonicals and Hreflang',
-    title: 'WordPress Multisite SEO: Sitemaps, Search Console, Canonicals and Hreflang for Multi Site WordPress',
-    description: 'WordPress multisite SEO explained: subdomains vs subfolders, per-site plugin settings, sitemaps, Search Console, duplicate content, hreflang and speed.',
-    date: '2026-10-11',
-    updated: '2026-10-30',
-    category: 'SEO',
-    related: ['wordpress-seo-services', 'wordpress-website-development'],
-    body: `
-<p>WordPress multisite SEO works much like SEO for separate sites, because Google treats each site in the network as its own website. Each one needs its own sitemap, Search Console property, titles, internal links and unique content, and settings must be checked site by site rather than once for the network. The main extra risks are duplicate content across sites, plugin settings that differ between sites, and shared performance problems.</p>
-<p>This guide covers the choices and settings that matter for multisite networks run by Indian businesses, such as franchise groups, school chains, multi-brand companies and sites with Hindi and English versions. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">when you actually need WordPress multisite</a> first.</p>
-
-<h2>Subdomain vs subdirectory multisite for SEO</h2>
-<p>Multisite can run sites as subdomains (<code>pune.example.com</code>) or subdirectories (<code>example.com/pune/</code>), and the choice is made at setup. Both can rank well. The practical differences:</p>
-<table>
-<thead><tr><th>Factor</th><th>Subdirectories</th><th>Subdomains</th></tr></thead>
-<tbody>
-<tr><td>How users see it</td><td>Part of one site</td><td>Related but separate site</td></tr>
-<tr><td>Search Console</td><td>Can be covered by one domain property, or added separately as URL-prefix properties</td><td>Covered by a domain property, or added separately</td></tr>
-<tr><td>Best for</td><td>Language versions, branches of one brand</td><td>Distinct brands, departments or very different audiences</td></tr>
-<tr><td>Changing later</td><td>Hard: needs a migration and redirects</td><td>Hard: needs a migration and redirects</td></tr>
-<tr><td>Mapped custom domains</td><td>Possible with domain mapping</td><td>Possible with domain mapping</td></tr>
-</tbody>
-</table>
-<p>Google has said both structures are fine. Choose based on how closely related the sites are, and avoid switching later, because that changes every URL in the network.</p>
-
-<h2>WordPress multisite SEO plugin settings</h2>
-<p>Popular SEO plugins support multisite, but they behave differently. Some let you set network-wide defaults that each site can override; others are configured site by site. After activating an SEO plugin network-wide, check each site for:</p>
-<ul>
-<li>Title and meta description templates.</li>
-<li>Whether the site is set to discourage search engines (often left on from staging).</li>
-<li>Noindex settings for archives, tags and attachment pages.</li>
-<li>Schema settings such as organisation name, logo and local business details.</li>
-<li>Breadcrumbs and social sharing images.</li>
-</ul>
-<p>A common problem is one site in the network being accidentally noindexed for months because its &quot;Search engine visibility&quot; setting was never changed after launch. Check each site individually. The <a href="/blog/wordpress-seo-plugins-compared/">SEO plugins comparison</a> covers plugin differences.</p>
-
-<h2>Sitemaps per site</h2>
-<p>Each site in the network generates its own XML sitemap through WordPress core or the SEO plugin. Submit each sitemap in Search Console separately, and reference each in that site&apos;s robots.txt. Check that sitemaps only include URLs from their own site and do not include noindexed pages, redirects or staging addresses. If you use mapped domains, make sure sitemap URLs use the final mapped domain, not the internal network address. The <a href="/blog/xml-sitemaps-explained/">XML sitemaps guide</a> explains what a clean sitemap should contain, and <a href="/blog/search-console-sitemap-couldnt-fetch/">fixing &quot;sitemap couldn&apos;t fetch&quot;</a> helps when submission fails.</p>
-
-<p>Each site in a network serves its own rules file. Read about <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> to make sure no subsite is blocked by mistake.</p>
-
-<h2>Search Console properties</h2>
-<p>A domain property in Search Console covers every subdomain and protocol, which suits subdomain networks if you want one overview. Still add each site as its own URL-prefix property too, so you can see indexing, performance and errors per site. For subdirectory networks, URL-prefix properties for each site (such as <code>https://example.com/hindi/</code>) give a separate view of each section. Give access only to the people who manage each site. The guide to <a href="/blog/google-search-console-reports-explained/">Search Console reports</a> explains what to watch.</p>
-
-<h2>Canonical and duplicate risks across sites</h2>
-<p>Networks often reuse content: the same service descriptions for each franchise branch, the same product pages on several brand sites, or blog posts copied across. Google will usually pick one version to show and ignore the others, which may not be the one you want.</p>
-<ul>
-<li><strong>Write unique content for each site</strong> wherever possible, especially home pages and main service pages. For branch sites, include local details: address, team, local projects, timings and directions.</li>
-<li><strong>Use canonical tags</strong> when the same article must appear on two sites, pointing to the main version. Cross-domain canonicals are a hint, not a command, so unique content is still better.</li>
-<li><strong>Avoid duplicate location pages</strong> with only the city name changed; they rarely help and can look like doorway pages.</li>
-<li><strong>Check internal links</strong> so each site links to its own pages and links across the network only where it helps users.</li>
-</ul>
-
-<h2>Hreflang when sites are language versions</h2>
-<p>If your network has language versions, such as English and Hindi, or country versions, such as India and UAE, hreflang tags tell Google which page to show to which audience. Each page must list every version including itself, and the tags must be reciprocal. Multilingual plugins that support multisite can manage this, but test a few pages by viewing the source. The <a href="/blog/hreflang-multilingual-seo-india/">hreflang and multilingual SEO guide for India</a> covers the details, and <a href="/blog/multilingual-wordpress-website-hindi-english/">Hindi and English WordPress websites</a> compares multisite with single-site language plugins.</p>
-<p>Do not use hreflang for sites that are simply different branches in the same language; that is not what it is for.</p>
-
-<h2>Common multisite setups in India and their SEO needs</h2>
-<p>Different kinds of networks have different priorities:</p>
-<ul>
-<li><strong>School or coaching chains:</strong> each campus site needs its own address, admissions contact, facilities, results notices and events. The main site should carry shared content such as the curriculum and link to each campus, so campus pages are not copies of each other.</li>
-<li><strong>Franchise and multi-branch service businesses:</strong> each branch site should target its own city or area with local details, its own Google Business Profile link and its own reviews. Head office pages should not compete with branch pages for the same local searches.</li>
-<li><strong>Multi-brand manufacturers:</strong> each brand site targets different products and buyers, so overlap is usually small. The main risk is shared product descriptions; rewrite them for each brand.</li>
-<li><strong>Hindi and English, or regional language sites:</strong> these need hreflang, translated (not machine-dumped) content and language-appropriate titles and descriptions.</li>
-</ul>
-<p>In each case, decide which site should rank for which searches before writing content. A simple sheet listing the main search phrases and the site and page meant to rank for each one prevents network sites from competing with each other, which is one of the quieter ways multisite networks lose traffic.</p>
-
-<h2>Performance and security affect every site</h2>
-<p>Every site in a multisite network shares the same WordPress installation, plugins and database. A slow plugin, a heavy theme or an overloaded server affects all of them, and a security problem on one site can put the whole network at risk. For SEO this matters because slow pages and hacked spam pages hurt rankings across the network. Keep plugins lean, use caching that supports multisite, choose hosting with enough resources for the whole network and run updates carefully on staging first. If the network has become slow, the guide on <a href="/blog/wordpress-multisite-slow/">fixing a slow WordPress multisite</a> walks through the usual causes.</p>
-
-<h2>When separate installs are better</h2>
-<p>Multisite makes sense when sites share code, users and design, and when one team manages them all. Separate installs are often better when:</p>
-<ul>
-<li>Sites have different owners, such as franchisees who want control.</li>
-<li>Sites need very different plugins, for example one runs WooCommerce and another is a simple brochure.</li>
-<li>One site may be sold or moved separately later.</li>
-<li>One site gets far more traffic and needs its own hosting.</li>
-</ul>
-<p>Splitting a site out of a network later is possible but needs careful migration and redirects, so think about this early.</p>
-
-<h2>Multi site WordPress SEO: audit every site's settings</h2>
-<p>The most common multi site WordPress SEO problem I see is not strategy but drift: one site in the network was left with search engines discouraged after launch, another has an old SEO plugin configuration, a third points its canonical tags at the main site. Network admins rarely open every site's settings, so check them in a table like this:</p>
-<table>
-<thead><tr><th>Setting</th><th>Where to check it</th><th>What correct looks like</th></tr></thead>
-<tbody>
-<tr><td>Search engine visibility</td><td>Each site: Settings &gt; Reading</td><td>"Discourage search engines" unticked on every live site</td></tr>
-<tr><td>SEO plugin activation</td><td>Network Admin &gt; Plugins, then each site</td><td>Same plugin on every site, configured per site</td></tr>
-<tr><td>Titles and meta descriptions</td><td>SEO plugin templates on each site</td><td>Site name and wording specific to that site</td></tr>
-<tr><td>XML sitemap</td><td>Each site's own sitemap URL</td><td>Lists only that site's indexable URLs</td></tr>
-<tr><td>Canonical tags</td><td>View source on a few pages per site</td><td>Self-referencing, unless content is deliberately shared</td></tr>
-<tr><td>robots.txt</td><td>Each site's domain or subdomain /robots.txt</td><td>No leftover Disallow: / and the right sitemap line</td></tr>
-<tr><td>Search Console</td><td>One property per site</td><td>Sitemap submitted, no spike in excluded pages</td></tr>
-</tbody>
-</table>
-<p>On a large network, WP-CLI saves opening every dashboard. This lists each site with its visibility setting, where 1 means search engines are allowed and 0 means discouraged:</p>
-<pre><code>for url in $(wp site list --field=url); do
-  echo "$url"
-  wp option get blog_public --url="$url"
-done</code></pre>
-<p>Any site returning 0 that should be live needs fixing in Settings &gt; Reading. Run it after launching a new site in the network and after migrations, because staging copies are usually set to 0.</p>
-
-<h2>A multisite SEO checklist</h2>
-<ol>
-<li>Each site indexable, with search engine visibility checked.</li>
-<li>Unique titles, descriptions and main content per site.</li>
-<li>One sitemap per site, submitted in Search Console.</li>
-<li>A Search Console property per site, plus a domain property if useful.</li>
-<li>Canonicals set correctly, with no cross-site duplicates by accident.</li>
-<li>Hreflang only where there are true language or country versions.</li>
-<li>Fast, secure, shared hosting and plugins tested on staging.</li>
-</ol>
-
-<h2>Is your multisite network hurting rankings? Signs to check</h2>
-<p>Multisite rarely causes ranking problems on its own, but a few symptoms point to a network-level issue rather than a content one:</p>
-<ul>
-<li>A subsite shows few or no pages in Search Console's indexing report, often because &quot;discourage search engines&quot; was left on after launch.</li>
-<li>Several subsites rank for the same query in turn, which suggests near-duplicate pages competing with each other.</li>
-<li>Google picks a canonical on another subsite instead of the page you wanted.</li>
-<li>Crawl stats show slow response times across every site at once, which usually points to shared hosting or database load.</li>
-<li>Sitemaps for one subsite list URLs from another, a sign of a misconfigured domain mapping or plugin.</li>
-</ul>
-<p>Fix these per site, then request indexing for the key pages. If speed is the issue, the steps in <a href="/blog/wordpress-multisite-slow/">why WordPress multisite gets slow</a> apply to the whole network.</p>
-<p>Franchise and branch networks deserve one more check: if each branch site uses the same service text with only the city name changed, Google may treat them as near-duplicates and show only one. Give each branch its own team, photos, reviews, services and local details, or merge thin branches into location pages on the main site.</p>
-
-<h2>FAQs</h2>
-<h3>How do I do multi site WordPress SEO?</h3>
-<p>Treat each site as its own website: configure the SEO plugin, sitemap, Search Console property and content per site, then audit every site's settings regularly, because network-level changes and new sites often leave one site misconfigured.</p>
-<h3>Is WordPress multisite bad for SEO?</h3>
-<p>No. Google treats each site in the network as its own site. SEO problems come from duplicate content, misconfigured plugins, accidental noindex settings or a slow shared setup, not from multisite itself.</p>
-<h3>Subdomain or subdirectory: which is better for WordPress multisite SEO?</h3>
-<p>Both can rank. Subdirectories suit language versions or branches of one brand; subdomains suit distinct brands or audiences. Pick at setup and avoid changing later.</p>
-<h3>Do I need a separate sitemap for each site in a multisite network?</h3>
-<p>Yes. Each site produces its own sitemap; submit each one in Search Console and check it only lists that site&apos;s indexable URLs.</p>
-<h3>How do I avoid duplicate content across multisite sites?</h3>
-<p>Write unique content for each site, add genuine local or brand details, and use canonical tags when the same content must appear on more than one site.</p>
-<p>If you run a multisite network and want its SEO checked or cleaned up, I handle this through <a href="/wordpress-seo-services/">WordPress SEO services</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for setup, migration or splitting sites out.</p>
-<h3>Does WordPress multisite slow down SEO?</h3>
-<p>Only if the network is slow or misconfigured. A shared server under strain slows every subsite, which can affect crawling and Core Web Vitals. Size hosting for the whole network, add object caching, and check each site's response time.</p>
-`,
-  },
-  {
-    slug: 'wordpress-hosting-price-india',
-    seoTitle: 'WordPress Hosting Price in India and Domain Cost',
-    title: 'WordPress Hosting Price in India: Domain Cost, Yearly and Monthly Cost, Shared vs VPS vs Managed and When to Move Host',
-    description: 'WordPress hosting price in India explained: domain cost, yearly and monthly cost, intro vs renewal rates, shared vs VPS vs managed plans and hidden add-ons.',
-    date: '2026-10-11',
-    updated: '2026-10-30',
-    category: 'Pricing',
-    related: ['wordpress-migration', 'wordpress-maintenance'],
-    body: `
-<p>WordPress hosting price in India for a typical small business website is roughly ₹2,500 to ₹15,000 a year across shared and managed plans, and the WordPress domain cost adds roughly ₹500 to ₹1,200 a year for a .com or .in, according to the <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> on this site. VPS and cloud plans vary too widely to give a fair range, and the headline monthly price in adverts is usually an introductory rate for a long upfront term; what you actually pay depends on renewal pricing, GST and add-ons.</p>
-<p>Hosts change plans and offers often, so check current prices on each host's own site before deciding. This guide covers the WordPress domain price, the yearly and monthly cost, the main hosting types and when a move makes sense. If you are already facing a steep renewal or a slow site, the WordPress migration service at the end of this page covers how I move sites without losing email or rankings.</p>
-
-<h2>How much does WordPress hosting cost? Read the price in four parts</h2>
-<table>
-  <thead><tr><th>Part of the price</th><th>What to check</th></tr></thead>
-  <tbody>
-    <tr><td>Introductory rate</td><td>Which term it needs (often several years upfront) and whether it applies only to the first term</td></tr>
-    <tr><td>Renewal rate</td><td>The regular price the same plan renews at, often shown in the comparison table or terms</td></tr>
-    <tr><td>GST</td><td>Whether prices are shown before or after GST</td></tr>
-    <tr><td>Add-ons</td><td>Backups, email, extra sites, security, CDN, control panel licence on a VPS</td></tr>
-  </tbody>
-</table>
-<p>The figure that matters is the total over three years, including at least one renewal. <a href="/blog/hosting-renewal-price-increase/">Why hosting renewals cost more</a> explains your options when the renewal invoice arrives.</p>
-
-<h2>Intro price vs renewal price</h2>
-<p>The low advertised price usually:</p>
-<ul>
-  <li>Applies only to the first term, after which the plan goes back to its standard price, sometimes much higher</li>
-  <li>Needs a long term paid upfront</li>
-  <li>Comes with a "free" domain that is free for the first year only; after that the cost guide gives roughly ₹500 to ₹1,200 a year for a .com or .in</li>
-</ul>
-<p>Longer upfront terms can still be good value if you are sure about the host. Just do the arithmetic for years two and three before you commit, and set a reminder before renewal so you can compare calmly.</p>
-
-<h2>WordPress domain cost and domain price in India</h2>
-<p>WordPress itself is free software, so a self-hosted WordPress site has two unavoidable running costs: the domain and the hosting. The cost guide on this site gives roughly ₹500 to ₹1,200 a year for a .com or .in domain. When people search for the WordPress domain cost, the confusing part is usually the bundle: a domain shown as free with a hosting plan is free for the first year only, and then renews at the registrar's regular price.</p>
-<ul>
-  <li><strong>Check the renewal price</strong> of the domain, not just the first-year price.</li>
-  <li><strong>Register it in your business's name and email</strong>, not a developer's or agency's account.</li>
-  <li><strong>Turn on auto-renew</strong> and keep the card on the account up to date, because an expired domain takes the website and email down together.</li>
-  <li><strong>Ask about privacy and transfer fees</strong> before you buy, since some registrars charge for these separately.</li>
-</ul>
-<p>The <a href="/blog/domain-hosting-renewal-checklist/">domain and hosting renewal checklist</a> lists what to check each year so nothing lapses.</p>
-
-<h2>WordPress yearly cost vs monthly cost</h2>
-<p>Most Indian hosts advertise a monthly figure but bill the whole term upfront, so the WordPress monthly cost you see is really a yearly or multi-year payment divided by the number of months. To work out the WordPress yearly cost of running a small business site, add together:</p>
-<ol>
-  <li>Hosting for the year, at the renewal rate rather than the introductory one</li>
-  <li>The domain renewal</li>
-  <li>Any business email, backup or security add-ons</li>
-  <li>Premium plugin or theme licences, which usually renew yearly</li>
-  <li>Maintenance, whether your own time or a paid plan</li>
-  <li>GST on each of the above</li>
-</ol>
-<p>Divide that total by twelve if you want an honest monthly figure to budget against. Paying monthly, where a host offers it, usually costs more over a year than a longer term, but it keeps you flexible while you are unsure about the host.</p>
-
-<h2>Shared vs VPS vs managed WordPress hosting</h2>
-<table>
-  <thead><tr><th>Type</th><th>What you get</th><th>Where it sits on price</th><th>Who it suits</th></tr></thead>
-  <tbody>
-    <tr><td>Shared</td><td>Space on a server shared with many sites; the host maintains the server</td><td>The cheapest</td><td>Brochure sites, small blogs, early-stage businesses</td></tr>
-    <tr><td>Managed WordPress</td><td>Hosting tuned for WordPress, often with caching, backups, staging and WordPress-aware support</td><td>More than shared</td><td>Business sites that want less admin and better support</td></tr>
-    <tr><td>VPS</td><td>Dedicated resources on a shared machine; on unmanaged plans you or a developer look after it</td><td>Varies with resources and management</td><td>Busier sites, several sites, custom server needs</td></tr>
-    <tr><td>Cloud</td><td>Resources on a network of servers, fixed or usage-based billing</td><td>Varies widely, can grow with usage</td><td>Sites with spiky or growing traffic and someone to manage it</td></tr>
-  </tbody>
-</table>
-<p>Names overlap between hosts, so read what each plan includes. <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">Shared vs VPS vs managed WordPress hosting</a> explains who manages what.</p>
-
-<h2>What drives the price within a type</h2>
-<ul>
-  <li><strong>CPU and RAM:</strong> how many visitors and admin users the site can handle at once</li>
-  <li><strong>Storage type and size:</strong> NVMe or SSD, plus any limit on number of files (inodes)</li>
-  <li><strong>Number of websites</strong> allowed on the plan</li>
-  <li><strong>PHP workers or entry processes:</strong> the limit on simultaneous uncached page loads, which matters for WooCommerce carts and checkout</li>
-  <li><strong>Server location:</strong> servers in or near India help if most visitors are here</li>
-  <li><strong>Support level:</strong> ticket only, or chat with WordPress knowledge</li>
-</ul>
-<p>"Unlimited" plans still have fair-use limits. A WooCommerce store or busy site needs more than a five-page brochure site, and a plan that is too small moves the cost into lost enquiries. <a href="/blog/choose-wordpress-hosting-india/">How to choose WordPress hosting in India</a> goes deeper.</p>
-
-<h2>Hidden add-ons that change the total</h2>
-<table>
-  <thead><tr><th>Add-on</th><th>Why it catches people out</th></tr></thead>
-  <tbody>
-    <tr><td>Daily backups</td><td>Sometimes a paid extra; restores may be charged; retention may be short</td></tr>
-    <tr><td>Business email</td><td>Some plans include mailboxes, others limit them or charge per user</td></tr>
-    <tr><td>Security or malware cleanup</td><td>Often sold separately; cleanup after a hack can be extra</td></tr>
-    <tr><td>Domain privacy and renewal</td><td>Free domain renews at a regular price</td></tr>
-    <tr><td>Control panel licence</td><td>On a VPS, a panel such as cPanel may be a separate cost</td></tr>
-    <tr><td>Management time</td><td>On an unmanaged VPS, a developer's time is part of the real cost</td></tr>
-  </tbody>
-</table>
-
-<h3>GST and billing currency</h3>
-<p>Indian hosting prices are often shown before GST, which is added at checkout, so make sure every figure you compare either includes or excludes it. If your business is GST-registered, enter your GSTIN at checkout and ask your CA about input tax credit. Some hosts bill in US dollars; your card may add conversion charges and the tax treatment can differ, so check a sample invoice.</p>
-
-<h2>Compare plans fairly: a three-year worksheet</h2>
-<ol>
-  <li>Decide the hosting type your site needs, and compare only plans of that type.</li>
-  <li>Write down the price for the term you will buy, the renewal price, and whether each includes GST.</li>
-  <li>Add the extras you need: backups, email, panel licence, CDN, security.</li>
-  <li>Total three years, including at least one renewal.</li>
-  <li>Compare resources, server location and support, not just the total.</li>
-  <li>Read the refund period and upgrade or downgrade terms.</li>
-</ol>
-
-<h2>When to move host</h2>
-<p>Price alone is rarely a good enough reason; a move takes time and carries some risk. It usually makes sense when:</p>
-<ul>
-  <li>The site has outgrown the plan: frequent resource-limit warnings, slow admin, timeouts during sales</li>
-  <li>Support cannot or will not fix recurring problems</li>
-  <li>Renewal pricing makes a better-fitting plan elsewhere sensible over three years</li>
-  <li>Your audience is in India and the server is far away, with real speed impact</li>
-  <li>The host lacks something you need, such as staging, SSH or proper backups</li>
-</ul>
-<p>Before moving, rule out a slow theme or plugins as the cause, since a new host will not fix those; <a href="/blog/hostinger-website-slow-fix/">fixing a slow Hostinger site</a> shows the checks. If you do move, plan the order: full backup, copy files and database, test on the new server, switch DNS, then check email, forms and SSL. A careful move with the same URLs normally does not affect Google rankings; downtime, broken links or a slower server can, which is why the move needs testing. Ongoing checks after the move fit into <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
-
-<h2>WordPress hosting price in India: matching the plan to your site</h2>
-<p>Most overspending and underspending on hosting comes from choosing a plan before knowing what the site needs. A rough guide:</p>
-<table>
-  <thead><tr><th>Site</th><th>Usually enough</th><th>Signs you need more</th></tr></thead>
-  <tbody>
-    <tr><td>Brochure site, a few pages, contact form</td><td>A good shared plan</td><td>Slow admin, resource-limit emails</td></tr>
-    <tr><td>Service business with blog and landing pages</td><td>Higher shared or managed WordPress</td><td>Slow uncached pages, staging needed</td></tr>
-    <tr><td>Small WooCommerce store</td><td>Managed WordPress or a higher plan with more PHP workers</td><td>Slow cart and checkout, timeouts during sales</td></tr>
-    <tr><td>Several sites or a busy store</td><td>VPS or cloud with someone managing it</td><td>Shared plan limits reached repeatedly</td></tr>
-  </tbody>
-</table>
-<p>A site that is slow because of a heavy theme or too many plugins will stay slow on a bigger plan. Check that first; <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers what can be fixed on the site itself.</p>
-<h3>Questions to ask a host before you pay</h3>
-<ul>
-  <li>What is the renewal price of this exact plan, and does it include GST?</li>
-  <li>How often are backups taken, how long are they kept, and is a restore free?</li>
-  <li>Where is the server, and can I choose an Indian or nearby location?</li>
-  <li>What are the CPU, RAM and process limits behind "unlimited"?</li>
-  <li>Does support help with WordPress issues, or only the server?</li>
-</ul>
-
-<h2>FAQs</h2>
-<h3>How much is WordPress hosting in India for a small business?</h3>
-<p>The cost guide on this site gives a range of about ₹2,500 to ₹15,000 a year across shared and managed plans. Check current prices, including renewal and GST, on each host's site.</p>
-<h3>How much does WordPress hosting cost after the first year?</h3>
-<p>Usually more, because introductory rates apply only to the first term. Find the renewal price for the same plan before buying.</p>
-<h3>Is managed WordPress hosting worth the extra cost?</h3>
-<p>For business sites without someone technical in-house, often yes, because backups, staging and WordPress-aware support save time. For a small brochure site, a good shared plan can be enough.</p>
-<h3>What is the WordPress domain cost in India?</h3>
-<p>The cost guide on this site gives roughly ₹500 to ₹1,200 a year for a .com or .in. A domain bundled free with hosting is usually free for the first year only, so check its renewal price.</p>
-<h3>What is the WordPress monthly cost for a business site?</h3>
-<p>Add the yearly hosting renewal, domain, email, licences, maintenance and GST, then divide by twelve. Many small stores run well on a good managed or higher shared plan, so you rarely need a VPS on day one.</p>
-<h3>Is cheap WordPress hosting in India good enough for a business site?</h3>
-<p>For a small brochure site with modest traffic, an entry shared plan from a reputable host is often enough. Check the renewal price, backups, support response and server location before you buy, and move up a tier when the site slows down under real traffic or you add a store.</p>
-
-<p>Facing a steep renewal or a host that no longer fits? See <a href="/wordpress-migration/">WordPress migration and hosting</a>, or <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> to review your plan.</p>
-`,
-  },
-  {
-    slug: 'wordpress-multisite-slow',
-    seoTitle: 'WordPress Multisite Slow? How to Speed Up a Network',
-    title: 'WordPress Multisite Slow? Why Networks Slow Down and How to Speed Up WordPress Multisite',
-    description: 'WordPress multisite slow? How to speed up WordPress multisite: hosting limits, network-wide plugins, bloated tables, object cache, cron and safe fixes.',
-    date: '2026-10-11',
-    updated: '2026-10-30',
-    category: 'Speed',
-    related: ['wordpress-speed-optimization', 'wordpress-maintenance'],
-    body: `
-<p>If your WordPress multisite is slow, the cause is usually something shared across the whole network: hosting that wasn't sized for many sites, plugins activated network-wide, a database with thousands of tables and bloated options, no persistent object cache, or scheduled tasks piling up on every subsite. To speed up WordPress multisite, measure server response time on a few subsites, find which shared resource is the bottleneck and fix that first. Because all sites run on one codebase, one database and one server, a problem on one subsite often slows the others too.</p>
-<p>This guide explains why networks slow down, how to diagnose the bottleneck and the fixes that usually help most. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite: when a business needs it</a> first.</p>
-
-<h2>Why WordPress multisite gets slow</h2>
-<p>A single WordPress site has one set of database tables. In multisite, each subsite gets its own set of around ten tables, while users and network settings are shared. A network with 50 subsites can have hundreds of tables in one database, and every network-activated plugin runs on every page load of every subsite.</p>
-<table>
-<thead><tr><th>Cause</th><th>Symptom</th><th>Typical fix</th></tr></thead>
-<tbody>
-<tr><td>Under-sized or shared hosting</td><td>All subsites slow, worse at busy times</td><td>Move to VPS or managed hosting sized for the network</td></tr>
-<tr><td>Heavy network-activated plugins</td><td>Slow on every subsite, including simple ones</td><td>Activate per site only where needed, replace heavy plugins</td></tr>
-<tr><td>No persistent object cache</td><td>High database load, slow admin</td><td>Redis or Memcached object cache</td></tr>
-<tr><td>Bloated autoloaded options</td><td>Slow time to first byte on certain subsites</td><td>Clean options tables per subsite</td></tr>
-<tr><td>WP-Cron firing on every subsite</td><td>Random slow page loads, CPU spikes</td><td>Disable WP-Cron and run a real server cron</td></tr>
-<tr><td>One busy or broken subsite</td><td>Whole network slows when that site gets traffic</td><td>Optimise or isolate that subsite</td></tr>
-<tr><td>Domain mapping or SSL redirects</td><td>Extra redirect delay on mapped domains</td><td>Correct domain and HTTPS settings</td></tr>
-</tbody>
-</table>
-
-<h2>Step 1: measure before you change anything</h2>
-<p>Guessing wastes time on a network because changes affect every site. Collect a few numbers first:</p>
-<ul>
-<li><strong>Server response time (TTFB)</strong> on the main site and three or four subsites, both cached and logged in. A slow TTFB points at PHP, the database or hosting rather than images or front-end code. <a href="/blog/reduce-server-response-time-ttfb/">Reducing server response time</a> explains how to test it.</li>
-<li><strong>Slow queries</strong> using the Query Monitor plugin on a staging copy or briefly on live while logged in. It shows which plugin or theme function causes slow database queries.</li>
-<li><strong>Server resources</strong> in your hosting panel: CPU, memory and PHP worker usage over the day.</li>
-<li><strong>Which subsites get the most traffic</strong>, since one popular site can starve the rest.</li>
-</ul>
-
-<h2>Step 2: review network-activated plugins</h2>
-<p>Network activation is convenient but expensive. A plugin activated for the network loads on every request across every subsite, even sites that never use it.</p>
-<ul>
-<li>List network-activated plugins under Network Admin, Plugins.</li>
-<li>For each one, ask whether every subsite needs it. If not, deactivate it network-wide and activate it only on the sites that use it.</li>
-<li>Look for overlapping plugins, such as two SEO or security plugins, and remove one.</li>
-<li>Be careful with page builders, related-post plugins, statistics plugins and anything that writes to the database on each page view.</li>
-</ul>
-<p>Test changes on a staging copy of the network first. Deactivating a plugin network-wide can change how subsites look or behave.</p>
-
-<h2>Step 3: add persistent object caching</h2>
-<p>WordPress repeats many of the same database queries on each request. A persistent object cache (Redis or Memcached) stores those results in memory, which particularly helps the admin area and logged-in users, where page caching doesn't apply. On multisite, make sure the cache uses a key prefix so subsites don't share entries by mistake; the usual object cache plugins handle this when configured properly.</p>
-<p>Page caching still matters for visitors. Check that your caching plugin or server cache supports multisite and is set up for each subsite and mapped domain. <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> covers the different layers.</p>
-
-<h2>Step 4: clean the database</h2>
-<p>Large networks accumulate clutter quickly: post revisions, expired transients, orphaned tables from deleted subsites and plugins, and large autoloaded options that load on every page.</p>
-<ul>
-<li>Check autoloaded options size per subsite and remove data left by uninstalled plugins.</li>
-<li>Limit post revisions in wp-config.php.</li>
-<li>Remove tables left behind by subsites that were deleted.</li>
-<li>Make sure the database uses the InnoDB engine and that tables have proper indexes.</li>
-</ul>
-<p>Always back up first. <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a> explains each step in more detail.</p>
-
-<h2>Step 5: replace WP-Cron with a real cron</h2>
-<p>By default, WordPress runs scheduled tasks when someone visits a page. On multisite, every subsite has its own schedule, so visitors on busy subsites can trigger heavy jobs, while quiet subsites miss them entirely. Disable WP-Cron in wp-config.php and set up a server cron job that runs due events for every subsite at regular intervals, usually with WP-CLI looping through the sites. Your host's support can often help set this up.</p>
-
-<p>If the network needs rebuilding or restructuring rather than tuning, see what <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a> usually cover.</p>
-
-<h2>Step 6: check hosting and PHP</h2>
-<p>Many networks start on shared hosting and outgrow it. Signs you need more resources include resource limit warnings, slow admin across all sites and slowdowns at the same times each day. Look at:</p>
-<ul>
-<li>Enough PHP workers and memory for the number of subsites and simultaneous logged-in users.</li>
-<li>A current, supported PHP version; see <a href="/blog/update-php-version-wordpress/">updating your PHP version</a>.</li>
-<li>Server-level caching and a database on fast storage.</li>
-<li>Data centre location close to your main audience, for example India for Indian visitors.</li>
-</ul>
-<p><a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">Shared vs VPS vs managed WordPress hosting</a> compares options. A network of many active subsites usually belongs on a VPS or managed plan rather than basic shared hosting.</p>
-
-<h2>Step 7: deal with the slow admin</h2>
-<p>Network admins often notice the dashboard is slow even when the front end is fine. Common causes are the "My Sites" menu loading many sites, dashboard widgets from plugins, the Heartbeat API and update checks for many plugins. Reducing dashboard widgets, slowing Heartbeat and using object caching help. <a href="/blog/wordpress-admin-slow/">Why WordPress admin is slow</a> covers the general fixes, which apply to each subsite.</p>
-
-<h2>A safe order of work</h2>
-<p>Because every change on a network reaches every subsite, the order matters. A sequence that keeps risk low:</p>
-<ol>
-<li>Take a full backup of files and the database, and confirm you can restore it.</li>
-<li>Create a staging copy of the network, including mapped domains if possible.</li>
-<li>Record baseline numbers: TTFB on several subsites, admin load time and server resource graphs.</li>
-<li>Make low-risk changes first: real cron, object caching, PHP version, revision limits.</li>
-<li>Then move network-activated plugins to per-site activation, one at a time, checking affected subsites after each.</li>
-<li>Clean the database last, once you know which plugins are staying.</li>
-<li>Repeat the measurements and compare with the baseline before applying changes to live.</li>
-</ol>
-<p>Tell subsite owners or editors when changes are planned, especially if a plugin they rely on is moving from network to per-site activation. Keep a short change log so that if something breaks a week later, you know what changed and when.</p>
-
-<h2>When multisite is the wrong structure</h2>
-<p>Sometimes slowness is a sign that the network should be split. If subsites have very different traffic, plugins and owners, or one large shop shares a network with many small sites, separate installations may be faster and easier to maintain. Splitting a site out of multisite is a migration project, so plan it with backups and redirects. Before deciding, compare the effort of maintaining one network against several separate sites, including updates, security monitoring and who manages each site day to day.</p>
-
-<h2>Getting a network fixed</h2>
-<p>Multisite speed work needs care, because each change touches every site in the network. A speed audit covering hosting, plugins, caching, database and cron, carried out on staging first, is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. Agencies running client networks can also use white-label WordPress development for agencies, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> directly.</p>
-
-<h2>How to speed up WordPress multisite: a quick checklist</h2>
-<ol>
-<li>Record server response time (TTFB) for the main site and three busy subsites, logged out and logged in.</li>
-<li>List network-activated plugins and move any that only some sites need to per-site activation.</li>
-<li>Turn on a persistent object cache such as Redis, with a separate key prefix for the network.</li>
-<li>Delete spam and archived subsites you no longer need, and clean expired transients and autoloaded options.</li>
-<li>Switch WP-Cron to a real server cron that loops through subsites.</li>
-<li>Update PHP to a supported version and check memory and worker limits.</li>
-<li>Add page caching that understands multisite, and a CDN for images and static files.</li>
-<li>Measure again and compare with your first numbers.</li>
-</ol>
-<p>Work on a staging copy and keep a full backup, because a network-wide change affects every subsite at once.</p>
-
-<h2>Multisite on Indian hosting</h2>
-<p>Many Indian businesses start a network on a shared hosting plan bought for one site. That is often where the slowdown begins: the plan's CPU, memory and process limits are shared by every subsite, so one busy site or a heavy import slows the rest. Choose a data centre close to your visitors (Mumbai or Singapore for most Indian audiences), check whether Redis is available, and move to a VPS or managed plan once the network grows. A slow network also hurts search, so pair speed work with the checks in <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a>.</p>
-
-<h2>FAQs</h2>
-<h3>Why is my WordPress multisite slow?</h3>
-<p>Usually because of shared resources: hosting too small for the network, plugins activated network-wide, a large database without object caching, or scheduled tasks on many subsites. Measure TTFB and slow queries to find which applies.</p>
-<h3>Does multisite make WordPress slower than single sites?</h3>
-<p>Not by itself. A well-configured network can be fast. It becomes slow when many subsites share under-sized hosting or load plugins they don't need.</p>
-<h3>Should I use Redis object caching on multisite?</h3>
-<p>For most active networks, yes. A persistent object cache reduces repeated database queries, especially for logged-in users and the admin area. Configure it with proper key prefixes.</p>
-<h3>Can one subsite slow down the whole network?</h3>
-<p>Yes. All subsites share the server and database, so a busy, badly coded or attacked subsite can affect the others.</p>
-<h3>How do I find which plugin slows down multisite?</h3>
-<p>Use Query Monitor on a staging copy to see slow queries by plugin, and test by moving network-activated plugins to per-site activation one at a time.</p>
-
-<p>Running a slow network? A careful, staging-first speed audit is part of <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
-<h3>How do I speed up WordPress multisite?</h3>
-<p>Measure TTFB first, then reduce network-activated plugins, add a persistent object cache, clean the database, replace WP-Cron with a server cron, update PHP and size hosting for the whole network. Test each change on staging.</p>
 `,
   },
   {
@@ -74195,7 +69485,7 @@ done</code></pre>
 <li><strong>Ongoing changes.</strong> New sections for a campaign, a seasonal banner, a new app to configure, or a theme update that needs custom code carried across.</li>
 <li><strong>Shipping and returns.</strong> Courier charges, packaging, and the two-way cost of refused cash on delivery parcels.</li>
 </ul>
-<p>The guide to <a href="/blog/hidden-website-costs/">hidden website costs</a> lists more of the items that appear only after launch.</p>
+<p>The guide to <a href="/blog/wordpress-website-cost-india/">hidden website costs</a> lists more of the items that appear only after launch.</p>
 
 <h2>How the cost structure differs from WooCommerce</h2>
 <p>Neither platform is cheaper for every store. They spend your money in different places.</p>
@@ -74210,7 +69500,7 @@ done</code></pre>
 <tr><td>Custom work</td><td>Limited in places, such as checkout, by what your plan allows</td><td>Almost anything, at development cost</td></tr>
 </tbody>
 </table>
-<p>In short, Shopify's costs are predictable and rise with sales and app count, while WooCommerce has lower platform costs but asks you to pay for hosting and upkeep in time or money. <a href="/blog/woocommerce-store-running-costs/">WooCommerce store running costs</a> covers the other side in detail, and <a href="/blog/ecommerce-website-cost-india/">e-commerce website costs in India</a> looks at what changes the build cost on either platform.</p>
+<p>In short, Shopify's costs are predictable and rise with sales and app count, while WooCommerce has lower platform costs but asks you to pay for hosting and upkeep in time or money. <a href="/blog/ecommerce-website-cost-india/">WooCommerce store running costs</a> covers the other side in detail, and <a href="/blog/ecommerce-website-cost-india/">e-commerce website costs in India</a> looks at what changes the build cost on either platform.</p>
 
 <p>Setup quotes from different developers can vary widely for the same store. Here is <a href="/blog/compare-website-quotes/">why website quotes differ</a> and what to check line by line.</p>
 
@@ -75224,430 +70514,6 @@ done</code></pre>
 `,
   },
   {
-    slug: 'wordpress-multisite-development-services',
-    seoTitle: 'WordPress Multisite Development Services: What to Expect',
-    title: 'WordPress Multisite Development Services: What a Developer Builds, Plans and Hands Over',
-    description: 'What WordPress multisite development services include in India: network planning, domains, shared themes, user roles, SEO, hosting and handover.',
-    date: '2026-10-30',
-    category: 'Guides',
-    related: ['hire-wordpress-developer', 'wordpress-website-development'],
-    body: `
-<p>WordPress multisite development services cover planning, building and handing over a network of websites that run from one WordPress installation: setting up the network and domains, building a shared theme that each site can adapt, choosing which plugins run network-wide, configuring user roles, handling SEO for each site and sizing hosting and backups for the whole network. Most of the value is in the planning, because decisions made at the start are hard to undo later.</p>
-<p>This guide explains what to expect from a developer, what to prepare and which questions to ask, so you can compare proposals for a multisite project in India or abroad. If you are still deciding whether multisite is right at all, read <a href="/blog/wordpress-multisite-when-needed/">what WordPress multisite is and when a business needs it</a> first.</p>
-
-<h2>Who usually needs multisite</h2>
-<p>Multisite suits organisations that need many similar sites managed centrally. Typical cases include:</p>
-<ul>
-  <li>A school group or coaching brand with one site per branch or campus.</li>
-  <li>A franchise or dealer network where each outlet needs its own pages but the brand stays consistent.</li>
-  <li>A business with separate language or country sites that share design and content structure.</li>
-  <li>An agency or institution that runs many small microsites and wants one dashboard for updates.</li>
-</ul>
-<p>It is usually the wrong choice when sites need very different plugins, when one site will be sold or handed to a different owner, or when there are only two or three sites that rarely change.</p>
-
-<h2>What WordPress multisite development services include</h2>
-<p>A complete service normally runs through the stages below. Ask any developer which of them are in their proposal and which are extra.</p>
-<table>
-  <thead><tr><th>Stage</th><th>What happens</th><th>What you should receive</th></tr></thead>
-  <tbody>
-    <tr><td>Discovery and planning</td><td>List of sites, shared and per-site features, domains, who edits what</td><td>A short written network plan</td></tr>
-    <tr><td>Network setup</td><td>Subdomain or subdirectory network, domain mapping, SSL for every domain</td><td>Working network on staging</td></tr>
-    <tr><td>Theme</td><td>One parent or block theme with settings or child themes per site</td><td>Consistent design that sites can customise within limits</td></tr>
-    <tr><td>Plugins</td><td>Decide network-activated vs per-site plugins, check multisite compatibility</td><td>A plugin list with reasons</td></tr>
-    <tr><td>Users and roles</td><td>Super admin, site admins, editors, access per site</td><td>Role matrix and accounts</td></tr>
-    <tr><td>SEO setup</td><td>Sitemaps, Search Console per site, canonicals, hreflang if needed</td><td>Each site indexable and verified</td></tr>
-    <tr><td>Hosting, backups, security</td><td>Server sizing, caching, network backups, firewall</td><td>Documented hosting and restore steps</td></tr>
-    <tr><td>Content and launch</td><td>Migrate or add content, test forms and emails per site, go live</td><td>Launch checklist signed off</td></tr>
-    <tr><td>Handover</td><td>Training for site admins, documentation for adding new sites</td><td>Written guide and recorded walkthrough</td></tr>
-  </tbody>
-</table>
-
-<h2>Planning decisions that shape the whole project</h2>
-<h3>Subdomains, subdirectories or mapped domains</h3>
-<p>A network can use subdirectories (brand.com/pune), subdomains (pune.brand.com) or completely separate mapped domains for each site. The choice affects SEO, SSL, email and how users perceive the sites. Subdirectories keep everything under one domain; mapped domains make each site look independent. This needs deciding before build, not after launch.</p>
-<h3>What is shared and what is local</h3>
-<p>Write down which parts are identical on every site (header, footer, legal pages, brand colours), which are editable per site (contact details, team, local offers) and which are completely separate (blog posts, products). This list drives the theme design and the plugin choices.</p>
-<h3>Who controls updates</h3>
-<p>In multisite, only the super admin can install plugins and themes. Site admins cannot add their own. That is often the point, but it surprises branch managers who expect full control. Agree the rules early and explain them in the handover. The <a href="/blog/wordpress-user-roles-explained/">guide to WordPress user roles</a> covers how permissions work.</p>
-
-<h2>SEO for each site in the network</h2>
-<p>Each site in a network needs its own sitemap, its own Search Console property, unique titles and descriptions, and correct canonical tags. Language or country versions also need hreflang between them. A developer should set this up and test it before launch, because network-wide mistakes such as a noindex setting copied to every site can hide all of them at once. <a href="/blog/wordpress-multisite-seo/">WordPress multisite SEO</a> explains sitemaps, canonicals and hreflang for networks in detail, and the <a href="/blog/hreflang-multilingual-seo-india/">hreflang guide for Indian languages</a> helps if you run Hindi or regional language sites.</p>
-<p>Avoid copying the same text to every branch site with only the city name changed. Give each location real local information: address, timings, staff, services offered there and local photos.</p>
-
-<h2>Hosting, speed and backups for a network</h2>
-<p>All sites share one database and one set of files, so one busy site can slow the rest. A multisite network usually needs more server memory and better caching than a single site, and object caching often helps. Plan backups for the whole network, and test that a single site can be restored without rolling back the others. If an existing network has become sluggish, <a href="/blog/wordpress-multisite-slow/">why multisite networks slow down</a> walks through the causes. For the hosting choice itself, see <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>
-
-<h2>What to prepare before asking for a quote</h2>
-<ul>
-  <li>The number of sites now and how many you expect to add.</li>
-  <li>Domains you own or plan to buy, and whether sites need separate domains.</li>
-  <li>A list of features per site: forms, booking, shop, blog, languages.</li>
-  <li>Who will edit each site, and how much freedom they should have.</li>
-  <li>Any existing sites to migrate, with rough page counts.</li>
-  <li>Who will look after updates and backups after launch.</li>
-</ul>
-<p>With this list, proposals are easier to compare. A quote that does not mention planning, roles, SEO per site or backups may look cheaper but leaves those jobs for later.</p>
-
-<h2>Questions to ask a multisite developer</h2>
-<ol>
-  <li>Have you checked every proposed plugin works with multisite, and which will be network-activated?</li>
-  <li>How will new sites be added after launch, and can our team do it?</li>
-  <li>How are backups and restores handled for one site versus the whole network?</li>
-  <li>What happens if we later want to move one site out of the network?</li>
-  <li>How is SEO set up and verified for each site?</li>
-  <li>What documentation and training do we get at handover?</li>
-</ol>
-<p>Clear answers to these are a better sign than a long feature list. For general hiring advice, the guide to <a href="/blog/freelancer-vs-agency-web-developer/">freelance developer vs agency</a> covers working arrangements and risk.</p>
-
-<h2>Alternatives worth comparing first</h2>
-<p>Before committing, compare multisite with two simpler options. A single WordPress site with a section per branch, using a custom post type for locations, keeps one admin and one set of plugins and suits many small chains. Separate WordPress installations, managed with a central dashboard tool, give each site full independence while still letting one person update them all. Multisite sits between the two: shared code and users with separate content. A developer should explain why multisite beats these options for your case, not just build it because it was asked for.</p>
-
-<h2>After launch: running the network</h2>
-<p>A network needs regular care like any site, but mistakes affect every site at once. Updates should be tested on a staging copy of the whole network, new plugins checked for multisite support before activation, and backups monitored. Agree who adds new sites and how, using a documented checklist so each new site starts with the right settings, pages and SEO. <a href="/blog/wordpress-maintenance-checklist/">The WordPress maintenance checklist</a> lists the routine tasks. Review the network once or twice a year: remove sites that are no longer used, retire plugins nobody needs, and check that every site still has current contact details and working forms.</p>
-
-<h2>FAQs</h2>
-<h3>What do WordPress multisite development services include?</h3>
-<p>Typically network planning, setup with subdomains, subdirectories or mapped domains, a shared theme, plugin selection, user roles, SEO for each site, hosting and backup setup, launch testing and a handover with documentation and training.</p>
-<h3>Is multisite better than separate WordPress sites?</h3>
-<p>Only when sites share most of their design and plugins and are managed centrally. If sites need different plugins, different owners or very different features, separate installations are usually simpler and safer.</p>
-<h3>Can each site in a multisite network have its own domain?</h3>
-<p>Yes. Domain mapping lets each site use its own domain, with SSL for each. It needs planning for DNS, certificates and email.</p>
-<h3>Does multisite hurt SEO?</h3>
-<p>Not by itself. Problems come from setup mistakes such as duplicate content across sites, missing sitemaps or wrong canonical tags. Each site should be set up and verified separately.</p>
-<h3>Can branch managers install their own plugins?</h3>
-<p>No. In multisite only the super admin installs plugins and themes. Site admins can activate plugins the super admin allows, and edit their own content.</p>
-<h3>Can a site be removed from the network later?</h3>
-<p>Yes, but it takes work: the site's content, media and users have to be exported into a separate installation and URLs checked. Plan for this if a site may be sold or handed over.</p>
-
-<p>Planning a network of branch, franchise or language sites? <a href="/hire-wordpress-developer/">Hire a WordPress developer in India</a> to plan, build and document your multisite network, or see <a href="/wordpress-website-development/">WordPress website development</a> for single-site projects.</p>
-`,
-  },
-  {
-    slug: 'woocommerce-multiple-suppliers',
-    seoTitle: 'WooCommerce Multiple Suppliers: How to Manage Them',
-    title: 'WooCommerce With Multiple Suppliers: Products, Stock, Order Routing and Shipping in One Store',
-    description: 'How to run WooCommerce with multiple suppliers: supplier fields, stock sync, order routing, split shipping, GST and when you need a marketplace.',
-    date: '2026-10-30',
-    category: 'E-commerce',
-    related: ['woocommerce-developer', 'hire-wordpress-developer'],
-    body: `
-<p>To run a WooCommerce store with multiple suppliers, record the supplier on each product, keep each supplier's stock in sync with your store, send each order line to the right supplier, and set shipping rules that cope with items leaving from different places. You can do this with a custom field or taxonomy, a stock import or sync, an order notification or export per supplier, and shipping classes. You only need a full multi-vendor marketplace if suppliers must log in, manage their own products and receive payouts.</p>
-<p>This guide is for Indian retailers and brands selling products from several manufacturers, wholesalers or dropship partners through one WooCommerce store. It explains the main models, the setup and the points where a developer is worth involving.</p>
-
-<h2>Three ways suppliers work with an online store</h2>
-<table>
-  <thead><tr><th>Model</th><th>Who holds stock</th><th>Who ships</th><th>Main challenge</th></tr></thead>
-  <tbody>
-    <tr><td>You buy and stock</td><td>You</td><td>You</td><td>Reordering from the right supplier in time</td></tr>
-    <tr><td>Dropship</td><td>Supplier</td><td>Supplier, under your name</td><td>Accurate stock and fast order handoff</td></tr>
-    <tr><td>Mixed</td><td>Some you, some suppliers</td><td>Both</td><td>Split orders and shipping charges</td></tr>
-    <tr><td>Marketplace</td><td>Each vendor</td><td>Each vendor</td><td>Vendor logins, commissions, payouts</td></tr>
-  </tbody>
-</table>
-<p>Most stores with &quot;multiple suppliers&quot; fit one of the first three. They need better data and order handling, not a marketplace plugin.</p>
-
-<h2>WooCommerce multiple suppliers: recording the supplier on products</h2>
-<p>WooCommerce has no built-in supplier field, so add one. The simplest options are:</p>
-<ul>
-  <li><strong>A custom taxonomy called Supplier</strong>, so you can filter products in the admin and in reports, and bulk-edit by supplier.</li>
-  <li><strong>Custom fields</strong> for supplier SKU, supplier cost, lead time and minimum order quantity, kept private from customers.</li>
-  <li><strong>A supplier attribute</strong> only if customers should see the maker, such as a brand; otherwise keep it private.</li>
-</ul>
-<p>Use your own SKUs on the store and keep the supplier's code in a separate field, so changing supplier later does not break your URLs or catalogue. For handling large product sets, <a href="/blog/custom-post-types-fields/">custom post types and fields</a> explains how custom data is stored in WordPress.</p>
-
-<h2>Keeping stock in sync</h2>
-<p>Stock is where multi-supplier stores most often go wrong. If a dropship supplier sells out and your store still shows stock, you take orders you cannot fulfil. Common approaches, from simplest to most automated:</p>
-<ol>
-  <li><strong>Manual updates</strong> from the supplier's stock sheet, fine for small catalogues that change slowly.</li>
-  <li><strong>Scheduled CSV or spreadsheet import</strong> that updates stock and prices by SKU, daily or more often.</li>
-  <li><strong>Feed or API sync</strong> when a supplier offers a product feed or an API, run on a schedule with error alerts.</li>
-</ol>
-<p>Whichever you use, add a safety margin for fast sellers, and log every import so you can see what changed. The <a href="/blog/woocommerce-inventory-management/">WooCommerce inventory management guide</a> covers stock settings, low-stock alerts and syncing with Tally or a physical shop.</p>
-
-<h2>Sending each order to the right supplier</h2>
-<p>When an order contains products from two suppliers, each supplier needs to see only their lines, with the delivery address and any notes. Options include:</p>
-<ul>
-  <li>An automatic email per supplier listing their items, triggered when an order is paid or confirmed.</li>
-  <li>A daily order export per supplier as CSV or a shared sheet.</li>
-  <li>A supplier portal or API push for larger partners.</li>
-</ul>
-<p>Track each line's status separately, for example with order notes or a custom status, so your team knows which part is shipped. Customers should get one clear update per shipment. <a href="/blog/woocommerce-order-management-workflow/">The WooCommerce order management workflow</a> shows how to organise statuses, and <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">order notifications by email, SMS and WhatsApp</a> covers customer updates.</p>
-
-<h2>Shipping when items leave from different places</h2>
-<p>If one order ships in two parcels from two cities, your shipping cost and delivery time change. Use shipping classes per supplier or warehouse, and decide how you charge: one flat rate absorbed by you, a charge per parcel, or free shipping above a threshold. Be clear on the product page that some items ship separately. If you use an aggregator such as Shiprocket, check how it handles multiple pickup addresses. The <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a> explains zones, classes and courier integrations.</p>
-<p>Cash on delivery needs extra thought. With split shipments, decide whether COD is allowed on orders that include dropshipped items, and how payment collected by one courier is reconciled. See <a href="/blog/woocommerce-cash-on-delivery-india/">COD on WooCommerce in India</a>.</p>
-
-<p>If prices need to follow each supplier's cost and margin automatically, see <a href="/blog/woocommerce-custom-pricing-plugin-development/">WooCommerce custom pricing plugin development</a>.</p>
-
-<h2>GST, invoices and returns</h2>
-<p>When you sell under your name, the invoice usually comes from your business, even if a supplier ships. Supplier-shipped parcels must carry the right invoice and packing slip, so agree who prints them. GST treatment depends on your arrangement and the states involved, so confirm it with your CA. <a href="/blog/woocommerce-gst-invoices-india/">GST invoices on WooCommerce</a> covers invoice plugins and settings.</p>
-<p>Returns need a supplier-by-supplier policy: where the item goes back to, who checks it, and who bears the cost. Write this into your returns page so customers are not confused.</p>
-
-<p>If suppliers will manage their own listings and payouts, the store becomes a marketplace and each seller needs a proper sign-up flow; see <a href="/blog/woocommerce-vendor-onboarding/">WooCommerce vendor onboarding</a>.</p>
-
-<h2>When you actually need a marketplace</h2>
-<p>If suppliers must add their own products, manage their own orders, see their own sales and receive payouts after a commission, you are building a multi-vendor marketplace. That brings vendor onboarding, KYC, commission rules, payout schedules and support for many sellers. It is a much larger project, covered in <a href="/blog/woocommerce-multi-vendor-marketplace/">how to build a WooCommerce multi-vendor marketplace</a>.</p>
-
-<h2>Where a developer helps</h2>
-<p>Store owners can usually add products and shipping classes themselves. A developer is worth involving for supplier fields and reports, automated stock imports, per-supplier order emails or exports, split-shipment handling and custom order statuses. These are also the parts that need testing with real orders before launch, because errors cost money and customer trust.</p>
-
-<h2>Reports and purchase planning by supplier</h2>
-<p>Once every product carries a supplier, you can answer questions that are otherwise slow to work out: which supplier's products sell best, which are often out of stock, and what you need to reorder this week. Useful reports include:</p>
-<ul>
-  <li><strong>Sales by supplier</strong> over a period, to judge which partnerships are worth growing.</li>
-  <li><strong>Low stock by supplier</strong>, so one purchase order covers everything due from that supplier.</li>
-  <li><strong>Margin by supplier</strong>, using the private cost field against your selling price.</li>
-  <li><strong>Late or cancelled lines by supplier</strong>, to spot partners who regularly miss dispatch times.</li>
-</ul>
-<p>WooCommerce's own reports do not group by a custom field out of the box, so this usually means a small custom report or a regular export to a spreadsheet. Either is fine as long as the supplier data on products is complete and consistent.</p>
-
-<h2>Agreeing the basics with each supplier</h2>
-<p>Technology only works if each supplier sticks to what was agreed. Before connecting a new supplier, settle in writing:</p>
-<ul>
-  <li>How and how often they share stock and price changes.</li>
-  <li>How they receive orders, and the expected dispatch time.</li>
-  <li>Packaging, branding and whether your invoice goes in the parcel.</li>
-  <li>How tracking numbers come back to you so customers get updates.</li>
-  <li>Who handles returns, damaged items and replacements.</li>
-</ul>
-<p>Keep these agreements somewhere your whole team can see them, along with each supplier's contact person for urgent order problems. When a customer calls about a late parcel, whoever answers should be able to tell at once which supplier shipped it and whom to chase. Review each supplier every few months against the reports above. Start with a small set of products from a new supplier, check a few real orders end to end, then add the rest of their range.</p>
-
-<h2>FAQs</h2>
-<h3>How do I manage WooCommerce multiple suppliers in one store?</h3>
-<p>Add a supplier taxonomy or field to products, sync stock from each supplier, send each supplier their order lines automatically, and set shipping classes for items that ship from different places.</p>
-<h3>Does WooCommerce have a supplier field?</h3>
-<p>Not by default. You can add one with a custom taxonomy or custom fields, either with a plugin or a small custom plugin.</p>
-<h3>Can WooCommerce email suppliers automatically when an order comes in?</h3>
-<p>Yes. A plugin or custom code can send each supplier an email with only their items when an order is paid or confirmed.</p>
-<h3>Is dropshipping on WooCommerce possible in India?</h3>
-<p>Yes, if suppliers can share reliable stock data and ship quickly. Agree invoices, packaging, returns and COD handling in writing, and check GST with your CA.</p>
-<h3>Do I need a multi-vendor plugin for multiple suppliers?</h3>
-<p>Only if suppliers need their own logins, product management and payouts. Most retailers with several suppliers just need supplier data, stock sync and order routing.</p>
-<h3>How do I charge shipping when items ship separately?</h3>
-<p>Use shipping classes per supplier or warehouse and choose a rule: a flat rate you absorb, a charge per parcel, or free shipping above a threshold. Tell customers on the product page.</p>
-
-<p>Running a store with several suppliers or dropship partners? As a <a href="/woocommerce-developer/">WooCommerce developer</a> I set up supplier data, stock sync and order routing, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing changes.</p>
-`,
-  },
-  {
-    slug: 'woocommerce-custom-pricing-plugin-development',
-    seoTitle: 'WooCommerce Custom Pricing Plugin Development Guide',
-    title: 'WooCommerce Custom Pricing Plugin Development: When Off-the-Shelf Pricing Rules Are Not Enough',
-    description: 'When you need WooCommerce custom pricing plugin development: formula pricing, customer rates, quantity rules, GST display, testing and handover.',
-    date: '2026-10-30',
-    category: 'E-commerce',
-    related: ['woocommerce-developer', 'hire-wordpress-developer'],
-    body: `
-<p>WooCommerce custom pricing plugin development makes sense when your prices depend on rules that standard plugins cannot express cleanly: price by measurement or formula, customer-specific rates from your own price list, combined quantity and customer-group rules, or prices pulled from an ERP or spreadsheet. A custom plugin calculates the price on the product page, in the cart and at checkout using your exact rules, with a settings screen your team controls. If your needs are simple tiered or wholesale pricing, an existing plugin is usually quicker and cheaper.</p>
-<p>This guide explains which pricing problems need custom work, how to specify the rules, and what a well-built pricing plugin should include, so you can brief a developer clearly.</p>
-
-<h2>Start with what existing plugins can do</h2>
-<p>Popular pricing plugins already handle a lot: quantity discounts, role-based prices for wholesale customers, buy-x-get-y offers, cart discounts and scheduled sales. WooCommerce itself handles sale prices and coupons. Check these first. <a href="/blog/woocommerce-wholesale-dealer-pricing/">WooCommerce wholesale and dealer pricing</a> covers trade price setups, and <a href="/blog/woocommerce-coupons-discounts/">WooCommerce coupon types and discounts</a> covers offers.</p>
-<p>The general trade-off between a plugin, a snippet and a bespoke build is explained in <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code in WordPress</a>.</p>
-
-<h2>When WooCommerce custom pricing plugin development is worth it</h2>
-<table>
-  <thead><tr><th>Pricing need</th><th>Example</th><th>Why plugins struggle</th></tr></thead>
-  <tbody>
-    <tr><td>Price by measurement</td><td>Curtains, glass, flex banners, fabric by the metre</td><td>Formula with minimums, steps and wastage</td></tr>
-    <tr><td>Customer-specific price lists</td><td>Each dealer has negotiated rates</td><td>Hundreds of customer and product combinations</td></tr>
-    <tr><td>External price source</td><td>Prices from an ERP, Tally export or daily rate sheet</td><td>Needs import or sync, not manual entry</td></tr>
-    <tr><td>Combined rules</td><td>Dealer rate plus quantity slab plus regional surcharge</td><td>Plugins conflict or apply rules in the wrong order</td></tr>
-    <tr><td>Option-based pricing</td><td>Base price plus material, finish and add-ons</td><td>Too many variations to create one by one</td></tr>
-    <tr><td>Rate-linked products</td><td>Items priced from a daily metal or commodity rate</td><td>Price must update from one input across many products</td></tr>
-  </tbody>
-</table>
-<p>If two or more plugins are fighting each other to produce your prices, that is often the clearest sign a single custom plugin would be simpler and more reliable.</p>
-
-<h2>Write the pricing rules before any code</h2>
-<p>Most pricing projects go wrong because the rules were never written down in full. Before asking for a quote, prepare a short document with:</p>
-<ul>
-  <li><strong>Every rule in plain words</strong>, for example &quot;dealers get their list price; above a set quantity, the next slab applies&quot;.</li>
-  <li><strong>The order rules apply in</strong>, and whether they stack or the best one wins.</li>
-  <li><strong>Worked examples</strong> with inputs and the expected price, including edge cases such as minimum sizes.</li>
-  <li><strong>Rounding</strong>: to the rupee, to the nearest five, or exact paise.</li>
-  <li><strong>GST display</strong>: whether prices are entered and shown inclusive or exclusive of tax, and how B2B customers see them.</li>
-  <li><strong>Interaction with coupons and sale prices</strong>: can a coupon apply on top of a dealer price?</li>
-  <li><strong>Who changes the rates</strong> and how often.</li>
-</ul>
-<p>These worked examples later become the test cases. A developer who asks for them is a good sign.</p>
-
-<h2>What a well-built pricing plugin includes</h2>
-<h3>Correct prices everywhere</h3>
-<p>The price must be the same on the product page, in the mini-cart, the cart, the checkout, the order, the invoice and the order email. It should also work with the block-based cart and checkout if your store uses them, not only the older templates.</p>
-<h3>A settings screen your team can use</h3>
-<p>Rates, slabs and formulas should be editable from the admin, ideally with import and export by CSV, so a price change does not need a developer. Changes should be logged with who changed what.</p>
-<h3>Clear display for customers</h3>
-<p>For measurement pricing, a live price calculator on the product page with clear units and limits. For customer-specific pricing, logged-in customers see their price and guests see a public price or &quot;login for trade price&quot;.</p>
-<h3>Performance</h3>
-<p>Pricing code runs on every page view and cart update. It should calculate efficiently and work with caching, so logged-out visitors still get fast cached pages. See <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> for why cart and checkout speed matter.</p>
-<h3>Clean, update-safe code</h3>
-<p>The plugin should use WooCommerce's hooks rather than editing core or theme files, follow WordPress coding standards, and come with notes on what each part does. <a href="/blog/custom-wordpress-plugin-development/">Custom WordPress plugin development</a> explains how bespoke plugins should be structured and handed over.</p>
-
-<h2>Testing a custom pricing plugin</h2>
-<p>Test every worked example from your rules document, then the awkward cases:</p>
-<ol>
-  <li>Guest, retail customer and each trade group.</li>
-  <li>Minimum, maximum and invalid inputs on measured products.</li>
-  <li>Coupons, sale prices and free shipping thresholds together with custom prices.</li>
-  <li>Tax inclusive and exclusive display, and the GST breakup on invoices.</li>
-  <li>Mobile product pages and the full checkout with a test payment.</li>
-  <li>Editing an order in the admin, refunds and reorders.</li>
-</ol>
-<p>Run this on a staging copy first, never on the live store. <a href="/blog/staging-sites-explained/">Staging sites explained</a> shows how that works. After WooCommerce updates, repeat a short version of the same tests.</p>
-
-<h2>Ownership, maintenance and handover</h2>
-<p>Agree in writing that you own the plugin code, and get the full source, not just an installed copy. Ask for a short guide covering settings, how to change rates and what to test after updates. Pricing logic touches revenue directly, so plan who will check it after major WooCommerce releases, whether that is your team, your developer or a maintenance plan.</p>
-<p>If your store also needs product filters or variation handling around the new pricing, <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a> covers when options should be variations and when a calculator is better.</p>
-
-<h2>Common pricing scenarios for Indian stores</h2>
-<p>A few patterns come up again and again for stores selling within India, and each needs slightly different handling.</p>
-<h3>Dealer and distributor price lists</h3>
-<p>Manufacturers and wholesalers often have a public retail price, a dealer price and special rates for large accounts. The custom plugin reads each customer's group or individual price list, shows the right price once they log in, and keeps guests on retail prices. Rates are usually uploaded by CSV from the accounts team rather than typed into each product.</p>
-<h3>Made-to-measure products</h3>
-<p>Curtains, blinds, glass, printed banners, wallpaper and fabric are often priced by width and height or by running metre. The calculator needs minimum and maximum sizes, a minimum charge, rounding to whole units, and optional extras such as lining or fitting. The chosen size must be saved on the order so production gets the right measurements.</p>
-<h3>Daily rate products</h3>
-<p>Some products follow a daily rate, such as precious metal items or commodities. Here one rate is entered each day and every linked product recalculates from weight and making charges. The plugin should record which rate applied to each order.</p>
-<h3>B2B orders with GST details</h3>
-<p>Business buyers expect prices shown before tax, GSTIN captured at checkout and a proper tax invoice. The pricing plugin needs to work alongside your invoice plugin rather than against it. <a href="/blog/rfq-forms-b2b-websites/">Request-for-quote forms</a> are a good companion when some orders are too large or complex for fixed prices.</p>
-
-<p>Many store owners and agencies have custom plugins like this built by a remote team. <a href="/blog/outsource-wordpress-development-india/">Outsource WordPress development in India</a> explains how to scope, test and pay for that kind of work safely.</p>
-
-<h2>How to brief a developer</h2>
-<p>Send your rules document, a list of affected products, screenshots of how you want prices displayed, and any sample price files. Mention which plugins you already use for tax, invoices, subscriptions or multi-currency, because pricing must work with them. Ask the developer to confirm the rules back to you in their own words before quoting. Misunderstandings found at that stage cost nothing to fix.</p>
-
-<h2>FAQs</h2>
-<h3>What is WooCommerce custom pricing plugin development?</h3>
-<p>It is building a bespoke plugin that calculates prices using your own rules, such as formula or measurement pricing, customer-specific rates or prices from an external source, and applies them consistently from product page to invoice.</p>
-<h3>Can an existing plugin do customer-specific pricing?</h3>
-<p>Many can handle role-based or group pricing. Custom work helps when each customer has a negotiated price list, or when rates must be imported from your own system.</p>
-<h3>Will a custom pricing plugin break when WooCommerce updates?</h3>
-<p>Well-written code that uses WooCommerce hooks usually survives updates, but pricing should still be retested after major releases, especially around the cart and checkout.</p>
-<h3>Can prices be shown with and without GST?</h3>
-<p>Yes. WooCommerce supports inclusive or exclusive tax display, and a custom plugin should respect that setting. Confirm your GST approach with your CA.</p>
-<h3>How long does a custom pricing plugin take to build?</h3>
-<p>It depends on the number of rules, the admin screens and the integrations. A clear rules document with worked examples is the single biggest factor in keeping the timeline predictable.</p>
-<h3>Who owns the code?</h3>
-<p>Agree that you do, in writing, and receive the full source with documentation at handover.</p>
-
-<p>Need pricing rules your current plugins cannot handle? As a <a href="/woocommerce-developer/">WooCommerce developer</a> I build and test custom pricing logic, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to review your current setup first.</p>
-`,
-  },
-  {
-    slug: 'wordpress-update-and-security-service',
-    seoTitle: 'WordPress Update and Security Service: What It Covers',
-    title: 'WordPress Update and Security Service: What It Should Cover, What It Should Not, and How to Choose One',
-    description: 'What a WordPress update and security service should cover: safe updates, backups, monitoring, hardening, malware response and how to compare.',
-    date: '2026-10-30',
-    category: 'Maintenance',
-    related: ['wordpress-maintenance', 'wordpress-malware-removal'],
-    body: `
-<p>A WordPress update and security service keeps your site's core, plugins and themes updated safely and protects it from attacks. At minimum it should include tested updates, regular off-site backups you can restore, uptime and security monitoring, basic hardening such as two-factor login and a firewall, and a clear plan for what happens if an update breaks the site or the site gets hacked. You should get a short report each month showing what was done.</p>
-<p>This guide explains what to expect, how it differs from a full maintenance plan, and the questions that separate a careful service from one that only clicks &quot;update all&quot;.</p>
-
-<h2>Why updates and security belong together</h2>
-<p>Most WordPress hacks start with outdated software: a plugin or theme with a known vulnerability that was never updated, or an abandoned plugin that no longer gets fixes. Updating closes those holes. But updates also carry risk, because a plugin update can conflict with your theme or another plugin and break a layout, a form or the checkout. A good service handles both sides: it updates promptly and it catches breakage quickly. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> explains the process in detail.</p>
-
-<h2>What a WordPress update and security service should cover</h2>
-<table>
-  <thead><tr><th>Area</th><th>What should happen</th><th>What to ask</th></tr></thead>
-  <tbody>
-    <tr><td>Core, plugin and theme updates</td><td>Regular updates, security fixes applied quickly, premium licences kept active</td><td>How often, and how fast for urgent security fixes?</td></tr>
-    <tr><td>Testing</td><td>Updates tested on staging or checked visually straight after</td><td>Which pages and forms are checked after updates?</td></tr>
-    <tr><td>Backups</td><td>Automatic files and database backups, stored off the server</td><td>How long are backups kept, and when was a restore last tested?</td></tr>
-    <tr><td>Uptime monitoring</td><td>Alerts if the site goes down</td><td>Who gets the alert and what do they do?</td></tr>
-    <tr><td>Security monitoring</td><td>Malware scans, file change alerts, login activity</td><td>What is scanned and how often?</td></tr>
-    <tr><td>Hardening</td><td>Two-factor login, firewall, limited admin users, security headers</td><td>What is set up at the start?</td></tr>
-    <tr><td>Incident response</td><td>Clean-up and recovery if the site is hacked</td><td>Is clean-up included or charged separately?</td></tr>
-    <tr><td>Reporting</td><td>Monthly summary of updates, backups and issues</td><td>Can I see a sample report?</td></tr>
-  </tbody>
-</table>
-
-<h2>How updates should be handled</h2>
-<p>Look for a service that does more than run every update on the live site and hope. A careful routine looks like this:</p>
-<ol>
-  <li>Take a fresh backup before updating.</li>
-  <li>Read changelogs for major updates, especially WooCommerce, page builders and the theme.</li>
-  <li>Apply major updates on a staging copy first, then on the live site.</li>
-  <li>Check key pages, forms, the cart and checkout after updating.</li>
-  <li>Roll back from the backup if something breaks, and fix the cause.</li>
-</ol>
-<p>Auto-updates can be useful for minor releases, but they need monitoring. <a href="/blog/wordpress-auto-updates/">WordPress auto-updates</a> explains when to turn them on. If updates have failed on your site before, ask the provider to find out why before setting up a routine, because the same error will keep coming back.</p>
-<p>Timing matters too. Updating a busy store during a festival sale or a campaign launch is a needless risk. A good service agrees quiet windows with you, holds non-urgent updates during important periods, and still applies critical security fixes quickly with extra checks afterwards. It should also keep a short note of anything customised on your site, such as an edited plugin or a theme override, so updates do not silently undo that work.</p>
-
-<h2>Security measures to expect</h2>
-<p>Updates are only part of security. A service should also set up and check:</p>
-<ul>
-  <li><strong>Strong logins:</strong> unique passwords, two-factor authentication for admins and removal of unused accounts. See the <a href="/blog/wordpress-user-accounts-audit/">WordPress user accounts audit</a>.</li>
-  <li><strong>A firewall:</strong> at the host, a CDN or a plugin, to block common attacks and brute-force logins. <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> compares the options.</li>
-  <li><strong>Plugin hygiene:</strong> removing inactive and abandoned plugins, and avoiding nulled themes or plugins.</li>
-  <li><strong>File and malware scanning</strong> with alerts on unexpected changes.</li>
-  <li><strong>HTTPS everywhere</strong> and sensible security headers.</li>
-</ul>
-<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> lists these in one place if you want to check your own site first.</p>
-
-<h2>What happens when something goes wrong</h2>
-<p>This is where services differ most, so ask directly:</p>
-<ul>
-  <li>If an update breaks the site, who fixes it and is that included?</li>
-  <li>If the site is hacked, is malware removal included, partly included or a separate job?</li>
-  <li>How quickly do they respond, and on which days?</li>
-  <li>Will they also clean up blacklist warnings and request a Google review if needed?</li>
-</ul>
-<p>Get the answers in writing. A low monthly fee that excludes hack clean-up can cost more the first time something goes wrong. If your site already shows signs of a hack, see <a href="/blog/signs-wordpress-site-hacked/">signs your WordPress site has been hacked</a> before signing up to any plan.</p>
-
-<h2>Update and security service vs full maintenance plan</h2>
-<p>An update and security service is a focused subset of maintenance. A full plan often adds content edits, small design changes, speed checks, SEO health checks and a set amount of developer time each month. If you have someone in-house for content and only need the technical side covered, the narrower service may be enough. <a href="/blog/monthly-website-maintenance-plan/">Monthly website maintenance plans</a> explains what a full plan usually includes and what is extra.</p>
-
-<p>Running several sites in one network? Ask whether the provider handles network-level updates; see <a href="/blog/wordpress-multisite-development-services/">WordPress multisite development services</a>.</p>
-
-<h2>How to compare providers</h2>
-<ul>
-  <li>Ask for a sample monthly report.</li>
-  <li>Ask where backups are stored and how a restore works.</li>
-  <li>Ask whether they test updates on staging for WooCommerce or builder sites.</li>
-  <li>Check who has access to your site and how credentials are stored.</li>
-  <li>Make sure you keep ownership of hosting, domain and licences in your own name.</li>
-  <li>Check the notice period if you want to stop.</li>
-</ul>
-
-<h2>What a monthly report should show</h2>
-<p>A report is how you know the service is actually being delivered. It does not need to be long, but it should list:</p>
-<ul>
-  <li>Which core, plugin and theme updates were applied, with dates.</li>
-  <li>Any updates held back, and why.</li>
-  <li>Backup status, and the date of the last restore test.</li>
-  <li>Uptime for the month and any outages.</li>
-  <li>Security scan results and any blocked attacks or suspicious logins worth noting.</li>
-  <li>Problems found and fixed, and recommendations such as replacing an abandoned plugin.</li>
-</ul>
-<p>If a provider cannot show you this, you have no way to tell whether the work is being done.</p>
-
-<h2>Sites that need extra care</h2>
-<p>Some sites need more than a basic routine. WooCommerce stores take payments, so a broken checkout after an update costs sales; they need checkout tests after every significant update and closer attention to payment plugins. The <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a> covers store-specific risks. Sites built with page builders such as Elementor, or with heavily customised themes, are more prone to layout breaks after updates and benefit from staging tests. Sites with membership areas, bookings or custom plugins need those features checked too.</p>
-<p>Tell any provider about these before agreeing a plan, so the routine fits the site rather than a generic checklist.</p>
-
-<h2>Getting started with a new provider</h2>
-<p>The first month usually takes the most work. Expect an initial audit: listing all plugins and themes, removing unused ones, checking for abandoned or nulled items, setting up backups and monitoring, and bringing everything up to date in a safe order. After that, the routine is steadier. If the site has been neglected for a long time, ask for the catch-up work to be scoped separately so the monthly routine is clear.</p>
-
-<h2>FAQs</h2>
-<h3>What does a WordPress update and security service include?</h3>
-<p>Safe updates of core, plugins and themes, off-site backups, uptime and malware monitoring, hardening such as two-factor login and a firewall, a plan for fixing broken updates or hacks, and a monthly report.</p>
-<h3>Is updating WordPress myself enough?</h3>
-<p>It can be, for a simple site if you update regularly, keep backups and know how to restore them. Business sites with WooCommerce, forms or page builders benefit from someone testing updates and monitoring between visits.</p>
-<h3>Should every update be applied straight away?</h3>
-<p>Security fixes should be applied quickly. Major feature updates are safer after a backup and a test on staging, especially for WooCommerce and page builders.</p>
-<h3>Is malware removal included in an update and security service?</h3>
-<p>It varies. Some services include clean-up, others charge separately. Ask before you sign up and get the answer in writing.</p>
-<h3>Do I still need a security plugin if my host has a firewall?</h3>
-<p>Not always. A host or CDN firewall may cover most attacks; a plugin can add login protection and scanning. Avoid running several security plugins that overlap.</p>
-<h3>Will I lose access to my site if I use a service?</h3>
-<p>You should not. Keep your own admin account, hosting and domain logins, and give the provider their own account that you can remove.</p>
-
-<p>Want updates, backups and security handled properly? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> for ongoing care, or <a href="/wordpress-malware-removal/">hacked site repair</a> if the site already has a problem.</p>
-`,
-  },
-  {
     slug: 'wordpress-update-button-missing',
     seoTitle: 'WordPress Update Button Missing? Causes and Fixes',
     title: 'WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely',
@@ -75732,357 +70598,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Not for long. Outdated plugins and themes are a common way sites get hacked. If updates break something, fix the cause rather than freezing the site.</p>
 
 <p>Stuck with a site you cannot update, or one that is far behind? <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers safe catch-up updates and ongoing care, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
-`,
-  },
-  {
-    slug: 'gravity-forms-vs-contact-form-7',
-    seoTitle: 'Gravity Forms vs Contact Form 7: Which Should You Use?',
-    title: 'Gravity Forms vs Contact Form 7: Features, Limits and Which One Your WordPress Site Needs',
-    description: 'Gravity Forms vs Contact Form 7 compared on builder, entries, logic, calculations, integrations and spam, with clear advice on which suits your WordPress site.',
-    date: '2026-10-30',
-    category: 'Guides',
-    related: ['wordpress-website-development', 'hire-wordpress-developer'],
-    body: `
-<p>Gravity Forms vs Contact Form 7 comes down to complexity: Contact Form 7 is a free, lightweight plugin for simple contact forms, while Gravity Forms is a paid plugin for complex forms with saved entries, conditional logic, calculations, multi-page layouts and integrations. For a basic enquiry form, Contact Form 7 is enough; for applications, quotes or workflows, Gravity Forms is the better tool.</p>
-<p>Below is a practical comparison from building and maintaining both on business sites, plus guidance on which to pick.</p>
-
-<h2>Gravity Forms vs Contact Form 7 at a glance</h2>
-<table>
-<thead><tr><th></th><th>Contact Form 7</th><th>Gravity Forms</th></tr></thead>
-<tbody>
-<tr><td>Cost</td><td>Free</td><td>Paid annual licence (check the official site for current plans)</td></tr>
-<tr><td>Builder</td><td>Text and tag markup</td><td>Visual drag and drop</td></tr>
-<tr><td>Saved entries</td><td>Needs Flamingo</td><td>Built in, with search, notes and export</td></tr>
-<tr><td>Conditional logic</td><td>Add-on</td><td>Built in on fields, pages, notifications and confirmations</td></tr>
-<tr><td>Multi-page forms</td><td>Add-on</td><td>Built in, with progress bar</td></tr>
-<tr><td>Calculations</td><td>Add-on</td><td>Built in (number and product fields)</td></tr>
-<tr><td>File uploads</td><td>Yes</td><td>Yes, including multiple files</td></tr>
-<tr><td>Integrations</td><td>Third-party add-ons</td><td>Official add-ons for many CRMs, email tools and payments</td></tr>
-<tr><td>Spam protection</td><td>reCAPTCHA, Akismet, add-ons</td><td>Honeypot, reCAPTCHA, Akismet, add-ons</td></tr>
-<tr><td>Styling</td><td>Theme-dependent, needs CSS</td><td>Modern default theme, settings per form</td></tr>
-<tr><td>Support</td><td>Community forum</td><td>Official support with licence</td></tr>
-</tbody>
-</table>
-
-<h2>Where Contact Form 7 wins</h2>
-<ul>
-<li><strong>Cost.</strong> It is free, and so are most of its add-ons.</li>
-<li><strong>Weight.</strong> It is light, and with a little configuration it can load its scripts only on pages that contain a form.</li>
-<li><strong>Developer control.</strong> The markup-based forms are quick for a developer to write and easy to keep in version control.</li>
-<li><strong>Simple needs.</strong> Name, phone, email, message and a submit button is exactly what CF7 was built for.</li>
-</ul>
-<p>The weak spots are well known: entries are not saved by default, spam needs extra protection, and email delivery depends on your host unless you set up SMTP. Fix those three and CF7 is dependable. Our guides on <a href="/blog/stop-contact-form-spam/">stopping contact form spam</a> and <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a> cover both fixes.</p>
-
-<h2>Where Gravity Forms wins</h2>
-<ul>
-<li><strong>Complex forms.</strong> Admission applications, loan or insurance enquiries, job applications and long quote forms are much easier to build and maintain.</li>
-<li><strong>Conditional logic everywhere.</strong> Show fields, skip pages and route notifications to different teams based on answers, for example sending service enquiries to one inbox and sales enquiries to another.</li>
-<li><strong>Calculations and quotes.</strong> Build simple estimate calculators using number fields and formulas.</li>
-<li><strong>Entries as a mini database.</strong> Search, filter, add notes, mark as read and export to CSV from the dashboard.</li>
-<li><strong>Integrations.</strong> Official and third-party add-ons connect to CRMs, email platforms, spreadsheets and payment processors, so leads do not sit in an inbox. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
-<li><strong>Developer hooks.</strong> Gravity Forms has extensive actions and filters for custom behaviour. If that term is new, our explainer on <a href="/blog/wordpress-hooks-actions-filters/">WordPress hooks, actions and filters</a> covers the basics.</li>
-</ul>
-
-<h2>Real-world examples: which plugin each form needs</h2>
-<p>Abstract feature lists are less useful than real form types. Here is how I would match common business forms to each plugin.</p>
-<h3>A clinic appointment request</h3>
-<p>Name, phone, preferred date, doctor and a short message. Contact Form 7 handles this well. If the clinic wants requests for each doctor routed to a different receptionist, Gravity Forms conditional notifications make that simpler, though CF7 can do it with a little customisation.</p>
-<h3>A coaching institute admission form</h3>
-<p>Student details, parent details, course choice, previous marks, photo upload and a document upload, often over several steps. This is a Gravity Forms job. Multi-page layout, saved partial progress via an add-on, and searchable entries for the admissions team all matter here.</p>
-<h3>A manufacturer's request for quote</h3>
-<p>Product selection, quantities, specifications, delivery location and drawing upload. Gravity Forms handles product lists, conditional fields per product type and routing to the right sales person. Our guide to <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a> explains what to ask.</p>
-<h3>A simple "contact us" page</h3>
-<p>Contact Form 7, set up properly. Paying for Gravity Forms here adds cost without benefit.</p>
-<h3>A service cost estimator</h3>
-<p>Visitors choose options and see an estimated range before submitting. Gravity Forms calculations do this without custom code; in Contact Form 7 it means add-ons or custom JavaScript.</p>
-<p>The pattern is consistent: the more the form branches, calculates or needs to be worked through by a team afterwards, the more Gravity Forms earns its licence.</p>
-
-<h2>Which one should you choose?</h2>
-<table>
-<thead><tr><th>Your form</th><th>Recommendation</th></tr></thead>
-<tbody>
-<tr><td>Basic contact or enquiry form</td><td>Contact Form 7 (with SMTP, entries and spam protection)</td></tr>
-<tr><td>Simple form that a non-technical owner edits</td><td>A visual builder such as WPForms or Fluent Forms</td></tr>
-<tr><td>Multi-step lead qualification form</td><td>Gravity Forms</td></tr>
-<tr><td>Admission or job application with uploads</td><td>Gravity Forms</td></tr>
-<tr><td>Quote calculator or estimate form</td><td>Gravity Forms</td></tr>
-<tr><td>B2B request for quote with product lists</td><td>Gravity Forms</td></tr>
-<tr><td>Agency site with many client sites</td><td>Depends on licence terms and team skills; many agencies standardise on one</td></tr>
-</tbody>
-</table>
-<p>If neither feels quite right, there are other options in between. See the wider <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins comparison</a>.</p>
-
-<h2>Performance: does Gravity Forms slow your site?</h2>
-<p>Both plugins are reasonably efficient when set up properly. Problems usually come from loading form scripts and styles on every page, or from adding many add-ons. With either plugin:</p>
-<ul>
-<li>Load form assets only on pages that contain a form, using the plugin setting or a script manager.</li>
-<li>Avoid loading reCAPTCHA site-wide; it is one of the heavier scripts on many sites.</li>
-<li>Exclude form pages from aggressive JavaScript delay if the form stops working after optimisation.</li>
-</ul>
-<p>If your site is slow overall, the form is rarely the main cause. Our <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service looks at the full picture.</p>
-
-<h2>Switching from Contact Form 7 to Gravity Forms</h2>
-<ol>
-<li>List every page, widget and popup using a CF7 shortcode.</li>
-<li>Export any stored Flamingo entries.</li>
-<li>Rebuild each form in Gravity Forms, adding logic where it simplifies the form.</li>
-<li>Set up notifications, confirmations and a thank-you page redirect.</li>
-<li>Reconnect conversion tracking for Google Ads and Meta; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking setup</a>.</li>
-<li>Replace the shortcodes, test on mobile, and keep CF7 active for a short overlap before removing it.</li>
-</ol>
-<p>Moving the other way, from Gravity Forms to CF7, is unusual and only makes sense when the forms have become simpler than the tool. Remember to export entries first, because they will not carry across.</p>
-
-<h2>Maintenance and long-term cost</h2>
-<p>The licence is only part of the cost. Think about who will maintain the forms over the next few years.</p>
-<ul>
-<li><strong>Contact Form 7</strong> costs nothing to license, but every extra feature means another add-on from a different author. Each add-on is one more thing to update, and one more thing that can break after a WordPress or PHP upgrade. Sites with five or six CF7 add-ons often end up harder to maintain than one Gravity Forms install.</li>
-<li><strong>Gravity Forms</strong> keeps most features in one product with official add-ons from the same team, which usually means fewer compatibility surprises. The trade-off is a renewal you must keep active for updates and support. An expired licence on a business-critical form plugin is a security risk, not a saving.</li>
-<li><strong>Editing by the owner.</strong> If staff need to add a field or change who receives notifications, the Gravity Forms visual editor is far easier for them than CF7 markup, which saves developer time on small changes.</li>
-</ul>
-<p>Never use a nulled copy of Gravity Forms to avoid the licence. Pirated premium plugins are a common route for malware; our article on <a href="/blog/nulled-themes-plugins-risks/">nulled themes and plugins</a> explains the risk.</p>
-
-<h2>Common mistakes with either plugin</h2>
-<ul>
-<li>Not setting up SMTP, so notifications silently land in spam or never send.</li>
-<li>Sending notifications from the visitor's email address, which fails email authentication. Use your own domain address as the sender and the visitor's address as reply-to.</li>
-<li>No thank-you page or confirmation, so visitors are unsure the form worked and ad platforms cannot count conversions.</li>
-<li>Asking for too many fields on a first contact form.</li>
-<li>Never testing the form after plugin or theme updates.</li>
-</ul>
-<p>Regular form tests are part of our <a href="/wordpress-maintenance/">WordPress maintenance</a> plans, because a broken form is the most expensive silent failure on a business site. If you need a complex Gravity Forms build or a clean CF7 setup, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to handle it.</p>
-
-<h2>FAQs</h2>
-<h3>Is Gravity Forms better than Contact Form 7?</h3>
-<p>For complex forms, yes: it includes saved entries, conditional logic, multi-page forms, calculations and integrations. For a simple contact form, Contact Form 7 does the same job for free.</p>
-<h3>Is Gravity Forms free?</h3>
-<p>No. Gravity Forms is a paid plugin with annual licences. Contact Form 7 is free.</p>
-<h3>Does Contact Form 7 have conditional logic?</h3>
-<p>Not built in. Third-party add-ons provide it, but complex logic is much easier to build and maintain in Gravity Forms.</p>
-<h3>Which is better for multi-step forms, Gravity Forms or Contact Form 7?</h3>
-<p>Gravity Forms, which has multi-page forms with progress bars built in. Contact Form 7 needs an add-on and is harder to maintain for long forms.</p>
-<h3>Can I import Contact Form 7 forms into Gravity Forms?</h3>
-<p>There is no reliable direct import for most setups. Rebuilding the forms is usually quicker and gives you the chance to tidy fields and add logic.</p>
-<h3>Which uses fewer resources, Gravity Forms or Contact Form 7?</h3>
-<p>Both are light when their assets load only on form pages. Contact Form 7 is smaller, but the difference is rarely what makes a site slow.</p>
-`,
-  },
-  {
-    slug: 'squeeze-page-vs-landing-page',
-    seoTitle: 'Squeeze Page vs Landing Page: Differences and When to Use',
-    title: 'Squeeze Page vs Landing Page: The Differences, Examples and Which One Your Campaign Needs',
-    description: 'Squeeze page vs landing page explained: what each one is for, how they differ in length and form fields, and how to build either one well on WordPress.',
-    date: '2026-10-30',
-    category: 'Growth',
-    related: ['landing-page-design', 'wordpress-website-development'],
-    body: `
-<p>A squeeze page is a type of landing page built for one action only: getting a visitor to hand over an email address or phone number, usually in exchange for something free. Every squeeze page is a landing page, but most landing pages are not squeeze pages, because they also explain, persuade and sell.</p>
-<p>The choice between them depends on how much a visitor needs to know before acting. Below are the practical differences, when each one works, and how I build them on WordPress so they load fast and track properly.</p>
-
-<h2>What is a landing page?</h2>
-<p>A landing page is any standalone page that a visitor lands on from a campaign, such as a Google ad, a Meta ad, an email or a QR code, with a single goal. That goal might be a booking, a quote request, a purchase, a demo or a download. Unlike a normal website page, it removes the main menu and side routes so the visitor focuses on one action.</p>
-<p>Landing pages can be long. A page selling a coaching course or a solar installation often runs to many sections: the problem, the offer, how it works, proof, pricing approach, FAQs and the form. For a fuller comparison with a normal site, read <a href="/blog/landing-page-vs-website/">landing page vs website</a>.</p>
-
-<h2>What is a squeeze page?</h2>
-<p>A squeeze page is a short, focused landing page that "squeezes" contact details out of a visitor. It typically has:</p>
-<ul>
-<li>A strong headline naming the free thing and its benefit.</li>
-<li>Two to four bullet points on what the visitor gets.</li>
-<li>A form with one or two fields, often just name and email or a WhatsApp number.</li>
-<li>One button, and nothing else to click.</li>
-</ul>
-<p>The free thing is called a lead magnet: a checklist, a price guide, a sample chapter, a webinar seat, a discount code or a free consultation slot. Our guide to <a href="/blog/lead-magnets-newsletter-small-business/">lead magnets for small businesses</a> has ideas that work for Indian service businesses.</p>
-
-<h2>Squeeze page vs landing page: the key differences</h2>
-<table>
-<thead><tr><th></th><th>Squeeze page</th><th>Landing page</th></tr></thead>
-<tbody>
-<tr><td>Main goal</td><td>Capture an email or phone number</td><td>Any single conversion: enquiry, booking, sale, download</td></tr>
-<tr><td>Length</td><td>Short, often one screen</td><td>Short to very long, depending on the offer</td></tr>
-<tr><td>Form fields</td><td>One or two</td><td>As many as the conversion needs</td></tr>
-<tr><td>Offer</td><td>Usually free (lead magnet)</td><td>Free or paid</td></tr>
-<tr><td>Content</td><td>Headline, bullets, form</td><td>Benefits, details, proof, FAQs, form</td></tr>
-<tr><td>Best traffic</td><td>Cold audiences who do not know you yet</td><td>Warm or high-intent searchers</td></tr>
-<tr><td>What happens next</td><td>Email or WhatsApp follow-up sequence</td><td>Sales call, quote, checkout</td></tr>
-</tbody>
-</table>
-<p>The simplest way to remember it: a squeeze page starts a relationship, a landing page usually asks for a decision.</p>
-
-<h2>When to use a squeeze page</h2>
-<ul>
-<li><strong>Cold social traffic.</strong> People scrolling Instagram are not ready to request a quote, but many will download a useful checklist.</li>
-<li><strong>Building an email or WhatsApp list</strong> before a launch, festival sale or new course batch.</li>
-<li><strong>Webinars and events,</strong> where the only action is registering.</li>
-<li><strong>Low-cost or free offers</strong> where explaining more would only add friction.</li>
-</ul>
-<p>A squeeze page only pays off if there is a follow-up. Without an email sequence or a sales call process, you are simply collecting addresses. Set up the follow-up first; our guide on <a href="/blog/email-newsletter-small-business/">email newsletters for small businesses</a> covers the basics.</p>
-
-<p>Startups usually need several landing pages for sign-ups and demo requests. See <a href="/website-for-startups/">startup websites built to convert</a>.</p>
-
-<h2>When a full landing page is the better choice</h2>
-<ul>
-<li><strong>Search ads for buying-intent keywords</strong> such as "website developer near me" or "solar panel installation cost". These people want details now.</li>
-<li><strong>Higher-value services</strong> where trust matters: clinics, real estate, B2B manufacturing, coaching admissions.</li>
-<li><strong>Direct sales</strong> of a product or package.</li>
-<li><strong>Anything with a price question.</strong> If visitors need to understand what affects cost, give them that context instead of hiding it behind a form.</li>
-</ul>
-<p>For paid search in particular, Google rates the landing page experience, and a thin squeeze page for a high-intent keyword can hurt your quality score. See <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste Google Ads budget</a>.</p>
-
-<h2>What both pages need to convert</h2>
-<ol>
-<li><strong>One goal.</strong> One form, one button wording, no main menu.</li>
-<li><strong>A headline that matches the ad.</strong> If the ad promises a free price guide, the page headline should say exactly that.</li>
-<li><strong>Fast mobile loading.</strong> Most campaign traffic in India arrives on phones, often on patchy networks. Keep heavy sliders and videos off squeeze pages.</li>
-<li><strong>Short forms.</strong> Every extra field costs submissions. Ask for more only when you need it to qualify the lead; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> help when you do.</li>
-<li><strong>A thank-you page.</strong> Send people to a dedicated page after submitting, so you can track conversions and tell them what happens next. Our guide to <a href="/blog/thank-you-pages-forms/">thank-you pages</a> explains why.</li>
-<li><strong>Tracking before launch.</strong> Google Ads and Meta conversion events must fire on the thank-you page, or you cannot tell which ads work.</li>
-</ol>
-
-<h2>Building a squeeze page or landing page on WordPress</h2>
-<p>You do not need a separate landing page tool if your site already runs on WordPress. A typical build looks like this:</p>
-<ol>
-<li>Create a new page and choose a blank or canvas template so the header menu and footer are hidden.</li>
-<li>Build the layout with the block editor or Elementor, keeping it to the sections the page actually needs.</li>
-<li>Add a form from your form plugin with only the required fields, and set it to redirect to a thank-you page.</li>
-<li>Connect the form to your email tool or CRM so leads are not stuck in an inbox. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
-<li>Set the page to noindex if it exists only for ads and duplicates content elsewhere on the site.</li>
-<li>Test on a real phone over mobile data before turning the ads on.</li>
-</ol>
-
-<h2>Squeeze page and landing page examples</h2>
-<p>Here is how the same business might use each page type, so the difference is concrete rather than theoretical.</p>
-<ul>
-<li><strong>A coaching institute.</strong> Squeeze page: "Download the free syllabus and study plan for the next exam", with name and WhatsApp number. Landing page: the full course page for a new batch, with faculty, schedule, fee structure approach, results policy and an admission enquiry form.</li>
-<li><strong>An interior designer.</strong> Squeeze page: "Get our 2BHK design checklist", email only. Landing page: a "modular kitchen design in Pune" page with project photos, process, timelines and a site visit request form.</li>
-<li><strong>A clinic.</strong> Squeeze page: rarely the right fit, because patients want to book, not download. Landing page: a treatment page with doctor details, what to expect, FAQs and an appointment form.</li>
-<li><strong>An online store.</strong> Squeeze page: "Join the list for early access to the Diwali sale", with a discount code as the reward. Landing page: a collection page built for one ad campaign, with products and a clear add-to-cart path.</li>
-</ul>
-<p>Notice the pattern. The squeeze page offers something small and immediate to people early in their decision. The landing page serves people who already know roughly what they want and need enough information to take the next step with confidence.</p>
-
-<h2>Testing which one works for you</h2>
-<p>If you are not sure, run both. Send half the traffic from the same ad to a squeeze page offering a free guide and half to a full landing page asking for an enquiry, then compare cost per lead and, more importantly, how many of those leads become customers. A squeeze page often produces cheaper leads that need more nurturing. Our guide to <a href="/blog/landing-page-ab-testing/">landing page A/B testing</a> explains how to run a fair test without fooling yourself with small numbers.</p>
-<p>If you want a page built and tracked properly from the start, our <a href="/landing-page-design/">landing page design</a> service covers both squeeze pages and full campaign pages, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing campaign work.</p>
-
-<h2>FAQs</h2>
-<h3>What is the difference between a squeeze page and a landing page?</h3>
-<p>A squeeze page is a short landing page that only collects an email or phone number, usually for a free resource. A landing page is any single-goal campaign page, which can be long and can ask for an enquiry, booking or purchase.</p>
-<h3>Is a squeeze page the same as a landing page?</h3>
-<p>It is one type of landing page. All squeeze pages are landing pages, but not all landing pages are squeeze pages.</p>
-<h3>Is a squeeze page the same as a lead capture page or opt-in page?</h3>
-<p>Mostly yes. Lead capture page and opt-in page are common names for the same idea: a page whose only job is collecting contact details.</p>
-<h3>Should I use a squeeze page for Google Ads?</h3>
-<p>For high-intent search keywords, a fuller landing page usually performs better and supports a better landing page experience rating. Squeeze pages suit colder traffic such as social ads and content promotion.</p>
-<h3>How long should a squeeze page be?</h3>
-<p>Short enough to read in a few seconds: a headline, a few bullet points, a one or two field form and a button. If you need to explain much more, you probably need a landing page instead.</p>
-<h3>Can I build a squeeze page in WordPress without extra software?</h3>
-<p>Yes. A blank page template, the block editor or Elementor, and your existing form plugin are enough. Connect the form to your email tool and add a thank-you page for tracking. An <a href="/elementor-developer/">Elementor developer</a> can set up reusable templates if you run many campaigns.</p>
-`,
-  },
-  {
-    slug: 'woocommerce-vendor-onboarding',
-    seoTitle: 'WooCommerce Vendor Onboarding: Seller Onboarding Process',
-    title: 'WooCommerce Vendor Onboarding: A Step-by-Step Seller Onboarding Process for Multi-Vendor Stores',
-    description: 'How to set up WooCommerce vendor onboarding: registration forms, KYC and GST checks, approval, store setup, payouts and the seller onboarding process.',
-    date: '2026-10-30',
-    category: 'E-commerce',
-    related: ['woocommerce-developer', 'wordpress-website-development'],
-    body: `
-<p>WooCommerce vendor onboarding is the process a new seller goes through on your multi-vendor store, from filling in a registration form to making their first sale. In WooCommerce it is handled by a marketplace plugin such as Dokan, WCFM or WC Vendors, plus the rules you set for verification, approval, store setup and payouts.</p>
-<p>The plugin gives you the screens. The process is up to you, and a weak one leads to half-finished shops, wrong product listings and payout disputes. Below is a seller onboarding process that works for Indian marketplaces, step by step.</p>
-
-<h2>What vendor onboarding needs to achieve</h2>
-<p>A good onboarding flow does four things:</p>
-<ul>
-<li><strong>Filters out sellers you do not want</strong> before they can list anything.</li>
-<li><strong>Collects the legal and payout details</strong> you need, such as GST, PAN and bank account, once and correctly.</li>
-<li><strong>Gets approved sellers to a live, compliant shop quickly,</strong> because sellers who stall in setup rarely come back.</li>
-<li><strong>Sets expectations</strong> about commission, shipping, returns and response times before the first order, not after a dispute.</li>
-</ul>
-<p>If you are still choosing the platform, start with our guide to <a href="/blog/woocommerce-multi-vendor-marketplace/">building a WooCommerce multi-vendor marketplace</a>, which compares the main plugins.</p>
-
-<h2>The WooCommerce seller onboarding process, step by step</h2>
-<h3>Step 1: Vendor registration form</h3>
-<p>Most marketplace plugins add a "become a vendor" option to the My Account registration form or give you a separate vendor registration page. Keep this first form short: name, business or shop name, email, mobile number, product category and city. A long form with document uploads at this stage scares away genuine sellers who simply want to know whether they qualify.</p>
-<h3>Step 2: Application review and approval</h3>
-<p>Set new vendor accounts to "pending" rather than auto-approved. In Dokan this is a setting under Selling Options; WCFM and WC Vendors have similar options. Review each application against simple criteria: do they sell in categories you allow, do they look like a real business, can they ship to your service areas? Send an approval or rejection email either way.</p>
-<h3>Step 3: KYC and business verification</h3>
-<p>After approval, ask for verification documents through the vendor dashboard. For an Indian marketplace this typically means:</p>
-<ul>
-<li>GSTIN (mandatory for most sellers on an e-commerce operator; check with your CA for exemptions).</li>
-<li>PAN of the business or proprietor.</li>
-<li>Bank account details with a cancelled cheque or bank statement.</li>
-<li>Pickup address for shipping.</li>
-<li>Any category licences, for example FSSAI for food.</li>
-</ul>
-<p>Some plugins include verification modules; otherwise a custom field set or a form plugin with file upload does the job. Store documents securely and limit who can see them.</p>
-<h3>Step 4: Store setup</h3>
-<p>The vendor now sets up their shop page: logo, banner, store name, description, policies and shipping settings. Give them a setup wizard if your plugin has one, and a written checklist either way. Decide which settings vendors control and which you lock, such as commission rate, allowed shipping methods and product types.</p>
-<h3>Step 5: First product review</h3>
-<p>Set new products to "pending review" for new vendors. Check titles, images, category, attributes, price, tax class and stock before approval. Variable products need extra care, since wrong attributes cause messy filters; see our guide to <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. After a vendor has a few clean listings, you can let their products publish directly.</p>
-<h3>Step 6: Payout and commission setup</h3>
-<p>Confirm how and when vendors get paid: commission percentage or fixed fee, payout schedule, minimum withdrawal, and how refunds and returns are deducted. In India, split payments through a gateway such as Razorpay Route or Cashfree are common for automating this. Our comparison of <a href="/blog/payment-gateways-india-compared/">payment gateways in India</a> covers which ones support marketplaces.</p>
-<h3>Step 7: Go live and first order follow-up</h3>
-<p>When the shop is approved, send a go-live email with links to the vendor dashboard, order handling steps and support contact. Watch the vendor's first few orders closely: shipping times, packaging complaints and cancellations show early whether the seller will work out.</p>
-
-<h2>Vendor onboarding emails to set up</h2>
-<table>
-<thead><tr><th>Trigger</th><th>Email content</th></tr></thead>
-<tbody>
-<tr><td>Application received</td><td>Thanks, what happens next, how long review takes</td></tr>
-<tr><td>Approved</td><td>Login link, documents to upload, setup checklist</td></tr>
-<tr><td>Rejected</td><td>Polite reason and whether they can reapply</td></tr>
-<tr><td>Documents verified</td><td>Prompt to finish store setup and add products</td></tr>
-<tr><td>Store live</td><td>Order handling guide, payout schedule, support contact</td></tr>
-<tr><td>Stalled for 7 days</td><td>Reminder with the next incomplete step</td></tr>
-</tbody>
-</table>
-<p>Marketplace plugins send some of these by default; others need a small customisation. The same email editing approach in our guide to <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a> applies, and make sure emails actually arrive by using SMTP as explained in <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</p>
-
-<h2>GST and compliance points to settle early</h2>
-<p>When you run a marketplace, you are an e-commerce operator under Indian GST law, which brings obligations such as TCS collection on vendor sales. Settle with your CA before launch who issues invoices (usually the vendor, under their GSTIN), how TCS is deducted from payouts, and what reports you need each month. Your onboarding must collect the data those reports need. Our post on <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST invoices in India</a> explains the invoicing side.</p>
-
-<h2>Common vendor onboarding mistakes</h2>
-<ul>
-<li><strong>Auto-approving everyone,</strong> which fills the marketplace with duplicate, low-quality or prohibited listings.</li>
-<li><strong>Asking for every document upfront,</strong> so genuine sellers abandon the form.</li>
-<li><strong>No product review for new sellers,</strong> leading to wrong categories, missing tax classes and poor images.</li>
-<li><strong>Unclear commission and return rules,</strong> which become disputes after the first refund.</li>
-<li><strong>Giving vendors too much control,</strong> for example letting them change shipping rules that break checkout.</li>
-<li><strong>Plugin overload.</strong> Stacking add-ons for every onboarding feature slows the vendor dashboard; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a>.</li>
-</ul>
-
-<h2>A vendor welcome checklist you can copy</h2>
-<p>Send this list with the approval email, or pin it on the vendor dashboard. It cuts the number of support questions and gets shops live faster.</p>
-<ol>
-<li>Upload your GST certificate, PAN and bank proof in the Verification section.</li>
-<li>Add your shop logo (square), banner and a short description of what you sell.</li>
-<li>Fill in your pickup address and confirm the pincodes you can ship to.</li>
-<li>Read the commission, payout and returns policy and accept it in the dashboard.</li>
-<li>Add your first three products using the product template: clear title, at least three photos on a plain background, correct category, price inclusive of GST and accurate stock.</li>
-<li>Wait for product approval; we check new sellers' first listings before they go live.</li>
-<li>Place a test order on your own shop if we ask you to, so you see how notifications arrive.</li>
-<li>Keep your mobile number active for order alerts and respond to orders within the agreed time.</li>
-</ol>
-<p>A checklist like this also gives your own team a standard to review against. When a vendor emails to ask why their shop is not live yet, you can point to the exact step that is still incomplete instead of investigating from scratch every time. Track each vendor's progress in a simple sheet or a custom admin column so stalled applications get a reminder.</p>
-
-<p>Not every multi-supplier store needs vendor accounts. If you keep control of listings and pricing, see <a href="/blog/woocommerce-multiple-suppliers/">WooCommerce with multiple suppliers</a> for a simpler setup.</p>
-
-<h2>Plugin or custom onboarding?</h2>
-<p>For most new marketplaces, the built-in onboarding of Dokan, WCFM or WC Vendors plus a few custom fields and emails is enough. Custom development makes sense when you need document checks against an external API, a multi-stage approval with different staff roles, or onboarding that pulls data into your ERP or CRM. Start simple, run the process with your first twenty or thirty sellers, and automate the steps that actually take your time.</p>
-<p>If you want help planning or building the flow, I work as a <a href="/woocommerce-developer/">WooCommerce developer</a> on marketplace setups, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing changes after launch.</p>
-
-<h2>FAQs</h2>
-<h3>What is WooCommerce vendor onboarding?</h3>
-<p>It is the process that takes a new seller on a WooCommerce multi-vendor store from registration through verification, approval, store setup and product review to their first sale, usually run through a marketplace plugin.</p>
-<h3>What is a good seller onboarding process for a marketplace?</h3>
-<p>Short registration, manual application review, KYC and GST verification, guided store setup, review of the first products, clear payout and commission setup, then a go-live email and close watch on early orders.</p>
-<h3>Which plugin is best for WooCommerce vendor registration?</h3>
-<p>Dokan, WCFM Marketplace and WC Vendors all include vendor registration and approval. The best choice depends on the dashboard your sellers prefer, the payout options you need and how much customisation you plan.</p>
-<h3>Should I manually approve new vendors?</h3>
-<p>Yes, at least at the start. Manual approval of vendors and their first products keeps quality high and stops prohibited or duplicate listings.</p>
-<h3>What documents should I collect from vendors in India?</h3>
-<p>Typically GSTIN, PAN, bank account proof, pickup address and any category licence such as FSSAI. Confirm the exact list with your CA based on your categories.</p>
-<h3>How do vendors get paid in a WooCommerce marketplace?</h3>
-<p>Either you collect payments and pay vendors on a schedule after deducting commission, or a split-payment gateway sends each vendor their share automatically. Refunds and TCS deductions should be part of the payout rules from day one.</p>
 `,
   },
   {
@@ -76276,219 +70791,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 `,
   },
   {
-    slug: 'remove-fake-pages-wordpress-site',
-    seoTitle: 'How to Remove a Fake Web Page on a WordPress Site',
-    title: 'How to Remove a Fake Web Page on Your WordPress Site and Get It Out of Google',
-    description: 'How to remove a fake web page on a WordPress site: find where it lives, delete it safely, close the hole that created it and clear it from Google results.',
-    date: '2026-10-31',
-    category: 'Security',
-    related: ['wordpress-malware-removal', 'wordpress-maintenance', 'hire-wordpress-developer'],
-    body: `
-<p>To remove a fake web page on a WordPress site, first find out how it got there: a page or post in the dashboard, a file uploaded to the server, a rule that generates spam URLs, or a rogue user account. Delete that source, close the security hole that allowed it, make the URL return a 404 or 410, and then ask Google to drop it from search results. Deleting only the visible page often fails, because the same hole is used to create it again.</p>
-<p>This guide is for business owners who have found a page on their site they did not create: a fake offer, a phishing login, a casino or pharmacy page, a page in another language, or a strange URL showing in Google under their domain.</p>
-
-<h2>What counts as a fake web page?</h2>
-<p>A fake page is any page served from your domain that you or your team did not publish. Common examples:</p>
-<ul>
-<li>Spam pages selling pills, betting, loans or replica goods, often in Japanese or other languages.</li>
-<li>Phishing pages imitating a bank, courier, payment app or email login.</li>
-<li>Fake offers or job posts using your brand to collect money or personal details.</li>
-<li>Doorway pages full of keywords that redirect visitors elsewhere.</li>
-<li>Old test pages or forgotten landing pages that look abandoned but are still live.</li>
-</ul>
-<p>The last type is not an attack, just housekeeping. The others mean someone has access they should not have, and the site should be treated as compromised. If you are unsure, start with <a href="/blog/signs-wordpress-site-hacked/">how to know if your WordPress site has been hacked</a>.</p>
-
-<h2>Step 1: Record what you found</h2>
-<p>Before deleting anything, note the exact URLs, take screenshots, and check whether the pages appear in Google with a site search for your domain. Also check Search Console under Pages and Security issues. This evidence helps you confirm later that everything has gone, and helps a developer trace how the pages were created.</p>
-<p>Take a full backup of the files and database now, even though the site is infected. If cleanup goes wrong, you need something to go back to. Keep this backup separate from your clean backups.</p>
-
-<h2>Step 2: Find where the fake page lives</h2>
-<p>Fake pages are created in a few different ways, and each needs a different fix.</p>
-<table>
-<thead><tr><th>Where it lives</th><th>How to check</th><th>What it suggests</th></tr></thead>
-<tbody>
-<tr><td>A page or post in the dashboard</td><td>Search Pages and Posts, including drafts and trash, for the title or URL</td><td>A user account was used, possibly a compromised or rogue one</td></tr>
-<tr><td>A standalone file on the server</td><td>Look in the file manager for unfamiliar HTML or PHP files and folders, often in uploads or the site root</td><td>Server access through a vulnerable plugin, theme or stolen hosting login</td></tr>
-<tr><td>Generated URLs that do not exist as files</td><td>Thousands of spam URLs with no matching page or file</td><td>Injected code or rewrite rules creating pages on the fly</td></tr>
-<tr><td>A different site on the same hosting</td><td>Check other folders and addon domains in the hosting account</td><td>An old, unmaintained site infecting the account</td></tr>
-<tr><td>A legitimate but forgotten page</td><td>It appears in Pages with a real author and old date</td><td>Housekeeping, not a hack</td></tr>
-</tbody>
-</table>
-<p>If thousands of Japanese or foreign-language pages appear in Google, see <a href="/blog/fix-japanese-keyword-seo-spam-hack/">the Japanese keyword hack fix</a>, which covers that specific pattern. If visitors are being sent to other sites, see <a href="/blog/fix-wordpress-redirect-hack/">how to fix a WordPress redirect hack</a>.</p>
-
-<h2>Step 3: Remove the page and everything behind it</h2>
-<ol>
-<li><strong>Dashboard pages and posts.</strong> Move them to trash, then empty the trash. Check the author and remove that user if it is not someone you know.</li>
-<li><strong>Unknown users.</strong> Go to Users and remove any administrator or editor accounts you do not recognise. Reassign their content to yourself when asked, then delete the fake content.</li>
-<li><strong>Server files.</strong> Delete unfamiliar files and folders only when you are sure they are not part of WordPress, your theme or a plugin. Compare against fresh copies if unsure.</li>
-<li><strong>Injected code.</strong> Spam that generates URLs dynamically usually lives in modified core files, theme files, the .htaccess file or the database. Replacing WordPress core, themes and plugins with fresh copies removes most of it.</li>
-<li><strong>Backdoors.</strong> Attackers usually leave hidden files that let them return. <a href="/blog/find-remove-wordpress-backdoors/">Finding and removing WordPress backdoors</a> explains where to look.</li>
-</ol>
-<p>For a complete process, follow <a href="/blog/remove-malware-wordpress-step-by-step/">how to remove malware from WordPress step by step</a>.</p>
-
-<h2>Step 4: Close the hole so fake pages do not come back</h2>
-<ul>
-<li>Update WordPress core, all plugins and themes, and delete any you do not use.</li>
-<li>Remove nulled (pirated) themes and plugins, which often contain hidden code.</li>
-<li>Change passwords for all WordPress admins, hosting, FTP or SFTP, the database and email accounts linked to the site.</li>
-<li>Turn on two-factor login for administrators.</li>
-<li>Generate new security keys in wp-config.php so existing logins are signed out.</li>
-<li>Check other sites in the same hosting account; one neglected site can reinfect the rest.</li>
-<li>Run a malware scan after cleanup and again a few days later.</li>
-</ul>
-<p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers longer-term hardening.</p>
-
-<h2>Step 5: Remove the fake page from Google</h2>
-<p>Deleting a page from your site does not remove it from Google straight away. To speed things up:</p>
-<ol>
-<li><strong>Make the URL return a 404 or 410.</strong> Visit the old fake URL. It should show your not-found page, not a redirect to your homepage. A 410 status (gone) can make Google drop it slightly faster, but a correct 404 also works. Do not redirect spam URLs to real pages.</li>
-<li><strong>Use the Removals tool in Search Console</strong> to hide urgent URLs, such as a phishing page, from results while Google recrawls. The removal is temporary; the 404 or 410 makes it permanent.</li>
-<li><strong>Check your sitemap</strong> does not list the fake URLs. If spam was injected into the sitemap, regenerate it and resubmit it.</li>
-<li><strong>Request a review</strong> if Search Console shows a security issue or manual action, after the cleanup is complete.</li>
-</ol>
-<p>If browsers show a red &quot;Deceptive site ahead&quot; warning because of a phishing page, also read <a href="/blog/deceptive-site-ahead-warning-fix/">the deceptive site warning fix</a>.</p>
-
-<h2>Tell the people who may have been affected</h2>
-<p>If the fake page collected payments, login details or personal information, think about who saw it. Customers may have received a link to it by email, SMS or WhatsApp, and some may already have entered details. A short, factual notice on your real website and social profiles, warning customers not to trust the page and explaining how you contact them, protects both them and your reputation.</p>
-<p>Also check whether your own email accounts sent the links. Attackers who get into a hosting account sometimes use the site to send spam or phishing emails, which can get your domain blocked by email providers. If customers report strange emails from your domain, see <a href="/blog/wordpress-site-sending-spam-emails/">why a WordPress site sends spam emails</a>.</p>
-<p>Where money or personal data was involved, Indian businesses can report cybercrime through the national cybercrime reporting portal, and should keep records of what happened, when it was found and what was done.</p>
-
-<h2>Step 6: Monitor for a few weeks</h2>
-<p>Check Search Console Pages and Security issues each week, search Google for your domain plus spam words, and keep an eye on new users and new files. If fake pages reappear, the entry point is still open and a deeper cleanup is needed. Regular updates, backups and monitoring as part of <a href="/wordpress-maintenance/">WordPress maintenance</a> reduce the chance of this happening again.</p>
-
-<h2>When to get professional help</h2>
-<p>If fake pages keep coming back, if there are thousands of spam URLs, if a phishing page is live, or if your host has suspended the site, a professional cleanup is usually quicker and safer. Samverse offers <a href="/wordpress-malware-removal/">WordPress malware removal</a> for businesses in India and abroad, including cleanup, hardening and Google review requests.</p>
-
-<h2>FAQs</h2>
-<h3>How do I remove a fake web page on my WordPress site?</h3>
-<p>Find whether it is a dashboard page, a server file or injected code, delete that source, remove unknown users, update everything and change passwords, then make the URL return 404 or 410 and use Search Console to drop it from Google.</p>
-<h3>Why does the fake page come back after I delete it?</h3>
-<p>The attacker still has a way in, such as a backdoor file, a vulnerable plugin, a rogue admin account or a stolen hosting password. Close the entry point, not just the page.</p>
-<h3>How long does Google take to remove fake pages?</h3>
-<p>It varies. The Removals tool hides URLs quickly but temporarily; permanent removal happens after Google recrawls and sees a 404 or 410. Large spam attacks can take weeks to clear fully.</p>
-<h3>Should I redirect fake pages to my homepage?</h3>
-<p>No. Let them return 404 or 410. Redirecting spam URLs keeps them alive in Google and can look like a soft 404.</p>
-<h3>Someone made a fake website copying my business. Is that the same problem?</h3>
-<p>No. That is a separate site on another domain. Report it to the host or registrar of that domain and to Google, and keep records of the copied content.</p>
-<h3>Can a security plugin remove fake pages automatically?</h3>
-<p>Scanners can find many infected files and suspicious code, but they do not always find database injections or rogue users. Use a scanner as one step of a full cleanup, not the whole fix.</p>
-`,
-  },
-  {
-    slug: 'wordpress-developer-hourly-rate-india',
-    seoTitle: 'WordPress Developer Hourly Rate in India: What Drives It',
-    title: 'WordPress Developer Hourly Rate in India: What Affects It and How to Compare Quotes',
-    description: 'WordPress developer hourly rate in India explained: what pushes rates up or down, hourly vs fixed price, hidden hours to ask about, and how to compare quotes.',
-    date: '2026-10-31',
-    category: 'Pricing',
-    related: ['hire-wordpress-developer', 'wordpress-developer-pune', 'wordpress-website-development'],
-    body: `
-<p>There is no single WordPress developer hourly rate in India. Rates vary widely with experience, the kind of work (a content fix versus custom plugin code), how urgent the job is, and whether you are paying a freelancer directly or an agency with project management on top. The useful question is not &quot;what is the rate?&quot; but &quot;how many hours will this take, and what do I get for them?&quot;</p>
-<p>This guide explains what drives hourly rates, when hourly billing makes sense, and how to compare quotes from Indian developers without being misled by the headline number. It does not list rate figures, because any number quoted online is out of date quickly and rarely matches your project.</p>
-
-<h2>WordPress developer hourly rate in India: what actually sets it</h2>
-<p>Developers set their rates from a mix of skill, demand and the risk they carry. The main factors are below.</p>
-<ul>
-<li><strong>Skill level and depth.</strong> Someone who installs themes and edits pages is doing different work from someone who writes custom plugins, debugs PHP errors, tunes databases or cleans hacked sites. The second group usually charges more per hour and often finishes faster.</li>
-<li><strong>Type of task.</strong> Content changes, layout fixes and plugin setup are simpler than WooCommerce customisation, API integrations, speed work or security cleanup. Many developers charge different rates for different kinds of work.</li>
-<li><strong>Urgency.</strong> Same-day or weekend fixes, such as a site down during a sale, normally cost more than scheduled work.</li>
-<li><strong>Accountability.</strong> A developer who offers a warranty period, backups before changes, written handover notes and a clear point of contact is pricing in responsibility, not just keystrokes.</li>
-<li><strong>Who you hire.</strong> A freelancer, a small studio and a larger agency have different overheads. Agencies add project managers, designers and testers, which raises the hourly figure but can reduce your own management time.</li>
-<li><strong>Location and clients.</strong> Developers who mostly serve overseas clients often price closer to those markets, even when they are based in India.</li>
-</ul>
-<p>For a wider view of the trade-offs, see <a href="/blog/freelancer-vs-agency-web-developer/">freelance web developer vs agency</a>.</p>
-
-<h2>Hourly rate vs fixed price: which suits your job?</h2>
-<p>Hourly billing and fixed-price billing each have a place. Hourly suits work where the scope is unclear until someone looks: debugging, small ongoing changes, investigating a slow site or a broken plugin conflict. Fixed price suits work you can describe fully in advance, such as a new five-page business website or a defined set of WooCommerce features.</p>
-<table>
-<thead><tr><th>Situation</th><th>Hourly usually fits</th><th>Fixed price usually fits</th></tr></thead>
-<tbody>
-<tr><td>New website with a clear brief</td><td></td><td>Yes</td></tr>
-<tr><td>Bug or error you cannot explain</td><td>Yes</td><td></td></tr>
-<tr><td>Small monthly changes and updates</td><td>Yes, or a monthly plan</td><td></td></tr>
-<tr><td>Custom feature with a written spec</td><td></td><td>Yes</td></tr>
-<tr><td>Speed or security investigation</td><td>Yes, for the audit stage</td><td>Yes, for the agreed fixes</td></tr>
-</tbody>
-</table>
-<p>The detailed pros and cons are in <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly billing for website projects</a>. Many projects mix the two: a fixed fee for the build and an hourly rate for changes after launch.</p>
-
-<h2>Why a low hourly rate can cost more</h2>
-<p>A cheaper rate looks attractive, but the bill is rate multiplied by hours. A developer who is less familiar with WordPress may take longer, solve the problem with extra plugins that slow the site, or leave issues that need fixing later. Common hidden costs include:</p>
-<ul>
-<li>Time spent explaining the same thing several times because there is no written brief or task list.</li>
-<li>Rework after launch, when forms, payments or mobile layouts turn out not to work properly.</li>
-<li>Heavy page builders and plugin stacks that later need a separate speed optimisation job.</li>
-<li>Missing access or ownership: domain, hosting or theme licences registered to the developer rather than to you.</li>
-<li>No backups before changes, so one mistake becomes a much bigger job.</li>
-</ul>
-<p>An experienced developer at a higher rate who finishes in fewer hours, documents the work and stands behind it can be the cheaper option overall.</p>
-
-<h2>What should be included in the hours you pay for?</h2>
-<p>Before you agree to an hourly arrangement, ask what counts as billable time. Typical questions:</p>
-<ul>
-<li>Are calls, emails and WhatsApp messages billed, or only hands-on work?</li>
-<li>Is testing on mobile and in different browsers included?</li>
-<li>Is a backup taken before changes, and is that billed?</li>
-<li>What is the minimum billing unit: 15 minutes, 30 minutes or an hour?</li>
-<li>Is there a minimum monthly charge or a retainer?</li>
-<li>How are hours reported: a simple task log, a time-tracking report or just a total?</li>
-<li>Is GST added on top, and will you get a proper invoice?</li>
-</ul>
-<p>Clear answers to these questions matter more than a small difference in the rate.</p>
-
-<p>Hours are easier to judge when you know what the work involves. <a href="/blog/what-does-wordpress-developer-do/">What a WordPress developer actually does day to day</a> explains the roles, skills and how a typical project runs.</p>
-
-<h2>How to estimate hours before you hire</h2>
-<p>You do not need to be technical to get a sensible estimate. Write down what you want in plain words, list the pages or features, attach screenshots and links, and say what &quot;done&quot; looks like. Our <a href="/blog/website-brief-template/">website brief template</a> gives a format you can copy.</p>
-<p>Then ask each developer for an estimate broken down by task, with a range (for example, a low and high number of hours) and a cap that they will not exceed without asking you first. A breakdown shows whether they understood the job. A single round number with no explanation is a warning sign.</p>
-<p>For new builds, also ask for a timeline with milestones, so you can see how the hours are spread across design, build, content and testing.</p>
-
-<h2>Comparing quotes from Indian WordPress developers</h2>
-<p>Quotes for the same job can look very different. That is normal: developers assume different scopes, tools and levels of finish. To compare fairly:</p>
-<ol>
-<li>Send every developer the same written brief.</li>
-<li>Ask each for hours per task, the hourly rate and what is excluded.</li>
-<li>Check how they handle backups, staging sites and testing.</li>
-<li>Ask who owns the code, the theme licence and the accounts at the end.</li>
-<li>Ask what support you get after the work is delivered, and at what rate.</li>
-<li>Look at real examples of similar work and speak to them on a call.</li>
-</ol>
-<p>Our guide to <a href="/blog/compare-website-quotes/">why website quotes are so different</a> goes through this in more detail, and the <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> guide covers the full budget, not just developer time.</p>
-
-<h2>Hourly work after launch: maintenance and small changes</h2>
-<p>Once a site is live, most businesses need a few hours a month for updates, small content changes, plugin checks and backups. You can pay for these hourly as they come up, or move to a monthly plan with a set number of hours or tasks. A plan usually makes budgeting easier and means someone checks the site regularly instead of only when it breaks.</p>
-<p>See <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a> for how monthly plans are usually structured, and <a href="/wordpress-maintenance/">WordPress maintenance</a> if you want ongoing care rather than one-off hours.</p>
-
-<h2>Red flags when hiring by the hour</h2>
-<ul>
-<li>No written estimate, or refusal to give a cap.</li>
-<li>Asking for your main admin password over chat instead of a separate user account.</li>
-<li>No mention of backups or a staging copy before risky changes.</li>
-<li>Vague time reports such as &quot;fixes: 9 hours&quot; with no task list.</li>
-<li>Pressure to pay a large amount upfront for open-ended hourly work.</li>
-<li>Installing nulled (pirated) premium plugins to save licence costs.</li>
-</ul>
-
-<h2>When to hire an hourly developer vs a WordPress partner</h2>
-<p>If you only need occasional small fixes, an hourly arrangement with a reliable developer is simple and fair. If you have a business that depends on the site for enquiries or orders, you may be better served by one developer or studio that knows your site, keeps it backed up and updated, and handles builds, speed and security as one relationship. For businesses outsourcing from abroad, <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers how such arrangements usually work.</p>
-<p>Samverse works with businesses across India and overseas on fixed-price builds and hourly or monthly support. If you want a written estimate for your job, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through our service page, or see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
-
-<h2>FAQs</h2>
-<h3>What is the typical WordPress developer hourly rate in India?</h3>
-<p>It varies widely with skill, task type, urgency and whether you hire a freelancer or an agency. Rather than relying on a figure from the internet, send the same brief to a few developers and compare their hours per task and total cost.</p>
-<h3>Is it cheaper to hire a WordPress developer in India by the hour or at a fixed price?</h3>
-<p>For a clearly defined project, a fixed price is usually easier to budget. For debugging, investigations and small ongoing changes, hourly billing is often fairer because nobody knows the full scope in advance.</p>
-<h3>Why do some Indian WordPress developers charge much more per hour than others?</h3>
-<p>Experience, specialisation (custom code, WooCommerce, speed, security), accountability such as warranties and backups, overheads and the markets they normally serve all affect the rate.</p>
-<h3>Do WordPress developers charge GST on hourly work?</h3>
-<p>Registered businesses add GST to their invoices. Ask whether the quoted rate includes or excludes GST and whether you will receive a proper tax invoice.</p>
-<h3>How many hours does a small WordPress fix take?</h3>
-<p>It depends on the cause. A simple content or layout change can be quick, while a plugin conflict or error may need investigation first. Ask for an estimate with a cap so you approve anything beyond it.</p>
-<h3>Should I pay hourly or choose a monthly maintenance plan?</h3>
-<p>If you need changes only now and then, hourly works. If the site needs regular updates, backups and small edits, a monthly plan is usually more predictable and keeps the site checked between requests.</p>
-`,
-  },
-  {
     slug: 'wordpress-revisions-not-showing',
     seoTitle: 'WordPress Revisions Not Showing? Causes and Fixes',
     title: 'WordPress Revisions Not Showing? Why the Revisions Option Disappears and How to Get It Back',
@@ -76569,75 +70871,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>There is no fixed rule. Many sites keep somewhere around 10 to 20 per post, which gives useful history without making the database much larger.</p>
 <h3>Do revisions slow down a WordPress site?</h3>
 <p>Revisions are stored in the database but are not loaded on normal page views. Very large numbers can make the database bigger and some admin queries slower, which is why many sites limit them.</p>
-`,
-  },
-  {
-    slug: 'marathi-website-design',
-    seoTitle: 'Marathi Website Design: WordPress and Shopify in Marathi',
-    title: 'Marathi Website Design: Building a WordPress or Shopify Site in Marathi for Maharashtra Customers',
-    description: 'Marathi website design for Maharashtra businesses: Marathi-only or bilingual, fonts, URLs, typing, SEO for Marathi searches and WordPress or Shopify setup.',
-    date: '2026-10-31',
-    category: 'Guides',
-    related: ['wordpress-developer-pune', 'wordpress-website-development', 'shopify-developer'],
-    body: `
-<p>Marathi website design means building a site whose main text, menus, forms and buttons are in Marathi, in proper Unicode Devanagari, so customers in Maharashtra can read it easily and find it when they search in Marathi. Both WordPress and Shopify handle Marathi well; the real work is in choosing the language structure, the font, the URLs and who writes the copy.</p>
-<p>This guide is for shops, clinics, schools, co-operative societies, farm-input sellers, temples, builders and service businesses in Pune and across Maharashtra who are thinking about a Marathi or bilingual website.</p>
-<h2>Who needs a website in Marathi?</h2>
-<p>A Marathi website makes sense when a large share of your customers are more comfortable reading Marathi than English. Common cases include:</p>
-<ul><li>Local service businesses in Pune, Pimpri-Chinchwad, Nashik, Kolhapur, Satara and smaller towns, where customers phone and WhatsApp in Marathi.</li><li>Agri-input, dairy and rural retail businesses whose buyers are farmers.</li><li>Schools, coaching classes and colleges where parents prefer Marathi.</li><li>Temples, trusts, mandals, NGOs and co-operative societies.</li><li>Clinics and hospitals explaining procedures to patients and families.</li><li>Builders and plot sellers whose buyers come from nearby towns and villages.</li></ul>
-<p>If your buyers are mostly corporate purchase teams or export customers, English stays the main language and Marathi may only be useful for a few local pages.</p>
-<h2>Marathi-only, English-first or bilingual?</h2>
-<p>This is the most important decision, because it changes the build.</p>
-<table><thead><tr><th>Structure</th><th>Good for</th><th>What it involves</th></tr></thead><tbody>
-<tr><td>Marathi-only</td><td>Temples, local societies, rural sellers, Marathi publications</td><td>One language, simplest build, WordPress or Shopify set to Marathi</td></tr>
-<tr><td>Marathi-first with a few English pages</td><td>Local shops and clinics with some English-speaking visitors</td><td>Main site in Marathi, a small English section or summary page</td></tr>
-<tr><td>Fully bilingual (Marathi and English)</td><td>Schools, hospitals, builders, larger brands</td><td>Every page in both languages, a translation plugin or Shopify Markets, hreflang tags, double the content upkeep</td></tr>
-</tbody></table>
-<p>Bilingual sites cost more to run, not just to build, because every new page, offer and price change has to be updated twice. Be honest about who will keep the Marathi side current. A half-translated site, where new pages appear only in English, looks neglected. For the wider picture of running several languages, see <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites in Hindi, English and regional languages</a>.</p>
-<h2>Marathi on WordPress</h2>
-<p>WordPress supports Marathi as an admin and site language. Under Settings, General, you can set the site language to Marathi, which translates the built-in parts of WordPress and many themes, such as date formats and some buttons.</p>
-<ul><li><strong>Marathi-only site:</strong> set the site language, write every page in Marathi and check the theme, contact form and footer for leftover English labels.</li><li><strong>Bilingual site:</strong> use a multilingual plugin such as Polylang or WPML, which links each Marathi page to its English twin and adds a language switcher.</li><li><strong>Forms:</strong> translate field labels, placeholder text, error messages and the thank-you message. These are often forgotten.</li><li><strong>Page builders:</strong> Elementor and the block editor both handle Devanagari text; test headings and buttons on a phone because Marathi words can be longer than the English ones the design was made for.</li></ul>
-<p>If you want help setting this up, a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> who reads Marathi can check details that a developer elsewhere might miss, such as wrong conjuncts or awkward line breaks.</p>
-<h2>Marathi on Shopify</h2>
-<p>Shopify lets you add Marathi as a store language and translate products, collections, pages and theme text with the Translate and Adapt app. Checkout text is translated by Shopify where the language is supported, so test a full order in Marathi before launch. If the language is not fully covered in checkout, keep checkout in English and say so clearly on the cart page.</p>
-<p>For Marathi product pages, write the product name the way customers say it, then add the English or brand name in brackets if buyers search both ways. A <a href="/shopify-developer/">Shopify developer</a> can set up separate Marathi URLs and a language switcher so Google sees both versions.</p>
-<h2>Fonts: making Marathi text look right</h2>
-<p>Marathi uses the Devanagari script. Many English-focused themes load a Latin-only font, so the browser falls back to a system font and the Marathi text looks mismatched. Pick a font that includes Devanagari and test it.</p>
-<ul><li>Free Google Fonts with Devanagari support include Mukta, Noto Sans Devanagari, Hind, Baloo 2, Tiro Devanagari Marathi and Yatra One for display headings.</li><li>Load only the weights you use, usually regular and bold, to keep pages fast.</li><li>Check conjuncts and the Marathi letters ळ and the eyelash ra (र्‍) render correctly in your chosen font.</li><li>Increase line height slightly; Devanagari has marks above and below the line that can collide.</li></ul>
-<p>More detail on font choices, loading and testing is in <a href="/blog/hindi-devanagari-fonts-website/">Hindi and Devanagari fonts on your website</a>; the same advice applies to Marathi.</p>
-<h2>Never use legacy fonts or text in images</h2>
-<p>Some older Marathi content is typed in legacy fonts such as Shree-Lipi or Kruti Dev, where the letters only look Marathi because of the font; underneath, the text is English characters. Google cannot read it, phones show gibberish, and copy-paste breaks. Convert any such text to Unicode before it goes on the site, and check by copying a line into a plain text editor.</p>
-<p>The same applies to Marathi text inside banners, pamphlet images and scanned PDFs. Search engines and screen readers cannot read it well. Put the key information in real text on the page and use images only for decoration or photos.</p>
-<h2>URLs and slugs for Marathi pages</h2>
-<p>You have two options for page addresses:</p>
-<ul><li><strong>English or transliterated slugs</strong>, such as /seva/ or /services/. These are short, easy to share on WhatsApp and do not turn into long encoded strings.</li><li><strong>Marathi slugs</strong>, such as a URL written in Devanagari. These work, but when copied they often become long percent-encoded strings that look broken in messages.</li></ul>
-<p>Most businesses are better off with short English or transliterated slugs and Marathi page titles and headings. For bilingual sites, a folder per language such as /mr/ for Marathi and /en/ for English is the clearest setup.</p>
-<h2>SEO for Marathi searches</h2>
-<p>People search in three ways: in Marathi script, in Marathi typed in English letters (for example &quot;pune madhye dentist&quot;), and in English. Your pages should cover the way your customers actually search.</p>
-<ul><li>Put the main Marathi phrase in the page title, the main heading and the first paragraph.</li><li>Write a Marathi meta description; Google may show it for Marathi searches.</li><li>Use your exact business name and address the same way everywhere, including Google Business Profile, in both scripts if you use both.</li><li>For bilingual sites, add hreflang tags so Google shows the Marathi page to Marathi searchers. See <a href="/blog/hreflang-multilingual-seo-india/">hreflang tags for India</a>.</li><li>Find Marathi and transliterated keywords with free tools, as shown in <a href="/blog/keyword-research-small-business/">keyword research for small businesses</a>.</li></ul>
-<p>For local visibility in Pune specifically, combine this with <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>: Google Business Profile, reviews and area pages matter as much as language.</p>
-<h2>Who should write the Marathi content?</h2>
-<p>Machine translation is a useful first draft but should not go live unchecked. It often picks formal or Hindi-influenced words, gets honorifics wrong and mistranslates product terms. Customers notice, and it weakens trust.</p>
-<ul><li>Best: write the Marathi copy first, in the voice you use with customers, then create English from it if needed.</li><li>Good: translate from English, then have a fluent Marathi speaker who knows your trade review every page.</li><li>Keep a short glossary of trade words, product names and preferred spellings so every page uses the same terms.</li></ul>
-<p>Decide in advance who supplies and approves the Marathi text. Writing it into your website brief avoids delays at the end of the project.</p>
-<h2>Typing and editing Marathi in the dashboard</h2>
-<p>Whoever updates the site needs a way to type Marathi. Options include the Marathi keyboard on Android and iPhone, Google Input Tools style transliteration, and the built-in Marathi keyboards in Windows and macOS. Test that your team can edit a page and publish it without the text breaking. Copying from Word documents typed in legacy fonts is the most common cause of garbled pages.</p>
-<h2>Launch checklist for a Marathi website</h2>
-<ol><li>Language structure decided: Marathi-only, Marathi-first or bilingual.</li><li>All text in Unicode, no legacy fonts, no key text inside images.</li><li>A Devanagari font loaded and tested on Android and iPhone.</li><li>Menus, forms, error messages, footer, cookie notice and WhatsApp button text translated.</li><li>Marathi page titles and meta descriptions written.</li><li>Language switcher and hreflang tags if bilingual.</li><li>Google Business Profile details consistent with the site.</li><li>A test enquiry and, for stores, a test order placed in Marathi.</li><li>Enquiries from Marathi pages tracked separately in analytics.</li></ol>
-<p>If you are planning a Marathi or bilingual website and want it built on WordPress or Shopify, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or ask Samverse for a quote with your page list and language plan.</p>
-<h2>FAQs</h2>
-<h3>Can a WordPress website be fully in Marathi?</h3>
-<p>Yes. Set the site language to Marathi, write every page in Unicode Marathi, and translate the theme, form and footer labels. WordPress itself has a Marathi translation for its interface.</p>
-<h3>Does Shopify support Marathi?</h3>
-<p>Shopify lets you add Marathi as a store language and translate products, pages and theme text. Test checkout in Marathi before launch and keep English as a fallback where translation is incomplete.</p>
-<h3>Which font is best for a Marathi website?</h3>
-<p>Choose a free Unicode Devanagari font such as Mukta, Noto Sans Devanagari or Hind, load only the weights you need and test the text on real phones.</p>
-<h3>Will a Marathi website rank on Google?</h3>
-<p>Marathi pages can rank for Marathi and transliterated searches if the text is real Unicode, the titles and headings use the phrases people search, and the site has the usual local SEO basics in place.</p>
-<h3>Should I use Marathi or English URLs?</h3>
-<p>Short English or transliterated URLs are usually better because Marathi URLs turn into long encoded strings when shared. Keep page titles and headings in Marathi.</p>
-<h3>How much more does a bilingual Marathi and English website cost?</h3>
-<p>It depends on the number of pages and who writes the translations. Expect extra work for the translation plugin, both sets of content and ongoing updates, so ask for the Marathi side to be quoted separately.</p>
 `,
   },
   {
@@ -77075,7 +71308,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <ul>
 <li>Test add to cart, cart, checkout and payment after every plugin or theme update.</li>
 <li>Make speed changes on staging first, because aggressive optimisation is a frequent cause.</li>
-<li>Keep a simple weekly check in your <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</li>
+<li>Keep a simple weekly check in your <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</li>
 <li>When tuning performance, follow a store-safe approach such as our <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation guide</a>.</li>
 </ul>
 <h2>When to get help</h2>
@@ -77167,7 +71400,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Elementor lets most settings differ by device: padding, margin, font size, column width, alignment, background images and visibility. When you switch to the mobile view in the editor and change a value, that value only applies to mobile. When you change a value while desktop is active, it cascades down to tablet and mobile unless they already have their own value.</p>
 <p>So if someone set a mobile font size months ago, changing the desktop size today will not touch mobile. Open the mobile view, find the setting and look for a value in the field. Clear it to inherit again, or set the mobile value directly.</p>
 <h3>2. Cached CSS or a caching plugin</h3>
-<p>Elementor writes each page style to a CSS file in the uploads folder. Caching and optimisation plugins then minify and combine those files. If the old file is still served, the editor shows the new design but the live page does not. Regenerate CSS, then clear the plugin cache, server cache and CDN cache, in that order. Our guide to <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing in WordPress</a> explains each cache layer.</p>
+<p>Elementor writes each page style to a CSS file in the uploads folder. Caching and optimisation plugins then minify and combine those files. If the old file is still served, the editor shows the new design but the live page does not. Regenerate CSS, then clear the plugin cache, server cache and CDN cache, in that order. Our guide to <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing in WordPress</a> explains each cache layer.</p>
 <h3>3. Breakpoints do not match the phone</h3>
 <p>Under Site Settings, Layout, Breakpoints, Elementor defines when the mobile and tablet styles start. If someone changed the mobile breakpoint to a small number, a larger phone or a phone in landscape may receive the tablet styles. Newer versions also allow extra breakpoints such as mobile extra and laptop. If extra breakpoints are switched on, check the new device in the editor too, because a value set only on mobile will not reach mobile extra.</p>
 <p>Unless you have a reason, keep the default breakpoints. Changing them later can shift every page on the site.</p>
@@ -77242,7 +71475,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Many small business sites in India run on shared hosting plans from providers such as Hostinger, GoDaddy, Bigrock or similar. These plans often start with conservative PHP limits and aggressive security rules. If saving fails, open the hosting control panel and look for PHP options or PHP configuration. There you can usually raise memory_limit, max_input_vars, max_execution_time and post_max_size without editing files. If you cannot find them, raise a support ticket that names the exact error code and the time you clicked Update; that makes it easier for the host to find the blocked request in their logs.</p>
 <p>If the host refuses to raise limits that Elementor needs, or saving remains slow on every page, the plan may simply be too small for the site. Moving to a better plan is often cheaper than hours of editing time lost to failed saves.</p>
 <h2>Elementor changes saved but not showing</h2>
-<p>If Update succeeds but the live page does not change, the save worked and the problem is caching or CSS. Regenerate CSS and Data under Elementor, Tools, then clear all caches. See <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a> for the details.</p>
+<p>If Update succeeds but the live page does not change, the save worked and the problem is caching or CSS. Regenerate CSS and Data under Elementor, Tools, then clear all caches. See <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a> for the details.</p>
 <h2>How to recover lost Elementor edits</h2>
 <ul><li>Open History, Revisions in the editor; Elementor keeps a revision each time you save and autosaves while you work.</li><li>If the editor offers an autosave newer than the saved version when you reopen it, review it before accepting.</li><li>Check the WordPress revisions screen for the page if Elementor revisions are missing.</li><li>Restore from your latest backup on staging and copy the content across if nothing else works.</li></ul>
 <p>This is why daily backups matter on a site that is edited often; see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> for a routine that includes them.</p>
@@ -77412,7 +71645,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <ul>
 <li>Keep a fallback method in "Locations not covered by your other zones".</li>
 <li>Give every physical product and variation a weight and the right shipping class.</li>
-<li>Place a test order with a real pin code from each zone after every plugin update; the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a> includes this.</li>
+<li>Place a test order with a real pin code from each zone after every plugin update; the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a> includes this.</li>
 <li>Watch checkout errors and abandoned carts; a sudden rise often means shipping broke. If customers also report checkout failures, see <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working</a>.</li>
 </ul>
 <h2>When to get help</h2>
@@ -77490,7 +71723,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>Correct the counts after fixing the cause</h2>
 <p>Once the cause is fixed, do a physical count, update quantities (a CSV export and import works for large catalogues), and place a test order with cash on delivery to confirm the order note says stock was reduced. Then cancel it and confirm stock returns.</p>
 <p>It also helps to make stock changes traceable. The order notes show reductions and restocks, and some inventory plugins keep a stock history per product showing who or what changed the number and when. When a count is wrong again, that log tells you straight away whether an order, a staff edit, an import or a sync caused it. Give staff the Shop Manager role rather than Administrator, and agree who is allowed to edit quantities; <a href="/blog/woocommerce-order-management-workflow/">a simple order management workflow</a> sets this out for small teams.</p>
-<p>Add this test to your routine with the <a href="/blog/woocommerce-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<p>Add this test to your routine with the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 <h2>When to get help</h2>
 <p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix.</p>
 <h2>FAQs</h2>
@@ -77973,7 +72206,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Purge Cloudflare or any other CDN.</li>
   <li>Test in a private window on mobile data, not your office Wi-Fi.</li>
 </ol>
-<p><a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through each cache layer and how to tell which one is stale. If only the styling of the menu is old, see <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+<p><a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through each cache layer and how to tell which one is stale. If only the styling of the menu is old, see <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a>.</p>
 
 <h2>Fix 5: WordPress menu not saving or losing items</h2>
 <p>This is the classic large-menu problem. Each menu item sends around a dozen fields when you click Save Menu. PHP's max_input_vars setting caps how many fields the server will accept, and the default on many hosts is 1000. With a big menu, WordPress quietly drops everything past that limit, so the last items vanish, the order resets or the save seems to do nothing.</p>
@@ -78308,7 +72541,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Most new phone warranties are given by the brand and handled at authorised service centres. Say this clearly, with a link to how customers can find the brand's service centre. Then state what the shop itself offers: checking the phone in front of the customer, help with first setup, a fixed period for dead-on-arrival issues if the brand policy allows replacement, and your own warranty on second-hand phones or accessories if you give one. Avoid "lifetime warranty" or "100% genuine guaranteed" unless you can back it with documents.</p>
 
 <h2>Local search and Google Business Profile</h2>
-<p>Searches like "mobile shop near me" and "Samsung mobile shop in Kothrud" are local. Complete your <a href="/blog/google-business-profile-checklist/">Google Business Profile</a> with categories, hours, photos of the store and products, and keep it in line with your site. Add a page per branch, and post new arrivals and festival offers as <a href="/blog/google-business-profile-posts/">Google Business Profile posts</a>. The <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> explains how to target your area without thin doorway pages.</p>
+<p>Searches like "mobile shop near me" and "Samsung mobile shop in Kothrud" are local. Complete your <a href="/blog/google-business-profile-checklist/">Google Business Profile</a> with categories, hours, photos of the store and products, and keep it in line with your site. Add a page per branch, and post new arrivals and festival offers as <a href="/blog/google-business-profile-checklist/">Google Business Profile posts</a>. The <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> explains how to target your area without thin doorway pages.</p>
 <p>Reviews mentioning helpful staff, fair exchange values and smooth EMI processing are worth a lot. Ask for them at billing; <a href="/blog/get-more-google-reviews/">ways to get more Google reviews</a> has practical scripts.</p>
 
 <h2>WhatsApp, festival sales and launches</h2>

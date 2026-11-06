@@ -230,7 +230,7 @@
   <li>Purge Cloudflare or any other CDN.</li>
   <li>Test in a private window on mobile data, not your office Wi-Fi.</li>
 </ol>
-<p><a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through each cache layer and how to tell which one is stale. If only the styling of the menu is old, see <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+<p><a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a> goes through each cache layer and how to tell which one is stale. If only the styling of the menu is old, see <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a>.</p>
 
 <h2 id="fix-5-wordpress-menu-not-saving-or-losing-items">Fix 5: WordPress menu not saving or losing items</h2>
 <p>This is the classic large-menu problem. Each menu item sends around a dozen fields when you click Save Menu. PHP's max_input_vars setting caps how many fields the server will accept, and the default on many hosts is 1000. With a big menu, WordPress quietly drops everything past that limit, so the last items vanish, the order resets or the save seems to do nothing.</p>

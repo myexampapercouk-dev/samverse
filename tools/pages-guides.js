@@ -89,7 +89,7 @@ module.exports = {
 <ol>
 <li><strong>Access and a full backup,</strong> before anything is touched.</li>
 <li><strong>An inventory.</strong> Every plugin and theme, its version, whether its developer still maintains it, and whether premium licences are active and in your name. An expired licence is one of the most common reasons updates quietly stop arriving.</li>
-<li><strong>Health checks.</strong> PHP version, Site Health warnings, failing scheduled tasks, whether site emails actually arrive, SSL renewal, and who has administrator access. Old PHP versions are covered in <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>, and access in <a href="/blog/wordpress-user-accounts-audit/">auditing your WordPress user accounts</a>.</li>
+<li><strong>Health checks.</strong> PHP version, Site Health warnings, failing scheduled tasks, whether site emails actually arrive, SSL renewal, and who has administrator access. Old PHP versions are covered in <a href="/blog/update-php-version-wordpress/">updating your PHP version safely</a>, and access in <a href="/blog/wordpress-user-roles-explained/">auditing your WordPress user accounts</a>.</li>
 <li><strong>Urgent fixes,</strong> agreed with you first, such as an abandoned plugin with a known vulnerability or contact forms that have stopped sending. If forms are silent, the cause is often email delivery; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>.</li>
 <li><strong>Monitoring and a baseline.</strong> Uptime monitoring, the backup schedule, and starting speed figures for key pages, so later changes can be compared.</li>
 </ol>
@@ -138,7 +138,7 @@ module.exports = {
 <li><strong>Number of sites,</strong> for businesses or agencies with several.</li>
 <li><strong>Hosting,</strong> and whether it is part of a package or paid separately.</li>
 </ul>
-<p><a href="/blog/website-maintenance-cost-india/">Website maintenance cost in India</a> breaks these down further, and <a href="/blog/hidden-website-costs/">hidden website costs</a> covers the renewals that catch owners out.</p>
+<p><a href="/blog/website-maintenance-cost-india/">Website maintenance cost in India</a> breaks these down further, and <a href="/blog/wordpress-website-cost-india/">hidden website costs</a> covers the renewals that catch owners out.</p>
 <h2>What is included, and what is not</h2>
 <p>The plan contents are listed near the top of this page. Work that is quoted separately:</p>
 <ul>
@@ -398,7 +398,7 @@ module.exports = {
 <li>A full backup taken at launch.</li>
 <li>Any temporary access I used removed, unless you keep me on for maintenance.</li>
 </ul>
-<p>The <a href="/blog/website-handover-checklist/">website handover checklist</a> lists everything you should receive from any developer. To hire me, send your requirements on WhatsApp or through the form, and you will get a fixed quote after a free review.</p>
+<p>The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists everything you should receive from any developer. To hire me, send your requirements on WhatsApp or through the form, and you will get a fixed quote after a free review.</p>
 `,
   'woocommerce-developer': `
 <h2>WooCommerce store setup in India, step by step</h2>
@@ -504,7 +504,7 @@ module.exports = {
 </tbody>
 </table>
 <p>We agree overlap hours and a call slot before the first project, recheck them when your clocks change, and schedule launches and DNS changes inside the overlap. Answering my numbered questions before my next working day keeps a build moving.</p>
-<p><a href="/blog/offshore-wordpress-developer-time-zones/">Working with an offshore developer across time zones</a> covers response times for live issues, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers the wider picture, including red flags.</p>
+<p><a href="/blog/outsource-wordpress-development-india/">Working with an offshore developer across time zones</a> covers response times for live issues, and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> covers the wider picture, including red flags.</p>
 <h2>Confidentiality and working under your brand</h2>
 <ul>
 <li><strong>NDA.</strong> I sign your NDA, covering your client's name, designs, data and business information.</li>
@@ -719,7 +719,7 @@ module.exports = {
 <ul>
 <li>Businesses that want a site they can edit without calling a developer for every change.</li>
 <li>Owners of an Elementor site that has become slow, broken or inconsistent.</li>
-<li>Designers and agencies who need Elementor builds under their own brand; see <a href="/blog/white-label-elementor-development/">white-label Elementor development</a>.</li>
+<li>Designers and agencies who need Elementor builds under their own brand; see <a href="/blog/white-label-wordpress-development-agencies/">white-label Elementor development</a>.</li>
 </ul>
 <p>It suits you less if you need editing locked to structured fields or a custom-coded theme for strict performance targets.</p>
 <h2>How to prepare</h2>
@@ -1141,7 +1141,7 @@ module.exports = {
 <tr><td>Best when</td><td>Problems are specific: dated photos, weak buttons, slow pages</td><td>The site is not built for phones, or no longer fits what you sell</td><td>The current platform blocks what you need, such as Wix or an old custom CMS</td></tr>
 </tbody>
 </table>
-<p><a href="/blog/website-refresh-vs-redesign/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to phase the work. When the platform changes, the move follows my <a href="/wordpress-migration/">WordPress migration</a> process.</p>
+<p><a href="/blog/signs-you-need-a-new-website/">Website refresh vs redesign</a> has a short decision test, and <a href="/blog/redesign-website-tight-budget/">redesigning on a tight budget</a> shows how to phase the work. When the platform changes, the move follows my <a href="/wordpress-migration/">WordPress migration</a> process.</p>
 <h2>The audit before any design</h2>
 <p>Before anyone opens a design tool, I record a baseline:</p>
 <ul>
@@ -1316,7 +1316,7 @@ module.exports = {
 <h3>A doctor profile with credentials patients can check</h3>
 <p>"Experienced specialist" tells a patient nothing; degrees with university and year, a registration number and named professional societies can be checked. The <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta</a> site, for a pulmonologist in Agra, opens with his MBBS and MD with university and year, a former assistant professor role and his chest society memberships. The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> homepage gives his medical college, graduation year and registration number.</p>
 <h3>Conditions and procedures in plain words</h3>
-<p>A patient told to get a sleep study usually looks it up before booking. The Dr. Nitish Gupta site explains each diagnostic test on its own card, for example that the six-minute walk test measures how far a patient can walk on a flat surface in six minutes, and gives each disease its own heading. On <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a>, each treatment description answers one practical worry, such as root canal treatment in a single sitting, and the FAQ asks "Is the treatment painful?" directly. See also <a href="/blog/website-for-specialist-doctors/">websites for specialist doctors</a> and <a href="/blog/website-for-dentists/">websites for dentists</a>.</p>
+<p>A patient told to get a sleep study usually looks it up before booking. The Dr. Nitish Gupta site explains each diagnostic test on its own card, for example that the six-minute walk test measures how far a patient can walk on a flat surface in six minutes, and gives each disease its own heading. On <a href="/work/dr-sunaina-dental-care/">Dr. Sunaina Dental Care</a>, each treatment description answers one practical worry, such as root canal treatment in a single sitting, and the FAQ asks "Is the treatment painful?" directly. See also <a href="/blog/clinic-website-checklist-for-doctors/">websites for specialist doctors</a> and <a href="/blog/website-for-dentists/">websites for dentists</a>.</p>
 <h3>Timings, address and map</h3>
 <p>List each session as it really runs, including any Sunday hours. Write the address with landmarks, as Dr. Sunaina Dental Care does, and add an embedded Google Map with a tap-to-call number beside it.</p>
 <h2>Appointment booking options</h2>
@@ -1412,7 +1412,7 @@ module.exports = {
 <h2>Who this is for</h2>
 <ul>
 <li><strong>Freelance designers</strong> who design in Figma and want a developer who respects their spacing and type choices rather than approximating them.</li>
-<li><strong>Design and branding agencies</strong> without an in-house WordPress developer, who need builds delivered under their own brand. <a href="/blog/white-label-elementor-development/">White-label Elementor development</a> explains how that works, and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers ongoing partnerships.</li>
+<li><strong>Design and branding agencies</strong> without an in-house WordPress developer, who need builds delivered under their own brand. <a href="/blog/white-label-wordpress-development-agencies/">White-label Elementor development</a> explains how that works, and <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers ongoing partnerships.</li>
 <li><strong>Businesses and startups</strong> that already have a finished design from a designer and need it turned into a working website.</li>
 </ul>
 <p>If you do not have a design yet and want one built straight in WordPress, my <a href="/elementor-developer/">Elementor development</a> service is the better fit.</p>
@@ -1458,7 +1458,7 @@ module.exports = {
 <li>Rates or a starting rate, stating clearly whether taxes are included.</li>
 <li>A booking or enquiry button that carries the room name into the form or WhatsApp message.</li>
 </ul>
-<p>A separate policies page covers check-in and check-out times, ID requirements (including passport and visa for foreign guests), cancellation and refund terms, pets and house rules. Guests read it closely before paying an advance, so write it plainly. For smaller properties, <a href="/blog/website-for-homestays-bnbs/">websites for homestays and bed and breakfasts</a> covers what changes.</p>
+<p>A separate policies page covers check-in and check-out times, ID requirements (including passport and visa for foreign guests), cancellation and refund terms, pets and house rules. Guests read it closely before paying an advance, so write it plainly. For smaller properties, <a href="/blog/hotel-website-direct-bookings/">websites for homestays and bed and breakfasts</a> covers what changes.</p>
 <h2>Advances, payments and WhatsApp booking</h2>
 <p>Many Indian guests prefer to message before they book. A short form for dates and guests can open WhatsApp with those details and the room name filled in, so your reply starts with availability instead of questions. To confirm, you send a payment link for the advance through a gateway such as Razorpay, or the booking plugin takes UPI or card payment on the site. Either way, the confirmation repeats the dates, room, amount paid, balance due and cancellation terms. <a href="/blog/accept-online-payments-wordpress-india/">Accepting online payments in India</a> compares the options.</p>
 <h3>A reason to book direct</h3>
@@ -1484,7 +1484,7 @@ module.exports = {
 <h2>How long it takes</h2>
 <p>Usually 1 to 3 weeks, depending on the number of rooms, pages and booking features. Connecting a booking engine depends on your provider's set-up time, and gathering good photos and final policies often takes longer than the build.</p>
 <h2>Who it is for</h2>
-<p>Independent hotels, resorts, homestays, <a href="/blog/website-for-farm-stays-agritourism/">farm stays</a>, guest houses and boutique properties, especially those relying almost entirely on OTAs or whose website shows outdated rooms and rates.</p>
+<p>Independent hotels, resorts, homestays, <a href="/blog/hotel-website-direct-bookings/">farm stays</a>, guest houses and boutique properties, especially those relying almost entirely on OTAs or whose website shows outdated rooms and rates.</p>
 <h2>How to prepare</h2>
 <ul>
 <li>Room types with occupancy, bed configuration, inclusions and rates or starting rates.</li>
@@ -1597,7 +1597,7 @@ module.exports = {
 <tr><td>Disclaimer</td><td>Commonly shown before visitors enter</td><td>Useful on articles and updates</td><td>Useful on articles and updates</td></tr>
 </tbody>
 </table>
-<p>This is a starting point, not legal advice, so check the current version of your body's rules before launch. <a href="/blog/website-for-advocates-bar-council-rules/">What the Bar Council rules allow</a> covers advocates in more detail.</p>
+<p>This is a starting point, not legal advice, so check the current version of your body's rules before launch. <a href="/blog/website-for-lawyers-and-chartered-accountants/">What the Bar Council rules allow</a> covers advocates in more detail.</p>
 <h2>Practice area and service pages</h2>
 <p>A page for each area you handle, such as property disputes, matrimonial matters, GST registration and returns, income tax notices or company incorporation, does two jobs. It tells a visitor in plain language whether you handle their situation, and it gives Google a specific page for that search. Each page covers who it is for, the situations you commonly handle, how the process usually runs and the documents to keep ready. For advocates the tone stays factual, with no "best" or "top" and no promised outcomes.</p>
 <p><a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> site, from another profession, is a good model of precision: it gives his degree, medical college, year and registration number, and is just as clear about what his programme does not replace. Professionals gain from the same honesty about scope, such as which courts or tribunals you appear before, or the kinds of matters you do not take on.</p>
@@ -1667,7 +1667,7 @@ module.exports = {
 <p>For most restaurants the answer is both: the apps for discovery and delivery, your own site for bookings and regulars. <a href="/blog/website-for-cloud-kitchens/">Websites for cloud kitchens</a> looks at the same decision for delivery-only brands.</p>
 <h2>The pages a restaurant website needs</h2>
 <h3>A menu built as a web page</h3>
-<p>The menu is usually the first page diners look for. Each section, such as starters, mains, breads and drinks, gets its own heading and jump link, and every dish shows its price, a veg or non-veg marker and notes such as spice level, Jain options or eggless. Prices are edited in the dashboard, so a change takes a minute rather than a new PDF. <a href="/blog/restaurant-menu-on-website/">Putting your menu online</a> explains why a web page beats a PDF.</p>
+<p>The menu is usually the first page diners look for. Each section, such as starters, mains, breads and drinks, gets its own heading and jump link, and every dish shows its price, a veg or non-veg marker and notes such as spice level, Jain options or eggless. Prices are edited in the dashboard, so a change takes a minute rather than a new PDF. <a href="/blog/restaurant-website-online-ordering/">Putting your menu online</a> explains why a web page beats a PDF.</p>
 <h3>Your signature offer, near the top</h3>
 <p>Give the thing you are known for its own section, with days and times spelled out. On <a href="/work/southern-flavours/">Southern Flavours</a>, the website I built for an Indian restaurant in Solihull, UK, the unlimited South Indian breakfast buffet is the first section after the hero, and the opening hours state that it runs from 09:30 to 12:00 on Saturdays and Sundays. A thali lunch or a live music night deserves the same treatment.</p>
 <h3>Photos, hours and location</h3>

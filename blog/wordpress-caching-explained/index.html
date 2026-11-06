@@ -232,7 +232,7 @@
   <li>It isn't a fix for slow, bloated queries; see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a></li>
 </ul>
 
-<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-slow/">why WordPress Multisite gets slow</a>.</p>
+<p>On a WordPress Multisite network, object caching often matters even more because so much data is shared; see <a href="/blog/wordpress-multisite-when-needed/">why WordPress Multisite gets slow</a>.</p>
 
 <h2 id="opcache">OPcache</h2>
 <p>PHP is compiled before it runs. OPcache keeps the compiled code in server memory, so PHP doesn't recompile WordPress files on every request. It's a server setting rather than something a plugin does, and most decent hosts enable it. If you're unsure, ask your host or check the PHP settings in your hosting panel.</p>
@@ -296,7 +296,7 @@
   <li><strong>CDN cache:</strong> purge the changed files or the whole site from the CDN dashboard</li>
   <li><strong>Browser cache:</strong> hard refresh (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) or check in a private window</li>
 </ol>
-<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a>.</p>
+<p>Clear the cache after design changes, theme edits and plugin updates. Most plugins clear a page's cache automatically when you update it, but not always for menus, widgets or global styles. Edits not appearing? See <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>, and for stylesheets specifically, <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a>.</p>
 
 <h2 id="how-to-test-that-caching-works">How to test that caching works</h2>
 <ol>

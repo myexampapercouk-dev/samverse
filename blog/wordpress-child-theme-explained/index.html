@@ -250,7 +250,7 @@ add_action( 'wp_enqueue_scripts', function () {
 <li>Move added functions into the child's functions.php (or a plugin).</li>
 <li>Copy edited template files into the child at the same path.</li>
 </ul>
-<p>Only then update the parent. If you skip this step, the update deletes the edits and you are left rebuilding from memory, which is also why we ask for this during a <a href="/blog/website-handover-checklist/">website handover</a>.</p>
+<p>Only then update the parent. If you skip this step, the update deletes the edits and you are left rebuilding from memory, which is also why we ask for this during a <a href="/blog/website-ownership-checklist/">website handover</a>.</p>
 
 <h2 id="overriding-template-files">Overriding template files</h2>
 <p>To change a template, copy it from the parent to the same relative path in the child and edit the copy. For WooCommerce, copy files from the plugin's templates folder into a woocommerce folder in your child theme.</p>
@@ -269,7 +269,7 @@ add_action( 'wp_enqueue_scripts', function () {
 <h2 id="common-child-theme-problems-and-fixes">Common child theme problems and fixes</h2>
 <ul>
 <li><strong>"The parent theme is missing":</strong> the Template line does not match the parent folder name exactly, including case.</li>
-<li><strong>Styles not changing:</strong> a cache or optimisation plugin is serving old CSS; clear it and bump the Version number in style.css. Our guide to <a href="/blog/wordpress-css-changes-not-showing/">CSS changes not showing</a> has more fixes.</li>
+<li><strong>Styles not changing:</strong> a cache or optimisation plugin is serving old CSS; clear it and bump the Version number in style.css. Our guide to <a href="/blog/wordpress-changes-not-showing/">CSS changes not showing</a> has more fixes.</li>
 <li><strong>White screen after activation:</strong> a PHP error in functions.php, often a missing semicolon or a duplicate function name. Rename the child folder by FTP to fall back to the parent, then fix the code.</li>
 <li><strong>Layout looks broken:</strong> parent styles are not loading, or loading twice; check the enqueue code against the theme's documentation.</li>
 </ul>
