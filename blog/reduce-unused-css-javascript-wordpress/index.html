@@ -43,7 +43,7 @@
       "headline": "How to Reduce Unused CSS and JavaScript in WordPress: Find the Culprits and Fix Them Safely",
       "description": "How to reduce unused CSS and JavaScript in WordPress: find which plugins load files, unload them per page, delay scripts safely and test on mobile.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-28",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/reduce-unused-css-javascript-wordpress/",
       "image": "https://samverse.space/assets/og/blog-reduce-unused-css-javascript-wordpress.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Reduce%20Unused%20CSS%20and%20JavaScript%20in%20WordPress%3A%20Find%20the%20Culprits%20and%20Fix%20Them%20Safely%20https%3A%2F%2Fsamverse.space%2Fblog%2Freduce-unused-css-javascript-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,8 @@
               <li><a href="#a-worked-example-a-typical-small-business-site">A worked example: a typical small business site</a></li>
               <li><a href="#when-to-rebuild-instead-of-patching">When to rebuild instead of patching</a></li>
               <li><a href="#a-note-on-shopify">A note on Shopify</a></li>
+              <li><a href="#quick-check-how-much-unused-code-loads">Quick check: how much unused code loads?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -248,6 +250,16 @@
 <h2 id="a-note-on-shopify">A note on Shopify</h2>
 <p>Shopify stores see the same warnings, usually from apps that inject scripts on every page and from leftover code of uninstalled apps. The fix follows the same logic: remove apps you do not use, check the theme for leftover snippets and choose a lean theme. See the <a href="/blog/shopify-store-slow-fix/">Shopify store slow fix</a> guide for details.</p>
 
+<h2 id="quick-check-how-much-unused-code-loads">Quick check: how much unused code loads?</h2>
+<ol>
+<li><strong>Use Coverage:</strong> in Chrome press F12, then Ctrl+Shift+P, type "Coverage" and reload the page. The red part of each bar is code that was not used.</li>
+<li><strong>Read PageSpeed:</strong> run the page through PageSpeed Insights and open "Reduce unused CSS" and "Reduce unused JavaScript". Note which files cost the most.</li>
+<li><strong>Find the source:</strong> match each file path to a plugin folder, such as <code>/wp-content/plugins/plugin-name/</code>, to see which plugin loads it.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when removing code breaks menus or forms, when a page builder loads most of the unused code, or when scores stay red after trying plugins. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> removes unused code safely with testing, and <a href="/elementor-developer/">Elementor development</a> helps with builder-heavy sites. <a href="/#contact">Get in touch</a> with your page URL.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I reduce unused CSS and JavaScript in WordPress?</h3>
 <p>Remove plugins you do not need, unload plugin files on pages that do not use them, delay non-essential scripts, generate critical CSS and use your theme or builder's performance settings, testing after each change.</p>
@@ -259,8 +271,6 @@
 <p>Usually for chat, analytics and social widgets. Delaying menu, form or checkout scripts can break them, so exclude those and test.</p>
 <h3>Does reducing unused JavaScript help Core Web Vitals?</h3>
 <p>It often helps, especially responsiveness and loading on slower phones, but results depend on what else is slowing the page.</p>
-
-<p>If you want unused CSS and JavaScript reduced without breaking your site, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a wider review. Pune businesses can start from <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -304,6 +314,8 @@
               <li><a href="#a-worked-example-a-typical-small-business-site">A worked example: a typical small business site</a></li>
               <li><a href="#when-to-rebuild-instead-of-patching">When to rebuild instead of patching</a></li>
               <li><a href="#a-note-on-shopify">A note on Shopify</a></li>
+              <li><a href="#quick-check-how-much-unused-code-loads">Quick check: how much unused code loads?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -13825,7 +13825,7 @@ function my_only_free_shipping( $rates ) {
     title: 'WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which',
     description: 'WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-website-development'],
     body: `
@@ -13921,6 +13921,16 @@ wp cap list editor</code></pre>
   <li>Treat any administrator nobody recognises as a sign the site may be compromised. Note its details before deleting it, because the registration date can show when the break-in happened.</li>
 </ul>
 
+<h2>Quick check: who can change your site right now</h2>
+<ol>
+<li><strong>List administrators:</strong> in wp-admin go to <em>Users</em> and click the <em>Administrator</em> filter above the table. Every name there can install plugins and delete content, so remove or downgrade anyone who no longer works on the site.</li>
+<li><strong>Check for unknown accounts:</strong> sort <em>Users</em> by the <em>Registered</em> date (or scan the list for addresses you don't recognise). A new admin you never created is a common sign of a hacked site.</li>
+<li><strong>Test a staff login:</strong> open a private browser window, log in as an Editor or Shop Manager and confirm they can reach the screens they need and nothing more.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you find an administrator nobody recognises, when a plugin has added roles you don't understand, or when staff keep getting "not allowed" errors. <a href="/wordpress-maintenance/">WordPress maintenance</a> includes an access review alongside updates and backups, and <a href="/wordpress-malware-removal/">hacked site cleanup</a> covers removing rogue accounts and closing the hole they came through. Send your user list (names and roles only, never passwords) and <a href="/#contact">get in touch</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between an Editor and an Author in WordPress?</h3>
 <p>An Author can write, publish and edit only their own posts, and can't touch pages. An Editor can publish and edit every post and page on the site, including other people's, and moderate comments. Give Author to writers and Editor to whoever manages the site's content.</p>
@@ -13934,8 +13944,6 @@ wp cap list editor</code></pre>
 <p>As few as possible. For most small businesses that's the owner plus the developer or maintenance provider currently looking after the site. Every extra admin account is another password that could leak.</p>
 <h3>Why can't a user see a menu they need?</h3>
 <p>Their role probably lacks the capability for that screen, or a plugin has hidden the menu. Check the role first. If an Administrator is missing menus or sees "Sorry, you are not allowed to access this page", see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">fixing missing dashboard menus</a>.</p>
-
-<p>Want someone to keep an eye on who can get into your site? Reviewing administrator access is part of the health check that starts my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, followed by updates, off-site backups and security scans every month. If you've found an administrator account nobody can explain, treat it as a possible hack and see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -19923,7 +19931,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
     title: 'How to Move From Blogger to WordPress Step by Step: Export, Import, Images, Permalinks, Redirects, Custom Domain and SEO Checks',
     description: 'Move from Blogger to WordPress step by step: export and import posts, move images, keep or redirect Blogger URLs, switch your domain and check SEO.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -20040,6 +20048,16 @@ Target:  https://example.com/$1/</code></pre>
 <h2>After the move</h2>
 <p>Add back analytics, ads and email sign-up forms, set up caching, backups and security, and keep your Blogger backup file. Rankings can move for a few weeks while Google recrawls; a steady fall on particular posts usually points to a missing redirect or changed content on those posts.</p>
 
+<h2>Quick check: is your Blogger move complete?</h2>
+<ol>
+<li><strong>Compare post counts:</strong> in Blogger open <em>Posts</em> and note the total; in WordPress open <em>Posts, All Posts</em>. The numbers should match before you point the domain anywhere.</li>
+<li><strong>Check images are local:</strong> open three old posts on the WordPress site, right-click an image and copy its address. If it still starts with <code>blogger.googleusercontent.com</code> or <code>bp.blogspot.com</code>, the images were not imported.</li>
+<li><strong>Test old URLs:</strong> paste five old Blogger links, such as <code>/2021/05/post-name.html</code>, into the browser. Each should land on the matching WordPress post with a 301, which you can confirm in Google Search Console with <em>URL Inspection</em>.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the blog earns traffic you can't afford to lose, when you have hundreds of posts with images, or when a custom domain is involved. <a href="/wordpress-migration/">Website migration</a> covers the import, image transfer and redirect mapping, and <a href="/wordpress-seo-services/">WordPress SEO services</a> can follow up on rankings after the move. Send your Blogger address and post count and <a href="/#contact">get in touch</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Will I lose my Google rankings moving from Blogger to WordPress?</h3>
 <p>Not if you keep your custom domain and match or redirect every old URL. Short-term movement is normal. Blogs on blogspot.com face more risk, because they can't use server redirects.</p>
@@ -20051,8 +20069,6 @@ Target:  https://example.com/$1/</code></pre>
 <p>No. Keep the backup file and, for a blogspot.com address, keep the blog published so its redirects and links keep working.</p>
 <h3>What happens to AdSense when I move to WordPress?</h3>
 <p>You add the ad code to the new site, check the site is listed correctly in your AdSense account, and add an ads.txt file if needed. Check AdSense's current requirements for the new setup.</p>
-
-<p>Want your Blogger blog moved without losing posts, images or rankings? My <a href="/wordpress-migration/">website migration</a> service imports and checks your content on staging, keeps or redirects every old URL, moves your domain with email records intact, and keeps your Blogger blog live until the new site is proven. Send me your blog address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -22045,7 +22061,7 @@ Zoho Mail (India): v=spf1 include:zoho.in ~all</code></pre>
     title: 'Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest',
     description: 'Website speed test tools explained: how to read a PageSpeed test, lab vs field data, why scores vary, and when to use Lighthouse, GTmetrix or WebPageTest.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -22143,6 +22159,16 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <h2>Don't chase a score of 100</h2>
 <p>A perfect lab score isn't the goal. A page that passes Core Web Vitals for real visitors, loads quickly on mobile data and turns visitors into enquiries is. Chasing the last few points often means removing analytics, chat or features the business actually needs.</p>
 
+<h2>Quick check: test your site properly</h2>
+<ol>
+<li><strong>Run PageSpeed Insights:</strong> test your homepage at pagespeed.web.dev and look first at the "Discover what your real users are experiencing" section, which uses real user data if your site has enough traffic.</li>
+<li><strong>Check Search Console:</strong> open <em>Experience, Core Web Vitals</em> in Google Search Console to see which URL groups are Poor or Need improvement.</li>
+<li><strong>Test the slowest page:</strong> run your most visited product or service page, not only the homepage, and compare mobile and desktop.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when scores stay red after caching plugins, when real-user data and lab scores disagree, or when you can't tell whether hosting, plugins or images are the cause. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> finds and fixes the cause, <a href="/website-redesign/">website redesign</a> helps when the theme is the problem, and <a href="/wordpress-seo-services/">WordPress SEO services</a> links speed to rankings. <a href="/#contact">Get in touch</a> with your URL.</p>
+
 <h2>FAQs</h2>
 <h3>What is a PageSpeed test?</h3>
 <p>Usually it means running a page through Google's PageSpeed Insights, which reports real-user Core Web Vitals from the Chrome UX Report and runs a Lighthouse lab test with a 0 to 100 performance score and suggested fixes.</p>
@@ -22156,8 +22182,6 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Lighthouse treats 90 and above as good, but passing the Core Web Vitals assessment in the field data matters more. A site that feels fast to real visitors and passes Core Web Vitals can still score in the 70s or 80s on the mobile lab test.</p>
 <h3>Does PageSpeed score affect Google rankings?</h3>
 <p>Not directly. Google uses Core Web Vitals from real-user data as part of its page experience signals, not the lab score. Speed alone won't rank a page, but a slow site can hold good content back.</p>
-
-<p>Got a red score and not sure what's actually causing it? I find out whether it's hosting, plugins, the theme, images or scripts, fix it safely and share a before-and-after PageSpeed Insights report; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -25298,7 +25322,7 @@ HTTP/2 404</code></pre>
     title: 'WordPress Comments: Should a Business Website Enable Them? When to Keep or Disable Comments, Spam Control and Settings',
     description: 'Should a business website enable WordPress comments? When to keep or disable them, the exact settings, how to turn them off site-wide and stop comment spam.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-maintenance', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -25400,6 +25424,16 @@ HTTP/2 404</code></pre>
 
 <h2>Cleaning up years of old comment spam</h2>
 <p>Sites that left comments open for years can hold tens of thousands of spam and pending comments, which bloat the database and slow the admin. Empty the Spam and Trash folders from the Comments screen, then bulk delete pending comments you will never approve. On very large backlogs, WP-CLI can delete them in one go after a backup. Our <a href="/blog/wordpress-database-optimization/">WordPress database optimisation guide</a> covers the safe order for this and the related comment meta clean-up.</p>
+
+<h2>Quick check: what your comment settings do now</h2>
+<ol>
+<li><strong>Read Discussion settings:</strong> go to <em>Settings, Discussion</em> and note whether "Allow people to submit comments on new posts" is ticked and whether comments must be manually approved.</li>
+<li><strong>Check existing posts:</strong> open <em>Posts, All Posts</em>, tick all, choose <em>Edit</em> from Bulk actions and set Comments to Allow or Do not allow. The Discussion setting only affects new posts.</li>
+<li><strong>Count spam:</strong> open <em>Comments</em> and look at the Spam and Pending counts. A pile of pending spam means the form is a target and needs Akismet, a CAPTCHA or closing.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when spam keeps getting through, when old comments contain links you don't want on the site, or when you want to keep useful comments while closing the rest. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers comment settings, spam filtering and cleanup, and <a href="/wordpress-seo-services/">WordPress SEO services</a> can review whether comment threads help or hurt your posts. <a href="/#contact">Get in touch</a> with your post count and the spam count.</p>
 
 <h2>FAQs</h2>
 <h3>How do I disable comments in WordPress?</h3>
@@ -28096,7 +28130,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely',
     description: 'WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -28201,6 +28235,16 @@ wp db optimize</code></pre>
 
 <h2>What transients are, in plain words</h2>
 <p>Transients are temporary cached values plugins store in the database, such as a social feed or an API response, each with an expiry time. Expired ones should be removed automatically, but on sites where WordPress cron does not run reliably they pile up. Deleting expired transients is always safe; deleting active ones is also safe in principle because plugins rebuild them, but it causes a short burst of slower pages while they are recreated.</p>
+
+<h2>Quick check: how heavy is your database?</h2>
+<ol>
+<li><strong>Check the size:</strong> go to <em>Tools, Site Health, Info</em> and open the <em>Database</em> and <em>Directories and Sizes</em> sections to see the total database size.</li>
+<li><strong>Look at autoloaded options:</strong> in phpMyAdmin (from your hosting panel), run <code>SELECT SUM(LENGTH(option_value)) FROM wp_options WHERE autoload IN ('yes','on');</code>. Change <code>wp_</code> to your table prefix. A result well over 1 MB is worth looking into.</li>
+<li><strong>Count revisions:</strong> in the same SQL tab run <code>SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';</code>. Thousands of revisions on a small site means cleanup will help.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the database is several hundred megabytes, when a WooCommerce store has years of orders and sessions, or when you are unsure which tables belong to plugins you removed. Always take a backup first. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> includes database cleanup with before and after timings, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps it tidy each month. <a href="/#contact">Get in touch</a> with your database size from Site Health.</p>
 
 <h2>FAQs</h2>
 <h3>How do I optimise my WordPress database?</h3>
@@ -28354,7 +28398,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'WordPress Form Plugins Compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms Side by Side',
     description: 'WordPress form plugins compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms on entries, spam, SMTP, uploads and logic.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'landing-page-design', 'elementor-developer'],
     body: `
@@ -28458,6 +28502,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>A note on custom forms</h2>
 <p>Not every site needs a plugin. This website, samverse.space, isn't built on WordPress: it's custom-coded and hosted on Hostinger, and its contact form uses a small PHP script on the server to email each enquiry, then opens WhatsApp with the same details typed in. Spam is handled by a hidden honeypot field, a simple addition question and a check that drops anything sent within seconds of the page loading. The <a href="/work/samverse/">Samverse case study</a> explains the setup. On a WordPress site, a well-configured plugin is usually the simpler choice.</p>
 
+<h2>Quick check: do your forms actually deliver?</h2>
+<ol>
+<li><strong>Submit a real test:</strong> fill in your contact form from a phone using a Gmail address and a real message. Note the time.</li>
+<li><strong>Check the entry and the email:</strong> open your form plugin's Entries screen (for example <em>WPForms, Entries</em> or <em>Contact, Flamingo</em> for Contact Form 7) and confirm the test is saved, then check the notification inbox and its spam folder.</li>
+<li><strong>Confirm SMTP:</strong> if the email is missing or in spam, install an SMTP plugin such as WP Mail SMTP and use its <em>Email Test</em> tab. Mail sent through your host's PHP mail often fails.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when leads have gone missing, when you need conditional logic, payments or CRM syncing, or when your form plugin is slowing pages. <a href="/wordpress-website-development/">WordPress website development</a> sets up forms with SMTP and tests delivery, and <a href="/landing-page-design/">landing page design</a> covers lead forms for ads. <a href="/#contact">Get in touch</a> with the plugin you use and what happens when you submit a test.</p>
+
 <h2>FAQs</h2>
 <h3>Which WordPress form plugin is free?</h3>
 <p>Contact Form 7 is entirely free, and Fluent Forms and WPForms have free versions with paid upgrades. Gravity Forms is paid only, and Elementor Forms comes with Elementor Pro. What each free version includes changes, so check the current feature lists.</p>
@@ -28469,8 +28523,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>No. The form widget is a Pro feature. On free Elementor, add a form plugin and place its form on the page with a shortcode or the plugin's own widget.</p>
 <h3>Will a form plugin slow my website down?</h3>
 <p>A single form plugin rarely makes a noticeable difference if it loads its scripts only on pages with forms. Check this after installing, and don't keep two form plugins active for the same job.</p>
-
-<p>Want forms that reach you every time? Every site built through <a href="/wordpress-website-development/">WordPress website development</a> launches with tested forms, email delivery, spam protection and a WhatsApp button. For campaign forms with conversion tracking, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -30237,7 +30289,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Returns and Refunds for WooCommerce Stores in India: Writing the Policy, Processing Refunds, COD Refunds and RTO',
     description: 'How to write a WooCommerce returns and refunds policy for an Indian store: what to cover, where to show it, COD refunds, partial refunds and fewer returns.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups', 'wordpress-website-development'],
     body: `
@@ -30328,6 +30380,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>A monthly look at return reasons by product, so recurring problems get fixed at the source.</li>
 </ul>
 
+<h2>Quick check: is your returns policy visible and working?</h2>
+<ol>
+<li><strong>Find the page:</strong> check your footer and checkout for a link to the returns and refunds page. Go to <em>Settings, Privacy</em> and <em>WooCommerce, Settings, Advanced</em> to confirm the right pages are set for terms and privacy.</li>
+<li><strong>Test a refund:</strong> on a test order, open <em>WooCommerce, Orders</em>, click the order, press <em>Refund</em>, enter a small amount and choose manual or gateway refund. Confirm the customer email arrives.</li>
+<li><strong>Check the gateway:</strong> in your payment gateway dashboard (Razorpay, PayU, Stripe and so on), confirm the refund shows and note how many days it takes to reach the customer.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when refunds made in WooCommerce aren't reaching the gateway, when you need partial returns or exchanges, or when your policy and checkout terms don't match. <a href="/woocommerce-developer/">WooCommerce development</a> covers refund flows, order emails and policy pages, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps the gateway plugin updated. <a href="/#contact">Get in touch</a> with your gateway name and a description of the issue.</p>
+
 <h2>FAQs</h2>
 <h3>Is a returns and refunds policy mandatory for online stores in India?</h3>
 <p>The e-commerce rules generally expect online sellers to display return, refund, exchange and complaint information clearly, and payment gateways usually check for a refund policy. Ask a lawyer what applies to your business.</p>
@@ -30341,8 +30403,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>You can set a different exchange or return rule for sale items if you state it clearly before purchase, but faulty, damaged or wrongly sent items still need putting right. Check the current rules for your category.</p>
 <h3>How do I write a WooCommerce returns and refunds policy?</h3>
 <p>List which products can be returned or exchanged, the time window from delivery, the condition required, how to request a return, who pays return shipping and how and when refunds are paid, including for COD orders. Publish it as a page, link it from the footer, product pages and checkout, and ask a lawyer to check it against current consumer rules.</p>
-
-<p>Want returns, refunds and order emails set up properly on your store? Through <a href="/woocommerce-developer/">WooCommerce development</a>, I set up payments, COD rules, shipping and order emails, test them with real orders, and show you how to process orders and issue refunds on a training call. Send me what you sell for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -30503,7 +30563,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop',
     description: 'WooCommerce inventory management step by step: stock settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-manufacturers', 'wordpress-maintenance'],
     body: `
@@ -30602,6 +30662,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 <p>A clear daily routine for orders helps keep stock right too; see <a href="/blog/woocommerce-order-management-workflow/">a WooCommerce order management workflow</a>.</p>
 
+<h2>Quick check: does your stock count match reality?</h2>
+<ol>
+<li><strong>Confirm stock settings:</strong> go to <em>WooCommerce, Settings, Products, Inventory</em> and check that "Enable stock management" is ticked, with a low stock threshold you will actually act on.</li>
+<li><strong>Spot-check five products:</strong> open <em>Products, All Products</em>, look at the Stock column and compare five items with what is physically on your shelves.</li>
+<li><strong>Test the hold time:</strong> note the "Hold stock (minutes)" value on the same settings screen. Place an unpaid test order and check that stock returns after that time once the order is cancelled.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when stock is wrong after orders, when you sell on several channels or from a warehouse system, or when variations each need their own stock. <a href="/woocommerce-developer/">WooCommerce development</a> covers stock rules, syncing and testing, <a href="/website-for-manufacturers/">manufacturer websites</a> cover catalogues tied to production, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps inventory plugins updated. <a href="/#contact">Get in touch</a> with your product count and where stock is recorded today.</p>
+
 <h2>FAQs</h2>
 <h3>How do I manage stock in WooCommerce?</h3>
 <p>Turn on Manage stock under WooCommerce, Settings, Products, Inventory, then open each product, tick Manage stock on its Inventory tab and enter the quantity and a SKU. Set the low-stock threshold and notification email so you know when to reorder.</p>
@@ -30615,8 +30685,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Only if you manage suppliers, purchase orders or several warehouses. For most small stores, WooCommerce's built-in stock management, the Stock report and low-stock emails are enough.</p>
 <h3>What does WooCommerce inventory management cover?</h3>
 <p>It covers stock quantities per product and variation, SKUs, low-stock and out-of-stock thresholds, backorder rules and stock emails. Bundles need care, because each item inside a bundle should reduce its own stock; see <a href="/blog/woocommerce-product-bundles-upsells/">product bundles and upsells</a>. Before launch, test a few orders end to end as part of a <a href="/blog/woocommerce-store-launch-checklist/">store launch checklist</a>.</p>
-
-<p>Need a store with stock, payments and shipping set up properly? See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -35483,7 +35551,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors',
     description: 'WordPress file permissions explained: 644 for files, 755 for folders, 600 or 440 for wp-config.php, why 777 is dangerous and how to fix permission errors.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -35579,6 +35647,16 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 </ul>
 <p>If you are not comfortable running commands on a live site, note the error, take a backup and ask your host's support or a developer to correct ownership.</p>
 
+<h2>Quick check: are your permissions sensible?</h2>
+<ol>
+<li><strong>Look in the file manager:</strong> in your hosting panel's File Manager, open your site folder and read the Permissions column. Folders should usually show 755 and files 644.</li>
+<li><strong>Check wp-config.php:</strong> find <code>wp-config.php</code> and confirm it is 640 or 600 (or 644 if your host requires it), never 777.</li>
+<li><strong>Run Site Health:</strong> go to <em>Tools, Site Health, Info, Filesystem Permissions</em>. It shows whether WordPress can write to the folders it needs, such as uploads and plugins.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you see 777 permissions anywhere, when updates fail with "could not create directory", or when files keep changing after a cleanup. <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers permission and ownership fixes after a hack, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps an eye on file changes, and <a href="/wordpress-migration/">website migration</a> sets ownership correctly on a new server. <a href="/#contact">Get in touch</a> with the error message you see.</p>
+
 <h2>FAQs</h2>
 <h3>What are the correct file permissions for WordPress?</h3>
 <p>755 for folders, 644 for files and 600 or 440 for wp-config.php, with all files owned by your hosting account's user. Some servers need wp-config.php at 640, so follow your host's advice if a stricter value causes an error.</p>
@@ -35592,8 +35670,6 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 <p>755 for the folder and its subfolders, and 644 for the files inside, with the right owner so WordPress can create the year and month folders. If uploads fail at 755, check ownership and disk space rather than opening the folder up.</p>
 <h3>Is chmod 777 ever okay?</h3>
 <p>Not on a live website. It lets anyone on the server change the file and is a common way malware spreads. Some servers also refuse to run PHP from world-writable folders, which causes 500 errors.</p>
-
-<p>Permission errors after an update, upload problems or a recent hack? I can check permissions, ownership and the security settings around them, and fix them without loosening anything; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -35602,7 +35678,7 @@ stat -c "%a %U %n" wp-config.php</code></pre>
     title: 'WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives',
     description: 'WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -35704,6 +35780,16 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 </ol>
 <p>Repeat these checks after major plugin changes or a move to new hosting, because new URLs and IP addresses can break rules quietly.</p>
 
+<h2>Quick check: is a firewall actually protecting you?</h2>
+<ol>
+<li><strong>Check for a cloud WAF:</strong> run <code>nslookup -type=ns yourdomain.com</code> or check your DNS settings. Nameservers at Cloudflare or a security provider mean traffic can pass through their firewall if it is switched on.</li>
+<li><strong>Check the plugin:</strong> in wp-admin, open your security plugin (for example <em>Wordfence, Firewall</em>) and confirm the status shows the firewall enabled and, for Wordfence, whether it is in learning or enabled and protecting mode.</li>
+<li><strong>Look at blocks:</strong> open the plugin's live traffic or blocked requests log, or the Security, Events screen in Cloudflare. Seeing blocked login attempts confirms it is working.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your site was hacked even with a firewall, when real customers are being blocked, or when login attacks are slowing the server. <a href="/wordpress-malware-removal/">WordPress malware removal</a> includes cleanup and firewall setup, <a href="/wordpress-maintenance/">WordPress maintenance</a> reviews blocks and updates rules, and <a href="/wordpress-speed-optimization/">speed optimisation</a> checks the firewall isn't adding delay. <a href="/#contact">Get in touch</a> with your security plugin name.</p>
+
 <h2>FAQs</h2>
 <h3>Do I need a firewall plugin if I use Cloudflare?</h3>
 <p>Not necessarily for blocking attacks, but a security plugin still helps with WordPress-aware jobs such as two-factor login, login limits and file-change alerts. Cloudflare plus one plugin is a common, sensible pairing.</p>
@@ -35718,8 +35804,6 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 
 <h3>Does a WordPress firewall stop all hacks?</h3>
 <p>No. It blocks many known attack patterns and slows down password guessing, but outdated plugins, weak passwords and stolen admin logins can still lead to a hack. Keep updates, backups and two-factor login in place alongside the firewall.</p>
-
-<p>Want a firewall set up properly after a hack, with logins locked down and nothing legitimate blocked? See <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep it monitored every month.</p>
 `,
   },
   {
@@ -36001,7 +36085,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     title: 'How to Set Up a WordPress Website on Hostinger, Step by Step: Plan, Domain, hPanel Install, SSL, PHP, LiteSpeed Cache, Backups, Email and Staging',
     description: 'Set up WordPress on Hostinger step by step: choose a plan, connect your domain, install in hPanel, then SSL, PHP, LiteSpeed Cache, backups, email and staging.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -36105,6 +36189,16 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   <li>Search Console and Google Analytics are connected to your own Google account.</li>
 </ol>
 
+<h2>Quick check: is your Hostinger setup finished?</h2>
+<ol>
+<li><strong>SSL:</strong> in hPanel open <em>Websites</em>, choose your site and go to <em>Security, SSL</em>. The certificate should show Active, and your site should load on <code>https://</code> with a padlock.</li>
+<li><strong>Backups:</strong> in hPanel go to <em>Files, Backups</em> and confirm a recent automatic backup exists. Note how far back they go on your plan.</li>
+<li><strong>PHP version:</strong> in <em>Advanced, PHP Configuration</em>, check the PHP version. Then compare with <em>Tools, Site Health</em> in wp-admin, which warns if it is out of date.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are moving an existing site onto Hostinger, when email and DNS need setting up at the same time, or when you want the site built properly rather than just installed. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and setup, <a href="/wordpress-migration/">website migration</a> moves an existing site without downtime, and <a href="/wordpress-maintenance/">WordPress maintenance</a> looks after updates afterwards. <a href="/#contact">Get in touch</a> with your domain and plan.</p>
+
 <h2>FAQs</h2>
 <h3>Is Hostinger good for WordPress?</h3>
 <p>It can run WordPress well, particularly small business sites, because its LiteSpeed servers work with the LiteSpeed Cache plugin. Whether it suits you depends on your traffic, whether you sell online and the plan's resources. I'm not ranking hosts; the checks in the hosting guide apply to any provider.</p>
@@ -36116,8 +36210,6 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <p>Usually not. LiteSpeed Cache works with the server's own cache, and a second page caching plugin tends to cause conflicts rather than extra speed.</p>
 <h3>Can you set up my WordPress site on Hostinger for me?</h3>
 <p>Yes. I can set up the hosting in your name, configure WordPress, SSL, caching, backups and email, then build the site.</p>
-
-<p>If you'd rather spend the time on your business than in hPanel, <a href="/wordpress-website-development/">WordPress website development</a> covers the setup above and the site itself: hosting in your name, your own administrator login, Search Console and Analytics connected, and a full backup at launch. Already on another host? <a href="/wordpress-migration/">WordPress migration</a> moves the site with a full backup first, DNS and SSL set up and your email records preserved.</p>
 `,
   },
   {
@@ -36710,7 +36802,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
     title: 'How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms',
     description: 'Set up Hostinger business email on your domain: create mailboxes in hPanel, add MX, SPF, DKIM and DMARC, connect phones and Outlook, and fix form emails.',
     date: '2026-09-28',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'website-for-startups'],
     body: `
@@ -36827,6 +36919,16 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>If customers report receiving spam "from you", act quickly; see <a href="/blog/wordpress-site-sending-spam-emails/">hosting accounts sending spam emails</a>.</li>
 </ul>
 
+<h2>Quick check: will your business email be delivered?</h2>
+<ol>
+<li><strong>Check MX records:</strong> run <code>nslookup -type=mx yourdomain.com</code>. The results should match the mail servers shown in hPanel under <em>Emails</em>, then your domain's DNS details.</li>
+<li><strong>Check SPF and DKIM:</strong> in hPanel <em>Domains, DNS / Nameservers</em>, look for a TXT record starting <code>v=spf1</code> and the DKIM records Hostinger lists. Only one SPF record should exist.</li>
+<li><strong>Send a test:</strong> send an email from your new address to a Gmail account, open it, choose <em>Show original</em> and confirm SPF, DKIM and DMARC say PASS.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when emails land in spam, when your website forms send from the wrong address, or when you are moving mailboxes from another provider. <a href="/wordpress-website-development/">WordPress website development</a> includes email and SMTP setup for forms, <a href="/wordpress-maintenance/">WordPress maintenance</a> covers delivery problems later, and <a href="/website-for-startups/">startup websites</a> bundle domain and email setup. <a href="/#contact">Get in touch</a> with your domain.</p>
+
 <h2>FAQs</h2>
 <h3>Is Hostinger business email free?</h3>
 <p>Some Hostinger hosting plans have included mailboxes, sometimes free for a limited period, while others need a paid email plan. Offers change often, so check what hPanel lists for your plan and when it renews.</p>
@@ -36838,8 +36940,6 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
 <p>Yes. Add it as an "Other" account over IMAP in the Gmail app on Android or iPhone, and you can read and send as your business address alongside your personal Gmail.</p>
 <h3>Can my website be on Hostinger and my email on Google Workspace?</h3>
 <p>Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too.</p>
-
-<p>Need a website whose forms reliably reach your inbox? Contact forms and WhatsApp buttons come with every site I build through <a href="/wordpress-website-development/">WordPress website development</a>, tested before launch so the emails arrive. If you are moving an existing site and its email to new hosting, see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -37553,7 +37653,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Premium WordPress Themes: What to Know Before You Buy, From Licences and Bundled Plugins to Support, Demo Bloat and When a Custom Build Is Better',
     description: 'Premium WordPress themes explained: where to buy, licences and updates, bundled plugins, demo bloat, support, nulled copies and when to go custom.',
     date: '2026-09-28',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'elementor-developer', 'wordpress-maintenance'],
     body: `
@@ -37653,6 +37753,16 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>A custom build tends to be the better choice when you'd spend weeks bending a theme to match a design, override most of its templates, or switch off most of its features. <a href="/blog/custom-wordpress-theme-development/">Custom WordPress theme development</a> explains when that extra build time pays off.</p>
 <p>Whichever you choose, put any code changes in a child theme rather than the theme's own files, so updates don't wipe them out; <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how.</p>
 
+<h2>Quick check: is your current theme a problem?</h2>
+<ol>
+<li><strong>Check updates:</strong> go to <em>Appearance, Themes</em> and see when your theme was last updated on the seller's page. Over a year without updates is a warning sign.</li>
+<li><strong>Check bundled plugins:</strong> go to <em>Plugins, Installed Plugins</em> and look for plugins that came with the theme. Note whether they show updates or are stuck on old versions.</li>
+<li><strong>Check speed:</strong> run your homepage through PageSpeed Insights on mobile. A heavy theme often shows large CSS and JavaScript files.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your theme is no longer supported, when bundled plugins can't be updated, or when you're choosing between a premium theme and a custom build. <a href="/wordpress-website-development/">WordPress website development</a> covers theme choice and setup, <a href="/elementor-developer/">Elementor development</a> helps with builder themes, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps themes updated. <a href="/#contact">Get in touch</a> with your theme name.</p>
+
 <h2>FAQs</h2>
 <h3>Are premium WordPress themes worth it?</h3>
 <p>Sometimes. A premium theme is worth paying for when it provides features you need, such as directory listings or a magazine layout, and comes with regular updates and responsive support. For a typical business site, a free lightweight theme with a page builder often does the job just as well.</p>
@@ -37664,8 +37774,6 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>The site keeps working at first, but over time it may clash with newer WordPress or PHP versions, and any security holes stay open. Plan a move to a maintained theme before that happens, testing it on a staging copy first.</p>
 <h3>Can I switch away from a premium theme later?</h3>
 <p>Yes, and your posts and pages stay. Anything the theme controlled, such as its own shortcodes, page layouts, sliders or portfolio items, may break or disappear. The less of your content depends on the theme, the easier the switch.</p>
-
-<p>Not sure whether a premium theme, a lightweight theme or a custom build suits your site? My <a href="/wordpress-website-development/">WordPress website development</a> service includes choosing the right base, with every licence bought in your name. If you're building with Elementor, my <a href="/elementor-developer/">Elementor development</a> service sets up the theme, global styles and templates properly.</p>
 `,
   },
   {
@@ -37674,7 +37782,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'How to Update a Premium WordPress Theme Safely: Licences, ZIP Uploads, Bundled Plugins and Keeping Your Customisations',
     description: 'How to update a premium WordPress theme safely: licence updates or ZIP upload, backup, staging, child themes, bundled plugins and fixing a broken update.',
     date: '2026-09-28',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'website-redesign'],
     body: `
@@ -37771,6 +37879,16 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <h2>When the theme is abandoned or the licence has expired</h2>
 <p>If the theme hasn't been updated in a long time, doesn't support current PHP versions, or the vendor has disappeared, updating isn't an option and the risk grows every month. Renew the licence if the theme is still maintained. If not, the choice is between moving to a well-maintained, lightweight theme while keeping your design, or a planned <a href="/website-redesign/">website redesign</a>. Whatever you do, don't download "free" copies of the theme from unofficial sites: those nulled copies are a common source of malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
 
+<h2>Quick check: is your theme safe to update?</h2>
+<ol>
+<li><strong>Check the version:</strong> go to <em>Appearance, Themes</em>, click your theme and note the version. Compare it with the latest version on the theme seller's changelog.</li>
+<li><strong>Look for direct edits:</strong> if your active theme is not a child theme, ask whether anyone edited its files. <em>Appearance, Theme File Editor</em> shows the files, and FTP shows last-modified dates that are newer than the theme release.</li>
+<li><strong>Back up and stage:</strong> take a full backup (files and database) and, if your host offers it, create a staging copy from the hosting panel. Update there first and click through key pages.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the theme is years behind, when its bundled plugins such as a slider or page builder also need updates, or when you can't tell whether files were edited. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers staged updates and testing, <a href="/website-redesign/">website redesign</a> helps when the theme is no longer supported, and <a href="/wordpress-malware-removal/">malware removal</a> handles sites infected through old theme code. <a href="/#contact">Get in touch</a> with the theme name and version.</p>
+
 <h2>FAQs</h2>
 <h3>How do I update a premium WordPress theme without losing customisations?</h3>
 <p>Make sure your customisations live in a child theme, the Customizer or the theme's own settings, not in the parent theme's files. Settings stored in the database survive updates; direct edits to theme files don't. Back up, then update.</p>
@@ -37782,8 +37900,6 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>Without an active licence you won't get automatic updates, and some vendors also stop downloads. If you still have access to the account that bought it, you may be able to download the latest version manually. Never use a nulled copy from an unofficial site.</p>
 <h3>Do I need to update the bundled plugins separately?</h3>
 <p>Usually yes. Bundled plugins update through the theme, typically from a plugins screen the theme adds, after the theme itself is updated. Check them every time you update the theme.</p>
-
-<p>Theme years out of date and worried an update will break the site? I can move any direct edits into a child theme, update the theme and its bundled plugins on staging, and test everything before it goes live; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -37944,7 +38060,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
     title: 'Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It\'s Built',
     description: 'Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.',
     date: '2026-09-28',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-developer-for-agencies'],
     body: `
@@ -38058,6 +38174,16 @@ function acme_dealer_price( $price, $product ) {
   <li>Can you show me a plugin or feature you've built before?</li>
 </ol>
 
+<h2>Quick check: do you really need a custom plugin?</h2>
+<ol>
+<li><strong>Search the plugin directory:</strong> go to <em>Plugins, Add New</em> and search for the feature. Check the plugins' active installs and last updated date.</li>
+<li><strong>Check for code snippets:</strong> look in your theme's <code>functions.php</code> or a code snippets plugin for custom code that could belong in a plugin.</li>
+<li><strong>List requirements:</strong> write down who uses the feature, what data it stores and what it connects to. This decides whether a plugin, a snippet or a custom build fits.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when no plugin does what you need, when custom code sits in your theme and would be lost on update, or when you need WordPress connected to another system. <a href="/wordpress-website-development/">WordPress website development</a> covers custom plugins, <a href="/woocommerce-developer/">WooCommerce development</a> covers store extensions, and <a href="/wordpress-developer-for-agencies/">agency development</a> covers white-label work. <a href="/#contact">Get in touch</a> with a short description of the feature.</p>
+
 <h2>FAQs</h2>
 <h3>What is custom WordPress plugin development?</h3>
 <p>It's writing a plugin specifically for your website, rather than installing a ready-made one from WordPress.org or a marketplace. The plugin adds features your business needs, such as pricing rules, calculators or integrations, using WordPress's own hooks and APIs so it keeps working when WordPress updates.</p>
@@ -38071,8 +38197,6 @@ function acme_dealer_price( $price, $product ) {
 <p>Yes. Dealer and wholesale pricing by user role, quantity discounts, customer-specific price lists and minimum order quantities are common requests. First check whether an established pricing plugin covers your rules; if it gets close, a small add-on can be cheaper than building from scratch.</p>
 <h3>Do you build bespoke plugins for clients outside India?</h3>
 <p>Yes. I work with clients and agencies in other countries over WhatsApp, email and video calls, and the process is the same: a written scope, a fixed quote, staging, then launch.</p>
-
-<p>Have a feature that no plugin quite handles? Send me what it should do and who will use it, and I'll tell you honestly whether you need custom code or an existing plugin. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or for store features, <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -38081,7 +38205,7 @@ function acme_dealer_price( $price, $product ) {
     title: 'WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)',
     description: 'A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'elementor-developer'],
     body: `
@@ -38190,6 +38314,16 @@ add_action( 'wp_enqueue_scripts', function () {
 
 <h2>Back up the child theme separately</h2>
 <p>Most backup plugins include the themes folder, but check that yours does. Also keep a downloaded copy of the child theme folder, or better, keep it in Git, so that if the site is ever hacked or rebuilt, your customisations can be restored in minutes instead of being recreated from scratch.</p>
+
+<h2>Quick check: do you need a child theme?</h2>
+<ol>
+<li><strong>See what is active:</strong> go to <em>Appearance, Themes</em>. If the active theme's description says it is a child of another theme, you already have one.</li>
+<li><strong>Check for edits:</strong> open <em>Appearance, Theme File Editor</em> (or the theme folder via your file manager) and look for custom code in <code>functions.php</code> or <code>style.css</code> of the parent theme. Those edits will be lost on update.</li>
+<li><strong>Check where CSS lives:</strong> look in <em>Appearance, Customize, Additional CSS</em>. CSS saved there survives theme updates, so small style tweaks may not need a child theme at all.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when someone has edited the parent theme directly, when you need template changes beyond CSS, or when switching to a child theme might reset your Customizer settings. <a href="/wordpress-website-development/">WordPress website development</a> covers clean child theme setup, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps theme updates safe, and <a href="/elementor-developer/">Elementor development</a> helps with page-builder themes. <a href="/#contact">Get in touch</a> with your theme name.</p>
 
 <h2>FAQs</h2>
 <h3>What is a child theme in WordPress?</h3>
@@ -45286,7 +45420,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Selling Subscriptions With WooCommerce in India: Plugins, Recurring Payments, Billing Cycles, Trials, Pausing and Retention',
     description: 'How to sell subscriptions with WooCommerce in India: plugin options, recurring payments and e-mandates, billing cycles, trials, pausing and cancelling.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
@@ -45410,6 +45544,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Explain how to pause, cancel or switch, and your refund rules for renewals; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a>.</li>
 </ul>
 
+<h2>Quick check: will renewals actually charge?</h2>
+<ol>
+<li><strong>Check the gateway:</strong> go to <em>WooCommerce, Settings, Payments</em> and confirm your gateway supports automatic recurring payments. If not, renewals will go out as manual invoices.</li>
+<li><strong>Check scheduled actions:</strong> open <em>Tools, Scheduled Actions</em> and search for <code>woocommerce_scheduled_subscription_payment</code>. Pending actions should show the right dates; failed ones need attention.</li>
+<li><strong>Run a test renewal:</strong> on a test subscription, open <em>WooCommerce, Subscriptions</em>, edit it and choose <em>Process renewal</em> from Subscription actions. Confirm the order, payment and email.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when renewals fail, when customers are charged twice, or when your Indian gateway needs mandates for recurring payments. <a href="/woocommerce-developer/">WooCommerce development</a> covers subscription setup and renewal testing, and <a href="/website-for-startups/">startup websites</a> can include subscription plans from launch. <a href="/#contact">Get in touch</a> with your gateway and plugin name.</p>
+
 <h2>FAQs</h2>
 <h3>Does WooCommerce support subscriptions without a plugin?</h3>
 <p>No. WooCommerce sells one-off products out of the box. Recurring billing needs a subscription plugin, although a prepaid pack can be sold as a normal product.</p>
@@ -45423,8 +45567,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Each renewal is a new order, so set your invoice plugin to create one for renewals too. Ask your CA to confirm the rates and format for your products.</p>
 <h3>How do I set up WooCommerce subscriptions in India?</h3>
 <p>Install a subscription plugin, create a subscription product with its billing cycle, trial and sign-up fee, then connect a payment gateway whose WooCommerce integration supports automatic renewals with that plugin. Test sign-up, renewal, a failed payment and a cancellation before launch, and check current mandate rules with your gateway.</p>
-
-<p>Planning a subscription store, or adding recurring plans to an existing one? My <a href="/woocommerce-developer/">WooCommerce development</a> service covers the plugin, gateway, renewal emails and test orders, set up and tested before launch. Launching a new subscription brand? See <a href="/website-for-startups/">websites for startups</a>.</p>
 `,
   },
   {
@@ -46596,7 +46738,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website',
     description: 'Third-party scripts slowing your website? Find which chat widgets, pixels and embeds cost most, then remove, delay or replace them on WordPress or Shopify.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'landing-page-design'],
     body: `
@@ -46698,6 +46840,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Scripts usually accumulate because each one was useful to someone at the time. Agree a short rule with your marketing team or agency: every new script needs an owner, a purpose and an end date, and is reviewed every quarter. Measure speed before and after adding a tool so its cost is visible. This avoids the cycle of a fast site gradually slowing over a year.</p>
 <p>Also consider privacy. Tracking scripts collect visitor data, so make sure your privacy policy and consent approach reflect what you actually load; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>, and check current requirements with a legal adviser.</p>
 
+<h2>Quick check: what is loading on your pages?</h2>
+<ol>
+<li><strong>List the requests:</strong> open your page in Chrome, press F12, go to the <em>Network</em> tab and reload. Sort by Domain and note every domain that is not your own.</li>
+<li><strong>Measure the cost:</strong> run the page through PageSpeed Insights and open the "Reduce the impact of third-party code" audit. It lists each provider and its blocking time.</li>
+<li><strong>Find where they come from:</strong> in wp-admin, check your header and footer plugin, theme options and <em>Appearance, Widgets</em>. Remove scripts for tools you no longer use.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you can't tell which plugin is adding a script, when chat, ads and analytics all need to stay, or when removing a script breaks tracking. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audits and delays scripts safely, and <a href="/landing-page-design/">landing page design</a> keeps ad pages light. <a href="/#contact">Get in touch</a> with your page URL and a PageSpeed result.</p>
+
 <h2>FAQs</h2>
 <h3>How do I know if third-party scripts are slowing my website?</h3>
 <p>Run PageSpeed Insights and check the third-party code diagnostic, then block domains one by one in Chrome DevTools to see how much each script affects load and responsiveness.</p>
@@ -46709,8 +46861,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>It cannot speed up external servers, but its delay and defer features can stop scripts from blocking the first view. Test carefully afterwards.</p>
 <h3>Why is my Shopify store slow even though Shopify handles hosting?</h3>
 <p>Usually because of apps and theme customisations adding scripts. Removing unused apps and leftover code often helps more than any other change.</p>
-
-<p>If your site is weighed down by scripts and widgets, I can audit what loads, keep what you need and speed up the rest. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/shopify-developer/">Shopify development</a>, with clients across <a href="/wordpress-shopify-developer-india/">India</a>.</p>
 `,
   },
   {
@@ -47616,7 +47766,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'WP Cron Explained: Why Scheduled Posts, Emails and Backups Run Late, and How to Fix It With a Real Server Cron',
     description: 'WP Cron explained: why WordPress misses schedules on low-traffic sites, how to set DISABLE_WP_CRON with a server cron, Action Scheduler and WP-CLI checks.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -47746,6 +47896,16 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
   <li>After any migration or domain change, confirm the cron job points to the new path and URL</li>
 </ul>
 
+<h2>Quick check: is WP-Cron running on time?</h2>
+<ol>
+<li><strong>Look for missed tasks:</strong> go to <em>Tools, Site Health</em>. A "scheduled event has failed" or "late" notice means cron jobs are not running.</li>
+<li><strong>Check Scheduled Actions:</strong> on WooCommerce sites, open <em>Tools, Scheduled Actions</em> and filter by Past-due. A long list shows the queue is falling behind.</li>
+<li><strong>Check for a server cron:</strong> in <code>wp-config.php</code> look for <code>define('DISABLE_WP_CRON', true);</code>. If it is there, confirm a matching job exists in your hosting panel's Cron Jobs screen.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when scheduled posts miss their time, when backups or emails don't run, or when the action queue has thousands of past-due items. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers moving to a server cron and watching it, and <a href="/wordpress-speed-optimization/">speed optimisation</a> fixes cron jobs that slow page loads. <a href="/#contact">Get in touch</a> with what Site Health shows.</p>
+
 <h2>FAQs</h2>
 <h3>What is wp cron in WordPress?</h3>
 <p>It is WordPress's built-in scheduler. It runs due tasks when someone visits the site, instead of at exact times.</p>
@@ -47757,8 +47917,6 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>Usually because WP-Cron was not triggered at the scheduled time, through low traffic, caching or a blocked loopback. A server cron fixes it.</p>
 <h3>Do I need SSH or WP-CLI to fix WP Cron?</h3>
 <p>No. The wp-config.php line and a cron job in hPanel or cPanel are enough. WP-CLI just makes debugging quicker.</p>
-
-<p>Scheduled posts, backups or emails not running on time? I can check your setup and move it to a server cron as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or you can <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
   },
   {
@@ -51299,7 +51457,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'How to Improve Site Search on WordPress and WooCommerce',
     description: 'How to improve WordPress site search: why default search misses results, better search plugins, WooCommerce product search, synonyms and Hindi spellings.',
     date: '2026-09-30',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer'],
     body: `
@@ -51397,6 +51555,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>How Shopify site search compares</h2>
 <p>Shopify includes built-in search with predictive suggestions in most modern themes, and it searches titles, product types, vendors, tags and variant SKUs. You can add synonyms through Shopify's search and discovery tools, and boost or hide products for certain searches. For larger catalogues, third-party search apps add typo tolerance, merchandising and analytics. If you are weighing platforms or need search configured on a store, see <a href="/shopify-developer/">Shopify development</a>.</p>
 
+<h2>Quick check: how good is your search today?</h2>
+<ol>
+<li><strong>Search like a customer:</strong> type three things customers ask for, including a misspelling and a product code, into your site search. Note whether the right result shows first.</li>
+<li><strong>See what people search:</strong> in Google Analytics 4, go to <em>Reports, Engagement, Events</em> and open <code>view_search_results</code> (enable Site search under Enhanced measurement if it is missing).</li>
+<li><strong>Check what is indexed:</strong> default WordPress search only looks at titles and content. If product attributes, SKUs or custom fields don't match, you need a search plugin that indexes them.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when customers can't find products they know you sell, when search is slow on a large catalogue, or when you want filters and suggestions as people type. <a href="/wordpress-website-development/">WordPress website development</a> covers search setup and tuning, and <a href="/woocommerce-developer/">WooCommerce development</a> handles product search with SKUs and attributes. <a href="/#contact">Get in touch</a> with three searches that fail today.</p>
+
 <h2>FAQs</h2>
 <h3>How do I improve WordPress site search?</h3>
 <p>Install a search plugin that builds its own index, choose which fields to search and weight them, add synonyms for common spellings, and improve the results page with images and filters. Review your search log monthly.</p>
@@ -51408,8 +51576,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Add a synonym list that maps common spellings and regional names to your product terms, built from your actual search log rather than guesses.</p>
 <h3>Should site search results pages be indexed by Google?</h3>
 <p>Usually not. Keep them noindexed and help Google find products through category pages, internal links and the sitemap instead.</p>
-
-<p>If your visitors cannot find what they are searching for, I can set up and tune search on WordPress, WooCommerce or Shopify. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the job, or see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development across India</a>.</p>
 `,
   },
   {
@@ -52481,7 +52647,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'Pin Code Delivery Checkers for Indian WooCommerce Stores',
     description: 'How to add a pincode delivery checker to WooCommerce or Shopify: show serviceability, COD availability and delivery dates on product pages for India.',
     date: '2026-09-30',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-startups'],
     body: `
@@ -52565,6 +52731,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Not every product can go to every pin code. Furniture, large appliances, glass items, plants, cakes and frozen foods often have narrower delivery areas than small packets. A good setup lets you assign a delivery profile to each product or category, such as &quot;all India&quot;, &quot;metro cities only&quot; or &quot;within the city&quot;, and the checker then answers for that specific product.</p>
 <p>On WooCommerce, this can be done with shipping classes combined with postcode-based zones, or with a plugin that supports product-level pin code lists. On Shopify, shipping profiles let you set different rates and zones for different product groups, and a checker app can read similar rules. If your rules are complex, such as cut-off times for same-day delivery or slot limits per area, custom development may be simpler than stacking several apps.</p>
 
+<h2>Quick check: does your pincode check match your shipping?</h2>
+<ol>
+<li><strong>Review zones:</strong> go to <em>WooCommerce, Settings, Shipping, Shipping zones</em> and note which postcodes or states each zone covers.</li>
+<li><strong>Test three pincodes:</strong> on a product page, enter one pincode you serve, one you don't and one with COD restrictions. Check the message each shows.</li>
+<li><strong>Compare with checkout:</strong> add the product to cart and enter the same pincodes at checkout. The shipping methods and COD option should match what the checker promised.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the checker and checkout disagree, when your courier list changes often, or when COD needs to be limited by pincode. <a href="/woocommerce-developer/">WooCommerce development</a> covers pincode checkers tied to your zones, and <a href="/website-for-startups/">startup websites</a> can include delivery checks from launch. <a href="/#contact">Get in touch</a> with your courier and the pincodes that fail.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add a pincode delivery checker to WooCommerce?</h3>
 <p>Install a pin code checker plugin and upload a list of serviceable pin codes with COD status and delivery days, or use a shipping aggregator integration that checks serviceability live. Then match your shipping zones and COD settings to the same rules.</p>
@@ -52576,8 +52752,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Show an estimated range rather than a promise, because courier timelines vary. Update estimates during festivals or disruptions.</p>
 <h3>Is a pin code checker useful for small local stores?</h3>
 <p>Very much. Stores that deliver only in certain areas avoid orders they cannot fulfil and save time answering delivery questions.</p>
-
-<p>A pin code checker can be set up as part of <a href="/woocommerce-developer/">WooCommerce development</a>, matched to your shipping zones and COD rules. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off setup, or see the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer Mumbai</a> page for location details.</p>
 `,
   },
   {
@@ -52586,7 +52760,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WooCommerce Wholesale Pricing for Dealers and Distributors: A Setup Guide for Indian B2B Stores',
     description: 'Set up WooCommerce wholesale pricing for dealers in India: user roles, price tiers, MOQs, hidden prices, GST invoices, credit terms and testing.',
     date: '2026-09-30',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-manufacturers'],
     body: `
@@ -52708,6 +52882,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Check that a logged-out visitor sees only what they should.</li>
 </ol>
 
+<h2>Quick check: do dealers see the right price?</h2>
+<ol>
+<li><strong>Create a test dealer:</strong> in <em>Users, Add New</em>, create a test account with your wholesale role (the role your pricing plugin adds).</li>
+<li><strong>Compare prices:</strong> log in as that user in a private window and compare five product prices and the cart total with what a guest sees.</li>
+<li><strong>Check tax and minimums:</strong> go through checkout as the dealer and confirm GST, minimum order quantity and any payment restrictions behave as your plugin settings say.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when dealers see retail prices, when tiered or quantity pricing gets complicated, or when you need GST invoices with business details. <a href="/woocommerce-developer/">WooCommerce development</a> covers dealer roles, pricing rules and testing, and <a href="/website-for-manufacturers/">manufacturer websites</a> cover dealer portals and catalogues. <a href="/#contact">Get in touch</a> with how your dealer prices are set today.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up wholesale pricing in WooCommerce?</h3>
 <p>Create customer roles, add a dealer registration with approval, set prices per role or quantity using a wholesale plugin, then test every role on staging.</p>
@@ -52719,8 +52903,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Yes, per product, as pack multiples, or as a minimum cart value, ideally only for trade roles.</p>
 <h3>Does WooCommerce support GST invoices for B2B orders?</h3>
 <p>With an invoice plugin, it can print the buyer's GSTIN, HSN codes and the correct tax split. Confirm the format with your CA.</p>
-
-<p>Need a dealer portal on your store? <a href="/woocommerce-developer/">Hire a WooCommerce developer</a> to plan and test the pricing rules. Manufacturers can also see <a href="/website-for-manufacturers/">websites for manufacturers</a>, and businesses in Gujarat my <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a> page.</p>
 `,
   },
   {
@@ -52729,7 +52911,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams',
     description: 'A WooCommerce order workflow for small Indian teams: statuses explained, payment to dispatch, COD confirmation, labels, tracking, returns and staff roles.',
     date: '2026-09-30',
-    updated: '2026-10-27',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -52842,6 +53024,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </table>
 <p>Once a week, review dispatch times, return reasons and RTOs, and adjust. As orders grow, a slow orders screen wastes everyone's time, so keeping the store maintained matters.</p>
 
+<h2>Quick check: are orders flowing cleanly?</h2>
+<ol>
+<li><strong>Look at statuses:</strong> open <em>WooCommerce, Orders</em> and filter by Processing and On hold. Orders sitting there for days usually point to a gap in the workflow.</li>
+<li><strong>Check order emails:</strong> go to <em>WooCommerce, Settings, Emails</em> and confirm the Processing, Completed and Refunded emails are enabled with the right recipient.</li>
+<li><strong>Check staff access:</strong> in <em>Users</em>, confirm staff who handle orders have the Shop Manager role, not Administrator.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when orders get stuck, when staff mark the wrong status, or when you need custom statuses, invoices or courier tracking. <a href="/woocommerce-developer/">WooCommerce development</a> covers order workflows and emails, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps order plugins updated. <a href="/#contact">Get in touch</a> with your order volume and the step that slows you down.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between Processing and Completed in WooCommerce?</h3>
 <p>Processing means the order is paid (or placed as COD) and waiting to be fulfilled. Completed means it has been fulfilled. Many stores add a Shipped status in between so customers are told when the parcel actually leaves.</p>
@@ -52853,8 +53045,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Usually yes over time, but check every order-related plugin for compatibility first and test on staging, because older plugins may not read orders from the new tables.</p>
 <h3>How do I send WhatsApp order updates from WooCommerce?</h3>
 <p>Through a WhatsApp Business API provider and a WooCommerce integration, using approved message templates and the customer's opt-in.</p>
-
-<p>Want your order workflow set up with the right statuses, emails and staff access? See <a href="/woocommerce-developer/">WooCommerce development</a>, and <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep the store fast and up to date as orders grow.</p>
 `,
   },
   {
@@ -53112,7 +53302,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WooCommerce Product Bundles, Upsells and Cross-Sells: How to Set Them Up for an Indian Store',
     description: 'Set up WooCommerce product bundles, upsells and cross-sells: linked products, bundle plugins, honest pricing, stock, GST and where to show offers.',
     date: '2026-09-30',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
@@ -53205,6 +53395,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>Measuring what works</h2>
 <p>Track average order value, the share of orders containing a bundle, and margin per order. A popular bundle that sells at a thin margin may not be worth pushing. Look at which cross-sells actually get added to carts and remove the ones nobody clicks. Change one placement at a time and compare similar periods, avoiding festival weeks that distort results. Returns matter as well: if bundle orders come back more often than single items, the bundle may be mixing products people do not really want together.</p>
 
+<h2>Quick check: are your upsells set up?</h2>
+<ol>
+<li><strong>Check linked products:</strong> edit a product and open <em>Product data, Linked Products</em>. Upsells show on the product page and Cross-sells in the cart, if your theme supports them.</li>
+<li><strong>View it as a customer:</strong> open the product and cart pages in a private window and confirm the linked items actually appear.</li>
+<li><strong>Test a bundle order:</strong> buy a bundle on a test order and check that stock reduces for each item inside it and the invoice lists them clearly.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when bundles break stock counts, when your theme hides cross-sells, or when you want offers in the cart without slowing checkout. <a href="/woocommerce-developer/">WooCommerce development</a> covers bundles, upsells and testing, and <a href="/landing-page-design/">landing page design</a> helps with offer pages. <a href="/#contact">Get in touch</a> with the products you want to bundle.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create product bundles in WooCommerce?</h3>
 <p>Install a bundle plugin, create a bundle product, add the items, set the pricing rule and stock behaviour, then test the cart, invoice and order email.</p>
@@ -53216,8 +53416,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>It depends on the items and how the bundle is supplied. Ask your CA, then set tax classes and check the invoice output.</p>
 <h3>Do upsells slow down a WooCommerce store?</h3>
 <p>They can if they load many products or heavy scripts. Keep recommendation rows short and test page speed on mobile.</p>
-
-<p>Want bundles and upsells set up cleanly, with stock and invoices tested? <a href="/woocommerce-developer/">Hire a WooCommerce developer</a>, or see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
 `,
   },
   {
@@ -53904,7 +54102,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WordPress Backup Plugins Compared: Host Backups, UpdraftPlus, BlogVault and More',
     description: 'Which WordPress backup plugin is best for an Indian business site or WooCommerce store? Host backups, UpdraftPlus, BlogVault, Jetpack and others compared.',
     date: '2026-10-01',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -54010,6 +54208,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>Most of these are caught by a monthly check: open the backup log, confirm the latest date and size look normal, and see that the remote copy is actually there.</p>
 
+<h2>Quick check: would your backup actually restore?</h2>
+<ol>
+<li><strong>Find the latest backup:</strong> open your backup plugin (for example <em>Settings, UpdraftPlus Backups</em>) and note the date of the last successful backup and what it includes: files, database or both.</li>
+<li><strong>Check where it is stored:</strong> confirm backups go to remote storage such as Google Drive, Dropbox or S3, not only the same server.</li>
+<li><strong>Test a restore:</strong> restore the latest backup to a staging copy or a local site. A backup you have never restored is not proven.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when backups fail silently, when your site is too large for a free plugin, or when you need a restore after a hack or a bad update. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers off-site backups and restore tests, and <a href="/wordpress-malware-removal/">malware removal</a> handles restores after an infection. <a href="/#contact">Get in touch</a> with your backup plugin name.</p>
+
 <h2>FAQs</h2>
 <h3>Which WordPress backup plugin is best?</h3>
 <p>For most small business sites, a free plugin such as UpdraftPlus to Google Drive plus host backups is a good start. Busy stores benefit from real-time backups from a managed service.</p>
@@ -54023,8 +54231,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>They can during the backup run. Schedule backups for quiet hours and exclude unnecessary folders.</p>
 <h3>How do I restore a WordPress backup from a backup plugin?</h3>
 <p>If you can still log in, use the plugin's restore button and choose files plus database. If the site is down, use the host's backup tool or reinstall WordPress and the same plugin on a clean install, then import the backup. Test a restore on staging before you ever need it.</p>
-
-<p>Not sure your backups would actually work? I set up and test backups as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off backup review. For store owners, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -55278,7 +55484,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'Yoast SEO vs Rank Math vs All in One SEO: Which WordPress SEO Plugin Should You Use?',
     description: 'Yoast vs Rank Math vs AIOSEO compared for Indian business sites: features, schema, sitemaps, WooCommerce support, switching safely and what matters more.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -55376,6 +55582,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>For a wider view of what to install, see <a href="/blog/essential-wordpress-plugins-business/">essential WordPress plugins for business sites</a>.</p>
 
+<h2>Quick check: is your SEO plugin set up?</h2>
+<ol>
+<li><strong>Check the sitemap:</strong> open <code>yourdomain.com/sitemap_index.xml</code> (Yoast and Rank Math) or <code>/wp-sitemap.xml</code>. It should load and list your pages and posts.</li>
+<li><strong>Check indexing:</strong> go to <em>Settings, Reading</em> and confirm "Discourage search engines" is unticked.</li>
+<li><strong>Check one page:</strong> view source on your homepage and search for <code>&lt;title&gt;</code> and <code>meta name="description"</code>. They should match what you set in the plugin.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are switching plugins and worried about losing titles, when two SEO plugins are active, or when Search Console shows indexing problems. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers plugin setup, schema and sitemaps, and <a href="/wordpress-website-development/">WordPress website development</a> builds with SEO in place. <a href="/#contact">Get in touch</a> with your plugin and domain.</p>
+
 <h2>FAQs</h2>
 <h3>Yoast vs Rank Math vs AIOSEO: which is best?</h3>
 <p>There is no single winner. Rank Math offers the most in its free version, Yoast is simple and widely known, and AIOSEO has a friendly setup. For most small business sites, any of them works well when configured properly.</p>
@@ -55387,8 +55603,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Not if you use the import tool, check important pages afterwards and keep your titles, descriptions and noindex settings the same. Take a backup before you start.</p>
 <h3>Do I need the paid version of an SEO plugin?</h3>
 <p>Usually not for a small business site. The free versions cover the essentials. Paid versions add conveniences such as redirect managers, extra schema types or local features, which you can often handle in other ways.</p>
-
-<p>If you would like your SEO plugin set up properly, with clean titles, sitemaps and schema for your business, see <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off setup, or if you are in western India, work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -57463,7 +57677,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WooCommerce Gift Cards and Store Credit: Setup, Rules, GST Questions and How Shopify Compares',
     description: 'How to sell WooCommerce gift cards and store credit in India: plugin options, terms, GST questions for your CA, fraud checks and Shopify gift cards.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
@@ -57565,6 +57779,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>Promoting gift cards on your store</h2>
 <p>Gift cards sell when people see them at the right time. Add a gift card link in the header during festive seasons, a banner on product pages for last-minute gifting, a section on your corporate or bulk orders page, and a mention in your order confirmation emails. Because gift cards are delivered by email, they suit last-minute buyers: say so clearly in the run-up to festivals, when physical delivery may not arrive in time.</p>
 
+<h2>Quick check: do gift cards work end to end?</h2>
+<ol>
+<li><strong>Buy one:</strong> purchase a low-value gift card on a test order and check the recipient email arrives with the code.</li>
+<li><strong>Redeem it:</strong> add a product to cart, apply the code at checkout and confirm the balance reduces by the right amount.</li>
+<li><strong>Check the balance:</strong> in your gift card plugin's admin screen (for WooCommerce Gift Cards, <em>WooCommerce, Gift Cards</em>), confirm the remaining balance and expiry are correct.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when codes don't apply, when balances don't update after partial use, or when you need gift cards for in-store and online use. <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/shopify-developer/">Shopify development</a> cover gift card setup and testing, and <a href="/landing-page-design/">landing page design</a> helps with festival gift card pages. <a href="/#contact">Get in touch</a> with your platform.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add gift cards to WooCommerce?</h3>
 <p>Install a gift card plugin, create a gift card product with your amounts, set up the email template and terms, then test buying and redeeming a card on a staging copy before launch.</p>
@@ -57576,8 +57800,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>It depends on the type of voucher and when it is redeemed. Ask your CA for the current treatment for your store.</p>
 <h3>Should gift card codes be sent for COD orders?</h3>
 <p>No. Send codes only after online payment is confirmed, and disable COD for gift card products.</p>
-
-<p>If you want gift cards or store credit set up properly, see <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>. I work with stores across the country through <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development in India</a>.</p>
 `,
   },
   {
@@ -59350,7 +59572,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'WooCommerce Product Filters: Setup, Speed and SEO (and Shopify Too)',
     description: 'How to add WooCommerce product filters that help buyers: choosing attributes, plugin vs built-in, keeping pages fast, SEO-safe URLs and the Shopify way.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services'],
     body: `
@@ -59453,6 +59675,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </table>
 <p>A price filter is useful in most Indian stores, but show prices in rupees with GST included or clearly marked, and make sure &quot;In stock&quot; or a delivery pin code check sits close to the filters, so buyers do not filter down to products they cannot get.</p>
 
+<h2>Quick check: do your filters help shoppers?</h2>
+<ol>
+<li><strong>Check attributes:</strong> go to <em>Products, Attributes</em> and confirm the filters you want (size, colour, material) exist as global attributes, not custom text on each product.</li>
+<li><strong>Test on mobile:</strong> open a category page on your phone, apply two filters and check results update and the filter panel is easy to close.</li>
+<li><strong>Check for crawl waste:</strong> in Google Search Console, open <em>Indexing, Pages</em> and look for many filter URLs with <code>?filter_</code> or <code>?pa_</code> in them.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when filters show empty results, slow down category pages, or create thousands of indexed URLs. <a href="/woocommerce-developer/">WooCommerce development</a> covers attributes and filter setup, and <a href="/wordpress-seo-services/">WordPress SEO services</a> handles crawl and indexing for filtered pages. <a href="/#contact">Get in touch</a> with your category URL.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add product filters in WooCommerce?</h3>
 <p>Set up global attributes, assign them to products, then add the WooCommerce filter blocks to your shop and category templates. Use a plugin when you need features the blocks lack, such as instant updates or special layouts.</p>
@@ -59464,8 +59696,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Yes. The Search and Discovery app lets you add filters for price, availability, variants, vendor and metafields, which most themes display automatically.</p>
 <h3>How many filters should a category page have?</h3>
 <p>Only as many as buyers use. A few well-chosen filters with clean data work better than a long list nobody touches.</p>
-
-<p>Filters can be set up as part of <a href="/woocommerce-developer/">WooCommerce development</a> or a <a href="/shopify-developer/">Shopify store build</a>. To work with someone across the country, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -60766,7 +60996,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?',
     description: 'Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.',
     date: '2026-10-01',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -60880,6 +61110,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>Make it someone's job</h2>
 <p>Whatever you choose, someone should own it. Once a month, review which plugins are set to auto-update, check that premium licences are active, delete anything unused and read through the update emails for failures. The <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> shows where this fits alongside backups, security and speed checks.</p>
 
+<h2>Quick check: what updates automatically now?</h2>
+<ol>
+<li><strong>Check core:</strong> go to <em>Dashboard, Updates</em>. The top line says whether WordPress updates automatically for maintenance and security releases only or for all new versions.</li>
+<li><strong>Check plugins and themes:</strong> in <em>Plugins, Installed Plugins</em> and <em>Appearance, Themes</em>, look at the Automatic Updates column or link for each item.</li>
+<li><strong>Check update emails:</strong> search your admin email inbox for "Some plugins were automatically updated" to see what changed recently and whether anything failed.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when an auto-update has broken the site, when you run WooCommerce or a page builder where updates need testing, or when you'd rather not watch updates yourself. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates with backups, and <a href="/wordpress-website-development/">WordPress website development</a> sets sensible update rules from launch. <a href="/#contact">Get in touch</a> with the plugins you rely on.</p>
+
 <h2>FAQs</h2>
 <h3>Are WordPress auto-updates safe?</h3>
 <p>Minor core updates and small, well-maintained plugins are generally low risk. Larger plugins, themes and WooCommerce carry more risk, so they're safer updated by hand with a backup ready. Safety depends less on the setting than on having backups and someone checking the site.</p>
@@ -60891,8 +61131,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Common reasons: an expired premium licence, the new version needing a newer PHP or WordPress version, WP-Cron not running on a quiet site, file permission problems, or your host controlling updates.</p>
 <h3>Can I choose what time auto-updates run?</h3>
 <p>Not from the WordPress dashboard. Some hosts and maintenance tools let you schedule updates; otherwise, switch auto-updates off for important plugins and update them yourself at a quiet time.</p>
-
-<p>Rather not manage updates yourself? See <a href="/wordpress-maintenance/">WordPress maintenance</a> for help with updates, backups and testing. Get in touch and I'll set up a sensible auto-update policy for your site, with backups and checks behind it.</p>
 `,
   },
   {
@@ -61057,7 +61295,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Adding a Wishlist to Your WooCommerce Store: When It Helps and How to Do It Right',
     description: 'How to add a WooCommerce wishlist that helps sales: guest vs logged-in lists, gift sharing, back-in-stock alerts with consent, Shopify options and speed.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -61157,6 +61395,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>Measuring whether it&#39;s worth keeping</h2>
 <p>After a few months, check whether the wishlist earns its place. Track wishlist adds, shares and how many saved items are later bought. Compare products with high wishlist counts against their sales. If people save but rarely buy, look at price, stock or product page quality; see <a href="/blog/woocommerce-product-page-optimization/">WooCommerce product page optimization</a>. If almost nobody uses it, remove it and simplify the page.</p>
 
+<h2>Quick check: is your wishlist working for customers?</h2>
+<ol>
+<li><strong>Add as a guest:</strong> in a private window, add a product to the wishlist without logging in and check it stays after you browse to another page.</li>
+<li><strong>Check it after login:</strong> log in and confirm the guest wishlist items carry over, if your plugin supports it.</li>
+<li><strong>Check the speed cost:</strong> run a product page through PageSpeed Insights with and without the wishlist plugin active on staging, and compare the scripts loaded.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when wishlists lose items, when the plugin slows product pages, or when you want back-in-stock or price-drop reminders. <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/shopify-developer/">Shopify development</a> cover wishlist setup and testing, and <a href="/wordpress-website-development/">WordPress website development</a> keeps the theme compatible. <a href="/#contact">Get in touch</a> with your store URL.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add a wishlist to WooCommerce?</h3>
 <p>Install a wishlist plugin, place the save button on product pages, add a wishlist link to the header, enable guest saving, and test it with your caching setup.</p>
@@ -61168,8 +61416,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Check whether your theme includes one; otherwise add a wishlist app or custom theme code, and test its effect on speed.</p>
 <h3>Can I send reminders about wishlisted products?</h3>
 <p>Yes, if shoppers opt in. Back-in-stock and price-drop alerts work best when they are relevant, occasional and easy to stop.</p>
-
-<p>Want a wishlist, gift registry or reminders set up without slowing your store? See <a href="/woocommerce-developer/">WooCommerce development</a> or <a href="/shopify-developer/">Shopify development</a>, and the page for <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers in India</a>.</p>
 `,
   },
   {
@@ -61178,7 +61424,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'WordPress White Screen of Death: What Causes It and How to Fix It',
     description: 'Fix the WordPress white screen of death step by step: turn on debugging, disable plugins and theme, raise the memory limit and check PHP version safely.',
     date: '2026-10-01',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -61251,9 +61497,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>For other common faults, see the list of <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
 
-<h2>When to call a developer</h2>
+<h2>When to get help</h2>
 <p>If the debug log points to code you do not understand, the site is a live store taking orders, or you suspect the white screen followed a hack, it is safer to get help. Unknown files, new admin users or redirects to strange sites alongside a white screen can mean malware, which needs a proper clean-up rather than just disabling a plugin.</p>
 <p>Before you contact anyone, collect the useful facts: when the white screen started, what changed just before (an update, a new plugin, a hosting change), the last few lines of the debug log, and your hosting panel access. That shortens the fix considerably, whoever handles it.</p>
+<p>For a fix without touching server files yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers recovery, updates and backups, and <a href="/wordpress-malware-removal/">hacked site cleanup</a> handles a white screen caused by malware. Send the error from your log and <a href="/#contact">get in touch</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the WordPress white screen of death?</h3>
@@ -61268,8 +61515,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Yes, injected or damaged code can cause it. If you see unknown files, new admin users or strange redirects, treat it as a security issue and get the site cleaned.</p>
 <h3>How do I fix the WordPress white screen of death after a theme update?</h3>
 <p>Rename the active theme's folder over FTP or the hosting file manager so WordPress falls back to a default theme. If the site returns, restore the previous theme version from a backup or check its changelog for a PHP version requirement before updating again.</p>
-
-<p>If you would rather not edit server files yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and fixes like this, and a hacked site is handled through <a href="/wordpress-malware-removal/">hacked site repair</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or see the <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> page.</p>
 `,
   },
   {
@@ -62019,7 +62264,7 @@ wp db check</code></pre>
     title: 'WooCommerce WhatsApp Order Notifications, SMS and Email: How to Set Them Up in India',
     description: 'Set up WooCommerce WhatsApp order notifications, SMS and email in India: Business API templates, DLT rules for SMS, opt-in, COD confirmation and testing.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -62127,6 +62372,16 @@ wp db check</code></pre>
 </ul>
 <p>Once live, review failed messages weekly in the provider dashboard. Repeated failures for the same customer usually mean a mistyped number, so a quick call can fix the record before the next order. Fit it into your <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> so staff know who checks what.</p>
 
+<h2>Quick check: are customers getting order updates?</h2>
+<ol>
+<li><strong>Check email first:</strong> go to <em>WooCommerce, Settings, Emails</em> and make sure Processing and Completed order emails are enabled.</li>
+<li><strong>Place a test order:</strong> use your own mobile number and confirm the SMS or WhatsApp message arrives, with the right order number and name.</li>
+<li><strong>Check templates:</strong> in your messaging provider's dashboard, confirm WhatsApp templates are approved and SMS templates are registered on DLT, as Indian SMS requires.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when messages stop sending, when templates get rejected, or when you want COD confirmation or shipping updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers notification setup and testing, and <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development</a> covers both platforms. <a href="/#contact">Get in touch</a> with your messaging provider.</p>
+
 <h2>FAQs</h2>
 <h3>How do I send WooCommerce order notifications on WhatsApp?</h3>
 <p>Use the WhatsApp Business Platform through a provider with a WooCommerce plugin, get templates approved, map them to order statuses, then test every status.</p>
@@ -62138,8 +62393,6 @@ wp db check</code></pre>
 <p>Not for automation through the platform while it is active on the regular app. Most businesses register a dedicated number.</p>
 <h3>Should I stop sending order emails if I use WhatsApp?</h3>
 <p>No. Email carries the full order record and invoice. WhatsApp complements it with short updates.</p>
-
-<p>Want order updates set up and tested properly? <a href="/woocommerce-developer/">Hire a WooCommerce developer</a>, or see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page. Stores in Mumbai can see my <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a> page.</p>
 `,
   },
   {
@@ -63704,7 +63957,7 @@ any unused part of the advance refunded as agreed</code></pre>
     title: 'How to Reduce Unused CSS and JavaScript in WordPress: Find the Culprits and Fix Them Safely',
     description: 'How to reduce unused CSS and JavaScript in WordPress: find which plugins load files, unload them per page, delay scripts safely and test on mobile.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
@@ -63778,6 +64031,16 @@ any unused part of the advance refunded as agreed</code></pre>
 <h2>A note on Shopify</h2>
 <p>Shopify stores see the same warnings, usually from apps that inject scripts on every page and from leftover code of uninstalled apps. The fix follows the same logic: remove apps you do not use, check the theme for leftover snippets and choose a lean theme. See the <a href="/blog/shopify-store-slow-fix/">Shopify store slow fix</a> guide for details.</p>
 
+<h2>Quick check: how much unused code loads?</h2>
+<ol>
+<li><strong>Use Coverage:</strong> in Chrome press F12, then Ctrl+Shift+P, type "Coverage" and reload the page. The red part of each bar is code that was not used.</li>
+<li><strong>Read PageSpeed:</strong> run the page through PageSpeed Insights and open "Reduce unused CSS" and "Reduce unused JavaScript". Note which files cost the most.</li>
+<li><strong>Find the source:</strong> match each file path to a plugin folder, such as <code>/wp-content/plugins/plugin-name/</code>, to see which plugin loads it.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when removing code breaks menus or forms, when a page builder loads most of the unused code, or when scores stay red after trying plugins. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> removes unused code safely with testing, and <a href="/elementor-developer/">Elementor development</a> helps with builder-heavy sites. <a href="/#contact">Get in touch</a> with your page URL.</p>
+
 <h2>FAQs</h2>
 <h3>How do I reduce unused CSS and JavaScript in WordPress?</h3>
 <p>Remove plugins you do not need, unload plugin files on pages that do not use them, delay non-essential scripts, generate critical CSS and use your theme or builder's performance settings, testing after each change.</p>
@@ -63789,8 +64052,6 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>Usually for chat, analytics and social widgets. Delaying menu, form or checkout scripts can break them, so exclude those and test.</p>
 <h3>Does reducing unused JavaScript help Core Web Vitals?</h3>
 <p>It often helps, especially responsiveness and loading on slower phones, but results depend on what else is slowing the page.</p>
-
-<p>If you want unused CSS and JavaScript reduced without breaking your site, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a wider review. Pune businesses can start from <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -65016,7 +65277,7 @@ any unused part of the advance refunded as agreed</code></pre>
     title: 'What Is the WordPress REST API? A Plain-English Guide for Business Owners',
     description: 'What is the WordPress REST API? A plain-English guide to what uses it, what it makes public, application passwords, business uses and how to restrict it.',
     date: '2026-10-01',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
@@ -65114,6 +65375,16 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>If your permalinks are set to Plain, the same routes work through ?rest_route= instead of /wp-json/. If /wp-json/ shows an error page, something such as a security rule, a firewall or a broken permalink setting is blocking it, which can also stop the block editor from saving.</p>
 <h2>Getting help with integrations</h2>
 <p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
+<h2>Quick check: is your REST API working?</h2>
+<ol>
+<li><strong>Open the index:</strong> visit <code>yourdomain.com/wp-json/</code>. You should see JSON. A 403 or 404 means a security plugin or server rule is blocking it.</li>
+<li><strong>Check Site Health:</strong> go to <em>Tools, Site Health</em>. It reports if the REST API returned an unexpected result.</li>
+<li><strong>Check public endpoints:</strong> visit <code>/wp-json/wp/v2/users</code>. If it lists usernames and you don't need it public, restrict it with your security plugin.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the block editor shows "Updating failed", when you need WordPress connected to a CRM, app or inventory system, or when an integration needs secure authentication. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to plan and build it, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to connect.</p>
+
 <h2>FAQs</h2>
 <h3>What is the WordPress REST API?</h3>
 <p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
@@ -65127,7 +65398,6 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
 <h3>Where do I find the WordPress REST API on my site?</h3>
 <p>Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it.</p>
-<p>Need WordPress connected to your CRM, inventory or app? You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> from Samverse to plan and build it safely.</p>
 `,
   },
   {
@@ -65136,7 +65406,7 @@ any unused part of the advance refunded as agreed</code></pre>
     title: 'WordPress Hooks Explained: Actions and Filters in Plain English',
     description: 'WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
@@ -65258,6 +65528,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 
 <p>Even small hook changes deserve a short note: what the code does, why it was added and which plugin or theme it depends on. That record makes future updates and handovers much safer, especially when several people work on the same site over the years.</p>
 
+<h2>Quick check: where is custom code running?</h2>
+<ol>
+<li><strong>Check functions.php:</strong> open <em>Appearance, Theme File Editor</em> and look in <code>functions.php</code> for <code>add_action</code> and <code>add_filter</code> calls.</li>
+<li><strong>Check snippets plugins:</strong> if you use a code snippets plugin, open its list and note which snippets are active.</li>
+<li><strong>Use Query Monitor:</strong> install the free Query Monitor plugin and open its <em>Hooks and Actions</em> panel on a page to see which functions run on each hook.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when custom code breaks after an update, when you need behaviour changed without editing plugin files, or when you inherit code you don't understand. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> for update-safe customisations, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to change.</p>
+
 <h2>FAQs</h2>
 <h3>What are WordPress hooks, actions and filters?</h3>
 <p>Hooks are points where you can attach your own code. Actions run your code at a certain moment; filters let you change a value and must return it.</p>
@@ -65269,8 +65549,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>It sets the order in which functions on the same hook run. Lower numbers run first; the default is 10.</p>
 <h3>Are hooks better than editing WooCommerce templates?</h3>
 <p>Usually yes. Hooks survive updates better, while copied templates can go out of date and break.</p>
-
-<p>Need a clean, update-safe customisation? <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to build it properly.</p>
 `,
   },
   {
@@ -65279,7 +65557,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'Shortcodes vs Blocks vs Page-Builder Widgets in WordPress',
     description: 'WordPress shortcodes vs blocks vs page-builder widgets: how each works, when each makes sense, and how to move a site off old shortcodes without breakage.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'elementor-developer'],
     body: `
@@ -65364,6 +65642,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 
 <p>Whatever you choose, document it: which editor the site uses, which shortcodes remain and why, and which plugins provide blocks. That short note saves time for whoever edits the site next.</p>
 
+<h2>Quick check: how many shortcodes does your site rely on?</h2>
+<ol>
+<li><strong>Search content:</strong> in <em>Posts, All Posts</em>, search for <code>[</code> plus a shortcode name you know, such as <code>[contact-form-7</code>, to see how many posts use it.</li>
+<li><strong>Check for broken ones:</strong> open a few old posts. A raw shortcode like <code>[button]</code> showing as text means the plugin that powered it is gone.</li>
+<li><strong>Try a block:</strong> edit one post, add a block for the same feature and compare how it looks and how easy it is to edit.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when old shortcodes show as raw text, when you're moving to blocks after a theme change, or when editors find shortcodes confusing. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to replace shortcodes safely, or see <a href="/elementor-developer/">Elementor development</a> and <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with the shortcodes you use.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between WordPress shortcodes vs blocks?</h3>
 <p>A shortcode is a text tag that a plugin turns into output when the page loads. A block is a visual component you edit directly in the block editor. Blocks show you the result while editing; shortcodes do not.</p>
@@ -65375,8 +65663,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>Often, because block pages avoid loading the builder's framework, but it depends on the plugins involved. Measure actual pages rather than assuming.</p>
 <h3>Should I convert all my old content to blocks?</h3>
 <p>Not all at once. Convert pages as you update them, and prioritise pages with broken theme shortcodes or layouts that editors struggle with.</p>
-
-<p>Want an editor-friendly site without shortcode clutter? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -65748,7 +66034,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'How to Sell Internationally with WooCommerce (and Shopify) from India',
     description: 'How to sell internationally from India with WooCommerce or Shopify: choosing countries, currencies, payments, shipping, duties and export paperwork.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -65851,6 +66137,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </table>
 <p>If you are not yet sure which platform fits, <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a> compares them more broadly.</p>
 
+<h2>Quick check: is your store ready for overseas orders?</h2>
+<ol>
+<li><strong>Check selling locations:</strong> go to <em>WooCommerce, Settings, General</em> and look at "Selling location(s)" and "Shipping location(s)".</li>
+<li><strong>Check shipping zones:</strong> in <em>WooCommerce, Settings, Shipping</em>, confirm an international zone exists with rates for the countries you sell to.</li>
+<li><strong>Test checkout from abroad:</strong> place a test order with an overseas address and confirm shipping, tax and the payment gateway work for international cards.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your gateway declines foreign cards, when you need multiple currencies, or when customs and export paperwork need planning. <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/shopify-developer/">Shopify development</a> cover international setup and testing, and <a href="/wordpress-website-development/">WordPress website development</a> covers translated pages. <a href="/#contact">Get in touch</a> with the countries you want to sell to.</p>
+
 <h2>FAQs</h2>
 <h3>How do I sell internationally with WooCommerce from India?</h3>
 <p>Choose target countries, enable international payments with your gateway, add shipping zones, write overseas policies and check export GST and LUT with your CA. Then place test orders.</p>
@@ -65862,8 +66158,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>Many exporters use an LUT to supply without paying IGST upfront, but rules change. Confirm with your CA before shipping abroad.</p>
 <h3>Should I translate my store for overseas buyers?</h3>
 <p>Not at first if your target countries read English. Translate once you see steady orders from a non-English market.</p>
-
-<p>International setup can be done as part of <a href="/woocommerce-developer/">WooCommerce development</a> or a <a href="/shopify-developer/">Shopify store build</a>. Sellers across the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -65872,7 +66166,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'WooCommerce Pre-Orders and Backorders: Setup, Payments and Shopify Options',
     description: 'How to set up WooCommerce pre-orders and backorders: stock settings, plugins, charging upfront or later, honest dates, refunds and the Shopify equivalent.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -65981,6 +66275,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </table>
 <p>Whatever you choose, follow your payment gateway's rules on how long a payment can be held or authorised, and keep a written record of the promised date for each order.</p>
 
+<h2>Quick check: what happens when stock hits zero?</h2>
+<ol>
+<li><strong>Check backorder settings:</strong> edit a product, open <em>Product data, Inventory</em> and look at "Allow backorders?" It can be Do not allow, Allow but notify, or Allow.</li>
+<li><strong>See it as a customer:</strong> set a test product to zero stock and view it in a private window. Confirm the message shown matches your plan.</li>
+<li><strong>Check order emails:</strong> place a test backorder and confirm the email says the item is on backorder, so customers know about the wait.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when customers order items you can't supply, when you need pre-order deposits or release dates, or when backorders mix with in-stock items. <a href="/woocommerce-developer/">WooCommerce development</a> covers pre-order and backorder flows, and <a href="/shopify-developer/">Shopify</a> pre-order apps can be set up too. <a href="/#contact">Get in touch</a> with how you handle stock today.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up pre-orders in WooCommerce?</h3>
 <p>WooCommerce handles backorders out of the box, but true pre-orders with release dates need a plugin. Set the date, payment mode and button text, then test the full order flow.</p>
@@ -65992,8 +66296,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>Charging upfront secures demand but means refunds if things change. Charging on release is gentler for buyers but needs a gateway that supports it.</p>
 <h3>Do backorders affect Google Shopping listings?</h3>
 <p>They can. Set availability to backorder or preorder in your product feed and give an availability date where Google asks for one.</p>
-
-<p>Pre-order flows can be set up as part of <a href="/woocommerce-developer/">WooCommerce development</a> or on <a href="/shopify-developer/">Shopify</a>. Stores anywhere in the country can see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -72227,6 +72529,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Design-wise, the input should open the numeric keypad on phones, accept exactly six digits, show the result in the same place, and remember the pin code for the session. If you show a delivery charge, make sure it matches the checkout. For broader speed issues, see <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a> and <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
 <p>Running a WooCommerce shop too? The same idea is covered in <a href="/blog/pincode-delivery-checker-woocommerce/">pin code delivery checkers for WooCommerce</a>, and the trade-offs between the two platforms in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 
+<h2>Quick check: does your pincode check match delivery?</h2>
+<ol>
+<li><strong>Check shipping zones:</strong> in Shopify admin go to <em>Settings, Shipping and delivery</em> and review your zones and rates.</li>
+<li><strong>Test three pincodes:</strong> on a product page, enter a pincode you serve, one you don't and one where COD is not allowed, and note what each shows.</li>
+<li><strong>Compare at checkout:</strong> go to checkout with the same pincodes and confirm the shipping options and COD match what the checker said.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the checker and checkout disagree, when your courier pincode list changes often, or when COD needs limiting. <a href="/shopify-developer/">Shopify development</a> covers pincode checkers and shipping setup, and <a href="/woocommerce-developer/">WooCommerce development</a> covers the same on WordPress. <a href="/#contact">Get in touch</a> with your courier name.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add a pincode checker to my Shopify store?</h3>
 <p>Install a pincode or delivery date app, use your shipping aggregator's serviceability widget, or have a custom section added to the theme. Feed it your serviceable and COD pin code list and place it below the add to cart button.</p>
@@ -72240,8 +72552,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>From a pin code list you upload and maintain, or from live serviceability provided by your courier or shipping aggregator. Live data stays current but depends on that service; a list is faster but needs regular updates.</p>
 <h3>Will a pincode checker slow down my Shopify product pages?</h3>
 <p>A light checker that loads only on product pages has little effect. Heavy apps with popups or scripts on every page can slow the store, so test speed before and after installing.</p>
-
-<p>If you want a pincode checker that matches your theme, your courier data and your COD rules, my <a href="/shopify-developer/">Shopify developer service</a> starts with a free review of the store and a fixed quote. You can also read how I work as a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a>.</p>
 `,
   },
   {
@@ -72332,6 +72642,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </ul>
 <p>If you also want order messages on a WooCommerce shop, the setup is compared in <a href="/blog/woocommerce-order-notifications-sms-whatsapp/">WooCommerce WhatsApp order notifications</a>, and <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a> covers broadcast lists and repeat customers.</p>
 
+<h2>Quick check: does WhatsApp ordering work?</h2>
+<ol>
+<li><strong>Test the button:</strong> on your phone, open a product page and tap the WhatsApp button. Check it opens a chat with your business number and the product name filled in.</li>
+<li><strong>Check business details:</strong> in WhatsApp Business, confirm your profile shows your store name, hours and website.</li>
+<li><strong>Test a COD confirmation:</strong> place a test COD order and confirm the WhatsApp confirmation arrives. If you use an app, check its dashboard in <em>Apps</em> in Shopify admin for failed messages.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when messages don't send, when COD confirmations fail, or when you want order updates from Shopify to reach customers automatically. <a href="/shopify-developer/">Shopify development</a> covers WhatsApp setup and testing, and <a href="/woocommerce-developer/">WooCommerce development</a> covers the same on WordPress. <a href="/#contact">Get in touch</a> with your store URL.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add WhatsApp ordering to my Shopify store in India?</h3>
 <p>Add a click-to-chat button for questions, connect a WhatsApp Business Platform app for order and COD confirmation messages, and create any orders taken in chat as Shopify draft orders with a payment link. Keep the normal checkout for everyone else.</p>
@@ -72345,8 +72665,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>It helps you cancel orders that would have been refused before you pay to ship them. It does not remove all refusals, so combine it with order value limits, pin code rules and tracking your return rate.</p>
 <h3>Will a WhatsApp chat app slow my Shopify store?</h3>
 <p>It can, if it loads a large script on every page. A plain link in the theme adds almost nothing. Check speed before and after installing, as described in <a href="/blog/shopify-store-slow-fix/">fixing a slow Shopify store</a>.</p>
-
-<p>If you want WhatsApp chat, COD confirmation and order updates set up on your store and tested on real orders, my <a href="/shopify-developer/">Shopify developer service</a> starts with a free review and a fixed quote. Brands looking for a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> can see how I work with stores in other cities too.</p>
 `,
   },
   {

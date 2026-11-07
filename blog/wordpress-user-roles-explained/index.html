@@ -43,7 +43,7 @@
       "headline": "WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which",
       "description": "WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-14",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-user-roles-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-user-roles-explained.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-14">14 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20User%20Roles%20and%20Capabilities%20Explained%3A%20Administrator%2C%20Editor%2C%20Author%2C%20Shop%20Manager%20and%20Who%20Should%20Get%20Which%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-user-roles-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,6 +160,8 @@
               <li><a href="#how-to-change-a-user-s-role">How to change a user's role</a></li>
               <li><a href="#custom-roles-when-the-defaults-don-t-fit">Custom roles: when the defaults don't fit</a></li>
               <li><a href="#roles-are-only-half-of-access-control">Roles are only half of access control</a></li>
+              <li><a href="#quick-check-who-can-change-your-site-right-now">Quick check: who can change your site right now</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -269,6 +271,16 @@ wp cap list editor</code></pre>
   <li>Treat any administrator nobody recognises as a sign the site may be compromised. Note its details before deleting it, because the registration date can show when the break-in happened.</li>
 </ul>
 
+<h2 id="quick-check-who-can-change-your-site-right-now">Quick check: who can change your site right now</h2>
+<ol>
+<li><strong>List administrators:</strong> in wp-admin go to <em>Users</em> and click the <em>Administrator</em> filter above the table. Every name there can install plugins and delete content, so remove or downgrade anyone who no longer works on the site.</li>
+<li><strong>Check for unknown accounts:</strong> sort <em>Users</em> by the <em>Registered</em> date (or scan the list for addresses you don't recognise). A new admin you never created is a common sign of a hacked site.</li>
+<li><strong>Test a staff login:</strong> open a private browser window, log in as an Editor or Shop Manager and confirm they can reach the screens they need and nothing more.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you find an administrator nobody recognises, when a plugin has added roles you don't understand, or when staff keep getting "not allowed" errors. <a href="/wordpress-maintenance/">WordPress maintenance</a> includes an access review alongside updates and backups, and <a href="/wordpress-malware-removal/">hacked site cleanup</a> covers removing rogue accounts and closing the hole they came through. Send your user list (names and roles only, never passwords) and <a href="/#contact">get in touch</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is the difference between an Editor and an Author in WordPress?</h3>
 <p>An Author can write, publish and edit only their own posts, and can't touch pages. An Editor can publish and edit every post and page on the site, including other people's, and moderate comments. Give Author to writers and Editor to whoever manages the site's content.</p>
@@ -282,8 +294,6 @@ wp cap list editor</code></pre>
 <p>As few as possible. For most small businesses that's the owner plus the developer or maintenance provider currently looking after the site. Every extra admin account is another password that could leak.</p>
 <h3>Why can't a user see a menu they need?</h3>
 <p>Their role probably lacks the capability for that screen, or a plugin has hidden the menu. Check the role first. If an Administrator is missing menus or sees "Sorry, you are not allowed to access this page", see <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">fixing missing dashboard menus</a>.</p>
-
-<p>Want someone to keep an eye on who can get into your site? Reviewing administrator access is part of the health check that starts my <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, followed by updates, off-site backups and security scans every month. If you've found an administrator account nobody can explain, treat it as a possible hack and see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -326,6 +336,8 @@ wp cap list editor</code></pre>
               <li><a href="#how-to-change-a-user-s-role">How to change a user's role</a></li>
               <li><a href="#custom-roles-when-the-defaults-don-t-fit">Custom roles: when the defaults don't fit</a></li>
               <li><a href="#roles-are-only-half-of-access-control">Roles are only half of access control</a></li>
+              <li><a href="#quick-check-who-can-change-your-site-right-now">Quick check: who can change your site right now</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

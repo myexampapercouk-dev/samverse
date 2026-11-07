@@ -43,7 +43,7 @@
       "headline": "How to Update a Premium WordPress Theme Safely: Licences, ZIP Uploads, Bundled Plugins and Keeping Your Customisations",
       "description": "How to update a premium WordPress theme safely: licence updates or ZIP upload, backup, staging, child themes, bundled plugins and fixing a broken update.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/update-premium-theme-safely/",
       "image": "https://samverse.space/assets/og/blog-update-premium-theme-safely.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Update%20a%20Premium%20WordPress%20Theme%20Safely%3A%20Licences%2C%20ZIP%20Uploads%2C%20Bundled%20Plugins%20and%20Keeping%20Your%20Customisations%20https%3A%2F%2Fsamverse.space%2Fblog%2Fupdate-premium-theme-safely%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,8 @@
               <li><a href="#if-you-find-edits-in-the-parent-theme">If you find edits in the parent theme</a></li>
               <li><a href="#if-something-breaks-after-the-update">If something breaks after the update</a></li>
               <li><a href="#when-the-theme-is-abandoned-or-the-licence-has-expired">When the theme is abandoned or the licence has expired</a></li>
+              <li><a href="#quick-check-is-your-theme-safe-to-update">Quick check: is your theme safe to update?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -271,6 +273,16 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <h2 id="when-the-theme-is-abandoned-or-the-licence-has-expired">When the theme is abandoned or the licence has expired</h2>
 <p>If the theme hasn't been updated in a long time, doesn't support current PHP versions, or the vendor has disappeared, updating isn't an option and the risk grows every month. Renew the licence if the theme is still maintained. If not, the choice is between moving to a well-maintained, lightweight theme while keeping your design, or a planned <a href="/website-redesign/">website redesign</a>. Whatever you do, don't download "free" copies of the theme from unofficial sites: those nulled copies are a common source of malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</p>
 
+<h2 id="quick-check-is-your-theme-safe-to-update">Quick check: is your theme safe to update?</h2>
+<ol>
+<li><strong>Check the version:</strong> go to <em>Appearance, Themes</em>, click your theme and note the version. Compare it with the latest version on the theme seller's changelog.</li>
+<li><strong>Look for direct edits:</strong> if your active theme is not a child theme, ask whether anyone edited its files. <em>Appearance, Theme File Editor</em> shows the files, and FTP shows last-modified dates that are newer than the theme release.</li>
+<li><strong>Back up and stage:</strong> take a full backup (files and database) and, if your host offers it, create a staging copy from the hosting panel. Update there first and click through key pages.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the theme is years behind, when its bundled plugins such as a slider or page builder also need updates, or when you can't tell whether files were edited. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers staged updates and testing, <a href="/website-redesign/">website redesign</a> helps when the theme is no longer supported, and <a href="/wordpress-malware-removal/">malware removal</a> handles sites infected through old theme code. <a href="/#contact">Get in touch</a> with the theme name and version.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I update a premium WordPress theme without losing customisations?</h3>
 <p>Make sure your customisations live in a child theme, the Customizer or the theme's own settings, not in the parent theme's files. Settings stored in the database survive updates; direct edits to theme files don't. Back up, then update.</p>
@@ -282,8 +294,6 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <p>Without an active licence you won't get automatic updates, and some vendors also stop downloads. If you still have access to the account that bought it, you may be able to download the latest version manually. Never use a nulled copy from an unofficial site.</p>
 <h3>Do I need to update the bundled plugins separately?</h3>
 <p>Usually yes. Bundled plugins update through the theme, typically from a plugins screen the theme adds, after the theme itself is updated. Check them every time you update the theme.</p>
-
-<p>Theme years out of date and worried an update will break the site? I can move any direct edits into a child theme, update the theme and its bundled plugins on staging, and test everything before it goes live; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -327,6 +337,8 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
               <li><a href="#if-you-find-edits-in-the-parent-theme">If you find edits in the parent theme</a></li>
               <li><a href="#if-something-breaks-after-the-update">If something breaks after the update</a></li>
               <li><a href="#when-the-theme-is-abandoned-or-the-licence-has-expired">When the theme is abandoned or the licence has expired</a></li>
+              <li><a href="#quick-check-is-your-theme-safe-to-update">Quick check: is your theme safe to update?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

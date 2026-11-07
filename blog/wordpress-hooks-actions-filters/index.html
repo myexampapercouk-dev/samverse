@@ -43,7 +43,7 @@
       "headline": "WordPress Hooks Explained: Actions and Filters in Plain English",
       "description": "WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-hooks-actions-filters/",
       "image": "https://samverse.space/assets/og/blog-wordpress-hooks-actions-filters.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Hooks%20Explained%3A%20Actions%20and%20Filters%20in%20Plain%20English%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-hooks-actions-filters%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -167,6 +167,8 @@
               <li><a href="#debugging-hooks-safely">Debugging hooks safely</a></li>
               <li><a href="#performance-and-security-considerations">Performance and security considerations</a></li>
               <li><a href="#getting-help-with-custom-code">Getting help with custom code</a></li>
+              <li><a href="#quick-check-where-is-custom-code-running">Quick check: where is custom code running?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -302,6 +304,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 
 <p>Even small hook changes deserve a short note: what the code does, why it was added and which plugin or theme it depends on. That record makes future updates and handovers much safer, especially when several people work on the same site over the years.</p>
 
+<h2 id="quick-check-where-is-custom-code-running">Quick check: where is custom code running?</h2>
+<ol>
+<li><strong>Check functions.php:</strong> open <em>Appearance, Theme File Editor</em> and look in <code>functions.php</code> for <code>add_action</code> and <code>add_filter</code> calls.</li>
+<li><strong>Check snippets plugins:</strong> if you use a code snippets plugin, open its list and note which snippets are active.</li>
+<li><strong>Use Query Monitor:</strong> install the free Query Monitor plugin and open its <em>Hooks and Actions</em> panel on a page to see which functions run on each hook.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when custom code breaks after an update, when you need behaviour changed without editing plugin files, or when you inherit code you don't understand. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> for update-safe customisations, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to change.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What are WordPress hooks, actions and filters?</h3>
 <p>Hooks are points where you can attach your own code. Actions run your code at a certain moment; filters let you change a value and must return it.</p>
@@ -313,8 +325,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>It sets the order in which functions on the same hook run. Lower numbers run first; the default is 10.</p>
 <h3>Are hooks better than editing WooCommerce templates?</h3>
 <p>Usually yes. Hooks survive updates better, while copied templates can go out of date and break.</p>
-
-<p>Need a clean, update-safe customisation? <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to build it properly.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -364,6 +374,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
               <li><a href="#debugging-hooks-safely">Debugging hooks safely</a></li>
               <li><a href="#performance-and-security-considerations">Performance and security considerations</a></li>
               <li><a href="#getting-help-with-custom-code">Getting help with custom code</a></li>
+              <li><a href="#quick-check-where-is-custom-code-running">Quick check: where is custom code running?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -393,7 +405,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/what-does-wordpress-developer-do/"><img class="post-card-img" src="/assets/og/blog-what-does-wordpress-developer-do.webp" alt="What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>What Does a WordPress Developer Actually Do? Roles, Skills and When to Hire One</h3><p>What a WordPress developer is and does: theme, plugin and site developers, daily tasks, key skills, how they differ from web designers, and when to hire one.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/custom-wordpress-plugin-development/"><img class="post-card-img" src="/assets/og/blog-custom-wordpress-plugin-development.webp" alt="Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</h3><p>Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-child-theme-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-child-theme-explained.webp" alt="WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)</h3><p>A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-child-theme-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-child-theme-explained.webp" alt="WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>WordPress Child Themes Explained: What They Are, When You Need One and How to Create One (With Code)</h3><p>A WordPress child theme lets you change a theme without losing edits on update. Learn when you need one, how to create it with code, and how to switch safely.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

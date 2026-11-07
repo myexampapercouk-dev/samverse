@@ -43,7 +43,7 @@
       "headline": "WordPress Firewalls (WAF) Explained: Plugin vs Cloud Firewalls, Useful Rules, Rate Limiting and False Positives",
       "description": "WordPress firewall (WAF) explained: plugin firewalls vs Cloudflare and Sucuri, rules worth adding, rate limiting, false positives and which setup suits you.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-firewall-waf-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-firewall-waf-explained.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Firewalls%20(WAF)%20Explained%3A%20Plugin%20vs%20Cloud%20Firewalls%2C%20Useful%20Rules%2C%20Rate%20Limiting%20and%20False%20Positives%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-firewall-waf-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,6 +160,8 @@
               <li><a href="#false-positives-when-the-firewall-blocks-the-wrong-thing">False positives: when the firewall blocks the wrong thing</a></li>
               <li><a href="#which-setup-suits-your-site">Which setup suits your site</a></li>
               <li><a href="#testing-your-firewall-after-setup">Testing your firewall after setup</a></li>
+              <li><a href="#quick-check-is-a-firewall-actually-protecting-you">Quick check: is a firewall actually protecting you?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -275,6 +277,16 @@
 </ol>
 <p>Repeat these checks after major plugin changes or a move to new hosting, because new URLs and IP addresses can break rules quietly.</p>
 
+<h2 id="quick-check-is-a-firewall-actually-protecting-you">Quick check: is a firewall actually protecting you?</h2>
+<ol>
+<li><strong>Check for a cloud WAF:</strong> run <code>nslookup -type=ns yourdomain.com</code> or check your DNS settings. Nameservers at Cloudflare or a security provider mean traffic can pass through their firewall if it is switched on.</li>
+<li><strong>Check the plugin:</strong> in wp-admin, open your security plugin (for example <em>Wordfence, Firewall</em>) and confirm the status shows the firewall enabled and, for Wordfence, whether it is in learning or enabled and protecting mode.</li>
+<li><strong>Look at blocks:</strong> open the plugin's live traffic or blocked requests log, or the Security, Events screen in Cloudflare. Seeing blocked login attempts confirms it is working.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when your site was hacked even with a firewall, when real customers are being blocked, or when login attacks are slowing the server. <a href="/wordpress-malware-removal/">WordPress malware removal</a> includes cleanup and firewall setup, <a href="/wordpress-maintenance/">WordPress maintenance</a> reviews blocks and updates rules, and <a href="/wordpress-speed-optimization/">speed optimisation</a> checks the firewall isn't adding delay. <a href="/#contact">Get in touch</a> with your security plugin name.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Do I need a firewall plugin if I use Cloudflare?</h3>
 <p>Not necessarily for blocking attacks, but a security plugin still helps with WordPress-aware jobs such as two-factor login, login limits and file-change alerts. Cloudflare plus one plugin is a common, sensible pairing.</p>
@@ -289,8 +301,6 @@
 
 <h3>Does a WordPress firewall stop all hacks?</h3>
 <p>No. It blocks many known attack patterns and slows down password guessing, but outdated plugins, weak passwords and stolen admin logins can still lead to a hack. Keep updates, backups and two-factor login in place alongside the firewall.</p>
-
-<p>Want a firewall set up properly after a hack, with logins locked down and nothing legitimate blocked? See <a href="/wordpress-malware-removal/">WordPress malware removal and hardening</a>, or <a href="/wordpress-maintenance/">WordPress maintenance</a> to keep it monitored every month.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -333,6 +343,8 @@
               <li><a href="#false-positives-when-the-firewall-blocks-the-wrong-thing">False positives: when the firewall blocks the wrong thing</a></li>
               <li><a href="#which-setup-suits-your-site">Which setup suits your site</a></li>
               <li><a href="#testing-your-firewall-after-setup">Testing your firewall after setup</a></li>
+              <li><a href="#quick-check-is-a-firewall-actually-protecting-you">Quick check: is a firewall actually protecting you?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

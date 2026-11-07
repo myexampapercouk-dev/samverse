@@ -43,7 +43,7 @@
       "headline": "Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website",
       "description": "Third-party scripts slowing your website? Find which chat widgets, pixels and embeds cost most, then remove, delay or replace them on WordPress or Shopify.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-28",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/third-party-scripts-slow-website/",
       "image": "https://samverse.space/assets/og/blog-third-party-scripts-slow-website.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-28">28 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Third-Party%20Scripts%3A%20How%20Chat%20Widgets%2C%20Trackers%20and%20Embeds%20Slow%20Your%20Website%20https%3A%2F%2Fsamverse.space%2Fblog%2Fthird-party-scripts-slow-website%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,8 @@
               <li><a href="#fixing-third-party-scripts-on-wordpress">Fixing third-party scripts on WordPress</a></li>
               <li><a href="#fixing-third-party-scripts-on-shopify">Fixing third-party scripts on Shopify</a></li>
               <li><a href="#keep-marketing-happy-and-the-site-fast">Keep marketing happy and the site fast</a></li>
+              <li><a href="#quick-check-what-is-loading-on-your-pages">Quick check: what is loading on your pages?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -276,6 +278,16 @@
 <p>Scripts usually accumulate because each one was useful to someone at the time. Agree a short rule with your marketing team or agency: every new script needs an owner, a purpose and an end date, and is reviewed every quarter. Measure speed before and after adding a tool so its cost is visible. This avoids the cycle of a fast site gradually slowing over a year.</p>
 <p>Also consider privacy. Tracking scripts collect visitor data, so make sure your privacy policy and consent approach reflect what you actually load; see <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>, and check current requirements with a legal adviser.</p>
 
+<h2 id="quick-check-what-is-loading-on-your-pages">Quick check: what is loading on your pages?</h2>
+<ol>
+<li><strong>List the requests:</strong> open your page in Chrome, press F12, go to the <em>Network</em> tab and reload. Sort by Domain and note every domain that is not your own.</li>
+<li><strong>Measure the cost:</strong> run the page through PageSpeed Insights and open the "Reduce the impact of third-party code" audit. It lists each provider and its blocking time.</li>
+<li><strong>Find where they come from:</strong> in wp-admin, check your header and footer plugin, theme options and <em>Appearance, Widgets</em>. Remove scripts for tools you no longer use.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you can't tell which plugin is adding a script, when chat, ads and analytics all need to stay, or when removing a script breaks tracking. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> audits and delays scripts safely, and <a href="/landing-page-design/">landing page design</a> keeps ad pages light. <a href="/#contact">Get in touch</a> with your page URL and a PageSpeed result.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I know if third-party scripts are slowing my website?</h3>
 <p>Run PageSpeed Insights and check the third-party code diagnostic, then block domains one by one in Chrome DevTools to see how much each script affects load and responsiveness.</p>
@@ -287,8 +299,6 @@
 <p>It cannot speed up external servers, but its delay and defer features can stop scripts from blocking the first view. Test carefully afterwards.</p>
 <h3>Why is my Shopify store slow even though Shopify handles hosting?</h3>
 <p>Usually because of apps and theme customisations adding scripts. Removing unused apps and leftover code often helps more than any other change.</p>
-
-<p>If your site is weighed down by scripts and widgets, I can audit what loads, keep what you need and speed up the rest. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/shopify-developer/">Shopify development</a>, with clients across <a href="/wordpress-shopify-developer-india/">India</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -332,6 +342,8 @@
               <li><a href="#fixing-third-party-scripts-on-wordpress">Fixing third-party scripts on WordPress</a></li>
               <li><a href="#fixing-third-party-scripts-on-shopify">Fixing third-party scripts on Shopify</a></li>
               <li><a href="#keep-marketing-happy-and-the-site-fast">Keep marketing happy and the site fast</a></li>
+              <li><a href="#quick-check-what-is-loading-on-your-pages">Quick check: what is loading on your pages?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
