@@ -202,7 +202,7 @@ module.exports = [
     title: 'WordPress vs Wix vs Shopify: Which Is Best for Your Business in India? Cost, UPI Payments, GST and Ownership Compared',
     description: 'WordPress vs Wix vs Shopify for Indian businesses: running costs, UPI and Indian payment gateways, GST invoices, SEO, ownership and finding developers.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['website-redesign', 'woocommerce-developer', 'wordpress-migration'],
     body: `
@@ -278,6 +278,16 @@ module.exports = [
 <h2>Already on Wix or Shopify?</h2>
 <p>You can move to WordPress. Pages and content are rebuilt, products and customers are imported, and every old URL is redirected to protect your rankings. See <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a> or <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</p>
 
+<h2>Quick check: what your current platform locks in</h2>
+<ol>
+  <li>Check who owns the domain: look up your domain on <a href="https://lookup.icann.org/" rel="noopener">ICANN Lookup</a> and confirm the registrar account is in your business name, not a developer's.</li>
+  <li>Try exporting your content. In WordPress, go to <strong>Tools, Export</strong>; in Wix and Shopify, look for the product or blog export options in the dashboard and note what cannot be exported.</li>
+  <li>List the monthly app or plugin charges on your billing page, so you compare real running costs, not just the plan price.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are choosing a platform for a new site, or planning to move off Wix or Shopify and need URLs, content and redirects carried over without losing search traffic. See <a href="/website-redesign/">website redesign</a> and <a href="/wordpress-migration/">WordPress migration</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>Which is better: Wix, WordPress or Shopify?</h3>
 <p>It depends on what you're building. WordPress is the most flexible and usually the cheapest to run, Shopify is the simplest way to run a hosted online store, and Wix is the easiest for a small DIY site. For most Indian service businesses, WordPress is the better long-term choice.</p>
@@ -291,8 +301,6 @@ module.exports = [
 <p>Over several years, WordPress is usually the cheapest to run, because you pay only for hosting, a domain and optional licences. Wix and Shopify subscriptions continue for as long as the site exists, and Shopify apps add monthly costs.</p>
 <h3>Can I move my site from Wix or Shopify to WordPress later?</h3>
 <p>Yes, but it's a rebuild rather than an export. Content and products are carried over, the design is recreated, and old URLs are redirected so you keep your Google visibility.</p>
-
-<p>Choosing a platform for a new site or a rebuild? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan, build and hand over business websites.</p>
 `,
   },
   {
@@ -301,7 +309,7 @@ module.exports = [
     title: 'Slow WordPress Site? Why It Happens and How to Fix It (Front End and Admin)',
     description: 'Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
@@ -457,6 +465,16 @@ module.exports = [
   <li>Purge all caches, re-test the same pages and compare with your baseline.</li>
 </ol>
 
+<h2>Quick check: measure your server response time</h2>
+<ol>
+  <li>Run your home page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and note the "Reduce initial server response time" audit, if it appears.</li>
+  <li>In Chrome, open DevTools, go to the <strong>Network</strong> tab, reload the page and click the first document request. Under <strong>Timing</strong>, "Waiting for server response" well over 600 ms points to hosting or caching.</li>
+  <li>In the WordPress admin, open <strong>Tools, Site Health</strong> and check for critical issues such as an outdated PHP version.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script, database and admin issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
+
 <h2>FAQs</h2>
 
 <h3>Why is my WordPress site so slow?</h3>
@@ -475,9 +493,6 @@ module.exports = [
 <p>They can, but quality matters more than quantity. A few heavy plugins can be slower than many small, well-built ones, and Query Monitor shows which are doing the most work.</p>
 
 <p>Related: <a href="/blog/what-is-a-cdn/">what a CDN does</a> and <a href="/blog/hostinger-website-slow-fix/">Hostinger-specific speed fixes</a>.</p>
-
-<h2>When to get help</h2>
-<p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script, database and admin issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
 `,
   },
   {
@@ -775,7 +790,7 @@ module.exports = [
     title: 'Freelance Web Developer vs Agency: Cost, Risk and Who to Hire for Your Website (Plus 12 Questions to Ask)',
     description: 'Freelance web developer or agency? Compare cost, communication, risk and support, see how to hire a freelance WordPress developer in India and what to ask.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
@@ -878,6 +893,16 @@ module.exports = [
 
 <p>If you decide on a freelancer, see how I work with businesses across the country on the <a href="/wordpress-shopify-developer-india/">freelance WordPress &amp; Shopify developer in India</a> page.</p>
 
+<h2>Quick check: vet a developer before you pay</h2>
+<ol>
+  <li>Open two or three sites from their portfolio, run each through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and check the forms actually work.</li>
+  <li>Ask whether the domain, hosting and WordPress admin will be in your name, and get the answer in the quote.</li>
+  <li>Ask for a written scope listing pages, features, revisions and what happens after launch.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you want one developer who quotes a fixed price after a free review and hands over full ownership, or when an earlier hire left the site half-finished. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or <a href="/#contact">send your website address</a> with what you need.</p>
+
 <h2>FAQs</h2>
 <h3>Is it better to hire a freelancer or an agency to build a website?</h3>
 <p>For most small and medium business websites, an experienced freelancer offers the best balance of cost, quality and direct communication. Choose an agency if you need branding, content, ads and development managed together, or a large team for a complex project.</p>
@@ -891,8 +916,6 @@ module.exports = [
 <p>Many do, especially for development, often on a white-label basis where the freelancer works under the agency's brand. It isn't a bad thing in itself, but it's fair to ask who will actually build your site.</p>
 <h3>Should I pay a web developer upfront?</h3>
 <p>An advance is normal for both freelancers and agencies, with the rest tied to milestones or paid before launch. Be wary of anyone asking for the full amount upfront on a new project.</p>
-
-<p>Looking for a freelance WordPress developer who'll give you a straight answer? See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -1022,6 +1045,13 @@ module.exports = [
 
 <p>I build on both platforms for businesses across India, for example in <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a> and <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>.</p>
 
+<h2>Quick check: estimate your real running costs</h2>
+<ol>
+  <li>Write down the plan price for each option, plus the monthly app or plugin costs for the features you need, such as GST invoices and courier integration.</li>
+  <li>Check the transaction fee for your chosen payment gateway on its pricing page, and whether Shopify adds its own fee for that gateway on your plan.</li>
+  <li>Multiply by a year, and add hosting for WooCommerce, so you compare yearly totals rather than headline prices.</li>
+</ol>
+
 <h2>When to get help</h2>
 <p>If you have chosen a platform and want it set up properly, with Indian payments, COD, GST invoices and shipping tested before launch, get a fixed quote after a free review: <a href="/shopify-developer/">Shopify development in India</a> or <a href="/woocommerce-developer/">WooCommerce development</a>. Since Samverse builds on both, the advice is about your store, not a preference for one platform.</p>
 
@@ -1038,8 +1068,6 @@ module.exports = [
 <p>Both can rank. WooCommerce gives more control over URLs, schema and content, which suits stores that publish guides and category content. Shopify covers the basics with a fixed URL structure and a simpler blog.</p>
 <h3>Can I move from Shopify to WooCommerce later?</h3>
 <p>Yes. Products, categories and images move across, along with customers and past orders where exports allow, the design is rebuilt, and old URLs are redirected to protect search visibility.</p>
-
-<p>Decided WooCommerce suits your store? I set up the catalogue, an Indian payment gateway tested in test mode, COD rules, GST and shipping, then train you on orders and stock; most stores take 2 to 4 weeks once product details and photos are ready. See <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -1471,7 +1499,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website: A Complete Guide',
     description: 'A B2B manufacturer website guide: pages for every buyer, applications pages, RFQs, technical downloads, dealers, export buyers and SEO for B2B searches.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -1563,6 +1591,16 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>I build manufacturer websites across India, including <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a>, <a href="/wordpress-shopify-developer-coimbatore/">Coimbatore</a> and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a>.</p>
 
+<h2>Quick check: test your site the way a buyer would</h2>
+<ol>
+  <li>On your phone, search Google for one of your products with a specification, such as a size or grade, and see whether your site appears.</li>
+  <li>Open a product page and time how long it takes to find the datasheet download and the enquiry form.</li>
+  <li>Submit a test enquiry and check that it reaches the right person's inbox, not spam.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your site is a brochure nobody updates, product pages are missing, or enquiries go unanswered because they land in the wrong inbox. See <a href="/website-for-manufacturers/">websites for manufacturers</a>, or <a href="/#contact">send your website address</a> and your product catalogue for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What pages should a manufacturing company website have?</h3>
 <p>Product categories and family pages, applications or industries served, capabilities and infrastructure, quality and certifications, a downloads library, about and leadership, insights articles, and a contact page with an RFQ form. Add dealer pages if you sell through a network.</p>
@@ -1574,8 +1612,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Not a blog for its own sake. A few well-researched articles that answer the selection, comparison and application questions your sales team hears can bring the right engineers to your product pages.</p>
 <h3>Which certifications should we show?</h3>
 <p>Only the ones you currently hold, with the number, certifying body, scope and validity date, and a copy buyers can check. Product certifications belong on the products they cover.</p>
-
-<p>If your website is still a brochure that nobody updates, I can rebuild it around the people who actually buy from you. See <a href="/website-for-manufacturers/">websites for manufacturers</a>, and share your product spreadsheet or catalogue for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -1584,7 +1620,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Gutenberg vs Elementor: Which WordPress Editor Should You Use in 2026?',
     description: 'Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
@@ -1707,6 +1743,13 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages. If you want it built properly from the start, you can <a href="/elementor-developer/">hire an Elementor developer</a> who also builds with blocks, so the advice isn't tied to one tool.</p>
 
 <p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
+
+<h2>Quick check: see what your current pages are built with</h2>
+<ol>
+  <li>In the WordPress admin, open <strong>Pages</strong>. Pages built with Elementor show an "Elementor" label next to the title.</li>
+  <li>Open <strong>Plugins</strong> and check whether Elementor and Elementor Pro are active and up to date.</li>
+  <li>Run one Elementor page and one block editor page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and compare the mobile results.</li>
+</ol>
 
 <h2>When to get help</h2>
 <p>Get help when you're moving an existing site from one editor to the other, because pages don't convert automatically and each one is rebuilt; when an Elementor site has slowed down under several add-on packs; or when a handover is coming and the client needs to edit without breaking layouts.</p>
@@ -2000,7 +2043,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
     description: 'How long does a WordPress website take? Days for a landing page, 1-2 weeks for a small business site, 2-4 weeks for a store, plus what causes delays.',
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
@@ -2115,6 +2158,16 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 </ol>
 <p>Budgeting at the same time? <a href="/blog/wordpress-website-cost-india/">How much a WordPress website costs in India</a> covers prices by type of site, and the <a href="/blog/first-90-days-after-website-launch/">first 90 days after launch</a> covers what to do once the site is live.</p>
 
+<h2>Quick check: are you ready for a project to start?</h2>
+<ol>
+  <li>List every page you need, with one line on what each page is for.</li>
+  <li>Check you have logins for your domain registrar and hosting, or decide who will buy them.</li>
+  <li>Gather your logo files, photos and any written content in one shared folder. Missing content is the most common cause of delay.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have a launch date and need a realistic timeline, or a project has stalled with another developer. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/#contact">send your website address</a> with your deadline for a fixed quote and timeline.</p>
+
 <h2>FAQs</h2>
 <h3>How long does it take to build a WordPress website?</h3>
 <p>Counted from when content is ready, a landing page usually takes 3–5 working days, a small business site of 5–8 pages 1–2 weeks, a larger business or B2B site 2–4 weeks and a WooCommerce store 2–4 weeks. Custom features such as bookings, memberships or multiple languages take 4 weeks or more.</p>
@@ -2128,8 +2181,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Most redesigns take 1–3 weeks once content is ready. Large sites, a move from another platform, heavy content rewriting and slow feedback stretch it, and URLs that change need redirects planned before design starts.</p>
 <h3>How long after launch will my website show on Google?</h3>
 <p>Google needs to discover and index the new pages, which can take from days to a few weeks. Submitting the sitemap in Search Console helps. Ranking well for competitive searches takes much longer than being indexed; see <a href="/blog/how-long-does-seo-take/">how long SEO takes</a>.</p>
-
-<p>Have a launch date in mind? Send me the pages you need, two or three sites you like and your deadline, and you'll get a fixed quote with a timeline after a free review. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> for an online store.</p>
 `,
   },
   {
@@ -3272,7 +3323,7 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
     title: 'How to Write Content for Your Business Website: A Page-by-Page Process for the Homepage, About, Services and Contact Pages',
     description: 'How to write website content for a business: plan pages, write service pages first, then home, about and contact, with SEO basics and a brief template.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -3399,6 +3450,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Does it have a unique title, meta description and links to related pages?</li>
 </ol>
 
+<h2>Quick check: read a page like a new visitor</h2>
+<ol>
+  <li>Open one service page on your phone and read only the headings. They should tell someone what you offer, who it is for and what to do next.</li>
+  <li>Paste the page text into a readability tool such as <a href="https://hemingwayapp.com/" rel="noopener">Hemingway Editor</a> and shorten the sentences it highlights.</li>
+  <li>Search Google for <code>site:yourdomain.com</code> and check each page's title and description read like a clear promise.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the words are holding up a new site, or your pages get visits but few enquiries. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>How much content should each page have?</h3>
 <p>Enough to answer the questions a buyer has at that stage, and no more. A service page usually needs several sections; a contact page needs very little. Every section should earn its place.</p>
@@ -3410,8 +3471,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>For drafts and outlines, yes, but edit heavily, check every fact and add specifics only you know. Unedited AI text tends to be generic and can contain mistakes.</p>
 <h3>What if I'm not a good writer?</h3>
 <p>Start with the questions customers ask, and answer each one in a few sentences as if replying on WhatsApp. That raw material, tidied up, makes better website content than polished but vague copy.</p>
-
-<p>Planning a new website and not sure where to start with the words? My <a href="/wordpress-website-development/">WordPress website development</a> service starts with your goals and pages, and if content isn't ready, I suggest a page structure and what to write for each page, then build it into a fast site you can edit yourself. Send me your requirements for a fixed quote.</p>
 `,
   },
   {
@@ -3538,7 +3597,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'WordPress vs Custom-Coded Website: Differences, Costs and Which Is Right for Your Business',
     description: 'The difference between a WordPress website and a custom coded website: cost, launch time, editing, speed, SEO, security and upkeep, and which suits you.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
     body: `
@@ -3650,6 +3709,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
 
+<h2>Quick check: what is your current site built on?</h2>
+<ol>
+  <li>Visit <code>yourdomain.com/wp-admin/</code>. A WordPress login screen means the site runs on WordPress.</li>
+  <li>Right-click any page, choose <strong>View page source</strong> and search for <code>wp-content</code> or a framework name.</li>
+  <li>Ask yourself who updated the site last and how. If every small change needs a developer, note that before choosing the next build.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are not sure which approach fits, or your current site is hard to edit and you want to rebuild it. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> and <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/#contact">send your website address</a> and a note on what the site must do.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a WordPress website and a custom-coded website?</h3>
 <p>A WordPress website is built on an existing content management system, with a theme, plugins and an editing dashboard. A custom-coded website is written from scratch or with a framework, so its features, editing tools and updates are all built and maintained by developers.</p>
@@ -3663,8 +3732,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>For websites, very nearly. Custom themes, blocks, plugins and integrations let a developer build almost anything a business site needs while keeping the dashboard. Complex applications are where a dedicated framework becomes the better tool.</p>
 <h3>Can I switch from one to the other later?</h3>
 <p>Yes, but it's a rebuild, not a conversion. Content can usually be moved, and old URLs must be redirected to protect rankings. Choosing well at the start saves paying for the site twice.</p>
-
-<p>Not sure which suits your project? Tell me what the site needs to do and who will update it, and I'll tell you honestly which approach fits. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for what a build includes.</p>
 `,
   },
   {
@@ -3796,7 +3863,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Websites for Lawyers, CAs and Consultants: What Clients Look For, What the Rules Allow and How to Handle Enquiries Confidentially',
     description: 'Websites for law firms and CA practices: practice area pages, verifiable credentials, Bar Council and ICAI limits, confidential enquiries and DPDP basics.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -3883,6 +3950,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Many law and CA firms are based in Mumbai's business districts. If yours is one of them, see the page for a <a href="/wordpress-shopify-developer-mumbai/">WordPress and Shopify developer for Mumbai businesses</a>.</p>
 
+<h2>Quick check: what a prospective client finds</h2>
+<ol>
+  <li>Search Google for your name or firm name with your city and see whether your own site or a directory profile comes first.</li>
+  <li>Open your contact form and check it does not ask for case details, and that it explains how enquiries are kept confidential.</li>
+  <li>Check your Bar Council or ICAI membership details shown on the site are current and match your records.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your practice is only on directories, the site has not changed in years, or you want practice area pages written within professional conduct rules. See <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What should a lawyer's or CA's website include?</h3>
 <p>Profiles with verifiable credentials, a page for each practice area or service, a consultation request form that asks only for an outline, office details with a map, articles, a privacy notice and, for law firms, a disclaimer.</p>
@@ -3894,8 +3971,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Clarity helps clients, so state how the first consultation works and whether it is charged, in factual terms, if your professional rules permit it.</p>
 <h3>How often should we update our articles?</h3>
 <p>Review the most-read articles at least once a year and whenever the law, rates or deadlines they mention change, and show the date each was last reviewed.</p>
-
-<p>If your practice is only on directories, or your website hasn't changed in years, I can build one that explains your practice areas clearly and handles enquiries carefully. See <a href="/website-for-lawyers-and-consultants/">websites for lawyers, CAs and consultants</a> and share your current site or directory profile and I will review it free and send a fixed quote.</p>
 `,
   },
   {
@@ -3904,7 +3979,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Solar Company Website Guide: The Pages, Subsidy Information, Proof and Survey Booking That Turn Visitors Into Quote Requests',
     description: 'Solar company website guide: separate home and business pages, accurate subsidy pages, honest savings calculators, project galleries and survey booking.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-solar-and-power-companies', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -3993,6 +4068,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Rental and hire businesses in the power sector have their own needs; see <a href="/blog/equipment-rental-website-guide/">equipment and generator rental websites</a>.</p>
 
+<h2>Quick check: does your site lead to a site survey?</h2>
+<ol>
+  <li>On your phone, open your home page and check a survey or callback button is visible without scrolling.</li>
+  <li>Check any subsidy information against the official <a href="https://pmsuryaghar.gov.in/" rel="noopener">PM Surya Ghar portal</a> and add the date you last checked it.</li>
+  <li>Submit a test survey request and confirm it reaches your sales team the same day.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your site is a single page of panel photos, subsidy details are out of date, or survey requests are not reaching your team. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What pages should a solar company website have?</h3>
 <p>Separate pages for homes, housing societies and commercial or industrial buyers, a subsidy and net metering page, a projects gallery, a site survey booking page, a service and AMC page, and about and FAQ pages.</p>
@@ -4004,8 +4089,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Name brands where you are authorised to sell or install them. If you install other brands to order, say so rather than showing their logos.</p>
 <h3>Should we publish prices per kilowatt?</h3>
 <p>It is your choice. An indicative range with what it includes, and a note that the final price depends on the survey, answers a common first question. If prices move often, a quick quote with a fast callback works too.</p>
-
-<p>If your current site is a single page of panel photos and a phone number, I can rebuild it around the questions your buyers ask and the survey that follows. See <a href="/website-for-solar-and-power-companies/">websites for solar and power companies</a> and share your current site or listing for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -4014,7 +4097,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'White-Label WordPress Development: How It Works for Agencies, From Brief to Handover',
     description: 'How white-label WordPress development works for agencies: the process, who does what, pricing models, NDAs, communication, QA and handover to your client.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'figma-to-wordpress', 'elementor-developer'],
     body: `
@@ -4137,6 +4220,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <li><strong>Protect SEO and tracking.</strong> Keep URLs, redirects, meta titles, schema, Google Tag Manager and conversion tracking intact during any rebuild, and re-check GA4 events after launch.</li>
 <li><strong>Sell to existing clients first.</strong> Clients whose sites are slow or convert poorly are the easiest yes.</li>
 </ul>
+<h2>Quick check: test a partner on a small job</h2>
+<ol>
+  <li>Send a small, real brief, such as one landing page, and ask for a staging link rather than screenshots.</li>
+  <li>Run the staging page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and check it at phone, tablet and desktop widths.</li>
+  <li>Check the handover notes are written in your branding and that no partner name appears in the site's footer, admin or code comments.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have more client briefs than your team can build, or need WordPress and Elementor work delivered under NDA in your branding. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>, or <a href="/#contact">send a brief</a> for a small test project.</p>
+
 <h2>FAQs</h2>
 <h3>What is white-label WordPress development?</h3>
 <p>It's when a developer or studio builds WordPress websites for an agency, which sells them to its clients under its own brand. The client deals only with the agency, and the developer works behind the scenes under an NDA, with no credits on the site.</p>
@@ -4150,8 +4243,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>That should be agreed in writing. Usually ownership passes to the agency or its client once the work is paid for, with hosting, licences and admin accounts in the agency's or client's name from the start.</p>
 <h3>How do I find a reliable white-label WordPress partner?</h3>
 <p>Look at live sites they built, judge their communication before you pay, confirm they'll sign your NDA and work in your tools, and start with a small trial project before handing over a major client.</p>
-
-<p>Want to try a partner on your next brief? I take on white-label WordPress and Elementor work under NDA, with fixed quotes, staging builds and handover notes in your branding. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> for how it works, and start with a small test project.</p>
 `,
   },
   {
@@ -4295,7 +4386,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'School and Coaching Institute Websites: What Parents and Students Look For, and How to Turn It Into Admission Enquiries',
     description: 'What parents and students check on school and coaching websites: verifiable results, faculty, fees, safety, timings, demo classes and admission enquiries.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-schools-and-coaching', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -4385,6 +4476,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Teaching coding, data or other IT skills to college students and working professionals? See <a href="/blog/website-for-software-training-institutes/">websites for software training institutes</a>.</p>
 
+<h2>Quick check: find the answers a parent looks for</h2>
+<ol>
+  <li>On your phone, time how long it takes to find fees or a fee range, batch timings and your address with a map.</li>
+  <li>Check every date on the site, including admission deadlines and test dates, is for the current year.</li>
+  <li>Submit a test admission enquiry and check who receives it and how quickly it is answered.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site shows old dates, families keep phoning to ask basic questions, or admission enquiries are lost. See <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What do parents look for on a school website?</h3>
 <p>Admissions information and dates, fees or the fee structure, safety and transport arrangements, facilities, teachers, results where relevant, school timings, location, and a way to book a visit or enquire.</p>
@@ -4396,8 +4497,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Answer the questions in the table above on the pages where families look for them, keep dates and batches current, offer a demo, visit or free test, and make sure every enquiry reaches the right branch and gets a quick reply.</p>
 <h3>Can our staff update results, notices and batches themselves?</h3>
 <p>Yes. Results, notices, events and batch tables can be managed from the dashboard, so the site never shows last year's information.</p>
-
-<p>If your website still shows last year's dates, or families keep phoning to ask what it should already say, I can rebuild it so the answers are where families look for them. See <a href="/website-for-schools-and-coaching/">websites for schools and coaching institutes</a> and share your prospectus or current site and I will review it free and send a fixed quote.</p>
 `,
   },
   {
@@ -4406,7 +4505,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Online Donation to Temples, Trusts and NGOs: How to Set Up Online Donations on Your Website',
     description: 'Set up online donation to temples, trusts or NGOs in India: Razorpay, Cashfree, PayU or Instamojo, UPI QR, seva and puja bookings, receipts and monthly giving.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-temples-and-ngos', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
@@ -4526,6 +4625,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <h2>Keeping devotees informed after they give</h2>
 <p>Trust grows when donors see what happened next. Post a short update after each festival or project, share photos of annadanam or renovation work, and publish an annual summary of how funds were used if the trust is comfortable doing so. A simple email or WhatsApp list of past donors also brings people back for the next festival.</p>
 
+<h2>Quick check: test your donation flow</h2>
+<ol>
+  <li>Make a small real donation from your phone and time how long it takes, from the home page to the receipt.</li>
+  <li>Check the receipt email shows your registered name, PAN and, if you hold it, your 80G registration details correctly.</li>
+  <li>Scan the UPI QR code on your site with two different UPI apps and confirm both show your organisation's verified name.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when donations fail, receipts are sent by hand, or you need a payment gateway and receipts set up correctly. See <a href="/website-for-temples-and-ngos/">websites for temples and NGOs</a> and <a href="/wordpress-maintenance/">WordPress maintenance</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>How can a temple accept online donations?</h3>
 <p>Register with a payment gateway using the trust's documents and bank account, add a donation form to the website with suggested amounts and purposes, send automatic receipts, and display a merchant UPI QR code for devotees at the temple.</p>
@@ -4549,7 +4658,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Startup Website Checklist: Domain, Positioning, Launch Pages, Analytics, Legal Pages, Investor and Hiring Pages, and Scaling Later',
     description: 'A startup website checklist from pre-launch to post-launch: domain, positioning, the pages to launch with, analytics, legal pages, investor and hiring pages.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['website-for-startups', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -4641,6 +4750,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>IT services firms have their own priorities; see <a href="/blog/website-for-it-software-companies/">websites for IT and software companies</a>.</p>
 
+<h2>Quick check: is tracking working before you launch?</h2>
+<ol>
+  <li>Open <strong>Reports, Realtime</strong> in Google Analytics 4 and visit your site from your phone. Your visit should appear within a minute.</li>
+  <li>Submit your sign-up or demo form and check the event shows in Realtime and the lead reaches your CRM or inbox.</li>
+  <li>Paste your home page into <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and fix anything in the red on mobile.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are preparing to launch, raise or hire and need the pages, forms and tracking working together. See <a href="/website-for-startups/">startup websites</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> or pitch deck for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What pages does a startup website need at launch?</h3>
 <p>A homepage, a product or features page, pricing if you sell self-serve, about, contact, a privacy policy and terms. Use-case, integration, careers and investor pages can come later, when there is real content for them.</p>
@@ -4652,8 +4771,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Usually the marketing site sits on the main domain and the app on a subdomain such as app.yourdomain.com, with buttons linking across. That keeps website changes away from the product.</p>
 <h3>Do we need a blog at launch?</h3>
 <p>No. Two or three useful articles beat an empty blog or a pile of thin posts. Set up the blog template at launch so the team can publish once your positioning is settled.</p>
-
-<p>Preparing to launch, raise or hire? Send me your pitch deck or a one-page summary for a free review. A <a href="/website-for-startups/">startup website</a> with me covers the launch pages, forms connected to your tools, analytics tracking key events from day one and templates your team can reuse, with a fixed quote up front.</p>
 `,
   },
   {
@@ -4662,7 +4779,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Figma to WordPress: How Designers Should Prepare a File for a Smooth Developer Handoff (With Checklist)',
     description: 'Figma to WordPress handoff for designers: auto layout, styles and variables, components, breakpoints, assets, fonts and a checklist for an accurate build.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Agencies',
     related: ['figma-to-wordpress', 'elementor-developer', 'wordpress-developer-for-agencies'],
     body: `
@@ -4785,6 +4902,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Handing your design to a developer in another country? The guide on how to <a href="/blog/outsource-wordpress-development-india/">outsource WordPress development to India</a> explains how an outsourced project usually runs, from what to send to the final checks.</p>
 
+<h2>Quick check: is your Figma file ready to hand over?</h2>
+<ol>
+  <li>Open the <strong>Local variables</strong> and styles panels and check every colour and text size on the page uses one of them.</li>
+  <li>Select a few frames and check they use auto layout, so content can grow without breaking.</li>
+  <li>Check you have mobile frames for each main page, and that fonts have a web licence.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have a finished design and want it built in WordPress as designed, or you are an agency that needs it delivered white-label. See <a href="/figma-to-wordpress/">Figma to WordPress conversion</a>, or <a href="/#contact">share your design link</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What should a designer send a WordPress developer?</h3>
 <p>Access to the Figma file with final frames clearly marked, the design system as styles or variables, components with states, desktop and mobile frames, exported or exportable assets, fonts with licences, real content and a list of pages, templates and integrations.</p>
@@ -4796,8 +4923,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>No. Well-named colour and text styles work just as well for a WordPress build. Variables help when you need modes, such as light and dark themes, or want spacing tokens in one place.</p>
 <h3>How close will the WordPress site be to my design?</h3>
 <p>Very close, if the file is well prepared and each page is compared side by side with the frames at every breakpoint. Small differences can come from how browsers render fonts and from real content being longer or shorter than the design.</p>
-
-<p>Got a Figma, XD or PSD file ready to build? Share the link for a free review: you'll get a list of any gaps, a fixed quote and a timeline, and white-label delivery is available for agencies through <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a>. See <a href="/figma-to-wordpress/">Figma to WordPress conversion</a> for the full process.</p>
 `,
   },
   {
@@ -4806,7 +4931,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'How to Build a Product Catalogue Website for an Industrial Company: Categories, Spec Tables, Datasheets and RFQs',
     description: 'How to build an industrial catalog website: category structure, spec tables, datasheets, RFQ baskets, WooCommerce catalogue mode, filters and a checklist.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -4925,6 +5050,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Suppliers of restaurant and hotel kitchen equipment face the same choice, plus layout and service needs; see <a href="/blog/website-for-commercial-kitchen-equipment-suppliers/">websites for commercial kitchen equipment suppliers</a>.</p>
 
+<h2>Quick check: can buyers find a product by specification?</h2>
+<ol>
+  <li>Search Google for <code>site:yourdomain.com</code> plus a model number, and check the right product page appears.</li>
+  <li>Use your site's own search and filters to find a product by size or material, as a buyer would.</li>
+  <li>Open a product page and check the datasheet link works and the enquiry form carries the product name.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your catalogue is a PDF buyers cannot search, or product pages are missing specifications and enquiry buttons. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/#contact">send your website address</a> and product list for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create a product catalogue website for my company?</h3>
 <p>Plan categories in a spreadsheet, gather specifications, photos and datasheets, and build templates for category and product pages with a quote form. On WordPress, WooCommerce without prices or custom post types with fields both work; import products from a spreadsheet if the range is large.</p>
@@ -4938,8 +5073,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Generally not product rich results, which need a price, review or rating. Product, Breadcrumb and Organization markup are still worth adding, because they help search engines understand your pages.</p>
 <h3>What should an industrial catalog website include?</h3>
 <p>A clear category tree, one page per product family with a text specification table, photos, drawings and a downloadable datasheet, a Request a Quote button or enquiry basket, filters on the specifications buyers use, and search that recognises model numbers.</p>
-
-<p>Have a product list or a PDF catalogue that needs to become a website buyers can search and enquire from? See <a href="/website-for-manufacturers/">websites for manufacturers</a> for how I plan and build them.</p>
 `,
   },
   {
@@ -5251,7 +5384,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'Landing Page vs Website: The Key Differences, Where Squeeze Pages Fit, and Which You Need for Your Ads',
     description: 'Landing page vs website: the key differences, landing page vs homepage, squeeze pages, and when to send Google or Meta ad clicks to each for more leads.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'real-estate-website-design'],
     body: `
@@ -5353,6 +5486,16 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Deciding how big your main site should be? See <a href="/blog/one-page-vs-multi-page-website/">one-page vs multi-page websites</a>.</p>
 
+<h2>Quick check: where are your ad clicks landing?</h2>
+<ol>
+  <li>In Google Ads, open <strong>Campaigns, Insights and reports, Landing pages</strong> and see which URLs your ad clicks go to.</li>
+  <li>Open that page on your phone and check the offer in the ad is repeated in the first heading.</li>
+  <li>Submit the form and check the conversion is recorded in your ads account.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when ads send people to your home page, or a landing page gets clicks but few enquiries. See <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> and ad details for a review.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a landing page and a website?</h3>
 <p>A website has many pages serving many visitors and purposes, with full navigation. A landing page is a single page for one audience and one action, usually with no menu, built for a specific ad or campaign.</p>
@@ -5366,8 +5509,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>No. A homepage introduces your whole business and links to everything. A landing page focuses on one offer and removes distractions, so visitors from an ad take one action.</p>
 <h3>Do I need a separate landing page for each ad?</h3>
 <p>Only when the ads promise different things, such as a different service, offer or location. Ad groups with the same promise can share one page. What matters is that every visitor sees the words their ad used, so they know they're in the right place.</p>
-
-<p>Running ads and need a page that turns clicks into enquiries? See <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -5376,7 +5517,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'How to Get Your Website Indexed by Google Faster: What Actually Works',
     description: 'How to get your website indexed by Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.',
     date: '2026-09-27',
-    updated: '2026-10-27',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
@@ -5482,6 +5623,9 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>If Search Console shows "Crawled - currently not indexed" or "Discovered - currently not indexed", Google can reach the page but has chosen not to index it yet. Improve the page so it answers its query better than similar pages, link to it from strong pages on your site, and merge near-duplicate pages rather than publishing many thin ones.</p>
 <h3>Shopify stores not showing on Google</h3>
 <p>On Shopify, check that the store password page is turned off (the store must be live), submit the automatic /sitemap.xml in Search Console, and make sure product and collection pages have unique titles and descriptions.</p>
+<h2>When to get help</h2>
+<p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I get Google to index my website quickly?</h3>
 <p>Verify the site in Search Console, submit your sitemap, link new pages from your homepage and menu, request indexing for the key URLs and make sure each page is substantial and unique. That gives Google every reason to crawl and index promptly.</p>
@@ -5495,8 +5639,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>It helps Google discover URLs, which matters most on new sites, but it doesn't make Google index them. Internal links, page quality and site speed decide how quickly discovered pages are crawled and indexed.</p>
 <h3>Does Google use IndexNow?</h3>
 <p>Not at the time of writing. IndexNow notifies Bing and other participating search engines. For Google, rely on internal links, your sitemap and URL Inspection.</p>
-
-<p>If key pages are still stuck in "Discovered" or "Crawled, currently not indexed", the audit in my <a href="/wordpress-seo-services/">WordPress SEO services</a> checks crawling, sitemaps, internal links and thin or duplicate pages, then fixes what is holding them back.</p>
 `,
   },
   {
@@ -5505,7 +5647,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'How to Choose a WordPress Theme for Your Business Website: Speed, Builder, Support, Block vs Classic and a Checklist',
     description: 'How to choose a WordPress theme: match it to your page builder, check speed, updates, support and demo bloat, free vs premium, and avoid nulled themes.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'elementor-developer', 'wordpress-speed-optimization'],
     body: `
@@ -5600,6 +5742,16 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Building a listings site? See <a href="/blog/directory-website-wordpress/">how directory websites work on WordPress</a>.</p>
 
+<h2>Quick check: test a theme before you commit</h2>
+<ol>
+  <li>Open the theme's demo in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and check the mobile result.</li>
+  <li>On its WordPress.org page, check the <strong>Last updated</strong> date and that it is tested with a recent WordPress version.</li>
+  <li>Install it on a staging copy, not your live site, and check your existing pages and plugins still work.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are not sure which theme fits, or a theme is making the site slow or hard to edit. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>Does my WordPress theme affect SEO?</h3>
 <p>Indirectly. Google looks at content, headings, links and page experience, not the theme's name. A theme affects speed, mobile usability and heading structure, so a heavy or badly coded one can hold good content back.</p>
@@ -5611,8 +5763,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Yes, and your posts and pages stay. What changes is anything the old theme controlled: the header, footer, Customizer settings, widgets and theme-specific shortcodes. Test the switch on a staging copy first.</p>
 <h3>Should I choose a block theme or a classic theme?</h3>
 <p>Choose a block theme if you'll edit mainly in the block editor. Choose a classic or hybrid theme if you'll build with Elementor or rely on plugins that expect classic widgets and Customizer settings.</p>
-
-<p>Want a theme chosen and set up for speed, easy editing and your brand, without the guesswork? My <a href="/wordpress-website-development/">WordPress website development</a> service includes picking the right base, whether a lightweight theme or a custom design, and building a site you can update yourself after launch. Send me your requirements for a fixed quote.</p>
 `,
   },
   {
@@ -6713,7 +6863,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'How to Add WhatsApp to Your Business Website: Click-to-Chat Links, Buttons, Tracking and the API',
     description: 'Add WhatsApp Business chat on website pages for free: wa.me links, floating buttons, WordPress plugins, pre-filled messages, click tracking and the API.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-website-development', 'landing-page-design', 'website-for-restaurants'],
     body: `
@@ -6838,6 +6988,9 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 
 <p>Wondering about chatbots instead? Read <a href="/blog/website-chatbot-worth-it/">do you need a chatbot?</a></p>
 
+<h2>When to get help</h2>
+<p>Get help when you want WhatsApp, calls and forms tracked so you can see which channel brings enquiries, or the chat button is slowing down the site. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best way to add WhatsApp business chat on website pages?</h3>
 <p>Use a free wa.me click-to-chat link with your number in international format and a pre-filled message, placed on a clear button beside your main call to action and as a floating button on mobile. In WordPress you can add it in the block editor, your theme or a light plugin.</p>
@@ -6851,8 +7004,6 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 <p>On a computer, wa.me links open the WhatsApp desktop app if it's installed, or offer WhatsApp Web, which needs the visitor's phone linked. On mobile they open the app directly. That's normal behaviour, and it's why a form or phone number should sit alongside WhatsApp.</p>
 <h3>How do I track WhatsApp clicks in Google Analytics?</h3>
 <p>Create a GA4 event for clicks on links containing wa.me, either from the outbound click events GA4 already collects or with a Google Tag Manager click trigger, and mark it as a key event.</p>
-
-<p>Want WhatsApp, calls and forms set up so every enquiry is tracked? I can add it to your site as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off setup.</p>
 `,
   },
   {
@@ -7970,7 +8121,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Websites for Interior Designers and Architects: Portfolio-First Design, Project Pages, Fast Images and Enquiries That Qualify Clients',
     description: 'Portfolio-first websites for interior designers and architects: project pages, fast galleries, your process, qualifying enquiry forms and design partners.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -8067,6 +8218,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
 
+<h2>Quick check: does your portfolio load and convert?</h2>
+<ol>
+  <li>Open your heaviest project page in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and look at the images it flags.</li>
+  <li>On your phone, check each project shows its location, scope and your role.</li>
+  <li>Submit your enquiry form and check it asks for project type, location and timeline.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your portfolio is slow on phones, projects lack context, or enquiries do not fit your practice. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/website-redesign/">website redesign</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>How many projects should an interior designer show on their website?</h3>
 <p>Usually eight to fifteen of your strongest projects, chosen to show your range. Add new ones and retire weaker ones over time rather than showing everything.</p>
@@ -8078,8 +8239,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Yes, as long as they are labelled as renders or concepts, so visitors know which projects are built and which are designs.</p>
 <h3>How do we stop large images slowing the site?</h3>
 <p>Export images at the size they are displayed, serve modern formats, lazy-load galleries and open full-resolution versions only on request.</p>
-
-<p>If you want a portfolio site that shows how you think and brings enquiries that fit your practice, see <a href="/wordpress-website-development/">WordPress website development</a>. Share your current site or a few project photos and I will review them free and send a fixed quote.</p>
 `,
   },
   {
@@ -8089,7 +8248,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Websites for Gyms, Fitness Studios and Yoga Studios: Live Timetables, Membership Plans, a Trial Pass, Trainer Profiles and Honest Results',
     description: 'Plan a gym or studio website around a timetable members trust, clear plans, a trial pass, trainer profiles with real certifications and no body promises.',
     date: '2026-09-27',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'woocommerce-developer'],
     body: `
@@ -8203,6 +8362,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Salons and spas share many of these needs; see <a href="/blog/website-for-salons-spas/">websites for salons and spas</a>.</p>
 
+<h2>Quick check: check what a new member sees</h2>
+<ol>
+  <li>On your phone, find this week's timetable from the home page and check the classes and times are current.</li>
+  <li>Claim your own trial pass and time how long it takes and whether staff receive it.</li>
+  <li>Search Google for your gym name and check your Business Profile shows the right hours and links to your site.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the timetable is out of date, trial pass requests are lost, or the site does not show up for nearby searches. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>Should my gym website show membership prices?</h3>
 <p>Either can work. Listing prices filters visitors and saves calls; showing plans with price on request suits gyms with frequent offers. Describe what each plan includes in both cases.</p>
@@ -8214,8 +8383,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Name each certification and the organisation that issued it, exactly as on the certificate, and keep profiles up to date when trainers join or leave.</p>
 <h3>Who should update the timetable?</h3>
 <p>Whoever already manages the schedule at the front desk. A good build gives them a simple editing screen, so changes take minutes and need no developer.</p>
-
-<p>If you want a gym or studio website with a timetable your staff can keep current, clear plans and a trial pass that is easy to claim, <a href="/wordpress-website-development/">WordPress website development</a> is where to start, with a <a href="/landing-page-design/">dedicated landing page</a> for each membership drive.</p>
 `,
   },
   {
@@ -8224,7 +8391,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Websites for Travel Agencies and Tour Operators: Package Pages, Itineraries, Custom Trip Enquiries, WhatsApp and Trust',
     description: 'Plan a travel agency website: package pages with day-by-day itineraries, a custom trip enquiry form, WhatsApp quotes, advance payments and trust signals.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'hotel-website-design', 'landing-page-design'],
     body: `
@@ -8330,6 +8497,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Running cabs and transfers too? See <a href="/blog/website-for-taxi-car-rental/">websites for taxi and car rental services</a>.</p>
 
+<h2>Quick check: book a trip on your own site</h2>
+<ol>
+  <li>Open a popular package on your phone and check the price basis, inclusions, exclusions and cancellation terms are stated.</li>
+  <li>Fill in the custom trip enquiry form and check it reaches you on WhatsApp or email.</li>
+  <li>Check any registration you mention, such as with the Ministry of Tourism or a state tourism department, is current and can be verified.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when packages are hard to find, enquiries arrive without travel dates, or the site loads slowly on phones. See <a href="/hotel-website-design/">hotel and travel website design</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>Should a travel agency show package prices?</h3>
 <p>A "starting from" price with its basis, dates and tax note helps travellers judge fit. Final prices depend on dates and hotel availability, so say that a detailed quote follows the enquiry.</p>
@@ -8341,8 +8518,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Only if you genuinely hold the accreditation or membership. Show the number and link to the body's directory so travellers can verify it.</p>
 <h3>Do destination guides really bring bookings?</h3>
 <p>They bring travellers early in their research and build trust. Link each guide to the matching packages and an enquiry form, so readers have somewhere to go when they are ready.</p>
-
-<p>Planning a travel agency website with package pages that answer everything, custom trip enquiries that reach you on WhatsApp and trust signals travellers can check? See <a href="/hotel-website-design/">hotel and travel website design</a> for how I plan and build them, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -8351,7 +8526,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Dental Clinic Websites: Treatment Pages Patients Understand, Dentist Credentials, Appointment Booking, Careful Before-and-After Photos and Local Search',
     description: 'Dental clinic website types explained, from single-dentist to multi-branch, plus treatment pages, credentials, booking, consented photos and local SEO.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -8482,6 +8657,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Cosmetic and skin practices: see <a href="/blog/website-for-dermatology-skin-clinics/">websites for dermatology and skin clinics</a>.</p>
 
+<h2>Quick check: what a patient sees before booking</h2>
+<ol>
+  <li>Search Google for "dentist near me" on your phone and check your Business Profile shows the right hours, phone and website link.</li>
+  <li>Open your implant or root canal page and check it explains the procedure and what to expect.</li>
+  <li>Try booking an appointment on the site and check how the clinic is notified.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when treatment pages are thin, booking is not working, or the clinic is not showing in local search. See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>What are the dental clinic website classification types?</h3>
 <p>The usual types are a single-dentist practice site, a multi-specialty clinic site, a specialty practice site and a multi-branch chain site. Each needs a different page structure, from one dentist profile to separate branch pages.</p>
@@ -8495,8 +8680,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Yes. An appointment request form confirmed by reception suits most clinics, or your practice software's widget can be embedded if you use one.</p>
 <h3>Should we publish treatment prices?</h3>
 <p>It is your choice. Many clinics give the consultation fee and explain what affects treatment cost, then provide a written estimate after examination.</p>
-
-<p>If you want a dental clinic website that explains treatments clearly, presents your team's credentials precisely and turns searches into booked appointments, see the <a href="/wordpress-website-for-doctors/">doctors and clinics website</a> page, or work with a <a href="/wordpress-shopify-developer-india/">WordPress developer in India</a> who builds clinic sites remotely.</p>
 `,
   },
   {
@@ -8505,7 +8688,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Portfolio Websites for Freelancers, Photographers and Creatives: What to Include and How to Win Clients',
     description: 'How to build a portfolio website as a freelancer, photographer or designer: what to include, curating work, case studies, pricing signals, speed and SEO.',
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-website-development', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
@@ -8662,6 +8845,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Event and wedding planners face the same challenge with large galleries; see <a href="/blog/website-for-event-wedding-planners/">websites for event and wedding planners</a>.</p>
 
+<h2>Quick check: look at your portfolio like a client</h2>
+<ol>
+  <li>Open your site on your phone and check your services and contact button are clear within a few seconds.</li>
+  <li>Run your main gallery page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and compress any oversized images it flags.</li>
+  <li>Search Google for your brand name and the service you offer and see what appears.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your portfolio is slow, out of date, or not bringing the kind of work you want. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/figma-to-wordpress/">Figma to WordPress</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>Do freelancers need a portfolio website?</h3>
 <p>If clients hire you for the quality of your work, yes. Platforms help people discover you, but a website you own lets you present your best work your way, explain your services and take enquiries without competitors shown alongside you.</p>
@@ -8675,8 +8868,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Only with the client's permission. Otherwise, describe the type of project and your role without naming the client or showing confidential material, or create a similar self-initiated piece that shows the same skill.</p>
 <h3>How much does a portfolio website cost?</h3>
 <p>It depends on the number of pages, whether the design is custom, and features such as galleries or a shop. A portfolio is usually similar in size to a small business site, which my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a> puts at ₹15,000 to ₹40,000 in India for a professional build.</p>
-
-<p>Want a portfolio site that wins the work you actually want? I can plan the pages, build it on WordPress so you can update it yourself, and keep the galleries fast on phones. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/figma-to-wordpress/">Figma to WordPress</a> if you've designed it yourself.</p>
 `,
   },
   {
@@ -8686,7 +8877,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     title: 'Websites for Event and Wedding Planners: Event-by-Event Portfolios With Vendor Credits, Destination Pages, Your Process, Budget Talk and Enquiry Forms',
     description: 'Build a planner website that wins enquiries: event portfolios with vendor credits, destination pages, a clear process and a form asking date and guests.',
     date: '2026-09-27',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-speed-optimization'],
     body: `
@@ -8807,6 +8998,16 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 
 <p>Equipment suppliers: see <a href="/blog/website-for-event-rental-businesses/">websites for event rental businesses</a>.</p>
 
+<h2>Quick check: test your site in wedding season</h2>
+<ol>
+  <li>Run your largest gallery page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and check the mobile result.</li>
+  <li>Submit your enquiry form and check it asks for the event date, city and guest count.</li>
+  <li>Search Google for "wedding planner" plus your city and see whether your site or Business Profile appears.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when galleries load slowly, enquiries arrive without event details, or the site does not show for local searches. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>How many events should my portfolio show?</h3>
 <p>Quality matters more than number. Six to twelve well-told events, covering the types you want more of, usually work better than dozens of thin galleries.</p>
@@ -8818,8 +9019,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <p>Yes, because the website gives those leads somewhere to read your process, see full event stories and send a complete enquiry, and it brings in search traffic that Instagram does not.</p>
 <h3>Can I add destination pages for places I have not worked in yet?</h3>
 <p>I would wait until you have real events and photos from there. A page without genuine experience behind it rarely persuades anyone.</p>
-
-<p>If you want a fast planner website with event stories, a clear process page and enquiries that arrive with the date and guest count already filled in, start with <a href="/wordpress-website-development/">WordPress website development</a>; for wedding-season ads, a separate <a href="/landing-page-design/">landing page</a> per offer works well.</p>
 `,
   },
   {
@@ -9677,7 +9876,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid',
     description: '.com vs .biz for a business domain: why .com or .in usually wins, when .co works, plus brand vs keyword names, trademark checks and buying safely.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'website-for-startups'],
     body: `
@@ -9784,6 +9983,16 @@ site:example.com/blog/ "net metering"</code></pre>
 <h2>After you register</h2>
 <p>Point the domain at your hosting, switch on SSL so the site loads over HTTPS, and set up business email so your address matches the website. <a href="/blog/domain-hosting-ssl-explained/">Domain, hosting and SSL explained</a> shows how these fit together, and <a href="/blog/business-email-options/">business email options</a> compares the email providers.</p>
 
+<h2>Quick check: check a domain before you buy</h2>
+<ol>
+  <li>Search the name on <a href="https://lookup.icann.org/" rel="noopener">ICANN Lookup</a> to see whether it is registered.</li>
+  <li>Check its history on the <a href="https://web.archive.org/" rel="noopener">Wayback Machine</a> to see what it was used for before.</li>
+  <li>Search the <a href="https://tmsearch.ipindia.gov.in/" rel="noopener">IP India trademark search</a> for the name in your business category.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you need a domain, hosting and email set up correctly in your own name, or you are moving an existing site to a new domain. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-migration/">WordPress migration</a>, or <a href="/#contact">get in touch</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How long should a business domain name be?</h3>
 <p>As short as your business name allows while staying clear. There's no fixed limit that matters in practice, but a name you can say once over the phone without spelling it out is a good test.</p>
@@ -9795,8 +10004,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Yes, but it takes care: every old URL needs a permanent redirect to its new equivalent, and you'll update email, print and profiles. <a href="/blog/change-domain-name-without-losing-seo/">Changing your domain without losing SEO</a> explains the steps. It's far easier to choose well at the start.</p>
 <h3>What if the domain I want is already taken?</h3>
 <p>Try the other main extension, add a short word that fits your business, or ask whether the owner will sell. Avoid hyphens and misspellings, and avoid names close to an active business in your field.</p>
-
-<p>Need help choosing and setting up a domain for a new site? I cover domain, hosting and email setup as part of <a href="/wordpress-website-development/">WordPress website development</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the set-up alone.</p>
 `,
   },
   {
@@ -9806,7 +10013,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'Websites for Export Businesses: Specifications and HS Codes, MOQ and Incoterms Explained, Registrations and Certificates, Multilingual Pages and Enquiries From Abroad',
     description: 'Build an export website international buyers trust: full specs, MOQ and Incoterms explained, real certificates, multilingual pages and clear enquiries.',
     date: '2026-09-27',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
@@ -9905,6 +10112,16 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <p>Exporters in <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a>, <a href="/wordpress-shopify-developer-kochi/">Kochi</a> and <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a> will find local notes on those pages.</p>
 
+<h2>Quick check: view your site from abroad</h2>
+<ol>
+  <li>Run a product page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a>, since overseas buyers often load it over long distances.</li>
+  <li>In Google Search Console, open <strong>Performance</strong>, filter by <strong>Country</strong> and see which countries find your site.</li>
+  <li>Check every certificate on the site is current and that MOQ, lead time and Incoterms are stated on product pages.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when overseas buyers still email basic questions, or the site is not found in the countries you sell to. See <a href="/website-for-manufacturers/">manufacturer and B2B websites</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>Should an exporter publish HS codes on the website?</h3>
 <p>It can help buyers, if the codes have been checked by your customs agent. Note that countries extend the codes differently and buyers should confirm classification locally.</p>
@@ -9916,8 +10133,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Many exporters do. Show it only if you hold it and are comfortable publishing it, and keep registration details up to date.</p>
 <h3>Should export products have online prices?</h3>
 <p>Usually not for bulk B2B orders, since prices depend on quantity, terms and destination. A request-for-quote route on each product works better; for small retail orders abroad, see <a href="/blog/woocommerce-sell-internationally/">selling internationally with WooCommerce</a>.</p>
-
-<p>If overseas buyers visit your site and still email to ask basic questions, the missing answers can be built into the product pages, trade terms and forms. The <a href="/website-for-manufacturers/">manufacturer and B2B website</a> page lists what a build includes.</p>
 `,
   },
   {
@@ -10332,7 +10547,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'Websites for Diagnostic Labs and Pathology Centres: Test Catalogue and Preparation, Home Sample Collection, Report Download, Packages, Centres and Doctor Referrals',
     description: 'What a diagnostic lab website needs: a searchable test catalogue with preparation notes, home collection booking, report access, packages and centre pages.',
     date: '2026-09-27',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -10425,6 +10640,16 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <p>Pharmacies have similar needs; see <a href="/blog/website-for-pharmacies/">websites for pharmacies and medical stores</a>.</p>
 
+<h2>Quick check: book a test as a patient would</h2>
+<ol>
+  <li>On your phone, search your site for a common test and check the page shows preparation instructions and turnaround time.</li>
+  <li>Try booking a home sample collection and check how quickly your team is notified.</li>
+  <li>Check the accreditation details shown, such as NABL scope, match your current certificate.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when people cannot book, prepare for tests or find their reports on your site. See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>Should a lab publish test prices on its website?</h3>
 <p>Many patients compare prices before booking, so published prices help. If prices vary by centre or change often, show a starting price and keep the list easy for your team to update.</p>
@@ -10436,8 +10661,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Only in the way the accrediting body's rules allow, and only for the scope and location it covers. State it precisely rather than as a general badge.</p>
 <h3>How should home collection areas be shown?</h3>
 <p>As a pin code checker or a list of localities, with the collection charge and available time slots, so patients know before booking whether you serve them.</p>
-
-<p>If your lab's website lists tests but does not help people book, prepare or find their reports, it can be rebuilt around those tasks. The <a href="/wordpress-website-for-doctors/">website for doctors and clinics</a> page sets out what a healthcare build includes.</p>
 `,
   },
   {
@@ -10794,7 +11017,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'How to Write Case Studies for Your Business Website: A Section-by-Section Template, Honest Results, Client Permission, Formats and SEO',
     description: 'How to write case studies for your business website: a section-by-section template, honest results, client permission, white-label work, formats and SEO.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-developer-for-agencies', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -10886,6 +11109,9 @@ site:example.com/blog/ "net metering"</code></pre>
   <li>The page ends with a clear next step.</li>
 </ol>
 
+<h2>When to get help</h2>
+<p>Get help when you want case study pages planned into a new site, or you are an agency that needs client sites built under your own brand. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
+
 <h2>FAQs</h2>
 <h3>What should a business case study include?</h3>
 <p>The client, their problem, your approach, what you delivered, the outcome as far as you can verify it, a short client quote and a call to action, ideally with a summary box at the top.</p>
@@ -10897,8 +11123,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Not without the agency's consent. White-label work is presented under the agency's brand, and the agency in turn needs its client's agreement.</p>
 <h3>How is a case study different from a testimonial?</h3>
 <p>A testimonial is a short quote in the customer's words. A case study is the full story of a project, which can include a testimonial as one of its sections.</p>
-
-<p>Running an agency that needs client sites built under your own brand, or a business that wants case study pages planned into a new website? See <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a>, or <a href="/wordpress-website-development/">WordPress website development</a> for your own site, with a fixed quote after a free review.</p>
 `,
   },
   {
