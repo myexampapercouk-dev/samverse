@@ -460,7 +460,7 @@ const PAGES = [
     type: 'service',
     slug: 'hire-wordpress-developer',
     nav: 'Hire a WordPress Developer',
-    title: 'Hire a Freelance WordPress Developer in India | Samverse',
+    title: 'Hire a WordPress Developer in India: Fixed Quotes | Samverse',
     description: 'Hire a freelance WordPress developer in India for new sites, fixes, monthly support or white-label agency work. Fixed quotes and direct contact.',
     eyebrow: 'Hire a WordPress developer',
     h1: 'Hire a WordPress developer <span class="grad">you can rely on</span>',

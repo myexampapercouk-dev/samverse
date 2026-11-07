@@ -175,6 +175,17 @@
 <p>A slow WordPress site is almost always caused by slow hosting, a page cache that is missing or not working, oversized images, a heavy theme or plugin, or too many third-party scripts, not by WordPress itself. Check your server response time first: if every page waits before anything appears, fix the server side (hosting, caching, plugins, database); if the server answers quickly but the page still appears slowly, fix the front end (images, scripts, fonts, CSS).</p>
 <p>If only the dashboard is slow, it is an admin problem, and caching will not fix it. The 5-minute diagnosis below tells you which of these you have, then the fixes are listed in order of impact, with a separate section on how to speed up WooCommerce.</p>
 
+<p><strong>Slow WordPress site checklist:</strong></p>
+<ol>
+<li>Test one page in PageSpeed Insights and note server response time (TTFB).</li>
+<li>If TTFB is slow, confirm a page cache is working and check hosting limits.</li>
+<li>Deactivate plugins you do not need and find heavy ones with Query Monitor.</li>
+<li>Resize and compress images and lazy-load those below the fold.</li>
+<li>Remove or delay third-party scripts such as chat widgets and trackers.</li>
+<li>Re-test the same page after each change.</li>
+</ol>
+<p>Prefer an expert? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds and fixes the real cause.</p>
+
 <h2 id="slow-front-end-or-slow-admin-know-which-problem-you-have">Slow front end or slow admin? Know which problem you have</h2>
 <p>People searching "wordpress slow loading" or "wordpress website slow to load" usually mean the public pages. People searching "wordpress admin slow" or "wordpress backend slow" mean the dashboard and editor. The causes overlap, but the fixes differ:</p>
 <table>
@@ -367,7 +378,7 @@
 
           <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
             <a class="post-nav-prev" href="/blog/wordpress-updating-failed-error-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</strong></a>
-            <a class="post-nav-next" href="/blog/signs-wordpress-site-hacked/"><span>Next in Speed, security &amp; maintenance →</span><strong>How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</strong></a>
+            <a class="post-nav-next" href="/blog/signs-wordpress-site-hacked/"><span>Next in Speed, security &amp; maintenance →</span><strong>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</strong></a>
           </nav>
         </div>
 

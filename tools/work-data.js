@@ -742,7 +742,7 @@ module.exports = [
     "name": "Dr. Nitish Gupta",
     "url": "https://agrapulmonologist.com/",
     "industry": "Pulmonology Clinic",
-    "seoTitle": "Pulmonologist Website Design on WordPress",
+    "seoTitle": "Pulmonologist Website Design: Agra Clinic Case Study",
     "metaDescription": "Pulmonology clinic website design on WordPress: doctor credentials, lung, sleep and allergy services, diagnostics explained and appointment booking.",
     "summary": "A detailed, trust-building website for an interventional pulmonologist in Agra, presenting his credentials, chest and lung services and diagnostic facilities, with easy appointment booking.",
     "client": "Dr. Nitish Gupta is a consultant physician and interventional pulmonologist at Niramaya Care Center in Agra, treating lung, chest, allergy and sleep disorders, with services including bronchoscopy, spirometry and sleep studies.",

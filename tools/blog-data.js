@@ -25,6 +25,8 @@ module.exports = [
 </ul>
 <p>Don't confuse this with WordPress.com, a hosted service with its own paid plans. Most business sites built by developers in India use the free WordPress.org software on their own hosting. If these terms are new, see <a href="/blog/domain-hosting-ssl-explained/">domain, hosting and SSL explained</a>.</p>
 
+<p>Related: <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes to build</a>.</p>
+
 <h2>WordPress.com plans vs WordPress.org: which pricing applies to you?</h2>
 <p>Search for "WordPress plans" or "WordPress pricing" and you will mostly see WordPress.com's plan pages. That is a hosted service run by one company, where the plan you choose decides what you can do. WordPress.org is the free software you install on any hosting you like. At the time of writing, the differences that matter to a business are:</p>
 <table>
@@ -306,6 +308,17 @@ module.exports = [
 <p>A slow WordPress site is almost always caused by slow hosting, a page cache that is missing or not working, oversized images, a heavy theme or plugin, or too many third-party scripts, not by WordPress itself. Check your server response time first: if every page waits before anything appears, fix the server side (hosting, caching, plugins, database); if the server answers quickly but the page still appears slowly, fix the front end (images, scripts, fonts, CSS).</p>
 <p>If only the dashboard is slow, it is an admin problem, and caching will not fix it. The 5-minute diagnosis below tells you which of these you have, then the fixes are listed in order of impact, with a separate section on how to speed up WooCommerce.</p>
 
+<p><strong>Slow WordPress site checklist:</strong></p>
+<ol>
+<li>Test one page in PageSpeed Insights and note server response time (TTFB).</li>
+<li>If TTFB is slow, confirm a page cache is working and check hosting limits.</li>
+<li>Deactivate plugins you do not need and find heavy ones with Query Monitor.</li>
+<li>Resize and compress images and lazy-load those below the fold.</li>
+<li>Remove or delay third-party scripts such as chat widgets and trackers.</li>
+<li>Re-test the same page after each change.</li>
+</ol>
+<p>Prefer an expert? <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds and fixes the real cause.</p>
+
 <h2>Slow front end or slow admin? Know which problem you have</h2>
 <p>People searching "wordpress slow loading" or "wordpress website slow to load" usually mean the public pages. People searching "wordpress admin slow" or "wordpress backend slow" mean the dashboard and editor. The causes overlap, but the fixes differ:</p>
 <table>
@@ -469,9 +482,9 @@ module.exports = [
   },
   {
     slug: 'signs-wordpress-site-hacked',
-    seoTitle: 'Check if Your WordPress Site Is Hacked: Signs and Checks',
-    title: 'How to Check if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
-    description: 'Check if your WordPress site is hacked: warning signs, 10 quick checks you can run today, extra checks for online stores, and the first steps to take.',
+    seoTitle: 'How to Tell if Your WordPress Site Is Hacked: Quick Checks',
+    title: 'How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
+    description: 'How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.',
     date: '2026-09-27',
     updated: '2026-11-06',
     category: 'Security',
@@ -479,6 +492,17 @@ module.exports = [
     body: `
 <p>You can tell your WordPress site has been hacked if visitors are redirected to spam or scam sites, Google shows pages you never created (often Japanese or pharma keywords), there are admin users you did not add, or Chrome or Google shows "Deceptive site ahead" or "This site may be hacked". To check for sure, search <code>site:yourdomain.com</code> in Google, open Security Issues in Search Console, review your administrator accounts and scan the files.</p>
 <p>Check from the outside as well as the inside: many hacks hide from logged-in admins and only show to visitors arriving from Google on a phone.</p>
+
+<p><strong>Quick checklist:</strong></p>
+<ol>
+<li>Search <code>site:yourdomain.com</code> in Google and look for pages you never created.</li>
+<li>Open your site on a phone, logged out, from a Google result, and watch for redirects.</li>
+<li>Check Security Issues and Manual Actions in Search Console.</li>
+<li>Review Users and remove administrator accounts you did not add.</li>
+<li>Look for plugins, themes or files you did not install, and run a malware scan.</li>
+<li>If any check fails, change every password, take a backup and start the clean-up steps below.</li>
+</ol>
+<p>If you would rather not do this yourself, <a href="/wordpress-maintenance/">WordPress maintenance and security support</a> covers clean-ups and hardening.</p>
 
 <h2>Warning signs that your WordPress site has been hacked</h2>
 <p>These are the symptoms owners most often notice first. One sign on its own can have an innocent cause, but two or more together almost always means you should investigate properly.</p>
@@ -494,6 +518,10 @@ module.exports = [
 <li><strong>Changed content or defacement:</strong> new links in the footer, injected text, or your homepage replaced. A red "Deceptive site ahead" screen needs its own steps: see <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</li>
 <li><strong>Locked out of the admin:</strong> your password no longer works and the reset email never arrives because the admin email was changed.</li>
 </ul>
+
+<p>Related: <a href="/blog/wordpress-activity-logs/">a WordPress activity log</a>.</p>
+
+<p>See also: <a href="/blog/stop-spam-user-registrations-wordpress/">stopping spam user registrations in WordPress</a>.</p>
 
 <h2>How to know if your WordPress site has been hacked: 10 quick checks</h2>
 <p>If you suspect something is wrong, work through these checks in order. Most take a few minutes and need no technical tools.</p>
@@ -893,6 +921,8 @@ module.exports = [
 </table>
 <p>Leaning towards Shopify? See <a href="/shopify-developer/">Shopify store setup in Pune and across India</a>. Leaning towards WooCommerce? See <a href="/woocommerce-developer/">WooCommerce development</a>. The rest of this guide explains the reasoning behind each row.</p>
 
+<p>See also: <a href="/blog/woocommerce-multi-vendor-marketplace/">building a WooCommerce multi-vendor marketplace</a>.</p>
+
 <h2>WooCommerce vs Shopify for Indian stores at a glance</h2>
 <table>
   <thead><tr><th></th><th>WooCommerce</th><th>Shopify</th></tr></thead>
@@ -1189,6 +1219,10 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 </table>
 <p>If enquiries stopped suddenly, read <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a> first; a form that silently stopped sending is common and easy to miss. For the traffic side, especially if you serve one city, see <a href="/blog/local-seo-guide-small-business-india/">local SEO for small businesses in India</a>. The rest of this guide is about turning the visitors you already have into enquiries.</p>
 
+<p>Related: <a href="/blog/thank-you-pages-forms/">a thank you page after form submit</a>.</p>
+
+<p>Related: <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
+
 <h2>Test your site like a customer</h2>
 <p>Take fifteen minutes with your own phone, on mobile data:</p>
 <ol>
@@ -1314,6 +1348,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   <li><strong>Prominence:</strong> how well known and trusted your business is, judged from reviews, mentions, links and your website's general strength.</li>
 </ul>
 <p>Most local searches in India happen on phones, many with "near me" and many in Hindi, Marathi or a mix with English. The person searching usually wants to call, get directions or message you now, so every step below is about making that easy.</p>
+
+<p>See also: <a href="/blog/whatsapp-marketing-small-business/">WhatsApp marketing for small businesses</a>.</p>
 
 <h2>Local SEO at a glance</h2>
 <table>
@@ -1960,9 +1996,9 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'how-long-to-build-wordpress-website',
-    seoTitle: 'How Long Does It Take to Build a WordPress Website?',
+    seoTitle: 'How Long to Build a WordPress Website? Timelines by Type',
     title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
-    description: 'How long does it take to build a WordPress website? Timelines by site type, from landing pages to WooCommerce stores, each stage, and what causes delays.',
+    description: 'How long does a WordPress website take? Days for a landing page, 1-2 weeks for a small business site, 2-4 weeks for a store, plus what causes delays.',
     date: '2026-09-27',
     updated: '2026-10-31',
     category: 'Guides',
@@ -1986,6 +2022,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 </table>
 <p>*From the moment content is ready. Waiting for content is the most common reason projects take longer than this.</p>
 <p>The number of unique page layouts matters more than the total number of pages. Ten service pages built from one template go much faster than ten pages that each look different. Two smaller jobs people often ask about: moving an existing WordPress site to a new host usually takes 1–3 working days including testing, and speeding up an existing site usually takes 2–4 working days.</p>
+
+<p>Related: <a href="/blog/compare-website-quotes/">how to compare website quotes fairly</a>.</p>
 
 <h2>Timelines for common types of business</h2>
 <p>Within those ranges, the type of business matters less than the number of pages and features. These are the typical timelines I give on my industry pages, again counted from when content is ready:</p>
@@ -2530,6 +2568,10 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
   </tbody>
 </table>
 <p>Running an online store? Payments, customer data and fraud orders need extra steps on top of these; see the <a href="/blog/woocommerce-security-checklist/">WooCommerce security checklist</a>.</p>
+
+<p>See also: <a href="/blog/wordpress-activity-logs/">a WordPress activity log</a>.</p>
+
+<p>Related: <a href="/blog/stop-spam-user-registrations-wordpress/">stopping spam user registrations in WordPress</a>.</p>
 
 <h2>Logins and users</h2>
 <ul>
@@ -3407,6 +3449,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
     <tr><td>15. No proof</td><td>No reason to trust you</td><td>Genuine reviews and examples of work</td></tr>
   </tbody>
 </table>
+
+<p>Related: <a href="/blog/logo-favicon-brand-basics-website/">favicon sizes and logo files a website needs</a>.</p>
 
 <h2>First impressions</h2>
 <h3>1. A headline that doesn't say what you do</h3>
@@ -5717,6 +5761,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ul>
 <p>Your homepage headline should combine them in one plain sentence, with your profession and city where location matters. <a href="/work/dr-nitish-gupta-pulmonologist/">Dr. Nitish Gupta's site</a>, for example, leads with "Pulmonologist in Agra (Lungs, Chest, Allergy)", which tells a patient and Google exactly what to expect.</p>
 
+<p>Related: <a href="/blog/logo-favicon-brand-basics-website/">favicon sizes and logo files a website needs</a>.</p>
+
 <h2>Your name or a practice name?</h2>
 <p>A domain in your own name suits professionals whose reputation is personal and portable, such as consultants, coaches and doctors who practise in several places. A practice or firm name suits a clinic or firm that may add partners or be sold one day. If unsure, register both, build on the one you'll grow, and redirect the other. Either way, your name should appear in the page titles of your homepage and About page, so you rank for it; <a href="/blog/rank-for-your-business-name/">how to rank for your business name</a> covers the details, which apply equally to a personal name.</p>
 
@@ -7321,6 +7367,8 @@ Main contact person and best time to reach:</code></pre>
     <tr><td>15</td><td>Trust and freshness</td><td>A real author or business behind it, accurate facts and a recent review date</td></tr>
   </tbody>
 </table>
+
+<p>Related: <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit checklist</a>.</p>
 
 <h2>Before you write: intent and targeting (checks 1 and 2)</h2>
 <p>Search the phrase yourself on a phone and look at what ranks. If the results are all how-to guides, a service page won't rank for it however well it is optimised, and the reverse is true for "hire" or "near me" searches. <a href="/blog/search-intent-explained/">Search intent explained</a> shows how to read the results page and match it.</p>
@@ -9473,6 +9521,17 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>A WordPress SEO audit checks whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. Start with Search Console's Pages report and a full site crawl, then check WordPress and SEO plugin settings, robots.txt and the sitemap, speed, on-page SEO, structured data and (for stores) WooCommerce issues.</p>
 <p>Fix blockers first, such as a site-wide noindex, broken redirects or important pages left out of the index; title tweaks come last.</p>
 
+<p><strong>WordPress SEO audit checklist:</strong></p>
+<ol>
+<li>Check indexing in Search Console's Pages report.</li>
+<li>Crawl the site for broken links, redirects and missing titles.</li>
+<li>Check the "Discourage search engines" setting, robots.txt and the sitemap.</li>
+<li>Test speed and Core Web Vitals on key templates.</li>
+<li>Review titles, headings, internal links and thin or duplicate pages.</li>
+<li>Validate structured data and, for stores, WooCommerce filters and product pages.</li>
+<li>Prioritise fixes by impact and log them in a spreadsheet.</li>
+</ol>
+
 <h2>What you need before you start</h2>
 <ul>
 <li>Access to <a href="/blog/setup-google-analytics-search-console/">Google Search Console and Google Analytics</a>.</li>
@@ -9481,6 +9540,8 @@ site:example.com/blog/ "net metering"</code></pre>
 <li>A spreadsheet to log each issue, the pages affected, impact and who will fix it.</li>
 <li>A recent backup, in case any fix needs undoing.</li>
 </ul>
+
+<p>Related: <a href="/blog/hreflang-multilingual-seo-india/">hreflang tags for Indian languages</a>.</p>
 
 <h2>Step 1: Check indexing in Search Console</h2>
 <p>Open the Pages report. It shows how many pages are indexed and why others are not. Pay attention to:</p>
@@ -9882,6 +9943,10 @@ site:example.com/blog/ "net metering"</code></pre>
   <li><strong>Long blocking time or poor INP:</strong> heavy scripts from sliders, animations and third-party widgets.</li>
   <li><strong>Slow server response time:</strong> if this is the main problem, look at hosting and caching before Elementor.</li>
 </ul>
+
+<p>Related: <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
+
+<p>See also: <a href="/blog/woocommerce-speed-optimization/">speed up WooCommerce</a>.</p>
 
 <h2>Common causes and what they look like</h2>
 <table>
@@ -10851,6 +10916,8 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <h2>Why updates matter</h2>
 <p>Outdated plugins and themes are one of the most common ways WordPress sites get hacked, because once a security fix is public, attackers know exactly what to look for on sites that haven't installed it. Updates also fix bugs and keep your site working with new PHP versions and browsers. Skipping them doesn't avoid risk; it piles it up, and a site that is many versions behind is much harder to update later.</p>
+
+<p>Related: <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing on your site</a>.</p>
 
 <h2>The safe update process at a glance</h2>
 <table>
@@ -13699,6 +13766,8 @@ wp cap list editor</code></pre>
 </ul>
 <p>A faster network helps, but it doesn't make a budget phone's processor any quicker, which is why heavy JavaScript stays a problem even on 5G.</p>
 
+<p>Related: <a href="/blog/why-is-my-wordpress-site-slow/">slow WordPress site</a>.</p>
+
 <h2>Why latency matters as much as bandwidth</h2>
 <p>Bandwidth is how much data arrives per second; latency is how long each round trip to the server takes. A page that needs dozens of files from several different servers pays the latency cost over and over, and on a congested mobile network those round trips are much slower than on fibre.</p>
 <table>
@@ -13798,9 +13867,9 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'logo-favicon-brand-basics-website',
-    seoTitle: 'Favicon Size, Logo Files and Brand Basics for a Website',
+    seoTitle: 'Favicon Size and Logo Files a Website Needs: Full List',
     title: 'Logo, Favicon and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
-    description: 'Favicon sizes, logo file formats and brand basics for your website: favicon code, app icons, social share images, logo schema and a one-page brand sheet.',
+    description: 'The favicon sizes, logo formats (SVG, PNG) and social share image a website needs, with copy-ready favicon code and a one-page brand sheet to hand over.',
     date: '2026-09-27',
     updated: '2026-11-06',
     category: 'Guides',
@@ -25270,6 +25339,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
 </ul>
 <p>If you don't have a logo yet, sort that first; <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a> covers the files a website needs.</p>
 
+<p>Related: <a href="/blog/rebranding-your-website/">rebranding your website without losing SEO</a>.</p>
+
 <h2>Build a small palette by role</h2>
 <p>A website needs fewer colours than most people think. Give each one a job:</p>
 <table>
@@ -26585,9 +26656,9 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   },
   {
     slug: 'thank-you-pages-forms',
-    seoTitle: 'Lead Form Thank You Page Redirect: Setup and Tracking',
+    seoTitle: 'Thank You Page After Form Submit: Redirect and Track It',
     title: 'Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It',
-    description: 'How to set up a lead form thank you page redirect in WPForms, Elementor or CF7, what to put on the page, how to fix it, and track it in GA4 and Google Ads.',
+    description: 'Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.',
     date: '2026-09-27',
     updated: '2026-10-30',
     category: 'Growth',
@@ -26882,9 +26953,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   },
   {
     slug: 'woocommerce-gst-invoices-india',
-    seoTitle: 'WooCommerce GST Setup India: CGST, SGST, IGST and Invoices',
+    seoTitle: 'WooCommerce GST Setup in India: Tax Classes and Invoices',
     title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
-    description: 'Set up GST in WooCommerce for India: tax classes, CGST/SGST vs IGST by place of supply, HSN codes, GSTIN at checkout, GST invoices and test orders.',
+    description: 'Set up GST in WooCommerce: CGST and SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices, with a test order to confirm it.',
     date: '2026-09-27',
     updated: '2026-11-06',
     category: 'E-commerce',
@@ -26903,6 +26974,8 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   <li>Whether e-invoicing applies to your business invoices</li>
   <li>How to handle international orders and returns</li>
 </ul>
+
+<p>Related: <a href="/blog/woocommerce-multi-vendor-marketplace/">building a WooCommerce multi-vendor marketplace</a>.</p>
 
 <h2>CGST and SGST vs IGST: place of supply</h2>
 <p>For goods sold online and delivered to the customer, the place of supply is generally where the delivery ends, which is the shipping address. That decides which tax applies:</p>
@@ -31003,6 +31076,8 @@ dig yourdomain.com +short</code></pre>
 <h2>Why the dashboard is slow when the site is fast</h2>
 <p>Visitors usually get a cached copy of each page: a ready-made HTML file served in a fraction of the time it takes WordPress to build the page. Logged-in users, and every screen in wp-admin, skip that cache. Each time you open Posts, Orders or the editor, the server loads WordPress and every active plugin, runs the database queries and waits for any outside requests before sending anything back. A plugin that adds half a second to every page load is hidden from visitors by the cache, and fully visible to you.</p>
 
+<p>Related: <a href="/blog/hostinger-website-slow-fix/">fixing a slow Hostinger website</a>.</p>
+
 <h2>Common causes at a glance</h2>
 <table>
   <thead><tr><th>Symptom</th><th>Likely cause</th><th>Where to look</th></tr></thead>
@@ -31383,9 +31458,9 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'compare-website-quotes',
-    seoTitle: 'Why Are Website Quotes Different? How to Compare Them',
+    seoTitle: 'Why Website Quotes Differ and How to Compare Them',
     title: 'Why Are Website Quotes So Different? How to Compare Website Quotes Fairly',
-    description: 'Why are website quotes different? Each one prices a different job. Compare website quotes in India line by line with one brief, a checklist and 3-year costs.',
+    description: 'Website quotes differ because each prices a different job. Send one brief, compare line by line with our checklist and add up 3-year costs before you pick.',
     date: '2026-09-27',
     updated: '2026-11-06',
     category: 'Pricing',
@@ -31409,6 +31484,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   </tbody>
 </table>
 <p>Neither column is automatically right. A small consultancy may genuinely need only the left-hand column; a manufacturer with a catalogue needs most of the right. The point is to know which one each quote is.</p>
+
+<p>Related: <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes to build</a>.</p>
 
 <h2>Step 1: Send everyone the same brief</h2>
 <p>You can only compare quotes that answer the same question. A one-line WhatsApp message such as "need a website, how much?" gets you guesses. A short written brief with your goals, the pages you need, features, two or three sites you like, who will write the content and any deadline gets you prices you can line up. The <a href="/blog/website-brief-template/">website brief template</a> covers everything to include.</p>
@@ -31957,9 +32034,9 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development to India: Safe Process',
+    seoTitle: 'Outsource WordPress Development to India Safely',
     title: 'Outsource WordPress Development to India: A Practical Guide for Agencies, Resellers and Businesses',
-    description: 'How to outsource WordPress development to India safely: projects that suit it, a paid test task, white-label and NDAs, time zones, pricing models and red flags.',
+    description: 'Outsource WordPress development to India safely: pick by live work, start with a paid test task, set milestones and NDAs, and spot red flags early.',
     date: '2026-09-27',
     updated: '2026-11-06',
     category: 'Agencies',
@@ -35432,6 +35509,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   </tbody>
 </table>
 
+<p>Related: <a href="/blog/signs-wordpress-site-hacked/">how to tell if your WordPress site is hacked</a>.</p>
+
 <h2>Security issues and manual actions are different</h2>
 <p>Search Console has two reports under Security &amp; Manual Actions, and a hacked site can appear in either or both.</p>
 <table>
@@ -35671,9 +35750,9 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger Website Slow? How to Fix a Slow WordPress Site',
+    seoTitle: 'Hostinger Website Slow? Find the Cause and Fix It',
     title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
-    description: 'Hostinger website slow? Check hPanel limits, test the LiteSpeed cache header, fix CDN, PHP, plugins and bots, and know when upgrading the plan really helps.',
+    description: 'Hostinger site slow? Check CPU and memory limits in hPanel, confirm the LiteSpeed cache header, then fix CDN, PHP, plugins and bots before you upgrade.',
     date: '2026-09-28',
     updated: '2026-11-06',
     category: 'Speed',
@@ -35699,6 +35778,10 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     <tr><td>10. Upgrade only if still capped</td><td>Higher shared tier, cloud or VPS</td><td>Limits no longer reached with caching working</td></tr>
   </tbody>
 </table>
+
+<p>Related: <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing on your site</a>.</p>
+
+<p>Related: <a href="/blog/woocommerce-speed-optimization/">speed up WooCommerce</a>.</p>
 
 <h2>Measure first: is it the server or the page?</h2>
 <p>Test key pages with PageSpeed Insights on mobile, and note server response time and the biggest issues. That tells you where to look:</p>
@@ -36514,9 +36597,9 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'wordpress-changes-not-showing',
-    seoTitle: 'WordPress Changes Not Showing? Causes and How to Fix Them',
+    seoTitle: 'WordPress Changes Not Showing? Fix It Cache by Cache',
     title: 'WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template',
-    description: 'WordPress changes not showing after you update or publish? Find the cause fast: caches, CDN, page builder files, mobile settings, templates or the wrong site.',
+    description: 'WordPress changes not showing? Confirm it saved, then clear page, plugin, server and CDN caches in order, and check templates, mobile settings and staging.',
     date: '2026-09-28',
     updated: '2026-10-11',
     category: 'Maintenance',
@@ -36540,6 +36623,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     <tr><td>The site is updated but Google shows old text</td><td>Google hasn't recrawled the page yet</td><td>Search Console URL Inspection</td></tr>
   </tbody>
 </table>
+
+<p>See also: <a href="/blog/elementor-layout-broken-after-update/">fixing an Elementor layout broken after an update</a>.</p>
 
 <h2>1. Make sure the change really saved</h2>
 <ul>
@@ -36774,7 +36859,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     slug: 'elementor-layout-broken-after-update',
     seoTitle: 'Elementor Layout Broken After Update? 8 Fixes, in Order',
     title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
-    description: 'Elementor layout broken after an update? Regenerate CSS, clear caches, match Elementor and Pro versions, use Safe Mode, check containers and roll back.',
+    description: 'Elementor layout broken after an update? Regenerate CSS and clear caches first, then match Elementor and Pro versions, use Safe Mode and roll back safely.',
     date: '2026-09-28',
     updated: '2026-10-31',
     category: 'Maintenance',
@@ -40009,6 +40094,18 @@ add_action( 'after_setup_theme', function () {
 <p>To speed up WooCommerce, put the store on hosting with enough PHP workers and an object cache, page-cache product and category pages while excluding cart, checkout and account pages, compress product images and remove plugins you do not need. Then fix the WooCommerce-specific slowdowns: cart fragments, unindexed product filters, a bloated Action Scheduler and third-party scripts on product and checkout pages.</p>
 <p>Measure the same product, category and checkout pages before and after each change.</p>
 
+<p><strong>Checklist to speed up WooCommerce, in order:</strong></p>
+<ol>
+<li>Measure a product, category, cart and checkout page and note server response time.</li>
+<li>Move to hosting with enough PHP workers and add an object cache.</li>
+<li>Page-cache product and category pages; exclude cart, checkout and my-account.</li>
+<li>Compress and resize product images.</li>
+<li>Remove plugins you do not need and stop scripts loading on pages that do not use them.</li>
+<li>Fix cart fragments, product filters and the Action Scheduler queue.</li>
+<li>Clean up the database, then measure the same pages again.</li>
+</ol>
+<p>Want it done for you? See <a href="/wordpress-speed-optimization/">WooCommerce speed optimization</a>.</p>
+
 <h2>Why WooCommerce stores get slow</h2>
 <p>A WooCommerce store does more work than a brochure site. Carts, stock, prices, taxes, shipping and sessions all change per visitor, so some pages cannot be cached, and every uncached request runs PHP and database queries. Typical causes of a slow store are:</p>
 <ul>
@@ -40020,6 +40117,8 @@ add_action( 'after_setup_theme', function () {
 <li>A bloated database with old sessions, transients, revisions and autoloaded options.</li>
 <li>Third-party scripts: chat widgets, pixels, review widgets and trackers.</li>
 </ul>
+
+<p>See also: <a href="/blog/hostinger-website-slow-fix/">fixing a slow Hostinger website</a>.</p>
 
 <h2>Step 1: Measure the right pages</h2>
 <p>Test the homepage, a busy category page, a product page with variations, the cart and the checkout. Use PageSpeed Insights for Core Web Vitals and real-user data, and also time the admin and checkout yourself, because slow server response matters there. Our guide to <a href="/blog/website-speed-test-tools-explained/">speed test tools</a> explains which numbers to trust. Note the server response time (TTFB) separately from front-end load time; they need different fixes.</p>
@@ -43555,6 +43654,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>The Pages report shows every URL Google knows about, including ones you never meant to be found: tag archives, attachment pages, cart and account pages, filtered shop URLs, old URLs from a previous site. A high "not indexed" count is not a problem in itself.</p>
 <p>Change the filter at the top from "All known pages" to "All submitted pages". That shows only URLs from your sitemap, the ones you said matter. Problems in that view deserve attention first. If the sitemap itself lists junk, tidy it using <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
+<p>Related: <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit checklist</a>.</p>
+
 <h2>Search Console page indexing errors: each status at a glance</h2>
 <table>
   <thead><tr><th>Status</th><th>What it means</th><th>Action</th></tr></thead>
@@ -44071,6 +44172,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 </ul>
 <p>A CRM or even a shared Google Sheet turns each enquiry into a row or record with an owner, a status and a source. That is what makes fast follow-up possible; see <a href="/blog/respond-to-website-enquiries-fast/">following up website leads fast</a>. If enquiries are not arriving at all, fix that first with <a href="/blog/contact-form-not-getting-enquiries/">contact form not getting enquiries</a>.</p>
 
+<p>Related: <a href="/blog/thank-you-pages-forms/">a thank you page after form submit</a>.</p>
+
 <h2>How to connect website forms to a CRM: options at a glance</h2>
 <table>
   <thead><tr><th>Method</th><th>How it works</th><th>Good for</th><th>Watch out for</th></tr></thead>
@@ -44294,9 +44397,9 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'whatsapp-marketing-small-business',
-    seoTitle: 'WhatsApp Marketing for Small Business in India: A Guide',
+    seoTitle: 'WhatsApp Marketing for Small Business in India: Start Here',
     title: 'WhatsApp Marketing for Small Businesses: Using WhatsApp Business to Win Repeat Customers',
-    description: 'WhatsApp marketing for small business in India: set up WhatsApp Business, build an opt-in list, a first 30 days plan, broadcasts and website links.',
+    description: 'WhatsApp marketing for small business in India: set up WhatsApp Business, build an opt-in list, follow a 30-day plan and send broadcasts that are not spam.',
     date: '2026-09-28',
     updated: '2026-10-31',
     category: 'Growth',
@@ -44317,6 +44420,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   </tbody>
 </table>
 <p>Most small businesses should start with the free app and move to the platform only when volume or automation needs justify it. Meta changes features and pricing from time to time, so check the current details before deciding.</p>
+
+<p>Related: <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta catalog for Instagram shopping</a>.</p>
 
 <h2>Setting up WhatsApp Business properly</h2>
 <ol>
@@ -44674,6 +44779,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     <tr><td>Support</td><td>Dashboard, email, phone, dispute handling?</td><td>Problems always come up at busy times</td></tr>
   </tbody>
 </table>
+
+<p>Related: <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup for India</a>.</p>
 
 <h2>Start with how your customers pay</h2>
 <p>Look at your own customers before reading comparison tables. A D2C brand selling to young buyers on phones will see most payments through UPI. A B2B supplier may need net banking and cards for larger amounts. A coaching institute may want EMI options. A temple or NGO may need recurring donations and receipts. An exporter needs international cards.</p>
@@ -45688,9 +45795,9 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'woocommerce-multi-vendor-marketplace',
-    seoTitle: 'WooCommerce Vendor Onboarding & Multi-Vendor Marketplaces',
+    seoTitle: 'WooCommerce Multi-Vendor Marketplace: Setup and Payouts',
     title: 'How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale',
-    description: 'WooCommerce vendor onboarding step by step: seller documents, approval, store setup and test orders, plus plugins, commissions, payouts and GST in India.',
+    description: 'Build a WooCommerce multi-vendor marketplace: pick a plugin, onboard and approve vendors, set commissions and payouts, and handle GST for Indian sellers.',
     date: '2026-09-28',
     updated: '2026-10-30',
     category: 'E-commerce',
@@ -48108,6 +48215,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Integrations with other software, and extra features such as subscriptions or dealer pricing</li>
 </ol>
 <p>On top of the build, every store has running costs. Both are covered below.</p>
+
+<p>See also: <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup for India</a>.</p>
 
 <h2>Cost by type of store</h2>
 <p>The label matters less than the features, but this table gives a rough idea of how common types of Indian stores compare.</p>
@@ -50836,9 +50945,9 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'hreflang-multilingual-seo-india',
-    seoTitle: 'Hreflang Generator for Indian Languages: Codes & Examples',
+    seoTitle: 'Hreflang for Indian Languages: Codes and Ready Tags',
     title: 'Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions',
-    description: 'A hreflang generator for Indian languages: codes for Hindi, Tamil, Marathi and more, ready-to-copy tags for hi-IN, en-IN, ta-IN and x-default, and checks.',
+    description: 'Hreflang codes for Hindi, Tamil, Marathi and other Indian languages, copy-ready tags for hi-IN, en-IN and x-default, and the checks that catch mistakes.',
     date: '2026-09-30',
     updated: '2026-11-06',
     category: 'SEO',
@@ -51753,9 +51862,9 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'wordpress-activity-logs',
-    seoTitle: 'WordPress Activity Log: See Who Changed What and When',
+    seoTitle: 'WordPress Activity Log: How to See Who Changed What',
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
-    description: 'WordPress keeps no change log by default. How an activity log records logins, edits and plugin changes, what to log, which plugins to use and what to review.',
+    description: 'WordPress has no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, and what to review.',
     date: '2026-09-30',
     updated: '2026-11-06',
     category: 'Security',
@@ -57654,9 +57763,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'rebranding-your-website',
-    seoTitle: 'Rebranding Your Website Without Losing SEO: Full Checklist',
+    seoTitle: 'Rebranding Your Website Without Losing SEO: Checklist',
     title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
-    description: 'Rebranding your website? Keep URLs, map 301 redirects, update titles, schema and Google Business Profile. Use the launch checklist so rankings do not drop.',
+    description: 'Rebrand your website without losing rankings: keep URLs, map 301 redirects, update titles, schema and Google Business Profile, then follow the checklist.',
     date: '2026-10-01',
     updated: '2026-10-30',
     category: 'Guides',
@@ -58353,9 +58462,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'meta-catalog-instagram-shopping-woocommerce',
-    seoTitle: 'WooCommerce to Meta Catalog: Instagram and Facebook Shopping',
+    seoTitle: 'Connect WooCommerce to Meta Catalog for Instagram Shop',
     title: 'Connecting WooCommerce to Meta\'s Catalog for Instagram and Facebook Shopping',
-    description: 'Connect WooCommerce or Shopify to Meta\'s catalog for Instagram and Facebook shopping and ads: setup options, feed fields, policies and stock sync.',
+    description: 'Connect WooCommerce to Meta catalog with the official plugin or a feed, sell on Instagram and Facebook, keep price and stock synced and avoid rejections.',
     date: '2026-10-01',
     updated: '2026-10-28',
     category: 'E-commerce',
@@ -58578,9 +58687,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'hindi-devanagari-fonts-website',
-    seoTitle: 'Hindi Fonts for a Website: Readable, Fast Devanagari',
+    seoTitle: 'Hindi Fonts for a Website: How to Pick and Load Them',
     title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
-    description: 'Choosing Hindi fonts for a website: use Unicode text, pick a readable Devanagari font, pair it with English, set sizes, load it fast and test it on phones.',
+    description: 'Pick a Hindi font for your website that reads well on phones: Unicode Devanagari, pairing with English, sizes, fast loading and a test checklist.',
     date: '2026-10-01',
     updated: '2026-10-31',
     category: 'Guides',
@@ -61673,6 +61782,8 @@ wp db check</code></pre>
 </table>
 <p>For a fixed-price website, an advance followed by milestone payments is the most common pattern, and the rest of this guide assumes it.</p>
 
+<p>See also: <a href="/blog/how-long-to-build-wordpress-website/">how long a WordPress website takes to build</a>.</p>
+
 <h2>The advance: what it's for</h2>
 <p>Asking for an advance is reasonable. It confirms you're committed, reserves time in the developer's schedule and covers early work such as planning the pages and designing the first layouts. In general terms:</p>
 <ul>
@@ -62281,9 +62392,9 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'stop-spam-user-registrations-wordpress',
-    seoTitle: 'How to Stop Spam User Registrations in WordPress',
+    seoTitle: 'Stop Spam User Registrations in WordPress: Step by Step',
     title: 'How to Stop Spam User Registrations in WordPress and WooCommerce',
-    description: 'How to stop spam user registrations in WordPress and WooCommerce: check settings, add Turnstile or reCAPTCHA, honeypots, email checks and clean up fake users.',
+    description: 'Stop spam user registrations in WordPress and WooCommerce: turn off open signup, add Turnstile or reCAPTCHA and a honeypot, then delete fake users.',
     date: '2026-10-01',
     updated: '2026-10-28',
     category: 'Security',
@@ -63653,6 +63764,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Make sure only one version of the site loads (https, with or without www), and the others redirect to it.</li>
 </ul>
 <p>Step-by-step help: <a href="/blog/setup-google-analytics-search-console/">setting up Google Analytics and Search Console</a>, which also covers submitting your sitemap.</p>
+
+<p>See also: <a href="/blog/technical-seo-audit-wordpress/">WordPress SEO audit checklist</a>.</p>
 
 <h2>Why a new domain takes time to rank</h2>
 <p>Google has no history for a new domain: no links pointing to it, no record of how people engage with it, no sign that it is a real, active business. Until those signals build up, even well-written pages tend to sit on page three or beyond. That is normal. What you control is giving Google clear, useful pages to index and making the business easy to verify through consistent name, address and phone details.</p>
@@ -68922,6 +69035,8 @@ or a cookie name starts with:
   </tbody>
 </table>
 
+<p>See also: <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing on your site</a>.</p>
+
 <h2>Step 1: back up before you touch anything</h2>
 <p>Before retrying, take a full backup of files and database, or confirm that your host's latest backup is recent and restorable. A failed update that is retried carelessly can turn a small problem into a broken site. If you do not have a routine yet, <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a> explains what to keep and where to store it.</p>
 <p>Also note the exact plugin, theme or core version that failed and the full error text. A screenshot is enough. It saves time if you need to ask the plugin developer or your host for help.</p>
@@ -69346,6 +69461,8 @@ or a cookie name starts with:
   </tbody>
 </table>
 <p>So a large gap between scores is normal. What matters is the field data from real visitors, shown in PageSpeed Insights and the Core Web Vitals report in Search Console. <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a> covers what each metric means.</p>
+
+<p>Related: <a href="/blog/why-is-my-wordpress-site-slow/">slow WordPress site</a>.</p>
 
 <h2>WordPress site slow on mobile: find the cause first</h2>
 <p>Run the mobile test in PageSpeed Insights and note three things: the LCP element, the total page weight and the list of third-party scripts. Then open the page in Chrome DevTools with mobile emulation and CPU throttling to see what loads first. Usually one or two of these stand out:</p>
