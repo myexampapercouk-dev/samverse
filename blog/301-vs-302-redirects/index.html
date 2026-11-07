@@ -43,7 +43,7 @@
       "headline": "301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress",
       "description": "301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-06",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/301-vs-302-redirects/",
       "image": "https://samverse.space/assets/og/blog-301-vs-302-redirects.png",
       "articleSection": "SEO",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=301%20vs%20302%20Redirects%3A%20The%20Difference%2C%20Which%20to%20Use%2C%20How%20They%20Affect%20SEO%20and%20How%20to%20Set%20Them%20Up%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2F301-vs-302-redirects%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,7 @@
               <li><a href="#how-to-set-up-301-and-302-redirects-in-wordpress">How to set up 301 and 302 redirects in WordPress</a></li>
               <li><a href="#how-to-check-whether-a-redirect-is-301-or-302">How to check whether a redirect is 301 or 302</a></li>
               <li><a href="#a-simple-redirect-checklist">A simple redirect checklist</a></li>
+              <li><a href="#quick-check-are-your-redirects-the-right-type">Quick check: are your redirects the right type?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -272,9 +273,17 @@
 <li>Test a sample of old URLs, then watch Search Console's Pages report for a few weeks.</li>
 </ol>
 
-<h2 id="when-to-get-help">When to get help</h2>
 <p>Get help before a redesign, URL change or domain move, not after. The redirect map, old URL to new URL, should be built from your current sitemap, the Search Console Pages report and pages with backlinks, then tested before launch. Also get help if rankings dropped after a change and you find 302s, chains, or old URLs all sent to the home page.</p>
-<p>Planning a redesign, URL clean-up or domain move? Samverse handles redirect mapping and checks as part of <a href="/wordpress-migration/">website migration</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, so you keep the rankings you have built. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit existing redirects.</p>
+
+<h2 id="quick-check-are-your-redirects-the-right-type">Quick check: are your redirects the right type?</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to the <strong>Network</strong> tab, tick <strong>Preserve log</strong> and load the old URL. The first row should show status 301, not 302.</li>
+  <li>Test a few old URLs in a redirect checker such as httpstatus.io and look for chains of more than one hop.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check "Page with redirect" and "Not found (404)" for URLs that should redirect somewhere useful.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when a migration or redesign changed many URLs, when redirects loop or chain, or when traffic fell after a move. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>What is the difference between a 301 and 302 redirect?</h3>
@@ -332,6 +341,7 @@
               <li><a href="#how-to-set-up-301-and-302-redirects-in-wordpress">How to set up 301 and 302 redirects in WordPress</a></li>
               <li><a href="#how-to-check-whether-a-redirect-is-301-or-302">How to check whether a redirect is 301 or 302</a></li>
               <li><a href="#a-simple-redirect-checklist">A simple redirect checklist</a></li>
+              <li><a href="#quick-check-are-your-redirects-the-right-type">Quick check: are your redirects the right type?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

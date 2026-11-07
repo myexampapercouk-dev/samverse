@@ -43,7 +43,7 @@
       "headline": "What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One",
       "description": "A CDN serves your site files from servers near each visitor. See how it works, how it differs from hosting, and a quick test to see if you need one.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/what-is-a-cdn/",
       "image": "https://samverse.space/assets/og/blog-what-is-a-cdn.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=What%20Is%20a%20CDN%3F%20How%20a%20Content%20Delivery%20Network%20Speeds%20Up%20Your%20Website%2C%20and%20When%20You%20Need%20One%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwhat-is-a-cdn%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#how-to-set-up-a-cdn-on-wordpress-safely">How to set up a CDN on WordPress safely</a></li>
               <li><a href="#how-to-check-if-your-site-uses-a-cdn">How to check if your site uses a CDN</a></li>
               <li><a href="#common-cdn-problems-and-fixes">Common CDN problems and fixes</a></li>
+              <li><a href="#quick-check-is-your-cdn-actually-serving-the-site">Quick check: is your CDN actually serving the site?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -287,6 +289,16 @@ cf-cache-status: HIT</code></pre>
   <li><strong>Broken sliders or menus:</strong> script features such as Cloudflare's Rocket Loader can conflict with themes; turn them off and retest.</li>
 </ul>
 
+<h2 id="quick-check-is-your-cdn-actually-serving-the-site">Quick check: is your CDN actually serving the site?</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, reload, click the page request and read the response headers. With Cloudflare, <code>cf-cache-status</code> shows HIT, MISS or DYNAMIC.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first before and after turning the CDN on, and compare the server response time.</li>
+  <li>After any nameserver change, send a test email to and from your domain and place a test order if you sell online.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you are unsure whether a CDN will help, when email or checkout broke after a switch, or when cached pages show stale content. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is a website CDN?</h3>
 <p>A network of servers in many locations that stores copies of your website's files and delivers them from the server closest to each visitor. Your hosting remains the original source, and the CDN reduces the distance files travel and the load on your server.</p>
@@ -300,8 +312,6 @@ cf-cache-status: HIT</code></pre>
 <p>Indirectly. Faster loading can improve Core Web Vitals and user experience, which support rankings, but a CDN doesn't boost rankings by itself. Make sure its security settings don't block or challenge Googlebot.</p>
 <h3>Is a free CDN good enough for a small business?</h3>
 <p>Usually, yes. Cloudflare's free plan or a host-included CDN covers most small business sites. Paid options make sense for stores, high traffic or when you need full-page caching at the edge.</p>
-
-<p>Not sure whether a CDN would help your site, or worried about breaking email and checkout? I check where the time is actually going, set up the right caching and CDN, and test everything afterwards; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>. Stores have extra caching rules, covered in <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -347,6 +357,8 @@ cf-cache-status: HIT</code></pre>
               <li><a href="#how-to-set-up-a-cdn-on-wordpress-safely">How to set up a CDN on WordPress safely</a></li>
               <li><a href="#how-to-check-if-your-site-uses-a-cdn">How to check if your site uses a CDN</a></li>
               <li><a href="#common-cdn-problems-and-fixes">Common CDN problems and fixes</a></li>
+              <li><a href="#quick-check-is-your-cdn-actually-serving-the-site">Quick check: is your CDN actually serving the site?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -377,7 +389,7 @@ cf-cache-status: HIT</code></pre>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/reduce-server-response-time-ttfb/"><img class="post-card-img" src="/assets/og/blog-reduce-server-response-time-ttfb.webp" alt="How to Reduce Server Response Time (TTFB) on WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>How to Reduce Server Response Time (TTFB) on WordPress</h3><p>How to reduce server response time (TTFB) in WordPress: measure it, add page caching, fix slow plugins and queries, upgrade PHP, pick hosting near India.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/image-optimization-wordpress/"><img class="post-card-img" src="/assets/og/blog-image-optimization-wordpress.webp" alt="Image Optimization for WordPress: Sizes, Formats, Compression and Lazy Loading, Step by Step" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Image Optimization for WordPress: Sizes, Formats, Compression and Lazy Loading, Step by Step</h3><p>WordPress image optimization step by step: resize, choose WebP or AVIF, compress, serve srcset sizes, prioritise the LCP image and lazy-load the rest.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/website-speed-indian-mobile-networks/"><img class="post-card-img" src="/assets/og/blog-website-speed-indian-mobile-networks.webp" alt="Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs</h3><p>Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.</p><span class="post-card-meta">27 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/website-speed-indian-mobile-networks/"><img class="post-card-img" src="/assets/og/blog-website-speed-indian-mobile-networks.webp" alt="Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs</h3><p>Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

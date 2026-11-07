@@ -9759,7 +9759,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)',
     description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -9898,6 +9898,16 @@ site:example.com/blog/ "net metering"</code></pre>
 <li><strong>After installing or replacing an SEO plugin:</strong> settings for noindex, archives and schema do not always carry over.</li>
 </ul>
 <p>A short repeat audit takes far less time than the first one, because you already have a baseline to compare against. Search Console's reports, explained in our <a href="/blog/google-search-console-reports-explained/">Search Console reports guide</a>, are the fastest place to start.</p>
+<h2>Quick check: three checks to start the audit</h2>
+<ol>
+  <li>In WordPress, open <strong>Settings &gt; Reading</strong> and confirm "Discourage search engines from indexing this site" is unticked.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and note the main reasons pages are not indexed.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first for your homepage and one key service or product page.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when many important pages are "Crawled, currently not indexed", after a migration or redesign that lost traffic, or when plugins conflict over SEO settings. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I do a WordPress SEO audit?</h3>
 <p>Check indexing in Search Console, crawl the site for errors and redirects, review WordPress and SEO plugin settings, test speed, review on-page SEO and structured data, then prioritise fixes by impact.</p>
@@ -9911,9 +9921,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>A technical SEO audit focuses on crawling, indexing, speed, redirects and structured data. A full SEO audit also covers content quality, keyword targeting and backlinks.</p>
 <h3>What should a WooCommerce SEO audit include?</h3>
 <p>Everything in a WordPress audit plus filter and sort URLs, product and category content, out-of-stock handling, product schema and noindexing cart, checkout and account pages.</p>
-
-<h2>When to get help</h2>
-<p>You can run most of this checklist yourself. Get help when the Pages report shows large numbers of important pages "Crawled, currently not indexed", after a migration or redesign that lost traffic, or when fixes need theme, server or redirect changes you are not comfortable making. Want an expert to run the audit and fix what it finds? Samverse offers <a href="/wordpress-seo-services/">WordPress SEO services</a>, including technical audits for WooCommerce stores, and <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for the performance issues an audit uncovers.</p>
 `,
   },
   {
@@ -13968,7 +13975,7 @@ wp cap list editor</code></pre>
     title: 'Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do',
     description: 'Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration', 'wordpress-malware-removal'],
     body: `
@@ -14081,6 +14088,16 @@ wp cap list editor</code></pre>
 <h3>Keep a simple incident note</h3>
 <p>Each time an alert fires, write down the time, how long it lasted, what caused it and what fixed it. After a few months this log tells you whether the problem is the host, a plugin, traffic spikes or something else, and it gives you facts to take to your hosting company instead of guesses.</p>
 
+<h2>Quick check: set up basic monitoring today</h2>
+<ol>
+  <li>Create a free monitor in a tool such as UptimeRobot for your homepage, with alerts sent to email and phone.</li>
+  <li>Add a second monitor for a page that uses the database, such as the shop or contact page, so a broken database is caught too.</li>
+  <li>In your hosting panel, check the resource usage or error logs for the times any alert fired.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site goes down often, when your host blames plugins and plugins blame the host, or when you would rather someone else watched. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is free uptime monitoring good enough?</h3>
 <p>For most small business sites, yes. A free plan checking every five minutes, with a keyword check and email or app alerts, covers the basics. Stores and sites running ads benefit from shorter intervals and SMS alerts on a paid plan.</p>
@@ -14094,8 +14111,6 @@ wp cap list editor</code></pre>
 <p>No. A single request every few minutes is far less than normal visitor traffic. If your security plugin blocks the monitor, add its IP addresses to the allow list rather than switching the monitor off.</p>
 <h3>Is free uptime monitoring good enough for a small business website?</h3>
 <p>For a brochure site, a free plan with a five-minute check, email alerts and SSL expiry warnings is usually enough. A store taking payments benefits from shorter intervals, keyword checks on cart and checkout pages, and alerts to a phone, which often need a paid plan.</p>
-
-<p>If you'd rather have someone else watching, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, security scans and a monthly report, so problems are caught early and the site can be restored quickly if needed. For the renewals that cause many outages, see the <a href="/blog/hosting-renewal-price-increase/">domain and hosting renewal checklist</a>.</p>
 `,
   },
   {
@@ -14104,7 +14119,7 @@ wp cap list editor</code></pre>
     title: 'Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs',
     description: 'Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'woocommerce-developer'],
     body: `
@@ -14206,6 +14221,16 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 
 <p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>
 
+<h2>Quick check: test like your customers browse</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, set throttling to <strong>Slow 4G</strong> and reload your homepage with cache disabled.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and note the Largest Contentful Paint and Interaction to Next Paint figures.</li>
+  <li>Open the site on a mid-range Android phone over mobile data and time how long until you can tap the main button.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site is slow on mobile data, when you are unsure whether hosting, images or plugins are to blame, or when checkout lags on phones. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my website slow on mobile data but fast on Wi-Fi?</h3>
 <p>Mobile connections usually have higher and more variable latency, so pages that need many files from several servers slow down sharply. Budget phones also run JavaScript more slowly than laptops. Throttled testing in Chrome shows the difference before your customers notice it.</p>
@@ -14217,8 +14242,6 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 <p>No. Many visitors still connect over 4G, indoors or in areas without 5G, and a faster network doesn't speed up a budget phone's processor. Heavy JavaScript and slow server response hurt on any network.</p>
 <h3>What is a good page size for mobile visitors?</h3>
 <p>There's no official figure, but keeping a typical business page to around 1 to 1.5 MB or less, with as little JavaScript as possible, is a sensible starting budget. Landing pages for ads should be lighter still.</p>
-
-<p>Want your site checked on throttled 4G and a real phone, with the causes fixed rather than a score chased? I test key pages, find whether hosting, images, plugins or scripts are to blame, and report the before-and-after results; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -15290,7 +15313,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
     title: 'What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One',
     description: 'A CDN serves your site files from servers near each visitor. See how it works, how it differs from hosting, and a quick test to see if you need one.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-migration', 'woocommerce-developer'],
     body: `
@@ -15401,6 +15424,16 @@ cf-cache-status: HIT</code></pre>
   <li><strong>Broken sliders or menus:</strong> script features such as Cloudflare's Rocket Loader can conflict with themes; turn them off and retest.</li>
 </ul>
 
+<h2>Quick check: is your CDN actually serving the site?</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, reload, click the page request and read the response headers. With Cloudflare, <code>cf-cache-status</code> shows HIT, MISS or DYNAMIC.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first before and after turning the CDN on, and compare the server response time.</li>
+  <li>After any nameserver change, send a test email to and from your domain and place a test order if you sell online.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are unsure whether a CDN will help, when email or checkout broke after a switch, or when cached pages show stale content. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a website CDN?</h3>
 <p>A network of servers in many locations that stores copies of your website's files and delivers them from the server closest to each visitor. Your hosting remains the original source, and the CDN reduces the distance files travel and the load on your server.</p>
@@ -15414,8 +15447,6 @@ cf-cache-status: HIT</code></pre>
 <p>Indirectly. Faster loading can improve Core Web Vitals and user experience, which support rankings, but a CDN doesn't boost rankings by itself. Make sure its security settings don't block or challenge Googlebot.</p>
 <h3>Is a free CDN good enough for a small business?</h3>
 <p>Usually, yes. Cloudflare's free plan or a host-included CDN covers most small business sites. Paid options make sense for stores, high traffic or when you need full-page caching at the edge.</p>
-
-<p>Not sure whether a CDN would help your site, or worried about breaking email and checkout? I check where the time is actually going, set up the right caching and CDN, and test everything afterwards; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>. Stores have extra caching rules, covered in <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimization</a>.</p>
 `,
   },
   {
@@ -15520,7 +15551,7 @@ cf-cache-status: HIT</code></pre>
     title: 'Website Analytics for Business Owners: The GA4 and Search Console Metrics That Actually Matter, and a Monthly Routine',
     description: 'Website analytics metrics that matter for small businesses: GA4 key events, sources, landing pages, Search Console data and a 30-minute monthly routine.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
@@ -15620,6 +15651,16 @@ cf-cache-status: HIT</code></pre>
 
 <p>Low engagement on key pages? See <a href="/blog/keep-visitors-engaged-website/">how to keep visitors engaged</a>.</p>
 
+<h2>Quick check: three numbers to check monthly</h2>
+<ol>
+  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong> and compare sessions and key events by channel.</li>
+  <li>Open <strong>Reports &gt; Engagement &gt; Pages and screens</strong> and note which pages lead to enquiries.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and compare clicks with the previous month using <strong>Date &gt; Compare</strong>.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when analytics and Search Console are not set up in your own account, when key events are missing, or when reports do not match real enquiries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What website metrics should a small business track?</h3>
 <p>Key events such as enquiries, calls, WhatsApp clicks and orders; the sources and landing pages that produce them; engagement on important pages; and Search Console clicks, queries and indexing.</p>
@@ -15631,8 +15672,6 @@ cf-cache-status: HIT</code></pre>
 <p>The tools count differently. GA4 misses visitors who decline cookies or block tracking, and it only records a visit once its tag loads. Watch the trend in each tool rather than expecting them to match.</p>
 <h3>How often should I check website analytics?</h3>
 <p>Once a month for the routine above is enough for most small businesses, with a quick weekly look at enquiries if you are running ads or have just launched changes.</p>
-
-<p>Want analytics you can trust and a site that shows up in the first place? Through <a href="/wordpress-seo-services/">WordPress SEO services</a>, I set up Search Console and GA4 in your own Google account, fix the technical and on-page SEO of your WordPress site, and leave you with notes on what to watch each month. Send me your website address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -18203,7 +18242,7 @@ cf-cache-status: HIT</code></pre>
     title: 'Google Search Console Reports Explained: A Tour of Every Report, What It Shows and What to Do About It',
     description: 'Google Search Console reports explained: Performance, URL Inspection, Pages, Sitemaps, Core Web Vitals, Links and more, and what to do with each.',
     date: '2026-09-27',
-    updated: '2026-10-16',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-speed-optimization'],
     body: `
@@ -18288,6 +18327,16 @@ cf-cache-status: HIT</code></pre>
 </ol>
 <p>If clicks fall suddenly, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a> before changing anything.</p>
 
+<h2>Quick check: a ten-minute Search Console check</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, set the date to the last 3 months and sort <strong>Queries</strong> by impressions.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and read the reasons listed under "Why pages aren't indexed".</li>
+  <li>Open <strong>Security &amp; Manual Actions</strong> and confirm both Manual actions and Security issues say no issues detected.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when reports show problems you cannot trace, when clicks drop suddenly, or when the underlying WordPress issues need fixing rather than just listing. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is Google Search Console free?</h3>
 <p>Yes. It is free for any site you can verify, and it is the only place to see the actual searches your site appears for in Google.</p>
@@ -18299,8 +18348,6 @@ cf-cache-status: HIT</code></pre>
 <p>It uses real visitor data from Chrome users, and smaller sites often don't have enough visits for a report. Use PageSpeed Insights lab tests in the meantime.</p>
 <h3>Should I give my developer access to Search Console?</h3>
 <p>Yes, as a user added under Settings with the access level they need. Never share your Google password, and keep your business account as the owner.</p>
-
-<p>Want Search Console set up properly, its reports read for you and the underlying WordPress issues fixed rather than just listed? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -20267,7 +20314,7 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
     title: 'XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress',
     description: 'XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-migration', 'website-redesign'],
     body: `
@@ -20384,9 +20431,17 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   <li><strong>Treating submission as indexing.</strong> A sitemap gets URLs discovered; internal links, quality and time get them indexed. <a href="/blog/get-website-indexed-google-faster/">How to get a new site indexed faster</a> covers what actually speeds that up.</li>
 </ul>
 
-<h2>When to get help</h2>
 <p>Get help when Search Console says the sitemap "Couldn't fetch", discovers far fewer pages than you have, or the sitemap lists noindexed, redirected or thin URLs, and when two plugins each produce their own sitemap. The fix is usually one sitemap source listing only the pages you want indexed.</p>
-<p>Not sure whether your sitemap is helping or confusing Google? A sitemap and indexing check, with the fixes made on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+
+<h2>Quick check: is your sitemap healthy?</h2>
+<ol>
+  <li>Open <strong>/sitemap_index.xml</strong> (Yoast or Rank Math) or <strong>/wp-sitemap.xml</strong> in a browser and check it lists your real pages.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Sitemaps</strong>. The status should be Success, with a sensible number of discovered pages.</li>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for a few sitemap URLs. Each should be indexable, not noindexed or redirected.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the sitemap lists noindexed, redirected or thin pages, when two plugins produce two sitemaps, or when Search Console shows sitemap errors. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is an XML sitemap in SEO?</h3>
@@ -20407,13 +20462,12 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
     title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
     description: 'Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
 <p>Robots.txt WordPress basics: robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically by WordPress unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap; everything else should stay crawlable.</p>
 <p><strong>Short answer:</strong> robots.txt controls crawling, not indexing. To keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. The biggest risk is a file that blocks too much, such as a leftover "Disallow: /" from a staging site.</p>
-<p>Robots.txt and the XML sitemap are both part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because a single wrong line in this file can stop Google crawling a whole site. This guide explains how the file works, gives safe examples for WordPress and WooCommerce, covers AI crawlers and shows how to test it.</p>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
 <h2>How robots.txt works</h2>
@@ -20508,7 +20562,7 @@ Disallow: /*?*orderby=
 Disallow: /*?*filter_
 
 Sitemap: https://example.com/sitemap_index.xml</code></pre>
-<p>Two cautions. First, adjust the filter rule to the parameters your filter plugin actually uses, and never block filtered pages you have deliberately built to rank, such as a "red sarees" category view; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> explains that choice. Second, if filter URLs are already indexed, a robots.txt block stops Google seeing their canonical or noindex tags, so they can linger in results. Sort out canonicals first, then block. WooCommerce already asks search engines not to index the cart, checkout and account pages, so they don't need rules here.</p>
+<p>Two cautions. First, adjust the filter rule to the parameters your filter plugin actually uses, and never block filtered pages you have deliberately built to rank, such as a "red sarees" category view; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> explains that choice. Second, if filter URLs are already indexed, a robots.txt block stops Google seeing their canonical or noindex tags, so they can linger in results. Sort out canonicals first, then block.</p>
 
 <h2>Robots.txt blocks crawling, not indexing</h2>
 <p>This is the most misunderstood point. If other pages link to a URL you've blocked, Google can still index the bare URL without ever reading the page, and it can't see a noindex tag on a page it isn't allowed to crawl. Pick the tool that matches the goal:</p>
@@ -20530,7 +20584,7 @@ Disallow: /
 
 User-agent: Google-Extended
 Disallow: /</code></pre>
-<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. Many service businesses want to be cited, so they leave the search crawlers alone. AI search and your website covers the trade-off. If you use Cloudflare, check whether its AI crawler settings are adding lines to your robots.txt on your behalf, then look at the live file to see exactly what crawlers receive.</p>
+<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. If you use Cloudflare, check whether its AI crawler settings add lines to your live robots.txt.</p>
 
 <h2>Common robots.txt mistakes</h2>
 <ul>
@@ -20552,9 +20606,15 @@ Disallow: /</code></pre>
   <li><strong>Repeat after every launch, redesign or migration,</strong> as part of a wider check such as the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a>.</li>
 </ol>
 
+<h2>Quick check: is robots.txt blocking anything important?</h2>
+<ol>
+  <li>Open <strong>yourdomain.com/robots.txt</strong> in a browser. Look for <code>Disallow: /</code> and check the Sitemap line points to a working address.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Settings &gt; Crawling &gt; robots.txt</strong> and check the file Google last fetched and any errors.</li>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for a key page. "Crawl allowed?" should say Yes.</li>
+</ol>
+
 <h2>When to get help</h2>
-<p>Get help when Search Console shows important pages as "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule such as <code>Disallow: /</code> reached the live site, or when a WooCommerce store's filter URLs are eating crawl effort and you're unsure what is safe to block.</p>
-<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
+<p>Get help when important pages show "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule reached the live site, or when store filter URLs are eating crawl effort. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is robots.txt used for?</h3>
@@ -20577,7 +20637,7 @@ Disallow: /</code></pre>
     title: 'Canonical Tags Explained: What rel=canonical Does and How to Get It Right',
     description: 'What a canonical tag does, why Google treats it as a hint, how WordPress sets it, and how to fix parameter, pagination, www and Search Console canonical issues.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer', 'wordpress-migration'],
     body: `
@@ -20691,6 +20751,16 @@ Disallow: /</code></pre>
 </ul>
 <p>For the wider picture of why duplicate URLs appear and when they matter, see <a href="/blog/duplicate-content-explained/">duplicate content explained</a>.</p>
 
+<h2>Quick check: which canonical does Google use?</h2>
+<ol>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong>. Compare the <strong>User-declared canonical</strong> with the <strong>Google-selected canonical</strong>.</li>
+  <li>Open the page, press Ctrl+U to view source and search for <code>rel="canonical"</code>. There should be exactly one, pointing to the https address you want.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for "Duplicate, Google chose different canonical than user".</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when Google keeps picking a different canonical, when two plugins output canonical tags, or after a migration changed your URLs. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is a canonical tag a ranking factor?</h3>
 <p>Not directly. It doesn't make a page rank higher on its own. It helps Google consolidate signals from duplicate URLs onto one page and show the URL you prefer, which can help that page compete.</p>
@@ -20702,8 +20772,6 @@ Disallow: /</code></pre>
 <p>Only if they're near-identical, such as the same product at two URLs. Different products, or variations people search for separately, should keep their own canonical; Google may ignore canonicals between pages that differ a lot.</p>
 <h3>How long does it take Google to respect a new canonical?</h3>
 <p>It depends on how often Google recrawls the pages involved; changes can take days or weeks to show in Search Console. Requesting indexing in URL Inspection may help Google notice sooner, but doesn't guarantee it will agree.</p>
-
-<p>Seeing canonical warnings in Search Console, or not sure your plugin is setting the right URLs after a redesign or migration? I audit and fix technical SEO on WordPress and WooCommerce sites. Get in touch through <a href="/wordpress-seo-services/">WordPress SEO services</a> and I'll take a look.</p>
 `,
   },
   {
@@ -20712,13 +20780,11 @@ Disallow: /</code></pre>
     title: 'Duplicate Content Explained: What It Is, the Penalty Myth and How to Fix It',
     description: 'What duplicate content is, whether Google really penalises it, the common WordPress causes and how to fix them with canonicals, redirects, noindex or merging.',
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer', 'website-redesign'],
     body: `
 <p><strong>Short answer:</strong> duplicate content is the same or very similar text available at more than one URL, and the "duplicate content penalty" is largely a myth. Google does not punish a site for ordinary duplication; it picks one version to show and filters the rest. Only deliberate copying, scraping or mass-produced near-identical pages can lead to spam action. The practical risk is quieter: diluted signals and the wrong URL ranking.</p>
-
-<p>"Duplicate content" worries many business owners, usually because they've heard there's a Google penalty for it. The truth is more nuanced: normal technical duplication rarely causes penalties, but some kinds of duplication do hold sites back, and deliberate copying can get a site into real trouble. This guide explains what duplicate content is, what Google actually says about the "penalty", the common causes on WordPress sites and how to fix each one.</p>
 
 <h2>What is duplicate content?</h2>
 <p>Duplicate content is the same, or very similar, content available at more than one URL. It comes in a few forms:</p>
@@ -20846,6 +20912,16 @@ Disallow: /</code></pre>
 <h2>The principle</h2>
 <p>Each page should exist for a reason and offer something unique. If two pages would answer the same question, combine them into one better page.</p>
 
+<h2>Quick check: does Google see duplicates on your site?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for "Duplicate without user-selected canonical" and "Alternate page with proper canonical tag".</li>
+  <li>Open <strong>http://</strong>, <strong>https://</strong>, www and non-www versions of your homepage. All should redirect to one address.</li>
+  <li>Search <strong>site:yourdomain.com</strong> plus a phrase from a service page. If several near-identical pages appear, consider merging them.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when templated pages compete with each other, when tag and filter archives fill the index, or when a staging copy is visible to Google. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Does Google penalise duplicate content?</h3>
 <p>Generally no. Google says duplicate content isn't grounds for action unless it's meant to deceive or manipulate results; it simply picks one version to show. Deliberate scraping and mass-produced near-identical pages are the exception.</p>
@@ -20859,8 +20935,6 @@ Disallow: /</code></pre>
 <p>Use a 301 redirect when visitors don't need the duplicate URL at all. Use a canonical when the duplicate must stay accessible, such as a sorted or tracked version of a page.</p>
 <h3>Do WordPress tag pages cause duplicate content?</h3>
 <p>They can, if you have many tags with only one or two posts each. Either use fewer, meaningful tags or noindex the tag archives.</p>
-
-<p>Not sure whether duplicate URLs, archives or filter pages are holding your site back? I audit and fix technical SEO issues on WordPress and WooCommerce sites. See <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -20869,7 +20943,7 @@ Disallow: /</code></pre>
     title: '301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
     description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -20966,9 +21040,17 @@ Disallow: /</code></pre>
 <li>Test a sample of old URLs, then watch Search Console's Pages report for a few weeks.</li>
 </ol>
 
-<h2>When to get help</h2>
 <p>Get help before a redesign, URL change or domain move, not after. The redirect map, old URL to new URL, should be built from your current sitemap, the Search Console Pages report and pages with backlinks, then tested before launch. Also get help if rankings dropped after a change and you find 302s, chains, or old URLs all sent to the home page.</p>
-<p>Planning a redesign, URL clean-up or domain move? Samverse handles redirect mapping and checks as part of <a href="/wordpress-migration/">website migration</a> and <a href="/wordpress-seo-services/">WordPress SEO services</a>, so you keep the rankings you have built. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to audit existing redirects.</p>
+
+<h2>Quick check: are your redirects the right type?</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to the <strong>Network</strong> tab, tick <strong>Preserve log</strong> and load the old URL. The first row should show status 301, not 302.</li>
+  <li>Test a few old URLs in a redirect checker such as httpstatus.io and look for chains of more than one hop.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check "Page with redirect" and "Not found (404)" for URLs that should redirect somewhere useful.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when a migration or redesign changed many URLs, when redirects loop or chain, or when traffic fell after a move. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the difference between a 301 and 302 redirect?</h3>
@@ -21100,7 +21182,7 @@ Disallow: /</code></pre>
     title: 'How Long Does SEO Take to Work? What Affects the Timeline, What Usually Happens First and How to Tell It Is Working',
     description: 'How long does SEO take to work? An honest answer: what affects the timeline, what comes first, new vs established sites and the signs that SEO is working.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-website-development'],
     body: `
@@ -21210,6 +21292,16 @@ Disallow: /</code></pre>
 
 <p>Start with realistic targets: <a href="/blog/search-intent-explained/">match search intent</a> and pick specific keywords.</p>
 
+<h2>Quick check: is your site ready to start ranking?</h2>
+<ol>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for your main service pages. Each should say "URL is on Google".</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, set the date to the last 3 months and check which queries already sit in positions 8 to 30.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first for your homepage. A very slow mobile page holds every other change back.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when key pages are not indexed months after launch, when nothing moves after steady work, or when you want an honest plan rather than promised rankings. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How long does SEO take for a new website?</h3>
 <p>Longer than for an established site, because Google has no history, links or brand searches to go on. Indexing comes first, then impressions for specific searches; broad terms take the longest and depend on links and reputation.</p>
@@ -21223,8 +21315,6 @@ Disallow: /</code></pre>
 <p>Positions fluctuate as Google tests pages and rolls out updates. Check for technical changes first, then judge the trend over several weeks before reacting.</p>
 <h3>When should I judge whether SEO is working?</h3>
 <p>Look at the direction of indexed pages, impressions, long-tail positions and enquiries over a few months, against a clear plan of what was done. If nothing is moving and nobody can explain why, ask questions.</p>
-
-<p>Want an honest view of where your site stands and what will move it first, with technical and on-page fixes made on your site rather than promised rankings? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -21354,7 +21444,7 @@ Disallow: /</code></pre>
     title: 'SEO Scams and Red Flags: How to Avoid Bad SEO Services and Choose a Provider in India',
     description: 'Spot SEO scams and red flags, learn what a fair monthly SEO retainer covers, the questions to ask and how to check a provider before you sign anything.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'hire-wordpress-developer', 'website-redesign'],
     body: `
@@ -21455,6 +21545,16 @@ Disallow: /</code></pre>
 </ul>
 <p>The fix is the same each time: own your accounts, ask what will change on your site each month and judge progress on enquiries and real queries in Search Console. If your site is on WordPress, the technical side of SEO is often where results start, which is what my WordPress SEO services focus on. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to fix the site issues an SEO audit uncovers.</p>
 
+<h2>Quick check: is your SEO work checkable?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Settings &gt; Users and permissions</strong>. You should be the owner, and you should know every user listed.</li>
+  <li>Open <strong>Links</strong> in Search Console and check <strong>Top linking sites</strong> for unrelated or spammy domains appearing suddenly.</li>
+  <li>Ask for the last report and compare its figures with your own <strong>Performance</strong> report for the same dates.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are not the owner of your own Search Console, when reports cannot be matched to your data, or when you want the technical side fixed on the site. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I know if an SEO company is a scam?</h3>
 <p>Watch for guaranteed rankings, bulk backlink packages, secret methods, refusal to give you account ownership, reports without enquiry data and long lock-in contracts. Cold emails claiming your site has "critical errors" are another warning sign.</p>
@@ -21468,8 +21568,6 @@ Disallow: /</code></pre>
 <p>Buying links to manipulate rankings is against Google's spam policies, and cheap bulk packages are mostly worthless. At best Google ignores them; at worst they lead to a manual action. Links earned through useful content and real relationships are what work.</p>
 <h3>Should I sign a 12-month SEO contract?</h3>
 <p>Be cautious. SEO takes months, so some commitment is reasonable, but a long lock-in with an exit fee and no defined work protects the agency, not you. Prefer month-to-month terms or a short notice period with clear monthly deliverables.</p>
-
-<p>Want honest, technical SEO for a WordPress site, with fixes made on the site, reports from your own Search Console and no link packages? See my WordPress SEO services.</p>
 `,
   },
   {
@@ -21478,7 +21576,7 @@ Disallow: /</code></pre>
     title: 'Ethical Link Building for Small Businesses: Practical Ways to Earn Backlinks Without Risk',
     description: 'Ethical link building for small businesses in India: earn backlinks from suppliers, associations, local press and useful resources, without paid link schemes.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-developer-for-agencies', 'website-redesign'],
     body: `
@@ -21588,6 +21686,16 @@ Disallow: /</code></pre>
 <h3>Track what you earn</h3>
 <p>Keep a simple sheet: date, site, page, contact, status and whether the link is live. Check new links in Search Console's Links report every month or two. It's slow, but each real link from a relevant site in your city or industry tends to be worth more than many directory listings.</p>
 
+<h2>Quick check: where do your links come from today?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Links</strong> and read <strong>Top linking sites</strong> and <strong>Top linked pages</strong>.</li>
+  <li>Search your business name in quotes on Google and note pages that mention you without a link. These are easy outreach targets.</li>
+  <li>Check that the page you want links to is indexed using <strong>URL Inspection</strong>, and that it loads well on a phone.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your pages are not ready to earn links, when you are offered link packages, or when you want help deciding which pages deserve promotion. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is ethical link building?</h3>
 <p>Earning links that a site would give you anyway because of a real relationship or something genuinely useful, rather than paying, swapping or building fake sites to create them.</p>
@@ -21601,8 +21709,6 @@ Disallow: /</code></pre>
 <p>Mentioning a genuine partner where it helps your customers is fine. Swapping links at scale with sites purely to rank is a link scheme.</p>
 <h3>Is buying backlinks safe for a small business website?</h3>
 <p>No. Paying for links meant to pass ranking credit goes against Google's spam policies, and links from sites that sell them are often low quality anyway. The safer path is links earned through partners, associations, press and useful content.</p>
-
-<p>Want your site's foundations ready for the links you earn, with honest advice on where those links can come from? See my WordPress SEO services, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -21611,7 +21717,7 @@ Disallow: /</code></pre>
     title: 'Business Directories and Local Citations in India: Which Listings Matter, NAP Consistency, Duplicates, Paid Listing Scams and a Tracking Sheet',
     description: 'Business directories and local citations in India: which listings matter, NAP consistency, fixing duplicates, avoiding listing scams and tracking.',
     date: '2026-09-27',
-    updated: '2026-10-16',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
@@ -21721,6 +21827,16 @@ Category:       Dentist</code></pre>
 <h2>Connect it all to your website</h2>
 <p>Your website should carry the same master NAP in the footer and on the contact page, a map, and LocalBusiness structured data listing your official profiles; see <a href="/blog/google-maps-on-website/">adding Google Maps to your website</a> and <a href="/blog/schema-markup-explained/">schema markup explained</a>. When your website, profile and listings all agree, customers and search engines get the same answer wherever they look.</p>
 
+<h2>Quick check: are your details the same everywhere?</h2>
+<ol>
+  <li>Search your business phone number in quotes on Google. Note every listing that shows an old address, name or number.</li>
+  <li>Search your business name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+  <li>Test your homepage in the <strong>Rich Results Test</strong> (search.google.com/test/rich-results) to see whether LocalBusiness or Organization markup is present and matches.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when old addresses keep appearing, when listings show different phone numbers, or when your site needs LocalBusiness schema that matches your profile. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a citation in local SEO?</h3>
 <p>Any online mention of your business name, address and phone number, usually on a directory, maps app, industry platform or social profile, with or without a link to your website.</p>
@@ -21732,8 +21848,6 @@ Category:       Dentist</code></pre>
 <p>Claim the listing, verify it with a business number or email, and edit the details to match your master NAP. If you can't claim it, use the platform's support or report option, and keep a note of the request.</p>
 <h3>Is a "submit to 500 directories" package worth it?</h3>
 <p>No. Most of those sites have no visitors and no relevance to your customers. A handful of accurate listings on platforms people actually use does more.</p>
-
-<p>Want your business details consistent across your website, profile and key listings, with LocalBusiness schema to match? That's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -23769,7 +23883,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'Websites for Recruitment and Placement Agencies: Job Listings, CV Uploads, Employer Enquiries and Trust',
     description: 'Plan a recruitment or placement agency website: job pages with JobPosting schema, safe CV uploads, employer hiring forms, ATS links and fraud warnings.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -23871,7 +23985,15 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   <li>No fraud warning, no fee policy and no physical address</li>
 </ul>
 
-<p>Placement firms in Delhi, Noida and Gurugram can see the page for a <a href="/wordpress-shopify-developer-delhi/">website developer for Delhi NCR businesses</a>.</p>
+<h2>Quick check: can candidates and employers reach you?</h2>
+<ol>
+  <li>Open a live job page and test it in the <strong>Rich Results Test</strong> (search.google.com/test/rich-results). If you use JobPosting markup, it should show as valid, and the job should still be open.</li>
+  <li>Apply to a test job from a phone with a PDF CV attached. Check the CV arrives, the file size limit is shown, and the form loads over https.</li>
+  <li>Search your agency name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when job pages are images or out of date, when CVs go missing, or when employer and candidate enquiries land in the same inbox. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Should a recruitment agency website have a job portal?</h3>
@@ -23884,8 +24006,6 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>Often, yes. Many ATS products offer a job feed, an embeddable widget or an email or API route for applications. The right choice depends on whether you want job pages that rank in Google or are happy for the ATS to host them.</p>
 <h3>Should we show salaries on job pages?</h3>
 <p>Where the client allows it, a salary range helps candidates decide quickly and can be included in the job's structured data. If the client prefers not to disclose it, say that salary is discussed at shortlisting.</p>
-
-<p>Planning a recruitment or placement agency website with separate employer and candidate journeys, job pages Google can read and CV handling you can trust? See <a href="/wordpress-website-development/">WordPress website development</a> for how I plan and build sites like this, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -25072,12 +25192,11 @@ Description: Buy %title% online. %excerpt%</code></pre>
     title: 'Breadcrumbs Explained: What They Are, the Three Types, How They Help SEO, BreadcrumbList Schema and How to Add Them in WordPress',
     description: 'Breadcrumbs explained: the three types, how they help visitors and SEO, a BreadcrumbList JSON-LD example, and setup in Rank Math, Yoast and WooCommerce.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'woocommerce-developer'],
     body: `
 <p>Breadcrumbs are the small trail of links near the top of a page, such as <em>Home / Blog / SEO / this article</em>, that shows where the page sits on your website and lets visitors jump back to a section in one tap. They help Google understand how your pages are organised, add useful internal links to your category and service pages, and, with BreadcrumbList structured data, can be shown in search results instead of a raw URL. On WordPress, Rank Math, Yoast and WooCommerce can all generate them for you.</p>
-<p>Breadcrumbs and their structured data are part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, alongside schema for your business, services and articles, checked with Google's testing tools. The audit also looks for the two most common breadcrumb problems: trails that don't match the site's real structure, and two plugins outputting competing markup for the same page.</p>
 <p>This guide covers breadcrumbs specifically. For structured data in general, see <a href="/blog/schema-markup-explained/">schema markup explained</a>, and for links between pages beyond the breadcrumb trail, see <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
 
 <h2>What breadcrumbs are</h2>
@@ -25209,6 +25328,16 @@ Description: Buy %title% online. %excerpt%</code></pre>
 <h2>Testing your breadcrumbs</h2>
 <p>After setting breadcrumbs up, paste a few URLs from different templates, such as an article, a service page and a product, into Google's Rich Results Test and check that a breadcrumb item is detected with the right labels and URLs. Over the following weeks, Search Console shows breadcrumb errors and warnings across the site in its breadcrumb enhancement report. <a href="/blog/test-structured-data-rich-results/">How to test structured data and rich results</a> walks through both tools.</p>
 
+<h2>Quick check: do your breadcrumbs work?</h2>
+<ol>
+  <li>Test a deep page, such as a product or blog post, in the <strong>Rich Results Test</strong> (search.google.com/test/rich-results). It should detect one Breadcrumbs item.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Shopping/Enhancements &gt; Breadcrumbs</strong> where available and check for invalid items.</li>
+  <li>Click each link in the trail on a phone and confirm it goes to a real category page, not a 404.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when two plugins output breadcrumb markup, when trails show the wrong category, or when you want structure and schema set up together. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Do breadcrumbs help SEO?</h3>
 <p>Yes, modestly. They add internal links to your section pages, make your site's hierarchy clear and, with BreadcrumbList markup, can show a trail in search results. They support good pages rather than making weak ones rank.</p>
@@ -25220,8 +25349,6 @@ Description: Buy %title% online. %excerpt%</code></pre>
 <p>You don't need to add it yourself. Yoast includes BreadcrumbList by default, and Rank Math adds it when its breadcrumbs feature is on. Check that your theme or WooCommerce isn't adding a second version.</p>
 <h3>Should breadcrumbs follow my URL structure?</h3>
 <p>Not necessarily. Google recommends trails that reflect how people typically reach a page. If your URLs are flat but your content is organised in sections, the trail can show the sections.</p>
-
-<p>Want breadcrumbs, schema and site structure set up properly, with one clean source of markup and every trail tested? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -25230,7 +25357,7 @@ Description: Buy %title% online. %excerpt%</code></pre>
     title: 'How to Make a Helpful 404 Page: What to Include, Soft 404s, Finding 404 Errors and Fixing Them With Redirects',
     description: 'What a helpful 404 page includes, how soft 404s differ from real ones, how to find 404 errors in Search Console and when to fix, redirect or leave them.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-maintenance', 'wordpress-seo-services'],
     body: `
@@ -25353,7 +25480,16 @@ HTTP/2 404</code></pre>
   <li><strong>After a redesign or move to new hosting:</strong> map every old URL to a new one and check Search Console in the weeks after launch.</li>
   <li><strong>Monthly:</strong> review the Not found report in Search Console and fix the URLs that have links or real visits.</li>
 </ul>
-<p>I handle this for clients as part of WordPress maintenance, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off 404 and redirect cleanup.</p>
+
+<h2>Quick check: test your 404 page</h2>
+<ol>
+  <li>Visit <strong>yourdomain.com/test-missing-page</strong>. You should see a helpful page with search and links, not the homepage.</li>
+  <li>Open Chrome DevTools <strong>Network</strong> and reload that URL. The status should be 404, not 200.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check "Not found (404)" for URLs that have links or real visits.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when a redesign left many broken URLs, when the 404 page returns 200, or when you need a redirect map before launch. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I find 404 errors on my WordPress site?</h3>
@@ -25368,8 +25504,6 @@ HTTP/2 404</code></pre>
 <p>Both tell Google the page is gone. A 410 says it was removed on purpose and may be dropped a little sooner; a 404 is fine for most cases.</p>
 <h3>Should my 404 page be indexed?</h3>
 <p>No. With a real 404 status it won't be, and many sites also mark it noindex.</p>
-
-<p>Planning a redesign and want old URLs redirected and 404s caught before visitors notice? A website redesign with me includes the redirect map and Search Console checks after launch, and WordPress maintenance keeps an eye on broken links and forms every month.</p>
 `,
   },
   {
@@ -26784,7 +26918,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
     title: 'Google Analytics 4 Events Explained: Key Events, Enhanced Measurement, and Tracking Forms, WhatsApp and Calls on WordPress',
     description: 'GA4 events explained: key events, automatic and recommended events, tracking forms, WhatsApp and calls on WordPress with GTM, and DebugView testing.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-seo-services', 'landing-page-design', 'woocommerce-developer'],
     body: `
@@ -26909,6 +27043,16 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <h2>Reading events in your reports</h2>
 <p>Reports &gt; Engagement &gt; Events lists every event and its count. Key events also appear as a column in the Traffic acquisition and Landing page reports, which is where they become useful: which channels and which pages produce enquiries. To see a custom parameter, such as the form name, register it under Admin &gt; Custom definitions first. <a href="/blog/website-analytics-metrics-that-matter/">Website analytics metrics that matter</a> suggests a monthly routine for reading them.</p>
 
+<h2>Quick check: are your key events counting?</h2>
+<ol>
+  <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; DebugView</strong>, submit your contact form in another tab and watch for the event.</li>
+  <li>Open <strong>Admin &gt; Data display &gt; Events</strong> and confirm the form or WhatsApp event is marked as a key event.</li>
+  <li>Open <strong>Reports &gt; Realtime</strong> and click your phone and WhatsApp buttons on a phone to confirm those clicks appear.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when form submissions do not appear in GA4, when events double count, or when you want to see which pages and searches bring enquiries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between an event and a key event in GA4?</h3>
 <p>An event is any interaction GA4 records. A key event is an event you've marked as a business outcome, such as an enquiry or purchase, so it's counted separately in reports.</p>
@@ -26920,8 +27064,6 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <p>Standard reports can take a day or two to update. Check DebugView and Realtime first; if events are missing there too, the tag or trigger isn't firing.</p>
 <h3>Do I need Google Tag Manager for GA4 events?</h3>
 <p>No. Events can be sent with gtag code directly. Tag Manager makes it easier to add and change tracking without editing the site's code, which suits most WordPress sites.</p>
-
-<p>Want GA4 and Search Console set up properly, so you can see which pages and searches bring enquiries? My <a href="/wordpress-seo-services/">WordPress SEO services</a> fix the technical and on-page SEO of your WordPress site and set up Search Console and GA4, so progress can be measured. Send me your website address for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -28963,7 +29105,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Website for Wholesalers and Distributors: Catalogue, Dealer Login, Bulk Enquiries and B2B Ordering',
     description: 'Plan a website for wholesalers and distributors in India: trade catalogue, dealer login, bulk enquiries, quick reorder forms and B2B ordering with WooCommerce.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-manufacturers', 'woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -29088,7 +29230,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Many trade customers buy on credit or pay against invoice. A B2B store can offer a "pay later" or "bank transfer" method only to approved dealers, while new or retail buyers pay online. If orders need checking for stock or credit limits before they're confirmed, mark them as "awaiting approval" and send the dealer a clear message about what happens next.</p>
 <h3>WhatsApp as a backup channel</h3>
 <p>Some retailers will always prefer to send a list on WhatsApp. Give them a button that opens a chat with the cart or enquiry details already filled in, so your sales team receives structured information rather than a photo of a handwritten list. Keep the website as the source of truth for products, pack sizes and current availability.</p>
-<p>Features like these are usually built on WooCommerce with a few carefully chosen extensions and small custom additions; the right mix depends on how many dealers you have and how your pricing works.</p>
+
+<h2>Quick check: do dealers find products and register?</h2>
+<ol>
+  <li>Search <strong>site:yourdomain.com</strong> plus a brand or product you distribute. Each main category should have its own indexed page.</li>
+  <li>Fill in the dealer registration and bulk enquiry forms on a phone. Confirm both reach the right salesperson and include GST number and city.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first. Large catalogue images are the usual reason product pages load slowly.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the catalogue is a PDF, when dealer registrations sit unanswered, or when you need trade pricing behind a login. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Should a wholesaler show prices on the website?</h3>
@@ -29103,8 +29254,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Yes, accurately. Say which brands you are authorised for and which you simply stock, and use logos and official images only with the brand's permission.</p>
 <h3>Can dealers reorder from their past orders online?</h3>
 <p>Yes. With a dealer login, a WooCommerce store can show order history and let a dealer repeat a previous order, then change quantities before checkout. Saved lists and a quick order table make regular stock orders faster still.</p>
-
-<p>Planning a distributor or wholesale website with a trade catalogue, dealer registration and bulk enquiries that reach the right salesperson? See websites for manufacturers and B2B companies, or WooCommerce development for B2B ordering, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -29648,7 +29797,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Keyword Research for Small Businesses: A Free-Tools Workflow, Local and Hindi or Marathi Variants, Intent Mapping and a Worked Example',
     description: 'Keyword research for small businesses with free tools: Search Console, autocomplete, People also ask, local and Hinglish variants and intent mapping.',
     date: '2026-09-27',
-    updated: '2026-10-16',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
     body: `
@@ -29741,6 +29890,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>Use keywords naturally, and review regularly</h2>
 <p>Put the main phrase in the page title, the H1, the URL and early in the text, use variants where they fit, and write the rest for people. The <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a> covers the rest of each page. Every few months, check Search Console for new queries, update the map, and improve the pages that are close to page one.</p>
 
+<h2>Quick check: what do people already find you for?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, set the date to the last 3 months and export the <strong>Queries</strong> list.</li>
+  <li>Type your main service plus your city into Google and note the autocomplete suggestions and the "People also ask" questions.</li>
+  <li>For each important query, check which page ranks using the <strong>Pages</strong> tab with that query filtered. Two pages for one query is a sign to merge or retarget.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have no keyword map, when pages compete for the same search, or when you want your key pages matched to real queries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I do keyword research for free?</h3>
 <p>List the words customers use, then expand them with Search Console's Queries report, Google autocomplete, People also ask, related searches, Keyword Planner ranges and Google Trends. Put everything in one sheet with the page each group belongs to.</p>
@@ -29754,8 +29913,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>It is when two or more of your pages target the same search, so they compete and neither ranks as well as one strong page would. A keyword map with one page per group prevents it.</p>
 <h3>Should I target Hindi or Marathi keywords?</h3>
 <p>If your customers search that way, yes: cover Hinglish phrasing in FAQs and content, and build separate language pages only when you can serve customers properly in that language.</p>
-
-<p>Want a keyword map for your site, with each search matched to one page and your key pages optimised to match? It's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -29764,7 +29921,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Search Intent Explained: The Types of Intent, How to Read Them From Google and How to Match Your Pages',
     description: 'Search intent explained with examples: informational, navigational, commercial, transactional and local intent, how to read it from Google and match your pages.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -29858,7 +30015,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <li>Decide the next step link: which page should the reader visit after this one?</li>
 <li>Check you don't already have a page targeting the same intent.</li>
 </ol>
-<p>If you want your existing pages audited for intent mismatches and cannibalisation, that is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
+
+<h2>Quick check: does your page match the intent?</h2>
+<ol>
+  <li>Search your target phrase on Google in a private window and note what ranks: guides, service pages, product pages or maps.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, filter one page under <strong>Pages</strong> and read its queries. Queries that do not fit the page suggest an intent mismatch.</li>
+  <li>Compare your page type with the top results. A service page will struggle where Google shows only how-to guides.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when pages rank for the wrong queries, when two pages compete for one search, or when you want existing pages audited for intent. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is search intent in SEO?</h3>
@@ -29881,7 +30047,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress',
     description: 'Pillar page WordPress guide: what a pillar page is, how to plan a topic cluster, and how to build pillar and cluster pages with links, blocks and menus.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development', 'website-redesign'],
     body: `
@@ -29986,6 +30152,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Orphan posts with no internal links pointing to them</li>
 </ul>
 
+<h2>Quick check: is your cluster linked together?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Links &gt; Internal links</strong> and check how many links your pillar page receives.</li>
+  <li>Search <strong>site:yourdomain.com</strong> plus your topic and list every page that appears. Check each one links back to the pillar.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and check whether the pillar page shows impressions for the broader topic queries.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when blog posts do not link to the service they support, when posts overlap, or when you want a content plan built around what you sell. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create a pillar page in WordPress?</h3>
 <p>Create a WordPress Page for the broad topic, summarise each subtopic in its own section, link each section to the detailed blog post, and make sure every post links back. Add the pillar to your main menu so it gets the most internal links.</p>
@@ -29999,8 +30175,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Yes, because they're simply good organisation: related pages that answer real questions and link sensibly. They don't work as a shortcut for thin content.</p>
 <h3>How many articles does a topic cluster need?</h3>
 <p>There's no fixed number. Start with the few questions customers ask most before buying and add more as you find new questions in enquiries and Search Console.</p>
-
-<p>Want your service pages and blog organised into clusters that support each other? <a href="/wordpress-seo-services/">WordPress SEO services</a> include content planning and internal linking, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to restructure the site.</p>
 `,
   },
   {
@@ -30009,7 +30183,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'How to Update Old Blog Posts to Win Back Traffic: Find, Refresh, Merge and Measure',
     description: 'How to update old blog posts to win back traffic: find slipping posts in Search Console, refresh or merge them, handle dates and redirects, and measure.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance', 'website-redesign'],
     body: `
@@ -30092,6 +30266,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>How often to review old posts</h2>
 <p>A workable rhythm for a small business blog: check your top posts and biggest decliners every quarter, review every post once a year, and update straight away when something important changes, such as a tool's menus, a price, a regulation or a Google feature your post describes. Put the review in your content calendar alongside new posts, so refreshing doesn't depend on remembering.</p>
 
+<h2>Quick check: which posts need a refresh?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, choose <strong>Date &gt; Compare</strong>, compare the last 3 months with the previous 3 and sort <strong>Pages</strong> by click difference.</li>
+  <li>Open the posts that lost clicks and check for old years, outdated screenshots, changed menus or broken links.</li>
+  <li>After updating, paste the URL into <strong>URL Inspection</strong> and click <strong>Request indexing</strong>.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when many posts overlap and need merging with redirects, when you are not sure which posts are worth keeping, or when internal links need rebuilding. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How often should I update old blog posts?</h3>
 <p>Update when there is a reason: the information has changed, clicks are falling or the post sits just off page one. For most small business blogs, a quarterly check of top and declining posts and a yearly review of everything is enough.</p>
@@ -30103,8 +30287,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Not automatically. If a post is relevant, improve it or merge it into a related post with a redirect. Delete only posts that are irrelevant to your business and have no traffic or links.</p>
 <h3>Do I need to request indexing after updating a post?</h3>
 <p>It isn't required, because Google recrawls pages and reads your sitemap's updated dates, but requesting indexing in URL Inspection can get an important refresh seen sooner.</p>
-
-<p>Want to know which posts are worth refreshing and what each one is missing? A Search Console review, with merges, redirects and internal links handled on your site, is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -30113,7 +30295,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Google Algorithm Updates for Small Businesses: Core vs Spam Updates, How to Tell If One Affected You, What to Do and Where to Follow Announcements',
     description: 'Google algorithm updates for small businesses: core vs spam updates, how to tell if one hit your site, what to do and avoid, and honest recovery timelines.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-maintenance'],
     body: `
@@ -30203,6 +30385,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Avoid shortcuts</strong> that work until the next spam update; <a href="/blog/ethical-link-building-small-business/">ethical link building</a> shows what works instead.</li>
 </ul>
 
+<h2>Quick check: was it an update or your site?</h2>
+<ol>
+  <li>Check the <strong>Google Search Status Dashboard</strong> (status.search.google.com) for updates around the date your traffic changed.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, use <strong>Date &gt; Compare</strong> around that date and see which pages and queries lost clicks.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check whether the number of indexed pages dropped at the same time, which points to a technical cause.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you cannot tell an update from a site problem, when traffic stays down for weeks, or when you need the technical side fixed first. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How often does Google update its algorithm?</h3>
 <p>Constantly. Google makes thousands of changes to Search each year, most of them small and unannounced. Larger core updates are announced a few times a year, along with occasional spam updates.</p>
@@ -30216,8 +30408,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>No. Algorithm updates never trigger a message. Search Console only sends messages for manual actions, security issues and some indexing problems.</p>
 <h3>Do updates affect Google Maps rankings too?</h3>
 <p>Local results have their own ranking factors, mainly relevance, distance and prominence, and they can shift with updates as well. Keep your Business Profile complete and active alongside the website.</p>
-
-<p>Not sure whether an update or a problem on your site caused the change? I can separate the two, fix the technical side and show you which pages need improving, as part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -30226,7 +30416,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'How to Write Blog Posts That Rank on Google: A Step-by-Step Workflow From Topic to Published Post, With a Template Outline',
     description: 'How to write blog posts that rank on Google, step by step: topic, intent, outline, experience, links, images, publishing and updating, with a template.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-for-startups', 'landing-page-design'],
     body: `
@@ -30348,6 +30538,16 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Publishing and never looking at the post again</li>
 </ul>
 
+<h2>Quick check: check a post after publishing</h2>
+<ol>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> a few days after publishing. If it is not on Google yet, click <strong>Request indexing</strong>.</li>
+  <li>Search the exact question your post answers on Google and compare your title and first paragraph with the top results.</li>
+  <li>After a month, open <strong>Performance &gt; Search results</strong>, filter the post under <strong>Pages</strong> and read its queries to see what it is actually ranking for.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when posts publish but never get impressions, when you do not know which topics your site is missing, or when titles and links need work. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How long does it take for a blog post to rank?</h3>
 <p>There's no fixed time. A post on an established site with good internal links may appear for specific searches within weeks; on a new site with few links, it can take months. Competitive topics take longer.</p>
@@ -30359,8 +30559,6 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>AI can help with outlines and first drafts, but unedited AI text tends to be generic. Check every fact, add real experience and examples, and take responsibility for what you publish.</p>
 <h3>Do blog posts help a local business get enquiries?</h3>
 <p>Yes, when they answer questions customers ask before buying and link clearly to the relevant service page. Posts unrelated to what you sell may bring visits but rarely enquiries.</p>
-
-<p>Want to know which posts your site is missing, and have the titles, links and technical side handled so good posts can rank? That's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -43065,7 +43263,7 @@ add_action( 'after_setup_theme', function () {
     title: 'Featured Snippets and People Also Ask: How Small Businesses Can Win Them',
     description: 'How to win featured snippets and People Also Ask boxes: answer-first paragraphs, lists, tables and question headings, with tips for Indian businesses.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -43139,6 +43337,16 @@ add_action( 'after_setup_theme', function () {
 <h2>Does a featured snippet bring more clicks?</h2>
 <p>Not always. For simple facts, people may read the answer and not click. For questions that need more detail, such as costs that depend on several factors or step-by-step processes, a snippet can bring interested visitors. That is why commercial and how-to questions are usually better targets than one-line facts. Make sure the page they land on continues the answer and offers a clear next step, such as a related service or a contact option.</p>
 
+<h2>Quick check: are you close to a snippet?</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and filter <strong>Query</strong> with <strong>Custom (regex)</strong> using <code>^(how|what|why|which)</code> to find question searches.</li>
+  <li>Search those questions on Google and note which already show a featured snippet and what format it uses: a paragraph, list or table.</li>
+  <li>Check that your page answers the question in 40 to 60 words right under a heading that repeats it.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when question pages rank on page one but never win the snippet, or when your service pages need restructuring to answer what customers ask. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I win featured snippets on Google?</h3>
 <p>Rank on page one for the query, add a heading that matches the question, answer it directly in 40 to 60 words or with a list or table, and keep the answer accurate and up to date.</p>
@@ -43150,8 +43358,6 @@ add_action( 'after_setup_theme', function () {
 <p>Yes, especially for specific, local or commercial questions where large sites do not give a clear answer. Start with queries where you already rank on page one.</p>
 <h3>Why did I lose my featured snippet?</h3>
 <p>Google may have found a clearer or more recent answer, changed the format it shows, or your ranking may have dropped. Recheck the result and improve your answer.</p>
-
-<p>If you want your service pages and articles structured to answer the questions your customers search, see <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to restructure key pages. For location details, see the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer India</a> page.</p>
 `,
   },
   {
@@ -43160,7 +43366,7 @@ add_action( 'after_setup_theme', function () {
     title: 'Long-Tail Keywords Explained: Why They Matter for Small and Local Businesses',
     description: 'What are long-tail keywords, with Indian examples: how to find them free, where to use them on service and product pages and why small sites rank faster.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-for-startups'],
     body: `
@@ -43251,6 +43457,16 @@ add_action( 'after_setup_theme', function () {
 <li>Expecting instant results; even long-tail pages need time to be crawled, indexed and trusted.</li>
 </ul>
 
+<h2>Quick check: find long-tail searches you already get</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and filter <strong>Query</strong> with <strong>Custom (regex)</strong> using <code>\w+ \w+ \w+ \w+</code> to show queries of four words or more.</li>
+  <li>Sort by impressions and note queries in positions 8 to 30 that your pages only half answer.</li>
+  <li>Search one of those queries on Google and check whether a page like yours ranks, or whether a different type of page is needed.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when long-tail queries land on the wrong page, when you need new sections or pages matched to them, or when you are not sure which to target. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What are long-tail keywords?</h3>
 <p>Longer, more specific search phrases with clear intent, such as a service plus a city or a product plus a feature. Each gets fewer searches than a broad term but is easier to rank for and more likely to lead to an enquiry.</p>
@@ -43262,8 +43478,6 @@ add_action( 'after_setup_theme', function () {
 <p>No. Google understands variations and synonyms. Use the phrase naturally in key places and cover the topic well rather than repeating exact wording.</p>
 <h3>Where can I see which long-tail keywords my site already ranks for?</h3>
 <p>In Google Search Console, under Performance. Filter by page or look at queries with impressions but few clicks, then improve those pages.</p>
-
-<p>If you want your website built around the specific searches your customers use, see <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to restructure service pages, or start with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
 `,
   },
   {
@@ -43272,7 +43486,7 @@ add_action( 'after_setup_theme', function () {
     title: 'SEO-Friendly URLs in WordPress: Permalinks, Slugs and Changing Them Safely',
     description: 'How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-migration'],
     body: `
@@ -43366,6 +43580,16 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Pages returning 404 after a change usually point to a permalink or redirect issue; the guide on <a href="/blog/wordpress-pages-404-permalinks-fix/">fixing WordPress 404 permalink errors</a> walks through the checks.</p>
 
+<h2>Quick check: are your URLs clean and stable?</h2>
+<ol>
+  <li>In WordPress, open <strong>Settings &gt; Permalinks</strong> and confirm "Post name" or another clean structure is selected. Do not change it on a live site without redirects.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check "Not found (404)" for old URLs that need redirects.</li>
+  <li>Search <strong>site:yourdomain.com</strong> and look for URLs with ?p=, dates or random numbers in the results.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when URLs are messy or broke after a redesign, when you plan a permalink change, or when redirects need mapping. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create SEO-friendly URLs in WordPress?</h3>
 <p>Set Settings, Permalinks to Post name, then edit each slug to a short, lowercase, hyphenated phrase that describes the page. Do this before publishing so you never need to change it later.</p>
@@ -43377,8 +43601,6 @@ add_action( 'after_setup_theme', function () {
 <p>For evergreen content, a date-free structure is usually better. On an existing site, weigh the benefit against the redirects you would need, and plan the change carefully.</p>
 <h3>Are Shopify URLs SEO-friendly?</h3>
 <p>Mostly. The <code>/products/</code> and <code>/collections/</code> prefixes are fixed, but you can edit each handle, and Shopify can add redirects when you change one.</p>
-
-<p>If your site has messy URLs or broken links after a redesign, I can audit and fix them with proper redirects as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -43387,7 +43609,7 @@ add_action( 'after_setup_theme', function () {
     title: 'Image SEO: How to Optimise Images for Google Images, Lens and Discover',
     description: 'A practical image SEO guide: file names, alt text, formats, compression, responsive images, lazy loading, image sitemaps and getting found in Google Images.',
     date: '2026-09-28',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization'],
     body: `
@@ -43496,6 +43718,16 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>To see whether your work is paying off, open Search Console's Performance report and switch the search type to Image. Look for pages with plenty of impressions but few clicks, and improve their images, alt text and surrounding content.</p>
 
+<h2>Quick check: three image checks</h2>
+<ol>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and look for <strong>Improve image delivery</strong> or properly sized image suggestions.</li>
+  <li>In WordPress, open <strong>Media &gt; Library</strong>, switch to list view and check that key images have meaningful alt text.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, change <strong>Search type</strong> to <strong>Image</strong> and see which pages get image impressions.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when images slow the site, when hundreds of products lack alt text, or when image search impressions never turn into visits. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Does alt text help SEO?</h3>
 <p>Yes. Google uses alt text, along with the page content and file name, to understand an image. It's also essential for visitors using screen readers, so write it for them first.</p>
@@ -43509,8 +43741,6 @@ add_action( 'after_setup_theme', function () {
 <p>Common causes are CSS background images, blocked image folders, script-only galleries, stock photos that appear on many other sites, or pages that aren't indexed. Check the page with URL Inspection in Search Console first.</p>
 <h3>Can Google read text inside images?</h3>
 <p>Google Lens can often recognise text in images, but don't rely on it for search. Put important words such as product names, prices and services in real text on the page.</p>
-
-<p>Want your images, and the rest of your SEO, set up properly? See <a href="/wordpress-seo-services/">WordPress SEO services</a>, and pair it with <a href="/wordpress-speed-optimization/">speed optimisation</a> so your images are fast as well as findable.</p>
 `,
   },
   {
@@ -43634,7 +43864,7 @@ add_action( 'after_setup_theme', function () {
     title: 'E-E-A-T Explained in Plain English for Small Business Websites',
     description: 'What is E-E-A-T in SEO? A plain guide for Indian small businesses: experience, expertise, authority and trust, with practical changes to your website.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
@@ -43738,6 +43968,16 @@ add_action( 'after_setup_theme', function () {
 <li><strong>&quot;AI content automatically fails.&quot;</strong> The issue is unhelpful, inaccurate or generic content, however it is produced. Content without real experience behind it rarely stands out.</li>
 </ul>
 
+<h2>Quick check: does your site show real experience?</h2>
+<ol>
+  <li>Open your About page on a phone and check it names the business, location, what you do and how to contact you, with real photos.</li>
+  <li>Open three key pages and check each says who wrote or reviewed it, or links to a page that does.</li>
+  <li>Search your business name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site reads generic, when About and contact pages are thin, or when reviews and real work are not shown anywhere. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is E-E-A-T in SEO?</h3>
 <p>E-E-A-T stands for Experience, Expertise, Authoritativeness and Trustworthiness. It is the framework in Google&#39;s quality rater guidelines for judging whether content is helpful and reliable.</p>
@@ -43749,8 +43989,6 @@ add_action( 'after_setup_theme', function () {
 <p>Yes, though the bar is lower than for health or finance topics. Clear contact details, honest information and real reviews still help customers and search engines trust you.</p>
 <h3>How long does it take to improve E-E-A-T?</h3>
 <p>On-site changes can be made in days, but recognition through reviews, mentions and links builds over months. It is an ongoing habit, not a one-time fix.</p>
-
-<p>If you want your website to show real experience and trust, from about pages to schema and reviews, see <a href="/wordpress-seo-services/">WordPress SEO services</a> or a full <a href="/website-redesign/">website redesign</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to make these changes for you, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
 `,
   },
   {
@@ -43759,7 +43997,7 @@ add_action( 'after_setup_theme', function () {
     title: 'Website Trust Signals Checklist for Indian Businesses: What Makes Visitors Enquire or Buy',
     description: 'A website trust signals checklist for Indian businesses: contact details, GST, policies, real photos, reviews, secure checkout and fast pages.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
@@ -43871,6 +44109,16 @@ add_action( 'after_setup_theme', function () {
 <li>Reviews that all sound the same and have no names.</li>
 </ul>
 
+<h2>Quick check: check your trust signals in five minutes</h2>
+<ol>
+  <li>Open the site on a phone. The address bar should show a padlock, and your phone number and address should be visible within one or two taps.</li>
+  <li>Search your business name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+  <li>Submit your contact form and confirm a reply or confirmation message arrives, then check the footer copyright year and any dated news items.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site looks dated, when contact details are hard to find, or when real reviews and work are missing. <a href="/website-redesign/">Website redesign</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a website trust signals checklist?</h3>
 <p>It is a list of the details that show visitors a business is genuine and safe to deal with: contact details, real photos, reviews, policies, secure payments and a fast, error-free site.</p>
@@ -43882,8 +44130,6 @@ add_action( 'after_setup_theme', function () {
 <p>Clear prices, delivery timelines, return and refund policies, COD terms if offered, familiar payment options and genuine product reviews.</p>
 <h3>Can a slow website reduce trust?</h3>
 <p>Yes. Slow pages, security warnings and broken forms make a business look neglected, even if the business itself is excellent.</p>
-
-<p>If you want a review of the trust signals on your site and help fixing the gaps, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/shopify-developer/">Shopify development</a> if you run a Shopify store.</p>
 `,
   },
   {
@@ -44025,7 +44271,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'How to Analyse Your Competitors\' SEO and Find Gaps You Can Win',
     description: 'A step-by-step competitor SEO analysis for Indian small businesses: find real search rivals, compare profiles and pages, and spot content and link gaps.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
@@ -44115,6 +44361,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Give each item an owner and a date, even if the owner is you. A gap list that sits in a spreadsheet changes nothing; two or three fixes finished each month add up. Then watch Search Console and your enquiries over the following months to see whether the changes helped, rather than judging by a single ranking check. Repeat the exercise every three to six months. Competitors change their sites, rankings move and new gaps appear.</p>
 
+<h2>Quick check: a quick look at the competition</h2>
+<ol>
+  <li>Search your main service plus your city on Google in a private window and list the top five sites that are actual competitors.</li>
+  <li>Search <strong>site:competitor.com</strong> for each and compare how many service and location pages they have against yours.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first for their homepage and yours, and compare the mobile results.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when competitors outrank you and you cannot see why, or when you want the gaps turned into a prioritised plan. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I do a competitor SEO analysis for my small business?</h3>
 <p>Search your main keywords from your area on a phone, pick the 3 to 5 businesses that keep appearing, then compare their Google Business Profiles, ranking pages, content and links with yours.</p>
@@ -44126,8 +44382,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Every three to six months is enough for most local businesses, or sooner if your enquiries drop noticeably.</p>
 <h3>Can I copy a competitor's page structure?</h3>
 <p>Learning from which page types rank is fine. Copying their words or images is not, and original content based on your own experience is more useful to customers anyway.</p>
-
-<p>Want a second pair of eyes? A <a href="/wordpress-seo-services/">WordPress SEO review</a> can compare your site with the competitors that matter and turn the gaps into a prioritised plan. If you are in Maharashtra, you can also <a href="/wordpress-shopify-developer-mumbai/">hire a WordPress developer in Mumbai</a> or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>; if the gap turns out to be the whole website, see <a href="/website-redesign/">website redesign</a>.</p>
 `,
   },
   {
@@ -44136,7 +44390,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'SEO for Service-Area Businesses: How to Rank Without a Shopfront',
     description: 'Service area business SEO for Indian businesses without a shopfront: set up Google Business Profile, build useful city pages and earn local reviews.',
     date: '2026-09-28',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -44238,6 +44492,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
 
 <p>For a city-specific example, see <a href="/blog/local-seo-pune-businesses/">local SEO for businesses in Pune and Pimpri-Chinchwad</a>, including which neighbourhoods deserve their own page.</p>
 
+<h2>Quick check: is your service area clear to Google?</h2>
+<ol>
+  <li>In your <strong>Google Business Profile</strong>, open <strong>Edit profile &gt; Location</strong> and check the service areas listed match where you actually work.</li>
+  <li>Search <strong>site:yourdomain.com</strong> plus each main area. If an area matters, it should be mentioned on a useful page, not a copied template.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and look for queries that include an area name.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when calls come from the wrong areas, when area pages are copies of each other, or when your profile and site disagree. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is service area business SEO?</h3>
 <p>It is local SEO for businesses that serve customers at their location rather than at a shopfront. It combines a Google Business Profile with service areas, a website with service and area pages, consistent contact details and reviews.</p>
@@ -44249,8 +44513,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Generally not if it is not staffed. Google's guidelines exclude most virtual offices, and using one can lead to suspension. Check the current guidelines.</p>
 <h3>How long does local SEO take for a service-area business?</h3>
 <p>It varies with competition and your starting point. Improvements to the profile and reviews can help within weeks; website rankings usually take a few months.</p>
-
-<p>Want a site that brings calls from the areas you serve? See <a href="/wordpress-seo-services/">WordPress SEO services</a> from Samverse, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 `,
   },
   {
@@ -44259,7 +44521,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
     title: 'Websites for Businesses With Multiple Branches: Location Pages, Profiles and Schema',
     description: 'How to build a multi-location business website: one site or many, branch page URLs, what each page needs, Google profiles, schema and a WordPress template.',
     date: '2026-09-28',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -44351,6 +44613,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <h2>City pages and getting help</h2>
 <p>If you serve customers across several Indian cities, it helps to work with a developer who understands local SEO and can build the template once and reuse it. Samverse works with businesses across India, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a> and other cities, as listed on the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> page.</p>
 
+<h2>Quick check: are your branches set up properly?</h2>
+<ol>
+  <li>Search each branch on <strong>Google Maps</strong>. Each <strong>Google Business Profile</strong> should link to that branch's own page, not the homepage.</li>
+  <li>Open each branch page and check it has a unique address, phone, hours, map and directions, written as text.</li>
+  <li>Test a branch page in the <strong>Rich Results Test</strong> (search.google.com/test/rich-results) and check LocalBusiness markup matches the branch.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when branch pages are copies, when profiles link to the wrong page, or when you need one template and schema set up for every branch. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I build a multi-location business website?</h3>
 <p>Use one website with a locations index and a separate page for each branch, built from a template with fields for address, phone, hours, map, photos and services. Link each page to that branch's Google Business Profile and add LocalBusiness schema.</p>
@@ -44362,8 +44634,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Link each profile to its own branch page, not the home page, so visitors land on the address, hours and contact details for that location.</p>
 <h3>How do I add schema for multiple locations?</h3>
 <p>Add LocalBusiness schema on each branch page with that branch's details, and Organization schema on the home page, linked with parentOrganization.</p>
-
-<p>Planning branch pages or a full multi-location site? <a href="/wordpress-seo-services/">WordPress SEO services</a> from Samverse can set up the structure, template and schema.</p>
 `,
   },
   {
@@ -44503,7 +44773,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Orphan Pages: How to Find Orphan Pages and How to Fix Orphan Pages in WordPress',
     description: 'How to find orphan pages in WordPress with your sitemap, Search Console and a crawler, then fix each one by linking, merging, redirecting or removing it.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
@@ -44603,7 +44873,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 </ol>
 
 <h2>Tools that help find orphan pages</h2>
-<p>You do not need expensive software. A desktop crawler with a free tier, your XML sitemap, the Pages report in Search Console and your analytics landing pages report are enough for most small business sites. Some SEO plugins also show how many internal links each post has in the WordPress post list, which makes posts with zero links easy to spot. For larger stores, export data from each source into one spreadsheet and match URLs there, because small differences such as a missing trailing slash can make the same page look like two.</p>
+
+<h2>Quick check: find orphan pages</h2>
+<ol>
+  <li>Open your sitemap (often <strong>/sitemap_index.xml</strong> or <strong>/wp-sitemap.xml</strong>) and export the list of URLs.</li>
+  <li>Crawl the site with a crawler such as Screaming Frog (free up to 500 URLs) and compare the crawled URLs with the sitemap list. URLs only in the sitemap are orphans.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Links &gt; Internal links</strong> and check that important pages receive links.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when hundreds of pages have no internal links, when old pages should be merged or redirected, or when site structure needs rethinking. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I find orphan pages in WordPress?</h3>
@@ -44628,7 +44907,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Monthly SEO Reports: What to Track, Where to Find It and How to Spot Vanity Metrics',
     description: 'What an SEO report should track monthly for an Indian small business: enquiries, Search Console clicks and queries, local visibility, and vanity metrics.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design'],
     body: `
@@ -44716,6 +44995,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>You can build this yourself in a shared spreadsheet or a free Looker Studio dashboard connected to GA4 and Search Console. The point is consistency: the same numbers, read the same way, every month.</p>
 <p>Online stores should add a few lines of their own. For a WooCommerce or Shopify shop selling across India, note organic orders and revenue, which product and category pages earned them, and whether COD or prepaid orders dominate from search. If a category page gains impressions but few clicks, its title and description may need work. If product pages get clicks but no orders, the problem may be price, delivery details or page speed rather than SEO. Writing one short sentence of interpretation under each number, rather than leaving charts to speak for themselves, is what turns a report into a decision.</p>
 
+<h2>Quick check: build a one-page monthly check</h2>
+<ol>
+  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, use <strong>Date &gt; Compare</strong> for last month against the previous month and note clicks and queries in positions 1 to 20.</li>
+  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Engagement &gt; Events</strong> and check your form and WhatsApp click events are counting.</li>
+  <li>Compare GA4 enquiry events with the enquiries you actually received that month.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when reports show numbers that do not connect to enquiries, when tracking is missing, or when you want a simple monthly view set up. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What should an SEO report track each month?</h3>
 <p>Start with organic enquiries and sales, then Search Console clicks, impressions, top queries and top pages. Add Google Business Profile actions if you serve a local area, plus a list of work done and planned.</p>
@@ -44727,8 +45016,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>They measure different things. Search Console counts clicks from Google search results, while GA4 counts sessions on your site, which depend on the tracking code loading and on cookie consent. Use each for its own job rather than expecting them to match.</p>
 <h3>Can I make my own SEO report for free?</h3>
 <p>Yes. GA4, Search Console and Google Business Profile are free, and a spreadsheet or Looker Studio dashboard can pull the main numbers together. Setting up tracking correctly is the part that usually needs help.</p>
-
-<p>If tracking is missing or your reports do not connect to enquiries, I can set up GA4 events, Search Console and a simple monthly view as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the fixes the report uncovers.</p>
 `,
   },
   {
@@ -46690,7 +46977,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)',
     description: 'Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
@@ -46787,6 +47074,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 </ol>
 <p>Website speed test tools explained helps you read the results.</p>
 
+<h2>Quick check: is lazy loading set up correctly?</h2>
+<ol>
+  <li>View the page source (Ctrl+U) and search for <code>loading="lazy"</code>. The main hero image at the top should not have it.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and check whether it flags the Largest Contentful Paint image as lazily loaded.</li>
+  <li>In Chrome DevTools <strong>Network</strong>, filter by <strong>Img</strong> and scroll to confirm images below the fold load as you reach them.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when hero images load late, when images or embeds flash in after scrolling, or when Core Web Vitals stay poor after a plugin change. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Does WordPress have lazy loading built in?</h3>
 <p>Yes. WordPress adds native lazy loading to images and iframes in content by default, and newer versions try to keep the first main image eager. Themes and builders can change this.</p>
@@ -46798,8 +47095,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Native lazy loading is not. Some older JavaScript methods can hide images from crawlers, so prefer the native attribute.</p>
 <h3>Why does PageSpeed still say to defer offscreen images?</h3>
 <p>Some images may be outside WordPress content, such as theme templates or CSS backgrounds, or a builder may remove the attribute. Find those images in the report and handle them individually.</p>
-
-<p>If your site's images, embeds and Core Web Vitals need a proper review, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for theme-level fixes, with details for <a href="/wordpress-developer-pune/">Pune</a> and <a href="/wordpress-shopify-developer-india/">across India</a>.</p>
 `,
   },
   {
@@ -47452,7 +47747,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'How to Fix Slow Largest Contentful Paint (LCP) on WordPress',
     description: 'Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.',
     date: '2026-09-28',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
@@ -47545,7 +47840,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Keep a short record of what you changed and when. If LCP gets worse again later, it is usually because someone added a new slider, a large uncompressed image or another tracking script.</p>
 
 <h2>When to get help with LCP</h2>
-<p>If the slow phase is server response on cheap shared hosting, or render delay caused by a heavy builder theme, the fix may involve hosting changes or rebuilding key templates rather than plugin settings. That is where it is worth bringing in someone who has done it before. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it without breaking the design.</p>
+
+<h2>Quick check: find your LCP element</h2>
+<ol>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and open the <strong>Largest Contentful Paint element</strong> diagnostic to see which image or text block it is.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Experience &gt; Core Web Vitals</strong> and check how many mobile URLs are flagged for LCP.</li>
+  <li>Check the LCP image file size and format in the Media Library. A large JPEG or PNG hero is the most common cause.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when LCP stays poor after image fixes, when the cause is hosting or a page builder template, or when you need it fixed without breaking the design. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix slow LCP in WordPress?</h3>
@@ -47558,8 +47862,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>No. Lazy loading delays the image until the browser decides it is needed, which slows LCP. Load the hero image eagerly and lazy-load only images below the fold.</p>
 <h3>Will a caching plugin alone fix LCP?</h3>
 <p>Caching fixes the server part, which often helps a lot, but it will not shrink an oversized hero image or remove render-blocking files. Most sites need caching plus image and CSS work.</p>
-
-<p>Want your LCP fixed properly on a live WordPress or WooCommerce site? Take a look at <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> from Samverse.</p>
 `,
   },
   {
@@ -49698,7 +50000,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'Google Tag Manager Basics for Small Business Websites',
     description: 'How to set up Google Tag Manager on WordPress or Shopify: containers, tags, triggers, GA4, Google Ads, Meta Pixel, consent, testing in Preview and mistakes.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -49836,6 +50138,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Keep a one-page note listing what each conversion means for the business, so new marketers read reports the same way.</li>
 </ul>
 
+<h2>Quick check: check your container works</h2>
+<ol>
+  <li>In <strong>Google Tag Manager</strong>, click <strong>Preview</strong>, enter your site address and submit a test form. Check which tags fired.</li>
+  <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; DebugView</strong> while previewing and confirm the event arrives.</li>
+  <li>In GTM, open <strong>Versions</strong> and check the live version and who published it last.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when tags fire twice or not at all, when nobody knows who manages the container, or when you need conversion tracking set up on WordPress or Shopify. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up Google Tag Manager on WordPress?</h3>
 <p>Create a container, add its code through a GTM plugin or header code plugin, then add your GA4 tag and others inside GTM. Test in Preview and publish.</p>
@@ -49847,8 +50159,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Yes, through custom pixels, with limits on checkout. Shopify's native Google and Meta apps are often simpler for core tracking.</p>
 <h3>Who should own the GTM account?</h3>
 <p>The business. Give developers and agencies user access, and remove it when they stop working with you.</p>
-
-<p>Want tracking that actually shows which pages bring enquiries? I can set up GTM, GA4 and conversion tracking on WordPress or Shopify. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a>, or see how I work with businesses in <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-india/">across India</a>.</p>
 `,
   },
   {
@@ -49857,7 +50167,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'How to Change Your Domain Name Without Losing SEO: Redirects, Change of Address and Checks',
     description: 'How to change domain without losing SEO: a 10-step checklist for 301 redirect maps, Search Console Change of Address, backlinks and post-move checks.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-migration', 'wordpress-seo-services'],
     body: `
@@ -49974,6 +50284,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>If traffic falls sharply and stays down, work through this <a href="/blog/website-traffic-dropped/">traffic drop checklist</a>.</p>
 
+<h2>Quick check: before and after the move</h2>
+<ol>
+  <li>Verify the new domain in <strong>Google Search Console</strong> as a Domain property before moving anything.</li>
+  <li>After the move, load ten old URLs and check each redirects with one 301 to the matching new page, using DevTools <strong>Network</strong> or httpstatus.io.</li>
+  <li>In the old property, open <strong>Settings &gt; Change of address</strong> and submit the new domain.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are moving a site with many pages, when old URLs land on 404s, or when traffic fell after a domain change. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I change domain without losing SEO?</h3>
 <p>Keep the old domain, map every old URL to its new equivalent, set up one-hop 301 redirects, update canonicals and sitemaps, and use the Change of Address tool in Search Console. Then update profiles and key backlinks and monitor both properties for several months.</p>
@@ -49985,8 +50305,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>No. Redirect each old page to its matching new page; homepage-only redirects lose much of the value.</p>
 <h3>Does changing from .in to .com affect Indian rankings?</h3>
 <p>The extension itself matters less than a clean move. With proper redirects and Search Console set up, an Indian business can rank on either.</p>
-
-<p>Want the move handled for you, redirects and all? See <a href="/wordpress-migration/">WordPress migration</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off domain change.</p>
 `,
   },
   {
@@ -51190,7 +51508,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'Rich Snippet Testing Tool: How to Check Rich Snippets and Test Structured Data in WordPress',
     description: 'The best rich snippet testing tool is Google\'s Rich Results Test. Learn how to check rich snippets, read errors and warnings, and fix schema in WordPress.',
     date: '2026-09-30',
-    updated: '2026-11-06',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -51308,6 +51626,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <li>Validate the fix in Search Console and recheck in two to four weeks.</li>
 </ol>
 
+<h2>Quick check: test one page now</h2>
+<ol>
+  <li>Paste a key URL into the <strong>Rich Results Test</strong> (search.google.com/test/rich-results) and note which items are detected and any errors.</li>
+  <li>Paste the same URL into the <strong>Schema Markup Validator</strong> (validator.schema.org) to see all schema types, including ones Google does not show as rich results.</li>
+  <li>In <strong>Google Search Console</strong>, check the reports under <strong>Shopping</strong> or <strong>Enhancements</strong> for invalid items across the site.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when errors repeat across hundreds of products, when two plugins fight over the same markup, or when a manual action mentions structured data. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best rich snippet testing tool?</h3>
 <p>Google's Rich Results Test is the best place to start, because it shows whether a page is eligible for Google rich results. Pair it with the Schema Markup Validator for general schema checks.</p>
@@ -51321,9 +51649,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Fix warnings when you have genuine data for the missing field, such as brand or SKU. Warnings do not block eligibility, and you should never add fake values just to clear them.</p>
 <h3>Can I test structured data before publishing a page?</h3>
 <p>Yes. Choose the Code option in the Rich Results Test or Schema Markup Validator and paste your HTML or JSON-LD to check it before it goes live.</p>
-
-<h2>When to get help</h2>
-<p>Most single-page errors are a settings fix. Get help when errors repeat across hundreds of products, when two plugins keep fighting over the same markup, or when Search Console shows a structured data manual action. If your structured data is showing errors or duplicates, Samverse can clean it up as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, including WooCommerce product schema. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off schema audit.</p>
 `,
   },
   {
@@ -60394,7 +60719,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Website for Bike Rentals in India: Fleet Pages, Online Booking, Documents and Local SEO',
     description: 'What a website for bike rentals in India needs: fleet and tariff pages, online booking with UPI deposits, document checks, rental terms and local SEO.',
     date: '2026-10-01',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design'],
     body: `
@@ -60504,6 +60829,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ul>
 <p>If you also rent cars or tempo travellers, see the related guides on a <a href="/blog/website-for-taxi-car-rental/">website for taxi and car rental</a> for ideas that apply across vehicle types.</p>
 
+<h2>Quick check: can a traveller book from their phone?</h2>
+<ol>
+  <li>Search your rental name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+  <li>Make a test booking for next weekend from a phone. Check that dates, bike choice and deposit details come through, and that the reply arrives.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first. Travellers often check on patchy mobile data.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when bookings happen only on WhatsApp, when rates and documents needed are unclear, or when you want pages for each bike and location. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What should a website for bike rentals include?</h3>
 <p>A fleet page with photos and tariffs, deposit and document details, an online booking form with payment, clear rental terms, pickup locations with maps and a WhatsApp button.</p>
@@ -60515,8 +60850,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Keep your Google Business Profile complete, collect genuine reviews, create pages for each pickup point and mention nearby landmarks and stations naturally.</p>
 <h3>Do I need a separate page for each pickup location?</h3>
 <p>If you have more than one pickup point, yes. Each page can show its own address, map and timings, which helps riders and local search.</p>
-
-<p>If you run a bike or scooter rental business and want a booking website, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to plan and build it. Businesses in tourist hubs can also see <a href="/wordpress-shopify-developer-jaipur/">WordPress developer in Jaipur</a> or <a href="/wordpress-shopify-developer-kochi/">WordPress developer in Kochi</a>.</p>
 `,
   },
   {
@@ -60794,7 +61127,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Websites for Plant Nurseries: Delivery Zones, Real Plant Photos, Care Content, Seasonal Stock and Bulk Orders for Builders and Landscapers',
     description: 'How a plant nursery website sells live plants: delivery zones by plant size, photos of real stock, care guides, seasonal availability and bulk B2B orders.',
     date: '2026-10-01',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -60912,6 +61245,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Trade enquiry form tested, with notifications going to the person who quotes</li>
 </ul>
 
+<h2>Quick check: can buyers check stock and delivery?</h2>
+<ol>
+  <li>Search your nursery name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+  <li>Place a test order from a phone with a pin code inside and one outside your delivery zone. Check the checkout handles both clearly.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on a category page full of plant photos.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when stock on the site does not match the nursery, when delivery zones confuse buyers, or when trade enquiries are missed. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can a nursery sell plants online across India?</h3>
 <p>Seeds, pots, tools and some small plants can travel well by courier. Larger live plants usually do better within your own delivery radius, so the website should offer them only to the pin codes you can reach in good condition.</p>
@@ -60923,8 +61266,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Yes, through a trade enquiry form rather than the retail cart. Let them upload a plant list or drawing and give quantities, site location and date, then quote from there.</p>
 <h3>Do I need WooCommerce, or is a catalogue enough?</h3>
 <p>If you want customers to pay online for small plants, pots and supplies, WooCommerce makes sense. If most of your sales are large plants and site orders, a catalogue with enquiry buttons may be all you need.</p>
-
-<p>If you are planning a nursery store with delivery zones, real stock photos and a trade enquiry route, the store side is described on my <a href="/woocommerce-developer/">WooCommerce development</a> page, and a nursery catalogue without checkout falls under <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -61189,7 +61530,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Websites for Two-Wheeler Dealers: New and Used Bikes, Model Pages Within Brand Rules, Test Rides, Service Booking, Finance Enquiries, EVs and Several Showrooms',
     description: 'What a bike and scooter dealer website needs: new and used listings, model pages within brand rules, test rides, service booking, finance and EVs.',
     date: '2026-10-01',
-    updated: '2026-10-25',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'landing-page-design'],
     body: `
@@ -61297,6 +61638,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </table>
 <p>Route each form to the right showroom so no lead waits in a shared inbox. <a href="/blog/multi-location-business-website/">Websites for businesses with several branches</a> explains the structure, and <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a> helps if your team already tracks leads in one.</p>
 
+<h2>Quick check: do test rides and service bookings reach you?</h2>
+<ol>
+  <li>Search your dealership name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site.</li>
+  <li>Book a test ride and a service slot through the site from a phone. Confirm each reaches the right team, sales or workshop.</li>
+  <li>Search <strong>site:yourdomain.com</strong> plus a model name. Each model you sell should have an indexed page with variants and colours as text.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when model pages are missing or outdated, when bookings go to a shared inbox nobody watches, or when branches need their own pages. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can an authorised dealer have its own website?</h3>
 <p>Usually yes, within the manufacturer's rules on domains, logos, images, prices and offers. Check your agreement and brand guidelines before building.</p>
@@ -61308,8 +61659,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Yes, as a separate catalogue with each vehicle's own details and photos, marked sold as soon as it goes.</p>
 <h3>How should finance offers be worded?</h3>
 <p>Say you help arrange finance, that the lender decides approval and terms, name only actual partners, and label any EMI as an example with its assumptions.</p>
-
-<p>Planning a dealership website that books test rides and services? The build itself sits under <a href="/wordpress-website-development/">WordPress website development</a>, while launch and festive offers each get a page through <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -62996,7 +63345,7 @@ any unused part of the advance refunded as agreed</code></pre>
     title: 'Websites for Ice Cream Parlours and Gelato Shops: Flavour Menus, Party Orders and Delivery',
     description: 'Plan an ice cream parlour or gelato shop website: a flavour board you update daily, seasonal launches, party and bulk orders, delivery choices and FSSAI basics.',
     date: '2026-10-01',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-restaurants', 'landing-page-design'],
     body: `
@@ -63106,6 +63455,16 @@ any unused part of the advance refunded as agreed</code></pre>
 </ul>
 <p>Photos matter too: use real shots of your own scoops and counter, taken in natural light before they melt, rather than a supplier's pictures, and compress them so the flavour board appears first.</p>
 
+<h2>Quick check: do people find your flavours and hours?</h2>
+<ol>
+  <li>Search your parlour name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone, photos and website link match the site. Late-night hours are the detail most often wrong.</li>
+  <li>Search <strong>site:yourdomain.com</strong> plus a flavour. If the flavour board is only an image, Google cannot read it.</li>
+  <li>Send a test party-order enquiry through the WhatsApp button or form from a phone and confirm it reaches the person who takes orders.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the flavour board is hard to update, when party orders are missed, or when you want the site linked properly to your Business Profile. <a href="/website-for-restaurants/">Websites for restaurants and cafes</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Should I put prices on the flavour menu?</h3>
 <p>Yes, at least for scoops, cups and tubs. People decide quickly on dessert, and a clear price list saves staff from answering the same question on WhatsApp all evening.</p>
@@ -63119,8 +63478,6 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>It helps with single orders, but an app page can't hold your party order details, seasonal pages or outlet information, and the customer relationship stays with the app.</p>
 <h3>Should each outlet have its own page?</h3>
 <p>Yes, if outlets have different hours, menus or delivery areas. One website with an outlet page each is easier to manage than separate websites.</p>
-
-<p>Planning a website for your parlour, with a flavour board you can update from your phone and a proper page for party orders? See <a href="/website-for-restaurants/">websites for restaurants and cafes</a>, or a <a href="/landing-page-design/">landing page</a> for summer and festival campaigns.</p>
 `,
   },
   {

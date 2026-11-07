@@ -43,7 +43,7 @@
       "headline": "Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid",
       "description": "Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-06",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/robots-txt-explained/",
       "image": "https://samverse.space/assets/og/blog-robots-txt-explained.png",
       "articleSection": "SEO",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Robots.txt%20WordPress%20Guide%3A%20How%20It%20Works%2C%20Safe%20Examples%2C%20Sitemaps%20and%20Mistakes%20to%20Avoid%20https%3A%2F%2Fsamverse.space%2Fblog%2Frobots-txt-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,7 @@
               <li><a href="#ai-crawlers-and-robots-txt">AI crawlers and robots.txt</a></li>
               <li><a href="#common-robots-txt-mistakes">Common robots.txt mistakes</a></li>
               <li><a href="#how-to-test-your-robots-txt">How to test your robots.txt</a></li>
+              <li><a href="#quick-check-is-robots-txt-blocking-anything-important">Quick check: is robots.txt blocking anything important?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -177,7 +178,6 @@
           </div>
 <p>Robots.txt WordPress basics: robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically by WordPress unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap; everything else should stay crawlable.</p>
 <p><strong>Short answer:</strong> robots.txt controls crawling, not indexing. To keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. The biggest risk is a file that blocks too much, such as a leftover "Disallow: /" from a staging site.</p>
-<p>Robots.txt and the XML sitemap are both part of the setup in my <a href="/wordpress-seo-services/">WordPress SEO services</a>, because a single wrong line in this file can stop Google crawling a whole site. This guide explains how the file works, gives safe examples for WordPress and WooCommerce, covers AI crawlers and shows how to test it.</p>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
 <h2 id="how-robots-txt-works">How robots.txt works</h2>
@@ -278,7 +278,7 @@ Disallow: /*?*orderby=
 Disallow: /*?*filter_
 
 Sitemap: https://example.com/sitemap_index.xml</code></pre>
-<p>Two cautions. First, adjust the filter rule to the parameters your filter plugin actually uses, and never block filtered pages you have deliberately built to rank, such as a "red sarees" category view; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> explains that choice. Second, if filter URLs are already indexed, a robots.txt block stops Google seeing their canonical or noindex tags, so they can linger in results. Sort out canonicals first, then block. WooCommerce already asks search engines not to index the cart, checkout and account pages, so they don't need rules here.</p>
+<p>Two cautions. First, adjust the filter rule to the parameters your filter plugin actually uses, and never block filtered pages you have deliberately built to rank, such as a "red sarees" category view; <a href="/blog/woocommerce-product-filters/">WooCommerce product filters and SEO</a> explains that choice. Second, if filter URLs are already indexed, a robots.txt block stops Google seeing their canonical or noindex tags, so they can linger in results. Sort out canonicals first, then block.</p>
 
 <h2 id="robots-txt-blocks-crawling-not-indexing">Robots.txt blocks crawling, not indexing</h2>
 <p>This is the most misunderstood point. If other pages link to a URL you've blocked, Google can still index the bare URL without ever reading the page, and it can't see a noindex tag on a page it isn't allowed to crawl. Pick the tool that matches the goal:</p>
@@ -300,7 +300,7 @@ Disallow: /
 
 User-agent: Google-Extended
 Disallow: /</code></pre>
-<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. Many service businesses want to be cited, so they leave the search crawlers alone. AI search and your website covers the trade-off. If you use Cloudflare, check whether its AI crawler settings are adding lines to your robots.txt on your behalf, then look at the live file to see exactly what crawlers receive.</p>
+<p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. If you use Cloudflare, check whether its AI crawler settings add lines to your live robots.txt.</p>
 
 <h2 id="common-robots-txt-mistakes">Common robots.txt mistakes</h2>
 <ul>
@@ -322,9 +322,15 @@ Disallow: /</code></pre>
   <li><strong>Repeat after every launch, redesign or migration,</strong> as part of a wider check such as the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a>.</li>
 </ol>
 
+<h2 id="quick-check-is-robots-txt-blocking-anything-important">Quick check: is robots.txt blocking anything important?</h2>
+<ol>
+  <li>Open <strong>yourdomain.com/robots.txt</strong> in a browser. Look for <code>Disallow: /</code> and check the Sitemap line points to a working address.</li>
+  <li>In <strong>Google Search Console</strong>, open <strong>Settings &gt; Crawling &gt; robots.txt</strong> and check the file Google last fetched and any errors.</li>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for a key page. "Crawl allowed?" should say Yes.</li>
+</ol>
+
 <h2 id="when-to-get-help">When to get help</h2>
-<p>Get help when Search Console shows important pages as "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule such as <code>Disallow: /</code> reached the live site, or when a WooCommerce store's filter URLs are eating crawl effort and you're unsure what is safe to block.</p>
-<p>Worried that a robots.txt rule, a stray noindex or a sitemap problem is holding your site back? Crawling and indexing checks, with fixes made on your site, are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off crawl check.</p>
+<p>Get help when important pages show "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule reached the live site, or when store filter URLs are eating crawl effort. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>What is robots.txt used for?</h3>
@@ -384,6 +390,7 @@ Disallow: /</code></pre>
               <li><a href="#ai-crawlers-and-robots-txt">AI crawlers and robots.txt</a></li>
               <li><a href="#common-robots-txt-mistakes">Common robots.txt mistakes</a></li>
               <li><a href="#how-to-test-your-robots-txt">How to test your robots.txt</a></li>
+              <li><a href="#quick-check-is-robots-txt-blocking-anything-important">Quick check: is robots.txt blocking anything important?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

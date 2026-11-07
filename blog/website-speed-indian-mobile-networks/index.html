@@ -43,7 +43,7 @@
       "headline": "Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs",
       "description": "Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-14",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/website-speed-indian-mobile-networks/",
       "image": "https://samverse.space/assets/og/blog-website-speed-indian-mobile-networks.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-14">14 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Website%20Speed%20on%20Indian%20Mobile%20Networks%3A%20How%20to%20Test%20and%20Build%20for%20Real%204G%2C%20Budget%20Phones%20and%20Data%20Packs%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwebsite-speed-indian-mobile-networks%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,8 @@
               <li><a href="#serve-the-site-from-close-by">Serve the site from close by</a></li>
               <li><a href="#make-key-actions-work-on-a-weak-connection">Make key actions work on a weak connection</a></li>
               <li><a href="#a-quick-checklist">A quick checklist</a></li>
+              <li><a href="#quick-check-test-like-your-customers-browse">Quick check: test like your customers browse</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -276,6 +278,16 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 
 <p>Heavy JavaScript mostly shows up as slow taps and clicks, which Google measures as INP; see <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve Interaction to Next Paint</a>.</p>
 
+<h2 id="quick-check-test-like-your-customers-browse">Quick check: test like your customers browse</h2>
+<ol>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, set throttling to <strong>Slow 4G</strong> and reload your homepage with cache disabled.</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and note the Largest Contentful Paint and Interaction to Next Paint figures.</li>
+  <li>Open the site on a mid-range Android phone over mobile data and time how long until you can tap the main button.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the site is slow on mobile data, when you are unsure whether hosting, images or plugins are to blame, or when checkout lags on phones. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why is my website slow on mobile data but fast on Wi-Fi?</h3>
 <p>Mobile connections usually have higher and more variable latency, so pages that need many files from several servers slow down sharply. Budget phones also run JavaScript more slowly than laptops. Throttled testing in Chrome shows the difference before your customers notice it.</p>
@@ -287,8 +299,6 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 <p>No. Many visitors still connect over 4G, indoors or in areas without 5G, and a faster network doesn't speed up a budget phone's processor. Heavy JavaScript and slow server response hurt on any network.</p>
 <h3>What is a good page size for mobile visitors?</h3>
 <p>There's no official figure, but keeping a typical business page to around 1 to 1.5 MB or less, with as little JavaScript as possible, is a sensible starting budget. Landing pages for ads should be lighter still.</p>
-
-<p>Want your site checked on throttled 4G and a real phone, with the causes fixed rather than a score chased? I test key pages, find whether hosting, images, plugins or scripts are to blame, and report the before-and-after results; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -332,6 +342,8 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
               <li><a href="#serve-the-site-from-close-by">Serve the site from close by</a></li>
               <li><a href="#make-key-actions-work-on-a-weak-connection">Make key actions work on a weak connection</a></li>
               <li><a href="#a-quick-checklist">A quick checklist</a></li>
+              <li><a href="#quick-check-test-like-your-customers-browse">Quick check: test like your customers browse</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
