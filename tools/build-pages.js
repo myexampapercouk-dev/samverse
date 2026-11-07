@@ -248,7 +248,16 @@ ${p.glance ? `          <ul class="lp-glance">
         </div>
       </div>
     </section>
-
+${p.why ? `
+    <section class="section" id="why-samverse">
+      <div class="container faq-wrap">
+        <div class="section-head reveal"><span class="eyebrow">Why choose Samverse</span><h2>Why choose Samverse</h2></div>
+        <ul class="checklist reveal">
+${p.why.map(w => `          <li>${tick} <span>${w}</span></li>`).join('\n')}
+        </ul>
+${p.moneyLinks ? `        <p class="muted reveal">Related services: ${p.moneyLinks.map(([h, t]) => `<a href="${h}" class="link-inline">${t}</a>`).join(' · ')}.</p>\n` : ''}      </div>
+    </section>
+` : ''}
     <section class="section">
       <div class="container">
         <div class="section-head reveal">

@@ -36,7 +36,20 @@ const UP = {
 };
 const OWN = ['Will I own the website?', 'Yes. The domain and hosting are registered in your name, you get your own administrator login, and any temporary access used for the work can be removed.'];
 const COST = 'It depends on the scope: the number of pages, the features and how much content or setup is involved. After a free review of your needs you get a fixed quote, so the price is agreed before any work starts.';
+// "Why choose Samverse": verifiable facts only (site copy and tools/work-data.js case studies), plus links between the money pages
+const W_SINCE = 'Building WordPress websites since 2020, with <a href="/work/" class="link-inline">10 published case studies</a> of live client sites.';
+const W_QUOTE = 'A written scope and a fixed quote before any work starts, usually within 24 hours.';
+const W_OWN = 'Domain, hosting and administrator login in your name, so you are never locked in.';
+const W_DIRECT = 'You deal directly with the developer doing the work, on WhatsApp, calls or email.';
+const WHY = {
+  'wordpress-developer-pune': [ 'Based in Pune, working with businesses in Pune, Pimpri-Chinchwad and Mumbai, and with clients across India and abroad online.', W_SINCE, W_DIRECT, W_QUOTE, W_OWN ],
+  'hire-wordpress-developer': [ W_SINCE, W_DIRECT, 'Small jobs welcome: fixes, speed, forms and content changes get a fixed price per batch.', W_QUOTE, W_OWN ],
+  'shopify-developer': [ 'WordPress, WooCommerce and Shopify from one developer, so platform advice is about your store, not a preference.', 'Theme work is done on a duplicate theme and checked by you before it is published.', W_QUOTE, 'The Shopify account, domain and payment accounts stay in your name; staff access can be removed at any time.' ],
+  'woocommerce-developer': [ 'Indian payment gateways, GST tax classes, COD and shipping rules set up and checked with test orders before launch.', W_SINCE, W_QUOTE, W_OWN, W_DIRECT ],
+};
+const MONEY = [['/hire-wordpress-developer/', 'Hire a WordPress developer'], ['/wordpress-developer-pune/', 'WordPress developer in Pune'], ['/woocommerce-developer/', 'WooCommerce development'], ['/shopify-developer/', 'Shopify development']];
 module.exports = pages => pages.forEach(p => {
+  if (WHY[p.slug]) { p.why = WHY[p.slug]; p.moneyLinks = MONEY.filter(m => m[0] !== `/${p.slug}/`); }
   const u = UP[p.slug]; if (!u) return;
   const { cost, dropQ, ...rest } = u;
   Object.assign(p, rest);

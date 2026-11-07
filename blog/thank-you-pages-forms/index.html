@@ -43,7 +43,7 @@
       "headline": "Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It",
       "description": "Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/thank-you-pages-forms/",
       "image": "https://samverse.space/assets/og/blog-thank-you-pages-forms.png",
       "articleSection": "Growth",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Lead%20Form%20Thank%20You%20Page%20Redirect%3A%20What%20to%20Put%20on%20the%20Page%2C%20How%20to%20Set%20It%20Up%20in%20WordPress%20and%20How%20to%20Track%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fthank-you-pages-forms%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,8 @@
               <li><a href="#track-it-and-count-each-enquiry-once">Track it, and count each enquiry once</a></li>
               <li><a href="#the-woocommerce-version-the-order-received-page">The WooCommerce version: the order received page</a></li>
               <li><a href="#the-thank-you-page-is-only-the-first-reply">The thank-you page is only the first reply</a></li>
+              <li><a href="#quick-check-does-your-thank-you-page-fire-once-and-stay-out-of-google">Quick check: does your thank-you page fire once, and stay out of Google?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -286,6 +288,16 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <h2 id="the-thank-you-page-is-only-the-first-reply">The thank-you page is only the first reply</h2>
 <p>The page reassures the visitor, but the enquiry still needs a person. Make sure the notification reaches someone who acts on it, send a short automatic email that repeats what the page promised, and follow up if the first attempt doesn't connect. <a href="/blog/respond-to-website-enquiries-fast/">Following up website leads</a> sets out a simple sequence.</p>
 
+<h2 id="quick-check-does-your-thank-you-page-fire-once-and-stay-out-of-google">Quick check: does your thank-you page fire once, and stay out of Google?</h2>
+<ol>
+  <li><strong>Test enquiry:</strong> submit your own form once. Then open GA4, Reports, Realtime, and confirm a single generate_lead (or your lead event) appears, not two.</li>
+  <li><strong>Direct visit:</strong> open the thank-you page URL directly in a private window. If it counts a conversion without a form submission, your tracking is firing on page views and over-counting leads.</li>
+  <li><strong>Indexing:</strong> paste the thank-you URL into Search Console's URL Inspection tool. It should report the page as excluded by a noindex tag.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when ad platforms and GA4 show different lead counts, when the form plugin cannot redirect the way you need, or when you are about to spend on ads without tested tracking. A <a href="/landing-page-design/">landing page</a> comes with its thank-you page and conversion tracking tested, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to fix tracking on an existing site. <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is a thank-you page on a website?</h3>
 <p>It is the page visitors see after submitting a form or completing an order. It confirms the submission, explains what happens next and gives you a clean way to count conversions.</p>
@@ -299,8 +311,6 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <p>Create a generate_lead event that fires when page_view happens on your thank-you page's URL, mark it as a key event and set it to count once per session. Then test it with a real submission in DebugView.</p>
 <h3>Is a thank-you page better than a confirmation message?</h3>
 <p>A page gives you more room for next steps and simpler tracking; an inline message suits pop-ups, multi-step forms and forms that continue into WhatsApp. Either works if it is obvious and tracking fires only after a successful submission.</p>
-
-<p>Running ads to a form? A focused <a href="/landing-page-design/">landing page</a> comes with its thank-you page, GA4, Google Ads and Meta conversion tracking set up and checked with test enquiries before any ad money is spent.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -344,6 +354,8 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
               <li><a href="#track-it-and-count-each-enquiry-once">Track it, and count each enquiry once</a></li>
               <li><a href="#the-woocommerce-version-the-order-received-page">The WooCommerce version: the order received page</a></li>
               <li><a href="#the-thank-you-page-is-only-the-first-reply">The thank-you page is only the first reply</a></li>
+              <li><a href="#quick-check-does-your-thank-you-page-fire-once-and-stay-out-of-google">Quick check: does your thank-you page fire once, and stay out of Google?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
