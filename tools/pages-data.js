@@ -845,4 +845,5 @@ const PAGES = [
   },
 ];
 
+require('./pages-upgrades')(PAGES);
 module.exports = PAGES.concat(require("./pages-cities").pages);
