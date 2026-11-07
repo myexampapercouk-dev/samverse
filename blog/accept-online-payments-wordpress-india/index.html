@@ -43,7 +43,7 @@
       "headline": "How to Accept Online Payments on a WordPress Website in India: UPI, Cards, Gateways, KYC and Setup",
       "description": "Accept online payments on WordPress in India: Razorpay, Cashfree, PayU, PhonePe or CCAvenue, UPI, KYC, settlements, WooCommerce setup and test mode.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-14",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/accept-online-payments-wordpress-india/",
       "image": "https://samverse.space/assets/og/blog-accept-online-payments-wordpress-india.png",
       "articleSection": "E-commerce",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-14">14 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Accept%20Online%20Payments%20on%20a%20WordPress%20Website%20in%20India%3A%20UPI%2C%20Cards%2C%20Gateways%2C%20KYC%20and%20Setup%20https%3A%2F%2Fsamverse.space%2Fblog%2Faccept-online-payments-wordpress-india%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#taking-payments-without-a-full-store">Taking payments without a full store</a></li>
               <li><a href="#common-problems-and-fixes">Common problems and fixes</a></li>
               <li><a href="#keeping-payments-secure">Keeping payments secure</a></li>
+              <li><a href="#quick-check-does-every-payment-outcome-work">Quick check: does every payment outcome work?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -283,6 +285,12 @@
 <p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
 <p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>
 
+<h2 id="quick-check-does-every-payment-outcome-work">Quick check: does every payment outcome work?</h2>
+<p>With the gateway in test mode, place three test orders: one paid, one where you cancel on the payment page and one that fails. Then open <strong>WooCommerce, Orders</strong> and check that they show Processing, Pending payment and Failed respectively. Next, open <strong>WooCommerce, Status, Logs</strong> and look for your gateway's log: webhook errors there are the usual reason paid orders stay stuck on Pending.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when paid orders stay on Pending, when webhooks or KYC approval are holding you up, or when you need UPI, cards and COD working together. Through <a href="/woocommerce-developer/">WooCommerce development</a> your gateway is connected, webhooks configured, test orders run for every outcome and the first live order confirmed with you. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Which payment gateway is best for a WordPress website in India?</h3>
 <p>There's no single best one. Razorpay, Cashfree, PayU, PhonePe and CCAvenue all support UPI, cards and net banking and work with WooCommerce. Choose on fees for your mix of payment methods, settlement cycle, KYC fit for your business type and the quality of the plugin.</p>
@@ -296,8 +304,6 @@
 <p>Stripe has limited new sign-ups for Indian businesses in recent times. Check its current status for your business before planning around it; Indian gateways such as Razorpay or Cashfree are the usual choice for domestic payments.</p>
 <h3>Can I accept payments from customers outside India?</h3>
 <p>Yes, through international card acceptance on an Indian gateway, which is often a separate activation, or through PayPal for international payments. Ask about currency conversion, fees and export paperwork for your CA.</p>
-
-<p>Want UPI, cards and COD set up and tested properly? I connect your gateway to WooCommerce, configure webhooks, run test orders for every outcome and confirm the first live order with you; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -343,6 +349,8 @@
               <li><a href="#taking-payments-without-a-full-store">Taking payments without a full store</a></li>
               <li><a href="#common-problems-and-fixes">Common problems and fixes</a></li>
               <li><a href="#keeping-payments-secure">Keeping payments secure</a></li>
+              <li><a href="#quick-check-does-every-payment-outcome-work">Quick check: does every payment outcome work?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -611,7 +611,7 @@ module.exports = [
     title: 'Private Clinic Website Checklist: 20 Things Every Doctor\'s Website Needs',
     description: 'A private clinic website checklist for doctors: 20 must-haves for patient trust, local search, appointments, speed, privacy and medical advertising rules.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-for-doctors', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -716,6 +716,16 @@ module.exports = [
 
 <p>See clinic websites I have built in <a href="/wordpress-shopify-developer-agra/">Agra</a>, and notes for practices in <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a> and <a href="/wordpress-shopify-developer-nagpur/">Nagpur</a>.</p>
 
+<h2>Quick check: what patients see when they search for you</h2>
+<ol>
+  <li>Search Google for your clinic name and your area on your phone. Check that the Business Profile shows the right timings, phone number and website link.</li>
+  <li>Tap the website link and see whether the doctor's name, qualifications and a booking or WhatsApp button are visible on the first screen.</li>
+  <li>Open <a href="https://search.google.com/test/rich-results" rel="noopener">Google's Rich Results Test</a>, enter your home page and check whether LocalBusiness or MedicalClinic markup is detected and matches your Business Profile details.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your website misses several points on this checklist, or when you want booking, treatment pages and local SEO set up together with you approving every medical statement. See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
 <h2>FAQs</h2>
 <h3>What should a private clinic website include?</h3>
 <p>At minimum: a doctor profile with qualifications and registration number, a page for each major treatment, timings, address with a map, tap-to-call, WhatsApp and a short appointment form, plus a privacy notice. Add genuine reviews, real photos, FAQs and local SEO to compete properly in search.</p>
@@ -729,8 +739,6 @@ module.exports = [
 <p>A directory profile helps patients who already search on that platform, but it sits on someone else's page, often next to other doctors, with little room to explain your treatments. Your own website can rank for your specialty and each treatment, send bookings straight to you and link to your directory profiles, so the two work together.</p>
 <h3>Can I show patient testimonials on my clinic website?</h3>
 <p>Professional conduct rules for doctors in India are cautious about testimonials, so check current NMC and state medical council guidance first. Showing your public Google reviews through a widget, with a link to leave a review, is a more transparent option than selected quotes.</p>
-
-<p>If your clinic website misses several of these points, I can fix it or build a new one: credentials, treatment pages, WhatsApp booking, local SEO and a privacy-safe setup, with you approving every medical statement. See <a href="/wordpress-website-for-doctors/">websites for doctors and clinics</a>.</p>
 `,
   },
   {
@@ -1010,7 +1018,7 @@ module.exports = [
     title: 'WordPress Maintenance Checklist: What to Do Weekly, Monthly, Quarterly and Yearly',
     description: 'A WordPress maintenance schedule and checklist: weekly, monthly, quarterly and yearly tasks for updates, backups, security and SEO, with a calendar.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -1128,6 +1136,18 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Detailed guides: <a href="/blog/wordpress-database-optimization/">database optimisation</a> and <a href="/blog/update-php-version-wordpress/">updating PHP</a>.</p>
 
+<h2>Quick check: is your site overdue for maintenance?</h2>
+<p>In the WordPress admin, open <strong>Dashboard, Updates</strong> and <strong>Tools, Site Health</strong>. Three things tell you how far behind the site is:</p>
+<ol>
+  <li>The number of plugin, theme and core updates waiting on the Updates screen.</li>
+  <li>Any "critical issues" on the Site Health Status tab, such as an outdated PHP version or inactive plugins left installed.</li>
+  <li>The date of your last backup in your backup plugin or hosting panel, and whether a copy is stored off the server.</li>
+</ol>
+<p>If updates have piled up for months, take a backup before clicking anything.</p>
+
+<h2>When to get help</h2>
+<p>Get help when updates keep breaking something, when nobody checks backups, or when the site takes orders or enquiries you cannot afford to lose. <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates with a backup first and testing afterwards, off-site backups, security checks, uptime monitoring and a short monthly report. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How often should a WordPress site be maintained?</h3>
 <p>Check backups and updates weekly or fortnightly, run the fuller checklist monthly, test a restore and audit plugins quarterly, and handle renewals and a full review yearly. Stores and busy sites need closer attention.</p>
@@ -1141,8 +1161,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Yes, if the site is simple and you follow the schedule. Always back up before updating, and get help if an update breaks the layout, forms stop sending or Search Console reports a security issue.</p>
 <h3>What day of the week is best for WordPress updates?</h3>
 <p>Early in the working week, at a quiet hour, so someone is around for a few days to spot problems. Avoid Fridays, the day before a sale or festival, and your busiest trading hours.</p>
-
-<p>Prefer to have it done for you? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> cover updates with a backup first and testing afterwards, off-site backups, security checks, uptime monitoring and a short monthly report.</p>
 `,
   },
   {
@@ -1151,7 +1169,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Website Not Getting Enquiries? 12 Ways to Get More Enquiries From Your Business Website',
     description: 'Website not getting enquiries? Find out why, then use 12 practical ways to get more: clearer headlines, WhatsApp, shorter forms, real proof, speed and tracking.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['website-redesign', 'landing-page-design', 'wordpress-speed-optimization'],
     body: `
@@ -1247,6 +1265,18 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Then turn those numbers into rupees; see <a href="/blog/measure-website-roi/">how to measure website ROI</a>.</p>
 <p>See <a href="/blog/collect-display-customer-testimonials/">how to collect and display testimonials</a> that actually convince people.</p>
+<h2>Quick check: does an enquiry actually reach you?</h2>
+<p>From your phone, not your office computer:</p>
+<ol>
+  <li>Fill in every form on the site with a real test message and note the time.</li>
+  <li>Tap the phone number and the WhatsApp button and check that each opens the right number.</li>
+  <li>Check the inbox that should receive form emails, including spam. If nothing arrives within a few minutes, install a mail log plugin such as WP Mail Logging, or check your form plugin's entries screen, to see whether the form saved it and the email failed to send.</li>
+</ol>
+<p>A form that saves entries but never emails them is one of the commonest reasons a site seems to get no enquiries.</p>
+
+<h2>When to get help</h2>
+<p>Get help when visitors arrive but enquiries do not, or when forms and tracking cannot be trusted. Headlines, calls to action, forms and tracking can be reviewed and fixed, or pages built around enquiries: see <a href="/landing-page-design/">landing page design</a> for campaign pages and <a href="/wordpress-website-development/">WordPress website development</a> for full sites. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my website not getting enquiries?</h3>
 <p>Either too few of the right people visit, or visitors don't see a clear reason and an easy way to contact you. Check your traffic first, then your headline, calls to action, contact options and proof. If enquiries stopped suddenly, test your form and email delivery straight away.</p>
@@ -1260,8 +1290,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>If visitors arrive but don't enquire, more traffic just means more people leaving. Fix the site first, then spend on SEO or ads. If almost nobody visits, you need both.</p>
 <h3>Why are my website form enquiries not reaching my email?</h3>
 <p>On WordPress this is usually because the site sends mail through the server without proper authentication, so it is blocked or lands in spam. Sending through an SMTP service and saving submissions in the database usually fixes it.</p>
-
-<p>Want a second pair of eyes on why your site isn't converting? I can review it and fix the headline, calls to action, forms and tracking, or build pages designed around enquiries. See <a href="/landing-page-design/">landing page design</a> for campaign pages and <a href="/wordpress-website-development/">WordPress website development</a> for full sites.</p>
 `,
   },
   {
@@ -1805,7 +1833,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: '10 Landing Page Mistakes That Waste Your Google Ads Budget, and How to Fix Each One: Message Match, Speed, Forms, Tracking and Ad Policy',
     description: 'Ten landing page mistakes that waste Google Ads budget, with fixes: message match, mobile speed, long forms, missing tracking, weak proof and ad policy issues.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-speed-optimization', 'real-estate-website-design'],
     body: `
@@ -1906,6 +1934,17 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Planning a dedicated page for your campaign? See <a href="/blog/landing-page-cost-factors/">what affects the cost of a landing page</a> and how to brief one.</p>
 
+<h2>Quick check: test the page the way a paid visitor sees it</h2>
+<ol>
+  <li>Copy the final URL from your ad, including any tracking parameters, and open it on your phone over mobile data rather than Wi-Fi.</li>
+  <li>Check that the headline repeats the promise in the ad and that the call to action is visible without scrolling.</li>
+  <li>Submit the form, then in Google Ads open <strong>Goals, Conversions, Summary</strong> and check that the conversion action's status is not "Inactive" or "No recent conversions" after your test.</li>
+  <li>Test the same URL in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> on mobile.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you are paying for clicks that do not turn into enquiries, or when you cannot tell which ads produce leads. <a href="/landing-page-design/">Landing page design</a> builds fast, mobile-first pages with one goal, message match for each ad group and conversion tracking tested before launch, with a fixed quote. For a review of your ad and page, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my Google Ads getting clicks but no leads?</h3>
 <p>Usually because the page doesn't match the ad, loads slowly on phones, asks for too much or has a form that doesn't deliver. Check tracking first, then test the page on your own phone on mobile data, then compare the headline with the ad and the search terms report.</p>
@@ -1917,8 +1956,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <p>Usually not, because a menu gives visitors other places to go. Keep a short footer with contact details and the privacy policy, and offer the form, WhatsApp and call as routes to the same enquiry.</p>
 <h3>Can my landing page get my ads disapproved?</h3>
 <p>Yes. A page that doesn't load, lacks business information, makes claims you can't support or falls into a restricted category without meeting its requirements can lead to disapproved or limited ads. Google Ads names the policy involved, so start there.</p>
-
-<p>Paying for clicks that don't turn into enquiries? Send me the ad and the page for a free review. My <a href="/landing-page-design/">landing page design</a> service builds fast, mobile-first pages with one goal, message match for each ad group and conversion tracking tested before launch, with a fixed quote up front.</p>
 `,
   },
   {
@@ -2063,7 +2100,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist',
     description: 'Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['website-redesign', 'wordpress-migration', 'wordpress-seo-services'],
     body: `
@@ -2178,6 +2215,17 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 
 <p>If traffic does drop after launch, work through the <a href="/blog/website-traffic-dropped/">traffic drop checklist</a> step by step, and check that new pages are being indexed; see <a href="/blog/get-website-indexed-google-faster/">getting indexed faster</a>.</p>
 
+<h2>Quick check: what do you have to protect?</h2>
+<p>Before any design work, export two lists:</p>
+<ol>
+  <li>In Search Console, open <strong>Performance, Search results</strong>, set the date range to the last 12 months, open the <strong>Pages</strong> tab and export it. These are the URLs that bring clicks.</li>
+  <li>Fetch <code>yourdomain.com/sitemap.xml</code> (or <code>/sitemap_index.xml</code> on Yoast and Rank Math sites) and save every URL listed.</li>
+</ol>
+<p>Every URL on either list needs to stay the same or get a 301 redirect on launch day. After launch, <code>curl -I https://yourdomain.com/old-page/</code> should return <code>301</code> with the new address in the <code>location</code> line.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the site already brings steady traffic or enquiries, when the platform or domain is changing too, or when nobody on your side has done a redirect map before. A <a href="/website-redesign/">website redesign</a> is built on a staging site, keeps important URLs, maps and tests redirects, carries over SEO settings and is watched in Search Console after launch. Not sure you need a full redesign? Read <a href="/blog/signs-you-need-a-new-website/">refresh vs redesign</a> first, or <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Will redesigning my website affect SEO?</h3>
 <p>It can, in either direction. A redesign that keeps URLs, content and internal links while making the site faster and clearer often helps. One that changes URLs without redirects or strips content usually hurts. The difference is the process, not the design.</p>
@@ -2191,8 +2239,6 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 <p>Yes, if URLs stay the same and the new theme keeps your content, headings, internal links and schema. Test it on staging first, because some themes move content into builder layouts, drop breadcrumbs or load much more slowly.</p>
 <h3>Should I redirect deleted pages to the homepage?</h3>
 <p>No. Redirect each page to its closest equivalent. If nothing relevant exists, letting it return a 404 or 410 is better than a homepage redirect.</p>
-
-<p>Planning a redesign and want to keep the rankings you've built? I rebuild on a staging site, keep important URLs, map and test redirects, carry over SEO settings and check Search Console daily for the first two weeks; see <a href="/website-redesign/">website redesign</a>. Not sure you need a full redesign? Read <a href="/blog/signs-you-need-a-new-website/">refresh vs redesign</a> first.</p>
 `,
   },
   {
@@ -2201,7 +2247,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
     title: 'How to Accept Online Payments on a WordPress Website in India: UPI, Cards, Gateways, KYC and Setup',
     description: 'Accept online payments on WordPress in India: Razorpay, Cashfree, PayU, PhonePe or CCAvenue, UPI, KYC, settlements, WooCommerce setup and test mode.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'website-for-schools-and-coaching', 'website-for-temples-and-ngos'],
     body: `
@@ -2308,6 +2354,12 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 <p>Schools and coaching institutes often collect fees this way; see <a href="/blog/school-coaching-website-what-parents-look-for/">what parents and students look for</a>.</p>
 <p>Protect your checkout from card skimmers: see <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce skimming malware</a>.</p>
 
+<h2>Quick check: does every payment outcome work?</h2>
+<p>With the gateway in test mode, place three test orders: one paid, one where you cancel on the payment page and one that fails. Then open <strong>WooCommerce, Orders</strong> and check that they show Processing, Pending payment and Failed respectively. Next, open <strong>WooCommerce, Status, Logs</strong> and look for your gateway's log: webhook errors there are the usual reason paid orders stay stuck on Pending.</p>
+
+<h2>When to get help</h2>
+<p>Get help when paid orders stay on Pending, when webhooks or KYC approval are holding you up, or when you need UPI, cards and COD working together. Through <a href="/woocommerce-developer/">WooCommerce development</a> your gateway is connected, webhooks configured, test orders run for every outcome and the first live order confirmed with you. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Which payment gateway is best for a WordPress website in India?</h3>
 <p>There's no single best one. Razorpay, Cashfree, PayU, PhonePe and CCAvenue all support UPI, cards and net banking and work with WooCommerce. Choose on fees for your mix of payment methods, settlement cycle, KYC fit for your business type and the quality of the plugin.</p>
@@ -2321,8 +2373,6 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 <p>Stripe has limited new sign-ups for Indian businesses in recent times. Check its current status for your business before planning around it; Indian gateways such as Razorpay or Cashfree are the usual choice for domestic payments.</p>
 <h3>Can I accept payments from customers outside India?</h3>
 <p>Yes, through international card acceptance on an Indian gateway, which is often a separate activation, or through PayPal for international payments. Ask about currency conversion, fees and export paperwork for your CA.</p>
-
-<p>Want UPI, cards and COD set up and tested properly? I connect your gateway to WooCommerce, configure webhooks, run test orders for every outcome and confirm the first live order with you; see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -2331,7 +2381,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
     title: '10 Signs Your Business Needs a New Website, How to Check Each One, and Whether a Refresh or a Full Redesign Will Fix It',
     description: '10 signs your business needs a new website, from poor mobile use and slow pages to hacks and no enquiries, with a table showing when a refresh is enough.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['website-redesign', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -2432,6 +2482,18 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 
 <p>Not sure? Run this <a href="/blog/diy-website-audit/">one-hour DIY website audit</a> first.</p>
 
+<h2>Quick check: score your site in ten minutes</h2>
+<p>Run three tests and note the results:</p>
+<ol>
+  <li>Open <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a>, test your home page and read the mobile Core Web Vitals assessment at the top.</li>
+  <li>Open the site on your own phone, find your phone number and contact form, and send yourself a test enquiry. Time how long it takes and check that the message arrives.</li>
+  <li>In WordPress, open <strong>Dashboard, Updates</strong> and <strong>Tools, Site Health</strong> and note the PHP version and how many updates are waiting.</li>
+</ol>
+<p>If two or more of these fail, match each failure to the refresh-or-rebuild table above.</p>
+
+<h2>When to get help</h2>
+<p>Get help when three or more of the signs apply, or when you are unsure whether a refresh will do. A <a href="/website-redesign/">website redesign</a> starts with an audit of what already works, a redirect map and a staging site, so your current site stays live until you approve the new one. For an honest refresh-or-redesign opinion, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I know if my website is outdated?</h3>
 <p>Open it on your phone and compare it with competitors' sites. If it is awkward on a phone, slow, full of old information or stock photos, or you can't update it yourself, it is outdated in the ways that cost enquiries, whatever year it was built.</p>
@@ -2443,8 +2505,6 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 <p>Nobody can honestly promise that. A faster, better-structured site with a page per service gives your pages a better chance, but a redesign done carelessly can lose rankings, which is why URLs, redirects and ranking content need protecting.</p>
 <h3>Can I keep my domain and content in a redesign?</h3>
 <p>Yes. The domain normally stays the same, and good existing content, photos and testimonials can be reused and improved. What changes is the design, the structure and how the site is built.</p>
-
-<p>Recognise three or more of these signs? Send me your website address for a free review. I'll tell you honestly whether a refresh will do or a redesign is worth it, and a <a href="/website-redesign/">website redesign</a> with me starts with an audit of what already works, a redirect map and a staging site, so your current site stays live until you approve the new one.</p>
 `,
   },
   {
@@ -2587,7 +2647,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them',
     description: 'Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, Search Console reports and what to fix first on WordPress.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -2684,6 +2744,12 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Test the way your visitors browse. In PageSpeed Insights, read the mobile tab first. In Chrome DevTools, use network and CPU throttling to approximate a slower phone. Then compare against the field data in Search Console, which reflects your real audience.</p>
 <p>If your Shopify store fails Core Web Vitals, the same principles apply: too many apps adding scripts, oversized images and heavy theme sections. The difference is that on Shopify you mostly fix it by removing apps and simplifying the theme rather than changing hosting.</p>
 
+<h2>Quick check: which metric is failing, and where?</h2>
+<p>In Search Console, open <strong>Experience, Core Web Vitals</strong>, click <strong>Open report</strong> for Mobile and click each issue (for example "LCP issue: longer than 2.5s") to see the example URL groups. Test one example URL in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a>: the field data at the top confirms the problem, and the Diagnostics section below points to the element causing it.</p>
+
+<h2>When to get help</h2>
+<p>Get help when pages stay Poor or Needs improvement after the basics, or when fixes risk breaking the layout, forms or checkout. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> includes a full audit, fixes for LCP, INP and CLS, testing after every change and a before-and-after report. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What are good Core Web Vitals scores?</h3>
 <p>LCP of 2.5 seconds or less, INP of 200 milliseconds or less, and CLS of 0.1 or less, each met by at least 75% of page visits. A page passes the assessment when all three are good.</p>
@@ -2697,9 +2763,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024. INP measures responsiveness across the whole visit, not just the first tap, so it's harder to pass.</p>
 <h3>Why do my Core Web Vitals pass on desktop but fail on mobile?</h3>
 <p>Phones have slower processors and often slower connections, so heavy images and JavaScript hurt them far more. Google reports mobile and desktop separately, so fix the mobile issues first.</p>
-
-
-<p>If your Search Console report shows pages as Poor or Needs improvement and you'd rather have the causes found and fixed safely, my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service includes a full audit, Core Web Vitals fixes for LCP, INP and CLS, testing after every change, and a before-and-after report.</p>
 `,
   },
   {
@@ -2708,7 +2771,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
     title: 'How to Set Up Google Analytics 4 and Search Console for Your Business Website, and Link Them Together',
     description: 'No Google Analytics developer console needed: set up GA4 and Search Console step by step, link them, check the tag in DevTools and track enquiries.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
@@ -2832,6 +2895,17 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 </ul>
 <p><a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a> goes through each report in plain English.</p>
 
+<h2>Quick check: is tracking actually working?</h2>
+<ol>
+  <li>In GA4, open <strong>Reports, Realtime</strong>, visit your site from your phone and confirm your visit appears within a minute.</li>
+  <li>Submit a test enquiry and check that your key event shows in Realtime, then in <strong>Admin, Events</strong> the next day.</li>
+  <li>In Search Console, run <strong>URL inspection</strong> on your home page and confirm it says "URL is on Google".</li>
+  <li>View your page source and search for <code>G-</code>: the measurement ID should appear once. Two copies usually means the tag is installed twice and visits are double counted.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when numbers look doubled or missing, when enquiries are not counted as key events, or when you want a monthly read of what is working. <a href="/wordpress-seo-services/">WordPress SEO services</a> include tracking set up and checked from day one; to fix tracking on an existing site, you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up Search Console in Google Analytics?</h3>
 <p>Verify your site in Search Console first, then in GA4 go to Admin &gt; Product links &gt; Search Console links, click Link, choose your Search Console property and web stream, and submit. Then publish the Search Console collection from Reports &gt; Library so the reports appear.</p>
@@ -2843,8 +2917,6 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <p>No. The Google Cloud developer console is only needed for custom API projects. Setting up GA4, Search Console and Site Kit happens in their own dashboards, and you can check the tag in your browser's developer tools.</p>
 <h3>How long until data appears?</h3>
 <p>Realtime data in GA4 appears within minutes and standard reports within a day or so. Search Console can take a few days to show performance data for a newly verified site; see <a href="/blog/get-website-indexed-google-faster/">getting a new site indexed faster</a>.</p>
-
-<p>Want tracking set up correctly from day one, with enquiries measured and a monthly look at what's working? See my <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to fix tracking on an existing site.</p>
 `,
   },
   {
@@ -3306,7 +3378,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: '15 Website Design Mistakes That Cost Small Businesses Customers (and How to Fix Each One)',
     description: '15 website design mistakes that cost small businesses customers, from unclear headlines and slow mobile pages to hidden contact details, with fixes.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['website-redesign', 'wordpress-website-development', 'landing-page-design'],
     body: `
@@ -3393,6 +3465,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Two related guides: the <a href="/blog/website-accessibility-basics/">accessibility basics</a> that make a site usable for everyone, and the <a href="/blog/signs-you-need-a-new-website/">signs it's time for a new website</a>.</p>
 
+<h2>Quick check: three tests that catch most mistakes</h2>
+<ol>
+  <li>Show your home page to someone for five seconds, then ask what you do and where you work. If they cannot answer, the headline needs work.</li>
+  <li>Open the site on your phone and test the menu, phone link and contact form.</li>
+  <li>Run the page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and read the mobile result.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when several of these mistakes are on your site and small fixes no longer make sense. A <a href="/website-redesign/">website redesign</a> is rebuilt on staging and launched without losing rankings. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What are the most common website design mistakes?</h3>
 <p>An unclear headline, a layout that's hard to use on phones, slow loading, hidden contact details, weak calls to action, long forms and no proof such as reviews or examples of work. They're common because owners stop noticing them on their own site.</p>
@@ -3404,8 +3486,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Fix it if the problems are content, buttons, forms and photos on a site that works well on phones. Redesign if it isn't mobile-friendly, is very slow at its core, runs on an abandoned theme or can't be updated without a developer.</p>
 <h3>Do website design mistakes affect SEO?</h3>
 <p>Some do directly, such as slow pages, poor mobile layouts and having no separate page for each service. Others affect it indirectly: visitors who can't find what they need go back to Google, and a site that doesn't convert wastes the traffic you earn.</p>
-
-<p>Found several of these on your site? See <a href="/website-redesign/">website redesign</a> for how I rebuild sites on staging and launch them without losing rankings.</p>
 `,
   },
   {
@@ -3549,7 +3629,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Hotel and Homestay Websites: How to Get More Direct Bookings and Rely Less on OTAs',
     description: 'How hotels and homestays win direct bookings from OTAs: booking engine choices, rate parity, direct perks, room pages, Google listings, WhatsApp and speed.',
     date: '2026-09-27',
-    updated: '2026-10-21',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['hotel-website-design', 'wordpress-seo-services', 'website-redesign'],
     body: `
@@ -3642,6 +3722,17 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Hotels and homestays in tourist cities such as <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a>, <a href="/wordpress-shopify-developer-kochi/">Kochi</a> and <a href="/wordpress-shopify-developer-agra/">Agra</a> can read local notes on those pages.</p>
 
+<h2>Quick check: book your own room as a guest would</h2>
+<ol>
+  <li>Search Google for your hotel name on your phone and see whether the website link or an OTA appears first, and whether "Official site" appears in the hotel prices panel.</li>
+  <li>From your website, try to book a room for next weekend and count the taps from the home page to payment.</li>
+  <li>Compare the price shown with the same dates on your OTA listing.</li>
+</ol>
+<p>In your Business Profile, check that the website link points to your own site, not an OTA page.</p>
+
+<h2>When to get help</h2>
+<p>Get help when your website keeps sending guests back to the OTA, or when the booking set-up is hard to use on a phone. <a href="/hotel-website-design/">Hotel website design</a> rebuilds the site around the direct booking: room pages, the right booking set-up, WhatsApp and a Google listing that points to it. For a review, <a href="/#contact">send your website address</a> or OTA listing.</p>
+
 <h2>FAQs</h2>
 <h3>How can a hotel get more direct bookings instead of OTA bookings?</h3>
 <p>Make sure your website ranks for your name, matches or beats your OTA listing on photos and room detail, shows availability or replies quickly on WhatsApp, takes payment securely, and offers a direct perk that fits your OTA agreements.</p>
@@ -3653,8 +3744,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>At the time of writing, free booking links depend on your booking engine or channel manager being connected to Google as a partner. Ask your provider whether they connect to Google and what it involves.</p>
 <h3>Should I stop listing on OTAs once my website is live?</h3>
 <p>Usually not. OTAs bring guests who would never have found you otherwise. The website's job is to win the guests who search for you and the ones who return.</p>
-
-<p>If your website sends guests back to the OTA, I can rebuild it around the direct booking: room pages, the right booking set-up, WhatsApp and a Google listing that points to it. See <a href="/hotel-website-design/">hotel website design</a> and share your current site or OTA listing for a free review and a fixed quote.</p>
 `,
   },
   {
@@ -4027,7 +4116,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Real Estate Website Must-Haves: 14 Features Builders, Developers and Brokers Need to Generate Site Visits',
     description: 'The 14 features a real estate website needs: project pages, floor plans, price on request, site visits, brochures, RERA details, CRM and call tracking.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['real-estate-website-design', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -4130,6 +4219,16 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>Developers and brokers in the Mumbai property market can see the notes for a <a href="/wordpress-shopify-developer-mumbai/">WordPress developer in Mumbai</a>, including project pages and enquiry tracking.</p>
 
+<h2>Quick check: test one project page like a buyer</h2>
+<ol>
+  <li>Open a project page on your phone and check that price range, configuration, location and RERA registration number are visible without hunting.</li>
+  <li>Tap the call, WhatsApp and site-visit buttons and confirm each reaches the right person.</li>
+  <li>Search Google for the project name and see whether your page or a property portal appears first.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when enquiries go mostly through portals, when project pages are missing key details, or when the sales team cannot update the site. See <a href="/real-estate-website-design/">real estate website design</a>; share your current site or a project brochure and <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
+
 <h2>FAQs</h2>
 <h3>What is the most important feature on a real estate website?</h3>
 <p>A complete page for each project, with configurations, carpet areas, floor plans, location, RERA details and a site-visit button. Every other feature supports that page.</p>
@@ -4144,8 +4243,6 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>If NRIs are a real share of your buyers, yes: a short page covering video site visits, time-zone-friendly call slots, how documents and payments are usually handled, and a contact who replies on WhatsApp. Keep legal and tax points general.</p>
 <h3>How do I keep floor plans and price lists up to date on the website?</h3>
 <p>Store them as fields on each project page rather than as images inside the text, so your team can replace one file or one starting price in the dashboard. Date every price sheet and remove superseded ones, so old PDFs do not keep circulating.</p>
-
-<p>If you want a site with these features, built around how your sales team actually works, see <a href="/real-estate-website-design/">real estate website design</a>. Share your current site or a project brochure and I will review it free, suggest which features to start with and send a fixed quote.</p>
 `,
   },
   {
@@ -4807,7 +4904,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Domain, Hosting, DNS, SSL and Email Explained Simply: How They Connect and Who Should Own Each Account',
     description: 'Domain, hosting, DNS, SSL and business email explained in plain English: how they connect, what renews when, and who should own each account.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
     body: `
@@ -4921,6 +5018,17 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Record every account, login and renewal date in one secure place.</li>
 </ol>
 
+<h2>Quick check: who controls your domain, DNS and SSL?</h2>
+<ol>
+  <li>Run <code>whois yourdomain.com</code> (or use your registrar's lookup) and note the registrar and expiry date.</li>
+  <li>Run <code>nslookup -type=ns yourdomain.com</code> to see which company runs your DNS, and <code>nslookup -type=mx yourdomain.com</code> to see where your email goes.</li>
+  <li>Click the padlock icon in your browser's address bar and open the certificate details to see who issued it and when it expires.</li>
+</ol>
+<p>Check that you can log in to the registrar, DNS and hosting accounts yourself.</p>
+
+<h2>When to get help</h2>
+<p>Get help when accounts are in a past developer's name, when you need to move host or domain without downtime, or when email records are a mystery. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and launch with every account in your name, and <a href="/wordpress-migration/">website migration and hosting setup</a> handles DNS, SSL and email records when changing host. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a domain and hosting?</h3>
 <p>The domain is the address people type; hosting is the server where the website actually lives. You need both, and DNS connects the two.</p>
@@ -4932,8 +5040,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Your website and email stop working. Most registrars allow a grace period to renew and then a costlier recovery period before the domain is released, but the periods vary, so renew as soon as you notice.</p>
 <h3>How much does a domain cost in India?</h3>
 <p>The cost guide on this site puts a .com or .in at roughly ₹500 to ₹1,200 a year. Renewal prices can differ from first-year offers, so compare those.</p>
-
-<p>Starting a new website and want the domain, hosting, SSL and email set up properly from day one? My <a href="/wordpress-website-development/">WordPress website development</a> service covers the build and the launch, with every account in your name. If you already have a site and need to change host or domain, <a href="/wordpress-migration/">website migration and hosting setup</a> handles the DNS, SSL and email records without downtime.</p>
 `,
   },
   {
@@ -5471,7 +5577,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'Online Ordering on Your Restaurant Website: WhatsApp Orders, WooCommerce Menus, Add-ons, Pickup, Delivery Areas and UPI',
     description: 'Set up online ordering on your restaurant website: WhatsApp orders, a WooCommerce menu with add-ons, table bookings, pickup, delivery areas and UPI.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'Industries',
     related: ['website-for-restaurants', 'woocommerce-developer', 'wordpress-seo-services'],
     body: `
@@ -5572,6 +5678,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Bakeries have extra needs like custom orders; see <a href="/blog/website-for-bakeries-cake-shops/">websites for bakeries and cake shops</a>.</p>
 
+<h2>Quick check: place a test order</h2>
+<p>On your phone, place an order from your own website as a customer would. Time it from opening the menu to confirmation, and check that the order reaches the kitchen or counter: the WhatsApp message arrives, or in WooCommerce the order appears in <strong>WooCommerce, Orders</strong> and the new order email lands in the inbox staff actually watch. Repeat once outside your ordering hours to check that closed hours are respected.</p>
+
+<h2>When to get help</h2>
+<p>Get help when orders are missed, when the menu is hard to keep up to date, or when you want ordering on a site in your own name instead of only on apps. See <a href="/website-for-restaurants/">restaurant website design</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if a full ordering system is the main job. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can customers order food directly from my restaurant website?</h3>
 <p>Yes. A WhatsApp button that opens a chat with a pre-filled message suits small menus, and a WooCommerce ordering system takes complete orders with add-ons, delivery areas, pickup and online payment.</p>
@@ -5581,8 +5693,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Yes. Portion sizes are set up as WooCommerce variations with their own prices, and spice levels, extras and dietary versions as add-ons, some required and some optional.</p>
 <h3>Should I leave Zomato and Swiggy once I have my own ordering?</h3>
 <p>Usually not. The apps bring people who have never heard of you, while your own site and WhatsApp suit regulars, dine-in bookings and larger orders. Most restaurants keep both and give regulars a reason to order direct.</p>
-
-<p>Want ordering, bookings and a menu your staff can update, on a website in your own name? See what's included in <a href="/website-for-restaurants/">restaurant website design</a>, or <a href="/woocommerce-developer/">WooCommerce development</a> if a full ordering system is the main job. Both start with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -6253,7 +6363,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'Schema Markup Explained: What Structured Data Is, Which Types Small Businesses Need and How to Add It in WordPress',
     description: 'Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development', 'website-for-restaurants'],
     body: `
@@ -6411,6 +6521,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Structured data is also part of being understood by AI tools; see <a href="/blog/ai-search-optimization-website/">AI search and your website</a>.</p>
 
+<h2>Quick check: what schema does your page output now?</h2>
+<p>Enter a page URL in <a href="https://search.google.com/test/rich-results" rel="noopener">Google's Rich Results Test</a> to see which rich result types Google can read and any errors, then run the same URL through the <a href="https://validator.schema.org/" rel="noopener">Schema Markup Validator</a> to see every type on the page. Two Organization or LocalBusiness entries usually means your theme and SEO plugin are both outputting schema. In Search Console, the <strong>Enhancements</strong> section lists errors across the whole site.</p>
+
+<h2>When to get help</h2>
+<p>Get help when plugins output conflicting schema, when your markup does not match your Business Profile, or when you need custom JSON-LD the plugins cannot produce. Structured data is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for custom markup. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How to create article schema markup?</h3>
 <p>Let your SEO plugin output Article or BlogPosting for posts, or add a JSON-LD block with headline, image, author, datePublished, dateModified and publisher that matches the visible page. Then test it in Google's Rich Results Test.</p>
@@ -6424,8 +6540,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Not from markup on your own site about your own business. Stars from your Google reviews appear on your Business Profile; product review stars are possible for genuine product reviews in a store.</p>
 <h3>Should I use JSON-LD or microdata?</h3>
 <p>JSON-LD. Google recommends it, it is easier to maintain because it sits apart from the visible HTML, and it is what WordPress SEO plugins output.</p>
-
-<p>Want your structured data set up correctly, matching your Business Profile and free of plugin conflicts? Schema is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for custom JSON-LD the plugins can't produce.</p>
 `,
   },
   {
@@ -6434,7 +6548,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'Multilingual WordPress Websites in Hindi, English and Regional Languages: Plugins, URLs and SEO',
     description: 'How to build a multilingual WordPress website in Hindi and English: WPML vs Polylang vs TranslatePress, Hindi URLs, fonts, hreflang and what to translate.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['website-for-temples-and-ngos', 'website-for-manufacturers', 'wordpress-seo-services'],
     body: `
@@ -6528,6 +6642,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>
 
+<h2>Quick check: does Google see both languages?</h2>
+<p>Run <code>curl -s https://yourdomain.com/ | grep -i hreflang</code> (or view the page source and search for <code>hreflang</code>). You should see one line for each language, for example <code>hreflang="en"</code> and <code>hreflang="hi"</code>, plus <code>x-default</code>, and the Hindi page should list the same set pointing back. Also check that the <code>lang</code> attribute on the <code>&lt;html&gt;</code> tag is <code>hi</code> on Hindi pages, and run URL inspection in Search Console on one Hindi URL to confirm it is indexed.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you are choosing a translation plugin, when Hindi pages are not being indexed, or when forms and emails still appear in only one language. Languages, URLs, switcher, forms and hreflang can be set up as part of <a href="/wordpress-website-development/">WordPress website development</a>. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I make my WordPress website in Hindi and English?</h3>
 <p>Install a multilingual plugin, add Hindi as a language with its own URL folder, create a Hindi version of each page, menu and form, and add a language switcher. Have a fluent speaker write or review the Hindi text.</p>
@@ -6539,8 +6659,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Not for SEO or quality. It creates no Hindi pages for Google to index, and automatic translation often reads awkwardly. Use a translation plugin with properly translated pages.</p>
 <h3>Can I add Hindi to my existing WordPress site?</h3>
 <p>Yes. Install a translation plugin, assign existing content to English and add Hindi versions page by page. Test on staging first, especially if the site uses a page builder or WooCommerce.</p>
-
-<p>Planning a site in Hindi, English or a regional language? I can set up the languages, URLs, switcher, forms and hreflang as part of <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 `,
   },
   {
@@ -6697,7 +6815,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
     title: 'Image Optimization for WordPress: Sizes, Formats, Compression and Lazy Loading, Step by Step',
     description: 'WordPress image optimization step by step: resize, choose WebP or AVIF, compress, serve srcset sizes, prioritise the LCP image and lazy-load the rest.',
     date: '2026-09-27',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'woocommerce-developer', 'website-redesign'],
     body: `
@@ -6825,6 +6943,12 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 
 <p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>
 
+<h2>Quick check: find your heaviest images</h2>
+<p>Open the page in Chrome, press F12, go to the <strong>Network</strong> tab, click the <strong>Img</strong> filter and reload. Click the <strong>Size</strong> column to sort largest first. Any image over about 200 KB, or one whose natural size (hover over it in the Elements tab) is far bigger than its displayed size, is the first to fix. In PageSpeed Insights, "Improve image delivery" and the LCP element in Diagnostics name the same files.</p>
+
+<h2>When to get help</h2>
+<p>Get help when pages are still heavy after these steps, because the cause may be the theme, plugins, scripts or hosting rather than images alone. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds the real bottleneck, fixes it safely and ends with a before-and-after PageSpeed Insights report. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the best image size for WordPress?</h3>
 <p>Upload images at roughly the largest width they are displayed at: about 1600 to 2000 pixels for full-width banners, about 1200 pixels for images in the content, and smaller for cards and thumbnails. WordPress creates the smaller sizes for phones automatically.</p>
@@ -6838,8 +6962,6 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 <p>Lossy compression discards some detail, but at sensible settings most visitors can't see the difference. Check a few product photos, faces and images with text at full size before bulk-processing, and keep backups of the originals.</p>
 <h3>Does image optimisation help SEO?</h3>
 <p>Indirectly. Lighter images improve loading speed and Core Web Vitals, which are part of Google's page experience signals, and descriptive file names and alt text help images appear in image search.</p>
-
-<p>If your pages are still heavy after these steps, the cause may be the theme, plugins, scripts or hosting rather than images alone. I find the real bottleneck, fix it safely and share a before-and-after PageSpeed Insights report; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 `,
   },
   {
@@ -6848,7 +6970,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
     title: 'Website Accessibility Basics for Small Businesses: WCAG in Plain English, a 15-Minute Check and WordPress Fixes',
     description: 'Website accessibility basics in plain English: what WCAG asks for, contrast, alt text, keyboard use, headings, forms and captions, plus WordPress fixes.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -6954,6 +7076,16 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 </ol>
 <h3>Store and checkout checks for WooCommerce and Shopify</h3>
 <p>Make sure product options, quantity buttons, coupon fields, address fields and payment choices can all be used by keyboard and are labelled, and that checkout error messages are announced, not just shown in red. Record each problem with the page, the issue and a priority, then fix the ones that block enquiries or orders first.</p>
+<h2>Quick check: two free tests</h2>
+<ol>
+  <li>In Chrome, press F12, open the <strong>Lighthouse</strong> tab, tick only Accessibility and run it on your home page and contact page. Fix every item listed under failed audits first.</li>
+  <li>Put the mouse away and press Tab repeatedly from the top of the page. You should always see where the focus is, reach every menu item and button, and be able to submit the contact form with the keyboard alone.</li>
+</ol>
+<p>Automated tools catch only part of the problems, so also run the 15-minute check above.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the site fails the checks in many places, because templates built without accessibility are easier to fix at the root than page by page. A <a href="/website-redesign/">website redesign</a> is the moment to fix contrast, headings, menus and forms properly. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What WCAG level should a small business website aim for?</h3>
 <p>Level AA. It is the level most guidance and laws refer to, and it covers contrast, keyboard access, labels, captions and the other basics in this guide. Level AAA is not expected across a whole site.</p>
@@ -6965,8 +7097,6 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 <p>Describe what the image shows and why it's there, in one short sentence, without starting with "image of". Leave alt text empty for purely decorative images, and describe the destination for images that are links.</p>
 <h3>Does website accessibility help SEO?</h3>
 <p>Indirectly, yes. Headings, alt text, descriptive links and readable pages help search engines understand your content, and a site that's easier to use tends to keep visitors longer and convert better.</p>
-
-<p>Accessibility is easiest to get right when templates are built with it from the start. If your current site fails the 15-minute check in several places, a <a href="/website-redesign/">website redesign</a> is the moment to fix contrast, headings, menus and forms at the root rather than page by page.</p>
 `,
   },
   {
@@ -7162,7 +7292,7 @@ Main contact person and best time to reach:</code></pre>
     title: 'On-Page SEO Checklist: 15 Things to Check on Every Page You Publish, From Search Intent and Titles to Schema and Speed',
     description: 'An on-page SEO checklist for every page you publish: intent, title, meta description, headings, URL, links, images, schema, canonical, speed and freshness.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'landing-page-design'],
     body: `
@@ -7258,6 +7388,16 @@ Main contact person and best time to reach:</code></pre>
 
 <p>Before you optimise, choose the right target: see <a href="/blog/keyword-research-small-business/">keyword research</a> and <a href="/blog/search-intent-explained/">search intent</a>.</p>
 
+<h2>Quick check: see a page the way Google does</h2>
+<ol>
+  <li>Search Google for <code>site:yourdomain.com/your-page/</code> and read the title and description shown.</li>
+  <li>Run <code>curl -s https://yourdomain.com/your-page/ | grep -iE "&lt;title|name=\"description|rel=\"canonical|name=\"robots"</code> to see the title, meta description, canonical and robots tags in the raw HTML.</li>
+  <li>In Search Console, run <strong>URL inspection</strong> on the page and check "Page indexing" and the "User-declared" and "Google-selected" canonical match.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have many pages to check, or want the fixes made rather than just reported. On-page work is the core of <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is on-page SEO?</h3>
 <p>It is optimising the parts of a page you control, including content, title, description, headings, links, images, structured data and technical tags, so search engines understand it and searchers find it useful.</p>
@@ -7269,8 +7409,6 @@ Main contact person and best time to reach:</code></pre>
 <p>Not directly. It affects whether people click your result, and Google may rewrite it if it doesn't match the search. A clear, accurate description still earns more clicks.</p>
 <h3>How many internal links should a page have?</h3>
 <p>There's no fixed number. Link wherever it genuinely helps the reader, usually a few related pages in the body plus your navigation, and make sure every important page has links pointing to it.</p>
-
-<p>Want every key page on your site checked against this list and fixed, not just reported? On-page work is the core of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -7396,7 +7534,7 @@ Additional headers: Reply-To: [your-email]</code></pre>
     title: 'Essential WordPress Plugins for a Business Website: What Each Category Does, How to Choose, and Which to Avoid',
     description: 'Essential WordPress plugins for a business website: SEO, security, backups, caching, forms, spam, email and analytics, how to choose, and what to avoid.',
     date: '2026-09-27',
-    updated: '2026-10-17',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-maintenance'],
     body: `
@@ -7491,6 +7629,12 @@ Additional headers: Reply-To: [your-email]</code></pre>
 <h2>Keeping plugins healthy after launch</h2>
 <p>Plugins need updates for security fixes and compatibility, and an update occasionally breaks something. Take a backup before updating, update on a staging copy first for important sites, and check forms, key pages and checkout afterwards. If a page or the admin area breaks after a change, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">WordPress plugin conflicts</a> shows how to find the culprit safely. If you'd rather not do this yourself, my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans cover tested updates, off-site backups and security monitoring each month.</p>
 
+<h2>Quick check: audit the plugins you have now</h2>
+<p>Open <strong>Plugins, Installed Plugins</strong> and click the <strong>Inactive</strong> filter: delete anything you will not use again. Then open <strong>Tools, Site Health</strong> and read any warnings about plugins. With WP-CLI, <code>wp plugin list --fields=name,status,update,version</code> gives the whole list in one table. For each remaining plugin, check its WordPress.org page for "Last updated" and "Tested up to"; one not updated in over a year is a candidate for replacement.</p>
+
+<h2>When to get help</h2>
+<p>Get help when the plugin list has grown out of control, when two plugins do the same job, or when you are starting a new site. <a href="/wordpress-website-development/">WordPress website development</a> sets up forms, SEO, speed, security and backups as part of the build and shows you how to manage the site after launch. For a fixed quote, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What plugins does every WordPress business site need?</h3>
 <p>One each for SEO, security, backups (unless your host handles them properly), caching and image optimisation, plus a form plugin with spam protection, an SMTP plugin and a way to add analytics. Everything else depends on what the site does.</p>
@@ -7502,8 +7646,6 @@ Additional headers: Reply-To: [your-email]</code></pre>
 <p>Possibly not a full one, but you still want login protection and two-factor login for administrators. Check what your host and any cloud firewall already cover before adding a plugin that duplicates it.</p>
 <h3>Should I delete deactivated plugins?</h3>
 <p>Yes. A deactivated plugin's files stay on the server and can still contain vulnerabilities. If you might need it later, you can reinstall it.</p>
-
-<p>Want a site built on a lean, well-chosen set of plugins from the start? My <a href="/wordpress-website-development/">WordPress website development</a> service sets up forms, SEO, speed, security and backups as part of the build, and shows you how to manage the site after launch. Send me your requirements for a fixed quote.</p>
 `,
   },
   {
@@ -7512,7 +7654,7 @@ Additional headers: Reply-To: [your-email]</code></pre>
     title: 'Website Traffic Suddenly Dropped? A Step-by-Step Diagnosis: Tracking, Search Console, Google Updates, Redesigns, Hacks and Competitors',
     description: 'Website traffic suddenly dropped? Diagnose it step by step: tracking errors, Search Console, Google updates, redesigns, redirects, hacks and competitors.',
     date: '2026-09-27',
-    updated: '2026-10-15',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-malware-removal', 'website-redesign'],
     body: `
@@ -7611,6 +7753,16 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
   <li>Don't judge a fix after a few days. Google needs time to recrawl, so give changes weeks.</li>
 </ul>
 
+<h2>Quick check: rule out the three fastest causes</h2>
+<ol>
+  <li>Open <code>yourdomain.com/robots.txt</code> and make sure it does not contain <code>Disallow: /</code>. Then in WordPress check <strong>Settings, Reading</strong> that "Discourage search engines from indexing this site" is unticked.</li>
+  <li>In Search Console, open <strong>Security &amp; Manual Actions</strong> and check both reports say no issues detected.</li>
+  <li>Search Google for <code>site:yourdomain.com</code> and scan the results for pages you did not create, such as casino or pharmacy titles, a common sign of a hack.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you cannot find the cause, or have found it and want it fixed properly. An audit with fixes made on your site is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>; if the drop came with spam pages or redirects, start with <a href="/wordpress-malware-removal/">WordPress malware removal</a>. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why did my website traffic suddenly drop?</h3>
 <p>The most common causes are broken tracking, seasonality, a site change such as a redesign without redirects, an accidental noindex or robots.txt block, a Google update, a hack, or a competitor overtaking you. Comparing GA4 with Search Console and checking the exact date of the drop narrows it down quickly.</p>
@@ -7622,8 +7774,6 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
 <p>It depends on the cause. A fixed tracking tag or a removed noindex can show results as soon as Google recrawls, often within weeks. Recovery from a core update or a hack usually takes longer, and nobody can honestly promise a date.</p>
 <h3>Is a traffic drop always an SEO problem?</h3>
 <p>No. Paid campaigns ending, social posts that spiked an earlier period, seasonal demand and broken analytics all look like drops. Check the channel and the tracking before assuming search is the cause.</p>
-
-<p>Can't find the cause, or found it and want it fixed properly? An audit with fixes made on your site is part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>, and if the drop came with spam pages or redirects, start with <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -8770,7 +8920,7 @@ ls -lh backup-test.sql</code></pre>
     title: 'WooCommerce Product Page Optimization: Photos, Pricing, Delivery Details and Layouts That Help Shoppers Buy',
     description: 'Optimize WooCommerce product pages: mobile layout, photos, GST-inclusive pricing, delivery and COD details, variations, reviews, speed and product schema.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
@@ -8887,6 +9037,17 @@ ls -lh backup-test.sql</code></pre>
 
 <p>Accurate stock status matters too; see <a href="/blog/woocommerce-inventory-management/">inventory management</a>.</p>
 
+<h2>Quick check: test one product page on a phone</h2>
+<ol>
+  <li>Open your best-selling product on your phone and check that the price, main photo and Add to cart button are visible without scrolling.</li>
+  <li>Check that delivery time, COD and returns are stated near the button, not only in a separate policy page.</li>
+  <li>Test the product URL in <a href="https://search.google.com/test/rich-results" rel="noopener">Google's Rich Results Test</a> and confirm a valid Product (merchant listing) item with price and availability.</li>
+  <li>In GA4, open <strong>Reports, Monetization, E-commerce purchases</strong> (if e-commerce tracking is set up) and compare views with add-to-carts for that product.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when product pages load slowly, when variations confuse shoppers, or when views rarely turn into add-to-carts. In <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a>, or <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What should a WooCommerce product page include?</h3>
 <p>Clear photos, a descriptive title, the GST-inclusive price, variation options, delivery and COD details, an Add to cart button, a short summary, a full description with specifications, genuine reviews and a link to your returns policy.</p>
@@ -8900,8 +9061,6 @@ ls -lh backup-test.sql</code></pre>
 <p>Usually because a question is left unanswered: the total price, delivery time, COD, sizing or trust. Check the first phone screen, add delivery and returns details beside the button, and improve photos and reviews.</p>
 <h3>Is WooCommerce product page optimization worth doing on a small store?</h3>
 <p>Yes, because every visitor from Google, ads or Instagram lands on a product page before the cart. Start with the first screen on a phone, total price and delivery details, then test one change at a time so you can see what actually helped.</p>
-
-<p>Want product pages that answer shoppers' questions and load quickly on a phone? In my <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light and simple for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a> next.</p>
 `,
   },
   {
@@ -9172,7 +9331,7 @@ ls -lh backup-test.sql</code></pre>
     title: 'Internal Linking Explained: Anchor Text, Hub-and-Spoke Structure, How Many Links and a WordPress Workflow',
     description: 'Internal linking explained for small business sites: anchor text, hub-and-spoke structure, how many links per page and a simple WordPress linking workflow.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-website-development'],
     body: `
@@ -9280,6 +9439,12 @@ site:example.com/blog/ "net metering"</code></pre>
 
 <p>Links from other websites matter too; see <a href="/blog/ethical-link-building-small-business/">ethical link building for small businesses</a>.</p>
 
+<h2>Quick check: find your weakly linked pages</h2>
+<p>In Search Console, open <strong>Links</strong> and click <strong>More</strong> under "Top linked pages" in the Internal links column. Export it and compare it with your sitemap: important service pages near the bottom, or missing entirely, need more contextual links. To find linking opportunities for a page, search Google for <code>site:yourdomain.com "your topic"</code> and add a link from each relevant result.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you have dozens of posts not linked to the services they support, or orphan pages Google rarely visits. Internal linking audits and fixes are part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between internal and external links?</h3>
 <p>Internal links point to other pages on your own website. External links point to a different website. Both help readers, but internal links are the ones you fully control and can use to show which of your pages matter most.</p>
@@ -9293,8 +9458,6 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>They count and help discovery, but because they appear on every page they say little about how two pages relate. Contextual links in the body carry more meaning.</p>
 <h3>Is a related posts plugin enough?</h3>
 <p>It is a useful extra, but it chooses links automatically and often misses the service page an article should point to. Add deliberate links in the text as well.</p>
-
-<p>Want your site's internal links audited, orphan pages connected and every article linked to the service it supports? Internal linking is part of my WordPress SEO services, starting with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -10679,7 +10842,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site',
     description: 'How to update WordPress safely: backups, staging, the right update order, testing, rolling back a bad update, and best practices for plugins and themes.',
     date: '2026-09-27',
-    updated: '2026-10-11',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -10794,6 +10957,17 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Never edit plugin or theme files directly, because updates overwrite them</li>
 </ul>
 
+<h2>Quick check: can you roll back if an update fails?</h2>
+<ol>
+  <li>Open your backup plugin or hosting panel and confirm the date of the latest backup, and that it includes both files and the database.</li>
+  <li>Check that a copy is stored off the server, for example in Google Drive or your host's separate backup storage.</li>
+  <li>If you have WP-CLI access, <code>wp plugin list --update=available</code> shows exactly what is waiting, and <code>wp core version</code> shows your current WordPress version.</li>
+</ol>
+<p>If any of these answers is "not sure", fix that before updating anything.</p>
+
+<h2>When to get help</h2>
+<p>Get help when updates have been put off for months, when the site runs WooCommerce or a page builder, or when an update has already broken something. With <a href="/wordpress-maintenance/">WordPress maintenance</a>, core, theme and plugins are updated after a backup, key pages, forms and checkout are checked afterwards, and anything that breaks is fixed or rolled back. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How often should I update WordPress?</h3>
 <p>Check weekly or fortnightly and install security releases as soon as practical. Minor core releases usually install automatically. Larger updates can wait a few days for early bugs to surface, but not months.</p>
@@ -10807,8 +10981,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Use the free WP Rollback plugin to reinstall a previous version of a WordPress.org plugin, or download the older version from the vendor for premium plugins. If you can't get into the dashboard, rename the plugin's folder over File Manager first. Restoring a backup works when several things changed.</p>
 <h3>Can I pay someone to handle WordPress updates?</h3>
 <p>Yes. A WordPress maintenance plan covers updates with a backup first, testing afterwards and rollback if something breaks, along with security scans, uptime monitoring and small content changes.</p>
-
-<p>Rather not hold your breath every time you click update? I'll keep your WordPress core, theme and plugins updated, take a backup first, check key pages, forms and checkout afterwards, and fix or roll back anything that breaks. See <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -10817,7 +10989,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely',
     description: 'Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.',
     date: '2026-09-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'website-redesign', 'wordpress-migration'],
     body: `
@@ -10936,6 +11108,12 @@ wp option update blog_public 0</code></pre>
 </ol>
 <p>For updates specifically, <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> covers the order to update things in and what to check.</p>
 
+<h2>Quick check: is your staging site hidden from Google?</h2>
+<p>Open your staging address in a private browser window. It should ask for a password or show a login screen. If it opens freely, run <code>curl -I https://staging.yourdomain.com/</code> and look for an <code>x-robots-tag: noindex</code> header, and in the staging WordPress admin check that <strong>Settings, Reading, Discourage search engines</strong> is ticked. Finally, search Google for <code>site:staging.yourdomain.com</code>; any results mean it has already been indexed.</p>
+
+<h2>When to get help</h2>
+<p>Get help when you have no staging site, when pushing changes to live has gone wrong before, or when the site takes orders and cannot afford mistakes. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> handles updates and changes with a backup first and testing afterwards. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a staging site in WordPress?</h3>
 <p>A private copy of your WordPress site, usually on your own hosting, where you test updates, design changes and new plugins before applying them to the live site. Visitors keep using the live site while you work.</p>
@@ -10949,8 +11127,6 @@ wp option update blog_public 0</code></pre>
 <p>Yes, if you don't push the staging database over the live one. Push files only, or only tables you know are safe, and repeat settings changes by hand. For big changes, switch over during a quiet period and test an order straight away.</p>
 <h3>Is WP Staging free?</h3>
 <p>The free version creates and tests staging copies. Pushing changes from staging back to the live site needs the paid Pro version at the time of writing.</p>
-
-<p>Want updates and changes handled carefully, with a backup first and testing afterwards? See <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {

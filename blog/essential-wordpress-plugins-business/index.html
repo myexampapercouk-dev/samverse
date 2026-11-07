@@ -43,7 +43,7 @@
       "headline": "Essential WordPress Plugins for a Business Website: What Each Category Does, How to Choose, and Which to Avoid",
       "description": "Essential WordPress plugins for a business website: SEO, security, backups, caching, forms, spam, email and analytics, how to choose, and what to avoid.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-17",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/essential-wordpress-plugins-business/",
       "image": "https://samverse.space/assets/og/blog-essential-wordpress-plugins-business.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-17">17 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Essential%20WordPress%20Plugins%20for%20a%20Business%20Website%3A%20What%20Each%20Category%20Does%2C%20How%20to%20Choose%2C%20and%20Which%20to%20Avoid%20https%3A%2F%2Fsamverse.space%2Fblog%2Fessential-wordpress-plugins-business%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,6 +160,8 @@
               <li><a href="#how-many-plugins-is-too-many">How many plugins is too many?</a></li>
               <li><a href="#plugins-and-habits-to-avoid">Plugins and habits to avoid</a></li>
               <li><a href="#keeping-plugins-healthy-after-launch">Keeping plugins healthy after launch</a></li>
+              <li><a href="#quick-check-audit-the-plugins-you-have-now">Quick check: audit the plugins you have now</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -268,6 +270,12 @@
 <h2 id="keeping-plugins-healthy-after-launch">Keeping plugins healthy after launch</h2>
 <p>Plugins need updates for security fixes and compatibility, and an update occasionally breaks something. Take a backup before updating, update on a staging copy first for important sites, and check forms, key pages and checkout afterwards. If a page or the admin area breaks after a change, <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">WordPress plugin conflicts</a> shows how to find the culprit safely. If you'd rather not do this yourself, my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans cover tested updates, off-site backups and security monitoring each month.</p>
 
+<h2 id="quick-check-audit-the-plugins-you-have-now">Quick check: audit the plugins you have now</h2>
+<p>Open <strong>Plugins, Installed Plugins</strong> and click the <strong>Inactive</strong> filter: delete anything you will not use again. Then open <strong>Tools, Site Health</strong> and read any warnings about plugins. With WP-CLI, <code>wp plugin list --fields=name,status,update,version</code> gives the whole list in one table. For each remaining plugin, check its WordPress.org page for "Last updated" and "Tested up to"; one not updated in over a year is a candidate for replacement.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the plugin list has grown out of control, when two plugins do the same job, or when you are starting a new site. <a href="/wordpress-website-development/">WordPress website development</a> sets up forms, SEO, speed, security and backups as part of the build and shows you how to manage the site after launch. For a fixed quote, <a href="/#contact">send your website address</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What plugins does every WordPress business site need?</h3>
 <p>One each for SEO, security, backups (unless your host handles them properly), caching and image optimisation, plus a form plugin with spam protection, an SMTP plugin and a way to add analytics. Everything else depends on what the site does.</p>
@@ -279,8 +287,6 @@
 <p>Possibly not a full one, but you still want login protection and two-factor login for administrators. Check what your host and any cloud firewall already cover before adding a plugin that duplicates it.</p>
 <h3>Should I delete deactivated plugins?</h3>
 <p>Yes. A deactivated plugin's files stay on the server and can still contain vulnerabilities. If you might need it later, you can reinstall it.</p>
-
-<p>Want a site built on a lean, well-chosen set of plugins from the start? My <a href="/wordpress-website-development/">WordPress website development</a> service sets up forms, SEO, speed, security and backups as part of the build, and shows you how to manage the site after launch. Send me your requirements for a fixed quote.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -323,6 +329,8 @@
               <li><a href="#how-many-plugins-is-too-many">How many plugins is too many?</a></li>
               <li><a href="#plugins-and-habits-to-avoid">Plugins and habits to avoid</a></li>
               <li><a href="#keeping-plugins-healthy-after-launch">Keeping plugins healthy after launch</a></li>
+              <li><a href="#quick-check-audit-the-plugins-you-have-now">Quick check: audit the plugins you have now</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -43,7 +43,7 @@
       "headline": "Domain, Hosting, DNS, SSL and Email Explained Simply: How They Connect and Who Should Own Each Account",
       "description": "Domain, hosting, DNS, SSL and business email explained in plain English: how they connect, what renews when, and who should own each account.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-17",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/domain-hosting-ssl-explained/",
       "image": "https://samverse.space/assets/og/blog-domain-hosting-ssl-explained.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-17">17 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Domain%2C%20Hosting%2C%20DNS%2C%20SSL%20and%20Email%20Explained%20Simply%3A%20How%20They%20Connect%20and%20Who%20Should%20Own%20Each%20Account%20https%3A%2F%2Fsamverse.space%2Fblog%2Fdomain-hosting-ssl-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#who-should-own-each-account">Who should own each account</a></li>
               <li><a href="#mistakes-that-take-websites-offline">Mistakes that take websites offline</a></li>
               <li><a href="#a-setup-checklist-for-a-new-website">A setup checklist for a new website</a></li>
+              <li><a href="#quick-check-who-controls-your-domain-dns-and-ssl">Quick check: who controls your domain, DNS and SSL?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -290,6 +292,17 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Record every account, login and renewal date in one secure place.</li>
 </ol>
 
+<h2 id="quick-check-who-controls-your-domain-dns-and-ssl">Quick check: who controls your domain, DNS and SSL?</h2>
+<ol>
+  <li>Run <code>whois yourdomain.com</code> (or use your registrar's lookup) and note the registrar and expiry date.</li>
+  <li>Run <code>nslookup -type=ns yourdomain.com</code> to see which company runs your DNS, and <code>nslookup -type=mx yourdomain.com</code> to see where your email goes.</li>
+  <li>Click the padlock icon in your browser's address bar and open the certificate details to see who issued it and when it expires.</li>
+</ol>
+<p>Check that you can log in to the registrar, DNS and hosting accounts yourself.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when accounts are in a past developer's name, when you need to move host or domain without downtime, or when email records are a mystery. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and launch with every account in your name, and <a href="/wordpress-migration/">website migration and hosting setup</a> handles DNS, SSL and email records when changing host. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is the difference between a domain and hosting?</h3>
 <p>The domain is the address people type; hosting is the server where the website actually lives. You need both, and DNS connects the two.</p>
@@ -301,8 +314,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>Your website and email stop working. Most registrars allow a grace period to renew and then a costlier recovery period before the domain is released, but the periods vary, so renew as soon as you notice.</p>
 <h3>How much does a domain cost in India?</h3>
 <p>The cost guide on this site puts a .com or .in at roughly ₹500 to ₹1,200 a year. Renewal prices can differ from first-year offers, so compare those.</p>
-
-<p>Starting a new website and want the domain, hosting, SSL and email set up properly from day one? My <a href="/wordpress-website-development/">WordPress website development</a> service covers the build and the launch, with every account in your name. If you already have a site and need to change host or domain, <a href="/wordpress-migration/">website migration and hosting setup</a> handles the DNS, SSL and email records without downtime.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -348,6 +359,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
               <li><a href="#who-should-own-each-account">Who should own each account</a></li>
               <li><a href="#mistakes-that-take-websites-offline">Mistakes that take websites offline</a></li>
               <li><a href="#a-setup-checklist-for-a-new-website">A setup checklist for a new website</a></li>
+              <li><a href="#quick-check-who-controls-your-domain-dns-and-ssl">Quick check: who controls your domain, DNS and SSL?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

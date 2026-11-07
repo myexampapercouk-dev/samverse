@@ -43,7 +43,7 @@
       "headline": "Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them",
       "description": "Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, Search Console reports and what to fix first on WordPress.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/core-web-vitals-explained/",
       "image": "https://samverse.space/assets/og/blog-core-web-vitals-explained.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Core%20Web%20Vitals%20Explained%20for%20Business%20Owners%3A%20LCP%2C%20INP%20and%20CLS%2C%20What%20Counts%20as%20Good%20and%20How%20to%20Improve%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcore-web-vitals-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#common-wordpress-causes-and-where-to-fix-them">Common WordPress causes, and where to fix them</a></li>
               <li><a href="#a-sensible-order-of-work">A sensible order of work</a></li>
               <li><a href="#core-web-vitals-on-indian-mobile-traffic">Core Web Vitals on Indian mobile traffic</a></li>
+              <li><a href="#quick-check-which-metric-is-failing-and-where">Quick check: which metric is failing, and where?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -272,6 +274,12 @@
 <p>Test the way your visitors browse. In PageSpeed Insights, read the mobile tab first. In Chrome DevTools, use network and CPU throttling to approximate a slower phone. Then compare against the field data in Search Console, which reflects your real audience.</p>
 <p>If your Shopify store fails Core Web Vitals, the same principles apply: too many apps adding scripts, oversized images and heavy theme sections. The difference is that on Shopify you mostly fix it by removing apps and simplifying the theme rather than changing hosting.</p>
 
+<h2 id="quick-check-which-metric-is-failing-and-where">Quick check: which metric is failing, and where?</h2>
+<p>In Search Console, open <strong>Experience, Core Web Vitals</strong>, click <strong>Open report</strong> for Mobile and click each issue (for example "LCP issue: longer than 2.5s") to see the example URL groups. Test one example URL in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a>: the field data at the top confirms the problem, and the Diagnostics section below points to the element causing it.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when pages stay Poor or Needs improvement after the basics, or when fixes risk breaking the layout, forms or checkout. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> includes a full audit, fixes for LCP, INP and CLS, testing after every change and a before-and-after report. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What are good Core Web Vitals scores?</h3>
 <p>LCP of 2.5 seconds or less, INP of 200 milliseconds or less, and CLS of 0.1 or less, each met by at least 75% of page visits. A page passes the assessment when all three are good.</p>
@@ -285,9 +293,6 @@
 <p>Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024. INP measures responsiveness across the whole visit, not just the first tap, so it's harder to pass.</p>
 <h3>Why do my Core Web Vitals pass on desktop but fail on mobile?</h3>
 <p>Phones have slower processors and often slower connections, so heavy images and JavaScript hurt them far more. Google reports mobile and desktop separately, so fix the mobile issues first.</p>
-
-
-<p>If your Search Console report shows pages as Poor or Needs improvement and you'd rather have the causes found and fixed safely, my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service includes a full audit, Core Web Vitals fixes for LCP, INP and CLS, testing after every change, and a before-and-after report.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -332,6 +337,8 @@
               <li><a href="#common-wordpress-causes-and-where-to-fix-them">Common WordPress causes, and where to fix them</a></li>
               <li><a href="#a-sensible-order-of-work">A sensible order of work</a></li>
               <li><a href="#core-web-vitals-on-indian-mobile-traffic">Core Web Vitals on Indian mobile traffic</a></li>
+              <li><a href="#quick-check-which-metric-is-failing-and-where">Quick check: which metric is failing, and where?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

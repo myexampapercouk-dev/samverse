@@ -43,7 +43,7 @@
       "headline": "Multilingual WordPress Websites in Hindi, English and Regional Languages: Plugins, URLs and SEO",
       "description": "How to build a multilingual WordPress website in Hindi and English: WPML vs Polylang vs TranslatePress, Hindi URLs, fonts, hreflang and what to translate.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/multilingual-wordpress-website-hindi-english/",
       "image": "https://samverse.space/assets/og/blog-multilingual-wordpress-website-hindi-english.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Multilingual%20WordPress%20Websites%20in%20Hindi%2C%20English%20and%20Regional%20Languages%3A%20Plugins%2C%20URLs%20and%20SEO%20https%3A%2F%2Fsamverse.space%2Fblog%2Fmultilingual-wordpress-website-hindi-english%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#seo-for-a-multilingual-wordpress-site">SEO for a multilingual WordPress site</a></li>
               <li><a href="#a-real-example">A real example</a></li>
               <li><a href="#start-small">Start small</a></li>
+              <li><a href="#quick-check-does-google-see-both-languages">Quick check: does Google see both languages?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -270,6 +272,12 @@
 
 <p>If you run a translation or interpretation agency yourself, see <a href="/blog/website-for-translation-services/">websites for translation and interpretation agencies</a>.</p>
 
+<h2 id="quick-check-does-google-see-both-languages">Quick check: does Google see both languages?</h2>
+<p>Run <code>curl -s https://yourdomain.com/ | grep -i hreflang</code> (or view the page source and search for <code>hreflang</code>). You should see one line for each language, for example <code>hreflang="en"</code> and <code>hreflang="hi"</code>, plus <code>x-default</code>, and the Hindi page should list the same set pointing back. Also check that the <code>lang</code> attribute on the <code>&lt;html&gt;</code> tag is <code>hi</code> on Hindi pages, and run URL inspection in Search Console on one Hindi URL to confirm it is indexed.</p>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you are choosing a translation plugin, when Hindi pages are not being indexed, or when forms and emails still appear in only one language. Languages, URLs, switcher, forms and hreflang can be set up as part of <a href="/wordpress-website-development/">WordPress website development</a>. To start, <a href="/#contact">send your website address</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I make my WordPress website in Hindi and English?</h3>
 <p>Install a multilingual plugin, add Hindi as a language with its own URL folder, create a Hindi version of each page, menu and form, and add a language switcher. Have a fluent speaker write or review the Hindi text.</p>
@@ -281,8 +289,6 @@
 <p>Not for SEO or quality. It creates no Hindi pages for Google to index, and automatic translation often reads awkwardly. Use a translation plugin with properly translated pages.</p>
 <h3>Can I add Hindi to my existing WordPress site?</h3>
 <p>Yes. Install a translation plugin, assign existing content to English and add Hindi versions page by page. Test on staging first, especially if the site uses a page builder or WooCommerce.</p>
-
-<p>Planning a site in Hindi, English or a regional language? I can set up the languages, URLs, switcher, forms and hreflang as part of <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -328,6 +334,8 @@
               <li><a href="#seo-for-a-multilingual-wordpress-site">SEO for a multilingual WordPress site</a></li>
               <li><a href="#a-real-example">A real example</a></li>
               <li><a href="#start-small">Start small</a></li>
+              <li><a href="#quick-check-does-google-see-both-languages">Quick check: does Google see both languages?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
