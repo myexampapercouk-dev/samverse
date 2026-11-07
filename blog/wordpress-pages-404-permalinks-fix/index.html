@@ -43,7 +43,7 @@
       "headline": "WordPress Pages Showing 404 but the Homepage Works? How to Fix It",
       "description": "WordPress pages showing 404 but the homepage works? Reset permalinks, repair .htaccess or Nginx rules and fix migration and plugin causes, step by step.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-pages-404-permalinks-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-pages-404-permalinks-fix.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Pages%20Showing%20404%20but%20the%20Homepage%20Works%3F%20How%20to%20Fix%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-pages-404-permalinks-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#other-404-patterns-and-what-they-point-to">Other 404 patterns and what they point to</a></li>
               <li><a href="#check-search-console-afterwards">Check Search Console afterwards</a></li>
               <li><a href="#prevent-it-happening-again">Prevent it happening again</a></li>
+              <li><a href="#quick-check-is-it-the-rewrite-rules">Quick check: is it the rewrite rules?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -267,6 +269,16 @@ RewriteRule . /index.php [L]
 </ul>
 <p>Regular checks like these are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>. If the site is down right now and the steps above haven't worked, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to look at the server configuration directly.</p>
 
+<h2 id="quick-check-is-it-the-rewrite-rules">Quick check: is it the rewrite rules?</h2>
+<ol>
+  <li>Open <strong>Settings &gt; Permalinks</strong> and click <strong>Save Changes</strong> without changing anything. This rebuilds the rewrite rules.</li>
+  <li>Reload a page that showed 404. If it works now, the rules were the problem.</li>
+  <li>If it still fails on Apache hosting, open the file manager and check that .htaccess exists in the site root and contains the WordPress rewrite block.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when 404s follow a migration or domain change, when Search Console shows many "Not found" URLs, or when old URLs need redirects. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers permalink, server and redirect fixes, and <a href="/wordpress-migration/">WordPress migration</a> covers moves done without broken links. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why are my WordPress pages showing 404 but the homepage works?</h3>
 <p>The rewrite rules that handle pretty permalinks are broken or missing. Resave permalinks in Settings, then check the .htaccess file on Apache or LiteSpeed, or the try_files rule on Nginx.</p>
@@ -278,8 +290,6 @@ RewriteRule . /index.php [L]
 <p>Usually because .htaccess wasn't copied, the new server uses Nginx, or the site URL settings still point to the old address. Fix those and resave permalinks.</p>
 <h3>Will 404 errors hurt my Google rankings?</h3>
 <p>A short outage rarely does lasting harm. If pages stay unavailable for days, Google may drop them from the index, so fix the rules quickly and request indexing for important pages.</p>
-
-<p>Pages vanishing after a move or update? Fixes like this, and the checks that stop them recurring, are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -325,6 +335,8 @@ RewriteRule . /index.php [L]
               <li><a href="#other-404-patterns-and-what-they-point-to">Other 404 patterns and what they point to</a></li>
               <li><a href="#check-search-console-afterwards">Check Search Console afterwards</a></li>
               <li><a href="#prevent-it-happening-again">Prevent it happening again</a></li>
+              <li><a href="#quick-check-is-it-the-rewrite-rules">Quick check: is it the rewrite rules?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -354,7 +366,7 @@ RewriteRule . /index.php [L]
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/common-wordpress-errors-fixes/"><img class="post-card-img" src="/assets/og/blog-common-wordpress-errors-fixes.webp" alt="Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start</h3><p>Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-plugin-conflicts-troubleshooting/"><img class="post-card-img" src="/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.webp" alt="How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention</h3><p>Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.</p><span class="post-card-meta">1 October 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-updating-failed-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h3><p>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p><span class="post-card-meta">6 November 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-updating-failed-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h3><p>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p><span class="post-card-meta">6 November 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

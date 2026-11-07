@@ -43,7 +43,7 @@
       "headline": "reCAPTCHA Not Working on WordPress? Fixing \"Invalid Domain\", Key Type Errors and Forms That Won't Send",
       "description": "reCAPTCHA not working on WordPress? Fix \"invalid domain\" and key type errors, v2 vs v3 mix-ups, caching conflicts and forms that fail silently.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/recaptcha-not-working-wordpress/",
       "image": "https://samverse.space/assets/og/blog-recaptcha-not-working-wordpress.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=reCAPTCHA%20Not%20Working%20on%20WordPress%3F%20Fixing%20%22Invalid%20Domain%22%2C%20Key%20Type%20Errors%20and%20Forms%20That%20Won't%20Send%20https%3A%2F%2Fsamverse.space%2Fblog%2Frecaptcha-not-working-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#is-recaptcha-the-right-spam-protection">Is reCAPTCHA the right spam protection?</a></li>
               <li><a href="#how-to-test-a-form-properly">How to test a form properly</a></li>
               <li><a href="#getting-forms-fixed">Getting forms fixed</a></li>
+              <li><a href="#quick-check-test-the-form-like-a-visitor">Quick check: test the form like a visitor</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -256,6 +258,16 @@
 <h2 id="getting-forms-fixed">Getting forms fixed</h2>
 <p>If you have checked keys, scripts and email and the form still fails, a developer can look at browser console errors and server responses to find the exact point of failure. Form and spam fixes are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a single fix.</p>
 
+<h2 id="quick-check-test-the-form-like-a-visitor">Quick check: test the form like a visitor</h2>
+<ol>
+  <li>Open the page with the form in a private window, fill it in and submit. Then press F12 and look at the <strong>Console</strong> for reCAPTCHA errors such as "Invalid domain for site key".</li>
+  <li>In the Google reCAPTCHA admin console, check that your domain is listed and that the key type (v2 or v3) matches what your form plugin expects.</li>
+  <li>Clear your caching plugin's cache, since a cached page can carry an expired token.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when genuine enquiries are being blocked, when spam still gets through, or when the form plugin and a security plugin both load reCAPTCHA. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing every form after changes. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why is reCAPTCHA not working on my WordPress site?</h3>
 <p>The most common reasons are a domain missing from the key's settings, swapped or wrong-type keys, a speed plugin delaying the script, or two plugins loading reCAPTCHA at once. Check the error message, then the keys, then your plugins.</p>
@@ -267,8 +279,6 @@
 <p>Yes. Delaying or combining scripts can stop it loading, and cached pages can serve expired v3 tokens. Exclude reCAPTCHA and form scripts from delay and combination.</p>
 <h3>What if reCAPTCHA blocks real customers?</h3>
 <p>Lower the v3 score threshold slightly, show a clear error with another way to contact you, and check the score distribution in the reCAPTCHA console before tightening it again.</p>
-
-<p>Want your enquiry forms tested and protected properly, with spam filtered and every genuine lead delivered? That is part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -313,6 +323,8 @@
               <li><a href="#is-recaptcha-the-right-spam-protection">Is reCAPTCHA the right spam protection?</a></li>
               <li><a href="#how-to-test-a-form-properly">How to test a form properly</a></li>
               <li><a href="#getting-forms-fixed">Getting forms fixed</a></li>
+              <li><a href="#quick-check-test-the-form-like-a-visitor">Quick check: test the form like a visitor</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -43,7 +43,7 @@
       "headline": "WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords",
       "description": "WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-login-not-working-fix/",
       "image": "https://samverse.space/assets/og/blog-wordpress-login-not-working-fix.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-10-29">29 October 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Login%20Not%20Working%3F%20How%20to%20Fix%20Login%20Loops%2C%20Lockouts%20and%20Lost%20Passwords%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-login-not-working-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -162,6 +162,8 @@
               <li><a href="#when-a-lockout-is-really-a-security-problem">When a lockout is really a security problem</a></li>
               <li><a href="#prevent-the-next-lockout">Prevent the next lockout</a></li>
               <li><a href="#when-to-call-for-help">When to call for help</a></li>
+              <li><a href="#quick-check-rule-out-cookies-and-plugins-in-two-minutes">Quick check: rule out cookies and plugins in two minutes</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -252,6 +254,16 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <h2 id="when-to-call-for-help">When to call for help</h2>
 <p>If you have tried a private window, checked the site URL and disabled plugins and still can't log in, the problem is likely in the database, server configuration or a deeper conflict. At that point an hour with someone who works on WordPress daily is usually faster and safer than trial and error on a live business site, especially if it is your main source of enquiries. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you prefer someone in the same city.</p>
 
+<h2 id="quick-check-rule-out-cookies-and-plugins-in-two-minutes">Quick check: rule out cookies and plugins in two minutes</h2>
+<ol>
+  <li>Try logging in from a private browser window. If that works, clear cookies for your domain in your normal browser.</li>
+  <li>If it still fails, open your hosting file manager and rename <code>wp-content/plugins</code> to <code>plugins-off</code>. Try logging in again.</li>
+  <li>If login now works, rename the folder back and reactivate plugins one by one to find the one that blocks login.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you see unknown admin users, when the admin email has changed, or when renaming plugins does not restore access. Those can point to a hack, which needs <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For login and access fixes with prevention afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why is my WordPress login not working even with the right password?</h3>
 <p>The usual causes are cookies that the browser can't save, a site address mismatch after an SSL or domain change, cached login pages, or a security plugin that has blocked your IP. Try a private window first, then check the WordPress Address and Site Address settings.</p>
@@ -263,8 +275,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>Wait for the lockout period to pass, or rename that plugin's folder in wp-content/plugins using your hosting file manager. Log in, rename it back, reactivate it and add your IP to its allow list.</p>
 <h3>Can a hacked site stop me logging in?</h3>
 <p>Yes. Attackers sometimes change the admin email, delete or demote accounts, or add their own. If you see unknown users or strange redirects, treat it as a hack: change every password, clean the site and check how they got in.</p>
-
-<p>Still stuck outside your own dashboard? A quick login and access fix, along with the email and security settings that prevent it happening again, is part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -309,6 +319,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
               <li><a href="#when-a-lockout-is-really-a-security-problem">When a lockout is really a security problem</a></li>
               <li><a href="#prevent-the-next-lockout">Prevent the next lockout</a></li>
               <li><a href="#when-to-call-for-help">When to call for help</a></li>
+              <li><a href="#quick-check-rule-out-cookies-and-plugins-in-two-minutes">Quick check: rule out cookies and plugins in two minutes</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

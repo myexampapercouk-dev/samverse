@@ -13285,7 +13285,7 @@ wp option update blog_public 0</code></pre>
     title: 'WooCommerce Abandoned Cart Recovery: How It Works, Plugins, Email and WhatsApp Reminders, and Consent',
     description: 'WooCommerce abandoned cart recovery explained: plugins, reminder timing, WhatsApp and email messages, pending payments, consent and what to measure.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization', 'landing-page-design'],
     body: `
@@ -13379,6 +13379,16 @@ wp option update blog_public 0</code></pre>
   <li><strong>Unsubscribes and complaints:</strong> if they climb, send fewer or friendlier reminders.</li>
 </ul>
 
+<h2>Quick check: how many carts are you losing?</h2>
+<ol>
+  <li>Open <strong>WooCommerce &gt; Orders</strong> and filter by <strong>Pending payment</strong> and <strong>Failed</strong>. These are customers who reached payment but did not finish.</li>
+  <li>Open a few and check the order notes for the gateway's reason, such as a timeout or a declined UPI request.</li>
+  <li>If you use a cart recovery plugin, check that its first reminder is actually sending by adding a product yourself and leaving at checkout.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when many orders fail at payment, when reminders do not send, or when you want WhatsApp or SMS reminders that follow consent rules. <a href="/woocommerce-developer/">WooCommerce development</a> covers checkout and recovery set-up. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is WooCommerce abandoned cart recovery built in?</h3>
 <p>No. WooCommerce records orders, including unpaid ones, but doesn't capture or email shoppers who leave checkout. You need a cart recovery plugin, AutomateWoo, or an email platform connected to your store.</p>
@@ -13392,8 +13402,6 @@ wp option update blog_public 0</code></pre>
 <p>Yes, through the WhatsApp Business Platform with an approved template and the customer's opt-in. Cart reminders are generally treated as marketing messages, so they need marketing consent and are charged accordingly.</p>
 <h3>Is it legal to email shoppers who didn't finish checkout?</h3>
 <p>It depends on where the shopper is and how you ask for consent. Tell shoppers at checkout, mention it in your privacy policy and make opting out easy, then check your approach with a lawyer.</p>
-
-<p>Want fewer abandoned carts and a reliable way to win some back? I can review your checkout, set up cart recovery and order emails, and test the whole flow on a phone as part of <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
   },
   {
@@ -22158,7 +22166,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'Does a Local Shop Need a Website? Google Business Profile vs a Website vs Social Pages, What a Simple Shop Site Needs, and What It Costs',
     description: 'Does a local shop need a website, or are Google Business Profile and WhatsApp enough? When a site helps, what it needs and what it costs in India.',
     date: '2026-09-27',
-    updated: '2026-10-19',
+    updated: '2026-11-07',
     category: 'Growth',
     related: ['wordpress-website-development', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -22252,6 +22260,16 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <h2>How the website and your Google profile work together</h2>
 <p>Link your Business Profile to the website, and make sure the name, address, phone and hours match exactly. Embed a map on the contact page, show a few genuine reviews, and give each branch its own page if you have more than one. Listing your shop in the main local directories with exactly the same details helps too, while paid "SEO listing" offers from unknown directories are rarely worth paying for.</p>
 
+<h2>Quick check: what do customers see when they search for you?</h2>
+<ol>
+  <li>Search your shop name and your area on Google Maps from a phone. Check the hours, phone number and photos on your Google Business Profile.</li>
+  <li>Search the product you sell plus your area, and note which local shops appear.</li>
+  <li>Check whether people can see your stock, prices or a way to order without calling.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you want a simple site that shows products, location and WhatsApp ordering, linked from your Google Business Profile. <a href="/wordpress-website-development/">WordPress website development</a> gives you a written scope and a fixed quote, with the domain in your own name. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is a Google Business Profile enough for a local shop?</h3>
 <p>For some neighbourhood shops, yes, at least to start. It's not enough if you want to appear for specific products or brands, take bulk or delivery orders, or give customers more detail than a profile can hold.</p>
@@ -22263,8 +22281,6 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>It can appear for your shop's name and a few closely related searches, especially alongside a strong Business Profile. To rank for many products or brands, you'll usually need separate pages for them.</p>
 <h3>Who should update the website?</h3>
 <p>Ideally someone in the shop, for hours, offers and new stock. Ask for a site you can edit yourself, and keep it short enough that updating it takes minutes.</p>
-
-<p>Ready to give your shop a proper online home? <a href="/wordpress-website-development/">WordPress website development</a> builds a fast, simple site with WhatsApp, a map and details that match your Google profile, that you can update yourself. For a single festival offer or campaign, see <a href="/landing-page-design/">landing page design</a>.</p>
 `,
   },
   {
@@ -27948,7 +27964,7 @@ Last checked:</code></pre>
     title: 'How to Update Your WordPress Site\'s PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes',
     description: 'Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'wordpress-malware-removal'],
     body: `
@@ -28051,6 +28067,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>Make it part of regular maintenance</h2>
 <p>PHP isn't a one-off job. Check the version every few months, alongside plugin audits and updates, so you're never more than one step behind. <a href="/blog/update-wordpress-safely/">How to update WordPress safely</a> covers the update routine that keeps a site ready for the next PHP version. If speed is the reason you're looking at PHP, the version is one of several server checks in <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
 
+<h2>Quick check: what PHP does your site run?</h2>
+<ol>
+  <li>Open <strong>Tools &gt; Site Health &gt; Info &gt; Server</strong> and note the PHP version.</li>
+  <li>Compare it with the versions currently supported on php.net. A version that no longer gets security updates should be changed.</li>
+  <li>Before switching, take a full backup and, if your host offers it, test the new version on a staging copy first.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the site uses old plugins or a custom theme that may break on newer PHP, when your host has set a deadline, or when there is no staging copy. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers PHP upgrades tested on staging. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Will updating PHP break my WordPress site?</h3>
 <p>Not if WordPress, your theme and plugins are current and there's no old custom code. Problems come from outdated or abandoned plugins and bespoke code. Test on staging first, and you can switch back in the hosting panel if something slips through.</p>
@@ -28062,8 +28088,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>No. Your pages, posts, orders and settings stay in the database untouched. Only the code that runs the site is affected, which is why problems show up as errors rather than lost content.</p>
 <h3>Is the PHP Compatibility Checker plugin reliable?</h3>
 <p>It's a helpful first pass, but it reads code without running it, so it can miss real problems and flag harmless ones. A test on staging with error logging turned on is the more reliable check.</p>
-
-<p>Not sure what your site runs on, or nervous about the switch? My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> start with a health check that covers the PHP version, Site Health warnings and abandoned plugins, and updates are done after a backup and tested afterwards.</p>
 `,
   },
   {
@@ -31958,7 +31982,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
     title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?',
     description: 'Fixed price vs hourly website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.',
     date: '2026-09-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
@@ -32044,6 +32068,16 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <h2>Payment terms and milestones</h2>
 <p>Fixed-price projects in India usually start with an advance, with the rest paid at milestones or before launch. Tie each payment to something you can see, such as an approved design or a working staging site, rather than to dates. Ask whether the quote includes GST if the developer is registered, and make sure the domain, hosting and admin access are in your name by the end. <a href="/blog/website-payment-terms-milestones/">Fair payment terms for a website project</a> goes into advances, refunds and paused projects.</p>
 
+<h2>Quick check: is your quote really fixed?</h2>
+<ol>
+  <li>Look for a written list of pages, features and integrations in the quote.</li>
+  <li>Check how many rounds of changes are included and how extra work is priced.</li>
+  <li>Check who owns the domain, hosting and licences when the project ends.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you want a fixed price with a written scope rather than an open hourly bill. Through <a href="/wordpress-website-development/">WordPress website development</a> you send your page list and features and get a written scope and a fixed quote. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is fixed price or hourly better for a website project?</h3>
 <p>Fixed price, for most projects with a clear scope, because you know the cost upfront and the developer carries the risk of overruns. Hourly suits investigations and work whose scope can't be known until it starts.</p>
@@ -32057,8 +32091,6 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p>For a website build, usually not. An advance followed by payments at milestones, with the balance before launch, protects both sides. Small fixed-price jobs are sometimes paid in full upfront because the amount is small.</p>
 <h3>Can a project be partly fixed and partly hourly?</h3>
 <p>Yes. A fixed price for the defined build plus a capped hourly allowance for a part nobody can scope yet, such as a third-party integration, is a sensible middle ground. Write both into the agreement.</p>
-
-<p>Want a fixed quote for your website, or a price for a batch of fixes? Send your requirements and you'll get a clear scope, price and timeline before anything starts; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>. Based near Pune? See <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -34356,7 +34388,7 @@ curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.h
     title: 'How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check',
     description: 'Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.',
     date: '2026-09-27',
-    updated: '2026-10-12',
+    updated: '2026-11-07',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -34464,6 +34496,16 @@ wp db search "eval(" --all-tables</code></pre>
 <p>If the account holds several neglected sites, or you can't tell what is genuine any more, a fresh WordPress install with only your content and media copied across (no PHP files) can be quicker and safer than cleaning file by file.</p>
 <p>Afterwards, block PHP in uploads, keep an <a href="/blog/wordpress-activity-logs/">activity log</a> and turn on file-change alerts, so a new backdoor gets noticed in days rather than months. The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> covers the rest of the hardening.</p>
 
+<h2>Quick check: look for files that should not be there</h2>
+<ol>
+  <li>In your hosting file manager, open <code>wp-content/uploads</code> and sort by type. PHP files in uploads are a strong warning sign.</li>
+  <li>Run WP-CLI <code>wp core verify-checksums</code> (or ask your host to). It lists core files that differ from the official WordPress release.</li>
+  <li>Check <strong>Users &gt; All Users</strong> for Administrators you did not create.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when malware returns after a cleanup, when Google shows a warning, or when you find modified core files. <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers the clean-up, finding how attackers got in and hardening afterwards. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a backdoor in WordPress?</h3>
 <p>Hidden code or access that lets an attacker get back into your site without your password, such as a small PHP file, a hidden admin user or a scheduled task that reinstalls malware.</p>
@@ -34475,8 +34517,6 @@ wp db search "eval(" --all-tables</code></pre>
 <p>No. Plenty of genuine plugins use it to handle images, data or licence keys. It is suspicious when it sits in an unexpected file, decodes a long random string and passes the result straight to something that runs code.</p>
 <h3>Should I change passwords before or after removing backdoors?</h3>
 <p>Both. Change the hosting password straight away to slow the attacker down, then change every password and the salts again once the backdoors are gone, because a working backdoor can capture new ones.</p>
-
-<p>Malware back again after a cleanup? That usually means a backdoor was missed. I can trace and remove them, close the entry point and give you a plain-English report of what was found; see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
 `,
   },
   {
@@ -36395,7 +36435,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
     title: 'Hosting Renewal Price Shock: Why Your Hosting Renewal Costs So Much More, and What to Do About It',
     description: 'Hosting renewal shock explained: why renewals cost far more than the first term, how to cut the bill, ask for a retention offer or move host safely.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-migration', 'hire-wordpress-developer'],
     body: `
@@ -36506,6 +36546,16 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 </ul>
 <p>Whatever you decide, don't let hosting expire while you think about it. Expired hosting takes your website, and any email on it, offline.</p>
 
+<h2>Quick check: find your real renewal price</h2>
+<ol>
+  <li>Log in to your hosting panel and open the billing or services page. Note the renewal price and date for your plan, not the first-term offer.</li>
+  <li>Check whether the domain and email renew on the same account and on which dates.</li>
+  <li>Download a full backup now, whatever you decide, so you are not caught by an expiry.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the renewal is close and you want to move, when email runs on the same hosting, or when you are unsure how to move DNS without downtime. <a href="/wordpress-migration/">WordPress migration</a> covers the move, email and DNS checks. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I deal with hosting renewal shock?</h3>
 <p>Check what the invoice includes, remove add-ons you don't need, ask your host for a retention offer, and compare the three to five-year cost against other hosts, renewal prices included. If moving is cheaper, start the migration a few weeks before the renewal date.</p>
@@ -36519,8 +36569,6 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 <p>Most hosts suspend the account shortly after the due date, which takes the website and any email hosted there offline. After a grace period, files, databases and mailboxes may be deleted for good. If you plan to move, finish the migration and download a full backup before the old plan ends.</p>
 <h3>Will moving hosts affect my SEO or email?</h3>
 <p>Not if it's done properly. Keep the same domain and URLs, test the site before switching DNS, copy every DNS record including MX, SPF and DKIM, and keep the old hosting live until everything is confirmed.</p>
-
-<p>Want someone to compare your options and move the site safely before the renewal date? <a href="/wordpress-migration/">WordPress migration</a> covers the move, email and DNS checks, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to review your hosting bill and set-up.</p>
 `,
   },
   {
@@ -46014,7 +46062,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Customising WooCommerce Order Emails: Branding, Content and Deliverability',
     description: 'How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -46133,6 +46181,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
 <p>Custom statuses like "Shipped" work best as part of a clear <a href="/blog/woocommerce-order-management-workflow/">order management workflow</a> that the whole team follows.</p>
 
+<h2>Quick check: preview and test your order emails</h2>
+<ol>
+  <li>Open <strong>WooCommerce &gt; Settings &gt; Emails</strong> and check which emails are enabled and who receives each one.</li>
+  <li>Use the "click here to preview" link at the bottom of that page to see the email design.</li>
+  <li>Place a test order and confirm both the customer and admin emails arrive and do not land in spam.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when order emails do not arrive, when you need GST invoices attached, or when you want template changes that survive WooCommerce updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers email templates and reliable sending. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I customize WooCommerce emails?</h3>
 <p>Use WooCommerce, Settings, Emails for logo, colours and text, the block email editor or a customiser plugin for layout, and child theme template overrides for exact control.</p>
@@ -46144,8 +46202,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Yes, with a custom order status plugin or a small custom plugin that adds the status and its email.</p>
 <h3>Will template changes break after updates?</h3>
 <p>Overrides can become outdated. Check WooCommerce, Status after updates and refresh the copies on staging first.</p>
-
-<p>Want branded order emails that arrive reliably? I customise WooCommerce emails, invoices and notifications as part of <a href="/woocommerce-developer/">WooCommerce development</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a> and <a href="/wordpress-developer-pune/">Pune</a> pages if you are nearby.</p>
 `,
   },
   {
@@ -47162,7 +47218,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'How to Fix Cumulative Layout Shift (CLS) on WordPress: Images, Fonts, Elementor and Banners',
     description: 'How do I fix cumulative layout shift on a WordPress site? A cause-by-cause CLS checklist for images, fonts, ads, Elementor and banners, and how to test it.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
@@ -47281,6 +47337,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Re-check after adding a plugin, ad, widget or banner, as each can bring shifts back</li>
 </ul>
 
+<h2>Quick check: find the element that moves</h2>
+<ol>
+  <li>Run the page through PageSpeed Insights and open the diagnostic "Avoid large layout shifts". It lists the elements that moved.</li>
+  <li>In Chrome DevTools, open the <strong>Performance</strong> panel, record a page load and look at the Layout Shifts track.</li>
+  <li>Check images in that area for missing width and height, and check for late banners, ads or web fonts.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when shifts come from your theme or page builder, when fixing one shift creates another, or when Search Console still reports poor CLS weeks later. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers Core Web Vitals fixes. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix "avoid large layout shifts" in WordPress?</h3>
 <p>Open the audit in PageSpeed Insights to see which elements moved, then fix the cause above them: add image dimensions, reserve space for embeds and ads, switch banners to overlays, or stop fonts and scripts loading late.</p>
@@ -47294,8 +47360,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Find the shifting elements in PageSpeed Insights, then reserve space for images, embeds, ads and sliders, preload your main font with a matched fallback, show banners as overlays and keep the header a fixed height. Clear caches and re-test on mobile.</p>
 <h3>Fix CLS issue in WordPress: where do I start?</h3>
 <p>Start with the CLS issue in Search Console's Core Web Vitals report, open an example URL in PageSpeed Insights on mobile, and fix the element it names in the shared template. Images without dimensions and late banners are the most common first fixes.</p>
-
-<p>Most CLS fixes are small; finding the cause is the slow part. If you'd like it handled, my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service covers all three Core Web Vitals. Planning a new site? With <a href="/wordpress-website-development/">WordPress website development</a>, space for images, embeds and headers is reserved from the start.</p>
 `,
   },
   {
@@ -47304,7 +47368,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'How to Improve Interaction to Next Paint (INP) on WordPress',
     description: 'How to improve INP on WordPress and WooCommerce: find slow interactions, cut heavy JavaScript, tame page builders and third-party scripts, and retest.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
@@ -47389,6 +47453,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li>Recheck after new plugins, apps, tracking tags or design changes, because INP can slip again quietly.</li>
 </ul>
 
+<h2>Quick check: which interaction is slow?</h2>
+<ol>
+  <li>In Search Console, open <strong>Core Web Vitals</strong> and note which URL groups have poor INP on mobile.</li>
+  <li>Open one of those pages in Chrome, open DevTools &gt; <strong>Performance</strong> and watch the live INP value as you tap menus, filters and buttons.</li>
+  <li>Record a trace while doing the slow interaction and look for long tasks. Note the script names behind them.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when long tasks come from your theme, page builder or third-party scripts you need, or when the slow interaction is on product filters or checkout. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers INP and script fixes. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I improve INP on WordPress?</h3>
 <p>Find the slow interactions with Search Console and DevTools, then remove or delay third-party scripts, cut unused plugin and builder JavaScript, simplify sliders, menus and popups, and reduce page size.</p>
@@ -47400,8 +47474,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Partly. Caching helps loading, but INP is about JavaScript work during interactions. Delaying scripts can help or hurt, so test after enabling it.</p>
 <h3>Does INP affect Google rankings?</h3>
 <p>It is part of Core Web Vitals, which Google uses as one of many page experience signals. Content relevance matters far more, but a responsive site also converts better.</p>
-
-<p>If your Search Console report shows poor INP and you are not sure where to start, I can trace the slow interactions and fix them. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>, or <a href="/wordpress-shopify-developer-bangalore/">WordPress and Shopify developer in Bangalore</a> and <a href="/wordpress-shopify-developer-india/">across India</a>.</p>
 `,
   },
   {
@@ -47410,7 +47482,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'How to Choose a WordPress Maintenance Provider: Packages, Charges, Questions and Red Flags',
     description: 'How to choose a WordPress maintenance provider in India: compare website maintenance packages and charges, questions to ask, reports and red flags.',
     date: '2026-09-28',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -47515,6 +47587,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
 <p>Agencies often deliver maintenance through a white-label partner working behind their brand; if you run an agency, see <a href="/blog/agency-wordpress-care-plans/">how to offer WordPress care plans to your clients</a>.</p>
 
+<h2>Quick check: test a provider's answers</h2>
+<ol>
+  <li>Ask where backups are stored, how often, and when a restore was last tested.</li>
+  <li>Ask whether updates are tested on staging before going live.</li>
+  <li>Ask what happens if the site is hacked while on the plan, and whether clean-up is included.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your current provider cannot answer these clearly, or when you need a plan for a store or a site that brings in leads. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups, monitoring and fixes. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I choose a WordPress maintenance provider?</h3>
 <p>List what your site needs, then compare providers on update testing, off-site backups, written response times, hack clean-up, monthly reports and exit terms. Ask for a sample report before signing.</p>
@@ -47526,8 +47608,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Monthly is safer while you test a new provider. A yearly plan can make sense once you trust them, as long as the scope and exit terms are written down.</p>
 <h3>Can a new provider maintain a site built by someone else?</h3>
 <p>Usually, yes. Expect an initial health check covering access, backups, outdated plugins, licences and security before regular maintenance starts.</p>
-
-<p>If you want this handled properly, see my <a href="/wordpress-maintenance/">WordPress maintenance and support</a> plans, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for one-off fixes. Pune businesses can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -47687,7 +47767,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     title: '"Allowed Memory Size Exhausted" in WordPress: Causes and Fixes for Memory Limit Errors',
     description: 'Fix WordPress memory limit errors: what "allowed memory size exhausted" means, how to raise WP_MEMORY_LIMIT and the PHP limit, and how to find the cause.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -47784,6 +47864,16 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 </ul>
 <p>A site that uses less memory per page is usually faster too, so this work often overlaps with <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 
+<h2>Quick check: what memory limit does WordPress actually get?</h2>
+<ol>
+  <li>In the dashboard, open <strong>Tools &gt; Site Health &gt; Info</strong> and expand <strong>Server</strong>. Note the PHP memory limit.</li>
+  <li>Expand <strong>WordPress Constants</strong> and note WP_MEMORY_LIMIT and WP_MAX_MEMORY_LIMIT.</li>
+  <li>If the server value is lower than the WordPress constant, the server wins. Raise it in your hosting panel's PHP settings, not only in wp-config.php.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the error returns after you raise the limit, which usually points to one plugin using far too much memory, or when the site shows a critical error and you cannot reach the dashboard. Through <a href="/wordpress-maintenance/">WordPress maintenance and support</a> the cause is traced in the error log, not hidden by a higher limit. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix WordPress memory limit errors?</h3>
 <p>Get the site back online, add WP_MEMORY_LIMIT set to 256M in wp-config.php, raise memory_limit in your hosting panel if WordPress can't, then find the plugin or task using the memory on a staging copy.</p>
@@ -47797,8 +47887,6 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <p>No, the limit is a ceiling, not an amount used on every page. But pages that genuinely need a lot of memory are usually slow, so finding the cause helps speed as well.</p>
 <h3>How do I increase the WordPress memory limit in wp-config.php?</h3>
 <p>Add a WP_MEMORY_LIMIT line above the line that says to stop editing, save the file and reload the site. If the error stays, your host's PHP memory_limit is lower and caps it, so raise that in the hosting panel or ask support.</p>
-
-<p>Seeing memory errors or a critical error right now? I fix broken WordPress sites and track down the plugin or setting behind the problem; see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
   },
   {
@@ -48173,7 +48261,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     title: 'Mixed Content Warning in WordPress: How to Fix Mixed Content Errors, HTTP Links and the Missing Padlock',
     description: 'How to fix a mixed content warning in WordPress: find HTTP links in the console, update URLs in the database, use .htaccess safely and get the padlock back.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -48280,6 +48368,16 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <pre><code>Header always set Content-Security-Policy "upgrade-insecure-requests"</code></pre>
 <p>Add these above the WordPress block in .htaccess, after taking a copy of the file. They are useful safety nets, but they do not fix the cause. The redirect only affects page addresses, and the header only works if the resource is actually available over HTTPS; an old external image host without SSL will still fail. If you use Cloudflare, check its SSL mode as well, because a wrong setting combined with an .htaccess redirect can cause a redirect loop. On Nginx servers .htaccess is ignored, so the same rules go in the server configuration, which usually means asking your host.</p>
 
+<h2>Quick check: find the insecure files</h2>
+<ol>
+  <li>Open the page in Chrome, press F12 and open the <strong>Console</strong> tab. Each mixed content warning names the http:// file being loaded.</li>
+  <li>Check <strong>Settings &gt; General</strong>: both WordPress Address and Site Address should start with https://.</li>
+  <li>Take a backup, then run a search and replace of http://yourdomain to https://yourdomain with a tool that handles serialised data, and reload the page.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when warnings remain after the search and replace, when they come from theme files or hard-coded scripts, or when you are unsure about running a database replace on a live store. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers SSL fixes with a backup first. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix mixed content warnings in WordPress?</h3>
 <p>Back up the site, make sure both WordPress URLs use HTTPS, run a safe database search-and-replace from http:// to https://, fix hard-coded theme or plugin URLs, update old embeds, force HTTPS with a redirect and clear all caches.</p>
@@ -48293,8 +48391,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <p>It is safe with a full backup and a WordPress-aware tool that handles serialised data. Always run a dry run first.</p>
 <h3>How do I fix mixed content after installing SSL in WordPress?</h3>
 <p>Change the WordPress Address and Site Address to https, run a careful search-and-replace on the database, fix any hard-coded http links in the theme, force HTTPS at the server and clear every cache. Then check key pages in the browser console for remaining warnings.</p>
-
-<p>If you want mixed content and SSL issues fixed without risking your data, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or see <a href="/wordpress-maintenance/">WordPress maintenance</a> for ongoing care. Sites moving hosts can also see <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -48437,7 +48533,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WordPress Not Sending Emails? How to Fix It With SMTP',
     description: 'WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.',
     date: '2026-09-28',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -48536,6 +48632,16 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 </ul>
 <p>These checks fit naturally into a regular maintenance routine.</p>
 
+<h2>Quick check: does WordPress send any email at all?</h2>
+<ol>
+  <li>Install a mail logging or SMTP plugin that offers a test email (WP Mail SMTP has one under <strong>WP Mail SMTP &gt; Tools &gt; Email Test</strong>) and send a test to a Gmail address.</li>
+  <li>If it arrives, open it in Gmail, choose <strong>Show original</strong> and check that SPF, DKIM and DMARC all say PASS.</li>
+  <li>If it does not arrive, the server is not sending mail: connect a proper SMTP or transactional email service and test again.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when order or enquiry emails have been missing for more than a day, when SPF or DKIM fail and you cannot edit DNS yourself, or when email runs through the same hosting as the site. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers SMTP setup, DNS records and a test of every form. To describe your case, <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is WordPress not sending emails?</h3>
 <p>Usually because it sends through the server&#39;s PHP mail, which the host may restrict and inboxes may distrust. Sending through SMTP with SPF and DKIM set up normally fixes it.</p>
@@ -48549,8 +48655,6 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Check that each email is enabled in WooCommerce settings, then look at the SMTP mail log. Recent hosting, DNS or password changes are the most common causes.</p>
 <h3>How do I fix WordPress contact form emails not sending?</h3>
 <p>Set the form's From address to an email on your own domain, send through an SMTP plugin connected to a real mailbox or email service, and check SPF and DKIM records. Then send a test and check the plugin's email log to see whether the message left the site.</p>
-
-<p>If your forms or order emails are not arriving and you want it fixed properly, I can set up SMTP, DNS records and logging. See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -57743,7 +57847,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention',
     description: 'Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.',
     date: '2026-10-01',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -57848,6 +57952,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Never install nulled premium plugins: they skip official updates and often carry hidden code.</li>
   <li>Keep a short log of what was updated and when, so the next problem starts with "what changed?"</li>
 </ul>
+<h2>Quick check: test for a conflict without breaking the live site</h2>
+<ol>
+  <li>Install the Health Check &amp; Troubleshooting plugin and open <strong>Tools &gt; Site Health &gt; Troubleshooting</strong>. Troubleshooting mode disables plugins for your session only; visitors still see the normal site.</li>
+  <li>Switch to a default theme inside that mode and check whether the problem goes away.</li>
+  <li>Re-enable plugins one at a time until the problem returns. The last one enabled is your suspect.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the conflict involves checkout, payments or forms, when both conflicting plugins are essential, or when the problem only happens on the live server. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing updates on staging before they reach the live site. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I know which plugin is causing the problem?</h3>
 <p>Switch to a default theme and deactivate plugins in halves on staging or in Health Check troubleshooting mode until the problem disappears, then narrow down to one. Confirm it in the debug log or browser console, which usually names the file or script.</p>
@@ -57861,7 +57975,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Check for updates, report it to both developers, and try changing the overlapping setting or excluding a script from optimisation. If nothing works, replace the less important plugin or use a small piece of custom code.</p>
 <h3>What is the quickest WordPress plugin conflict fix?</h3>
 <p>Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair.</p>
-<p>Rather not chase conflicts yourself? My <a href="/wordpress-maintenance/">WordPress maintenance</a> plans start every update with a fresh backup, then test the pages and forms that matter, so a clash is caught and dealt with before your customers find it. If the site has grown into a tangle of overlapping plugins, a cleaner rebuild through <a href="/wordpress-website-development/">WordPress website development</a> may cost less over time.</p>
 `,
   },
   {
@@ -60788,7 +60901,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
     title: 'How to Choose a WordPress Developer or Agency in Pune: Live Work Checks, Questions, Contracts, Ownership and Red Flags',
     description: 'How to choose a WordPress developer in Pune: in person vs remote, live work checks, questions, a small paid trial, contracts, ownership and red flags.',
     date: '2026-10-01',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Guides',
     related: ['wordpress-developer-pune', 'hire-wordpress-developer'],
     body: `
@@ -60912,6 +61025,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>You get a written scope and fixed quote, usually within 24 hours of the brief. You pay an advance when work begins and the rest before the site goes live. While it is being built, a private staging address lets you check progress from your own phone whenever you like. At handover, the site sits on hosting in your business name, you hold an administrator login, your team gets a walkthrough over video, a full backup is taken at launch, and a monthly maintenance plan is there if you want it. I can't honestly guarantee rankings, and if your project needs a large in-house team of writers and photographers, an agency may suit you better.</p>
 <p>For local search after launch, <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a> covers the basics.</p>
 
+<h2>Quick check: compare two Pune quotes properly</h2>
+<ol>
+  <li>Put both quotes side by side and list the pages, features and integrations each includes.</li>
+  <li>Check who registers the domain and hosting, and in whose name.</li>
+  <li>Ask each developer for a live site they built and check it on PageSpeed Insights on mobile.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you want a second opinion on a proposal or a fixed quote with a written scope. See <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Should I hire a WordPress developer in Pune or anywhere in India?</h3>
 <p>Choose on live work, communication and a clear written scope first. A Pune developer is useful if you want in-person meetings or local knowledge, but remote work over WhatsApp and video calls works well for most projects.</p>
@@ -60926,8 +61049,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <h3>How long does it take to build a WordPress website in Pune?</h3>
 <p>It depends on page count, features and how quickly content and approvals arrive, not on the city. A small business site is often a matter of weeks; stores and custom features take longer. See <a href="/blog/how-long-to-build-wordpress-website/">how long it takes to build a WordPress website</a> for the stages.</p>
-
-<p>If you are a Pune or PCMC business and want a second opinion on a proposal, or a quote of your own, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>. For other ways to work together, such as a batch of fixes or monthly support, see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   },
   {
@@ -65501,7 +65622,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'WooCommerce Checkout Optimization: How to Make Buying Quick and Easy',
     description: 'WooCommerce checkout optimization for Indian stores: fewer fields, guest checkout, early delivery costs, UPI and COD, trust cues, mobile layout, testing.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
@@ -65598,6 +65719,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li>The confirmation page and emails show complete order details.</li>
 </ul>
 
+<h2>Quick check: place a test order on your phone</h2>
+<ol>
+  <li>Use a phone on mobile data, add one product to the cart and time how long it takes to reach the order confirmation.</li>
+  <li>Count the fields you are asked to fill. Note any you could remove, such as company name or a second address line.</li>
+  <li>Pay with UPI using your gateway's test mode or a small real order that you refund, and check that the order shows as Processing under <strong>WooCommerce &gt; Orders</strong>.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when payments succeed but orders stay Pending, when checkout is slow on mobile, or when you need COD rules, pin code checks or fewer fields. <a href="/woocommerce-developer/">WooCommerce development</a> covers checkout changes tested with real orders. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I optimize WooCommerce checkout?</h3>
 <p>Remove fields you do not need, allow guest checkout, show delivery costs in the cart, offer UPI, cards and COD where suitable, add trust cues near the payment button, and test the flow on a phone with real orders.</p>
@@ -65609,8 +65740,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>It depends on your products, margins and return rates. Many Indian stores offer COD with limits on pincode or order value rather than switching it off completely.</p>
 <h3>Can I change checkout fields without code?</h3>
 <p>Yes, with a checkout field editor plugin that supports your checkout type. Check block checkout compatibility before installing one.</p>
-
-<p>Want a quicker checkout set up and tested on your store? <a href="/woocommerce-developer/">WooCommerce development</a> from Samverse covers fields, payments, delivery and testing.</p>
 `,
   },
   {
@@ -65985,7 +66114,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'How Much Is a Landing Page? What Drives the Cost to Build One, and What a Good Cost per Lead Looks Like',
     description: 'What is a good cost per landing page? What drives the build cost in India, how to judge a quote, and why cost per lead is a separate number to track.',
     date: '2026-10-01',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Pricing',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
@@ -66116,6 +66245,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </ul>
 <p>The things not to cut are mobile speed, a working form with alerts, and conversion tracking. Without those, you cannot tell whether the page or the ads are the problem.</p>
 
+<h2>Quick check: what will your landing page need?</h2>
+<ol>
+  <li>Write down the one action you want visitors to take: call, WhatsApp, form or purchase.</li>
+  <li>List what the page must connect to, such as an ad platform's conversion tag, a CRM or a payment link.</li>
+  <li>Check whether you already have the copy, photos and offer, or whether those need to be written.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the page has to work with paid ads and tracking, when you need it built quickly on your existing site, or when you want a fixed quote. See <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How much is a landing page in India?</h3>
 <p>Going by the cost guide here, one landing page typically costs ₹5,000 to ₹15,000. Custom copy, several integrations, multi-platform tracking or A/B variants can take it higher.</p>
@@ -66129,8 +66268,6 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>Each developer assumes a different scope. A shared brief makes quotes comparable.</p>
 <h3>What is a good cost per landing page?</h3>
 <p>One that includes focused copy, mobile speed, a tested form and conversion tracking at a price your campaign can recover in leads. Going by the cost guide here, a single landing page typically falls in the ₹5,000 to ₹15,000 range, with the scope deciding where in that range.</p>
-
-<p>Planning a campaign? See <a href="/landing-page-design/">landing page design</a>, or <a href="/wordpress-website-development/">WordPress website development</a> if the page should sit inside a new site.</p>
 `,
   },
   {
@@ -66274,7 +66411,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
     title: 'How to Increase the WordPress Upload Size Limit and Fix "Exceeds the Maximum Upload Size" Errors',
     description: 'Fix "exceeds the maximum upload size for this site": check your limit, raise it in hPanel or cPanel, use php.ini or .htaccess safely, and fix 413 errors.',
     date: '2026-10-01',
-    updated: '2026-10-14',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -66373,6 +66510,16 @@ php_value max_input_time 300</code></pre>
   <li><strong>PDF brochures and catalogues:</strong> files exported at print quality are often far larger than a screen needs. Export a web version for the site.</li>
 </ul>
 
+<h2>Quick check: see the limit WordPress is using</h2>
+<ol>
+  <li>Open <strong>Media &gt; Add New</strong>. WordPress shows "Maximum upload file size" under the upload box.</li>
+  <li>Open <strong>Tools &gt; Site Health &gt; Info &gt; Media Handling</strong> and compare upload_max_filesize and post_max_size. The smaller one sets your real limit.</li>
+  <li>Raise both in your hosting panel's PHP settings (many hosts call it "PHP options" or "MultiPHP INI Editor"), then reload the Media page to confirm the new number.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your host will not raise the limit, when you need to import a large site backup, or when uploads fail even under the limit. For a site move, <a href="/wordpress-migration/">WordPress migration</a> handles large files on the server side. For upload and server errors, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the default WordPress upload limit?</h3>
 <p>WordPress has no default of its own; it uses your server's PHP settings. PHP's built-in defaults allow only 2 MB per file, but most hosts set something higher. Media &gt; Add New shows the limit on your site.</p>
@@ -66386,8 +66533,6 @@ php_value max_input_time 300</code></pre>
 <p>Upload it over SFTP or your host's file manager instead of the browser. Themes and plugins can go straight into their folders, and media files can be added to the library with WP-CLI.</p>
 <h3>Is it safe to set a very high upload limit?</h3>
 <p>Set it to what you need rather than the maximum. Very high limits let anyone with upload access fill your hosting space, and big uploads tie up server resources on cheaper plans.</p>
-
-<p>Stuck on upload errors, or moving a large site that won't import through the browser? I can sort out server settings as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, and move sites between hosts with <a href="/wordpress-migration/">WordPress migration</a>.</p>
 `,
   },
   {
@@ -66396,7 +66541,7 @@ php_value max_input_time 300</code></pre>
     title: 'WordPress Pages Showing 404 but the Homepage Works? How to Fix It',
     description: 'WordPress pages showing 404 but the homepage works? Reset permalinks, repair .htaccess or Nginx rules and fix migration and plugin causes, step by step.',
     date: '2026-10-01',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -66487,6 +66632,16 @@ RewriteRule . /index.php [L]
 </ul>
 <p>Regular checks like these are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>. If the site is down right now and the steps above haven't worked, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to look at the server configuration directly.</p>
 
+<h2>Quick check: is it the rewrite rules?</h2>
+<ol>
+  <li>Open <strong>Settings &gt; Permalinks</strong> and click <strong>Save Changes</strong> without changing anything. This rebuilds the rewrite rules.</li>
+  <li>Reload a page that showed 404. If it works now, the rules were the problem.</li>
+  <li>If it still fails on Apache hosting, open the file manager and check that .htaccess exists in the site root and contains the WordPress rewrite block.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when 404s follow a migration or domain change, when Search Console shows many "Not found" URLs, or when old URLs need redirects. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers permalink, server and redirect fixes, and <a href="/wordpress-migration/">WordPress migration</a> covers moves done without broken links. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WordPress pages showing 404 but the homepage works?</h3>
 <p>The rewrite rules that handle pretty permalinks are broken or missing. Resave permalinks in Settings, then check the .htaccess file on Apache or LiteSpeed, or the try_files rule on Nginx.</p>
@@ -66498,8 +66653,6 @@ RewriteRule . /index.php [L]
 <p>Usually because .htaccess wasn't copied, the new server uses Nginx, or the site URL settings still point to the old address. Fix those and resave permalinks.</p>
 <h3>Will 404 errors hurt my Google rankings?</h3>
 <p>A short outage rarely does lasting harm. If pages stay unavailable for days, Google may drop them from the index, so fix the rules quickly and request indexing for important pages.</p>
-
-<p>Pages vanishing after a move or update? Fixes like this, and the checks that stop them recurring, are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -67536,7 +67689,7 @@ RewriteRule . /index.php [L]
     title: 'WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords',
     description: 'WordPress login not working? Fix redirect loops, cookie errors, security lockouts and lost passwords step by step, from browser to wp-config.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -67613,6 +67766,16 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <h2>When to call for help</h2>
 <p>If you have tried a private window, checked the site URL and disabled plugins and still can't log in, the problem is likely in the database, server configuration or a deeper conflict. At that point an hour with someone who works on WordPress daily is usually faster and safer than trial and error on a live business site, especially if it is your main source of enquiries. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you prefer someone in the same city.</p>
 
+<h2>Quick check: rule out cookies and plugins in two minutes</h2>
+<ol>
+  <li>Try logging in from a private browser window. If that works, clear cookies for your domain in your normal browser.</li>
+  <li>If it still fails, open your hosting file manager and rename <code>wp-content/plugins</code> to <code>plugins-off</code>. Try logging in again.</li>
+  <li>If login now works, rename the folder back and reactivate plugins one by one to find the one that blocks login.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you see unknown admin users, when the admin email has changed, or when renaming plugins does not restore access. Those can point to a hack, which needs <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For login and access fixes with prevention afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress login not working even with the right password?</h3>
 <p>The usual causes are cookies that the browser can't save, a site address mismatch after an SSL or domain change, cached login pages, or a security plugin that has blocked your IP. Try a private window first, then check the WordPress Address and Site Address settings.</p>
@@ -67624,8 +67787,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>Wait for the lockout period to pass, or rename that plugin's folder in wp-content/plugins using your hosting file manager. Log in, rename it back, reactivate it and add your IP to its allow list.</p>
 <h3>Can a hacked site stop me logging in?</h3>
 <p>Yes. Attackers sometimes change the admin email, delete or demote accounts, or add their own. If you see unknown users or strange redirects, treat it as a hack: change every password, clean the site and check how they got in.</p>
-
-<p>Still stuck outside your own dashboard? A quick login and access fix, along with the email and security settings that prevent it happening again, is part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -67634,7 +67795,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
     title: '"HTTP Error" When Uploading Images to WordPress: Causes and Fixes',
     description: 'WordPress HTTP error when uploading images? Check file size, memory and time limits, Imagick or GD, permissions, mod_security and plugins, in a safe order.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
@@ -67725,6 +67886,16 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 </ol>
 <p>Once uploads work, keep images light so the issue does not come back and pages load fast; <a href="/blog/image-seo-guide/">the image SEO guide</a> covers file names and alt text while you are at it.</p>
 
+<h2>Quick check: narrow down the HTTP error</h2>
+<ol>
+  <li>Upload a small JPG under 500 KB. If it works, the problem is file size or image processing, not uploads in general.</li>
+  <li>Open <strong>Tools &gt; Site Health &gt; Info &gt; Media Handling</strong> and check which image editor is active (Imagick or GD) and the maximum upload size.</li>
+  <li>Deactivate any image optimisation or security plugin and try the original file again.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when every upload fails, when the error started after a hosting change, or when your host blames WordPress and you need the error log read. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers server settings and plugin conflicts. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix the WordPress HTTP error when uploading images?</h3>
 <p>Retry, then test a smaller image. If small images work, raise memory and time limits or switch the image library to GD. If nothing uploads, check uploads folder permissions, disk space, firewall rules and plugins.</p>
@@ -67736,8 +67907,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>No. The failed image may leave a partial entry in the Media Library, which you can delete, but your pages and content are not affected.</p>
 <h3>Should I ask my hosting company to fix it?</h3>
 <p>Ask them if the cause is a server limit, a missing image library, file ownership or a firewall rule, because those are on their side. Size, plugin and theme causes are things you or your developer fix inside WordPress.</p>
-
-<p>If uploads still fail after these checks, it is usually a server setting or plugin conflict that takes a short investigation. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the fix, find a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for local help, or keep updates and form checks handled every month with <a href="/wordpress-maintenance/">WordPress maintenance</a>.</p>
 `,
   },
   {
@@ -67961,7 +68130,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
     title: 'Google Analytics 4 Not Showing Data on Your WordPress Site? How to Find and Fix It',
     description: 'Google Analytics not tracking your WordPress site? Check the tag, measurement ID, consent banner, caching and filters to find why GA4 shows no data.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -68043,6 +68212,16 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <h2>Getting help with tracking</h2>
 <p>If the tag is present and Realtime still shows nothing, the cause is usually a conflict between a consent tool, GTM and a speed plugin that takes some patience to untangle. Analytics setup, key events for forms and calls, and a check that numbers are trustworthy can be done as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, or as a one-off fix if you <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 
+<h2>Quick check: is the tag on the page and sending data?</h2>
+<ol>
+  <li>Open your homepage, view the source (Ctrl+U) and search for your Measurement ID, which starts with <code>G-</code>. It should appear once, not twice.</li>
+  <li>In GA4, open <strong>Reports &gt; Realtime</strong>, then visit your site from a phone on mobile data. You should appear within a minute.</li>
+  <li>If you do not, check your cookie banner: if analytics only loads after consent, accept the banner and test again.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the tag appears twice, when enquiries or WhatsApp clicks are not recorded as events, or when the numbers do not match orders. <a href="/wordpress-seo-services/">WordPress SEO services</a> includes GA4 and Search Console setup with key events for leads. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is Google Analytics not tracking my WordPress site?</h3>
 <p>Most often the GA4 tag is missing, uses the wrong measurement ID, is added twice, is blocked by a consent banner, or is hidden behind a cached or delayed version of the page. Check the page source logged out and test in Realtime.</p>
@@ -68054,8 +68233,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>No. Site Kit is convenient, but you can use Google Tag Manager or another plugin instead. The important thing is to use one method so the tag isn't loaded twice.</p>
 <h3>How do I track contact form submissions in GA4?</h3>
 <p>Create an event for the submission, either from a thank-you page view or a form-specific trigger in Tag Manager, and mark it as a key event in GA4. Test it in DebugView before relying on it.</p>
-
-<p>Want numbers you can trust, including which pages and campaigns bring enquiries? Tracking setup and checks are part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -68440,7 +68617,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
     title: '403 Forbidden on WordPress or wp-admin: Causes and a Safe Fix Order',
     description: 'Fix the WordPress 403 forbidden error on your site or wp-admin: check security plugins, .htaccess, file permissions, firewall rules and hosting blocks.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -68521,6 +68698,16 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 </ul>
 <p>The <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a> balances protection with access, so legitimate users are not blocked.</p>
 
+<h2>Quick check: find what is blocking you</h2>
+<ol>
+  <li>Note whether the 403 hits every page, only wp-admin, or one action such as saving a post. That points to the source.</li>
+  <li>In your hosting panel, open the error log or the firewall/ModSecurity log and look for entries at the time of the error.</li>
+  <li>In the file manager, rename .htaccess to .htaccess-old and reload. If the site loads, regenerate it from <strong>Settings &gt; Permalinks &gt; Save Changes</strong>.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the host firewall is blocking normal admin actions, when file permissions have been changed, or when the 403 appeared with other signs of a hack. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers server and permission fixes, and <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers hacked sites. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What causes a WordPress 403 forbidden error?</h3>
 <p>Most often a security plugin or firewall rule, a broken or strict .htaccess file, wrong file permissions or ownership, or your IP being blocked by the host or CDN.</p>
@@ -68532,8 +68719,6 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>Usually ModSecurity or a firewall rule is blocking the save request. Ask your host to check which rule fired and whitelist it for your site.</p>
 <h3>Is it safe to set permissions to 777 to fix a 403?</h3>
 <p>No. It lets anyone on the server write to those files. Use 755 for folders and 644 for files, and fix ownership instead.</p>
-
-<p>Locked out or seeing 403 errors you cannot trace? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -68947,7 +69132,7 @@ or a cookie name starts with:
     title: 'How to Find and Fix Broken Links on WordPress (Without Slowing Your Site)',
     description: 'How to find and fix broken links on WordPress: use Search Console and an external crawler, fix or redirect each one, and skip slow always-on link plugins.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance'],
     body: `
@@ -69035,6 +69220,16 @@ or a cookie name starts with:
 
 <p>If you work with a developer or agency, ask them to include a link check in every launch and every major content change, and to hand over the redirect list along with the site.</p>
 
+<h2>Quick check: find broken links in ten minutes</h2>
+<ol>
+  <li>In Search Console, open <strong>Indexing &gt; Pages</strong> and look at the "Not found (404)" row for URLs Google cannot reach.</li>
+  <li>Run a crawler such as Screaming Frog SEO Spider (free up to 500 URLs) and filter by <strong>Client Error (4xx)</strong>. Use the Inlinks tab to see which page holds each broken link.</li>
+  <li>Fix internal links at the source, and add a 301 redirect only for old URLs that had traffic or backlinks.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when hundreds of 404s follow a migration or URL change, when redirect chains have built up, or when you are unsure which old URLs need redirects. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers crawl clean-up and redirects. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I find broken links on WordPress?</h3>
 <p>Use Search Console's Pages report for 404 errors, run a crawler such as Screaming Frog or an online broken link checker, and check analytics for visits to your 404 page.</p>
@@ -69046,8 +69241,6 @@ or a cookie name starts with:
 <p>No. Redirect only to a genuinely relevant page. Sending everything to the home page confuses visitors, and Google often treats those as soft 404s anyway.</p>
 <h3>How often should I check for broken links?</h3>
 <p>Monthly for active sites, and always after a redesign, migration, domain change or bulk deletion of content.</p>
-
-<p>Need broken links, redirects and crawl issues cleaned up properly? You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or start with <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 `,
   },
   {
@@ -69056,7 +69249,7 @@ or a cookie name starts with:
     title: 'WordPress Search Not Working? Fixing Missing, Wrong and Slow Results',
     description: 'WordPress search not working? Fix no results, wrong results and slow search: theme forms, WooCommerce, page builders, caching and plugin conflicts.',
     date: '2026-10-11',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -69145,6 +69338,16 @@ or a cookie name starts with:
 <h2>After the fix: test and monitor</h2>
 <p>Once search works, write down ten real searches your customers use, including product codes, misspellings and Hindi or regional terms typed in English, and test them after every theme, plugin or WordPress update. Check the search logs monthly. Make sure the results page has a useful layout on mobile, with product images, prices and a clear &quot;no results&quot; message that suggests popular categories or a WhatsApp link rather than a dead end.</p>
 
+<h2>Quick check: test search directly</h2>
+<ol>
+  <li>Visit <code>yourdomain.com/?s=test</code> with a word you know is on the site. If results appear, the search form in your theme is the problem, not WordPress search.</li>
+  <li>If no results appear, deactivate any search or caching plugin and test the same URL again.</li>
+  <li>For a store, test a product name and a SKU. Default WordPress search does not match SKUs, so a missing SKU result is expected.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when search is slow on a large store, when customers cannot find products by SKU or attribute, or when the search form returns a 404. <a href="/woocommerce-developer/">WooCommerce development</a> covers store search, and <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers fixes on ordinary sites. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is WordPress search not working on my site?</h3>
 <p>Usually because the search form points to the wrong place, the content lives in fields default search does not read, caching or a firewall interferes, or a plugin changes the query. Test the <code>/?s=</code> URL first to narrow it down.</p>
@@ -69158,8 +69361,6 @@ or a cookie name starts with:
 <p>Yes, if search URLs are cached as full pages. Exclude <code>?s=</code> URLs from page and CDN caching.</p>
 <h3>How do I fix WordPress search showing no results?</h3>
 <p>Check that the content is published and not excluded by a plugin, clear caches, and test with a default theme. If posts appear but pages built with a page builder do not, the default search is not reading that content, so a search plugin that indexes custom fields is usually the fix.</p>
-
-<p>If search on your site or store is broken or slow, I can diagnose and fix it as part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a> or <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
   },
   {
@@ -69506,7 +69707,7 @@ or a cookie name starts with:
     title: 'WordPress Media Library Not Loading? Causes and Step-by-Step Fixes',
     description: 'WordPress media library not loading or stuck spinning? Match the symptom to the cause and fix plugin conflicts, PHP limits, permissions and CDN issues.',
     date: '2026-10-11',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -69601,6 +69802,16 @@ or a cookie name starts with:
 </table>
 <p>The guide to <a href="/blog/image-optimization-wordpress/">image optimisation in WordPress</a> covers sizes and compression in more detail.</p>
 
+<h2>Quick check: read the error the library is hiding</h2>
+<ol>
+  <li>Open <strong>Media &gt; Library</strong>, press F12 and open the <strong>Console</strong> tab. Reload and note any red error, which usually names a plugin or theme file.</li>
+  <li>Switch the library to list view with the icon at the top. If list view works and grid does not, the problem is JavaScript, not your files.</li>
+  <li>Use the Health Check &amp; Troubleshooting plugin to disable plugins for your session only and reload the library.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the console shows server errors (500 or 403), when files appear to be missing from the server, or when the problem began after a migration. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress media library not loading?</h3>
 <p>The usual causes are a plugin or theme JavaScript conflict, a failing admin-ajax request, low PHP memory, file permission problems or a CDN or offload plugin misconfiguration.</p>
@@ -69612,8 +69823,6 @@ or a cookie name starts with:
 <p>Often the database still points to the old URL, the uploads folder did not copy fully, or file permissions are wrong. Fix the URLs and permissions, then regenerate thumbnails.</p>
 <h3>Can a security plugin stop the media library loading?</h3>
 <p>Yes. Some firewall rules block admin-ajax requests. Check the plugin's logs and whitelist the request, rather than turning protection off entirely.</p>
-
-<p>If the library still will not load, it can be diagnosed and fixed as part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. Businesses in Maharashtra can also see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
 `,
   },
   {
@@ -69622,7 +69831,7 @@ or a cookie name starts with:
     title: '"Indexed, Though Blocked by robots.txt" and "Blocked by robots.txt": What They Mean and How to Fix Them',
     description: 'Fix "Indexed, though blocked by robots.txt" in Search Console: what it means, when to use noindex instead, WordPress and Shopify causes and validating.',
     date: '2026-10-11',
-    updated: '2026-10-28',
+    updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance'],
     body: `
@@ -69717,6 +69926,16 @@ or a cookie name starts with:
 <li>Editing robots.txt on the server while an SEO plugin serves a different virtual version.</li>
 </ul>
 
+<h2>Quick check: confirm what is blocked</h2>
+<ol>
+  <li>Open <code>yourdomain.com/robots.txt</code> and read every Disallow line.</li>
+  <li>In Search Console, open <strong>Indexing &gt; Pages</strong>, click the "Indexed, though blocked by robots.txt" row and note the URL pattern.</li>
+  <li>Run one of those URLs through <strong>URL Inspection</strong>. If the page should not be in Google, remove the robots.txt block and add a noindex tag instead; if it should be, remove the block and request indexing.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the blocked URLs are filters, cart or search pages on a store, when your SEO plugin and a hand-written robots.txt disagree, or when many warnings appear at once. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers robots.txt, sitemaps and indexing rules. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix indexed, though blocked by robots.txt?</h3>
 <p>Decide whether each URL should rank. If yes, remove the robots.txt rule blocking it. If no, allow crawling and add a noindex tag so Google can see it and drop the page. Then click Validate Fix in Search Console.</p>
@@ -69728,8 +69947,6 @@ or a cookie name starts with:
 <p>They are often blocked in robots.txt but linked from every page, so Google knows they exist. This is usually harmless. If you want them gone, use noindex rather than a robots.txt block.</p>
 <h3>How long does validation take after the fix?</h3>
 <p>It varies with how often Google crawls your site, from days to a few weeks. Requesting indexing for key pages can help them get recrawled sooner.</p>
-
-<p>If Search Console warnings are holding your site back, I can audit robots.txt, sitemaps and indexing settings and fix them. See <a href="/wordpress-seo-services/">WordPress SEO services</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off technical fix through the <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer India</a> page.</p>
 `,
   },
   {
@@ -69738,7 +69955,7 @@ or a cookie name starts with:
     title: 'reCAPTCHA Not Working on WordPress? Fixing "Invalid Domain", Key Type Errors and Forms That Won\'t Send',
     description: 'reCAPTCHA not working on WordPress? Fix "invalid domain" and key type errors, v2 vs v3 mix-ups, caching conflicts and forms that fail silently.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
@@ -69819,6 +70036,16 @@ or a cookie name starts with:
 <h2>Getting forms fixed</h2>
 <p>If you have checked keys, scripts and email and the form still fails, a developer can look at browser console errors and server responses to find the exact point of failure. Form and spam fixes are part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a single fix.</p>
 
+<h2>Quick check: test the form like a visitor</h2>
+<ol>
+  <li>Open the page with the form in a private window, fill it in and submit. Then press F12 and look at the <strong>Console</strong> for reCAPTCHA errors such as "Invalid domain for site key".</li>
+  <li>In the Google reCAPTCHA admin console, check that your domain is listed and that the key type (v2 or v3) matches what your form plugin expects.</li>
+  <li>Clear your caching plugin's cache, since a cached page can carry an expired token.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when genuine enquiries are being blocked, when spam still gets through, or when the form plugin and a security plugin both load reCAPTCHA. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing every form after changes. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is reCAPTCHA not working on my WordPress site?</h3>
 <p>The most common reasons are a domain missing from the key's settings, swapped or wrong-type keys, a speed plugin delaying the script, or two plugins loading reCAPTCHA at once. Check the error message, then the keys, then your plugins.</p>
@@ -69830,8 +70057,6 @@ or a cookie name starts with:
 <p>Yes. Delaying or combining scripts can stop it loading, and cached pages can serve expired v3 tokens. Exclude reCAPTCHA and form scripts from delay and combination.</p>
 <h3>What if reCAPTCHA blocks real customers?</h3>
 <p>Lower the v3 score threshold slightly, show a clear error with another way to contact you, and check the score distribution in the reCAPTCHA console before tightening it again.</p>
-
-<p>Want your enquiry forms tested and protected properly, with spam filtered and every genuine lead delivered? That is part of <a href="/wordpress-maintenance/">WordPress maintenance and support</a>.</p>
 `,
   },
   {
@@ -70091,7 +70316,7 @@ or a cookie name starts with:
     title: 'WordPress Admin Bar or Dashboard Menus Missing? Fixing "Sorry, You Are Not Allowed to Access This Page"',
     description: 'WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.',
     date: '2026-10-11',
-    updated: '2026-10-29',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -70186,6 +70411,16 @@ or a cookie name starts with:
   <li>Review users and plugins for anything unexpected.</li>
 </ol>
 
+<h2>Quick check: profile setting, role or plugin?</h2>
+<ol>
+  <li>Open <strong>Users &gt; Profile</strong> and make sure "Show Toolbar when viewing site" is ticked.</li>
+  <li>Check your role on <strong>Users &gt; All Users</strong>. An Editor or Author sees fewer menus than an Administrator.</li>
+  <li>If menus are missing for an Administrator, disable plugins with the Health Check &amp; Troubleshooting plugin and check again. Admin menu editors and membership plugins often hide items.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your account has lost its Administrator role and no other admin exists, or when unknown admin users appear. That may be a hack and needs <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For access and role fixes, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WordPress admin bar or dashboard menus missing?</h3>
 <p>For the front-end admin bar: the profile setting, caching or a theme missing wp_footer. For dashboard menus: your role or capabilities changed, a plugin hides menus, or the table prefix stopped matching after a migration.</p>
@@ -70197,8 +70432,6 @@ or a cookie name starts with:
 <p>Yes. WooCommerce and many membership plugins hide it for customers and subscribers on purpose. Only staff roles normally need it.</p>
 <h3>Can a hack remove my admin access?</h3>
 <p>Yes. Attackers sometimes downgrade real administrators and create hidden accounts. If roles changed without explanation, treat it as a possible compromise and check users, plugins and files.</p>
-
-<p>If you are locked out of your own dashboard, a developer can often restore access quickly once the cause is known. <a href="/wordpress-shopify-developer-india/">Hire a WordPress developer in India</a> for the fix, or keep updates, backups and security monitoring handled with <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 `,
   },
   {
@@ -70929,7 +71162,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'Shopify Cash on Delivery in India: Setting Up COD, Fees, Pin Code Limits, Order Confirmation, RTO and Partial Prepaid',
     description: 'Shopify cash on delivery in India: enabling COD, fees and pin code limits through apps, aggregator remittance, order confirmation, RTO and partial prepaid.',
     date: '2026-10-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -71035,6 +71268,16 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>COD touches the rest of the store too. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> explains where COD and RTO costs sit among your running costs. If you want COD rules, confirmation and couriers set up properly, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
 
+<h2>Quick check: test COD as a customer would</h2>
+<ol>
+  <li>In Shopify admin, open <strong>Settings &gt; Payments</strong> and check that Cash on Delivery (COD) appears under manual payment methods.</li>
+  <li>Place a test order with a real pin code and choose COD. Check that the order shows as payment pending under <strong>Orders</strong>.</li>
+  <li>Check any COD fee or limit you set is shown clearly before the customer confirms.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when COD orders are being returned often, when you need a confirmation step before dispatch, or when your courier app and COD settings do not agree. <a href="/shopify-developer/">Shopify development</a> covers COD set-up and testing. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I enable Shopify cash on delivery in India?</h3>
 <p>To enable Shopify cash on delivery in India, open the payments settings, add a manual payment method, choose cash on delivery, write short instructions for the buyer and save. Place a test order, then decide whether you need an app for COD fees, pin code or order-value limits and order confirmation. Online payments sit beside it; see <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a>.</p>
@@ -71048,8 +71291,6 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>There is no card or UPI payment to reverse, so you refund by bank transfer or UPI to the customer and record the refund in Shopify. Say how this works in your refund policy; <a href="/blog/woocommerce-returns-refunds-policy/">writing a returns and refunds policy</a> covers the wording.</p>
 <h3>Should I stop offering COD to cut RTO?</h3>
 <p>Usually not completely, because many shoppers will not buy without it. Limiting where and when it is offered, confirming orders and rewarding prepaid tends to work better than switching it off.</p>
-
-<p>If you would like COD set up with the right limits, a confirmation step and invoices that handle fees correctly, my <a href="/shopify-developer/">Shopify development service</a> covers configuration and testing on a phone before launch. Share the store address and I will come back with a free review and a fixed quote.</p>
 `,
   },
   {
@@ -71058,7 +71299,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'Shopify GST Invoices in India: Tax Settings, HSN Codes, GST Invoice Apps, B2B GSTIN Capture and Common Mistakes',
     description: 'Shopify GST invoices in India: tax settings, inclusive prices, HSN codes, choosing an invoice app, B2B GSTIN capture, CGST, SGST and IGST, and mistakes.',
     date: '2026-10-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -71159,6 +71400,16 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>Sellers in central India can read about <a href="/wordpress-shopify-developer-indore/">Shopify development in Indore</a>, where GST setup is part of the store launch.</p>
 
+<h2>Quick check: check one order's tax</h2>
+<ol>
+  <li>In Shopify admin, open <strong>Settings &gt; Taxes and duties</strong> and confirm India is set up and whether your prices include tax.</li>
+  <li>Place a test order to another state and to your own state. The invoice should show IGST for the first and CGST plus SGST for the second.</li>
+  <li>Open the invoice your app produces and check it shows your GSTIN, HSN codes and the customer's address.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when tax shows wrongly on invoices, when HSN codes are missing, or when your CA needs reports in a set format. <a href="/shopify-developer/">Shopify development</a> covers tax settings and invoice apps, tested with sample orders. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create a Shopify GST invoice in India?</h3>
 <p>To create a Shopify GST invoice in India, set up India's tax options in the taxes and duties settings, add HSN codes to products, then install a GST invoice app and enter your GSTIN, business address and invoice numbering in it. The app builds an invoice for each order from Shopify's data. Place test orders inside and outside your state and have your CA check the result.</p>
@@ -71172,8 +71423,6 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>Not in a dedicated field by default at the time of writing. It can be collected on the cart page, through a checkout extension where your plan allows it, or with Shopify's B2B features on plans that include them.</p>
 <h3>Do I still need a CA if the app calculates GST?</h3>
 <p>Yes. The app applies the rules you give it. Your CA confirms the rates, the invoice format and how filing will work, and should review the first month's invoices.</p>
-
-<p>If you want tax settings, HSN codes and the invoice app set up and tested with the orders your CA cares about, my <a href="/shopify-developer/">Shopify development service</a> covers it as part of setup or as a fix for an existing store. Tell me the store address to get a free review of the current setup, then a fixed quote.</p>
 `,
   },
   {
@@ -71182,7 +71431,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'Payment Gateways on Shopify in India: How They Connect, Fees, UPI, Failed Payments and Refunds',
     description: 'How a Shopify payment gateway works in India: connecting a provider, KYC, UPI at checkout, the two sets of fees, failed payments, refunds and settlements.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -71267,6 +71516,16 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>Payments are one part of the launch. <a href="/blog/shopify-store-setup-india/">Setting up a Shopify store in India</a> puts them in order with domain, GST and shipping, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a> covers the tax side, and <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> covers delivery. If you are still choosing a platform, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>. For help connecting and testing a gateway, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
 
+<h2>Quick check: test payments on a real phone</h2>
+<ol>
+  <li>In Shopify admin, open <strong>Settings &gt; Payments</strong> and confirm which provider is active and that it is out of test mode.</li>
+  <li>On a phone, place a small real order with UPI and confirm it shows as Paid under <strong>Orders</strong>.</li>
+  <li>Refund that order from Shopify and check the refund reaches the account.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when payments succeed but orders do not appear, when UPI fails on some phones, or when you are switching gateways. <a href="/shopify-developer/">Shopify development</a> covers gateway set-up and testing. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Which Shopify payment gateway in India should I choose?</h3>
 <p>Choose the Shopify payment gateway in India that is available as a Shopify integration, accepts your business type at KYC, supports the methods your buyers use (UPI first, then cards, net banking and wallets), settles on a schedule your cash flow can live with and handles refunds cleanly. Compare the provider's fees together with any Shopify transaction fee. <a href="/blog/payment-gateways-india-compared/">Payment gateways in India compared</a> covers the criteria in more detail.</p>
@@ -71280,8 +71539,6 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>Yes, through a payment provider that supports UPI. Test it on several phones and UPI apps, as the return from the UPI app to the browser is the most fragile step.</p>
 <h3>Why was a customer charged but no order created?</h3>
 <p>Usually the payment confirmation did not reach Shopify after a redirect or UPI hand-off. Find the payment in the provider's dashboard, then create the order manually or refund it, and report the case to the provider.</p>
-
-<p>If you want your payment provider connected, UPI and refunds tested on real phones, and the fees worked out for your plan before you commit, my <a href="/shopify-developer/">Shopify development service</a> gives you a free review up front, then a fixed quote. The provider account and every payout stay in your business name.</p>
 `,
   },
   {
@@ -71290,7 +71547,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'Shopify Shipping in India: Zones, Rates, Pin Code Serviceability, Couriers, NDR and RTO',
     description: 'Set Shopify shipping rates in India: zones, weight and order-value rates, free-shipping thresholds, pin code checks, courier apps, NDR, RTO and packaging.',
     date: '2026-10-27',
-    updated: '2026-10-30',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'woocommerce-developer'],
     body: `
@@ -71382,6 +71639,16 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>Selling from eastern India? The page on <a href="/wordpress-shopify-developer-kolkata/">Shopify development in Kolkata</a> covers how a remote store setup works, including shipping apps.</p>
 
+<h2>Quick check: test rates with real pin codes</h2>
+<ol>
+  <li>In Shopify admin, open <strong>Settings &gt; Shipping and delivery</strong> and check your zones and rates.</li>
+  <li>Add a product to the cart and go to checkout with a pin code in your city and one in a far state. Note the rates you are shown.</li>
+  <li>Check the courier app you use supports those pin codes and COD where you offer it.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when rates are wrong, when some pin codes cannot check out, or when your courier app does not sync tracking. <a href="/shopify-developer/">Shopify development</a> covers shipping set-up with real address tests. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set Shopify shipping rates in India?</h3>
 <p>To set Shopify shipping rates in India, go to the shipping and delivery settings, create a zone for India, then add rates by weight, by order value or as a flat charge, and add a free-shipping rate above the threshold your margin can carry. Make sure every product has a correct weight, then check the rates with test orders to a few pin codes.</p>
@@ -71395,8 +71662,6 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>An NDR is a report of a failed delivery attempt, which you can still act on. RTO is the parcel going back to you after attempts end, at your cost.</p>
 <h3>Why am I charged more than the rate I expected?</h3>
 <p>Often volumetric weight, or a product weight in Shopify that leaves out packaging. Measure the packed parcel and compare it with the courier's charge.</p>
-
-<p>If you want zones, rates, a courier app and pin code checks set up and tested with real addresses, my <a href="/shopify-developer/">Shopify development service</a> covers shipping as part of setup or as a fix for a store already trading. Message me the store address; the reply is a free review plus a fixed quote.</p>
 `,
   },
   {
@@ -71556,7 +71821,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'How to Change Your Shopify Theme Without Losing SEO: Benchmark, Unpublished Theme, App Embeds, Templates and Launch Checks',
     description: 'How to change your Shopify theme without losing SEO: what the theme controls, building on an unpublished copy, app embeds, templates and launch checks.',
     date: '2026-10-27',
-    updated: '2026-10-31',
+    updated: '2026-11-07',
     category: 'E-commerce',
     related: ['shopify-developer', 'website-redesign'],
     body: `
@@ -71648,6 +71913,16 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>If you would rather hand the switch to someone, the guide to <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a> explains what to ask before you choose. A theme change is also a good moment to fix other things. <a href="/blog/shopify-store-cost-india/">What a Shopify store costs in India</a> covers paid theme and app costs, and the guide to moving from WooCommerce to Shopify covers the bigger job when the platform changes too. For a theme switch handled with SEO checks, see my <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer services across India</a>.</p>
 
+<h2>Quick check: compare before you publish</h2>
+<ol>
+  <li>Before switching, save a list of your top pages from Search Console (<strong>Performance &gt; Pages</strong>) for the last three months.</li>
+  <li>Preview the new theme from <strong>Online Store &gt; Themes</strong>, open each of those pages, and check the title, H1, text and images are still there.</li>
+  <li>View the page source in the preview and confirm the meta description and any product structured data are still present.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the new theme drops content or apps, when URLs or collections are changing too, or when you want the switch tested on an unpublished copy. <a href="/shopify-developer/">Shopify development</a> covers theme changes with SEO checks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I change my Shopify theme without losing SEO?</h3>
 <p>To change your Shopify theme without losing SEO, record current rankings and traffic, list what the old theme outputs (titles, headings, structured data, internal links, custom templates and app embeds), build the new theme as an unpublished copy, match those items, publish in a quiet period and watch Search Console for a few weeks.</p>
@@ -71661,8 +71936,6 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>Yes, as long as it is still in the theme library. Publishing it again restores the previous design, though apps switched on only in the new theme need checking.</p>
 <h3>Do I need to redo app settings after switching?</h3>
 <p>App settings are usually kept, but app embeds and blocks are set per theme, so switch them on and place them again in the new theme.</p>
-
-<p>If you are planning a new theme or a redesign and want the switch done on an unpublished copy with the SEO checks above, my <a href="/shopify-developer/">Shopify development service</a> starts with a free review of your current store and a fixed quote.</p>
 `,
   },
   {
@@ -71796,6 +72069,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely',
     description: 'WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.',
     date: '2026-10-30',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -71860,6 +72134,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>Why developers lock updates, and a better alternative</h2>
 <p>Locking updates is usually a shortcut. The developer may have edited a plugin directly, customised a parent theme instead of using a child theme, or wanted to stop clients breaking the site. Each of these has a proper fix: move customisations into a child theme or a small custom plugin, document which plugins are customised, and give clients an editor account for content while an administrator handles updates on a schedule. That keeps the site both stable and secure. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> covers the theme side.</p>
 
+<h2>Quick check: why updates are hidden</h2>
+<ol>
+  <li>Open <strong>Dashboard &gt; Updates</strong> while logged in as an Administrator, and click "Check again".</li>
+  <li>Search wp-config.php in your file manager for <code>DISALLOW_FILE_MODS</code> or <code>AUTOMATIC_UPDATER_DISABLED</code>. Either can hide update controls.</li>
+  <li>For a premium plugin, check that its licence key is entered and active; many only update with a valid licence.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when your host manages updates and blocks them, when the site is several major versions behind, or when you are afraid an update will break it. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> tests updates on staging first and keeps backups. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is the WordPress update button missing?</h3>
 <p>Usually because you are not logged in as an administrator, updates are disabled in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired.</p>
@@ -71873,8 +72157,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>No. Only administrators can update core, plugins and themes, and on multisite only the super admin.</p>
 <h3>Is it safe to leave updates disabled?</h3>
 <p>Not for long. Outdated plugins and themes are a common way sites get hacked. If updates break something, fix the cause rather than freezing the site.</p>
-
-<p>Stuck with a site you cannot update, or one that is far behind? <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers safe catch-up updates and ongoing care, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix.</p>
 `,
   },
   {
@@ -72073,6 +72355,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'WordPress Revisions Not Showing? Why the Revisions Option Disappears and How to Get It Back',
     description: 'WordPress revisions not showing? Check the editor panel, wp-config limits, cleanup plugins, post type support and page builders, then restore an older version.',
     date: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-developer-pune'],
     body: `
@@ -72135,6 +72418,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Revisions help with editing mistakes on a single page. They do not protect you from a failed update, a hacked site, a deleted page or a broken plugin. For that you need regular off-site backups that you have actually tested. A monthly care plan normally covers backups, updates and checks like these; see <a href="/wordpress-maintenance/">WordPress maintenance</a> if you would rather not manage it yourself.</p>
 <p>If you need someone to investigate missing revisions, restore lost content from backup or tidy up the database safely, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
 
+<h2>Quick check: are revisions turned off?</h2>
+<ol>
+  <li>Open a post in the editor, click the settings icon and look under <strong>Post</strong> for a Revisions count.</li>
+  <li>Search wp-config.php for <code>WP_POST_REVISIONS</code>. A value of <code>false</code> or <code>0</code> turns revisions off.</li>
+  <li>Check database clean-up plugins: some delete revisions on a schedule.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you have lost content that you need back and revisions are gone, when only an old backup holds it, or when a clean-up plugin has removed more than revisions. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes daily backups and restores. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are WordPress revisions not showing in the block editor?</h3>
 <p>Check the Post or Page tab in the right sidebar. If there is no Revisions count, the post may have been saved only once, revisions may be disabled in wp-config.php, or a cleanup plugin may have deleted them.</p>
@@ -72156,6 +72449,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'Website AMC in India: What an Annual Maintenance Contract for Your Website Should Cover',
     description: 'Website AMC contract in India explained: what an annual maintenance contract should include, exclusions, response times, renewal, ownership and red flags.',
     date: '2026-10-31',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-developer-pune'],
     body: `
@@ -72214,6 +72508,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>Questions to ask before you sign</h2>
 <ol><li>What exactly do you do each month, and will I get a report?</li><li>How often are backups taken, where are they stored, and have you tested a restore?</li><li>How many changes or hours are included, and what is the rate after that?</li><li>What is your response time for urgent and routine requests?</li><li>Is hack cleanup included?</li><li>Will I keep full access to the domain, hosting and WordPress admin?</li><li>How do renewal and early termination work?</li></ol>
 <p>Samverse offers <a href="/wordpress-maintenance/">WordPress maintenance</a> with written scope and reports, and businesses in Maharashtra can also work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for AMC-style support. Send your site address and what you need covered to get a quote.</p>
+<h2>Quick check: read your AMC before you sign</h2>
+<ol>
+  <li>Check the contract lists what is done each month: updates, backups, uptime monitoring and security checks.</li>
+  <li>Check how many content changes or hours are included, and what happens to unused ones.</li>
+  <li>Check the response time for a site that is down, and who holds the admin, hosting and domain logins.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when you want a maintenance plan with a clear written scope rather than a vague AMC. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups, monitoring and fixes. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is a website AMC?</h3>
 <p>A website AMC is an annual maintenance contract: a yearly agreement in which a developer keeps your site updated, backed up, secure and working, and makes an agreed number of small changes.</p>
@@ -73333,6 +73637,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares',
     description: 'WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.',
     date: '2026-11-06',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -73408,6 +73713,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </ul>
 <p>Featured image problems after a migration or redesign are routine fixes in a <a href="/wordpress-maintenance/">WordPress maintenance plan</a>. If the fix needs template changes, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to edit the theme or builder template properly.</p>
 
+<h2>Quick check: theme, setting or cache?</h2>
+<ol>
+  <li>Open the post in the editor and confirm a featured image is set in the <strong>Post</strong> settings panel.</li>
+  <li>Check your theme's options (often under <strong>Appearance &gt; Customize</strong>) for a "show featured image" setting on single posts or archives.</li>
+  <li>Clear your cache and test the page in a private window. For social shares, test the URL in the Facebook Sharing Debugger, which reads the og:image tag.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when images are missing across the whole site after a migration, when thumbnails are the wrong size everywhere, or when the theme template does not support featured images. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers fixes like these. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress featured image not showing?</h3>
 <p>Usually the theme hides it on single posts or archives, a page builder template doesn't include it, or no featured image is set. Check the post sidebar, the theme's Customizer settings and any builder templates.</p>
@@ -73429,6 +73744,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus',
     description: 'WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.',
     date: '2026-11-06',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -73514,6 +73830,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </ul>
 <p>If menus keep breaking after updates, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> includes post-update checks of the header and mobile menu. For a one-off fix or a header rebuild, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a>; businesses in Maharashtra can also look at <a href="/wordpress-developer-pune/">a WordPress developer in Pune</a>.</p>
 
+<h2>Quick check: is the menu assigned?</h2>
+<ol>
+  <li>Block themes: open <strong>Appearance &gt; Editor &gt; Navigation</strong> and check the header uses the menu you edited.</li>
+  <li>Classic themes: open <strong>Appearance &gt; Menus &gt; Manage Locations</strong> and make sure your menu is assigned to the primary or header location.</li>
+  <li>If the menu shows on desktop but not on phones, check the mobile menu setting in your theme or page builder.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the menu disappeared after a theme or builder update, when the mobile menu will not open, or when the header was built in a page builder you cannot edit. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers fixes like these. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress menu not showing?</h3>
 <p>Usually because the menu is not assigned to the theme's menu location, the theme was changed, or a block theme or page builder now controls the header. Assign the menu in Manage Locations, the Navigation block or the builder's menu widget.</p>
@@ -73535,6 +73861,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'WordPress "Updating Failed" or "Publishing Failed"? How to Fix the Not a Valid JSON Response Error',
     description: 'Fix the WordPress "Updating failed" and "Publishing failed. The response is not a valid JSON response" errors: permalinks, SSL, firewalls, plugins and REST API.',
     date: '2026-11-06',
+    updated: '2026-11-07',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
@@ -73610,6 +73937,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Watch Site Health once a month. It flags REST API and loopback problems before editors notice them.</li>
 </ul>
 <p>If the editor keeps failing and you can't find the cause, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> covers this kind of fault, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. I'd start with the browser's Network tab and the server log, because together they name the cause in most cases.</p>
+
+<h2>Quick check: is the REST API reachable?</h2>
+<ol>
+  <li>Open <strong>Tools &gt; Site Health &gt; Status</strong> and look for "The REST API encountered an error" or "unexpected result".</li>
+  <li>Visit <code>yourdomain.com/wp-json/</code> in your browser. You should see JSON text, not an error page.</li>
+  <li>If either fails, disable security and firewall plugins with the Health Check &amp; Troubleshooting plugin and test again.</li>
+</ol>
+
+<h2>When to get help</h2>
+<p>Get help when the REST API is blocked by your host's firewall, when the error appears only on some posts, or when it started after a migration or SSL change. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What does "Updating failed. The response is not a valid JSON response" mean?</h3>

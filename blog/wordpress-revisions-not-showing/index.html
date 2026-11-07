@@ -43,7 +43,7 @@
       "headline": "WordPress Revisions Not Showing? Why the Revisions Option Disappears and How to Get It Back",
       "description": "WordPress revisions not showing? Check the editor panel, wp-config limits, cleanup plugins, post type support and page builders, then restore an older version.",
       "datePublished": "2026-10-31",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-revisions-not-showing/",
       "image": "https://samverse.space/assets/og/blog-wordpress-revisions-not-showing.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-31">31 October 2026</time> · 7 min read</span>
+              <span><time datetime="2026-10-31">31 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Revisions%20Not%20Showing%3F%20Why%20the%20Revisions%20Option%20Disappears%20and%20How%20to%20Get%20It%20Back%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-revisions-not-showing%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#revisions-exist-but-changes-are-not-showing-on-the-site">Revisions exist but changes are not showing on the site</a></li>
               <li><a href="#how-to-restore-an-older-version-safely">How to restore an older version safely</a></li>
               <li><a href="#revisions-are-not-backups">Revisions are not backups</a></li>
+              <li><a href="#quick-check-are-revisions-turned-off">Quick check: are revisions turned off?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -239,6 +241,16 @@
 <p>Revisions help with editing mistakes on a single page. They do not protect you from a failed update, a hacked site, a deleted page or a broken plugin. For that you need regular off-site backups that you have actually tested. A monthly care plan normally covers backups, updates and checks like these; see <a href="/wordpress-maintenance/">WordPress maintenance</a> if you would rather not manage it yourself.</p>
 <p>If you need someone to investigate missing revisions, restore lost content from backup or tidy up the database safely, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse, or see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
 
+<h2 id="quick-check-are-revisions-turned-off">Quick check: are revisions turned off?</h2>
+<ol>
+  <li>Open a post in the editor, click the settings icon and look under <strong>Post</strong> for a Revisions count.</li>
+  <li>Search wp-config.php for <code>WP_POST_REVISIONS</code>. A value of <code>false</code> or <code>0</code> turns revisions off.</li>
+  <li>Check database clean-up plugins: some delete revisions on a schedule.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when you have lost content that you need back and revisions are gone, when only an old backup holds it, or when a clean-up plugin has removed more than revisions. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes daily backups and restores. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why are WordPress revisions not showing in the block editor?</h3>
 <p>Check the Post or Page tab in the right sidebar. If there is no Revisions count, the post may have been saved only once, revisions may be disabled in wp-config.php, or a cleanup plugin may have deleted them.</p>
@@ -297,6 +309,8 @@
               <li><a href="#revisions-exist-but-changes-are-not-showing-on-the-site">Revisions exist but changes are not showing on the site</a></li>
               <li><a href="#how-to-restore-an-older-version-safely">How to restore an older version safely</a></li>
               <li><a href="#revisions-are-not-backups">Revisions are not backups</a></li>
+              <li><a href="#quick-check-are-revisions-turned-off">Quick check: are revisions turned off?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -43,7 +43,7 @@
       "headline": "How to Fix Cumulative Layout Shift (CLS) on WordPress: Images, Fonts, Elementor and Banners",
       "description": "How do I fix cumulative layout shift on a WordPress site? A cause-by-cause CLS checklist for images, fonts, ads, Elementor and banners, and how to test it.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/fix-cls-layout-shift/",
       "image": "https://samverse.space/assets/og/blog-fix-cls-layout-shift.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Fix%20Cumulative%20Layout%20Shift%20(CLS)%20on%20WordPress%3A%20Images%2C%20Fonts%2C%20Elementor%20and%20Banners%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffix-cls-layout-shift%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#elementor-specific-causes">Elementor-specific causes</a></li>
               <li><a href="#cookie-banners-offer-bars-and-sticky-headers">Cookie banners, offer bars and sticky headers</a></li>
               <li><a href="#confirm-the-fix">Confirm the fix</a></li>
+              <li><a href="#quick-check-find-the-element-that-moves">Quick check: find the element that moves</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -295,6 +297,16 @@
   <li>Re-check after adding a plugin, ad, widget or banner, as each can bring shifts back</li>
 </ul>
 
+<h2 id="quick-check-find-the-element-that-moves">Quick check: find the element that moves</h2>
+<ol>
+  <li>Run the page through PageSpeed Insights and open the diagnostic "Avoid large layout shifts". It lists the elements that moved.</li>
+  <li>In Chrome DevTools, open the <strong>Performance</strong> panel, record a page load and look at the Layout Shifts track.</li>
+  <li>Check images in that area for missing width and height, and check for late banners, ads or web fonts.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when shifts come from your theme or page builder, when fixing one shift creates another, or when Search Console still reports poor CLS weeks later. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers Core Web Vitals fixes. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I fix "avoid large layout shifts" in WordPress?</h3>
 <p>Open the audit in PageSpeed Insights to see which elements moved, then fix the cause above them: add image dimensions, reserve space for embeds and ads, switch banners to overlays, or stop fonts and scripts loading late.</p>
@@ -308,8 +320,6 @@
 <p>Find the shifting elements in PageSpeed Insights, then reserve space for images, embeds, ads and sliders, preload your main font with a matched fallback, show banners as overlays and keep the header a fixed height. Clear caches and re-test on mobile.</p>
 <h3>Fix CLS issue in WordPress: where do I start?</h3>
 <p>Start with the CLS issue in Search Console's Core Web Vitals report, open an example URL in PageSpeed Insights on mobile, and fix the element it names in the shared template. Images without dimensions and late banners are the most common first fixes.</p>
-
-<p>Most CLS fixes are small; finding the cause is the slow part. If you'd like it handled, my <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> service covers all three Core Web Vitals. Planning a new site? With <a href="/wordpress-website-development/">WordPress website development</a>, space for images, embeds and headers is reserved from the start.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -355,6 +365,8 @@
               <li><a href="#elementor-specific-causes">Elementor-specific causes</a></li>
               <li><a href="#cookie-banners-offer-bars-and-sticky-headers">Cookie banners, offer bars and sticky headers</a></li>
               <li><a href="#confirm-the-fix">Confirm the fix</a></li>
+              <li><a href="#quick-check-find-the-element-that-moves">Quick check: find the element that moves</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
