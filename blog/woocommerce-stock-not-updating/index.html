@@ -43,7 +43,7 @@
       "headline": "WooCommerce Stock Not Updating? Fixing Stock That Does Not Reduce, Wrong Quantities and Out of Stock Errors",
       "description": "WooCommerce stock not updating after orders, or showing wrong quantities? Fix stock settings, order statuses, variations, caching, sync plugins and cron jobs.",
       "datePublished": "2026-10-31",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-09",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-stock-not-updating/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-stock-not-updating.png",
       "articleSection": "E-commerce",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-31">31 October 2026</time> · 7 min read</span>
+              <span><time datetime="2026-10-31">31 October 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 8 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Stock%20Not%20Updating%3F%20Fixing%20Stock%20That%20Does%20Not%20Reduce%2C%20Wrong%20Quantities%20and%20Out%20of%20Stock%20Errors%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-stock-not-updating%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -158,6 +158,7 @@
               <li><a href="#woocommerce-stock-not-updating-the-common-causes">WooCommerce stock not updating: the common causes</a></li>
               <li><a href="#symptoms-and-where-to-look">Symptoms and where to look</a></li>
               <li><a href="#correct-the-counts-after-fixing-the-cause">Correct the counts after fixing the cause</a></li>
+              <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -226,8 +227,15 @@
 <p>Once the cause is fixed, do a physical count, update quantities (a CSV export and import works for large catalogues), and place a test order with cash on delivery to confirm the order note says stock was reduced. Then cancel it and confirm stock returns.</p>
 <p>It also helps to make stock changes traceable. The order notes show reductions and restocks, and some inventory plugins keep a stock history per product showing who or what changed the number and when. When a count is wrong again, that log tells you straight away whether an order, a staff edit, an import or a sync caused it. Give staff the Shop Manager role rather than Administrator, and agree who is allowed to edit quantities; <a href="/blog/woocommerce-order-management-workflow/">a simple order management workflow</a> sets this out for small teams.</p>
 <p>Add this test to your routine with the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
+<h2 id="quick-check-after-the-fix">Quick check: after the fix</h2>
+<ol>
+  <li>In WordPress, open <strong>WooCommerce &gt; Settings &gt; Products &gt; Inventory</strong> and check stock management is on.</li>
+  <li>Place a test order and check stock goes down.</li>
+  <li>Check <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong> for failed actions.</li>
+</ol>
+
 <h2 id="when-to-get-help">When to get help</h2>
-<p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix.</p>
+<p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2 id="faqs">FAQs</h2>
 <h3>Why is WooCommerce stock not updating after an order?</h3>
 <p>Stock management is off for the product, or the order has not reached Processing, On hold or Completed. Check the order notes for "Stock levels reduced".</p>
@@ -281,6 +289,7 @@
               <li><a href="#woocommerce-stock-not-updating-the-common-causes">WooCommerce stock not updating: the common causes</a></li>
               <li><a href="#symptoms-and-where-to-look">Symptoms and where to look</a></li>
               <li><a href="#correct-the-counts-after-fixing-the-cause">Correct the counts after fixing the cause</a></li>
+              <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -310,7 +319,7 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/woocommerce-add-to-cart-not-working/"><img class="post-card-img" src="/assets/og/blog-woocommerce-add-to-cart-not-working.webp" alt="WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and &quot;Cannot Be Purchased&quot; Errors" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and &quot;Cannot Be Purchased&quot; Errors</h3><p>WooCommerce add to cart not working? Fix caching, cart fragments, JavaScript conflicts, stock and price settings, variable products and empty carts.</p><span class="post-card-meta">31 October 2026 · 7 min read</span></a>
+          <a class="post-card" href="/blog/woocommerce-add-to-cart-not-working/"><img class="post-card-img" src="/assets/og/blog-woocommerce-add-to-cart-not-working.webp" alt="WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and &quot;Cannot Be Purchased&quot; Errors" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Add to Cart Not Working? Fixing the Button, Empty Carts, Mini Cart Not Updating and &quot;Cannot Be Purchased&quot; Errors</h3><p>WooCommerce add to cart not working? Fix caching, cart fragments, JavaScript conflicts, stock and price settings, variable products and empty carts.</p><span class="post-card-meta">31 October 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-inventory-management/"><img class="post-card-img" src="/assets/og/blog-woocommerce-inventory-management.webp" alt="WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Inventory and Stock Management: Settings, Variations, Alerts and Syncing With Tally or a Shop</h3><p>WooCommerce inventory management step by step: stock settings, variation stock, low-stock alerts, backorders, ATUM and syncing with Tally or marketplaces.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/woocommerce-order-management-workflow/"><img class="post-card-img" src="/assets/og/blog-woocommerce-order-management-workflow.webp" alt="WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams</h3><p>A WooCommerce order workflow for small Indian teams: statuses explained, payment to dispatch, COD confirmation, labels, tracking, returns and staff roles.</p><span class="post-card-meta">30 September 2026 · 8 min read</span></a>
         </div>

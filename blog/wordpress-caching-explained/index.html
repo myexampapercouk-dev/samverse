@@ -43,7 +43,7 @@
       "headline": "WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)",
       "description": "WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-09",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-caching-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-caching-explained.png",
       "articleSection": "Speed",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-31">31 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Caching%20Explained%3A%20Page%2C%20Browser%2C%20Object%2C%20OPcache%20and%20CDN%20Caching%20(and%20What%20Not%20to%20Cache)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-caching-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -168,6 +168,8 @@
               <li><a href="#how-to-test-that-caching-works">How to test that caching works</a></li>
               <li><a href="#common-caching-mistakes">Common caching mistakes</a></li>
               <li><a href="#caching-won-t-fix-everything">Caching won't fix everything</a></li>
+              <li><a href="#quick-check-is-caching-working">Quick check: is caching working?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -182,7 +184,6 @@
 <p><strong>Short answer:</strong> WordPress cache is a saved copy of work WordPress has already done, such as a finished HTML page, a database result or compiled PHP, so the next visitor gets it instantly. For most sites the best setup is server-side page caching from the host (or one caching plugin), browser caching for files, and object caching on stores and membership sites.</p>
 
 <p>Every time someone opens a WordPress page, the server normally runs PHP code, queries the database and assembles the page from scratch. <strong>Caching</strong> saves the result of that work so it can be reused instead of rebuilt. Done right, it's one of the biggest speed improvements you can make; done wrong, it shows visitors stale pages or breaks forms and carts.</p>
-<p>In short: most business websites need <strong>page caching</strong> (from the host or one plugin), <strong>browser caching</strong> for files, and often a <strong>CDN</strong>. Online stores, membership sites and busy admin areas also benefit from <strong>object caching</strong> with Redis or Memcached. <strong>OPcache</strong> runs at server level and is usually switched on by your host. Here is what each one does, how to choose a setup, what never to cache, and how to clear and test it.</p>
 
 <h2 id="the-main-types-of-caching">The main types of caching</h2>
 <table>
@@ -317,7 +318,16 @@
 </ul>
 
 <h2 id="caching-won-t-fix-everything">Caching won't fix everything</h2>
-<p>Caching speeds up delivery, but huge images, heavy page builders and too many scripts still slow the page in the browser. See <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a> and <a href="/blog/core-web-vitals-explained/">Core Web Vitals explained</a>.</p>
+
+<h2 id="quick-check-is-caching-working">Quick check: is caching working?</h2>
+<ol>
+  <li>Open your page in a private window, then open Chrome DevTools (F12) <strong>Network</strong> tab, click the page itself and look for a cache header such as "x-cache", "cf-cache-status" or "x-litespeed-cache".</li>
+  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and check the server response time result.</li>
+  <li>Check only one page caching plugin is active in <strong>Plugins &gt; Installed Plugins</strong>.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when two cache plugins clash, when logged-in users or carts see stale pages, or when the site is still slow with caching on. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>Do I need a caching plugin if my host already caches?</h3>
@@ -333,8 +343,6 @@
 
 <h3>What is server-side caching in WordPress?</h3>
 <p>It is caching handled by the web server or host rather than only by a plugin. Servers such as LiteSpeed, Nginx or Varnish serve a saved copy of the page before WordPress loads, which is usually the fastest option. A companion plugin may control it from the dashboard.</p>
-
-<p>Want caching set up properly for your host, without breaking forms or the checkout? I configure and test caching layer by layer, then measure the result. See <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a>.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -385,6 +393,8 @@
               <li><a href="#how-to-test-that-caching-works">How to test that caching works</a></li>
               <li><a href="#common-caching-mistakes">Common caching mistakes</a></li>
               <li><a href="#caching-won-t-fix-everything">Caching won't fix everything</a></li>
+              <li><a href="#quick-check-is-caching-working">Quick check: is caching working?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
@@ -415,7 +425,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-database-optimization/"><img class="post-card-img" src="/assets/og/blog-wordpress-database-optimization.webp" alt="WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>WordPress Database Optimisation: How to Clean Up and Speed Up Your Database Safely</h3><p>WordPress database optimisation step by step: back up first, remove revisions, transients and spam, fix heavy autoloaded options and keep the database lean.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-admin-slow/"><img class="post-card-img" src="/assets/og/blog-wordpress-admin-slow.webp" alt="Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Admin Dashboard So Slow? How to Find the Cause and Fix It</h3><p>Why the WordPress admin dashboard is slow: heavy plugins, outside requests, autoloaded data, Heartbeat, WP-Cron and hosting limits, and how to fix each.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/hostinger-website-slow-fix/"><img class="post-card-img" src="/assets/og/blog-hostinger-website-slow-fix.webp" alt="Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger</h3><p>Hostinger site slow? Check CPU and memory limits in hPanel, confirm the LiteSpeed cache header, then fix CDN, PHP, plugins and bots before you upgrade.</p><span class="post-card-meta">28 September 2026 · 11 min read</span></a>
+          <a class="post-card" href="/blog/hostinger-website-slow-fix/"><img class="post-card-img" src="/assets/og/blog-hostinger-website-slow-fix.webp" alt="Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger</h3><p>Hostinger site slow? Check CPU and memory limits in hPanel, confirm the LiteSpeed cache header, then fix CDN, PHP, plugins and bots before you upgrade.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

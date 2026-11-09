@@ -43,7 +43,7 @@
       "headline": "WordPress Activity Log and Change Log: Track Who Changed What on Your Site",
       "description": "WordPress has no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, and what to review.",
       "datePublished": "2026-09-30",
-      "dateModified": "2026-11-06",
+      "dateModified": "2026-11-09",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-activity-logs/",
       "image": "https://samverse.space/assets/og/blog-wordpress-activity-logs.png",
       "articleSection": "Security",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-11-06">6 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Activity%20Log%20and%20Change%20Log%3A%20Track%20Who%20Changed%20What%20on%20Your%20Site%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-activity-logs%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -164,6 +164,7 @@
               <li><a href="#retention-and-privacy">Retention and privacy</a></li>
               <li><a href="#what-activity-logs-can-t-do">What activity logs can't do</a></li>
               <li><a href="#setting-up-a-wordpress-activity-log-for-a-team-in-india">Setting up a WordPress activity log for a team in India</a></li>
+              <li><a href="#quick-check-is-your-log-working">Quick check: is your log working?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -233,7 +234,6 @@
     <tr><td>WooCommerce</td><td>Product, price and stock changes, order status updates and coupon edits, depending on the plugin</td></tr>
   </tbody>
 </table>
-<p>Revisions already show changes to a single page's content, but they don't cover logins, users, plugins or settings. That's what an activity log adds.</p>
 
 <h2 id="what-to-log-and-what-to-skip">What to log (and what to skip)</h2>
 <ul>
@@ -271,7 +271,6 @@
   <li><strong>Weekly:</strong> spikes in failed logins, and logins by unexpected users or from unexpected places</li>
   <li><strong>Monthly:</strong> plugin, theme and settings changes, plus accounts that haven't been used and can be removed</li>
 </ul>
-<p>If you have a maintenance provider, ask whether reviewing the log is part of their monthly checks and report.</p>
 
 <h2 id="retention-and-privacy">Retention and privacy</h2>
 <p>Activity logs contain personal data: usernames, email addresses, IP addresses and, on stores, sometimes customer and order details. Treat them with care:</p>
@@ -297,11 +296,17 @@
   <li><strong>Decide who reads it.</strong> A named person checks the log weekly, and immediately after anything odd, such as a page vanishing or an order status changing unexpectedly.</li>
   <li><strong>Write down the retention period.</strong> Keep entries only as long as you need them, and mention logging in your privacy notice in general terms.</li>
 </ol>
-<p>If you would rather have this set up and checked as part of routine care, I handle it within <a href="/wordpress-maintenance/">WordPress maintenance</a>, and you can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off audit of users, roles and logging.</p>
+
+<h2 id="quick-check-is-your-log-working">Quick check: is your log working?</h2>
+<ol>
+  <li>Log in, change a setting and check the change appears in the activity log with your username.</li>
+  <li>Check the log is kept for long enough and is not filling the database.</li>
+  <li>In WordPress, open <strong>Users &gt; All Users</strong> and compare admins with the people listed in the log.</li>
+</ol>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the log shows logins you don't recognise, admin users nobody created, or plugin and file changes at odd hours. Treat those as a possible break-in: change passwords, remove unknown users and check the site before anything else. Also get help if the log table has grown large enough to slow the admin; a retention setting fixes that.</p>
-<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>.</p>
+<p>Want your site's security watched every month? Security scans, monitoring and updates are part of my WordPress maintenance plans, and if the log reveals a break-in, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>What is the best WordPress activity log plugin?</h3>
@@ -362,6 +367,7 @@
               <li><a href="#retention-and-privacy">Retention and privacy</a></li>
               <li><a href="#what-activity-logs-can-t-do">What activity logs can't do</a></li>
               <li><a href="#setting-up-a-wordpress-activity-log-for-a-team-in-india">Setting up a WordPress activity log for a team in India</a></li>
+              <li><a href="#quick-check-is-your-log-working">Quick check: is your log working?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

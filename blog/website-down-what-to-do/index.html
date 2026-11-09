@@ -43,7 +43,7 @@
       "headline": "Website Down or Not Opening? What to Check and Do, in the Right Order",
       "description": "Website down or not opening? Check if it's down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in that order.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-11-09",
       "mainEntityOfPage": "https://samverse.space/blog/website-down-what-to-do/",
       "image": "https://samverse.space/assets/og/blog-website-down-what-to-do.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-12">12 October 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Website%20Down%20or%20Not%20Opening%3F%20What%20to%20Check%20and%20Do%2C%20in%20the%20Right%20Order%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwebsite-down-what-to-do%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#who-to-contact-and-what-to-tell-them">Who to contact, and what to tell them</a></li>
               <li><a href="#while-the-site-is-down">While the site is down</a></li>
               <li><a href="#prevent-the-next-outage">Prevent the next outage</a></li>
+              <li><a href="#quick-check-is-it-really-down">Quick check: is it really down?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -278,6 +280,16 @@ dig yourdomain.com +short</code></pre>
   <li><strong>A written plan</strong> listing logins, contacts and who does what; see <a href="/blog/wordpress-backup-restore-guide/">a simple website disaster recovery plan</a>.</li>
 </ul>
 
+<h2 id="quick-check-is-it-really-down">Quick check: is it really down?</h2>
+<ol>
+  <li>Open the site on mobile data and on Wi-Fi. If it loads on one but not the other, the problem may be DNS or your network.</li>
+  <li>Look up the domain at <strong>lookup.icann.org</strong> and note the registrar and expiry date and check the domain has not expired.</li>
+  <li>Log in to your hosting control panel and check for suspension notices, disk space limits or an outage notice.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when the site stays down after the basic checks, when the host blames the site and the site blames the host, or when you need monitoring set up. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>How do I check if my website is down for everyone or just me?</h3>
 <p>Load it on your phone using mobile data instead of Wi-Fi, try a private browser window, and use an online down checker that tests from outside your network. If it works elsewhere, the problem is your network, DNS cache or a firewall block on your IP address.</p>
@@ -289,8 +301,6 @@ dig yourdomain.com +short</code></pre>
 <p>Often within a few hours of renewal, but cached DNS can take longer to clear on some networks. If the domain had moved into its redemption period, recovery costs more and takes longer, so renew as soon as you notice.</p>
 <h3>Should I restore a backup as soon as the site goes down?</h3>
 <p>Not until you've ruled out the domain, hosting and SSL. A backup only fixes problems inside the website, such as a bad update or broken code, and on a store it can wipe out recent orders.</p>
-
-<p>Outages are much easier to handle when someone is already watching. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include uptime monitoring, regular off-site backups, careful updates and a monthly report, so problems are caught early and the site can be restored quickly if needed.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -336,6 +346,8 @@ dig yourdomain.com +short</code></pre>
               <li><a href="#who-to-contact-and-what-to-tell-them">Who to contact, and what to tell them</a></li>
               <li><a href="#while-the-site-is-down">While the site is down</a></li>
               <li><a href="#prevent-the-next-outage">Prevent the next outage</a></li>
+              <li><a href="#quick-check-is-it-really-down">Quick check: is it really down?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>
