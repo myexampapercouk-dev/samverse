@@ -215,6 +215,8 @@
   <li><strong>Once per visitor:</strong> it sets a cookie so the second visit looks normal</li>
   <li><strong>Location or IP:</strong> it targets certain countries, or skips IP addresses that have used the dashboard</li>
 </ul>
+<p>That is also why one quick check from your office computer proves nothing: test the way a real visitor arrives, on a phone, from a search result, logged out and without old cookies.</p>
+<p>Caching adds another layer. Logged-out visitors get cached pages while admins bypass the cache, so an infected cached page can keep redirecting visitors after the code is removed.</p>
 
 <h2 id="how-to-catch-the-redirect">How to catch the redirect</h2>
 <ol>
@@ -310,6 +312,7 @@ wp option get home</code></pre>
   <li>Google is showing a warning and you need a clean review request quickly</li>
   <li>your host has suspended the account until the malware is gone</li>
 </ul>
+<p>Whoever does it, ask for a written list of what was found, where, how the attacker got in and what was changed to stop it happening again.</p>
 
 <h2 id="how-to-prevent-redirect-hacks">How to prevent redirect hacks</h2>
 <p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>

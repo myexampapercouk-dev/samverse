@@ -34959,6 +34959,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email,user_registe
   <li><strong>Once per visitor:</strong> it sets a cookie so the second visit looks normal</li>
   <li><strong>Location or IP:</strong> it targets certain countries, or skips IP addresses that have used the dashboard</li>
 </ul>
+<p>That is also why one quick check from your office computer proves nothing: test the way a real visitor arrives, on a phone, from a search result, logged out and without old cookies.</p>
+<p>Caching adds another layer. Logged-out visitors get cached pages while admins bypass the cache, so an infected cached page can keep redirecting visitors after the code is removed.</p>
 
 <h2>How to catch the redirect</h2>
 <ol>
@@ -35054,6 +35056,7 @@ wp option get home</code></pre>
   <li>Google is showing a warning and you need a clean review request quickly</li>
   <li>your host has suspended the account until the malware is gone</li>
 </ul>
+<p>Whoever does it, ask for a written list of what was found, where, how the attacker got in and what was changed to stop it happening again.</p>
 
 <h2>How to prevent redirect hacks</h2>
 <p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
@@ -37038,6 +37041,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
     <tr><td>Only the dashboard is slow</td><td>Admin-heavy plugins, no object cache</td><td>Plugins and object caching</td></tr>
   </tbody>
 </table>
+<p>To measure server response time properly and work through the causes in order, see <a href="/blog/reduce-server-response-time-ttfb/">how to reduce server response time (TTFB) on WordPress</a>.</p>
 
 <h2>How to read your hPanel resource limits</h2>
 <p>Shared and cloud hosting plans cap how much of the server your account can use. hPanel shows resource usage graphs for each hosting plan, usually alongside the plan's performance or usage details. The figures that matter:</p>
@@ -37099,7 +37103,9 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   <li><strong>Server location:</strong> if your visitors are in India but the site is hosted far away, every request takes longer. Choose the nearest data centre your plan offers, or use a CDN</li>
   <li><strong>How you test:</strong> testing while logged in bypasses the cache, and testing from a distant location adds delay, which makes any host look slow</li>
 </ul>
+<p>For the full list of site-side causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
 
+<p>If the site was moved recently and slowness started then, retrace the steps to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a> and confirm caching, PHP and DNS were set up after the move.</p>
 
 <h2>When to upgrade your plan</h2>
 <p>Upgrade when you've optimised properly and still hit resource limits. Typical signs:</p>
@@ -37109,6 +37115,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   <li>Several active sites sharing one plan</li>
   <li>Growing traffic, ad campaigns or festival sales that bring sharp spikes</li>
 </ul>
+<p>A higher shared tier or a cloud plan raises the limits; a VPS gives more control but needs someone to manage it. See <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. Upgrading an uncached, plugin-heavy site usually just moves the problem to a bigger plan.</p>
 
 <h2>A two-minute LiteSpeed cache check</h2>
 <p>Open your home page in a private window, open the browser's developer tools, go to the Network tab, reload, and click the first request (the page itself). In the response headers, look for <code>x-litespeed-cache</code>:</p>
@@ -37117,6 +37124,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <li><strong>miss</strong> on every reload: caching is on but the page isn't being stored. Check that it isn't excluded in LiteSpeed Cache and that a cookie or query string isn't making every visit look unique.</li>
 <li><strong>No header at all</strong>: the page isn't going through LiteSpeed's cache, often because the plugin is off, another caching plugin is fighting it, or a CDN in front is answering instead.</li>
 </ul>
+<p>From a terminal, <code>curl -sI https://yourdomain.com/ | grep -i x-litespeed</code> shows the same header. Logged-in visitors and cart, checkout and account pages are not cached by design, so test logged out.</p>
 <h2>Quick check: measure before you change anything</h2>
 <ol>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and note the server response time.</li>
@@ -37747,6 +37755,8 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
 <p><strong>Short answer:</strong> the WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts, products and orders are in the database and are almost always untouched. Work through the steps below in order. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
 
 <h2>What the critical error actually means</h2>
+<p>Since version 5.2, WordPress has a feature called fatal error protection. When a plugin, theme or custom code triggers a PHP fatal error, WordPress catches it and shows a short message instead of a blank screen. Visitors see "There has been a critical error on this website", usually with a link to WordPress's troubleshooting guide. If you're logged in or on the admin side, it adds "Please check your site admin email inbox for instructions."</p>
+<p>At the same moment, WordPress tries to email the administration address set in Settings &gt; General. That email names the plugin or theme involved and contains a special recovery mode link. Older sites, or sites where the protection is switched off, may show a completely blank page instead; that's covered in the WordPress white screen of death, and the fixes overlap heavily.</p>
 
 <h2>Common causes, and the clue that points to each</h2>
 <table>
@@ -37835,6 +37845,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h2>Once you're back in: use Site Health</h2>
 <p>Tools &gt; Site Health lists critical issues such as an outdated PHP version, missing PHP extensions or failed scheduled events. For conflicts that are hard to reproduce, the free Health Check &amp; Troubleshooting plugin can disable plugins and switch theme for your login only, while visitors see the normal site. If the log shows files you don't recognise, check the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> before reactivating everything.</p>
 
+<p>When the error only appears with certain plugins active together, the cause is a clash rather than one bad plugin; see how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a>.</p>
 
 <h2>How to stop it happening again</h2>
 <ul>
