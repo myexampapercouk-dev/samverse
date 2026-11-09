@@ -43,7 +43,7 @@
       "headline": "UTM Tags Explained: What a UTM Tag Is, How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4",
       "description": "UTM tags explained: what a UTM tag is, the five parameters, naming GA4 understands, a UTM tagging template for WhatsApp, QR codes and ads, and GA4 reports.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-10-30",
+      "dateModified": "2026-11-07",
       "mainEntityOfPage": "https://samverse.space/blog/utm-tags-explained/",
       "image": "https://samverse.space/assets/og/blog-utm-tags-explained.png",
       "articleSection": "Growth",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-10-30">30 October 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=UTM%20Tags%20Explained%3A%20What%20a%20UTM%20Tag%20Is%2C%20How%20to%20Tag%20Campaign%20Links%20and%20See%20Which%20Ones%20Bring%20Enquiries%20in%20GA4%20https%3A%2F%2Fsamverse.space%2Fblog%2Futm-tags-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,8 @@
               <li><a href="#utm-tagging-a-simple-routine-for-your-team">UTM tagging: a simple routine for your team</a></li>
               <li><a href="#reading-utm-data-in-ga4">Reading UTM data in GA4</a></li>
               <li><a href="#common-utm-mistakes">Common UTM mistakes</a></li>
+              <li><a href="#quick-check-are-your-tags-working">Quick check: are your tags working?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
@@ -216,7 +218,6 @@
     <tr><td>Display</td><td>display</td><td>Banner ads bought outside Google Ads</td></tr>
   </tbody>
 </table>
-<p>Two common Indian cases have no channel of their own. For WhatsApp broadcasts and Status links, pick one convention, such as source whatsapp with medium social, and stick to it. For QR codes on flyers, standees and visiting cards, a medium such as qr is clearer, and GA4 lets you create a custom channel group in the same Admin screen to report it as "Offline" rather than Unassigned.</p>
 
 <h2 id="where-to-use-utm-tags">Where to use UTM tags</h2>
 <table>
@@ -313,6 +314,16 @@
   <li>Building links from memory instead of the spreadsheet, so naming drifts over a few months.</li>
 </ul>
 
+<h2 id="quick-check-are-your-tags-working">Quick check: are your tags working?</h2>
+<ol>
+  <li>Build a tagged link with Google's <strong>Campaign URL Builder</strong> (ga-dev-tools.google), open it on your phone and check the page loads with the tags intact.</li>
+  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Realtime</strong> while you click it and check your source and medium appear.</li>
+  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>, change the dimension to <strong>Session source / medium</strong> and look for misspelt or mixed-case versions of the same tag.</li>
+</ol>
+
+<h2 id="when-to-get-help">When to get help</h2>
+<p>Get help when campaign traffic lands in "Unassigned", when tags are inconsistent across your team, or when you want to see which campaigns bring enquiries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>What is a UTM tag and what is it used for?</h3>
 <p>UTM tags are labels added to a link after a question mark. They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries.</p>
@@ -326,8 +337,6 @@
 <p>Usually because the medium isn't one GA4's channel rules recognise, such as qr or whatsapp. Switch to a recognised medium where one fits, or create a custom channel group that names your own values.</p>
 <h3>How do I track WhatsApp traffic in GA4?</h3>
 <p>Add UTM tags to every link you send on WhatsApp, with a consistent source such as whatsapp, so those visits stop appearing as Direct. To track chats started from your website, use a click event on wa.me links and a pre-filled message naming the page or campaign.</p>
-
-<p>Running campaigns and want to see which ones actually produce enquiries? A <a href="/landing-page-design/">landing page</a> built for one campaign, with conversion tracking confirmed before the ads start, makes your UTM data worth reading. If tracking on your existing WordPress site needs fixing first, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to set up GA4 events and test them.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -373,6 +382,8 @@
               <li><a href="#utm-tagging-a-simple-routine-for-your-team">UTM tagging: a simple routine for your team</a></li>
               <li><a href="#reading-utm-data-in-ga4">Reading UTM data in GA4</a></li>
               <li><a href="#common-utm-mistakes">Common UTM mistakes</a></li>
+              <li><a href="#quick-check-are-your-tags-working">Quick check: are your tags working?</a></li>
+              <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </nav>

@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Get%20Your%20Website%20Indexed%20by%20Google%20Faster%3A%20What%20Actually%20Works%20https%3A%2F%2Fsamverse.space%2Fblog%2Fget-website-indexed-google-faster%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -163,6 +163,7 @@
               <li><a href="#what-doesn-t-speed-up-indexing">What doesn't speed up indexing</a></li>
               <li><a href="#how-long-does-indexing-take">How long does indexing take?</a></li>
               <li><a href="#wordpress-site-not-showing-on-google-check-these-first">WordPress site not showing on Google? Check these first</a></li>
+              <li><a href="#quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -176,8 +177,6 @@
             </ul>
           </div>
 <p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
-<p>Sites whose pages sit in "Discovered" or "Crawled, currently not indexed" are exactly who my <a href="/wordpress-seo-services/">WordPress SEO services</a> are for. Common causes are weak internal links, too many low-value URLs competing for Google's attention and a new domain Google doesn't trust yet, often all three at once.</p>
-<p>This guide is about speeding up a site Google can already reach. If your site doesn't appear on Google at all, rule out blocks first with why a WordPress site isn't showing on Google. For what each status means, see <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a>, and if your sitemap shows an error, <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>.</p>
 
 <h2 id="from-unknown-to-indexed-the-stages">From unknown to indexed: the stages</h2>
 <table>
@@ -199,7 +198,6 @@
   <li><strong>New products:</strong> make sure the category page lists them on its first page, not only on page six of the pagination.</li>
   <li><strong>Use real links.</strong> Google follows normal a href links. Buttons that navigate with JavaScript, or links that only appear after a click, may not be followed.</li>
 </ul>
-<p>Links from other sites help too, such as your Google Business Profile website link, business directories you're genuinely listed in, and partners or clients who mention you. But internal links are the part you control completely, and the part most new sites neglect; <a href="/blog/internal-linking-explained/">internal linking explained</a> covers how to plan them.</p>
 
 <aside class="inline-cta">
   <strong>Need help with wordpress seo?</strong>
@@ -213,7 +211,6 @@
   <li><strong>Only indexable URLs.</strong> A sitemap padded with redirects, noindexed pages and thin archives teaches Google that the list isn't a reliable guide to what matters.</li>
   <li><strong>Accurate lastmod dates.</strong> Google uses lastmod to decide what to recrawl, but only when the dates prove trustworthy. If every URL shows today's date after every small change, the field gets ignored.</li>
 </ul>
-<p>This site is custom-coded rather than built on WordPress, and its sitemap now changes a page's lastmod only when that page's content changes, so the dates stay meaningful. Google retired its sitemap "ping" address in 2023, so plugins or settings that "ping Google" no longer do anything; Google finds sitemap changes by rereading the sitemap. <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a> covers what to include.</p>
 
 <h2 id="3-use-request-indexing-for-your-most-important-urls">3. Use "Request indexing" for your most important URLs</h2>
 <ol>
@@ -280,9 +277,15 @@
 <li><strong>Hosting and firewalls.</strong> Some security plugins, firewalls or hosts block Googlebot or return server errors. Crawl stats in Search Console show this.</li>
 </ol>
 <h3>Crawled or discovered, but not indexed</h3>
-<p>If Search Console shows "Crawled - currently not indexed" or "Discovered - currently not indexed", Google can reach the page but has chosen not to index it yet. Improve the page so it answers its query better than similar pages, link to it from strong pages on your site, and merge near-duplicate pages rather than publishing many thin ones.</p>
 <h3>Shopify stores not showing on Google</h3>
 <p>On Shopify, check that the store password page is turned off (the store must be live), submit the automatic /sitemap.xml in Search Console, and make sure product and collection pages have unique titles and descriptions.</p>
+<h2 id="quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</h2>
+<ol>
+  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for the new page. Note whether it says "URL is not on Google", "Discovered" or "Crawled", and click <strong>Request indexing</strong> once if it is a key page.</li>
+  <li>In Search Console, open <strong>Indexing &gt; Sitemaps</strong> and check the sitemap status is Success and that the new URL is listed in the sitemap.</li>
+  <li>Search <strong>site:yourdomain.com/page-address</strong> a few days later. If nothing shows, check the page is linked from your homepage or menu.</li>
+</ol>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -344,6 +347,7 @@
               <li><a href="#what-doesn-t-speed-up-indexing">What doesn't speed up indexing</a></li>
               <li><a href="#how-long-does-indexing-take">How long does indexing take?</a></li>
               <li><a href="#wordpress-site-not-showing-on-google-check-these-first">WordPress site not showing on Google? Check these first</a></li>
+              <li><a href="#quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
