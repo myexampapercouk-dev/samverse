@@ -1356,6 +1356,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'local-seo-guide-small-business-india',
+    noindex: true,
     seoTitle: 'Local SEO for Small Businesses in India: Step-by-Step Guide',
     title: 'Local SEO for Small Businesses in India: A Step-by-Step Guide to Google Maps, Reviews, Citations, Local Pages and Tracking',
     description: 'Local SEO for small businesses in India: set up your Google Business Profile, earn reviews, fix NAP and citations, build local pages and track results.',
@@ -1495,6 +1496,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'b2b-manufacturer-website-guide',
+    noindex: true,
     seoTitle: 'B2B Manufacturer Website Guide: Pages That Win Enquiries',
     title: 'How Manufacturers Can Get More B2B and Export Enquiries From Their Website: A Complete Guide',
     description: 'A B2B manufacturer website guide: pages for every buyer, applications pages, RFQs, technical downloads, dealers, export buyers and SEO for B2B searches.',
@@ -1773,6 +1775,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'choose-wordpress-hosting-india',
+    noindex: true,
     seoTitle: 'How to Choose WordPress Hosting in India: A Practical Guide',
     title: 'How to Choose WordPress Hosting in India: Hosting Types, Server Location, Speed, Backups, Support and Renewals',
     description: 'How to choose WordPress hosting in India: shared, cloud, VPS or managed, server location, LiteSpeed, PHP, backups, support, renewals and red flags.',
@@ -1908,6 +1911,7 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'landing-page-mistakes-google-ads',
+    noindex: true,
     seoTitle: '10 Landing Page Mistakes That Waste Google Ads Budget',
     title: '10 Landing Page Mistakes That Waste Your Google Ads Budget, and How to Fix Each One: Message Match, Speed, Forms, Tracking and Ad Policy',
     description: 'Ten landing page mistakes that waste Google Ads budget, with fixes: message match, mobile speed, long forms, missing tracking, weak proof and ad policy issues.',
@@ -2466,6 +2470,7 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
   },
   {
     slug: 'signs-you-need-a-new-website',
+    noindex: true,
     seoTitle: '10 Signs Your Business Needs a New Website (or a Refresh)',
     title: '10 Signs Your Business Needs a New Website, How to Check Each One, and Whether a Refresh or a Full Redesign Will Fix It',
     description: '10 signs your business needs a new website, from poor mobile use and slow pages to hacks and no enquiries, with a table showing when a refresh is enough.',
@@ -3975,6 +3980,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'solar-company-website-guide',
+    noindex: true,
     seoTitle: 'Solar Company Website Guide: Pages That Win Quote Requests',
     title: 'Solar Company Website Guide: The Pages, Subsidy Information, Proof and Survey Booking That Turn Visitors Into Quote Requests',
     description: 'Solar company website guide: separate home and business pages, accurate subsidy pages, honest savings calculators, project galleries and survey booking.',
@@ -4247,6 +4253,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'real-estate-website-must-have-features',
+    noindex: true,
     seoTitle: 'Real Estate Website Features: 14 Must-Haves for Builders',
     title: 'Real Estate Website Must-Haves: 14 Features Builders, Developers and Brokers Need to Generate Site Visits',
     description: 'The 14 features a real estate website needs: project pages, floor plans, price on request, site visits, brochures, RERA details, CRM and call tracking.',
@@ -4654,6 +4661,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'startup-website-checklist',
+    noindex: true,
     seoTitle: 'Startup Website Checklist: Pre-Launch to Post-Launch',
     title: 'Startup Website Checklist: Domain, Positioning, Launch Pages, Analytics, Legal Pages, Investor and Hiring Pages, and Scaling Later',
     description: 'A startup website checklist from pre-launch to post-launch: domain, positioning, the pages to launch with, analytics, legal pages, investor and hiring pages.',
@@ -5077,6 +5085,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'domain-hosting-ssl-explained',
+    noindex: true,
     seoTitle: 'Domain, Hosting, DNS and SSL Explained for Business Owners',
     title: 'Domain, Hosting, DNS, SSL and Email Explained Simply: How They Connect and Who Should Own Each Account',
     description: 'Domain, hosting, DNS, SSL and business email explained in plain English: how they connect, what renews when, and who should own each account.',
@@ -5645,6 +5654,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'how-to-choose-wordpress-theme',
+    noindex: true,
     seoTitle: 'How to Choose a WordPress Theme for a Business Website',
     title: 'How to Choose a WordPress Theme for Your Business Website: Speed, Builder, Support, Block vs Classic and a Checklist',
     description: 'How to choose a WordPress theme: match it to your page builder, check speed, updates, support and demo bloat, free vs premium, and avoid nulled themes.',
@@ -5769,6 +5779,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'restaurant-website-online-ordering',
+    noindex: true,
     seoTitle: 'Restaurant Website Online Ordering: How to Set It Up',
     title: 'Online Ordering on Your Restaurant Website: WhatsApp Orders, WooCommerce Menus, Add-ons, Pickup, Delivery Areas and UPI',
     description: 'Set up online ordering on your restaurant website: WhatsApp orders, a WooCommerce menu with add-ons, table bookings, pickup, delivery areas and UPI.',
@@ -5893,6 +5904,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'personal-brand-website-professionals',
+    noindex: true,
     seoTitle: 'Personal Brand Website for Doctors, Coaches and Consultants',
     title: 'Personal Brand Websites for Doctors, Lawyers, Coaches and Consultants: Pages, Credentials, Professional Rules and Bookings',
     description: 'Plan a personal brand website as a doctor, lawyer, CA, coach or consultant: positioning, key pages, verifiable credentials, professional rules and booking.',
@@ -6430,6 +6442,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'woocommerce-store-launch-checklist',
+    noindex: true,
     seoTitle: 'WooCommerce Store Launch Checklist (India): Go Live Safely',
     title: 'WooCommerce Store Launch Checklist for Indian Stores: Settings, Test Orders and Launch-Day Steps',
     description: 'A WooCommerce launch checklist for Indian stores: store settings, products, payments, shipping, GST, emails, policies, test orders and launch-day steps.',
@@ -6590,6 +6603,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'schema-markup-explained',
+    noindex: true,
     seoTitle: 'Schema Markup Explained: How to Create Article Schema',
     title: 'Schema Markup Explained: What Structured Data Is, Which Types Small Businesses Need and How to Add It in WordPress',
     description: 'Schema markup explained, including how to create Article schema markup in JSON-LD, which types small businesses need and how to set it up in WordPress.',
@@ -7198,6 +7212,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   },
   {
     slug: 'website-accessibility-basics',
+    noindex: true,
     seoTitle: 'Website Accessibility Basics: WCAG in Plain English',
     title: 'Website Accessibility Basics for Small Businesses: WCAG in Plain English, a 15-Minute Check and WordPress Fixes',
     description: 'Website accessibility basics in plain English: what WCAG asks for, contrast, alt text, keyboard use, headings, forms and captions, plus WordPress fixes.',
@@ -7333,6 +7348,7 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   },
   {
     slug: 'website-brief-template',
+    noindex: true,
     seoTitle: 'Website Brief Template: What to Send Your Web Developer',
     title: 'Website Brief Template: What to Send Your Web Developer for an Accurate Quote, With a Copy-and-Fill Version',
     description: 'A website brief template with a copy-and-fill version: what to tell your web developer about goals, pages, features, content and budget for an accurate quote.',
@@ -8025,6 +8041,7 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
   },
   {
     slug: 'ai-search-optimization-website',
+    noindex: true,
     seoTitle: 'AI Search Optimization: How to Get Cited by AI Assistants',
     title: 'AI Search Optimization for Your Website: How to Get Cited in Google AI Overviews and AI Assistants, From Clear Answers and Schema to Crawler Access, llms.txt and Measurement',
     description: 'AI search optimization: how AI Overviews and assistants pick sources, and how clear answers, schema and crawler access make your site easier to cite.',
@@ -8443,6 +8460,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'website-for-travel-agencies',
+    noindex: true,
     seoTitle: 'Travel Agency Website: Tour Packages and Trip Enquiries',
     title: 'Websites for Travel Agencies and Tour Operators: Package Pages, Itineraries, Custom Trip Enquiries, WhatsApp and Trust',
     description: 'Plan a travel agency website: package pages with day-by-day itineraries, a custom trip enquiry form, WhatsApp quotes, advance payments and trust signals.',
@@ -9079,6 +9097,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
   },
   {
     slug: 'wordpress-backup-restore-guide',
+    noindex: true,
     seoTitle: 'WordPress Backup and Restore Guide: How to Do It Safely',
     title: 'WordPress Backup and Restore: How to Back Up Your Site, Store Copies Safely and Restore It When Something Breaks',
     description: 'How to back up and restore WordPress: what to include, how often, the 3-2-1 rule, UpdraftPlus and host backups, and restoring by plugin or by hand.',
@@ -9219,6 +9238,7 @@ ls -lh backup-test.sql</code></pre>
   },
   {
     slug: 'woocommerce-product-page-optimization',
+    noindex: true,
     seoTitle: 'WooCommerce Product Page Optimization: What Makes It Sell',
     title: 'WooCommerce Product Page Optimization: Photos, Pricing, Delivery Details and Layouts That Help Shoppers Buy',
     description: 'Optimize WooCommerce product pages: mobile layout, photos, GST-inclusive pricing, delivery and COD details, variations, reviews, speed and product schema.',
@@ -9638,6 +9658,7 @@ ls -lh backup-test.sql</code></pre>
   },
   {
     slug: 'internal-linking-explained',
+    noindex: true,
     seoTitle: 'Internal Linking Explained: How to Link Pages for SEO',
     title: 'Internal Linking Explained: Anchor Text, Hub-and-Spoke Structure, How Many Links and a WordPress Workflow',
     description: 'Internal linking explained for small business sites: anchor text, hub-and-spoke structure, how many links per page and a simple WordPress linking workflow.',
@@ -9943,6 +9964,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'choose-domain-name-business',
+    noindex: true,
     seoTitle: 'How to Choose a Domain Name: .com vs .biz, .in and .co',
     title: 'How to Choose a Domain Name for Your Business: Brand vs Keyword, .in vs .com, Trademark Checks, Buying, Renewing and Mistakes to Avoid',
     description: '.com vs .biz for a business domain: why .com or .in usually wins, when .co works, plus brand vs keyword names, trademark checks and buying safely.',
@@ -10340,6 +10362,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'headless-wordpress-small-business',
+    noindex: true,
     seoTitle: 'Headless WordPress: Does a Small Business Need It?',
     title: 'Headless WordPress Explained: How It Works, Pros and Cons, Costs, and Whether a Small Business Needs It',
     description: 'Headless WordPress explained for small businesses: how it works, pros and cons, what drives the cost, when it makes sense and the cheaper alternatives.',
@@ -10755,6 +10778,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'write-about-page-that-builds-trust',
+    noindex: true,
     seoTitle: 'How to Write an About Page That Builds Trust (With Examples)',
     title: 'How to Write an About Page That Builds Trust: Structure, Story, People, Honest Credentials, Proof and Examples by Business Type',
     description: 'How to write an About page that builds trust: a section-by-section structure, your story, people and photos, honest credentials, proof and examples.',
@@ -10897,6 +10921,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'write-service-pages-that-convert',
+    noindex: true,
     seoTitle: 'How to Write Service Pages That Rank and Convert (Template)',
     title: 'How to Write Service Pages That Rank and Convert: Structure, Copy, Proof and a Section-by-Section Template',
     description: 'How to write service pages that rank on Google and turn visitors into enquiries: one page per service, a section-by-section template, proof and FAQs.',
@@ -11016,6 +11041,7 @@ site:example.com/blog/ "net metering"</code></pre>
   },
   {
     slug: 'collect-display-customer-testimonials',
+    noindex: true,
     seoTitle: 'How to Collect and Display Customer Testimonials Honestly',
     title: 'How to Collect and Display Customer Testimonials: Asking, Permission, Written, Video and WhatsApp Formats, Placement and the Honesty Rules',
     description: 'How to collect customer testimonials with permission, use written, video and WhatsApp formats, place them where visitors decide, and keep them honest.',
@@ -12106,6 +12132,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-it-software-companies',
+    noindex: true,
     seoTitle: 'Websites for IT and Software Companies That Win Leads',
     title: 'Websites for IT and Software Companies: Services or Products, Case Studies You Can Publish, Tech Stack Pages, the Offshore Model, RFP Forms and Careers',
     description: 'How IT and software company websites win leads: clear positioning, permitted case studies, stack pages, RFP forms and an honest offshore model.',
@@ -12737,6 +12764,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-for-printing-packaging-companies',
+    noindex: true,
     seoTitle: 'Printing and Packaging Company Website: Catalogue and RFQs',
     title: 'Websites for Printing and Packaging Companies: Product Catalogues, RFQs With Artwork Upload, MOQs and Samples',
     description: 'Plan a printing or packaging company website: product and capability pages, RFQ forms with artwork upload, clear MOQs, dielines, sample requests and B2B trust.',
@@ -13091,6 +13119,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-ready-for-google-ads',
+    noindex: true,
     seoTitle: 'Is Your Website Ready for Google Ads? Pre-Launch Checklist',
     title: 'Is Your Website Ready for Google Ads? A Pre-Launch Checklist for Tracking, Speed, Landing Pages, Forms and Policies',
     description: 'Is your website ready for Google Ads? Check tracking, landing pages, mobile speed, forms, call tracking and policy pages before you spend on clicks.',
@@ -13216,6 +13245,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'website-copywriting-mistakes',
+    noindex: true,
     seoTitle: 'Website Copywriting Mistakes: 10 Examples and Fixes',
     title: '10 Website Copywriting Mistakes Small Businesses Make, With Before-and-After Fixes',
     description: 'Website copywriting mistakes that cost enquiries, from vague headlines and jargon to weak calls to action, with before-and-after examples and fixes.',
@@ -13361,6 +13391,7 @@ wp option update blog_public 0</code></pre>
   },
   {
     slug: 'woocommerce-abandoned-cart-recovery',
+    noindex: true,
     seoTitle: 'WooCommerce Abandoned Cart Recovery: Email and WhatsApp',
     title: 'WooCommerce Abandoned Cart Recovery: How It Works, Plugins, Email and WhatsApp Reminders, and Consent',
     description: 'WooCommerce abandoned cart recovery explained: plugins, reminder timing, WhatsApp and email messages, pending payments, consent and what to measure.',
@@ -13912,6 +13943,7 @@ function my_only_free_shipping( $rates ) {
   },
   {
     slug: 'wordpress-user-roles-explained',
+    noindex: true,
     seoTitle: 'WordPress User Roles Explained: Who Gets Which Access',
     title: 'WordPress User Roles and Capabilities Explained: Administrator, Editor, Author, Shop Manager and Who Should Get Which',
     description: 'WordPress user roles explained: what Administrators, Editors, Authors, Contributors and Shop Managers can do, and which role to give staff and developers.',
@@ -14039,6 +14071,7 @@ wp cap list editor</code></pre>
   },
   {
     slug: 'uptime-monitoring-explained',
+    noindex: true,
     seoTitle: 'Uptime Monitoring Explained: Tools, Intervals and Alerts',
     title: 'Uptime Monitoring Explained: How to Know Your Website Is Down Before Your Customers Do',
     description: 'Website uptime monitoring explained: UptimeRobot, Better Stack and Jetpack Monitor, check intervals, keyword checks, and SSL and domain expiry alerts.',
@@ -14183,6 +14216,7 @@ wp cap list editor</code></pre>
   },
   {
     slug: 'website-speed-indian-mobile-networks',
+    noindex: true,
     seoTitle: 'Website Speed on Indian Mobile Networks: Test on Real 4G',
     title: 'Website Speed on Indian Mobile Networks: How to Test and Build for Real 4G, Budget Phones and Data Packs',
     description: 'Website speed on Indian mobile networks: why sites crawl on 4G, how to test with throttling and budget Android phones, page weight budgets and what to fix.',
@@ -14698,6 +14732,7 @@ function my_limit_links( $result, $tag ) {
   },
   {
     slug: 'business-email-deliverability-spf-dkim-dmarc',
+    noindex: true,
     seoTitle: 'SPF, DKIM and DMARC Explained: Stop Emails Going to Spam',
     title: 'Business Email Deliverability: SPF, DKIM and DMARC Explained, With Example Records and a Fix for Website Form Emails',
     description: 'Why business and website form emails land in spam, and how SPF, DKIM and DMARC fix it: example records, SMTP for WordPress forms and a step-by-step fix.',
@@ -15136,6 +15171,7 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
   },
   {
     slug: 'common-wordpress-errors-fixes',
+    noindex: true,
     seoTitle: "Common WordPress Errors and How to Fix Them",
     title: 'Common WordPress Errors and How to Fix Them: What Each Message Means and Where to Start',
     description: "Common WordPress errors and how to fix them: what each message means, the usual cause, the first fix, and where to find the full step-by-step guide.",
@@ -15644,6 +15680,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'website-analytics-metrics-that-matter',
+    noindex: true,
     seoTitle: 'Website Analytics: The Metrics That Actually Matter',
     title: 'Website Analytics for Business Owners: The GA4 and Search Console Metrics That Actually Matter, and a Monthly Routine',
     description: 'Website analytics metrics that matter for small businesses: GA4 key events, sources, landing pages, Search Console data and a 30-minute monthly routine.',
@@ -15773,6 +15810,7 @@ cf-cache-status: HIT</code></pre>
   },
   {
     slug: 'mobile-first-design-explained',
+    noindex: true,
     seoTitle: 'Mobile-First Design Explained: Principles, Indexing, Testing',
     title: 'Mobile-First Design Explained for Business Owners: Mobile-First Indexing, Design Principles, Forms, Call and WhatsApp Buttons, Speed and Testing',
     description: 'Mobile-first design explained: what mobile-first indexing means, design principles, tap targets, forms, call and WhatsApp buttons, speed and testing.',
@@ -18870,6 +18908,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'website-security-headers-explained',
+    noindex: true,
     seoTitle: 'Website Security Headers Explained: HSTS, CSP and More',
     title: 'Website Security Headers Explained: HSTS, CSP, X-Frame-Options and How to Add Them to WordPress',
     description: 'Security headers explained: what HSTS, CSP, X-Frame-Options, Referrer-Policy and Permissions-Policy do, and how to add them in .htaccess or Cloudflare.',
@@ -19122,6 +19161,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   },
   {
     slug: 'redesign-website-tight-budget',
+    noindex: true,
     seoTitle: 'How to Redesign Your Website on a Tight Budget',
     title: 'How to Redesign Your Website on a Tight Budget: What to Spend On, What to Phase and What Never to Cut',
     description: 'Redesign your website on a tight budget: find the pages that bring enquiries, phase the work, adapt a quality theme, reuse content and protect your SEO.',
@@ -19385,6 +19425,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'website-content-calendar',
+    noindex: true,
     seoTitle: 'How to Plan a Website Content Calendar (With a Template)',
     title: 'How to Plan a Website Content Calendar for a Small Business: Themes, Festival and Seasonal Dates, a Realistic Cadence, Repurposing and a Template',
     description: 'Plan a website content calendar: themes tied to your services, Indian festival and seasonal dates, a cadence you can keep, repurposing and a free template.',
@@ -19534,6 +19575,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'video-on-business-website',
+    noindex: true,
     seoTitle: 'Video on Your Website: Where It Helps, Hosting and Speed',
     title: 'Video on Your Business Website: Where It Helps, YouTube vs Self-Hosting, Fast Embeds, Captions, Video Schema and Production on a Budget',
     description: 'Video on your business website: where it helps, YouTube vs self-hosting, facade embeds for speed, captions, video schema and how to film on a budget.',
@@ -20173,6 +20215,7 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
   },
   {
     slug: 'migrate-blogger-to-wordpress',
+    noindex: true,
     seoTitle: 'How to Move From Blogger to WordPress Without Losing Traffic',
     title: 'How to Move From Blogger to WordPress Step by Step: Export, Import, Images, Permalinks, Redirects, Custom Domain and SEO Checks',
     description: 'Move from Blogger to WordPress step by step: export and import posts, move images, keep or redirect Blogger URLs, switch your domain and check SEO.',
@@ -20319,6 +20362,7 @@ Target:  https://example.com/$1/</code></pre>
   },
   {
     slug: 'migrate-shopify-to-woocommerce',
+    noindex: true,
     seoTitle: "Migrate Shopify to WooCommerce: Step-by-Step for India",
     title: 'How to Migrate Shopify to WooCommerce, Step by Step: Products, Customers, Orders, Redirects, Payments and Cutover',
     description: "How to migrate Shopify to WooCommerce: export products, customers and orders, build on staging, redirect old URLs, set up Indian payments, then cut over.",
@@ -21345,6 +21389,7 @@ Disallow: /</code></pre>
   },
   {
     slug: 'how-long-does-seo-take',
+    noindex: true,
     seoTitle: 'How Long Does SEO Take to Work? An Honest Answer',
     title: 'How Long Does SEO Take to Work? What Affects the Timeline, What Usually Happens First and How to Tell It Is Working',
     description: 'How long does SEO take to work? An honest answer: what affects the timeline, what comes first, new vs established sites and the signs that SEO is working.',
@@ -21486,6 +21531,7 @@ Disallow: /</code></pre>
   },
   {
     slug: 'seo-vs-google-ads',
+    noindex: true,
     seoTitle: 'SEO vs Google Ads: Which Should a Small Business Do First?',
     title: 'SEO vs Google Ads for Small Businesses: How Each Works, Timelines, Costs, When to Use Which, and How to Combine Them',
     description: 'SEO vs Google Ads for small businesses: how each works, realistic timelines, what you pay for, when to choose which, and how to use both together.',
@@ -21747,6 +21793,7 @@ Disallow: /</code></pre>
   },
   {
     slug: 'ethical-link-building-small-business',
+    noindex: true,
     seoTitle: 'Ethical Link Building for Small Businesses: What Works',
     title: 'Ethical Link Building for Small Businesses: Practical Ways to Earn Backlinks Without Risk',
     description: 'Ethical link building for small businesses in India: earn backlinks from suppliers, associations, local press and useful resources, without paid link schemes.',
@@ -21888,6 +21935,7 @@ Disallow: /</code></pre>
   },
   {
     slug: 'business-directories-citations-india',
+    noindex: true,
     seoTitle: 'Business Directories and Local Citations in India: A Guide',
     title: 'Business Directories and Local Citations in India: Which Listings Matter, NAP Consistency, Duplicates, Paid Listing Scams and a Tracking Sheet',
     description: 'Business directories and local citations in India: which listings matter, NAP consistency, fixing duplicates, avoiding listing scams and tracking.',
@@ -22530,6 +22578,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'does-a-local-shop-need-a-website',
+    noindex: true,
     seoTitle: 'Does a Local Shop Need a Website? An Honest Answer for India',
     title: 'Does a Local Shop Need a Website? Google Business Profile vs a Website vs Social Pages, What a Simple Shop Site Needs, and What It Costs',
     description: 'Does a local shop need a website, or are Google Business Profile and WhatsApp enough? When a site helps, what it needs and what it costs in India.',
@@ -24446,6 +24495,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'website-for-preschools-daycare',
+    noindex: true,
     seoTitle: 'Preschool and Daycare Website: What Parents Check First',
     title: 'Websites for Preschools, Playschools and Daycare Centres: Safety, Admissions, Visits and Photo Consent',
     description: 'Plan a preschool or daycare website parents trust: safety and staff details, programmes by age, timings, fees, visit booking and photo consent for children.',
@@ -24697,6 +24747,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'news-magazine-websites-wordpress',
+    noindex: true,
     seoTitle: 'News and Magazine Websites on WordPress: How to Build One',
     title: 'Building News and Magazine Websites on WordPress: Themes, Categories, Authors, Speed at Scale, Ads, Google News and Schema',
     description: 'Build a news or magazine website on WordPress: categories, authors, editorial roles, speed at scale, ads and Core Web Vitals, Google News basics and schema.',
@@ -24976,6 +25027,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
   },
   {
     slug: 'first-90-days-after-website-launch',
+    noindex: true,
     seoTitle: 'First 90 Days After a Website Launch: A Week-by-Week Plan',
     title: 'The First 90 Days After Your Website Launches: A Week-by-Week Plan for Indexing, Search Console, Tracking, Reviews, Content and Upkeep',
     description: 'What to do in the first 90 days after your website launches: week-by-week checks, indexing, Search Console, analytics, reviews, first content and upkeep.',
@@ -25288,6 +25340,7 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'website-navigation-structure',
+    noindex: true,
     seoTitle: 'Website Navigation Structure: Menus, Labels and SEO',
     title: 'How to Structure Your Website Navigation: Menus, Labels, Depth, Mega Menus, Footer, Breadcrumbs, Mobile Menus, URLs and Internal Links',
     description: 'How to structure website navigation: menu items and labels, depth, mega menus, footer links, breadcrumbs, mobile menus, URL structure and internal links.',
@@ -25592,6 +25645,7 @@ Description: Buy %title% online. %excerpt%</code></pre>
   },
   {
     slug: 'helpful-404-pages',
+    noindex: true,
     seoTitle: 'Helpful 404 Pages: What to Include and How to Fix 404s',
     title: 'How to Make a Helpful 404 Page: What to Include, Soft 404s, Finding 404 Errors and Fixing Them With Redirects',
     description: 'What a helpful 404 page includes, how soft 404s differ from real ones, how to find 404 errors in Search Console and when to fix, redirect or leave them.',
@@ -26441,6 +26495,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'prepare-photos-for-website',
+    noindex: true,
     seoTitle: 'How to Prepare Photos for Your Website: Sizes and Formats',
     title: 'How to Prepare Photos for Your Business Website: What to Shoot, Phone Tips, Sizes, Aspect Ratios, Formats, File Names, Alt Text and Consent',
     description: 'Prepare photos for your website: what to shoot, phone tips, sizes and aspect ratios, WebP vs JPEG, compression, file names, alt text and consent.',
@@ -26613,6 +26668,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'hire-developer-vs-diy-website',
+    noindex: true,
     seoTitle: "Hire a Developer or Build Your Website Yourself?",
     title: 'Hire a Developer or Build Your Website Yourself? DIY Builders vs a Freelancer vs an Agency, Compared on Time, Skills, Cost and Risk',
     description: "Hire a developer or build your website yourself? DIY builders vs a freelancer vs an agency compared on time, skills, cost and risk, with a decision table.",
@@ -26772,6 +26828,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'write-homepage-that-converts',
+    noindex: true,
     seoTitle: 'How to Write a Homepage That Converts: Sections in Order',
     title: 'How to Write a Homepage That Converts Visitors Into Enquiries: The Sections in Order, the First-Screen Test and Mobile',
     description: 'How to write a homepage that converts: the first-screen test, sections in order from hero to final call to action, mobile layout, and common mistakes.',
@@ -26905,6 +26962,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'show-prices-on-website',
+    noindex: true,
     seoTitle: 'Should You Show Prices on Your Website? Options Compared',
     title: 'Should You Show Prices on Your Business Website? Fixed Prices, Ranges, Starting-From, Packages, Calculators or Price on Request',
     description: 'Should you show prices on your website? Compare fixed prices, ranges, starting-from prices, packages, calculators and price on request, with examples.',
@@ -27037,6 +27095,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'diy-website-audit',
+    noindex: true,
     seoTitle: 'How to Audit Your Own Website in an Hour (Free Scorecard)',
     title: 'How to Audit Your Own Website in 30 to 60 Minutes: A Step-by-Step Self-Audit With Free Tools and a Scorecard (No Technical Skills Needed)',
     description: 'Audit your own website in under an hour with free tools: mobile, speed, forms, SEO basics, security, content, trust and analytics, plus a simple scorecard.',
@@ -27208,6 +27267,7 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   },
   {
     slug: 'ga4-events-explained',
+    noindex: true,
     seoTitle: 'GA4 Events Explained: Track Forms, Calls and WhatsApp Clicks',
     title: 'Google Analytics 4 Events Explained: Key Events, Enhanced Measurement, and Tracking Forms, WhatsApp and Calls on WordPress',
     description: 'GA4 events explained: key events, automatic and recommended events, tracking forms, WhatsApp and calls on WordPress with GTM, and DebugView testing.',
@@ -28000,6 +28060,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   },
   {
     slug: 'woocommerce-cash-on-delivery-india',
+    noindex: true,
     seoTitle: 'WooCommerce Cash on Delivery: Setup, Limits and Cutting RTO',
     title: 'Cash on Delivery in WooCommerce: How to Offer COD in India Without Losing Money to RTO and Fake Orders',
     description: 'Set up cash on delivery in WooCommerce for India: enable COD, limit it by amount, pin code or product, add a COD fee, confirm orders, cut RTO and fake orders.',
@@ -28136,6 +28197,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   },
   {
     slug: 'website-ownership-checklist',
+    noindex: true,
     seoTitle: 'Website Ownership Checklist: Every Account You Must Own',
     title: 'Website Ownership Checklist: Every Account Your Business Should Own, How to Check Who Controls It, and What to Give Your Developer',
     description: 'Website ownership checklist: domain, DNS, hosting, WordPress, email, Google accounts, licences and payment gateways, and how to check who owns each.',
@@ -29421,6 +29483,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-wholesalers-distributors',
+    noindex: true,
     seoTitle: 'Wholesaler and Distributor Website: Catalogue and Dealers',
     title: 'Website for Wholesalers and Distributors: Catalogue, Dealer Login, Bulk Enquiries and B2B Ordering',
     description: 'Plan a website for wholesalers and distributors in India: trade catalogue, dealer login, bulk enquiries, quick reorder forms and B2B ordering with WooCommerce.',
@@ -29578,6 +29641,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-for-colleges-universities',
+    noindex: true,
     seoTitle: 'College and University Website: Programmes and Admissions',
     title: 'Websites for Colleges and Universities: Programme Pages, Admission Funnels, Approvals, Placements and Many Audiences',
     description: 'Plan a college or university website: programme pages, an admissions funnel, approvals stated accurately, verifiable placements and pages for each audience.',
@@ -29961,6 +30025,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'website-chatbot-worth-it',
+    noindex: true,
     seoTitle: 'Do You Need a Chatbot on Your Website? Chatbot vs WhatsApp',
     title: 'Do You Need a Chatbot on Your Website? Chatbots vs WhatsApp vs a Simple Form',
     description: 'Is a website chatbot worth it for a small business? Compare chatbots, WhatsApp and forms on cost, speed and leads, and how to make a bot give right answers.',
@@ -30121,6 +30186,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'keyword-research-small-business',
+    noindex: true,
     seoTitle: 'Keyword Research for Small Businesses: Free Tools Workflow',
     title: 'Keyword Research for Small Businesses: A Free-Tools Workflow, Local and Hindi or Marathi Variants, Intent Mapping and a Worked Example',
     description: 'Keyword research for small businesses with free tools: Search Console, autocomplete, People also ask, local and Hinglish variants and intent mapping.',
@@ -30507,6 +30573,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'update-old-blog-posts',
+    noindex: true,
     seoTitle: 'How to Update Old Blog Posts: A Content Refresh Checklist',
     title: 'How to Update Old Blog Posts to Win Back Traffic: Find, Refresh, Merge and Measure',
     description: 'How to update old blog posts to win back traffic: find slipping posts in Search Console, refresh or merge them, handle dates and redirects, and measure.',
@@ -30619,6 +30686,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'google-algorithm-updates-small-business',
+    noindex: true,
     seoTitle: 'Google Algorithm Updates: What Small Businesses Should Do',
     title: 'Google Algorithm Updates for Small Businesses: Core vs Spam Updates, How to Tell If One Affected You, What to Do and Where to Follow Announcements',
     description: 'Google algorithm updates for small businesses: core vs spam updates, how to tell if one hit your site, what to do and avoid, and honest recovery timelines.',
@@ -30740,6 +30808,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'write-blog-posts-that-rank',
+    noindex: true,
     seoTitle: 'How to Write Blog Posts That Rank on Google (Step by Step)',
     title: 'How to Write Blog Posts That Rank on Google: A Step-by-Step Workflow From Topic to Published Post, With a Template Outline',
     description: 'How to write blog posts that rank on Google, step by step: topic, intent, outline, experience, links, images, publishing and updating, with a template.',
@@ -31589,6 +31658,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   },
   {
     slug: 'own-website-vs-marketplaces',
+    noindex: true,
     seoTitle: 'Own Website vs Amazon/Flipkart: Where Should You Sell?',
     title: 'Own Website vs Amazon and Flipkart: Where Should Indian Sellers Sell Online?',
     description: 'Own website vs Amazon and Flipkart for Indian sellers: costs, control, customer data, and and how to run a WooCommerce or Shopify store alongside them.',
@@ -32999,6 +33069,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'website-bug-vs-change-request',
+    noindex: true,
     seoTitle: 'Website Bug vs Change Request: What Support Covers',
     title: 'Bug or Change Request? How to Tell the Difference, Report Website Issues Well and What Post-Launch Support Covers',
     description: 'Bug vs change request: how to tell them apart, what post-launch support and warranty usually cover, and how to report website issues so they get fixed fast.',
@@ -33616,6 +33687,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'elementor-pro-worth-it',
+    noindex: true,
     seoTitle: 'Is Elementor Pro Worth It? Free vs Pro for Business Sites',
     title: 'Is Elementor Pro Worth It? Elementor Free vs Pro Compared: Theme Builder, Forms, Popups, WooCommerce, Licences and Alternatives',
     description: 'Is Elementor Pro worth it? Elementor free vs Pro compared: Theme Builder, forms, popups, WooCommerce Builder, licences, renewals and when free is enough.',
@@ -33846,6 +33918,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'figma-to-wordpress-approaches',
+    noindex: true,
     seoTitle: 'Figma to WordPress: Elementor, Gutenberg, Bricks or Custom?',
     title: 'Figma to WordPress: Elementor, Block Theme, Bricks or a Custom Theme? How to Choose the Build Approach',
     description: 'Figma to WordPress approaches compared: Elementor, block themes, custom themes, Bricks and headless, with the trade-offs and how to choose for your project.',
@@ -33963,6 +34036,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'website-for-saas-startups',
+    noindex: true,
     seoTitle: 'Website for SaaS Startups: Pages That Drive Sign-ups',
     title: 'Website for SaaS Startups: The Marketing Site Beside Your App, Pricing and Feature Pages, the Trial Hand-off, Docs, Changelog and Fair Comparison Pages',
     description: 'How a SaaS startup website should work: a marketing site separate from the app, pricing and feature pages, a clean trial hand-off, docs and a changelog.',
@@ -35095,6 +35169,7 @@ wp option get home</code></pre>
   },
   {
     slug: 'fix-japanese-keyword-seo-spam-hack',
+    noindex: true,
     seoTitle: "Japanese Keyword Hack on WordPress: How to Fix It",
     title: 'Japanese Keyword Hack and SEO Spam on WordPress: How to Find the Cloaked Pages, Clean Your Site and Clear Google Results',
     description: "Fix the Japanese keyword hack on WordPress: find the cloaked spam pages, remove the generator and backdoors, return 410 for spam URLs and request a review.",
@@ -35227,6 +35302,7 @@ curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.h
   },
   {
     slug: 'find-remove-wordpress-backdoors',
+    noindex: true,
     seoTitle: 'How to Find and Remove a WordPress Backdoor (Step by Step)',
     title: 'How to Find and Remove Backdoors in a Hacked WordPress Site: Where They Hide and How to Check',
     description: 'Find and remove WordPress backdoors: where they hide, from uploads and mu-plugins to .user.ini, cron and rogue admins, and the WP-CLI checks to find them.',
@@ -35470,6 +35546,7 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
   },
   {
     slug: 'woocommerce-checkout-skimmer-malware',
+    noindex: true,
     seoTitle: "WooCommerce Card Skimmer Malware: Find and Remove It",
     title: 'WooCommerce Card Skimming Malware: How to Spot a Checkout Skimmer, Respond and Protect Customers',
     description: "How to spot a WooCommerce card skimmer on your checkout, what to do in the first hours, how to clean the store and protect customers with fewer scripts.",
@@ -35605,6 +35682,7 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
   },
   {
     slug: 'why-wordpress-sites-get-hacked',
+    noindex: true,
     seoTitle: 'Why WordPress Sites Get Hacked (and How to Prevent It)',
     title: 'Why WordPress Sites Get Hacked: The Real Causes, How Attacks Work and How to Prevent Each One',
     description: 'Why WordPress sites get hacked: vulnerable plugins, stolen passwords, nulled themes, weak hosting and admin access, plus the fix that prevents each one.',
@@ -35901,6 +35979,7 @@ find wp-content/uploads -name "*.php"</code></pre>
   },
   {
     slug: 'wordpress-malware-scanners-compared',
+    noindex: true,
     seoTitle: 'WordPress Malware Scanners Compared: Wordfence vs Sucuri',
     title: 'WordPress Malware Scanners Compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera',
     description: 'WordPress malware scanners compared: Wordfence, Sucuri SiteCheck, MalCare, Jetpack Scan and Quttera, how each scans, what they miss and how to choose one.',
@@ -36864,6 +36943,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-wordpress-setup-guide',
+    noindex: true,
     seoTitle: 'How to Set Up WordPress on Hostinger: Step-by-Step Guide',
     title: 'How to Set Up a WordPress Website on Hostinger, Step by Step: Plan, Domain, hPanel Install, SSL, PHP, LiteSpeed Cache, Backups, Email and Staging',
     description: 'Set up WordPress on Hostinger step by step: choose a plan, connect your domain, install in hPanel, then SSL, PHP, LiteSpeed Cache, backups, email and staging.',
@@ -37455,6 +37535,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   },
   {
     slug: 'monthly-website-maintenance-plan',
+    noindex: true,
     seoTitle: 'Website Maintenance Packages: What a Monthly Plan Includes',
     title: 'Website Maintenance Packages: What a Good Monthly WordPress Maintenance Plan Should Include, and What Is Usually Extra',
     description: 'What website maintenance packages should include: tested updates, off-site backups, security, uptime and form checks, content time, reports and fee drivers.',
@@ -38302,6 +38383,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'edit-website-content-wordpress',
+    noindex: true,
     seoTitle: 'How to Edit Your WordPress Website Content Yourself',
     title: 'How to Edit Your WordPress Website Content Yourself: Text, Images, Menus and Pages in the Block Editor or Elementor',
     description: 'Edit your WordPress website yourself: text, images, menus and pages in the block editor or Elementor, plus revisions, staff roles and what not to touch.',
@@ -38463,6 +38545,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'premium-wordpress-themes-guide',
+    noindex: true,
     seoTitle: 'Premium WordPress Themes: What to Know Before You Buy',
     title: 'Premium WordPress Themes: What to Know Before You Buy, From Licences and Bundled Plugins to Support, Demo Bloat and When a Custom Build Is Better',
     description: 'Premium WordPress themes explained: where to buy, licences and updates, bundled plugins, demo bloat, support, nulled copies and when to go custom.',
@@ -38718,6 +38801,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
   },
   {
     slug: 'custom-wordpress-theme-development',
+    noindex: true,
     seoTitle: 'Custom WordPress Theme Development: When and How',
     title: 'Custom WordPress Theme Development: What It Is, Block vs Classic vs Builder Builds, the Process, Cost Drivers and When It Is Worth It',
     description: 'Custom WordPress theme development: block vs classic vs page builder builds, the process from design to theme, cost drivers and when it is worth it.',
@@ -39562,6 +39646,7 @@ add_action( 'init', function () {
   },
   {
     slug: 'plugin-vs-custom-code-wordpress',
+    noindex: true,
     seoTitle: 'Plugin or Custom Code in WordPress? How to Decide',
     title: 'Plugin or Custom Code in WordPress? When to Use a Plugin, a Code Snippet or a Custom Plugin, With a Decision Table',
     description: 'Plugin or custom code in WordPress? When to use a plugin, a snippet or a custom plugin, weighing security, speed, upkeep and cost, with a decision table.',
@@ -41943,6 +42028,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-pet-shops-grooming',
+    noindex: true,
     seoTitle: 'Website for Pet Shops and Grooming in India',
     title: 'Website for Pet Shops and Grooming Salons in India: Store, Bookings and Trust',
     description: 'Plan a website for a pet shop or grooming salon in India: online store on WooCommerce or Shopify, grooming bookings, delivery, COD and local SEO basics.',
@@ -42094,6 +42180,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-toy-stores',
+    noindex: true,
     seoTitle: 'Website for Toy Store: Online Toy Shop in India Guide',
     title: 'Websites for Toy Stores and Kids\' Brands: Age Filters, Safety Information and Gift-Ready Delivery',
     description: 'Building a website for a toy store or kids\' brand in India: age filters, safety details, gift wrapping, delivery promises, and WooCommerce or Shopify.',
@@ -43547,6 +43634,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-software-training-institutes',
+    noindex: true,
     seoTitle: 'Website for Software Training Institutes in India',
     title: 'Websites for Software Training Institutes: Courses, Batches and Demo Classes',
     description: 'What a website for software training institutes in India needs: course pages, batch dates, demo class bookings, fees, honest placement claims and speed.',
@@ -43830,6 +43918,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'featured-snippets-how-to-win',
+    noindex: true,
     seoTitle: 'How to Win Featured Snippets: A Small Business Guide',
     title: 'Featured Snippets and People Also Ask: How Small Businesses Can Win Them',
     description: 'How to win featured snippets and People Also Ask boxes: answer-first paragraphs, lists, tables and question headings, with tips for Indian businesses.',
@@ -44053,6 +44142,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'seo-friendly-urls',
+    noindex: true,
     seoTitle: 'SEO-Friendly URLs in WordPress: Permalinks and Slugs',
     title: 'SEO-Friendly URLs in WordPress: Permalinks, Slugs and Changing Them Safely',
     description: 'How to create SEO-friendly URLs in WordPress: best permalink setting, writing short slugs, and changing URLs safely with 301 redirects to keep rankings.',
@@ -44564,6 +44654,7 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-trust-signals-checklist',
+    noindex: true,
     seoTitle: 'Website Trust Signals Checklist for Indian Businesses',
     title: 'Website Trust Signals Checklist for Indian Businesses: What Makes Visitors Enquire or Buy',
     description: 'A website trust signals checklist for Indian businesses: contact details, GST, policies, real photos, reviews, secure checkout and fast pages.',
@@ -44963,6 +45054,7 @@ https://another-site.example/page-with-paid-link/</code></pre>
   },
   {
     slug: 'service-area-business-seo',
+    noindex: true,
     seoTitle: 'Service Area Business SEO: Rank Without a Shopfront',
     title: 'SEO for Service-Area Businesses: How to Rank Without a Shopfront',
     description: 'Service area business SEO for Indian businesses without a shopfront: set up Google Business Profile, build useful city pages and earn local reviews.',
@@ -46169,6 +46261,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'exit-intent-popups',
+    noindex: true,
     seoTitle: 'Exit-Intent Popup for WordPress: When It Helps or Hurts',
     title: 'Exit-Intent Pop-ups: When They Help, When They Hurt and How to Use Them Well',
     description: 'How to use an exit-intent popup on WordPress or WooCommerce without annoying visitors: good offers, mobile rules, Google guidelines, timing and testing.',
@@ -46528,6 +46621,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'woocommerce-subscriptions',
+    noindex: true,
     seoTitle: 'WooCommerce Subscriptions in India: Plugins and Payments',
     title: 'Selling Subscriptions With WooCommerce in India: Plugins, Recurring Payments, Billing Cycles, Trials, Pausing and Retention',
     description: 'How to sell subscriptions with WooCommerce in India: plugin options, recurring payments and e-mandates, billing cycles, trials, pausing and cancelling.',
@@ -46844,6 +46938,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'call-tracking-small-business',
+    noindex: true,
     seoTitle: 'Call Tracking for Small Business: Phone and WhatsApp Leads',
     title: 'Call Tracking for Small Businesses: How to Track Phone and WhatsApp Enquiries',
     description: 'Call tracking for small business in India: how to track phone calls and WhatsApp enquiries from your website, ads and Google profile, simply and legally.',
@@ -47345,6 +47440,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'customize-woocommerce-emails',
+    noindex: true,
     seoTitle: 'How to Customize WooCommerce Emails (Order Emails)',
     title: 'Customising WooCommerce Order Emails: Branding, Content and Deliverability',
     description: 'How to customize WooCommerce emails: built-in settings, the email editor, template overrides, GST details, WhatsApp updates and SMTP so order emails arrive.',
@@ -47631,6 +47727,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'lazy-loading-explained',
+    noindex: true,
     seoTitle: 'Lazy Loading in WordPress: Images, Videos and Iframes',
     title: 'Lazy Loading Explained: Images, Videos and Iframes in WordPress (and When Not to Use It)',
     description: 'Lazy loading in WordPress explained: how native lazy loading works, why the hero image should stay eager, and how to lazy-load videos and maps.',
@@ -48025,6 +48122,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'landing-page-ab-testing',
+    noindex: true,
     seoTitle: 'Landing Page A/B Testing: A Practical Small Business Guide',
     title: 'A/B Testing Landing Pages: A Practical Guide for Small Businesses',
     description: 'Landing page A/B testing for small businesses: what to test first, how much traffic you need, WordPress tools and how to read the results honestly.',
@@ -48148,6 +48246,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'website-heatmaps-session-recordings',
+    noindex: true,
     seoTitle: 'Heatmaps and Session Recordings for Business Websites',
     title: 'Heatmaps and Session Recordings: See How Visitors Really Use Your Website',
     description: 'How heatmaps and session recordings show where visitors click, scroll and get stuck, which tools to try, privacy basics and how to act on findings.',
@@ -48432,6 +48531,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'fix-lcp-largest-contentful-paint',
+    noindex: true,
     seoTitle: 'How to Fix Slow LCP (Largest Contentful Paint) in WordPress',
     title: 'How to Fix Slow Largest Contentful Paint (LCP) on WordPress',
     description: 'Fix slow Largest Contentful Paint in WordPress: find your LCP element, split the delay into four parts and fix server, hero image, CSS and fonts in order.',
@@ -48705,6 +48805,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'fix-inp-interaction-to-next-paint',
+    noindex: true,
     seoTitle: 'How to Improve INP on WordPress (Interaction to Next Paint)',
     title: 'How to Improve Interaction to Next Paint (INP) on WordPress',
     description: 'How to improve INP on WordPress and WooCommerce: find slow interactions, cut heavy JavaScript, tame page builders and third-party scripts, and retest.',
@@ -48819,6 +48920,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'choose-wordpress-maintenance-provider',
+    noindex: true,
     seoTitle: 'How to Choose a WordPress Maintenance Provider in India',
     title: 'How to Choose a WordPress Maintenance Provider: Packages, Charges, Questions and Red Flags',
     description: 'How to choose a WordPress maintenance provider in India: compare website maintenance packages and charges, questions to ask, reports and red flags.',
@@ -49899,6 +50001,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'wordpress-not-sending-emails-smtp',
+    noindex: true,
     seoTitle: 'WordPress Not Sending Emails? Fix It With SMTP',
     title: 'WordPress Not Sending Emails? How to Fix It With SMTP',
     description: 'WordPress not sending emails? Why form, order and password reset emails go missing, and how to fix it with SMTP, SPF, DKIM and a proper sender address.',
@@ -50238,6 +50341,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'cheap-website-risks',
+    noindex: true,
     seoTitle: 'Cheap Website Risks: What Is Left Out and What It Costs',
     title: 'The Real Risks of Very Cheap Websites: What Is Usually Left Out, Later Costs and How to Check an Offer',
     description: 'What very cheap websites in India usually leave out, the costs that show up later, red flags in a low quote and five checks to run before you pay anyone.',
@@ -50489,6 +50593,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'website-terms-and-conditions',
+    noindex: true,
     seoTitle: 'Website Terms and Conditions: What to Include (India)',
     title: 'Website Terms and Conditions in India: What to Include for Service Sites and Online Stores',
     description: 'Website terms and conditions explained for Indian businesses: what to include, how they differ from privacy and refund policies, and where to place them.',
@@ -50622,6 +50727,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'stock-photos-vs-real-photos',
+    noindex: true,
     seoTitle: 'Stock Photos vs Real Photos for Your Business Website',
     title: 'Stock Photos vs Real Photos: Which Should Your Business Website Use?',
     description: 'Stock photos vs real photos for a business website: when each works, licensing risks, how real photos build trust in India, and how to mix both well.',
@@ -52108,6 +52214,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'website-for-grocery-delivery-stores',
+    noindex: true,
     seoTitle: 'Online Grocery Website for a Local Store in India',
     title: 'Online Grocery Website for a Local Store in India: Delivery Areas, Slots and WhatsApp Orders',
     description: 'Building an online grocery website for a local or organic store in India: Shopify or WooCommerce, pin code delivery, slots, substitutions, UPI, COD, FSSAI.',
@@ -52769,6 +52876,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'improve-wordpress-site-search',
+    noindex: true,
     seoTitle: 'How to Improve WordPress Site Search (and WooCommerce)',
     title: 'How to Improve Site Search on WordPress and WooCommerce',
     description: 'How to improve WordPress site search: why default search misses results, better search plugins, WooCommerce product search, synonyms and Hindi spellings.',
@@ -53985,6 +54093,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'pincode-delivery-checker-woocommerce',
+    noindex: true,
     seoTitle: 'Pincode Delivery Checker for WooCommerce and Shopify',
     title: 'Pin Code Delivery Checkers for Indian WooCommerce Stores',
     description: 'How to add a pincode delivery checker to WooCommerce or Shopify: show serviceability, COD availability and delivery dates on product pages for India.',
@@ -54249,6 +54358,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'woocommerce-order-management-workflow',
+    noindex: true,
     seoTitle: 'WooCommerce Order Management Workflow for Small Teams',
     title: 'WooCommerce Order Management: Statuses, COD Confirmation, Dispatch, Returns and Staff Roles for Small Teams',
     description: 'A WooCommerce order workflow for small Indian teams: statuses explained, payment to dispatch, COD confirmation, labels, tracking, returns and staff roles.',
@@ -54520,6 +54630,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'online-course-website-wordpress',
+    noindex: true,
     seoTitle: 'Online Course Website with WordPress: India Setup Guide',
     title: 'How to Build an Online Course Website with WordPress in India: LMS, Payments, Video and Student Access',
     description: 'How to build an online course website with WordPress in India: LMS plugins, UPI payments, secure video hosting, GST invoices and student access.',
@@ -54656,6 +54767,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'woocommerce-product-bundles-upsells',
+    noindex: true,
     seoTitle: 'WooCommerce Product Bundles and Upsells: How to Set Up',
     title: 'WooCommerce Product Bundles, Upsells and Cross-Sells: How to Set Them Up for an Indian Store',
     description: 'Set up WooCommerce product bundles, upsells and cross-sells: linked products, bundle plugins, honest pricing, stock, GST and where to show offers.',
@@ -54778,6 +54890,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'website-for-electrical-contractors',
+    noindex: true,
     seoTitle: 'Websites for Electrical Contractors: Win Commercial Work',
     title: 'Websites for Electrical Contractors: Domestic, Commercial and Industrial Work, Licence Class Stated Precisely, Project Portfolio, Tenders, Safety, AMC and Service Areas',
     description: 'What an electrical contractor\'s website needs: domestic, commercial or industrial focus, exact licence details, projects, tenders, safety, AMC and areas.',
@@ -57939,6 +58052,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'website-microcopy-that-converts',
+    noindex: true,
     seoTitle: 'Website Microcopy That Converts: Buttons, Forms, Errors',
     title: 'Website Microcopy That Converts: Buttons, Form Labels and Errors, Empty States, Pricing Notes, Reassurance Near Buttons, 404 Pages and Writing for Indian Visitors',
     description: 'How to write website microcopy that helps people act: buttons, form labels, error messages, empty states, pricing notes, 404s and Indian-English choices.',
@@ -62819,6 +62933,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'woocommerce-wishlist',
+    noindex: true,
     seoTitle: 'WooCommerce Wishlist: When It Helps and How to Add It',
     title: 'Adding a Wishlist to Your WooCommerce Store: When It Helps and How to Do It Right',
     description: 'How to add a WooCommerce wishlist that helps sales: guest vs logged-in lists, gift sharing, back-in-stock alerts with consent, Shopify options and speed.',
@@ -62948,6 +63063,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'wordpress-white-screen-of-death',
+    noindex: true,
     seoTitle: 'WordPress White Screen of Death: Causes and How to Fix It',
     title: 'WordPress White Screen of Death: What Causes It and How to Fix It',
     description: 'Fix the WordPress white screen of death step by step: turn on debugging, disable plugins and theme, raise the memory limit and check PHP version safely.',
@@ -63803,6 +63919,7 @@ wp db check</code></pre>
   },
   {
     slug: 'woocommerce-order-notifications-sms-whatsapp',
+    noindex: true,
     seoTitle: 'WooCommerce WhatsApp Order Notifications: India Setup',
     title: 'WooCommerce WhatsApp Order Notifications, SMS and Email: How to Set Them Up in India',
     description: 'Set up WooCommerce WhatsApp order notifications, SMS and email in India: Business API templates, DLT rules for SMS, opt-in, COD confirmation and testing.',
@@ -64225,6 +64342,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-for-ice-cream-parlours',
+    noindex: true,
     seoTitle: 'Ice Cream Parlour Websites: Flavour Menus and Party Orders',
     title: 'Websites for Ice Cream Parlours and Gelato Shops: Flavour Menus, Party Orders and Delivery',
     description: 'Plan an ice cream parlour or gelato shop website: a flavour board you update daily, seasonal launches, party and bulk orders, delivery choices and FSSAI basics.',
@@ -65123,6 +65241,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-qa-checklist-before-launch-agencies',
+    noindex: true,
     seoTitle: 'Website QA Checklist for Agencies Before Launch',
     title: 'Website QA Checklist for Agencies: A Real Testing Process for Functionality, Forms, Devices, Speed, SEO, Accessibility, Redirects, Analytics, Backups and Sign-off',
     description: 'A website QA process for agencies: test passes for forms, devices, browsers, speed, SEO, redirects, accessibility, analytics and backups, then sign-off.',
@@ -65317,6 +65436,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'reduce-server-response-time-ttfb',
+    noindex: true,
     seoTitle: 'Reduce Server Response Time (TTFB) in WordPress',
     title: 'How to Reduce Server Response Time (TTFB) on WordPress',
     description: 'How to reduce server response time (TTFB) in WordPress: measure it, add page caching, fix slow plugins and queries, upgrade PHP, pick hosting near India.',
@@ -65665,6 +65785,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'website-calculators-lead-generation',
+    noindex: true,
     seoTitle: 'Website Calculators for Lead Generation: EMI and Quotes',
     title: 'Website Calculators for Lead Generation: EMI, Savings and Quote Estimators',
     description: 'How website calculators for lead generation work in India: EMI, savings and quote estimators, honest assumptions, WordPress setup and tracking.',
@@ -66139,6 +66260,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'seo-for-new-websites',
+    noindex: true,
     seoTitle: 'SEO for a New Website in India: First 90 Days Plan',
     title: 'SEO for a New Website in India: What to Do in the First 90 Days (and What to Skip)',
     description: 'SEO for a new website in India: get indexed, build the right first pages, set up Google Business Profile, earn early links and measure progress in 90 days.',
@@ -66392,6 +66514,7 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'seo-for-service-pages-without-blog',
+    noindex: true,
     seoTitle: 'Rank a Service Business Website Without a Blog',
     title: 'How to Rank a Service Business Website Without a Blog: Service Pages, Location Intent, FAQs, Proof, Reviews and Schema',
     description: 'You can rank a service business in India without blogging. The order of work: service pages, location intent, FAQs, proof, links, GBP, reviews and schema.',
@@ -67663,6 +67786,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'woocommerce-sell-internationally',
+    noindex: true,
     seoTitle: 'Sell Internationally with WooCommerce from India',
     title: 'How to Sell Internationally with WooCommerce (and Shopify) from India',
     description: 'How to sell internationally from India with WooCommerce or Shopify: choosing countries, currencies, payments, shipping, duties and export paperwork.',
@@ -68215,6 +68339,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'wordpress-stuck-in-maintenance-mode',
+    noindex: true,
     seoTitle: 'WordPress Stuck in Maintenance Mode? Quick Fix',
     title: 'WordPress Stuck in Maintenance Mode? How to Fix "Briefly Unavailable for Scheduled Maintenance"',
     description: 'WordPress stuck in maintenance mode? Delete the .maintenance file, finish the failed update safely, check plugins and themes, and stop it recurring.',

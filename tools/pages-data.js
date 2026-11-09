@@ -504,7 +504,7 @@ const PAGES = [
     steps: [['Share your brief', 'Send the quote form or a WhatsApp message with what you need: the pages, any features, and sites you like.'], ['Get a plan and a fixed quote', 'You get a written scope, a fixed price and a timeline before any work starts, usually within 24 hours.'], ['Review it on staging', 'The site is built on a staging copy you can check on your phone and laptop, and changes are made from your feedback.'], ['Launch and handover', 'The site goes live on hosting in your name, you get your administrator login, and support continues after launch.']],
     proofTitle: 'Recent WordPress websites',
     proof: [['Studio Agama Interiors', 'a lead-focused site for an interior design studio, with service pages, a project gallery, a design partner enquiry form and "Get A Free Quote" calls to action throughout.'], ['Dr. Sunaina Dental Care', 'a clinic site with a treatments page, a dedicated appointment page, click-to-chat WhatsApp and a click-to-call number.'], ['Vansh Group', 'a B2B site for an electronics OEM, with services, infrastructure and a contact form whose service-type dropdown makes enquiries arrive pre-qualified.']],
-    reading: ['choose-wordpress-developer-pune', 'local-seo-pune-businesses', 'compare-website-quotes', 'website-ownership-checklist'],
+    reading: ['choose-wordpress-developer-pune', 'local-seo-pune-businesses', 'compare-website-quotes'],
     painTitle: 'Why Pune businesses work with me',
     pains: [
       ['One developer, direct contact', 'You work with one experienced developer based in Pune, on WhatsApp, calls or video, not a sales team or a chain of freelancers.'],
@@ -545,7 +545,7 @@ const PAGES = [
     steps: [['Review the current site', 'The existing pages, what already ranks in Search Console and what brings enquiries are checked first, so nothing valuable is lost.'], ['Plan and fixed quote', 'You get a page plan, a list of URLs that stay or redirect, and a fixed quote with a timeline.'], ['Design and build on staging', 'The new site is built on a staging copy while your current site stays live, and goes live only when you approve it.'], ['Launch and monitor', 'Redirects are tested at launch and Search Console is checked daily for the first two weeks.']],
     proofTitle: 'Recent WordPress builds',
     proof: [['Vansh Group', 'a professional B2B site with services, infrastructure and testimonials, a company profile download and a pre-qualifying contact form.'], ['Sahni Power Solutions', 'a generator rental site with the fleet organised by capacity and type, industry-specific service descriptions and prominent call-back buttons.'], ['Dr. Sudhir Arora', 'a personal-brand site with a page for each life challenge, a free anxiety self-assessment tool and online consultation pages.']],
-    reading: ['redesign-website-without-losing-rankings', 'signs-you-need-a-new-website', 'get-more-enquiries-from-your-website'],
+    reading: ['redesign-website-without-losing-rankings', 'get-more-enquiries-from-your-website'],
     painTitle: 'Signs it\'s time for a redesign',
     pains: [
       ['It looks outdated', 'Visitors judge your business by your website. A dated design makes a great business look small.'],
@@ -585,7 +585,7 @@ const PAGES = [
     steps: [['Send your website address', 'Share the site and the pages that matter most, such as the homepage, top service pages, product pages or checkout.'], ['Free review and fixed quote', 'You get a short note on what is slowing the site down and a fixed quote for fixing it before any work starts.'], ['Fixes with a backup first', 'A full backup is taken, changes are made on staging where possible, and forms and checkout are tested after each change.'], ['Before-and-after report', 'You get the PageSpeed results before and after, simple guidelines to keep the site fast, and any temporary access is removed.']],
     proofTitle: 'WordPress sites I have built',
     proof: [['Third Eye Social', 'a dark-themed site for an AI automation agency, with use case sections, case study cards, an insights blog and "Book a Call" calls to action.'], ['Sahni Power Solutions', 'a lead-focused site for a generator rental company, with the fleet organised by capacity and type, "Enquire Now" and "Request a Call Back" buttons and a detailed FAQ.']],
-    reading: ['core-web-vitals-explained', 'image-optimization-wordpress', 'website-speed-indian-mobile-networks', 'website-speed-test-tools-explained'],
+    reading: ['core-web-vitals-explained', 'image-optimization-wordpress', 'website-speed-test-tools-explained'],
     painTitle: 'Why speed matters',
     pains: [
       ['Visitors don\'t wait', 'People on mobile data give up on slow pages quickly, and every delay before your content appears is a reason to go back to Google.'],
@@ -629,7 +629,7 @@ const PAGES = [
     steps: [['Free health check', 'Share your website address and the site is checked for outdated plugins, backups, security and speed.'], ['Fixed monthly quote', 'You get a plan matched to your site and a fixed monthly price, with any urgent fixes quoted separately first.'], ['Monthly care', 'Updates are made with a backup first and tested, backups run off-site, and small content changes are handled when you ask.'], ['Monthly report', 'Each month you get a short report of what was updated and checked. Plans are month to month.']],
     proofTitle: 'WordPress sites I have built',
     proof: [['Our Temples', 'a large temple directory searchable by state and deity, with videos, slokas, a blog, user registration and Telugu content.'], ['Dr. Sudhir Arora', 'a wellness site with pages for each life challenge, a free self-assessment tool and online consultation pages.'], ['Vansh Group', 'a B2B electronics site with a services section, a testimonial carousel, an insights blog and a pre-qualifying contact form.']],
-    reading: ['wordpress-maintenance-checklist', 'website-maintenance-cost-india', 'update-wordpress-safely', 'wordpress-backup-restore-guide'],
+    reading: ['wordpress-maintenance-checklist', 'website-maintenance-cost-india', 'update-wordpress-safely'],
     painTitle: 'Why maintenance matters',
     pains: [
       ['Prevent hacks', 'Most hacked WordPress sites were running outdated plugins or themes. Regular updates close those holes.'],
@@ -666,7 +666,7 @@ const PAGES = [
     glance: { get: 'Elementor pages and Theme Builder templates built from your design, or an existing Elementor site fixed and sped up, with global styles so you can edit it safely.', who: 'businesses with an Elementor site to build, fix or speed up, and agencies that need Elementor builds under their own brand.' },
     stepsTitle: 'How an Elementor project works',
     steps: [['Share the design or the site', 'Send your Figma or XD file, reference sites, or the address of the Elementor site that needs work, plus what is going wrong.'], ['Review and fixed quote', 'You get a written scope and a fixed quote, including which add-ons are really needed and confirmation that the Elementor Pro licence will be in your name.'], ['Build or fix on staging', 'Pages and templates are built or repaired on a staging copy with global colours and fonts, and checked on desktop, tablet and mobile.'], ['Launch and handover', 'After a backup, the work goes live, key pages and forms are tested, and you are shown how to edit text, images and sections without breaking the layout.']],
-    reading: ['elementor-vs-gutenberg', 'why-elementor-sites-slow', 'elementor-pro-worth-it', 'elementor-layout-broken-after-update'],
+    reading: ['elementor-vs-gutenberg', 'why-elementor-sites-slow', 'elementor-layout-broken-after-update'],
     painTitle: 'What I do with Elementor',
     pains: [
       ['Custom page designs', 'Unique, on-brand pages built from your design or references, not generic templates.'],
