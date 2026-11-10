@@ -183,7 +183,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Error%20Establishing%20a%20Database%20Connection%20in%20WordPress%3A%20A%20Diagnosis%20Order%20That%20Finds%20the%20Cause%2C%20What%20to%20Tell%20Your%20Host%2C%20and%20How%20to%20Stop%20It%20Coming%20Back%20https%3A%2F%2Fsamverse.space%2Fblog%2Ferror-establishing-database-connection-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -209,7 +209,6 @@
               <li><a href="#step-5-damaged-tables">Step 5: Damaged tables</a></li>
               <li><a href="#step-6-restore-from-a-backup">Step 6: Restore from a backup</a></li>
               <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
-              <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
               <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
               <li><a href="#quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
@@ -225,7 +224,7 @@
             </ul>
           </div>
 <p>"Error establishing a database connection" means WordPress tried to log in to its MySQL or MariaDB database and failed, so it has nothing to build the page from. Your posts, pages and orders are usually still there. The quickest route to a fix is to check causes in a fixed order: is the database server running, are the four connection details in wp-config.php correct, do those details work when tested outside WordPress, is the hosting account hitting a limit, and only then, are tables damaged or does the database need restoring.</p>
-<p>If you would rather hand it to someone, this is exactly the kind of outage my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans are set up to catch, since uptime monitoring usually spots it before a customer rings you. If the error began straight after a move to new hosting, jump to the migration section further down, because that case has its own shorter list.</p>
+<p>If you would rather hand it to someone, this is exactly the kind of outage my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans are set up to catch.</p>
 <p>A note before you touch anything: download a copy of wp-config.php and take a database export if phpMyAdmin will open. With those two, every step below can be undone.</p>
 
 <h2 id="two-minutes-of-triage-before-you-change-anything">Two minutes of triage before you change anything</h2>
@@ -331,11 +330,6 @@ if ( ! $link ) {
 
 <p>This error often appears straight after a move. If you are about to <a href="/blog/migrate-website-to-hostinger/">migrate a website to Hostinger</a>, follow the full checklist so the database details are right first time.</p>
 
-<h2 id="what-to-tell-your-host">What to tell your host</h2>
-<p>Support teams answer faster when the first message rules things out. Something like this works well:</p>
-<blockquote>My WordPress site at yoursite.in has shown "Error establishing a database connection" since about 10:30 today. I have confirmed the database name, user and host in wp-config.php match the panel, and reset the user's password. A direct connection test returns "Too many connections". Could you check that the database service is running for my account, whether I am hitting a connection or resource limit, and share any database errors in the server logs from that time?</blockquote>
-<p>Do not send your database password in a support chat; a good host will never need it from you.</p>
-
 <h2 id="prevention-and-monitoring">Prevention and monitoring</h2>
 <ul>
   <li>Set up uptime monitoring with a keyword check, so you are alerted if the homepage stops showing a word it should always contain; see uptime monitoring explained</li>
@@ -412,7 +406,6 @@ wp db check</code></pre>
               <li><a href="#step-5-damaged-tables">Step 5: Damaged tables</a></li>
               <li><a href="#step-6-restore-from-a-backup">Step 6: Restore from a backup</a></li>
               <li><a href="#after-a-migration-the-separate-checklist">After a migration: the separate checklist</a></li>
-              <li><a href="#what-to-tell-your-host">What to tell your host</a></li>
               <li><a href="#prevention-and-monitoring">Prevention and monitoring</a></li>
               <li><a href="#quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
@@ -445,7 +438,7 @@ wp db check</code></pre>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/website-down-what-to-do/"><img class="post-card-img" src="/assets/og/blog-website-down-what-to-do.webp" alt="Website Down or Not Opening? What to Check and Do, in the Right Order" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Website Down or Not Opening? What to Check and Do, in the Right Order</h3><p>Website down or not opening? Check if it's down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-500-internal-server-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-500-internal-server-error-fix.webp" alt="500 Internal Server Error in WordPress: How to Find the Cause and Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</h3><p>Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin, check PHP limits.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/migrate-website-to-hostinger/"><img class="post-card-img" src="/assets/og/blog-migrate-website-to-hostinger.webp" alt="Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</h3><p>Hostinger site migration step by step: hPanel's migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.</p><span class="post-card-meta">28 September 2026 · 11 min read</span></a>
+          <a class="post-card" href="/blog/migrate-website-to-hostinger/"><img class="post-card-img" src="/assets/og/blog-migrate-website-to-hostinger.webp" alt="Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</h3><p>Hostinger site migration step by step: hPanel's migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

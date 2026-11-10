@@ -191,7 +191,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Why%20Is%20Hostinger%20So%20Slow%3F%20How%20to%20Diagnose%20and%20Speed%20Up%20a%20WordPress%20Site%20on%20Hostinger%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-website-slow-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -234,7 +234,7 @@
               <li>If the server responds quickly but pages are still slow, the cause is the page itself (images, page builder bloat, third-party scripts), and upgrading the plan won't fix it.</li>
             </ul>
           </div>
-<p>Hostinger slow? In most cases the site is hitting its plan's CPU or memory limits, or pages aren't being served from the LiteSpeed cache, so check resource usage in hPanel and confirm caching works before you blame the host or upgrade. Hostinger can run WordPress quickly; when a site on it is slow, the cause is usually one of a handful of things: the plan's resource limits, caching that isn't set up, an old PHP version, a bloated database, heavy plugins, or a front end that would be slow on any host. Here's how to tell which one you're dealing with, in the order I check.</p>
+<p>Hostinger slow? In most cases the site is hitting its plan's CPU or memory limits, or pages aren't being served from the LiteSpeed cache, so check resource usage in hPanel and confirm caching works before you blame the host or upgrade. Here's how to tell which cause you're dealing with, in the order I check.</p>
 <p>(This guide isn't sponsored. Hostinger changes its plans and panel from time to time, so check its current help pages for exact menu names.)</p>
 
 <h2 id="hostinger-slow-a-step-by-step-fix-checklist">Hostinger slow? A step-by-step fix checklist</h2>
@@ -279,14 +279,14 @@
 </aside>
 
 <h2 id="how-to-read-your-hpanel-resource-limits">How to read your hPanel resource limits</h2>
-<p>Shared and cloud hosting plans cap how much of the server your account can use. hPanel shows resource usage graphs for each hosting plan, usually alongside the plan's performance or usage details. The figures that matter:</p>
+<p>hPanel's resource usage graphs show how much of the server your plan lets you use. The figures that matter:</p>
 <ul>
   <li><strong>CPU:</strong> processing power. Long stretches at the limit mean requests queue up and every page slows down.</li>
   <li><strong>Memory (RAM):</strong> each PHP process needs memory. At the limit, requests wait or fail.</li>
   <li><strong>Processes:</strong> how many requests can run at the same time. Traffic spikes and bot floods hit this cap first, causing slow loads and error pages.</li>
   <li><strong>Disk and inodes:</strong> storage and file count. These don't slow pages directly, but a full account breaks backups and updates.</li>
 </ul>
-<p>Look for patterns rather than single spikes. Usage that peaks at the same time every day often points to a backup, a scheduled task or a crawler. Usage that is always high points to heavy plugins, uncached pages or too many sites on one plan. Every site on a plan shares the same limits, so an old test site or a forgotten store can slow down your main website.</p>
+<p>Look for patterns rather than single spikes. Usage that peaks at the same time every day often points to a backup, a scheduled task or a crawler. Usage that is always high points to heavy plugins, uncached pages or too many sites on one plan.</p>
 
 <h2 id="set-up-litespeed-cache-properly">Set up LiteSpeed Cache properly</h2>
 <p>Hostinger's web hosting plans have generally run on LiteSpeed servers, which pair with the free LiteSpeed Cache plugin. The plugin controls the server's own page cache, so it's usually the fastest option there. Settings move between versions, so treat this as a starting point and check the plugin's current documentation:</p>
@@ -329,7 +329,7 @@
 <p>Remove what you don't use, swap heavy plugins for lighter ones, and schedule backups and scans for quiet hours. WP-Cron is worth a look too: it runs scheduled tasks on page loads, and a real server cron job, which hPanel supports, is more predictable.</p>
 
 <h2 id="watch-for-bots">Watch for bots</h2>
-<p>Aggressive crawlers and login attacks can use up your CPU and process limits without a single real visitor. If resource usage climbs while analytics shows normal traffic, check your access logs (hPanel provides them on most plans; ask support if you can't find them) for repeated hits on wp-login.php, xmlrpc.php or search pages. Block bad traffic at the CDN or firewall level, before it reaches WordPress.</p>
+<p>Aggressive crawlers and login attacks can use up your CPU and process limits without a single real visitor. If resource usage climbs while analytics shows normal traffic, check your access logs for repeated hits on wp-login.php, xmlrpc.php or search pages. Block bad traffic at the CDN or firewall level, before it reaches WordPress.</p>
 
 <h2 id="when-it-isn-t-hostinger-s-fault">When it isn't Hostinger's fault</h2>
 <p>If server response is fast and resource usage is comfortable, moving host won't change much, because the slowness is in the page itself:</p>
@@ -337,7 +337,6 @@
   <li><strong>Images:</strong> compress and resize them, and use WebP</li>
   <li><strong>Third-party scripts:</strong> chat widgets, trackers and embeds run in the visitor's browser, whatever the host</li>
   <li><strong>Page builder bloat:</strong> deeply nested sections and dozens of widgets per page</li>
-  <li><strong>Server location:</strong> if your visitors are in India but the site is hosted far away, every request takes longer. Choose the nearest data centre your plan offers, or use a CDN</li>
   <li><strong>How you test:</strong> testing while logged in bypasses the cache, and testing from a distant location adds delay, which makes any host look slow</li>
 </ul>
 <p>For the full list of site-side causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why your WordPress site is slow</a>.</p>
@@ -352,7 +351,7 @@
   <li>Several active sites sharing one plan</li>
   <li>Growing traffic, ad campaigns or festival sales that bring sharp spikes</li>
 </ul>
-<p>A higher shared tier or a cloud plan raises the limits; a VPS gives more control but needs someone to manage it. See <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>. Upgrading an uncached, plugin-heavy site usually just moves the problem to a bigger plan.</p>
+<p>A higher shared tier or a cloud plan raises the limits; a VPS gives more control but needs someone to manage it. See <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed WordPress hosting</a>.</p>
 
 <h2 id="a-two-minute-litespeed-cache-check">A two-minute LiteSpeed cache check</h2>
 <p>Open your home page in a private window, open the browser's developer tools, go to the Network tab, reload, and click the first request (the page itself). In the response headers, look for <code>x-litespeed-cache</code>:</p>
@@ -361,7 +360,6 @@
 <li><strong>miss</strong> on every reload: caching is on but the page isn't being stored. Check that it isn't excluded in LiteSpeed Cache and that a cookie or query string isn't making every visit look unique.</li>
 <li><strong>No header at all</strong>: the page isn't going through LiteSpeed's cache, often because the plugin is off, another caching plugin is fighting it, or a CDN in front is answering instead.</li>
 </ul>
-<p>From a terminal, <code>curl -sI https://yourdomain.com/ | grep -i x-litespeed</code> shows the same header. Logged-in visitors and cart, checkout and account pages are not cached by design, so test logged out.</p>
 <h2 id="quick-check-measure-before-you-change-anything">Quick check: measure before you change anything</h2>
 <ol>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and note the server response time.</li>

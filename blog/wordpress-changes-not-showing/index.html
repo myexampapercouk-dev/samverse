@@ -191,7 +191,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Changes%20Not%20Showing%20on%20Your%20Website%3F%20Every%20Cause%2C%20From%20Caches%20to%20the%20Wrong%20Template%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-changes-not-showing%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -235,7 +235,7 @@
             </ul>
           </div>
 <p>When WordPress changes don't show on your website, the cause is almost always one of three things: the change didn't actually save, a cache is still serving the old version, or you edited something other than what visitors see, such as a template, a staging copy or the wrong language. Check the page in a private window first, clear your caches in order (plugin, server, CDN, then browser), and if it's still old, trace where that part of the page really comes from.</p>
-<p>It's one of the most frequent support requests I get, and this is the checklist I work through. If styling is the only thing missing, the narrower guide to WordPress CSS changes not showing goes deeper into stylesheets. If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
+<p>If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
 
 <h2 id="find-your-symptom-first">Find your symptom first</h2>
 <p>Where the change is missing tells you which layer to look at:</p>
@@ -260,7 +260,6 @@
   <li><strong>Block editor:</strong> Save draft and Preview don't change the live page. Click Update or Save (the button's name depends on your WordPress version), and check the page isn't scheduled for a future date.</li>
   <li><strong>Elementor:</strong> click the green Update or Publish button before closing the editor. Closing the tab without it leaves an autosave, not a live change.</li>
   <li><strong>Check the revisions</strong> to confirm your edit is there. In the block editor, the Revisions link sits in the post settings sidebar; in Elementor, use the History panel's Revisions tab.</li>
-  <li><strong>No revisions at all?</strong> They only appear once a post has been saved more than once, and a developer can switch them off by setting <code>WP_POST_REVISIONS</code> to false in wp-config.php. Some hosts limit them too.</li>
 </ul>
 
 <aside class="inline-cta">
@@ -449,7 +448,7 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/elementor-mobile-view-not-working/"><img class="post-card-img" src="/assets/og/blog-elementor-mobile-view-not-working.webp" alt="Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones</h3><p>Elementor mobile view not working or the site looks different on a real phone? Fix responsive settings, breakpoints, caching and overflow, step by step.</p><span class="post-card-meta">31 October 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/elementor-layout-broken-after-update/"><img class="post-card-img" src="/assets/og/blog-elementor-layout-broken-after-update.webp" alt="Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again</h3><p>Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.</p><span class="post-card-meta">28 September 2026 · 11 min read</span></a>
+          <a class="post-card" href="/blog/elementor-layout-broken-after-update/"><img class="post-card-img" src="/assets/og/blog-elementor-layout-broken-after-update.webp" alt="Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again</h3><p>Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/elementor-header-footer-not-showing/"><img class="post-card-img" src="/assets/og/blog-elementor-header-footer-not-showing.webp" alt="Elementor Header or Footer Not Showing? How to Fix Theme Builder Templates That Do Not Appear" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Header or Footer Not Showing? How to Fix Theme Builder Templates That Do Not Appear</h3><p>Elementor header or footer not showing? Fix display conditions, theme support, Pro licence issues and caching, with the checks in the right order.</p><span class="post-card-meta">31 October 2026 · 8 min read</span></a>
         </div>
       </div>

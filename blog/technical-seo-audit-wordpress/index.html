@@ -199,7 +199,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20SEO%20Audit%3A%20A%20Practical%20Step-by-Step%20Checklist%20(With%20WooCommerce%20Checks)%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftechnical-seo-audit-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -293,7 +293,7 @@
 
 <h2 id="step-2-check-wordpress-settings-that-block-seo">Step 2: Check WordPress settings that block SEO</h2>
 <ul>
-<li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
+<li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
 <li><strong>Hidden noindex:</strong> view the source of a key page and search for <code>name="robots"</code>; it should not say noindex. Then run <code>curl -I https://yourdomain.com/</code> and check there is no <code>X-Robots-Tag: noindex</code> header, which some plugins add at server level.</li>
 <li><strong>Permalinks:</strong> use a readable structure such as post name, not ?p=123.</li>
 <li><strong>SEO plugin settings:</strong> check which post types and taxonomies are set to noindex, and that only one SEO plugin is active.</li>
@@ -393,7 +393,7 @@
 <li><strong>The fix,</strong> including where it is done: WordPress settings, SEO plugin, theme, hosting or content.</li>
 <li><strong>Owner and status,</strong> so you can see what is done and what is waiting.</li>
 </ul>
-<p>Keep the raw crawl export as an appendix rather than the main document. Note the date and the Search Console figures at the time of the audit, such as indexed pages, clicks and impressions, so later checks compare like with like.</p>
+<p>Keep the raw crawl export as an appendix rather than the main document. Note the date and the Search Console figures at the time of the audit.</p>
 <h2 id="when-to-run-a-wordpress-seo-audit-again">When to run a WordPress SEO audit again</h2>
 <p>Beyond the yearly check, some events should always trigger a quick audit, because they are where rankings are most often lost:</p>
 <ul>

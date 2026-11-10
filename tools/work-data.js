@@ -448,7 +448,6 @@ module.exports = [
       "website-for-psychologists-counsellors",
       "personal-brand-website-professionals",
       "website-for-coaches-consultants",
-      "website-quiz-lead-generation",
       "whatsapp-on-business-website"
     ],
     "stack": [
@@ -721,7 +720,6 @@ module.exports = [
     "reading": [
       "restaurant-website-online-ordering",
       "own-website-vs-marketplaces",
-      "restaurant-menu-on-website",
       "online-appointment-booking-website",
       "email-newsletter-small-business"
     ],
@@ -813,7 +811,6 @@ module.exports = [
     "reading": [
       "clinic-website-checklist-for-doctors",
       "online-appointment-booking-website",
-      "website-for-specialist-doctors",
       "google-reviews-on-website",
       "google-business-profile-checklist"
     ],

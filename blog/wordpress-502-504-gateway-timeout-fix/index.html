@@ -191,7 +191,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20502%20Bad%20Gateway%20and%20504%20Gateway%20Timeout%3A%20What%20They%20Mean%20and%20How%20to%20Fix%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-502-504-gateway-timeout-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -217,7 +217,6 @@
               <li><a href="#cloudflare-and-cdn-problems">Cloudflare and CDN problems</a></li>
               <li><a href="#server-limits-on-shared-hosting">Server limits on shared hosting</a></li>
               <li><a href="#what-to-send-your-host">What to send your host</a></li>
-              <li><a href="#a-quick-fix-order">A quick fix order</a></li>
               <li><a href="#the-gateway-did-not-receive-a-timely-response-what-it-means">"The gateway did not receive a timely response": what it means</a></li>
               <li><a href="#quick-check-time-the-server-and-see-who-answered">Quick check: time the server and see who answered</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
@@ -233,7 +232,6 @@
             </ul>
           </div>
 <p>A <strong>WordPress 502 Bad Gateway</strong> means the server that answered your browser, such as Nginx, LiteSpeed or Cloudflare, got an invalid reply from the server behind it, usually PHP. A <strong>504 Gateway Timeout</strong> on WordPress means it waited for that reply and gave up. Both are server-side problems: PHP is overloaded, a plugin or database query is too slow, an outside service is hanging, or the host or CDN is having trouble. Visitors can't fix them by refreshing; you or your host need to find the slow or failing part.</p>
-<p>This guide explains how to tell which layer is failing, what to check in order, and what to send your hosting company so the problem gets fixed rather than bounced back to you. It suits WordPress and WooCommerce sites on Indian shared, cloud or VPS hosting.</p>
 
 <h2 id="proxy-php-and-upstream-in-plain-words">Proxy, PHP and upstream in plain words</h2>
 <p>When someone opens your site, the request usually passes through several layers before WordPress runs:</p>
@@ -322,17 +320,6 @@
 </ul>
 <p>Ask specifically whether PHP processes were killed, whether a worker limit was reached, or whether a firewall blocked requests.</p>
 
-<h2 id="a-quick-fix-order">A quick fix order</h2>
-<ol>
-  <li>Screenshot the error page and note time and URL.</li>
-  <li>Check the hosting panel for resource limits and the error log for fatal errors or timeouts.</li>
-  <li>Pause Cloudflare briefly to see if the origin is the problem.</li>
-  <li>Check that page caching is working for logged-out visitors.</li>
-  <li>On staging, find slow plugins or queries with Query Monitor.</li>
-  <li>Move heavy cron, backup and import jobs to off-peak hours.</li>
-  <li>If real traffic still hits limits, upgrade the hosting plan.</li>
-</ol>
-
 <h2 id="the-gateway-did-not-receive-a-timely-response-what-it-means">"The gateway did not receive a timely response": what it means</h2>
 <p>Some servers show a longer message instead of a short 504 page: &quot;The gateway did not receive a timely response from the upstream server or application.&quot; It is the same problem as a 504 gateway timeout, described in more words. The front server forwarded the request, the application behind it (WordPress running on PHP) took longer than the allowed time, and the front server stopped waiting.</p>
 <p>Because it is a timeout, the useful question is &quot;what was slow?&quot; rather than &quot;what is broken?&quot;. Check these in order:</p>
@@ -414,7 +401,6 @@ curl -sI https://yourdomain.com/ | grep -iE "^(server|cf-ray|cf-cache-status|x-l
               <li><a href="#cloudflare-and-cdn-problems">Cloudflare and CDN problems</a></li>
               <li><a href="#server-limits-on-shared-hosting">Server limits on shared hosting</a></li>
               <li><a href="#what-to-send-your-host">What to send your host</a></li>
-              <li><a href="#a-quick-fix-order">A quick fix order</a></li>
               <li><a href="#the-gateway-did-not-receive-a-timely-response-what-it-means">"The gateway did not receive a timely response": what it means</a></li>
               <li><a href="#quick-check-time-the-server-and-see-who-answered">Quick check: time the server and see who answered</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
