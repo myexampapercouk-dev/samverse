@@ -296,19 +296,75 @@
   "date": "2026-11-10"
  },
  "https://samverse.space/free-tools/": {
-  "hash": "69ae8b19e14bb0e4",
+  "hash": "d324a6db205a2404",
   "date": "2026-11-10"
  },
  "https://samverse.space/free-tools/favicon-size-checker/": {
-  "hash": "a8410121efa0d52b",
+  "hash": "ff38f2ae976074cb",
   "date": "2026-11-10"
  },
  "https://samverse.space/free-tools/faq-schema-generator/": {
-  "hash": "3a5bacbee88591e3",
+  "hash": "72b910304a1f9cec",
   "date": "2026-11-10"
  },
  "https://samverse.space/free-tools/redirect-htaccess-generator/": {
-  "hash": "fa9b97bd21cc679a",
+  "hash": "c15d541f6aad9585",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/background-remover/": {
+  "hash": "479c0e3223bb9746",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/image-converter/": {
+  "hash": "dcb3ad4833239032",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/image-compressor/": {
+  "hash": "33fe087af7bde376",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/image-resizer/": {
+  "hash": "0f46de0ee015ad51",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/image-to-base64/": {
+  "hash": "d0101dc6423524fe",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/meta-title-description-checker/": {
+  "hash": "a3a4389240d96371",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/robots-txt-generator/": {
+  "hash": "f7105bb9d3f76d80",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/open-graph-generator/": {
+  "hash": "6d4a8f16559744d6",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/word-counter/": {
+  "hash": "c159cdc60899928d",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/utm-builder/": {
+  "hash": "5973408676f6d489",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/whatsapp-link-generator/": {
+  "hash": "326e98e2965cabc1",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/qr-code-generator/": {
+  "hash": "4ebc209cd676f935",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/json-formatter/": {
+  "hash": "8cc2d30ff4589c7c",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/free-tools/color-contrast-checker/": {
+  "hash": "576104fbab0a54ce",
   "date": "2026-11-10"
  },
  "https://samverse.space/contact/": {

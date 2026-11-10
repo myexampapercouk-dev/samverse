@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Contrast Checker (WCAG) &amp; HEX/RGB/HSL | Samverse</title>
+  <meta name="description" content="Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/free-tools/color-contrast-checker/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/free-tools/color-contrast-checker/">
+  <meta property="og:title" content="Color Contrast Checker (WCAG) &amp; HEX/RGB/HSL | Samverse">
+  <meta property="og:description" content="Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.">
+  <meta property="og:image" content="https://samverse.space/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og-image.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=b0a556b7">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://samverse.space/free-tools/color-contrast-checker/#app",
+      "name": "Colour Contrast Checker & Converter",
+      "url": "https://samverse.space/free-tools/color-contrast-checker/",
+      "description": "Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (runs in the browser)",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/free-tools/color-contrast-checker/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What contrast ratio do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WCAG 2 level AA asks for at least 4.5:1 for normal text and 3:1 for large text. Level AAA asks for 7:1 and 4.5:1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What counts as large text?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Text of at least 18 point (about 24px), or 14 point (about 18.66px) when bold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which colour formats can I enter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HEX like #7C3AED or #fff, rgb(124, 58, 237), and hsl(262, 83%, 58%)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free Tools",
+          "item": "https://samverse.space/free-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contrast Checker",
+          "item": "https://samverse.space/free-tools/color-contrast-checker/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/extra-pages.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tutorials/">Tutorials</a>
+        <a href="/contact/">Contact</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero lp-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/free-tools/">Free Tools</a> <span>/</span> Contrast Checker</nav>
+        <div class="lp-hero-copy">
+          <span class="eyebrow">Free tool</span>
+          <h1>Colour contrast checker (WCAG) and HEX, RGB, HSL converter</h1>
+          <p class="lead">Check whether your text colour is readable on its background under WCAG 2 AA and AAA, see a live preview, and convert any colour between HEX, RGB and HSL.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" style="padding-top:10px">
+      <div class="container tool">
+        <div class="tool-panel">
+          <div class="tool-row">
+            <div><label class="tool-label" for="ccFg">Text colour</label><input type="text" id="ccFg" class="tool-input" value="#5B5B6E"></div><input type="color" id="ccFgPick" value="#5b5b6e" aria-label="Pick text colour">
+          </div>
+          <div class="tool-row">
+            <div><label class="tool-label" for="ccBg">Background colour</label><input type="text" id="ccBg" class="tool-input" value="#FFFFFF"></div><input type="color" id="ccBgPick" value="#ffffff" aria-label="Pick background colour">
+          </div>
+          <div class="tool-row"><button type="button" class="btn btn-sm btn-ghost" id="ccSwap">Swap colours</button></div>
+          <div class="cc-pv" id="ccPv"><p class="cc-big">Large heading text</p><p>Normal body text looks like this. Can you read it comfortably?</p></div>
+          <p class="tool-note">Runs 100% in your browser. Nothing you add is uploaded to any server.</p>
+        </div>
+        <div class="tool-panel">
+          <h2 class="tool-h">Contrast ratio</h2>
+          <p class="cc-ratio" id="ccRatio" aria-live="polite"></p>
+          <ul class="tool-hints" id="ccRes"></ul>
+          <h2 class="tool-h">HEX, RGB and HSL converter</h2>
+          <label class="tool-label" for="cvIn">Enter a colour in any format</label>
+          <div class="tool-row"><input type="text" id="cvIn" class="tool-input" value="#7C3AED" style="flex:1"><span class="cv-swatch" id="cvSwatch" aria-hidden="true"></span></div>
+          <p class="tool-msg" id="cvMsg" role="status"></p>
+          <div class="tool-out-head"><h2 class="tool-h">Converted values</h2><button type="button" class="btn btn-sm btn-ghost" data-copy="cvOut">Copy</button></div>
+          <label class="tool-label" for="cvOut">Converted values</label>
+          <textarea id="cvOut" class="tool-code" rows="3" readonly></textarea>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <div class="container faq-wrap tool-howto">
+        <h2>How to use it</h2>
+        <ol>
+          <li>Enter or pick the text colour and the background colour.</li>
+          <li>Read the contrast ratio and the AA and AAA results.</li>
+          <li>Adjust the colours until normal text passes AA (4.5:1) at least.</li>
+          <li>Use the converter to get the same colour as HEX, RGB or HSL for your CSS or theme settings.</li>
+        </ol>
+        <p>Related reading: <a href="/blog/choose-website-colours-fonts/" class="link-inline">choosing website colours and fonts</a>.</p>
+        <p>Want it done for you? See <a href="/website-redesign/" class="link-inline">website redesign</a>.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container faq-wrap">
+        <div class="section-head"><span class="eyebrow">FAQ</span><h2>Colour contrast questions</h2></div>
+        <div class="faq">
+          <details><summary>What contrast ratio do I need?</summary><p>WCAG 2 level AA asks for at least 4.5:1 for normal text and 3:1 for large text. Level AAA asks for 7:1 and 4.5:1.</p></details>
+          <details><summary>What counts as large text?</summary><p>Text of at least 18 point (about 24px), or 14 point (about 18.66px) when bold.</p></details>
+          <details><summary>Which colour formats can I enter?</summary><p>HEX like #7C3AED or #fff, rgb(124, 58, 237), and hsl(262, 83%, 58%).</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap"><p class="related-all">More developer tools: <a href="/free-tools/redirect-htaccess-generator/" class="link-inline">Redirect Generator (.htaccess &amp; Nginx)</a>, <a href="/free-tools/json-formatter/" class="link-inline">JSON &amp; JSON-LD Formatter</a>, or see <a href="/free-tools/" class="link-inline">all free tools</a>.</p></div></section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">I reply within 24 hours, usually the same day. Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/tutorials/">Tutorials</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="/free-tools/">Free tools</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+  <script>
+// Shared helpers for the free tools (inlined before each tool script by tools/tools-pages-more.js).
+var SV = {
+  $: function (id) { return document.getElementById(id); },
+  bytes: function (n) { return n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(1) + ' KB' : (n / 1048576).toFixed(2) + ' MB'; },
+  base: function (name) { return String(name || 'image').replace(/\.[^.]+$/, '').replace(/[^\w.-]+/g, '-') || 'image'; },
+  ext: { 'image/png': 'png', 'image/jpeg': 'jpg', 'image/webp': 'webp', 'image/avif': 'avif' },
+  canEncode: function (type) {
+    try { var c = document.createElement('canvas'); c.width = c.height = 2; return c.toDataURL(type).indexOf('data:' + type) === 0; } catch (e) { return false; }
+  },
+  loadImg: function (file) {
+    return new Promise(function (res, rej) {
+      if (!file || !/^image\//.test(file.type)) { rej(new Error('not an image')); return; }
+      var url = URL.createObjectURL(file), img = new Image();
+      img.onload = function () { res(img); };
+      img.onerror = function () { URL.revokeObjectURL(url); rej(new Error('unreadable')); };
+      img.src = url;
+    });
+  },
+  toBlob: function (canvas, type, q) {
+    return new Promise(function (res, rej) { canvas.toBlob(function (b) { b ? res(b) : rej(new Error('encode failed')); }, type, q); });
+  },
+  link: function (blob, name, text) {
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.textContent = text || ('Download ' + name); a.className = 'btn btn-sm';
+    return a;
+  },
+  copy: function (text, btn) {
+    var old = btn.textContent;
+    function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = old; }, 1500); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, function () {});
+    else { var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); done(); }
+  },
+  loadScript: function (src) {
+    return new Promise(function (res, rej) {
+      var s = document.createElement('script'); s.src = src; s.async = true; s.crossOrigin = 'anonymous';
+      s.onload = res; s.onerror = function () { rej(new Error('load failed')); }; document.head.appendChild(s);
+    });
+  },
+  // QR codes: qrcode-generator 1.4.4 (MIT) loaded from jsDelivr only when first needed.
+  qr: function (text, ecl) {
+    var go = function () { var q = window.qrcode(0, ecl || 'M'); q.addData(unescape(encodeURIComponent(text))); q.make(); return q; };
+    if (window.qrcode) return Promise.resolve(go());
+    return SV.loadScript('https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js').then(go);
+  },
+  qrCanvas: function (q, size, fg, bg) {
+    var n = q.getModuleCount(), quiet = 4, cell = Math.max(1, Math.floor(size / (n + quiet * 2))), px = cell * (n + quiet * 2);
+    var c = document.createElement('canvas'); c.width = c.height = px; var x = c.getContext('2d');
+    x.fillStyle = bg || '#ffffff'; x.fillRect(0, 0, px, px); x.fillStyle = fg || '#000000';
+    for (var r = 0; r < n; r++) for (var k = 0; k < n; k++) if (q.isDark(r, k)) x.fillRect((k + quiet) * cell, (r + quiet) * cell, cell, cell);
+    return c;
+  },
+  qrSvg: function (q, fg, bg) {
+    var n = q.getModuleCount(), quiet = 4, w = n + quiet * 2, d = '';
+    for (var r = 0; r < n; r++) for (var k = 0; k < n; k++) if (q.isDark(r, k)) d += 'M' + (k + quiet) + ' ' + (r + quiet) + 'h1v1h-1z';
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + w + ' ' + w + '" shape-rendering="crispEdges"><rect width="100%" height="100%" fill="' + (bg || '#ffffff') + '"/><path fill="' + (fg || '#000000') + '" d="' + d + '"/></svg>';
+  },
+};
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () { var t = SV.$(b.getAttribute('data-copy')); SV.copy(t.value !== undefined ? t.value : t.textContent, b); });
+});
+
+(function () {
+  var fgT = SV.$('ccFg'), bgT = SV.$('ccBg'), fgP = SV.$('ccFgPick'), bgP = SV.$('ccBgPick'), ratio = SV.$('ccRatio'), res = SV.$('ccRes'), pv = SV.$('ccPv');
+  var cin = SV.$('cvIn'), cout = SV.$('cvOut'), cmsg = SV.$('cvMsg'), sw = SV.$('cvSwatch');
+  function parse(s) {
+    s = String(s).trim().toLowerCase(); var m;
+    if ((m = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/.exec(s))) { var h = m[1].length === 3 ? m[1].replace(/./g, '$&$&') : m[1]; return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)]; }
+    if ((m = /^rgba?\(\s*(\d{1,3})[\s,]+(\d{1,3})[\s,]+(\d{1,3})/.exec(s))) return [+m[1], +m[2], +m[3]].map(function (v) { return Math.min(255, v); });
+    if ((m = /^hsla?\(\s*(-?[\d.]+)(?:deg)?[\s,]+([\d.]+)%[\s,]+([\d.]+)%/.exec(s))) return hsl2rgb(+m[1], +m[2] / 100, +m[3] / 100);
+    return null;
+  }
+  function hsl2rgb(h, s, l) {
+    h = ((h % 360) + 360) % 360; var c = (1 - Math.abs(2 * l - 1)) * s, x = c * (1 - Math.abs((h / 60) % 2 - 1)), m = l - c / 2, r = [0, 0, 0];
+    r = h < 60 ? [c, x, 0] : h < 120 ? [x, c, 0] : h < 180 ? [0, c, x] : h < 240 ? [0, x, c] : h < 300 ? [x, 0, c] : [c, 0, x];
+    return r.map(function (v) { return Math.round((v + m) * 255); });
+  }
+  function rgb2hsl(r, g, b) {
+    r /= 255; g /= 255; b /= 255; var mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, h = 0, s = 0, d = mx - mn;
+    if (d) { s = d / (1 - Math.abs(2 * l - 1)); h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; h *= 60; if (h < 0) h += 360; }
+    return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
+  }
+  function hex(c) { return '#' + c.map(function (v) { return ('0' + v.toString(16)).slice(-2); }).join(''); }
+  function lum(c) { var a = c.map(function (v) { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }); return 0.2126 * a[0] + 0.7152 * a[1] + 0.0722 * a[2]; }
+  function check() {
+    var f = parse(fgT.value), b = parse(bgT.value);
+    if (!f || !b) { ratio.textContent = '-'; res.innerHTML = '<li class="warn">Enter colours as HEX (#1a1a2e), rgb(26, 26, 46) or hsl(240, 28%, 14%).</li>'; return; }
+    fgP.value = hex(f); bgP.value = hex(b);
+    var l1 = lum(f), l2 = lum(b), r = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+    ratio.textContent = (Math.floor(r * 100) / 100).toFixed(2) + ' : 1';
+    pv.style.color = hex(f); pv.style.background = hex(b);
+    res.innerHTML = '';
+    [['AA normal text (4.5:1)', 4.5], ['AA large text, 18pt or 14pt bold (3:1)', 3], ['AAA normal text (7:1)', 7], ['AAA large text (4.5:1)', 4.5], ['UI components and icons (3:1)', 3]].forEach(function (x) {
+      var li = document.createElement('li'), ok = r >= x[1]; li.className = ok ? 'ok' : 'warn'; li.textContent = (ok ? 'Pass: ' : 'Fail: ') + x[0]; res.appendChild(li);
+    });
+  }
+  fgP.addEventListener('input', function () { fgT.value = fgP.value; check(); });
+  bgP.addEventListener('input', function () { bgT.value = bgP.value; check(); });
+  fgT.addEventListener('input', check); bgT.addEventListener('input', check);
+  SV.$('ccSwap').addEventListener('click', function () { var t = fgT.value; fgT.value = bgT.value; bgT.value = t; check(); });
+  function conv() {
+    var c = parse(cin.value);
+    if (!c) { cout.value = ''; cmsg.textContent = cin.value.trim() ? 'Could not read that colour. Try #7C3AED, rgb(124, 58, 237) or hsl(262, 83%, 58%).' : ''; sw.style.background = 'transparent'; return; }
+    var h = rgb2hsl(c[0], c[1], c[2]);
+    cout.value = 'HEX: ' + hex(c).toUpperCase() + '\nRGB: rgb(' + c.join(', ') + ')\nHSL: hsl(' + h[0] + ', ' + h[1] + '%, ' + h[2] + '%)';
+    cmsg.textContent = ''; sw.style.background = hex(c);
+  }
+  cin.addEventListener('input', conv);
+  check(); conv();
+})();
+
+  </script>
+</body>
+</html>

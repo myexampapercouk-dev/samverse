@@ -10,10 +10,24 @@
 - [WordPress Glossary](https://samverse.space/wordpress-glossary/): Plain-English definitions of 40 website terms business owners hear: WordPress, hosting, DNS, SSL, SEO, Core Web Vitals, WooCommerce, schema and caching.
 - [Privacy Policy](https://samverse.space/privacy-policy/): How samverse.space uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and AdSense cookies, and your choices.
 - [Contact](https://samverse.space/contact/): Contact Samverse on WhatsApp (+91 74170 49145) or email for WordPress, WooCommerce and Shopify projects. Send your site URL, goal and deadline for a quote.
-- [Free Tools](https://samverse.space/free-tools/): Free browser-based website tools: favicon and app icon generator, FAQ schema JSON-LD generator, and a 301 redirect generator for .htaccess and Nginx.
+- [Free Tools](https://samverse.space/free-tools/): Free browser-based tools: background remover, image converter and compressor, meta tag checker, robots.txt, UTM, QR code and WhatsApp link generators.
 - [Favicon Generator](https://samverse.space/free-tools/favicon-size-checker/): Make favicons in every size from one image: 16, 32, 48, 180 apple-touch-icon, 192 and 512 PNGs, plus link tags and a webmanifest. Runs in your browser.
 - [FAQ Schema Generator](https://samverse.space/free-tools/faq-schema-generator/): Free FAQPage JSON-LD generator. Add questions and answers, get valid schema markup live with validation hints, and copy it into your page.
 - [Redirect Generator](https://samverse.space/free-tools/redirect-htaccess-generator/): Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.
+- [Background Remover](https://samverse.space/free-tools/background-remover/): Remove the background from a photo for free. Runs on your device with no upload, then download a transparent PNG or add a white or custom colour.
+- [Image Converter](https://samverse.space/free-tools/image-converter/): Convert images between PNG, JPG and WebP (and AVIF where your browser supports it) in batches. Free, private, with a quality slider. No upload.
+- [Image Compressor](https://samverse.space/free-tools/image-compressor/): Compress JPG and WebP images in bulk with a quality slider and max width. See before and after file sizes, then download. Private and free.
+- [Image Resizer](https://samverse.space/free-tools/image-resizer/): Resize and crop images to exact pixels or presets: Instagram post and story, OG image 1200x630, YouTube thumbnail, WooCommerce product. Free, no upload.
+- [Image to Base64](https://samverse.space/free-tools/image-to-base64/): Convert an image to a Base64 data URI for HTML or CSS, or paste Base64 to preview and download the image. Free, in your browser, no upload.
+- [Meta Tag Checker](https://samverse.space/free-tools/meta-title-description-checker/): Check meta title and description length in pixels and characters with a live Google result preview for desktop and mobile, plus truncation warnings.
+- [Robots.txt Generator](https://samverse.space/free-tools/robots-txt-generator/): Create a robots.txt file with WordPress-safe defaults, a sitemap line, optional AI crawler blocks and warnings for risky rules like Disallow: /.
+- [Open Graph Generator](https://samverse.space/free-tools/open-graph-generator/): Generate Open Graph and Twitter card meta tags with a live share preview. Add title, description, image and URL, check warnings, copy the tags.
+- [Word Counter](https://samverse.space/free-tools/word-counter/): Count words, characters, sentences and paragraphs, estimate reading and speaking time, and see keyword density and top phrases. Free and private.
+- [UTM Builder](https://samverse.space/free-tools/utm-builder/): Build UTM tracking links for Google Analytics 4: source, medium, campaign, term and content, with checks for capitals and spaces and a bulk mode.
+- [WhatsApp Link Generator](https://samverse.space/free-tools/whatsapp-link-generator/): Create a wa.me click-to-chat link with a prefilled message, copy a ready button snippet and download a QR code for print. Free, no sign-up.
+- [QR Code Generator](https://samverse.space/free-tools/qr-code-generator/): Make QR codes for a URL, text, WiFi login or vCard contact. Choose size, colours and error correction, then download PNG or SVG. Free, no tracking.
+- [JSON Formatter](https://samverse.space/free-tools/json-formatter/): Format, minify and validate JSON or JSON-LD schema. Shows the line and column of errors and hints for trailing commas, curly quotes and @context.
+- [Contrast Checker](https://samverse.space/free-tools/color-contrast-checker/): Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.
 
 ## Services
 - [Online Stores](https://samverse.space/woocommerce-developer/): WooCommerce development services in India: store setup, Razorpay and UPI payments, GST invoices, COD rules, shipping and a fast mobile checkout.

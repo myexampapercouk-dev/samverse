@@ -330,33 +330,35 @@ document.querySelectorAll('[data-copy]').forEach(function (b) {
 
 const TOOLS = [
   {
-    slug: `${HUB}/favicon-size-checker`, name: 'Favicon & App Icon Generator', crumb: 'Favicon Generator',
+    cat: 'Image tools', slug: `${HUB}/favicon-size-checker`, name: 'Favicon & App Icon Generator', crumb: 'Favicon Generator',
     title: 'Favicon & App Icon Size Generator (Free) | Samverse',
     description: 'Make favicons in every size from one image: 16, 32, 48, 180 apple-touch-icon, 192 and 512 PNGs, plus link tags and a webmanifest. Runs in your browser.',
     blurb: 'Turn one square image into favicon and app icon PNGs at 16, 32, 48, 180, 192 and 512 pixels, with the link tags and web manifest to copy.',
     eyebrow: 'Free tool', h1: 'Favicon and app icon size generator',
     lead: 'Upload one image and get every favicon size a modern site needs, ready to download, plus the exact HTML and site.webmanifest to paste. It all happens in your browser.',
-    main: favMain, script: favScript, faqs: FAV_FAQ,
+    main: favMain, script: favScript + '\n' + copyScript, faqs: FAV_FAQ,
   },
   {
-    slug: `${HUB}/faq-schema-generator`, name: 'FAQ Schema Generator', crumb: 'FAQ Schema Generator',
+    cat: 'SEO tools', slug: `${HUB}/faq-schema-generator`, name: 'FAQ Schema Generator', crumb: 'FAQ Schema Generator',
     title: 'FAQ Schema Generator: Free FAQPage JSON-LD | Samverse',
     description: 'Free FAQPage JSON-LD generator. Add questions and answers, get valid schema markup live with validation hints, and copy it into your page.',
     blurb: 'Add your questions and answers and copy valid FAQPage JSON-LD, with hints for missing answers, duplicates and HTML.',
     eyebrow: 'Free tool', h1: 'FAQ schema generator (FAQPage JSON-LD)',
     lead: 'Type your questions and answers and the FAQPage structured data updates as you go. Copy it, paste it into the page that shows the same FAQ, and test it.',
-    main: faqMain, script: faqScript, faqs: FAQ_FAQ,
+    main: faqMain, script: faqScript + '\n' + copyScript, faqs: FAQ_FAQ,
   },
   {
-    slug: `${HUB}/redirect-htaccess-generator`, name: 'Redirect Generator (.htaccess & Nginx)', crumb: 'Redirect Generator',
+    cat: 'Developer tools', slug: `${HUB}/redirect-htaccess-generator`, name: 'Redirect Generator (.htaccess & Nginx)', crumb: 'Redirect Generator',
     title: '301 Redirect Generator for .htaccess & Nginx | Samverse',
     description: 'Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.',
     blurb: 'Bulk-paste old and new URLs and get 301 or 302 rules for Apache .htaccess, Nginx and the WordPress Redirection plugin, with loop and chain checks.',
     eyebrow: 'Free tool', h1: '301 and 302 redirect generator for .htaccess and Nginx',
     lead: 'Paste your old and new URLs, pick 301 or 302, and copy ready-made rules for Apache, Nginx or the WordPress Redirection plugin. The tool flags loops, duplicates and chains.',
-    main: redMain, script: redScript, faqs: RED_FAQ,
+    main: redMain, script: redScript + '\n' + copyScript, faqs: RED_FAQ,
   },
+  ...require('./tools-pages-more')({ esc, howTo, faqHtml, HUB }),
 ];
+const CATS = ['Image tools', 'SEO tools', 'Marketing tools', 'Developer tools'];
 
 const HUB_FAQ = [
   ['Are these tools free?', 'Yes. They are free to use with no sign-up, and they run entirely in your browser, so nothing you enter is sent to a server.'],
@@ -367,24 +369,25 @@ const HUB_FAQ = [
 module.exports = [
   {
     slug: HUB, crumb: 'Free Tools',
-    title: 'Free Website Tools: Favicons, Schema, Redirects | Samverse',
-    description: 'Free browser-based website tools: favicon and app icon generator, FAQ schema JSON-LD generator, and a 301 redirect generator for .htaccess and Nginx.',
+    title: 'Free Website Tools: Image, SEO & Marketing | Samverse',
+    description: 'Free browser-based tools: background remover, image converter and compressor, meta tag checker, robots.txt, UTM, QR code and WhatsApp link generators.',
     eyebrow: 'Free tools', h1: 'Free website tools',
-    lead: 'Small, practical tools for site owners and developers. No sign-up, nothing uploaded: each one runs in your browser.',
+    lead: 'Practical image, SEO, marketing and developer tools for site owners. No sign-up, and nothing is uploaded: each tool runs 100% in your browser.',
     priority: '0.7',
     main: `
     <section class="section" style="padding-top:10px">
       <div class="container">
+${CATS.map(c => `        <h2 class="tool-cat">${c}</h2>
         <div class="tool-cards">
-${TOOLS.map(t => `          <a class="post-card" href="/${t.slug}/"><span class="work-tag">Free tool</span><h2>${esc(t.name)}</h2><p>${esc(t.blurb)}</p><span class="post-card-meta">Open tool →</span></a>`).join('\n')}
-        </div>
+${TOOLS.filter(t => t.cat === c).map(t => `          <a class="post-card" href="/${t.slug}/"><span class="work-tag">Free tool</span><h3>${esc(t.name)}</h3><p>${esc(t.blurb)}</p><span class="post-card-meta">Open tool →</span></a>`).join('\n')}
+        </div>`).join('\n')}
       </div>
     </section>
 ${faqHtml('About these tools', HUB_FAQ)}`,
     script: '',
     schema: url => [
       { '@type': 'CollectionPage', '@id': `${url}#page`, name: 'Free Website Tools', url,
-        mainEntity: { '@type': 'ItemList', itemListElement: TOOLS.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, url: `${SITE}/${t.slug}/` })) } },
+        mainEntity: { '@type': 'ItemList', numberOfItems: TOOLS.length, itemListElement: TOOLS.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, url: `${SITE}/${t.slug}/` })) } },
       faqSchema(url, HUB_FAQ),
     ],
   },
@@ -392,8 +395,8 @@ ${faqHtml('About these tools', HUB_FAQ)}`,
     slug: t.slug, crumb: t.crumb, parent: ['Free Tools', `/${HUB}/`],
     title: t.title, description: t.description, eyebrow: t.eyebrow, h1: t.h1, lead: t.lead, priority: '0.7',
     main: t.main + `
-    <section class="section" style="padding-top:0"><div class="container faq-wrap"><p class="related-all">More free tools: ${TOOLS.filter(o => o !== t).map(o => `<a href="/${o.slug}/" class="link-inline">${esc(o.name)}</a>`).join(' and ')}, or see <a href="/${HUB}/" class="link-inline">all free tools</a>.</p></div></section>`,
-    script: t.script + '\n' + copyScript,
+    <section class="section" style="padding-top:0"><div class="container faq-wrap"><p class="related-all">More ${t.cat.toLowerCase()}: ${TOOLS.filter(o => o !== t && o.cat === t.cat).map(o => `<a href="/${o.slug}/" class="link-inline">${esc(o.name)}</a>`).join(', ')}, or see <a href="/${HUB}/" class="link-inline">all free tools</a>.</p></div></section>`,
+    script: t.script,
     schema: url => [appSchema(url, t.name, t.description), faqSchema(url, t.faqs)],
   })),
 ];

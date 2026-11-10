@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=4cf12e7e">
+  <link rel="stylesheet" href="/style.min.css?v=b0a556b7">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-27">
   <script type="application/ld+json">
@@ -227,6 +227,7 @@
 <blockquote><strong>Short answer:</strong> A WordPress robots.txt controls crawling, not indexing. A safe file blocks /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and nothing else important. To keep a page out of Google, use a noindex tag on a crawlable page instead. The biggest risk is a leftover "Disallow: /" from a staging site.</blockquote>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
+<p class="tool-callout">Need a file to start from? The free <a href="/free-tools/robots-txt-generator/">robots.txt generator</a> uses WordPress-safe defaults and warns about risky rules.</p>
 <h2 id="how-robots-txt-works">How robots.txt works</h2>
 <ul>
   <li><strong>It lives at one address:</strong> https://example.com/robots.txt. Each host has its own, so a subdomain such as shop.example.com needs its own file, and http and https versions are treated separately (another reason to redirect everything to one version).</li>

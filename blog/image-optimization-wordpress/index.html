@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=4cf12e7e">
+  <link rel="stylesheet" href="/style.min.css?v=b0a556b7">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-27">
   <script type="application/ld+json">
@@ -238,6 +238,7 @@
 <p>To optimize images in WordPress, resize each image to the largest size it is actually displayed at, convert photos to WebP (or AVIF), compress them with one optimization plugin, and let WordPress serve smaller versions to phones through <code>srcset</code>. Then load the main image at the top of the page immediately with <code>fetchpriority="high"</code>, lazy-load everything below it, and give every image a width and height so the layout doesn't jump.</p>
 <p>Images are usually the heaviest part of a WordPress page, and a single photo straight from a phone can outweigh everything else on it. That is why image compression, resizing and WebP conversion are part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> service. This guide is the full workflow, in the order that makes the biggest difference.</p>
 
+<p class="tool-callout">Want to shrink images before uploading? The free <a href="/free-tools/image-compressor/">image compressor</a> sets quality and max width in your browser and shows the size saved.</p>
 <h2 id="why-images-matter-so-much-for-speed">Why images matter so much for speed</h2>
 <p>Image weight affects three things visitors and Google both notice:</p>
 <ul>
