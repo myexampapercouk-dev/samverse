@@ -2297,6 +2297,30 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://samverse.space/free-tools/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/free-tools/favicon-size-checker/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/free-tools/faq-schema-generator/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samverse.space/free-tools/redirect-htaccess-generator/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samverse.space/work/third-eye-social/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>

@@ -38,6 +38,7 @@ const waFloat = between('<a class="wa-float"', '</a>');
 const PAGES = require('./pages-data');
 const PROJECTS = require('./projects');
 const POSTS = require('./blog-data');
+const TOOL_LINKS = require('./tool-links'); // contextual links from posts to the free tools
 const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and that we link to
 const SUMMARIES = require('./blog-summaries');
 
@@ -501,7 +502,8 @@ const renderPost = (post, i) => {
     const id = t.replace(/<[^>]+>/g, '').toLowerCase().replace(/&amp;/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     toc.push([id, t]);
     return `<h2 id="${id}">${t}</h2>`;
-  });
+  }).replace(/<h2 id=/, m => (TOOL_LINKS[post.slug] ? `<p class="tool-callout">${TOOL_LINKS[post.slug]}</p>
+` : '') + m);
   // Most related posts: shared service pages count most, then same category, then links between the two posts
   // (a shared niche page like the doctors page counts more than a common one like SEO services)
   const freq = s => LIVE_POSTS.filter(p => p.related.includes(s)).length;
@@ -1079,17 +1081,18 @@ WORK.forEach((w, i) => {
 });
 
 // ===================== EXTRA PAGES (calculator, about, glossary...) =====================
-const EXTRA = require('./extra-pages');
+const EXTRA = [...require('./extra-pages'), ...require('./tools-pages')];
 const renderExtra = x => {
   const url = `${SITE}/${x.slug}/`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
-      ...(x.schema ? [x.schema(url)] : []),
+      ...(x.schema ? [].concat(x.schema(url)) : []),
       {
         '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-          { '@type': 'ListItem', position: 2, name: x.crumb, item: url },
+          ...(x.parent ? [{ '@type': 'ListItem', position: 2, name: x.parent[0], item: `${SITE}${x.parent[1]}` }] : []),
+          { '@type': 'ListItem', position: x.parent ? 3 : 2, name: x.crumb, item: url },
         ],
       },
     ],
@@ -1107,7 +1110,7 @@ ${JSON.stringify(schema, null, 2)}
   <main>
     <section class="hero lp-hero">
       <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> ${esc(x.crumb)}</nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> ${x.parent ? `<a href="${x.parent[1]}">${esc(x.parent[0])}</a> <span>/</span> ` : ''}${esc(x.crumb)}</nav>
         <div class="lp-hero-copy">
           <span class="eyebrow">${esc(x.eyebrow)}</span>
           <h1>${x.h1}</h1>

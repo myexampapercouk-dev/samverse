@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>301 Redirect Generator for .htaccess &amp; Nginx | Samverse</title>
+  <meta name="description" content="Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/free-tools/redirect-htaccess-generator/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/free-tools/redirect-htaccess-generator/">
+  <meta property="og:title" content="301 Redirect Generator for .htaccess &amp; Nginx | Samverse">
+  <meta property="og:description" content="Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.">
+  <meta property="og:image" content="https://samverse.space/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og-image.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=cfb92220">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://samverse.space/free-tools/redirect-htaccess-generator/#app",
+      "name": "Redirect Generator (.htaccess & Nginx)",
+      "url": "https://samverse.space/free-tools/redirect-htaccess-generator/",
+      "description": "Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (runs in the browser)",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/free-tools/redirect-htaccess-generator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should I use a 301 or a 302 redirect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use 301 when a page has moved for good, such as after a redesign, a URL change or merging two posts. Use 302 only for temporary moves, like a short promotion or maintenance, when the old URL will come back."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the .htaccess file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the root folder of your site on Apache or LiteSpeed hosting, the same folder that holds wp-config.php on WordPress. It is a hidden file, so turn on \"show hidden files\" in your file manager. Put redirect rules above the # BEGIN WordPress block."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this work for Nginx hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Copy the Nginx output into the server block of your site configuration and reload Nginx. On managed hosts without config access, ask support to add the rules or use a redirect plugin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I redirect full URLs from another domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The tool reduces old full URLs to their path, because a rule on your server only sees the path. New URLs can be full URLs on any domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many redirects can I add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hundreds are fine. Avoid chains (A to B to C) by pointing every old URL straight to its final page, and remove loops where a URL redirects to itself."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free Tools",
+          "item": "https://samverse.space/free-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Redirect Generator",
+          "item": "https://samverse.space/free-tools/redirect-htaccess-generator/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/extra-pages.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero lp-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/free-tools/">Free Tools</a> <span>/</span> Redirect Generator</nav>
+        <div class="lp-hero-copy">
+          <span class="eyebrow">Free tool</span>
+          <h1>301 and 302 redirect generator for .htaccess and Nginx</h1>
+          <p class="lead">Paste your old and new URLs, pick 301 or 302, and copy ready-made rules for Apache, Nginx or the WordPress Redirection plugin. The tool flags loops, duplicates and chains.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" style="padding-top:10px">
+      <div class="container tool">
+        <div class="tool-panel">
+          <label class="tool-label" for="redIn">Old and new URLs, one pair per line (old,new)</label>
+          <textarea id="redIn" class="tool-code" rows="10" spellcheck="false">/old-page/,/new-page/
+/blog/2019/summer-sale/,/offers/
+https://example.com/contact-us.html,/contact/</textarea>
+          <p class="tool-note">Separate with a comma, tab or space. Paste straight from a spreadsheet.</p>
+          <fieldset class="tool-row tool-radios">
+            <legend class="tool-label">Redirect type</legend>
+            <label class="calc-single"><input type="radio" name="redType" value="301" checked> 301 permanent</label>
+            <label class="calc-single"><input type="radio" name="redType" value="302"> 302 temporary</label>
+          </fieldset>
+          <ul class="tool-hints" id="redHints" aria-live="polite"></ul>
+        </div>
+        <div class="tool-panel">
+          <div class="tool-out-head"><h2 class="tool-h">Apache .htaccess</h2><button type="button" class="btn btn-sm btn-ghost" data-copy="redApache">Copy</button></div>
+          <label class="tool-label" for="redApache">Add above # BEGIN WordPress</label>
+          <textarea id="redApache" class="tool-code" rows="8" readonly></textarea>
+          <div class="tool-out-head"><h2 class="tool-h">Nginx</h2><button type="button" class="btn btn-sm btn-ghost" data-copy="redNginx">Copy</button></div>
+          <label class="tool-label" for="redNginx">Add inside the server { } block</label>
+          <textarea id="redNginx" class="tool-code" rows="8" readonly></textarea>
+          <div class="tool-out-head"><h2 class="tool-h">Redirection plugin CSV</h2><button type="button" class="btn btn-sm btn-ghost" data-copy="redCsv">Copy</button></div>
+          <label class="tool-label" for="redCsv">WordPress: Tools, Redirection, Import/Export</label>
+          <textarea id="redCsv" class="tool-code" rows="6" readonly></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container faq-wrap tool-howto">
+        <h2>How to use it</h2>
+        <ol>
+          <li>List each old URL and the page it should go to, one pair per line.</li>
+          <li>Choose 301 for permanent moves (almost always) or 302 for temporary ones.</li>
+          <li>Copy the rules for your server: .htaccess for Apache or LiteSpeed (most shared hosting), Nginx for VPS or Nginx hosts.</li>
+          <li>On WordPress you can skip server files: save the CSV output as a .csv file and import it in the free Redirection plugin.</li>
+          <li>Back up .htaccess first, then test each old URL in a private window after saving.</li>
+        </ol>
+        <p>Not sure which code to use? Read <a href="/blog/301-vs-302-redirects/" class="link-inline">301 vs 302 redirects explained</a>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-wrap">
+        <div class="section-head"><span class="eyebrow">FAQ</span><h2>Redirect questions</h2></div>
+        <div class="faq">
+          <details><summary>Should I use a 301 or a 302 redirect?</summary><p>Use 301 when a page has moved for good, such as after a redesign, a URL change or merging two posts. Use 302 only for temporary moves, like a short promotion or maintenance, when the old URL will come back.</p></details>
+          <details><summary>Where is the .htaccess file?</summary><p>In the root folder of your site on Apache or LiteSpeed hosting, the same folder that holds wp-config.php on WordPress. It is a hidden file, so turn on &quot;show hidden files&quot; in your file manager. Put redirect rules above the # BEGIN WordPress block.</p></details>
+          <details><summary>Does this work for Nginx hosting?</summary><p>Yes. Copy the Nginx output into the server block of your site configuration and reload Nginx. On managed hosts without config access, ask support to add the rules or use a redirect plugin.</p></details>
+          <details><summary>Can I redirect full URLs from another domain?</summary><p>Yes. The tool reduces old full URLs to their path, because a rule on your server only sees the path. New URLs can be full URLs on any domain.</p></details>
+          <details><summary>How many redirects can I add?</summary><p>Hundreds are fine. Avoid chains (A to B to C) by pointing every old URL straight to its final page, and remove loops where a URL redirects to itself.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap"><p class="related-all">More free tools: <a href="/free-tools/favicon-size-checker/" class="link-inline">Favicon &amp; App Icon Generator</a> and <a href="/free-tools/faq-schema-generator/" class="link-inline">FAQ Schema Generator</a>, or see <a href="/free-tools/" class="link-inline">all free tools</a>.</p></div></section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">I reply within 24 hours, usually the same day. Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="/free-tools/">Free tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+  <script>
+
+(function () {
+  var inp = document.getElementById('redIn'), hints = document.getElementById('redHints');
+  var ap = document.getElementById('redApache'), ng = document.getElementById('redNginx'), csv = document.getElementById('redCsv');
+  function path(u) {
+    u = u.trim();
+    if (/^https?:\/\//i.test(u)) { try { var p = new URL(u); return p.pathname + p.search; } catch (e) { return null; } }
+    if (u.charAt(0) !== '/') u = '/' + u;
+    return u;
+  }
+  function target(u) { u = u.trim(); if (/^https?:\/\//i.test(u)) return u; return u.charAt(0) === '/' ? u : '/' + u; }
+  function rx(s) { return s.replace(/[.*+?^$()|[\]\\{}]/g, '\\$&'); }
+  function update() {
+    var code = document.querySelector('input[name=redType]:checked').value, a = [], n = [], c = ['source,target,regex,code'], warn = [], seen = {};
+    inp.value.split(/\r?\n/).forEach(function (line, i) {
+      line = line.trim();
+      if (!line || line.charAt(0) === '#') return;
+      var parts = line.split(/\s*[,\t]\s*|\s+/).filter(Boolean);
+      if (parts.length < 2) { warn.push('Line ' + (i + 1) + ' needs an old and a new URL.'); return; }
+      var from = path(parts[0]), to = target(parts[1]);
+      if (!from) { warn.push('Line ' + (i + 1) + ': the old URL is not valid.'); return; }
+      if (from === '/') warn.push('Line ' + (i + 1) + ': redirecting the homepage sends every visitor away. Check this is intended.');
+      if (from === to || from.replace(/\/$/, '') === to.replace(/\/$/, '')) { warn.push('Line ' + (i + 1) + ' redirects a URL to itself and would loop. Skipped.'); return; }
+      if (seen[from]) warn.push('Line ' + (i + 1) + ': ' + from + ' is listed twice. Only the first rule will run.');
+      seen[from] = 1;
+      var q = from.indexOf('?'), p = q < 0 ? from : from.slice(0, q), qs = q < 0 ? '' : from.slice(q + 1);
+      var pat = '^' + rx(p.slice(1).replace(/\/$/, '')) + '/?$';
+      if (qs) a.push('RewriteCond %{QUERY_STRING} ^' + rx(qs) + '$');
+      a.push('RewriteRule ' + pat + ' ' + to + (qs && to.indexOf('?') < 0 ? '?' : '') + ' [R=' + code + ',L]');
+      n.push(qs ? '# ' + from + ' (query strings need an if ($args) check)\nlocation = ' + p + ' { if ($args = "' + qs + '") { return ' + code + ' ' + to + '; } }'
+        : 'location ~ ^' + rx(p.replace(/\/$/, '')) + '/?$ { return ' + code + ' ' + to + '; }');
+      c.push('"' + from.replace(/"/g, '""') + '","' + to.replace(/"/g, '""') + '",0,' + code);
+    });
+    ap.value = a.length ? '<IfModule mod_rewrite.c>\nRewriteEngine On\n' + a.join('\n') + '\n</IfModule>' : '';
+    ng.value = n.join('\n');
+    csv.value = c.length > 1 ? c.join('\n') : '';
+    hints.innerHTML = '';
+    var targets = {};
+    inp.value.split(/\r?\n/).forEach(function (l) { var p = l.trim().split(/\s*[,\t]\s*|\s+/); if (p[1]) targets[target(p[1])] = 1; });
+    Object.keys(seen).forEach(function (f) { if (targets[f]) warn.push(f + ' is both an old and a new URL. Point old URLs straight to the final page to avoid a redirect chain.'); });
+    (warn.length ? warn : [a.length + ' rule' + (a.length === 1 ? '' : 's') + ' ready.']).forEach(function (w) {
+      var li = document.createElement('li'); li.textContent = w; li.className = warn.length ? 'warn' : 'ok'; hints.appendChild(li);
+    });
+  }
+  inp.addEventListener('input', update);
+  document.querySelectorAll('input[name=redType]').forEach(function (r) { r.addEventListener('change', update); });
+  update();
+})();
+
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = document.getElementById(b.getAttribute('data-copy')), old = b.textContent;
+    function done() { b.textContent = 'Copied'; setTimeout(function () { b.textContent = old; }, 1500); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t.value).then(done, function () { t.select(); document.execCommand('copy'); done(); });
+    else { t.select(); document.execCommand('copy'); done(); }
+  });
+});
+  </script>
+</body>
+</html>

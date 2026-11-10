@@ -9,6 +9,10 @@
 - [All services & industries](https://samverse.space/solutions/): Index of every service and industry page
 - [WordPress Glossary](https://samverse.space/wordpress-glossary/): Plain-English definitions of 40 website terms business owners hear: WordPress, hosting, DNS, SSL, SEO, Core Web Vitals, WooCommerce, schema, caching and more.
 - [Privacy Policy](https://samverse.space/privacy-policy/): How samverse.space uses information: contact form enquiries, WhatsApp, Google Analytics, Microsoft Clarity and AdSense cookies, and your choices.
+- [Free Tools](https://samverse.space/free-tools/): Free browser-based website tools: favicon and app icon generator, FAQ schema JSON-LD generator, and a 301 redirect generator for .htaccess and Nginx.
+- [Favicon Generator](https://samverse.space/free-tools/favicon-size-checker/): Make favicons in every size from one image: 16, 32, 48, 180 apple-touch-icon, 192 and 512 PNGs, plus link tags and a webmanifest. Runs in your browser.
+- [FAQ Schema Generator](https://samverse.space/free-tools/faq-schema-generator/): Free FAQPage JSON-LD generator. Add questions and answers, get valid schema markup live with validation hints, and copy it into your page.
+- [Redirect Generator](https://samverse.space/free-tools/redirect-htaccess-generator/): Paste old and new URLs and get 301 or 302 redirect rules for Apache .htaccess, Nginx and a CSV for the WordPress Redirection plugin. Free.
 
 ## Services
 - [Online Stores](https://samverse.space/woocommerce-developer/): WooCommerce development services in India: store setup, Razorpay and UPI payments, GST invoices, COD rules, shipping and a fast mobile checkout.
