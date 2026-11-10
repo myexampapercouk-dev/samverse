@@ -103,7 +103,7 @@ module.exports = [
     "url": "https://vansh.group/",
     "industry": "Electronics Manufacturing (OEM)",
     "seoTitle": "Electronics Manufacturer Website Design on WordPress",
-    "metaDescription": "B2B electronics manufacturer website design on WordPress: in-house capabilities, brand testimonials, a service-based enquiry form and a company profile PDF.",
+    "metaDescription": "B2B electronics manufacturer website design on WordPress: in-house capabilities, brand testimonials, a service-based enquiry form, a company profile PDF.",
     "summary": "A professional B2B website for an electronics OEM with decades of experience, presenting its product development services, infrastructure and brand partnerships.",
     "client": "Vansh is an electronics original equipment manufacturer offering end-to-end product development and manufacturing from facilities in North India, serving well-known electrical and lighting brands.",
     "goals": [
@@ -377,7 +377,7 @@ module.exports = [
     "url": "https://drsudhirarora.com/",
     "industry": "Healthcare & Wellness",
     "seoTitle": "Counselling and Wellness Website Design on WordPress",
-    "metaDescription": "Counselling and wellness website design on WordPress: a doctor profile, pages for each life challenge, a free anxiety self-assessment and online consultations.",
+    "metaDescription": "Counselling and wellness website design on WordPress: a doctor profile, pages for each life challenge, a free anxiety self-check, online consultations.",
     "summary": "A personal-brand website for an experienced doctor offering mind-body wellness education, online consultations and structured coaching programs.",
     "client": "Dr. Sudhir Arora (MBBS) offers an educational, non-medicinal approach to managing stress, anxiety, anger and negative thinking, mainly for busy professionals and business owners.",
     "goals": [

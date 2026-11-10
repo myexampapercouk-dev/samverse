@@ -19,7 +19,7 @@ const files = [];
 // Built from reversed letters so the name itself isn't written in the source.
 const NAME = new RegExp('reemas'.split('').reverse().join(''), 'i');
 const problems = [];
-const titles = {}, descs = {};
+const titles = {}, descs = {}, ogChecked = {};
 for (const f of files) {
   const rel = path.relative(ROOT, f);
   const h = fs.readFileSync(f, 'utf8');
@@ -39,6 +39,23 @@ for (const f of files) {
   const d = (h.match(/<meta name="description" content="(.*?)"/) || [])[1];
   (titles[t] = titles[t] || []).push(rel);
   if (d) (descs[d] = descs[d] || []).push(rel);
+  // Search results truncate long snippets: keep titles <= 60 and meta descriptions <= 155 characters
+  const unesc = s => String(s || '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  if (t && unesc(t).length > 60) problems.push(`title ${unesc(t).length} chars (>60): ${rel}`);
+  if (d && unesc(d).length > 155) problems.push(`meta description ${unesc(d).length} chars (>155): ${rel}`);
+  if (!/<meta name="twitter:card"/.test(h)) problems.push(`missing twitter:card: ${rel}`);
+  // og:image must be a real 1200x630 raster image on this site
+  const og = (h.match(/<meta property="og:image" content="https:\/\/samverse\.space(\/[^"]+)"/) || [])[1];
+  if (!og) problems.push(`missing or external og:image: ${rel}`);
+  else {
+    const p = path.join(ROOT, og);
+    if (!fs.existsSync(p)) problems.push(`og:image file missing ${og}: ${rel}`);
+    else if (!(og in ogChecked)) {
+      const b = fs.readFileSync(p);
+      ogChecked[og] = b.slice(1, 4).toString() === 'PNG' && b.readUInt32BE(16) === 1200 && b.readUInt32BE(20) === 630;
+    }
+    if (fs.existsSync(p) && !ogChecked[og]) problems.push(`og:image not a 1200x630 PNG ${og}: ${rel}`);
+  }
   const h1 = (h.match(/<h1[\s>]/g) || []).length;
   if (h1 !== 1) problems.push(`${h1} h1 tags: ${rel}`);
 }
@@ -50,5 +67,5 @@ for (const [t, list] of Object.entries(titles)) if (list.length > 1) problems.pu
 for (const [d, list] of Object.entries(descs)) if (list.length > 1) problems.push(`duplicate description: ${list.join(', ')}`);
 
 console.log(`${files.length} pages checked, ${problems.length} problems`);
-problems.slice(0, 30).forEach(p => console.log(' - ' + p));
+problems.slice(0, 200).forEach(p => console.log(' - ' + p));
 process.exit(problems.length ? 1 : 0);

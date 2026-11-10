@@ -41,6 +41,7 @@ const POSTS = require('./blog-data');
 const TOOL_LINKS = require('./tool-links'); // contextual links from posts to the free tools
 const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and that we link to
 const SUMMARIES = require('./blog-summaries');
+const H1 = require("./h1-overrides"); // keyword-led H1s for posts and case studies
 
 // Static portfolio cards (crawlable links); script.js only manages the screenshots
 const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names.includes(p.name)).map(p => {
@@ -161,7 +162,7 @@ ${posts.map(x => `          <li><a href="/blog/${x.slug}/">${esc(x.title)}</a><s
 const render = p => {
   const url = `${SITE}/${p.slug}/`;
   const waLink = `https://wa.me/${WA}?text=${encodeURIComponent(p.wa)}`;
-  const plainH1 = p.h1.replace(/<[^>]+>/g, '');
+  const plainH1 = p.h1.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -374,8 +375,19 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
     </section>`;
   const url = `${SITE}/solutions/`;
   const schema = {
-    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Services & Industries', url,
-    hasPart: PAGES.map(x => ({ '@type': 'WebPage', name: x.nav, url: `${SITE}/${x.slug}/` })),
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage', name: 'WordPress Services & Industries', url,
+        hasPart: PAGES.map(x => ({ '@type': 'WebPage', name: x.nav, url: `${SITE}/${x.slug}/` })),
+      },
+      {
+        '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Solutions', item: url },
+        ],
+      },
+    ],
   };
   return `<!DOCTYPE html>
 <html lang="en-IN">
@@ -389,8 +401,14 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
   <link rel="canonical" href="${url}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${url}">
-  <meta property="og:title" content="WordPress Services & Industries | Samverse">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:title" content="WordPress Services &amp; Industries | Samverse">
+  <meta property="og:description" content="All WordPress services from Samverse: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
   <meta property="og:image" content="${SITE}/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${SITE}/assets/og-image.png">
   <meta name="theme-color" content="#6D4AFF">
   <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -414,7 +432,7 @@ ${JSON.stringify(schema, null, 2)}
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Solutions</nav>
         <div class="lp-hero-copy">
-          <h1>WordPress solutions for <span class="grad">every kind of business</span></h1>
+          <h1>WordPress services &amp; industries: <span class="grad">solutions for every business</span></h1>
           <p class="lead">Pick your industry or the service you need to see exactly how I can help. Not sure? Send me a message and I'll recommend the right approach.</p>
           <div class="hero-cta">
             <a href="#contact" class="btn">Get a Free Quote</a>
@@ -593,7 +611,7 @@ ${JSON.stringify(schema, null, 2)}
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="${topicHref(topic)}">${esc(topic.name)}</a></nav>
           <a class="post-cat" href="${topicHref(topic)}">${esc(post.category)}</a>
-          <h1>${esc(post.title)}</h1>
+          <h1>${esc(H1.posts[post.slug] || post.title)}</h1>
           <p class="post-dek">${esc(post.description)}</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
@@ -717,6 +735,9 @@ const knownCats = BLOG_TOPICS.flatMap(t => t.cats);
 const topicPosts = t => LIVE_POSTS.filter(p => t.cats.includes(p.category) || (t.id === 'planning' && !knownCats.includes(p.category)))
   .sort((a, b) => b.date.localeCompare(a.date));
 const topicHref = t => `/blog/topic/${t.id}/`;
+// Latest updated (or published) date among a list of posts, shown as "Updated" on hubs
+const latestDate = list => list.map(p => p.updated || p.date).sort().pop();
+const updatedLine = list => `<p class="muted hub-updated">Updated <time datetime="${latestDate(list)}">${fmtDate(latestDate(list))}</time></p>`;
 const TOPIC_PREVIEW = 6; // cards per topic on /blog/; the hub page lists them all
 const topicNav = (current = null) => `        <nav class="topic-nav" aria-label="Blog topics">
 ${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `          <a href="${topicHref(t)}"${t === current ? ' aria-current="page"' : ''}>${esc(t.name)} <span>${topicPosts(t).length}</span></a>`).join('\n')}
@@ -725,9 +746,20 @@ ${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => `          <a href="${t
 const renderBlogIndex = () => {
   const url = `${SITE}/blog/`;
   const schema = {
-    '@context': 'https://schema.org', '@type': 'Blog', name: 'Samverse Blog', url,
-    author: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
-    blogPost: LIVE_POSTS.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.date })),
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Blog', name: 'Samverse Blog', url, dateModified: latestDate(LIVE_POSTS),
+        author: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
+        blogPost: LIVE_POSTS.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.date })),
+      },
+      {
+        '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: url },
+        ],
+      },
+    ],
   };
   return `${headCommon('WordPress & Website Tips for Business Owners | Samverse Blog', 'Practical guides on WordPress websites, costs, speed, security, SEO and online stores, written for business owners by a freelance WordPress developer.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
@@ -745,8 +777,9 @@ ${JSON.stringify(schema, null, 2)}
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Blog</nav>
         <div class="lp-hero-copy">
           <span class="eyebrow">Blog</span>
-          <h1>Website tips for <span class="grad">business owners</span></h1>
+          <h1>WordPress &amp; website tips for <span class="grad">business owners</span></h1>
           <p class="lead">Plain-English guides on WordPress, website costs, speed, security, SEO and selling online, so you can make better decisions about your website.</p>
+          ${updatedLine(LIVE_POSTS)}
         </div>
       </div>
     </section>
@@ -805,7 +838,7 @@ ${items.map(x => '          ' + postCard(x)).join('\n')}
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'CollectionPage', '@id': `${url}#page`, name: t.name, description: t.seoDesc, url, inLanguage: 'en-IN',
+        '@type': 'CollectionPage', '@id': `${url}#page`, name: t.name, description: t.seoDesc, url, inLanguage: 'en-IN', dateModified: latestDate(list),
         isPartOf: { '@type': 'Blog', name: 'Samverse Blog', url: `${SITE}/blog/` },
         mainEntity: { '@type': 'ItemList', numberOfItems: list.length, itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/blog/${p.slug}/`, name: p.title })) },
       },
@@ -834,8 +867,9 @@ ${JSON.stringify(schema, null, 2)}
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> ${esc(t.name)}</nav>
         <div class="lp-hero-copy">
           <span class="eyebrow">Blog topic · ${list.length} articles</span>
-          <h1>${esc(t.name)}</h1>
+          <h1>${esc(t.seoTitle.split(' | ')[0])}</h1>
           <p class="lead">${esc(t.seoDesc)}</p>
+          ${updatedLine(list)}
         </div>
       </div>
     </section>
@@ -936,7 +970,7 @@ ${JSON.stringify(schema, null, 2)}
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/work/">Work</a> <span>/</span> ${esc(w.name)}</nav>
         <div class="lp-hero-copy">
           <span class="pill"><span class="dot"></span> Case study · ${esc(w.industry)}</span>
-          <h1>${esc(w.name)}</h1>
+          <h1>${esc(H1.work[w.slug] || w.name)}</h1>
           <p class="lead">${esc(w.summary)}</p>
           <div class="hero-cta">
             <a href="${w.url}" class="btn" target="_blank" rel="noopener">Visit Live Website ↗</a>
@@ -1003,8 +1037,19 @@ ${w.related.map(s => bySlug[s]).filter(Boolean).map(x => '          ' + card(x))
 const renderWorkIndex = () => {
   const url = `${SITE}/work/`;
   const schema = {
-    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'WordPress Portfolio: Samverse', url,
-    hasPart: WORK.map(w => ({ '@type': 'CreativeWork', name: `${w.name} website`, url: `${SITE}/work/${w.slug}/` })),
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage', name: 'WordPress Portfolio: Samverse', url,
+        hasPart: WORK.map(w => ({ '@type': 'CreativeWork', name: `${w.name} website`, url: `${SITE}/work/${w.slug}/` })),
+      },
+      {
+        '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Work', item: url },
+        ],
+      },
+    ],
   };
   return `${headCommon('WordPress Portfolio & Case Studies | Samverse', 'WordPress portfolio from Samverse: real case studies for agencies, manufacturers, doctors, directories and local businesses, with what was built and why.', url, `  <meta property="og:type" content="website">
   <script type="application/ld+json">
@@ -1022,7 +1067,7 @@ ${JSON.stringify(schema, null, 2)}
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Work</nav>
         <div class="lp-hero-copy">
           <span class="eyebrow">Portfolio</span>
-          <h1>Websites I've <span class="grad">designed &amp; built</span></h1>
+          <h1>WordPress portfolio &amp; case studies: <span class="grad">sites I've built</span></h1>
           <p class="lead">Live websites, mostly built on WordPress, for agencies, manufacturers, healthcare, media and directory businesses. Open a case study to see what each site needed and how it was built.</p>
         </div>
       </div>

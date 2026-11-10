@@ -1,0 +1,40 @@
+// H1 overrides so the visible heading leads with the page's target keyword (title tag keyword).
+// Kept separate from tools/blog-data.js and tools/work-data.js so content edits there don't clash.
+// posts: keyed by blog slug (plain text, escaped at build). work: keyed by case study slug.
+module.exports = {
+  posts: {
+    'connect-website-forms-to-crm': 'Connect Website Forms to a CRM, Google Sheets or Email Automation in WordPress',
+    'google-tag-manager-basics': 'How to Set Up Google Tag Manager on WordPress: Basics for Small Business Websites',
+    'handle-negative-reviews': 'How to Respond to Negative Google Reviews: Reply Templates, Fake Reviews and What Not to Do',
+    'hire-shopify-developer-india': 'Hire a Shopify Developer in India: What They Do, What to Ask and Red Flags',
+    'hostinger-website-slow-fix': 'Hostinger Website Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
+    'membership-website-wordpress': 'How to Create a Membership Website in WordPress',
+    'migrate-wix-to-wordpress': 'How to Migrate Wix to WordPress Step by Step: Content, Images, Redirects, Domain and Cutover',
+    'migrate-woocommerce-to-shopify': 'How to Migrate WooCommerce to Shopify, Step by Step: Products, Customers, Orders, Redirects and Cutover',
+    'ngo-website-donations-80g': 'NGO Website Donations: Donation Pages, 80G Receipts, FCRA, Transparency and Volunteers',
+    'rank-for-your-business-name': 'Website Not Showing When You Search Your Business Name? How to Rank for Your Own Name',
+    'regain-website-access-old-developer': 'How to Get Your Website Back From an Old Developer: Domain, Hosting, WordPress, Google Accounts and Email',
+    'rfq-forms-b2b-websites': 'RFQ Forms for B2B Websites: What to Ask, What to Skip and How to Follow Up',
+    'seo-pricing-models-india': 'SEO Pricing in India: How Retainers, Audits and Performance Deals Work',
+    'test-structured-data-rich-results': 'Rich Results Test: How to Check Rich Snippets and Test Structured Data in WordPress',
+    'website-for-ev-dealers': 'EV Dealer Websites: Model Pages, Test Rides, Charging, Subsidies and Service',
+    'website-for-jewellers': 'Jewellery Website Design: Product Photography, Gold Rate Pricing, Hallmark Details and Selling Online',
+    'website-for-recruitment-agencies': 'Recruitment Agency Websites: Job Listings, CV Uploads, Employer Enquiries and Trust',
+    'website-for-signage-companies': 'Signage Company Websites for LED Board and Branding Businesses',
+    'what-is-a-cdn': 'What Is a CDN? How a Content Delivery Network Speeds Up Your Business Website, and When You Need One',
+    'why-elementor-sites-slow': 'Why Is Elementor So Slow? How to Fix Slow Elementor Pages and the Editor',
+  },
+  work: {
+    'dr-nitish-gupta-pulmonologist': 'Dr. Nitish Gupta: Pulmonologist Website Design for an Agra Clinic',
+    'dr-sudhir-arora': 'Dr. Sudhir Arora: Counselling and Wellness Website Design on WordPress',
+    'dr-sunaina-dental-care': 'Dr. Sunaina Dental Care: Dental Clinic Website Design on WordPress',
+    'our-temples': 'Our Temples: Temple Directory Website Design on WordPress',
+    'sahni-power-solutions': 'Sahni Power Solutions: Generator Rental Website Design on WordPress',
+    'samverse': 'Samverse: Freelance Portfolio Website Case Study',
+    'southern-flavours': 'Southern Flavours: Restaurant Website Design on WordPress',
+    'streak-creative': 'Streak Creative: Marketing Agency Website Design on WordPress',
+    'studio-agama-interiors': 'Studio Agama Interiors: Interior Design Website on WordPress',
+    'third-eye-social': 'Third Eye Social: AI Agency Website Design on WordPress',
+    'vansh-group': 'Vansh Group: Electronics Manufacturer Website Design on WordPress',
+  },
+};

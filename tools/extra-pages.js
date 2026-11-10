@@ -270,9 +270,9 @@ ${(Array.isArray(WORK) ? WORK : Object.values(WORK)[0]).map(w => `            <l
     slug: 'wordpress-glossary',
     crumb: 'WordPress Glossary',
     title: 'WordPress & Website Glossary for Business Owners | Samverse',
-    description: 'Plain-English definitions of 40 website terms business owners hear: WordPress, hosting, DNS, SSL, SEO, Core Web Vitals, WooCommerce, schema, caching and more.',
+    description: 'Plain-English definitions of 40 website terms business owners hear: WordPress, hosting, DNS, SSL, SEO, Core Web Vitals, WooCommerce, schema and caching.',
     eyebrow: 'Glossary',
-    h1: 'Website terms, <span class="grad">in plain English</span>',
+    h1: 'WordPress &amp; website glossary, <span class="grad">in plain English</span>',
     lead: 'Confused by hosting, DNS, SSL or Core Web Vitals? Here are 40 terms you\'ll hear when building a website, explained simply for business owners.',
     priority: '0.6',
     main: `
@@ -346,5 +346,47 @@ ${GLOSSARY.map(([t, d]) => `          <div class="glossary-item" id="${termId(t)
       </div>
     </section>`,
     schema: url => ({ '@type': 'WebPage', '@id': `${url}#page`, name: 'Privacy Policy', url, dateModified: '2026-09-28' }),
+  },
+  {
+    slug: 'contact',
+    crumb: 'Contact',
+    title: 'Contact Samverse | WordPress & Shopify Developer',
+    description: 'Contact Samverse on WhatsApp (+91 74170 49145) or email for WordPress, WooCommerce and Shopify projects. Send your site URL, goal and deadline for a quote.',
+    eyebrow: 'Contact',
+    h1: 'Contact <span class="grad">Samverse</span>',
+    lead: 'Send a message on WhatsApp, email, or use the form below. I reply within 24 hours, usually the same day.',
+    main: `
+    <section class="section" style="padding-top:10px">
+      <div class="container">
+        <div class="post-body lp-guide-body">
+          <h2>WhatsApp and email</h2>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">+91 74170 49145</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><strong>Email:</strong> <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">samverse9719@gmail.com</a></li>
+          </ul>
+          <h2>What to send</h2>
+          <p>A short message is enough to get started. It helps if you include:</p>
+          <ul>
+            <li><strong>Your website URL</strong>, if you already have a site (or a site you like, if you are starting fresh).</li>
+            <li><strong>Your goal</strong>: a new website, a redesign, a store, a speed or SEO fix, malware clean-up or ongoing maintenance.</li>
+            <li><strong>Your deadline</strong>, or the date you need the site live.</li>
+          </ul>
+          <p>Then I'll send you a clear, fixed quote, usually within 24 hours. See <a href="/solutions/">all services and industries</a> or <a href="/work/">recent work</a> if you want to look around first.</p>
+          <h2>Where I work</h2>
+          <p>Samverse is based in Pune and works remotely with businesses and agencies across <a href="/wordpress-shopify-developer-india/">India</a>, the <a href="/wordpress-shopify-developer-uk/">UK</a>, the <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, the <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+        </div>
+      </div>
+    </section>`,
+    schema: url => ({
+      '@type': 'ContactPage', '@id': `${url}#page`, url, name: 'Contact Samverse',
+      mainEntity: {
+        '@type': 'ProfessionalService', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/`,
+        email: 'mailto:samverse9719@gmail.com', telephone: '+91-7417049145',
+        address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
+        areaServed: ['India', 'United Kingdom', 'United States', 'Canada', 'United Arab Emirates', 'Europe'].map(name => ({ '@type': 'Place', name })),
+        contactPoint: { '@type': 'ContactPoint', contactType: 'sales', telephone: '+91-7417049145', email: 'samverse9719@gmail.com' },
+      },
+    }),
   },
 ];
