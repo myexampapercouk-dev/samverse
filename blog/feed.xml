@@ -81,7 +81,7 @@
     <link>https://samverse.space/blog/how-long-to-build-wordpress-website/</link>
     <guid>https://samverse.space/blog/how-long-to-build-wordpress-website/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How long does a WordPress website take? Days for a landing page, 1-2 weeks for a small business site, 2-4 weeks for a store, plus what causes delays.</description>
+    <description>Landing page 3-5 days, small business site 1-2 weeks, store 2-4 weeks. Realistic WordPress timelines by site type, and what actually causes delays.</description>
   </item>
   <item>
     <title>How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist</title>
@@ -683,7 +683,7 @@
     <link>https://samverse.space/blog/woocommerce-gst-invoices-india/</link>
     <guid>https://samverse.space/blog/woocommerce-gst-invoices-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up GST in WooCommerce: CGST and SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices, with a test order to confirm it.</description>
+    <description>Set up GST in WooCommerce step by step: tax classes per rate, CGST+SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices.</description>
   </item>
   <item>
     <title>Website for Psychologists, Therapists and Counsellors: Credentials, Approaches, Online and In-Person Sessions, Confidentiality, Private Booking and a Clear Crisis Notice</title>
@@ -844,7 +844,7 @@
     <link>https://samverse.space/blog/outsource-wordpress-development-india/</link>
     <guid>https://samverse.space/blog/outsource-wordpress-development-india/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Outsource WordPress development to India safely: pick by live work, start with a paid test task, set milestones and NDAs, and spot red flags early.</description>
+    <description>How agencies and businesses outsource WordPress to India safely: judge live work, start with a paid test task, set milestones and NDAs, spot red flags.</description>
   </item>
   <item>
     <title>Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need</title>
@@ -977,7 +977,7 @@
     <link>https://samverse.space/blog/hostinger-website-slow-fix/</link>
     <guid>https://samverse.space/blog/hostinger-website-slow-fix/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Hostinger site slow? Check CPU and memory limits in hPanel, confirm the LiteSpeed cache header, then fix CDN, PHP, plugins and bots before you upgrade.</description>
+    <description>Hostinger site slow? Check hPanel CPU and memory limits, confirm LiteSpeed cache hits, then fix PHP, plugins and bots. Do this before you pay to upgrade.</description>
   </item>
   <item>
     <title>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</title>
@@ -1012,7 +1012,7 @@
     <link>https://samverse.space/blog/wordpress-changes-not-showing/</link>
     <guid>https://samverse.space/blog/wordpress-changes-not-showing/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress changes not showing? Confirm it saved, then clear page, plugin, server and CDN caches in order, and check templates, mobile settings and staging.</description>
+    <description>Edits saved but the live site looks the same? Check the save, then clear browser, plugin, server and CDN caches in order, and rule out the wrong template.</description>
   </item>
   <item>
     <title>Elementor Stuck on Loading or &quot;Preview Could Not Be Loaded&quot;? How to Fix the Elementor Loading Problem</title>
@@ -1026,7 +1026,7 @@
     <link>https://samverse.space/blog/elementor-layout-broken-after-update/</link>
     <guid>https://samverse.space/blog/elementor-layout-broken-after-update/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Elementor layout broken after an update? Regenerate CSS and clear caches first, then match Elementor and Pro versions, use Safe Mode and roll back safely.</description>
+    <description>Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.</description>
   </item>
   <item>
     <title>How to Update a Premium WordPress Theme Safely: Licences, ZIP Uploads, Bundled Plugins and Keeping Your Customisations</title>
@@ -1446,7 +1446,7 @@
     <link>https://samverse.space/blog/hreflang-multilingual-seo-india/</link>
     <guid>https://samverse.space/blog/hreflang-multilingual-seo-india/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Hreflang codes for Hindi, Tamil, Marathi and other Indian languages, copy-ready tags for hi-IN, en-IN and x-default, and the checks that catch mistakes.</description>
+    <description>Hreflang codes for Hindi, Tamil, Marathi, Telugu and more, copy-ready hi-IN, en-IN and x-default tags, and the checks that catch common mistakes.</description>
   </item>
   <item>
     <title>How to Turn Instagram Followers Into Website Enquiries: Bio Links, Landing Pages, WhatsApp and Tracking</title>
@@ -1467,7 +1467,7 @@
     <link>https://samverse.space/blog/wordpress-activity-logs/</link>
     <guid>https://samverse.space/blog/wordpress-activity-logs/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>WordPress has no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, and what to review.</description>
+    <description>WordPress keeps no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, with time and IP.</description>
   </item>
   <item>
     <title>WooCommerce Wholesale Pricing for Dealers and Distributors: A Setup Guide for Indian B2B Stores</title>
@@ -1607,7 +1607,7 @@
     <link>https://samverse.space/blog/rebranding-your-website/</link>
     <guid>https://samverse.space/blog/rebranding-your-website/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Rebrand your website without losing rankings: keep URLs, map 301 redirects, update titles, schema and Google Business Profile, then follow the checklist.</description>
+    <description>Changing your brand name or domain? Keep URLs, map 301 redirects, update titles, schema and Google Business Profile. A launch checklist to keep rankings.</description>
   </item>
   <item>
     <title>SEO for PDFs, Brochures and Catalogues: Getting Them Found on Google</title>
@@ -1621,14 +1621,14 @@
     <link>https://samverse.space/blog/meta-catalog-instagram-shopping-woocommerce/</link>
     <guid>https://samverse.space/blog/meta-catalog-instagram-shopping-woocommerce/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Connect WooCommerce to Meta catalog with the official plugin or a feed, sell on Instagram and Facebook, keep price and stock synced and avoid rejections.</description>
+    <description>Connect WooCommerce to Meta's catalog with the official plugin or a feed, tag products on Instagram and Facebook, and keep price and stock in sync.</description>
   </item>
   <item>
     <title>Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested</title>
     <link>https://samverse.space/blog/hindi-devanagari-fonts-website/</link>
     <guid>https://samverse.space/blog/hindi-devanagari-fonts-website/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Pick a Hindi font for your website that reads well on phones: Unicode Devanagari, pairing with English, sizes, fast loading and a test checklist.</description>
+    <description>Which Hindi fonts read well on phones: Unicode Devanagari picks, pairing with English, sizes and line height, fast loading and a quick test checklist.</description>
   </item>
   <item>
     <title>WooCommerce Product Filters: Setup, Speed and SEO (and Shopify Too)</title>
@@ -1733,7 +1733,7 @@
     <link>https://samverse.space/blog/stop-spam-user-registrations-wordpress/</link>
     <guid>https://samverse.space/blog/stop-spam-user-registrations-wordpress/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Stop spam user registrations in WordPress and WooCommerce: turn off open signup, add Turnstile or reCAPTCHA and a honeypot, then delete fake users.</description>
+    <description>Fake signups flooding WordPress or WooCommerce? Turn off open registration, add Turnstile and a honeypot, then bulk-delete spam users safely.</description>
   </item>
   <item>
     <title>White-Label WordPress Care Plans: What Agencies Should Include and How to Outsource Them</title>
@@ -1831,7 +1831,7 @@
     <link>https://samverse.space/blog/click-to-whatsapp-ads-vs-website/</link>
     <guid>https://samverse.space/blog/click-to-whatsapp-ads-vs-website/</guid>
     <pubDate>Sat, 10 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Click-to-WhatsApp ads vs a website landing page: how each works, which businesses suit which, tracking, lead quality and how to use both together in India.</description>
+    <description>When Click-to-WhatsApp ads beat a landing page, when a website wins, how lead quality and tracking differ, and how Indian businesses use both together.</description>
   </item>
   <item>
     <title>WordPress Login Not Working? How to Fix Login Loops, Lockouts and Lost Passwords</title>

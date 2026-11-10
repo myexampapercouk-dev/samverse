@@ -2010,11 +2010,11 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'how-long-to-build-wordpress-website',
-    seoTitle: 'How Long to Build a WordPress Website? Timelines by Type',
+    seoTitle: 'How Long to Build a WordPress Website? 2026 Timelines',
     title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
-    description: 'How long does a WordPress website take? Days for a landing page, 1-2 weeks for a small business site, 2-4 weeks for a store, plus what causes delays.',
+    description: 'Landing page 3-5 days, small business site 1-2 weeks, store 2-4 weeks. Realistic WordPress timelines by site type, and what actually causes delays.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
@@ -27958,11 +27958,11 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   },
   {
     slug: 'woocommerce-gst-invoices-india',
-    seoTitle: 'WooCommerce GST Setup in India: Tax Classes and Invoices',
+    seoTitle: 'WooCommerce GST Setup India: CGST, SGST, IGST and Invoices',
     title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
-    description: 'Set up GST in WooCommerce: CGST and SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices, with a test order to confirm it.',
+    description: 'Set up GST in WooCommerce step by step: tax classes per rate, CGST+SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
     body: `
@@ -29176,11 +29176,11 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   {
     slug: 'website-for-astrologers-vastu-consultants',
     noindex: true,
-    seoTitle: 'Website for Astrologers and Vastu Consultants: A Guide',
+    seoTitle: 'Website for Astrologers and Vastu Consultants: Checklist',
     title: 'Website for Astrologers, Numerologists and Vastu Consultants: Consultation Types, Booking and Payments, Honest Claims, Hindi and Regional Content, WhatsApp and Reviews',
-    description: 'Plan a website for an astrologer or vastu consultant: consultation types, booking and online payment, honest claims, Hindi content and real reviews.',
+    description: 'What an astrologer or vastu consultant website needs: clear consultation pages, booking with online payment, Hindi content, WhatsApp and honest claims.',
     date: '2026-09-27',
-    updated: '2026-10-25',
+    updated: '2026-11-10',
     category: 'Industries',
     related: ['website-for-lawyers-and-consultants', 'landing-page-design', 'wordpress-seo-services'],
     body: `
@@ -33277,11 +33277,11 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'outsource-wordpress-development-india',
-    seoTitle: 'Outsource WordPress Development to India Safely',
+    seoTitle: 'Outsource WordPress Development to India: Safe 2026 Guide',
     title: 'Outsource WordPress Development to India: A Practical Guide for Agencies, Resellers and Businesses',
-    description: 'Outsource WordPress development to India safely: pick by live work, start with a paid test task, set milestones and NDAs, and spot red flags early.',
+    description: 'How agencies and businesses outsource WordPress to India safely: judge live work, start with a paid test task, set milestones and NDAs, spot red flags.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer', 'figma-to-wordpress'],
     body: `
@@ -37154,11 +37154,11 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger Website Slow? Find the Cause and Fix It',
+    seoTitle: 'Hostinger Website Slow? Fix It in hPanel, Step by Step',
     title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
-    description: 'Hostinger site slow? Check CPU and memory limits in hPanel, confirm the LiteSpeed cache header, then fix CDN, PHP, plugins and bots before you upgrade.',
+    description: 'Hostinger site slow? Check hPanel CPU and memory limits, confirm LiteSpeed cache hits, then fix PHP, plugins and bots. Do this before you pay to upgrade.',
     date: '2026-09-28',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -38043,11 +38043,11 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'wordpress-changes-not-showing',
-    seoTitle: 'WordPress Changes Not Showing? Fix It Cache by Cache',
+    seoTitle: 'WordPress Changes Not Showing? Causes and Fixes in Order',
     title: 'WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template',
-    description: 'WordPress changes not showing? Confirm it saved, then clear page, plugin, server and CDN caches in order, and check templates, mobile settings and staging.',
+    description: 'Edits saved but the live site looks the same? Check the save, then clear browser, plugin, server and CDN caches in order, and rule out the wrong template.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'elementor-developer'],
     body: `
@@ -38311,11 +38311,11 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'elementor-layout-broken-after-update',
-    seoTitle: 'Elementor Layout Broken After Update? 8 Fixes, in Order',
+    seoTitle: 'Elementor Layout Broken After Update? Fix It in 8 Steps',
     title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
-    description: 'Elementor layout broken after an update? Regenerate CSS and clear caches first, then match Elementor and Pro versions, use Safe Mode and roll back safely.',
+    description: 'Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'website-redesign'],
     body: `
@@ -41013,11 +41013,11 @@ add_action( 'after_setup_theme', function () {
   {
     slug: 'website-for-it-hardware-computer-dealers',
     noindex: true,
-    seoTitle: 'Websites for Computer, Laptop and IT Hardware Dealers',
+    seoTitle: 'Computer and Laptop Dealer Website: What It Needs',
     title: 'Websites for Computer, Laptop and IT Hardware Dealers: Retail and B2B Paths, Large Catalogues, Price on Request, Brand Authorisation, AMC and GST Quotes',
-    description: 'Plan a computer dealer website for walk-in buyers and companies: a catalogue that scales, price on request, precise brand status, AMC pages and GST quotes.',
+    description: 'Plan a computer or IT hardware dealer website that serves walk-in buyers and companies: big catalogues, price on request, AMC pages and GST quotes.',
     date: '2026-09-28',
-    updated: '2026-10-25',
+    updated: '2026-11-10',
     category: 'Industries',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
@@ -53095,11 +53095,11 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'hreflang-multilingual-seo-india',
-    seoTitle: 'Hreflang for Indian Languages: Codes and Ready Tags',
+    seoTitle: 'Hreflang for Hindi and Indian Languages: Codes + Ready Tags',
     title: 'Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions',
-    description: 'Hreflang codes for Hindi, Tamil, Marathi and other Indian languages, copy-ready tags for hi-IN, en-IN and x-default, and the checks that catch mistakes.',
+    description: 'Hreflang codes for Hindi, Tamil, Marathi, Telugu and more, copy-ready hi-IN, en-IN and x-default tags, and the checks that catch common mistakes.',
     date: '2026-09-30',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
@@ -54034,11 +54034,11 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'wordpress-activity-logs',
-    seoTitle: 'WordPress Activity Log: How to See Who Changed What',
+    seoTitle: 'WordPress Activity Log: See Who Changed What (and When)',
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
-    description: 'WordPress has no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, and what to review.',
+    description: 'WordPress keeps no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, with time and IP.',
     date: '2026-09-30',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
@@ -60154,11 +60154,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'rebranding-your-website',
-    seoTitle: 'Rebranding Your Website Without Losing SEO: Checklist',
+    seoTitle: 'Rebranding a Website Without Losing SEO: 2026 Checklist',
     title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
-    description: 'Rebrand your website without losing rankings: keep URLs, map 301 redirects, update titles, schema and Google Business Profile, then follow the checklist.',
+    description: 'Changing your brand name or domain? Keep URLs, map 301 redirects, update titles, schema and Google Business Profile. A launch checklist to keep rankings.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-seo-services'],
     body: `
@@ -60873,11 +60873,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'meta-catalog-instagram-shopping-woocommerce',
-    seoTitle: 'Connect WooCommerce to Meta Catalog for Instagram Shop',
+    seoTitle: 'WooCommerce to Instagram Shopping: Meta Catalog Setup',
     title: 'Connecting WooCommerce to Meta\'s Catalog for Instagram and Facebook Shopping',
-    description: 'Connect WooCommerce to Meta catalog with the official plugin or a feed, sell on Instagram and Facebook, keep price and stock synced and avoid rejections.',
+    description: 'Connect WooCommerce to Meta\'s catalog with the official plugin or a feed, tag products on Instagram and Facebook, and keep price and stock in sync.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
@@ -61106,11 +61106,11 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'hindi-devanagari-fonts-website',
-    seoTitle: 'Hindi Fonts for a Website: How to Pick and Load Them',
+    seoTitle: 'Best Hindi Fonts for Websites: Pick, Load and Test (2026)',
     title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
-    description: 'Pick a Hindi font for your website that reads well on phones: Unicode Devanagari, pairing with English, sizes, fast loading and a test checklist.',
+    description: 'Which Hindi fonts read well on phones: Unicode Devanagari picks, pairing with English, sizes and line height, fast loading and a quick test checklist.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
@@ -64946,11 +64946,11 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'stop-spam-user-registrations-wordpress',
-    seoTitle: 'Stop Spam User Registrations in WordPress: Step by Step',
+    seoTitle: 'Stop Spam User Registrations in WordPress: Checklist',
     title: 'How to Stop Spam User Registrations in WordPress and WooCommerce',
-    description: 'Stop spam user registrations in WordPress and WooCommerce: turn off open signup, add Turnstile or reCAPTCHA and a honeypot, then delete fake users.',
+    description: 'Fake signups flooding WordPress or WooCommerce? Turn off open registration, add Turnstile and a honeypot, then bulk-delete spam users safely.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'woocommerce-developer'],
     body: `
@@ -69241,11 +69241,11 @@ RewriteRule . /index.php [L]
   },
   {
     slug: 'click-to-whatsapp-ads-vs-website',
-    seoTitle: 'Click-to-WhatsApp Ads vs Website: Which Is Better?',
+    seoTitle: 'Click-to-WhatsApp Ads vs Landing Page: Which Gets Leads?',
     title: 'Click-to-WhatsApp Ads vs a Website Landing Page: Which Suits Your Business?',
-    description: 'Click-to-WhatsApp ads vs a website landing page: how each works, which businesses suit which, tracking, lead quality and how to use both together in India.',
+    description: 'When Click-to-WhatsApp ads beat a landing page, when a website wins, how lead quality and tracking differ, and how Indian businesses use both together.',
     date: '2026-10-10',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
