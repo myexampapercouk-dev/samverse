@@ -43,7 +43,7 @@
       "headline": "WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely",
       "description": "WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.",
       "datePublished": "2026-10-30",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-update-button-missing/",
       "image": "https://samverse.space/assets/og/blog-wordpress-update-button-missing.png",
       "articleSection": "Maintenance",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-30">30 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-30">30 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Update%20Button%20Missing%3F%20Why%20Updates%20Do%20Not%20Show%20and%20How%20to%20Fix%20It%20Safely%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-update-button-missing%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,6 +161,7 @@
               <li><a href="#premium-plugin-or-theme-licence-expired">Premium plugin or theme licence expired</a></li>
               <li><a href="#file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</a></li>
               <li><a href="#before-you-re-enable-updates">Before you re-enable updates</a></li>
+              <li><a href="#update-button-missing-on-multisite">Update button missing on multisite</a></li>
               <li><a href="#when-updates-show-but-nothing-new-appears">When updates show but nothing new appears</a></li>
               <li><a href="#why-developers-lock-updates-and-a-better-alternative">Why developers lock updates, and a better alternative</a></li>
               <li><a href="#quick-check-why-updates-are-hidden">Quick check: why updates are hidden</a></li>
@@ -177,6 +178,9 @@
             </ul>
           </div>
 <p>If the WordPress update button is missing, the most common causes are that your user account is not an administrator, updates have been disabled in wp-config.php or by a plugin, your host manages updates from its own panel, or a premium plugin or theme licence has expired so its updates are not offered. Less often, file permissions or a multisite setup hide the button. Work through these checks in order, take a backup, and only then re-enable updates.</p>
+
+<blockquote><strong>Short answer:</strong> If the WordPress update button is missing, first check you are logged in as an administrator (on multisite, a Super Admin in Network Admin). Then look in wp-config.php for <code>DISALLOW_FILE_MODS</code> or <code>AUTOMATIC_UPDATER_DISABLED</code>, check for update-blocking plugins or host-managed updates, and renew expired premium plugin licences.</blockquote>
+
 <p>A site that cannot be updated is a security risk, so it is worth fixing quickly. This guide explains each cause and the safe fix.</p>
 
 <h2 id="quick-diagnosis-table">Quick diagnosis table</h2>
@@ -235,6 +239,9 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </ol>
 <p>The full routine is in <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
+<h2 id="update-button-missing-on-multisite">Update button missing on multisite</h2>
+<p>On a multisite network, the Updates screen and the update links only appear in <strong>Network Admin</strong>, and only for a Super Admin. A site administrator on a subsite will never see them, even with full rights on that site. Ask the network owner to run updates from My Sites, Network Admin, Updates.</p>
+
 <h2 id="when-updates-show-but-nothing-new-appears">When updates show but nothing new appears</h2>
 <p>Sometimes the button is there, but WordPress insists everything is up to date when you know a newer version exists. WordPress checks for updates on a schedule and caches the result, so new releases can take a while to appear. Clicking &quot;Check again&quot; on the Updates screen forces a fresh check. If that does not help, the server may be unable to reach the WordPress update servers because of a firewall, DNS problem or outgoing connection block at the host. Ask your host to confirm outgoing HTTPS connections are allowed. Object caching or a security plugin that blocks outgoing requests can cause the same symptom.</p>
 <p>Plugins that have been closed in the official directory also stop getting updates. If a plugin shows no updates for a long time, check its page in the directory. A closed or abandoned plugin should be replaced, not left running. Look for an alternative that is actively maintained, has recent updates and supports your WordPress and PHP versions, then test the swap on staging.</p>
@@ -254,6 +261,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Get help when your host manages updates and blocks them, when the site is several major versions behind, or when you are afraid an update will break it. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> tests updates on staging first and keeps backups. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2 id="faqs">FAQs</h2>
+<h3>Why is there no update button for plugins in WordPress?</h3>
+<p>Usually because your account is not an administrator, updates are switched off in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired. On multisite, plugin updates are only shown in Network Admin to a Super Admin.</p>
 <h3>Why is the WordPress update button missing?</h3>
 <p>Usually because you are not logged in as an administrator, updates are disabled in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired.</p>
 <h3>How do I enable updates that were disabled in wp-config.php?</h3>
@@ -309,6 +318,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
               <li><a href="#premium-plugin-or-theme-licence-expired">Premium plugin or theme licence expired</a></li>
               <li><a href="#file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</a></li>
               <li><a href="#before-you-re-enable-updates">Before you re-enable updates</a></li>
+              <li><a href="#update-button-missing-on-multisite">Update button missing on multisite</a></li>
               <li><a href="#when-updates-show-but-nothing-new-appears">When updates show but nothing new appears</a></li>
               <li><a href="#why-developers-lock-updates-and-a-better-alternative">Why developers lock updates, and a better alternative</a></li>
               <li><a href="#quick-check-why-updates-are-hidden">Quick check: why updates are hidden</a></li>

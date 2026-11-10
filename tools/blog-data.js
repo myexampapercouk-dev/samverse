@@ -9,11 +9,14 @@ module.exports = [
     title: 'WordPress Plans and Pricing: How Much Does a WordPress Website Cost in India? (2026 Guide)',
     description: "What a WordPress website costs in India: free WordPress.org vs WordPress.com plans, build cost, yearly domain and hosting, and how to get a fixed quote.",
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>WordPress plans are the paid hosting tiers sold by WordPress.com, but most Indian business websites don't need one: the WordPress.org software is free, and what you actually pay for is a domain, hosting and the build. For most small businesses in India, that means roughly ₹15,000 to ₹40,000 to build a professional WordPress website, plus a few thousand rupees a year for domain and hosting.</p>
+
+<blockquote><strong>Short answer:</strong> A WordPress website in India usually costs about ₹15,000 to ₹40,000 to build for a small business, more for catalogues, bookings or WooCommerce stores. WordPress.org itself is free. Yearly running costs are the domain, hosting and optional maintenance, so compare renewal prices, not first-year offers, and ask for a fixed written quote.</blockquote>
+
 <h2>Is WordPress free? WordPress pricing and plans explained</h2>
 <p>The WordPress software itself (from WordPress.org) is free and open source: there's no licence fee to use it, however big your site gets. What you pay for is everything around it:</p>
 <ul>
@@ -83,14 +86,13 @@ module.exports = [
 <p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>
 
 <h2>Examples: where different sites usually land</h2>
-<p>Ranges are easier to use with examples. These show where projects tend to fall within the ranges above; they aren't quotes:</p>
+<p>Where projects tend to fall within the ranges above (examples, not quotes):</p>
 <ul>
   <li><strong>A consultant or CA firm with five pages, a contact form and a WhatsApp button, using a good theme and their own text:</strong> towards the lower end of the small business range.</li>
   <li><strong>A clinic with a page per treatment, doctor profiles and online appointment requests:</strong> higher in the small business range, because booking needs setting up and testing.</li>
   <li><strong>A manufacturer with a product catalogue, downloadable brochures and quote forms:</strong> the larger business range; the number of templates and how much product data needs entering matter most.</li>
   <li><strong>A clothing store with sizes and colours, cash on delivery, shipping zones and GST invoices:</strong> the WooCommerce range, moving higher with many variations, custom features or a large product upload.</li>
   <li><strong>A single landing page for an ad campaign:</strong> the landing page range, depending on design work and tracking needs (see <a href="/blog/landing-page-cost-factors/">landing page cost factors</a>).</li>
-  <li><strong>A redesign of an existing site:</strong> similar to a new build of the same size; sometimes less if content is reused, sometimes more if many old URLs need redirecting.</li>
 </ul>
 
 <h2>What makes a website cost more?</h2>
@@ -182,6 +184,8 @@ module.exports = [
 <p>Get help when the site has to bring in enquiries or sales, when you need payments, bookings or a store, or when you want a fixed price instead of an open-ended hourly bill. Through <a href="/wordpress-website-development/">WordPress website development</a> you send your page list, a few sites you like and the features you need, and get a written scope and a fixed quote with the domain, hosting and licences in your own name. For a store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
 <h2>FAQs</h2>
+<h3>What is the WordPress website cost in India for a small business?</h3>
+<p>For a small business site of around five to ten pages built on a good theme, expect roughly ₹15,000 to ₹40,000 for the build, plus a few thousand rupees a year for domain and hosting. Stores and custom features cost more.</p>
 <h3>How much does a WordPress domain cost in India?</h3>
 <p>A .com or .in domain usually costs about ₹500 to ₹1,200 a year, depending on the registrar and any first-year offer. Check the renewal price, and register the domain in your business's name so you always control it.</p>
 <h3>What are WordPress plans, and do I need one?</h3>
@@ -305,15 +309,18 @@ module.exports = [
   },
   {
     slug: 'why-is-my-wordpress-site-slow',
-    seoTitle: 'Slow WordPress Site? Why It Happens and How to Fix It',
-    title: 'Slow WordPress Site? Why It Happens and How to Fix It (Front End and Admin)',
+    seoTitle: 'Why Is My WordPress Site Slow? Causes and Fixes',
+    title: 'Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)',
     description: 'Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
 <p>A slow WordPress site is almost always caused by slow hosting, a page cache that is missing or not working, oversized images, a heavy theme or plugin, or too many third-party scripts, not by WordPress itself. Check your server response time first: if every page waits before anything appears, fix the server side (hosting, caching, plugins, database); if the server answers quickly but the page still appears slowly, fix the front end (images, scripts, fonts, CSS).</p>
+
+<blockquote><strong>Short answer:</strong> If your WordPress site is slow, test the time to first byte in PageSpeed Insights. Over about 0.8 seconds points to hosting, missing page cache or a heavy plugin; under that, the delay is in the front end: large images, render-blocking scripts, web fonts or third-party tags. Fix the server side first, then the front end, and re-test.</blockquote>
+
 <p>If only the dashboard is slow, it is an admin problem, and caching will not fix it. The 5-minute diagnosis below tells you which of these you have, then the fixes are listed in order of impact, with a separate section on how to speed up WooCommerce.</p>
 
 <p><strong>Slow WordPress site checklist:</strong></p>
@@ -441,15 +448,7 @@ module.exports = [
 <p><strong>After an update:</strong> clear every cache (plugin, server and CDN), give background database upgrades time to finish, then use the Health Check &amp; Troubleshooting plugin on staging to disable plugins one at a time and find the culprit. Roll that plugin back until a fix is released.</p>
 
 <h2>How to speed up WooCommerce</h2>
-<p>A store is harder to speed up because cart, checkout and account pages are personal to each shopper and cannot be page-cached. Hosting, object caching and plugin quality matter even more. The WooCommerce-specific checks a developer would make:</p>
-<ul>
-  <li><strong>Cart fragments:</strong> in the Network tab, look for a request to <code>?wc-ajax=get_refreshed_fragments</code>. If it fires on every page and takes a second or more, restrict it to pages with a mini-cart.</li>
-  <li><strong>Object cache:</strong> Redis or Memcached speeds up every uncached cart, checkout and admin request.</li>
-  <li><strong>HPOS:</strong> in WooCommerce, Settings, Advanced, Features, switch to High-Performance Order Storage once your plugins support it, so orders are not stored in the posts table.</li>
-  <li><strong>Action Scheduler:</strong> in Tools, Scheduled Actions, a backlog of thousands of failed or pending actions slows the admin and checkout.</li>
-  <li><strong>Filters and search:</strong> on large catalogues, use a filter plugin that builds its own index.</li>
-</ul>
-<p>The full process, page by page, is in <a href="/blog/woocommerce-speed-optimization/">WooCommerce performance optimization</a>.</p>
+<p>Stores are harder because cart, checkout and account pages cannot be page-cached, so hosting, a Redis object cache, HPOS, cart fragments and the Action Scheduler matter more. The full process is in <a href="/blog/woocommerce-speed-optimization/">WooCommerce performance optimization</a>.</p>
 
 <h2>Step-by-step checklist to fix a slow WordPress website</h2>
 <ol>
@@ -478,6 +477,8 @@ module.exports = [
 <p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script, database and admin issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
 
 <h2>FAQs</h2>
+<h3>Why is my WordPress site slow all of a sudden?</h3>
+<p>A sudden slowdown usually follows a change: a plugin or theme update, a new tracking script, an expired or disabled cache, a hosting resource limit being hit, or a traffic spike from bots. Check what changed that day, then compare server response time with your last good test.</p>
 
 <h3>Why is my WordPress site so slow?</h3>
 <p>Usually slow hosting, no working page cache, large images, a heavy theme or page builder, too many plugins or third-party scripts. Check your server response time in the Network tab to see whether the problem is the server or the page itself.</p>
@@ -503,11 +504,14 @@ module.exports = [
     title: 'How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
     description: 'How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.',
     date: '2026-09-27',
-    updated: '2026-11-06',
+    updated: '2026-11-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
 <p>You can tell your WordPress site has been hacked if visitors are redirected to spam or scam sites, Google shows pages you never created (often Japanese or pharma keywords), there are admin users you did not add, or Chrome or Google shows "Deceptive site ahead" or "This site may be hacked". To check for sure, search <code>site:yourdomain.com</code> in Google, open Security Issues in Search Console, review your administrator accounts and scan the files.</p>
+
+<blockquote><strong>Short answer:</strong> To check if your WordPress site is hacked, search <code>site:yourdomain.com</code> for pages you never made, open your site logged out on a phone from a Google result to catch redirects, read Security Issues in Search Console, and look for admin users, plugins or PHP files you did not add. Two or more hits means it is almost certainly hacked.</blockquote>
+
 <p>Check from the outside as well as the inside: many hacks hide from logged-in admins and only show to visitors arriving from Google on a phone.</p>
 
 <p><strong>Quick checklist:</strong></p>
@@ -523,18 +527,21 @@ module.exports = [
 
 <h2>Warning signs that your WordPress site has been hacked</h2>
 <p>These are the symptoms owners most often notice first. One sign on its own can have an innocent cause, but two or more together almost always means you should investigate properly.</p>
-<ul>
-<li><strong>Redirects to other sites:</strong> visitors, especially on mobile or coming from Google, get sent to gambling, dating, fake prize or scam pages. You may not see it yourself because many redirects skip logged-in users. See <a href="/blog/fix-wordpress-redirect-hack/">fixing the WordPress redirect hack</a>.</li>
-<li><strong>Spam pages in Google:</strong> searching your domain shows pages you never made, often in Japanese, or selling medicines, replica goods or loans. This is the <a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword SEO spam hack</a> and its cousins.</li>
-<li><strong>Browser or Google warnings:</strong> a red "Deceptive site ahead" screen in Chrome or "This site may be hacked" under your listing in search results.</li>
-<li><strong>Unknown admin users:</strong> new administrator accounts with random names or odd email addresses.</li>
-<li><strong>Plugins or files you did not install:</strong> plugins with generic names, or PHP files sitting in the uploads folder.</li>
-<li><strong>Hosting suspension or warning email:</strong> your host suspends the account or emails you about malware or abuse.</li>
-<li><strong>Spam emails sent from your domain:</strong> bounce messages you never sent, or your host limiting outgoing mail.</li>
-<li><strong>Sudden slowness or high CPU usage:</strong> hidden scripts mining, sending spam or attacking other sites use server resources.</li>
-<li><strong>Changed content or defacement:</strong> new links in the footer, injected text, or your homepage replaced. A red "Deceptive site ahead" screen needs its own steps: see <a href="/blog/deceptive-site-ahead-warning-fix/">how to fix "Deceptive site ahead"</a>.</li>
-<li><strong>Locked out of the admin:</strong> your password no longer works and the reset email never arrives because the admin email was changed.</li>
-</ul>
+<table>
+  <thead><tr><th>Symptom</th><th>How to check</th><th>What it usually means</th></tr></thead>
+  <tbody>
+    <tr><td>Visitors redirected to gambling, dating or scam pages</td><td>Open the site logged out, on mobile data, from a Google result</td><td><a href="/blog/fix-wordpress-redirect-hack/">Redirect hack</a>; often skips logged-in admins</td></tr>
+    <tr><td>Japanese, pharma or replica pages in Google</td><td>Search <code>site:yourdomain.com</code></td><td><a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword SEO spam hack</a></td></tr>
+    <tr><td>"Deceptive site ahead" or "This site may be hacked"</td><td>Search Console, Security Issues; Google Safe Browsing site status</td><td>Google has detected malware or phishing; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a></td></tr>
+    <tr><td>Admin users you did not create</td><td>Users, filter by Administrator</td><td>Attacker access; assume a backdoor too</td></tr>
+    <tr><td>Unknown plugins or PHP files in uploads</td><td>Plugins list; wp-content/uploads in File Manager</td><td>Malware or a backdoor</td></tr>
+    <tr><td>Host suspension or malware email</td><td>Hosting inbox and panel notices</td><td>The host's scanner found infected files</td></tr>
+    <tr><td>Spam bounces or mail limits</td><td>Mail logs, bounce messages</td><td>Your server is sending spam</td></tr>
+    <tr><td>Sudden slowness or high CPU</td><td>Hosting resource graphs</td><td>Hidden scripts mining, spamming or attacking other sites</td></tr>
+    <tr><td>New footer links, injected text or defacement</td><td>View page source, logged out</td><td>Database or theme files changed</td></tr>
+    <tr><td>Password stops working, reset email never arrives</td><td>Hosting database tool or WP-CLI user list</td><td>Admin email changed by the attacker</td></tr>
+  </tbody>
+</table>
 
 <p>Related: <a href="/blog/wordpress-activity-logs/">a WordPress activity log</a>.</p>
 
@@ -605,8 +612,7 @@ module.exports = [
 <li><strong>Request a review.</strong> Once clean, request a review in Search Console so Google removes the warning, then follow <a href="/blog/recover-rankings-after-hack/">our guide to recovering rankings after a hack</a>.</li>
 </ol>
 
-<h2>Why restoring an old backup is not always enough</h2>
-<p>Restoring yesterday's backup feels like the quickest fix, and sometimes it works. The problem is that many hacks sit quietly for weeks before anything visible happens, so your backups may already contain the backdoor. Restoring also brings back the same outdated plugin that let the attacker in. If you restore, still update everything, change passwords and scan the restored copy before going live.</p>
+<p>Restoring an old backup is not always enough: many hacks sit quietly for weeks, so the backup may already hold the backdoor and the outdated plugin that let the attacker in. If you restore, still update everything, change passwords and scan the copy before going live.</p>
 
 <h2>How to stop it happening again</h2>
 <p>Most WordPress hacks come from a short list of causes, explained in <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>. The habits that prevent most of them are simple:</p>
@@ -633,6 +639,8 @@ module.exports = [
 <h2>A monthly hack check you can do in 15 minutes</h2>
 <p>Repeat checks 1, 2, 4, 5 and 6 from the list above once a month, and confirm your latest off-site backup exists and restores (see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>). A <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include this routine if you would rather not do it yourself.</p>
 <h2>FAQs</h2>
+<h3>How do I check if my WordPress site is hacked?</h3>
+<p>Run a site: search for spam pages, open the site logged out from a Google result on a phone, check Security Issues in Search Console, review administrator accounts and recently modified files, and run a malware scan. If two or more checks fail, treat the site as hacked.</p>
 <h3>How do I tell if my WordPress site has been hacked?</h3>
 <p>Look for redirects to unrelated sites, spam pages when you search site:yourdomain.com, unknown admin users, Google or browser warnings, and unexpected file changes. Then confirm with Search Console's Security Issues report and a malware scan.</p>
 <h3>How can I check if my WordPress site is hacked for free?</h3>
@@ -901,6 +909,8 @@ module.exports = [
   <li>Ask whether the domain, hosting and WordPress admin will be in your name, and get the answer in the quote.</li>
   <li>Ask for a written scope listing pages, features, revisions and what happens after launch.</li>
 </ol>
+
+<p>Not sure whether you need design or development help in the first place? See <a href="/blog/web-designer-vs-web-developer/">web designer vs web developer</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you want one developer who quotes a fixed price after a free review and hands over full ownership, or when an earlier hire left the site half-finished. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, or <a href="/#contact">send your website address</a> with what you need.</p>
@@ -4939,15 +4949,18 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'industrial-website-product-catalogue',
-    seoTitle: 'Industrial Catalog Website: How to Structure Your Catalogue',
-    title: 'How to Build a Product Catalogue Website for an Industrial Company: Categories, Spec Tables, Datasheets and RFQs',
+    seoTitle: 'Industrial Catalog Website: How to Build One That Sells',
+    title: 'Industrial Catalog Website: How to Build a Product Catalogue for an Industrial Company (Categories, Spec Tables, Datasheets and RFQs)',
     description: 'How to build an industrial catalog website: category structure, spec tables, datasheets, RFQ baskets, WooCommerce catalogue mode, filters and a checklist.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
 <p>An industrial catalog website is a set of web pages, not just a PDF, where every product family has its own page with specifications, drawings, a datasheet and a quote button. To build one, plan the category structure first (product type, then family, then model), give every product family its own page with a text specification table, drawings, a downloadable datasheet and a Request a Quote button, and let buyers filter by the specifications they actually use, such as capacity, size or material. For most manufacturers, a catalogue without prices, where buyers add products to an enquiry list and send one RFQ, works better than a shop. On WordPress, WooCommerce in catalogue mode handles this well.</p>
+
+<blockquote><strong>Short answer:</strong> A good industrial catalog website gives every product family its own page with a text specification table, drawings, a downloadable datasheet and a Request a Quote button, organised by product type, then family, then model. Buyers filter by the specifications they use, add items to an enquiry list and send one RFQ. WordPress with WooCommerce in catalogue mode handles this well.</blockquote>
+
 <p>This post is the practical how-to for the catalogue itself. If you'd like it planned and built for you, along with capability pages, certifications and RFQ routing, see my <a href="/website-for-manufacturers/">websites for manufacturers and industrial suppliers</a>. For the wider strategy of winning B2B and export enquiries, see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a>.</p>
 
 <h2>Catalogue, quote basket or online store?</h2>
@@ -5038,6 +5051,19 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li><strong>Redirects for discontinued products</strong> to the replacement or the category, rather than leaving 404 pages.</li>
 </ul>
 
+<h2>Industrial catalog website: web pages vs PDF vs online store</h2>
+<table>
+  <thead><tr><th></th><th>PDF catalogue only</th><th>Industrial catalog website</th><th>Full online store</th></tr></thead>
+  <tbody>
+    <tr><td>Found in Google by model or spec</td><td>Rarely</td><td>Yes, each family page can rank</td><td>Yes</td></tr>
+    <tr><td>Easy to update one product</td><td>No, re-issue the whole file</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Prices shown</td><td>Optional</td><td>Optional; most use "Request a quote"</td><td>Required</td></tr>
+    <tr><td>Handles custom sizes and bulk quotes</td><td>Offline only</td><td>Yes, through an enquiry basket and RFQ form</td><td>Awkward</td></tr>
+    <tr><td>Best for</td><td>Trade fairs and email attachments</td><td>Most manufacturers and distributors</td><td>Standard parts sold at fixed prices</td></tr>
+  </tbody>
+</table>
+<p>Keep the PDF as a download on each page; it works alongside the website, not instead of it. For the enquiry side, see <a href="/blog/rfq-forms-b2b-websites/">RFQ forms for B2B websites</a>.</p>
+
 <h2>Industrial catalog website checklist</h2>
 <p>Use this table to check an existing catalogue, or to brief a developer on a new one.</p>
 <table>
@@ -5073,6 +5099,10 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Get help when your catalogue is a PDF buyers cannot search, or product pages are missing specifications and enquiry buttons. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/#contact">send your website address</a> and product list for a free review.</p>
 
 <h2>FAQs</h2>
+<h3>What is the best platform for an industrial catalog website?</h3>
+<p>For most manufacturers, WordPress with WooCommerce in catalogue mode works well: it handles thousands of products, specification attributes, filters, datasheet downloads and quote baskets without showing prices. A plain WordPress site with custom post types also works for smaller ranges.</p>
+<h3>How much does an industrial catalog website cost?</h3>
+<p>It depends mostly on the number of product families, how much data needs entering or importing, and whether you need an enquiry basket, filters or ERP integration. Get a fixed quote based on a sample of your catalogue; see <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> for the main cost factors.</p>
 <h3>How do I create a product catalogue website for my company?</h3>
 <p>Plan categories in a spreadsheet, gather specifications, photos and datasheets, and build templates for category and product pages with a quote form. On WordPress, WooCommerce without prices or custom post types with fields both work; import products from a spreadsheet if the range is large.</p>
 <h3>Can WooCommerce be used as a catalogue without prices?</h3>
@@ -5637,6 +5667,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>In Search Console, open <strong>Indexing &gt; Sitemaps</strong> and check the sitemap status is Success and that the new URL is listed in the sitemap.</li>
   <li>Search <strong>site:yourdomain.com/page-address</strong> a few days later. If nothing shows, check the page is linked from your homepage or menu.</li>
 </ol>
+
+<p>If Search Console says pages are blocked, read <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> before changing anything.</p>
 
 <h2>When to get help</h2>
 <p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
@@ -9806,11 +9838,14 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)',
     description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
 <p>A WordPress SEO audit checks whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. Start with Search Console's Pages report and a full site crawl, then check WordPress and SEO plugin settings, robots.txt and the sitemap, speed, on-page SEO, structured data and (for stores) WooCommerce issues.</p>
+
+<blockquote><strong>Short answer:</strong> A WordPress SEO audit is a step-by-step check of indexing, crawlability, speed, on-page SEO and structured data. Use Search Console for indexing, a crawler such as Screaming Frog for broken links and redirects, PageSpeed Insights for Core Web Vitals, the Rich Results Test for schema, and your SEO plugin for titles, sitemaps and noindex settings.</blockquote>
+
 <p>Fix blockers first, such as a site-wide noindex, broken redirects or important pages left out of the index; title tweaks come last.</p>
 
 <p><strong>WordPress SEO audit checklist:</strong></p>
@@ -9912,6 +9947,18 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>If you serve customers in particular cities, check the local basics too: your business name, address and phone number match your Google Business Profile, each location or service area has a genuinely useful page, and LocalBusiness schema matches what is on the page. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> covers these checks.</p>
 <p>Finally, check analytics is tracking correctly. An audit that compares traffic before and after fixes is only useful if the numbers are reliable, so confirm Search Console and Analytics both cover the same domain version (with or without www, and HTTPS).</p>
 
+<h2>WordPress SEO audit checklist with tools</h2>
+<ol>
+  <li><strong>Indexing:</strong> Search Console, Pages report and URL Inspection.</li>
+  <li><strong>Visibility setting:</strong> Settings, Reading, "Discourage search engines" must be unticked.</li>
+  <li><strong>Crawl:</strong> Screaming Frog SEO Spider (free up to 500 URLs) for 404s, redirect chains, missing titles and canonicals.</li>
+  <li><strong>robots.txt and sitemap:</strong> Search Console robots.txt report and Sitemaps report; see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> if pages are blocked.</li>
+  <li><strong>Speed:</strong> PageSpeed Insights and the Core Web Vitals report.</li>
+  <li><strong>On-page:</strong> your SEO plugin (Yoast, Rank Math or SEOPress) for titles, meta descriptions and noindex flags.</li>
+  <li><strong>Structured data:</strong> Rich Results Test and the Search Console Enhancements reports.</li>
+  <li><strong>Security and spam:</strong> Search Console Security Issues and Manual Actions.</li>
+</ol>
+
 <h2>How to prioritise what you find</h2>
 <table>
 <thead><tr><th>Priority</th><th>Examples</th></tr></thead>
@@ -9956,6 +10003,8 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Get help when many important pages are "Crawled, currently not indexed", after a migration or redesign that lost traffic, or when plugins conflict over SEO settings. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
+<h3>What tools do I need for a WordPress SEO audit?</h3>
+<p>Google Search Console, PageSpeed Insights and the Rich Results Test are free and cover indexing, speed and schema. Add a crawler such as Screaming Frog for links and redirects, and use your SEO plugin to fix titles, sitemaps and noindex settings.</p>
 <h3>How do I do a WordPress SEO audit?</h3>
 <p>Check indexing in Search Console, crawl the site for errors and redirects, review WordPress and SEO plugin settings, test speed, review on-page SEO and structured data, then prioritise fixes by impact.</p>
 <h3>What is the best WordPress SEO audit tool?</h3>
@@ -14358,15 +14407,18 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   },
   {
     slug: 'logo-favicon-brand-basics-website',
-    seoTitle: 'Favicon Size and Logo Files a Website Needs: Full List',
-    title: 'Logo, Favicon and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
+    seoTitle: 'Favicon Format, Size and Logo Files a Website Needs',
+    title: 'Logo, Favicon Format and Brand Basics for Your Website: File Formats, Sizes, Social Share Images and Consistency',
     description: 'The favicon sizes, logo formats (SVG, PNG) and social share image a website needs, with copy-ready favicon code and a one-page brand sheet to hand over.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-website-development', 'website-redesign', 'figma-to-wordpress'],
     body: `
 <p>For a website, you need your logo as an SVG file plus transparent PNG versions, in a horizontal layout for the header, a stacked or square layout, an icon-only mark and a light version for dark backgrounds. From the icon you make a favicon and app icons, ideally from one square image of at least 512 pixels, and you add a social share image of 1200 by 630 pixels so links look right on WhatsApp and LinkedIn. Then use the same name, logo, colours and fonts everywhere customers see you.</p>
+
+<blockquote><strong>Short answer:</strong> The best favicon format is a favicon.ico holding 16 and 32 pixel images for every browser, plus an SVG icon for modern browsers, a 180 by 180 PNG apple-touch-icon for iPhones, and 192 and 512 pixel PNGs listed in a web app manifest for Android. On WordPress, uploading one 512 pixel square Site Icon covers most of this.</blockquote>
+
 <p>These basics are easy to skip when a business is new, and fiddly to fix later. Whether you're planning a <a href="/website-redesign/">website redesign</a>, a rebrand or your first site, collecting the files below first makes the project faster and keeps the result consistent. If your brand already lives in a Figma file, most of this can come straight from it.</p>
 
 <h2>The logo files your website needs</h2>
@@ -14411,6 +14463,16 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
   </tbody>
 </table>
 <p>A single favicon.ico file can hold both the 16 and 32 pixel versions. Browser support for SVG favicons varies, so treat it as an extra, not a replacement.</p>
+<h3>Favicon format: ICO vs PNG vs SVG</h3>
+<table>
+  <thead><tr><th>Format</th><th>Strengths</th><th>Limits</th><th>Use it for</th></tr></thead>
+  <tbody>
+    <tr><td>ICO</td><td>Works in every browser; one file holds several sizes; browsers look for /favicon.ico automatically</td><td>Raster only, so it blurs if scaled</td><td>The fallback at the site root, with 16 and 32 pixel images</td></tr>
+    <tr><td>PNG</td><td>Sharp, transparent, easy to export</td><td>One size per file</td><td>apple-touch-icon (180) and manifest icons (192, 512)</td></tr>
+    <tr><td>SVG</td><td>Sharp at any size; can switch colours for dark mode with a CSS media query inside the file</td><td>Not supported by every browser, notably older Safari</td><td>An extra icon for modern browsers, alongside the ICO</td></tr>
+  </tbody>
+</table>
+<p>Android reads its icons from the web app manifest, a small JSON file linked with <code>&lt;link rel="manifest" href="/site.webmanifest"&gt;</code>. It lists the 192 and 512 pixel PNGs under <code>icons</code>, plus a <code>theme_color</code> that tints the browser bar.</p>
 <h3>Designing a favicon that works at 16 pixels</h3>
 <ul>
   <li>Use the icon-only mark or a single letter, not the full logo with words.</li>
@@ -14492,6 +14554,10 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 <p>If your website no longer matches your brand, or you're rebranding, a <a href="/website-redesign/">website redesign</a> brings the logo, colours and fonts into one consistent, mobile-first design without losing the rankings you have. If you already have a finished design, see <a href="/figma-to-wordpress/">Figma to WordPress</a>. For smaller logo and favicon fixes, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or <a href="/#contact">send your website address</a> for a fixed quote.</p>
 
 <h2>FAQs</h2>
+<h3>What is the best favicon format?</h3>
+<p>Use a favicon.ico with 16 and 32 pixel images as the universal fallback, add an SVG favicon for modern browsers, a 180 pixel PNG apple-touch-icon for Apple devices and 192 and 512 pixel PNGs in a web manifest for Android.</p>
+<h3>Can a favicon be a PNG instead of ICO?</h3>
+<p>Yes. All modern browsers accept a PNG favicon linked with rel="icon". Keep a favicon.ico at the site root as well, because some browsers, feed readers and tools still request /favicon.ico directly.</p>
 <h3>What size should a website logo be?</h3>
 <p>There is no single size, because themes display logos differently. Use SVG if possible. For PNG, export at twice the size the logo appears in the header, so a logo shown 200 pixels wide is exported 400 pixels wide.</p>
 <h3>What size should a favicon be?</h3>
@@ -18376,6 +18442,8 @@ cf-cache-status: HIT</code></pre>
   <li>Search <strong>site:yourdomain.com</strong> plus a brand you stock. If nothing appears, customers searching that brand in your area cannot find you through the site.</li>
   <li>Tap the WhatsApp button from a phone and send a test product query. Check it reaches the number staff actually watch during shop hours.</li>
 </ol>
+
+<p>For a large range of SKUs and sizes, our guide to building an <a href="/blog/industrial-website-product-catalogue/">industrial catalog website</a> covers spec tables, filters and quote baskets.</p>
 
 <h2>When to get help</h2>
 <p>Get help when customers still phone to ask which brands you carry, when you want brand and category pages, or when you plan to take bulk enquiries online. <a href="/website-for-manufacturers/">Websites for manufacturers</a> covers this kind of site, with a written scope before work starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -33416,15 +33484,18 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'web-designer-vs-web-developer',
-    seoTitle: 'WordPress Developer vs Web Designer: Who Do You Need?',
+    seoTitle: 'Web Designer vs WordPress Developer: Who Do You Need?',
     title: 'Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need',
     description: 'WordPress developer vs web designer: what each does, a task-by-task comparison, a checklist to decide who to hire and when one person can do both.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'figma-to-wordpress', 'wordpress-website-development'],
     body: `
 <p>WordPress developer vs web designer comes down to look versus function. A web designer decides how a website looks and how visitors move through it: layout, typography, colours, imagery and the user experience, usually designed in a tool such as Figma. A web developer turns that design into a working website and makes everything function: pages, forms, payments, integrations, speed, security and hosting. A WordPress developer is a web developer who specialises in WordPress. For most small business websites, one person who does both well is enough; you need a developer specifically for fixes, speed, security, online stores and custom features.</p>
+
+<blockquote><strong>Short answer:</strong> A web designer for WordPress plans how the site looks and works for visitors: layout, colours, fonts and page flow, usually in Figma. A WordPress developer builds it: theme, plugins, forms, payments, speed and security. For a small business site, one person who does both is usually enough; for custom features or a store, involve a developer.</blockquote>
+
 <p>I'm a freelance WordPress developer. I can build from your designer's Figma files, or adapt a quality theme to your brand when budget matters more than a fully custom design. If you want to <a href="/hire-wordpress-developer/">hire a WordPress developer</a>, you deal directly with the person doing the work.</p>
 <p>For a closer look at the developer side alone, see <a href="/blog/what-does-wordpress-developer-do/">what a WordPress developer actually does</a>.</p>
 
@@ -33501,6 +33572,14 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 </ol>
 <p>Whichever you choose, ask who will look after updates, backups and fixes after launch. If you're comparing options across cities, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers in India</a>.</p>
 
+<h2>What to look for in a web designer for WordPress</h2>
+<ul>
+  <li><strong>WordPress portfolio:</strong> live WordPress sites you can open, not only design mock-ups.</li>
+  <li><strong>Editable result:</strong> pages you can update yourself in the block editor or Elementor without breaking the layout.</li>
+  <li><strong>Mobile first:</strong> designs shown at phone width, with tap-friendly menus and forms.</li>
+  <li><strong>Who builds it:</strong> whether they build the site themselves or hand it to a developer, and who fixes problems after launch.</li>
+</ul>
+
 <h2>Can one person do both?</h2>
 <p>Yes. Many freelancers handle design and development for small and medium business sites, which keeps communication simple and usually costs less than hiring two specialists. The trade-off is depth: someone strong at both is less common than someone excellent at one. For large or complex projects, a designer and developer working together, or an agency, often produces a better result; see <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a>.</p>
 
@@ -33544,6 +33623,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p>Get help when you need design and development handled together, when a design needs building in WordPress, or when an existing site needs new features. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
+<h3>Do I need a web designer for WordPress?</h3>
+<p>Not always. With a good theme and your own content, a WordPress developer can set up a clean, professional site. Hire a web designer for WordPress when the look matters for sales, you have no brand style yet, or you need custom page layouts designed before they are built.</p>
 <h3>What is the difference between a web designer and a web developer?</h3>
 <p>A web designer works on how the site looks and how easy it is to use. A web developer builds the working site and handles its functionality, speed, security and hosting. Many freelancers do both for smaller sites.</p>
 <h3>Is a WordPress developer the same as a web designer?</h3>
@@ -41636,11 +41717,14 @@ add_action( 'after_setup_theme', function () {
     title: 'WooCommerce Performance Optimization: A Practical Guide to Speed Up Your WooCommerce Store',
     description: 'WooCommerce performance optimization step by step: hosting, caching rules, images, cart fragments, plugins, database clean-up and checkout speed.',
     date: '2026-09-28',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
 <p>To speed up WooCommerce, put the store on hosting with enough PHP workers and an object cache, page-cache product and category pages while excluding cart, checkout and account pages, compress product images and remove plugins you do not need. Then fix the WooCommerce-specific slowdowns: cart fragments, unindexed product filters, a bloated Action Scheduler and third-party scripts on product and checkout pages.</p>
+
+<blockquote><strong>Short answer:</strong> WooCommerce performance optimization means fixing the server first (enough PHP workers, PHP 8.2 or newer, Redis object cache), page-caching catalogue pages but never cart or checkout, switching on HPOS, restricting cart fragments, clearing a bloated Action Scheduler and removing scripts and plugins product pages do not need. Then measure product, category and checkout pages again.</blockquote>
+
 <p>Measure the same product, category and checkout pages before and after each change.</p>
 
 <p><strong>Checklist to speed up WooCommerce, in order:</strong></p>
@@ -41749,6 +41833,20 @@ add_action( 'after_setup_theme', function () {
 <h2>Step 10: Keep the store fast after launch</h2>
 <p>Speed often slips after launch as new plugins, banners and tracking scripts are added. Re-test key pages after every major update or new plugin, review the plugin list every few months, and keep an eye on Search Console's Core Web Vitals report. A regular maintenance routine catches slowdowns before customers notice them. See the <a href="/blog/wordpress-maintenance-checklist/">WooCommerce maintenance checklist</a>.</p>
 
+<h2>WooCommerce performance optimization: the server-side checklist</h2>
+<p>Most guides stop at caching and images. These are the checks that decide how fast uncached pages (cart, checkout, My Account and the admin) can ever be:</p>
+<table>
+  <thead><tr><th>Check</th><th>Where to look</th><th>What good looks like</th></tr></thead>
+  <tbody>
+    <tr><td>Persistent object cache</td><td>Tools, Site Health, Performance; your host's panel for Redis or Memcached</td><td>Site Health no longer recommends a persistent object cache, and the Redis plugin shows "Connected"</td></tr>
+    <tr><td>HPOS</td><td>WooCommerce, Settings, Advanced, Features</td><td>High-Performance Order Storage on, with no incompatible plugins listed</td></tr>
+    <tr><td>Cart fragments</td><td>Browser Network tab, filter <code>wc-ajax</code></td><td>No <code>get_refreshed_fragments</code> call on pages without a mini-cart</td></tr>
+    <tr><td>Action Scheduler</td><td>Tools, Scheduled Actions (Pending and Failed tabs)</td><td>No large backlog of past-due or failed actions</td></tr>
+    <tr><td>Admin heartbeat and slow queries</td><td>Query Monitor plugin on a staging copy</td><td>No single plugin dominating database time on product or order screens</td></tr>
+    <tr><td>PHP version and workers</td><td>Hosting panel, Tools, Site Health, Info, Server</td><td>A supported PHP 8 version and enough workers that checkout does not queue during sales</td></tr>
+  </tbody>
+</table>
+
 <h2>WooCommerce performance optimization checklist</h2>
 <ol>
 <li>Measure product, category, cart and checkout pages.</li>
@@ -41784,6 +41882,10 @@ add_action( 'after_setup_theme', function () {
 <h2>When to get help</h2>
 <p>Many stores can handle the basics themselves: compressing images, removing unused plugins and turning on caching with the right exclusions. It is worth bringing in a developer when the server response stays slow after caching, when checkout is slow or failing, or when speed problems appeared after a theme or plugin update you cannot easily roll back. A careful developer works on a staging copy, measures each change and leaves you with notes on what was done. If checkout is broken rather than slow, start with <a href="/blog/woocommerce-checkout-not-working-fix/">fixing WooCommerce checkout problems</a>, and for ongoing store work see our <a href="/woocommerce-developer/">WooCommerce developer</a> service. For a one-off speed fix, Samverse's <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a> covers hosting, caching, images, plugins, database and checkout, with before-and-after measurements. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2>FAQs</h2>
+<h3>What is WooCommerce performance optimization?</h3>
+<p>It is the work of making a WooCommerce store load and respond faster: better hosting and PHP, a persistent object cache, page caching for catalogue pages, HPOS, lighter product pages and a clean database and Action Scheduler, checked on product, category and checkout pages.</p>
+<h3>Does Redis object cache help WooCommerce performance?</h3>
+<p>Yes, for anything that cannot be page-cached. Cart, checkout, My Account and the admin all run fresh database queries, and a Redis object cache keeps repeated results in memory, so those pages respond faster. It needs hosting that offers Redis and a plugin to connect it.</p>
 <h3>How do I speed up my WooCommerce store?</h3>
 <p>Start with good hosting and correct caching, then optimise images, remove unnecessary plugins and scripts, clean the database and fix WooCommerce-specific issues like cart fragments and slow filters.</p>
 <h3>Why is my WooCommerce site so slow?</h3>
@@ -58364,6 +58466,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; Events</strong> and check the enquiry event is marked as a key event for RFQ submissions.</li>
 </ol>
 
+<p>If the RFQ form is part of a wider product range, see how to plan the whole <a href="/blog/industrial-website-product-catalogue/">industrial catalog website</a>, from categories to spec tables.</p>
+
 <h2>When to get help</h2>
 <p>Get help when RFQs go missing, when attachments fail, or when you need a quote form built. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -60795,6 +60899,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Check each PDF has a proper title in its document properties, not "Untitled".</li>
   <li>Check each PDF is also linked from an HTML page with a summary of its content.</li>
 </ol>
+
+<p>For manufacturers, the strongest setup is an <a href="/blog/industrial-website-product-catalogue/">industrial catalog website</a> with a web page per product family and the PDF as a download.</p>
 
 <h2>When to get help</h2>
 <p>Get help when PDFs outrank your pages, or when brochure content should become proper web pages. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -72001,11 +72107,14 @@ or a cookie name starts with:
     title: '"Indexed, Though Blocked by robots.txt" and "Blocked by robots.txt": What They Mean and How to Fix Them',
     description: 'Fix "Indexed, though blocked by robots.txt" in Search Console: what it means, when to use noindex instead, WordPress and Shopify causes and validating.',
     date: '2026-10-11',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-maintenance'],
     body: `
 <p>&quot;Indexed, though blocked by robots.txt&quot; means Google has put a URL in its index even though your robots.txt file tells it not to crawl that URL. Google found links to the page, so it knows the page exists, but it cannot read the content. The fix depends on what you want: if the page should rank, remove the robots.txt block; if it should stay out of Google, allow crawling and add a noindex tag instead.</p>
+
+<blockquote><strong>Short answer:</strong> To fix "Indexed, though blocked by robots.txt", decide whether the URL should be in Google. If yes, remove the Disallow rule that blocks it and click Validate Fix in Search Console. If no, remove the block too, add a noindex tag and let Google recrawl: a page blocked by robots.txt cannot show Google its noindex.</blockquote>
+
 <p>This guide explains the two related Search Console messages, the common causes on WordPress, WooCommerce and Shopify sites, and the exact steps to fix and validate them.</p>
 
 <h2>Crawling vs indexing: why this warning happens</h2>
@@ -72107,6 +72216,10 @@ or a cookie name starts with:
 <p>Get help when the blocked URLs are filters, cart or search pages on a store, when your SEO plugin and a hand-written robots.txt disagree, or when many warnings appear at once. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers robots.txt, sitemaps and indexing rules. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
+<h3>Is "Indexed, though blocked by robots.txt" bad for SEO?</h3>
+<p>Not always. If the URLs are cart, checkout, search or filter pages you never wanted in Google, it is mostly harmless. It matters when important pages are blocked, because Google can list them without reading their content, so they show poor snippets and rank badly.</p>
+<h3>Should I use robots.txt or noindex to keep a page out of Google?</h3>
+<p>Use noindex. robots.txt only stops crawling, so a blocked page can still be indexed from links. A noindex tag removes it, but Google must be allowed to crawl the page to see the tag.</p>
 <h3>How do I fix indexed, though blocked by robots.txt?</h3>
 <p>Decide whether each URL should rank. If yes, remove the robots.txt rule blocking it. If no, allow crawling and add a noindex tag so Google can see it and drop the page. Then click Validate Fix in Search Console.</p>
 <h3>Is &quot;Blocked by robots.txt&quot; an error?</h3>
@@ -74254,11 +74367,14 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely',
     description: 'WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.',
     date: '2026-10-30',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
 <p>If the WordPress update button is missing, the most common causes are that your user account is not an administrator, updates have been disabled in wp-config.php or by a plugin, your host manages updates from its own panel, or a premium plugin or theme licence has expired so its updates are not offered. Less often, file permissions or a multisite setup hide the button. Work through these checks in order, take a backup, and only then re-enable updates.</p>
+
+<blockquote><strong>Short answer:</strong> If the WordPress update button is missing, first check you are logged in as an administrator (on multisite, a Super Admin in Network Admin). Then look in wp-config.php for <code>DISALLOW_FILE_MODS</code> or <code>AUTOMATIC_UPDATER_DISABLED</code>, check for update-blocking plugins or host-managed updates, and renew expired premium plugin licences.</blockquote>
+
 <p>A site that cannot be updated is a security risk, so it is worth fixing quickly. This guide explains each cause and the safe fix.</p>
 
 <h2>Quick diagnosis table</h2>
@@ -74311,6 +74427,9 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 </ol>
 <p>The full routine is in <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
+<h2>Update button missing on multisite</h2>
+<p>On a multisite network, the Updates screen and the update links only appear in <strong>Network Admin</strong>, and only for a Super Admin. A site administrator on a subsite will never see them, even with full rights on that site. Ask the network owner to run updates from My Sites, Network Admin, Updates.</p>
+
 <h2>When updates show but nothing new appears</h2>
 <p>Sometimes the button is there, but WordPress insists everything is up to date when you know a newer version exists. WordPress checks for updates on a schedule and caches the result, so new releases can take a while to appear. Clicking &quot;Check again&quot; on the Updates screen forces a fresh check. If that does not help, the server may be unable to reach the WordPress update servers because of a firewall, DNS problem or outgoing connection block at the host. Ask your host to confirm outgoing HTTPS connections are allowed. Object caching or a security plugin that blocks outgoing requests can cause the same symptom.</p>
 <p>Plugins that have been closed in the official directory also stop getting updates. If a plugin shows no updates for a long time, check its page in the directory. A closed or abandoned plugin should be replaced, not left running. Look for an alternative that is actively maintained, has recent updates and supports your WordPress and PHP versions, then test the swap on staging.</p>
@@ -74330,6 +74449,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Get help when your host manages updates and blocks them, when the site is several major versions behind, or when you are afraid an update will break it. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> tests updates on staging first and keeps backups. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
+<h3>Why is there no update button for plugins in WordPress?</h3>
+<p>Usually because your account is not an administrator, updates are switched off in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired. On multisite, plugin updates are only shown in Network Admin to a Super Admin.</p>
 <h3>Why is the WordPress update button missing?</h3>
 <p>Usually because you are not logged in as an administrator, updates are disabled in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired.</p>
 <h3>How do I enable updates that were disabled in wp-config.php?</h3>
