@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
+  <link rel="stylesheet" href="/style.min.css?v=04c9b3eb">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-28">
   <script type="application/ld+json">
@@ -276,6 +276,7 @@
 </ol>
 <p>Still broken for visitors but fine for you? Look for CSS or JavaScript optimisation in your caching plugin, such as combining, minifying or delaying files. Turn those off one at a time and retest. Elementor also has a CSS print method setting (external file or internal embedding); switching to internal embedding briefly tells you whether the generated CSS files are the problem. More on stubborn caches in <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/elementor-layout-broken-after-update-step-1.svg" alt="Elementor layout broken after update: Elementor, Tools, Regenerate Files &amp; Data (Regenerate CSS &amp; Data) button" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Elementor, Tools, General, click Regenerate Files &amp; Data, then clear every cache.</figcaption></figure>
 <h2 id="fix-2-make-sure-elementor-and-elementor-pro-match">Fix 2: Make sure Elementor and Elementor Pro match</h2>
 <p>Elementor Pro is an add-on to the free Elementor plugin, and each Pro release expects a recent version of Elementor. Update one without the other and Pro widgets, Theme Builder headers and footers, popups or Pro styling can break or disappear.</p>
 <ul>
@@ -361,6 +362,7 @@
   <li><strong>Safe mode:</strong> go to Elementor, Tools, enable Safe Mode and open the broken page in the editor. If it loads correctly in Safe Mode, another plugin or the theme is causing the break.</li>
 </ol>
 
+<figure class="step-shot"><img src="/assets/blog/elementor-layout-broken-after-update-step-2.svg" alt="Elementor broken after update: Elementor, System Info, Server Environment with PHP Memory Limit highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Elementor, System Info, check the PHP version and PHP Memory Limit before asking for help.</figcaption></figure>
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the layout is still broken after regenerating CSS and clearing caches, when there is no recent backup, or when a rollback would mean leaving a security fix uninstalled. <a href="/elementor-developer/">Elementor development</a> covers fixing broken layouts and conflicts, and <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates every month. <a href="/#contact">send your website address</a> and the versions you updated for a free review and a fixed quote.</p>
 

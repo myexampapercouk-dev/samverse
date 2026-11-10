@@ -1211,7 +1211,7 @@ const now = new Date(); // local date (IST), matching post dates
 const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
-  ...LIVE_POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date })),
+  ...LIVE_POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date, imgs: [...new Set((p.body.match(/\/assets\/blog\/[\w-]+\.svg/g) || []))] })),
   { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
 
 // Pages without a post date get a lastmod that only moves when their <main> content changes,
@@ -1239,8 +1239,8 @@ for (const u of urls) {
 fs.writeFileSync(LASTMOD_FILE, JSON.stringify(stamps, null, 1) + '\n');
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod || today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${u.pr}</priority>\n  </url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod || today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${u.pr}</priority>${(u.imgs || []).map(i => `\n    <image:image><image:loc>${SITE}${i}</image:loc></image:image>`).join('')}\n  </url>`).join('\n')}
 </urlset>
 `);
 console.log('updated sitemap.xml');

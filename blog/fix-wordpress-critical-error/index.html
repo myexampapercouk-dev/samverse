@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
+  <link rel="stylesheet" href="/style.min.css?v=04c9b3eb">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-28">
   <script type="application/ld+json">
@@ -277,6 +277,7 @@
 <p>The link expires after a while, so use it promptly. If the email never arrives, the admin address may be old or a former developer's, the message may be in spam, or the site may not send email reliably; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>. A line in wp-config.php can send future recovery emails to a different address:</p>
 <pre><code>define( 'RECOVERY_MODE_EMAIL', 'you@yourdomain.com' );</code></pre>
 
+<figure class="step-shot"><img src="/assets/blog/fix-wordpress-critical-error-step-1.svg" alt="Fix WordPress critical error: recovery mode Plugins screen with a plugin paused during recovery mode" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: From the recovery mode link, open Plugins, deactivate the paused plugin, then click Exit Recovery Mode.</figcaption></figure>
 <h2 id="step-2-read-the-real-error-with-wp-debug-log">Step 2: Read the real error with WP_DEBUG_LOG</h2>
 <p>If there's no email, the error log tells you exactly what failed. Open wp-config.php in your host's File Manager or over SFTP, and add these lines above the one that says "That's all, stop editing!", replacing any existing WP_DEBUG line:</p>
 <pre><code>define( 'WP_DEBUG', true );
@@ -298,6 +299,7 @@ in /home/u123456/public_html/wp-content/plugins/old-slider/slider.php:42</code><
 </table>
 <p>When you're done, set WP_DEBUG back to false and delete debug.log. By default that file sits in a public folder, and it can reveal file paths and other details about your site.</p>
 
+<figure class="step-shot"><img src="/assets/blog/fix-wordpress-critical-error-step-2.svg" alt="Fix WordPress critical error: wp-config.php in File Manager with WP_DEBUG, WP_DEBUG_LOG and WP_DEBUG_DISPLAY lines" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In File Manager, add the WP_DEBUG lines to wp-config.php above the "stop editing" comment, then save.</figcaption></figure>
 <h2 id="step-3-disable-plugins-through-file-manager-or-sftp">Step 3: Disable plugins through File Manager or SFTP</h2>
 <p>If you can't read the log, disable plugins at file level. This doesn't delete any plugin settings.</p>
 <ol>

@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
+  <link rel="stylesheet" href="/style.min.css?v=04c9b3eb">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-10-30">
   <script type="application/ld+json">
@@ -262,6 +262,7 @@
 <p>Only administrators can update WordPress, plugins and themes. Editors and shop managers cannot, and they will not see update buttons or the Updates screen. Go to Users, open your profile and check the role. If someone else built the site, they may have given you a lower role deliberately. Ask for an administrator account in your own name, rather than sharing theirs. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> describes what each role can do.</p>
 <p>On a multisite network, even site administrators cannot update. Only the super admin can, from the network admin dashboard. See <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite explained</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/wordpress-update-button-missing-step-1.svg" alt="WordPress update button missing: Dashboard, Updates screen with Check again button and plugin updates" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: Administrators see Dashboard, Updates. Click Check again to refresh the list.</figcaption></figure>
 <aside class="inline-cta">
   <strong>Need help with website maintenance?</strong>
   <p>Monthly WordPress maintenance: tested updates with a backup first, off-site backups, security and uptime checks, small edits, a report.</p>
@@ -284,6 +285,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2 id="premium-plugin-or-theme-licence-expired">Premium plugin or theme licence expired</h2>
 <p>Premium plugins and themes bought from their makers usually update only while a licence is active and entered in the plugin settings. If one premium item never shows updates, check its licence page. A theme bundled inside another product may update only through that product. Avoid &quot;free&quot; copies of premium plugins from unofficial sites: these nulled copies never receive genuine updates and are a common source of malware. If you have lost the account that bought a licence, contact the plugin maker with your purchase details; renewing in your own business name avoids the same problem next time. For themes, see <a href="/blog/update-premium-theme-safely/">how to update a premium theme safely</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/wordpress-update-button-missing-step-2.svg" alt="WordPress update button missing: Plugins screen showing Automatic update is unavailable for this plugin" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: A new version listed with "Automatic update is unavailable for this plugin" usually means an expired licence or a blocked update.</figcaption></figure>
 <h2 id="file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</h2>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
 

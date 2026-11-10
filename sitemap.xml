@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://samverse.space/</loc>
     <lastmod>2026-11-10</lastmod>
@@ -365,12 +365,16 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/why-is-my-wordpress-site-slow-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/why-is-my-wordpress-site-slow-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/signs-wordpress-site-hacked/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/signs-wordpress-site-hacked-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/signs-wordpress-site-hacked-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/clinic-website-checklist-for-doctors/</loc>
@@ -623,6 +627,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/technical-seo-audit-wordpress-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/technical-seo-audit-wordpress-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/why-elementor-sites-slow/</loc>
@@ -695,6 +701,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/logo-favicon-brand-basics-website-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/logo-favicon-brand-basics-website-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/regain-website-access-old-developer/</loc>
@@ -929,6 +937,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-gst-invoices-india-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-gst-invoices-india-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/website-for-psychologists-counsellors/</loc>
@@ -1181,6 +1191,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/hostinger-website-slow-fix-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/hostinger-website-slow-fix-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/migrate-website-to-hostinger/</loc>
@@ -1205,6 +1217,8 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/fix-wordpress-critical-error-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/fix-wordpress-critical-error-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/wordpress-changes-not-showing/</loc>
@@ -1223,6 +1237,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-layout-broken-after-update-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-layout-broken-after-update-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/update-premium-theme-safely/</loc>
@@ -1301,6 +1317,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-speed-optimization-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-speed-optimization-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/woocommerce-security-checklist/</loc>
@@ -2111,6 +2129,8 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/wordpress-update-button-missing-step-1.svg</image:loc></image:image>
+    <image:image><image:loc>https://samverse.space/assets/blog/wordpress-update-button-missing-step-2.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/shopify-pincode-checker-india/</loc>

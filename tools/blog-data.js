@@ -351,6 +351,7 @@ module.exports = [
 </ul>
 <p>While you are there, open <strong>Headers</strong> for the same request and look for a cache header: <code>x-litespeed-cache: hit</code>, <code>cf-cache-status: HIT</code>, <code>x-cache: HIT</code> or similar. Reload twice. If it never says hit for a logged-out visitor, your page cache is not working, whatever the plugin settings say. A common cause is a cookie banner, currency switcher or "recently viewed" plugin that sets a cookie on every visit and makes the cache skip the page.</p>
 
+<figure class="step-shot"><img src="/assets/blog/why-is-my-wordpress-site-slow-step-1.svg" alt="Why is my WordPress site slow: Chrome DevTools Network Timing tab with Waiting for server response (TTFB) highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Chrome DevTools, Network, click the page request and open Timing. A long "Waiting for server response" means a slow server (TTFB).</figcaption></figure>
 <h3>Step 3: Look for heavy files (1 minute)</h3>
 <p>Sort the Network tab by <strong>Size</strong>: megabyte images, many requests to chat tools, pixels or maps, or dozens of plugin and theme files each point to a cause below.</p>
 
@@ -383,6 +384,7 @@ module.exports = [
 <p>Without a page cache, WordPress runs PHP and database queries to build every page for every visitor.</p>
 <p><strong>Fix:</strong> use your host's server caching or one caching plugin, such as LiteSpeed Cache on LiteSpeed servers or WP Rocket elsewhere, never two at once. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/why-is-my-wordpress-site-slow-step-2.svg" alt="Slow WordPress site fix: LiteSpeed Cache, Cache settings with Enable Cache switched on" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In LiteSpeed Cache, Cache, make sure Enable Cache is ON, then save.</figcaption></figure>
 <h3>3. Huge, unoptimised images</h3>
 <p>A photo straight from a phone can be several megabytes.</p>
 <p><strong>Fix:</strong> resize images to their display size, compress them and serve WebP. Lazy-load images lower down the page, but never the main hero image. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
@@ -521,6 +523,8 @@ module.exports = [
 <li><strong>Check the database.</strong> Search the wp_options and wp_posts tables for script tags, iframes or unfamiliar domains, especially in siteurl, home and widget settings.</li>
 </ol>
 
+<figure class="step-shot"><img src="/assets/blog/signs-wordpress-site-hacked-step-1.svg" alt="Signs WordPress site hacked: Google Search Console Security issues report showing hacked content injection" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Search Console, Security issues, any listed issue (such as hacked content) confirms a problem.</figcaption></figure>
+<figure class="step-shot"><img src="/assets/blog/signs-wordpress-site-hacked-step-2.svg" alt="Signs your WordPress site is hacked: Users, All Users filtered by Administrator showing an unknown admin account" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Users, All Users, filter by Administrator and remove any account you do not recognise.</figcaption></figure>
 <h2>How to check if a WordPress site is hacked without logging in</h2>
 <p>If you cannot log in, checks 1, 2 and 4 above still work from outside. Also:</p>
 <ul>
@@ -9847,6 +9851,7 @@ site:example.com/blog/ "net metering"</code></pre>
 </ul>
 <p>Our guide to <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> explains each status. Also run a site:yourdomain.com search to spot spam pages, staging URLs or tag archives that should not be in Google.</p>
 
+<figure class="step-shot"><img src="/assets/blog/technical-seo-audit-wordpress-step-1.svg" alt="Technical SEO audit WordPress: Search Console Page indexing report, Why pages aren't indexed table" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Search Console, Pages, read every reason in the "Why pages aren't indexed" table.</figcaption></figure>
 <h2>Step 2: Check WordPress settings that block SEO</h2>
 <ul>
 <li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
@@ -9857,6 +9862,7 @@ site:example.com/blog/ "net metering"</code></pre>
 <li><strong>Tag and category archives:</strong> decide which are useful and noindex or prune the rest (see <a href="/blog/category-tag-pages-seo/">category and tag pages for SEO</a>).</li>
 </ul>
 
+<figure class="step-shot"><img src="/assets/blog/technical-seo-audit-wordpress-step-2.svg" alt="Technical SEO audit WordPress: Settings, Reading, Discourage search engines from indexing this site checkbox unticked" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Settings, Reading, "Discourage search engines from indexing this site" must be unticked on a live site.</figcaption></figure>
 <h2>Step 3: Crawl the site</h2>
 <p>Run a crawler from your homepage and review:</p>
 <ul>
@@ -14458,6 +14464,8 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 
 <p>If a post shares with no image or the wrong one on WhatsApp or Facebook, <a href="/blog/wordpress-featured-image-not-showing-fix/">fixing a missing featured image</a> covers Open Graph tags and cached previews.</p>
 
+<figure class="step-shot"><img src="/assets/blog/logo-favicon-brand-basics-website-step-1.svg" alt="WordPress favicon: Appearance, Customize, Site Identity section in the Customizer" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: Go to Appearance, Customize and open Site Identity.</figcaption></figure>
+<figure class="step-shot"><img src="/assets/blog/logo-favicon-brand-basics-website-step-2.svg" alt="WordPress favicon size: Site Identity, Site Icon setting, square image at least 512 by 512 pixels" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: Under Site Icon, select a square image of at least 512 by 512 pixels and publish.</figcaption></figure>
 <h2>Social share images</h2>
 <p>Link previews on WhatsApp, LinkedIn and Facebook take their image from your Open Graph tags; without one, the platform picks a random image or none.</p>
 <ol>
@@ -28023,6 +28031,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   <li><strong>Display prices</strong> in the shop and at checkout including tax, and set tax totals to display "Itemised" so CGST and SGST show separately.</li>
 </ul>
 
+<figure class="step-shot"><img src="/assets/blog/woocommerce-gst-invoices-india-step-1.svg" alt="WooCommerce GST India: WooCommerce, Settings, General, Enable taxes checkbox ticked" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In WooCommerce, Settings, General, tick "Enable tax rates and calculations" and save.</figcaption></figure>
 <h2>Step 2: Add CGST, SGST and IGST rates</h2>
 <p>Open each tax class and add three rows. WooCommerce applies only one matching rate per priority, so CGST and SGST need different priorities for both to apply. For a store registered in Maharashtra, the GST 18 class would look like this:</p>
 <pre><code>Country  State    Rate %   Tax name  Priority
@@ -28037,6 +28046,7 @@ IN       (blank)  18.0000  IGST      1</code></pre>
   <li>With several rate classes, the "Import CSV" button on each tax class page is quicker than typing rows by hand.</li>
 </ul>
 
+<figure class="step-shot"><img src="/assets/blog/woocommerce-gst-invoices-india-step-2.svg" alt="WooCommerce GST India: Settings, Tax rates table with CGST and SGST rows at priority 1 and 2 and an IGST row" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In each GST tax class, add CGST and SGST rows for your state (priorities 1 and 2) and an IGST row with the state left blank.</figcaption></figure>
 <h2>Step 3: Assign a tax class to every product</h2>
 <p>In each product's Product data box, set Tax status to "Taxable" and choose the Tax class. Variations default to "Same as parent" but can have their own class if a size or pack falls under a different rate; see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. To change many products at once, use Bulk actions &gt; Edit on the Products list. If you import products from a spreadsheet, include the tax class column so nothing falls back to the standard rate unnoticed.</p>
 
@@ -37265,12 +37275,14 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 </ul>
 <p>Then confirm it works: log out or use a private window, check the response headers in your browser's developer tools for a LiteSpeed cache hit, and compare server response time before and after. For how page, browser and object caching fit together, see this guide to <a href="/blog/wordpress-caching-explained/">WordPress cache</a> types.</p>
 
+<figure class="step-shot"><img src="/assets/blog/hostinger-website-slow-fix-step-1.svg" alt="Hostinger website slow fix: hPanel Cache Manager with automatic cache on and Purge all button" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In hPanel, open Cache Manager, keep the automatic cache on and purge it after changes. Menu placement can change as hPanel is updated.</figcaption></figure>
 <h2>Turn on a CDN</h2>
 <p>A CDN serves images and files from locations close to your visitors and takes some load off your plan. Hostinger includes its own CDN on some plans, switched on from hPanel. Alternatively, use Cloudflare's free plan; see <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>. Use one CDN, not both, and remember to purge its cache after design changes. For when a CDN helps most, see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
 
 <h2>Update the PHP version</h2>
 <p>Newer PHP versions run WordPress faster and still receive security fixes. hPanel's PHP configuration section shows which version your site uses and lets you change it. Check that your theme and plugins support the newer version, take a backup, switch, then test key pages and forms; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>. If something breaks, switch back while you fix the plugin responsible.</p>
 
+<figure class="step-shot"><img src="/assets/blog/hostinger-website-slow-fix-step-2.svg" alt="Hostinger slow fix: hPanel Advanced, PHP Configuration, choosing a current PHP 8 version" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In hPanel, Advanced, PHP Configuration, pick a current PHP 8 version, then test the site.</figcaption></figure>
 <h2>Clean up the database</h2>
 <p>A slow database makes every uncached page and the whole dashboard slow. Common culprits on older sites:</p>
 <ul>
@@ -37997,6 +38009,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
 <p>The link expires after a while, so use it promptly. If the email never arrives, the admin address may be old or a former developer's, the message may be in spam, or the site may not send email reliably; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>. A line in wp-config.php can send future recovery emails to a different address:</p>
 <pre><code>define( 'RECOVERY_MODE_EMAIL', 'you@yourdomain.com' );</code></pre>
 
+<figure class="step-shot"><img src="/assets/blog/fix-wordpress-critical-error-step-1.svg" alt="Fix WordPress critical error: recovery mode Plugins screen with a plugin paused during recovery mode" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: From the recovery mode link, open Plugins, deactivate the paused plugin, then click Exit Recovery Mode.</figcaption></figure>
 <h2>Step 2: Read the real error with WP_DEBUG_LOG</h2>
 <p>If there's no email, the error log tells you exactly what failed. Open wp-config.php in your host's File Manager or over SFTP, and add these lines above the one that says "That's all, stop editing!", replacing any existing WP_DEBUG line:</p>
 <pre><code>define( 'WP_DEBUG', true );
@@ -38018,6 +38031,7 @@ in /home/u123456/public_html/wp-content/plugins/old-slider/slider.php:42</code><
 </table>
 <p>When you're done, set WP_DEBUG back to false and delete debug.log. By default that file sits in a public folder, and it can reveal file paths and other details about your site.</p>
 
+<figure class="step-shot"><img src="/assets/blog/fix-wordpress-critical-error-step-2.svg" alt="Fix WordPress critical error: wp-config.php in File Manager with WP_DEBUG, WP_DEBUG_LOG and WP_DEBUG_DISPLAY lines" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In File Manager, add the WP_DEBUG lines to wp-config.php above the "stop editing" comment, then save.</figcaption></figure>
 <h2>Step 3: Disable plugins through File Manager or SFTP</h2>
 <p>If you can't read the log, disable plugins at file level. This doesn't delete any plugin settings.</p>
 <ol>
@@ -38403,6 +38417,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </ol>
 <p>Still broken for visitors but fine for you? Look for CSS or JavaScript optimisation in your caching plugin, such as combining, minifying or delaying files. Turn those off one at a time and retest. Elementor also has a CSS print method setting (external file or internal embedding); switching to internal embedding briefly tells you whether the generated CSS files are the problem. More on stubborn caches in <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/elementor-layout-broken-after-update-step-1.svg" alt="Elementor layout broken after update: Elementor, Tools, Regenerate Files &amp; Data (Regenerate CSS &amp; Data) button" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Elementor, Tools, General, click Regenerate Files &amp; Data, then clear every cache.</figcaption></figure>
 <h2>Fix 2: Make sure Elementor and Elementor Pro match</h2>
 <p>Elementor Pro is an add-on to the free Elementor plugin, and each Pro release expects a recent version of Elementor. Update one without the other and Pro widgets, Theme Builder headers and footers, popups or Pro styling can break or disappear.</p>
 <ul>
@@ -38488,6 +38503,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   <li><strong>Safe mode:</strong> go to Elementor, Tools, enable Safe Mode and open the broken page in the editor. If it loads correctly in Safe Mode, another plugin or the theme is causing the break.</li>
 </ol>
 
+<figure class="step-shot"><img src="/assets/blog/elementor-layout-broken-after-update-step-2.svg" alt="Elementor broken after update: Elementor, System Info, Server Environment with PHP Memory Limit highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Elementor, System Info, check the PHP version and PHP Memory Limit before asking for help.</figcaption></figure>
 <h2>When to get help</h2>
 <p>Get help when the layout is still broken after regenerating CSS and clearing caches, when there is no recent backup, or when a rollback would mean leaving a security fix uninstalled. <a href="/elementor-developer/">Elementor development</a> covers fixing broken layouts and conflicts, and <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates every month. <a href="/#contact">send your website address</a> and the versions you updated for a free review and a fixed quote.</p>
 
@@ -41838,6 +41854,8 @@ add_action( 'after_setup_theme', function () {
 </ul>
 <p>Always take a backup first. See <a href="/blog/wordpress-database-optimization/">WordPress database optimization</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/woocommerce-speed-optimization-step-1.svg" alt="WooCommerce speed optimization: WooCommerce, Settings, Advanced, Features with High-performance order storage (HPOS) selected" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In WooCommerce, Settings, Advanced, Features, switch order storage to High-performance order storage once your plugins support it.</figcaption></figure>
+<figure class="step-shot"><img src="/assets/blog/woocommerce-speed-optimization-step-2.svg" alt="WooCommerce speed optimization: Tools, Scheduled Actions with Pending and Past-due actions in the Action Scheduler" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Tools, Scheduled Actions, check the Pending, Failed and Past-due tabs for a backlog.</figcaption></figure>
 <h2>Step 8: Lighten the theme and front end</h2>
 <p>A lightweight, WooCommerce-ready theme with minimal page builder use is the foundation of a fast store. Reduce unused CSS and JavaScript, load fonts efficiently and avoid render-blocking files. If the admin is slow too, see <a href="/blog/wordpress-admin-slow/">fixing a slow WordPress admin</a>.</p>
 
@@ -74469,6 +74487,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <p>Only administrators can update WordPress, plugins and themes. Editors and shop managers cannot, and they will not see update buttons or the Updates screen. Go to Users, open your profile and check the role. If someone else built the site, they may have given you a lower role deliberately. Ask for an administrator account in your own name, rather than sharing theirs. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> describes what each role can do.</p>
 <p>On a multisite network, even site administrators cannot update. Only the super admin can, from the network admin dashboard. See <a href="/blog/wordpress-multisite-when-needed/">WordPress multisite explained</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/wordpress-update-button-missing-step-1.svg" alt="WordPress update button missing: Dashboard, Updates screen with Check again button and plugin updates" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: Administrators see Dashboard, Updates. Click Check again to refresh the list.</figcaption></figure>
 <h2>Updates disabled in wp-config.php</h2>
 <p>Developers sometimes disable updates in the wp-config.php file to stop clients updating a fragile site. Look in that file, through your hosting file manager, for lines such as:</p>
 <pre><code>define( 'DISALLOW_FILE_MODS', true );
@@ -74485,6 +74504,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>Premium plugin or theme licence expired</h2>
 <p>Premium plugins and themes bought from their makers usually update only while a licence is active and entered in the plugin settings. If one premium item never shows updates, check its licence page. A theme bundled inside another product may update only through that product. Avoid &quot;free&quot; copies of premium plugins from unofficial sites: these nulled copies never receive genuine updates and are a common source of malware. If you have lost the account that bought a licence, contact the plugin maker with your purchase details; renewing in your own business name avoids the same problem next time. For themes, see <a href="/blog/update-premium-theme-safely/">how to update a premium theme safely</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/wordpress-update-button-missing-step-2.svg" alt="WordPress update button missing: Plugins screen showing Automatic update is unavailable for this plugin" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: A new version listed with "Automatic update is unavailable for this plugin" usually means an expired licence or a blocked update.</figcaption></figure>
 <h2>File permissions and the FTP prompt</h2>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
 

@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
+  <link rel="stylesheet" href="/style.min.css?v=04c9b3eb">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-28">
   <script type="application/ld+json">
@@ -297,12 +297,14 @@
 </ul>
 <p>Then confirm it works: log out or use a private window, check the response headers in your browser's developer tools for a LiteSpeed cache hit, and compare server response time before and after. For how page, browser and object caching fit together, see this guide to <a href="/blog/wordpress-caching-explained/">WordPress cache</a> types.</p>
 
+<figure class="step-shot"><img src="/assets/blog/hostinger-website-slow-fix-step-1.svg" alt="Hostinger website slow fix: hPanel Cache Manager with automatic cache on and Purge all button" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In hPanel, open Cache Manager, keep the automatic cache on and purge it after changes. Menu placement can change as hPanel is updated.</figcaption></figure>
 <h2 id="turn-on-a-cdn">Turn on a CDN</h2>
 <p>A CDN serves images and files from locations close to your visitors and takes some load off your plan. Hostinger includes its own CDN on some plans, switched on from hPanel. Alternatively, use Cloudflare's free plan; see <a href="/blog/cloudflare-wordpress-setup-guide/">setting up Cloudflare on WordPress</a>. Use one CDN, not both, and remember to purge its cache after design changes. For when a CDN helps most, see <a href="/blog/what-is-a-cdn/">what is a CDN</a>.</p>
 
 <h2 id="update-the-php-version">Update the PHP version</h2>
 <p>Newer PHP versions run WordPress faster and still receive security fixes. hPanel's PHP configuration section shows which version your site uses and lets you change it. Check that your theme and plugins support the newer version, take a backup, switch, then test key pages and forms; see <a href="/blog/update-php-version-wordpress/">updating PHP safely</a>. If something breaks, switch back while you fix the plugin responsible.</p>
 
+<figure class="step-shot"><img src="/assets/blog/hostinger-website-slow-fix-step-2.svg" alt="Hostinger slow fix: hPanel Advanced, PHP Configuration, choosing a current PHP 8 version" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In hPanel, Advanced, PHP Configuration, pick a current PHP 8 version, then test the site.</figcaption></figure>
 <h2 id="clean-up-the-database">Clean up the database</h2>
 <p>A slow database makes every uncached page and the whole dashboard slow. Common culprits on older sites:</p>
 <ul>

@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=95a7e59a">
+  <link rel="stylesheet" href="/style.min.css?v=04c9b3eb">
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2026-09-27">
   <script type="application/ld+json">
@@ -189,7 +189,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Why%20Is%20My%20WordPress%20Site%20Slow%3F%20Causes%20and%20How%20to%20Fix%20It%20(Front%20End%20and%20Admin)%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwhy-is-my-wordpress-site-slow%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -273,6 +273,7 @@
 </ul>
 <p>While you are there, open <strong>Headers</strong> for the same request and look for a cache header: <code>x-litespeed-cache: hit</code>, <code>cf-cache-status: HIT</code>, <code>x-cache: HIT</code> or similar. Reload twice. If it never says hit for a logged-out visitor, your page cache is not working, whatever the plugin settings say. A common cause is a cookie banner, currency switcher or "recently viewed" plugin that sets a cookie on every visit and makes the cache skip the page.</p>
 
+<figure class="step-shot"><img src="/assets/blog/why-is-my-wordpress-site-slow-step-1.svg" alt="Why is my WordPress site slow: Chrome DevTools Network Timing tab with Waiting for server response (TTFB) highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Chrome DevTools, Network, click the page request and open Timing. A long "Waiting for server response" means a slow server (TTFB).</figcaption></figure>
 <h3>Step 3: Look for heavy files (1 minute)</h3>
 <p>Sort the Network tab by <strong>Size</strong>: megabyte images, many requests to chat tools, pixels or maps, or dozens of plugin and theme files each point to a cause below.</p>
 
@@ -311,6 +312,7 @@
 <p>Without a page cache, WordPress runs PHP and database queries to build every page for every visitor.</p>
 <p><strong>Fix:</strong> use your host's server caching or one caching plugin, such as LiteSpeed Cache on LiteSpeed servers or WP Rocket elsewhere, never two at once. See <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a>.</p>
 
+<figure class="step-shot"><img src="/assets/blog/why-is-my-wordpress-site-slow-step-2.svg" alt="Slow WordPress site fix: LiteSpeed Cache, Cache settings with Enable Cache switched on" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In LiteSpeed Cache, Cache, make sure Enable Cache is ON, then save.</figcaption></figure>
 <h3>3. Huge, unoptimised images</h3>
 <p>A photo straight from a phone can be several megabytes.</p>
 <p><strong>Fix:</strong> resize images to their display size, compress them and serve WebP. Lazy-load images lower down the page, but never the main hero image. See <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a>.</p>
