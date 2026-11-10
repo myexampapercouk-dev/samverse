@@ -304,6 +304,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <pre><code>find wp-content/uploads -name "*.php" -mtime -30</code></pre>
 <p>Any result is suspicious. Also check your hosting panel's mail logs or email queue for large batches sent to addresses you don't know, and change the passwords of every email account on the domain.</p>
 
+<p>If your site and mailbox are on Hostinger, follow the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup</a> for DNS records and SMTP.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>If your host has suspended email, you find scripts you didn't upload, or spam restarts after you delete files, have the site cleaned and the entry point closed. Tracing whether it is a script, a stolen password or a form is part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 

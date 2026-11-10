@@ -2821,6 +2821,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Quick check: which metric is failing, and where?</h2>
 <p>In Search Console, open <strong>Experience, Core Web Vitals</strong>, click <strong>Open report</strong> for Mobile and click each issue (for example "LCP issue: longer than 2.5s") to see the example URL groups. Test one example URL in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a>: the field data at the top confirms the problem, and the Diagnostics section below points to the element causing it.</p>
 
+<p>If visitors are spread across regions, <a href="/blog/what-is-a-cdn/">a CDN</a> can serve static files from servers closer to them.</p>
+
 <h2>When to get help</h2>
 <p>Get help when pages stay Poor or Needs improvement after the basics, or when fixes risk breaking the layout, forms or checkout. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> includes a full audit, fixes for LCP, INP and CLS, testing after every change and a before-and-after report. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -4216,6 +4218,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Check the handover notes are written in your branding and that no partner name appears in the site's footer, admin or code comments.</li>
 </ol>
 
+<p>If you run several branch or client sites from one installation, read <a href="/blog/wordpress-multisite-when-needed/">WordPress Multisite: SEO, speed and when you need it</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you have more client briefs than your team can build, or need WordPress and Elementor work delivered under NDA in your branding. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>, or <a href="/#contact">send a brief</a> for a small test project.</p>
 
@@ -4900,6 +4904,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>Check you have mobile frames for each main page, and that fonts have a web licence.</li>
 </ol>
 
+<p>The theme under Elementor matters as well; see <a href="/blog/best-theme-for-elementor/">the best theme for Elementor</a> compared.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you have a finished design and want it built in WordPress as designed, or you are an agency that needs it delivered white-label. See <a href="/figma-to-wordpress/">Figma to WordPress conversion</a>, or <a href="/#contact">share your design link</a> for a free review.</p>
 
@@ -5499,6 +5505,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   <li>Submit the form and check the conversion is recorded in your ads account.</li>
 </ol>
 
+<p>For what a campaign page costs to build and how to judge cost per lead, see <a href="/blog/landing-page-cost-factors/">landing page cost factors</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when ads send people to your home page, or a landing page gets clicks but few enquiries. See <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> and ad details for a review.</p>
 
@@ -5523,11 +5531,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     title: 'How to Get Your Website Indexed by Google Faster: What Actually Works',
     description: 'How to get your website indexed by Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
 <p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
+<blockquote><strong>Short answer:</strong> To get your website indexed by Google faster, link each new page from pages Google already crawls, list it in a clean XML sitemap with an honest lastmod date, and use Request indexing in Search Console for key URLs. Make the page substantial and unique, because no tool or plugin can force Google to index a page.</blockquote>
 
 <h2>From unknown to indexed: the stages</h2>
 <table>
@@ -5575,16 +5584,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ul>
 <p>The fix is fewer, fuller pages: merge thin ones into one strong page, add information only you can give (prices or what affects them, process, real examples, local detail), and noindex archives nobody needs to find in Google. I'm doing exactly this on this site: short early posts that Search Console listed as "Discovered, currently not indexed", this one included, are being rewritten into complete guides rather than left thin.</p>
 
-<h2>5. Crawl budget on a new site</h2>
-<p>Crawl budget is how many URLs Google is willing and able to crawl on your site in a given period. Google says most sites with fewer than a few thousand URLs don't need to worry about it, and that is true for established sites. A new domain is different: with no links and no history, Google's interest is low, so the URLs it does crawl should count.</p>
-<ul>
-  <li><strong>Launch with your core pages,</strong> then add more steadily, rather than publishing hundreds of near-identical pages on day one.</li>
-  <li><strong>Cut junk URLs:</strong> tag and attachment archives, sorting and filter parameters on stores, and http or www duplicates that should redirect.</li>
-  <li><strong>Keep the server fast and stable.</strong> In Search Console, <strong>Settings &gt; Crawl stats</strong> shows Google's average response time and any host problems. Slow responses and server errors make Google crawl less.</li>
-  <li><strong>Fix redirect chains and internal links to 404s,</strong> which spend crawls on URLs that lead nowhere.</li>
-</ul>
-<p>For the wider first-months plan, see <a href="/blog/seo-for-new-websites/">SEO for a new website</a>.</p>
-
 <h2>6. Tell Bing directly with IndexNow</h2>
 <p>IndexNow is a protocol that lets your site notify search engines the moment a URL is added, updated or deleted. At the time of writing, Bing, Yandex, Seznam and Naver support it; Google does not use it. Bing still matters: it powers its own results and is used by other search and AI tools.</p>
 <ul>
@@ -5594,15 +5593,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>This site uses a small script that submits the URLs in its sitemap to IndexNow after each update, so Bing hears about new pages without waiting for a crawl.</p>
 
 <p>A single wrong line can stop Google crawling whole sections. Check your settings for <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> before requesting indexing.</p>
-
-<h2>What doesn't speed up indexing</h2>
-<ul>
-  <li>Resubmitting the sitemap every day, or requesting indexing for the same URL repeatedly.</li>
-  <li>"Instant indexing" services, link blasts and ping lists.</li>
-  <li>Changing published dates without changing the page.</li>
-  <li>Running Google Ads, which has no effect on organic indexing.</li>
-  <li>Social media shares on their own; they can help people find you, but they are a weak route for Google discovery.</li>
-</ul>
 
 <h2>How long does indexing take?</h2>
 <p>Google's own answer is anywhere from a few days to a few weeks, and new domains sit at the slower end. Track progress with URL Inspection for your key pages and the Pages report over several weeks; a site: search on Google gives only a rough picture. If important pages are still not indexed after several weeks despite good internal links and a clean sitemap, look again for a technical block, then at whether the pages are distinct and substantial enough.</p>
@@ -5624,16 +5614,17 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h3>Crawled or discovered, but not indexed</h3>
 <h3>Shopify stores not showing on Google</h3>
 <p>On Shopify, check that the store password page is turned off (the store must be live), submit the automatic /sitemap.xml in Search Console, and make sure product and collection pages have unique titles and descriptions.</p>
-<h2>Quick check: is a new page on its way to the index?</h2>
+<h2>A routine for every new page you publish</h2>
 <ol>
-  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for the new page. Note whether it says "URL is not on Google", "Discovered" or "Crawled", and click <strong>Request indexing</strong> once if it is a key page.</li>
-  <li>In Search Console, open <strong>Indexing &gt; Sitemaps</strong> and check the sitemap status is Success and that the new URL is listed in the sitemap.</li>
-  <li>Search <strong>site:yourdomain.com/page-address</strong> a few days later. If nothing shows, check the page is linked from your homepage or menu.</li>
+  <li><strong>Before publishing:</strong> check the page isn't set to noindex in your SEO plugin and isn't blocked in robots.txt.</li>
+  <li><strong>On the day:</strong> add links to it from two or three related pages that are already indexed, and from the menu or a hub page if it's a key service page.</li>
+  <li>Open your sitemap and confirm the URL is listed with today's lastmod date.</li>
+  <li>In Search Console, paste the URL into URL Inspection, run <strong>Test live URL</strong>, then click <strong>Request indexing</strong>.</li>
+  <li>If your site supports IndexNow, send the URL so Bing and other participating engines hear about it straight away.</li>
+  <li><strong>After a week or so:</strong> inspect the URL again. If it says "Discovered" or "Crawled, currently not indexed", strengthen the content and internal links rather than requesting indexing repeatedly.</li>
 </ol>
-
-<p>If Search Console says pages are blocked, read <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> before changing anything.</p>
-
-<p>To check your sitemap lists only the pages you want indexed, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+<p>Pinging, resubmitting the same sitemap every day or buying "indexing services" doesn't help; links from crawled pages and a page worth indexing do.</p>
+<p><strong>What I check on client sites:</strong> noindex and canonical tags on new pages, whether the sitemap lists only live 200 URLs, and how many internal links each new page has from indexed pages.</p>
 
 <h2>When to get help</h2>
 <p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
@@ -5651,6 +5642,10 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>It helps Google discover URLs, which matters most on new sites, but it doesn't make Google index them. Internal links, page quality and site speed decide how quickly discovered pages are crawled and indexed.</p>
 <h3>Does Google use IndexNow?</h3>
 <p>Not at the time of writing. IndexNow notifies Bing and other participating search engines. For Google, rely on internal links, your sitemap and URL Inspection.</p>
+<h3>How do I get my WordPress site indexed by Google?</h3>
+<p>Untick "Discourage search engines" under Settings &gt; Reading, add the site to Search Console, submit the sitemap from your SEO plugin, link new pages from existing ones, and request indexing for your most important URLs.</p>
+<h3>Why is my new page not indexed after a week?</h3>
+<p>Usually Google hasn't found it through links, or doesn't think it adds enough over pages it already has. Check URL Inspection for the exact status, add internal links from indexed pages and make the content more specific.</p>
 `,
   },
   {
@@ -7780,6 +7775,10 @@ Additional headers: Reply-To: [your-email]</code></pre>
 <h2>Quick check</h2>
 <p>Submit your own form from a phone on mobile data, then check three places: the success message on screen, the stored entry in the form plugin (for example <strong>WPForms &gt; Entries</strong> or <strong>Flamingo &gt; Inbound Messages</strong>), and your inbox including spam. If the entry is stored but no email arrives, the problem is email delivery; if there is no entry at all, the form itself is failing.</p>
 
+<p>If you are still choosing a form plugin, see <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
+
+<p>If your domain and mailbox are on Hostinger, follow the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup</a> for DNS records and SMTP.</p>
+
 <h2>When to get help</h2>
 <p>If test submissions vanish, emails land in spam, or enquiries dropped after an update and you cannot see why, get the form and its email path checked properly. Form testing and SMTP setup are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
@@ -7901,6 +7900,8 @@ Additional headers: Reply-To: [your-email]</code></pre>
 
 <h2>Quick check: audit the plugins you have now</h2>
 <p>Open <strong>Plugins, Installed Plugins</strong> and click the <strong>Inactive</strong> filter: delete anything you will not use again. Then open <strong>Tools, Site Health</strong> and read any warnings about plugins. With WP-CLI, <code>wp plugin list --fields=name,status,update,version</code> gives the whole list in one table. For each remaining plugin, check its WordPress.org page for "Last updated" and "Tested up to"; one not updated in over a year is a candidate for replacement.</p>
+
+<p>When no existing plugin fits, <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains when bespoke code is worth it.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the plugin list has grown out of control, when two plugins do the same job, or when you are starting a new site. <a href="/wordpress-website-development/">WordPress website development</a> sets up forms, SEO, speed, security and backups as part of the build and shows you how to manage the site after launch. For a fixed quote, <a href="/#contact">send your website address</a>.</p>
@@ -15495,11 +15496,12 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
     title: 'What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One',
     description: 'A CDN serves your site files from servers near each visitor. See how it works, how it differs from hosting, and a quick test to see if you need one.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-migration', 'woocommerce-developer'],
     body: `
 <p>What is a website CDN? A CDN, or content delivery network, is a network of servers in many cities that keeps copies of your website's files, such as images, CSS and JavaScript, and delivers them from the location nearest each visitor. Your hosting server, called the origin, still holds the real website; the CDN sits in front of it and handles repeat requests, so pages load faster and your server does less work.</p>
+<blockquote><strong>Short answer:</strong> A CDN (content delivery network) is a network of servers in many cities that stores copies of your website's files and serves each visitor from the nearest one. Your hosting still holds the site; the CDN sits in front, so pages load faster and the server does less work. It helps most when visitors are spread across regions.</blockquote>
 <p>For most business websites a CDN is free or cheap, and it's worth having when visitors come from different regions or countries or your hosting is far from your customers. It won't fix a slow server, a heavy theme or huge images, though. Choosing and configuring a CDN, and checking it doesn't break forms or checkout, is one part of my <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> work.</p>
 
 <h2>What is a website CDN, and how does it work?</h2>
@@ -15510,7 +15512,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
   <li>If not (a <strong>cache miss</strong>), it fetches the file from your origin server, delivers it, and keeps a copy for the next visitor for a set time, known as the TTL.</li>
   <li>When you change a file, you <strong>purge</strong> the cache so edge servers fetch the new version.</li>
 </ol>
-<p>Shorter distances mean less waiting on every request, which adds up quickly on a page with dozens of files and on mobile networks; see <a href="/blog/website-speed-indian-mobile-networks/">speed on Indian mobile networks</a>.</p>
+<p>Shorter distances mean less waiting on every request, which adds up quickly on a page with dozens of files and on mobile networks; see speed on Indian mobile networks.</p>
 
 <h2>What is a CDN server, and what is a CDN file?</h2>
 <p>A <strong>CDN server</strong> is one of the edge servers in the network. Providers group them into points of presence (PoPs) in different cities, and the more PoPs near your visitors, the bigger the benefit.</p>
@@ -15544,12 +15546,12 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
     <tr><td>Cart, checkout and account pages</td><td>No</td><td>These must bypass the cache</td></tr>
   </tbody>
 </table>
-<p>If pages are slow before anything even downloads, the problem is usually server response time; see <a href="/blog/reduce-server-response-time-ttfb/">reducing TTFB on WordPress</a>. For images, start with <a href="/blog/image-optimization-wordpress/">image optimisation</a>, because a CDN only delivers a 3 MB photo faster; it doesn't make it smaller unless you use its image optimisation features.</p>
+<p>If pages are slow before anything even downloads, the problem is usually server response time; see reducing TTFB on WordPress. For images, start with <a href="/blog/image-optimization-wordpress/">image optimisation</a>, because a CDN only delivers a 3 MB photo faster; it doesn't make it smaller unless you use its image optimisation features.</p>
 
 <h2>Does your website need a CDN?</h2>
 <ul>
   <li><strong>Hosting in India, customers in your city:</strong> smaller speed gains, but a free CDN still adds protection and helps visitors elsewhere in India.</li>
-  <li><strong>Hosting abroad:</strong> many budget plans default to a US, European or Singapore data centre. A CDN helps a lot here, though choosing an Indian data centre in the first place helps more; see <a href="/blog/choose-wordpress-hosting-india/">choosing WordPress hosting in India</a>.</li>
+  <li><strong>Hosting abroad:</strong> many budget plans default to a US, European or Singapore data centre. A CDN helps a lot here, though choosing an Indian data centre in the first place helps more; see choosing WordPress hosting in India.</li>
   <li><strong>International visitors:</strong> exporters, travel businesses and anyone with overseas clients should use one.</li>
   <li><strong>Online stores and image-heavy sites:</strong> usually worthwhile, as long as cart and checkout are excluded.</li>
   <li><strong>A small local site with modest traffic:</strong> optional. Good hosting and caching matter more.</li>
@@ -15596,31 +15598,26 @@ cf-cache-status: HIT</code></pre>
 
 <p>Proxying a Shopify store through Cloudflare can stop its SSL certificate from being issued; see <a href="/blog/shopify-domain-not-connecting/">Shopify domain and SSL pending fixes</a>.</p>
 
-<h2>Common CDN problems and fixes</h2>
-<ul>
-  <li><strong>Changes not showing:</strong> purge the CDN cache as well as your caching plugin; <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> shows how the layers fit together.</li>
-  <li><strong>Login loops or "too many redirects":</strong> usually the SSL mode; see <a href="/blog/too-many-redirects-error-fix/">fixing ERR_TOO_MANY_REDIRECTS</a>.</li>
-  <li><strong>Empty carts or checkout errors:</strong> a cache rule is catching dynamic pages; add bypass rules.</li>
-  <li><strong>Missing icons or fonts:</strong> the CDN hostname needs a CORS header for font files.</li>
-  <li><strong>Email stopped after switching nameservers:</strong> MX or TXT records weren't copied correctly.</li>
-  <li><strong>Broken sliders or menus:</strong> script features such as Cloudflare's Rocket Loader can conflict with themes; turn them off and retest.</li>
-</ul>
-
-<h2>Quick check: is your CDN actually serving the site?</h2>
-<ol>
-  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, reload, click the page request and read the response headers. With Cloudflare, <code>cf-cache-status</code> shows HIT, MISS or DYNAMIC.</li>
-  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first before and after turning the CDN on, and compare the server response time.</li>
-  <li>After any nameserver change, send a test email to and from your domain and place a test order if you sell online.</li>
-</ol>
-
-<p>A CDN speeds up font files too, but loading fewer of them matters more; see how to <a href="/blog/web-fonts-performance/">reduce font load</a>.</p>
+<h2>CDN settings to check after setup</h2>
+<p>Most CDN problems on WordPress come from a handful of settings. If you use Cloudflare, check these after switching it on:</p>
+<table>
+  <thead><tr><th>Setting</th><th>Safe choice</th><th>What goes wrong otherwise</th></tr></thead>
+  <tbody>
+    <tr><td>SSL/TLS mode</td><td>Full (strict), with a valid certificate on the host</td><td>"Flexible" can cause redirect loops and mixed content</td></tr>
+    <tr><td>Always Use HTTPS</td><td>On</td><td>Visitors can land on the http version</td></tr>
+    <tr><td>Caching of HTML pages</td><td>Only with rules that bypass wp-admin, login, cart, checkout and account pages</td><td>Logged-in or cart pages shown to the wrong visitor</td></tr>
+    <tr><td>Rocket Loader and JS optimisation</td><td>Off at first; test before enabling</td><td>Broken menus, sliders or forms</td></tr>
+    <tr><td>Minification</td><td>In one place only, the CDN or your caching plugin</td><td>Doubled processing and broken CSS or JS</td></tr>
+    <tr><td>Cache purge</td><td>Automatic on updates through a plugin, or manual after changes</td><td>Visitors see old pages</td></tr>
+  </tbody>
+</table>
+<p>Other CDNs use different names, but the same ideas apply. See the <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare WordPress setup guide</a> for step-by-step settings, <a href="/blog/too-many-redirects-error-fix/">fixing too many redirects</a> if pages loop after setup, and <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for how CDN and plugin caching fit together.</p>
+<p><strong>What I check on client sites:</strong> that static files return a cache hit header, that cart, checkout and wp-admin bypass the cache, that the SSL mode is Full (strict), and that forms and logins still work through the CDN.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you are unsure whether a CDN will help, when email or checkout broke after a switch, or when cached pages show stale content. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
-<h3>What is a website CDN?</h3>
-<p>A network of servers in many locations that stores copies of your website's files and delivers them from the server closest to each visitor. Your hosting remains the original source, and the CDN reduces the distance files travel and the load on your server.</p>
 <h3>What is a CDN file?</h3>
 <p>Any file, usually an image, stylesheet, script or font, delivered through a CDN instead of directly from your hosting. You can often spot them by a different hostname in the file address, such as a cdn subdomain or the provider's own domain.</p>
 <h3>Is Cloudflare a CDN?</h3>
@@ -15631,6 +15628,10 @@ cf-cache-status: HIT</code></pre>
 <p>Indirectly. Faster loading can improve Core Web Vitals and user experience, which support rankings, but a CDN doesn't boost rankings by itself. Make sure its security settings don't block or challenge Googlebot.</p>
 <h3>Is a free CDN good enough for a small business?</h3>
 <p>Usually, yes. Cloudflare's free plan or a host-included CDN covers most small business sites. Paid options make sense for stores, high traffic or when you need full-page caching at the edge.</p>
+<h3>Is a CDN the same as hosting?</h3>
+<p>No. Hosting stores and runs your website; a CDN keeps copies of its files on servers in many places and delivers them faster. You still need hosting when you use a CDN.</p>
+<h3>Does a CDN help WordPress sites in India?</h3>
+<p>Yes, when visitors come from several cities or abroad, or your server is outside India. If your server is already in India and nearly all visitors are local, the gain is smaller, though a CDN still reduces load on the server.</p>
 `,
   },
   {
@@ -15639,11 +15640,12 @@ cf-cache-status: HIT</code></pre>
     title: 'How to Add Google Maps to Your Website Without Slowing It Down: Embeds, the API, Click-to-Load Maps and Local Details',
     description: 'How to add Google Maps to your website: copy the embed code, use the Maps API when you need it, load the map on click, and add the local details customers need.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization', 'wordpress-seo-services'],
     body: `
 <p>To add Google Maps to your website, open your business in Google Maps, click Share, choose Embed a map, copy the iframe code and paste it into a Custom HTML block (or your page builder's HTML widget) on the contact page. That free embed works for most businesses; the catch is that it loads a lot of extra code, so the best setup shows a lightweight preview first and loads the live map only when someone taps it.</p>
+<blockquote><strong>Short answer:</strong> To add Google Maps to your website for free, open your business in Google Maps, click Share, choose Embed a map, copy the iframe and paste it into a Custom HTML block on your contact page. To keep the page fast, add loading="lazy" or show a static preview that loads the live map only when tapped.</blockquote>
 <p>This guide covers the embed method, when the Maps JavaScript API is worth the setup, how to keep the map from hurting your page speed on Indian mobile networks, and the local details that matter more than the map itself.</p>
 
 <h2>Your three options</h2>
@@ -15680,7 +15682,7 @@ cf-cache-status: HIT</code></pre>
 <li><strong>Use click-to-load.</strong> Show a static screenshot of the map (compressed WebP, with alt text naming the area) with a "View map" button. When tapped, swap the image for the real iframe. Many speed and privacy plugins offer this as a "map placeholder" option.</li>
 <li><strong>Link instead of embed.</strong> On mobile, most visitors want directions in their own Maps app anyway. A big "Get directions" button linking to your Google Maps listing is often more useful than the embedded map.</li>
 </ul>
-<p>Click-to-load has a privacy benefit too: no Google request is made until the visitor chooses to see the map. That fits well with the consent approach in our <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>. For more on deferring heavy elements, see <a href="/blog/lazy-loading-explained/">lazy loading explained</a>.</p>
+<p>Click-to-load has a privacy benefit too: no Google request is made until the visitor chooses to see the map. That fits well with the consent approach in our <a href="/blog/privacy-policy-cookie-basics-india/">privacy policy and cookie basics for India</a>. For more on deferring heavy elements, see lazy loading explained.</p>
 
 <h2>Making the directions link work on every phone</h2>
 <p>A directions link should open the Google Maps app on Android and offer the choice on iPhone. The simplest reliable option is the share link from your business listing (the short maps.app.goo.gl link from the Share button). Use it for the "Get directions" button and in your WhatsApp auto-reply.</p>
@@ -15698,7 +15700,7 @@ cf-cache-status: HIT</code></pre>
 <p>Our guide to a <a href="/blog/contact-page-that-gets-enquiries/">contact page that gets enquiries</a> covers the form and layout side of this.</p>
 
 <h2>LocalBusiness schema and NAP consistency</h2>
-<p>An embedded map does not tell Google much on its own. What helps local search is consistency: the same name, address and phone number (NAP) on your website, your Google Business Profile, and directories. Add LocalBusiness structured data to the contact or home page with your address, geo coordinates, opening hours and a link to your Maps listing in the sameAs or hasMap property. Our <a href="/blog/schema-markup-explained/">schema markup guide</a> explains how to add it in WordPress.</p>
+<p>An embedded map does not tell Google much on its own. What helps local search is consistency: the same name, address and phone number (NAP) on your website, your Google Business Profile, and directories. Add LocalBusiness structured data to the contact or home page with your address, geo coordinates, opening hours and a link to your Maps listing in the sameAs or hasMap property. Our schema markup guide explains how to add it in WordPress.</p>
 <p>Then keep your profile active using the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a>. Reviews, photos and accurate categories affect map rankings far more than whether your website has a map.</p>
 
 <h2>Several branches, or no shopfront at all</h2>
@@ -15714,12 +15716,15 @@ cf-cache-status: HIT</code></pre>
 </ul>
 <p>If you would like your contact page, map and local details set up properly with speed in mind, see <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the build.</p>
 
-<h2>Quick check: is the map helping or hurting?</h2>
-<ol>
-  <li>Search your business name on <strong>Google Maps</strong> and check that your <strong>Google Business Profile</strong> hours, phone and website link match the site.</li>
-  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on the contact page. An embedded map adds third-party scripts that can slow it.</li>
-  <li>Tap the map or directions link on a phone and check it opens Google Maps at your exact pin, not a nearby building.</li>
-</ol>
+<h2>A click-to-load map: simple code you can adapt</h2>
+<p>A click-to-load map shows a lightweight placeholder first and only loads Google's iframe when a visitor asks for it. Here is a simple version for a Custom HTML block. Replace the src with the embed URL from Google Maps' Share &gt; Embed a map dialog.</p>
+<pre><code>&lt;div class="map-wrap" style="aspect-ratio:4/3;max-width:600px"&gt;
+  &lt;button type="button" onclick="this.outerHTML='&lt;iframe src=&amp;quot;YOUR-EMBED-URL&amp;quot; width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot; style=&amp;quot;border:0&amp;quot; loading=&amp;quot;lazy&amp;quot; title=&amp;quot;Map&amp;quot;&gt;&lt;/iframe&gt;'"&gt;
+    Show map
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+<p>Style the button with a screenshot of your map as its background so it looks like a map before it loads. Keep a plain "Get directions" link next to it, pointing to your Google Maps listing, because many phone visitors just want the directions app. Fixing the box size with aspect-ratio also stops the layout jumping when the map appears.</p>
+<p><strong>What I check on client sites:</strong> whether the map loads on page load or on tap, the request count with and without it in the Network tab, whether the directions link opens the right listing on a phone, and that the address text matches the Google Business Profile.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the map slows the page down, when your pin is in the wrong place, or when you have several branches that each need their own page. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -15737,6 +15742,10 @@ cf-cache-status: HIT</code></pre>
 <p>Change the iframe width to 100 percent and set a fixed height, or wrap it in a container with an aspect ratio set in CSS. Most page builders' map widgets are responsive by default.</p>
 <h3>Can I add a map for a home-based or service-area business?</h3>
 <p>You can, but you usually should not show a home address. Set service areas in your Google Business Profile, list the areas you cover on the website, and use a call or WhatsApp button instead of a map.</p>
+<h3>How do I embed Google Maps in WordPress?</h3>
+<p>Copy the iframe from Google Maps' Share &gt; Embed a map, then add a Custom HTML block in the block editor, or an HTML or Google Maps widget in Elementor, and paste it there. Preview on a phone before publishing.</p>
+<h3>Can I show my Google Maps reviews or location without an API key?</h3>
+<p>The standard embed from the Share button needs no API key and shows your listing. Custom styled maps, several markers or live review feeds need the Maps JavaScript or Places API, which require a key and billing account.</p>
 `,
   },
   {
@@ -18542,6 +18551,10 @@ cf-cache-status: HIT</code></pre>
 
 <p>For what belongs in the sitemap you submit, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
+<p>Once the fix is live, see <a href="/blog/get-website-indexed-google-faster/">how to get pages indexed by Google faster</a>.</p>
+
+<p>For the wording itself, see <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a> that get clicks.</p>
+
 <h2>When to get help</h2>
 <p>Get help when reports show problems you cannot trace, when clicks drop suddenly, or when the underlying WordPress issues need fixing rather than just listing. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -18830,14 +18843,15 @@ cf-cache-status: HIT</code></pre>
   {
     slug: 'wordpress-multisite-when-needed',
     seoTitle: 'What Is WordPress Multisite, and When Do You Need It?',
-    title: 'WordPress Multisite: What It Is, When a Business Needs It, and What It Means for SEO',
+    title: "WordPress Multisite: When a Business Needs It, Multisite SEO and Why Multisite Gets Slow",
     description: 'What WordPress Multisite is, when a business genuinely needs it, when separate sites work better, and how Multisite affects SEO, plugins and hosting.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
 <p>WordPress Multisite is a built-in WordPress feature that runs a network of websites from one installation. The sites share the same WordPress core, themes, plugins and user accounts, but each has its own content and settings. It suits one team managing many similar sites, such as franchise outlets, branches or departments. For a few unrelated sites, a multilingual site or several locations of one business, a single site or separate installations is usually simpler.</p>
+<blockquote><strong>Short answer:</strong> Use WordPress Multisite when one team runs many similar sites that share themes, plugins and users, such as franchise or branch sites. It neither helps nor hurts SEO: Google treats each site separately, so set up the SEO plugin, sitemap and Search Console per site. Slowness usually comes from network-activated plugins, a shared database and weak hosting.</blockquote>
 <p>On SEO, Multisite itself neither helps nor hurts rankings: Google sees each site in the network as a separate website. What matters is how the network is structured and whether each site is set up properly.</p>
 
 <h2>What is a WordPress Multisite?</h2>
@@ -18866,7 +18880,7 @@ cf-cache-status: HIT</code></pre>
 
 <h2>When a business needs Multisite</h2>
 <ul>
-  <li><strong>Franchise or dealer networks</strong> where every outlet gets a site built from the same template, with local contact details, offers and staff, managed by head office; see <a href="/blog/website-for-franchise-brands/">websites for franchise brands</a></li>
+  <li><strong>Franchise or dealer networks</strong> where every outlet gets a site built from the same template, with local contact details, offers and staff, managed by head office; see websites for franchise brands</li>
   <li><strong>Schools, colleges and universities</strong> where departments or campuses each publish their own news and pages under one design</li>
   <li><strong>Hospital groups or multi-brand companies</strong> with several sub-brands that must share design, plugins and governance</li>
   <li><strong>Regional or campaign microsites</strong> that are launched often from the same template and managed by one team</li>
@@ -18921,8 +18935,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Two practical notes. On an established site with published posts older than a month, WordPress may only offer subdomains, to avoid URL clashes. And subdomain networks need wildcard subdomains set up in DNS and hosting, which not every shared host allows.</p>
 
 <h2>WordPress multisite SEO in more detail</h2>
-<h3>Subdomain vs subdirectory multisite for SEO</h3>
-<p>Subdirectories (example.com/pune/) sit inside the main site and are simpler to manage. Subdomains (pune.example.com) are treated more like separate sites. For branches, regions or languages of one brand, subdirectories are usually the safer choice; for genuinely separate brands, use separate domains.</p>
 <h3>Settings to check on every site</h3>
 <ul>
 <li>An SEO plugin (Yoast, Rank Math and others support multisite) configured per site, not just network-activated and forgotten.</li>
@@ -18944,12 +18956,7 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 </ol>
 <h2>What WordPress multisite development services include</h2>
 <p>A proper multisite project covers planning the structure (subdomain or subdirectory, domain mapping), choosing themes and plugins that work network-wide, user roles for site admins, SEO setup per site, hosting with backups that can restore a single site, and documentation so your team can add new sites. Before asking for a quote, prepare the list of sites, who will edit each, what is shared and what differs, and ask whether separate installs might be simpler.</p>
-<h2>Quick check: do you really need Multisite?</h2>
-<ol>
-  <li>List the sites and who edits each. If they share no users, themes or plugins, use separate installs.</li>
-  <li>Check the PHP memory limit in <strong>Tools &gt; Site Health &gt; Info</strong>.</li>
-  <li>Ask your host if your plan supports Multisite and how per-site backups work.</li>
-</ol>
+<p><strong>What I check on client sites:</strong> in Network Admin &gt; Plugins, which plugins are network-activated and whether every site needs them; on each site, the Reading setting, the SEO plugin's sitemap and the site's Search Console property; and in Tools &gt; Site Health &gt; Info, the PHP version, memory limit and whether a persistent object cache is in use.</p>
 
 <h2>When to get help</h2>
 <p>Get help when several sites share one install and one plugin breaks them all, when you need to split a network into separate sites, or when you are planning a multi-brand build. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -18967,9 +18974,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams.</p>
 <h3>Why is my WordPress Multisite slow, and how do I speed it up?</h3>
 <p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in why WordPress Multisite is slow. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
-<h3>How do I do SEO for a WordPress Multisite network?</h3>
-<p>Treat every site as its own website: configure the SEO plugin per site, submit a separate sitemap for each, write unique content per branch and check each site in Search Console.</p>
-
 `,
   },
   {
@@ -19206,6 +19210,8 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
   <li>Open <strong>Reports &gt; Engagement &gt; Pages and screens</strong> and compare views with enquiries for your main service pages.</li>
   <li>Submit the enquiry form from a phone on mobile data, then check the email arrives in the inbox (not spam) within a few minutes and the reply-to address is the visitor's.</li>
 </ol>
+
+<p>For what a campaign page costs to build and how to judge cost per lead, see <a href="/blog/landing-page-cost-factors/">landing page cost factors</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when traffic is steady but enquiries are not, when forms and buttons are not tracked, or when key pages need a clearer layout. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -20700,7 +20706,7 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   <li><strong>Treating submission as indexing.</strong> A sitemap gets URLs discovered; internal links, quality and time get them indexed. <a href="/blog/get-website-indexed-google-faster/">How to get a new site indexed faster</a> covers what actually speeds that up.</li>
 </ul>
 
-<p>Get help when Search Console says the sitemap "Couldn't fetch", discovers far fewer pages than you have, or the sitemap lists noindexed, redirected or thin URLs. The fix is usually one sitemap source listing only the pages you want indexed.</p>
+<p>Get help when Search Console says the sitemap "Couldn't fetch", discovers far fewer pages than you have, or the sitemap lists noindexed, <a href="/blog/301-vs-302-redirects/">redirected</a> or thin URLs. The fix is usually one sitemap source listing only the pages you want indexed.</p>
 
 <h2>Find your WordPress sitemap XML URL</h2>
 <table>
@@ -20742,12 +20748,12 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
     title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
     description: 'Copy a safe WordPress robots.txt, edit it in Yoast or Rank Math, add your sitemap line and avoid the blocking mistakes that drop pages from Google.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
 <p>A WordPress robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically unless you upload your own, that tells search engine crawlers which URLs they may crawl. A safe version blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and everything else should stay crawlable.</p>
-<p><strong>Short answer:</strong> robots.txt controls crawling, not indexing. To keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. The biggest risk is a file that blocks too much, such as a leftover "Disallow: /" from a staging site.</p>
+<blockquote><strong>Short answer:</strong> A WordPress robots.txt controls crawling, not indexing. A safe file blocks /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and nothing else important. To keep a page out of Google, use a noindex tag on a crawlable page instead. The biggest risk is a leftover "Disallow: /" from a staging site.</blockquote>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
 <h2>How robots.txt works</h2>
@@ -20866,17 +20872,6 @@ User-agent: Google-Extended
 Disallow: /</code></pre>
 <p>Whether to block them is a business decision, not a technical one. A training crawler takes content without sending visitors; an AI search crawler is what lets assistants find and cite your pages. If you use Cloudflare, check whether its AI crawler settings add lines to your live robots.txt.</p>
 
-<h2>Common robots.txt mistakes</h2>
-<ul>
-  <li><strong>"Disallow: /" left over from development.</strong> The classic launch mistake, and one of the first causes to rule out in <a href="/blog/get-website-indexed-google-faster/">why a WordPress site isn't showing on Google</a>.</li>
-  <li><strong>Blocking theme, plugin or upload folders,</strong> which breaks how Google renders your pages and hides your images.</li>
-  <li><strong>Blocking pages you want removed</strong> instead of noindexing them, which keeps them in results with no description.</li>
-  <li><strong>Listing private paths,</strong> which tells everyone where they are.</li>
-  <li><strong>A missing trailing slash,</strong> so a rule blocks far more URLs than intended.</li>
-  <li><strong>Editing in a plugin while a physical file overrides it,</strong> so your changes never go live.</li>
-  <li><strong>A wrong or old sitemap URL,</strong> such as the previous domain after a migration.</li>
-</ul>
-
 <h2>How to test your robots.txt</h2>
 <ol>
   <li><strong>Open the live file</strong> at https://example.com/robots.txt, and also try the www or non-www and http versions to confirm they redirect to the same place.</li>
@@ -20886,29 +20881,36 @@ Disallow: /</code></pre>
   <li><strong>Repeat after every launch, redesign or migration,</strong> as part of a wider check such as the <a href="/blog/technical-seo-audit-wordpress/">WordPress technical SEO audit</a>.</li>
 </ol>
 
-<h2>Quick check: is robots.txt blocking anything important?</h2>
-<ol>
-  <li>Open <strong>yourdomain.com/robots.txt</strong> in a browser. Look for <code>Disallow: /</code> and check the Sitemap line points to a working address.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Settings &gt; Crawling &gt; robots.txt</strong> and check the file Google last fetched and any errors.</li>
-  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for a key page. "Crawl allowed?" should say Yes.</li>
-</ol>
+<h2>Robots.txt, noindex or a password: which one to use</h2>
+<p>Most robots.txt problems come from using it for a job another tool does better. Pick the tool by what you actually want to happen.</p>
+<table>
+  <thead><tr><th>What you want</th><th>Use this</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Stop crawlers wasting time on wp-admin or internal search results</td><td>robots.txt Disallow</td><td>Controls crawling, which is all you need here</td></tr>
+    <tr><td>Keep a thank-you page or thin tag archive out of Google</td><td>noindex in your SEO plugin</td><td>Google must crawl the page to see the noindex, so don't block it in robots.txt</td></tr>
+    <tr><td>Remove a page that is already indexed</td><td>noindex, or delete it with a 404 or 410</td><td>Search Console's Removals tool only hides it temporarily</td></tr>
+    <tr><td>Hide a staging or development site</td><td>Password protection</td><td>Robots.txt is public and only a request; a password actually blocks access</td></tr>
+    <tr><td>Keep PDFs or other files out of results</td><td>X-Robots-Tag: noindex header</td><td>Files have no HTML head for a meta tag</td></tr>
+    <tr><td>Move a page to a new URL</td><td>301 redirect</td><td>Passes visitors and signals to the new address</td></tr>
+  </tbody>
+</table>
+<p>Keep the robots.txt file in the same family as your <a href="/blog/xml-sitemaps-explained/">XML sitemap</a>, <a href="/blog/301-vs-302-redirects/">redirects</a> and <a href="/blog/orphan-pages-fix/">orphan page</a> checks: together they decide what Google can find and crawl.</p>
+<p><strong>What I check on client sites:</strong> that yourdomain/robots.txt loads, has no leftover "Disallow: /", lists the right sitemap, and that Search Console's robots.txt report (Settings &gt; robots.txt) shows no fetch errors.</p>
 
 <h2>When to get help</h2>
 <p>Get help when important pages show "Blocked by robots.txt" or "Indexed, though blocked by robots.txt", when a staging rule reached the live site, or when store filter URLs are eating crawl effort. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
-<h3>What is robots.txt used for?</h3>
-<p>It tells search engine crawlers which parts of a site they shouldn't request, which helps them avoid admin areas and endless URL variations, and it tells them where your sitemap is. It isn't a security tool and it doesn't remove pages from search results.</p>
 <h3>Where is robots.txt in WordPress?</h3>
 <p>Usually nowhere on disk: WordPress generates a virtual one at /robots.txt on your domain. You can edit it through Yoast's file editor or Rank Math's robots.txt setting, or create a real file in the site's root folder, which then takes over completely.</p>
 <h3>Does robots.txt stop a page from appearing in Google?</h3>
 <p>Not reliably. A blocked page can still be indexed if other pages link to it, just without a description. Use a noindex tag on a crawlable page, or delete the page, if you want it gone from results.</p>
 <h3>Should I block AI crawlers like GPTBot?</h3>
 <p>It depends on whether you mind your content being used to train AI models, and whether you want AI assistants to cite you. Blocking training crawlers while allowing AI search crawlers is a common middle ground. Google-Extended affects only Google's AI models, not your Google Search rankings.</p>
-<h3>How do I edit robots.txt in WordPress?</h3>
-<p>With Yoast SEO, use Tools &gt; File editor; with Rank Math, use General Settings &gt; Edit robots.txt. If your changes don't show at yourdomain/robots.txt, a physical file in the root folder is overriding them, so edit or delete that file through your host's file manager.</p>
-<h3>Where is the XML sitemap in WordPress?</h3>
-<p>Without an SEO plugin it is at /wp-sitemap.xml; with Yoast SEO or Rank Math it is usually /sitemap_index.xml. Add that full address as a Sitemap line in robots.txt and submit it in Search Console. If you have no robots.txt file at all, crawlers assume everything is allowed.</p>
+<h3>What should a WordPress robots.txt file contain?</h3>
+<p>For most sites, just a User-agent: * line, Disallow: /wp-admin/, Allow: /wp-admin/admin-ajax.php and a Sitemap line with your full sitemap URL. Don't block CSS, JavaScript, uploads or whole folders of content.</p>
+<h3>Does "Discourage search engines" in WordPress change robots.txt?</h3>
+<p>The setting at Settings &gt; Reading asks search engines not to index the site; current versions do this mainly with a noindex robots meta tag. Either way, make sure it is unticked on a live site and ticked on staging.</p>
 `,
   },
   {
@@ -21344,6 +21346,10 @@ Disallow: /</code></pre>
   <li>Test a few old URLs in a redirect checker such as httpstatus.io and look for chains of more than one hop.</li>
   <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check "Page with redirect" and "Not found (404)" for URLs that should redirect somewhere useful.</li>
 </ol>
+
+<p>Also check that your <a href="/blog/robots-txt-explained/">WordPress robots.txt</a> is not blocking URLs you want Google to crawl.</p>
+
+<p>Pages with no internal links are hard for Google to find; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when a migration or redesign changed many URLs, when redirects loop or chain, or when traffic fell after a move. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -22647,6 +22653,10 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <li><strong>Check Search Console:</strong> open <em>Experience, Core Web Vitals</em> in Google Search Console to see which URL groups are Poor or Need improvement.</li>
 <li><strong>Test the slowest page:</strong> run your most visited product or service page, not only the homepage, and compare mobile and desktop.</li>
 </ol>
+
+<p>If visitors are spread across regions, <a href="/blog/what-is-a-cdn/">a CDN</a> can serve static files from servers closer to them.</p>
+
+<p>Fonts are often part of the problem too: see <a href="/blog/web-fonts-performance/">how to reduce font load on a WordPress site</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when scores stay red after caching plugins, when real-user data and lab scores disagree, or when you can't tell whether hosting, plugins or images are the cause. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> finds and fixes the cause, <a href="/website-redesign/">website redesign</a> helps when the theme is the problem, and <a href="/wordpress-seo-services/">WordPress SEO services</a> links speed to rankings. <a href="/#contact">Get in touch</a> with your URL.</p>
@@ -25263,11 +25273,12 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
     title: 'How to Write Meta Titles and Descriptions That Get Clicks (With E-commerce Examples)',
     description: 'How to write meta titles and descriptions that get clicks: lengths, formulas, WordPress setup, and examples for product, category and flash sale pages.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-redesign'],
     body: `
 <p>A meta title (the title tag) is the clickable headline Google shows for your page, and the meta description is the short summary underneath it. Write titles of roughly 50 to 60 characters that start with the page's main search term and end with your brand, and descriptions of roughly 120 to 155 characters that say what the page offers and give a specific reason to click. Make every one unique.</p>
+<blockquote><strong>Short answer:</strong> Write meta titles of about 50 to 60 characters that start with the page's main search term and end with your brand, and meta descriptions of about 120 to 155 characters that say what the page offers and give a specific reason to click. Make each one unique, and match the wording people actually search.</blockquote>
 
 <h2>What meta titles and descriptions do</h2>
 <p>Both sit in the page's HTML head rather than on the visible page:</p>
@@ -25294,7 +25305,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <p>The formula I start with for most pages:</p>
 <pre><code>Main search term + one specific detail or benefit | Brand</code></pre>
 <ol>
-  <li><strong>Find the main query.</strong> Check Search Console for the words the page already gets impressions for, or do some quick <a href="/blog/keyword-research-small-business/">keyword research</a>. Use the searcher's words ("AC repair", not "cooling solutions").</li>
+  <li><strong>Find the main query.</strong> Check Search Console for the words the page already gets impressions for, or do some quick keyword research. Use the searcher's words ("AC repair", not "cooling solutions").</li>
   <li><strong>Put it first.</strong> The start of the title is what people scan and what survives truncation.</li>
   <li><strong>Add one specific detail:</strong> a location, a number, a format ("checklist", "price list") or a real differentiator.</li>
   <li><strong>Add your brand at the end</strong> if there's room. On the homepage, the brand can go first.</li>
@@ -25333,7 +25344,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <ul>
   <li>Lead with the product name as people search for it, then the key attribute: size, weight, model or material</li>
   <li>Don't copy the manufacturer's text, which appears on every store selling the item; see <a href="/blog/write-product-descriptions-that-sell/">writing product descriptions that sell</a></li>
-  <li>Avoid typing a fixed price into the description unless it updates automatically. Google can show price, stock and ratings from product <a href="/blog/schema-markup-explained/">structured data</a> instead</li>
+  <li>Avoid typing a fixed price into the description unless it updates automatically. Google can show price, stock and ratings from product structured data instead</li>
 </ul>
 
 <h3>Meta title and description for a sale or flash sale collection</h3>
@@ -25369,7 +25380,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 Description: Buy %title% online. %excerpt%</code></pre>
 <p>Variable names differ between plugins and versions, so pick them from the plugin's variable list. Templates beat empty descriptions, but your important pages still deserve hand-written tags.</p>
 
-<p>Running a time-limited sale? See the <a href="/blog/flash-sale-collection-meta-title-description/">meta title and description templates for a flash sale collection</a>.</p>
+<p>Running a time-limited sale? See the meta title and description templates for a flash sale collection.</p>
 
 <h2>How to add meta titles and descriptions in WordPress</h2>
 <p>WordPress has no meta description field of its own, so you need an SEO plugin:</p>
@@ -25382,15 +25393,6 @@ Description: Buy %title% online. %excerpt%</code></pre>
 
 <p>On a multilingual site, write the title and description in each page's own language and link the versions together with <a href="/blog/hreflang-multilingual-seo-india/">hreflang codes for Indian languages</a>.</p>
 
-<h2>Common mistakes</h2>
-<ul>
-  <li>The same title or description on many pages, often from a theme default; see <a href="/blog/duplicate-content-explained/">duplicate content explained</a></li>
-  <li>Keyword stuffing ("website design, website designer, website design company…")</li>
-  <li>Titles that promise something the page doesn't deliver</li>
-  <li>The brand name first on every page, pushing the useful words out of view</li>
-  <li>Sale wording left in the snippet after the sale ends</li>
-</ul>
-
 <h2>Test and improve with Search Console</h2>
 <ol>
   <li>Open Performance &gt; Search results and switch on Average CTR and Average position.</li>
@@ -25400,22 +25402,24 @@ Description: Buy %title% online. %excerpt%</code></pre>
 </ol>
 <p>More in <a href="/blog/google-search-console-reports-explained/">Search Console reports explained</a>. Titles and descriptions are one part of the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>, so check the rest of the page too.</p>
 
-<h2>Meta titles and descriptions for Indian searchers</h2>
-<p>If most of your buyers are in India, write for how they search. Include the city or "India" where the page genuinely serves that area, such as "WordPress Developer in Pune" or "Kurtis Online India". For shops, mention what Indian shoppers check first when it is true for the page: cash on delivery, free shipping above a threshold, easy returns or GST invoices. Keep rupee prices out of descriptions unless you update them, because a stale price in a snippet costs trust. Test the result on a phone, since that is where most Indian searches happen and long titles get cut sooner.</p>
-
-<h2>Quick check: how do your titles look in Google?</h2>
-<ol>
-  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, tick <strong>Average CTR</strong> and <strong>Average position</strong>, and sort pages by impressions. Pages with many impressions and low CTR need better titles first.</li>
-  <li>Search <strong>site:yourdomain.com</strong> and read how Google shows each title. Cut-off or rewritten titles are the ones to shorten.</li>
-  <li>In WordPress, open a page and scroll to the <strong>Yoast SEO</strong> or <strong>Rank Math</strong> box to edit the SEO title and meta description, then click Update.</li>
-</ol>
+<h2>Meta title and description examples for service and local pages</h2>
+<table>
+  <thead><tr><th>Page</th><th>Weak</th><th>Better</th></tr></thead>
+  <tbody>
+    <tr><td>Service page</td><td>Home | Services</td><td>WordPress Maintenance Plans for Small Businesses | Brand</td></tr>
+    <tr><td>Local service</td><td>Best Dentist</td><td>Dental Clinic in Kothrud, Pune: Implants and Braces | Brand</td></tr>
+    <tr><td>Guide</td><td>Blog post 14</td><td>How to Fix a WordPress Critical Error, Step by Step</td></tr>
+    <tr><td>Description, service</td><td>We are the best company offering quality services.</td><td>Monthly updates, backups and security checks for your WordPress site, with a fixed monthly fee. See what's included.</td></tr>
+    <tr><td>Description, local</td><td>Welcome to our clinic.</td><td>Implants, braces and root canal treatment in Kothrud. Book online or call; open Monday to Saturday.</td></tr>
+  </tbody>
+</table>
+<p>The better versions name the service and place, match how people search, and give a concrete reason to click. Avoid stuffing several cities or keywords into one title, repeating the same description across pages, and promises the page doesn't back up.</p>
+<p><strong>What I check on client sites:</strong> duplicate or missing titles in a site crawl, titles cut off in mobile results, pages where Google rewrites the title, and pages with impressions but few clicks in Search Console.</p>
 
 <h2>When to get help</h2>
 <p>Get help when hundreds of pages share the same title, when Google keeps rewriting titles, or when product and category pages need templates. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
-<h3>How long should a meta title and meta description be?</h3>
-<p>Roughly 50 to 60 characters for the title and 120 to 155 for the description. Google cuts them off by pixel width, so titles with wide letters or capitals get truncated sooner. Use the preview in Yoast or Rank Math to check.</p>
 <h3>How do I write a meta title and description for a flash sale collection?</h3>
 <p>Start the title with "Flash Sale" or "Sale", add the strongest true offer and the product category, and end with your brand. In the description, say what's discounted and use "limited time" or "while stock lasts" rather than an exact deadline, because Google may show the snippet after the sale ends. Reuse one permanent sale URL and update the tags for each event.</p>
 <h3>Do meta descriptions help SEO rankings?</h3>
@@ -25426,6 +25430,10 @@ Description: Buy %title% online. %excerpt%</code></pre>
 <p>Ideally, but on a large store it isn't realistic to write every one by hand. Hand-write your top categories and best sellers, and use a template with the product name and short description for the rest. That's far better than empty or identical descriptions.</p>
 <h3>Should I write meta titles and descriptions in Hindi or other Indian languages?</h3>
 <p>Only for pages whose content is in that language. Google matches the snippet to the page, so a Hindi description on an English page tends to be ignored or rewritten. If you publish language versions, give each its own title and description.</p>
+<h3>What is the difference between a meta title and an H1?</h3>
+<p>The meta title shows in Google results and browser tabs; the H1 is the main heading on the page itself. They can match, but the meta title is usually shorter and includes the brand.</p>
+<h3>How do I change the meta title and description in WordPress?</h3>
+<p>With Yoast SEO or Rank Math installed, edit the page and scroll to the plugin's box below the editor (or open its sidebar panel), then fill in the SEO title and meta description fields and update the page.</p>
 `,
   },
   {
@@ -26130,6 +26138,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li>Open <strong>Settings &gt; Permalinks</strong> and check post addresses use the post name, not a number.</li>
   <li>Publish a test post, check it appears in your sitemap, then use <strong>URL Inspection</strong> in Search Console to request indexing.</li>
 </ol>
+
+<p>For new or changed pages, see <a href="/blog/get-website-indexed-google-faster/">how to get pages indexed by Google faster</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you need a blog added to a site built on another platform, when posts are not indexed, or when you want posts linked to service pages. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -27520,7 +27530,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
     title: 'UTM Tags Explained: What a UTM Tag Is, How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
     description: 'Build UTM links that GA4 reads correctly: the five parameters, lowercase naming rules and a ready template for WhatsApp, QR codes, Instagram and ads.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
     body: `
@@ -27528,7 +27538,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <p>Tags tell you which campaign sent a visitor; the page they land on decides whether they enquire. In my <a href="/landing-page-design/">landing page design</a> work, form submissions, WhatsApp clicks and phone taps are tracked as conversions in GA4, Google Ads and Meta Pixel and confirmed with test enquiries, so campaigns can be compared by leads, not clicks.</p>
 <p>Without tags, a lot of campaign traffic is invisible. Links tapped inside WhatsApp, email apps, PDFs and many social apps often arrive with no referrer at all, so GA4 files them under Direct, as if the visitor had typed your address.</p>
 
-<p><strong>Short answer:</strong> a UTM tag is one of these labels; tagging a link means adding three of them (source, medium, campaign) so GA4 can credit the visit to the right campaign instead of lumping it into Direct. Building a tagged link takes about a minute and costs nothing.</p>
+<blockquote><strong>Short answer:</strong> UTM tags are labels such as utm_source, utm_medium and utm_campaign added to a link so GA4 knows which campaign sent the visitor. UTM tagging means adding at least those three to every link you share outside your site, in lowercase with a fixed naming list, and never on links between your own pages.</blockquote>
 
 <h2>What a UTM-tagged link looks like</h2>
 <pre><code>https://example.com/diwali-offer/?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=diwali-2026&amp;utm_content=broadcast</code></pre>
@@ -27574,7 +27584,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
     <tr><td>Guest article or partner site</td><td>the partner's name</td><td>referral</td><td>guest-article</td></tr>
   </tbody>
 </table>
-<p>Tagging your Business Profile's website link keeps it inside Organic Search in GA4 while letting you separate profile visits from ordinary search clicks by the campaign name. For printed QR codes, the tag is what tells you whether the flyer worked; <a href="/blog/qr-codes-for-business-website/">QR codes for your business</a> covers where to point them and static versus dynamic codes.</p>
+<p>Tagging your Business Profile's website link keeps it inside Organic Search in GA4 while letting you separate profile visits from ordinary search clicks by the campaign name. For printed QR codes, the tag is what tells you whether the flyer worked; QR codes for your business covers where to point them and static versus dynamic codes.</p>
 <h3>Meta ads</h3>
 <p>In Meta Ads Manager, add your tags in the ad's URL parameters field rather than typing them into the website URL. Meta's dynamic parameters, at the time of writing, fill in names automatically:</p>
 <pre><code>utm_source=facebook&amp;utm_medium=paid_social&amp;utm_campaign={{campaign.name}}&amp;utm_content={{ad.name}}</code></pre>
@@ -27582,7 +27592,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 
 <h2>Where not to use UTM tags</h2>
 <ul>
-  <li><strong>Links between pages of your own site.</strong> A tagged banner or menu link overwrites the real source of the visit, so an enquiry that started from a Google search gets credited to your own banner. Track internal clicks with GA4 events instead; see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</li>
+  <li><strong>Links between pages of your own site.</strong> A tagged banner or menu link overwrites the real source of the visit, so an enquiry that started from a Google search gets credited to your own banner. Track internal clicks with GA4 events instead; see GA4 events explained.</li>
   <li><strong>Google Ads, when auto-tagging is on.</strong> Auto-tagging passes richer data to GA4 than manual tags, so leave it on and don't add UTMs to your Google Ads URLs unless you have a specific reason. <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a> covers the rest of that setup.</li>
   <li><strong>Anything personal.</strong> Never put names, phone numbers or email addresses in a UTM. Google's policies don't allow personal information to be sent to Analytics.</li>
 </ul>
@@ -27624,18 +27634,6 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 </ul>
 <p>For chats started from your site rather than links you send, see <a href="/blog/whatsapp-on-business-website/">adding WhatsApp to your business website</a>, which covers click tracking.</p>
 
-<h2>UTM tagging: a simple routine for your team</h2>
-<p>UTM tagging only works if everyone who shares links follows the same routine. For a small business, that usually means one owner of the sheet and four steps every time a campaign starts:</p>
-<ol>
-  <li><strong>Name the campaign once,</strong> before anything is shared, and add it to the sheet with the start date and the landing page.</li>
-  <li><strong>Build every link from the sheet,</strong> one row per place the link will appear, so WhatsApp, the newsletter and the flyer each get their own source or content value.</li>
-  <li><strong>Test each link on a phone</strong> and check the visit appears in GA4 Realtime before the campaign goes out.</li>
-  <li><strong>Review after a week</strong> in Traffic acquisition, then note what worked in the sheet so the next campaign starts from evidence.</li>
-</ol>
-<p>Agencies and freelancers posting on your behalf should use the same sheet; mixed naming from different people is the most common reason UTM reports become unreadable within a few months.</p>
-
-<p>To see which campaigns actually produce enquiries, you need a reliable conversion to report against. A <a href="/blog/thank-you-pages-forms/">lead form thank-you page that counts each enquiry once</a> gives you one.</p>
-
 <h2>Reading UTM data in GA4</h2>
 <ol>
   <li>Open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>.</li>
@@ -27644,26 +27642,18 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   <li>For more detail, such as campaign by landing page, build a free-form report under <strong>Explore</strong>.</li>
 </ol>
 <p>Before a campaign goes out, tap your own tagged link on your phone and check that the visit appears in the Realtime report or DebugView; standard reports can take a day or so to fill in. Then use the numbers to decide where effort goes; <a href="/blog/measure-website-roi/">measuring website ROI</a> shows how to put a rupee value on the enquiries each campaign brings.</p>
-<p>UTMs only cover clicks. Enquiries that arrive by phone or WhatsApp after someone saw a poster won't carry a tag, so two simple back-ups help. A pre-filled WhatsApp message that names the campaign shows where a chat started; <a href="/blog/call-tracking-small-business/">call and WhatsApp tracking</a> explains how. And a "how did you hear about us" question on the enquiry form, like the dropdown on <a href="/work/studio-agama-interiors/">Studio Agama Interiors'</a> form with options such as Google, Facebook ads, Instagram and word of mouth, catches what tags miss.</p>
+<p>UTMs only cover clicks. Enquiries that arrive by phone or WhatsApp after someone saw a poster won't carry a tag, so two simple back-ups help. A pre-filled WhatsApp message that names the campaign shows where a chat started; call and WhatsApp tracking explains how. And a "how did you hear about us" question on the enquiry form, like the dropdown on <a href="/work/studio-agama-interiors/">Studio Agama Interiors'</a> form with options such as Google, Facebook ads, Instagram and word of mouth, catches what tags miss.</p>
 
-<h2>Common UTM mistakes</h2>
-<ul>
-  <li>Tagging internal links, which corrupts your source data.</li>
-  <li>Mixing capitals and spellings, which splits one source into several rows.</li>
-  <li>Leaving out the medium, so visits show as (not set) or Unassigned.</li>
-  <li>Adding a second question mark to a link that already has one.</li>
-  <li>Pointing tags at a URL that redirects and drops the parameters.</li>
-  <li>Building links from memory instead of the spreadsheet, so naming drifts over a few months.</li>
-</ul>
-
-<h2>Quick check: are your tags working?</h2>
+<h2>How to build, test and fix a UTM-tagged link</h2>
 <ol>
-  <li>Build a tagged link with Google's <strong>Campaign URL Builder</strong> (ga-dev-tools.google), open it on your phone and check the page loads with the tags intact.</li>
-  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Realtime</strong> while you click it and check your source and medium appear.</li>
-  <li>In <strong>GA4</strong>, open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>, change the dimension to <strong>Session source / medium</strong> and look for misspelt or mixed-case versions of the same tag.</li>
+  <li>Start with the exact page URL you want people to land on, for example https://www.example.in/offer/.</li>
+  <li>Add <code>?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=diwali-2026</code>. If the URL already has a question mark, join the tags with <code>&amp;</code> instead.</li>
+  <li>Open the link in a private window and check the page loads and any redirect keeps the tags.</li>
+  <li>In GA4, open <strong>Reports &gt; Realtime</strong> and check that your visit shows the source and campaign you set.</li>
+  <li>Shorten the link only after testing, and record it in your UTM sheet so the team reuses the same names.</li>
 </ol>
-
-<p>For a full plan that uses these tags, see <a href="/blog/instagram-to-website-enquiries/">how to turn Instagram followers into website enquiries</a>.</p>
+<p>The common mistakes fall out of this routine: mixed case (WhatsApp and whatsapp become two sources), tags on internal links (which start a new session and overwrite the real source), redirects that strip the query string, and inventing medium names GA4 doesn't group, so traffic lands in Unassigned. To count the enquiries those visits produce, track a <a href="/blog/thank-you-pages-forms/">thank-you page</a> as a key event.</p>
+<p><strong>What I check on client sites:</strong> whether the main campaign links keep their tags through redirects, whether internal links carry UTM tags by mistake, and whether GA4's Traffic acquisition report shows clean, lowercase source and medium values.</p>
 
 <h2>When to get help</h2>
 <p>Get help when campaign traffic lands in "Unassigned", when tags are inconsistent across your team, or when you want to see which campaigns bring enquiries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -27681,6 +27671,10 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <p>Usually because the medium isn't one GA4's channel rules recognise, such as qr or whatsapp. Switch to a recognised medium where one fits, or create a custom channel group that names your own values.</p>
 <h3>How do I track WhatsApp traffic in GA4?</h3>
 <p>Add UTM tags to every link you send on WhatsApp, with a consistent source such as whatsapp, so those visits stop appearing as Direct. To track chats started from your website, use a click event on wa.me links and a pre-filled message naming the page or campaign.</p>
+<h3>What is UTM tagging?</h3>
+<p>UTM tagging is adding UTM parameters to a link before you share it, so analytics tools can credit the visit to the right source, medium and campaign instead of counting it as Direct.</p>
+<h3>Do UTM tags work with link shorteners and QR codes?</h3>
+<p>Yes, as long as you tag the full URL first and then shorten it or turn it into a QR code. Test the short link once to confirm the redirect keeps the tags.</p>
 `,
   },
   {
@@ -29085,11 +29079,12 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'WordPress Form Plugins Compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms Side by Side',
     description: 'WordPress form plugins compared: Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Forms on entries, spam, SMTP, uploads and logic.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'landing-page-design', 'elementor-developer'],
     body: `
 <p>Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Pro's form widget all handle a standard contact or quote form well. The real differences are whether entries are stored in the dashboard, which spam protection is built in, and whether conditional logic, file uploads, multi-step forms and integrations come free or in a paid plan. Choose by the forms your site actually needs, and whatever you pick, pair it with SMTP and spam protection, because those decide whether enquiries reach you.</p>
+<blockquote><strong>Short answer:</strong> For most business websites, Contact Form 7, WPForms, Gravity Forms, Fluent Forms and Elementor Pro Forms all handle a contact or quote form well. Choose by what you need: stored entries, built-in spam protection, conditional logic, file uploads or CRM integrations. Whatever you pick, add SMTP and spam protection, because they decide whether enquiries arrive.</blockquote>
 <p>Every site I build through <a href="/wordpress-website-development/">WordPress website development</a> includes contact forms and a WhatsApp button, tested before launch to make sure the emails arrive, and the form plugin is chosen to fit the site rather than out of habit. For forms on ad campaign pages, with conversion tracking on every submission, see <a href="/landing-page-design/">landing page design</a>.</p>
 <p>The plugins below are listed alphabetically, not ranked. Features and pricing change, so treat the details as correct at the time of writing and check each plugin's current plans before you decide.</p>
 
@@ -29134,7 +29129,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h3>Contact Form 7</h3>
 <p>Free and long-established. Forms are written with tags such as [text* your-name] rather than dragged into place, which developers often like and owners can find awkward. It doesn't store entries unless you add Flamingo, and by default it loads its scripts on every page, which a developer can limit. A sensible choice for simple contact forms on a site someone technical looks after.</p>
 <h3>Elementor Forms</h3>
-<p>Not a separate plugin, but the form widget in Elementor Pro. Its strength is design: the form matches the page without extra styling. It stores submissions, supports file uploads and step-by-step forms, and connects to common email tools. If your site already runs Elementor Pro, it avoids another plugin; if it doesn't, it isn't a reason on its own to buy Pro. <a href="/blog/elementor-pro-worth-it/">Is Elementor Pro worth it?</a> covers that decision.</p>
+<p>Not a separate plugin, but the form widget in Elementor Pro. Its strength is design: the form matches the page without extra styling. It stores submissions, supports file uploads and step-by-step forms, and connects to common email tools. If your site already runs Elementor Pro, it avoids another plugin; if it doesn't, it isn't a reason on its own to buy Pro. Is Elementor Pro worth it? covers that decision.</p>
 <h3>Fluent Forms</h3>
 <p>A drag-and-drop builder whose free version includes stored entries, conditional logic and several spam options, with file uploads, multi-step forms and more integrations in Pro at the time of writing. Worth a look if you want more than a basic form without paying.</p>
 <h3>Gravity Forms</h3>
@@ -29152,7 +29147,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>Store entries,</strong> so a failed email never means a lost lead.</li>
   <li><strong>Send a test enquiry from your phone</strong> after every plugin, hosting or email change.</li>
 </ol>
-<p><a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails?</a> walks through the SMTP setup step by step.</p>
+<p>WordPress not sending emails? walks through the SMTP setup step by step.</p>
 
 <h2>Integrations: CRM, Google Sheets and WhatsApp</h2>
 <p>An email notification is a doorbell, not a record of your leads. Most of these plugins can also send each entry to a CRM, a Google Sheet or an email list, either through their own add-ons or a webhook to an automation tool, and these connections are often a paid feature. If your team replies on WhatsApp, a thank-you message with a WhatsApp link, or a form that opens WhatsApp with the details already typed, keeps the conversation where your customers prefer it. <a href="/blog/connect-website-forms-to-crm/">Connecting WordPress forms to a CRM or Google Sheets</a> covers the options.</p>
@@ -29186,15 +29181,17 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Deactivate and delete the old plugin once you're sure nothing still uses it.</li>
 </ol>
 
-<h2>A note on custom forms</h2>
-<p>Not every site needs a plugin. This website, samverse.space, isn't built on WordPress: it's custom-coded and hosted on Hostinger, and its contact form uses a small PHP script on the server to email each enquiry, then opens WhatsApp with the same details typed in. Spam is handled by a hidden honeypot field, a simple addition question and a check that drops anything sent within seconds of the page loading. The <a href="/work/samverse/">Samverse case study</a> explains the setup. On a WordPress site, a well-configured plugin is usually the simpler choice.</p>
-
-<h2>Quick check: do your forms actually deliver?</h2>
-<ol>
-<li><strong>Submit a real test:</strong> fill in your contact form from a phone using a Gmail address and a real message. Note the time.</li>
-<li><strong>Check the entry and the email:</strong> open your form plugin's Entries screen (for example <em>WPForms, Entries</em> or <em>Contact, Flamingo</em> for Contact Form 7) and confirm the test is saved, then check the notification inbox and its spam folder.</li>
-<li><strong>Confirm SMTP:</strong> if the email is missing or in spam, install an SMTP plugin such as WP Mail SMTP and use its <em>Email Test</em> tab. Mail sent through your host's PHP mail often fails.</li>
-</ol>
+<h2>Form entries and privacy: what to set up</h2>
+<p>Every enquiry form collects personal data: names, phone numbers, email addresses and sometimes files. India's DPDP Act and general good practice mean you should know where that data goes and how long you keep it.</p>
+<ul>
+  <li><strong>Know where entries are stored.</strong> WPForms, Gravity Forms and Fluent Forms store entries in the database (WPForms only on paid plans); Contact Form 7 needs an add-on such as Flamingo; Elementor Pro has a Submissions screen.</li>
+  <li><strong>Collect only what you need.</strong> Drop fields you never use, such as full address on a simple enquiry form.</li>
+  <li><strong>Add a short consent line</strong> under the button, linking to your privacy policy.</li>
+  <li><strong>Delete old entries</strong> on a schedule, and limit who can see them with WordPress user roles.</li>
+  <li><strong>Protect file uploads</strong> by limiting file types and sizes.</li>
+</ul>
+<p>See <a href="/blog/dpdp-act-website-basics/">DPDP Act basics for websites</a> for the wider picture.</p>
+<p><strong>What I check on client sites:</strong> where entries are stored and who can see them, that each form sends a test email through SMTP to the right inbox, the spam protection in use, and that the privacy link under the form works.</p>
 
 <h2>When to get help</h2>
 <p>Get help when leads have gone missing, when you need conditional logic, payments or CRM syncing, or when your form plugin is slowing pages. <a href="/wordpress-website-development/">WordPress website development</a> sets up forms with SMTP and tests delivery, and <a href="/landing-page-design/">landing page design</a> covers lead forms for ads. <a href="/#contact">Get in touch</a> with the plugin you use and what happens when you submit a test.</p>
@@ -29210,6 +29207,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>No. The form widget is a Pro feature. On free Elementor, add a form plugin and place its form on the page with a shortcode or the plugin's own widget.</p>
 <h3>Will a form plugin slow my website down?</h3>
 <p>A single form plugin rarely makes a noticeable difference if it loads its scripts only on pages with forms. Check this after installing, and don't keep two form plugins active for the same job.</p>
+<h3>Which is the best contact form plugin for WordPress?</h3>
+<p>There's no single best. Contact Form 7 suits simple free forms, WPForms is the easiest to build with, Fluent Forms offers a lot free, Gravity Forms suits complex forms, and Elementor Pro Forms fit sites already built with Elementor Pro.</p>
+<h3>Do WordPress form plugins save entries?</h3>
+<p>WPForms (paid plans), Gravity Forms, Fluent Forms and Elementor Pro save entries in the dashboard. Contact Form 7 only sends emails unless you add an add-on such as Flamingo.</p>
 `,
   },
   {
@@ -30414,11 +30415,12 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Search Intent Explained: The Types of Intent, How to Read Them From Google and How to Match Your Pages',
     description: 'Search intent explained with examples: informational, navigational, commercial, transactional and local intent, how to read it from Google and match your pages.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
 <p>Search intent is the goal behind a search: whether the person wants to learn something, find a specific site, compare options, buy or hire, or find something nearby. Google ranks the type of page that best satisfies that goal, so matching intent (for example, a service page for "hire WordPress developer" and a guide for "how to speed up WordPress") matters more than how many times a keyword appears.</p>
+<blockquote><strong>Short answer:</strong> Search intent is the goal behind a search: to learn, to find a specific site, to compare options, to buy or hire, or to find something nearby. Google ranks the page type that best meets that goal, so check what already ranks and match it: a guide for "how to" searches, a service page for "hire" searches.</blockquote>
 <p>This guide explains the main types of search intent with examples, shows how to read intent from Google's results, and gives a practical check you can run before writing or rewriting any page.</p>
 
 <h2>The main types of search intent</h2>
@@ -30451,7 +30453,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <li><strong>Transactional</strong>: hire, buy, price, cost, packages, quote, services, company, agency</li>
 <li><strong>Local</strong>: near me, city or area names, "in Pune", "Mumbai"</li>
 </ul>
-<p>These are hints, not rules. "WordPress website cost India" looks transactional but often shows guides that explain cost, because searchers want to understand the range before contacting anyone. The results page is the final answer. <a href="/blog/keyword-research-small-business/">Keyword research for small businesses</a> shows how to collect these queries in the first place, and <a href="/blog/long-tail-keywords-explained/">long-tail keywords</a> explains why specific phrases are easier to match.</p>
+<p>These are hints, not rules. "WordPress website cost India" looks transactional but often shows guides that explain cost, because searchers want to understand the range before contacting anyone. The results page is the final answer. Keyword research for small businesses shows how to collect these queries in the first place, and <a href="/blog/long-tail-keywords-explained/">long-tail keywords</a> explains why specific phrases are easier to match.</p>
 
 <h2>Mixed and shifting intent</h2>
 <p>Some queries have mixed intent: results include guides and service pages together. In that case, the page that wins usually does both, such as a service page that explains the process and prices clearly, or a guide with an obvious route to hire help. Intent can also shift over time. A query that once showed blog posts may start showing videos or forum threads. Recheck important queries every few months, especially if rankings drop without any change on your side.</p>
@@ -30464,7 +30466,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <li><strong>Use the searcher's wording</strong> in the title, a heading and a FAQ question.</li>
 <li><strong>Offer the next step</strong> for the likely next intent: a guide reader may be ready to compare; a comparison reader may be ready to hire.</li>
 </ol>
-<p>For transactional pages, <a href="/blog/write-service-pages-that-convert/">writing service pages that convert</a> covers what buyers need to see.</p>
+<p>For transactional pages, writing service pages that convert covers what buyers need to see.</p>
 
 <h2>Worked example: one topic, three intents</h2>
 <p>Take WordPress speed. "Why is my WordPress site slow" is informational; the right page is a diagnostic guide such as <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow</a>. "Best caching plugin for WordPress" is commercial; the right page compares options with criteria. "WordPress speed optimisation service" is transactional; the right page is a service page such as <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> with scope, process and how to start. Trying to rank one page for all three usually means none ranks well.</p>
@@ -30485,19 +30487,13 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 </ul>
 
 <h2>Connect intents with internal links</h2>
-<p>Build a path between pages of different intent on the same topic. Guides link to comparisons and service pages; service pages link to supporting guides that answer objections. This helps readers move towards a decision and helps Google understand which page is the main one for each query. <a href="/blog/topic-clusters-pillar-pages/">Topic clusters and pillar pages</a> and <a href="/blog/internal-linking-explained/">internal linking explained</a> cover how to structure this. For local intent, the <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> explains how pages and your profile work together.</p>
+<p>Build a path between pages of different intent on the same topic. Guides link to comparisons and service pages; service pages link to supporting guides that answer objections. This helps readers move towards a decision and helps Google understand which page is the main one for each query. <a href="/blog/topic-clusters-pillar-pages/">Topic clusters and pillar pages</a> and internal linking explained cover how to structure this. For local intent, the local SEO guide for Indian small businesses explains how pages and your profile work together.</p>
 
 <h2>Fixing a page that targets the wrong intent</h2>
 <p>When a page ranks poorly because it serves the wrong intent, you have three options. <strong>Rework it</strong> into the page type Google is showing, for example turning a thin service page into a full guide if the results are all guides. <strong>Split it</strong>, keeping the service page for hiring intent and creating a separate guide for the informational queries. <strong>Merge it</strong>, if you have two pages fighting over the same intent: combine them into the stronger one and redirect the other. After any change, watch the page's queries in Search Console for several weeks before judging the result, as rankings take time to settle.</p>
 
 <h2>Intent across the buying journey</h2>
 <p>A typical buyer of a service moves through intents: first learning ("why is my website slow"), then comparing ("WordPress speed plugin vs developer"), then hiring ("WordPress speed optimisation service India"). Mapping your pages to these stages shows gaps. Many small business sites have only service pages, so they miss the earlier searches entirely; others have many blog posts and weak service pages, so readers never convert. A balanced site has a few strong service pages supported by guides and comparisons that link to them.</p>
-
-<h2>Intent and page titles</h2>
-<p>Your title is the first place a searcher judges intent match. For informational queries, promise the answer ("How Long Does SEO Take? What Happens Month by Month"). For commercial queries, promise the comparison and a verdict. For transactional queries, state the service, place and a reason to choose you. A title that clearly matches intent can earn clicks from a lower position than a vague title higher up.</p>
-
-<h2>Intent and AI answers in search</h2>
-<p>For simple informational questions, Google increasingly shows a direct answer or AI summary, so fewer people click through. Pages that win clicks for these queries offer depth the summary can't: worked examples, checklists, local detail and a clear next step. Commercial and transactional queries are still where business pages earn most of their enquiries, so give those pages the most care.</p>
 
 <h2>A quick intent check before you write any page</h2>
 <ol>
@@ -30509,12 +30505,22 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <li>Check you don't already have a page targeting the same intent.</li>
 </ol>
 
-<h2>Quick check: does your page match the intent?</h2>
-<ol>
-  <li>Search your target phrase on Google in a private window and note what ranks: guides, service pages, product pages or maps.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, filter one page under <strong>Pages</strong> and read its queries. Queries that do not fit the page suggest an intent mismatch.</li>
-  <li>Compare your page type with the top results. A service page will struggle where Google shows only how-to guides.</li>
-</ol>
+<h2>Search intent examples: query, intent and the page to build</h2>
+<table>
+  <thead><tr><th>Example search</th><th>Intent</th><th>Page that usually fits</th></tr></thead>
+  <tbody>
+    <tr><td>how to speed up wordpress</td><td>Informational</td><td>Step-by-step guide</td></tr>
+    <tr><td>what is a cdn</td><td>Informational</td><td>Short explainer with a definition near the top</td></tr>
+    <tr><td>wordpress vs shopify for small business</td><td>Commercial investigation</td><td>Comparison with a table and a clear recommendation</td></tr>
+    <tr><td>best theme for elementor</td><td>Commercial investigation</td><td>Comparison or list post</td></tr>
+    <tr><td>hire wordpress developer india</td><td>Transactional</td><td>Service page with scope, process and a contact form</td></tr>
+    <tr><td>website design cost india</td><td>Commercial, price-focused</td><td>Pricing guide with ranges and what changes the price</td></tr>
+    <tr><td>web designer near me</td><td>Local</td><td>Google Business Profile and a location page</td></tr>
+    <tr><td>samverse contact</td><td>Navigational</td><td>Contact page</td></tr>
+  </tbody>
+</table>
+<p>The same topic can need several pages: a guide to rank for the "how to" search, and a service page for people ready to hire, linked to each other.</p>
+<p><strong>What I check on client sites:</strong> the top five results for the main query before rewriting a page, whether our page type matches them, and the Search Console queries a page already gets, which often reveal a different intent than the one it was written for.</p>
 
 <h2>When to get help</h2>
 <p>Get help when pages rank for the wrong queries, when two pages compete for one search, or when you want existing pages audited for intent. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -30532,6 +30538,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Yes. Local searches with a city or "near me" show map results and service pages, so local businesses need clear location details, service pages and a complete Google Business Profile.</p>
 <h3>Why does my page rank for the wrong keywords?</h3>
 <p>Usually because the page's type or content matches a different intent from the one you wanted. Rework the page for its real intent, or create a new page for the intent you are missing.</p>
+<h3>What are some examples of search intent?</h3>
+<p>"How to fix a WordPress critical error" is informational, "WooCommerce vs Shopify" is commercial investigation, "hire Shopify developer" is transactional, and a brand name plus "login" is navigational.</p>
+<h3>How do I check search intent for a keyword for free?</h3>
+<p>Search the keyword in a private window and look at the top results: their page type, format and angle. Also note SERP features such as a map pack, shopping results or "People also ask", which signal the intent Google sees.</p>
 `,
   },
   {
@@ -30655,6 +30665,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>Categories can support clusters too; see <a href="/blog/category-tag-pages-seo/">WordPress categories and tags for SEO</a> for which archives to index.</p>
 
 <p>If a post in a cluster has no links pointing to it, it is an orphan; see <a href="/blog/orphan-pages-fix/">how to find orphan pages</a>.</p>
+
+<p>Choosing the right page type starts with <a href="/blog/search-intent-explained/">search intent</a>: what the searcher actually wants to do.</p>
 
 <h2>When to get help</h2>
 <p>Get help when blog posts do not link to the service they support, when posts overlap, or when you want a content plan built around what you sell. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -32317,6 +32329,8 @@ dig yourdomain.com +short</code></pre>
 
 <p>If the domain sits in a former developer's account, see <a href="/blog/regain-website-access-old-developer/">how to regain control from a previous developer</a>.</p>
 
+<p>If your domain and mailbox are on Hostinger, follow the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup</a> for DNS records and SMTP.</p>
+
 <h2>When to get help</h2>
 <p>Get help when email or the website could break during the move, when DNS records are not documented, or when the domain is in someone else's account. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -33949,11 +33963,12 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
     title: 'The Best Theme for Elementor: Hello Elementor, Astra, GeneratePress, Kadence and Blocksy Compared',
     description: 'Which theme works best with Elementor? Hello Elementor, Astra, GeneratePress, Kadence and Blocksy compared, plus which to choose and how to switch safely.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['elementor-developer', 'wordpress-speed-optimization', 'wordpress-website-development'],
     body: `
 <p>The best theme for Elementor is a lightweight, well-maintained one that matches how your site is built. If you have Elementor Pro and design the header, footer, blog templates and shop pages in its Theme Builder, Hello Elementor is usually the simplest choice, because it adds almost nothing of its own. If you use free Elementor, a theme such as Astra, GeneratePress, Kadence or Blocksy is better, because it handles the header, footer and blog layouts that free Elementor can't design.</p>
+<blockquote><strong>Short answer:</strong> The best theme for Elementor is a lightweight, well-maintained one that fits how you build. With Elementor Pro and its Theme Builder, Hello Elementor is usually best because it adds almost nothing. With free Elementor, choose Astra, GeneratePress, Kadence or Blocksy, which handle the header, footer and blog layouts free Elementor cannot design.</blockquote>
 <p>When I review a site for <a href="/elementor-developer/">Elementor development</a> work, the theme is one of the first things I check, alongside the Elementor and Pro versions and the add-ons, because it decides where headers, footers and templates live and how much code loads on every page. The client sites in my case studies are all built with Elementor, on themes from Hello Elementor and Astra to OceanWP and specialised directory and magazine themes. Features move between free and paid versions, so treat the details as correct at the time of writing.</p>
 
 <h2>Why the theme still matters with Elementor</h2>
@@ -33965,7 +33980,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   <li><strong>Elementor Pro with Theme Builder:</strong> Elementor draws everything, so the theme's own header builder and layout options go unused. A minimal theme such as Hello Elementor avoids paying for features twice in page weight.</li>
   <li><strong>Free Elementor:</strong> the theme draws the header, footer, blog and archive pages, so you want a theme with a good header builder and sensible blog layouts.</li>
 </ul>
-<p>If you're deciding whether Pro is needed at all, <a href="/blog/elementor-pro-worth-it/">is Elementor Pro worth it?</a> walks through it.</p>
+<p>If you're deciding whether Pro is needed at all, is Elementor Pro worth it? walks through it.</p>
 
 <h2>The popular lightweight themes compared</h2>
 <table>
@@ -33999,7 +34014,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   <li><strong>A WooCommerce store without Pro's WooCommerce Builder:</strong> Astra or Kadence, which style shop, product and cart pages well out of the box.</li>
   <li><strong>A developer-led build with custom code:</strong> GeneratePress or Hello Elementor, with a child theme.</li>
   <li><strong>Some pages in Elementor, some in the block editor:</strong> Kadence or Blocksy. If you're still choosing between builders, see <a href="/blog/elementor-vs-gutenberg/">Elementor vs Gutenberg</a>.</li>
-  <li><strong>A directory, magazine or other specialised site:</strong> a dedicated theme can be justified when it provides the listings, search or layouts you need. <a href="/blog/how-to-choose-wordpress-theme/">How to choose a WordPress theme</a> covers what to check.</li>
+  <li><strong>A directory, magazine or other specialised site:</strong> a dedicated theme can be justified when it provides the listings, search or layouts you need. How to choose a WordPress theme covers what to check.</li>
 </ol>
 
 <h2>Themes to avoid with Elementor</h2>
@@ -34009,11 +34024,6 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   <li><strong>Themes without recent updates,</strong> or with no stated compatibility with current Elementor and WordPress versions.</li>
   <li><strong>Nulled copies of premium themes,</strong> a common source of malware; see <a href="/blog/nulled-themes-plugins-risks/">the risks of nulled themes and plugins</a>.</li>
 </ul>
-
-<h2>Do you need a child theme?</h2>
-<p>Elementor stores your designs in the database, not in theme files, so a theme update won't wipe your Elementor pages. You need a child theme only if you add custom PHP in functions.php, override template files or add custom CSS to theme files. Hello Elementor has an official child theme for exactly this. <a href="/blog/wordpress-child-theme-explained/">WordPress child themes explained</a> shows how to create one, with code.</p>
-
-<p>If your edits do not appear after switching, regenerate the Elementor CSS files and clear the caches. <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing: every cause and fix</a> lists the order to check things in.</p>
 
 <h2>Switching themes on an existing Elementor site</h2>
 <p>Your Elementor page content survives a theme switch, but anything the old theme controlled does not: its header and footer, Customizer settings, menu locations, sidebar widgets, blog layouts, container widths and default fonts. To switch safely:</p>
@@ -34036,12 +34046,18 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 </ul>
 <p>If you are unsure, start with a lightweight theme and keep custom code in a child theme. For a build or a cleanup of an existing Elementor site, see my Elementor developer service, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a theme switch on staging.</p>
 
-<h2>Quick check: check your current theme</h2>
+<h2>How to set up Hello Elementor properly</h2>
+<p>Hello Elementor is fast because it does almost nothing, so you have to build the parts a normal theme provides.</p>
 <ol>
-  <li>In WordPress, open <strong>Appearance &gt; Themes</strong> and note the active theme, whether a child theme is used and its version.</li>
-  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on the homepage and a simple page.</li>
-  <li>Open <strong>Elementor &gt; System Info</strong> and check the PHP version and memory limit meet Elementor's requirements.</li>
+  <li>Install Hello Elementor (and a <a href="/blog/wordpress-child-theme-explained/">child theme</a> if anyone will add custom code), then activate Elementor and Elementor Pro.</li>
+  <li>Open a page in Elementor, then <strong>Site Settings</strong>: set global colours, global fonts, layout width and button styles once, so every page uses them.</li>
+  <li>Go to <strong>Templates &gt; Theme Builder</strong> and create a header and footer, set to show on the entire site.</li>
+  <li>Create single post, archive, search results and 404 templates; without them, Hello's very plain default layouts show.</li>
+  <li>On a store, add single product and product archive templates and test cart and checkout.</li>
+  <li>Test on a phone: menu, sticky header and footer links.</li>
 </ol>
+<p>If you don't have Elementor Pro, skip Hello and use one of the other themes instead.</p>
+<p><strong>What I check on client sites:</strong> which theme and version is active, whether a child theme is used, where the header and footer are built, and how many theme and add-on files load on a typical page.</p>
 
 <h2>When to get help</h2>
 <p>Get help when a heavy theme slows the site, when switching theme might break layouts, or when you need a clean Elementor build. <a href="/elementor-developer/">Elementor development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -34059,6 +34075,10 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p>The page content stays, but headers, footers, blog layouts and anything set in the old theme's Customizer will change. Test the switch on a staging copy before doing it on the live site.</p>
 <h3>Do I need a premium theme with Elementor?</h3>
 <p>Usually not. The free versions of the themes above cover most business sites. Paid add-ons are worth it only for specific features, and any licence should be bought in your business name.</p>
+<h3>Is Hello Elementor good for SEO?</h3>
+<p>Yes. It outputs clean, light markup, which suits speed and SEO. Rankings still depend on your content, headings, titles and page speed, which you set in Elementor and your SEO plugin.</p>
+<h3>Can I use Hello Elementor without Elementor Pro?</h3>
+<p>You can, but you can't design the header, footer or blog templates without Pro's Theme Builder, so the site looks very plain. With free Elementor, Astra, GeneratePress, Kadence or Blocksy is the better choice.</p>
 `,
   },
   {
@@ -35666,6 +35686,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <p>Look for PHP files in the uploads folder, where they should not exist, using SSH or your host's terminal:</p>
 <pre><code>find wp-content/uploads -name "*.php" -mtime -30</code></pre>
 <p>Any result is suspicious. Also check your hosting panel's mail logs or email queue for large batches sent to addresses you don't know, and change the passwords of every email account on the domain.</p>
+
+<p>If your site and mailbox are on Hostinger, follow the <a href="/blog/hostinger-business-email-setup/">Hostinger business email setup</a> for DNS records and SMTP.</p>
 
 <h2>When to get help</h2>
 <p>If your host has suspended email, you find scripts you didn't upload, or spam restarts after you delete files, have the site cleaned and the entry point closed. Tracing whether it is a script, a stolen password or a form is part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
@@ -37828,14 +37850,15 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   {
     slug: 'hostinger-business-email-setup',
     seoTitle: 'Hostinger Business Email Setup: Mailboxes, DNS and SMTP',
-    title: 'How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms',
+    title: "Hostinger Business Email Setup: Create Mailboxes on Your Own Domain, Add DNS Records, Phone Apps and WordPress Forms",
     description: 'Set up Hostinger business email on your domain: create mailboxes in hPanel, add MX, SPF, DKIM and DMARC, connect phones and Outlook, and fix form emails.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-maintenance', 'website-for-startups'],
     body: `
 <p>To set up business email on Hostinger, create the mailbox in hPanel's Emails section, make sure your domain's MX, SPF, DKIM and DMARC records point at Hostinger, then sign in through webmail or add the account to your phone or Outlook using IMAP and SMTP. If your website runs on WordPress, send its form emails through that mailbox with an SMTP plugin, so enquiries reach your inbox rather than spam.</p>
+<blockquote><strong>Short answer:</strong> For Hostinger business email setup, create the mailbox in hPanel's Emails section, check that your domain's MX, SPF, DKIM and DMARC records point to Hostinger, then use webmail or add the account to your phone with IMAP (port 993) and SMTP (port 465). Send WordPress form emails through the mailbox with an SMTP plugin.</blockquote>
 <p>An address like info@yourbusiness.in looks more trustworthy than a Gmail address, but only if mail actually arrives. On my <a href="/wordpress-website-development/">WordPress website development</a> projects, forms are tested before launch to make sure their emails arrive, and a mailbox with missing DNS records is one of the common reasons they don't. Hostinger changes its plans, limits and menu names from time to time, so treat the labels below as a guide at the time of writing and check hPanel for what your plan includes.</p>
 
 <h2>Before you start</h2>
@@ -37888,7 +37911,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li><strong>Old MX records left behind</strong> from a previous provider, so some mail goes to the old server.</li>
   <li><strong>Skipping DMARC.</strong> Start with p=none to collect reports, then tighten it once you are sure every legitimate sender passes.</li>
 </ul>
-<p>DNS changes can take from minutes to a few hours to spread, occasionally longer. <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does in more detail.</p>
+<p>DNS changes can take from minutes to a few hours to spread, occasionally longer. SPF, DKIM and DMARC explained covers what each record does in more detail.</p>
 
 <h2>Step 3: Check that mail flows both ways</h2>
 <ol>
@@ -37926,7 +37949,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>In your form plugin, put the visitor's email in the <strong>Reply-To</strong> field, not the From field, so you can reply directly.</li>
   <li>Send the plugin's test email, then submit your real contact form and check the inbox.</li>
 </ol>
-<p>Mailboxes have sending limits, so a busy store sending order emails may need a transactional email service instead. <a href="/blog/wordpress-not-sending-emails-smtp/">Fixing WordPress emails with SMTP</a> covers that choice, and <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a> covers the problems that aren't about email.</p>
+<p>Mailboxes have sending limits, so a busy store sending order emails may need a transactional email service instead. Fixing WordPress emails with SMTP covers that choice, and <a href="/blog/contact-form-not-getting-enquiries/">why contact forms stop getting enquiries</a> covers the problems that aren't about email.</p>
 
 <p>If the site itself feels sluggish on the same plan, work through <a href="/blog/hostinger-website-slow-fix/">how to fix a slow Hostinger website</a> before deciding to move.</p>
 
@@ -37948,12 +37971,19 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>If customers report receiving spam "from you", act quickly; see <a href="/blog/wordpress-site-sending-spam-emails/">hosting accounts sending spam emails</a>.</li>
 </ul>
 
-<h2>Quick check: will your business email be delivered?</h2>
-<ol>
-<li><strong>Check MX records:</strong> run <code>nslookup -type=mx yourdomain.com</code>. The results should match the mail servers shown in hPanel under <em>Emails</em>, then your domain's DNS details.</li>
-<li><strong>Check SPF and DKIM:</strong> in hPanel <em>Domains, DNS / Nameservers</em>, look for a TXT record starting <code>v=spf1</code> and the DKIM records Hostinger lists. Only one SPF record should exist.</li>
-<li><strong>Send a test:</strong> send an email from your new address to a Gmail account, open it, choose <em>Show original</em> and confirm SPF, DKIM and DMARC say PASS.</li>
-</ol>
+<h2>Hostinger email not working? Common problems and fixes</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Usual cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Not receiving any email</td><td>MX records point to an old provider, or DNS is managed at Cloudflare or the registrar and was never updated</td><td>Add Hostinger's MX records where your DNS is actually managed and remove the old ones</td></tr>
+    <tr><td>Phone or Outlook won't send</td><td>Wrong SMTP server, port or encryption, or authentication switched off</td><td>Use smtp.hostinger.com, port 465, SSL/TLS, and the full email address as the username</td></tr>
+    <tr><td>"Authentication failed"</td><td>Wrong password, or only the part before @ entered as the username</td><td>Reset the mailbox password in hPanel and use the full address</td></tr>
+    <tr><td>Emails land in Gmail spam</td><td>Missing SPF or DKIM, or no DMARC record</td><td>Add the records shown in hPanel and test with a mail tester</td></tr>
+    <tr><td>Website form emails not arriving</td><td>WordPress sends with PHP mail, not your mailbox</td><td>Set up an SMTP plugin with the mailbox and send a test</td></tr>
+  </tbody>
+</table>
+<p>DNS changes can take a few hours to apply, so wait and test again before changing more settings.</p>
+<p><strong>What I check on client sites:</strong> the MX, SPF, DKIM and DMARC records at the actual DNS host, a test message from the website form to Gmail, and a reply from the mailbox to confirm both directions work.</p>
 
 <h2>When to get help</h2>
 <p>Get help when emails land in spam, when your website forms send from the wrong address, or when you are moving mailboxes from another provider. <a href="/wordpress-website-development/">WordPress website development</a> includes email and SMTP setup for forms, <a href="/wordpress-maintenance/">WordPress maintenance</a> covers delivery problems later, and <a href="/website-for-startups/">startup websites</a> bundle domain and email setup. <a href="/#contact">Get in touch</a> with your domain.</p>
@@ -37969,20 +37999,24 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
 <p>Yes. Add it as an "Other" account over IMAP in the Gmail app on Android or iPhone, and you can read and send as your business address alongside your personal Gmail.</p>
 <h3>Can my website be on Hostinger and my email on Google Workspace?</h3>
 <p>Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too.</p>
+<h3>How do I set up Hostinger email on my phone?</h3>
+<p>Add a new account in the Gmail or Mail app, choose IMAP, enter your full email address and password, then imap.hostinger.com on port 993 for incoming and smtp.hostinger.com on port 465 for outgoing, both with SSL/TLS.</p>
+<h3>Why can I receive but not send email on Hostinger?</h3>
+<p>Usually the outgoing (SMTP) settings are wrong: check the server is smtp.hostinger.com, the port is 465 with SSL/TLS, authentication is on and the username is your full email address.</p>
 `,
   },
   {
     slug: 'fix-wordpress-critical-error',
     seoTitle: 'There Has Been a Critical Error on This Website: Fix It',
-    title: 'WordPress Fatal Error: How to Fix "There Has Been a Critical Error on This Website", Step by Step',
+    title: "WordPress Critical Error (Fatal Error): How to Fix \"There Has Been a Critical Error on This Website\", Step by Step",
     description: 'Fix "There has been a critical error on this website" in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.',
     date: '2026-09-28',
-    updated: '2026-11-09',
+    updated: "2026-11-10",
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
 <p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, theme or PHP version change, so WordPress stopped loading the page. To fix it, use the recovery mode link in the email WordPress sends to the admin address to deactivate the plugin or theme it names, or, if no email arrives, read debug.log or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
-<p><strong>Short answer:</strong> the WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts, products and orders are in the database and are almost always untouched. Work through the steps below in order. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
+<blockquote><strong>Short answer:</strong> The WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts and orders are in the database and are almost always untouched. Use the recovery email, read debug.log, then disable the plugin or theme the error names.</blockquote>
 
 <h2>What the critical error actually means</h2>
 <p>Since version 5.2, WordPress has a feature called fatal error protection. When a plugin, theme or custom code triggers a PHP fatal error, WordPress catches it and shows a short message instead of a blank screen. Visitors see "There has been a critical error on this website", usually with a link to WordPress's troubleshooting guide. If you're logged in or on the admin side, it adds "Please check your site admin email inbox for instructions."</p>
@@ -38018,7 +38052,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>Go to Plugins (or Appearance &gt; Themes) and deactivate the extension named in the email.</li>
   <li>Click "Exit Recovery Mode" in the admin bar and check the site in a private window.</li>
 </ol>
-<p>The link expires after a while, so use it promptly. If the email never arrives, the admin address may be old or a former developer's, the message may be in spam, or the site may not send email reliably; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress emails with SMTP</a>. A line in wp-config.php can send future recovery emails to a different address:</p>
+<p>The link expires after a while, so use it promptly. If the email never arrives, the admin address may be old or a former developer's, the message may be in spam, or the site may not send email reliably; see fixing WordPress emails with SMTP. A line in wp-config.php can send future recovery emails to a different address:</p>
 <pre><code>define( 'RECOVERY_MODE_EMAIL', 'you@yourdomain.com' );</code></pre>
 
 <figure class="step-shot"><img src="/assets/blog/fix-wordpress-critical-error-step-1.svg" alt="Fix WordPress critical error: recovery mode Plugins screen with a plugin paused during recovery mode" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: From the recovery mode link, open Plugins, deactivate the paused plugin, then click Exit Recovery Mode.</figcaption></figure>
@@ -38072,45 +38106,34 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>For the full set of memory fixes, see <a href="/blog/wordpress-memory-limit-errors/">how to fix "Allowed memory size exhausted" errors</a>.</p>
 
 <h2>Step 6: Restore a backup if you can't find the cause</h2>
-<p>If the site needs to be online and you can't pin down the cause quickly, restore the latest backup taken before the error started, then investigate on a staging copy. On a WooCommerce store, a full restore also removes orders placed since that backup, so restore the files only or roll back the single plugin where you can. The <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a> covers both methods.</p>
+<p>If the site needs to be online and you can't pin down the cause quickly, restore the latest backup taken before the error started, then investigate on a staging copy. On a WooCommerce store, a full restore also removes orders placed since that backup, so restore the files only or roll back the single plugin where you can. The backup and restore guide covers both methods.</p>
 
-<h2>Once you're back in: use Site Health</h2>
-<p>Tools &gt; Site Health lists critical issues such as an outdated PHP version, missing PHP extensions or failed scheduled events. For conflicts that are hard to reproduce, the free Health Check &amp; Troubleshooting plugin can disable plugins and switch theme for your login only, while visitors see the normal site. If the log shows files you don't recognise, check the <a href="/blog/signs-wordpress-site-hacked/">signs of a hacked WordPress site</a> before reactivating everything.</p>
-
-<p>When the error only appears with certain plugins active together, the cause is a clash rather than one bad plugin; see how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a>.</p>
-
-<h2>How to stop it happening again</h2>
-<ul>
-  <li>Back up before every update and test big updates on staging; <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a> has the full routine</li>
-  <li>Keep PHP on a supported version, and replace plugins that haven't been updated in years</li>
-  <li>Don't edit theme files in the dashboard's file editor; one typo can take the site down</li>
-  <li>Make sure the admin email is one somebody actually reads</li>
-</ul>
-
-<h2>Quick check: once the site is back</h2>
+<h2>After the fix: a short check, and how to stop it coming back</h2>
 <ol>
-  <li>In WordPress, open <strong>Tools &gt; Site Health</strong> and check the PHP version and any critical issues.</li>
-  <li>Check <strong>Plugins &gt; Installed Plugins</strong> for the plugin that failed and look for an update or a replacement.</li>
-  <li>Turn off <strong>WP_DEBUG_DISPLAY</strong> in wp-config.php so errors never show to visitors.</li>
+  <li>Log in to wp-admin and open <strong>Tools &gt; Site Health</strong>. Fix anything under "Critical issues", such as an outdated PHP version or a failed loopback request.</li>
+  <li>Open the homepage, a service page, a blog post, the contact form and, on a store, the cart and checkout. Submit one test enquiry or order.</li>
+  <li>Check <code>wp-content/debug.log</code> again for new fatal errors, then set <code>WP_DEBUG</code> back to false so the log stops growing.</li>
+  <li>Update the plugin that caused the error, or replace it if it hasn't been updated for a long time.</li>
+  <li>From now on, update plugins one at a time, test PHP upgrades on a staging copy first, and keep a backup taken just before each update.</li>
 </ol>
+<p><strong>What I check on client sites:</strong> the exact line in debug.log, the plugin and PHP versions involved, whether a backup from before the error exists, and whether the same plugin causes problems on staging.</p>
 
 <h2>When to get help</h2>
-<p>Get help if the error returns after every update, the log points to WordPress core files or files you don't recognise, you have no recent backup, or it's a store losing orders while it's down. Switching PHP versions or reinstalling plugins at random on a live store usually makes the cause harder to find.</p>
-<p>If your site is showing it now, or you'd rather not face it again, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages and forms afterwards, and fix or roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Get help if the error returns after every update, the log points to core files or files you don't recognise, you have no recent backup, or it's a store losing orders. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages afterwards and roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
-<h3>What is a WordPress fatal error?</h3>
-<p>An error in PHP code that stops the page from loading, such as a call to a function that no longer exists or running out of memory. Since WordPress 5.2, visitors see the critical error message instead of a blank screen or raw error text.</p>
 <h3>Is my content lost when WordPress shows a critical error?</h3>
 <p>Almost never. The error comes from PHP code, not the database. Once the faulty code is disabled or fixed, the content reappears exactly as it was.</p>
-<h3>Why didn't I get the recovery mode email?</h3>
-<p>Usually because the administration email in Settings &gt; General is out of date, the email went to spam, or the site can't send email reliably. Setting up SMTP fixes the last one. In the meantime, read debug.log or disable plugins over File Manager instead.</p>
 <h3>Why does the critical error appear after updating WordPress or PHP?</h3>
 <p>Because an old plugin or theme uses code the new version no longer supports, or two updated plugins now clash. The fix is to identify that plugin from the email or log, then update, roll back or replace it.</p>
 <h3>The critical error only shows in wp-admin or on one page. Why?</h3>
 <p>The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible.</p>
 <h3>Can a hack cause "There has been a critical error"?</h3>
 <p>Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it; see <a href="/wordpress-malware-removal/">hacked site repair</a>.</p>
+<h3>How do I fix the WordPress critical error without access to wp-admin?</h3>
+<p>Use the recovery mode link from the admin email if it arrived. If not, open File Manager or SFTP, rename wp-content/plugins to plugins-off to disable every plugin, then rename it back and reactivate plugins one by one.</p>
+<h3>How do I find which plugin is causing the WordPress critical error?</h3>
+<p>Turn on WP_DEBUG_LOG and open wp-content/debug.log. The fatal error line includes a file path such as /wp-content/plugins/plugin-name/, which names the plugin or theme that crashed.</p>
 `,
   },
   {
@@ -38938,6 +38961,8 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <li><strong>Back up and stage:</strong> take a full backup (files and database) and, if your host offers it, create a staging copy from the hosting panel. Update there first and click through key pages.</li>
 </ol>
 
+<p>If the site shows "There has been a critical error on this website" instead, follow <a href="/blog/fix-wordpress-critical-error/">how to fix the WordPress critical error</a> step by step.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the theme is years behind, when its bundled plugins such as a slider or page builder also need updates, or when you can't tell whether files were edited. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers staged updates and testing, <a href="/website-redesign/">website redesign</a> helps when the theme is no longer supported, and <a href="/wordpress-malware-removal/">malware removal</a> handles sites infected through old theme code. <a href="/#contact">Get in touch</a> with the theme name and version.</p>
 
@@ -39121,11 +39146,12 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
     title: 'Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It\'s Built',
     description: 'Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-developer-for-agencies'],
     body: `
 <p>A custom WordPress plugin is code written for your site to do one job your business needs: a quote calculator, dealer pricing in WooCommerce, or syncing enquiries with your CRM. It's worth building when no reputable plugin does the job properly, when you're stacking several plugins to get one feature, or when WordPress has to talk to your other systems. For common needs such as SEO, forms and backups, an established plugin is almost always the better choice.</p>
+<blockquote><strong>Short answer:</strong> Custom WordPress plugin development means writing code for your site to do one job your business needs, such as a quote calculator, dealer pricing or a CRM sync. It is worth it when no reputable plugin does the job, when you are stacking several plugins for one feature, or when WordPress must connect to your other systems.</blockquote>
 <p>This guide covers when a bespoke plugin makes sense, real examples, how I build them, what a good one looks like under the hood, and what affects the cost. If you already know what you need, you can <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a> and get a written scope and fixed quote before any work starts.</p>
 
 <h2>Custom plugin, existing plugin or code snippet?</h2>
@@ -39139,7 +39165,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
     <tr><td>Custom theme code</td><td>Design and layout only</td><td>Features built into a theme disappear when the theme changes</td></tr>
   </tbody>
 </table>
-<p>That last row is a mistake I often find when taking over sites: booking logic or custom fields built into the theme's functions.php, so a redesign means rebuilding the feature. Functionality belongs in a plugin; design belongs in the theme. There's more on this decision in <a href="/blog/plugin-vs-custom-code-wordpress/">plugin or custom code</a>.</p>
+<p>That last row is a mistake I often find when taking over sites: booking logic or custom fields built into the theme's functions.php, so a redesign means rebuilding the feature. Functionality belongs in a plugin; design belongs in the theme. There's more on this decision in plugin or custom code.</p>
 
 <h2>When a custom plugin makes sense</h2>
 <ul>
@@ -39154,7 +39180,7 @@ diff -rq wp-content/themes/yourtheme ~/fresh-copy/yourtheme</code></pre>
 <h2>Examples of custom WordPress plugins</h2>
 <p>These are the kinds of bespoke plugins businesses most often need:</p>
 <ul>
-  <li><strong>Calculators and quote tools:</strong> price estimators, EMI, savings or material calculators that capture leads; see <a href="/blog/website-calculators-lead-generation/">website calculators for lead generation</a></li>
+  <li><strong>Calculators and quote tools:</strong> price estimators, EMI, savings or material calculators that capture leads; see website calculators for lead generation</li>
   <li><strong>Integrations:</strong> sending enquiries to a CRM, pushing WooCommerce orders to accounting software, or syncing stock with an inventory system, usually through each system's API and the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a></li>
   <li><strong>WooCommerce custom pricing:</strong> dealer or wholesale prices by user role, quantity tiers, customer-specific price lists and minimum order quantities</li>
   <li><strong>Checkout and shipping rules:</strong> COD only for certain pincodes or order values, extra checkout fields, custom delivery slots</li>
@@ -39219,28 +39245,25 @@ function acme_dealer_price( $price, $product ) {
   <li><strong>Edge cases and data volume:</strong> handling a thousand products or a slow API takes more care than a handful</li>
   <li><strong>Building from scratch vs extending:</strong> an add-on for a plugin you already use is often far cheaper than a standalone plugin</li>
 </ul>
-<p>To keep costs down, build the core feature first and add extras once it's in use. A clear brief gets a clearer quote; the <a href="/blog/website-brief-template/">website brief template</a> works for plugin work too.</p>
+<p>To keep costs down, build the core feature first and add extras once it's in use. A clear brief gets a clearer quote; the website brief template works for plugin work too.</p>
 
 <h2>Ownership and maintenance</h2>
 <p>Custom code should be yours. Before work starts, agree that you'll receive the full source code, ideally in a Git repository you control, and that the plugin isn't tied to the developer's licence server or account. WordPress plugins are generally distributed under the GPL, so there's no reason a developer should lock you out of code you paid for.</p>
 <p>Plan for upkeep too. WordPress, WooCommerce and PHP all change, and a custom plugin occasionally needs updating to keep up. A well-written plugin built on standard hooks needs far less of this than one that works around WordPress instead of with it.</p>
 
-<h2>Questions to ask a custom plugin developer</h2>
-<ol>
-  <li>Is there an existing plugin that does most of this, and why not use it?</li>
-  <li>Will the code be in version control, and will I get the full source?</li>
-  <li>How will you test it, and on what: staging or my live site?</li>
-  <li>How do you handle security: sanitising, escaping, nonces and permissions?</li>
-  <li>What happens when WordPress, WooCommerce or PHP has a major update?</li>
-  <li>Can you show me a plugin or feature you've built before?</li>
-</ol>
-
-<h2>Quick check: do you really need a custom plugin?</h2>
-<ol>
-<li><strong>Search the plugin directory:</strong> go to <em>Plugins, Add New</em> and search for the feature. Check the plugins' active installs and last updated date.</li>
-<li><strong>Check for code snippets:</strong> look in your theme's <code>functions.php</code> or a code snippets plugin for custom code that could belong in a plugin.</li>
-<li><strong>List requirements:</strong> write down who uses the feature, what data it stores and what it connects to. This decides whether a plugin, a snippet or a custom build fits.</li>
-</ol>
+<h2>What to put in a custom plugin brief</h2>
+<p>A clear brief gets you an accurate quote and fewer surprises. Include:</p>
+<ul>
+  <li><strong>The job in one sentence</strong>, for example "dealers see their own prices after logging in".</li>
+  <li><strong>Who uses it</strong>: visitors, logged-in customers, staff or admins, and what each can see or change.</li>
+  <li><strong>Inputs and outputs</strong>: what data goes in, where it is stored, what shows on screen or is sent by email.</li>
+  <li><strong>Other systems</strong>: CRM, ERP, payment gateway or courier, with links to their API documentation if you have them.</li>
+  <li><strong>Plugins it must work with</strong>, such as WooCommerce, your form plugin or your page builder.</li>
+  <li><strong>Examples</strong>: screenshots or links to similar features you like.</li>
+  <li><strong>What happens later</strong>: who maintains it, and whether you need the code in your own repository.</li>
+</ul>
+<p>If you can't fill this in yet, a short paid discovery call or written scope is usually cheaper than building the wrong thing.</p>
+<p><strong>What I check on client sites:</strong> whether an existing plugin or a small snippet already does the job, which hooks and WooCommerce functions the feature needs, and how it will behave when WordPress, PHP or WooCommerce is updated.</p>
 
 <h2>When to get help</h2>
 <p>Get help when no plugin does what you need, when custom code sits in your theme and would be lost on update, or when you need WordPress connected to another system. <a href="/wordpress-website-development/">WordPress website development</a> covers custom plugins, <a href="/woocommerce-developer/">WooCommerce development</a> covers store extensions, and <a href="/wordpress-developer-for-agencies/">agency development</a> covers white-label work. <a href="/#contact">Get in touch</a> with a short description of the feature.</p>
@@ -39258,6 +39281,10 @@ function acme_dealer_price( $price, $product ) {
 <p>Yes. Dealer and wholesale pricing by user role, quantity discounts, customer-specific price lists and minimum order quantities are common requests. First check whether an established pricing plugin covers your rules; if it gets close, a small add-on can be cheaper than building from scratch.</p>
 <h3>Do you build bespoke plugins for clients outside India?</h3>
 <p>Yes. I work with clients and agencies in other countries over WhatsApp, email and video calls, and the process is the same: a written scope, a fixed quote, staging, then launch.</p>
+<h3>How long does it take to build a custom WordPress plugin?</h3>
+<p>It depends on scope: a small feature can take days, while a plugin with integrations, admin screens and testing takes weeks. A written scope gives you a firmer timeline before work starts.</p>
+<h3>Is a custom plugin better than putting code in functions.php?</h3>
+<p>For anything beyond a small tweak, yes. A plugin keeps the feature working when you change or update the theme, and can be switched off cleanly. functions.php code belongs to the theme and disappears if the theme changes.</p>
 `,
   },
   {
@@ -39382,6 +39409,8 @@ add_action( 'wp_enqueue_scripts', function () {
 <li><strong>Check for edits:</strong> open <em>Appearance, Theme File Editor</em> (or the theme folder via your file manager) and look for custom code in <code>functions.php</code> or <code>style.css</code> of the parent theme. Those edits will be lost on update.</li>
 <li><strong>Check where CSS lives:</strong> look in <em>Appearance, Customize, Additional CSS</em>. CSS saved there survives theme updates, so small style tweaks may not need a child theme at all.</li>
 </ol>
+
+<p>The theme under Elementor matters as well; see <a href="/blog/best-theme-for-elementor/">the best theme for Elementor</a> compared.</p>
 
 <h2>When to get help</h2>
 <p>Get help when someone has edited the parent theme directly, when you need template changes beyond CSS, or when switching to a child theme might reset your Customizer settings. <a href="/wordpress-website-development/">WordPress website development</a> covers clean child theme setup, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps theme updates safe, and <a href="/elementor-developer/">Elementor development</a> helps with page-builder themes. <a href="/#contact">Get in touch</a> with your theme name.</p>
@@ -39633,6 +39662,8 @@ add_action( 'wp_enqueue_scripts', function () {
   <li>Write down the fields editors need and who will edit them, so the block is built for real use.</li>
 </ol>
 
+<p>Integrations like this usually run through the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a>, explained in plain English.</p>
+
 <h2>When to get help</h2>
 <p>Get help when patterns and core blocks are not enough, when clients break layouts, or when you need blocks built to a design. <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -39780,6 +39811,10 @@ add_action( 'init', function () {
   <li>Check <strong>Plugins &gt; Installed Plugins</strong> for ACF or a similar fields plugin already in use.</li>
   <li>After adding a post type, open <strong>Settings &gt; Permalinks</strong> and click Save, then check the new addresses load without 404 errors.</li>
 </ol>
+
+<p>Integrations like this usually run through the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a>, explained in plain English.</p>
+
+<p>When no existing plugin fits, <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains when bespoke code is worth it.</p>
 
 <h2>When to get help</h2>
 <p>Get help when content is forced into posts and pages, when fields are inconsistent, or when you need custom listings and templates. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -44290,6 +44325,8 @@ add_action( 'after_setup_theme', function () {
   <li>Search one of those queries on Google and check whether a page like yours ranks, or whether a different type of page is needed.</li>
 </ol>
 
+<p>Choosing the right page type starts with <a href="/blog/search-intent-explained/">search intent</a>: what the searcher actually wants to do.</p>
+
 <h2>When to get help</h2>
 <p>Get help when long-tail queries land on the wrong page, when you need new sections or pages matched to them, or when you are not sure which to target. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -44551,6 +44588,8 @@ add_action( 'after_setup_theme', function () {
   <li>In WordPress, open <strong>Media &gt; Library</strong>, switch to list view and check that key images have meaningful alt text.</li>
   <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, change <strong>Search type</strong> to <strong>Image</strong> and see which pages get image impressions.</li>
 </ol>
+
+<p>For the wording itself, see <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a> that get clicks.</p>
 
 <h2>When to get help</h2>
 <p>Get help when images slow the site, when hundreds of products lack alt text, or when image search impressions never turn into visits. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45208,6 +45247,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 
 <p>Review your own links the same way; see <a href="/blog/backlink-audit-disavow/">toxic backlink audit and when to disavow</a>.</p>
 
+<p>Choosing the right page type starts with <a href="/blog/search-intent-explained/">search intent</a>: what the searcher actually wants to do.</p>
+
 <h2>When to get help</h2>
 <p>Get help when competitors outrank you and you cannot see why, or when you want the gaps turned into a prioritised plan. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -45462,6 +45503,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Open each branch page and check it has a unique address, phone, hours, map and directions, written as text.</li>
   <li>Test a branch page in the <strong>Rich Results Test</strong> (search.google.com/test/rich-results) and check LocalBusiness markup matches the branch.</li>
 </ol>
+
+<p>If you add a map to the contact page, use <a href="/blog/google-maps-on-website/">a Google Maps embed that does not slow the page down</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when branch pages are copies, when profiles link to the wrong page, or when you need one template and schema set up for every branch. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45722,6 +45765,10 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Export the lists, remove redirects and noindexed URLs, and decide for each remaining page: link, merge, redirect or remove.</li>
 </ol>
 <p>The free version crawls up to 500 URLs, enough for most small business sites.</p>
+
+<p>Also check that your <a href="/blog/robots-txt-explained/">WordPress robots.txt</a> is not blocking URLs you want Google to crawl.</p>
+
+<p>When a URL moves for good, a <a href="/blog/301-vs-302-redirects/">301 redirect</a> sends visitors and search engines to the new address.</p>
 
 <h2>When to get help</h2>
 <p>Get help when hundreds of pages have no internal links, when old pages should be merged or redirected, or when site structure needs rethinking. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -46140,6 +46187,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
 <p>Pass the UTM source into a hidden form field so each lead in the CRM shows where it came from; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
 
+<p>Integrations like this usually run through the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a>, explained in plain English.</p>
+
 <h2>When to get help</h2>
 <p>Get help when leads go missing between the form and the CRM, when fields map to the wrong place, or when you need a custom integration. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -46420,6 +46469,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 </ol>
 
 <p>Instagram followers can feed the same WhatsApp chats; see <a href="/blog/instagram-to-website-enquiries/">Instagram to website enquiries</a>.</p>
+
+<p>To see which shared links actually bring enquiries, add <a href="/blog/utm-tags-explained/">UTM tags</a> to every link you post outside the site.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you want WhatsApp chats tracked as leads in GA4, a product catalogue connected to your store, or a landing page built for WhatsApp ads. A <a href="/landing-page-design/">landing page</a> can send ad visitors straight to WhatsApp with tracking, a <a href="/woocommerce-developer/">WooCommerce store</a> can link orders to WhatsApp, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the website side. <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
@@ -47229,14 +47280,15 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   {
     slug: 'google-ads-conversion-tracking-setup',
     seoTitle: 'Google Ads Conversion Tracking for WordPress and WooCommerce',
-    title: 'Google Ads Conversion Tracking on WordPress and WooCommerce: Forms, Calls and Purchases',
+    title: "Google Ads Conversion Tracking Setup on WordPress and WooCommerce: Forms, Calls and Purchases",
     description: 'Set up Google Ads conversion tracking on WordPress and WooCommerce: track forms, calls, WhatsApp clicks and purchases with order value, then test each one.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Growth',
     related: ['landing-page-design', 'woocommerce-developer'],
     body: `
 <p>Google Ads conversion tracking on WordPress and WooCommerce tells Google which clicks turned into enquiries, calls or sales, so you can see what your ad spend actually produces and let bidding optimise for real results. To set it up, decide which actions count, send them to Google Ads either through the Google tag or by importing GA4 key events, and test each one before you spend more.</p>
+<blockquote><strong>Short answer:</strong> To set up Google Ads conversion tracking on WordPress, decide which actions count (form submissions, calls, WhatsApp clicks, purchases), then send them to Google Ads with the Google tag or by importing GA4 key events. Set the right count and value for each, mark only real leads as primary, and test every conversion before increasing spend.</blockquote>
 <p>This guide walks through the choices and setup for forms, phone calls, WhatsApp clicks and WooCommerce purchases, with the common mistakes Indian small businesses run into.</p>
 <h2>Why conversion tracking matters before you scale ads</h2>
 <p>Without tracking, Google Ads only knows about clicks. Smart bidding strategies such as Maximise Conversions need conversion data to work properly, and you cannot tell which keywords bring leads and which only bring traffic. Many small businesses run ads for months on clicks alone and then decide &quot;Google Ads doesn&apos;t work&quot;, when the real problem is that nobody could see what was working. If you are still planning a budget, read <a href="/blog/google-ads-budget-small-business/">how to set a Google Ads budget for a small business</a> first.</p>
@@ -47256,7 +47308,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <h2>How to set up Google Ads conversion tracking on WordPress</h2>
 <p>There are two main routes, and you should pick one per action to avoid counting twice.</p>
 <h3>Route 1: Import GA4 key events</h3>
-<p>If GA4 is already installed and tracking your forms and purchases, link GA4 to Google Ads, mark the events as key events in GA4, then import them into Google Ads as conversions. This is simpler to maintain and keeps one source of truth. The guide to <a href="/blog/ga4-events-explained/">GA4 events</a> explains how events and key events work, and <a href="/blog/setup-google-analytics-search-console/">setting up Google Analytics and Search Console</a> covers the basics.</p>
+<p>If GA4 is already installed and tracking your forms and purchases, link GA4 to Google Ads, mark the events as key events in GA4, then import them into Google Ads as conversions. This is simpler to maintain and keeps one source of truth. The guide to GA4 events explains how events and key events work, and <a href="/blog/setup-google-analytics-search-console/">setting up Google Analytics and Search Console</a> covers the basics.</p>
 <h3>Route 2: Google Ads conversion tag</h3>
 <p>Create a conversion action in Google Ads and fire its tag through Google Tag Manager or the Google tag on the thank-you step. This tends to report faster and supports features such as enhanced conversions directly. It needs a little more setup.</p>
 <p>Many sites use Tag Manager for both, which keeps tracking code out of the theme and makes testing easier.</p>
@@ -47270,7 +47322,7 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li><strong>Clicks on phone numbers on the site:</strong> track clicks on <code>tel:</code> links as a conversion. This shows intent, not a completed call.</li>
 <li><strong>WhatsApp clicks:</strong> track clicks on <code>wa.me</code> or <code>api.whatsapp.com</code> links. Again, this is intent; the chat may never start.</li>
 </ul>
-<p>Because click-based conversions overcount, many businesses keep WhatsApp clicks as secondary at first and review actual chats before promoting them to primary. For deeper call measurement, see <a href="/blog/call-tracking-small-business/">call tracking for small businesses</a>.</p>
+<p>Because click-based conversions overcount, many businesses keep WhatsApp clicks as secondary at first and review actual chats before promoting them to primary. For deeper call measurement, see call tracking for small businesses.</p>
 <h2>Tracking WooCommerce purchases</h2>
 <p>Purchases should fire once, on the order-received page, with the order value, currency (INR) and order ID. The order ID lets Google deduplicate if a customer reloads the page. Several WooCommerce integrations send purchase data to GA4 and Google Ads; check that yours includes value and transaction ID.</p>
 <p>Two Indian-specific issues to watch:</p>
@@ -47301,24 +47353,20 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li>Check the conversion status in Google Ads changes from &quot;Unverified&quot; to recording conversions.</li>
 <li>Compare a week of conversions with actual leads in your inbox and orders in WooCommerce.</li>
 </ol>
-<p>Before launching ads, also check your landing page. The guide on <a href="/blog/website-ready-for-google-ads/">getting your website ready for Google Ads</a> covers what to fix first, such as slow loading, unclear offers and missing contact buttons.</p>
-<h2>Common mistakes to avoid</h2>
-<ul>
-<li>Counting the same conversion twice, once from GA4 import and once from the Ads tag.</li>
-<li>Firing the conversion on button clicks instead of successful submissions.</li>
-<li>Marking micro actions such as page views as primary conversions.</li>
-<li>Thank-you pages that are linked from the menu or indexed, so ordinary visits count as leads.</li>
-<li>Never comparing tracked conversions with real enquiries and orders.</li>
-<li>Changing the site or form plugin and forgetting that tracking depended on it.</li>
-</ul>
-<h2>Quick check: is tracking firing?</h2>
-<ol>
-  <li>Open <strong>Tag Assistant</strong> (tagassistant.google.com), connect your site and submit a test enquiry. Check the conversion tag fires.</li>
-  <li>In <strong>Google Ads</strong>, open <strong>Goals &gt; Conversions &gt; Summary</strong> and check the status of each conversion action.</li>
-  <li>Check only one primary conversion counts each enquiry, so results are not doubled.</li>
-</ol>
-
-<p>For what to put on the page you track, see <a href="/blog/thank-you-pages-forms/">thank-you pages after form submit</a>.</p>
+<p>Before launching ads, also check your landing page. The guide on getting your website ready for Google Ads covers what to fix first, such as slow loading, unclear offers and missing contact buttons.</p>
+<h2>Conversion action settings that change your results</h2>
+<p>When you create or import a conversion action in <strong>Goals &gt; Conversions</strong>, a few settings decide what Google Ads counts and optimises for.</p>
+<table>
+  <thead><tr><th>Setting</th><th>Leads (forms, calls, WhatsApp)</th><th>Purchases</th></tr></thead>
+  <tbody>
+    <tr><td>Count</td><td>One, so a person submitting twice counts once</td><td>Every, so each order counts</td></tr>
+    <tr><td>Value</td><td>Same value for each, or none if you can't estimate one</td><td>The actual order value, passed from WooCommerce</td></tr>
+    <tr><td>Primary or secondary</td><td>Primary for real enquiries; secondary for softer actions such as page views</td><td>Primary for completed orders; secondary for add-to-cart</td></tr>
+    <tr><td>Conversion window</td><td>Long enough for your sales cycle</td><td>Usually the default is fine</td></tr>
+  </tbody>
+</table>
+<p>Only primary actions are used for bidding, so marking a button click or page view as primary teaches Google to find clickers, not customers. If you import GA4 key events and also install the Google Ads tag for the same action, keep only one as primary to avoid double counting.</p>
+<p><strong>What I check on client sites:</strong> which conversion actions are primary, their count settings, that each one fires once per real action in Tag Assistant, and that WooCommerce purchase values match the order total.</p>
 
 <h2>When to get help</h2>
 <p>Get help when conversions show as inactive, when counts double, or when you need form, call and WhatsApp tracking set up. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -47336,6 +47384,10 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>They are tracked when the order is placed. Decide whether to count them at full value, and adjust later for cancelled or refused orders if your setup supports it.</p>
 <h3>How do I set up WooCommerce conversion tracking for Google Ads?</h3>
 <p>Use one method, such as the Google for WooCommerce extension or a Google tag through Tag Manager, to fire a purchase conversion on the order received page with the order value, currency and order ID. Then place a test order and confirm it appears in Google Ads.</p>
+<h3>How long does Google Ads take to show conversions after setup?</h3>
+<p>Tag Assistant shows the conversion firing straight away, but the Conversions page can take several hours to show a status and new conversions. Test with a real form submission or order, then check back later.</p>
+<h3>Should form submissions count as one or every conversion?</h3>
+<p>Use One for lead forms, calls and WhatsApp clicks, so repeat submissions from the same person don't inflate results. Use Every for purchases, where each order is a separate sale.</p>
 `,
   },
   {
@@ -47444,6 +47496,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>If you use the Conversions API, check the event arrives from both browser and server and is deduplicated.</li>
   <li>Check the <strong>Event match quality</strong> score in Events Manager for your main event.</li>
 </ol>
+
+<p>Before spending more on ads, finish your <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking setup</a> so every enquiry is counted.</p>
 
 <h2>When to get help</h2>
 <p>Get help when events are missing or doubled, when the Conversions API needs setting up, or when ads report more leads than you receive. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -48050,21 +48104,21 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
     title: 'Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify',
     description: 'Reduce font load on WordPress and Shopify: cut font weights, self-host WOFF2, use font-display swap and preload one font to speed up LCP.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
 <p>To reduce font load on your website, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain and add font-display: swap so text appears straight away. Then preload the main font and remove any fonts your theme or plugins load but never use.</p>
-<p><strong>Short answer:</strong> fewer files, smaller files, loaded earlier, never blocking text. On many WordPress sites, cutting unused font weights and self-hosting Google Fonts is the single quickest fix.</p>
+<blockquote><strong>Short answer:</strong> To reduce font load, keep to one or two families and two or three weights, serve WOFF2 files from your own domain, add font-display: swap, preload only the main above-the-fold font and remove fonts your theme or plugins load but never use. On many WordPress sites, self-hosting Google Fonts and cutting unused weights is the quickest win.</blockquote>
 <h2>Why web fonts affect business website performance</h2>
 <p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
 <p>Fonts affect performance in three ways:</p>
 <ul>
-<li><strong>Largest Contentful Paint (LCP):</strong> if your main heading is the largest element, it cannot finish painting until its font loads. See <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a>.</li>
+<li><strong>Largest Contentful Paint (LCP):</strong> if your main heading is the largest element, it cannot finish painting until its font loads. See fixing LCP.</li>
 <li><strong>Layout shift (CLS):</strong> when the web font replaces a fallback font of a different size, text reflows and the page jumps. See <a href="/blog/fix-cls-layout-shift/">fixing CLS</a>.</li>
 <li><strong>Invisible text:</strong> some browsers hide text for a few seconds while fonts load, so visitors on slow mobile connections see a blank page.</li>
 </ul>
-<p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains why.</p>
+<p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on website speed on Indian mobile networks explains why.</p>
 <h2>How to check your web font performance</h2>
 <ol>
 <li><strong>Run PageSpeed Insights</strong> on your homepage and a key service page. Look for "Ensure text remains visible during webfont load", "Eliminate render-blocking resources" and the LCP element.</li>
@@ -48120,8 +48174,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li>Avoid apps or custom code that inject extra Google Fonts.</li>
 <li>Limit headings and body to the weights the theme actually uses.</li>
 </ul>
-<h2>Are system fonts a good option for a business website?</h2>
-<p>System fonts are already on the visitor's device, so they need no download at all. A modern system font stack looks clean and professional, and many well-known sites use one. If your brand does not depend on a particular typeface, using system fonts for body text and one web font for headings is a strong balance between speed and personality.</p>
 <h2>Common web font mistakes on business websites</h2>
 <ul>
 <li><strong>Loading every weight "just in case":</strong> theme demos often import a full family from thin to black. Your site probably uses two or three of them.</li>
@@ -48132,17 +48184,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li><strong>Changing fonts during a redesign without re-testing:</strong> a new heading font can quietly become the slowest part of the page.</li>
 </ul>
 <p>After any font change, re-run PageSpeed Insights on mobile and look at the page on a real phone over mobile data. The difference between a font that appears instantly and one that flashes in late is easy to see.</p>
-<h2>Web font performance checklist</h2>
-<ol>
-<li>List every font file the page loads and remove unused ones.</li>
-<li>Limit to one or two families and only the weights you use.</li>
-<li>Serve WOFF2 from your own domain or CDN.</li>
-<li>Add font-display: swap.</li>
-<li>Preload the main above-the-fold font only.</li>
-<li>Subset to the languages you need.</li>
-<li>Match fallback fonts to reduce layout shift.</li>
-<li>Re-test with PageSpeed Insights and real devices.</li>
-</ol>
 <h2>A simple font budget for a business website</h2>
 <p>The easiest way to keep web font performance under control is to agree a font budget before design starts, and check it whenever the site changes. A budget turns "use fewer fonts" into a rule everyone on the project can follow, including the designer, the developer and whoever adds plugins later.</p>
 <p>A practical budget for most service businesses, clinics, shops and agencies looks like this:</p>
@@ -48153,15 +48194,17 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li><strong>Preloads:</strong> one, or two at most, and only for text that appears above the fold on mobile.</li>
 <li><strong>Icons:</strong> inline SVG instead of an icon font.</li>
 </ul>
-<p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and <a href="/blog/reduce-server-response-time-ttfb/">slow server response</a>.</p>
-<h2>How to test web font changes properly</h2>
-<p>Font fixes are easy to undo by accident, so test in a repeatable way. Run PageSpeed Insights on mobile for the homepage and one key service or product page before you change anything and note LCP, CLS and font requests. Make one change at a time, clear any page cache and CDN cache, then test again. Finally, open the page on a mid-range Android phone over mobile data and watch the first few seconds: text should appear at once and should not jump when the web font arrives.</p>
-<h2>Quick check: how much font are you loading?</h2>
+<p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and slow server response.</p>
+<h2>How to find which theme or plugin is loading a font</h2>
+<p>You can't remove a font until you know who adds it. On WordPress sites, extra fonts usually come from the theme, the page builder and one or two plugins at the same time.</p>
 <ol>
-  <li>Open Chrome DevTools (F12), go to the <strong>Network</strong> tab, filter by <strong>Font</strong> and reload.</li>
-  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and look for font files under "Avoid enormous network payloads".</li>
-  <li>In WordPress, check <strong>Appearance &gt; Customize</strong> or your theme or page builder font settings for extra families and weights nobody uses.</li>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, filter by <strong>Font</strong> and reload. The <strong>Initiator</strong> column shows which stylesheet asked for each file.</li>
+  <li>Press Ctrl+U to view the page source and search for <code>fonts.googleapis.com</code> and <code>@font-face</code>. The stylesheet ID or file path usually names the theme or plugin, for example <code>/wp-content/plugins/plugin-name/</code>.</li>
+  <li>Check the usual settings: the theme's typography or performance options in <strong>Appearance &gt; Customize</strong> (several themes have a "load Google Fonts locally" switch), and Elementor's settings for Google Fonts and font loading.</li>
+  <li>Remove one source at a time on staging, reload and confirm the file count drops without text changing font.</li>
 </ol>
+<p>Some fonts only load on certain pages, such as a slider or form plugin's own font, so check your homepage, a service page and a blog post. Afterwards, re-test on the PageSpeed Insights Mobile tab and compare font requests in the Network tab before and after.</p>
+<p><strong>What I check on client sites:</strong> how many font files load on the homepage, where each one comes from, whether icon fonts are still in use, and whether the main heading font is preloaded.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the site loads many font families or weights, when text flashes or shifts as fonts arrive, or when fonts come from several plugins at once. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -48175,10 +48218,12 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>It tells the browser to show text immediately in a fallback font, then swap to the web font when it loads, so visitors are never left looking at invisible text.</p>
 <h3>How many fonts should a business website use?</h3>
 <p>One or two families, with two or three weights in total, is enough for most business websites and keeps performance under control.</p>
-<h3>Should I preload all my fonts?</h3>
-<p>No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower.</p>
 <h3>Are system fonts better for performance than web fonts?</h3>
 <p>Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings.</p>
+<h3>How do I find which plugin is loading Google Fonts?</h3>
+<p>Open DevTools, filter the Network tab by Font and look at the Initiator column, or view the page source and search for fonts.googleapis.com. The file path or stylesheet ID usually names the theme or plugin responsible.</p>
+<h3>Does reducing font load improve Core Web Vitals?</h3>
+<p>It can. Fewer and earlier-loading fonts help Largest Contentful Paint when the largest element is text, and a matched fallback reduces layout shift. Fonts rarely affect Interaction to Next Paint.</p>
 `,
   },
   {
@@ -51182,6 +51227,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>In GTM, open <strong>Versions</strong> and check the live version and who published it last.</li>
 </ol>
 
+<p>To see which shared links actually bring enquiries, add <a href="/blog/utm-tags-explained/">UTM tags</a> to every link you post outside the site.</p>
+
 <h2>When to get help</h2>
 <p>Get help when tags fire twice or not at all, when nobody knows who manages the container, or when you need conversion tracking set up on WordPress or Shopify. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -54129,6 +54176,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on the landing page.</li>
 </ol>
 
+<p>For what a campaign page costs to build and how to judge cost per lead, see <a href="/blog/landing-page-cost-factors/">landing page cost factors</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when ads spend money but bring no enquiries, or when the landing page needs rebuilding. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -54543,6 +54592,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <li><strong>Compare prices:</strong> log in as that user in a private window and compare five product prices and the cart total with what a guest sees.</li>
 <li><strong>Check tax and minimums:</strong> go through checkout as the dealer and confirm GST, minimum order quantity and any payment restrictions behave as your plugin settings say.</li>
 </ol>
+
+<p>When no existing plugin fits, <a href="/blog/custom-wordpress-plugin-development/">custom WordPress plugin development</a> explains when bespoke code is worth it.</p>
 
 <h2>When to get help</h2>
 <p>Get help when dealers see retail prices, when tiered or quantity pricing gets complicated, or when you need GST invoices with business details. <a href="/woocommerce-developer/">WooCommerce development</a> covers dealer roles, pricing rules and testing, and <a href="/website-for-manufacturers/">manufacturer websites</a> cover dealer portals and catalogues. <a href="/#contact">Get in touch</a> with how your dealer prices are set today.</p>
@@ -57196,6 +57247,10 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and filter queries containing your brand name.</li>
   <li>Check your homepage title contains your business name.</li>
 </ol>
+
+<p>For new or changed pages, see <a href="/blog/get-website-indexed-google-faster/">how to get pages indexed by Google faster</a>.</p>
+
+<p>For the wording itself, see <a href="/blog/write-meta-titles-descriptions/">how to write meta titles and descriptions</a> that get clicks.</p>
 
 <h2>When to get help</h2>
 <p>Get help when directories or another business outrank you for your own name, or when your site is not indexed. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -61639,6 +61694,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; Events</strong> and check the enquiry event is marked as a key event.</li>
 </ol>
 
+<p>If you are still choosing a form plugin, see <a href="/blog/wordpress-form-plugins-compared/">WordPress form plugins compared</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the form does not deliver, or when the contact page needs rebuilding. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -64001,6 +64058,8 @@ wp db check</code></pre>
   <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and filter queries containing "Pune".</li>
 </ol>
 
+<p>If you add a map to the contact page, use <a href="/blog/google-maps-on-website/">a Google Maps embed that does not slow the page down</a>.</p>
+
 <h2>When to get help</h2>
 <p>You can run the Google Business Profile and ask for reviews yourself. Get help when the website is the weak link: one generic page for every service, nothing Google can match to a search like "physiotherapist in Wakad", slow loading on mobile data, or enquiry forms nobody tracks. Also get advice before creating a batch of area pages; pages that only swap the locality name rarely help and can drag the whole site down.</p>
 <p>If you want a local business website built or improved for Pune searches, see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> or <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also read <a href="/blog/choose-wordpress-developer-pune/">how to choose a WordPress developer in Pune</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -65326,6 +65385,8 @@ any unused part of the advance refunded as agreed</code></pre>
 
 <p>For typical prices and what clients expect in each package, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
 
+<p>If you run several branch or client sites from one installation, read <a href="/blog/wordpress-multisite-when-needed/">WordPress Multisite: SEO, speed and when you need it</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when care plans take more hours than they earn, or when you need a white-label partner. <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -65995,6 +66056,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <li><strong>Read PageSpeed:</strong> run the page through PageSpeed Insights and open "Reduce unused CSS" and "Reduce unused JavaScript". Note which files cost the most.</li>
 <li><strong>Find the source:</strong> match each file path to a plugin folder, such as <code>/wp-content/plugins/plugin-name/</code>, to see which plugin loads it.</li>
 </ol>
+
+<p>Fonts are often part of the problem too: see <a href="/blog/web-fonts-performance/">how to reduce font load on a WordPress site</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when removing code breaks menus or forms, when a page builder loads most of the unused code, or when scores stay red after trying plugins. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> removes unused code safely with testing, and <a href="/elementor-developer/">Elementor development</a> helps with builder-heavy sites. <a href="/#contact">Get in touch</a> with your page URL.</p>
@@ -67264,11 +67327,12 @@ any unused part of the advance refunded as agreed</code></pre>
     title: 'What Is the WordPress REST API? A Plain-English Guide for Business Owners',
     description: 'What is the WordPress REST API? A plain-English guide to what uses it, what it makes public, application passwords, business uses and how to restrict it.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer'],
     body: `
 <p>What is the WordPress REST API? It is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
+<blockquote><strong>Short answer:</strong> The WordPress REST API is a built-in way for other software to read and change your site's content through URLs under /wp-json/, returning data as JSON. The block editor, many plugins, apps and CRM integrations depend on it. Leave it switched on, and restrict sensitive endpoints instead of disabling it, so nothing breaks.</blockquote>
 <p>This guide explains the WordPress REST API in plain language: what already uses it on your site, what is public by default, how authentication works, when a business actually needs it and how to restrict it safely without breaking anything.</p>
 <h2>The WordPress REST API explained in plain language</h2>
 <p>Think of your website as having two doors. The front door serves web pages to visitors' browsers. The REST API is a side door that serves the same content as structured data to programs. A program can ask for the latest ten posts, a product's price or a page's content, and get back clean data without any design around it.</p>
@@ -67314,14 +67378,14 @@ any unused part of the advance refunded as agreed</code></pre>
   <li><strong>Plugin-specific keys</strong> such as WooCommerce REST API keys, which can be read-only or read-write.</li>
   <li><strong>OAuth or token plugins</strong> for more complex setups.</li>
 </ul>
-<p>Give each integration its own user with the lowest role that works, and its own application password or key. <a href="/blog/wordpress-user-roles-explained/">WordPress user roles explained</a> helps choose the right role. Always use https, so credentials are not sent in plain text.</p>
+<p>Give each integration its own user with the lowest role that works, and its own application password or key. WordPress user roles explained helps choose the right role. Always use https, so credentials are not sent in plain text.</p>
 <h2>When a business actually needs the REST API</h2>
 <p>Most small business websites never need custom REST API work. It becomes useful when:</p>
 <ul>
   <li>You want website form entries or WooCommerce orders sent automatically to a CRM, ERP or accounting tool. See <a href="/blog/connect-website-forms-to-crm/">connecting website forms to a CRM</a>.</li>
   <li>Stock, prices or products need to sync with an inventory or billing system.</li>
   <li>A mobile app needs to show the same content or products as the website.</li>
-  <li>You want a headless front end built with a JavaScript framework; <a href="/blog/headless-wordpress-small-business/">headless WordPress explained</a> covers whether that is worth it.</li>
+  <li>You want a headless front end built with a JavaScript framework; headless WordPress explained covers whether that is worth it.</li>
   <li>Several sites need to share content, such as a group of branch or brand sites.</li>
   <li>You need a custom endpoint that exposes only specific data for a partner or app.</li>
 </ul>
@@ -67360,14 +67424,18 @@ any unused part of the advance refunded as agreed</code></pre>
 <li><strong>/wp-json/wc/v3/orders</strong> on a WooCommerce store should return an authentication error when you are logged out. If it ever returns order data publicly, treat it as urgent.</li>
 </ul>
 <p>If your permalinks are set to Plain, the same routes work through ?rest_route= instead of /wp-json/. If /wp-json/ shows an error page, something such as a security rule, a firewall or a broken permalink setting is blocking it, which can also stop the block editor from saving.</p>
-<h2>Getting help with integrations</h2>
-<p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
-<h2>Quick check: is your REST API working?</h2>
-<ol>
-<li><strong>Open the index:</strong> visit <code>yourdomain.com/wp-json/</code>. You should see JSON. A 403 or 404 means a security plugin or server rule is blocking it.</li>
-<li><strong>Check Site Health:</strong> go to <em>Tools, Site Health</em>. It reports if the REST API returned an unexpected result.</li>
-<li><strong>Check public endpoints:</strong> visit <code>/wp-json/wp/v2/users</code>. If it lists usernames and you don't need it public, restrict it with your security plugin.</li>
-</ol>
+<h2>REST API, XML-RPC or webhooks: which one an integration uses</h2>
+<table>
+  <thead><tr><th></th><th>REST API</th><th>XML-RPC</th><th>Webhooks</th></tr></thead>
+  <tbody>
+    <tr><td>Direction</td><td>Another system asks WordPress for data or sends changes</td><td>Another system calls WordPress (older method)</td><td>WordPress or a plugin pushes data out when something happens</td></tr>
+    <tr><td>Typical use</td><td>Block editor, mobile apps, headless sites, CRM syncs</td><td>Older apps and Jetpack features</td><td>New order or form entry sent to a CRM, Zapier or Make</td></tr>
+    <tr><td>Address</td><td>/wp-json/</td><td>/xmlrpc.php</td><td>A URL you give the plugin</td></tr>
+    <tr><td>Security approach</td><td>Application passwords or OAuth, restricted endpoints</td><td>Often disabled if nothing uses it</td><td>Secret keys and HTTPS-only URLs</td></tr>
+  </tbody>
+</table>
+<p>For most business integrations, a form or WooCommerce webhook is the simplest route; the REST API suits two-way syncs. <a href="/blog/wordpress-xmlrpc-explained/">XML-RPC</a> is the older method and can usually be switched off. If you need an integration built, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for it.</p>
+<p><strong>What I check on client sites:</strong> whether /wp-json/ loads, whether user lists are exposed, which application passwords exist under Users &gt; Profile, and whether a security plugin is blocking the editor's requests.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the block editor shows "Updating failed", when you need WordPress connected to a CRM, app or inventory system, or when an integration needs secure authentication. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to plan and build it, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to connect.</p>
@@ -67385,6 +67453,10 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
 <h3>Where do I find the WordPress REST API on my site?</h3>
 <p>Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it.</p>
+<h3>How do I test the WordPress REST API?</h3>
+<p>Open yourdomain/wp-json/wp/v2/posts in a browser. If you see JSON data, it works. For a quick health check, Tools &gt; Site Health also reports when REST API requests fail.</p>
+<h3>Can the WordPress REST API connect my site to a CRM?</h3>
+<p>Yes. A CRM can read or create posts, users or WooCommerce orders through the REST API using an application password, though for one-way sending of form entries a webhook or the form plugin's own integration is often simpler.</p>
 `,
   },
   {
@@ -67521,6 +67593,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <li><strong>Check snippets plugins:</strong> if you use a code snippets plugin, open its list and note which snippets are active.</li>
 <li><strong>Use Query Monitor:</strong> install the free Query Monitor plugin and open its <em>Hooks and Actions</em> panel on a page to see which functions run on each hook.</li>
 </ol>
+
+<p>Integrations like this usually run through the <a href="/blog/wordpress-rest-api-explained/">WordPress REST API</a>, explained in plain English.</p>
 
 <h2>When to get help</h2>
 <p>Get help when custom code breaks after an update, when you need behaviour changed without editing plugin files, or when you inherit code you don't understand. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> for update-safe customisations, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to change.</p>
@@ -68391,6 +68465,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li>In WordPress, open <strong>Tools &gt; Site Health</strong> and read the critical issues and recommendations and check the PHP version and memory limit.</li>
 </ol>
 
+<p>If visitors are spread across regions, <a href="/blog/what-is-a-cdn/">a CDN</a> can serve static files from servers closer to them.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the site outgrows shared hosting, or when you need it moved with no downtime. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -68410,14 +68486,15 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   {
     slug: 'landing-page-cost-factors',
     seoTitle: 'What Is a Good Cost per Landing Page? India Guide',
-    title: 'How Much Is a Landing Page? What Drives the Cost to Build One, and What a Good Cost per Lead Looks Like',
+    title: "Landing Page Cost: How Much Is a Landing Page, What Drives the Cost to Build One, and What a Good Cost per Lead Looks Like",
     description: 'What is a good cost per landing page? What drives the build cost in India, how to judge a quote, and why cost per lead is a separate number to track.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: "2026-11-10",
     category: 'Pricing',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
 <p>A good cost per landing page is one your campaign can recover in leads: a price that covers focused copy, mobile speed, a tested form and conversion tracking, because those are what lower your cost per lead from ads. How much is a landing page? According to my <a href="/blog/wordpress-website-cost-india/">WordPress website cost guide</a>, one landing page typically comes to about ₹5,000 to ₹15,000, compared with ₹15,000 to ₹40,000 for a typical small business site. Where your page falls depends on who writes the copy, whether the design is adapted or custom, what the form connects to, how much tracking is set up and how many changes are included. That is the cost to build. The cost per lead is a different number, driven mostly by your ads and offer, and I cover it separately below.</p>
+<blockquote><strong>Short answer:</strong> Landing page cost has two parts: the price to build the page and the cost per lead it produces. In India, one landing page typically costs about ₹5,000 to ₹15,000 to build, depending on copywriting, custom design, form integrations, tracking and revisions. Cost per lead depends mostly on your ads, offer and how well the page converts.</blockquote>
 <p>If you want a quote for your own campaign, <a href="/landing-page-design/">landing page design</a> lists what I include. The rest of this article explains each cost driver so you can compare quotes fairly.</p>
 
 <h2>Two different costs: to build, and per lead</h2>
@@ -68461,7 +68538,7 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <h3>6. Speed</h3>
 <p>Many ad clicks come from phones on patchy data. Compressing images, limiting fonts and scripts and testing on real devices takes time, more so on a heavy theme. Ask whether speed testing is in the quote.</p>
 <h3>7. A/B testing</h3>
-<p>Building a second version of the headline, offer or form, setting up the test and reading results is extra work, and only makes sense with enough traffic. <a href="/blog/landing-page-ab-testing/">A/B testing landing pages</a> explains when it is worth it.</p>
+<p>Building a second version of the headline, offer or form, setting up the test and reading results is extra work, and only makes sense with enough traffic. A/B testing landing pages explains when it is worth it.</p>
 <h3>8. Revisions and campaign edits</h3>
 <p>Agree up front how many revision rounds are included before launch, and how later edits are charged: included for a period, per change, or under a monthly arrangement. Same-day changes during a live campaign usually cost more than changes that can wait.</p>
 
@@ -68504,21 +68581,9 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li>Revisions, changes and testing: how long the campaign runs</li>
   <li>Deadline: when ads start</li>
 </ol>
-<p>Then check every quote against the same list. <a href="/blog/compare-website-quotes/">How to compare website quotes</a> explains why quotes differ, and <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste ad budget</a> shows where cutting corners costs you later.</p>
+<p>Then check every quote against the same list. <a href="/blog/compare-website-quotes/">How to compare website quotes</a> explains why quotes differ, and landing page mistakes that waste ad budget shows where cutting corners costs you later.</p>
 
 <p>A short email opt-in page is usually quicker to build than a full sales page, so name the format in the brief. <a href="/blog/landing-page-vs-website/">Squeeze page vs landing page</a> explains how the two differ.</p>
-
-<h2>Quote checklist</h2>
-<ul>
-  <li>Who writes the copy, and how many versions</li>
-  <li>Design approach and where the page is hosted</li>
-  <li>Number of sections</li>
-  <li>Form integrations and alerts included</li>
-  <li>Which conversions are tracked</li>
-  <li>Speed testing on mobile</li>
-  <li>Revision rounds before launch, and the rate for later edits</li>
-  <li>Whether an A/B variant is included</li>
-</ul>
 
 <h2>Where the money goes on a typical page</h2>
 <p>To make the drivers concrete, here is how the work on a single lead-generation page usually splits. The proportions shift with every project, so read this as a description of tasks, not a price breakdown.</p>
@@ -68544,12 +68609,21 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 </ul>
 <p>The things not to cut are mobile speed, a working form with alerts, and conversion tracking. Without those, you cannot tell whether the page or the ads are the problem.</p>
 
-<h2>Quick check: what will your landing page need?</h2>
-<ol>
-  <li>Write down the one action you want visitors to take: call, WhatsApp, form or purchase.</li>
-  <li>List what the page must connect to, such as an ad platform's conversion tag, a CRM or a payment link.</li>
-  <li>Check whether you already have the copy, photos and offer, or whether those need to be written.</li>
-</ol>
+<h2>DIY builder, freelancer or agency: what changes in the price</h2>
+<p>Quotes differ mostly because each option includes different work. Compare what you get, not just the number.</p>
+<table>
+  <thead><tr><th>What to check</th><th>DIY page builder</th><th>Freelancer</th><th>Agency</th></tr></thead>
+  <tbody>
+    <tr><td>Copywriting</td><td>You write it</td><td>Sometimes included</td><td>Usually included</td></tr>
+    <tr><td>Design</td><td>Template</td><td>Adapted or custom</td><td>Custom, often with a design round</td></tr>
+    <tr><td>Conversion tracking</td><td>You set it up</td><td>Ask; often extra</td><td>Usually included</td></tr>
+    <tr><td>Mobile speed work</td><td>Depends on the builder</td><td>Varies widely</td><td>Varies</td></tr>
+    <tr><td>Changes during the campaign</td><td>You make them</td><td>Agreed number of revisions</td><td>Often through a retainer</td></tr>
+    <tr><td>Who you talk to</td><td>Nobody</td><td>The person doing the work</td><td>An account manager</td></tr>
+  </tbody>
+</table>
+<p>A cheaper option can cost more per lead if it skips tracking or loads slowly on mobile data. Ask every supplier to confirm, in writing, whether copy, tracking, speed checks and revisions are included.</p>
+<p><strong>What I check on client sites:</strong> that the form sends to the right inbox and CRM, that each submission fires one conversion in GA4 and the ad platform, and the page's mobile PageSpeed result before ads go live.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the page has to work with paid ads and tracking, when you need it built quickly on your existing site, or when you want a fixed quote. See <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
@@ -68565,8 +68639,10 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <p>No. Ad spend is paid to the platform and is separate from the build.</p>
 <h3>Why do landing page quotes vary so much?</h3>
 <p>Each developer assumes a different scope. A shared brief makes quotes comparable.</p>
-<h3>What is a good cost per landing page?</h3>
-<p>One that includes focused copy, mobile speed, a tested form and conversion tracking at a price your campaign can recover in leads. Going by the cost guide here, a single landing page typically falls in the ₹5,000 to ₹15,000 range, with the scope deciding where in that range.</p>
+<h3>How much does a landing page cost to build in India?</h3>
+<p>Typically about ₹5,000 to ₹15,000 for one landing page, more when it needs custom design, professional copywriting, CRM integrations or ongoing campaign changes. Ask what is included so quotes compare fairly.</p>
+<h3>Is a landing page a one-time cost?</h3>
+<p>The build is usually one-time, but budget for hosting, any form or CRM subscriptions, and edits when offers or ads change. Some suppliers offer a monthly plan for ongoing changes and tests.</p>
 `,
   },
   {
@@ -70549,6 +70625,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
   <li>In GA4, open <strong>Reports &gt; Realtime</strong>, then visit your site from a phone on mobile data. You should appear within a minute.</li>
   <li>If you do not, check your cookie banner: if analytics only loads after consent, accept the banner and test again.</li>
 </ol>
+
+<p>Before spending more on ads, finish your <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking setup</a> so every enquiry is counted.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the tag appears twice, when enquiries or WhatsApp clicks are not recorded as events, or when the numbers do not match orders. <a href="/wordpress-seo-services/">WordPress SEO services</a> includes GA4 and Search Console setup with key events for leads. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -76485,6 +76563,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Visit <code>yourdomain.com/wp-json/</code> in your browser. You should see JSON text, not an error page.</li>
   <li>If either fails, disable security and firewall plugins with the Health Check &amp; Troubleshooting plugin and test again.</li>
 </ol>
+
+<p>If the site shows "There has been a critical error on this website" instead, follow <a href="/blog/fix-wordpress-critical-error/">how to fix the WordPress critical error</a> step by step.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the REST API is blocked by your host's firewall, when the error appears only on some posts, or when it started after a migration or SSL change. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>

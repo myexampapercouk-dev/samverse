@@ -43,7 +43,7 @@
       "headline": "What Is the WordPress REST API? A Plain-English Guide for Business Owners",
       "description": "What is the WordPress REST API? A plain-English guide to what uses it, what it makes public, application passwords, business uses and how to restrict it.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-rest-api-explained/",
       "image": "https://samverse.space/assets/og/blog-wordpress-rest-api-explained.png",
       "articleSection": "Guides",
@@ -143,6 +143,22 @@
             "@type": "Answer",
             "text": "Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I test the WordPress REST API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open yourdomain/wp-json/wp/v2/posts in a browser. If you see JSON data, it works. For a quick health check, Tools > Site Health also reports when REST API requests fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the WordPress REST API connect my site to a CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A CRM can read or create posts, users or WooCommerce orders through the REST API using an application password, though for one-way sending of form entries a webhook or the form plugin's own integration is often simpler."
+          }
         }
       ]
     }
@@ -189,7 +205,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=What%20Is%20the%20WordPress%20REST%20API%3F%20A%20Plain-English%20Guide%20for%20Business%20Owners%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-rest-api-explained%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -216,8 +232,7 @@
               <li><a href="#common-rest-api-errors">Common REST API errors</a></li>
               <li><a href="#performance-and-the-rest-api">Performance and the REST API</a></li>
               <li><a href="#how-to-see-the-wordpress-rest-api-on-your-own-site">How to see the WordPress REST API on your own site</a></li>
-              <li><a href="#getting-help-with-integrations">Getting help with integrations</a></li>
-              <li><a href="#quick-check-is-your-rest-api-working">Quick check: is your REST API working?</a></li>
+              <li><a href="#rest-api-xml-rpc-or-webhooks-which-one-an-integration-uses">REST API, XML-RPC or webhooks: which one an integration uses</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -231,6 +246,7 @@
             </ul>
           </div>
 <p>What is the WordPress REST API? It is a built-in way for other software to read and change your site's content over the web. It works through URLs under /wp-json/ on your domain and sends data back as JSON instead of web pages. The block editor, many plugins, mobile apps and integrations with CRMs or other systems all use it. Most site owners never touch it directly, but it is worth knowing what it exposes and how to keep it secure.</p>
+<blockquote><strong>Short answer:</strong> The WordPress REST API is a built-in way for other software to read and change your site's content through URLs under /wp-json/, returning data as JSON. The block editor, many plugins, apps and CRM integrations depend on it. Leave it switched on, and restrict sensitive endpoints instead of disabling it, so nothing breaks.</blockquote>
 <p>This guide explains the WordPress REST API in plain language: what already uses it on your site, what is public by default, how authentication works, when a business actually needs it and how to restrict it safely without breaking anything.</p>
 <h2 id="the-wordpress-rest-api-explained-in-plain-language">The WordPress REST API explained in plain language</h2>
 <p>Think of your website as having two doors. The front door serves web pages to visitors' browsers. The REST API is a side door that serves the same content as structured data to programs. A program can ask for the latest ten posts, a product's price or a page's content, and get back clean data without any design around it.</p>
@@ -328,14 +344,18 @@
 <li><strong>/wp-json/wc/v3/orders</strong> on a WooCommerce store should return an authentication error when you are logged out. If it ever returns order data publicly, treat it as urgent.</li>
 </ul>
 <p>If your permalinks are set to Plain, the same routes work through ?rest_route= instead of /wp-json/. If /wp-json/ shows an error page, something such as a security rule, a firewall or a broken permalink setting is blocking it, which can also stop the block editor from saving.</p>
-<h2 id="getting-help-with-integrations">Getting help with integrations</h2>
-<p>Connecting WordPress to other systems through the REST API is straightforward for a developer who has done it before, and easy to get wrong in ways that leak data or create duplicate orders. Plan what data moves in which direction, how often, and what happens when one side is down. If you need an integration built or reviewed, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> if you are nearby.</p>
-<h2 id="quick-check-is-your-rest-api-working">Quick check: is your REST API working?</h2>
-<ol>
-<li><strong>Open the index:</strong> visit <code>yourdomain.com/wp-json/</code>. You should see JSON. A 403 or 404 means a security plugin or server rule is blocking it.</li>
-<li><strong>Check Site Health:</strong> go to <em>Tools, Site Health</em>. It reports if the REST API returned an unexpected result.</li>
-<li><strong>Check public endpoints:</strong> visit <code>/wp-json/wp/v2/users</code>. If it lists usernames and you don't need it public, restrict it with your security plugin.</li>
-</ol>
+<h2 id="rest-api-xml-rpc-or-webhooks-which-one-an-integration-uses">REST API, XML-RPC or webhooks: which one an integration uses</h2>
+<table>
+  <thead><tr><th></th><th>REST API</th><th>XML-RPC</th><th>Webhooks</th></tr></thead>
+  <tbody>
+    <tr><td>Direction</td><td>Another system asks WordPress for data or sends changes</td><td>Another system calls WordPress (older method)</td><td>WordPress or a plugin pushes data out when something happens</td></tr>
+    <tr><td>Typical use</td><td>Block editor, mobile apps, headless sites, CRM syncs</td><td>Older apps and Jetpack features</td><td>New order or form entry sent to a CRM, Zapier or Make</td></tr>
+    <tr><td>Address</td><td>/wp-json/</td><td>/xmlrpc.php</td><td>A URL you give the plugin</td></tr>
+    <tr><td>Security approach</td><td>Application passwords or OAuth, restricted endpoints</td><td>Often disabled if nothing uses it</td><td>Secret keys and HTTPS-only URLs</td></tr>
+  </tbody>
+</table>
+<p>For most business integrations, a form or WooCommerce webhook is the simplest route; the REST API suits two-way syncs. <a href="/blog/wordpress-xmlrpc-explained/">XML-RPC</a> is the older method and can usually be switched off. If you need an integration built, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for it.</p>
+<p><strong>What I check on client sites:</strong> whether /wp-json/ loads, whether user lists are exposed, which application passwords exist under Users &gt; Profile, and whether a security plugin is blocking the editor's requests.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the block editor shows "Updating failed", when you need WordPress connected to a CRM, app or inventory system, or when an integration needs secure authentication. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to plan and build it, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to connect.</p>
@@ -353,6 +373,10 @@
 <p>You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems.</p>
 <h3>Where do I find the WordPress REST API on my site?</h3>
 <p>Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it.</p>
+<h3>How do I test the WordPress REST API?</h3>
+<p>Open yourdomain/wp-json/wp/v2/posts in a browser. If you see JSON data, it works. For a quick health check, Tools &gt; Site Health also reports when REST API requests fail.</p>
+<h3>Can the WordPress REST API connect my site to a CRM?</h3>
+<p>Yes. A CRM can read or create posts, users or WooCommerce orders through the REST API using an application password, though for one-way sending of form entries a webhook or the form plugin's own integration is often simpler.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -397,8 +421,7 @@
               <li><a href="#common-rest-api-errors">Common REST API errors</a></li>
               <li><a href="#performance-and-the-rest-api">Performance and the REST API</a></li>
               <li><a href="#how-to-see-the-wordpress-rest-api-on-your-own-site">How to see the WordPress REST API on your own site</a></li>
-              <li><a href="#getting-help-with-integrations">Getting help with integrations</a></li>
-              <li><a href="#quick-check-is-your-rest-api-working">Quick check: is your REST API working?</a></li>
+              <li><a href="#rest-api-xml-rpc-or-webhooks-which-one-an-integration-uses">REST API, XML-RPC or webhooks: which one an integration uses</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -427,9 +450,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/custom-wordpress-plugin-development/"><img class="post-card-img" src="/assets/og/blog-custom-wordpress-plugin-development.webp" alt="Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</h3><p>Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-updating-failed-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-updating-failed-error-fix.webp" alt="WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress &quot;Updating Failed&quot; or &quot;Publishing Failed&quot;? How to Fix the Not a Valid JSON Response Error</h3><p>Fix the WordPress &quot;Updating failed&quot; and &quot;Publishing failed. The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and REST API.</p><span class="post-card-meta">6 November 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection</h3><p>Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-hooks-actions-filters/"><img class="post-card-img" src="/assets/og/blog-wordpress-hooks-actions-filters.webp" alt="WordPress Hooks Explained: Actions and Filters in Plain English" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>WordPress Hooks Explained: Actions and Filters in Plain English</h3><p>WordPress hooks, actions and filters explained in plain English: what they do, simple examples, where to put the code safely and common mistakes to avoid.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/custom-wordpress-plugin-development/"><img class="post-card-img" src="/assets/og/blog-custom-wordpress-plugin-development.webp" alt="Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom WordPress Plugin Development: When You Need a Bespoke Plugin and How It's Built</h3><p>Custom WordPress plugin development explained: when a bespoke plugin beats off-the-shelf ones, real examples, the build process, cost factors and upkeep.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/custom-post-types-fields/"><img class="post-card-img" src="/assets/og/blog-custom-post-types-fields.webp" alt="Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Custom Post Types and Custom Fields in WordPress: Examples, ACF and Similar Tools, Registering Them in Code, Templates and SEO</h3><p>Custom post types and custom fields in WordPress explained with real examples, ACF and code options, templates, archive pages and SEO for structured content.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

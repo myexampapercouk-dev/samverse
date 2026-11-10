@@ -43,7 +43,7 @@
       "headline": "Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify",
       "description": "Reduce font load on WordPress and Shopify: cut font weights, self-host WOFF2, use font-display swap and preload one font to speed up LCP.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/web-fonts-performance/",
       "image": "https://samverse.space/assets/og/blog-web-fonts-performance.png",
       "articleSection": "Speed",
@@ -130,18 +130,26 @@
         },
         {
           "@type": "Question",
-          "name": "Should I preload all my fonts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Are system fonts better for performance than web fonts?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find which plugin is loading Google Fonts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open DevTools, filter the Network tab by Font and look at the Initiator column, or view the page source and search for fonts.googleapis.com. The file path or stylesheet ID usually names the theme or plugin responsible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does reducing font load improve Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can. Fewer and earlier-loading fonts help Largest Contentful Paint when the largest element is text, and a matched fallback reduces layout shift. Fonts rarely affect Interaction to Next Paint."
           }
         }
       ]
@@ -189,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Business%20Website%20Web%20Font%20Performance%3A%20How%20to%20Reduce%20Font%20Load%20in%20WordPress%20and%20Shopify%20https%3A%2F%2Fsamverse.space%2Fblog%2Fweb-fonts-performance%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -213,12 +221,9 @@
               <li><a href="#how-to-preload-fonts-correctly">How to preload fonts correctly</a></li>
               <li><a href="#web-font-performance-in-wordpress">Web font performance in WordPress</a></li>
               <li><a href="#web-font-performance-in-shopify">Web font performance in Shopify</a></li>
-              <li><a href="#are-system-fonts-a-good-option-for-a-business-website">Are system fonts a good option for a business website?</a></li>
               <li><a href="#common-web-font-mistakes-on-business-websites">Common web font mistakes on business websites</a></li>
-              <li><a href="#web-font-performance-checklist">Web font performance checklist</a></li>
               <li><a href="#a-simple-font-budget-for-a-business-website">A simple font budget for a business website</a></li>
-              <li><a href="#how-to-test-web-font-changes-properly">How to test web font changes properly</a></li>
-              <li><a href="#quick-check-how-much-font-are-you-loading">Quick check: how much font are you loading?</a></li>
+              <li><a href="#how-to-find-which-theme-or-plugin-is-loading-a-font">How to find which theme or plugin is loading a font</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -232,7 +237,7 @@
             </ul>
           </div>
 <p>To reduce font load on your website, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain and add font-display: swap so text appears straight away. Then preload the main font and remove any fonts your theme or plugins load but never use.</p>
-<p><strong>Short answer:</strong> fewer files, smaller files, loaded earlier, never blocking text. On many WordPress sites, cutting unused font weights and self-hosting Google Fonts is the single quickest fix.</p>
+<blockquote><strong>Short answer:</strong> To reduce font load, keep to one or two families and two or three weights, serve WOFF2 files from your own domain, add font-display: swap, preload only the main above-the-fold font and remove fonts your theme or plugins load but never use. On many WordPress sites, self-hosting Google Fonts and cutting unused weights is the quickest win.</blockquote>
 <h2 id="why-web-fonts-affect-business-website-performance">Why web fonts affect business website performance</h2>
 <p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
 <p>Fonts affect performance in three ways:</p>
@@ -303,8 +308,6 @@
 <li>Avoid apps or custom code that inject extra Google Fonts.</li>
 <li>Limit headings and body to the weights the theme actually uses.</li>
 </ul>
-<h2 id="are-system-fonts-a-good-option-for-a-business-website">Are system fonts a good option for a business website?</h2>
-<p>System fonts are already on the visitor's device, so they need no download at all. A modern system font stack looks clean and professional, and many well-known sites use one. If your brand does not depend on a particular typeface, using system fonts for body text and one web font for headings is a strong balance between speed and personality.</p>
 <h2 id="common-web-font-mistakes-on-business-websites">Common web font mistakes on business websites</h2>
 <ul>
 <li><strong>Loading every weight "just in case":</strong> theme demos often import a full family from thin to black. Your site probably uses two or three of them.</li>
@@ -315,17 +318,6 @@
 <li><strong>Changing fonts during a redesign without re-testing:</strong> a new heading font can quietly become the slowest part of the page.</li>
 </ul>
 <p>After any font change, re-run PageSpeed Insights on mobile and look at the page on a real phone over mobile data. The difference between a font that appears instantly and one that flashes in late is easy to see.</p>
-<h2 id="web-font-performance-checklist">Web font performance checklist</h2>
-<ol>
-<li>List every font file the page loads and remove unused ones.</li>
-<li>Limit to one or two families and only the weights you use.</li>
-<li>Serve WOFF2 from your own domain or CDN.</li>
-<li>Add font-display: swap.</li>
-<li>Preload the main above-the-fold font only.</li>
-<li>Subset to the languages you need.</li>
-<li>Match fallback fonts to reduce layout shift.</li>
-<li>Re-test with PageSpeed Insights and real devices.</li>
-</ol>
 <h2 id="a-simple-font-budget-for-a-business-website">A simple font budget for a business website</h2>
 <p>The easiest way to keep web font performance under control is to agree a font budget before design starts, and check it whenever the site changes. A budget turns "use fewer fonts" into a rule everyone on the project can follow, including the designer, the developer and whoever adds plugins later.</p>
 <p>A practical budget for most service businesses, clinics, shops and agencies looks like this:</p>
@@ -337,14 +329,16 @@
 <li><strong>Icons:</strong> inline SVG instead of an icon font.</li>
 </ul>
 <p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and slow server response.</p>
-<h2 id="how-to-test-web-font-changes-properly">How to test web font changes properly</h2>
-<p>Font fixes are easy to undo by accident, so test in a repeatable way. Run PageSpeed Insights on mobile for the homepage and one key service or product page before you change anything and note LCP, CLS and font requests. Make one change at a time, clear any page cache and CDN cache, then test again. Finally, open the page on a mid-range Android phone over mobile data and watch the first few seconds: text should appear at once and should not jump when the web font arrives.</p>
-<h2 id="quick-check-how-much-font-are-you-loading">Quick check: how much font are you loading?</h2>
+<h2 id="how-to-find-which-theme-or-plugin-is-loading-a-font">How to find which theme or plugin is loading a font</h2>
+<p>You can't remove a font until you know who adds it. On WordPress sites, extra fonts usually come from the theme, the page builder and one or two plugins at the same time.</p>
 <ol>
-  <li>Open Chrome DevTools (F12), go to the <strong>Network</strong> tab, filter by <strong>Font</strong> and reload.</li>
-  <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and look for font files under "Avoid enormous network payloads".</li>
-  <li>In WordPress, check <strong>Appearance &gt; Customize</strong> or your theme or page builder font settings for extra families and weights nobody uses.</li>
+  <li>Open Chrome DevTools (F12), go to <strong>Network</strong>, filter by <strong>Font</strong> and reload. The <strong>Initiator</strong> column shows which stylesheet asked for each file.</li>
+  <li>Press Ctrl+U to view the page source and search for <code>fonts.googleapis.com</code> and <code>@font-face</code>. The stylesheet ID or file path usually names the theme or plugin, for example <code>/wp-content/plugins/plugin-name/</code>.</li>
+  <li>Check the usual settings: the theme's typography or performance options in <strong>Appearance &gt; Customize</strong> (several themes have a "load Google Fonts locally" switch), and Elementor's settings for Google Fonts and font loading.</li>
+  <li>Remove one source at a time on staging, reload and confirm the file count drops without text changing font.</li>
 </ol>
+<p>Some fonts only load on certain pages, such as a slider or form plugin's own font, so check your homepage, a service page and a blog post. Afterwards, re-test on the PageSpeed Insights Mobile tab and compare font requests in the Network tab before and after.</p>
+<p><strong>What I check on client sites:</strong> how many font files load on the homepage, where each one comes from, whether icon fonts are still in use, and whether the main heading font is preloaded.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the site loads many font families or weights, when text flashes or shifts as fonts arrive, or when fonts come from several plugins at once. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -358,10 +352,12 @@
 <p>It tells the browser to show text immediately in a fallback font, then swap to the web font when it loads, so visitors are never left looking at invisible text.</p>
 <h3>How many fonts should a business website use?</h3>
 <p>One or two families, with two or three weights in total, is enough for most business websites and keeps performance under control.</p>
-<h3>Should I preload all my fonts?</h3>
-<p>No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower.</p>
 <h3>Are system fonts better for performance than web fonts?</h3>
 <p>Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings.</p>
+<h3>How do I find which plugin is loading Google Fonts?</h3>
+<p>Open DevTools, filter the Network tab by Font and look at the Initiator column, or view the page source and search for fonts.googleapis.com. The file path or stylesheet ID usually names the theme or plugin responsible.</p>
+<h3>Does reducing font load improve Core Web Vitals?</h3>
+<p>It can. Fewer and earlier-loading fonts help Largest Contentful Paint when the largest element is text, and a matched fallback reduces layout shift. Fonts rarely affect Interaction to Next Paint.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -403,12 +399,9 @@
               <li><a href="#how-to-preload-fonts-correctly">How to preload fonts correctly</a></li>
               <li><a href="#web-font-performance-in-wordpress">Web font performance in WordPress</a></li>
               <li><a href="#web-font-performance-in-shopify">Web font performance in Shopify</a></li>
-              <li><a href="#are-system-fonts-a-good-option-for-a-business-website">Are system fonts a good option for a business website?</a></li>
               <li><a href="#common-web-font-mistakes-on-business-websites">Common web font mistakes on business websites</a></li>
-              <li><a href="#web-font-performance-checklist">Web font performance checklist</a></li>
               <li><a href="#a-simple-font-budget-for-a-business-website">A simple font budget for a business website</a></li>
-              <li><a href="#how-to-test-web-font-changes-properly">How to test web font changes properly</a></li>
-              <li><a href="#quick-check-how-much-font-are-you-loading">Quick check: how much font are you loading?</a></li>
+              <li><a href="#how-to-find-which-theme-or-plugin-is-loading-a-font">How to find which theme or plugin is loading a font</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

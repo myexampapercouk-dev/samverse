@@ -40,10 +40,10 @@
     {
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/hostinger-business-email-setup/#article",
-      "headline": "How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms",
+      "headline": "Hostinger Business Email Setup: Create Mailboxes on Your Own Domain, Add DNS Records, Phone Apps and WordPress Forms",
       "description": "Set up Hostinger business email on your domain: create mailboxes in hPanel, add MX, SPF, DKIM and DMARC, connect phones and Outlook, and fix form emails.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/hostinger-business-email-setup/",
       "image": "https://samverse.space/assets/og/blog-hostinger-business-email-setup.png",
       "articleSection": "Guides",
@@ -87,7 +87,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms",
+          "name": "Hostinger Business Email Setup: Create Mailboxes on Your Own Domain, Add DNS Records, Phone Apps and WordPress Forms",
           "item": "https://samverse.space/blog/hostinger-business-email-setup/"
         }
       ]
@@ -135,6 +135,22 @@
             "@type": "Answer",
             "text": "Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set up Hostinger email on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a new account in the Gmail or Mail app, choose IMAP, enter your full email address and password, then imap.hostinger.com on port 993 for incoming and smtp.hostinger.com on port 465 for outgoing, both with SSL/TLS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can I receive but not send email on Hostinger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the outgoing (SMTP) settings are wrong: check the server is smtp.hostinger.com, the port is 465 with SSL/TLS, authentication is on and the username is your full email address."
+          }
         }
       ]
     }
@@ -175,22 +191,22 @@
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/planning/">Planning &amp; costs</a></nav>
           <a class="post-cat" href="/blog/topic/planning/">Guides</a>
-          <h1>How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms</h1>
+          <h1>Hostinger Business Email Setup: Create Mailboxes on Your Own Domain, Add DNS Records, Phone Apps and WordPress Forms</h1>
           <p class="post-dek">Set up Hostinger business email on your domain: create mailboxes in hPanel, add MX, SPF, DKIM and DMARC, connect phones and Outlook, and fix form emails.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
-              <a href="https://wa.me/?text=How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/hostinger-business-email-setup/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
-          <figure class="post-cover"><img src="/assets/og/blog-hostinger-business-email-setup.webp" alt="How to Set Up Business Email on Hostinger With Your Own Domain: Mailboxes, DNS Records, Phone Apps and WordPress Forms" width="1200" height="630" fetchpriority="high"></figure>
+          <figure class="post-cover"><img src="/assets/og/blog-hostinger-business-email-setup.webp" alt="Hostinger Business Email Setup: Create Mailboxes on Your Own Domain, Add DNS Records, Phone Apps and WordPress Forms" width="1200" height="630" fetchpriority="high"></figure>
         </div>
       </header>
 
@@ -208,7 +224,7 @@
               <li><a href="#step-5-send-wordpress-form-emails-through-your-mailbox">Step 5: Send WordPress form emails through your mailbox</a></li>
               <li><a href="#switching-providers-or-moving-hosts">Switching providers or moving hosts</a></li>
               <li><a href="#good-habits-for-business-email">Good habits for business email</a></li>
-              <li><a href="#quick-check-will-your-business-email-be-delivered">Quick check: will your business email be delivered?</a></li>
+              <li><a href="#hostinger-email-not-working-common-problems-and-fixes">Hostinger email not working? Common problems and fixes</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -222,6 +238,7 @@
             </ul>
           </div>
 <p>To set up business email on Hostinger, create the mailbox in hPanel's Emails section, make sure your domain's MX, SPF, DKIM and DMARC records point at Hostinger, then sign in through webmail or add the account to your phone or Outlook using IMAP and SMTP. If your website runs on WordPress, send its form emails through that mailbox with an SMTP plugin, so enquiries reach your inbox rather than spam.</p>
+<blockquote><strong>Short answer:</strong> For Hostinger business email setup, create the mailbox in hPanel's Emails section, check that your domain's MX, SPF, DKIM and DMARC records point to Hostinger, then use webmail or add the account to your phone with IMAP (port 993) and SMTP (port 465). Send WordPress form emails through the mailbox with an SMTP plugin.</blockquote>
 <p>An address like info@yourbusiness.in looks more trustworthy than a Gmail address, but only if mail actually arrives. On my <a href="/wordpress-website-development/">WordPress website development</a> projects, forms are tested before launch to make sure their emails arrive, and a mailbox with missing DNS records is one of the common reasons they don't. Hostinger changes its plans, limits and menu names from time to time, so treat the labels below as a guide at the time of writing and check hPanel for what your plan includes.</p>
 
 <h2 id="before-you-start">Before you start</h2>
@@ -247,7 +264,7 @@
 <aside class="inline-cta">
   <strong>Need help with wordpress website development?</strong>
   <p>WordPress website development in India: business sites, portfolios, catalogues and portals that are fast, mobile-friendly, SEO-ready and easy to update.</p>
-  <div><a href="/wordpress-website-development/" class="link-inline">See WordPress Website Development →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  <div><a href="/wordpress-website-development/" class="link-inline">See WordPress Website Development →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
 <h2 id="step-1-create-your-mailboxes-in-hpanel">Step 1: Create your mailboxes in hPanel</h2>
@@ -340,12 +357,19 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   <li>If customers report receiving spam "from you", act quickly; see <a href="/blog/wordpress-site-sending-spam-emails/">hosting accounts sending spam emails</a>.</li>
 </ul>
 
-<h2 id="quick-check-will-your-business-email-be-delivered">Quick check: will your business email be delivered?</h2>
-<ol>
-<li><strong>Check MX records:</strong> run <code>nslookup -type=mx yourdomain.com</code>. The results should match the mail servers shown in hPanel under <em>Emails</em>, then your domain's DNS details.</li>
-<li><strong>Check SPF and DKIM:</strong> in hPanel <em>Domains, DNS / Nameservers</em>, look for a TXT record starting <code>v=spf1</code> and the DKIM records Hostinger lists. Only one SPF record should exist.</li>
-<li><strong>Send a test:</strong> send an email from your new address to a Gmail account, open it, choose <em>Show original</em> and confirm SPF, DKIM and DMARC say PASS.</li>
-</ol>
+<h2 id="hostinger-email-not-working-common-problems-and-fixes">Hostinger email not working? Common problems and fixes</h2>
+<table>
+  <thead><tr><th>Problem</th><th>Usual cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Not receiving any email</td><td>MX records point to an old provider, or DNS is managed at Cloudflare or the registrar and was never updated</td><td>Add Hostinger's MX records where your DNS is actually managed and remove the old ones</td></tr>
+    <tr><td>Phone or Outlook won't send</td><td>Wrong SMTP server, port or encryption, or authentication switched off</td><td>Use smtp.hostinger.com, port 465, SSL/TLS, and the full email address as the username</td></tr>
+    <tr><td>"Authentication failed"</td><td>Wrong password, or only the part before @ entered as the username</td><td>Reset the mailbox password in hPanel and use the full address</td></tr>
+    <tr><td>Emails land in Gmail spam</td><td>Missing SPF or DKIM, or no DMARC record</td><td>Add the records shown in hPanel and test with a mail tester</td></tr>
+    <tr><td>Website form emails not arriving</td><td>WordPress sends with PHP mail, not your mailbox</td><td>Set up an SMTP plugin with the mailbox and send a test</td></tr>
+  </tbody>
+</table>
+<p>DNS changes can take a few hours to apply, so wait and test again before changing more settings.</p>
+<p><strong>What I check on client sites:</strong> the MX, SPF, DKIM and DMARC records at the actual DNS host, a test message from the website form to Gmail, and a reply from the mailbox to confirm both directions work.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when emails land in spam, when your website forms send from the wrong address, or when you are moving mailboxes from another provider. <a href="/wordpress-website-development/">WordPress website development</a> includes email and SMTP setup for forms, <a href="/wordpress-maintenance/">WordPress maintenance</a> covers delivery problems later, and <a href="/website-for-startups/">startup websites</a> bundle domain and email setup. <a href="/#contact">Get in touch</a> with your domain.</p>
@@ -361,22 +385,26 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
 <p>Yes. Add it as an "Other" account over IMAP in the Gmail app on Android or iPhone, and you can read and send as your business address alongside your personal Gmail.</p>
 <h3>Can my website be on Hostinger and my email on Google Workspace?</h3>
 <p>Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too.</p>
+<h3>How do I set up Hostinger email on my phone?</h3>
+<p>Add a new account in the Gmail or Mail app, choose IMAP, enter your full email address and password, then imap.hostinger.com on port 993 for incoming and smtp.hostinger.com on port 465 for outgoing, both with SSL/TLS.</p>
+<h3>Why can I receive but not send email on Hostinger?</h3>
+<p>Usually the outgoing (SMTP) settings are wrong: check the server is smtp.hostinger.com, the port is 465 with SSL/TLS, authentication is on and the username is your full email address.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
             <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
             <div class="hero-cta">
               <a href="#contact" class="btn">Get a Free Quote</a>
-              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
             </div>
           </div>
 
           <div class="post-share-end">
             <strong>Found this useful? Share it:</strong>
             <div class="share share-end">
-              <a href="https://wa.me/?text=How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://wa.me/?text=Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%20https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
               <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-              <a href="https://twitter.com/intent/tweet?text=How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fhostinger-business-email-setup%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
               <button type="button" class="share-copy" data-url="https://samverse.space/blog/hostinger-business-email-setup/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
             </div>
           </div>
@@ -405,7 +433,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
               <li><a href="#step-5-send-wordpress-form-emails-through-your-mailbox">Step 5: Send WordPress form emails through your mailbox</a></li>
               <li><a href="#switching-providers-or-moving-hosts">Switching providers or moving hosts</a></li>
               <li><a href="#good-habits-for-business-email">Good habits for business email</a></li>
-              <li><a href="#quick-check-will-your-business-email-be-delivered">Quick check: will your business email be delivered?</a></li>
+              <li><a href="#hostinger-email-not-working-common-problems-and-fixes">Hostinger email not working? Common problems and fixes</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -414,7 +442,7 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
             <strong>Need help with this?</strong>
             <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
             <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
-            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22How%20to%20Set%20Up%20Business%20Email%20on%20Hostinger%20With%20Your%20Own%20Domain%3A%20Mailboxes%2C%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22Hostinger%20Business%20Email%20Setup%3A%20Create%20Mailboxes%20on%20Your%20Own%20Domain%2C%20Add%20DNS%20Records%2C%20Phone%20Apps%20and%20WordPress%20Forms%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
           </div>
         </aside>
       </div>
@@ -436,8 +464,8 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/business-email-options/"><img class="post-card-img" src="/assets/og/blog-business-email-options.webp" alt="Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email</h3><p>Compare business email options for small businesses in India: Google Workspace, Microsoft 365, Zoho Mail and hosting email, with setups by team size.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/transfer-domain-to-another-registrar/"><img class="post-card-img" src="/assets/og/blog-transfer-domain-to-another-registrar.webp" alt="How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)</h3><p>How to transfer a domain to another registrar safely: unlock it, get the EPP code, avoid the 60-day lock and keep DNS and email working, including .in domains.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/migrate-website-to-hostinger/"><img class="post-card-img" src="/assets/og/blog-migrate-website-to-hostinger.webp" alt="Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</h3><p>Hostinger site migration step by step: hPanel's migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.</p><span class="post-card-meta">28 September 2026 · 11 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-site-sending-spam-emails/"><img class="post-card-img" src="/assets/og/blog-wordpress-site-sending-spam-emails.webp" alt="Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</h3><p>Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

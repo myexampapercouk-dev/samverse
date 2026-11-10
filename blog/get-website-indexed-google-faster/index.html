@@ -43,7 +43,7 @@
       "headline": "How to Get Your Website Indexed by Google Faster: What Actually Works",
       "description": "How to get your website indexed by Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/get-website-indexed-google-faster/",
       "image": "https://samverse.space/assets/og/blog-get-website-indexed-google-faster.png",
       "articleSection": "SEO",
@@ -143,6 +143,22 @@
             "@type": "Answer",
             "text": "Not at the time of writing. IndexNow notifies Bing and other participating search engines. For Google, rely on internal links, your sitemap and URL Inspection."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get my WordPress site indexed by Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Untick \"Discourage search engines\" under Settings > Reading, add the site to Search Console, submit the sitemap from your SEO plugin, link new pages from existing ones, and request indexing for your most important URLs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my new page not indexed after a week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually Google hasn't found it through links, or doesn't think it adds enough over pages it already has. Check URL Inspection for the exact status, add internal links from indexed pages and make the content more specific."
+          }
         }
       ]
     }
@@ -189,7 +205,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Get%20Your%20Website%20Indexed%20by%20Google%20Faster%3A%20What%20Actually%20Works%20https%3A%2F%2Fsamverse.space%2Fblog%2Fget-website-indexed-google-faster%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -212,12 +228,10 @@
               <li><a href="#2-keep-the-sitemap-clean-with-an-honest-lastmod">2. Keep the sitemap clean, with an honest lastmod</a></li>
               <li><a href="#3-use-request-indexing-for-your-most-important-urls">3. Use "Request indexing" for your most important URLs</a></li>
               <li><a href="#4-make-every-page-worth-indexing">4. Make every page worth indexing</a></li>
-              <li><a href="#5-crawl-budget-on-a-new-site">5. Crawl budget on a new site</a></li>
               <li><a href="#6-tell-bing-directly-with-indexnow">6. Tell Bing directly with IndexNow</a></li>
-              <li><a href="#what-doesn-t-speed-up-indexing">What doesn't speed up indexing</a></li>
               <li><a href="#how-long-does-indexing-take">How long does indexing take?</a></li>
               <li><a href="#wordpress-site-not-showing-on-google-check-these-first">WordPress site not showing on Google? Check these first</a></li>
-              <li><a href="#quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</a></li>
+              <li><a href="#a-routine-for-every-new-page-you-publish">A routine for every new page you publish</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -231,6 +245,7 @@
             </ul>
           </div>
 <p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
+<blockquote><strong>Short answer:</strong> To get your website indexed by Google faster, link each new page from pages Google already crawls, list it in a clean XML sitemap with an honest lastmod date, and use Request indexing in Search Console for key URLs. Make the page substantial and unique, because no tool or plugin can force Google to index a page.</blockquote>
 
 <h2 id="from-unknown-to-indexed-the-stages">From unknown to indexed: the stages</h2>
 <table>
@@ -284,16 +299,6 @@
 </ul>
 <p>The fix is fewer, fuller pages: merge thin ones into one strong page, add information only you can give (prices or what affects them, process, real examples, local detail), and noindex archives nobody needs to find in Google. I'm doing exactly this on this site: short early posts that Search Console listed as "Discovered, currently not indexed", this one included, are being rewritten into complete guides rather than left thin.</p>
 
-<h2 id="5-crawl-budget-on-a-new-site">5. Crawl budget on a new site</h2>
-<p>Crawl budget is how many URLs Google is willing and able to crawl on your site in a given period. Google says most sites with fewer than a few thousand URLs don't need to worry about it, and that is true for established sites. A new domain is different: with no links and no history, Google's interest is low, so the URLs it does crawl should count.</p>
-<ul>
-  <li><strong>Launch with your core pages,</strong> then add more steadily, rather than publishing hundreds of near-identical pages on day one.</li>
-  <li><strong>Cut junk URLs:</strong> tag and attachment archives, sorting and filter parameters on stores, and http or www duplicates that should redirect.</li>
-  <li><strong>Keep the server fast and stable.</strong> In Search Console, <strong>Settings &gt; Crawl stats</strong> shows Google's average response time and any host problems. Slow responses and server errors make Google crawl less.</li>
-  <li><strong>Fix redirect chains and internal links to 404s,</strong> which spend crawls on URLs that lead nowhere.</li>
-</ul>
-<p>For the wider first-months plan, see SEO for a new website.</p>
-
 <h2 id="6-tell-bing-directly-with-indexnow">6. Tell Bing directly with IndexNow</h2>
 <p>IndexNow is a protocol that lets your site notify search engines the moment a URL is added, updated or deleted. At the time of writing, Bing, Yandex, Seznam and Naver support it; Google does not use it. Bing still matters: it powers its own results and is used by other search and AI tools.</p>
 <ul>
@@ -303,15 +308,6 @@
 <p>This site uses a small script that submits the URLs in its sitemap to IndexNow after each update, so Bing hears about new pages without waiting for a crawl.</p>
 
 <p>A single wrong line can stop Google crawling whole sections. Check your settings for <a href="/blog/robots-txt-explained/">robots.txt in WordPress</a> before requesting indexing.</p>
-
-<h2 id="what-doesn-t-speed-up-indexing">What doesn't speed up indexing</h2>
-<ul>
-  <li>Resubmitting the sitemap every day, or requesting indexing for the same URL repeatedly.</li>
-  <li>"Instant indexing" services, link blasts and ping lists.</li>
-  <li>Changing published dates without changing the page.</li>
-  <li>Running Google Ads, which has no effect on organic indexing.</li>
-  <li>Social media shares on their own; they can help people find you, but they are a weak route for Google discovery.</li>
-</ul>
 
 <h2 id="how-long-does-indexing-take">How long does indexing take?</h2>
 <p>Google's own answer is anywhere from a few days to a few weeks, and new domains sit at the slower end. Track progress with URL Inspection for your key pages and the Pages report over several weeks; a site: search on Google gives only a rough picture. If important pages are still not indexed after several weeks despite good internal links and a clean sitemap, look again for a technical block, then at whether the pages are distinct and substantial enough.</p>
@@ -333,16 +329,17 @@
 <h3>Crawled or discovered, but not indexed</h3>
 <h3>Shopify stores not showing on Google</h3>
 <p>On Shopify, check that the store password page is turned off (the store must be live), submit the automatic /sitemap.xml in Search Console, and make sure product and collection pages have unique titles and descriptions.</p>
-<h2 id="quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</h2>
+<h2 id="a-routine-for-every-new-page-you-publish">A routine for every new page you publish</h2>
 <ol>
-  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for the new page. Note whether it says "URL is not on Google", "Discovered" or "Crawled", and click <strong>Request indexing</strong> once if it is a key page.</li>
-  <li>In Search Console, open <strong>Indexing &gt; Sitemaps</strong> and check the sitemap status is Success and that the new URL is listed in the sitemap.</li>
-  <li>Search <strong>site:yourdomain.com/page-address</strong> a few days later. If nothing shows, check the page is linked from your homepage or menu.</li>
+  <li><strong>Before publishing:</strong> check the page isn't set to noindex in your SEO plugin and isn't blocked in robots.txt.</li>
+  <li><strong>On the day:</strong> add links to it from two or three related pages that are already indexed, and from the menu or a hub page if it's a key service page.</li>
+  <li>Open your sitemap and confirm the URL is listed with today's lastmod date.</li>
+  <li>In Search Console, paste the URL into URL Inspection, run <strong>Test live URL</strong>, then click <strong>Request indexing</strong>.</li>
+  <li>If your site supports IndexNow, send the URL so Bing and other participating engines hear about it straight away.</li>
+  <li><strong>After a week or so:</strong> inspect the URL again. If it says "Discovered" or "Crawled, currently not indexed", strengthen the content and internal links rather than requesting indexing repeatedly.</li>
 </ol>
-
-<p>If Search Console says pages are blocked, read <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> before changing anything.</p>
-
-<p>To check your sitemap lists only the pages you want indexed, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+<p>Pinging, resubmitting the same sitemap every day or buying "indexing services" doesn't help; links from crawled pages and a page worth indexing do.</p>
+<p><strong>What I check on client sites:</strong> noindex and canonical tags on new pages, whether the sitemap lists only live 200 URLs, and how many internal links each new page has from indexed pages.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
@@ -360,6 +357,10 @@
 <p>It helps Google discover URLs, which matters most on new sites, but it doesn't make Google index them. Internal links, page quality and site speed decide how quickly discovered pages are crawled and indexed.</p>
 <h3>Does Google use IndexNow?</h3>
 <p>Not at the time of writing. IndexNow notifies Bing and other participating search engines. For Google, rely on internal links, your sitemap and URL Inspection.</p>
+<h3>How do I get my WordPress site indexed by Google?</h3>
+<p>Untick "Discourage search engines" under Settings &gt; Reading, add the site to Search Console, submit the sitemap from your SEO plugin, link new pages from existing ones, and request indexing for your most important URLs.</p>
+<h3>Why is my new page not indexed after a week?</h3>
+<p>Usually Google hasn't found it through links, or doesn't think it adds enough over pages it already has. Check URL Inspection for the exact status, add internal links from indexed pages and make the content more specific.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -400,12 +401,10 @@
               <li><a href="#2-keep-the-sitemap-clean-with-an-honest-lastmod">2. Keep the sitemap clean, with an honest lastmod</a></li>
               <li><a href="#3-use-request-indexing-for-your-most-important-urls">3. Use "Request indexing" for your most important URLs</a></li>
               <li><a href="#4-make-every-page-worth-indexing">4. Make every page worth indexing</a></li>
-              <li><a href="#5-crawl-budget-on-a-new-site">5. Crawl budget on a new site</a></li>
               <li><a href="#6-tell-bing-directly-with-indexnow">6. Tell Bing directly with IndexNow</a></li>
-              <li><a href="#what-doesn-t-speed-up-indexing">What doesn't speed up indexing</a></li>
               <li><a href="#how-long-does-indexing-take">How long does indexing take?</a></li>
               <li><a href="#wordpress-site-not-showing-on-google-check-these-first">WordPress site not showing on Google? Check these first</a></li>
-              <li><a href="#quick-check-is-a-new-page-on-its-way-to-the-index">Quick check: is a new page on its way to the index?</a></li>
+              <li><a href="#a-routine-for-every-new-page-you-publish">A routine for every new page you publish</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
