@@ -2181,6 +2181,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   <li>Gather your logo files, photos and any written content in one shared folder. Missing content is the most common cause of delay.</li>
 </ol>
 
+<p>Hotel and homestay sites take longer when they connect to other systems; see how a <a href="/blog/hotel-booking-engine-channel-manager/">booking engine and channel manager</a> work together.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you have a launch date and need a realistic timeline, or a project has stalled with another developer. See <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/#contact">send your website address</a> with your deadline for a fixed quote and timeline.</p>
 
@@ -2461,6 +2463,8 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
 
 <h2>Quick check: does every payment outcome work?</h2>
 <p>With the gateway in test mode, place three test orders: one paid, one where you cancel on the payment page and one that fails. Then open <strong>WooCommerce, Orders</strong> and check that they show Processing, Pending payment and Failed respectively. Next, open <strong>WooCommerce, Status, Logs</strong> and look for your gateway's log: webhook errors there are the usual reason paid orders stay stuck on Pending.</p>
+
+<p>Collecting donations rather than payments? See how to set up <a href="/blog/temple-ngo-website-online-donations/">online donation to temples, trusts and NGOs</a>, with UPI QR codes and automatic receipts.</p>
 
 <h2>When to get help</h2>
 <p>Get help when paid orders stay on Pending, when webhooks or KYC approval are holding you up, or when you need UPI, cards and COD working together. Through <a href="/woocommerce-developer/">WooCommerce development</a> your gateway is connected, webhooks configured, test orders run for every outcome and the first live order confirmed with you. To start, <a href="/#contact">send your website address</a>.</p>
@@ -11462,6 +11466,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 </ol>
 <p>If any of these answers is "not sure", fix that before updating anything.</p>
 
+<p>Updating a network rather than one site? See <a href="/blog/wordpress-multisite-when-needed/">WordPress Multisite: SEO, speed and when you need it</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when updates have been put off for months, when the site runs WooCommerce or a page builder, or when an update has already broken something. With <a href="/wordpress-maintenance/">WordPress maintenance</a>, core, theme and plugins are updated after a backup, key pages, forms and checkout are checked afterwards, and anything that breaks is fixed or rolled back. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -14949,12 +14955,12 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
     title: 'FAQ SEO: How to Write FAQ Pages and FAQs for SEO on Service, Sales and Local Pages',
     description: 'FAQ pages for SEO: are FAQs good for SEO, one FAQ page or FAQs on each page, how to write an FAQ for a sales page, and what FAQ schema does today.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
 <p>FAQ SEO means writing FAQs that answer the real questions customers ask, in the words they search, on the page where the doubt comes up. To write an FAQ page, collect the questions people ask you on calls, WhatsApp and email, answer each one directly in the first sentence, and group them under clear topics. A good FAQ removes a doubt that stops someone enquiring or buying; a bad one repeats the sales pitch as a question nobody asked.</p>
-<p>Done well, FAQs also help search engines and AI assistants understand exactly what you offer. This guide covers the steps, the wording and where to place them.</p>
+<p>Done well, FAQs also help search engines and AI assistants understand exactly what you offer.</p>
 
 <h2>How to write an FAQ page, step by step</h2>
 <ol>
@@ -15077,9 +15083,9 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 
 <h2>Quick check: are your FAQs found?</h2>
 <ol>
-  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong>, open the <strong>Queries</strong> tab and look for question searches that match your FAQ page.</li>
-  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for the FAQ page and check it is indexed.</li>
-  <li>Open the FAQ page on a phone and check each answer is short and links to the matching service page.</li>
+  <li>In Search Console, open <strong>Performance &gt; Queries</strong> and look for question searches matching your FAQs.</li>
+  <li>Check the FAQ page is indexed with <strong>URL Inspection</strong>.</li>
+  <li>On a phone, check each answer is short and links to the right service page.</li>
 </ol>
 
 <p>After adding FAQ markup, check it with Google's tool; see <a href="/blog/test-structured-data-rich-results/">how to use the Rich Results Test</a>.</p>
@@ -15107,6 +15113,9 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 
 <h3>Are FAQs good for SEO?</h3>
 <p>Yes, when they answer genuine questions clearly. They help a page match more of the ways people search and give search engines and AI assistants direct answers to quote. Filler FAQs written only for keywords add nothing.</p>
+<h3>How do you write an FAQ for a sales page?</h3>
+<p>List the objections people raise before buying (price, timing, fit, risk, what happens next), answer each in one or two plain sentences, and place the FAQ just above or below the main call to action.</p>
+
 `,
   },
   {
@@ -18850,7 +18859,7 @@ cf-cache-status: HIT</code></pre>
     title: 'WordPress Multisite: What It Is, When a Business Needs It, and What It Means for SEO',
     description: 'What WordPress Multisite is, when a business genuinely needs it, when separate sites work better, and how Multisite affects SEO, plugins and hosting.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-migration', 'wordpress-maintenance'],
     body: `
@@ -18937,8 +18946,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 </ol>
 <p>Two practical notes. On an established site with published posts older than a month, WordPress may only offer subdomains, to avoid URL clashes. And subdomain networks need wildcard subdomains set up in DNS and hosting, which not every shared host allows.</p>
 
-<h2>Leaving a network later</h2>
-
 <h2>WordPress multisite SEO in more detail</h2>
 <h3>Subdomain vs subdirectory multisite for SEO</h3>
 <p>Subdirectories (example.com/pune/) sit inside the main site and are simpler to manage. Subdomains (pune.example.com) are treated more like separate sites. For branches, regions or languages of one brand, subdirectories are usually the safer choice; for genuinely separate brands, use separate domains.</p>
@@ -18965,9 +18972,9 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>A proper multisite project covers planning the structure (subdomain or subdirectory, domain mapping), choosing themes and plugins that work network-wide, user roles for site admins, SEO setup per site, hosting with backups that can restore a single site, and documentation so your team can add new sites. Before asking for a quote, prepare the list of sites, who will edit each, what is shared and what differs, and ask whether separate installs might be simpler.</p>
 <h2>Quick check: do you really need Multisite?</h2>
 <ol>
-  <li>List the sites you would run and who edits each. If they share no users, themes or plugins, separate installs are usually simpler.</li>
-  <li>In WordPress, open <strong>Tools &gt; Site Health &gt; Info</strong> and check the PHP memory limit and server details your host gives you.</li>
-  <li>Ask your host whether they support Multisite and subdomain or subfolder setups on your plan, and how backups work for each site.</li>
+  <li>List the sites and who edits each. If they share no users, themes or plugins, use separate installs.</li>
+  <li>Check the PHP memory limit in <strong>Tools &gt; Site Health &gt; Info</strong>.</li>
+  <li>Ask your host if your plan supports Multisite and how per-site backups work.</li>
 </ol>
 
 <h2>When to get help</h2>
@@ -18984,8 +18991,11 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Yes. Domain mapping is built into WordPress: you point the domain's DNS to your hosting, add it to the hosting account, and set it as the site's address in Network Admin &gt; Sites. Each mapped domain needs its own SSL certificate and its own Search Console property.</p>
 <h3>Should I use Multisite for a multilingual website?</h3>
 <p>Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams.</p>
-<h3>Why is my WordPress Multisite slow?</h3>
+<h3>Why is my WordPress Multisite slow, and how do I speed it up?</h3>
 <p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in why WordPress Multisite is slow. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
+<h3>How do I do SEO for a WordPress Multisite network?</h3>
+<p>Treat every site as its own website: configure the SEO plugin per site, submit a separate sitemap for each, write unique content per branch and check each site in Search Console.</p>
+
 `,
   },
   {
@@ -21238,7 +21248,7 @@ Disallow: /</code></pre>
     title: '301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
     description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
@@ -21300,6 +21310,20 @@ Disallow: /</code></pre>
 <li><strong>Removing redirects too soon.</strong> Keep 301s for at least a year, and ideally permanently if old links still point to them.</li>
 </ol>
 
+<h2>301 redirect SEO: every redirect type compared</h2>
+<p>If you searched "http 301 vs 302", this is the full picture. The table covers the redirect types you will meet in WordPress plugins, hosting panels and .htaccess files, when to use each and what it does for SEO.</p>
+<table>
+<thead><tr><th>Type</th><th>When to use it</th><th>SEO effect</th></tr></thead>
+<tbody>
+<tr><td>301 Moved Permanently</td><td>New URL, merged posts, domain, HTTPS or www change</td><td>Signals move to the new URL; Google swaps the URL in results</td></tr>
+<tr><td>302 Found</td><td>Short maintenance, tests, seasonal or out-of-stock pages</td><td>Old URL usually stays indexed; signals stay with it while the move looks temporary</td></tr>
+<tr><td>307 Temporary Redirect</td><td>Same as 302 when a form or API request must keep its method</td><td>Treated like a 302</td></tr>
+<tr><td>308 Permanent Redirect</td><td>Same as 301 when the request method must be kept</td><td>Treated like a 301</td></tr>
+<tr><td>Meta refresh or JavaScript redirect</td><td>Only when you cannot set a server redirect</td><td>Google may follow it, but it is slower and less reliable; use a server 301 instead</td></tr>
+</tbody>
+</table>
+<p>A 301 redirect does not make a page rank higher on its own. It protects what the old URL already earned: links pointing to it, its history and its place in results. That is why a 301 is part of every <a href="/wordpress-migration/">WordPress migration</a>, redesign or URL clean-up.</p>
+
 <h2>How to set up 301 and 302 redirects in WordPress</h2>
 <h3>Option 1: a redirect plugin</h3>
 <p>The simplest way for most owners is a redirect plugin or the redirect manager in an SEO plugin. You enter the old path, the new URL and choose 301 or 302. Many also log 404 errors, so you can spot broken URLs and redirect them. Our <a href="/blog/wordpress-seo-plugins-compared/">WordPress SEO plugins comparison</a> covers which include redirects.</p>
@@ -21360,6 +21384,11 @@ Disallow: /</code></pre>
 <p>Only if the homepage is genuinely the best replacement. Otherwise redirect to the closest relevant page, or return a 404 or 410 with a helpful page.</p>
 <h3>Can too many redirects slow down my website?</h3>
 <p>A single redirect adds a small delay. Chains of several redirects add more and can stop crawlers following them, so always point old URLs straight to the final destination.</p>
+<h3>Does a 301 redirect hurt SEO?</h3>
+<p>No. A single 301 to a relevant page passes its ranking signals to the new URL. Problems come from chains, loops, redirecting to unrelated pages or the homepage, and leaving internal links pointing at the old URL.</p>
+<h3>What is HTTP 301 vs 302 in simple terms?</h3>
+<p>Both are HTTP status codes sent before the page loads. 301 tells browsers and Google "moved for good, use the new address". 302 says "moved for now, keep the old address".</p>
+
 `,
   },
   {
@@ -34902,6 +34931,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   <li>Check the booking appears in your calendar and that the slot is no longer offered.</li>
 </ol>
 
+<p>Running a hotel or homestay rather than appointments? Read how a <a href="/blog/hotel-booking-engine-channel-manager/">hotel booking engine, channel manager and PMS</a> fit together.</p>
+
 <h2>When to get help</h2>
 <p>Get help when bookings clash, when confirmations do not arrive, or when you need booking linked to payments or reminders. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -41429,6 +41460,8 @@ add_action( 'after_setup_theme', function () {
   <li>Search <strong>site:yourdomain.com</strong> and make sure private documents, such as member lists or accounts, do not appear in Google results.</li>
   <li>Send a test message through the complaint or contact form and confirm it reaches a committee email that someone checks.</li>
 </ol>
+
+<p>If your society also collects festival or welfare contributions, the guide to <a href="/blog/temple-ngo-website-online-donations/">online donations for temples and trusts</a> covers gateways, receipts and UPI QR codes.</p>
 
 <h2>When to get help</h2>
 <p>Get help when notices are out of date, when private files show up on Google, or when the committee needs a site several members can update safely. <a href="/website-for-temples-and-ngos/">Websites for temples and NGOs</a> covers this kind of site, with a written scope before work starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -55851,6 +55884,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <li><strong>Check where it is stored:</strong> confirm backups go to remote storage such as Google Drive, Dropbox or S3, not only the same server.</li>
 <li><strong>Test a restore:</strong> restore the latest backup to a staging copy or a local site. A backup you have never restored is not proven.</li>
 </ol>
+
+<p>Backing up a network? Read <a href="/blog/wordpress-multisite-when-needed/">what WordPress Multisite means for hosting, speed and SEO</a> before choosing a plugin.</p>
 
 <h2>When to get help</h2>
 <p>Get help when backups fail silently, when your site is too large for a free plugin, or when you need a restore after a hack or a bad update. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers off-site backups and restore tests, and <a href="/wordpress-malware-removal/">malware removal</a> handles restores after an infection. <a href="/#contact">Get in touch</a> with your backup plugin name.</p>
@@ -71860,6 +71895,8 @@ or a cookie name starts with:
   <li>Check the webhook URL in your gateway dashboard matches your site.</li>
 </ol>
 
+<p>Planning a new store and budgeting for it? See the <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> guide.</p>
+
 <h2>When to get help</h2>
 <p>If payments are failing and you are losing orders, fixing it fast matters more than learning every detail. A <a href="/woocommerce-developer/">WooCommerce developer</a> can check gateway settings, webhooks, logs and conflicts and set up monitoring so it does not happen again. You can also <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> for ongoing <a href="/wordpress-maintenance/">WooCommerce maintenance</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -73820,6 +73857,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
   <li>On a phone, place a small real order with UPI and confirm it shows as Paid under <strong>Orders</strong>.</li>
   <li>Refund that order from Shopify and check the refund reaches the account.</li>
 </ol>
+
+<p>Gateway fees are only one part of the budget; see the full <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when payments succeed but orders do not appear, when UPI fails on some phones, or when you are switching gateways. <a href="/shopify-developer/">Shopify development</a> covers gateway set-up and testing. You can also <a href="/#contact">send the details through the contact form</a>.</p>

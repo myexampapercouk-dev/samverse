@@ -43,7 +43,7 @@
       "headline": "WordPress Multisite: What It Is, When a Business Needs It, and What It Means for SEO",
       "description": "What WordPress Multisite is, when a business genuinely needs it, when separate sites work better, and how Multisite affects SEO, plugins and hosting.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-multisite-when-needed/",
       "image": "https://samverse.space/assets/og/blog-wordpress-multisite-when-needed.png",
       "articleSection": "Guides",
@@ -135,7 +135,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Multisite%3A%20What%20It%20Is%2C%20When%20a%20Business%20Needs%20It%2C%20and%20What%20It%20Means%20for%20SEO%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-multisite-when-needed%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -160,7 +160,6 @@
               <li><a href="#wordpress-multisite-seo">WordPress Multisite SEO</a></li>
               <li><a href="#hosting-plugins-and-performance">Hosting, plugins and performance</a></li>
               <li><a href="#how-to-set-up-wordpress-multisite">How to set up WordPress Multisite</a></li>
-              <li><a href="#leaving-a-network-later">Leaving a network later</a></li>
               <li><a href="#wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</a></li>
               <li><a href="#why-wordpress-multisite-gets-slow-and-how-to-speed-it-up">Why WordPress multisite gets slow, and how to speed it up</a></li>
               <li><a href="#what-wordpress-multisite-development-services-include">What WordPress multisite development services include</a></li>
@@ -266,8 +265,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 </ol>
 <p>Two practical notes. On an established site with published posts older than a month, WordPress may only offer subdomains, to avoid URL clashes. And subdomain networks need wildcard subdomains set up in DNS and hosting, which not every shared host allows.</p>
 
-<h2 id="leaving-a-network-later">Leaving a network later</h2>
-
 <h2 id="wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</h2>
 <h3>Subdomain vs subdirectory multisite for SEO</h3>
 <p>Subdirectories (example.com/pune/) sit inside the main site and are simpler to manage. Subdomains (pune.example.com) are treated more like separate sites. For branches, regions or languages of one brand, subdirectories are usually the safer choice; for genuinely separate brands, use separate domains.</p>
@@ -294,9 +291,9 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>A proper multisite project covers planning the structure (subdomain or subdirectory, domain mapping), choosing themes and plugins that work network-wide, user roles for site admins, SEO setup per site, hosting with backups that can restore a single site, and documentation so your team can add new sites. Before asking for a quote, prepare the list of sites, who will edit each, what is shared and what differs, and ask whether separate installs might be simpler.</p>
 <h2 id="quick-check-do-you-really-need-multisite">Quick check: do you really need Multisite?</h2>
 <ol>
-  <li>List the sites you would run and who edits each. If they share no users, themes or plugins, separate installs are usually simpler.</li>
-  <li>In WordPress, open <strong>Tools &gt; Site Health &gt; Info</strong> and check the PHP memory limit and server details your host gives you.</li>
-  <li>Ask your host whether they support Multisite and subdomain or subfolder setups on your plan, and how backups work for each site.</li>
+  <li>List the sites and who edits each. If they share no users, themes or plugins, use separate installs.</li>
+  <li>Check the PHP memory limit in <strong>Tools &gt; Site Health &gt; Info</strong>.</li>
+  <li>Ask your host if your plan supports Multisite and how per-site backups work.</li>
 </ol>
 
 <h2 id="when-to-get-help">When to get help</h2>
@@ -313,8 +310,10 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
 <p>Yes. Domain mapping is built into WordPress: you point the domain's DNS to your hosting, add it to the hosting account, and set it as the site's address in Network Admin &gt; Sites. Each mapped domain needs its own SSL certificate and its own Search Console property.</p>
 <h3>Should I use Multisite for a multilingual website?</h3>
 <p>Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams.</p>
-<h3>Why is my WordPress Multisite slow?</h3>
+<h3>Why is my WordPress Multisite slow, and how do I speed it up?</h3>
 <p>Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in why WordPress Multisite is slow. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network.</p>
+<h3>How do I do SEO for a WordPress Multisite network?</h3>
+<p>Treat every site as its own website: configure the SEO plugin per site, submit a separate sitemap for each, write unique content per branch and check each site in Search Console.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -357,7 +356,6 @@ define( 'PATH_CURRENT_SITE', '/' );</code></pre></li>
               <li><a href="#wordpress-multisite-seo">WordPress Multisite SEO</a></li>
               <li><a href="#hosting-plugins-and-performance">Hosting, plugins and performance</a></li>
               <li><a href="#how-to-set-up-wordpress-multisite">How to set up WordPress Multisite</a></li>
-              <li><a href="#leaving-a-network-later">Leaving a network later</a></li>
               <li><a href="#wordpress-multisite-seo-in-more-detail">WordPress multisite SEO in more detail</a></li>
               <li><a href="#why-wordpress-multisite-gets-slow-and-how-to-speed-it-up">Why WordPress multisite gets slow, and how to speed it up</a></li>
               <li><a href="#what-wordpress-multisite-development-services-include">What WordPress multisite development services include</a></li>
