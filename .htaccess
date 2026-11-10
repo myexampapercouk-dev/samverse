@@ -63,7 +63,7 @@ AddType application/manifest+json .webmanifest
 	RewriteRule ^blog/wordpress-developer-hourly-rate-india/?$ /blog/fixed-price-vs-hourly-website-projects/ [R=301,L]
 	RewriteRule ^blog/marathi-website-design/?$ /blog/multilingual-wordpress-website-hindi-english/ [R=301,L]
 
-	RewriteRule ^website-cost-calculator/?$ /#contact [R=301,NE,L]
+	RewriteRule ^website-cost-calculator/?$ /blog/wordpress-website-cost-india/ [R=301,L]
 
 	# The whole repo is deployed, so hide project files from the web
 	RewriteRule ^(\.git|node_modules|netlify|tools|docs)(/|$) - [R=404,L]
