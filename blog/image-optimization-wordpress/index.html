@@ -240,7 +240,7 @@
 <p>Image weight affects three things visitors and Google both notice:</p>
 <ul>
   <li><strong>Largest Contentful Paint (LCP):</strong> on most pages the largest element is a hero image or banner, so a heavy or late-loading image directly delays the moment the page looks ready.</li>
-  <li><strong>Mobile data and slower phones:</strong> a 3 MB homepage that feels fine on office Wi-Fi is a real wait on a congested 4G connection, and a real cost to anyone on a limited data pack. <a href="/blog/website-speed-indian-mobile-networks/">Website speed on Indian mobile networks</a> covers testing in those conditions.</li>
+  <li><strong>Mobile data and slower phones:</strong> a 3 MB homepage that feels fine on office Wi-Fi is a real wait on a congested 4G connection, and a real cost to anyone on a limited data pack. Website speed on Indian mobile networks covers testing in those conditions.</li>
   <li><strong>Layout shift (CLS):</strong> images without reserved space push text down as they arrive.</li>
 </ul>
 
@@ -318,10 +318,10 @@
      alt="Rooftop solar panels on a factory in Pune"&gt;</code></pre>
 <p>Recent WordPress versions try to add <code>fetchpriority="high"</code> to the image they think is the LCP element and skip lazy loading for it, but page builders, sliders and optimization plugins can override that. If the hero is a CSS background, the browser discovers it late, so a preload hint in the page head helps:</p>
 <pre><code>&lt;link rel="preload" as="image" href="/wp-content/uploads/hero-1600.webp" fetchpriority="high"&gt;</code></pre>
-<p>Better still, use a real image element for the hero where your theme allows it. <a href="/blog/fix-lcp-largest-contentful-paint/">How to fix slow LCP on WordPress</a> shows how to identify the LCP element and which part of its loading is slow.</p>
+<p>Better still, use a real image element for the hero where your theme allows it. How to fix slow LCP on WordPress shows how to identify the LCP element and which part of its loading is slow.</p>
 
 <h2 id="step-6-lazy-load-everything-below-the-fold">Step 6: Lazy-load everything below the fold</h2>
-<p>WordPress adds native <code>loading="lazy"</code> to content images by default, so images further down the page only load as the visitor scrolls towards them. You rarely need a separate lazy-loading plugin, and adding one on top of the native feature can lead to images that never appear or that load twice. Galleries, logo strips, embedded maps and YouTube videos lower on the page benefit most. <a href="/blog/lazy-loading-explained/">Lazy loading explained</a> covers videos, iframes and the common mistakes.</p>
+<p>WordPress adds native <code>loading="lazy"</code> to content images by default, so images further down the page only load as the visitor scrolls towards them. You rarely need a separate lazy-loading plugin, and adding one on top of the native feature can lead to images that never appear or that load twice. Galleries, logo strips, embedded maps and YouTube videos lower on the page benefit most. Lazy loading explained covers videos, iframes and the common mistakes.</p>
 
 <h2 id="step-7-set-width-and-height-on-every-image">Step 7: Set width and height on every image</h2>
 <p>When an image has width and height attributes (or a CSS aspect ratio), the browser reserves the space before the file arrives, so text doesn't jump as images load. WordPress adds dimensions to images inserted through the editor; custom theme code, logos and builder widgets are where they go missing. <a href="/blog/fix-cls-layout-shift/">How to fix Cumulative Layout Shift</a> covers the other causes of jumping pages.</p>
@@ -359,7 +359,7 @@
   <li><strong>Image SEO:</strong> descriptive file names and useful alt text help images appear in Google Images and Lens; see the <a href="/blog/image-seo-guide/">image SEO guide</a>.</li>
 </ul>
 
-<p>Taking your own photos? See <a href="/blog/prepare-photos-for-website/">how to prepare photos for your website</a>.</p>
+<p>Taking your own photos? See how to prepare photos for your website.</p>
 
 <p>Resizing first also prevents a common upload problem: very large photos can make WordPress fail with a vague message, covered in <a href="/blog/wordpress-http-error-image-upload-fix/">fixing the HTTP error when uploading images</a>.</p>
 
@@ -554,7 +554,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -581,6 +581,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

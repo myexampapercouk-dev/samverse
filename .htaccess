@@ -11,6 +11,10 @@ AddType application/manifest+json .webmanifest
 	RewriteCond %{HTTP_HOST} ^www\.samverse\.space$ [NC]
 	RewriteRule ^ https://samverse.space%{REQUEST_URI} [L,R=301]
 
+	# /index.html and /dir/index.html -> clean URL (THE_REQUEST so DirectoryIndex does not loop)
+	RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]*/)?)index\.html[\s?] [NC]
+	RewriteRule ^ https://samverse.space/%1 [L,R=301]
+
 	# Removed case study (owner request, 31 Oct 2026)
 	RewriteRule ^work/india-automation-hub/?$ - [G,L]
 

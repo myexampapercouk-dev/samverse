@@ -1247,7 +1247,8 @@ console.log('updated sitemap.xml');
 
 // Cache-bust the stylesheet: browsers keep style.min.css for a week, so every page links it with a content hash
 const cssVer = crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, 'style.min.css'))).digest('hex').slice(0, 8);
-const SKIP = new Set(['.git', 'node_modules', 'docs', 'tools']);
+const SKIP = new Set(['.git', 'node_modules', 'docs', 'tools', '.claude']);
+const NOINDEX_SLUGS = new Set(POSTS.filter(p => p.noindex).map(p => p.slug));
 let cssPages = 0;
 (function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -1255,7 +1256,9 @@ let cssPages = 0;
     if (!e.name.endsWith('.html')) continue;
     const f = path.join(dir, e.name);
     const s = fs.readFileSync(f, 'utf8');
-    const out = s.replace(/\/style\.min\.css(\?v=[0-9a-f]+)?"/g, `/style.min.css?v=${cssVer}"`);
+    let out = s.replace(/\/style\.min\.css(\?v=[0-9a-f]+)?"/g, `/style.min.css?v=${cssVer}"`);
+    // Indexed pages never link to noindexed posts: unwrap those anchors to plain text (no 301s for pruned posts)
+    if (!/<meta name="robots" content="noindex/.test(out)) out = out.replace(/<a\b[^>]*?href="(?:https:\/\/samverse\.space)?\/blog\/([a-z0-9-]+)\/"[^>]*>([\s\S]*?)<\/a>/g, (m, slug, inner) => NOINDEX_SLUGS.has(slug) && !/<a\b/.test(inner) ? inner : m);
     if (out !== s) { fs.writeFileSync(f, out); cssPages++; }
   }
 })(ROOT);

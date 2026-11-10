@@ -278,7 +278,7 @@
 <pre><code>&lt;Files xmlrpc.php&gt;
   Require all denied
 &lt;/Files&gt;</code></pre>
-<p>Nginx servers use an equivalent location rule. A mistake in .htaccess can take the whole site offline, so take a backup first (see the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>) or ask your developer. If a rule ends up blocking more than intended, <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden errors on WordPress</a> explains how to trace it.</p>
+<p>Nginx servers use an equivalent location rule. A mistake in .htaccess can take the whole site offline, so take a backup first (see the backup and restore guide) or ask your developer. If a rule ends up blocking more than intended, <a href="/blog/wordpress-403-forbidden-error-fix/">403 Forbidden errors on WordPress</a> explains how to trace it.</p>
 <h3>Option 4: your host or a cloud firewall</h3>
 <p>Cloud firewalls such as Cloudflare let you block or challenge requests to the /xmlrpc.php path before they reach your server at all, which is the best option when bot traffic is heavy. Some managed WordPress hosts block or rate-limit xmlrpc.php by default, and others will add a block on request. See <a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> for how these layers fit together.</p>
 <h3>Option 5: restrict rather than block</h3>
@@ -298,7 +298,7 @@
 <p>That's why you shouldn't disable the REST API along with XML-RPC, as some guides suggest. The block editor, WooCommerce and many plugins depend on it, and turning it off completely can break your dashboard and checkout. Restricting parts of it, such as the public user list, is a separate, more delicate job; see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a>.</p>
 
 <h2 id="one-small-step-in-a-bigger-picture">One small step in a bigger picture</h2>
-<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the <a href="/blog/find-remove-wordpress-backdoors/">guide to finding and removing backdoors</a>.</p>
+<p>Disabling XML-RPC reduces bot noise and closes a side door, but it won't protect a site with outdated plugins or weak passwords. Treat it as one item alongside updates, two-factor authentication, backups and a firewall, as in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. And if bots hammering xmlrpc.php make you suspect someone has already got in, work through the guide to finding and removing backdoors.</p>
 
 <h2 id="test-whether-xml-rpc-is-open">Test whether XML-RPC is open</h2>
 <p>Run this from a terminal, replacing the domain:</p>
@@ -492,7 +492,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -519,6 +519,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

@@ -296,14 +296,14 @@ wp cron schedule list</code></pre>
 
 <h2 id="the-fix-disable-wp-cron-with-a-real-server-cron">The fix: DISABLE_WP_CRON with a real server cron</h2>
 <ol>
-  <li>Take a full backup first; see <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a>.</li>
+  <li>Take a full backup first; see WordPress backup and restore.</li>
   <li>Put this line in wp-config.php, higher up than the closing "stop editing" comment:
 <pre><code>define( 'DISABLE_WP_CRON', true );</code></pre></li>
   <li>Create a cron job in your hosting panel. Set it to run every 5 or 15 minutes.</li>
   <li>Test: schedule a post a few minutes ahead and confirm it publishes on time, then check that the next backup runs when expected.</li>
 </ol>
 <h3>On Hostinger (hPanel)</h3>
-<p>hPanel has a Cron Jobs section under Advanced. You can choose a PHP script or a custom command, set the interval and save. Menu names change from time to time, so follow Hostinger's current help article if the screen looks different. The <a href="/blog/hostinger-wordpress-setup-guide/">Hostinger WordPress setup guide</a> covers the panel in general.</p>
+<p>hPanel has a Cron Jobs section under Advanced. You can choose a PHP script or a custom command, set the interval and save. Menu names change from time to time, so follow Hostinger's current help article if the screen looks different. The Hostinger WordPress setup guide covers the panel in general.</p>
 <h3>On cPanel hosts</h3>
 <p>cPanel has a Cron Jobs icon under Advanced. Pick a common interval or enter one, then paste the command. Typical commands look like these; your host may recommend a specific PHP path:</p>
 <pre><code># Call wp-cron.php over HTTP
@@ -541,7 +541,7 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -568,6 +568,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

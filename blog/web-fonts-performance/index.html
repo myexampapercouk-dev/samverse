@@ -237,11 +237,11 @@
 <p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
 <p>Fonts affect performance in three ways:</p>
 <ul>
-<li><strong>Largest Contentful Paint (LCP):</strong> if your main heading is the largest element, it cannot finish painting until its font loads. See <a href="/blog/fix-lcp-largest-contentful-paint/">fixing LCP</a>.</li>
+<li><strong>Largest Contentful Paint (LCP):</strong> if your main heading is the largest element, it cannot finish painting until its font loads. See fixing LCP.</li>
 <li><strong>Layout shift (CLS):</strong> when the web font replaces a fallback font of a different size, text reflows and the page jumps. See <a href="/blog/fix-cls-layout-shift/">fixing CLS</a>.</li>
 <li><strong>Invisible text:</strong> some browsers hide text for a few seconds while fonts load, so visitors on slow mobile connections see a blank page.</li>
 </ul>
-<p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a> explains why.</p>
+<p>On slower Indian mobile networks the effect is bigger, because each extra request and each extra connection to another server takes longer. Our guide on website speed on Indian mobile networks explains why.</p>
 <h2 id="how-to-check-your-web-font-performance">How to check your web font performance</h2>
 <ol>
 <li><strong>Run PageSpeed Insights</strong> on your homepage and a key service page. Look for "Ensure text remains visible during webfont load", "Eliminate render-blocking resources" and the LCP element.</li>
@@ -336,7 +336,7 @@
 <li><strong>Preloads:</strong> one, or two at most, and only for text that appears above the fold on mobile.</li>
 <li><strong>Icons:</strong> inline SVG instead of an icon font.</li>
 </ul>
-<p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and <a href="/blog/reduce-server-response-time-ttfb/">slow server response</a>.</p>
+<p>Fonts are only one part of page speed. Once they are in budget, look at the other <a href="/blog/core-web-vitals-explained/">Core Web Vitals</a> problems, such as large hero images, heavy scripts and slow server response.</p>
 <h2 id="how-to-test-web-font-changes-properly">How to test web font changes properly</h2>
 <p>Font fixes are easy to undo by accident, so test in a repeatable way. Run PageSpeed Insights on mobile for the homepage and one key service or product page before you change anything and note LCP, CLS and font requests. Make one change at a time, clear any page cache and CDN cache, then test again. Finally, open the page on a mid-range Android phone over mobile data and watch the first few seconds: text should appear at once and should not jump when the web font arrives.</p>
 <h2 id="quick-check-how-much-font-are-you-loading">Quick check: how much font are you loading?</h2>
@@ -531,7 +531,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -558,6 +558,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

@@ -314,7 +314,7 @@ if ( ! $link ) {
 <p>A word on wp_options, the table that holds your site address and settings. When it is damaged, or swollen with old autoloaded data left behind by removed plugins, symptoms can include this error, a blank site or a very slow admin. Repair may help, but it is not guaranteed: the repair commands work best on older MyISAM tables, while InnoDB tables, which most current hosts use, usually recover through the server's own processes or a restore. If repair reports errors it cannot fix, stop there and ask your host before trying anything stronger. For keeping the table lean once the site is back, see <a href="/blog/wordpress-database-optimization/">WordPress database optimisation</a>.</p>
 
 <h2 id="step-6-restore-from-a-backup">Step 6: Restore from a backup</h2>
-<p>If the database has been deleted or repair fails, restore the most recent good copy from your host's backups or your backup plugin, following the <a href="/blog/wordpress-backup-restore-guide/">backup and restore guide</a>. On a WooCommerce store or a booking site, anything that arrived after that backup was taken will be missing, so list recent orders, bookings and form enquiries from your emails and payment gateway dashboard before you restore, and re-enter or follow up on them afterwards.</p>
+<p>If the database has been deleted or repair fails, restore the most recent good copy from your host's backups or your backup plugin, following the backup and restore guide. On a WooCommerce store or a booking site, anything that arrived after that backup was taken will be missing, so list recent orders, bookings and form enquiries from your emails and payment gateway dashboard before you restore, and re-enter or follow up on them afterwards.</p>
 
 <h2 id="after-a-migration-the-separate-checklist">After a migration: the separate checklist</h2>
 <p>A host move is the single most common trigger, and the causes are predictable. Work down this list:</p>
@@ -336,14 +336,14 @@ if ( ! $link ) {
 
 <h2 id="prevention-and-monitoring">Prevention and monitoring</h2>
 <ul>
-  <li>Set up uptime monitoring with a keyword check, so you are alerted if the homepage stops showing a word it should always contain; see <a href="/blog/uptime-monitoring-explained/">uptime monitoring explained</a></li>
+  <li>Set up uptime monitoring with a keyword check, so you are alerted if the homepage stops showing a word it should always contain; see uptime monitoring explained</li>
   <li>Keep database details in a password manager, and whenever anyone resets the database password, update wp-config.php in the same sitting</li>
   <li>Use page caching so ordinary visits do not hit the database</li>
   <li>Block abusive bots and limit login attempts</li>
   <li>Keep daily backups that include the database, stored away from the server</li>
   <li>Watch renewal dates, since an expired or suspended hosting account takes the database with it</li>
 </ul>
-<p>Other common messages, such as the critical error notice or a white screen, are covered in <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a>.</p>
+<p>Other common messages, such as the critical error notice or a white screen, are covered in common WordPress errors and fixes.</p>
 
 <h2 id="quick-check-let-wp-cli-test-the-connection">Quick check: let WP-CLI test the connection</h2>
 <p>If you have SSH access, WP-CLI reads the details from wp-config.php and tests them for you. From the WordPress root, run:</p>
@@ -535,7 +535,7 @@ wp db check</code></pre>
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -562,6 +562,8 @@ wp db check</code></pre>
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

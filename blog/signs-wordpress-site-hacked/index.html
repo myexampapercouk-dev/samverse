@@ -257,7 +257,7 @@
   <thead><tr><th>Symptom</th><th>How to check</th><th>What it usually means</th></tr></thead>
   <tbody>
     <tr><td>Visitors redirected to gambling, dating or scam pages</td><td>Open the site logged out, on mobile data, from a Google result</td><td><a href="/blog/fix-wordpress-redirect-hack/">Redirect hack</a>; often skips logged-in admins</td></tr>
-    <tr><td>Japanese, pharma or replica pages in Google</td><td>Search <code>site:yourdomain.com</code></td><td><a href="/blog/fix-japanese-keyword-seo-spam-hack/">Japanese keyword SEO spam hack</a></td></tr>
+    <tr><td>Japanese, pharma or replica pages in Google</td><td>Search <code>site:yourdomain.com</code></td><td>Japanese keyword SEO spam hack</td></tr>
     <tr><td>"Deceptive site ahead" or "This site may be hacked"</td><td>Search Console, Security Issues; Google Safe Browsing site status</td><td>Google has detected malware or phishing; see <a href="/blog/deceptive-site-ahead-warning-fix/">fixing "Deceptive site ahead"</a></td></tr>
     <tr><td>Admin users you did not create</td><td>Users, filter by Administrator</td><td>Attacker access; assume a backdoor too</td></tr>
     <tr><td>Unknown plugins or PHP files in uploads</td><td>Plugins list; wp-content/uploads in File Manager</td><td>Malware or a backdoor</td></tr>
@@ -282,7 +282,7 @@
 <li><strong>Review plugins and themes.</strong> Look for plugins you did not install, or anything nulled. Read <a href="/blog/nulled-themes-plugins-risks/">why nulled themes and plugins are risky</a>.</li>
 <li><strong>Look at recently modified files.</strong> In your hosting file manager or over SFTP, sort folders by modified date. PHP files changed on a day nobody worked on the site, or any PHP file in wp-content/uploads, need a closer look.</li>
 <li><strong>Check key files.</strong> Open .htaccess, wp-config.php and index.php. Long lines of encoded text, eval, base64_decode or unfamiliar redirect rules are red flags.</li>
-<li><strong>Run a malware scanner.</strong> Use a security plugin scan and an external scanner; a clean result is reassurance, not proof. Our <a href="/blog/wordpress-malware-scanners-compared/">malware scanner comparison</a> explains the differences.</li>
+<li><strong>Run a malware scanner.</strong> Use a security plugin scan and an external scanner; a clean result is reassurance, not proof. Our malware scanner comparison explains the differences.</li>
 <li><strong>Check the database.</strong> Search the wp_options and wp_posts tables for script tags, iframes or unfamiliar domains, especially in siteurl, home and widget settings.</li>
 </ol>
 
@@ -337,7 +337,7 @@
 <li><strong>Change every password.</strong> WordPress admins, hosting panel, SFTP, database and the email account linked to the admin. Update the security keys in wp-config.php so every session is logged out.</li>
 <li><strong>Put the site in maintenance mode if visitors are at risk</strong>, for example when it redirects to scams or the checkout is affected.</li>
 <li><strong>Clean properly.</strong> Replace WordPress core with a fresh copy, reinstall plugins and themes from official sources, remove unknown files and clean injected database content. Our <a href="/blog/remove-malware-wordpress-step-by-step/">step-by-step malware removal guide</a> covers this.</li>
-<li><strong>Hunt for backdoors.</strong> Attackers usually leave a way back in. See <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a>.</li>
+<li><strong>Hunt for backdoors.</strong> Attackers usually leave a way back in. See finding and removing WordPress backdoors.</li>
 <li><strong>Find and close the entry point.</strong> Usually an outdated plugin, a weak or reused password, a nulled theme or another infected site on the same hosting account.</li>
 <li><strong>Request a review.</strong> Once clean, request a review in Search Console so Google removes the warning, then follow <a href="/blog/recover-rankings-after-hack/">our guide to recovering rankings after a hack</a>.</li>
 </ol>
@@ -345,7 +345,7 @@
 <p>Restoring an old backup is not always enough: it may already hold the backdoor and the outdated plugin that let the attacker in. Update, change passwords and scan the copy before going live.</p>
 
 <h2 id="how-to-stop-it-happening-again">How to stop it happening again</h2>
-<p>Most hacks come from a short list of causes (see <a href="/blog/why-wordpress-sites-get-hacked/">why WordPress sites get hacked</a>). These habits prevent most of them:</p>
+<p>Most hacks come from a short list of causes (see why WordPress sites get hacked). These habits prevent most of them:</p>
 <ul>
 <li>Keep WordPress, plugins and themes updated, and remove anything you do not use.</li>
 <li>Use strong unique passwords and two-factor authentication for every admin.</li>
@@ -359,7 +359,7 @@
 <h2 id="how-to-check-if-a-wordpress-store-or-payment-page-is-hacked">How to check if a WordPress store or payment page is hacked</h2>
 <p>Attackers in a WooCommerce site often target money, and the shop keeps working while payments or customer data are quietly diverted. Check:</p>
 <ul>
-<li><strong>Checkout scripts:</strong> view the source of the checkout page and look for scripts loading from domains you do not recognise. Card and payment skimmers sit here. See <a href="/blog/woocommerce-checkout-skimmer-malware/">WooCommerce checkout skimmer malware</a>.</li>
+<li><strong>Checkout scripts:</strong> view the source of the checkout page and look for scripts loading from domains you do not recognise. Card and payment skimmers sit here. See WooCommerce checkout skimmer malware.</li>
 <li><strong>Payment settings:</strong> open each payment gateway's settings and confirm the account details, API keys and any UPI ID shown to customers are still yours.</li>
 <li><strong>Contact details:</strong> check that the phone number, WhatsApp link and bank details on the contact page, order emails and invoice templates have not been changed.</li>
 <li><strong>Orders and customers:</strong> look for unusual admin-created orders, coupons you did not create, or new shop manager accounts.</li>
@@ -367,7 +367,7 @@
 </ul>
 <p>If anything looks wrong, put the checkout into maintenance mode, tell your payment provider and clean up before taking orders again.</p>
 <h2 id="a-monthly-hack-check-you-can-do-in-15-minutes">A monthly hack check you can do in 15 minutes</h2>
-<p>Repeat checks 1, 2, 4, 5 and 6 from the list above once a month, and confirm your latest off-site backup exists and restores (see the <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore guide</a>). A <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include this routine if you would rather not do it yourself.</p>
+<p>Repeat checks 1, 2, 4, 5 and 6 from the list above once a month, and confirm your latest off-site backup exists and restores (see the WordPress backup and restore guide). A <a href="/wordpress-maintenance/">WordPress maintenance plan</a> can include this routine if you would rather not do it yourself.</p>
 <h2 id="faqs">FAQs</h2>
 <h3>How do I check if my WordPress site is hacked?</h3>
 <p>Run a site: search for spam pages, open the site logged out from a Google result on a phone, check Security Issues in Search Console, review administrator accounts and recently modified files, and run a malware scan. If two or more checks fail, treat the site as hacked.</p>
@@ -553,7 +553,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -580,6 +580,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

@@ -245,9 +245,9 @@
 
 <h2 id="what-each-metric-means-in-practice">What each metric means in practice</h2>
 <h3>LCP: does the main content appear quickly?</h3>
-<p>LCP is the moment the largest image or block of text in the visible part of the screen finishes rendering. On most business sites that's the hero image, a slider, or the main heading. A slow LCP usually comes from one of four places: the server taking too long to respond, the browser discovering the image late, the image itself being too heavy, or CSS and JavaScript blocking the page from drawing. <a href="/blog/fix-lcp-largest-contentful-paint/">How to fix slow LCP</a> shows how to find your LCP element and which of the four is to blame.</p>
+<p>LCP is the moment the largest image or block of text in the visible part of the screen finishes rendering. On most business sites that's the hero image, a slider, or the main heading. A slow LCP usually comes from one of four places: the server taking too long to respond, the browser discovering the image late, the image itself being too heavy, or CSS and JavaScript blocking the page from drawing. How to fix slow LCP shows how to find your LCP element and which of the four is to blame.</p>
 <h3>INP: does the page respond when someone taps?</h3>
-<p>INP replaced First Input Delay as a Core Web Vital in March 2024. Where First Input Delay only looked at the first tap, INP looks at interactions throughout the visit, such as opening a menu, choosing a product option or submitting a form, and reports one of the slowest. Poor INP almost always means the browser is busy running JavaScript: chat widgets, trackers, sliders, heavy page builder layouts or plugins doing work on every page. See <a href="/blog/fix-inp-interaction-to-next-paint/">how to improve INP</a>.</p>
+<p>INP replaced First Input Delay as a Core Web Vital in March 2024. Where First Input Delay only looked at the first tap, INP looks at interactions throughout the visit, such as opening a menu, choosing a product option or submitting a form, and reports one of the slowest. Poor INP almost always means the browser is busy running JavaScript: chat widgets, trackers, sliders, heavy page builder layouts or plugins doing work on every page. See how to improve INP.</p>
 <h3>CLS: does the layout stay still?</h3>
 <p>CLS adds up unexpected movements of content, such as text pushed down by an image without dimensions, a late-loading banner or a font swap. Movement that happens straight after someone taps, such as an accordion opening, doesn't count. Bad CLS is why people tap the wrong button. See <a href="/blog/fix-cls-layout-shift/">how to fix CLS on WordPress</a>.</p>
 
@@ -304,7 +304,7 @@
     <tr><td>Web fonts swapping late</td><td>CLS, LCP</td><td>Fewer font files, preload the main font</td></tr>
   </tbody>
 </table>
-<p>If the slow part is server response, <a href="/blog/reduce-server-response-time-ttfb/">how to reduce TTFB</a> explains caching, PHP and hosting. For the full list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a></p>
+<p>If the slow part is server response, how to reduce TTFB explains caching, PHP and hosting. For the full list of causes, see <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow?</a></p>
 
 <p>Fonts affect both LCP and layout shift. Small changes such as fewer weights and self-hosting can <a href="/blog/web-fonts-performance/">reduce font load</a> without changing the design.</p>
 
@@ -316,7 +316,7 @@
   <li>Then fix the LCP element, scripts, and layout shifts, in order of impact.</li>
   <li>Confirm each fix with a lab test, check the pages still work, then let field data catch up over 28 days.</li>
 </ol>
-<p>Test on a real mid-range Android phone on mobile data as well. Many Indian visitors browse on budget phones and variable connections, and that's exactly the audience the 75th percentile captures; see <a href="/blog/website-speed-indian-mobile-networks/">website speed on Indian mobile networks</a>.</p>
+<p>Test on a real mid-range Android phone on mobile data as well. Many Indian visitors browse on budget phones and variable connections, and that's exactly the audience the 75th percentile captures; see website speed on Indian mobile networks.</p>
 
 <h2 id="core-web-vitals-on-indian-mobile-traffic">Core Web Vitals on Indian mobile traffic</h2>
 <p>For most Indian business sites, the majority of visitors arrive on mid-range Android phones over mobile data. That is where Core Web Vitals usually fail, even when the site feels quick on an office laptop on Wi-Fi. A few patterns come up again and again:</p>
@@ -515,7 +515,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -542,6 +542,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

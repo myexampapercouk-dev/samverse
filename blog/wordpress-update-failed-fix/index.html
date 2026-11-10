@@ -241,7 +241,7 @@
 <p>See also: <a href="/blog/wordpress-changes-not-showing/">WordPress changes not showing on your site</a>.</p>
 
 <h2 id="step-1-back-up-before-you-touch-anything">Step 1: back up before you touch anything</h2>
-<p>Before retrying, take a full backup of files and database, or confirm that your host's latest backup is recent and restorable. A failed update that is retried carelessly can turn a small problem into a broken site. If you do not have a routine yet, <a href="/blog/wordpress-backup-restore-guide/">WordPress backup and restore</a> explains what to keep and where to store it.</p>
+<p>Before retrying, take a full backup of files and database, or confirm that your host's latest backup is recent and restorable. A failed update that is retried carelessly can turn a small problem into a broken site. If you do not have a routine yet, WordPress backup and restore explains what to keep and where to store it.</p>
 <p>Also note the exact plugin, theme or core version that failed and the full error text. A screenshot is enough. It saves time if you need to ask the plugin developer or your host for help.</p>
 
 <aside class="inline-cta">
@@ -254,7 +254,7 @@
 <p>When an update is interrupted, WordPress can leave two things behind:</p>
 <ul>
   <li><strong>The update lock.</strong> WordPress stores a temporary lock in the options table so two updates do not run at once. It normally expires on its own after about 15 minutes. If it does not, delete the core_updater.lock row from the wp_options table in phpMyAdmin (your table prefix may differ).</li>
-  <li><strong>The .maintenance file.</strong> If visitors see "Briefly unavailable for scheduled maintenance", delete the .maintenance file in the root folder using the hosting file manager or SFTP. The full walk-through is in <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</li>
+  <li><strong>The .maintenance file.</strong> If visitors see "Briefly unavailable for scheduled maintenance", delete the .maintenance file in the root folder using the hosting file manager or SFTP. The full walk-through is in WordPress stuck in maintenance mode.</li>
 </ul>
 <p>Wait a few minutes after clearing either one, then retry a single update rather than "update all".</p>
 
@@ -279,7 +279,7 @@
   <li>Reactivate it from the Plugins screen and check the pages that use it.</li>
   <li>Once everything works, delete the -old folder.</li>
 </ol>
-<p>Do not delete the plugin from the WordPress dashboard to "start fresh". Some plugins remove their settings and data on uninstall. If the site shows a white screen or critical error after the failure, start with <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>.</p>
+<p>Do not delete the plugin from the WordPress dashboard to "start fresh". Some plugins remove their settings and data on uninstall. If the site shows a white screen or critical error after the failure, start with fixing the WordPress white screen of death.</p>
 
 <h2 id="step-7-when-the-core-wordpress-update-fails">Step 7: when the core WordPress update fails</h2>
 <p>A failed core update is rarer but more worrying. If the dashboard still loads, go to Dashboard, Updates and use "Re-install version" once the lock has cleared. If wp-admin will not load, a manual core update works: download WordPress, then upload the wp-admin and wp-includes folders and the root files over the old ones, leaving wp-content and wp-config.php alone. Visit /wp-admin/ afterwards and accept any database update prompt.</p>
@@ -483,7 +483,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -510,6 +510,8 @@
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

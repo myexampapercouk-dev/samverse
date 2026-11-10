@@ -266,13 +266,13 @@
 <h2 id="emails-not-arriving-or-landing-in-spam">Emails not arriving, or landing in spam</h2>
 <p>This is where most broken forms fail. By default, WordPress sends email through the server's PHP mail function, with no authentication. Gmail, Outlook and Zoho treat that kind of mail with suspicion, so it goes to spam or is quietly rejected.</p>
 <h3>Send through SMTP</h3>
-<p>Install an SMTP plugin such as WP Mail SMTP, FluentSMTP or Post SMTP and connect it to a proper mailbox or sending service: Google Workspace, Zoho Mail, your host's email, or a transactional service such as Brevo. Then send a test email from the plugin's tools page. <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails? Fix it with SMTP</a> walks through the setup.</p>
+<p>Install an SMTP plugin such as WP Mail SMTP, FluentSMTP or Post SMTP and connect it to a proper mailbox or sending service: Google Workspace, Zoho Mail, your host's email, or a transactional service such as Brevo. Then send a test email from the plugin's tools page. WordPress not sending emails? Fix it with SMTP walks through the setup.</p>
 <h3>Fix the From address</h3>
 <p>Many forms are set to send "from" the visitor's own email address. That looks logical, but it fails email authentication, because your server isn't allowed to send as gmail.com or someone else's company domain. Send from an address on your own domain, such as enquiries@yourdomain.com, and put the visitor's email in Reply-To, so clicking reply still reaches them. In Contact Form 7, that means the Mail tab's From field and a Reply-To line under Additional headers:</p>
 <pre><code>From: [_site_title] &lt;enquiries@yourdomain.com&gt;
 Additional headers: Reply-To: [your-email]</code></pre>
 <h3>Check SPF, DKIM and DMARC</h3>
-<p>Your domain's DNS should have an SPF record that includes whoever sends your mail, DKIM signing for that sender, and a DMARC record on top. Without them, more of your messages land in spam. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+<p>Your domain's DNS should have an SPF record that includes whoever sends your mail, DKIM signing for that sender, and a DMARC record on top. Without them, more of your messages land in spam. See SPF, DKIM and DMARC explained.</p>
 <h3>Check where it's going</h3>
 <ul>
   <li><strong>Is the recipient address current?</strong> Forms often still send to an ex-employee, a previous developer or an address at a domain that has lapsed.</li>
@@ -502,7 +502,7 @@ Additional headers: Reply-To: [your-email]</code></pre>
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -529,6 +529,8 @@ Additional headers: Reply-To: [your-email]</code></pre>
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 

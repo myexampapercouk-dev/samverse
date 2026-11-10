@@ -234,7 +234,7 @@
     <tr><td>Hundreds of contact form or registration emails</td><td>Bots abusing a form</td><td>Form entries and plugin logs</td></tr>
   </tbody>
 </table>
-<p>If it turns out to be spoofing, nothing on your server needs cleaning. What helps is SPF, DKIM and a DMARC policy that tells receivers to reject mail that fails them; see <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</p>
+<p>If it turns out to be spoofing, nothing on your server needs cleaning. What helps is SPF, DKIM and a DMARC policy that tells receivers to reject mail that fails them; see SPF, DKIM and DMARC explained.</p>
 
 <h2 id="step-1-stop-the-sending-but-keep-a-sample">Step 1: Stop the sending, but keep a sample</h2>
 <p>Ask your host to suspend outgoing mail for the account or domain while you investigate. On shared hosting only the host can do this; on a VPS with WHM you can use the mail queue manager yourself. Many hosts also cap how many emails a domain can send per hour, and hitting that cap is often what triggered the warning. Messages over the limit are usually deferred or rejected, so the queue fills up.</p>
@@ -260,7 +260,7 @@
 grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -rn | head</code></pre>
 <p>The first command counts messages by the folder they were sent from, so a burst from a folder inside wp-content stands out. The second counts messages by authenticated mailbox, so one account sending far more than usual points to a stolen password.</p>
 <h3>Look for mailer scripts</h3>
-<p>If the evidence points to a script, check uploads and any random-named folders for PHP files, look at files changed around the time the spam started, and check hosting cron jobs, because some mailers run on a schedule. A mailer is usually dropped through a backdoor, so finding one means the site is compromised; work through <a href="/blog/find-remove-wordpress-backdoors/">finding and removing WordPress backdoors</a> as well as deleting the script.</p>
+<p>If the evidence points to a script, check uploads and any random-named folders for PHP files, look at files changed around the time the spam started, and check hosting cron jobs, because some mailers run on a schedule. A mailer is usually dropped through a backdoor, so finding one means the site is compromised; work through finding and removing WordPress backdoors as well as deleting the script.</p>
 <h3>Check for leaked SMTP or mailbox passwords</h3>
 <p>If spam is going out through a real mailbox, its password has leaked. Common routes are a phishing email imitating your webmail login, a weak or reused password, an infected computer, or a hacked website: SMTP plugins often store the mailbox password in the database, where anyone who gets into the site can read it. Some SMTP plugins let you keep it in wp-config.php instead, which is better, though a full compromise can still reach it. API keys for transactional email services can leak the same way.</p>
 <h3>Check forms and plugins</h3>
@@ -293,7 +293,7 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 
 <h2 id="step-5-send-website-email-properly-from-now-on">Step 5: Send website email properly from now on</h2>
 <ul>
-  <li>Send WordPress emails through an authenticated SMTP account or a transactional email service rather than PHP's basic mail function; see <a href="/blog/wordpress-not-sending-emails-smtp/">fixing WordPress email with SMTP</a>.</li>
+  <li>Send WordPress emails through an authenticated SMTP account or a transactional email service rather than PHP's basic mail function; see fixing WordPress email with SMTP.</li>
   <li>Publish SPF, DKIM and DMARC records, and read the DMARC reports for mail sent in your name from places you don't recognise.</li>
   <li>If all your website email goes through SMTP, ask your host whether PHP's mail function can be disabled for your account, so a dropped mailer script has nothing to use.</li>
   <li>Use strong, unique mailbox passwords, keep plugins updated and keep an eye on sending volume.</li>
@@ -483,7 +483,7 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
             <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
             <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
           </a>
-          <p>Samverse: freelance <a href="/wordpress-developer-pune/">WordPress development based in Pune</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">UAE</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
           <span class="footer-status"><span class="dot"></span> Taking new projects</span>
         </div>
 
@@ -510,6 +510,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
             <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
             <li><a href="/elementor-developer/">Elementor Developer</a></li>
             <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
           </ul>
         </div>
 
