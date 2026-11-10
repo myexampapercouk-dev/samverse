@@ -197,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Google%20Merchant%20Center%20for%20WooCommerce%20and%20WordPress%3A%20Set%20Up%20Free%20Listings%20and%20Fix%20Disapprovals%20https%3A%2F%2Fsamverse.space%2Fblog%2Fgoogle-merchant-center-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -253,7 +253,7 @@
 </table>
 <p>Start with free listings. They cost nothing, and getting your product data clean is the hard part of Shopping ads anyway.</p>
 <h2 id="before-you-start-get-the-store-ready">Before you start: get the store ready</h2>
-<p>Google checks your website as well as your products. New stores are often suspended for "misrepresentation" simply because basic trust information is missing. Before connecting anything, make sure you have:</p>
+<p>New stores are often suspended for "misrepresentation" because trust information is missing. Make sure you have:</p>
 <ul>
   <li><strong>Contact details</strong> on the site: a phone number, an email address and ideally a business address, matching your Merchant Center business information</li>
   <li><strong>A clear returns and refunds policy</strong> page; see <a href="/blog/woocommerce-returns-refunds-policy/">returns and refunds for WooCommerce stores</a></li>
@@ -311,7 +311,8 @@
     <tr><td>item_group_id</td><td>Links variations (sizes, colours) of the same product; WooCommerce variations handle this</td></tr>
   </tbody>
 </table>
-<p>Titles matter most for which searches you show up for. Use the words shoppers search, not internal codes, and put the important attributes early.</p>
+<figure class="step-shot"><img src="/assets/blog/google-merchant-center-woocommerce-step-1.svg" alt="Google Merchant Center WooCommerce: product edit Inventory tab with SKU and GTIN, UPC, EAN, or ISBN fields" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In the product Inventory tab, add the SKU and the real GTIN.</figcaption></figure>
+<p>Titles matter most for which searches you show up for. Use the words shoppers search, not internal codes, and put the important attributes early. Product schema should match the feed; <a href="/blog/test-structured-data-rich-results/">test your structured data</a>.</p>
 <h2 id="step-4-set-shipping-and-returns">Step 4: Set shipping and returns</h2>
 <p>In Merchant Center's shipping and returns settings, add a shipping service for India with your costs, any free-shipping threshold and realistic delivery times (handling time plus transit time). Add your return policy: the return window, whether returns are free, and the policy URL. If Google for WooCommerce syncs shipping from your WooCommerce zones, check the result, because complex rules don't always translate. Whatever you enter has to match what a shopper sees at checkout; see <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
 <p>Availability mismatches often start with wrong stock counts in the store itself; <a href="/blog/woocommerce-stock-not-updating/">why WooCommerce stock is not updating</a> covers the usual causes.</p>
@@ -332,6 +333,7 @@
     <tr><td>Landing page not working</td><td>Deleted products, password protection, or pages blocked in robots.txt</td><td>Keep product URLs live and crawlable</td></tr>
   </tbody>
 </table>
+<figure class="step-shot"><img src="/assets/blog/google-merchant-center-woocommerce-step-2.svg" alt="Google Merchant Center WooCommerce: Products, Diagnostics, Item issues such as price mismatch and missing shipping" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Merchant Center, Diagnostics, Item issues, fix the most common issue first.</figcaption></figure>
 <p>Caching is a frequent hidden cause of price and stock mismatches; see <a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> for what to exclude.</p>
 <h2 id="google-merchant-center-on-wordpress-with-or-without-woocommerce">Google Merchant Center on WordPress: with or without WooCommerce</h2>
 <p>Merchant Center is built for products that can be bought, so the easiest route on WordPress is almost always WooCommerce plus the official Google for WooCommerce extension (the plugin that used to be called Google Listings &amp; Ads), or a feed plugin. It creates and updates the product feed automatically as your prices and stock change.</p>
@@ -359,7 +361,7 @@
 <p>Fix a field in WooCommerce rather than in Merchant Center, so the next sync does not undo it.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
-<p>If products keep getting disapproved, the account is suspended for misrepresentation, or stock stops syncing, get the store and feed reviewed together. Merchant Center setup and store fixes are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+<p>If products keep getting disapproved, the account is suspended for misrepresentation, or stock stops syncing, get the store and feed reviewed together. Then add <a href="/blog/google-ads-conversion-tracking-setup/">conversion tracking</a> and reuse the feed in a <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">Meta catalogue</a>. Merchant Center setup and store fixes are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
 <h2 id="faqs">FAQs</h2>
 <h3>How do I connect WooCommerce to Google Merchant Center?</h3>

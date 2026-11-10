@@ -285,6 +285,7 @@
 <li><strong>Check several page types:</strong> home, a blog post, a product page, the checkout and any page built with a page builder, since each may have different causes.</li>
 <li><strong>Online checkers:</strong> mixed content scanners can crawl several pages at once, though the console remains the most reliable.</li>
 </ol>
+<figure class="step-shot"><img src="/assets/blog/mixed-content-warnings-fix-step-1.svg" alt="Mixed content warning: Chrome DevTools Console showing an insecure http image on an HTTPS page" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: The Console names each insecure http:// URL.</figcaption></figure>
 <p>Note the domains involved. If the insecure URLs are on your own domain, the fix is inside WordPress. If they are on another domain, the external service or embed code needs updating.</p>
 
 <h2 id="how-to-fix-mixed-content-warnings-in-wordpress-step-by-step">How to fix mixed content warnings in WordPress, step by step</h2>
@@ -292,6 +293,7 @@
 <p>Before changing anything in the database, take a full backup of files and database, and confirm you can restore it. The guide to <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a> can help you choose a tool.</p>
 <h3>2. Check the WordPress Address and Site Address</h3>
 <p>In Settings, General, both URLs should start with https://. If they are greyed out, they are set in wp-config.php and need to be changed there.</p>
+<figure class="step-shot"><img src="/assets/blog/mixed-content-warnings-fix-step-2.svg" alt="Fix mixed content WordPress: Settings, General, WordPress Address and Site Address using https" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Settings, General, both addresses must start with https://.</figcaption></figure>
 <h3>3. Update URLs in the database</h3>
 <p>Run a search-and-replace from http://yourdomain.com to https://yourdomain.com. Use a tool designed for WordPress, such as a dedicated search-and-replace plugin or WP-CLI, because some data is stored in serialised form and a plain SQL replace can break it. Run a dry run first to see how many changes will be made. If the site was migrated, also replace the old domain or staging URL.</p>
 <h3>4. Check page builder settings</h3>
@@ -306,7 +308,7 @@
 <p>Clear your caching plugin, server cache and CDN cache, then check the console again on each page type.</p>
 
 <h2 id="mixed-content-after-a-migration-or-redesign">Mixed content after a migration or redesign</h2>
-<p>Mixed content often appears right after a site moves to new hosting, a new domain or a new design, because URLs from the old setup remain in content and settings. Build a URL update into every migration checklist, and test the site on HTTPS before switching DNS. The guide on <a href="/blog/migrate-website-to-hostinger/">moving a website to new hosting</a> covers the full process, and <a href="/blog/ssl-certificate-errors-fix/">fixing SSL certificate errors</a> helps when the certificate itself is the problem.</p>
+<p>Mixed content often appears right after a site moves to new hosting, <a href="/blog/change-domain-name-without-losing-seo/">a new domain</a> or a new design, because URLs from the old setup remain in content and settings. Build a URL update into every migration checklist, and test the site on HTTPS before switching DNS. The guide on <a href="/blog/migrate-website-to-hostinger/">moving a website to new hosting</a> covers the full process, and <a href="/blog/ssl-certificate-errors-fix/">fixing SSL certificate errors</a> helps when the certificate itself is the problem.</p>
 
 <h2 id="stopping-mixed-content-from-coming-back">Stopping mixed content from coming back</h2>
 <p>Once the site is clean, a few habits keep it that way:</p>

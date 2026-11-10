@@ -249,7 +249,7 @@
   <li><strong>Genuine proof,</strong> such as a real testimonial or a link to your Google reviews, which reassures people they made a good choice.</li>
   <li><strong>A spam-folder note</strong> if you send an automatic email reply, since first emails from a new address sometimes land there.</li>
 </ol>
-<p>Leave off another form asking for the same details, pop-ups, pushy offers and anything that makes the page a dead end; keep your normal header and footer so visitors can carry on browsing. Different forms need slightly different pages:</p>
+<p>Leave off another form asking for the same details, pop-ups, pushy offers and anything that makes the page a dead end; keep your normal header and footer so visitors can carry on browsing. Shop order pages follow the same idea; see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>. Different forms need slightly different pages:</p>
 <table>
   <thead><tr><th>Form</th><th>What its thank-you page should add</th></tr></thead>
   <tbody>
@@ -301,6 +301,7 @@
     <tr><td>Contact Form 7</td><td>No built-in setting; use a short script or an add-on plugin</td></tr>
   </tbody>
 </table>
+<figure class="step-shot"><img src="/assets/blog/thank-you-pages-forms-step-1.svg" alt="Thank you page form redirect: form plugin Confirmations with Show page set to the Thank You page" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In the form's Confirmations, choose a page or redirect and pick the thank-you page.</figcaption></figure>
 <p>For Contact Form 7, this script, added to the page's footer or through a code snippets plugin, redirects only after the email has been sent successfully. Replace 123 with your form's ID, shown in its shortcode:</p>
 <pre><code>&lt;script&gt;
 document.addEventListener( 'wpcf7mailsent', function( event ) {
@@ -318,6 +319,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   <li><strong>Don't link to it</strong> from menus, footers or other pages.</li>
   <li><strong>Gated downloads:</strong> a brochure link on a thank-you page can be shared, which is fine for most brochures. For anything you want to control, email the file instead.</li>
 </ul>
+<figure class="step-shot"><img src="/assets/blog/thank-you-pages-forms-step-2.svg" alt="Thank you page noindex: Yoast SEO Advanced, show this Page in search results set to No" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In the Yoast Advanced section, set search results to No.</figcaption></figure>
 
 <h2 id="track-it-and-count-each-enquiry-once">Track it, and count each enquiry once</h2>
 <h3>In GA4</h3>

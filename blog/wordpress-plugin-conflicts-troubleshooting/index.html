@@ -197,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Fix%20WordPress%20Plugin%20Conflicts%20Safely%3A%20Staging%2C%20Troubleshooting%20Mode%2C%20Debug%20Logs%20and%20Prevention%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-plugin-conflicts-troubleshooting%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -254,7 +254,7 @@
     <tr><td>Admin very slow</td><td>One plugin's screens are slow</td><td>Hosting limits or a bloated database</td></tr>
   </tbody>
 </table>
-<p>A blank page with no message at all is covered in <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>; "allowed memory size exhausted" messages are a hosting limit rather than a clash. If forms submit but no email arrives, the cause is usually delivery rather than a conflict.</p>
+<p>A blank page with no message at all is covered in <a href="/blog/wordpress-white-screen-of-death/">fixing the WordPress white screen of death</a>; "allowed memory size exhausted" messages are a hosting limit rather than a clash. If forms submit but no email arrives, the cause is usually delivery rather than a conflict. Page builder breakage? See <a href="/blog/elementor-layout-broken-after-update/">Elementor layout fixes</a>.</p>
 <p>If the symptom is the Elementor Update button failing or spinning, start with <a href="/blog/elementor-not-saving-changes/">how to fix Elementor not saving changes</a>, because firewalls and server limits are just as likely as a conflict.</p>
 
 <h2 id="before-you-touch-anything-a-five-minute-safety-routine">Before you touch anything: a five-minute safety routine</h2>
@@ -282,6 +282,7 @@
   <li>From the Troubleshooting menu in the admin bar, enable plugins one at a time (or in groups) and recheck after each.</li>
   <li>Disable troubleshooting mode when you finish.</li>
 </ol>
+<figure class="step-shot"><img src="/assets/blog/wordpress-plugin-conflicts-troubleshooting-step-2.svg" alt="WordPress plugin conflict: Tools, Site Health, Troubleshooting tab with Enable Troubleshooting Mode" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Tools, Site Health, Troubleshooting, enable troubleshooting mode for your session only.</figcaption></figure>
 <p>It has limits: server caching, scheduled tasks and anything that runs for logged-out visitors may behave differently. Treat it as a strong first step, not the final word.</p>
 <h2 id="find-the-culprit-quickly-the-halving-method">Find the culprit quickly: the halving method</h2>
 <p>Turning plugins on one at a time works, but on a site with 30 plugins it is slow. Halving is faster:</p>
@@ -292,6 +293,7 @@
   <li><strong>Keep halving</strong> the suspect group until you are down to one plugin.</li>
   <li><strong>Confirm the pair:</strong> with only the suspect and its partner (or the theme) active, the problem should appear; with either one off, it should not.</li>
 </ol>
+<figure class="step-shot"><img src="/assets/blog/wordpress-plugin-conflicts-troubleshooting-step-1.svg" alt="WordPress plugin conflict: Plugins screen with plugins ticked and Bulk actions set to Deactivate" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: Tick the suspect plugins, choose Deactivate in Bulk actions and click Apply.</figcaption></figure>
 <p>Each round halves the suspects, so even a large plugin list narrows down in a handful of rounds. Deactivate, don't delete: deleting some plugins also removes their settings and data.</p>
 <p>Locked out of the admin? Plugins can be disabled by renaming their folders in wp-content/plugins through hosting file access, or with WP-CLI if your host provides it:</p>
 <pre><code>wp plugin list --status=active

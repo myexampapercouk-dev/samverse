@@ -279,7 +279,9 @@
 
 <h2 id="editing-experience">Editing experience</h2>
 <p>Elementor feels like a design tool. You see exactly what visitors will see, click any element to change it and preview each screen size. For non-technical teams that's reassuring. The downside is that every widget has dozens of settings, so pages built by different people can drift apart: slightly different spacing, fonts and button styles on every page.</p>
+<figure class="step-shot"><img src="/assets/blog/elementor-vs-gutenberg-step-1.svg" alt="Elementor vs Gutenberg: Elementor editor widget panel with Container, Heading, Image and Button widgets" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: Elementor builds pages by dragging widgets from its own panel.</figcaption></figure>
 <p>Gutenberg feels like a writing tool that has grown layout features. Writing and editing text is quick and clean, and reusable patterns make it easy to insert a ready-made section. Building complex layouts from scratch is harder for beginners, and the design options available depend heavily on the theme. The upside is consistency: styles come from the theme, so pages tend to look like they belong together.</p>
+<figure class="step-shot"><img src="/assets/blog/elementor-vs-gutenberg-step-2.svg" alt="Elementor vs Gutenberg: WordPress block editor with the plus Block Inserter open" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: Gutenberg adds blocks through the + inserter in the editor toolbar.</figcaption></figure>
 
 <h2 id="performance">Performance</h2>
 <p>Gutenberg sites are usually lighter out of the box. WordPress can load styles only for the blocks used on each page, and there's no extra editor framework running on the front end.</p>
@@ -299,7 +301,7 @@
 
 <h2 id="lock-in-and-switching-later">Lock-in and switching later</h2>
 <p>Elementor stores layouts in its own format. If you deactivate it, the text on your pages usually remains as plain, unstyled content, but the layout and design are gone, and pages built with it have to be rebuilt in whatever you move to. That's manageable for a ten-page site and a real project for a large one.</p>
-<p>Gutenberg content is native WordPress content and survives a theme change far better. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
+<p>Gutenberg content is native WordPress content and survives a theme change far better, and <a href="/blog/block-themes-full-site-editing/">block themes</a> extend it to headers and footers. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
 
 <h2 id="gutenberg-vs-elementor-for-agencies-and-handovers">Gutenberg vs Elementor for agencies and handovers</h2>
 <p>If you are an agency or freelancer building for clients, think about the person who inherits the site. A visual editor means fewer support calls but more broken mobile layouts; a locked block setup means less breakage but more requests for new sections. Whichever you choose, document which templates, global styles and patterns exist, and give the client a short screen recording of the edits they are likely to make.</p>
@@ -361,7 +363,7 @@
   <li>Rebuild each section with core blocks: Cover, Columns, Group, Image and Buttons. Save sections you repeat, such as a call to action, as synced patterns.</li>
   <li>Paste text in as plain text, so Elementor's markup does not come across with it.</li>
   <li>Check the mobile view, then swap the slugs so the new page keeps the old URL and no redirect is needed.</li>
-  <li>Deactivate Elementor only when no page, header, footer or popup still uses it. Anything left behind shows as broken layout or raw shortcodes.</li>
+  <li>Deactivate Elementor only when no page, header, footer or popup still uses it. Anything left behind shows as broken layout or raw shortcodes (see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks</a>).</li>
 </ol>
 
 <h2 id="when-to-get-help">When to get help</h2>

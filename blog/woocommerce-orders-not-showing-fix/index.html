@@ -205,7 +205,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Orders%20Not%20Showing%3F%20Missing%20Orders%2C%20Paid-but-No-Order%20and%20Missing%20Emails%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-orders-not-showing-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -271,6 +271,7 @@
 <li><strong>Clear the object cache</strong> if your host uses Redis or Memcached, and make sure admin pages are not page-cached.</li>
 <li><strong>Check user role:</strong> a shop manager account with restricted capabilities, or a plugin that limits order access, can hide orders.</li>
 </ol>
+<figure class="step-shot"><img src="/assets/blog/woocommerce-orders-not-showing-fix-step-1.svg" alt="WooCommerce orders not showing: Orders screen with the All status link and date filter" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In WooCommerce, Orders, click All and clear the filters.</figcaption></figure>
 <aside class="inline-cta">
   <strong>Need help with online stores?</strong>
   <p>WooCommerce development services in India: store setup, Razorpay and UPI payments, GST invoices, COD rules, shipping and a fast mobile checkout.</p>
@@ -285,6 +286,7 @@
 <li>Some older plugins read orders from the old table only. If a plugin, report or app shows fewer orders, it may not support HPOS yet. Check its documentation and update it.</li>
 <li>Do not switch storage modes on a live store without a full backup and a test on staging.</li>
 </ul>
+<figure class="step-shot"><img src="/assets/blog/woocommerce-orders-not-showing-fix-step-2.svg" alt="WooCommerce orders not showing: Settings, Advanced, Features, order data storage and compatibility mode" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Settings, Advanced, Features, check the order storage and compatibility mode.</figcaption></figure>
 <p>The WordPress backup and restore guide covers taking a safe backup first, and staging sites explains testing changes.</p>
 <h2 id="paid-but-no-order-the-gateway-callback">Paid but no order: the gateway callback</h2>
 <p>When a customer pays through Razorpay, Cashfree, PayU or another gateway, the gateway must tell WooCommerce the payment succeeded. If that message fails, you can get a payment with no order, or an order stuck on Pending payment.</p>
@@ -348,7 +350,7 @@
 <li>Use SMTP and an email log.</li>
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
-<p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
+<p>Whatever the cause, write down what happened, what you checked and what fixed it. A short incident note helps if the problem returns or a developer gets involved. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
 <h2 id="find-a-missing-woocommerce-order-step-by-step">Find a missing WooCommerce order: step by step</h2>
 <ol>
   <li>Go to WooCommerce &gt; Orders, choose "All" and search by the customer's email, phone or name.</li>
