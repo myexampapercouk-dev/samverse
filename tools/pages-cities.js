@@ -528,6 +528,8 @@ const guides = {
 <p>I have built sites for clients in Delhi NCR, Agra, Bengaluru, Hyderabad and the UK without needing to meet. We plan on a call, you share content on WhatsApp, and the site is built on a private staging link you can open on your phone. You approve it before it goes live, and I stay available for changes and support.</p>
 <h2>Find a page for your city</h2>
 <p>I have pages for <a href="/wordpress-developer-pune/">Pune</a>, <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, <a href="/wordpress-shopify-developer-chennai/">Chennai</a>, <a href="/wordpress-shopify-developer-ahmedabad/">Ahmedabad</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-jaipur/">Jaipur</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a>, <a href="/wordpress-shopify-developer-kolkata/">Kolkata</a>, <a href="/wordpress-shopify-developer-indore/">Indore</a>, <a href="/wordpress-shopify-developer-nagpur/">Nagpur</a>, <a href="/wordpress-shopify-developer-lucknow/">Lucknow</a>, <a href="/wordpress-shopify-developer-chandigarh/">Chandigarh</a>, <a href="/wordpress-shopify-developer-kochi/">Kochi</a>, <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, <a href="/wordpress-shopify-developer-coimbatore/">Coimbatore</a> and <a href="/wordpress-shopify-developer-ludhiana/">Ludhiana</a>, each with notes on what businesses there usually need.</p>
+<h2>Working with clients outside India</h2>
+<p>I also work remotely with businesses abroad, with pages on time zones, invoicing currency and local store setup for the <a href="/wordpress-shopify-developer-uk/">UK</a>, <a href="/wordpress-shopify-developer-usa/">USA</a>, <a href="/wordpress-shopify-developer-canada/">Canada</a>, <a href="/wordpress-shopify-developer-uae/">Dubai, the UAE and the GCC</a> and <a href="/wordpress-shopify-developer-europe/">Europe</a>.</p>
 `,
   'wordpress-shopify-developer-mumbai': `
 <h2>Websites for Mumbai businesses: what usually matters</h2>
@@ -742,4 +744,5 @@ const guides = {
 `,
 };
 
-module.exports = { pages, guides };
+const abroad = require('./pages-abroad');
+module.exports = { pages: pages.concat(abroad.pages), guides: { ...guides, ...abroad.guides } };

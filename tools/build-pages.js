@@ -316,7 +316,7 @@ ${readingFor(p)}
     <section class="section related">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">${p.type === 'industry' ? 'Other industries' : p.type === 'location' ? 'Other cities' : 'Related services'}</span>
+          <span class="eyebrow">${p.type === 'industry' ? 'Other industries' : p.type === 'location' ? 'Other locations' : 'Related services'}</span>
           <h2>You might also need</h2>
         </div>
         <div class="industries related-grid reveal">
@@ -424,7 +424,7 @@ ${JSON.stringify(schema, null, 2)}
     </section>
 ${group('industry', 'Websites by industry', 'Websites planned around what your customers need to see and do.')}
 ${group('service', 'Services', 'Specialist WordPress services for new and existing websites.')}
-${group('location', 'WordPress & Shopify developer by city', 'Working with businesses across India: local notes and nearby projects for each city.')}
+${group('location', 'WordPress & Shopify developer by location', 'Working with businesses across India and abroad: local notes, time zones and nearby projects for each location.')}
 
     ${contact}
   </main>
