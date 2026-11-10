@@ -305,6 +305,8 @@ if ( ! $link ) {
 wp db check</code></pre>
 <p>The first line confirms which database host WordPress is using, which catches a wrong host after a migration. <code>wp db check</code> connects with the stored user and password and checks every table: an access-denied message points to the username or password, a "can't connect" message points to the host or a stopped database server, and a table marked as crashed points to repair. Paste the exact message into your support ticket.</p>
 
+<p>If the error keeps returning under bot load, check your logs for floods of requests to xmlrpc.php; see <a href="/blog/wordpress-xmlrpc-explained/">how to block xmlrpc.php safely</a>.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the database server is down on the host's side, when tables are damaged and you have no recent backup, or when the error started after moving hosts. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes uptime monitoring that usually spots this before customers do, and <a href="/wordpress-migration/">WordPress migration</a> covers moves where the database details change.</p>
 

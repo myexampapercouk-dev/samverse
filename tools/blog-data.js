@@ -472,6 +472,8 @@ module.exports = [
   <li>In the WordPress admin, open <strong>Tools, Site Health</strong> and check for critical issues such as an outdated PHP version.</li>
 </ol>
 
+<p>Fonts are a common hidden cost; here is how to <a href="/blog/web-fonts-performance/">reduce font load on WordPress</a> without changing the design.</p>
+
 <h2>When to get help</h2>
 <p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a full audit, fixes hosting, caching, image, plugin, script, database and admin issues in order of impact, and ends with a before-and-after report, with a full backup taken first. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
 
@@ -3303,6 +3305,8 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
 <p>Use the same real photos on your website's contact and about pages so the profile and site clearly belong to the same business.</p>
 <h2>Quick check</h2>
 <p>Search your exact business name on Google Maps from a phone while logged out (a private window works). Check that the name, address or service area, phone number, hours and website link match your website's contact page word for word, and that the primary category is the most specific one available. Then click the website link on the profile and confirm it opens the right page over HTTPS.</p>
+
+<p>Add UTM tags to your profile's website link so its visits show separately in GA4; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
 
 <h2>When to get help</h2>
 <p>If your profile is suspended, stuck in verification, showing the wrong details or not appearing for nearby searches despite being complete, it helps to have the profile and website reviewed together. Profile audits, matching service and location pages and LocalBusiness schema are part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
@@ -7658,6 +7662,8 @@ Main contact person and best time to reach:</code></pre>
   <li>In Search Console, run <strong>URL inspection</strong> on the page and check "Page indexing" and the "User-declared" and "Google-selected" canonical match.</li>
 </ol>
 
+<p>If a page uses schema, test it before publishing; see <a href="/blog/test-structured-data-rich-results/">how to check rich snippets and schema</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you have many pages to check, or want the fixes made rather than just reported. On-page work is the core of <a href="/wordpress-seo-services/">WordPress SEO services</a>, starting with a free review and a fixed quote. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -9639,6 +9645,8 @@ ls -lh backup-test.sql</code></pre>
   <li><strong>Test it:</strong> open the link on your phone in a private window. It should open the star rating box for your business directly, not a search results page.</li>
   <li><strong>Check replies:</strong> open your profile's Reviews tab and count reviews from the last 90 days without a reply. Reply to those first.</li>
 </ol>
+
+<p>Reviews are one part of ranking in local Maps results; <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a> covers the rest, step by step.</p>
 
 <h2>When to get help</h2>
 <p>Get help when your profile has the wrong details, when reviews do not appear or keep disappearing, or when you want reviews and your website working together for local searches. That is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, and businesses in and around Pune can work with a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>. <a href="/#contact">send your website address</a> and your Google Business Profile link for a free review and a fixed quote.</p>
@@ -13776,6 +13784,8 @@ function my_only_free_shipping( $rates ) {
   <li>Open two local pages side by side and check each has details only true for that area, such as projects, address or service radius.</li>
 </ol>
 
+<p>For a worked example of these ideas in one city, see <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when local pages are near copies of each other, when they are not getting indexed, or when you need local pages planned around real service areas. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -15006,6 +15016,8 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
   <li>Open the FAQ page on a phone and check each answer is short and links to the matching service page.</li>
 </ol>
 
+<p>After adding FAQ markup, check it with Google's tool; see <a href="/blog/test-structured-data-rich-results/">how to use the Rich Results Test</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when your FAQs sit on one long page nobody visits, the same questions are copied word for word across many service pages, or the FAQ schema on the site no longer matches the visible answers. The fix is usually fewer, page-specific questions placed where the doubt comes up.</p>
 <p>Want FAQs written and structured properly on your service pages? <a href="/wordpress-seo-services/">WordPress SEO services</a> cover question research, page structure and schema, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to build them into your site. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -15553,6 +15565,8 @@ cf-cache-status: HIT</code></pre>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first before and after turning the CDN on, and compare the server response time.</li>
   <li>After any nameserver change, send a test email to and from your domain and place a test order if you sell online.</li>
 </ol>
+
+<p>A CDN speeds up font files too, but loading fewer of them matters more; see how to <a href="/blog/web-fonts-performance/">reduce font load</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you are unsure whether a CDN will help, when email or checkout broke after a switch, or when cached pages show stale content. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -20669,15 +20683,15 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   },
   {
     slug: 'robots-txt-explained',
-    seoTitle: 'Robots.txt WordPress Guide: Safe Examples and Mistakes',
+    seoTitle: 'WordPress Robots.txt: Safe Example, Editing and Mistakes',
     title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
-    description: 'Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.',
+    description: 'Copy a safe WordPress robots.txt, edit it in Yoast or Rank Math, add your sitemap line and avoid the blocking mistakes that drop pages from Google.',
     date: '2026-09-27',
     updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
-<p>Robots.txt WordPress basics: robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically by WordPress unless you upload your own, that tells search engine crawlers which URLs they may and may not crawl. A safe WordPress robots.txt blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap; everything else should stay crawlable.</p>
+<p>A WordPress robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically unless you upload your own, that tells search engine crawlers which URLs they may crawl. A safe version blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and everything else should stay crawlable.</p>
 <p><strong>Short answer:</strong> robots.txt controls crawling, not indexing. To keep a page out of Google you need a noindex tag on a page Google can crawl, not a robots.txt block. The biggest risk is a file that blocks too much, such as a leftover "Disallow: /" from a staging site.</p>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
@@ -20968,6 +20982,8 @@ Disallow: /</code></pre>
   <li>Open the page, press Ctrl+U to view source and search for <code>rel="canonical"</code>. There should be exactly one, pointing to the https address you want.</li>
   <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for "Duplicate, Google chose different canonical than user".</li>
 </ol>
+
+<p>Canonical tags and robots.txt do different jobs; see <a href="/blog/robots-txt-explained/">WordPress robots.txt: safe example and mistakes</a> before blocking duplicate URLs there.</p>
 
 <h2>When to get help</h2>
 <p>Get help when Google keeps picking a different canonical, when two plugins output canonical tags, or after a migration changed your URLs. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -25915,6 +25931,8 @@ HTTP/2 404</code></pre>
 <li><strong>Count spam:</strong> open <em>Comments</em> and look at the Spam and Pending counts. A pile of pending spam means the form is a target and needs Akismet, a CAPTCHA or closing.</li>
 </ol>
 
+<p>On a shop, product reviews use the same comment system; see <a href="/blog/woocommerce-product-reviews/">WooCommerce product reviews: enable, request and fix</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when spam keeps getting through, when old comments contain links you don't want on the site, or when you want to keep useful comments while closing the rest. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers comment settings, spam filtering and cleanup, and <a href="/wordpress-seo-services/">WordPress SEO services</a> can review whether comment threads help or hurt your posts. <a href="/#contact">Get in touch</a> with your post count and the spam count.</p>
 
@@ -26474,6 +26492,8 @@ Pages are unaffected:  yourdomain.com/contact/</code></pre>
   <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Sitemaps</strong>, submit your sitemap and check the status is Success.</li>
   <li>Submit the enquiry form from a phone on mobile data, then check the email arrives in the inbox (not spam) within a few minutes.</li>
 </ol>
+
+<p>Check that robots.txt is not still blocking the whole site from staging; see <a href="/blog/robots-txt-explained/">a safe WordPress robots.txt example</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you want launch checks done by someone who has done them many times, when old URLs need redirects, or when tracking must be ready on day one. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -27422,15 +27442,15 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   },
   {
     slug: 'utm-tags-explained',
-    seoTitle: 'UTM Tags: What They Are and How to Track Campaign Links',
+    seoTitle: 'UTM Tags Explained: Track Campaign Links in GA4',
     title: 'UTM Tags Explained: What a UTM Tag Is, How to Tag Campaign Links and See Which Ones Bring Enquiries in GA4',
-    description: 'UTM tags explained: what a UTM tag is, the five parameters, naming GA4 understands, a UTM tagging template for WhatsApp, QR codes and ads, and GA4 reports.',
+    description: 'Build UTM links that GA4 reads correctly: the five parameters, lowercase naming rules and a ready template for WhatsApp, QR codes, Instagram and ads.',
     date: '2026-09-27',
     updated: '2026-11-07',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-seo-services', 'website-for-startups'],
     body: `
-<p>UTM tags are short labels added to the end of a link, such as utm_source, utm_medium and utm_campaign, that tell Google Analytics exactly where a visitor came from.  Use them on links you share outside your website, such as WhatsApp messages, your Instagram bio, email newsletters, QR codes, partner sites and Meta ads, and never on links between your own pages. Keep the names lowercase and consistent, and Google Analytics 4 will show you which campaigns bring visitors and, with key events set up, which ones bring enquiries.</p>
+<p>UTM tags are short labels such as utm_source, utm_medium and utm_campaign added to the end of a link, which tell Google Analytics exactly where a visitor came from. Use them on links you share outside your website, such as WhatsApp messages, your Instagram bio, newsletters, QR codes and Meta ads, never on links between your own pages, and keep the names lowercase and consistent.</p>
 <p>Tags tell you which campaign sent a visitor; the page they land on decides whether they enquire. In my <a href="/landing-page-design/">landing page design</a> work, form submissions, WhatsApp clicks and phone taps are tracked as conversions in GA4, Google Ads and Meta Pixel and confirmed with test enquiries, so campaigns can be compared by leads, not clicks.</p>
 <p>Without tags, a lot of campaign traffic is invisible. Links tapped inside WhatsApp, email apps, PDFs and many social apps often arrive with no referrer at all, so GA4 files them under Direct, as if the visitor had typed your address.</p>
 
@@ -27568,6 +27588,8 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   <li>In <strong>GA4</strong>, open <strong>Reports &gt; Realtime</strong> while you click it and check your source and medium appear.</li>
   <li>In <strong>GA4</strong>, open <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>, change the dimension to <strong>Session source / medium</strong> and look for misspelt or mixed-case versions of the same tag.</li>
 </ol>
+
+<p>For a full plan that uses these tags, see <a href="/blog/instagram-to-website-enquiries/">how to turn Instagram followers into website enquiries</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when campaign traffic lands in "Unassigned", when tags are inconsistent across your team, or when you want to see which campaigns bring enquiries. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -28963,6 +28985,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Check it says the domain, hosting and site files will be in your name, with logins handed over at launch.</li>
   <li>Check the payment milestones match deliverables you can see, such as design approval and launch.</li>
 </ol>
+
+<p>Before signing, agree how the work is billed; see <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly web projects</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you need a clear written scope before a build starts, or when you are comparing proposals that do not match. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -31222,6 +31246,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Add a variation to the cart and check the cart and order email show the chosen size or colour.</li>
 </ol>
 
+<p>Variations can also be put on backorder one by one; see <a href="/blog/woocommerce-pre-orders-backorders/">how to set up WooCommerce pre-orders and backorders</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when variations show the wrong price or image, when a product has too many combinations, or when you need variation swatches built. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -32776,15 +32802,15 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'fixed-price-vs-hourly-website-projects',
-    seoTitle: 'Fixed Price vs Hourly Website Projects: Which Is Better?',
+    seoTitle: 'Fixed Price vs Hourly Web Projects: Which to Choose',
     title: 'Fixed Price vs Hourly Billing for Website Projects: Which Is Better, and Which Suits Your Project?',
-    description: 'Fixed price vs hourly website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.',
+    description: 'Fixed price or hourly for your website project? See which suits a new site, a redesign or fixes, how scope creep is handled and how milestones work.',
     date: '2026-09-27',
     updated: '2026-11-07',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-developer-for-agencies', 'wordpress-website-development'],
     body: `
-<p>For most website projects, fixed price is the better choice: a new business website, a redesign, a landing page or a clearly defined feature can be scoped upfront, so you know the total cost before work starts. Hourly billing makes more sense when nobody can know the work in advance, such as finding out why a site is slow or broken, or an open-ended stream of changes. Ongoing work after launch usually fits a monthly plan.</p>
+<p>For most website projects, fixed price is the better choice, because a new business website, a redesign or a landing page can be scoped upfront so you know the total cost before work starts. Hourly billing makes more sense when nobody can know the work in advance, such as finding out why a site is slow or broken, and ongoing work after launch usually fits a monthly plan.</p>
 <p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a fixed quote and timeline before any work starts, usually within 24 hours of sending your requirements. Small jobs are priced the same way: send the list and you get a fixed price for the batch. Below is how each model works, so you can judge any quote you receive.</p>
 <p>Whichever model you choose, the quality of the brief decides how accurate the price is. A clear <a href="/blog/website-brief-template/">website brief</a> gets you quotes you can actually compare.</p>
 
@@ -37212,6 +37238,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   <li>Check the LiteSpeed Cache plugin is active in <strong>Plugins &gt; Installed Plugins</strong> and that no second cache plugin runs alongside it.</li>
 </ol>
 
+<p>Bot traffic to xmlrpc.php can eat into a shared plan's resources; see <a href="/blog/wordpress-xmlrpc-explained/">whether to disable xmlrpc.php</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when hPanel shows the plan hitting its CPU or memory limit every day, the cache check says "hit" but pages still take several seconds, or the admin area is slow even with caching working, which points to plugins, the database or scheduled tasks rather than the host. Upgrading the plan first often just hides the problem for a few months.</p>
 <p>My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> measures first, fixes the real bottleneck with a backup taken beforehand, then re-tests so you can see the difference. If you're weighing a move, read <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a> first. For a slow WooCommerce store on Hostinger, see <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -37824,15 +37852,15 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: 'WordPress Critical Error or Fatal Error? How to Fix It',
+    seoTitle: 'There Has Been a Critical Error on This Website: Fix It',
     title: 'WordPress Fatal Error: How to Fix "There Has Been a Critical Error on This Website", Step by Step',
-    description: '"There has been a critical error on this website"? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.',
+    description: 'Fix "There has been a critical error on this website" in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.',
     date: '2026-09-28',
     updated: '2026-11-09',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>A WordPress fatal error is what causes the message "There has been a critical error on this website": PHP hit an error it could not recover from, so WordPress stopped loading the page rather than show a broken one. To fix it, open the email WordPress sends to the site's admin address and use its recovery mode link to log in and deactivate the plugin or theme it names. If no email arrives, turn on debug logging to read the exact error, or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
+<p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, theme or PHP version change, so WordPress stopped loading the page. To fix it, use the recovery mode link in the email WordPress sends to the admin address to deactivate the plugin or theme it names, or, if no email arrives, read debug.log or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
 <p><strong>Short answer:</strong> the WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts, products and orders are in the database and are almost always untouched. Work through the steps below in order. If you'd rather have someone take a backup before every update and catch problems like this early, that's what my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> are for.</p>
 
 <h2>What the critical error actually means</h2>
@@ -40784,15 +40812,16 @@ add_action( 'after_setup_theme', function () {
   },
   {
     slug: 'website-for-cctv-security-installers',
-    seoTitle: 'Local SEO for Security System Installers: Website Guide',
+    seoTitle: 'CCTV Installer Website and Local SEO: Get Survey Calls',
     title: 'Websites for CCTV, Access Control and Security System Installers',
-    description: 'Local SEO for security system installers: Business Profile, locality pages, reviews and a site that turns CCTV and alarm searches into survey calls.',
+    description: 'Website and local SEO for CCTV and security installers: Business Profile, locality pages, real install photos and a quote form that books site surveys.',
     date: '2026-09-28',
     updated: '2026-11-07',
     category: 'Industries',
     related: ['wordpress-website-development', 'wordpress-seo-services'],
     body: `
-<p>Local SEO for security system installers means a complete Google Business Profile, service pages that name your city and localities, genuine reviews and a fast mobile site, because almost every CCTV and access control job is searched for nearby. The website then has to convert that visit: a website for CCTV installers should tell a visitor in seconds what you install, which areas you cover and how to book a site survey. Show services by type of property (homes, shops, offices, housing societies, warehouses), explain AMC and support, show genuine installation photos, and put a call, WhatsApp and quote form on every page. Add strong local SEO so you appear when people search for CCTV installation near them.</p>
+<p>Local SEO for security system installers means a complete Google Business Profile, service pages that name your city and localities, genuine reviews and a fast mobile site, because almost every CCTV and access control job is searched for nearby. The website then has to show in seconds what you install, which areas you cover and how to book a site survey.</p>
+<p>Show services by type of property (homes, shops, offices, housing societies, warehouses), explain AMC and support, show genuine installation photos, and put a call, WhatsApp and quote form on every page.</p>
 <p>Below is a practical plan for CCTV, access control, video door phone and alarm system installers across India, covering pages, enquiries, trust and search. It applies whether you are a one-person installer or a team handling society and factory projects across a city.</p>
 
 <h2>Who visits a CCTV installer's website</h2>
@@ -45961,6 +45990,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; Events</strong> and check the enquiry event is marked as a key event, so you can compare GA4 enquiries with CRM leads.</li>
 </ol>
 
+<p>Pass the UTM source into a hidden form field so each lead in the CRM shows where it came from; see <a href="/blog/utm-tags-explained/">UTM tags explained</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when leads go missing between the form and the CRM, when fields map to the wrong place, or when you need a custom integration. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -46240,6 +46271,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li><strong>Business profile:</strong> in the WhatsApp Business app, check Business tools, Business profile has your address, hours, website and catalogue filled in, because customers see it before they message.</li>
 </ol>
 
+<p>Instagram followers can feed the same WhatsApp chats; see <a href="/blog/instagram-to-website-enquiries/">Instagram to website enquiries</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you want WhatsApp chats tracked as leads in GA4, a product catalogue connected to your store, or a landing page built for WhatsApp ads. A <a href="/landing-page-design/">landing page</a> can send ad visitors straight to WhatsApp with tracking, a <a href="/woocommerce-developer/">WooCommerce store</a> can link orders to WhatsApp, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the website side. <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
 
@@ -46470,6 +46503,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on the page with the reviews widget.</li>
   <li>Check the widget links to your real Google profile, and that you are not adding review markup for Google reviews to your own pages.</li>
 </ol>
+
+<p>If you sell online, product-level ratings matter as much as Google reviews; see how to set up <a href="/blog/woocommerce-product-reviews/">WooCommerce product reviews</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the reviews widget slows the site, when reviews are out of date, or when you want your site and Business Profile linked properly. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -47274,15 +47309,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'woocommerce-product-reviews',
-    seoTitle: 'WooCommerce Product Reviews: Setup, Requests and Fixes',
+    seoTitle: 'WooCommerce Product Reviews: Enable, Request and Fix',
     title: 'WooCommerce Product Reviews: How to Enable, Collect, Moderate and Display Them (Verified Owners, Photos and Star Ratings)',
-    description: 'Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.',
+    description: 'Enable WooCommerce product reviews, show verified owner labels and star ratings, ask buyers after delivery and fix reviews that are not showing.',
     date: '2026-09-28',
     updated: '2026-11-06',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services'],
     body: `
-<p>To set up WooCommerce product reviews, go to <strong>WooCommerce &gt; Settings &gt; Products</strong>, enable product reviews and star ratings, show the "verified owner" label, and decide whether only verified buyers may review. Then ask customers for a review after delivery with a one-tap link, moderate new reviews under <strong>Products &gt; Reviews</strong> by a consistent policy, and show the average rating near the price and in your category listings. Never write, buy or hide reviews: honest reviews are what build trust, and they are the only ones you can safely mark up for Google.</p>
+<p>To set up WooCommerce product reviews, go to <strong>WooCommerce &gt; Settings &gt; Products</strong>, enable product reviews and star ratings, and show the "verified owner" label. Then ask customers for a review after delivery with a one-tap link and moderate new reviews under <strong>Products &gt; Reviews</strong> by a consistent policy.</p>
+<p>Show the average rating near the price and in your category listings. Never write, buy or hide reviews: honest reviews are what build trust, and they are the only ones you can safely mark up for Google.</p>
 <p>Reviews from real buyers answer the questions your product page can't: does the colour match the photos, does the size run small, did it arrive on time? If you are planning or fixing a store through <a href="/woocommerce-developer/">WooCommerce development</a>, settle how reviews will be collected and shown before launch, because the review tab, rating display and request emails all need testing on a phone like the rest of the checkout.</p>
 <p>This guide covers reviews of your products, on your own store. Reviews of your business as a whole belong on your Google Business Profile; see <a href="/blog/get-more-google-reviews/">how to get more Google reviews</a>. For quotes you collect yourself and place on service or landing pages, see <a href="/blog/collect-display-customer-testimonials/">collecting and displaying customer testimonials</a>.</p>
 
@@ -47854,15 +47890,15 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'web-fonts-performance',
-    seoTitle: 'Business Website Web Font Performance: Cut Font Load',
+    seoTitle: 'Reduce Font Load on WordPress: Faster Web Fonts Guide',
     title: 'Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify',
-    description: 'Improve business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preloading and subsetting in WordPress and Shopify.',
+    description: 'Reduce font load on WordPress and Shopify: cut font weights, self-host WOFF2, use font-display swap and preload one font to speed up LCP.',
     date: '2026-09-28',
     updated: '2026-11-07',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'elementor-developer'],
     body: `
-<p>To reduce font load on your website, cut how many font files the page downloads and let text appear before they arrive. Web font performance on a business website comes down to how many font files the page has to download and how quickly the text can appear. To improve it, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain, add font-display: swap so text shows immediately, preload the main font, and remove fonts your theme or plugins load but never use.</p>
+<p>To reduce font load on your website, use one or two font families with only the weights you need, serve them as WOFF2 from your own domain and add font-display: swap so text appears straight away. Then preload the main font and remove any fonts your theme or plugins load but never use.</p>
 <p><strong>Short answer:</strong> fewer files, smaller files, loaded earlier, never blocking text. On many WordPress sites, cutting unused font weights and self-hosting Google Fonts is the single quickest fix.</p>
 <h2>Why web fonts affect business website performance</h2>
 <p>Every custom font is a file the browser must download before it can draw text in that font. Each weight (regular, medium, bold) and style (italic) is usually a separate file. A theme with two families in four weights each can mean eight font files before the page looks right.</p>
@@ -51808,6 +51844,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Tap the WhatsApp or "book a visit" button on a phone and confirm the message reaches the front desk.</li>
 </ol>
 
+<p>If you sell the CCTV and access systems that centres like these rely on, read <a href="/blog/website-for-cctv-security-installers/">website and local SEO for CCTV installers</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when plans and timings change often, when visit requests are missed, or when you want students to find you for searches in your area. <a href="/website-for-schools-and-coaching/">Websites for schools and coaching</a> covers this kind of site, with a written scope before work starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -52353,15 +52391,15 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'test-structured-data-rich-results',
-    seoTitle: 'Rich Snippet Testing Tool: How to Check Rich Snippets',
+    seoTitle: 'Rich Results Test: How to Check Rich Snippets and Schema',
     title: 'Rich Snippet Testing Tool: How to Check Rich Snippets and Test Structured Data in WordPress',
-    description: 'The best rich snippet testing tool is Google\'s Rich Results Test. Learn how to check rich snippets, read errors and warnings, and fix schema in WordPress.',
+    description: 'Use the Google Rich Results Test to check rich snippets, read errors and warnings, validate schema and fix structured data in WordPress.',
     date: '2026-09-30',
     updated: '2026-11-07',
     category: 'SEO',
     related: ['wordpress-seo-services', 'woocommerce-developer'],
     body: `
-<p>The main rich snippet testing tool is Google's Rich Results Test: paste a URL or code and it shows which rich results (product, review, breadcrumb, article and so on) the page is eligible for, with any errors and warnings. Use the Schema Markup Validator for schema types Google does not show as rich results, and Search Console's enhancement reports to check rich snippets across the whole site.</p>
+<p>To check rich snippets, paste a URL or code into the Google Rich Results Test, which shows which rich results (product, review, breadcrumb, article and so on) the page is eligible for, with any errors and warnings. Use the Schema Markup Validator for schema types Google does not show as rich results, and the Search Console enhancement reports to check the whole site.</p>
 <p>Fix errors first (they block eligibility), then warnings you can fill with real data, then re-test and request indexing.</p>
 
 <h2>What is a rich snippet, and why test it?</h2>
@@ -53673,15 +53711,15 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'instagram-to-website-enquiries',
-    seoTitle: 'How to Turn Instagram Followers Into Website Enquiries',
+    seoTitle: 'Instagram to Website Enquiries: Turn Followers Into Leads',
     title: 'How to Turn Instagram Followers Into Website Enquiries: Bio Links, Landing Pages, WhatsApp and Tracking',
-    description: 'How to turn Instagram followers into website enquiries: a bio link page you own, landing pages that match each post, WhatsApp handoff and UTM tracking.',
+    description: 'Turn Instagram followers into website enquiries with a bio link page you own, landing pages that match each post, WhatsApp handoff and UTM tracking.',
     date: '2026-09-30',
     updated: '2026-11-09',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development'],
     body: `
-<p>To turn Instagram followers into website enquiries, give every post and story one clear next step, send people to a page that matches what they just saw rather than your homepage, and make enquiring a two-tap job on a phone through WhatsApp, a call or a short form. Then tag every link you share with UTM parameters and track enquiries in Google Analytics, so you can see which posts bring customers and not just likes.</p>
+<p>To turn Instagram followers into website enquiries, give every post and story one clear next step and send people to a page that matches what they just saw, where enquiring takes two taps through WhatsApp, a call or a short form. Then tag every link you share with UTM parameters, so Google Analytics shows which posts bring customers and not just likes.</p>
 <p>Plenty of Indian businesses have a busy Instagram account and a quiet website. Followers like the posts, a few send "price?" in the DMs, and most never visit the site or become customers. The problem usually isn't the content but the path from a post to an enquiry. That path usually ends on a focused page, which is what <a href="/landing-page-design/">landing page design</a> is for: one message, one action, WhatsApp and a form near the top, and tracking that shows which clicks became leads.</p>
 <p>This guide covers organic Instagram: your profile, posts, Stories and DMs. If you are deciding whether paid ads should open WhatsApp directly or a page on your site, see <a href="/blog/click-to-whatsapp-ads-vs-website/">click-to-WhatsApp ads vs a website landing page</a>.</p>
 
@@ -55158,6 +55196,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   <li>Open your facility page on a phone and check that capacity, temperature ranges and location are written as text, not only in images.</li>
   <li>Submit the space enquiry form and confirm it reaches the person who handles bookings.</li>
 </ol>
+
+<p>Many warehouses buy CCTV and access control locally; installers can see <a href="/blog/website-for-cctv-security-installers/">website and local SEO for CCTV installers</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when facility details are only in brochures, when enquiries go missing, or when you want pages for each location or storage type. <a href="/website-for-manufacturers/">Websites for manufacturers</a> covers this kind of site, with a written scope before work starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -63294,6 +63334,8 @@ if ( ! $link ) {
 wp db check</code></pre>
 <p>The first line confirms which database host WordPress is using, which catches a wrong host after a migration. <code>wp db check</code> connects with the stored user and password and checks every table: an access-denied message points to the username or password, a "can't connect" message points to the host or a stopped database server, and a table marked as crashed points to repair. Paste the exact message into your support ticket.</p>
 
+<p>If the error keeps returning under bot load, check your logs for floods of requests to xmlrpc.php; see <a href="/blog/wordpress-xmlrpc-explained/">how to block xmlrpc.php safely</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the database server is down on the host's side, when tables are damaged and you have no recent backup, or when the error started after moving hosts. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes uptime monitoring that usually spots this before customers do, and <a href="/wordpress-migration/">WordPress migration</a> covers moves where the database details change.</p>
 
@@ -63659,15 +63701,15 @@ wp db check</code></pre>
   },
   {
     slug: 'local-seo-pune-businesses',
-    seoTitle: 'Local SEO for Pune Businesses: Maps, Reviews and Pages',
+    seoTitle: 'Local SEO Pune: Rank Your Business on Google Maps',
     title: 'Local SEO for Pune Businesses: Getting Found Across Pune and Pimpri-Chinchwad',
-    description: 'Local SEO for Pune and PCMC businesses: Google Business Profile, service pages, honest area pages, reviews, Marathi or English content and tracking enquiries.',
+    description: 'Local SEO for Pune and PCMC businesses: set up Google Business Profile, service and area pages, reviews and enquiry tracking to show up in Maps searches.',
     date: '2026-10-01',
     updated: '2026-11-09',
     category: 'SEO',
     related: ['wordpress-developer-pune', 'wordpress-seo-services'],
     body: `
-<p>Local SEO for Pune businesses means getting found when someone in Pune or Pimpri-Chinchwad searches for what you sell, such as &quot;dentist in Baner&quot; or &quot;interior designer Wakad&quot;. The foundations are a complete Google Business Profile, a fast website with clear service pages, consistent contact details across the web, and genuine reviews. Area pages and content come after those basics are right.</p>
+<p>Local SEO for Pune businesses means getting found when someone in Pune or Pimpri-Chinchwad searches for what you sell, such as &quot;dentist in Baner&quot; or &quot;interior designer Wakad&quot;. Start with a complete Google Business Profile, a fast website with clear service pages, consistent contact details and genuine reviews, then add area pages and content once those basics are right.</p>
 <p>This guide walks through what works for local businesses across Pune and PCMC, what to avoid, and how to measure whether it is bringing enquiries.</p>
 
 <h2>Local SEO for Pune businesses: where to start</h2>
@@ -64322,6 +64364,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Check the contract says when the remaining payment is due and what triggers it.</li>
 </ol>
 
+<p>Milestones fit fixed-price work best; see <a href="/blog/fixed-price-vs-hourly-website-projects/">fixed price vs hourly website projects</a> to choose the right model first.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you need a build with clear milestones, or when a project has stalled. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -64727,15 +64771,15 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'wordpress-xmlrpc-explained',
-    seoTitle: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
+    seoTitle: 'Disable xmlrpc.php in WordPress? When and How to Block It',
     title: 'WordPress XML-RPC Explained: Should You Disable xmlrpc.php?',
-    description: 'Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.',
+    description: 'Check if xmlrpc.php is open on your WordPress site, see what still needs it, and block it safely at the server, firewall or with a security plugin.',
     date: '2026-10-01',
     updated: '2026-11-09',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance'],
     body: `
-<p>Should you disable xmlrpc.php? On most business WordPress sites, yes, or at least restrict it. It's an old remote-publishing interface that is switched on by default, few modern tools still need it, and bots use it for password guessing and pingback abuse. Check first whether Jetpack, an older mobile app or a remote publishing tool relies on it, then block it at the server, firewall or with a security plugin.</p>
+<p>On most business WordPress sites you should disable xmlrpc.php, or at least restrict it, because it is an old remote-publishing interface that few modern tools need and bots use it for password guessing and pingback abuse. Check first whether Jetpack, an older mobile app or a remote publishing tool relies on it, then block it at the server, firewall or with a security plugin.</p>
 <p>If you've seen xmlrpc.php hit again and again in your security reports or hosting logs, this guide explains what it is, how to tell whether anything still relies on it, and how to switch it off or restrict it safely.</p>
 <p><strong>The short answer:</strong> if nothing on your site uses XML-RPC, which is true for most business sites that don't use Jetpack or publish from an app, block it at the server or firewall, or at least turn it off with a security plugin. If you do rely on Jetpack or a publishing app, restrict it rather than blocking it outright.</p>
 
@@ -67919,15 +67963,16 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   },
   {
     slug: 'woocommerce-pre-orders-backorders',
-    seoTitle: 'WooCommerce Pre-Orders and Backorders: How to Set Up',
+    seoTitle: 'WooCommerce Pre-Orders and Backorders: Setup Guide',
     title: 'WooCommerce Pre-Orders and Backorders: Setup, Payments and Shopify Options',
-    description: 'How to set up WooCommerce pre-orders and backorders: stock settings, plugins, charging upfront or later, honest dates, refunds and the Shopify equivalent.',
+    description: 'Set up WooCommerce backorders and pre-orders: stock settings, plugin options, charging now or later, honest dispatch dates and refunds.',
     date: '2026-10-01',
     updated: '2026-11-07',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development'],
     body: `
-<p>Sometimes you want to take orders for products you don't have on the shelf: a new launch that hasn't arrived yet, a bestseller waiting for restock, or a festive collection still being made. WooCommerce can handle this in two ways, backorders and pre-orders. Done well, they keep sales coming in while you wait for stock. Done badly, they fill your inbox with customers asking where their order is. Here's how to set them up and run them honestly.</p>
+<p>To take orders for stock you do not have yet, WooCommerce offers backorders, switched on per product under <strong>Product data &gt; Inventory</strong>, and pre-orders, which need a plugin that lets you set a release date and charge upfront or on release. Either way, show an honest dispatch date on the product page and in the order email, so customers know what they are waiting for.</p>
+<p>Done well, they keep sales coming in during a launch or restock. Done badly, they fill your inbox with customers asking where their order is. Here is how to set them up and run them honestly.</p>
 
 <h2>Backorders vs pre-orders</h2>
 <table>
@@ -71059,6 +71104,8 @@ wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre
 curl -sI https://yourdomain.com/ | grep -iE "^(server|cf-ray|cf-cache-status|x-litespeed-cache)"</code></pre>
 <p>Run the first one a few times, then again on a page that is not cached, such as the cart or a search URL. A first-byte time that climbs towards your host's timeout points to slow PHP. In the headers, a <code>cf-ray</code> line means Cloudflare is in front, so check whether the error page is Cloudflare's or your server's. Include these numbers in your message to the host.</p>
 
+<p>If the page shows a critical error message rather than a gateway error, the cause is a PHP fatal error; see <a href="/blog/fix-wordpress-critical-error/">how to fix the WordPress critical error</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the errors happen during checkout or busy hours, when the host says the problem is your code, or when you have already tried lighter tasks and caching. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers slow plugins, queries, PHP workers and caching, and <a href="/wordpress-maintenance/">WordPress maintenance</a> adds uptime monitoring so you hear about timeouts before customers do.</p>
 
@@ -71805,6 +71852,8 @@ or a cookie name starts with:
   <li>In WordPress, open <strong>Tools &gt; Site Health</strong> and read the critical issues and recommendations and check file permissions and disk space warnings.</li>
   <li>Update one plugin at a time and check the site after each.</li>
 </ol>
+
+<p>If a failed update leaves the site showing "There has been a critical error on this website", see <a href="/blog/fix-wordpress-critical-error/">how to fix the WordPress critical error</a>.</p>
 
 <h2>When to get help</h2>
 <p>If the failure has broken checkout, logins or layout, or you cannot reach the files at all, it is usually faster to have someone fix it than to experiment on a live site. Signs it is time to call in help: the site shows a critical error, you see several plugins failing at once, or you suspect the failure is linked to a hack. If you prefer to hand over updates entirely, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing care. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -75528,6 +75577,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Place a test order and check stock goes down.</li>
   <li>Check <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong> for failed actions.</li>
 </ol>
+
+<p>If you want to keep selling while stock is at zero, set it up deliberately; see <a href="/blog/woocommerce-pre-orders-backorders/">WooCommerce pre-orders and backorders</a>.</p>
 
 <h2>When to get help</h2>
 <p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>

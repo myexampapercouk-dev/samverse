@@ -522,7 +522,7 @@
     <link>https://samverse.space/blog/robots-txt-explained/</link>
     <guid>https://samverse.space/blog/robots-txt-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Robots.txt WordPress guide: where the file lives, how to edit it in Yoast or Rank Math, safe WordPress and WooCommerce examples, sitemap lines and mistakes.</description>
+    <description>Copy a safe WordPress robots.txt, edit it in Yoast or Rank Math, add your sitemap line and avoid the blocking mistakes that drop pages from Google.</description>
   </item>
   <item>
     <title>Canonical Tags Explained: What rel=canonical Does and How to Get It Right</title>
@@ -662,7 +662,7 @@
     <link>https://samverse.space/blog/utm-tags-explained/</link>
     <guid>https://samverse.space/blog/utm-tags-explained/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>UTM tags explained: what a UTM tag is, the five parameters, naming GA4 understands, a UTM tagging template for WhatsApp, QR codes and ads, and GA4 reports.</description>
+    <description>Build UTM links that GA4 reads correctly: the five parameters, lowercase naming rules and a ready template for WhatsApp, QR codes, Instagram and ads.</description>
   </item>
   <item>
     <title>Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It</title>
@@ -830,7 +830,7 @@
     <link>https://samverse.space/blog/fixed-price-vs-hourly-website-projects/</link>
     <guid>https://samverse.space/blog/fixed-price-vs-hourly-website-projects/</guid>
     <pubDate>Sun, 27 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Fixed price vs hourly website projects in India: how each works, which suits your project, hourly rates, retainers, scope creep and payment milestones.</description>
+    <description>Fixed price or hourly for your website project? See which suits a new site, a redesign or fixes, how scope creep is handled and how milestones work.</description>
   </item>
   <item>
     <title>How to Give Clear Website Feedback to Your Designer or Developer: Screenshots, One List, Priorities, Bugs vs Changes and a Feedback Template</title>
@@ -1005,7 +1005,7 @@
     <link>https://samverse.space/blog/fix-wordpress-critical-error/</link>
     <guid>https://samverse.space/blog/fix-wordpress-critical-error/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>&quot;There has been a critical error on this website&quot;? Use the recovery email, read debug.log, disable plugins by FTP, check PHP and know when to restore a backup.</description>
+    <description>Fix &quot;There has been a critical error on this website&quot; in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.</description>
   </item>
   <item>
     <title>WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template</title>
@@ -1089,7 +1089,7 @@
     <link>https://samverse.space/blog/website-for-cctv-security-installers/</link>
     <guid>https://samverse.space/blog/website-for-cctv-security-installers/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Local SEO for security system installers: Business Profile, locality pages, reviews and a site that turns CCTV and alarm searches into survey calls.</description>
+    <description>Website and local SEO for CCTV and security installers: Business Profile, locality pages, real install photos and a quote form that books site surveys.</description>
   </item>
   <item>
     <title>Websites for Signage, LED Board and Branding Companies</title>
@@ -1285,7 +1285,7 @@
     <link>https://samverse.space/blog/woocommerce-product-reviews/</link>
     <guid>https://samverse.space/blog/woocommerce-product-reviews/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Set up WooCommerce product reviews: verified-owner settings, review requests after delivery, photo reviews, spam control, star ratings and reviews not showing.</description>
+    <description>Enable WooCommerce product reviews, show verified owner labels and star ratings, ask buyers after delivery and fix reviews that are not showing.</description>
   </item>
   <item>
     <title>How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale</title>
@@ -1299,7 +1299,7 @@
     <link>https://samverse.space/blog/web-fonts-performance/</link>
     <guid>https://samverse.space/blog/web-fonts-performance/</guid>
     <pubDate>Mon, 28 Sep 2026 03:30:00 GMT</pubDate>
-    <description>Improve business website web font performance: fewer font files, WOFF2, self-hosting, font-display swap, preloading and subsetting in WordPress and Shopify.</description>
+    <description>Reduce font load on WordPress and Shopify: cut font weights, self-host WOFF2, use font-display swap and preload one font to speed up LCP.</description>
   </item>
   <item>
     <title>Third-Party Scripts: How Chat Widgets, Trackers and Embeds Slow Your Website</title>
@@ -1425,7 +1425,7 @@
     <link>https://samverse.space/blog/test-structured-data-rich-results/</link>
     <guid>https://samverse.space/blog/test-structured-data-rich-results/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>The best rich snippet testing tool is Google's Rich Results Test. Learn how to check rich snippets, read errors and warnings, and fix schema in WordPress.</description>
+    <description>Use the Google Rich Results Test to check rich snippets, read errors and warnings, validate schema and fix structured data in WordPress.</description>
   </item>
   <item>
     <title>How to Start an Email Newsletter for Your Small Business: Tools, Content and Sign-Ups</title>
@@ -1453,7 +1453,7 @@
     <link>https://samverse.space/blog/instagram-to-website-enquiries/</link>
     <guid>https://samverse.space/blog/instagram-to-website-enquiries/</guid>
     <pubDate>Wed, 30 Sep 2026 03:30:00 GMT</pubDate>
-    <description>How to turn Instagram followers into website enquiries: a bio link page you own, landing pages that match each post, WhatsApp handoff and UTM tracking.</description>
+    <description>Turn Instagram followers into website enquiries with a bio link page you own, landing pages that match each post, WhatsApp handoff and UTM tracking.</description>
   </item>
   <item>
     <title>Google Ads Budget for Small Business in India: How to Work It Out</title>
@@ -1698,7 +1698,7 @@
     <link>https://samverse.space/blog/local-seo-pune-businesses/</link>
     <guid>https://samverse.space/blog/local-seo-pune-businesses/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Local SEO for Pune and PCMC businesses: Google Business Profile, service pages, honest area pages, reviews, Marathi or English content and tracking enquiries.</description>
+    <description>Local SEO for Pune and PCMC businesses: set up Google Business Profile, service and area pages, reviews and enquiry tracking to show up in Maps searches.</description>
   </item>
   <item>
     <title>Why Is My Business Not Showing on Google Maps? Causes and Fixes</title>
@@ -1726,7 +1726,7 @@
     <link>https://samverse.space/blog/wordpress-xmlrpc-explained/</link>
     <guid>https://samverse.space/blog/wordpress-xmlrpc-explained/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>Should you disable xmlrpc.php? What XML-RPC does, what still uses it, how to test if it is open, how to spot attacks in logs and how to block it safely.</description>
+    <description>Check if xmlrpc.php is open on your WordPress site, see what still needs it, and block it safely at the server, firewall or with a security plugin.</description>
   </item>
   <item>
     <title>How to Stop Spam User Registrations in WordPress and WooCommerce</title>
@@ -1796,7 +1796,7 @@
     <link>https://samverse.space/blog/woocommerce-pre-orders-backorders/</link>
     <guid>https://samverse.space/blog/woocommerce-pre-orders-backorders/</guid>
     <pubDate>Thu, 01 Oct 2026 03:30:00 GMT</pubDate>
-    <description>How to set up WooCommerce pre-orders and backorders: stock settings, plugins, charging upfront or later, honest dates, refunds and the Shopify equivalent.</description>
+    <description>Set up WooCommerce backorders and pre-orders: stock settings, plugin options, charging now or later, honest dispatch dates and refunds.</description>
   </item>
   <item>
     <title>Shared vs VPS vs Cloud vs Managed WordPress Hosting: Which Do You Need?</title>
