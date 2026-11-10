@@ -112,7 +112,7 @@
   "date": "2026-11-10"
  },
  "https://samverse.space/blog/topic/seo-growth/": {
-  "hash": "52160a7650b9f034",
+  "hash": "69c1555110c8c59c",
   "date": "2026-11-10"
  },
  "https://samverse.space/blog/topic/speed-security/": {
@@ -120,7 +120,7 @@
   "date": "2026-11-10"
  },
  "https://samverse.space/blog/topic/ecommerce/": {
-  "hash": "e053260ed5de4b15",
+  "hash": "1d44d95c345259f4",
   "date": "2026-11-10"
  },
  "https://samverse.space/blog/topic/industries/": {
@@ -313,6 +313,10 @@
  },
  "https://samverse.space/contact/": {
   "hash": "3def13b762c9aa35",
+  "date": "2026-11-10"
+ },
+ "https://samverse.space/tutorials/": {
+  "hash": "029074cf7b8a40a6",
   "date": "2026-11-10"
  }
 }

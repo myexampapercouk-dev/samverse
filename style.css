@@ -748,3 +748,9 @@ main, footer, section { max-width: 100vw; }
 .tool-cards h2 { font-size: 1.15rem; }
 .tool-callout { background: var(--violet-soft); border-radius: 12px; padding: 14px 16px; }
 @media (max-width: 860px) { .tool, .tool-cards { grid-template-columns: 1fr; } }
+/* Tutorials (/tutorials/) */
+.post-body .tut-need { margin: 1.4em 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; background: #fafafa; }
+.post-body .tut-need p { margin: 0 0 6px; }
+.post-body .tut-need ul { margin: 0; }
+.post-body .tut-path { margin: .4em 0 1em; padding: 8px 12px; border-left: 3px solid #6D4AFF; background: #f6f4ff; font-size: .95rem; }
+.tut-help div { display: flex; gap: 18px; flex-wrap: wrap; }

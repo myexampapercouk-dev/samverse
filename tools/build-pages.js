@@ -39,6 +39,8 @@ const PAGES = require('./pages-data');
 const PROJECTS = require('./projects');
 const POSTS = require('./blog-data');
 const TOOL_LINKS = require('./tool-links'); // contextual links from posts to the free tools
+const TUT = require('./tutorials-build');
+TUT.injectLinks(POSTS); // contextual links from related posts to /tutorials/ pages
 const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and that we link to
 const SUMMARIES = require('./blog-summaries');
 const H1 = require("./h1-overrides"); // keyword-led H1s for posts and case studies
@@ -1261,6 +1263,7 @@ const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '
   { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
   ...LIVE_POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date, imgs: [...new Set((p.body.match(/\/assets\/blog\/[\w-]+\.svg/g) || []))] })),
   { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
+urls.push(...TUT.build({ ROOT, SITE, headCommon, header, footer, contact, waFloat, esc, fmtDate, readMins, plainText, postFaqs, bySlug, WA }));
 
 // Pages without a post date get a lastmod that only moves when their <main> content changes,
 // so Google can trust it. Fingerprints live in tools/lastmod.json; new entries start from the file's last git commit.
