@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-http-error-image-upload-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-http-error-image-upload-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix the WordPress HTTP error when uploading images?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retry, then test a smaller image. If small images work, raise memory and time limits or switch the image library to GD. If nothing uploads, check uploads folder permissions, disk space, firewall rules and plugins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do only some images fail to upload?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because they are very large in pixel dimensions, which needs more memory to resize, or because the format, such as HEIC or some WebP files, is not supported by the server's image library."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the HTTP error caused by my internet connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Occasionally a dropped connection causes one failed upload. If it happens every time with the same image, the cause is on the server or in WordPress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the HTTP error damage my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The failed image may leave a partial entry in the Media Library, which you can delete, but your pages and content are not affected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I ask my hosting company to fix it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask them if the cause is a server limit, a missing image library, file ownership or a firewall rule, because those are on their side. Size, plugin and theme causes are things you or your developer fix inside WordPress."
+          }
+        }
+      ]
     }
   ]
 }

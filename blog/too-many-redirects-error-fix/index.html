@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/too-many-redirects-error-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/too-many-redirects-error-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix ERR_TOO_MANY_REDIRECTS in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clear cookies and caches, set Cloudflare SSL to Full or Full (strict), make the WordPress Address and Site Address match, remove duplicate HTTPS rules in .htaccess or the hosting panel, then check redirect plugins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site say redirected you too many times?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two or more redirect rules disagree, so the browser keeps bouncing between URLs. HTTPS and www conflicts are the most common cause."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Cloudflare cause too many redirects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Flexible SSL mode is a frequent cause on WordPress. Switch to Full or Full (strict) once the server has an SSL certificate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does only wp-admin have a redirect loop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually a site URL mismatch, cookie problems, a security plugin changing the login URL or caching of login pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a redirect loop hurt SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If it lasts, yes, because Google cannot reach the pages. Fix it quickly and check Search Console for crawl errors afterwards. If you cannot find the loop or the site is down for customers, see WordPress maintenance and support or hire a WordPress developer in India . Businesses in Pune can see the WordPress developer in Pune page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix too many redirects in WordPress without access to wp-admin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your hosting file manager or FTP. Set WP_HOME and WP_SITEURL in wp-config.php to your final HTTPS address, add the HTTPS detection lines if you use Cloudflare, rename the plugins folder to disable all plugins, and reset .htaccess to the default WordPress rules. Then log in and fix the setting properly."
+          }
+        }
+      ]
     }
   ]
 }

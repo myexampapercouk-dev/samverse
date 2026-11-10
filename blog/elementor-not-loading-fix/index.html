@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/elementor-not-loading-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/elementor-not-loading-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Elementor stuck on the loading screen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually low PHP memory, a plugin conflict, a server firewall blocking the editor's requests, or caching and CDN scripts. The browser console and Safe Mode will tell you which."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Elementor say \"Preview could not be loaded\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most often the site addresses don't match (http and https, or www and non-www), a security rule blocks the preview, or a redirect interferes with it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Elementor is loading forever on one page only. What does that mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That page's data is probably the problem, often a widget from a missing add-on. Restore a revision or remove the widget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to use Elementor's Safe Mode on a live site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It affects only the editor for logged-in users, not what visitors see. Switch it off once you've finished testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will reinstalling Elementor fix the loading problem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely on its own, because the cause is usually around Elementor. Diagnose first; reinstalling the same version over itself only helps if its files were damaged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix Elementor not loading after a WordPress update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Update Elementor, Elementor Pro and any Elementor add-ons together, clear every cache, then test in Safe Mode. If the editor opens there, an add-on or theme is not compatible yet; roll it back on staging until its developer releases a fix."
+          }
+        }
+      ]
     }
   ]
 }

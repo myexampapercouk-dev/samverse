@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/hostinger-business-email-setup/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/hostinger-business-email-setup/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Hostinger business email free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some Hostinger hosting plans have included mailboxes, sometimes free for a limited period, while others need a paid email plan. Offers change often, so check what hPanel lists for your plan and when it renews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Hostinger's IMAP and SMTP settings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the time of writing, IMAP is imap.hostinger.com on port 993 and SMTP is smtp.hostinger.com on port 465, both with SSL, using your full email address and mailbox password. Confirm them in hPanel's email configuration section."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my Hostinger emails going to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually a missing or duplicate SPF record, DKIM not set up, or no DMARC record. New domains also have little sending reputation, so avoid bulk mailing from a new mailbox. Check the Show original view in Gmail to see which test fails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my Hostinger email in the Gmail app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Add it as an \"Other\" account over IMAP in the Gmail app on Android or iPhone, and you can read and send as your business address alongside your personal Gmail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my website be on Hostinger and my email on Google Workspace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Point the MX records at Google, keep the website's A record pointing at Hostinger, and include both services in your single SPF record if the website sends mail too."
+          }
+        }
+      ]
     }
   ]
 }

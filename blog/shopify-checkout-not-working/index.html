@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/shopify-checkout-not-working/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/shopify-checkout-not-working/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my Shopify checkout not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the payment gateway is not fully activated, the address has no shipping rate, an app or theme script is breaking the cart, or a setting such as the password page or inventory tracking is blocking the sale. Test an order yourself to find the exact step that fails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Shopify say no shipping rates are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The customer's address or cart weight does not match any rate in your shipping zones. Add every state you sell to into a zone, close gaps in weight bands, and keep a flat backup rate in case a shipping app fails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is cash on delivery not showing on my Shopify checkout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "COD has been removed from manual payment methods, or an app or payment customisation is hiding it for that cart, for example above a set order value or for certain pincodes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A customer paid by UPI but there is no order. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find the payment in your gateway dashboard first. If it is captured, contact the gateway with the transaction ID and create the order manually. If it is pending or failed, it usually reverses to the customer automatically under the gateway's rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the checkout button do nothing on my Shopify store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A JavaScript error from the theme or an app is stopping the cart. Preview a fresh theme and switch off app embeds one by one to find the conflict."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I test Shopify checkout without paying?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use your gateway's test mode or Shopify's test gateway for card flows, and use COD for a full order test. After going live, place one small real payment to confirm the live keys work, then refund it."
+          }
+        }
+      ]
     }
   ]
 }

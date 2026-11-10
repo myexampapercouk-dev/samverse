@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-shipping-setup-india/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-shipping-setup-india/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I set up shipping zones in WooCommerce for India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to WooCommerce > Settings > Shipping > Shipping zones and add zones from most to least specific: local pin codes, your state, any remote regions, then India as a whole. WooCommerce uses the first zone that matches the address, so the order matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I charge shipping by weight in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter packed weights for every product, then add a weight-based rates plugin such as Table Rate Shipping or Flexible Shipping, or use live rates from a courier integration. WooCommerce's built-in methods don't calculate by weight on their own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I offer free shipping above a certain order value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add the Free shipping method to the zone and set it to require a minimum order amount. Decide whether coupons count towards the minimum, and consider hiding paid options when free shipping applies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I connect Shiprocket or Delhivery to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the time of writing, both offer ways to connect a WooCommerce store, as do other aggregators such as iThink Logistics. Integrations typically sync orders, generate labels and send tracking back, but check each provider's current features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop orders from pin codes I can't deliver to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Limit your zones to the pin codes you serve so checkout offers no shipping elsewhere, and add a pin code checker on product pages so shoppers find out before they reach checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is WooCommerce showing the wrong shipping charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because a broader zone sits above a specific one, products are missing weights or shipping classes, or an old rate is cached. Turn on shipping debug mode to see which zone and method matched."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/meta-pixel-conversions-api/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/meta-pixel-conversions-api/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need both the Meta Pixel and the Conversions API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meta recommends using both. The pixel captures browser events and the Conversions API sends events from your server, which helps when browsers block tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set up the Meta Pixel and Conversions API on Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your store through Shopify's Facebook and Instagram channel and choose the higher data-sharing setting. Remove any old pixel code from your theme to avoid duplicate events."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the Conversions API on WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Meta's official integration and several tracking plugins support server-side events on WooCommerce. Make sure event IDs are sent for deduplication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Meta show more purchases than my store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually duplicate events, from old pixel code plus an integration, or from browser and server events that are not deduplicated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Meta Pixel slow down my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single pixel has a modest impact, but several tracking plugins and duplicate scripts add up. Server-side events do not slow pages for visitors."
+          }
+        }
+      ]
     }
   ]
 }

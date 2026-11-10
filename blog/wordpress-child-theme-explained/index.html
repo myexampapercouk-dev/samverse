@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-child-theme-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-child-theme-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a child theme in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a theme that inherits the design and functions of a parent theme and stores only your changes. Updating the parent no longer overwrites your custom code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a child theme for small CSS changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Use Additional CSS in the Customizer or custom CSS in the Site Editor. A child theme is worth it when you edit template files, functions.php or WooCommerce templates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I create a child theme in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a folder, add a style.css with Theme Name and Template lines, add a functions.php that enqueues the parent stylesheet, then upload and activate it. Test on staging first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my settings when I activate a child theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some theme settings, menu locations and widgets can reset because WordPress treats the child as a new theme. Export Customizer settings first and reassign menus after switching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a child theme with Elementor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Elementor pages are stored in the database, so they work the same. A child theme of Hello Elementor is useful for custom PHP or extra code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do block themes need child themes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not for changes made in the Site Editor, because those are saved in the database. A child block theme helps when you want templates and theme.json changes kept in code."
+          }
+        }
+      ]
     }
   ]
 }

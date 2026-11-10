@@ -91,6 +91,68 @@
           "item": "https://samverse.space/blog/indexed-though-blocked-by-robots-txt-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/indexed-though-blocked-by-robots-txt-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is \"Indexed, though blocked by robots.txt\" bad for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always. If the URLs are cart, checkout, search or filter pages you never wanted in Google, it is mostly harmless. It matters when important pages are blocked, because Google can list them without reading their content, so they show poor snippets and rank badly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use robots.txt or noindex to keep a page out of Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use noindex. robots.txt only stops crawling, so a blocked page can still be indexed from links. A noindex tag removes it, but Google must be allowed to crawl the page to see the tag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix indexed, though blocked by robots.txt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Decide whether each URL should rank. If yes, remove the robots.txt rule blocking it. If no, allow crawling and add a noindex tag so Google can see it and drop the page. Then click Validate Fix in Search Console."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is \"Blocked by robots.txt\" an error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. It means Google respected your instruction. It is only a problem if a page you want in search results is listed there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use robots.txt to remove a page from Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. robots.txt stops crawling, not indexing. Use a noindex tag with crawling allowed, or the Removals tool for an urgent, temporary hide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my WooCommerce cart and checkout pages in this report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are often blocked in robots.txt but linked from every page, so Google knows they exist. This is usually harmless. If you want them gone, use noindex rather than a robots.txt block."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does validation take after the fix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies with how often Google crawls your site, from days to a few weeks. Requesting indexing for key pages can help them get recrawled sooner."
+          }
+        }
+      ]
     }
   ]
 }
@@ -377,7 +439,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/search-console-page-indexing-errors/"><img class="post-card-img" src="/assets/og/blog-search-console-page-indexing-errors.webp" alt="Search Console Page Indexing Errors: What Each Status Means and What to Do" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Search Console Page Indexing Errors: What Each Status Means and What to Do</h3><p>Search Console page indexing errors explained: what crawled or discovered not indexed, duplicate, noindex, 404 and 5xx mean, and which ones to fix.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/get-website-indexed-google-faster/"><img class="post-card-img" src="/assets/og/blog-get-website-indexed-google-faster.webp" alt="How to Get Your Website Indexed by Google Faster: What Actually Works" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>How to Get Your Website Indexed by Google Faster: What Actually Works</h3><p>How to get your website indexed by Google faster: internal links, honest sitemaps, URL Inspection, page quality, crawl budget and IndexNow.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/technical-seo-audit-wordpress/"><img class="post-card-img" src="/assets/og/blog-technical-seo-audit-wordpress.webp" alt="WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)</h3><p>How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.</p><span class="post-card-meta">27 September 2026 · 11 min read</span></a>
+          <a class="post-card" href="/blog/technical-seo-audit-wordpress/"><img class="post-card-img" src="/assets/og/blog-technical-seo-audit-wordpress.webp" alt="WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)</h3><p>How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

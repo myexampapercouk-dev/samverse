@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-database-optimization/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-database-optimization/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I optimise my WordPress database?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Back up first, check which tables and options are largest, then remove revisions, expired transients, spam and orphaned data with a plugin such as WP-Optimize or with WP-CLI. Finally fix heavy autoloaded options and set limits so the clutter does not return."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to delete post revisions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after a backup. Revisions are old copies of your content. Keeping the last few per post is sensible, and you can limit future revisions in wp-config.php."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will database optimisation make my site faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It helps most when the admin is slow, uncached pages have a high server response time, or autoloaded options are large. If the slowness comes from images, scripts or hosting, database cleanup alone will not fix it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are autoloaded options in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are settings in the wp_options table that WordPress loads on every request. When old or bloated plugins store large data there, every page load slows down, so trimming them is often the biggest single gain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I delete tables left by old plugins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, once you are sure the plugin will not be reinstalled and you have a backup. Check the table prefix matches the removed plugin, and test the site afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I optimise the WordPress database?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A light cleanup monthly is enough for most business sites, with a deeper review once or twice a year. Busy WooCommerce stores may need weekly cleanup of sessions and scheduled actions."
+          }
+        }
+      ]
     }
   ]
 }

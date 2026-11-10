@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/increase-wordpress-upload-size-limit/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/increase-wordpress-upload-size-limit/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the default WordPress upload limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress has no default of its own; it uses your server's PHP settings. PHP's built-in defaults allow only 2 MB per file, but most hosts set something higher. Media > Add New shows the limit on your site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why didn't my php.ini change work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your server may not read that file, it may be in the wrong folder, or PHP may still be using a cached copy. Wait five minutes, check Site Health, and if nothing changed, use the hosting control panel or ask support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I increase the upload size in wp-config.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. PHP doesn't allow upload_max_filesize and post_max_size to be changed from inside WordPress, so lines added to wp-config.php have no effect. Change the values in your hosting panel or a server configuration file instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a plugin that increases the upload size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plugins can't exceed what your server allows. Some write .htaccess or .ini lines for you, which works only where those files are supported. The hosting control panel is more reliable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I upload a file larger than the limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Upload it over SFTP or your host's file manager instead of the browser. Themes and plugins can go straight into their folders, and media files can be added to the library with WP-CLI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to set a very high upload limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set it to what you need rather than the maximum. Very high limits let anyone with upload access fill your hosting space, and big uploads tie up server resources on cheaper plans."
+          }
+        }
+      ]
     }
   ]
 }

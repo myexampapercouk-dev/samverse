@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/eliminate-render-blocking-resources/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/eliminate-render-blocking-resources/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I eliminate render-blocking resources in WordPress without a plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is possible by adding defer attributes through code in your theme, inlining critical CSS manually and dequeuing unused assets, but a well-configured optimisation plugin is safer for most sites."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my site break after deferring JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because an inline script needs jQuery or another library immediately. Exclude that script or jQuery from deferral and test again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I remove all render-blocking resources?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely. Some CSS must load before the page can display correctly. The aim is to reduce what blocks, not reach zero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will fixing this improve my Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Speed is one of many signals. Faster pages mostly help visitors stay and convert; ranking gains are usually modest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I optimise the checkout page too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Carefully, if at all. Exclude checkout and payment scripts from delay and unused CSS removal unless thoroughly tested."
+          }
+        }
+      ]
     }
   ]
 }

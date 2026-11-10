@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-checkout-not-working-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-checkout-not-working-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce checkout not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common causes are cached checkout pages, JavaScript conflicts from optimisation or other plugins, payment gateway settings, mixed content and session problems. The browser console and WooCommerce logs usually show which."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the WooCommerce checkout keep spinning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An endless spinner usually means the checkout request failed or returned an unexpected response, often because of a PHP error, a plugin conflict or a caching issue. Check the Network tab and the logs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the Place Order button do nothing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is usually a JavaScript error or scripts being delayed by an optimisation plugin. Exclude WooCommerce and gateway scripts from delay and defer settings and check the console."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Payment was taken but no order was created. What now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the gateway dashboard and webhook settings, then the WooCommerce logs. Create the order manually for the customer and fix the callback so it does not happen again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can caching break WooCommerce checkout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cart, checkout and account pages must be excluded from page caching and CDN caching, or sessions and security tokens fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix a WooCommerce checkout error message?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Read the exact message, then check the browser console and WooCommerce, then Status, then Logs at the same time. Most checkout errors point to a payment plugin, a validation rule, an expired session or a caching problem, and the log usually names which."
+          }
+        }
+      ]
     }
   ]
 }

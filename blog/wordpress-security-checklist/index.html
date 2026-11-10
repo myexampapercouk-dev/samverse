@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-security-checklist/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-security-checklist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is WordPress secure enough for a business website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when it's maintained. WordPress core is actively maintained and security fixes are released regularly. Most hacks come from outdated plugins, weak passwords, nulled software and poor hosting, all of which this checklist addresses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a security plugin like Wordfence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most business sites, yes. A plugin such as Wordfence or Solid Security adds a firewall, malware scanning, login protection and 2FA in one place. Use one, not several, and don't treat it as a substitute for updates and backups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I disable XML-RPC in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If nothing on your site uses it, yes. Most sites don't need it, and bots use it for password guessing. Check first whether you use Jetpack, the WordPress mobile app or a service that publishes remotely, because those may need it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does changing the WordPress login URL make it more secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only a little. It reduces automated login attempts and log noise, but anyone determined can still find a login page. Strong passwords, 2FA and limited login attempts do the real work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I check WordPress security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check updates weekly or fortnightly and run through a routine like the one above monthly. Review users whenever someone leaves or a project with an outside developer ends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if my WordPress site is already hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't just restore an old backup or delete the obvious files. Find and remove the malware and any backdoors, change every password, update everything, and then harden the site. A hack that isn't fully cleaned usually comes back."
+          }
+        }
+      ]
     }
   ]
 }
@@ -381,7 +435,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-file-permissions/"><img class="post-card-img" src="/assets/og/blog-wordpress-file-permissions.webp" alt="WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress File Permissions Explained: 644, 755, wp-config.php, Ownership and How to Fix Permission Errors</h3><p>WordPress file permissions explained: 644 for files, 755 for folders, 600 or 440 for wp-config.php, why 777 is dangerous and how to fix permission errors.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection</h3><p>Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>

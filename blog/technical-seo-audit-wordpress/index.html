@@ -91,6 +91,68 @@
           "item": "https://samverse.space/blog/technical-seo-audit-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/technical-seo-audit-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What tools do I need for a WordPress SEO audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Search Console, PageSpeed Insights and the Rich Results Test are free and cover indexing, speed and schema. Add a crawler such as Screaming Frog for links and redirects, and use your SEO plugin to fix titles, sitemaps and noindex settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I do a WordPress SEO audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check indexing in Search Console, crawl the site for errors and redirects, review WordPress and SEO plugin settings, test speed, review on-page SEO and structured data, then prioritise fixes by impact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best WordPress SEO audit tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single tool. Google Search Console, a site crawler, PageSpeed Insights and the Rich Results Test together cover most of what an audit needs, and the first and last are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I audit my WordPress site's SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A full audit once or twice a year is enough for most business sites, plus a quick check after a redesign, migration, theme change or big traffic drop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an SEO plugin audit my WordPress site for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO plugins check individual pages and settings, which is useful, but they do not crawl the whole site, assess indexing in Google or judge content overlap, so they do not replace a full audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a technical SEO audit and an SEO audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A technical SEO audit focuses on crawling, indexing, speed, redirects and structured data. A full SEO audit also covers content quality, keyword targeting and backlinks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a WooCommerce SEO audit include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Everything in a WordPress audit plus filter and sort URLs, product and category content, out-of-stock handling, product schema and noindexing cart, checkout and account pages."
+          }
+        }
+      ]
     }
   ]
 }
@@ -135,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20SEO%20Audit%3A%20A%20Practical%20Step-by-Step%20Checklist%20(With%20WooCommerce%20Checks)%20https%3A%2F%2Fsamverse.space%2Fblog%2Ftechnical-seo-audit-wordpress%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -181,7 +243,7 @@
               <li>Write every finding into a short report with the pages affected, impact, owner and status, and run a quick audit after any redesign, migration or traffic drop.</li>
             </ul>
           </div>
-<p>A WordPress SEO audit checks whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. Start with Search Console's Pages report and a full site crawl, then check WordPress and SEO plugin settings, robots.txt and the sitemap, speed, on-page SEO, structured data and (for stores) WooCommerce issues.</p>
+<p>A WordPress SEO audit checks whether Google can crawl, index and understand your site, and whether your pages are fast, well targeted and well linked. Start with Search Console's Pages report and a full site crawl, then work through settings, speed, on-page SEO and structured data.</p>
 
 <blockquote><strong>Short answer:</strong> A WordPress SEO audit is a step-by-step check of indexing, crawlability, speed, on-page SEO and structured data. Use Search Console for indexing, a crawler such as Screaming Frog for broken links and redirects, PageSpeed Insights for Core Web Vitals, the Rich Results Test for schema, and your SEO plugin for titles, sitemaps and noindex settings.</blockquote>
 
@@ -203,8 +265,7 @@
 <li>Access to <a href="/blog/setup-google-analytics-search-console/">Google Search Console and Google Analytics</a>.</li>
 <li>An admin login to WordPress and your hosting panel.</li>
 <li>A site crawler (several have free versions that cover small sites).</li>
-<li>A spreadsheet to log each issue, the pages affected, impact and who will fix it.</li>
-<li>A recent backup, in case any fix needs undoing.</li>
+<li>A spreadsheet to log each issue, pages affected and impact, and a recent backup.</li>
 </ul>
 
 <p>Related: <a href="/blog/hreflang-multilingual-seo-india/">hreflang tags for Indian languages</a>.</p>
@@ -229,7 +290,7 @@
 <h2 id="step-2-check-wordpress-settings-that-block-seo">Step 2: Check WordPress settings that block SEO</h2>
 <ul>
 <li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. It is often left on after launch. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
-<li><strong>Hidden noindex:</strong> view the source of a key page and search for <code>name="robots"</code>; it should not say noindex. Then run <code>curl -I https://yourdomain.com/</code> and check there is no <code>X-Robots-Tag: noindex</code> header, which some security and staging plugins add at server level where no plugin setting shows it.</li>
+<li><strong>Hidden noindex:</strong> view the source of a key page and search for <code>name="robots"</code>; it should not say noindex. Then run <code>curl -I https://yourdomain.com/</code> and check there is no <code>X-Robots-Tag: noindex</code> header, which some plugins add at server level.</li>
 <li><strong>Permalinks:</strong> use a readable structure such as post name, not ?p=123.</li>
 <li><strong>SEO plugin settings:</strong> check which post types and taxonomies are set to noindex, and that only one SEO plugin is active.</li>
 <li><strong>Attachment pages:</strong> media attachment pages should redirect to the file or parent post, not be indexed as thin pages.</li>
@@ -288,9 +349,9 @@
 <p>List pages with impressions but no clicks, pages with no impressions at all, and posts that cover the same topic. Merge, improve or remove weak pages. Also confirm the site runs on HTTPS everywhere, has no mixed content warnings and has no hacked spam pages, because security problems can wipe out rankings quickly.</p>
 
 <h2 id="step-10-check-mobile-usability-and-local-signals">Step 10: Check mobile usability and local signals</h2>
-<p>Google indexes the mobile version of your site, so open key pages on a real phone, not just a resized desktop browser. Check that menus work, text is readable without zooming, buttons are not too close together, and that nothing important is hidden on mobile that appears on desktop. Pop-ups that cover the content on arrival can also hurt how Google and visitors judge the page.</p>
+<p>Google indexes the mobile version, so open key pages on a real phone. Check menus work, text is readable without zooming, buttons are not cramped, nothing important is hidden on mobile, and no pop-up covers the content on arrival.</p>
 <p>If you serve customers in particular cities, check the local basics too: your business name, address and phone number match your Google Business Profile, each location or service area has a genuinely useful page, and LocalBusiness schema matches what is on the page. Our <a href="/blog/local-seo-guide-small-business-india/">local SEO guide for Indian small businesses</a> covers these checks.</p>
-<p>Finally, check analytics is tracking correctly. An audit that compares traffic before and after fixes is only useful if the numbers are reliable, so confirm Search Console and Analytics both cover the same domain version (with or without www, and HTTPS).</p>
+<p>Finally, confirm Search Console and Analytics both track the same domain version (www or not, HTTPS), so before-and-after numbers are reliable.</p>
 
 <h2 id="wordpress-seo-audit-checklist-with-tools">WordPress SEO audit checklist with tools</h2>
 <ol>
@@ -319,7 +380,7 @@
 <p>More detail: <a href="/blog/canonical-tags-explained/">canonical tags</a> and <a href="/blog/duplicate-content-explained/">duplicate content</a>.</p>
 
 <h2 id="what-a-useful-wordpress-seo-audit-report-contains">What a useful WordPress SEO audit report contains</h2>
-<p>An audit only helps if someone acts on it. A long export from a crawler with hundreds of warnings rarely gets fixed. A useful report is short and sorted, and each finding has five parts:</p>
+<p>A long crawler export rarely gets fixed. A useful report is short and sorted, and each finding has five parts:</p>
 <ul>
 <li><strong>The issue,</strong> in plain words, such as "category filter URLs are indexable".</li>
 <li><strong>The pages affected,</strong> with a few example URLs and a count.</li>

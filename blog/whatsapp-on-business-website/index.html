@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/whatsapp-on-business-website/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/whatsapp-on-business-website/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best way to add WhatsApp business chat on website pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a free wa.me click-to-chat link with your number in international format and a pre-filled message, placed on a clear button beside your main call to action and as a floating button on mobile. In WordPress you can add it in the block editor, your theme or a light plugin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the wa.me link format?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "https://wa.me/ followed by the country code and number with no plus sign, spaces or leading zero, for example https://wa.me/91XXXXXXXXXX. Add ?text= followed by a URL-encoded message to pre-fill the chat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is adding WhatsApp to a website free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Click-to-chat links and the WhatsApp Business app are free. Costs only come in with the WhatsApp Business API, where Meta charges for many message types, and with paid plugins or chat tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need the WhatsApp Business API for my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not for a chat button. Most small businesses do well with the free app and a click-to-chat link. The API makes sense when several staff need to answer from one number, or you want chatbots and automated notifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the WhatsApp button open WhatsApp Web on desktop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On a computer, wa.me links open the WhatsApp desktop app if it's installed, or offer WhatsApp Web, which needs the visitor's phone linked. On mobile they open the app directly. That's normal behaviour, and it's why a form or phone number should sit alongside WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track WhatsApp clicks in Google Analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a GA4 event for clicks on links containing wa.me, either from the outbound click events GA4 already collects or with a Google Tag Manager click trigger, and mark it as a key event."
+          }
+        }
+      ]
     }
   ]
 }

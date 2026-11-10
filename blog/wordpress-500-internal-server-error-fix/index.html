@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-500-internal-server-error-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix a 500 internal server error in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Take a backup, read the error log, then fix what it names: rename the faulty plugin or theme folder, reset .htaccess, raise the memory limit or switch PHP back. Change one thing at a time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin update cause a 500 error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it is one of the most common causes, especially when a plugin needs a newer PHP version or clashes with another plugin. Renaming its folder disables it so you can log in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my content because of a 500 error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your posts, pages and orders are in the database and are not affected by the error itself. Take care not to overwrite them with an old backup while fixing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is there nothing in my error log?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Logging may be off, or the error is happening before PHP runs, for example in .htaccess or server configuration. Enable WP_DEBUG_LOG and ask your host for the server-level log."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a 500 error bad for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Briefly, no. If Google keeps getting 500 errors over days, it crawls less and can drop affected pages, so fix it promptly."
+          }
+        }
+      ]
     }
   ]
 }

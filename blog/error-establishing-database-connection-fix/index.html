@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/error-establishing-database-connection-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/error-establishing-database-connection-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Have I lost my website content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. The error means WordPress cannot reach the database, not that the database is gone. Only if the database was deleted or badly damaged do you need a backup, which is why a database export is the first thing to take when phpMyAdmin will open."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the error appear and disappear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Intermittent errors point to the server or your hosting limits rather than wrong settings. Traffic spikes, bots and slow plugin queries can exhaust the connections available to your account. Caching, bot blocking and, if needed, a bigger hosting plan are the usual fixes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin cause this error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirectly, yes. A plugin that runs heavy or repeated queries can overload the database until new connections are refused. If the error began after a plugin update, rename that plugin's folder over SFTP to switch it off and see whether the site recovers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to leave WP_ALLOW_REPAIR switched on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The repair page does not ask for a login, so anyone who knows the address could run it. Add the line, run the repair, and remove it straight away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I tell whether it is my host's problem or my site's?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If phpMyAdmin will not connect either, or other sites on the same account are down, it is on the host's side. If phpMyAdmin works and the test script connects, the problem is in your WordPress settings or tables."
+          }
+        }
+      ]
     }
   ]
 }

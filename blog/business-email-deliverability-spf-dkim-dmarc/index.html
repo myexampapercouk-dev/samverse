@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/business-email-deliverability-spf-dkim-dmarc/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need SPF, DKIM and DMARC for a small business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Even a business sending a few emails a day benefits, because major mailbox providers now expect authenticated mail, and DMARC also makes it harder for scammers to send fake emails using your domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I have two SPF records?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A domain must have only one SPF record. If you add Google Workspace, a newsletter tool and a transactional service, merge all their include values into one record that starts with v=spf1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What DMARC policy should I start with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with p=none and a reporting address, read the reports for a few weeks, then move to p=quarantine once every legitimate sender passes. Move to p=reject when you are confident nothing genuine is failing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my website form emails go to spam when my normal email is fine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the form sends through the web server's PHP mail function instead of your email provider. Send it through an authenticated SMTP account, with the From address matching that account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I send WordPress form emails through Gmail?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with an SMTP plugin and a Gmail app password, which needs 2-Step Verification turned on. The email will come from that Gmail address, which is fine when enquiries only go to you. For mail from your own domain, use a domain mailbox or a transactional service."
+          }
+        }
+      ]
     }
   ]
 }

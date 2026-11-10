@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/website-down-what-to-do/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/website-down-what-to-do/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I check if my website is down for everyone or just me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Load it on your phone using mobile data instead of Wi-Fi, try a private browser window, and use an online down checker that tests from outside your network. If it works elsewhere, the problem is your network, DNS cache or a firewall block on your IP address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my website open on Wi-Fi but not on mobile data, or the other way round?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually DNS. After a DNS change, one network can keep the old address cached for a while. Less often, the host's firewall has blocked an IP range, or a particular network has a routing problem to your server. Your host can check both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My website is down but my email works. What does that mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The domain is probably fine, because email on the same domain is still being delivered. The problem is more likely the hosting server or the website itself, so check the host's status, resource limits and recent changes to the site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for a site to come back after renewing an expired domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often within a few hours of renewal, but cached DNS can take longer to clear on some networks. If the domain had moved into its redemption period, recovery costs more and takes longer, so renew as soon as you notice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I restore a backup as soon as the site goes down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not until you've ruled out the domain, hosting and SSL. A backup only fixes problems inside the website, such as a bad update or broken code, and on a store it can wipe out recent orders."
+          }
+        }
+      ]
     }
   ]
 }

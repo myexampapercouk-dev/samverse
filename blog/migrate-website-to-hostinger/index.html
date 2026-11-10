@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/migrate-website-to-hostinger/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/migrate-website-to-hostinger/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Hostinger migrate websites for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the time of writing, Hostinger offers free website migration with many of its hosting plans, through the migration tool in hPanel. Check Hostinger's current offer and the terms for your plan, and test the result yourself before switching DNS, because a copied site still needs checking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a Hostinger site migration take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copying a small WordPress site with a plugin can take under an hour; larger sites and queued migration requests take longer. DNS changes then take minutes to a few hours with a low TTL, and up to a day or two in some cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my website go down during the migration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It shouldn't. The old site keeps serving visitors while you copy and test on Hostinger, and you only switch DNS once everything works. The one short gap to plan for is the SSL certificate, which issues once the domain points to Hostinger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my emails when I move to Hostinger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if you plan for it. If email is with Google Workspace or Zoho, recreate the MX and TXT records in Hostinger's DNS or change only the A record. If email is on the old host, move the mailboxes to a new provider before cancelling the old hosting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to transfer my domain to Hostinger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can keep the domain registered where it is and just point it to Hostinger with nameservers or an A record. Transferring the registration is optional and can be done later, separately from the website move. Want the move done for you, with the site tested before the switch, email records preserved and the old hosting kept as a fallback? See WordPress migration , and if you're still choosing a host, read how to choose WordPress hosting in India ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I migrate a non-WordPress website to Hostinger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Static HTML sites are moved by uploading the files in File Manager or by FTP; sites built on other platforms such as Wix cannot be copied directly and must be rebuilt. Domain, DNS and email steps are the same."
+          }
+        }
+      ]
     }
   ]
 }

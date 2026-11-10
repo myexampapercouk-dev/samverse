@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-memory-limit-errors/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-memory-limit-errors/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix WordPress memory limit errors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Get the site back online, add WP_MEMORY_LIMIT set to 256M in wp-config.php, raise memory_limit in your hosting panel if WordPress can't, then find the plugin or task using the memory on a staging copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good PHP memory limit for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "256M suits most business sites and many WooCommerce stores. Heavier stores and admin tasks such as imports may need more, but if normal pages need far more, look for the cause."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does increasing WP_MEMORY_LIMIT not work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your host's PHP limit is lower and WordPress can't go past it. Raise memory_limit in the hosting panel or ask support, then confirm the value in Site Health."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin cause the allowed memory size exhausted error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it is the most common cause, especially after an update or when two plugins conflict. The error log often points to the plugin, though the named file is only a clue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will raising the memory limit slow my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, the limit is a ceiling, not an amount used on every page. But pages that genuinely need a lot of memory are usually slow, so finding the cause helps speed as well."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I increase the WordPress memory limit in wp-config.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a WP_MEMORY_LIMIT line above the line that says to stop editing, save the file and reload the site. If the error stays, your host's PHP memory_limit is lower and caps it, so raise that in the hosting panel or ask support."
+          }
+        }
+      ]
     }
   ]
 }

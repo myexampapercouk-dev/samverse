@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/migrate-shopify-to-woocommerce/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/migrate-shopify-to-woocommerce/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I migrate from Shopify to WooCommerce without losing SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can protect most of it by keeping URLs where possible, redirecting every changed URL to its closest match with a 301, carrying over titles and descriptions, and monitoring Search Console after the switch. Some movement while Google recrawls is normal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my customers' passwords transfer to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Passwords are stored in a form that can't be moved between platforms, so customer accounts come across without them and customers set a new password with a reset link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move my old Shopify orders to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a migration tool or order import plugin. WooCommerce's built-in importer handles products only, so orders and customers need one of those."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep the same /products/ URLs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly. Set the product base to /products/ and the category base to \"collections\" in Settings > Permalinks, and keep the same handles. Nested collection URLs and pages still need redirects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to migrate Shopify to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the number of products and variants, how closely the design must match, how many apps need replacing and whether past orders move too. Plan the cutover for a quiet sales period rather than a fixed date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I cancel Shopify straight after the switch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Keep it for a week or two, password-protected, so you can check anything missed, and export everything you need before closing it."
+          }
+        }
+      ]
     }
   ]
 }

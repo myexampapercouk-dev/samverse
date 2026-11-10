@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/utm-tags-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/utm-tags-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a UTM tag and what is it used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UTM tags are labels added to a link after a question mark. They tell Google Analytics where a visitor came from when it can't work that out itself, such as clicks from WhatsApp, email, QR codes and social posts. Combined with key events, they show which campaigns bring enquiries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are UTM tags case-sensitive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in your reports. GA4 treats WhatsApp and whatsapp as two different sources, which splits your data. Keep every value lowercase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do UTM tags affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. They only affect analytics. Tagged versions of a page don't compete with the original in Google as long as your pages have correct canonical tags, which WordPress SEO plugins set by default."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which UTM parameters are required?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use source, medium and campaign on every tagged link. Content is optional but useful when one campaign has several links, and term is mainly for paid keywords."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my UTM traffic show as Unassigned in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the medium isn't one GA4's channel rules recognise, such as qr or whatsapp. Switch to a recognised medium where one fits, or create a custom channel group that names your own values."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track WhatsApp traffic in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add UTM tags to every link you send on WhatsApp, with a consistent source such as whatsapp, so those visits stop appearing as Direct. To track chats started from your website, use a click event on wa.me links and a pre-filled message naming the page or campaign."
+          }
+        }
+      ]
     }
   ]
 }

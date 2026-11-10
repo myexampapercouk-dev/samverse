@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/recaptcha-not-working-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/recaptcha-not-working-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is reCAPTCHA not working on my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common reasons are a domain missing from the key's settings, swapped or wrong-type keys, a speed plugin delaying the script, or two plugins loading reCAPTCHA at once. Check the error message, then the keys, then your plugins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix \"invalid domain for site key\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add your exact domain, without https or a path, to the Domains list for that key in the reCAPTCHA admin console. Staging or temporary domains need to be added separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use reCAPTCHA v2 or v3?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "v3 is invisible and easier on visitors but can block genuine people if the threshold is too strict. v2 checkbox is visible but predictable. Use whichever your form plugin supports best and combine it with a honeypot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a caching plugin break reCAPTCHA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Delaying or combining scripts can stop it loading, and cached pages can serve expired v3 tokens. Exclude reCAPTCHA and form scripts from delay and combination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if reCAPTCHA blocks real customers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lower the v3 score threshold slightly, show a clear error with another way to contact you, and check the score distribution in the reCAPTCHA console before tightening it again."
+          }
+        }
+      ]
     }
   ]
 }

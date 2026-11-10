@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/shopify-emails-going-to-spam/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/shopify-emails-going-to-spam/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my Shopify emails going to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the sender email is a free address or a domain that is not authenticated in Shopify, there is no DMARC record, or the domain's reputation has been hurt by marketing emails. Fix the sender and authentication first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I authenticate my domain in Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set a sender email on your own domain in the notification settings, copy the CNAME records Shopify shows you into your DNS panel, then return to Shopify to confirm the domain is authenticated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Gmail address as my Shopify sender email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can enter one, but Shopify will not send as Gmail. It sends from its own address with yours as reply-to, which is more likely to land in spam. Use an address on your own domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are Shopify order confirmation emails not being received?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the customer's email address for typos, look in Spam and Promotions, confirm the notification is enabled, and verify your domain authentication. Also check that your DNS has only one SPF record."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Shopify need an SPF record?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shopify relies on the DKIM records it gives you for authentication, so most stores do not add Shopify to SPF. Keep a single valid SPF record for your mailbox provider and follow any current instructions in Shopify's admin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need DMARC for a small Shopify store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it is recommended. Gmail and Yahoo expect DMARC from bulk senders, and a simple p=none record also gives you reports showing which services send mail for your domain."
+          }
+        }
+      ]
     }
   ]
 }

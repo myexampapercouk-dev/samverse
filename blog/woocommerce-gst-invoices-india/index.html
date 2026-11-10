@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-gst-invoices-india/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-gst-invoices-india/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does WooCommerce support GST?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through its standard tax settings. You create tax classes for each GST rate and add CGST, SGST and IGST rates by state. HSN codes, a GSTIN checkout field and GST-format invoices need a plugin or custom work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set CGST, SGST and IGST in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In each tax class, add a CGST row and an SGST row for your home state, each at half the total rate and with priorities 1 and 2, then an IGST row at the full rate with the state left blank, placed below the home-state rows. Test with orders to your own state and another state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which plugin creates GST invoices in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PDF Invoices & Packing Slips for WooCommerce is a widely used free option that can be customised for GST, and several India-specific plugins add HSN codes and the CGST, SGST and IGST split. Pick one that's actively maintained, and have your CA check a sample invoice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I add HSN codes to WooCommerce products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a GST invoice plugin that adds an HSN field to products, or add a custom field and show it in the invoice template. Your CA can confirm the right code and how many digits you need to show."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should prices on my Indian store include GST?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can WooCommerce generate e-invoices with an IRN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store."
+          }
+        }
+      ]
     }
   ]
 }

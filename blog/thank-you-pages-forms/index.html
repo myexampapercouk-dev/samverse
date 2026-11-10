@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/thank-you-pages-forms/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/thank-you-pages-forms/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a thank-you page on a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the page visitors see after submitting a form or completing an order. It confirms the submission, explains what happens next and gives you a clean way to count conversions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should a thank-you page be noindexed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is useless as a search result and visits from search would inflate your conversion counts. Set it to noindex in your SEO plugin, keep it crawlable and don't link to it from menus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set up a lead form thank you page redirect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create and noindex the thank-you page, then change the form's confirmation setting from a message to a redirect to that page. Submit a test lead and check that you land on the page, the enquiry email arrives and your analytics records one conversion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I redirect Contact Form 7 to a thank-you page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact Form 7 has no redirect setting. Add a short script that listens for its wpcf7mailsent event and sends the browser to your thank-you page, or use an add-on plugin that adds a redirect option to each form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track a thank-you page as a conversion in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a generate_lead event that fires when page_view happens on your thank-you page's URL, mark it as a key event and set it to count once per session. Then test it with a real submission in DebugView."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a thank-you page better than a confirmation message?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A page gives you more room for next steps and simpler tracking; an inline message suits pop-ups, multi-step forms and forms that continue into WhatsApp. Either works if it is obvious and tracking fires only after a successful submission."
+          }
+        }
+      ]
     }
   ]
 }

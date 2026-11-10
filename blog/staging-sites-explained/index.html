@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/staging-sites-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/staging-sites-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a staging site in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A private copy of your WordPress site, usually on your own hosting, where you test updates, design changes and new plugins before applying them to the live site. Visitors keep using the live site while you work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my hosting include a staging site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many hosts include staging on some plans, including Hostinger and SiteGround, and many cPanel hosts offer it through Softaculous. Check your plan's features or ask support. If it doesn't, the WP Staging plugin is the usual alternative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I push a staging site to live in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your host's push or publish option, Softaculous's push to live, or WP Staging Pro. Back up the live site first, and on a store push only files or selected tables, so orders placed since the copy aren't overwritten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a staging site hurt my SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if Google can find it, because it duplicates your whole site. Password-protect it and discourage search engines on staging. The bigger risk is pushing that \"discourage\" setting to the live site, so check it after every push."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use staging with WooCommerce without losing orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you don't push the staging database over the live one. Push files only, or only tables you know are safe, and repeat settings changes by hand. For big changes, switch over during a quiet period and test an order straight away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WP Staging free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free version creates and tests staging copies. Pushing changes from staging back to the live site needs the paid Pro version at the time of writing."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-caching-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-caching-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a caching plugin if my host already caches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often not for page caching. Use the host's cache, and on LiteSpeed hosting use the LiteSpeed Cache plugin, which works with it. Check your host's documentation before adding another caching plugin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WordPress caching plugin is best?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your server. On LiteSpeed, LiteSpeed Cache is the natural fit; elsewhere, WP Rocket, W3 Total Cache and WP Super Cache are common choices. A well-configured single plugin matters more than which one you pick."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Redis object caching worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For WooCommerce stores, membership sites and sites with many logged-in users it often helps, because those pages can't be fully page-cached. For a small brochure site with good page caching, the difference is usually small."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can't I see my changes after updating a page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cached copy is still being served somewhere. Purge the plugin, server and CDN caches, then hard refresh or check in a private window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does caching help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirectly. Faster server responses help page experience and make it easier for Google to crawl your site, but caching won't make up for weak content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is server-side caching in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is caching handled by the web server or host rather than only by a plugin. Servers such as LiteSpeed, Nginx or Varnish serve a saved copy of the page before WordPress loads, which is usually the fastest option. A companion plugin may control it from the dashboard."
+          }
+        }
+      ]
     }
   ]
 }

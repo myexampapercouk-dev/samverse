@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/harden-wp-config-php/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/harden-wp-config-php/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is wp-config.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the main folder of your WordPress install, usually public_html on cPanel hosting, next to wp-admin and wp-content. If it isn't there, check the folder above, where WordPress also looks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to edit wp-config.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you back it up first and edit carefully. A typo can take the site down, but restoring the backup copy fixes it straight away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does DISALLOW_FILE_EDIT do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It removes the theme and plugin file editors from the dashboard, so someone who gets into an admin account can't edit PHP files from there. It doesn't affect updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I change the WordPress table prefix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on an existing site. It adds little protection and the change can break things. Setting a different prefix on a new install does no harm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I move wp-config.php above public_html?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's optional. WordPress supports it and it adds a small layer of protection, but some hosts and tools expect the file in the site root, and it does nothing against an attacker with file access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when I change the salts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Everyone is logged out and has to log in again. Passwords stay the same, so change those separately if they may have leaked."
+          }
+        }
+      ]
     }
   ]
 }
@@ -379,7 +433,7 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/remove-malware-wordpress-step-by-step/"><img class="post-card-img" src="/assets/og/blog-remove-malware-wordpress-step-by-step.webp" alt="How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide</h3><p>How to remove malware from WordPress step by step: contain, back up, reset access, scan, replace core and plugins, clean the database and clear Google warnings.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>

@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-changes-not-showing/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-changes-not-showing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my WordPress changes not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually a cache is still serving the old page. Clear your caching plugin, host cache and CDN, then check in a private window. If the change still isn't there, confirm it saved, and check you edited the right template, language or site rather than a staging copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my WordPress changes not showing on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Either the page builder has a tablet or mobile setting overriding your change, the caching plugin keeps a separate mobile cache, or your phone's browser has an old copy. Check responsive mode in the editor, purge all caches and test in a private tab on mobile data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can I see my changes but visitors can't?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Logged-in administrators usually bypass the page cache, so you see the latest version while visitors get a cached copy. Purge the caching plugin, server cache and CDN, then check while logged out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my WordPress revisions not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Revisions only appear after a post has been saved more than once, and they can be switched off with WP_POST_REVISIONS in wp-config.php or limited by your host. Page builders keep their own history too: in Elementor, check the History panel's Revisions tab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I clear the cache in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Purge All in your caching plugin, then the purge option in your hosting panel, then purge your CDN, such as Cloudflare, if you use one. Finish with a hard refresh in your browser. If you're not sure which caches your site has, your host's support can tell you what runs at server level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until changes show in Google search results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only after Google recrawls the page, which can take from days to a few weeks. Requesting indexing in Search Console's URL Inspection tool usually speeds it up for an important page."
+          }
+        }
+      ]
     }
   ]
 }

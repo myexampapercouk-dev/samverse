@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-orders-not-showing-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-orders-not-showing-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are WooCommerce orders not showing in my dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A customer paid but there is no order. What happened?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The gateway likely failed to notify WooCommerce, or checkout failed after payment. Compare the gateway dashboard with WooCommerce and check webhook and error logs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is HPOS in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High-Performance Order Storage keeps orders in dedicated tables. If a plugin does not support it, that plugin may not show all orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why am I not getting new order emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check email settings in WooCommerce, then set up SMTP and an email log. Many hosts' default mail sending is unreliable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I recover missing WooCommerce orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are WooCommerce orders showing as pending payment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand."
+          }
+        }
+      ]
     }
   ]
 }

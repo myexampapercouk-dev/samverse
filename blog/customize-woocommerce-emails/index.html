@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/customize-woocommerce-emails/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/customize-woocommerce-emails/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I customize WooCommerce emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use WooCommerce, Settings, Emails for logo, colours and text, the block email editor or a customiser plugin for layout, and child theme template overrides for exact control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add a GST invoice to WooCommerce order emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Invoice plugins can attach a PDF invoice to order emails. Check the format and details with your CA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are WooCommerce emails going to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because they are sent through the server without authentication. Use SMTP and set SPF, DKIM and DMARC for your domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add a custom \"Shipped\" email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a custom order status plugin or a small custom plugin that adds the status and its email."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will template changes break after updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Overrides can become outdated. Check WooCommerce, Status after updates and refresh the copies on staging first."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/stop-spam-user-registrations-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/stop-spam-user-registrations-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I stop spam user registrations in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Turn off open registration if you do not need it. If you do, add Cloudflare Turnstile or reCAPTCHA, a honeypot, email confirmation and firewall rate limiting, and set the default role to Subscriber."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why am I getting fake users when registration is turned off?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A plugin may have its own registration form, WooCommerce may allow accounts at My Account, or the site may be compromised. Check plugin forms and look for unknown administrators."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which CAPTCHA is best for WooCommerce in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloudflare Turnstile is a good default because it is usually invisible to shoppers. Test it on checkout and on mobile before relying on it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to delete spam users in bulk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after a backup, and after making sure none of them have orders or real content. Never delete WooCommerce customers with order history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do spam registrations hurt SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly, but spam profile pages, comments or a compromise linked to them can. They also hurt email deliverability."
+          }
+        }
+      ]
     }
   ]
 }
@@ -389,7 +435,7 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/stop-contact-form-spam/"><img class="post-card-img" src="/assets/og/blog-stop-contact-form-spam.webp" alt="How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Stop Contact Form Spam on WordPress: Honeypots, Turnstile, Akismet and Filters That Work</h3><p>Stop contact form spam on WordPress with honeypots, Turnstile, Akismet and keyword filters, plus settings for Contact Form 7, WPForms and Elementor.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>

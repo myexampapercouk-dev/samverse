@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-cron-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-cron-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is wp cron in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is WordPress's built-in scheduler. It runs due tasks when someone visits the site, instead of at exact times."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to set DISABLE_WP_CRON to true?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, as long as a server cron job replaces it. Without that job, nothing scheduled will run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should the server cron run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every 5 to 15 minutes suits most business sites. Busy stores with many background jobs may need the shorter end, if the host allows it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my post say \"Missed schedule\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because WP-Cron was not triggered at the scheduled time, through low traffic, caching or a blocked loopback. A server cron fixes it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need SSH or WP-CLI to fix WP Cron?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The wp-config.php line and a cron job in hPanel or cPanel are enough. WP-CLI just makes debugging quicker."
+          }
+        }
+      ]
     }
   ]
 }

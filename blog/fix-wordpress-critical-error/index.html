@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/fix-wordpress-critical-error/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/fix-wordpress-critical-error/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a WordPress fatal error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An error in PHP code that stops the page from loading, such as a call to a function that no longer exists or running out of memory. Since WordPress 5.2, visitors see the critical error message instead of a blank screen or raw error text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my content lost when WordPress shows a critical error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost never. The error comes from PHP code, not the database. Once the faulty code is disabled or fixed, the content reappears exactly as it was."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why didn't I get the recovery mode email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the administration email in Settings > General is out of date, the email went to spam, or the site can't send email reliably. Setting up SMTP fixes the last one. In the meantime, read debug.log or disable plugins over File Manager instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the critical error appear after updating WordPress or PHP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because an old plugin or theme uses code the new version no longer supports, or two updated plugins now clash. The fix is to identify that plugin from the email or log, then update, roll back or replace it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The critical error only shows in wp-admin or on one page. Why?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The faulty code only runs there: a plugin's settings screen, the editor, or a shortcode, widget or form on that one page. The same steps apply. Check the log or the recovery email, then disable the plugin responsible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a hack cause \"There has been a critical error\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Occasionally. Malware can corrupt files or inject broken code. If the log names files you don't recognise, or the error keeps returning after a clean reinstall of plugins, treat it as a possible hack and clean the site rather than just restoring it; see hacked site repair ."
+          }
+        }
+      ]
     }
   ]
 }

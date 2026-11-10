@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-rest-api-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-rest-api-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the WordPress REST API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the WordPress REST API a security risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself. Public endpoints show content that is already public. The main step is to restrict the users endpoint, use strong authentication for integrations and keep plugins updated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I disable the WordPress REST API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Disabling it breaks the block editor and many plugins. Restrict sensitive endpoints instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are application passwords in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are separate passwords created per integration under your user profile. They work only for API access and can be revoked individually without changing your login password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need the REST API for a normal business website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You use it already through the editor and plugins, but you only need custom REST API work for integrations, apps, headless front ends or syncing with other systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I find the WordPress REST API on my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add /wp-json/ to the end of your domain in a browser. You will see the list of available routes. Core content lives under /wp-json/wp/v2/, and plugins add their own routes alongside it."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,68 @@
           "item": "https://samverse.space/blog/logo-favicon-brand-basics-website/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/logo-favicon-brand-basics-website/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best favicon format?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a favicon.ico with 16 and 32 pixel images as the universal fallback, add an SVG favicon for modern browsers, a 180 pixel PNG apple-touch-icon for Apple devices and 192 and 512 pixel PNGs in a web manifest for Android."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a favicon be a PNG instead of ICO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All modern browsers accept a PNG favicon linked with rel=\"icon\". Keep a favicon.ico at the site root as well, because some browsers, feed readers and tools still request /favicon.ico directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What size should a website logo be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single size, because themes display logos differently. Use SVG if possible. For PNG, export at twice the size the logo appears in the header, so a logo shown 200 pixels wide is exported 400 pixels wide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What size should a favicon be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with a square image of at least 512 by 512 pixels. WordPress and favicon generators create the smaller sizes from it: 16 and 32 pixels for browser tabs, 180 by 180 for iPhones, and 192 and 512 pixels for Android and the web app manifest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why isn't my new favicon showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Browsers cache favicons for a long time. Clear your cache or try a private window. If Google still shows the old one in search, it updates when it recrawls your homepage, which can take a while."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a JPEG logo on my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can, but JPEG has no transparency, so it shows a box on coloured backgrounds, and text edges blur. Ask your designer for SVG and transparent PNG versions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a new logo before I redesign my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. If your current logo is clear and works small, a redesign can use it. If you're changing it, finalise the logo before the website design starts, so the colours and layout are built around it."
+          }
+        }
+      ]
     }
   ]
 }
@@ -135,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 12 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Logo%2C%20Favicon%20Format%20and%20Brand%20Basics%20for%20Your%20Website%3A%20File%20Formats%2C%20Sizes%2C%20Social%20Share%20Images%20and%20Consistency%20https%3A%2F%2Fsamverse.space%2Fblog%2Flogo-favicon-brand-basics-website%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -161,7 +223,6 @@
               <li><a href="#colours-fonts-and-imagery-a-one-page-brand-sheet">Colours, fonts and imagery: a one-page brand sheet</a></li>
               <li><a href="#consistency-across-every-channel">Consistency across every channel</a></li>
               <li><a href="#before-your-website-project-a-checklist">Before your website project: a checklist</a></li>
-              <li><a href="#adding-the-favicon">Adding the favicon</a></li>
               <li><a href="#quick-check-how-does-your-brand-show-up">Quick check: how does your brand show up?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
@@ -179,10 +240,10 @@
 
 <blockquote><strong>Short answer:</strong> The best favicon format is a favicon.ico holding 16 and 32 pixel images for every browser, plus an SVG icon for modern browsers, a 180 by 180 PNG apple-touch-icon for iPhones, and 192 and 512 pixel PNGs listed in a web app manifest for Android. On WordPress, uploading one 512 pixel square Site Icon covers most of this.</blockquote>
 
-<p>These basics are easy to skip when a business is new, and fiddly to fix later. Whether you're planning a <a href="/website-redesign/">website redesign</a>, a rebrand or your first site, collecting the files below first makes the project faster and keeps the result consistent. If your brand already lives in a Figma file, most of this can come straight from it.</p>
+<p>Whether you're planning a <a href="/website-redesign/">website redesign</a>, a rebrand or your first site, collecting these files first makes the project faster.</p>
 
 <h2 id="the-logo-files-your-website-needs">The logo files your website needs</h2>
-<p>Most small businesses have their logo as a single JPEG from WhatsApp or a PDF letterhead. That isn't enough for a website, where the logo appears at different sizes, on light and dark backgrounds, and as a tiny icon in a browser tab.</p>
+<p>A single JPEG from WhatsApp isn't enough: the logo appears at different sizes, on light and dark backgrounds, and as a tiny tab icon.</p>
 <table>
   <thead><tr><th>Asset</th><th>Format</th><th>Size to prepare</th><th>Where it's used</th></tr></thead>
   <tbody>
@@ -215,7 +276,7 @@
 </aside>
 
 <h2 id="favicon-sizes-and-app-icons">Favicon sizes and app icons</h2>
-<p>The favicon is the small icon in browser tabs, bookmarks and history. Google also shows it next to your site in mobile search results, so a blank or default icon looks unfinished. The same image becomes the icon when someone saves your site to their phone's home screen.</p>
+<p>The favicon shows in browser tabs, bookmarks and next to your site in Google's mobile results, and becomes the home screen icon when someone saves your site.</p>
 <h3>Favicon size chart</h3>
 <table>
   <thead><tr><th>Size (pixels)</th><th>File and tag</th><th>Where it's used</th></tr></thead>
@@ -246,18 +307,18 @@
   <li>Preview it at actual size in a browser tab, in both light and dark browser themes.</li>
 </ul>
 <h3>Setting it in WordPress</h3>
-<p>WordPress calls it the Site Icon. Upload one square image of at least 512 by 512 pixels under <strong>Appearance &gt; Customize &gt; Site Identity</strong>; recent WordPress versions also offer it under <strong>Settings &gt; General</strong>, and Elementor has it in Site Settings. WordPress then generates the smaller sizes and adds the right tags for browsers, iPhones and Android phones.</p>
+<p>WordPress calls it the Site Icon. Upload one square image of at least 512 by 512 pixels under <strong>Appearance &gt; Customize &gt; Site Identity</strong>; recent WordPress versions also offer it under <strong>Settings &gt; General</strong>, Elementor has it in Site Settings, and block themes offer "Use as site icon" in the Site Logo block. WordPress then generates the smaller sizes and adds the right tags for browsers, iPhones and Android phones.</p>
 <p>On a custom-coded site, you add the tags yourself. A modern minimal set looks like this:</p>
 <pre><code>&lt;link rel="icon" href="https://example.com/favicon.ico" sizes="32x32"&gt;
 &lt;link rel="icon" href="https://example.com/icon.svg" type="image/svg+xml"&gt;
 &lt;link rel="apple-touch-icon" href="https://example.com/apple-touch-icon.png"&gt;
 &lt;link rel="manifest" href="https://example.com/site.webmanifest"&gt;</code></pre>
-<p>Browsers cache favicons heavily, so a new one can take a while to appear even after you've changed it. Google can also take time to pick it up in search results, and at the time of writing it recommends a square icon larger than 48 by 48 pixels at a stable, crawlable address.</p>
+<p>Browsers cache favicons for days, so check in a private window; Google can take weeks to refresh it in results. At the time of writing Google it recommends a square icon larger than 48 by 48 pixels at a stable, crawlable address.</p>
 
 <p>If a post shares with no image or the wrong one on WhatsApp or Facebook, <a href="/blog/wordpress-featured-image-not-showing-fix/">fixing a missing featured image</a> covers Open Graph tags and cached previews.</p>
 
 <h2 id="social-share-images">Social share images</h2>
-<p>When someone pastes your link into WhatsApp, LinkedIn or Facebook, the preview shows a title, a description and an image taken from your page's Open Graph tags. Without one, the platform picks a random image or shows nothing.</p>
+<p>Link previews on WhatsApp, LinkedIn and Facebook take their image from your Open Graph tags; without one, the platform picks a random image or none.</p>
 <ol>
   <li>Create a branded default image at 1200 by 630 pixels, with your logo and a short line about what you do. Keep important text away from the edges, since some apps crop it.</li>
   <li>Set it as the default in your SEO plugin: in Yoast SEO and Rank Math it's in the social or Open Graph settings.</li>
@@ -279,7 +340,7 @@
 <p>Use a square or near-square version on a plain background, at least 112 by 112 pixels per Google's guidelines at the time of writing. <a href="/blog/schema-markup-explained/">Schema markup explained</a> covers which other structured data is worth adding.</p>
 
 <h2 id="colours-fonts-and-imagery-a-one-page-brand-sheet">Colours, fonts and imagery: a one-page brand sheet</h2>
-<p>You don't need a 40-page brand book. A single page your designer, developer and printer can all use is enough:</p>
+<p>One page your designer, developer and printer can all use is enough:</p>
 <ul>
   <li><strong>Logo versions</strong> and the minimum size each should be shown at.</li>
   <li><strong>Colours</strong> as hex codes: a primary, an accent, text and background colours. <a href="/blog/choose-website-colours-fonts/">How to choose website colours and fonts</a> covers picking them and checking contrast.</li>
@@ -290,7 +351,7 @@
 <p>On WordPress, the colours and fonts go into global styles, in the theme, the block editor's Styles panel or Elementor's Site Settings, so one change updates the whole site.</p>
 
 <h2 id="consistency-across-every-channel">Consistency across every channel</h2>
-<p>Customers see your brand in many places before they contact you. Use the same business name, logo and colours on your website, Google Business Profile, social profiles, WhatsApp Business profile, email signature, invoices and signboard. Consistent business details also help Google match your website to your profile in local search. When the logo changes, update all of them together; <a href="/blog/rebranding-your-website/">rebranding your website</a> has a full checklist, including protecting your SEO if the name changes too.</p>
+<p>Use the same business name, logo and colours on your website, Google Business Profile, social profiles, WhatsApp Business profile, email signature, invoices and signboard. Consistent business details also help Google match your website to your profile in local search. When the logo changes, update all of them together; <a href="/blog/rebranding-your-website/">rebranding your website</a> has a full checklist, including protecting your SEO if the name changes too.</p>
 
 <h2 id="before-your-website-project-a-checklist">Before your website project: a checklist</h2>
 <ol>
@@ -302,21 +363,14 @@
 </ol>
 <p>Put these in your <a href="/blog/website-brief-template/">website brief</a> so your developer can quote accurately.</p>
 
-<h2 id="adding-the-favicon">Adding the favicon</h2>
-<p>In WordPress, upload a square image of at least 512 by 512 pixels as the Site Icon under Appearance &gt; Customize &gt; Site Identity, or turn on "Use as site icon" in the Site Logo block on block themes, and WordPress outputs the icon tags for you. On a hand-built site, these lines in the page head cover modern browsers and phones:</p>
-<pre><code>&lt;link rel="icon" href="/favicon.ico" sizes="32x32"&gt;
-&lt;link rel="icon" href="/icon.svg" type="image/svg+xml"&gt;
-&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;</code></pre>
-<p>Browsers can keep showing an old favicon for days, so check in a private window. Google refreshes the icon in results on its own schedule, which can take weeks.</p>
 <h2 id="quick-check-how-does-your-brand-show-up">Quick check: how does your brand show up?</h2>
 <ol>
   <li>Search your business name on Google on a phone and check your favicon shows next to the result, not a generic globe.</li>
-  <li>In WordPress, open <strong>Appearance &gt; Customize &gt; Site Identity</strong> and check the site icon is at least 512 by 512 pixels.</li>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first and check the logo file is not listed as a large image to compress.</li>
 </ol>
 
 <h2 id="when-to-get-help">When to get help</h2>
-<p>Get help when the logo looks blurry or makes the layout jump on mobile, Google still shows an old or generic favicon weeks after a change, WhatsApp previews show the wrong image, or your brand files exist only as one JPG from a printer. Most of these are small fixes once the right files exist.</p>
+<p>Get help when the logo looks blurry or makes the layout jump on mobile, Google still shows an old favicon weeks after a change, WhatsApp previews show the wrong image, or your brand files exist only as one JPG.</p>
 <p>If your website no longer matches your brand, or you're rebranding, a <a href="/website-redesign/">website redesign</a> brings the logo, colours and fonts into one consistent, mobile-first design without losing the rankings you have. If you already have a finished design, see <a href="/figma-to-wordpress/">Figma to WordPress</a>. For smaller logo and favicon fixes, you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or <a href="/#contact">send your website address</a> for a fixed quote.</p>
 
 <h2 id="faqs">FAQs</h2>
@@ -377,7 +431,6 @@
               <li><a href="#colours-fonts-and-imagery-a-one-page-brand-sheet">Colours, fonts and imagery: a one-page brand sheet</a></li>
               <li><a href="#consistency-across-every-channel">Consistency across every channel</a></li>
               <li><a href="#before-your-website-project-a-checklist">Before your website project: a checklist</a></li>
-              <li><a href="#adding-the-favicon">Adding the favicon</a></li>
               <li><a href="#quick-check-how-does-your-brand-show-up">Quick check: how does your brand show up?</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>

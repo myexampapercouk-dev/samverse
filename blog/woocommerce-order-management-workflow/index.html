@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/woocommerce-order-management-workflow/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-order-management-workflow/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between Processing and Completed in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Processing means the order is paid (or placed as COD) and waiting to be fulfilled. Completed means it has been fulfilled. Many stores add a Shipped status in between so customers are told when the parcel actually leaves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I confirm COD orders in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Message or call the customer before packing, then move confirmed orders to a Confirmed status or add a note. Hold unconfirmed orders for an agreed time before cancelling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can staff process orders without full admin access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Shop Manager role manages orders and products without full administrator control, and a custom role can be limited to orders only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I switch my store to HPOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes over time, but check every order-related plugin for compatibility first and test on staging, because older plugins may not read orders from the new tables."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I send WhatsApp order updates from WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Through a WhatsApp Business API provider and a WooCommerce integration, using approved message templates and the customer's opt-in."
+          }
+        }
+      ]
     }
   ]
 }

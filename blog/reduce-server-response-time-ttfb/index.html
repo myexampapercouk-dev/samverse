@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/reduce-server-response-time-ttfb/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/reduce-server-response-time-ttfb/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I reduce server response time in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enable full-page caching, use a current PHP version, remove slow plugins, clean the database, add object caching for dynamic pages, and use hosting close to your visitors, with a CDN where suitable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good TTFB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google's web.dev guidance suggests 0.8 seconds or less is good for most sites. Measure from locations close to your real visitors and as a logged-out user."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does TTFB affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly as a Core Web Vital, but a slow TTFB delays loading, including Largest Contentful Paint, which is a Core Web Vital, and it affects user experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my TTFB high only for Indian visitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your server may be far away, such as in the US or Europe. Hosting in or near India, or a CDN that caches pages near visitors, usually helps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a caching plugin fix high TTFB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Page caching often improves TTFB a lot for cached pages. It will not fix slow hosting, uncached pages like checkout, or a heavy database on its own."
+          }
+        }
+      ]
     }
   ]
 }
@@ -373,7 +419,7 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/what-is-a-cdn/"><img class="post-card-img" src="/assets/og/blog-what-is-a-cdn.webp" alt="What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>What Is a CDN? How a Content Delivery Network Speeds Up Your Website, and When You Need One</h3><p>A CDN serves your site files from servers near each visitor. See how it works, how it differs from hosting, and a quick test to see if you need one.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 13 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/core-web-vitals-explained/"><img class="post-card-img" src="/assets/og/blog-core-web-vitals-explained.webp" alt="Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them</h3><p>Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, Search Console reports and what to fix first on WordPress.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>

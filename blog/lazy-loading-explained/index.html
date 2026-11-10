@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/lazy-loading-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/lazy-loading-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does WordPress have lazy loading built in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. WordPress adds native lazy loading to images and iframes in content by default, and newer versions try to keep the first main image eager. Themes and builders can change this."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I lazy-load the hero image?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The hero image is usually your Largest Contentful Paint element. Load it eagerly and give it high fetch priority."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a lazy loading plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often not for images. A plugin is useful for YouTube facades, background images and excluding above-the-fold images, but enable lazy loading in only one tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is lazy loading bad for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Native lazy loading is not. Some older JavaScript methods can hide images from crawlers, so prefer the native attribute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does PageSpeed still say to defer offscreen images?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some images may be outside WordPress content, such as theme templates or CSS backgrounds, or a builder may remove the attribute. Find those images in the report and handle them individually."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/search-console-sitemap-couldnt-fetch/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/search-console-sitemap-couldnt-fetch/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does Search Console say sitemap couldn't fetch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Either Google could not download it because of a wrong URL, block, redirect or server error, or it has not processed it yet. Test the URL and run a live URL Inspection test to tell which."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for a sitemap status to update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies. On new sites it can take days. If the file loads correctly and the live test passes, give it time before changing anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I submit sitemap.xml or sitemap_index.xml?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Submit whichever your active SEO plugin or platform generates. Submitting the index file is enough; you do not need to submit every child sitemap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Cloudflare cause sitemap couldn't fetch errors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if security settings challenge or block Googlebot. Check the security events log and allow the sitemap path."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a sitemap error stop my site being indexed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself. Google can find pages through links, but a working sitemap helps it discover new and updated pages more reliably."
+          }
+        }
+      ]
     }
   ]
 }

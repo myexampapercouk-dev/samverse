@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-403-forbidden-error-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-403-forbidden-error-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What causes a WordPress 403 forbidden error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most often a security plugin or firewall rule, a broken or strict .htaccess file, wrong file permissions or ownership, or your IP being blocked by the host or CDN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix 403 forbidden on wp-admin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Try another connection to check for an IP block, deactivate the security plugin by renaming its folder, check Cloudflare or host firewall logs, then regenerate .htaccess if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a 403 error mean my site is hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes. Malware can add rules to .htaccess or change permissions. If you find unfamiliar rules or the problem keeps returning, scan and clean the site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I get 403 only when saving in Elementor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually ModSecurity or a firewall rule is blocking the save request. Ask your host to check which rule fired and whitelist it for your site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to set permissions to 777 to fix a 403?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It lets anyone on the server write to those files. Use 755 for folders and 644 for files, and fix ownership instead."
+          }
+        }
+      ]
     }
   ]
 }

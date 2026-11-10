@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/ga4-events-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/ga4-events-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between an event and a key event in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An event is any interaction GA4 records. A key event is an event you've marked as a business outcome, such as an enquiry or purchase, so it's counted separately in reports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does GA4 track form submissions automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enhanced measurement tries to, but it often misses or misreads WordPress forms. Send your own event on a thank-you page or on the form's success event instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track WhatsApp clicks in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Google Tag Manager, create a link click trigger for URLs containing wa.me and a GA4 Event tag such as contact_whatsapp, then mark it as a key event. Without Tag Manager, send the same event with gtag code on the button."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why don't my GA4 events show in reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard reports can take a day or two to update. Check DebugView and Realtime first; if events are missing there too, the tag or trigger isn't firing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Google Tag Manager for GA4 events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Events can be sent with gtag code directly. Tag Manager makes it easier to add and change tracking without editing the site's code, which suits most WordPress sites."
+          }
+        }
+      ]
     }
   ]
 }

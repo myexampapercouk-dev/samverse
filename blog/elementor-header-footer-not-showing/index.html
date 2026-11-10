@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/elementor-header-footer-not-showing/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/elementor-header-footer-not-showing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my Elementor header not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are a header template that is still a draft, no display conditions, Elementor Pro being inactive or a theme that does not support Elementor header locations. Check Theme Builder conditions first, then Pro, then the theme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set an Elementor header for the entire site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to Templates, Theme Builder, Header, hover your template and choose Edit Conditions. Add Include, Entire Site and save. Remove or unpublish older headers with overlapping conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my Elementor footer not showing on some pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check whether those pages use the Elementor Canvas layout, have their own template conditions or exclusions, or contain an HTML widget with broken markup. Compare a working page with a broken one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Elementor Pro for a custom header and footer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Theme Builder headers and footers, yes. The free plugin can build page content, and some themes offer their own header builder, but Elementor Theme Builder templates need Elementor Pro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site show two headers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The theme header and the Elementor header are both printing. Turn off the theme header in its settings or switch to a theme that fully supports Elementor locations, such as Hello Elementor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a developer fix my Elementor Theme Builder setup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A developer can check conditions, theme support, Pro versions and custom code, clean up duplicate templates and test every page type on staging before making changes live."
+          }
+        }
+      ]
     }
   ]
 }

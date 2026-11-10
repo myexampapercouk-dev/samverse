@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-backup-restore-guide/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-backup-restore-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are my hosting company's backups enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They're a good first layer, but not enough on their own. They're stored with the host, so a suspended or compromised account can take them too, and retention on cheaper plans can be short. Add an off-site backup you control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I back up my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weekly for a site that rarely changes, daily for an active business site, and daily or more often for a store, plus a fresh backup before every update. Keep copies for a few weeks, not just a few days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I restore a backup if I can't log in to WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Restore from your hosting panel, from a service like BlogVault or Jetpack that works outside WordPress, or manually by uploading the files and importing the database in phpMyAdmin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I restore a backup after my site is hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only as part of a cleanup. A backup from before the hack removes the malware, but not the outdated plugin or stolen password that let it in, so the site can be reinfected within days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a backup include my emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. WordPress backups cover the website's files and database. Email hosted with your web host, Google Workspace or Zoho is stored separately and needs its own backup arrangement."
+          }
+        }
+      ]
     }
   ]
 }

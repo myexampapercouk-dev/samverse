@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/breadcrumbs-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/breadcrumbs-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do breadcrumbs help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, modestly. They add internal links to your section pages, make your site's hierarchy clear and, with BreadcrumbList markup, can show a trail in search results. They support good pages rather than making weak ones rank."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Google still show breadcrumbs in search results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the time of writing, breadcrumb trails appear in desktop results, while mobile results were simplified in 2025 to show the site name and domain. Google still supports the markup, so it remains worth adding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should the current page be a link in the breadcrumb trail?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every level above the current page should be a link, and the current page shown as plain text and marked as the current page for screen readers. In the markup, the last item can leave out its URL."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need breadcrumb schema if I use Yoast or Rank Math?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You don't need to add it yourself. Yoast includes BreadcrumbList by default, and Rank Math adds it when its breadcrumbs feature is on. Check that your theme or WooCommerce isn't adding a second version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should breadcrumbs follow my URL structure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Google recommends trails that reflect how people typically reach a page. If your URLs are flat but your content is organised in sections, the trail can show the sections."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,68 @@
           "item": "https://samverse.space/blog/wordpress-update-button-missing/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-update-button-missing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is there no update button for plugins in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because your account is not an administrator, updates are switched off in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired. On multisite, plugin updates are only shown in Network Admin to a Super Admin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the WordPress update button missing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because you are not logged in as an administrator, updates are disabled in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I enable updates that were disabled in wp-config.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Back up the file, then remove or change the line that sets DISALLOW_FILE_MODS to true. First find out why it was added, in case a customised plugin would be overwritten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does WordPress ask for FTP details when I update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress cannot write to its own files because of file ownership or permission settings on the server. Ask your host to fix ownership rather than making files writable by everyone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does only one plugin never show updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is likely a premium plugin whose licence has expired or was never entered, or a plugin that has been removed from the official directory and no longer gets updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an editor update plugins in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Only administrators can update core, plugins and themes, and on multisite only the super admin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to leave updates disabled?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not for long. Outdated plugins and themes are a common way sites get hacked. If updates break something, fix the cause rather than freezing the site."
+          }
+        }
+      ]
     }
   ]
 }

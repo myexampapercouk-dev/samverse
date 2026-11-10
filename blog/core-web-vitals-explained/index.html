@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/core-web-vitals-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/core-web-vitals-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are good Core Web Vitals scores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LCP of 2.5 seconds or less, INP of 200 milliseconds or less, and CLS of 0.1 or less, each met by at least 75% of page visits. A page passes the assessment when all three are good."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does PageSpeed Insights say there's no field data for my page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The page doesn't have enough visits from Chrome users in the last 28 days. PageSpeed Insights then shows data for your whole domain, or nothing. The lab test below still helps you find and fix problems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for Core Web Vitals to update after a fix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Up to about four weeks, because field data covers a rolling 28 days. Lab tests show the improvement immediately; Search Console follows as new visits replace old ones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a PageSpeed score of 100?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The lab score isn't a Core Web Vital, and chasing 100 can mean removing useful features. Aim to pass Core Web Vitals for real visitors, especially on mobile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happened to First Input Delay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024. INP measures responsiveness across the whole visit, not just the first tap, so it's harder to pass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my Core Web Vitals pass on desktop but fail on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Phones have slower processors and often slower connections, so heavy images and JavaScript hurt them far more. Google reports mobile and desktop separately, so fix the mobile issues first."
+          }
+        }
+      ]
     }
   ]
 }
@@ -368,7 +422,7 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/website-speed-test-tools-explained/"><img class="post-card-img" src="/assets/og/blog-website-speed-test-tools-explained.webp" alt="Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Website Speed Test Tools Explained: PageSpeed Insights, Lighthouse, GTmetrix and WebPageTest</h3><p>Website speed test tools explained: how to read a PageSpeed test, lab vs field data, why scores vary, and when to use Lighthouse, GTmetrix or WebPageTest.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 13 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/web-fonts-performance/"><img class="post-card-img" src="/assets/og/blog-web-fonts-performance.webp" alt="Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Business Website Web Font Performance: How to Reduce Font Load in WordPress and Shopify</h3><p>Reduce font load on WordPress and Shopify: cut font weights, self-host WOFF2, use font-display swap and preload one font to speed up LCP.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
         </div>
       </div>

@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-not-sending-emails-smtp/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-not-sending-emails-smtp/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is WordPress not sending emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because it sends through the server's PHP mail, which the host may restrict and inboxes may distrust. Sending through SMTP with SPF and DKIM set up normally fixes it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is SMTP free for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The common SMTP plugins have free versions, and many business email accounts and transactional services include some free sending. Check the current limits of the service you choose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my WordPress emails go to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Missing or wrong SPF, DKIM or DMARC records, a from address on a free email domain, or poor server reputation. Fix the DNS records and send from an address on your domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Gmail SMTP for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can use a Google Workspace account on your domain for low volumes. A personal Gmail address as the sender is not recommended for a business site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did WooCommerce stop sending order emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that each email is enabled in WooCommerce settings, then look at the SMTP mail log. Recent hosting, DNS or password changes are the most common causes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix WordPress contact form emails not sending?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set the form's From address to an email on your own domain, send through an SMTP plugin connected to a real mailbox or email service, and check SPF and DKIM records. Then send a test and check the plugin's email log to see whether the message left the site."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/update-php-version-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/update-php-version-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will updating PHP break my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if WordPress, your theme and plugins are current and there's no old custom code. Problems come from outdated or abandoned plugins and bespoke code. Test on staging first, and you can switch back in the hosting panel if something slips through."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which PHP version is best for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The newest version that is still supported and that your plugins and theme are tested with. At the time of writing, that's usually PHP 8.3 or 8.4. Check WordPress.org's requirements page and your plugins' details before choosing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I go back to the old PHP version?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The hosting panel lets you switch back, and it usually takes effect immediately, unless your host has retired that version. Use it to get the site working again, then fix the cause rather than staying on old PHP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does changing PHP affect my content or database?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your pages, posts, orders and settings stay in the database untouched. Only the code that runs the site is affected, which is why problems show up as errors rather than lost content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the PHP Compatibility Checker plugin reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's a helpful first pass, but it reads code without running it, so it can miss real problems and flag harmless ones. A test on staging with error logging turned on is the more reliable check."
+          }
+        }
+      ]
     }
   ]
 }

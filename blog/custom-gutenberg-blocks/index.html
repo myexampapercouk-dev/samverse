@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/custom-gutenberg-blocks/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/custom-gutenberg-blocks/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are custom Gutenberg blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are components you create for the WordPress block editor, registered with a block.json file, so editors can add specific layouts or structured content in a few clicks. They can be built with JavaScript and React or with ACF and PHP templates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a custom block or is a block pattern enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If core blocks can reproduce the layout and editors may change it freely, a pattern is enough. Build a custom block when you need fixed fields, logic, data from elsewhere, or a layout that editors must not be able to break."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are ACF blocks slower than native blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the front end they can be just as fast, because both output plain HTML. The editor preview of ACF blocks is server-rendered, so it can feel slower on long pages; keep render templates simple to reduce that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should custom blocks live in the theme or a plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A plugin is usually better. Content built with the blocks keeps working if the theme changes, and an agency can reuse and update one block plugin across many client sites."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will WordPress updates break custom Gutenberg blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Well-built dynamic blocks rarely break, but deprecated APIs and markup changes can cause validation errors in static blocks. Test updates on a staging site and keep block code under version control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I convert Elementor sections into Gutenberg blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no reliable automatic conversion. Each section is rebuilt as a pattern or custom block, which is a good moment to simplify the design and remove sections that no longer earn their place."
+          }
+        }
+      ]
     }
   ]
 }

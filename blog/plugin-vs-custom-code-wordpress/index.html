@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/plugin-vs-custom-code-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/plugin-vs-custom-code-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many plugins is too many for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There's no fixed number. What matters is quality: whether each plugin is maintained, needed, and light on the pages where it loads. Remove any you don't use rather than just deactivating them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is custom code more secure than a plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not automatically. Well-written custom code has a small attack surface, but badly written code can be worse than a popular, well-tested plugin. Security depends on who wrote it and how it's maintained."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should I add code snippets in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a site-specific plugin or a code snippets plugin, not the parent theme. Use a child theme only for code tied to the design, and test any snippet on a staging copy first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a custom plugin break when WordPress updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Well-built plugins that use WordPress's own functions and hooks rarely do, but they still need checking after major WordPress and PHP updates, just like any plugin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I replace plugins with custom code to speed up my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only where a plugin is genuinely heavy for what it does. Usually the bigger speed wins are hosting, caching, images and third-party scripts. Measure first, then replace the plugins that actually cost time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use a plugin or custom code for WooCommerce changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For checkout, payments and shipping, start with WooCommerce's own settings and well-maintained extensions. Use snippets for small text or display changes through WooCommerce's filters, and a custom plugin only for rules specific to your store, such as pricing or dealer logic."
+          }
+        }
+      ]
     }
   ]
 }

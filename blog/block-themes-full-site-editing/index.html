@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/block-themes-full-site-editing/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/block-themes-full-site-editing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a block theme and a classic theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A block theme builds every part of the site, including headers, footers and templates, from blocks that can be edited in the Site Editor. A classic theme uses PHP template files, and the block editor only handles post and page content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Site Editor in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Appearance > Editor, when a block theme is active. With a classic theme you see the Customizer and, depending on the theme, Widgets and Menus instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Elementor with a block theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can work, but mixing two systems for headers, footers and templates gets confusing. Elementor builds usually sit on a light classic theme, and block theme builds use the Site Editor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do block themes need a child theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not for design changes made in the Site Editor, which are saved in the database. For code changes to a third-party block theme, a child theme still protects your work from updates; see WordPress child themes explained ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop clients breaking the design in a block theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Turn off custom colours and font sizes in theme.json, lock patterns and templates, and give clients the Editor role so they edit content without access to the Site Editor."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-backup-plugins-compared/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-backup-plugins-compared/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which WordPress backup plugin is best?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most small business sites, a free plugin such as UpdraftPlus to Google Drive plus host backups is a good start. Busy stores benefit from real-time backups from a managed service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Hostinger backups enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are a useful layer but should not be your only copy. Keep at least one backup off the hosting account in storage the business controls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I back up WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Match it to how often the site changes: weekly for static sites, daily for active blogs, real-time or hourly for stores taking orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I restore a backup if my site is completely down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through your host's panel, a service with an external dashboard, or a manual restore of files and database. Plugins that work only from wp-admin cannot help in that case."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do backup plugins slow down my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They can during the backup run. Schedule backups for quiet hours and exclude unnecessary folders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I restore a WordPress backup from a backup plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you can still log in, use the plugin's restore button and choose files plus database. If the site is down, use the host's backup tool or reinstall WordPress and the same plugin on a clean install, then import the backup. Test a restore on staging before you ever need it."
+          }
+        }
+      ]
     }
   ]
 }

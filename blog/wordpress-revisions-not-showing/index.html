@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-revisions-not-showing/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-revisions-not-showing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are WordPress revisions not showing in the block editor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the Post or Page tab in the right sidebar. If there is no Revisions count, the post may have been saved only once, revisions may be disabled in wp-config.php, or a cleanup plugin may have deleted them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I enable revisions in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remove or change the WP_POST_REVISIONS line in wp-config.php so it is not false or 0, and make sure no plugin is deleting revisions automatically. Take a backup first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I recover WordPress revisions after they were deleted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not from inside WordPress. The only way is to restore the database, or extract the content, from a backup taken before the revisions were removed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do WooCommerce products not show revisions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Products do not support revisions by default. A developer can add support, but much product data sits outside the main content, so an activity log is often a better way to track changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many revisions should WordPress keep?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed rule. Many sites keep somewhere around 10 to 20 per post, which gives useful history without making the database much larger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do revisions slow down a WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Revisions are stored in the database but are not loaded on normal page views. Very large numbers can make the database bigger and some admin queries slower, which is why many sites limit them."
+          }
+        }
+      ]
     }
   ]
 }

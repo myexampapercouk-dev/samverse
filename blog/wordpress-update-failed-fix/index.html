@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-update-failed-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-update-failed-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does my WordPress update keep failing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Repeated failures usually point to something on the server: full disk space, wrong file ownership, a low PHP memory limit, a blocked outbound connection, or an expired licence for a premium plugin. Read the exact error, then check those in order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix \"Another update is currently in progress\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wait about 15 minutes for the lock to expire. If it stays, delete the core_updater.lock row from the options table in phpMyAdmin, then retry one update."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a failed update delete my content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Normally no. Posts, pages and orders live in the database, which a plugin or core update rarely touches until the very end. Still, take a backup before you retry or repair anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I roll back a plugin after a bad update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Replace the plugin folder with a clean zip of the previous version, or restore from a backup. Check the plugin's changelog first, since some updates also change the database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I turn on automatic updates to avoid this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automatic updates suit minor security releases and simple plugins. For WooCommerce, page builders and major versions, scheduled manual updates with a backup and a quick check afterwards are safer."
+          }
+        }
+      ]
     }
   ]
 }

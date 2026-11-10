@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-site-sending-spam-emails/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-site-sending-spam-emails/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my website sending spam emails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because a malicious script was uploaded after a hack, a mailbox or SMTP password was stolen, or a form is being abused. The message headers and your host's mail logs show which."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check if my domain or IP is blacklisted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a multi-list lookup such as MXToolbox for both your server's IP and your domain, then check Spamhaus directly. A bounce message often names the list that rejected you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to get off a blacklist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the list. Some remove a listing soon after a request once the problem is fixed, and some expire automatically when spam stops. Reputation with big providers such as Gmail improves gradually as clean mail flows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Someone is sending emails from my address, but my site is clean. What's happening?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is spoofing: another server is forging your From address. You can't stop the sending itself, but SPF, DKIM and a DMARC policy of quarantine or reject tell receivers to bin it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will changing my email password stop the spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if a stolen mailbox password is the cause. If a script on the website is sending it, the spam continues until the script and its backdoor are removed."
+          }
+        }
+      ]
     }
   ]
 }

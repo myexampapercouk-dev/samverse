@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-menu-not-showing-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-menu-not-showing-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress menu not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the menu is not assigned to the theme's menu location, the theme was changed, or a block theme or page builder now controls the header. Assign the menu in Manage Locations, the Navigation block or the builder's menu widget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress menu not saving?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On large menus, the PHP max_input_vars limit cuts off the save, so items vanish or the order resets. Raise it in your hosting panel's PHP settings or ask your host to do it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why don't I see Appearance > Menus in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Block themes manage menus in Appearance > Editor > Navigation instead. On a classic theme, a missing Menus screen usually means your user role lacks permission or a plugin is hiding it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my menu changes not showing on the live site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A page cache, server cache or CDN is still serving the old pages. Purge every cache layer and check in a private window on mobile data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress mobile menu not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mobile menus often need their own location or header builder setting, and they rely on JavaScript. Check for a separate mobile menu location and for console errors caused by script delay or minify settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I add pages to a WordPress menu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Appearance > Menus, tick the pages in the left panel and click Add to Menu, then drag to order and save. In a block theme, add a Page Link inside the Navigation block in the Site Editor."
+          }
+        }
+      ]
     }
   ]
 }

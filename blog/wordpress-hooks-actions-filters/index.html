@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-hooks-actions-filters/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-hooks-actions-filters/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are WordPress hooks, actions and filters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hooks are points where you can attach your own code. Actions run your code at a certain moment; filters let you change a value and must return it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should I add WordPress hook code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a child theme's functions.php, a small custom plugin or a code snippets plugin. Never in core files or a parent theme or plugin that updates will overwrite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my filter making content disappear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most often the function does not return a value. Every filter function must return the (possibly changed) value it received."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does hook priority mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It sets the order in which functions on the same hook run. Lower numbers run first; the default is 10."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are hooks better than editing WooCommerce templates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes. Hooks survive updates better, while copied templates can go out of date and break."
+          }
+        }
+      ]
     }
   ]
 }

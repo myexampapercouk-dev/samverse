@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/secure-wordpress-login/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/secure-wordpress-login/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best way to secure a WordPress login?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two-factor authentication for everyone who can change the site, unique passwords from a password manager, login limits and a bot check. Together those stop most login attacks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is 2FA really necessary on a small business site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Login attacks are automated and don't care how big your site is, and 2FA is free and takes a few minutes per user to set up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does changing the wp-admin login URL make WordPress more secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only slightly. It reduces bot traffic and log noise, but a determined attacker can still find a way to log in. Treat it as an extra, not a substitute for 2FA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use passkeys with WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through a plugin, since WordPress core doesn't include them at the time of writing. Check your security plugin first, and keep 2FA as a fallback."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I lose the phone with my 2FA app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a backup code, or ask another administrator to reset your 2FA. If neither is possible, temporarily disabling the 2FA plugin by renaming its folder over SFTP gets you back in; set 2FA up again straight away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cloudflare Turnstile better than reCAPTCHA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most sites it is easier on visitors, rarely showing a puzzle, and it doesn't require the Cloudflare CDN. Both work; what matters is that the check is on every login form."
+          }
+        }
+      ]
     }
   ]
 }

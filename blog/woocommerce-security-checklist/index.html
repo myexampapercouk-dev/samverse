@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-security-checklist/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-security-checklist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is WooCommerce secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when it's maintained. WooCommerce is actively developed and security fixes are released regularly. Most store compromises come from outdated plugins, weak or shared logins, nulled software and poor hosting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a WooCommerce store need to be PCI compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any business that accepts card payments falls under PCI DSS, but with a checkout where the gateway handles card details, your part is usually much smaller. Your gateway will tell you what it needs from you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop card-testing attacks on WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add bot protection to the checkout, rate-limit checkout requests at your firewall, and turn on your gateway's fraud tools. During an active attack, pause card payments or guest checkout and contact your gateway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I store customers' card details for faster checkout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on your own site. Saved cards should work through your gateway's tokenisation, so the card number never sits in your database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which security plugin is best for a WooCommerce store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use one reputable security plugin, such as Wordfence or Solid Security, ideally alongside a cloud firewall. Running two security plugins often causes conflicts and slows the checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my checkout has been skimmed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers reporting card fraud after buying from you is the most common sign. Also look for unexpected payment forms and unfamiliar external scripts on the checkout page. Act immediately: take card payments offline, tell your gateway and have the store cleaned."
+          }
+        }
+      ]
     }
   ]
 }
@@ -383,7 +437,7 @@
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/payment-gateways-india-compared/"><img class="post-card-img" src="/assets/og/blog-payment-gateways-india-compared.webp" alt="How to Choose a Payment Gateway for Your Indian Website: What to Compare" width="1200" height="630" loading="lazy"><span class="work-tag">E-commerce</span><h3>How to Choose a Payment Gateway for Your Indian Website: What to Compare</h3><p>Payment gateways in India compared on what matters: UPI and card methods, fee structure, settlements, KYC, international cards and WooCommerce support.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/stop-spam-user-registrations-wordpress/"><img class="post-card-img" src="/assets/og/blog-stop-spam-user-registrations-wordpress.webp" alt="How to Stop Spam User Registrations in WordPress and WooCommerce" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Stop Spam User Registrations in WordPress and WooCommerce</h3><p>Stop spam user registrations in WordPress and WooCommerce: turn off open signup, add Turnstile or reCAPTCHA and a honeypot, then delete fake users.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

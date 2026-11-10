@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/helpful-404-pages/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/helpful-404-pages/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I find 404 errors on my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the Not found (404) section of the Pages report in Google Search Console, run a crawl with a link checking tool, and use a redirect plugin that logs 404 hits so you can see which missing URLs people actually visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do 404 errors hurt SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A few 404s for pages that never existed don't harm the rest of your site. What costs you is real pages that disappear without a redirect, because their links and traffic are lost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I redirect all 404s to the homepage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It confuses visitors who wanted something specific, and Google often treats those redirects as soft 404s. Redirect only to a genuinely matching page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a soft 404?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A page that looks like an error or is nearly empty, but returns a 200 status as if it were a normal page. Fix it by returning a real 404 or redirecting to a matching page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use a 404 or a 410?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both tell Google the page is gone. A 410 says it was removed on purpose and may be dropped a little sooner; a 404 is fine for most cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should my 404 page be indexed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. With a real 404 status it won't be, and many sites also mark it noindex."
+          }
+        }
+      ]
     }
   ]
 }

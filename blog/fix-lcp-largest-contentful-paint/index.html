@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/fix-lcp-largest-contentful-paint/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/fix-lcp-largest-contentful-paint/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix slow LCP in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the LCP element in PageSpeed Insights, check which of the four phases is longest, then fix that part: page caching for server delay, a preloaded and correctly sized hero image for image delays, and deferred CSS, scripts and fonts for render delay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good LCP score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google treats 2.5 seconds or less as good, 2.5 to 4 seconds as needing improvement and over 4 seconds as poor, measured at the 75th percentile of real visits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my LCP worse on mobile than desktop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Phones have slower processors and often slower connections, and the mobile layout may use a different LCP element. Large images, sliders and heavy scripts hurt phones far more than desktops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should the LCP image be lazy loaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Lazy loading delays the image until the browser decides it is needed, which slows LCP. Load the hero image eagerly and lazy-load only images below the fold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a caching plugin alone fix LCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Caching fixes the server part, which often helps a lot, but it will not shrink an oversized hero image or remove render-blocking files. Most sites need caching plus image and CSS work."
+          }
+        }
+      ]
     }
   ]
 }

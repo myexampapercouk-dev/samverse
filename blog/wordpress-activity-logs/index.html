@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-activity-logs/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-activity-logs/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best WordPress activity log plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best one. Choose an actively maintained plugin with a good support record, check that it logs the events you care about, and confirm it lets you set retention and export entries. Test it on a staging copy first if the site is busy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an activity log show who changed a WooCommerce order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many logging plugins can record order status changes and the user who made them, though coverage varies. Check the plugin's list of supported WooCommerce events before relying on it for order disputes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does WordPress have a change log built in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only partly. Revisions record changes to post and page content, but WordPress doesn't log logins, user changes, plugin updates or settings by default. You need an activity log plugin for that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are WordPress logs stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Activity logs are usually stored in the WordPress database by the plugin. The debug log is written to wp-content/debug.log when enabled, and server access and error logs are in your hosting panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see who deleted a page in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if an activity log was running at the time. Without one, check the trash, the page's revisions and, if needed, ask your host whether their logs show the request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do activity logs slow down WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Recording admin events adds very little load. Problems come from logging every visitor action or keeping entries forever, so limit what you log and set a retention period."
+          }
+        }
+      ]
     }
   ]
 }
@@ -396,7 +450,7 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-security-checklist/"><img class="post-card-img" src="/assets/og/blog-wordpress-security-checklist.webp" alt="WordPress Security Checklist: 25 Steps to Harden a Business Website" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>WordPress Security Checklist: 25 Steps to Harden a Business Website</h3><p>A practical WordPress security checklist: 2FA, updates, DISALLOW_FILE_EDIT, XML-RPC, file permissions, Wordfence or Solid Security, backups and hosting.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/secure-wordpress-login/"><img class="post-card-img" src="/assets/og/blog-secure-wordpress-login.webp" alt="How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Secure Your WordPress Login: 2FA, Passkeys, Login Limits and Bot Protection</h3><p>Secure your WordPress login with strong passwords, 2FA, passkeys, login limits and bot checks, plus safe access for staff, agencies and freelance developers.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>

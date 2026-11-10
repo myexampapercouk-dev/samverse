@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-featured-image-not-showing-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-featured-image-not-showing-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress featured image not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the theme hides it on single posts or archives, a page builder template doesn't include it, or no featured image is set. Check the post sidebar, the theme's Customizer settings and any builder templates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my featured image not showing on the blog page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The blog or archive layout has images switched off, or a builder's posts widget has the image option off. In block themes, check that the Query Loop in the blog template contains a Post Featured Image block."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the featured image option missing in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The panel may be hidden in the editor's Preferences, or the post type was created without thumbnail support. Switch the panel on in Preferences > Panels, or ask a developer to add support to the custom post type."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my featured image look blurry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The image is smaller than the space the theme gives it, or WordPress is serving an old size after a theme change. Upload a larger image and regenerate thumbnails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my featured image not showing when I share on WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WhatsApp reads the og:image tag, and caches previews. Check that one SEO plugin outputs a correct og:image of a suitable size, then share the link with a query string to see a fresh preview."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the featured image affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirectly. Google can use it in Discover and search results, and social apps use it for previews, which affects clicks. Use a relevant, well-sized image with a descriptive file name and alt text."
+          }
+        }
+      ]
     }
   ]
 }

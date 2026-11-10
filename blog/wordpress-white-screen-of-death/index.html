@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-white-screen-of-death/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-white-screen-of-death/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the WordPress white screen of death?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a blank white page, or a critical error message, that appears when a PHP error stops WordPress from loading. It is usually caused by a plugin, theme, memory limit or PHP version problem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix the WordPress white screen of death without admin access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your hosting file manager or FTP. Enable debug logging in wp-config.php, rename the plugins folder to disable all plugins, then rename the active theme folder if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my content because of the white screen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. Your posts and pages are stored in the database, which a white screen does not normally touch. Still, take a backup before changing files."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did the white screen appear after a plugin update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The new version may conflict with another plugin, your theme, or your PHP version. Roll back to the previous version or disable it, then test the update on staging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a hack cause the white screen of death?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, injected or damaged code can cause it. If you see unknown files, new admin users or strange redirects, treat it as a security issue and get the site cleaned."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix the WordPress white screen of death after a theme update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rename the active theme's folder over FTP or the hosting file manager so WordPress falls back to a default theme. If the site returns, restore the previous theme version from a backup or check its changelog for a PHP version requirement before updating again."
+          }
+        }
+      ]
     }
   ]
 }

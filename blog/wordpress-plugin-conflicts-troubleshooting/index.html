@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-plugin-conflicts-troubleshooting/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-plugin-conflicts-troubleshooting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know which plugin is causing the problem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Switch to a default theme and deactivate plugins in halves on staging or in Health Check troubleshooting mode until the problem disappears, then narrow down to one. Confirm it in the debug log or browser console, which usually names the file or script."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I fix a plugin conflict without deactivating plugins on my live site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use a staging copy, or Health Check troubleshooting mode, which disables plugins only for your logged-in session while visitors see the normal site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will deactivating a plugin delete my settings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deactivating normally keeps settings. Deleting a plugin can remove its settings and data, so deactivate while troubleshooting and only delete once you are sure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site break only for logged-out visitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually caching or JavaScript optimisation, because logged-in users often bypass the page cache. Purge every cache and test the optimisation settings one by one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the conflicting plugins are both essential?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check for updates, report it to both developers, and try changing the overlapping setting or excluding a script from optimisation. If nothing works, replace the less important plugin or use a small piece of custom code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the quickest WordPress plugin conflict fix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair."
+          }
+        }
+      ]
     }
   ]
 }

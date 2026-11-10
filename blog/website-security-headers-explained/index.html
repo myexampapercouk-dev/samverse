@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/website-security-headers-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/website-security-headers-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which security headers should a WordPress site have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with X-Content-Type-Options, X-Frame-Options set to SAMEORIGIN, Referrer-Policy and a simple Permissions-Policy, then add HSTS once HTTPS works everywhere. Add a Content-Security-Policy after testing it in report-only mode."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do security headers help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly. Google treats HTTPS as a ranking signal, but security headers themselves aren't a ranking factor. They protect visitors and your reputation, which matters more than any ranking boost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a Content-Security-Policy break my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can, if it's too strict or untested. Analytics, embeds, forms, payment scripts and page builders all need their domains allowed. Running it in report-only mode first shows what would break without breaking it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I still need X-Frame-Options if I use frame-ancestors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern browsers follow frame-ancestors when both are present, but sending X-Frame-Options as well covers older browsers. Use SAMEORIGIN, not DENY, so WordPress previews keep working."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can security headers stop my site being hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. They make some browser-based attacks harder, but most WordPress hacks come through outdated plugins and stolen passwords, which headers do nothing about. Treat them as one layer of hardening."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/setup-google-analytics-search-console/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/setup-google-analytics-search-console/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I set up Search Console in Google Analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify your site in Search Console first, then in GA4 go to Admin > Product links > Search Console links, click Link, choose your Search Console property and web stream, and submit. Then publish the Search Console collection from Reports > Library so the reports appear."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need both Google Analytics and Search Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for a business site. Search Console shows searches, rankings and indexing problems that GA4 can't see, while GA4 shows what visitors do and which pages produce enquiries. Both are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use Site Kit or add the code another way?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most WordPress sites, Site Kit is the simplest and keeps everything under Google's own plugin. Use Tag Manager instead if you manage several tracking tags. Whichever you choose, add the tag only once."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need the Google Analytics developer console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Google Cloud developer console is only needed for custom API projects. Setting up GA4, Search Console and Site Kit happens in their own dashboards, and you can check the tag in your browser's developer tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until data appears?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Realtime data in GA4 appears within minutes and standard reports within a day or so. Search Console can take a few days to show performance data for a newly verified site; see getting a new site indexed faster ."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-auto-updates/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-auto-updates/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are WordPress auto-updates safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minor core updates and small, well-maintained plugins are generally low risk. Larger plugins, themes and WooCommerce carry more risk, so they're safer updated by hand with a backup ready. Safety depends less on the setting than on having backups and someone checking the site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does WordPress update itself automatically by default?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minor core releases and translations, yes. Plugin and theme auto-updates are off unless you or your host switch them on, and major core updates depend on your settings, so check Dashboard > Updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I turn on auto-updates for WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most live stores, no. Update WooCommerce and its extensions by hand after testing on staging, at a quiet time, and place a test order afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why didn't a plugin update automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common reasons: an expired premium licence, the new version needing a newer PHP or WordPress version, WP-Cron not running on a quiet site, file permission problems, or your host controlling updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I choose what time auto-updates run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not from the WordPress dashboard. Some hosts and maintenance tools let you schedule updates; otherwise, switch auto-updates off for important plugins and update them yourself at a quiet time."
+          }
+        }
+      ]
     }
   ]
 }

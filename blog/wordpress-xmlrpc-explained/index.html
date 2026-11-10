@@ -91,6 +91,44 @@
           "item": "https://samverse.space/blog/wordpress-xmlrpc-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-xmlrpc-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is xmlrpc.php a virus or a sign of a hack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It's a standard WordPress core file found on almost every WordPress site, and requests to it only mean bots are knocking. Unfamiliar PHP files with odd names in other folders are a different matter and worth investigating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just delete xmlrpc.php?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's better not to. It's a core file, so WordPress updates will put it back. Blocking it with a server rule, firewall or plugin is cleaner and easy to undo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does disabling XML-RPC affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Google doesn't use xmlrpc.php to crawl or index your site. Pingbacks have no real SEO value for a business site; you can switch them off under Settings > Discussion, and see whether a business site should enable comments ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I still see xmlrpc.php requests after disabling it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bots don't check first. What changes is the response: requests should now get a 403 or an error instead of being processed. To stop them reaching your server at all, block the path at a cloud firewall."
+          }
+        }
+      ]
     }
   ]
 }

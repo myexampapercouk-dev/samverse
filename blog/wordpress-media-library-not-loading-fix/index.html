@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-media-library-not-loading-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-media-library-not-loading-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress media library not loading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are a plugin or theme JavaScript conflict, a failing admin-ajax request, low PHP memory, file permission problems or a CDN or offload plugin misconfiguration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the media library keep spinning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A spinning grid usually means the admin-ajax request failed or returned an error. Check the browser console and Network tab, then test with plugins disabled on staging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will reinstalling WordPress fix the media library?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely. Reinstalling core files only helps if they are corrupted. Find the actual cause first, because the problem usually sits in a plugin, theme or server setting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are images missing after migrating my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often the database still points to the old URL, the uploads folder did not copy fully, or file permissions are wrong. Fix the URLs and permissions, then regenerate thumbnails."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a security plugin stop the media library loading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Some firewall rules block admin-ajax requests. Check the plugin's logs and whitelist the request, rather than turning protection off entirely."
+          }
+        }
+      ]
     }
   ]
 }

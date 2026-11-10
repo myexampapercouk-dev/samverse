@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-cash-on-delivery-india/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-cash-on-delivery-india/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I enable cash on delivery in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to WooCommerce > Settings > Payments, open Cash on delivery, enable it, and set the title, description and the shipping methods it applies to. Check that your courier supports COD for the areas you allow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I disable COD above a certain order amount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WooCommerce has no built-in setting for this. Use a conditional payments plugin, or a short code snippet that removes COD from the available payment methods when the cart total is above your limit, and test it on your checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I charge an extra fee for cash on delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a payment-based fees plugin or custom code. Show the fee in the checkout totals as soon as COD is selected and mention it in the COD description, and ask your CA how it should appear on your GST invoice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce RTO on COD orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm orders before dispatch, limit COD for risky products, values and pin codes, ship quickly with tracking updates, act on failed delivery reports the same day, and offer a reason to pay online or a partial advance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I offer COD only for certain pin codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a shipping zone limited to those pin codes with its own shipping method, then allow COD only for that method. For many pin codes, or for live courier serviceability, use a pin code or conditional payments plugin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When does the courier pay me the COD money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After delivery, on the remittance cycle in your courier or aggregator agreement, usually with charges deducted. Check the cycle and deductions before you sign up, and reconcile each payment against your orders."
+          }
+        }
+      ]
     }
   ]
 }

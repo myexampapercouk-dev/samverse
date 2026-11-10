@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-firewall-waf-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-firewall-waf-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a firewall plugin if I use Cloudflare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily for blocking attacks, but a security plugin still helps with WordPress-aware jobs such as two-factor login, login limits and file-change alerts. Cloudflare plus one plugin is a common, sensible pairing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cloudflare's free plan enough for a WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For many small business sites it is a good start. Stores and sites that are attacked often may benefit from a paid plan's WordPress rules and extra rate limiting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Wordfence and Cloudflare together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Make sure Wordfence reads the visitor's real IP address from Cloudflare's header rather than seeing every visitor as Cloudflare, or it may block the wrong addresses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a firewall slow down my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cloud firewall usually doesn't, and its CDN often makes pages faster. A plugin firewall adds a little work to each request, which is rarely noticeable on decent hosting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my firewall blocking me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually repeated failed logins from your IP, a rule triggered by code in a page you were saving, or a country or bot setting. Find the rule in the firewall's log, then add a narrow exception."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a WordPress firewall stop all hacks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It blocks many known attack patterns and slows down password guessing, but outdated plugins, weak passwords and stolen admin logins can still lead to a hack. Keep updates, backups and two-factor login in place alongside the firewall."
+          }
+        }
+      ]
     }
   ]
 }

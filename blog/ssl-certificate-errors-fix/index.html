@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/ssl-certificate-errors-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/ssl-certificate-errors-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What causes SSL certificate errors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are a missing certificate, an expired one that failed to renew, a certificate that doesn't cover the exact domain name, an untrusted or incomplete certificate chain, and pages that load files over http. On the visitor's side, a wrong clock or antivirus software can also trigger warnings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix \"Your connection is not private\" on my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click \"Advanced\" to read the error code. NET::ERR_CERT_DATE_INVALID means the certificate expired, so reissue it in your hosting panel after checking your DNS. NET::ERR_CERT_COMMON_NAME_INVALID means it doesn't cover that name, so reissue it to include www and any subdomains. If the error only appears on one device, check that device's date and time first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site say \"Not secure\" when I have an SSL certificate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Either the site still loads over http because nothing forces HTTPS, or the page includes mixed content. Set both addresses in Settings > General to https, turn on a redirect to HTTPS, and look for \"Mixed Content\" warnings in the browser console."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I get a security certificate problem on every website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Then the problem is almost certainly your device or network, not the websites. Check the date, time and time zone, try a different network, and temporarily turn off any antivirus feature that scans HTTPS traffic. On public Wi-Fi, you may need to open the network's login page first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a free SSL certificate good enough for a business website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most business websites and online stores, yes. A free Let's Encrypt certificate encrypts the connection just as well as a paid one. Paid certificates add things like business validation and a warranty, but browsers no longer show a special green bar for them, so visitors see the same padlock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does SSL take to start working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Issuing a certificate usually takes minutes once the domain points to your host. If you've just changed DNS, it can take longer until the change has spread, and browsers may cache the old error for a while, so test in a private window."
+          }
+        }
+      ]
     }
   ]
 }
@@ -357,7 +411,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 12 min read</span></a>
+          <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/website-down-what-to-do/"><img class="post-card-img" src="/assets/og/blog-website-down-what-to-do.webp" alt="Website Down or Not Opening? What to Check and Do, in the Right Order" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Website Down or Not Opening? What to Check and Do, in the Right Order</h3><p>Website down or not opening? Check if it's down for everyone, read the error, then check domain and DNS, hosting limits, SSL and recent changes, in that order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/migrate-website-to-hostinger/"><img class="post-card-img" src="/assets/og/blog-migrate-website-to-hostinger.webp" alt="Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Website Migration to Hostinger: How to Do a Hostinger Site Migration Without Downtime (3 Methods)</h3><p>Hostinger site migration step by step: hPanel's migration tool, plugins or a manual move, testing before DNS changes, keeping email working and SSL.</p><span class="post-card-meta">28 September 2026 · 11 min read</span></a>
         </div>

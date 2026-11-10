@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/google-analytics-not-tracking-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/google-analytics-not-tracking-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Google Analytics not tracking my WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most often the GA4 tag is missing, uses the wrong measurement ID, is added twice, is blocked by a consent banner, or is hidden behind a cached or delayed version of the page. Check the page source logged out and test in Realtime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does GA4 take to show data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Realtime and DebugView show activity within moments. Standard reports usually take up to 24 to 48 hours, and a brand new property can look empty for the first day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does GA4 show fewer visitors than Search Console or my hosting stats?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They measure differently. Ad blockers, declined consent and visitors who leave before scripts load are missing from GA4, while hosting stats count bots too. Compare trends, not exact totals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Site Kit to use Google Analytics on WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Site Kit is convenient, but you can use Google Tag Manager or another plugin instead. The important thing is to use one method so the tag isn't loaded twice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track contact form submissions in GA4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create an event for the submission, either from a thank-you page view or a form-specific trigger in Tag Manager, and mark it as a key event in GA4. Test it in DebugView before relying on it."
+          }
+        }
+      ]
     }
   ]
 }

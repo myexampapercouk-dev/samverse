@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-file-permissions/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-file-permissions/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the correct file permissions for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "755 for folders, 644 for files and 600 or 440 for wp-config.php, with all files owned by your hosting account's user. Some servers need wp-config.php at 640, so follow your host's advice if a stricter value causes an error."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What permission should wp-config.php have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As strict as your server allows: 600 or 440 on many hosts, 400 on some, and 640 where the web server needs group read access. Never leave it writable by everyone, because it contains your database password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should WordPress folders be 755 or 775?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "755 by default. 775 lets the group write as well, which a few server setups need when the web server and your account share a group. Use it only if your host recommends it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does WordPress ask for FTP details to install plugins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because it can't write to its own files as the user PHP runs as, usually because the files are owned by someone else. Fixing ownership makes the prompt go away. Don't solve it by setting folders to 777."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What permissions does the wp-content/uploads folder need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "755 for the folder and its subfolders, and 644 for the files inside, with the right owner so WordPress can create the year and month folders. If uploads fail at 755, check ownership and disk space rather than opening the folder up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is chmod 777 ever okay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on a live website. It lets anyone on the server change the file and is a common way malware spreads. Some servers also refuse to run PHP from world-writable folders, which causes 500 errors."
+          }
+        }
+      ]
     }
   ]
 }

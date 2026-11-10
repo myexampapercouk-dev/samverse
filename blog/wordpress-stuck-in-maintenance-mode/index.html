@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-stuck-in-maintenance-mode/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-stuck-in-maintenance-mode/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress stuck in maintenance mode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An update was interrupted, so WordPress did not delete its temporary .maintenance file. Deleting that file from the root folder usually fixes it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the .maintenance file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the WordPress root folder, next to wp-config.php, usually public_html. It is hidden, so enable \"show hidden files\" in your file manager or FTP client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to delete the .maintenance file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is only a temporary flag. After deleting it, check and complete any updates that did not finish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The site is still down after deleting the file. What now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clear all caches, then check for a critical error, white screen or 500 error, usually caused by the plugin or theme that was updating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should WordPress maintenance mode last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Normally a few seconds to a minute per update. If it lasts several minutes, the update has probably failed."
+          }
+        }
+      ]
     }
   ]
 }

@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/fix-inp-interaction-to-next-paint/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/fix-inp-interaction-to-next-paint/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I improve INP on WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find the slow interactions with Search Console and DevTools, then remove or delay third-party scripts, cut unused plugin and builder JavaScript, simplify sliders, menus and popups, and reduce page size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good INP score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google's guidance treats 200 milliseconds or less as good, 200 to 500 milliseconds as needing improvement, and above 500 milliseconds as poor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my INP poor when PageSpeed lab scores look fine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lab tests do not interact with the page like real users do, and they run on a simulated device. Field INP comes from real visitors, many on slower phones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a caching plugin fix INP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partly. Caching helps loading, but INP is about JavaScript work during interactions. Delaying scripts can help or hurt, so test after enabling it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does INP affect Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is part of Core Web Vitals, which Google uses as one of many page experience signals. Content relevance matters far more, but a responsive site also converts better."
+          }
+        }
+      ]
     }
   ]
 }

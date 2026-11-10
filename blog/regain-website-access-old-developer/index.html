@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/regain-website-access-old-developer/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/regain-website-access-old-developer/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a developer legally keep my website or domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your contract and whose name the domain and hosting were bought in. If the developer registered the domain in their own name, they are the registrant on record, even if you paid. This isn't legal advice; if the stakes are high, speak to a lawyer with your contract and invoices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find out who hosts my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look up the domain's IP address with a DNS lookup tool, then check who owns that IP with an IP WHOIS lookup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get into WordPress without the admin email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need hosting access. From there, the host's WordPress tools, phpMyAdmin or WP-CLI can change the admin email or create a new administrator, and you reset the password normally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my website go down while I take back control?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It shouldn't. The risky moments are changing nameservers before copying every DNS record, and letting the domain or hosting lapse while you wait. Copy records first, check renewal dates early and keep a full backup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep my Google Analytics history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if an existing administrator adds you. Search Console is easier, because verifying the domain through DNS gives you the data the property already holds."
+          }
+        }
+      ]
     }
   ]
 }

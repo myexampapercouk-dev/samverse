@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-add-to-cart-not-working/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-add-to-cart-not-working/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce add to cart button not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are cached cart pages, a JavaScript conflict from a plugin or speed optimisation, or product data such as a missing price, zero stock or an incomplete variation. Check the browser console and your cache exclusions first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce cart empty after adding a product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cart page may be cached, the session cookie may be blocked, or the site may be switching between www and non-www or http and https. Use one https address and exclude cart pages from caching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the WooCommerce mini cart not updating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cart fragments are usually disabled by a speed plugin or the fragment request is cached by a CDN. Re-enable fragments and bypass cache for that request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does WooCommerce say \"Sorry, this product cannot be purchased\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The product or variation has no price, is not published, or a plugin is restricting purchase. Check the product's price, status and any catalogue or membership plugins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the add to cart button missing in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Products without a price, out-of-stock products with backorders off, and products hidden by catalogue mode plugins do not show the button. Some themes also hide it on shop pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a caching plugin break WooCommerce add to cart?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Page caching on cart and checkout pages and JavaScript delay or combine features are among the most common causes. Exclude WooCommerce pages and scripts from those features."
+          }
+        }
+      ]
     }
   ]
 }

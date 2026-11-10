@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/google-ads-conversion-tracking-setup/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/google-ads-conversion-tracking-setup/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I set up Google Ads conversion tracking on WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Decide your conversions, then either import GA4 key events into Google Ads or fire a Google Ads conversion tag through Tag Manager on the thank-you step. Test with Tag Assistant and a real test enquiry before relying on the data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use GA4 import or the Google Ads tag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Either works. GA4 import is simpler to manage from one place; the Ads tag reports faster and supports some features directly. Use one route per action so nothing is counted twice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track WhatsApp clicks as conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, by tracking clicks on WhatsApp links. Treat them as intent rather than confirmed leads, and many businesses keep them as secondary until they check the quality of chats."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my Google Ads conversions lower than my real orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes are customers not returning from the payment gateway, ad blockers, consent settings, or tags missing on some pages. Compare reports with real orders and fix gaps step by step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do COD orders count as conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are tracked when the order is placed. Decide whether to count them at full value, and adjust later for cancelled or refused orders if your setup supports it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set up WooCommerce conversion tracking for Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use one method, such as the Google for WooCommerce extension or a Google tag through Tag Manager, to fire a purchase conversion on the order received page with the order value, currency and order ID. Then place a test order and confirm it appears in Google Ads."
+          }
+        }
+      ]
     }
   ]
 }

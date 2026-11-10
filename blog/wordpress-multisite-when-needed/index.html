@@ -91,6 +91,68 @@
           "item": "https://samverse.space/blog/wordpress-multisite-when-needed/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-multisite-when-needed/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a WordPress Multisite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's a feature built into WordPress that lets one installation run many websites. The sites share core files, themes, plugins and users, while each keeps its own content, media and settings. A Super Admin manages the whole network from a Network Admin dashboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WordPress Multisite good or bad for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither, on its own. Google treats each site in the network as a separate website. Multisite SEO goes well when each site has unique content, its own SEO settings and sitemap, and is checked in Search Console. It goes badly when pages are cloned across sites or test sites are left blocking indexing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a subdomain or subdirectory multisite better for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google can rank both. Subdirectories suit sections of one organisation that should feel like one site; subdomains suit genuinely separate sites. Choose at the start, because changing later means redirecting every URL."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can each site in a Multisite network have its own domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Domain mapping is built into WordPress: you point the domain's DNS to your hosting, add it to the hosting account, and set it as the site's address in Network Admin > Sites. Each mapped domain needs its own SSL certificate and its own Search Console property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use Multisite for a multilingual website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. A multilingual plugin on a single site keeps translations linked, shares media and settings, and is easier to manage. Multisite per language can work for large organisations whose language sites have very different content and teams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress Multisite slow, and how do I speed it up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes are hosting that is too small for the whole network, too many network-activated plugins, no persistent object cache, a database bloated by many sites, and WP-Cron running on every site. I cover the fixes in why WordPress Multisite is slow. Profile the slowest sites first; the fix is often caching and hosting rather than splitting the network."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I do SEO for a WordPress Multisite network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Treat every site as its own website: configure the SEO plugin per site, submit a separate sitemap for each, write unique content per branch and check each site in Search Console."
+          }
+        }
+      ]
     }
   ]
 }

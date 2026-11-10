@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-subscriptions/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-subscriptions/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does WooCommerce support subscriptions without a plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. WooCommerce sells one-off products out of the box. Recurring billing needs a subscription plugin, although a prepaid pack can be sold as a normal product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use UPI AutoPay with WooCommerce subscriptions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your gateway and on whether its WooCommerce plugin supports automatic renewals with your subscription plugin. Several Indian gateways offer recurring payments, so ask specifically about your plugin and test it in test mode."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when a renewal payment fails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically the renewal order stays unpaid and the subscription goes on hold until the customer pays. Many plugins can retry the charge and email the customer a link to pay or update their payment method."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can customers pause their subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With most subscription plugins, yes, either from My Account or by asking you. You can usually limit how often or how long they pause."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a GST invoice for every renewal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each renewal is a new order, so set your invoice plugin to create one for renewals too. Ask your CA to confirm the rates and format for your products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set up WooCommerce subscriptions in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install a subscription plugin, create a subscription product with its billing cycle, trial and sign-up fee, then connect a payment gateway whose WooCommerce integration supports automatic renewals with that plugin. Test sign-up, renewal, a failed payment and a cancellation before launch, and check current mandate rules with your gateway."
+          }
+        }
+      ]
     }
   ]
 }

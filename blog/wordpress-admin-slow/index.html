@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-admin-slow/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-admin-slow/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress admin so slow when the site is fast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visitors get cached pages, but the dashboard is never cached, so every admin screen runs your plugins and database queries live. A heavy plugin, slow outside requests, large autoloaded data or limited hosting resources show up in wp-admin first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Heartbeat API slow down the WordPress admin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can on modest hosting, especially with several tabs or editors open, because each Heartbeat is a full request to the server. Slow it down on the dashboard with a plugin or your caching plugin's Heartbeat settings, but keep it running in the editor for autosave."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can too many plugins slow down the dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The number matters less than what each plugin does. One heavy security, statistics or social plugin can cost more than twenty small ones. Query Monitor shows which plugins are responsible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will better hosting fix a slow wp-admin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you're hitting your plan's CPU, memory or process limits, yes. If one plugin is making slow outside requests or the database is bloated, moving host won't help much. Measure first, then decide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the WordPress editor slow to save or update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saving runs every plugin hooked into it, such as SEO analysis, cache purges and page builder processing, and very long posts with many blocks take longer. Check Query Monitor while saving, and look for a plugin that purges or rebuilds a lot on every save."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to disable the Heartbeat API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the front end and the dashboard, slowing or disabling it is usually fine. In the post editor, keep it running, or you'll lose autosave and the warning when someone else is editing the same post."
+          }
+        }
+      ]
     }
   ]
 }

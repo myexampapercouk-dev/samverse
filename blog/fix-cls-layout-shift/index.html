@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/fix-cls-layout-shift/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/fix-cls-layout-shift/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix \"avoid large layout shifts\" in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the audit in PageSpeed Insights to see which elements moved, then fix the cause above them: add image dimensions, reserve space for embeds and ads, switch banners to overlays, or stop fonts and scripts loading late."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my CLS good in PageSpeed but poor in Search Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lab tests measure the first load without scrolling. Search Console uses real visits, including shifts from lazy-loaded images, sticky headers and late banners while people scroll."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Elementor cause layout shift?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself, but carousels, late-loading CSS, delayed scripts, custom header effects and Google Fonts on Elementor sites are common causes. Each can be fixed without rebuilding the page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin fix CLS automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partly. Some optimisation plugins add missing image dimensions or preload fonts, but they can also cause shifts by delaying scripts or loading CSS late. Test after every setting you change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix cumulative layout shift on a WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find the shifting elements in PageSpeed Insights, then reserve space for images, embeds, ads and sliders, preload your main font with a matched fallback, show banners as overlays and keep the header a fixed height. Clear caches and re-test on mobile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fix CLS issue in WordPress: where do I start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the CLS issue in Search Console's Core Web Vitals report, open an example URL in PageSpeed Insights on mobile, and fix the element it names in the shared template. Images without dimensions and late banners are the most common first fixes."
+          }
+        }
+      ]
     }
   ]
 }

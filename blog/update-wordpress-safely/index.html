@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/update-wordpress-safely/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/update-wordpress-safely/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should I update WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check weekly or fortnightly and install security releases as soon as practical. Minor core releases usually install automatically. Larger updates can wait a few days for early bugs to surface, but not months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I update plugins or WordPress core first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually plugins first, then the theme, then core, because plugin updates often add support for the newest WordPress. If a plugin update says it needs a newer WordPress version, update core first. Always take a backup before either."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to update WordPress without a backup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most updates go fine, but when one doesn't, a backup is the difference between a five-minute restore and hours of repair or lost content. Take one every time, especially before WooCommerce, page builder or major core updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the WordPress update button missing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common reasons are that your user account isn't an administrator, your host manages updates itself, a developer has disabled updates in wp-config.php (for example with DISALLOW_FILE_MODS), or a premium plugin's licence isn't activated. On a Multisite network, only the Super Admin can update."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I roll back a WordPress plugin update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the free WP Rollback plugin to reinstall a previous version of a WordPress.org plugin, or download the older version from the vendor for premium plugins. If you can't get into the dashboard, rename the plugin's folder over File Manager first. Restoring a backup works when several things changed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I pay someone to handle WordPress updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A WordPress maintenance plan covers updates with a backup first, testing afterwards and rollback if something breaks, along with security scans, uptime monitoring and small content changes."
+          }
+        }
+      ]
     }
   ]
 }

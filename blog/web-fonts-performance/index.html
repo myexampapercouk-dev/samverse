@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/web-fonts-performance/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/web-fonts-performance/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I reduce font load on my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Web fonts can slow a site because each file is an extra download that can delay text. Reduce font load by using one or two families, removing unused weights, serving WOFF2 from your own domain, adding font-display: swap and preloading only the main font."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it faster to self-host Google Fonts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes, because the browser avoids extra connections to other servers, and you get control over caching and preloading. It also avoids sending visitor data to a third party."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does font-display: swap do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It tells the browser to show text immediately in a fallback font, then swap to the web font when it loads, so visitors are never left looking at invisible text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many fonts should a business website use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One or two families, with two or three weights in total, is enough for most business websites and keeps performance under control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I preload all my fonts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Preload only the one or two fonts used above the fold. Preloading too many files competes with images and CSS and can make the page slower."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are system fonts better for performance than web fonts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. System fonts need no download, so they are the fastest option. Many business sites use system fonts for body text and a single web font for headings."
+          }
+        }
+      ]
     }
   ]
 }
@@ -383,7 +437,7 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 13 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/why-elementor-sites-slow/"><img class="post-card-img" src="/assets/og/blog-why-elementor-sites-slow.webp" alt="Why Elementor Sites Get Slow, and How to Fix Them (Pages and the Editor)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Elementor Sites Get Slow, and How to Fix Them (Pages and the Editor)</h3><p>Why is Elementor so slow? The real causes, from nested containers and add-on packs to fonts and hosting, and the Elementor settings and fixes that speed it up.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/eliminate-render-blocking-resources/"><img class="post-card-img" src="/assets/og/blog-eliminate-render-blocking-resources.webp" alt="How to Eliminate Render-Blocking Resources in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>How to Eliminate Render-Blocking Resources in WordPress</h3><p>How to eliminate render-blocking resources in WordPress: defer JavaScript, inline critical CSS, trim plugins and fonts, then test so nothing breaks.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
         </div>

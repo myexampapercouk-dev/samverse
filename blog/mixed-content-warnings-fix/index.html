@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/mixed-content-warnings-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/mixed-content-warnings-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix mixed content warnings in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Back up the site, make sure both WordPress URLs use HTTPS, run a safe database search-and-replace from http:// to https://, fix hard-coded theme or plugin URLs, update old embeds, force HTTPS with a redirect and clear all caches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site still show \"Not secure\" after installing SSL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because some resources still load over HTTP, or because HTTP is not redirected to HTTPS. Check the browser console for the exact URLs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is mixed content bad for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It mainly affects trust and functionality. Google prefers HTTPS pages, and broken features or security warnings can hurt engagement and enquiries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin fix mixed content automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, some rewrite URLs as pages load. That works as a quick fix, but correcting URLs in the database and theme is cleaner in the long run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to run a database search-and-replace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is safe with a full backup and a WordPress-aware tool that handles serialised data. Always run a dry run first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix mixed content after installing SSL in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Change the WordPress Address and Site Address to https, run a careful search-and-replace on the database, fix any hard-coded http links in the theme, force HTTPS at the server and clear every cache. Then check key pages in the browser console for remaining warnings."
+          }
+        }
+      ]
     }
   ]
 }

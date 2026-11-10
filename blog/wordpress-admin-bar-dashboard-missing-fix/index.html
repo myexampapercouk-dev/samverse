@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-admin-bar-dashboard-missing-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my WordPress admin bar or dashboard menus missing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the front-end admin bar: the profile setting, caching or a theme missing wp_footer. For dashboard menus: your role or capabilities changed, a plugin hides menus, or the table prefix stopped matching after a migration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get my administrator role back?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask another administrator to change your role under Users. If there is none, set the capabilities row for your user in the database to administrator, after taking a backup, or ask your developer to do it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does \"Sorry, you are not allowed to access this page\" appear after migration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the database table prefix in wp-config.php does not match the prefix used in the role keys inside the database, so WordPress cannot read your role."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it normal that customers do not see the admin bar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. WooCommerce and many membership plugins hide it for customers and subscribers on purpose. Only staff roles normally need it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a hack remove my admin access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Attackers sometimes downgrade real administrators and create hidden accounts. If roles changed without explanation, treat it as a possible compromise and check users, plugins and files."
+          }
+        }
+      ]
     }
   ]
 }

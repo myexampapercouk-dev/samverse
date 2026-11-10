@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-502-504-gateway-timeout-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I fix a 502 bad gateway or 504 gateway timeout on WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find which layer is failing from the error page, check your host's error logs and resource limits, make sure page caching works, and look for a slow plugin, query or outside API. Most fixes are on the server or plugin side, not in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a 502 error my fault or my host's?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be either. A crashed PHP service or server outage is the host's to fix. Too few workers for the traffic, or a slow plugin tying them up, is about how the site is built and which plan it runs on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I only get 504 errors in wp-admin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Admin pages are never served from the page cache, so every click runs PHP. A slow dashboard widget, a heavy plugin settings page or a big WooCommerce report can exceed the timeout while the public site still looks fine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will increasing max_execution_time fix a 504?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, for a single long admin task. It will not fix a slow front end, because the proxy timeout is often separate and longer requests hold PHP workers for longer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Cloudflare cause a 502 bad gateway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloudflare usually reports a problem at your origin rather than causing it. It can be involved if your host's firewall blocks Cloudflare addresses or if a long request goes past Cloudflare's own time limit. If gateway errors keep coming back, a speed and server audit usually finds the slow plugin or the missing cache behind them; see WordPress speed optimisation . For ongoing updates, uptime monitoring and speed checks, look at WordPress maintenance plans , or hire a WordPress developer in India to look into it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"the gateway did not receive a timely response\" mean on WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a 504 gateway timeout written out in full. The front server passed your request to PHP and WordPress, which took too long to reply, so the server stopped waiting. Look for slow plugins, heavy imports or backups, slow outside services or exhausted PHP workers, and send your host the time and URL of the error."
+          }
+        }
+      ]
     }
   ]
 }

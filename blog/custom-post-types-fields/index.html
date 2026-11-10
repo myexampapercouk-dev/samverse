@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/custom-post-types-fields/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/custom-post-types-fields/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a custom post type in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a separate content type beyond posts and pages, such as Projects, Doctors or Courses, with its own admin menu, URLs, archive page and templates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between custom fields and custom post types?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The custom post type is the kind of content; custom fields are the structured details stored with each item, such as price, location or duration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need ACF to create custom post types?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can register them in code with register_post_type. ACF and similar plugins make it easier for non-developers and add a field editing interface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are custom post types good for SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when each item has useful unique content, a clean URL, schema and internal links. Thin items with almost no text can hurt more than help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my custom post type pages show a 404 error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the permalink rules were not refreshed after the post type was added. Go to Settings, Permalinks and click Save Changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose custom post type content if I change theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The content stays in the database, but if the post type was registered in the old theme it disappears from the admin. Registering it in a plugin avoids this."
+          }
+        }
+      ]
     }
   ]
 }

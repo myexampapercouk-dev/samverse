@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-login-not-working-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-login-not-working-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress login not working even with the right password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are cookies that the browser can't save, a site address mismatch after an SSL or domain change, cached login pages, or a security plugin that has blocked your IP. Try a private window first, then check the WordPress Address and Site Address settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix a WordPress login redirect loop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clear cookies for the site, make sure you always use the same https and www version of the address, set WP_HOME and WP_SITEURL in wp-config.php if needed, exclude the login page from any cache, and disable plugins by renaming their folder to find a conflict."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I reset my WordPress password without email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your hosting panel's WordPress tools, edit the user in phpMyAdmin with an MD5 password, or use WP-CLI over SSH. Afterwards, set up SMTP so future reset emails are delivered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I am locked out by a security plugin. What do I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wait for the lockout period to pass, or rename that plugin's folder in wp-content/plugins using your hosting file manager. Log in, rename it back, reactivate it and add your IP to its allow list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a hacked site stop me logging in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Attackers sometimes change the admin email, delete or demote accounts, or add their own. If you see unknown users or strange redirects, treat it as a hack: change every password, clean the site and check how they got in."
+          }
+        }
+      ]
     }
   ]
 }

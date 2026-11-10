@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-inventory-management/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-inventory-management/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I manage stock in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Turn on Manage stock under WooCommerce, Settings, Products, Inventory, then open each product, tick Manage stock on its Inventory tab and enter the quantity and a SKU. Set the low-stock threshold and notification email so you know when to reorder."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I set stock for each variation in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the product's Variations tab, expand each variation, tick Manage stock and enter its quantity. Use the bulk actions menu to set stock for all variations at once. Leave the parent product's Manage stock unticked unless the variations should share one pool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce stock not reducing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually Manage stock isn't ticked on that product or variation, or orders are stuck in Pending payment because the payment gateway isn't confirming them. Check the order status of recent orders first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can WooCommerce sync stock with Tally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not out of the box. Third-party connectors can sync stock and orders between Tally and WooCommerce, or you can export stock from Tally and import it into WooCommerce by SKU on a regular schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an inventory plugin like ATUM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you manage suppliers, purchase orders or several warehouses. For most small stores, WooCommerce's built-in stock management, the Stock report and low-stock emails are enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does WooCommerce inventory management cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It covers stock quantities per product and variation, SKUs, low-stock and out-of-stock thresholds, backorder rules and stock emails. Bundles need care, because each item inside a bundle should reduce its own stock; see product bundles and upsells . Before launch, test a few orders end to end as part of a store launch checklist ."
+          }
+        }
+      ]
     }
   ]
 }

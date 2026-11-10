@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/cloudflare-wordpress-setup-guide/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/cloudflare-wordpress-setup-guide/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Cloudflare's free plan enough for a WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most small business sites, yes: it gives you DNS, a CDN for static files, SSL at the edge and basic protection. Paid options such as APO matter more for sites with visitors spread across regions or very busy stores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use Flexible SSL on Cloudflare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Flexible sends traffic to your server unencrypted and causes redirect loops with WordPress. Install a certificate on your hosting and use Full (strict)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need the Cloudflare WordPress plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is required for APO. Without APO, it is optional; your cache plugin's Cloudflare integration can handle purging instead. Don't run two tools that both try to manage Cloudflare."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will moving to Cloudflare break my email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if MX, SPF, DKIM or mail hostname records are missing or proxied. Check them against your old zone before changing nameservers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Cloudflare help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirectly, through faster static files and better uptime under load. It won't lift rankings by itself, and an aggressive bot rule that challenges Googlebot can hurt, so test after adding rules."
+          }
+        }
+      ]
     }
   ]
 }

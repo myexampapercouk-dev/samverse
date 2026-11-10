@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/common-wordpress-errors-fixes/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/common-wordpress-errors-fixes/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the most common WordPress error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The critical error and its relatives, the white screen and the 500 error, are among the most common. All three usually come down to a plugin or theme failing after an update or a PHP version change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find out what's causing a WordPress error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the recovery mode email first, then the error log in your hosting panel or WordPress's debug.log. The log names the file that failed, and the folder in its path tells you which plugin or theme it belongs to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will deactivating plugins delete my settings or content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Deactivating a plugin, or renaming its folder, keeps its settings in the database. Deleting a plugin from the dashboard can remove its data, depending on the plugin, so deactivate while troubleshooting rather than delete."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can WordPress errors hurt my Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A short outage usually doesn't. If Google keeps getting server errors for days, it slows down crawling and can eventually drop affected pages from results. Fix errors quickly, then check the Pages report in Search Console."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do WordPress errors so often appear after updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because an update changes code that other plugins, your theme or your PHP version depend on. Updating one thing at a time, after a backup, means you know exactly what to roll back."
+          }
+        }
+      ]
     }
   ]
 }

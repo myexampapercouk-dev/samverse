@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/reduce-unused-css-javascript-wordpress/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/reduce-unused-css-javascript-wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I reduce unused CSS and JavaScript in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remove plugins you do not need, unload plugin files on pages that do not use them, delay non-essential scripts, generate critical CSS and use your theme or builder's performance settings, testing after each change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get the unused CSS warning to zero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely, and it is not necessary. Some code is needed after the page loads. Focus on removing files that clearly do not belong on a page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will unloading plugin files break my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can if a file is needed. Change one thing at a time, test the affected pages and keep a backup or staging copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is delaying JavaScript safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually for chat, analytics and social widgets. Delaying menu, form or checkout scripts can break them, so exclude those and test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does reducing unused JavaScript help Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It often helps, especially responsiveness and loading on slower phones, but results depend on what else is slowing the page."
+          }
+        }
+      ]
     }
   ]
 }

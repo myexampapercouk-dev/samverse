@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-stock-not-updating/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-stock-not-updating/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is WooCommerce stock not updating after an order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stock management is off for the product, or the order has not reached Processing, On hold or Completed. Check the order notes for \"Stock levels reduced\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does WooCommerce not reduce stock for pending orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pending payment orders only hold stock for the hold time. Stock is reduced when payment is confirmed. If paid orders stay pending, the gateway callback is failing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce product out of stock when stock is available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The stock status is set manually, the variation has zero stock, the out of stock threshold is higher than the quantity, or a cached page is showing an old status."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix WooCommerce variation stock not updating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Turn on stock management for each variation and enter quantities there, and make sure the parent product is not also managing a shared stock number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a sync plugin cause WooCommerce stock to be wrong?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If Tally, a POS or a marketplace writes quantities back on a schedule, it can undo reductions. Choose one source of truth and check the sync logs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does WooCommerce restore stock when an order is cancelled?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when an order is cancelled, or refunded with restock selected. If it does not, check the order notes and look for a plugin or custom code that changes stock handling."
+          }
+        }
+      ]
     }
   ]
 }

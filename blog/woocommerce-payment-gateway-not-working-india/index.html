@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-payment-gateway-not-working-india/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce payment gateway not working in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are wrong keys or mode, an inactive or under-review gateway account, webhooks not reaching the site, caching on checkout pages, or a plugin conflict. Check settings, webhook logs and WooCommerce logs first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my WooCommerce orders stuck on pending payment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The gateway did not confirm the payment back to WooCommerce, usually because the webhook failed or was blocked. Check the webhook URL, secret and delivery logs, and confirm stuck orders against the gateway dashboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Customer paid but order shows failed. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the payment status in the gateway dashboard. If captured, update the order manually with the payment ID and send confirmation. If failed, the bank normally reverses the amount."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can caching break WooCommerce payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cart, checkout and account pages should never be cached, and gateway scripts should be excluded from minification and delay settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I offer COD as a backup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For many Indian stores, yes. Keeping COD or another payment method active means a gateway problem does not stop all orders."
+          }
+        }
+      ]
     }
   ]
 }

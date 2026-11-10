@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/website-speed-test-tools-explained/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/website-speed-test-tools-explained/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a PageSpeed test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually it means running a page through Google's PageSpeed Insights, which reports real-user Core Web Vitals from the Chrome UX Report and runs a Lighthouse lab test with a 0 to 100 performance score and suggested fixes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my PageSpeed score different every time I test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The lab test is a fresh simulated load each time, so server response, caching, network conditions and third-party scripts all vary. Run it several times and use the median, and rely on the field data section, which changes slowly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which website speed test is most accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For real-world experience, field data from CrUX in PageSpeed Insights and Search Console, because it comes from actual visitors. For diagnosing problems, WebPageTest and GTmetrix give the most detail. Each answers a different question."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my mobile score lower than desktop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mobile test simulates a mid-range phone on a slower connection, so heavy images, scripts and fonts cost much more. A lower mobile score is normal, but a big gap usually means the page sends too much JavaScript or oversized images to phones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good PageSpeed Insights score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lighthouse treats 90 and above as good, but passing the Core Web Vitals assessment in the field data matters more. A site that feels fast to real visitors and passes Core Web Vitals can still score in the 70s or 80s on the mobile lab test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does PageSpeed score affect Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly. Google uses Core Web Vitals from real-user data as part of its page experience signals, not the lab score. Speed alone won't rank a page, but a slow site can hold good content back."
+          }
+        }
+      ]
     }
   ]
 }
@@ -377,7 +431,7 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/core-web-vitals-explained/"><img class="post-card-img" src="/assets/og/blog-core-web-vitals-explained.webp" alt="Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Core Web Vitals Explained for Business Owners: LCP, INP and CLS, What Counts as Good and How to Improve Them</h3><p>Core Web Vitals explained: LCP, INP and CLS thresholds, field vs lab data, the 28-day window, Search Console reports and what to fix first on WordPress.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 13 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/wordpress-caching-explained/"><img class="post-card-img" src="/assets/og/blog-wordpress-caching-explained.webp" alt="WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>WordPress Caching Explained: Page, Browser, Object, OPcache and CDN Caching (and What Not to Cache)</h3><p>WordPress caching in plain English: page, browser, object (Redis), OPcache, CDN and server caching, which to use, what not to cache, and how to clear and test.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>

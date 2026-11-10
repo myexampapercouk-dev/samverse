@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/stop-contact-form-spam/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/stop-contact-form-spam/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why am I suddenly getting so much contact form spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bots find forms by crawling the web, and once your form is on a spam list the volume tends to grow. A plugin update or a change of form plugin can also switch off a protection that used to be on, so check the settings first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I stop contact form spam without a CAPTCHA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Combine a honeypot field, a time check and a link limit, all verified on the server, and add Akismet or keyword filters for hand-typed spam. For many small business sites that's enough. Add Turnstile only if bots still get through."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop spam in Contact Form 7?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a honeypot with a maintained add-on, connect Turnstile or reCAPTCHA v3, enable Akismet if you have a licence, and add problem words to the Disallowed Comment Keys list. Install Flamingo so submissions are stored and spam can be reviewed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does reCAPTCHA stop all form spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It stops many bots, but not people paid to fill in forms, and a badly set threshold can block real visitors. Use it as one layer alongside a honeypot and content filters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I keep getting SEO and web design offers through my form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Those messages are usually typed by people or sent by advanced bots, so CAPTCHAs don't stop them. Akismet and keyword filters catch many of them. Don't reply or click their links; domain and SEO scam emails explains the common tricks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can contact form spam harm my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly it wastes time, but an auto-reply that bots can abuse can damage your domain's email reputation, and stored spam fills your database over time. The bigger risk is a spam fix that blocks genuine customers without anyone noticing."
+          }
+        }
+      ]
     }
   ]
 }

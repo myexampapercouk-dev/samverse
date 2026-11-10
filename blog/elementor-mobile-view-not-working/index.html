@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/elementor-mobile-view-not-working/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/elementor-mobile-view-not-working/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Elementor mobile view not working after I make changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the change was made with the desktop or tablet device active, or the mobile setting already had its own value. Check the device icon next to the setting, set the mobile value directly, click Update, regenerate CSS and clear all caches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my Elementor site look different on a real phone than in the editor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The editor preview is a resized desktop browser. Real phones use different widths, fonts and browser bars, and visitors see the cached page. Check breakpoints, clear caches and test in a private tab on the phone itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix horizontal scrolling on mobile in Elementor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find the element wider than the screen: fixed pixel widths, negative margins, long headings, iframes or side entrance animations. Fix its width or margin on mobile. Overflow hidden on the section is a short-term fix only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I change Elementor breakpoints?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only with a clear reason. The defaults suit most phones and tablets. Changing breakpoints affects every page, so test the whole site on staging before you change them on a live site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the Elementor mobile menu not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the Nav Menu widget breakpoint and dropdown settings, then check optimisation plugins that delay or combine JavaScript. Excluding Elementor scripts from delay and minify settings often fixes a menu that will not open on phones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can someone fix my Elementor mobile layout for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Share the page links and screenshots from your phone. A developer can rebuild the broken sections with responsive settings, remove duplicate mobile sections and test on real devices before going live."
+          }
+        }
+      ]
     }
   ]
 }

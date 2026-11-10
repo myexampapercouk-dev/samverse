@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/wordpress-search-not-working-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-search-not-working-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is WordPress search not working on my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the search form points to the wrong place, the content lives in fields default search does not read, caching or a firewall interferes, or a plugin changes the query. Test the /?s= URL first to narrow it down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does WordPress search not find my Elementor pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Builder layouts may store content in a way default search does not read well, or the search widget may be limited to posts. A search plugin that indexes rendered content usually fixes this."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I make WooCommerce search by SKU?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Default search ignores SKUs. Use a WooCommerce search plugin that includes SKUs in its index, or have a developer add a small, tested code snippet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does search show the homepage instead of results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually a redirect rule, a security setting or a missing search results template. Check redirect plugins and the theme's search template."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can caching break WordPress search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if search URLs are cached as full pages. Exclude ?s= URLs from page and CDN caching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I fix WordPress search showing no results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that the content is published and not excluded by a plugin, clear caches, and test with a default theme. If posts appear but pages built with a page builder do not, the default search is not reading that content, so a search plugin that indexes custom fields is usually the fix."
+          }
+        }
+      ]
     }
   ]
 }

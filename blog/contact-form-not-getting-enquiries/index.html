@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/contact-form-not-getting-enquiries/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/contact-form-not-getting-enquiries/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why am I not receiving emails from my website contact form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because WordPress is sending through the server's unauthenticated mail function, so messages are rejected or filtered as spam. Set up SMTP with a mailbox on your domain, send from your own address with the visitor in Reply-To, and check your SPF and DKIM records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my form say \"message sent\" but no email arrives?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The form worked; the email delivery didn't. Check the spam folder and the recipient address, look at the plugin's stored entries to confirm the submission, and set up SMTP with email logging to see what happens to each message."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my contact form emails go to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most often the From address is the visitor's email, or the mail isn't authenticated with SPF and DKIM. Send from an address on your own domain through SMTP, and add the visitor's email as Reply-To."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I test if my contact form is working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Submit it yourself from a phone on mobile data, using an email address other than the one that receives enquiries, then check the inbox, the spam folder and the form's stored entries. Repeat after every update and at least once a month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does reCAPTCHA stop real people from sending enquiries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can. Puzzle challenges put some visitors off, strict v3 scores can reject real people, and the script may not load for visitors who decline cookies on some setups. A honeypot, a time check or Cloudflare Turnstile is often enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My form works, so why is my website not getting enquiries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Then visitors aren't being persuaded, or there aren't enough of the right ones. Check your traffic in Analytics first, then shorten the form, add WhatsApp and phone, show proof and a reply time near it, and put calls to action on every service page."
+          }
+        }
+      ]
     }
   ]
 }

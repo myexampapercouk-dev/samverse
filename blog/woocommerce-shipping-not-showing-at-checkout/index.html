@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/woocommerce-shipping-not-showing-at-checkout/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/woocommerce-shipping-not-showing-at-checkout/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does WooCommerce say \"no shipping options were found\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The address did not match a zone with an enabled method, or every method's conditions (minimum order, weight, class) excluded the cart. Check the zone order and give the fallback zone a method."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is WooCommerce shipping not showing at checkout for some pin codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pin code ranges or wildcards in the zone are wrong, or a narrower zone above it matches first. Courier plugins also return nothing for pin codes they cannot serve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does free shipping not show in WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cart is below the minimum amount, a coupon is required, or discounts are applied before the minimum is checked. Free shipping also only appears in the zone where it is added."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is shipping not calculated until the customer enters an address?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The \"Hide shipping costs until an address is entered\" option is on. That is normal; make the pin code field clear so customers fill it in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can caching stop shipping rates from showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If the cart or checkout page is cached, customers see stale or empty rates. Exclude cart, checkout and account pages from page and CDN caching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Shipping disappeared after a plugin update. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roll back the plugin on staging or test it there, check whether it supports the block checkout, and add a fallback flat rate so customers can still order meanwhile."
+          }
+        }
+      ]
     }
   ]
 }

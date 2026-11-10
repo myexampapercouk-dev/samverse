@@ -91,6 +91,60 @@
           "item": "https://samverse.space/blog/shopify-domain-not-connecting/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/shopify-domain-not-connecting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my Shopify domain not connecting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because the root A record or the www CNAME is wrong, an old record still points to a previous host, or you edited DNS at the registrar while the nameservers point to another provider. Fix the records where DNS is actually managed, then verify again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for a domain to connect to Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often under an hour, but DNS changes can take up to 48 hours to spread everywhere. SSL is issued after the records are correct and can take a few more hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What DNS records does Shopify need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An A record for the root domain pointing to the Shopify IP shown in your admin, and a CNAME for www pointing to shops.myshopify.com. Remove other A or AAAA records on those names."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will connecting my domain to Shopify break my email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if you only change the A record and the www CNAME. Email depends on MX, SPF, DKIM and DMARC records, which you should leave unchanged. Problems usually come from switching nameservers without copying those records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my Shopify store say SSL pending?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The records may not have updated yet, a Cloudflare proxy may be active on the Shopify records, or an extra AAAA or restrictive CAA record is interfering. Correct those and wait for Shopify to issue the certificate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a .in domain with Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A .in or .co.in domain connects to Shopify the same way as a .com, using the same A and CNAME records at your DNS provider."
+          }
+        }
+      ]
     }
   ]
 }

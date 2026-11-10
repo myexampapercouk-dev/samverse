@@ -482,6 +482,17 @@ const headCommon = (title, description, url, extra = '') => `<!DOCTYPE html>
   <link rel="stylesheet" href="/style.min.css">
 ${extra}</head>`;
 
+// FAQPage items from an article's "FAQs" / "Frequently asked questions" H2: each H3 is a question,
+// the text until the next H3/H2 is the answer (plain text)
+const plainText = h => h.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;|&rsquo;|&lsquo;/g, "'").replace(/&rarr;/g, '→').replace(/&mdash;/g, '—').replace(/&ndash;/g, '–').replace(/&#8377;/g, '₹').replace(/\s+/g, ' ').trim();
+const postFaqs = body => {
+  const m = body.match(/<h2[^>]*>\s*(?:FAQs?|Frequently asked questions)\s*<\/h2>([\s\S]*?)(?=<h2[\s>]|$)/i);
+  if (!m) return [];
+  return m[1].split(/<h3[^>]*>/i).slice(1).map(chunk => {
+    const [q, rest = ''] = chunk.split(/<\/h3>/i);
+    return [plainText(q), plainText(rest)];
+  }).filter(([q, a]) => q && a);
+};
 const renderPost = (post, i) => {
   const url = `${SITE}/blog/${post.slug}/`;
   // Table of contents from the article's h2 headings (with anchors added)
@@ -529,6 +540,8 @@ const renderPost = (post, i) => {
       },
     ],
   };
+  const faqs = /application\/ld\+json[\s\S]*FAQPage/.test(post.body) ? [] : postFaqs(post.body);
+  if (faqs.length) schema['@graph'].push({ '@type': 'FAQPage', '@id': `${url}#faq`, mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
   // Add the brand only when the title stays short enough for Google results
   const base = post.seoTitle || post.title;
   const pageTitle = (base + ' | Samverse').length <= 60 ? base + ' | Samverse' : base;

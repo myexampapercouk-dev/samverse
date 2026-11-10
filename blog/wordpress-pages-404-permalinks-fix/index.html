@@ -91,6 +91,52 @@
           "item": "https://samverse.space/blog/wordpress-pages-404-permalinks-fix/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-pages-404-permalinks-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my WordPress pages showing 404 but the homepage works?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The rewrite rules that handle pretty permalinks are broken or missing. Resave permalinks in Settings, then check the .htaccess file on Apache or LiteSpeed, or the try_files rule on Nginx."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reset permalinks in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to Settings, Permalinks and click Save Changes without changing anything. This flushes and regenerates the rewrite rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the .htaccess file in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the site's root folder, alongside wp-config.php. It is hidden by default, so turn on \"show hidden files\" in your hosting file manager or FTP client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my pages show 404 after migrating WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because .htaccess wasn't copied, the new server uses Nginx, or the site URL settings still point to the old address. Fix those and resave permalinks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will 404 errors hurt my Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A short outage rarely does lasting harm. If pages stay unavailable for days, Google may drop them from the index, so fix the rules quickly and request indexing for important pages."
+          }
+        }
+      ]
     }
   ]
 }
