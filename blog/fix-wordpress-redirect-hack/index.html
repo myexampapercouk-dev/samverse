@@ -43,7 +43,7 @@
       "headline": "WordPress Hacked Redirect: Why Your Site Redirects to Spam and How to Remove the Malware",
       "description": "WordPress hacked redirect sending visitors to spam? Catch the hidden redirect, find the malware in .htaccess, files or the database and stop it returning.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/fix-wordpress-redirect-hack/",
       "image": "https://samverse.space/assets/og/blog-fix-wordpress-redirect-hack.png",
       "articleSection": "Security",
@@ -114,14 +114,6 @@
         },
         {
           "@type": "Question",
-          "name": "What is WordPress redirect malware?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Code an attacker adds to your site that sends some visitors to spam or scam pages, usually only mobile visitors from search engines, so the owner doesn't notice. It is often paired with backdoors that reinstall it."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Should I use a WordPress malicious redirect cleanup service?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -138,10 +130,18 @@
         },
         {
           "@type": "Question",
-          "name": "The redirect came back after I removed it. What now?",
+          "name": "How do I stop WordPress redirect malware coming back?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide."
+            "text": "Remove every backdoor, not just the redirect code, then update or delete the plugin or theme the attacker used. Change hosting, SFTP, database and admin passwords, generate new salts in wp-config.php, and clean any other site in the same hosting account. File-change monitoring will warn you if anything reappears."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my WordPress site redirect only on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Redirect malware usually checks the visitor's device and referrer, sending phone users who arrive from Google to spam while showing desktop visitors and logged-in admins the normal site. That is why owners rarely see it. Test on mobile data, logged out, from a search result."
           }
         }
       ]
@@ -189,7 +189,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 11 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Hacked%20Redirect%3A%20Why%20Your%20Site%20Redirects%20to%20Spam%20and%20How%20to%20Remove%20the%20Malware%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffix-wordpress-redirect-hack%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -214,10 +214,7 @@
               <li><a href="#where-wordpress-redirect-malware-hides">Where WordPress redirect malware hides</a></li>
               <li><a href="#how-to-fix-the-wordpress-redirect-hack-step-by-step">How to fix the WordPress redirect hack, step by step</a></li>
               <li><a href="#why-the-redirect-keeps-coming-back">Why the redirect keeps coming back</a></li>
-              <li><a href="#check-google-once-it-s-clean">Check Google once it's clean</a></li>
-              <li><a href="#wordpress-malicious-redirect-cleanup-diy-or-a-cleanup-service">WordPress malicious redirect cleanup: DIY or a cleanup service?</a></li>
-              <li><a href="#how-to-prevent-redirect-hacks">How to prevent redirect hacks</a></li>
-              <li><a href="#quick-check-is-the-redirect-gone">Quick check: is the redirect gone?</a></li>
+              <li><a href="#commands-that-find-wordpress-redirect-malware">Commands that find WordPress redirect malware</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -231,7 +228,7 @@
             </ul>
           </div>
 <p>A WordPress hacked redirect happens when malware injected into your site sends some visitors to spam pages (gambling, dating, fake prizes or "your phone has a virus" warnings) instead of your content. If your WordPress site is redirecting to spam and you didn't set the redirect up, assume redirect malware: the code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
-<p><strong>Short answer:</strong> confirm the redirect on a phone from a Google result, back up, change every password, then clean .htaccess, wp-config.php, index.php, theme files, the database, rogue plugins and cron jobs, reinstall core, plugins and themes from clean copies, purge every cache and close the hole the attacker used. Skipping any of these is why redirects come back.</p>
+<blockquote><strong>Short answer:</strong> To fix a WordPress hacked redirect, confirm it on a phone from a Google result, take a backup and change every password. Then clean .htaccess, wp-config.php, theme files, the database and rogue plugins or cron jobs, reinstall core and plugins from clean copies, purge every cache and patch the hole the attacker used.</blockquote>
 
 <h2 id="my-wordpress-website-is-redirecting-what-to-do-in-the-first-hour">My WordPress website is redirecting: what to do in the first hour</h2>
 <ol>
@@ -354,29 +351,17 @@ wp option get home</code></pre>
   <li><strong>A computer with saved FTP passwords is infected</strong>, so new passwords get stolen too</li>
 </ul>
 
-<h2 id="check-google-once-it-s-clean">Check Google once it's clean</h2>
-<p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in results. Once clean, check Search Console's Security issues report and request a review; see <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a> and, if rankings dropped, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
-
-<h2 id="wordpress-malicious-redirect-cleanup-diy-or-a-cleanup-service">WordPress malicious redirect cleanup: DIY or a cleanup service?</h2>
-<p>You can clean a simple redirect hack yourself if you are comfortable with SFTP, phpMyAdmin and comparing files with clean copies. A security plugin can detect and remove some known infections, but code in the database, .htaccess or a fake plugin is often missed, and no plugin closes the hole the attacker used. A malicious redirect cleanup service makes sense when:</p>
+<h2 id="commands-that-find-wordpress-redirect-malware">Commands that find WordPress redirect malware</h2>
+<p>If your host gives you SSH and WP-CLI, these checks find most redirect malware in minutes. Run them from the WordPress folder after taking a backup:</p>
 <ul>
-  <li>the redirect has already come back once after cleaning</li>
-  <li>several sites share the same hosting account</li>
-  <li>it is a WooCommerce store taking payments, where checkout code may also be tampered with</li>
-  <li>Google is showing a warning and you need a clean review request quickly</li>
-  <li>your host has suspended the account until the malware is gone</li>
+  <li><code>wp core verify-checksums</code> lists core files that differ from the official release.</li>
+  <li><code>wp plugin verify-checksums --all</code> does the same for plugins from WordPress.org.</li>
+  <li><code>grep -rlE "eval[(]|base64_decode|gzinflate|str_rot13" wp-content --include=*.php</code> finds files using common obfuscation. Some genuine plugins use these, so review each hit rather than deleting it.</li>
+  <li><code>find . -name "*.php" -mtime -10</code> lists PHP files changed in the last 10 days, including in uploads, where PHP should not exist.</li>
+  <li><code>wp db query "SELECT ID FROM wp_posts WHERE post_content LIKE '%&lt;script%'"</code> finds scripts injected into posts; run the same check on <code>wp_options</code> (adjust the table prefix if yours differs).</li>
+  <li><code>wp cron event list</code> and <code>wp user list --role=administrator</code> show scheduled jobs and admin accounts you did not create.</li>
 </ul>
-<p>Whoever does it, ask for a written list of what was found, where, how the attacker got in and what was changed to stop it happening again.</p>
-
-<h2 id="how-to-prevent-redirect-hacks">How to prevent redirect hacks</h2>
-<p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
-
-<h2 id="quick-check-is-the-redirect-gone">Quick check: is the redirect gone?</h2>
-<ol>
-  <li>Open the site from Google search results on a phone in a private window. Some hacks only redirect visitors from search on mobile.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Security &amp; Manual Actions &gt; Security issues</strong>.</li>
-  <li>In WordPress, open <strong>Users &gt; All Users</strong> and remove any admin accounts you do not recognise.</li>
-</ol>
+<p>No SSH? Your hosting file manager and phpMyAdmin can run the same searches, just more slowly. Once the site is clean, request a review in Search Console; see <a href="/blog/this-site-may-be-hacked-google/">fixing the "This site may be hacked" warning</a>.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help straight away if the redirect returns within days of cleaning, Google shows a "This site may be hacked" warning, or the site takes payments, because checkout pages may be affected too. Repeated reinfection almost always means a backdoor or the original entry point is still there.</p>
@@ -390,17 +375,17 @@ wp option get home</code></pre>
 <h3>My WordPress website is redirecting to another site. Is it hacked?</h3>
 <p>If it happens for different people on different devices and you didn't add a redirect rule, almost certainly yes. Rule out a redirect plugin, a bad ad, a domain or DNS problem and adware on one device first.</p>
 
-<h3>What is WordPress redirect malware?</h3>
-<p>Code an attacker adds to your site that sends some visitors to spam or scam pages, usually only mobile visitors from search engines, so the owner doesn't notice. It is often paired with backdoors that reinstall it.</p>
-
 <h3>Should I use a WordPress malicious redirect cleanup service?</h3>
 <p>If the redirect returned after cleaning, the site takes payments or Google has flagged it, a professional clean-up is usually quicker and safer. Ask for a report of what was found and how the entry point was closed.</p>
 
 <h3>Will a WordPress hacked redirect hurt my Google rankings?</h3>
 <p>It can, through browser warnings, visitors bouncing straight back and spam pages indexed under your domain. Rankings usually recover after a thorough clean-up and a successful review, though how long that takes varies.</p>
 
-<h3>The redirect came back after I removed it. What now?</h3>
-<p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
+<h3>How do I stop WordPress redirect malware coming back?</h3>
+<p>Remove every backdoor, not just the redirect code, then update or delete the plugin or theme the attacker used. Change hosting, SFTP, database and admin passwords, generate new salts in wp-config.php, and clean any other site in the same hosting account. File-change monitoring will warn you if anything reappears.</p>
+
+<h3>Why does my WordPress site redirect only on mobile?</h3>
+<p>Redirect malware usually checks the visitor's device and referrer, sending phone users who arrive from Google to spam while showing desktop visitors and logged-in admins the normal site. That is why owners rarely see it. Test on mobile data, logged out, from a search result.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -443,10 +428,7 @@ wp option get home</code></pre>
               <li><a href="#where-wordpress-redirect-malware-hides">Where WordPress redirect malware hides</a></li>
               <li><a href="#how-to-fix-the-wordpress-redirect-hack-step-by-step">How to fix the WordPress redirect hack, step by step</a></li>
               <li><a href="#why-the-redirect-keeps-coming-back">Why the redirect keeps coming back</a></li>
-              <li><a href="#check-google-once-it-s-clean">Check Google once it's clean</a></li>
-              <li><a href="#wordpress-malicious-redirect-cleanup-diy-or-a-cleanup-service">WordPress malicious redirect cleanup: DIY or a cleanup service?</a></li>
-              <li><a href="#how-to-prevent-redirect-hacks">How to prevent redirect hacks</a></li>
-              <li><a href="#quick-check-is-the-redirect-gone">Quick check: is the redirect gone?</a></li>
+              <li><a href="#commands-that-find-wordpress-redirect-malware">Commands that find WordPress redirect malware</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -477,8 +459,8 @@ wp option get home</code></pre>
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/signs-wordpress-site-hacked/"><img class="post-card-img" src="/assets/og/blog-signs-wordpress-site-hacked.webp" alt="How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First</h3><p>How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/deceptive-site-ahead-warning-fix/"><img class="post-card-img" src="/assets/og/blog-deceptive-site-ahead-warning-fix.webp" alt="&quot;Deceptive Site Ahead&quot; Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>&quot;Deceptive Site Ahead&quot; Warning on Your Website: How to Find the Phishing Pages, Clean Up and Get Google to Remove It</h3><p>Remove the &quot;Deceptive site ahead&quot; warning: find the phishing pages in Search Console, clean the site, close the way in and request a Google review.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/remove-malware-wordpress-step-by-step/"><img class="post-card-img" src="/assets/og/blog-remove-malware-wordpress-step-by-step.webp" alt="How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>How to Remove Malware from a WordPress Website: A Step-by-Step Cleanup Guide</h3><p>How to remove malware from WordPress step by step: contain, back up, reset access, scan, replace core and plugins, clean the database and clear Google warnings.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-site-sending-spam-emails/"><img class="post-card-img" src="/assets/og/blog-wordpress-site-sending-spam-emails.webp" alt="Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists" width="1200" height="630" loading="lazy"><span class="work-tag">Security</span><h3>Website or Hosting Account Sending Spam Emails? How to Find the Source, Stop It and Get Off Blacklists</h3><p>Website or hosting account sending spam? Find the source in mail logs, remove mailer scripts, secure leaked SMTP logins and get your IP off blacklists.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

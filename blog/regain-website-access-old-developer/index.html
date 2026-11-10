@@ -43,7 +43,7 @@
       "headline": "How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email",
       "description": "Developer gone silent? How to regain access to your domain, hosting, WordPress admin, DNS, Google accounts and email, plus a handover checklist.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/regain-website-access-old-developer/",
       "image": "https://samverse.space/assets/og/blog-regain-website-access-old-developer.png",
       "articleSection": "Guides",
@@ -130,10 +130,18 @@
         },
         {
           "@type": "Question",
-          "name": "Can I keep my Google Analytics history?",
+          "name": "How do I get my domain back from my web developer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Only if an existing administrator adds you. Search Console is easier, because verifying the domain through DNS gives you the data the property already holds."
+            "text": "Look up the registrar, then ask the developer to unlock the domain and send the transfer code, or move it into your own account at the same registrar. If you are the listed registrant, the registrar can usually help directly once you prove ownership."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my old developer refuses to hand over the website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep everything in writing, check your contract and invoices for who owns the domain and work, and ask each provider about their ownership process. If that fails, get legal advice. Meanwhile, recover whatever is already in your name."
           }
         }
       ]
@@ -181,7 +189,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Regain%20Control%20of%20Your%20Website%20From%20a%20Previous%20Developer%3A%20Domain%2C%20Hosting%2C%20WordPress%2C%20Google%20Accounts%20and%20Email%20https%3A%2F%2Fsamverse.space%2Fblog%2Fregain-website-access-old-developer%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -206,10 +214,8 @@
               <li><a href="#step-3-recover-the-hosting-or-get-a-full-copy-of-the-site">Step 3: Recover the hosting, or get a full copy of the site</a></li>
               <li><a href="#step-4-get-back-into-wordpress">Step 4: Get back into WordPress</a></li>
               <li><a href="#step-5-search-console-analytics-and-business-profile">Step 5: Search Console, Analytics and Business Profile</a></li>
-              <li><a href="#step-6-business-email-and-premium-licences">Step 6: Business email and premium licences</a></li>
               <li><a href="#secure-everything-once-you-re-back-in">Secure everything once you're back in</a></li>
-              <li><a href="#make-sure-it-can-t-happen-again">Make sure it can't happen again</a></li>
-              <li><a href="#quick-check-what-do-you-control-today">Quick check: what do you control today?</a></li>
+              <li><a href="#what-to-ask-the-old-developer-for">What to ask the old developer for</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -224,6 +230,8 @@
           </div>
 <p>To get your website back from a developer who has stopped replying, work out who controls each piece the site depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email and your Google accounts. Anything registered in your name can usually be recovered from the provider with proof of ownership. Anything in the developer's name needs their cooperation, so start with a polite written request, and deal with the domain first, because whoever controls the domain controls everything that hangs off it.</p>
 <p>It happens more often than people expect: a freelancer changes careers, an agency closes, or a relationship ends over an unpaid invoice, and every login turns out to sit with someone else. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take on sites I didn't build, and the first step is a health check that includes who has administrator access and whose name the licences are in. Below is the order I'd work in, what providers typically ask for, and how to stop it happening again.</p>
+
+<blockquote><strong>Short answer:</strong> To get your website back from an old developer, list who controls the domain, DNS, hosting, WordPress admin, email and Google accounts. Recover anything in your name from the provider with proof of ownership. For anything in the developer's name, send a polite written request, and secure the domain first, because it controls everything else.</blockquote>
 
 <h2 id="first-map-who-controls-what">First, map who controls what</h2>
 <p>A website is several accounts, not one. Fill in this table first; it shows which problems you can solve alone and which need the developer.</p>
@@ -294,9 +302,6 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
 <p><strong>Google Analytics 4:</strong> only an existing administrator can grant access; at the time of writing there is no DNS-based way to claim a property. Ask the developer to add your Google account as Administrator. If they never respond, create a new property in your own account and replace the tag, accepting that the old history stays behind; <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a> covers the setup.</p>
 <p><strong>Google Business Profile:</strong> if Google says someone else manages your business, it offers a way to request access. The current owner is notified, and if they don't respond within Google's set period, you may be able to verify it yourself; follow the steps Google currently shows. For Tag Manager, Google Ads and Meta business assets, ask for access added to your own account, never for the developer's login.</p>
 
-<h2 id="step-6-business-email-and-premium-licences">Step 6: Business email and premium licences</h2>
-<p>If your mailboxes sit on the developer's hosting or in their Google Workspace or Zoho account, ask for access or an export while you can. To move, create the new mailboxes with a provider in your name first, then change the MX, SPF and DKIM records, so no mail is lost in between; <a href="/blog/business-email-options/">business email options compared</a> helps you choose. Premium themes and plugins licensed to the developer stop updating when their licence lapses, and licences often can't be transferred, so buying a fresh one in your business name is usually simpler.</p>
-
 <h2 id="secure-everything-once-you-re-back-in">Secure everything once you're back in</h2>
 <ol>
   <li>Change passwords for the registrar, hosting, WordPress, SFTP and the database user (updating wp-config.php for the database password).</li>
@@ -305,15 +310,18 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
   <li>Take a full backup stored away from the server, check for administrators or plugins nobody recognises, then run updates.</li>
 </ol>
 
-<h2 id="make-sure-it-can-t-happen-again">Make sure it can't happen again</h2>
-<p>Keep every account above in a password manager the business controls, with the login email, renewal date and who else has access. Developers should get their own user accounts, never your master logins, and every project should end with a written handover. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to receive.</p>
-
-<h2 id="quick-check-what-do-you-control-today">Quick check: what do you control today?</h2>
-<ol>
-  <li>Look up the domain at <strong>lookup.icann.org</strong> and note the registrar and expiry date. Check whether the registrant is your business or the old developer.</li>
-  <li>Try the password reset on your hosting account and on <strong>/wp-admin</strong>. Note which emails the reset links go to.</li>
-  <li>In WordPress, if you can log in, open <strong>Users &gt; All Users</strong> and check you have an Administrator account with your own email.</li>
-</ol>
+<h2 id="what-to-ask-the-old-developer-for">What to ask the old developer for</h2>
+<p>Send one written message listing exactly what you need, so nothing is missed:</p>
+<ul>
+  <li><strong>Domain:</strong> the domain unlocked and the transfer (EPP) code, or the domain moved into a registrar account in your name.</li>
+  <li><strong>Hosting:</strong> access to the account, or a full backup of the files and the database (.sql export).</li>
+  <li><strong>WordPress:</strong> a new Administrator account for your email, created under Users &gt; Add New.</li>
+  <li><strong>Search Console:</strong> your Google account added as Owner under Settings &gt; Users and permissions.</li>
+  <li><strong>Google Analytics:</strong> your account given the Administrator role under Admin &gt; Property access management.</li>
+  <li><strong>Business Profile:</strong> your account added as an owner, then their access removed.</li>
+  <li><strong>Licences:</strong> premium theme and plugin keys, and the accounts they were bought with.</li>
+  <li><strong>DNS:</strong> a copy of every DNS record, including email records.</li>
+</ul>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the developer has stopped replying, when the domain or hosting is in their name, or when you need access recovered and moved to your accounts. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -327,8 +335,11 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
 <p>You need hosting access. From there, the host's WordPress tools, phpMyAdmin or WP-CLI can change the admin email or create a new administrator, and you reset the password normally.</p>
 <h3>Will my website go down while I take back control?</h3>
 <p>It shouldn't. The risky moments are changing nameservers before copying every DNS record, and letting the domain or hosting lapse while you wait. Copy records first, check renewal dates early and keep a full backup.</p>
-<h3>Can I keep my Google Analytics history?</h3>
-<p>Only if an existing administrator adds you. Search Console is easier, because verifying the domain through DNS gives you the data the property already holds.</p>
+<h3>How do I get my domain back from my web developer?</h3>
+<p>Look up the registrar, then ask the developer to unlock the domain and send the transfer code, or move it into your own account at the same registrar. If you are the listed registrant, the registrar can usually help directly once you prove ownership.</p>
+
+<h3>What if my old developer refuses to hand over the website?</h3>
+<p>Keep everything in writing, check your contract and invoices for who owns the domain and work, and ask each provider about their ownership process. If that fails, get legal advice. Meanwhile, recover whatever is already in your name.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -371,10 +382,8 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
               <li><a href="#step-3-recover-the-hosting-or-get-a-full-copy-of-the-site">Step 3: Recover the hosting, or get a full copy of the site</a></li>
               <li><a href="#step-4-get-back-into-wordpress">Step 4: Get back into WordPress</a></li>
               <li><a href="#step-5-search-console-analytics-and-business-profile">Step 5: Search Console, Analytics and Business Profile</a></li>
-              <li><a href="#step-6-business-email-and-premium-licences">Step 6: Business email and premium licences</a></li>
               <li><a href="#secure-everything-once-you-re-back-in">Secure everything once you're back in</a></li>
-              <li><a href="#make-sure-it-can-t-happen-again">Make sure it can't happen again</a></li>
-              <li><a href="#quick-check-what-do-you-control-today">Quick check: what do you control today?</a></li>
+              <li><a href="#what-to-ask-the-old-developer-for">What to ask the old developer for</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -406,7 +415,7 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/domain-expired-what-to-do/"><img class="post-card-img" src="/assets/og/blog-domain-expired-what-to-do.webp" alt="Domain Name Expired? How to Get It Back, What Breaks in the Meantime and How to Stop It Happening Again" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Domain Name Expired? How to Get It Back, What Breaks in the Meantime and How to Stop It Happening Again</h3><p>Domain name expired? How to get it back in the grace or redemption period, what breaks for your website and email, and how to stop it happening again.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/transfer-domain-to-another-registrar/"><img class="post-card-img" src="/assets/og/blog-transfer-domain-to-another-registrar.webp" alt="How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>How to Transfer Your Domain to Another Registrar Without Downtime (EPP Code, Locks and DNS)</h3><p>How to transfer a domain to another registrar safely: unlock it, get the EPP code, avoid the 60-day lock and keep DNS and email working, including .in domains.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/business-email-options/"><img class="post-card-img" src="/assets/og/blog-business-email-options.webp" alt="Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Business Email Options for Small Businesses: Google Workspace vs Microsoft 365 vs Zoho Mail vs Hosting Email</h3><p>Compare business email options for small businesses in India: Google Workspace, Microsoft 365, Zoho Mail and hosting email, with setups by team size.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/freelancer-vs-agency-web-developer/"><img class="post-card-img" src="/assets/og/blog-freelancer-vs-agency-web-developer.webp" alt="Freelance Web Developer vs Agency: Cost, Risk and Who to Hire for Your Website (Plus 12 Questions to Ask)" width="1200" height="630" loading="lazy"><span class="work-tag">Guides</span><h3>Freelance Web Developer vs Agency: Cost, Risk and Who to Hire for Your Website (Plus 12 Questions to Ask)</h3><p>Freelance web developer or agency? Compare cost, communication, risk and support, see how to hire a freelance WordPress developer in India and what to ask.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

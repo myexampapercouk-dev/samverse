@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Find and Fix Orphan Pages in WordPress | Samverse</title>
+  <title>Orphan Pages: How to Find and Fix Them in WordPress</title>
   <meta name="description" content="How to find orphan pages in WordPress with your sitemap, Search Console and a crawler, then fix each one by linking, merging, redirecting or removing it.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/orphan-pages-fix/">
-  <meta property="og:title" content="How to Find and Fix Orphan Pages in WordPress | Samverse">
+  <meta property="og:title" content="Orphan Pages: How to Find and Fix Them in WordPress">
   <meta property="og:description" content="How to find orphan pages in WordPress with your sitemap, Search Console and a crawler, then fix each one by linking, merging, redirecting or removing it.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-orphan-pages-fix.png">
   <meta property="og:image:width" content="1200">
@@ -43,7 +43,7 @@
       "headline": "Orphan Pages: How to Find Orphan Pages and How to Fix Orphan Pages in WordPress",
       "description": "How to find orphan pages in WordPress with your sitemap, Search Console and a crawler, then fix each one by linking, merging, redirecting or removing it.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/orphan-pages-fix/",
       "image": "https://samverse.space/assets/og/blog-orphan-pages-fix.png",
       "articleSection": "SEO",
@@ -138,10 +138,18 @@
         },
         {
           "@type": "Question",
-          "name": "How do I fix orphan pages in WordPress?",
+          "name": "What are orphan pages in SEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Add contextual internal links to each useful orphan page from two or three related pages, place it in the right menu, category or hub page, merge or redirect weak duplicates, and remove or noindex pages you no longer need. Then re-crawl the site to confirm every kept page is reachable by links."
+            "text": "Pages with no internal links pointing to them from anywhere else on the same website. Search engines and visitors can only reach them through the sitemap, an old bookmark or an outside link, so they are crawled less and rarely rank well."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Google find orphan pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, through your sitemap or links from other websites, but it treats them as less important because your own site does not link to them. A page you want to rank should be linked from at least one relevant, indexed page."
           }
         }
       ]
@@ -189,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Orphan%20Pages%3A%20How%20to%20Find%20Orphan%20Pages%20and%20How%20to%20Fix%20Orphan%20Pages%20in%20WordPress%20https%3A%2F%2Fsamverse.space%2Fblog%2Forphan-pages-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -215,10 +223,8 @@
               <li><a href="#orphan-pages-on-woocommerce-stores">Orphan pages on WooCommerce stores</a></li>
               <li><a href="#orphan-pages-after-a-redesign-or-migration">Orphan pages after a redesign or migration</a></li>
               <li><a href="#a-quick-monthly-check-for-small-sites">A quick monthly check for small sites</a></li>
-              <li><a href="#preventing-orphan-pages-in-future">Preventing orphan pages in future</a></li>
               <li><a href="#how-to-fix-orphan-pages-in-wordpress-step-by-step">How to fix orphan pages in WordPress, step by step</a></li>
-              <li><a href="#tools-that-help-find-orphan-pages">Tools that help find orphan pages</a></li>
-              <li><a href="#quick-check-find-orphan-pages">Quick check: find orphan pages</a></li>
+              <li><a href="#find-orphan-pages-with-screaming-frog-step-by-step">Find orphan pages with Screaming Frog, step by step</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -233,6 +239,8 @@
           </div>
 <p>An orphan page is a page on your website that no other page links to. It may be in your sitemap and even indexed, but no menu, button or text link leads to it. To find orphan pages in WordPress, compare the URLs in your sitemap and Google Search Console with the URLs a crawler reaches by following links, then link, merge, redirect or remove each one.</p>
 <p>Most business sites have a few, usually created by accident during a redesign, a campaign or a migration. This guide explains why they matter, how to find them and how to decide what to do with each. For the basics, start with <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<blockquote><strong>Short answer:</strong> Orphan pages are pages that no other page on your site links to. To find them, export every URL from your sitemap and Search Console, crawl the site by following links, and compare the two lists. Then link each useful orphan from a relevant page, merge or redirect weak ones, and remove pages nobody needs.</blockquote>
 
 <h2 id="why-orphan-pages-are-a-problem">Why orphan pages are a problem</h2>
 <p>Search engines discover and understand pages mainly by following links. When nothing on your site points to a page:</p>
@@ -311,15 +319,6 @@
 <h2 id="a-quick-monthly-check-for-small-sites">A quick monthly check for small sites</h2>
 <p>If your site has fewer than a hundred pages, you do not need complex tools every month. Open the Pages list in WordPress, sort by date, and for each recent page ask one question: which other page links here? If the answer is none, add a link from a related service page or post before moving on. For blogs, check that each new post links to at least one older post and that at least one older post links back to it. This takes a few minutes and stops orphans from building up between proper audits.</p>
 
-<h2 id="preventing-orphan-pages-in-future">Preventing orphan pages in future</h2>
-<ol>
-<li>Every time you publish, add at least two internal links to the new page from older relevant pages.</li>
-<li>Before a redesign, export the full URL list and map where each page will go.</li>
-<li>After campaigns, decide the future of each landing page: keep, merge, redirect or remove.</li>
-<li>Run a crawl and sitemap comparison every few months.</li>
-<li>Watch Search Console&apos;s indexing reports; the guide to <a href="/blog/search-console-page-indexing-errors/">page indexing errors</a> explains the statuses.</li>
-</ol>
-
 <h2 id="how-to-fix-orphan-pages-in-wordpress-step-by-step">How to fix orphan pages in WordPress, step by step</h2>
 <p>Once you have your list, fixing orphan pages in WordPress is mostly editing work. This is the order I use on client sites:</p>
 <ol>
@@ -332,14 +331,16 @@
 <li><strong>Re-crawl and confirm.</strong> Run the crawler again and check each fixed page now shows at least one internal link.</li>
 </ol>
 
-<h2 id="tools-that-help-find-orphan-pages">Tools that help find orphan pages</h2>
-
-<h2 id="quick-check-find-orphan-pages">Quick check: find orphan pages</h2>
+<h2 id="find-orphan-pages-with-screaming-frog-step-by-step">Find orphan pages with Screaming Frog, step by step</h2>
 <ol>
-  <li>Open your sitemap (often <strong>/sitemap_index.xml</strong> or <strong>/wp-sitemap.xml</strong>) and export the list of URLs.</li>
-  <li>Crawl the site with a crawler such as Screaming Frog (free up to 500 URLs) and compare the crawled URLs with the sitemap list. URLs only in the sitemap are orphans.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Links &gt; Internal links</strong> and check that important pages receive links.</li>
+  <li>Open Configuration &gt; Spider &gt; Crawl and tick "Crawl Linked XML Sitemaps", adding your sitemap URL.</li>
+  <li>With a paid licence, connect Search Console and Analytics under Configuration &gt; API Access, and tick the option to crawl new URLs they find.</li>
+  <li>Enter your homepage and start the crawl.</li>
+  <li>When it finishes, run Crawl Analysis &gt; Start, which is what fills in the orphan filters.</li>
+  <li>Open the Sitemaps tab and choose the "Orphan URLs" filter; do the same in the Search Console and Analytics tabs.</li>
+  <li>Export the lists, remove redirects and noindexed URLs, and decide for each remaining page: link, merge, redirect or remove.</li>
 </ol>
+<p>The free version crawls up to 500 URLs, enough for most small business sites.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when hundreds of pages have no internal links, when old pages should be merged or redirected, or when site structure needs rethinking. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -357,8 +358,12 @@
 <p>Often, and that can be intentional. If a landing page is only for ads, it can stay out of the menu and be set to noindex.</p>
 
 <p>If you want orphan pages and internal links sorted on your site, I handle this as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off audit, and businesses in Maharashtra can see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-<h3>How do I fix orphan pages in WordPress?</h3>
-<p>Add contextual internal links to each useful orphan page from two or three related pages, place it in the right menu, category or hub page, merge or redirect weak duplicates, and remove or noindex pages you no longer need. Then re-crawl the site to confirm every kept page is reachable by links.</p>
+
+<h3>What are orphan pages in SEO?</h3>
+<p>Pages with no internal links pointing to them from anywhere else on the same website. Search engines and visitors can only reach them through the sitemap, an old bookmark or an outside link, so they are crawled less and rarely rank well.</p>
+
+<h3>Can Google find orphan pages?</h3>
+<p>Sometimes, through your sitemap or links from other websites, but it treats them as less important because your own site does not link to them. A page you want to rank should be linked from at least one relevant, indexed page.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -402,10 +407,8 @@
               <li><a href="#orphan-pages-on-woocommerce-stores">Orphan pages on WooCommerce stores</a></li>
               <li><a href="#orphan-pages-after-a-redesign-or-migration">Orphan pages after a redesign or migration</a></li>
               <li><a href="#a-quick-monthly-check-for-small-sites">A quick monthly check for small sites</a></li>
-              <li><a href="#preventing-orphan-pages-in-future">Preventing orphan pages in future</a></li>
               <li><a href="#how-to-fix-orphan-pages-in-wordpress-step-by-step">How to fix orphan pages in WordPress, step by step</a></li>
-              <li><a href="#tools-that-help-find-orphan-pages">Tools that help find orphan pages</a></li>
-              <li><a href="#quick-check-find-orphan-pages">Quick check: find orphan pages</a></li>
+              <li><a href="#find-orphan-pages-with-screaming-frog-step-by-step">Find orphan pages with Screaming Frog, step by step</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -435,8 +438,8 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/redesign-website-without-losing-rankings/"><img class="post-card-img" src="/assets/og/blog-redesign-website-without-losing-rankings.webp" alt="How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>How to Redesign Your Website Without Losing Google Rankings: The SEO Migration Checklist</h3><p>Redesign your website and keep your rankings: benchmark, crawl, map every URL, set up 301s, keep content parity, block staging and monitor after launch.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/xml-sitemaps-explained/"><img class="post-card-img" src="/assets/og/blog-xml-sitemaps-explained.webp" alt="XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress</h3><p>XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/technical-seo-audit-wordpress/"><img class="post-card-img" src="/assets/og/blog-technical-seo-audit-wordpress.webp" alt="WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)</h3><p>How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/xml-sitemaps-explained/"><img class="post-card-img" src="/assets/og/blog-xml-sitemaps-explained.webp" alt="XML Sitemaps Explained: WordPress Sitemap XML Setup, What to Include and How to Submit It" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>XML Sitemaps Explained: WordPress Sitemap XML Setup, What to Include and How to Submit It</h3><p>XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/topic-clusters-pillar-pages/"><img class="post-card-img" src="/assets/og/blog-topic-clusters-pillar-pages.webp" alt="Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress</h3><p>Pillar page WordPress guide: what a pillar page is, how to plan a topic cluster, and how to build pillar and cluster pages with links, blocks and menus.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

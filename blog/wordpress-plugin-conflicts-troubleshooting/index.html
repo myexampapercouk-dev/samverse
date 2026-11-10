@@ -43,7 +43,7 @@
       "headline": "How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention",
       "description": "Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.",
       "datePublished": "2026-10-01",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/wordpress-plugin-conflicts-troubleshooting/",
       "image": "https://samverse.space/assets/og/blog-wordpress-plugin-conflicts-troubleshooting.png",
       "articleSection": "Maintenance",
@@ -138,10 +138,18 @@
         },
         {
           "@type": "Question",
-          "name": "What is the quickest WordPress plugin conflict fix?",
+          "name": "How do I fix a plugin conflict after a WordPress update?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair."
+            "text": "Start with whatever updated last. Roll that plugin back to its previous version on staging, check whether the problem stops, and read its changelog and support forum for known issues. Keep the older version only until a fixed release is available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can two plugins that do the same job conflict?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Two caching plugins, two SEO plugins or two security plugins often fight over the same settings, files or page output. Keep one plugin per job and remove the other properly, including any files or rules it added."
           }
         }
       ]
@@ -189,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-10-01">1 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Fix%20WordPress%20Plugin%20Conflicts%20Safely%3A%20Staging%2C%20Troubleshooting%20Mode%2C%20Debug%20Logs%20and%20Prevention%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-plugin-conflicts-troubleshooting%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -213,12 +221,10 @@
               <li><a href="#or-use-health-check-troubleshooting-mode">Or use Health Check troubleshooting mode</a></li>
               <li><a href="#find-the-culprit-quickly-the-halving-method">Find the culprit quickly: the halving method</a></li>
               <li><a href="#read-the-evidence-debug-log-console-and-query-monitor">Read the evidence: debug log, console and Query Monitor</a></li>
-              <li><a href="#theme-conflicts">Theme conflicts</a></li>
-              <li><a href="#caching-and-optimisation-conflicts">Caching and optimisation conflicts</a></li>
               <li><a href="#wordpress-plugin-conflict-fix-when-you-cannot-reach-wp-admin">WordPress plugin conflict fix when you cannot reach wp-admin</a></li>
               <li><a href="#fixing-it-once-you-know-the-pair">Fixing it once you know the pair</a></li>
               <li><a href="#preventing-the-next-conflict">Preventing the next conflict</a></li>
-              <li><a href="#quick-check-test-for-a-conflict-without-breaking-the-live-site">Quick check: test for a conflict without breaking the live site</a></li>
+              <li><a href="#fix-wordpress-plugin-conflicts-with-wp-cli">Fix WordPress plugin conflicts with WP-CLI</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -233,6 +239,8 @@
           </div>
 <p>To fix a WordPress plugin conflict, first protect the live site with a backup, then reproduce the problem on a staging copy or in Health Check troubleshooting mode. Switch to a default theme and deactivate plugins in halves until the problem disappears, re-enable them to find the exact pair that clashes, and confirm it in the PHP debug log or the browser console. Then update, replace or roll back one of the two plugins, and change how you update so it doesn't happen again.</p>
 <p>A conflict happens when two plugins, or a plugin and your theme, each work alone but break something together: a form stops sending, a layout falls apart, checkout hangs or the site shows a critical error. Finding and fixing these safely is a routine part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> work, and this guide is the same method written out so you can follow it yourself.</p>
+<blockquote><strong>Short answer:</strong> For a WordPress plugin conflict fix, back up, then reproduce the problem on staging or in Health Check troubleshooting mode. Switch to a default theme, deactivate plugins in halves until the problem stops, re-enable them to find the clashing pair, confirm it in the debug log or console, then update, replace or roll back one plugin.</blockquote>
+
 <h2 id="is-it-really-a-plugin-conflict">Is it really a plugin conflict?</h2>
 <p>Several problems look like conflicts but aren't. Rule these out early, because the fix is completely different.</p>
 <table>
@@ -301,17 +309,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>For buttons, sliders, menus and checkouts that "do nothing", open the broken page, right-click, choose Inspect and open the Console tab. Red errors name the script that failed. A common pattern is one plugin loading its own copy of a library, or an optimisation plugin deferring a script another plugin needs early, so everything after the first error stops running.</p>
 <h3>Query Monitor</h3>
 <p>The free Query Monitor plugin shows PHP errors, slow database queries, hooks and the scripts loaded on each page. It is very useful on staging for seeing which plugin is responsible for what.</p>
-<h2 id="theme-conflicts">Theme conflicts</h2>
-<p>If the problem disappears with a default theme, look at what your theme adds: bundled plugins, custom WooCommerce template overrides, its own sliders or lazy loading, or code in functions.php. Older themes with outdated template files are a frequent cause after a WooCommerce or page builder update. <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> covers the builder-specific version of this problem.</p>
-<h2 id="caching-and-optimisation-conflicts">Caching and optimisation conflicts</h2>
-<p>Caching, minification and "combine JavaScript" options cause a large share of front-end breakage, because they change how other plugins' files load. Common signs and fixes:</p>
-<ul>
-  <li><strong>Works when logged in, broken when logged out:</strong> administrators are normally served uncached pages, so visitors may be seeing an old file. Purge all caches and recheck.</li>
-  <li><strong>Broke after enabling "delay" or "defer" JavaScript:</strong> exclude the affected plugin's script from that option rather than turning optimisation off entirely.</li>
-  <li><strong>Two plugins doing the same job:</strong> two caching plugins, or a caching plugin plus host caching with overlapping settings, often clash. Keep one.</li>
-  <li><strong>Cart, checkout or account pages acting oddly:</strong> these pages must not be cached; most caching plugins exclude them, but check.</li>
-</ul>
-<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> describes the layers involved.</p>
 <h2 id="wordpress-plugin-conflict-fix-when-you-cannot-reach-wp-admin">WordPress plugin conflict fix when you cannot reach wp-admin</h2>
 <p>Sometimes a conflict takes the whole dashboard down, so you cannot deactivate anything in the normal way. You still have safe options:</p>
 <ul>
@@ -338,12 +335,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Never install nulled premium plugins: they skip official updates and often carry hidden code.</li>
   <li>Keep a short log of what was updated and when, so the next problem starts with "what changed?"</li>
 </ul>
-<h2 id="quick-check-test-for-a-conflict-without-breaking-the-live-site">Quick check: test for a conflict without breaking the live site</h2>
-<ol>
-  <li>Install the Health Check &amp; Troubleshooting plugin and open <strong>Tools &gt; Site Health &gt; Troubleshooting</strong>. Troubleshooting mode disables plugins for your session only; visitors still see the normal site.</li>
-  <li>Switch to a default theme inside that mode and check whether the problem goes away.</li>
-  <li>Re-enable plugins one at a time until the problem returns. The last one enabled is your suspect.</li>
-</ol>
+<h2 id="fix-wordpress-plugin-conflicts-with-wp-cli">Fix WordPress plugin conflicts with WP-CLI</h2>
+<p>If your host offers SSH, WP-CLI makes the halving method much faster, and works even when wp-admin is down. Try it on staging first:</p>
+<ul>
+  <li><code>wp plugin list --status=active</code> records which plugins are active, so you can restore them later.</li>
+  <li><code>wp --skip-plugins --skip-themes plugin list</code> runs a command even when a plugin causes a fatal error.</li>
+  <li><code>wp plugin deactivate plugin-one plugin-two</code> switches off half the list; <code>wp plugin activate</code> brings them back.</li>
+  <li><code>wp theme activate twentytwentyfive</code> rules the theme in or out (use any default theme you have installed).</li>
+  <li><code>wp plugin install plugin-slug --version=1.2.3 --force</code> rolls a WordPress.org plugin back to an earlier version.</li>
+  <li><code>tail -n 50 wp-content/debug.log</code> shows the latest errors once debugging is on.</li>
+</ul>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the conflict involves checkout, payments or forms, when both conflicting plugins are essential, or when the problem only happens on the live server. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing updates on staging before they reach the live site. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
@@ -359,8 +360,12 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually caching or JavaScript optimisation, because logged-in users often bypass the page cache. Purge every cache and test the optimisation settings one by one.</p>
 <h3>What if the conflicting plugins are both essential?</h3>
 <p>Check for updates, report it to both developers, and try changing the overlapping setting or excluding a script from optimisation. If nothing works, replace the less important plugin or use a small piece of custom code.</p>
-<h3>What is the quickest WordPress plugin conflict fix?</h3>
-<p>Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair.</p>
+
+<h3>How do I fix a plugin conflict after a WordPress update?</h3>
+<p>Start with whatever updated last. Roll that plugin back to its previous version on staging, check whether the problem stops, and read its changelog and support forum for known issues. Keep the older version only until a fixed release is available.</p>
+
+<h3>Can two plugins that do the same job conflict?</h3>
+<p>Yes. Two caching plugins, two SEO plugins or two security plugins often fight over the same settings, files or page output. Keep one plugin per job and remove the other properly, including any files or rules it added.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -402,12 +407,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
               <li><a href="#or-use-health-check-troubleshooting-mode">Or use Health Check troubleshooting mode</a></li>
               <li><a href="#find-the-culprit-quickly-the-halving-method">Find the culprit quickly: the halving method</a></li>
               <li><a href="#read-the-evidence-debug-log-console-and-query-monitor">Read the evidence: debug log, console and Query Monitor</a></li>
-              <li><a href="#theme-conflicts">Theme conflicts</a></li>
-              <li><a href="#caching-and-optimisation-conflicts">Caching and optimisation conflicts</a></li>
               <li><a href="#wordpress-plugin-conflict-fix-when-you-cannot-reach-wp-admin">WordPress plugin conflict fix when you cannot reach wp-admin</a></li>
               <li><a href="#fixing-it-once-you-know-the-pair">Fixing it once you know the pair</a></li>
               <li><a href="#preventing-the-next-conflict">Preventing the next conflict</a></li>
-              <li><a href="#quick-check-test-for-a-conflict-without-breaking-the-live-site">Quick check: test for a conflict without breaking the live site</a></li>
+              <li><a href="#fix-wordpress-plugin-conflicts-with-wp-cli">Fix WordPress plugin conflicts with WP-CLI</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -436,9 +439,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-auto-updates/"><img class="post-card-img" src="/assets/og/blog-wordpress-auto-updates.webp" alt="WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Auto-Updates: Should You Turn Them On for Core, Plugins and Themes?</h3><p>Which WordPress auto-updates to turn on for core, plugins and themes, the real risks, WooCommerce cautions, backups and staging, and how to roll back an update.</p><span class="post-card-meta">1 October 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/recaptcha-not-working-wordpress/"><img class="post-card-img" src="/assets/og/blog-recaptcha-not-working-wordpress.webp" alt="reCAPTCHA Not Working on WordPress? Fixing &quot;Invalid Domain&quot;, Key Type Errors and Forms That Won't Send" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>reCAPTCHA Not Working on WordPress? Fixing &quot;Invalid Domain&quot;, Key Type Errors and Forms That Won't Send</h3><p>reCAPTCHA not working on WordPress? Fix &quot;invalid domain&quot; and key type errors, v2 vs v3 mix-ups, caching conflicts and forms that fail silently.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/update-wordpress-safely/"><img class="post-card-img" src="/assets/og/blog-update-wordpress-safely.webp" alt="How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site</h3><p>How to update WordPress safely: backups, staging, the right update order, testing, rolling back a bad update, and best practices for plugins and themes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
-          <a class="post-card" href="/blog/staging-sites-explained/"><img class="post-card-img" src="/assets/og/blog-staging-sites-explained.webp" alt="Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely</h3><p>Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>
     </section>

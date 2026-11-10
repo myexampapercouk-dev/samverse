@@ -344,6 +344,8 @@ Target:  https://example.com/$1/</code></pre>
 curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|location)"</code></pre>
 <p>Each should return <code>301</code> with a <code>location</code> pointing at the matching new page. If you see 404, check the rule in your redirect plugin; if you see 302, change it to a permanent 301. A week later, open <strong>Indexing &gt; Pages</strong> in Search Console and check the "Not found (404)" list for any Wix paths you missed.</p>
 
+<p>After moving, check for insecure images and scripts; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings in WordPress</a>.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when the Wix site has many blog posts, a store or bookings, or rankings you cannot afford to lose. My <a href="/wordpress-migration/">website migration</a> service rebuilds the site on WordPress staging, maps and redirects every old URL, handles the domain, SSL and email records, and keeps the Wix site live until the new one is tested. Send your website address for a free review and a fixed quote.</p>
 

@@ -352,6 +352,8 @@ wp option update blog_public 0</code></pre>
 <h2 id="quick-check-is-your-staging-site-hidden-from-google">Quick check: is your staging site hidden from Google?</h2>
 <p>Open your staging address in a private browser window. It should ask for a password or show a login screen. If it opens freely, run <code>curl -I https://staging.yourdomain.com/</code> and look for an <code>x-robots-tag: noindex</code> header, and in the staging WordPress admin check that <strong>Settings, Reading, Discourage search engines</strong> is ticked. Finally, search Google for <code>site:staging.yourdomain.com</code>; any results mean it has already been indexed.</p>
 
+<p>Staging is also the safest place to track down a clash between plugins; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts</a>.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when you have no staging site, when pushing changes to live has gone wrong before, or when the site takes orders and cannot afford mistakes. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> handles updates and changes with a backup first and testing afterwards. To start, <a href="/#contact">send your website address</a>.</p>
 

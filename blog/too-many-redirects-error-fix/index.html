@@ -342,6 +342,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <pre><code>curl -sIL --max-redirs 10 http://example.com/ | grep -iE "^(HTTP|location)"</code></pre>
 <p>Read the <code>location</code> lines in order. If they bounce between http and https, look at the Cloudflare SSL mode and any force-HTTPS rule. If they bounce between www and non-www, compare the WordPress Address and Site Address with your host's or Cloudflare's domain redirect. A healthy result is at most two hops ending in a <code>200</code>. Run it again after each change.</p>
 
+<p>If your site redirects to a spam or scam site rather than looping, it is not a settings problem but malware: follow <a href="/blog/fix-wordpress-redirect-hack/">how to fix a WordPress hacked redirect</a>.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when you are locked out of wp-admin, when the loop started after a migration or domain change, or when Cloudflare, the host and plugins all add their own redirects. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to trace and fix the chain, or see <a href="/wordpress-migration/">WordPress migration</a> if the loop appeared after a move.</p>
 

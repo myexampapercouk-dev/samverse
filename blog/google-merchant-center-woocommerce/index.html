@@ -43,7 +43,7 @@
       "headline": "Google Merchant Center for WooCommerce and WordPress: Set Up Free Listings and Fix Disapprovals",
       "description": "Set up Google Merchant Center for WooCommerce and WordPress: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/google-merchant-center-woocommerce/",
       "image": "https://samverse.space/assets/og/blog-google-merchant-center-woocommerce.png",
       "articleSection": "E-commerce",
@@ -138,10 +138,18 @@
         },
         {
           "@type": "Question",
-          "name": "How long does it take for products to show on Google?",
+          "name": "Which plugin connects WooCommerce to Google Merchant Center?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually."
+            "text": "The free Google for WooCommerce extension is the official option and syncs products directly. Feed plugins, such as Product Feed PRO, create a feed file Merchant Center fetches on a schedule, which gives more control over fields and variations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce product feed not updating in Merchant Center?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the sync status in the extension or the feed plugin's schedule, and whether WordPress cron is running. Caching can serve an old feed file, and Merchant Center only refetches on its own schedule, so allow time after fixing it."
           }
         }
       ]
@@ -189,7 +197,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Google%20Merchant%20Center%20for%20WooCommerce%20and%20WordPress%3A%20Set%20Up%20Free%20Listings%20and%20Fix%20Disapprovals%20https%3A%2F%2Fsamverse.space%2Fblog%2Fgoogle-merchant-center-woocommerce%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -215,9 +223,7 @@
               <li><a href="#step-4-set-shipping-and-returns">Step 4: Set shipping and returns</a></li>
               <li><a href="#common-disapprovals-and-how-to-fix-them">Common disapprovals and how to fix them</a></li>
               <li><a href="#google-merchant-center-on-wordpress-with-or-without-woocommerce">Google Merchant Center on WordPress: with or without WooCommerce</a></li>
-              <li><a href="#product-structured-data">Product structured data</a></li>
-              <li><a href="#from-free-listings-to-shopping-ads">From free listings to Shopping ads</a></li>
-              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#merchant-center-feed-checklist-for-woocommerce">Merchant Center feed checklist for WooCommerce</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -232,6 +238,8 @@
           </div>
 <p>To show your WooCommerce products on Google for free, create a Google Merchant Center account, verify your website, and sync your products using the free Google for WooCommerce extension (previously called Google Listings &amp; Ads) or a feed plugin. Then set your shipping and return details, make sure prices (including GST) and stock match your product pages, and fix anything Merchant Center flags. Approved products can appear as free listings in the Shopping tab and other Google surfaces, and the same data powers Shopping ads later.</p>
 <p>Here's the full setup, which sync method to choose, the product data Google needs, and how to fix the disapprovals that trip up most Indian stores. If you'd rather have it set up and tested for you, that's part of my <a href="/woocommerce-developer/">WooCommerce development</a> work.</p>
+<blockquote><strong>Short answer:</strong> To use Google Merchant Center for WooCommerce, create a Merchant Center account, verify your domain and sync products with the free Google for WooCommerce extension or a feed plugin. Set shipping and returns, keep GST-inclusive prices and stock identical to your product pages, then fix anything Merchant Center flags so products are approved for free listings.</blockquote>
+
 <h2 id="what-google-merchant-center-for-woocommerce-does">What Google Merchant Center for WooCommerce does</h2>
 <p>Merchant Center is where Google stores your product information. Once your products are approved, they can show with an image, price and store name when people search for what you sell.</p>
 <table>
@@ -334,12 +342,21 @@
 <li><strong>Make sure products can be bought:</strong> each product needs a landing page with a clear price and a way to purchase. Enquiry-only catalogues are likely to be disapproved.</li>
 </ul>
 <p>Services such as consultations or website projects are not products for Merchant Center. Promote those through your Google Business Profile, search ads and service pages instead.</p>
-<h2 id="product-structured-data">Product structured data</h2>
-<p>WooCommerce adds basic Product structured data to product pages, and SEO plugins can extend it. Google uses it to cross-check your feed, and Merchant Center's automatic item updates can use it to correct price and availability when they drift. Test a few product pages after any theme or plugin change; see <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
-<h2 id="from-free-listings-to-shopping-ads">From free listings to Shopping ads</h2>
-<p>Once products are approved and stable, link Google Ads and the same data can run Shopping or Performance Max campaigns. Set up purchase tracking first, so you can see which products and campaigns actually make money; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>. Start with your best sellers and products with healthy margins. The same product data can also feed Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
-<h2 id="quick-check">Quick check</h2>
-<p>In Merchant Center, open the products report and filter for items that need attention or are disapproved, then sort by the most common issue. Open one affected product on your store and check that the price, stock status and shipping cost match what the feed says, because mismatches are a common reason for disapprovals.</p>
+<h2 id="merchant-center-feed-checklist-for-woocommerce">Merchant Center feed checklist for WooCommerce</h2>
+<table>
+  <thead><tr><th>Feed field</th><th>Where it comes from in WooCommerce</th></tr></thead>
+  <tbody>
+    <tr><td>id</td><td>Product ID or SKU (Product data &gt; Inventory)</td></tr>
+    <tr><td>title and description</td><td>Product name and description</td></tr>
+    <tr><td>link</td><td>The product's URL, which must load without a login</td></tr>
+    <tr><td>image_link</td><td>Product image, without text overlays or watermarks</td></tr>
+    <tr><td>price</td><td>Regular or sale price (Product data &gt; General), matching the page</td></tr>
+    <tr><td>availability</td><td>Stock status (Product data &gt; Inventory)</td></tr>
+    <tr><td>brand, gtin or mpn</td><td>The Google for WooCommerce panel on the product, or your feed plugin's fields</td></tr>
+    <tr><td>shipping</td><td>Merchant Center shipping settings or your WooCommerce shipping zones</td></tr>
+  </tbody>
+</table>
+<p>Fix a field in WooCommerce rather than in Merchant Center, so the next sync does not undo it.</p>
 
 <h2 id="when-to-get-help">When to get help</h2>
 <p>If products keep getting disapproved, the account is suspended for misrepresentation, or stock stops syncing, get the store and feed reviewed together. Merchant Center setup and store fixes are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
@@ -355,8 +372,12 @@
 <p>If a product has a manufacturer barcode, include it, because it helps Google match the product. For handmade, custom or own-brand products with no barcode, set identifier_exists to "no" rather than inventing a number. If you want barcodes for your own brand, they're issued in India through GS1 India.</p>
 <h3>Why are my WooCommerce products disapproved in Merchant Center?</h3>
 <p>The most common reasons are price or stock that don't match the product page, prices without GST, missing shipping details, images with text or watermarks, and incorrect identifiers. Account-level suspensions are usually misrepresentation: missing contact details, policies or business information. Merchant Center lists the exact issue for each product.</p>
-<h3>How long does it take for products to show on Google?</h3>
-<p>New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually.</p>
+
+<h3>Which plugin connects WooCommerce to Google Merchant Center?</h3>
+<p>The free Google for WooCommerce extension is the official option and syncs products directly. Feed plugins, such as Product Feed PRO, create a feed file Merchant Center fetches on a schedule, which gives more control over fields and variations.</p>
+
+<h3>Why is my WooCommerce product feed not updating in Merchant Center?</h3>
+<p>Check the sync status in the extension or the feed plugin's schedule, and whether WordPress cron is running. Caching can serve an old feed file, and Merchant Center only refetches on its own schedule, so allow time after fixing it.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -400,9 +421,7 @@
               <li><a href="#step-4-set-shipping-and-returns">Step 4: Set shipping and returns</a></li>
               <li><a href="#common-disapprovals-and-how-to-fix-them">Common disapprovals and how to fix them</a></li>
               <li><a href="#google-merchant-center-on-wordpress-with-or-without-woocommerce">Google Merchant Center on WordPress: with or without WooCommerce</a></li>
-              <li><a href="#product-structured-data">Product structured data</a></li>
-              <li><a href="#from-free-listings-to-shopping-ads">From free listings to Shopping ads</a></li>
-              <li><a href="#quick-check">Quick check</a></li>
+              <li><a href="#merchant-center-feed-checklist-for-woocommerce">Merchant Center feed checklist for WooCommerce</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>

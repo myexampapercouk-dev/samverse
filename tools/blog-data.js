@@ -273,6 +273,8 @@ module.exports = [
   <li>List the monthly app or plugin charges on your billing page, so you compare real running costs, not just the plan price.</li>
 </ol>
 
+<p>If you are also considering a site built from scratch, see <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs a custom-coded website</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you are choosing a platform for a new site, or planning to move off Wix or Shopify and need URLs, content and redirects carried over without losing search traffic. See <a href="/website-redesign/">website redesign</a> and <a href="/wordpress-migration/">WordPress migration</a>, or <a href="/#contact">send your website address</a> for a review.</p>
 
@@ -1589,12 +1591,12 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
     title: 'Gutenberg vs Elementor: Which WordPress Editor Should You Use in 2026?',
     description: 'Gutenberg vs Elementor compared: editing, speed, design freedom, cost, lock-in and client editing, with a side-by-side build table and when to pick each.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['elementor-developer', 'figma-to-wordpress', 'wordpress-speed-optimization'],
     body: `
 <p>Gutenberg vs Elementor comes down to this: Gutenberg, WordPress's built-in block editor, is free, lighter and keeps your content native to WordPress, while Elementor, a drag-and-drop page builder plugin, gives non-technical teams more visual design control at the cost of extra code and a yearly Pro licence. Choose Gutenberg for blogs and lean business sites, and Elementor for design-heavy marketing pages your team wants to edit visually.</p>
-<p><strong>Short answer:</strong> if your team mainly writes posts and updates text, pick Gutenberg. If your team wants to design and change landing pages visually without a developer, pick Elementor. If you need both, use Gutenberg for posts and Elementor for a handful of marketing pages. I build with both, so this is not tied to one tool.</p>
+<blockquote><strong>Short answer:</strong> Gutenberg vs Elementor: pick Gutenberg, the free built-in block editor, if your team mainly writes posts and edits text and you want a lighter site. Pick Elementor if your team wants to design landing pages visually without a developer. Many business sites use Gutenberg for posts and Elementor for a handful of marketing pages.</blockquote>
 
 <h2>Gutenberg or Elementor? A 30-second decision</h2>
 <table>
@@ -1625,10 +1627,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   </tbody>
 </table>
 
-<h2>What each one actually is</h2>
-<p><strong>Gutenberg</strong> was the project name for the block editor that became WordPress's default editor in version 5.0, at the end of 2018. Every paragraph, image, heading and button is a block, and blocks are saved as normal WordPress content. With a block theme, the same blocks are used in the Site Editor to design headers, footers and page templates, and global colours and fonts are managed in one place. See <a href="/blog/block-themes-full-site-editing/">block themes and full site editing</a>.</p>
-<p><strong>Elementor</strong> is a separate plugin that replaces the editing screen with its own visual canvas. You drag widgets into containers and style each one, with separate settings for desktop, tablet and mobile. The free version covers page design; Elementor Pro adds a theme builder for headers, footers and templates, forms, popups, dynamic content and WooCommerce templates.</p>
-
 <h2>Editing experience</h2>
 <p>Elementor feels like a design tool. You see exactly what visitors will see, click any element to change it and preview each screen size. For non-technical teams that's reassuring. The downside is that every widget has dozens of settings, so pages built by different people can drift apart: slightly different spacing, fonts and button styles on every page.</p>
 <p>Gutenberg feels like a writing tool that has grown layout features. Writing and editing text is quick and clean, and reusable patterns make it easy to insert a ready-made section. Building complex layouts from scratch is harder for beginners, and the design options available depend heavily on the theme. The upside is consistency: styles come from the theme, so pages tend to look like they belong together.</p>
@@ -1652,10 +1650,6 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h2>Lock-in and switching later</h2>
 <p>Elementor stores layouts in its own format. If you deactivate it, the text on your pages usually remains as plain, unstyled content, but the layout and design are gone, and pages built with it have to be rebuilt in whatever you move to. That's manageable for a ten-page site and a real project for a large one.</p>
 <p>Gutenberg content is native WordPress content and survives a theme change far better. Third-party block plugins create a smaller version of the same problem: remove the plugin and its blocks stop displaying properly.</p>
-
-<h2>Client editing: who will update the site?</h2>
-<p>This is often the deciding question. If the owner or marketing team wants to change headlines, swap images and build new landing pages without calling a developer, Elementor is easier to learn. The risk is that the same freedom makes it easy to break a layout or a mobile view by accident. Elementor Pro's role manager can limit some users to editing content only.</p>
-<p>With Gutenberg, a developer can lock blocks and patterns so editors can change text and images but not move or delete sections, which suits teams who mainly publish posts and update existing pages. Whichever you choose, ask for a short handover showing your team what to edit and what to leave alone; see editing your website content in WordPress.</p>
 
 <h2>Gutenberg vs Elementor for agencies and handovers</h2>
 <p>If you are an agency or freelancer building for clients, think about the person who inherits the site. A visual editor means fewer support calls but more broken mobile layouts; a locked block setup means less breakage but more requests for new sections. Whichever you choose, document which templates, global styles and patterns exist, and give the client a short screen recording of the edits they are likely to make.</p>
@@ -1708,16 +1702,16 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <p>Your theme matters just as much as the builder; see <a href="/blog/how-to-choose-wordpress-theme/">how to choose a WordPress theme</a>.</p>
 
-<h2>My recommendation</h2>
-<p>For most small business websites where owners want to update pages themselves, <strong>Elementor</strong> offers the best balance of design freedom and ease of use, as long as it's built carefully. For content-heavy sites and blogs where speed is critical, <strong>Gutenberg</strong> is an excellent, lightweight choice. You can also combine them: Gutenberg for blog posts, and Elementor for key marketing pages. If you want it built properly from the start, you can <a href="/elementor-developer/">hire an Elementor developer</a> who also builds with blocks, so the advice isn't tied to one tool.</p>
-
-<p>Lock-in shows most clearly when a plugin is removed; see <a href="/blog/wordpress-shortcodes-vs-blocks/">shortcodes vs blocks vs page-builder widgets</a> for how each one stores your content.</p>
-
-<h2>Quick check: see what your current pages are built with</h2>
+<h2>How to move a page from Elementor to Gutenberg</h2>
+<p>Switching does not have to happen all at once. Move pages one at a time:</p>
 <ol>
-  <li>In the WordPress admin, open <strong>Pages</strong>. Pages built with Elementor show an "Elementor" label next to the title.</li>
-  <li>Open <strong>Plugins</strong> and check whether Elementor and Elementor Pro are active and up to date.</li>
-  <li>Run one Elementor page and one block editor page through <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and compare the mobile results.</li>
+  <li>Back up the site and work on a staging copy.</li>
+  <li>Screenshot the Elementor page at desktop and mobile widths, so you have a reference.</li>
+  <li>Create a new draft page in Pages &gt; Add New, which opens in the block editor.</li>
+  <li>Rebuild each section with core blocks: Cover, Columns, Group, Image and Buttons. Save sections you repeat, such as a call to action, as synced patterns.</li>
+  <li>Paste text in as plain text, so Elementor's markup does not come across with it.</li>
+  <li>Check the mobile view, then swap the slugs so the new page keeps the old URL and no redirect is needed.</li>
+  <li>Deactivate Elementor only when no page, header, footer or popup still uses it. Anything left behind shows as broken layout or raw shortcodes.</li>
 </ol>
 
 <h2>When to get help</h2>
@@ -1736,8 +1730,11 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 <h3>Does Elementor work with Gutenberg on the same site?</h3>
 <p>Yes. Elementor and Gutenberg can run side by side: you choose per page or post, so blog posts can use the block editor while the homepage and landing pages use Elementor. Keep one theme and shared colours and fonts so both kinds of page look consistent.</p>
 
-<h3>Which is better for a blog?</h3>
-<p>Gutenberg. Writing is faster, content stays native to WordPress, and post templates can be designed in the Site Editor or by your theme.</p>
+<h3>Is Elementor built on Gutenberg?</h3>
+<p>No. Elementor is a separate plugin that replaces the editor on pages you open with "Edit with Elementor". It stores the layout in its own data, so those pages cannot be edited as normal blocks, and switching later means rebuilding them.</p>
+
+<h3>Gutenberg or Elementor: which is easier for beginners?</h3>
+<p>For writing and updating posts, Gutenberg is easier because there is less to learn. For designing a page from scratch, most beginners find Elementor's drag-and-drop panel more intuitive. A site built with good block patterns narrows the gap a lot.</p>
 `,
   },
   {
@@ -2284,6 +2281,8 @@ Redirect 301 /products/inverter-batteries/ https://www.example.com/batteries/</c
   <li>Fetch <code>yourdomain.com/sitemap.xml</code> (or <code>/sitemap_index.xml</code> on Yoast and Rank Math sites) and save every URL listed.</li>
 </ol>
 <p>Every URL on either list needs to stay the same or get a 301 redirect on launch day. After launch, <code>curl -I https://yourdomain.com/old-page/</code> should return <code>301</code> with the new address in the <code>location</code> line.</p>
+
+<p>After launch, crawl the new site to catch pages left out of the menus; see <a href="/blog/orphan-pages-fix/">how to fix orphan pages</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the site already brings steady traffic or enquiries, when the platform or domain is changing too, or when nobody on your side has done a redirect map before. A <a href="/website-redesign/">website redesign</a> is built on a staging site, keeps important URLs, maps and tests redirects, carries over SEO settings and is watched in Search Console after launch. Not sure you need a full redesign? Read <a href="/blog/signs-you-need-a-new-website/">refresh vs redesign</a> first, or <a href="/#contact">send your website address</a>.</p>
@@ -3112,6 +3111,8 @@ Target:  https://example.com/$1/</code></pre>
 curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|location)"</code></pre>
 <p>Each should return <code>301</code> with a <code>location</code> pointing at the matching new page. If you see 404, check the rule in your redirect plugin; if you see 302, change it to a permanent 301. A week later, open <strong>Indexing &gt; Pages</strong> in Search Console and check the "Not found (404)" list for any Wix paths you missed.</p>
 
+<p>After moving, check for insecure images and scripts; see <a href="/blog/mixed-content-warnings-fix/">fixing mixed content warnings in WordPress</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the Wix site has many blog posts, a store or bookings, or rankings you cannot afford to lose. My <a href="/wordpress-migration/">website migration</a> service rebuilds the site on WordPress staging, maps and redirects every old URL, handles the domain, SSL and email records, and keeps the Wix site live until the new one is tested. Send your website address for a free review and a fixed quote.</p>
 
@@ -3575,12 +3576,14 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'WordPress vs Custom-Coded Website: Differences, Costs and Which Is Right for Your Business',
     description: 'The difference between a WordPress website and a custom coded website: cost, launch time, editing, speed, SEO, security and upkeep, and which suits you.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-website-development', 'hire-wordpress-developer', 'website-for-startups'],
     body: `
 <p>The difference between a WordPress website and a custom-coded website is what you start from. WordPress is a ready-made content management system: a developer builds your site on it with a theme, plugins and sometimes custom code, and your team edits pages through its dashboard. A custom-coded site is written from scratch, or with a framework such as React, Next.js or Laravel, so every feature, every editing screen and every future change has to be built by developers.</p>
 <p>For most business websites, WordPress is quicker to launch, cheaper and easier for your team to update. Custom code makes sense when the website is really a piece of software. Below is a full comparison, what "custom" can actually mean, and why my own site is custom-coded while I still recommend WordPress for most clients. If you've decided on WordPress and want someone to build it, see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
+
+<blockquote><strong>Short answer:</strong> The difference between a WordPress website and a custom coded website is the starting point. WordPress is a ready-made content management system your team edits through a dashboard, extended with themes and plugins. A custom coded site is written from scratch or on a framework, so every feature and editing screen has to be built by developers.</blockquote>
 
 <h2>What is the difference between a WordPress website and a custom coded website?</h2>
 <p>In short: WordPress gives you a tested editing system and thousands of ready features on day one, and you pay mainly for design and setup. A custom coded website gives you exactly what you specify and nothing more, and you pay for every part, including the screens your team uses to edit it.</p>
@@ -3675,24 +3678,19 @@ Facts to check:    Warranty terms, service areas</code></pre>
   <li>How would another developer take over if needed?</li>
 </ul>
 
-<h2>Five questions to decide</h2>
-<ol>
-  <li>Who will update the site, and how often?</li>
-  <li>Does it need features no existing plugin provides, or just forms, a store or bookings set up well?</li>
-  <li>Who will maintain it in three years, and could another developer take it over?</li>
-  <li>What's the budget for building it, and for running it each year?</li>
-  <li>How soon does it need to launch?</li>
-</ol>
-<p>If your answers are "our team, often", "standard features", "anyone" and "soon", WordPress is the practical choice.</p>
-
-<p>Launching a startup? See the <a href="/blog/startup-website-checklist/">startup website checklist</a> for what to launch with first.</p>
-
-<h2>Quick check: what is your current site built on?</h2>
-<ol>
-  <li>Visit <code>yourdomain.com/wp-admin/</code>. A WordPress login screen means the site runs on WordPress.</li>
-  <li>Right-click any page, choose <strong>View page source</strong> and search for <code>wp-content</code> or a framework name.</li>
-  <li>Ask yourself who updated the site last and how. If every small change needs a developer, note that before choosing the next build.</li>
-</ol>
+<h2>WordPress vs custom coded website at a glance</h2>
+<table>
+  <thead><tr><th></th><th>WordPress</th><th>Custom coded</th></tr></thead>
+  <tbody>
+    <tr><td>Starting point</td><td>Ready-made CMS, theme and plugins</td><td>Blank project or framework</td></tr>
+    <tr><td>Time to launch</td><td>Usually faster</td><td>Usually longer, as more is built</td></tr>
+    <tr><td>Editing content</td><td>Built-in dashboard</td><td>Only what developers build, or a separate CMS</td></tr>
+    <tr><td>Upfront cost</td><td>Usually lower</td><td>Usually higher</td></tr>
+    <tr><td>Ongoing work</td><td>Core, plugin and theme updates</td><td>Framework and dependency updates by developers</td></tr>
+    <tr><td>Who can take over</td><td>Many WordPress developers</td><td>Developers who know that codebase and stack</td></tr>
+    <tr><td>Best for</td><td>Business sites, blogs, most stores</td><td>Web apps, unusual logic, very specific performance needs</td></tr>
+  </tbody>
+</table>
 
 <h2>When to get help</h2>
 <p>Get help when you are not sure which approach fits, or your current site is hard to edit and you want to rebuild it. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> and <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/#contact">send your website address</a> and a note on what the site must do.</p>
@@ -3710,6 +3708,12 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>For websites, very nearly. Custom themes, blocks, plugins and integrations let a developer build almost anything a business site needs while keeping the dashboard. Complex applications are where a dedicated framework becomes the better tool.</p>
 <h3>Can I switch from one to the other later?</h3>
 <p>Yes, but it's a rebuild, not a conversion. Content can usually be moved, and old URLs must be redirected to protect rankings. Choosing well at the start saves paying for the site twice.</p>
+
+<h3>Which is faster to build, WordPress or a custom coded website?</h3>
+<p>WordPress is usually faster, because the editing system, user accounts, media library and many features already exist. A custom coded site has to build those, so it normally takes longer unless it is a very simple static site.</p>
+
+<h3>Who can maintain a custom coded website?</h3>
+<p>Developers who know the framework and can read the original code. Ask for the full source code, documentation and access to the repository and hosting at handover, so another developer can take over if the first one is unavailable.</p>
 `,
   },
   {
@@ -5197,6 +5201,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ol>
 <p>Check that you can log in to the registrar, DNS and hosting accounts yourself.</p>
 
+<p>If the padlock is missing after SSL is installed, see <a href="/blog/mixed-content-warnings-fix/">how to fix a mixed content warning in WordPress</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when accounts are in a past developer's name, when you need to move host or domain without downtime, or when email records are a mystery. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and launch with every account in your name, and <a href="/wordpress-migration/">website migration and hosting setup</a> handles DNS, SSL and email records when changing host. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -5215,16 +5221,18 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'website-maintenance-cost-india',
-    seoTitle: "Website Maintenance Cost in India: Monthly and Yearly",
-    title: 'Website Maintenance Cost in India: Monthly Plans, Yearly Running Costs and What\'s Included',
+    seoTitle: "Website Maintenance Cost in India: Packages and Plans",
+    title: 'Website Maintenance Cost in India: Monthly Packages, Yearly Running Costs and What Is Included',
     description: "Website maintenance cost in India: what monthly plans and AMCs include, yearly domain and hosting costs, what costs extra, and how to choose a provider.",
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
 <p>For small and medium business websites in India, freelance WordPress maintenance plans typically cost about <strong>₹1,500 to ₹6,000 per month</strong>, depending on the size of the site, how often it changes and whether it is an online store. On top of maintenance, every site has yearly running costs: a domain (₹500 to ₹1,200 a year), hosting (₹2,500 to ₹15,000 a year) and any premium theme or plugin licences.</p>
 <p>This guide breaks down the monthly and yearly cost of running a WordPress website in India, what website maintenance packages should include, what usually costs extra, and how to choose between a freelancer, an agency, your host or doing it yourself.</p>
+
+<blockquote><strong>Short answer:</strong> Website maintenance in India usually costs about ₹1,500 to ₹6,000 a month for a small or medium WordPress site with a freelancer, more for stores. On top come yearly running costs: a domain (₹500 to ₹1,200), hosting (₹2,500 to ₹15,000) and any premium licences. Compare website maintenance packages by what they include, not price alone.</blockquote>
 
 <h2>The monthly and yearly cost of running a WordPress website</h2>
 <table>
@@ -5302,17 +5310,6 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <p>Some owners skip a plan and pay for changes by the hour instead; see <a href="/blog/fixed-price-vs-hourly-website-projects/">WordPress developer hourly rate in India</a> for how hourly work is usually billed.</p>
 
-<h2>Freelancer, agency, host or do it yourself?</h2>
-<table>
-<thead><tr><th>Option</th><th>Suits</th><th>Watch out for</th></tr></thead>
-<tbody>
-<tr><td>Freelancer</td><td>Small and medium sites wanting direct contact</td><td>Holiday cover and response times</td></tr>
-<tr><td>Agency</td><td>Larger sites needing a team</td><td>Higher price, account managers between you and developers</td></tr>
-<tr><td>Hosting company</td><td>Basic updates and backups</td><td>Usually no checks of forms, checkout or layout after updates</td></tr>
-<tr><td>Do it yourself</td><td>Simple sites with a technical owner</td><td>Time, skipped updates, no tested restores</td></tr>
-</tbody>
-</table>
-
 <h2>Red flags in cheap maintenance offers</h2>
 <ul>
 <li>No written scope, just "complete maintenance" or "full support".</li>
@@ -5330,14 +5327,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>What you should receive for the money each month</h2>
 <p>Whatever the price, a maintenance plan should leave visible evidence of work. Each month you should be able to see which updates ran and when, that backups exist and where, uptime for the month, the result of form and checkout tests, the content changes completed, and any issue found with a recommendation. If you can't see this, ask for it; a provider doing the work properly will have the information ready.</p>
 
-<h2>Does the cost differ between cities?</h2>
-<p>Maintenance is remote work, so your city matters less than the provider's experience and the scope. A business in Mumbai, Delhi or a smaller city can work with a provider anywhere in India. What matters is overlap in working hours, a clear way to reach someone in an emergency, and GST invoicing if your business needs it. If you prefer someone local, see the <a href="/wordpress-shopify-developer-india/">WordPress developer in India</a> page for the cities I cover.</p>
-
 <h2>Who pays for plugin and theme licences?</h2>
 <p>Premium licences are a recurring cost that is easy to overlook. Some providers use their own agency licences on client sites; that is convenient, but if you leave, the licence goes with them and updates stop. Ideally the licences are bought in your business name, so renewals and access stay with you. Ask which licences your site depends on, when each renews, and who pays.</p>
-
-<h2>Is website maintenance worth the cost?</h2>
-<p>It is worth it when the website brings in enquiries or orders. One unnoticed broken form, an expired SSL certificate or a hacked site can cost more in lost business and repair than a year of maintenance. If the site brings in nothing, fix that first; maintaining an ineffective site carefully doesn't help. <a href="/blog/website-maintenance-vs-management/">Website maintenance vs management</a> explains the difference between keeping a site running and actively improving it.</p>
 
 <h2>How to choose a maintenance plan</h2>
 <ol>
@@ -5350,9 +5341,18 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ol>
 <p><a href="/blog/choose-wordpress-maintenance-provider/">How to choose a WordPress maintenance provider</a> and the <a href="/blog/wordpress-maintenance-checklist/">WordPress maintenance checklist</a> help you compare. To see what a plan from me covers, visit <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or see the full cost of building a site in <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a>.</p>
 
-<h2>Quick check: how much maintenance does your site need?</h2>
-<p>Before you compare maintenance packages, measure your own site. In wp-admin, open <strong>Dashboard &gt; Updates</strong> and count the pending plugin, theme and core updates, then open <strong>Tools &gt; Site Health &gt; Info</strong> and note the PHP version and the number of active plugins. With SSH access, <code>wp plugin list --update=available</code> gives the same list in one line.</p>
-<p>A small brochure site with a handful of plugins and few pending updates needs a lighter plan than a WooCommerce store with dozens of plugins and months of skipped updates. Send these numbers with any quote request so every provider prices the same site, and ask each one how they test updates and how they would restore a backup.</p>
+<h2>Questions to ask before you sign a maintenance package</h2>
+<ul>
+  <li>How often are core, plugins and themes updated, and is each update tested on staging first?</li>
+  <li>Where are backups stored, how many days are kept, and when was a restore last tested?</li>
+  <li>Is uptime monitored, and how fast do you respond when the site goes down?</li>
+  <li>Is malware clean-up included, or charged separately?</li>
+  <li>How many content changes or hours are included each month, and what happens to unused time?</li>
+  <li>What do you send each month: an update log, backup status, speed and security checks?</li>
+  <li>Who owns the hosting, domain and licences, and in whose name are they?</li>
+  <li>What is the notice period, and what do you hand over if we stop?</li>
+</ul>
+<p>Clear written answers to these matter more than the monthly figure, wherever in India the provider is based; see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> for how remote support works.</p>
 
 <h2>When to get help</h2>
 <p>Get help when updates have been skipped for months, when the site takes orders or enquiries you cannot afford to lose, or when nobody on the team has time to check backups and security each month. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers tested updates with a backup first, uptime and security monitoring, small content changes and a monthly report, with hosting, domain and licences kept in your name. Send your website address and the numbers from the check above for a fixed monthly quote.</p>
@@ -5370,6 +5370,12 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>An AMC is billed yearly and can work out cheaper per month, but you commit for the year. A monthly plan costs a little more but is easier to cancel if the service isn't right.</p>
 <h3>Can I maintain my WordPress website myself?</h3>
 <p>Yes, if you are comfortable taking backups, updating carefully, testing forms and restoring when something breaks. Many owners start this way and switch to a plan when the site becomes business-critical.</p>
+
+<h3>How much does a website maintenance package cost per year?</h3>
+<p>At ₹1,500 to ₹6,000 a month, a year of maintenance comes to roughly ₹18,000 to ₹72,000, before the domain, hosting and premium licences. Some providers discount an annual AMC paid upfront, so compare the yearly total and what is included.</p>
+
+<h3>Do website maintenance packages include content changes?</h3>
+<p>Most include a set number of small changes or hours each month, such as text, image or price updates. New pages, redesigns and new features are usually quoted separately, so check the limit and how extra work is billed before you sign.</p>
 `,
   },
   {
@@ -5620,6 +5626,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ol>
 
 <p>If Search Console says pages are blocked, read <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">indexed, though blocked by robots.txt</a> before changing anything.</p>
+
+<p>To check your sitemap lists only the pages you want indexed, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when key pages stay in "Discovered" or "Crawled, currently not indexed" for weeks, or a redesign or migration dropped pages out of the index. <a href="/wordpress-seo-services/">WordPress SEO services</a> start with an audit of crawling, sitemaps, internal links and thin or duplicate pages. To start, <a href="/#contact">send your website address</a>.</p>
@@ -6570,6 +6578,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>Quick check</h2>
 <p>Place one test order for each payment method before launch, including cash on delivery, from a phone using a customer account and as a guest. Then check <strong>WooCommerce &gt; Orders</strong> for the right status, <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong> for failed actions, and both inboxes (yours and the customer's) for the order emails. Cancel and refund the test orders afterwards so stock and reports stay accurate.</p>
 
+<p>To list products on Google for free after launch, see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
+
 <h2>When to get help</h2>
 <p>If test orders fail, payments succeed but orders stay pending, or order emails don't arrive, fix that before the first real customer. Setting up and testing gateways, shipping, taxes and order emails is part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
@@ -6755,6 +6765,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 
 <h2>Quick check: what schema does your page output now?</h2>
 <p>Enter a page URL in <a href="https://search.google.com/test/rich-results" rel="noopener">Google's Rich Results Test</a> to see which rich result types Google can read and any errors, then run the same URL through the <a href="https://validator.schema.org/" rel="noopener">Schema Markup Validator</a> to see every type on the page. Two Organization or LocalBusiness entries usually means your theme and SEO plugin are both outputting schema. In Search Console, the <strong>Enhancements</strong> section lists errors across the whole site.</p>
+
+<p>For stores, product data also feeds Google Shopping; see <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce and WordPress</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when plugins output conflicting schema, when your markup does not match your Business Profile, or when you need custom JSON-LD the plugins cannot produce. Structured data is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for custom markup. To start, <a href="/#contact">send your website address</a>.</p>
@@ -8011,6 +8023,8 @@ Sitemap: https://example.com/sitemap_index.xml</code></pre>
   <li>In Search Console, open <strong>Security &amp; Manual Actions</strong> and check both reports say no issues detected.</li>
   <li>Search Google for <code>site:yourdomain.com</code> and scan the results for pages you did not create, such as casino or pharmacy titles, a common sign of a hack.</li>
 </ol>
+
+<p>If you suspect bad links, run a <a href="/blog/backlink-audit-disavow/">toxic backlink audit</a> before disavowing anything.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you cannot find the cause, or have found it and want it fixed properly. An audit with fixes made on your site is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>; if the drop came with spam pages or redirects, start with <a href="/wordpress-malware-removal/">WordPress malware removal</a>. To start, <a href="/#contact">send your website address</a>.</p>
@@ -9356,6 +9370,8 @@ ls -lh backup-test.sql</code></pre>
   <li>Test the product URL in <a href="https://search.google.com/test/rich-results" rel="noopener">Google's Rich Results Test</a> and confirm a valid Product (merchant listing) item with price and availability.</li>
   <li>In GA4, open <strong>Reports, Monetization, E-commerce purchases</strong> (if e-commerce tracking is set up) and compare views with add-to-carts for that product.</li>
 </ol>
+
+<p>Clean titles, prices and images also get products approved faster in <a href="/blog/google-merchant-center-woocommerce/">Google Merchant Center for WooCommerce</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when product pages load slowly, when variations confuse shoppers, or when views rarely turn into add-to-carts. In <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a>, or <a href="/#contact">send your website address</a>.</p>
@@ -11560,6 +11576,8 @@ wp option update blog_public 0</code></pre>
 <h2>Quick check: is your staging site hidden from Google?</h2>
 <p>Open your staging address in a private browser window. It should ask for a password or show a login screen. If it opens freely, run <code>curl -I https://staging.yourdomain.com/</code> and look for an <code>x-robots-tag: noindex</code> header, and in the staging WordPress admin check that <strong>Settings, Reading, Discourage search engines</strong> is ticked. Finally, search Google for <code>site:staging.yourdomain.com</code>; any results mean it has already been indexed.</p>
 
+<p>Staging is also the safest place to track down a clash between plugins; see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you have no staging site, when pushing changes to live has gone wrong before, or when the site takes orders and cannot afford mistakes. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> handles updates and changes with a backup first and testing afterwards. To start, <a href="/#contact">send your website address</a>.</p>
 
@@ -13668,12 +13686,12 @@ function my_only_free_shipping( $rates ) {
     title: 'SEO Doorway Pages: What They Are and How to Build City Pages That Rank Without Becoming Doorways',
     description: 'SEO doorway pages explained: what Google\'s policy says, examples, a 10-point audit for city and area pages, the unique content each needs and how to fix them.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
 <p>SEO doorway pages are near-identical pages built to rank for many city or keyword variations that all send visitors to the same place, and Google's spam policies treat them as spam. Local landing pages are safe, and useful, when each one is about a place you genuinely serve and contains things only true of that place: the branch or team that covers it, jobs you've done there, local reviews, coverage and response times.</p>
-<p><strong>Short answer:</strong> if you could swap the city name on a page and nothing else would be wrong, it is a doorway. A set of thin city pages can hold back the pages themselves and the site around them.</p>
+<blockquote><strong>Short answer:</strong> Doorway pages are near-identical pages built to rank for many cities or keyword variations that all funnel visitors to one place, and Google treats them as spam. A city page is safe when it holds facts only true of that place: the team covering it, local jobs, reviews and response times. If swapping the city name changes nothing else, it is a doorway.</blockquote>
 <p>It covers the principles for any city, area or locality page. If you have several branches, also read <a href="/blog/multi-location-business-website/">how to structure a multi-location business website</a>. If you travel to customers and have no shopfront, <a href="/blog/service-area-business-seo/">SEO for service-area businesses</a> covers the Business Profile side.</p>
 
 <h2>What Google's doorway page policy says</h2>
@@ -13704,14 +13722,6 @@ function my_only_free_shipping( $rates ) {
     <tr><td>Generated in bulk, by a plugin or AI</td><td>Written or checked by someone who knows the area and the work done there</td></tr>
   </tbody>
 </table>
-
-<h2>When a location page makes sense</h2>
-<ul>
-  <li><strong>You have a branch, office, clinic or showroom there.</strong> A page per real location is expected, and it pairs with that branch's Google Business Profile.</li>
-  <li><strong>You genuinely serve the area and have local work to show:</strong> projects, clients, reviews.</li>
-  <li><strong>Something about the service changes there:</strong> different coverage, response times, charges, local conditions or rules.</li>
-  <li><strong>People search for it.</strong> Search Console queries that include the area name, or Keyword Planner data, show whether a page would answer a real search.</li>
-</ul>
 
 <h2>When not to build one</h2>
 <ul>
@@ -13778,14 +13788,17 @@ function my_only_free_shipping( $rates ) {
 </ol>
 
 
-<h2>Quick check: are your local pages unique?</h2>
-<ol>
-  <li>Search <strong>site:yourdomain.com</strong> plus a city name and check each local page shows its own title and description.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for local pages under "Duplicate without user-selected canonical" or "Crawled - currently not indexed".</li>
-  <li>Open two local pages side by side and check each has details only true for that area, such as projects, address or service radius.</li>
-</ol>
-
-<p>For a worked example of these ideas in one city, see <a href="/blog/local-seo-pune-businesses/">local SEO for Pune businesses</a>.</p>
+<h2>Doorway pages vs landing pages: the difference</h2>
+<table>
+  <thead><tr><th></th><th>Doorway page</th><th>Useful landing page</th></tr></thead>
+  <tbody>
+    <tr><td>Why it exists</td><td>To catch one more search variation</td><td>To serve people in that place or with that need</td></tr>
+    <tr><td>Content</td><td>Template text with the city or keyword swapped</td><td>Facts, photos, jobs and reviews specific to it</td></tr>
+    <tr><td>Where it leads</td><td>Pushes everyone to the same main page</td><td>Lets the visitor enquire or book right there</td></tr>
+    <tr><td>Navigation</td><td>Hidden or only in a footer list</td><td>Linked from menus and related pages</td></tr>
+    <tr><td>How many</td><td>Dozens or hundreds at once</td><td>As many as places you genuinely serve</td></tr>
+  </tbody>
+</table>
 
 <h2>When to get help</h2>
 <p>Get help when local pages are near copies of each other, when they are not getting indexed, or when you need local pages planned around real service areas. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -13797,13 +13810,14 @@ function my_only_free_shipping( $rates ) {
 <p>Yes. Google can rank them lower or remove them, and a large set of thin doorways can hold back the rest of the site. Merging them into fewer, genuinely useful pages is the safe fix.</p>
 <h3>Are city pages considered doorway pages?</h3>
 <p>Not automatically. A city page for a real branch, or an area you serve with genuine local content, is a normal and useful page. It becomes a doorway when it's one of a set of copies with only the place name changed.</p>
-<h3>How many location pages should I create?</h3>
-<p>As many as you have real locations, plus areas where you have genuine local work and something specific to say. For most small businesses that means a handful, not dozens. Start with your busiest two or three areas.</p>
 <h3>How much unique content does a location page need?</h3>
 <p>Enough that the local information is the main part of the page: who serves the area, local projects and reviews, coverage, timings and local questions. There's no minimum word count; a short page with real local detail beats a long templated one.</p>
 
-<h3>Can I use AI to write location pages?</h3>
-<p>As a drafting aid, carefully. The facts that make a location page useful, such as local jobs, reviews and coverage, have to come from you, and mass-producing pages with AI falls under Google's scaled content abuse policy.</p>
+<h3>What is the difference between a doorway page and a landing page?</h3>
+<p>A landing page is written for a real audience and lets visitors act on it. A doorway page exists only to rank for a search variation and pushes visitors elsewhere. The test is whether the page would still be worth having if search engines did not exist.</p>
+
+<h3>Will Google penalise doorway pages?</h3>
+<p>Google's spam policies name doorway abuse, so thin city pages can be demoted by its systems or, in clear cases, get a manual action shown in Search Console. Merging or improving them is the fix, followed by a reconsideration request if there was a manual action.</p>
 `,
   },
   {
@@ -14207,6 +14221,8 @@ wp cap list editor</code></pre>
   <li>In your hosting panel, check the resource usage or error logs for the times any alert fired.</li>
 </ol>
 
+<p>Monitoring is usually part of a maintenance plan; see <a href="/blog/website-maintenance-cost-india/">website maintenance cost and packages in India</a> for what else is included.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the site goes down often, when your host blames plugins and plugins blame the host, or when you would rather someone else watched. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -14521,12 +14537,14 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
     title: 'How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email',
     description: 'Developer gone silent? How to regain access to your domain, hosting, WordPress admin, DNS, Google accounts and email, plus a handover checklist.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
 <p>To get your website back from a developer who has stopped replying, work out who controls each piece the site depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email and your Google accounts. Anything registered in your name can usually be recovered from the provider with proof of ownership. Anything in the developer's name needs their cooperation, so start with a polite written request, and deal with the domain first, because whoever controls the domain controls everything that hangs off it.</p>
 <p>It happens more often than people expect: a freelancer changes careers, an agency closes, or a relationship ends over an unpaid invoice, and every login turns out to sit with someone else. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take on sites I didn't build, and the first step is a health check that includes who has administrator access and whose name the licences are in. Below is the order I'd work in, what providers typically ask for, and how to stop it happening again.</p>
+
+<blockquote><strong>Short answer:</strong> To get your website back from an old developer, list who controls the domain, DNS, hosting, WordPress admin, email and Google accounts. Recover anything in your name from the provider with proof of ownership. For anything in the developer's name, send a polite written request, and secure the domain first, because it controls everything else.</blockquote>
 
 <h2>First, map who controls what</h2>
 <p>A website is several accounts, not one. Fill in this table first; it shows which problems you can solve alone and which need the developer.</p>
@@ -14591,9 +14609,6 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
 <p><strong>Google Analytics 4:</strong> only an existing administrator can grant access; at the time of writing there is no DNS-based way to claim a property. Ask the developer to add your Google account as Administrator. If they never respond, create a new property in your own account and replace the tag, accepting that the old history stays behind; <a href="/blog/setup-google-analytics-search-console/">setting up GA4 and Search Console</a> covers the setup.</p>
 <p><strong>Google Business Profile:</strong> if Google says someone else manages your business, it offers a way to request access. The current owner is notified, and if they don't respond within Google's set period, you may be able to verify it yourself; follow the steps Google currently shows. For Tag Manager, Google Ads and Meta business assets, ask for access added to your own account, never for the developer's login.</p>
 
-<h2>Step 6: Business email and premium licences</h2>
-<p>If your mailboxes sit on the developer's hosting or in their Google Workspace or Zoho account, ask for access or an export while you can. To move, create the new mailboxes with a provider in your name first, then change the MX, SPF and DKIM records, so no mail is lost in between; <a href="/blog/business-email-options/">business email options compared</a> helps you choose. Premium themes and plugins licensed to the developer stop updating when their licence lapses, and licences often can't be transferred, so buying a fresh one in your business name is usually simpler.</p>
-
 <h2>Secure everything once you're back in</h2>
 <ol>
   <li>Change passwords for the registrar, hosting, WordPress, SFTP and the database user (updating wp-config.php for the database password).</li>
@@ -14602,15 +14617,18 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
   <li>Take a full backup stored away from the server, check for administrators or plugins nobody recognises, then run updates.</li>
 </ol>
 
-<h2>Make sure it can't happen again</h2>
-<p>Keep every account above in a password manager the business controls, with the login email, renewal date and who else has access. Developers should get their own user accounts, never your master logins, and every project should end with a written handover. The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists what to receive.</p>
-
-<h2>Quick check: what do you control today?</h2>
-<ol>
-  <li>Look up the domain at <strong>lookup.icann.org</strong> and note the registrar and expiry date. Check whether the registrant is your business or the old developer.</li>
-  <li>Try the password reset on your hosting account and on <strong>/wp-admin</strong>. Note which emails the reset links go to.</li>
-  <li>In WordPress, if you can log in, open <strong>Users &gt; All Users</strong> and check you have an Administrator account with your own email.</li>
-</ol>
+<h2>What to ask the old developer for</h2>
+<p>Send one written message listing exactly what you need, so nothing is missed:</p>
+<ul>
+  <li><strong>Domain:</strong> the domain unlocked and the transfer (EPP) code, or the domain moved into a registrar account in your name.</li>
+  <li><strong>Hosting:</strong> access to the account, or a full backup of the files and the database (.sql export).</li>
+  <li><strong>WordPress:</strong> a new Administrator account for your email, created under Users &gt; Add New.</li>
+  <li><strong>Search Console:</strong> your Google account added as Owner under Settings &gt; Users and permissions.</li>
+  <li><strong>Google Analytics:</strong> your account given the Administrator role under Admin &gt; Property access management.</li>
+  <li><strong>Business Profile:</strong> your account added as an owner, then their access removed.</li>
+  <li><strong>Licences:</strong> premium theme and plugin keys, and the accounts they were bought with.</li>
+  <li><strong>DNS:</strong> a copy of every DNS record, including email records.</li>
+</ul>
 
 <h2>When to get help</h2>
 <p>Get help when the developer has stopped replying, when the domain or hosting is in their name, or when you need access recovered and moved to your accounts. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -14624,8 +14642,11 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
 <p>You need hosting access. From there, the host's WordPress tools, phpMyAdmin or WP-CLI can change the admin email or create a new administrator, and you reset the password normally.</p>
 <h3>Will my website go down while I take back control?</h3>
 <p>It shouldn't. The risky moments are changing nameservers before copying every DNS record, and letting the domain or hosting lapse while you wait. Copy records first, check renewal dates early and keep a full backup.</p>
-<h3>Can I keep my Google Analytics history?</h3>
-<p>Only if an existing administrator adds you. Search Console is easier, because verifying the domain through DNS gives you the data the property already holds.</p>
+<h3>How do I get my domain back from my web developer?</h3>
+<p>Look up the registrar, then ask the developer to unlock the domain and send the transfer code, or move it into your own account at the same registrar. If you are the listed registrant, the registrar can usually help directly once you prove ownership.</p>
+
+<h3>What if my old developer refuses to hand over the website?</h3>
+<p>Keep everything in writing, check your contract and invoices for who owns the domain and work, and ask each provider about their ownership process. If that fails, get legal advice. Meanwhile, recover whatever is already in your name.</p>
 `,
   },
   {
@@ -18507,6 +18528,8 @@ cf-cache-status: HIT</code></pre>
   <li>Open <strong>Security &amp; Manual Actions</strong> and confirm both Manual actions and Security issues say no issues detected.</li>
 </ol>
 
+<p>For what belongs in the sitemap you submit, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when reports show problems you cannot trace, when clicks drop suddenly, or when the underlying WordPress issues need fixing rather than just listing. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -20552,17 +20575,19 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   },
   {
     slug: 'xml-sitemaps-explained',
-    seoTitle: 'XML Sitemaps Explained: What to Include and How to Submit',
-    title: 'XML Sitemaps Explained: What They Are, What to Include and How to Set Them Up in WordPress',
+    seoTitle: 'XML Sitemaps Explained: WordPress Sitemap XML Setup',
+    title: 'XML Sitemaps Explained: WordPress Sitemap XML Setup, What to Include and How to Submit It',
     description: 'XML sitemaps explained: what a sitemap does, what to include or leave out, how WordPress, Yoast and Rank Math build one, and how to submit it to Google.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-migration', 'website-redesign'],
     body: `
 <p>An XML sitemap is a file that lists the URLs on your website you want search engines to crawl and index, usually with the date each page last changed. It helps Google discover pages, especially on a new site, a large site or pages with few internal links, but it does not force Google to index or rank anything. On WordPress the sitemap is generated for you, by WordPress itself or by an SEO plugin such as Yoast or Rank Math; your job is to keep it clean, submit it in Search Console and check what Google does with the URLs in it.</p>
 <p>In the audit that starts my <a href="/wordpress-seo-services/">WordPress SEO services</a>, the sitemap is one of three lists I compare, alongside what a crawler finds by following links and what Search Console reports as indexed, because a sitemap full of redirects, noindexed pages or staging URLs sends Google mixed signals about which pages matter. Below: what goes in a sitemap, how WordPress builds one, how to submit it and how to read the reports afterwards.</p>
 <p>If Search Console already shows an error for your sitemap, start with <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap "couldn't fetch" explained</a>, then come back here to clean up what the sitemap lists.</p>
+
+<blockquote><strong>Short answer:</strong> An XML sitemap lists the URLs you want search engines to crawl, with when each last changed. WordPress builds one at /wp-sitemap.xml; Yoast and Rank Math replace it with /sitemap_index.xml. Keep only indexable, canonical pages that return 200 in it, submit it under Indexing &gt; Sitemaps in Search Console and list it in robots.txt.</blockquote>
 
 <h2>What an XML sitemap is, and what it isn't</h2>
 <p>A sitemap is a plain list written in a standard format that Google, Bing and other search engines read. A minimal one looks like this:</p>
@@ -20584,15 +20609,6 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
 </ul>
 <p>Larger sites split their URLs into several sitemaps, such as one for posts, one for pages and one for products, and list those in a <strong>sitemap index</strong>. Each sitemap file can hold up to 50,000 URLs or 50 MB uncompressed, so the split is normally about organisation rather than size.</p>
 <p>What a sitemap doesn't do: it doesn't override a noindex tag or a robots.txt block, it doesn't replace internal links, and it doesn't tell Google a page is good enough to index. It is a discovery aid, nothing more.</p>
-
-<h2>Do you need a sitemap?</h2>
-<p>Google's own guidance says a small site of a few hundred pages that is well linked internally may not need one. In practice, every WordPress business site should still have one, because it costs nothing and is generated automatically. It matters most for:</p>
-<ul>
-  <li><strong>New websites</strong> with few links from other sites, where Google has few other ways to find pages.</li>
-  <li><strong>Large sites and stores,</strong> where some products or posts sit many clicks from the homepage.</li>
-  <li><strong>Sites that change often,</strong> such as blogs and WooCommerce stores adding products every week.</li>
-  <li><strong>Pages with few internal links.</strong> A sitemap helps Google find them, but the real fix is linking to them; see <a href="/blog/orphan-pages-fix/">orphan pages and how to fix them</a>.</li>
-</ul>
 
 <h2>What to include and what to leave out</h2>
 <p>The rule is simple: list only pages you want to appear in Google, at the exact URL you want indexed, that load normally.</p>
@@ -20661,9 +20677,6 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   <li><strong>Discovered or Crawled, currently not indexed:</strong> the URLs are fine to list, but Google hasn't chosen to index them yet. That is a quality, linking or patience problem, not a sitemap problem; <a href="/blog/search-console-page-indexing-errors/">page indexing errors explained</a> covers what each status means.</li>
 </ul>
 
-<h2>Image, video and news sitemaps</h2>
-<p>Yoast and Rank Math add the images on each page to the sitemap entry for that page, which is enough for most sites. Google trimmed the image sitemap format in 2022 and now uses only the image location. Video sitemaps matter mainly for self-hosted videos, since YouTube embeds are found through YouTube, and news sitemaps are only for publishers whose content appears in Google News. A typical business site needs nothing beyond what its SEO plugin already produces.</p>
-
 <h2>Common sitemap mistakes</h2>
 <ul>
   <li><strong>Two sitemaps from two plugins,</strong> such as an SEO plugin and a separate sitemap plugin, listing slightly different URLs.</li>
@@ -20675,12 +20688,17 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
 
 <p>Get help when Search Console says the sitemap "Couldn't fetch", discovers far fewer pages than you have, or the sitemap lists noindexed, redirected or thin URLs, and when two plugins each produce their own sitemap. The fix is usually one sitemap source listing only the pages you want indexed.</p>
 
-<h2>Quick check: is your sitemap healthy?</h2>
-<ol>
-  <li>Open <strong>/sitemap_index.xml</strong> (Yoast or Rank Math) or <strong>/wp-sitemap.xml</strong> in a browser and check it lists your real pages.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Sitemaps</strong>. The status should be Success, with a sensible number of discovered pages.</li>
-  <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for a few sitemap URLs. Each should be indexable, not noindexed or redirected.</li>
-</ol>
+<h2>Find your WordPress sitemap XML URL</h2>
+<table>
+  <thead><tr><th>What builds it</th><th>Usual sitemap URL</th><th>Where to switch it on or off</th></tr></thead>
+  <tbody>
+    <tr><td>WordPress core</td><td>/wp-sitemap.xml</td><td>On by default; off if Settings &gt; Reading blocks search engines</td></tr>
+    <tr><td>Yoast SEO</td><td>/sitemap_index.xml</td><td>Yoast SEO &gt; Settings &gt; Site features &gt; XML sitemaps</td></tr>
+    <tr><td>Rank Math</td><td>/sitemap_index.xml</td><td>Rank Math &gt; Dashboard, Sitemap module, then Sitemap Settings</td></tr>
+    <tr><td>All in One SEO</td><td>/sitemap.xml</td><td>All in One SEO &gt; Sitemaps</td></tr>
+  </tbody>
+</table>
+<p>If the URL returns a 404, re-save Settings &gt; Permalinks, purge your cache and check that only one plugin is generating a sitemap. Then submit the working URL in Search Console.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the sitemap lists noindexed, redirected or thin pages, when two plugins produce two sitemaps, or when Search Console shows sitemap errors. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -20696,6 +20714,12 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
 <p>Once is enough. Google rechecks submitted sitemaps by itself, and new posts appear automatically because WordPress plugins update the sitemap as you publish. Resubmit only after a migration or a major restructure if you want to prompt a fresh read.</p>
 <h3>Do I also need an HTML sitemap?</h3>
 <p>It is optional. An HTML sitemap is a normal page of links for visitors, and it can help on large sites, but good navigation and internal links do the same job. It doesn't replace the XML sitemap.</p>
+
+<h3>Why is my WordPress sitemap XML showing a 404?</h3>
+<p>Usually the permalink rules need refreshing, a cache is serving an old response, or the SEO plugin's sitemap feature is switched off. Re-save Settings &gt; Permalinks, clear caches, confirm the feature is enabled and test the URL in a private window.</p>
+
+<h3>Should I use the WordPress core sitemap or my SEO plugin's?</h3>
+<p>Use one. If you run Yoast, Rank Math or All in One SEO, their sitemap replaces the core one and gives more control over what is excluded. Without an SEO plugin, the core sitemap at /wp-sitemap.xml is fine for most small sites.</p>
 `,
   },
   {
@@ -27651,7 +27675,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
     title: 'Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It',
     description: 'Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
@@ -27659,15 +27683,7 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
 <p>Every landing page in my <a href="/landing-page-design/">landing page design</a> service comes with a thank-you page, and conversions are counted on successful submissions, through the thank-you page or the form's success event, never on clicks of the submit button, which also count failed attempts.</p>
 <p>A thank-you page can't help if submissions fail or the emails never arrive. If enquiries have dried up, check that first with <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
 
-<h2>Thank-you page or inline message?</h2>
-<table>
-  <thead><tr><th>Option</th><th>Strengths</th><th>Weaknesses</th><th>Best for</th></tr></thead>
-  <tbody>
-    <tr><td>Redirect to a thank-you page</td><td>Room for next steps, easy to track, a separate page for each form or campaign</td><td>People can reach it without submitting, so counts need care</td><td>Enquiry and quote forms, ad landing pages, downloads</td></tr>
-    <tr><td>Inline confirmation message</td><td>No extra page load, the visitor stays where they were</td><td>Easy to miss on a phone if it appears off screen; tracking needs a success event</td><td>Pop-ups, multi-step forms, newsletter sign-ups, forms that hand over to WhatsApp</td></tr>
-  </tbody>
-</table>
-<p>This site, which is custom-coded rather than built on WordPress, uses the inline approach because its form hands over to WhatsApp. Once an enquiry passes the form's spam checks, it is emailed, the form shows "Thanks! Your enquiry has been sent. Opening WhatsApp...", a GA4 generate_lead event records the lead along with whether the email went through, and WhatsApp opens with the details already typed in. Either approach works if the confirmation is obvious and tracking fires only on success.</p>
+<blockquote><strong>Short answer:</strong> A thank-you page after form submit confirms the enquiry arrived, says what happens next and offers a faster route such as WhatsApp. Set the form to redirect there only after a successful submission, keep the page noindexed, and track it as one conversion in GA4, Google Ads and Meta so each enquiry is counted once.</blockquote>
 
 <h2>What to put on a thank-you page</h2>
 <ol>
@@ -27757,25 +27773,22 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <h3>Test before you rely on it</h3>
 <p>Send a real test enquiry from your phone. Check that the thank-you page loads, the event appears in GA4's Realtime report or DebugView, the conversion shows in Google Ads' and Meta's testing tools, and the notification email reaches the right inbox. Then refresh the thank-you page and confirm nothing is counted twice.</p>
 
-<h2>The WooCommerce version: the order received page</h2>
-<p>In a WooCommerce store, the thank-you page is the order received page at the end of checkout. It is where purchase tracking fires, so use a tracking plugin or integration that records each order once even if the shopper refreshes. It is also worth customising: confirm delivery expectations, explain what happens next for cash on delivery orders, and give a WhatsApp link for questions. Block themes let you edit it as the Order Confirmation template under Appearance &gt; Editor; classic themes need a developer or a plugin. A smooth path to that page matters too; see <a href="/blog/woocommerce-checkout-optimization/">WooCommerce checkout optimisation</a>.</p>
-
-<h2>The thank-you page is only the first reply</h2>
-<p>The page reassures the visitor, but the enquiry still needs a person. Make sure the notification reaches someone who acts on it, send a short automatic email that repeats what the page promised, and follow up if the first attempt doesn't connect. <a href="/blog/respond-to-website-enquiries-fast/">Following up website leads</a> sets out a simple sequence.</p>
-
-<h2>Quick check: does your thank-you page fire once, and stay out of Google?</h2>
-<ol>
-  <li><strong>Test enquiry:</strong> submit your own form once. Then open GA4, Reports, Realtime, and confirm a single generate_lead (or your lead event) appears, not two.</li>
-  <li><strong>Direct visit:</strong> open the thank-you page URL directly in a private window. If it counts a conversion without a form submission, your tracking is firing on page views and over-counting leads.</li>
-  <li><strong>Indexing:</strong> paste the thank-you URL into Search Console's URL Inspection tool. It should report the page as excluded by a noindex tag.</li>
-</ol>
+<h2>Thank-you page wording by enquiry type</h2>
+<table>
+  <thead><tr><th>Enquiry</th><th>What to say next</th><th>Faster route</th></tr></thead>
+  <tbody>
+    <tr><td>Clinic appointment</td><td>When the clinic will call to confirm the slot</td><td>Call or WhatsApp the front desk</td></tr>
+    <tr><td>Service quote</td><td>What details you will ask for and when the quote arrives</td><td>Send photos on WhatsApp</td></tr>
+    <tr><td>B2B or bulk enquiry</td><td>Who will reply and what they need, such as quantities</td><td>Download the catalogue</td></tr>
+    <tr><td>Course or admission</td><td>When the counsellor calls and what to keep ready</td><td>Book a demo or visit</td></tr>
+  </tbody>
+</table>
+<p>Only promise a reply time you can keep every day.</p>
 
 <h2>When to get help</h2>
 <p>Get help when ad platforms and GA4 show different lead counts, when the form plugin cannot redirect the way you need, or when you are about to spend on ads without tested tracking. A <a href="/landing-page-design/">landing page</a> comes with its thank-you page and conversion tracking tested, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to fix tracking on an existing site. <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
 
 <h2>FAQs</h2>
-<h3>What is a thank-you page on a website?</h3>
-<p>It is the page visitors see after submitting a form or completing an order. It confirms the submission, explains what happens next and gives you a clean way to count conversions.</p>
 <h3>Should a thank-you page be noindexed?</h3>
 <p>Yes. It is useless as a search result and visits from search would inflate your conversion counts. Set it to noindex in your SEO plugin, keep it crawlable and don't link to it from menus.</p>
 <h3>How do I set up a lead form thank you page redirect?</h3>
@@ -27786,6 +27799,12 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <p>Create a generate_lead event that fires when page_view happens on your thank-you page's URL, mark it as a key event and set it to count once per session. Then test it with a real submission in DebugView.</p>
 <h3>Is a thank-you page better than a confirmation message?</h3>
 <p>A page gives you more room for next steps and simpler tracking; an inline message suits pop-ups, multi-step forms and forms that continue into WhatsApp. Either works if it is obvious and tracking fires only after a successful submission.</p>
+
+<h3>How do I redirect to a thank-you page after form submit in WordPress?</h3>
+<p>Use your form plugin's confirmation setting: in WPForms choose "Go to URL (Redirect)", in Gravity Forms set the confirmation type to Page or Redirect, and in Contact Form 7 add a redirect on its successful-submission event. Test that failed submissions do not redirect.</p>
+
+<h3>Why is my thank-you page counting conversions twice?</h3>
+<p>Usually a refresh, the back button or two tags firing on the same page. Count the conversion once per session or submission, check that GA4 and Google Ads are not both importing the same action as primary, and test with Tag Assistant.</p>
 `,
   },
   {
@@ -28375,6 +28394,8 @@ Last checked:</code></pre>
   <li>Log in to your hosting and check the account is in your name with your email and billing.</li>
   <li>In WordPress, open <strong>Users &gt; All Users</strong> and check you have your own Administrator login.</li>
 </ol>
+
+<p>If a previous developer holds some of these, see <a href="/blog/regain-website-access-old-developer/">how to get your website back from an old developer</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the domain or hosting is in someone else's name, when you cannot reach the person who built the site, or when you need everything moved to your own accounts. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -30613,6 +30634,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and check whether the pillar page shows impressions for the broader topic queries.</li>
 </ol>
 
+<p>Categories can support clusters too; see <a href="/blog/category-tag-pages-seo/">WordPress categories and tags for SEO</a> for which archives to index.</p>
+
+<p>If a post in a cluster has no links pointing to it, it is an orphan; see <a href="/blog/orphan-pages-fix/">how to find orphan pages</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when blog posts do not link to the service they support, when posts overlap, or when you want a content plan built around what you sell. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -30848,6 +30873,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and check whether the number of indexed pages dropped at the same time, which points to a technical cause.</li>
 </ol>
 
+<p>If a drop follows a spam update, see <a href="/blog/backlink-audit-disavow/">how to run a toxic backlink audit</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you cannot tell an update from a site problem, when traffic stays down for weeks, or when you need the technical side fixed first. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -31001,6 +31028,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li>Search the exact question your post answers on Google and compare your title and first paragraph with the top results.</li>
   <li>After a month, open <strong>Performance &gt; Search results</strong>, filter the post under <strong>Pages</strong> and read its queries to see what it is actually ranking for.</li>
 </ol>
+
+<p>Before adding many tags to each post, read <a href="/blog/category-tag-pages-seo/">which category and tag pages to index</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when posts publish but never get impressions, when you do not know which topics your site is missing, or when titles and links need work. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -31591,12 +31620,14 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
     title: 'Google Merchant Center for WooCommerce and WordPress: Set Up Free Listings and Fix Disapprovals',
     description: 'Set up Google Merchant Center for WooCommerce and WordPress: Google for WooCommerce vs feed plugins, free listings, GST prices, shipping and disapprovals.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-seo-services', 'landing-page-design'],
     body: `
 <p>To show your WooCommerce products on Google for free, create a Google Merchant Center account, verify your website, and sync your products using the free Google for WooCommerce extension (previously called Google Listings &amp; Ads) or a feed plugin. Then set your shipping and return details, make sure prices (including GST) and stock match your product pages, and fix anything Merchant Center flags. Approved products can appear as free listings in the Shopping tab and other Google surfaces, and the same data powers Shopping ads later.</p>
 <p>Here's the full setup, which sync method to choose, the product data Google needs, and how to fix the disapprovals that trip up most Indian stores. If you'd rather have it set up and tested for you, that's part of my <a href="/woocommerce-developer/">WooCommerce development</a> work.</p>
+<blockquote><strong>Short answer:</strong> To use Google Merchant Center for WooCommerce, create a Merchant Center account, verify your domain and sync products with the free Google for WooCommerce extension or a feed plugin. Set shipping and returns, keep GST-inclusive prices and stock identical to your product pages, then fix anything Merchant Center flags so products are approved for free listings.</blockquote>
+
 <h2>What Google Merchant Center for WooCommerce does</h2>
 <p>Merchant Center is where Google stores your product information. Once your products are approved, they can show with an image, price and store name when people search for what you sell.</p>
 <table>
@@ -31693,12 +31724,21 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <li><strong>Make sure products can be bought:</strong> each product needs a landing page with a clear price and a way to purchase. Enquiry-only catalogues are likely to be disapproved.</li>
 </ul>
 <p>Services such as consultations or website projects are not products for Merchant Center. Promote those through your Google Business Profile, search ads and service pages instead.</p>
-<h2>Product structured data</h2>
-<p>WooCommerce adds basic Product structured data to product pages, and SEO plugins can extend it. Google uses it to cross-check your feed, and Merchant Center's automatic item updates can use it to correct price and availability when they drift. Test a few product pages after any theme or plugin change; see <a href="/blog/schema-markup-explained/">schema markup explained</a> and <a href="/blog/test-structured-data-rich-results/">how to test structured data</a>.</p>
-<h2>From free listings to Shopping ads</h2>
-<p>Once products are approved and stable, link Google Ads and the same data can run Shopping or Performance Max campaigns. Set up purchase tracking first, so you can see which products and campaigns actually make money; see <a href="/blog/google-ads-conversion-tracking-setup/">Google Ads conversion tracking on WordPress</a>. Start with your best sellers and products with healthy margins. The same product data can also feed Instagram and Facebook; see <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to Meta's catalog</a>.</p>
-<h2>Quick check</h2>
-<p>In Merchant Center, open the products report and filter for items that need attention or are disapproved, then sort by the most common issue. Open one affected product on your store and check that the price, stock status and shipping cost match what the feed says, because mismatches are a common reason for disapprovals.</p>
+<h2>Merchant Center feed checklist for WooCommerce</h2>
+<table>
+  <thead><tr><th>Feed field</th><th>Where it comes from in WooCommerce</th></tr></thead>
+  <tbody>
+    <tr><td>id</td><td>Product ID or SKU (Product data &gt; Inventory)</td></tr>
+    <tr><td>title and description</td><td>Product name and description</td></tr>
+    <tr><td>link</td><td>The product's URL, which must load without a login</td></tr>
+    <tr><td>image_link</td><td>Product image, without text overlays or watermarks</td></tr>
+    <tr><td>price</td><td>Regular or sale price (Product data &gt; General), matching the page</td></tr>
+    <tr><td>availability</td><td>Stock status (Product data &gt; Inventory)</td></tr>
+    <tr><td>brand, gtin or mpn</td><td>The Google for WooCommerce panel on the product, or your feed plugin's fields</td></tr>
+    <tr><td>shipping</td><td>Merchant Center shipping settings or your WooCommerce shipping zones</td></tr>
+  </tbody>
+</table>
+<p>Fix a field in WooCommerce rather than in Merchant Center, so the next sync does not undo it.</p>
 
 <h2>When to get help</h2>
 <p>If products keep getting disapproved, the account is suspended for misrepresentation, or stock stops syncing, get the store and feed reviewed together. Merchant Center setup and store fixes are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
@@ -31714,8 +31754,12 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>If a product has a manufacturer barcode, include it, because it helps Google match the product. For handmade, custom or own-brand products with no barcode, set identifier_exists to "no" rather than inventing a number. If you want barcodes for your own brand, they're issued in India through GS1 India.</p>
 <h3>Why are my WooCommerce products disapproved in Merchant Center?</h3>
 <p>The most common reasons are price or stock that don't match the product page, prices without GST, missing shipping details, images with text or watermarks, and incorrect identifiers. Account-level suspensions are usually misrepresentation: missing contact details, policies or business information. Merchant Center lists the exact issue for each product.</p>
-<h3>How long does it take for products to show on Google?</h3>
-<p>New products and accounts go through a review, which often takes a few days. After approval, free listings can start showing, but Google decides when and where, so impressions build gradually.</p>
+
+<h3>Which plugin connects WooCommerce to Google Merchant Center?</h3>
+<p>The free Google for WooCommerce extension is the official option and syncs products directly. Feed plugins, such as Product Feed PRO, create a feed file Merchant Center fetches on a schedule, which gives more control over fields and variations.</p>
+
+<h3>Why is my WooCommerce product feed not updating in Merchant Center?</h3>
+<p>Check the sync status in the extension or the feed plugin's schedule, and whether WordPress cron is running. Caching can serve an old feed file, and Merchant Center only refetches on its own schedule, so allow time after fixing it.</p>
 `,
   },
   {
@@ -32251,6 +32295,8 @@ dig yourdomain.com +short</code></pre>
   <li>Copy all DNS records, especially MX and TXT records for email, so you can recreate them if DNS moves too.</li>
 </ol>
 
+<p>If the domain sits in a former developer's account, see <a href="/blog/regain-website-access-old-developer/">how to regain control from a previous developer</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when email or the website could break during the move, when DNS records are not documented, or when the domain is in someone else's account. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -32507,6 +32553,8 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
 <h2>Quick check: Google's Safe Browsing status</h2>
 <p>Search Console is the main tool, but Google's public Safe Browsing site status page is a fast second opinion and works for any domain. Open <code>transparencyreport.google.com/safe-browsing/search</code> and enter your domain. It shows whether Google currently considers the site unsafe and, in broad terms, why.</p>
 <p>Check it before you start, so you know the starting state, and again after Search Console reports your review was accepted. If Search Console says the issue is resolved but the status page still shows a warning, give it a day or two to update, then clear the browser cache and test in a private window before assuming the review failed.</p>
+
+<p>A common cause of this warning is redirect malware sending mobile visitors to scam pages; <a href="/blog/fix-wordpress-redirect-hack/">fixing a WordPress hacked redirect</a> covers where that code hides.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you cannot find the phishing files, when the warning returns after a review, or when the same server sends email for your business. <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers finding the phishing pages, closing the way in and the Google review, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to secure and maintain the site afterwards.</p>
@@ -33741,6 +33789,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   <li>Open <strong>Tools &gt; Site Health</strong> and note any critical issues.</li>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first on your homepage. Slow scores and errors are typical developer work.</li>
 </ol>
+
+<p>If a developer has suggested building from scratch instead, compare the two in <a href="/blog/wordpress-vs-custom-coded-website/">WordPress vs custom-coded websites</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when updates break things, when you need custom features, or when the site is slow or failing Site Health checks. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -35073,12 +35123,12 @@ wp user list --role=administrator --fields=ID,user_login,user_email,user_registe
     title: 'WordPress Hacked Redirect: Why Your Site Redirects to Spam and How to Remove the Malware',
     description: 'WordPress hacked redirect sending visitors to spam? Catch the hidden redirect, find the malware in .htaccess, files or the database and stop it returning.',
     date: '2026-09-27',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
 <p>A WordPress hacked redirect happens when malware injected into your site sends some visitors to spam pages (gambling, dating, fake prizes or "your phone has a virus" warnings) instead of your content. If your WordPress site is redirecting to spam and you didn't set the redirect up, assume redirect malware: the code usually targets mobile visitors arriving from Google while hiding from logged-in admins, which is why the site looks normal when you check it yourself.</p>
-<p><strong>Short answer:</strong> confirm the redirect on a phone from a Google result, back up, change every password, then clean .htaccess, wp-config.php, index.php, theme files, the database, rogue plugins and cron jobs, reinstall core, plugins and themes from clean copies, purge every cache and close the hole the attacker used. Skipping any of these is why redirects come back.</p>
+<blockquote><strong>Short answer:</strong> To fix a WordPress hacked redirect, confirm it on a phone from a Google result, take a backup and change every password. Then clean .htaccess, wp-config.php, theme files, the database and rogue plugins or cron jobs, reinstall core and plugins from clean copies, purge every cache and patch the hole the attacker used.</blockquote>
 
 <h2>My WordPress website is redirecting: what to do in the first hour</h2>
 <ol>
@@ -35195,29 +35245,17 @@ wp option get home</code></pre>
   <li><strong>A computer with saved FTP passwords is infected</strong>, so new passwords get stolen too</li>
 </ul>
 
-<h2>Check Google once it's clean</h2>
-<p>Redirect hacks often lead to a red browser warning or "This site may be hacked" in results. Once clean, check Search Console's Security issues report and request a review; see <a href="/blog/this-site-may-be-hacked-google/">removing "This site may be hacked"</a> and, if rankings dropped, <a href="/blog/recover-rankings-after-hack/">recovering rankings after a hack</a>.</p>
-
-<h2>WordPress malicious redirect cleanup: DIY or a cleanup service?</h2>
-<p>You can clean a simple redirect hack yourself if you are comfortable with SFTP, phpMyAdmin and comparing files with clean copies. A security plugin can detect and remove some known infections, but code in the database, .htaccess or a fake plugin is often missed, and no plugin closes the hole the attacker used. A malicious redirect cleanup service makes sense when:</p>
+<h2>Commands that find WordPress redirect malware</h2>
+<p>If your host gives you SSH and WP-CLI, these checks find most redirect malware in minutes. Run them from the WordPress folder after taking a backup:</p>
 <ul>
-  <li>the redirect has already come back once after cleaning</li>
-  <li>several sites share the same hosting account</li>
-  <li>it is a WooCommerce store taking payments, where checkout code may also be tampered with</li>
-  <li>Google is showing a warning and you need a clean review request quickly</li>
-  <li>your host has suspended the account until the malware is gone</li>
+  <li><code>wp core verify-checksums</code> lists core files that differ from the official release.</li>
+  <li><code>wp plugin verify-checksums --all</code> does the same for plugins from WordPress.org.</li>
+  <li><code>grep -rlE "eval[(]|base64_decode|gzinflate|str_rot13" wp-content --include=*.php</code> finds files using common obfuscation. Some genuine plugins use these, so review each hit rather than deleting it.</li>
+  <li><code>find . -name "*.php" -mtime -10</code> lists PHP files changed in the last 10 days, including in uploads, where PHP should not exist.</li>
+  <li><code>wp db query "SELECT ID FROM wp_posts WHERE post_content LIKE '%&lt;script%'"</code> finds scripts injected into posts; run the same check on <code>wp_options</code> (adjust the table prefix if yours differs).</li>
+  <li><code>wp cron event list</code> and <code>wp user list --role=administrator</code> show scheduled jobs and admin accounts you did not create.</li>
 </ul>
-<p>Whoever does it, ask for a written list of what was found, where, how the attacker got in and what was changed to stop it happening again.</p>
-
-<h2>How to prevent redirect hacks</h2>
-<p>Keep WordPress, plugins and themes updated and delete anything unused, never use nulled plugins or themes, turn on two-factor login for admins, disable file editing in the dashboard, block PHP in uploads and use a firewall with file-change monitoring. If you'd rather not keep on top of it yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers updates, backups and security monitoring each month.</p>
-
-<h2>Quick check: is the redirect gone?</h2>
-<ol>
-  <li>Open the site from Google search results on a phone in a private window. Some hacks only redirect visitors from search on mobile.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Security &amp; Manual Actions &gt; Security issues</strong>.</li>
-  <li>In WordPress, open <strong>Users &gt; All Users</strong> and remove any admin accounts you do not recognise.</li>
-</ol>
+<p>No SSH? Your hosting file manager and phpMyAdmin can run the same searches, just more slowly. Once the site is clean, request a review in Search Console; see <a href="/blog/this-site-may-be-hacked-google/">fixing the "This site may be hacked" warning</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help straight away if the redirect returns within days of cleaning, Google shows a "This site may be hacked" warning, or the site takes payments, because checkout pages may be affected too. Repeated reinfection almost always means a backdoor or the original entry point is still there.</p>
@@ -35231,17 +35269,17 @@ wp option get home</code></pre>
 <h3>My WordPress website is redirecting to another site. Is it hacked?</h3>
 <p>If it happens for different people on different devices and you didn't add a redirect rule, almost certainly yes. Rule out a redirect plugin, a bad ad, a domain or DNS problem and adware on one device first.</p>
 
-<h3>What is WordPress redirect malware?</h3>
-<p>Code an attacker adds to your site that sends some visitors to spam or scam pages, usually only mobile visitors from search engines, so the owner doesn't notice. It is often paired with backdoors that reinstall it.</p>
-
 <h3>Should I use a WordPress malicious redirect cleanup service?</h3>
 <p>If the redirect returned after cleaning, the site takes payments or Google has flagged it, a professional clean-up is usually quicker and safer. Ask for a report of what was found and how the entry point was closed.</p>
 
 <h3>Will a WordPress hacked redirect hurt my Google rankings?</h3>
 <p>It can, through browser warnings, visitors bouncing straight back and spam pages indexed under your domain. Rankings usually recover after a thorough clean-up and a successful review, though how long that takes varies.</p>
 
-<h3>The redirect came back after I removed it. What now?</h3>
-<p>Something was missed: usually a backdoor, a cron job, an infected neighbouring site or an unpatched plugin. Change passwords again from a clean device and work through every location in this guide.</p>
+<h3>How do I stop WordPress redirect malware coming back?</h3>
+<p>Remove every backdoor, not just the redirect code, then update or delete the plugin or theme the attacker used. Change hosting, SFTP, database and admin passwords, generate new salts in wp-config.php, and clean any other site in the same hosting account. File-change monitoring will warn you if anything reappears.</p>
+
+<h3>Why does my WordPress site redirect only on mobile?</h3>
+<p>Redirect malware usually checks the visitor's device and referrer, sending phone users who arrive from Google to spam while showing desktop visitors and logged-in admins the normal site. That is why owners rarely see it. Test on mobile data, logged out, from a search result.</p>
 `,
   },
   {
@@ -35360,6 +35398,8 @@ RewriteRule ^spam-folder/ - [G,L]</code></pre>
 <pre><code>curl -s https://yourdomain.com/ | grep -i "&lt;title"
 curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" https://yourdomain.com/ | grep -i "&lt;title"</code></pre>
 <p>If the second title is in Japanese or full of brand and discount keywords, the site is cloaking. Repeat it on one of the spam URLs from your site: search. A clean result does not prove the site is clean, because some cloaking also checks Google's IP addresses, so the URL Inspection live test in Search Console stays the final proof.</p>
+
+<p>If visitors from Google are also being sent to spam sites, the same attack has usually added redirect code; see <a href="/blog/fix-wordpress-redirect-hack/">how to find and remove WordPress redirect malware</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when spam pages keep coming back, when there are thousands of them in Google, or when you find an unknown owner in Search Console. My <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers SEO spam hacks: the generator code, cloaking in theme files, backdoors, unknown owners and sitemaps, and the review request. Once it is clean, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and security monitoring running every month.</p>
@@ -35740,6 +35780,8 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
 <p>Fetch the checkout as a logged-out visitor and list every external script it pulls in:</p>
 <pre><code>curl -s https://yourstore.in/checkout/ | grep -oiE "&lt;script[^&gt;]+src=[^&gt;]+" | sort -u</code></pre>
 <p>Go through the list line by line. You should recognise every domain: your own site, your payment gateway, and any analytics you deliberately added. An unfamiliar domain, especially one that imitates a well-known name, or a script loaded from an odd path inside your own uploads folder, needs investigating. Inline skimmers will not show up here, so also open the checkout in a private window, press F12, and in the <strong>Network</strong> tab watch for requests sent while you type in the card fields.</p>
+
+<p>Not every checkout fault is malware; for ordinary causes, see <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working or slow</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help straight away if you find an unknown script, customers report card fraud after buying from you, or your gateway contacts you. My <a href="/wordpress-malware-removal/">WordPress malware removal</a> service checks the checkout, payment settings, admin users and order emails and ends with a test order. Card-data forensics is a separate specialist job, so I handle the technical cleanup and give you notes for your gateway. For a rebuilt, tested checkout, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
@@ -37136,6 +37178,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <li><strong>PHP version:</strong> in <em>Advanced, PHP Configuration</em>, check the PHP version. Then compare with <em>Tools, Site Health</em> in wp-admin, which warns if it is out of date.</li>
 </ol>
 
+<p>If the browser shows "Not secure" after SSL is active, see <a href="/blog/mixed-content-warnings-fix/">mixed content warnings in WordPress</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when you are moving an existing site onto Hostinger, when email and DNS need setting up at the same time, or when you want the site built properly rather than just installed. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and setup, <a href="/wordpress-migration/">website migration</a> moves an existing site without downtime, and <a href="/wordpress-maintenance/">WordPress maintenance</a> looks after updates afterwards. <a href="/#contact">Get in touch</a> with your domain and plan.</p>
 
@@ -37593,6 +37637,8 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   <li>Check whether the domain and email renew on the same account and on which dates.</li>
   <li>Download a full backup now, whatever you decide, so you are not caught by an expiry.</li>
 </ol>
+
+<p>To budget the full yearly cost, not just hosting, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when the renewal is close and you want to move, when email runs on the same hosting, or when you are unsure how to move DNS without downtime. <a href="/wordpress-migration/">WordPress migration</a> covers the move, email and DNS checks. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
@@ -38605,6 +38651,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   <li>Open the page in <strong>Pages &gt; All Pages</strong> and use <strong>Preview</strong> before clicking Update.</li>
   <li>After saving, open the page on a phone and check nothing shifted.</li>
 </ol>
+
+<p>If you are unsure which editor your site uses, or which suits your team, see <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when edits keep breaking layouts, when the editor is too hard for your team, or when you need the site rebuilt so editing is simple. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -39857,6 +39905,10 @@ add_action( 'after_setup_theme', function () {
   <li>In WordPress, open <strong>Tools &gt; Site Health</strong> and read the critical issues and recommendations.</li>
   <li>List plugins that do one small job, such as adding a script, which a few lines of code could replace.</li>
 </ol>
+
+<p>The same trade-off applies to page building: compare the built-in editor with a builder plugin in <a href="/blog/elementor-vs-gutenberg/">Gutenberg vs Elementor</a>.</p>
+
+<p>For the bigger decision of WordPress or a fully custom site, see <a href="/blog/wordpress-vs-custom-coded-website/">the difference between a WordPress website and a custom coded website</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when plugins clash or slow the site, when you need a feature no plugin does well, or when custom code needs writing safely. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -41969,6 +42021,8 @@ add_action( 'after_setup_theme', function () {
 
 <h2>Quick check</h2>
 <p>Go to <strong>Users &gt; All Users</strong> and filter by Administrator and Shop Manager; remove anyone who no longer needs access. Then check <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong> and revoke any API keys you don't recognise or no longer use, especially ones with Read/Write access.</p>
+
+<p>If checkout breaks after a security change, see <a href="/blog/woocommerce-checkout-not-working-fix/">WooCommerce checkout not working or slow</a>.</p>
 
 <h2>When to get help</h2>
 <p>If you find unknown API keys, orders you didn't expect, or payment pages behaving oddly, get the store checked straight away; if it has already been hit, see <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Secure gateway setup and checkout testing are part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
@@ -44882,16 +44936,14 @@ add_action( 'after_setup_theme', function () {
     title: 'Toxic Backlink Audit: How to Find Toxic Backlinks, When to Disavow and Whether a Backlink Cleanup Service Is Worth It',
     description: 'How to run a toxic backlink audit, find toxic backlinks in Search Console, decide when to disavow, and judge whether a backlink cleanup service is worth it.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
 <p>A toxic backlink audit is a review of the sites linking to yours, to find links that could genuinely harm you and spot opportunities. For most small business sites, Google already ignores the random spam links that SEO tools label &quot;toxic&quot;, so you rarely need the disavow tool. Disavow is mainly for sites with a manual action for unnatural links, or with a history of paid or scheme links built on purpose.</p>
 <p>This guide explains how to run a simple backlink audit, how to decide whether to disavow, and what to do instead when the problem is not bad links at all.</p>
 
-<h2>Why &quot;toxic link&quot; reports cause panic</h2>
-<p>Many SEO tools score backlinks and flag some as toxic. Business owners in India often receive emails offering to &quot;remove toxic backlinks&quot; for a fee, sometimes with a screenshot of such a report. This creates worry that spam links are hurting rankings.</p>
-<p>Google has said publicly that its systems are designed to ignore most spammy links, and that the disavow tool is for specific situations rather than routine use. A tool&#39;s toxicity score is that tool&#39;s own estimate, not something Google uses. Nearly every site collects odd links from scraper sites, directories and auto-generated pages over time; that is normal.</p>
+<blockquote><strong>Short answer:</strong> A toxic backlink audit starts in Search Console: export links under Links &gt; Top linking sites, check Manual actions, and sort links into normal, ignorable spam and genuinely risky. Google already ignores most spam links, so disavow only when you have a manual action for unnatural links or a history of paid links built on purpose.</blockquote>
 
 <h2>When to use the disavow tool</h2>
 <table>
@@ -44959,12 +45011,6 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>Offers of hundreds of backlinks for a small fixed amount are common in India and abroad. Links bought in bulk usually come from low-quality networks, can break Google&#39;s spam policies, and may later be the reason you need a disavow file. Equally, unsolicited emails warning of toxic links and offering removal are mostly sales pitches built on the panic described above.</p>
 <p>Before paying anyone for link work, ask where the links will come from, whether they are paid placements, and what happens if Google treats them as spam. If the answer is vague, walk away.</p>
 
-<h2>Taking over a site with an unknown link history</h2>
-<p>If you bought an existing business, inherited a website from a previous agency, or picked up an expired domain, the link history is a real unknown. Start by asking the previous owner or agency what link building they did, and request any reports or invoices that mention link packages. Then look for patterns in the Search Console export: many links with identical exact-match anchor text, links from sites in unrelated languages or niches, or sudden bursts of links on the same dates.</p>
-
-<h2>How often to run a backlink audit</h2>
-<p>For a typical small business site, a light review every few months is plenty: glance at the Links report, check for new referring domains you recognise, and fix any broken inbound links. Run a deeper audit when you take over a site with an unknown SEO history, after a migration or redesign, when you get a manual action, or if a past agency used link packages.</p>
-
 <h2>Signs your link profile is not the real problem</h2>
 <p>Business owners often blame backlinks when rankings stall, but the cause is usually elsewhere. Check these first: pages that are thin or do not match what people search for, important pages not indexed, slow mobile loading, missing location pages for the cities you serve, or a site that has never earned a single real mention. Fixing those tends to do more than any disavow file.</p>
 <p>For local service businesses, the commercial pages matter most. A clear service page, a page for each city you genuinely serve, and steady reviews on your Google Business Profile are the foundation. Links help that foundation rank, but they cannot replace it.</p>
@@ -44990,12 +45036,16 @@ https://another-site.example/page-with-paid-link/</code></pre>
 </ul>
 <p>Be wary of a cleanup offer that disavows hundreds of domains based on one tool score, promises a ranking recovery by a date, or bundles cleanup with a new link package. Disavowing good links removes value you earned.</p>
 
-<h2>Quick check: do your links need any action?</h2>
-<ol>
-  <li>In <strong>Google Search Console</strong>, open <strong>Security &amp; Manual Actions &gt; Manual actions</strong>. "No issues detected" means there is no link penalty to fix.</li>
-  <li>Open <strong>Links</strong> in Search Console and review <strong>Top linking sites</strong>. Note any you do not recognise before worrying about them.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and compare the last 3 months with the previous period.</li>
-</ol>
+<h2>Toxic backlink audit checklist: signals that matter</h2>
+<ul>
+  <li><strong>Links you or a past agency paid for</strong>, especially packages of guest posts or directory submissions.</li>
+  <li><strong>Many links with the same exact-match anchor text</strong>, such as your main keyword, which rarely happens naturally.</li>
+  <li><strong>Sitewide footer or sidebar links</strong> from unrelated sites, often from old link schemes or template credits.</li>
+  <li><strong>Networks of similar sites</strong> with the same design, thin posts and outbound links to many businesses.</li>
+  <li><strong>Links to spam URLs on your own domain</strong> left from a hack. Let those URLs return 404 or 410, and clean the site.</li>
+  <li><strong>A manual action</strong> for unnatural links in Search Console, the clearest sign action is needed.</li>
+</ul>
+<p>Random scraper and spam-directory links with none of these patterns can usually be left alone.</p>
 
 <h2>When to get help</h2>
 <p>Get help when Search Console shows a manual action for unnatural links, when someone bought link packages for the site in the past, or when traffic drops and you cannot find why. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45013,6 +45063,12 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <p>It takes effect as Google recrawls the linking pages, which can take weeks or longer. It is not an instant fix for ranking drops.</p>
 <h3>Do I need a paid tool for a backlink audit?</h3>
 <p>Not for most small sites. Google Search Console&#39;s Links report is free and enough for a basic audit. Paid tools show more links but their toxicity scores are only estimates.</p>
+
+<h3>What makes a backlink toxic?</h3>
+<p>In practice, a link is risky when it is part of a pattern meant to manipulate rankings: paid links, link networks or repeated exact-match anchors. Random low-quality links that you did not build are usually ignored by Google, whatever a tool's toxic score says.</p>
+
+<h3>Can I remove toxic backlinks myself?</h3>
+<p>Yes. Ask the site owner to remove the link, keeping a record of your requests. If they do not reply and you have a manual action or a known history of paid links, add the domains to a disavow file in Search Console.</p>
 `,
   },
   {
@@ -45117,6 +45173,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Search <strong>site:competitor.com</strong> for each and compare how many service and location pages they have against yours.</li>
   <li>Run the page through <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and read the <strong>Mobile</strong> tab first for their homepage and yours, and compare the mobile results.</li>
 </ol>
+
+<p>Review your own links the same way; see <a href="/blog/backlink-audit-disavow/">toxic backlink audit and when to disavow</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when competitors outrank you and you cannot see why, or when you want the gaps turned into a prioritised plan. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45249,6 +45307,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
   <li>Search <strong>site:yourdomain.com</strong> plus each main area. If an area matters, it should be mentioned on a useful page, not a copied template.</li>
   <li>In <strong>Google Search Console</strong>, open <strong>Performance &gt; Search results</strong> and look for queries that include an area name.</li>
 </ol>
+
+<p>If you plan a page for each area you cover, read <a href="/blog/local-landing-pages-without-doorway-pages/">how to build city pages without creating doorway pages</a> first.</p>
 
 <h2>When to get help</h2>
 <p>Get help when calls come from the wrong areas, when area pages are copies of each other, or when your profile and site disagree. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45502,6 +45562,8 @@ https://another-site.example/page-with-paid-link/</code></pre>
 <pre><code>curl -sI https://yourdomain.com/page/ | grep -i x-robots-tag
 curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
+<p>Pages that are "Discovered, currently not indexed" are often orphans; see <a href="/blog/orphan-pages-fix/">how to find and fix orphan pages</a>.</p>
+
 <h2>When to get help</h2>
 <p>If important pages stay out of Google for weeks, or the same error keeps returning after you click Validate fix, get an indexing audit with the fixes made on your site. That is part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
@@ -45520,16 +45582,18 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'orphan-pages-fix',
-    seoTitle: 'How to Find and Fix Orphan Pages in WordPress',
+    seoTitle: 'Orphan Pages: How to Find and Fix Them in WordPress',
     title: 'Orphan Pages: How to Find Orphan Pages and How to Fix Orphan Pages in WordPress',
     description: 'How to find orphan pages in WordPress with your sitemap, Search Console and a crawler, then fix each one by linking, merging, redirecting or removing it.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign'],
     body: `
 <p>An orphan page is a page on your website that no other page links to. It may be in your sitemap and even indexed, but no menu, button or text link leads to it. To find orphan pages in WordPress, compare the URLs in your sitemap and Google Search Console with the URLs a crawler reaches by following links, then link, merge, redirect or remove each one.</p>
 <p>Most business sites have a few, usually created by accident during a redesign, a campaign or a migration. This guide explains why they matter, how to find them and how to decide what to do with each. For the basics, start with <a href="/blog/internal-linking-explained/">internal linking explained</a>.</p>
+
+<blockquote><strong>Short answer:</strong> Orphan pages are pages that no other page on your site links to. To find them, export every URL from your sitemap and Search Console, crawl the site by following links, and compare the two lists. Then link each useful orphan from a relevant page, merge or redirect weak ones, and remove pages nobody needs.</blockquote>
 
 <h2>Why orphan pages are a problem</h2>
 <p>Search engines discover and understand pages mainly by following links. When nothing on your site points to a page:</p>
@@ -45602,15 +45666,6 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <h2>A quick monthly check for small sites</h2>
 <p>If your site has fewer than a hundred pages, you do not need complex tools every month. Open the Pages list in WordPress, sort by date, and for each recent page ask one question: which other page links here? If the answer is none, add a link from a related service page or post before moving on. For blogs, check that each new post links to at least one older post and that at least one older post links back to it. This takes a few minutes and stops orphans from building up between proper audits.</p>
 
-<h2>Preventing orphan pages in future</h2>
-<ol>
-<li>Every time you publish, add at least two internal links to the new page from older relevant pages.</li>
-<li>Before a redesign, export the full URL list and map where each page will go.</li>
-<li>After campaigns, decide the future of each landing page: keep, merge, redirect or remove.</li>
-<li>Run a crawl and sitemap comparison every few months.</li>
-<li>Watch Search Console&apos;s indexing reports; the guide to <a href="/blog/search-console-page-indexing-errors/">page indexing errors</a> explains the statuses.</li>
-</ol>
-
 <h2>How to fix orphan pages in WordPress, step by step</h2>
 <p>Once you have your list, fixing orphan pages in WordPress is mostly editing work. This is the order I use on client sites:</p>
 <ol>
@@ -45623,14 +45678,16 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <li><strong>Re-crawl and confirm.</strong> Run the crawler again and check each fixed page now shows at least one internal link.</li>
 </ol>
 
-<h2>Tools that help find orphan pages</h2>
-
-<h2>Quick check: find orphan pages</h2>
+<h2>Find orphan pages with Screaming Frog, step by step</h2>
 <ol>
-  <li>Open your sitemap (often <strong>/sitemap_index.xml</strong> or <strong>/wp-sitemap.xml</strong>) and export the list of URLs.</li>
-  <li>Crawl the site with a crawler such as Screaming Frog (free up to 500 URLs) and compare the crawled URLs with the sitemap list. URLs only in the sitemap are orphans.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Links &gt; Internal links</strong> and check that important pages receive links.</li>
+  <li>Open Configuration &gt; Spider &gt; Crawl and tick "Crawl Linked XML Sitemaps", adding your sitemap URL.</li>
+  <li>With a paid licence, connect Search Console and Analytics under Configuration &gt; API Access, and tick the option to crawl new URLs they find.</li>
+  <li>Enter your homepage and start the crawl.</li>
+  <li>When it finishes, run Crawl Analysis &gt; Start, which is what fills in the orphan filters.</li>
+  <li>Open the Sitemaps tab and choose the "Orphan URLs" filter; do the same in the Search Console and Analytics tabs.</li>
+  <li>Export the lists, remove redirects and noindexed URLs, and decide for each remaining page: link, merge, redirect or remove.</li>
 </ol>
+<p>The free version crawls up to 500 URLs, enough for most small business sites.</p>
 
 <h2>When to get help</h2>
 <p>Get help when hundreds of pages have no internal links, when old pages should be merged or redirected, or when site structure needs rethinking. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -45648,8 +45705,12 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <p>Often, and that can be intentional. If a landing page is only for ads, it can stay out of the menu and be set to noindex.</p>
 
 <p>If you want orphan pages and internal links sorted on your site, I handle this as part of <a href="/wordpress-seo-services/">WordPress SEO services</a>. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off audit, and businesses in Maharashtra can see <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>.</p>
-<h3>How do I fix orphan pages in WordPress?</h3>
-<p>Add contextual internal links to each useful orphan page from two or three related pages, place it in the right menu, category or hub page, merge or redirect weak duplicates, and remove or noindex pages you no longer need. Then re-crawl the site to confirm every kept page is reachable by links.</p>
+
+<h3>What are orphan pages in SEO?</h3>
+<p>Pages with no internal links pointing to them from anywhere else on the same website. Search engines and visitors can only reach them through the sitemap, an old bookmark or an outside link, so they are crawled less and rarely rank well.</p>
+
+<h3>Can Google find orphan pages?</h3>
+<p>Sometimes, through your sitemap or links from other websites, but it treats them as less important because your own site does not link to them. A page you want to rank should be linked from at least one relevant, indexed page.</p>
 `,
   },
   {
@@ -46691,6 +46752,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Check the order status changes to Processing after a test payment, and that the customer email is sent.</li>
 </ol>
 
+<p>If checkout stops after adding a gateway, see <a href="/blog/woocommerce-checkout-not-working-fix/">how to fix WooCommerce checkout not working</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when payments succeed but orders stay pending, when the gateway needs setting up, or when you are switching providers. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -47111,6 +47174,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>In <strong>GA4</strong>, open <strong>Admin &gt; Data display &gt; Events</strong> and check the enquiry event is marked as a key event for phone clicks.</li>
 </ol>
 
+<p>For form enquiries, a <a href="/blog/thank-you-pages-forms/">thank-you page after form submit</a> gives you the matching conversion to track.</p>
+
 <h2>When to get help</h2>
 <p>Get help when calls are your main enquiries but nothing is tracked, when click events double count, or when you want calls tied to campaigns. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -47218,6 +47283,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>In <strong>Google Ads</strong>, open <strong>Goals &gt; Conversions &gt; Summary</strong> and check the status of each conversion action.</li>
   <li>Check only one primary conversion counts each enquiry, so results are not doubled.</li>
 </ol>
+
+<p>For what to put on the page you track, see <a href="/blog/thank-you-pages-forms/">thank-you pages after form submit</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when conversions show as inactive, when counts double, or when you need form, call and WhatsApp tracking set up. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -47659,6 +47726,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   <li>Use the "click here to preview" link at the bottom of that page to see the email design.</li>
   <li>Place a test order and confirm both the customer and admin emails arrive and do not land in spam.</li>
 </ol>
+
+<p>If the email is missing because the order itself is missing, see <a href="/blog/woocommerce-orders-not-showing-fix/">WooCommerce orders not showing</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when order emails do not arrive, when you need GST invoices attached, or when you want template changes that survive WooCommerce updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers email templates and reliable sending. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -49822,12 +49891,14 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
     title: 'Mixed Content Warning in WordPress: How to Fix Mixed Content Errors, HTTP Links and the Missing Padlock',
     description: 'How to fix a mixed content warning in WordPress: find HTTP links in the console, update URLs in the database, use .htaccess safely and get the padlock back.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-migration'],
     body: `
 <p>To fix a mixed content warning in WordPress, find every resource still loading over HTTP on your HTTPS pages, then update those URLs to HTTPS at the source. The usual culprits are old image links stored in the database, hard-coded URLs in theme files or page builder settings, and external scripts or embeds. A careful database search-and-replace, a check of your theme and plugins, and a site-wide HTTPS redirect fix most mixed content errors within an hour or two.</p>
 <p>This guide explains what mixed content is, how to find it, how to fix it safely and how to stop it coming back after a migration or SSL setup.</p>
+
+<blockquote><strong>Short answer:</strong> To fix a mixed content warning in WordPress, find every file still loading over HTTP on your HTTPS pages using the browser console, then change those URLs to HTTPS at the source: the addresses under Settings &gt; General, a database search-and-replace, theme files and page builder settings. Then force HTTPS site-wide and clear every cache.</blockquote>
 
 <h2>What mixed content means</h2>
 <p>When a page loads over HTTPS, everything on it should also load over HTTPS. If the page pulls in an image, script, stylesheet, font or iframe over plain HTTP, that is mixed content. Browsers treat it in two ways:</p>
@@ -49879,14 +49950,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <h3>8. Clear caches and recheck</h3>
 <p>Clear your caching plugin, server cache and CDN cache, then check the console again on each page type.</p>
 
-<h2>What about "really simple" SSL plugins?</h2>
-<p>Some plugins fix mixed content on the fly by rewriting HTTP URLs to HTTPS as pages are served. They are a quick way to get the padlock back, especially on a site with many old links. The downside is that the old URLs remain in the database and the plugin adds a small amount of processing to every page. A cleaner long-term approach is to fix the URLs at the source and keep the plugin only if you need its other features.</p>
-
 <h2>Mixed content after a migration or redesign</h2>
 <p>Mixed content often appears right after a site moves to new hosting, a new domain or a new design, because URLs from the old setup remain in content and settings. Build a URL update into every migration checklist, and test the site on HTTPS before switching DNS. The guide on <a href="/blog/migrate-website-to-hostinger/">moving a website to new hosting</a> covers the full process, and <a href="/blog/ssl-certificate-errors-fix/">fixing SSL certificate errors</a> helps when the certificate itself is the problem.</p>
-
-<h2>Mixed content on WooCommerce and Shopify</h2>
-<p>On WooCommerce, mixed content on the cart or checkout is especially serious, because browsers may warn visitors before they enter payment details. Check product images, payment gateway logos and any custom checkout scripts after fixing the main site. On Shopify, the platform serves stores over HTTPS by default, so mixed content usually comes from old code pasted into theme files or custom sections, such as an outdated tracking script or an image linked from an external HTTP server.</p>
 
 <h2>Stopping mixed content from coming back</h2>
 <p>Once the site is clean, a few habits keep it that way:</p>
@@ -49898,19 +49963,6 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <li><strong>Add HSTS carefully:</strong> once everything works on HTTPS, an HSTS header tells browsers to always use HTTPS. Only enable it when you are sure every subdomain supports HTTPS, as it is hard to undo quickly.</li>
 </ul>
 <p>Including a quick mixed content check in monthly maintenance takes a few minutes and catches problems before customers notice them. Keep a short list of the pages you check, such as home, a service page, a blog post, a product and the checkout, so anyone doing maintenance follows the same routine.</p>
-
-<h2>Mixed content fixes at a glance</h2>
-<table>
-<thead><tr><th>Where the HTTP link lives</th><th>How to fix it</th></tr></thead>
-<tbody>
-<tr><td>Posts, pages and media URLs in the database</td><td>Search-and-replace http to https after a backup</td></tr>
-<tr><td>Page builder data</td><td>Use the builder's own replace URL tool, then regenerate CSS</td></tr>
-<tr><td>Theme or child theme files</td><td>Edit the hard-coded URL or load assets relatively</td></tr>
-<tr><td>Third-party embeds and scripts</td><td>Replace with the provider's current https embed code</td></tr>
-<tr><td>Cached pages</td><td>Purge the plugin, server and CDN caches</td></tr>
-</tbody>
-</table>
-<p>Mixed content often appears alongside other issues after a domain or hosting change; the <a href="/blog/change-domain-name-without-losing-seo/">domain change guide</a> and this list of <a href="/blog/common-wordpress-errors-fixes/">common WordPress errors and fixes</a> cover the rest.</p>
 
 <h2>Reading mixed content errors in the browser console</h2>
 <p>The browser tells you exactly what is wrong if you know where to look. Open the page, right-click, choose Inspect and open the Console tab, then reload. Mixed content errors usually come in two kinds:</p>
@@ -49929,12 +49981,16 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <pre><code>Header always set Content-Security-Policy "upgrade-insecure-requests"</code></pre>
 <p>Add these above the WordPress block in .htaccess, after taking a copy of the file. They are useful safety nets, but they do not fix the cause. The redirect only affects page addresses, and the header only works if the resource is actually available over HTTPS; an old external image host without SSL will still fail. If you use Cloudflare, check its SSL mode as well, because a wrong setting combined with an .htaccess redirect can cause a redirect loop. On Nginx servers .htaccess is ignored, so the same rules go in the server configuration, which usually means asking your host.</p>
 
-<h2>Quick check: find the insecure files</h2>
-<ol>
-  <li>Open the page in Chrome, press F12 and open the <strong>Console</strong> tab. Each mixed content warning names the http:// file being loaded.</li>
-  <li>Check <strong>Settings &gt; General</strong>: both WordPress Address and Site Address should start with https://.</li>
-  <li>Take a backup, then run a search and replace of http://yourdomain to https://yourdomain with a tool that handles serialised data, and reload the page.</li>
-</ol>
+<h2>Fix mixed content with WP-CLI search-replace</h2>
+<p>If you have SSH, WP-CLI updates old HTTP links safely, including serialised data that a plain SQL query would break. Take a backup first, and replace example.com with your domain:</p>
+<ul>
+  <li><code>wp option get home</code> and <code>wp option get siteurl</code> should both show https.</li>
+  <li><code>wp search-replace 'http://example.com' 'https://example.com' --all-tables --skip-columns=guid --dry-run</code> shows how many replacements would be made.</li>
+  <li>Run the same command without <code>--dry-run</code> to apply it.</li>
+  <li><code>wp elementor flush-css</code> regenerates Elementor's CSS files if you use Elementor.</li>
+  <li><code>wp cache flush</code>, then purge your caching plugin, CDN and browser cache.</li>
+</ul>
+<p>Reload the page with the console open; anything still flagged is coming from a theme file, plugin setting or external script.</p>
 
 <h2>When to get help</h2>
 <p>Get help when warnings remain after the search and replace, when they come from theme files or hard-coded scripts, or when you are unsure about running a database replace on a live store. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers SSL fixes with a backup first. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
@@ -49952,6 +50008,12 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <p>It is safe with a full backup and a WordPress-aware tool that handles serialised data. Always run a dry run first.</p>
 <h3>How do I fix mixed content after installing SSL in WordPress?</h3>
 <p>Change the WordPress Address and Site Address to https, run a careful search-and-replace on the database, fix any hard-coded http links in the theme, force HTTPS at the server and clear every cache. Then check key pages in the browser console for remaining warnings.</p>
+
+<h3>Why do I get a mixed content warning in WordPress after moving to HTTPS?</h3>
+<p>Installing SSL changes how the page loads, not the links already saved in your content. Images, scripts and fonts stored with http:// addresses in the database, theme or page builder still load insecurely until you update them to https.</p>
+
+<h3>Does Cloudflare fix mixed content?</h3>
+<p>Partly. Automatic HTTPS Rewrites, under SSL/TLS &gt; Edge Certificates, rewrites HTTP links to HTTPS when the resource is available securely. It does not fix links that only work over HTTP, so update the source URLs as well.</p>
 `,
   },
   {
@@ -50067,6 +50129,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>A terminal shows the whole loop in one go, without browser cookies or cache getting in the way:</p>
 <pre><code>curl -sIL --max-redirs 10 http://example.com/ | grep -iE "^(HTTP|location)"</code></pre>
 <p>Read the <code>location</code> lines in order. If they bounce between http and https, look at the Cloudflare SSL mode and any force-HTTPS rule. If they bounce between www and non-www, compare the WordPress Address and Site Address with your host's or Cloudflare's domain redirect. A healthy result is at most two hops ending in a <code>200</code>. Run it again after each change.</p>
+
+<p>If your site redirects to a spam or scam site rather than looping, it is not a settings problem but malware: follow <a href="/blog/fix-wordpress-redirect-hack/">how to fix a WordPress hacked redirect</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you are locked out of wp-admin, when the loop started after a migration or domain change, or when Cloudflare, the host and plugins all add their own redirects. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to trace and fix the chain, or see <a href="/wordpress-migration/">WordPress migration</a> if the loop appeared after a move.</p>
@@ -52852,12 +52916,14 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'WordPress Categories and Tags for SEO: When to Index, Noindex or Improve Them',
     description: 'WordPress categories and tags for SEO: how to use each, when to index or noindex archives, how to fix thin tag pages and make WooCommerce categories rank.',
     date: '2026-09-30',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
 <p>For WordPress categories and tags SEO, the short answer is this: keep useful category pages indexed and improve them, and set most tag pages to noindex unless each tag has enough posts and a clear purpose. Category pages, especially on online stores, can be some of the best ranking pages on a site. Tag pages, on most small business blogs, end up as thin lists of one or two posts that add little and compete with your real articles.</p>
 <p>This guide explains how WordPress and WooCommerce archives work, how to decide what to index, and how to improve the archives worth keeping.</p>
+<blockquote><strong>Short answer:</strong> Keep WordPress category pages indexed and improve them with an intro and good internal links, because they can rank, especially on stores. Set most tag pages to noindex unless a tag has several posts and a clear purpose, so thin one-post tags do not compete with your real articles. Noindexed archives should also leave the sitemap.</blockquote>
+
 <h2>How category and tag archives work in WordPress</h2>
 <p>WordPress creates an archive page for every category and every tag you use. If a post is filed under the category Speed and tagged images, caching and hosting, that single post appears on four archive pages. On a store, WooCommerce does the same for product categories and product tags.</p>
 <p>Categories are meant to be broad and hierarchical, like sections of a library. Tags are meant to be specific and flat, like index entries. The problem is that over time many sites add tags freely, end up with hundreds of them, and most are used once or twice. Each one becomes a thin page Google may crawl and judge.</p>
@@ -52940,11 +53006,14 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>For most service businesses in India, five to ten categories are plenty. Name them after topics customers actually search, such as website costs, SEO, speed or maintenance. Use tags sparingly or not at all. Give each category a short intro and link to it from the main navigation or the blog page. This keeps the site easier to browse and helps search engines understand what you cover.</p>
 <p>Before writing a new post, decide which category it belongs in and whether it needs tags at all. A short written list of approved categories and their purpose, shared with anyone who publishes on the site, prevents the slow drift back into dozens of overlapping archives. Review the list once or twice a year, and merge or retire categories that stopped getting new posts, redirecting any that still receive visits.</p>
 <p>When you reorganise, do it in one planned pass rather than piecemeal changes, and recheck Search Console a few weeks later for errors or lost pages.</p>
-<h2>Quick check: how are archive pages indexed?</h2>
+<h2>How to noindex tag pages in Yoast, Rank Math and AIOSEO</h2>
 <ol>
-  <li>Search <strong>site:yourdomain.com/tag/</strong> and <strong>site:yourdomain.com/category/</strong> to see how many archive pages Google shows.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for tag pages under "Crawled - currently not indexed".</li>
-  <li>In WordPress, open <strong>Posts &gt; Tags</strong> and count tags with one post or none.</li>
+  <li><strong>Yoast SEO:</strong> go to Yoast SEO &gt; Settings &gt; Categories &amp; tags &gt; Tags and turn off "Show tags in search results".</li>
+  <li><strong>Rank Math:</strong> go to Rank Math &gt; Titles &amp; Meta &gt; Tags and set Robots Meta to No Index.</li>
+  <li><strong>All in One SEO:</strong> go to All in One SEO &gt; Search Appearance &gt; Taxonomies, open Tags and turn off "Show in Search Results".</li>
+  <li>To change one category or tag only, edit it under Posts &gt; Categories or Posts &gt; Tags and use the SEO plugin's settings box there.</li>
+  <li>Open a tag page, view the source and confirm <code>noindex</code> appears in the robots meta tag.</li>
+  <li>Check that tags have dropped out of your sitemap, then watch Search Console's Pages report as they leave the index over the following weeks.</li>
 </ol>
 
 <h2>When to get help</h2>
@@ -52963,6 +53032,12 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>If the tag page had links or clicks, redirect it to the closest relevant category or post. Tags with no traffic or links can simply be removed.</p>
 <h3>Do WordPress tags help SEO?</h3>
 <p>Rarely on their own. Tags help readers find related posts, but most tag archives on small sites are thin and are better set to noindex. Only a tag with many posts and a clear topic is worth indexing and improving.</p>
+
+<h3>How do I noindex tags in WordPress?</h3>
+<p>Use your SEO plugin's taxonomy settings: in Yoast turn off "Show tags in search results", in Rank Math set the Tags robots meta to No Index, and in All in One SEO turn off "Show in Search Results" for Tags. Then check the page source.</p>
+
+<h3>Should categories and tags be in the sitemap?</h3>
+<p>Only the ones you want indexed. Useful category pages belong in the sitemap; noindexed tag pages do not, because a sitemap should list pages you want Google to index. SEO plugins normally drop noindexed archives from the sitemap automatically.</p>
 `,
   },
   {
@@ -59752,12 +59827,14 @@ This overrides whatever is saved in the database, which is useful when a wrong U
     title: 'How to Fix WordPress Plugin Conflicts Safely: Staging, Troubleshooting Mode, Debug Logs and Prevention',
     description: 'Fix WordPress plugin conflicts without risking your live site: test on staging, use Health Check mode, halve your plugins, read the debug log and console.',
     date: '2026-10-01',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-website-development'],
     body: `
 <p>To fix a WordPress plugin conflict, first protect the live site with a backup, then reproduce the problem on a staging copy or in Health Check troubleshooting mode. Switch to a default theme and deactivate plugins in halves until the problem disappears, re-enable them to find the exact pair that clashes, and confirm it in the PHP debug log or the browser console. Then update, replace or roll back one of the two plugins, and change how you update so it doesn't happen again.</p>
 <p>A conflict happens when two plugins, or a plugin and your theme, each work alone but break something together: a form stops sending, a layout falls apart, checkout hangs or the site shows a critical error. Finding and fixing these safely is a routine part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> work, and this guide is the same method written out so you can follow it yourself.</p>
+<blockquote><strong>Short answer:</strong> For a WordPress plugin conflict fix, back up, then reproduce the problem on staging or in Health Check troubleshooting mode. Switch to a default theme, deactivate plugins in halves until the problem stops, re-enable them to find the clashing pair, confirm it in the debug log or console, then update, replace or roll back one plugin.</blockquote>
+
 <h2>Is it really a plugin conflict?</h2>
 <p>Several problems look like conflicts but aren't. Rule these out early, because the fix is completely different.</p>
 <table>
@@ -59820,17 +59897,6 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>For buttons, sliders, menus and checkouts that "do nothing", open the broken page, right-click, choose Inspect and open the Console tab. Red errors name the script that failed. A common pattern is one plugin loading its own copy of a library, or an optimisation plugin deferring a script another plugin needs early, so everything after the first error stops running.</p>
 <h3>Query Monitor</h3>
 <p>The free Query Monitor plugin shows PHP errors, slow database queries, hooks and the scripts loaded on each page. It is very useful on staging for seeing which plugin is responsible for what.</p>
-<h2>Theme conflicts</h2>
-<p>If the problem disappears with a default theme, look at what your theme adds: bundled plugins, custom WooCommerce template overrides, its own sliders or lazy loading, or code in functions.php. Older themes with outdated template files are a frequent cause after a WooCommerce or page builder update. <a href="/blog/elementor-layout-broken-after-update/">Elementor layout broken after an update</a> covers the builder-specific version of this problem.</p>
-<h2>Caching and optimisation conflicts</h2>
-<p>Caching, minification and "combine JavaScript" options cause a large share of front-end breakage, because they change how other plugins' files load. Common signs and fixes:</p>
-<ul>
-  <li><strong>Works when logged in, broken when logged out:</strong> administrators are normally served uncached pages, so visitors may be seeing an old file. Purge all caches and recheck.</li>
-  <li><strong>Broke after enabling "delay" or "defer" JavaScript:</strong> exclude the affected plugin's script from that option rather than turning optimisation off entirely.</li>
-  <li><strong>Two plugins doing the same job:</strong> two caching plugins, or a caching plugin plus host caching with overlapping settings, often clash. Keep one.</li>
-  <li><strong>Cart, checkout or account pages acting oddly:</strong> these pages must not be cached; most caching plugins exclude them, but check.</li>
-</ul>
-<p><a href="/blog/wordpress-caching-explained/">WordPress caching explained</a> describes the layers involved.</p>
 <h2>WordPress plugin conflict fix when you cannot reach wp-admin</h2>
 <p>Sometimes a conflict takes the whole dashboard down, so you cannot deactivate anything in the normal way. You still have safe options:</p>
 <ul>
@@ -59857,12 +59923,16 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   <li>Never install nulled premium plugins: they skip official updates and often carry hidden code.</li>
   <li>Keep a short log of what was updated and when, so the next problem starts with "what changed?"</li>
 </ul>
-<h2>Quick check: test for a conflict without breaking the live site</h2>
-<ol>
-  <li>Install the Health Check &amp; Troubleshooting plugin and open <strong>Tools &gt; Site Health &gt; Troubleshooting</strong>. Troubleshooting mode disables plugins for your session only; visitors still see the normal site.</li>
-  <li>Switch to a default theme inside that mode and check whether the problem goes away.</li>
-  <li>Re-enable plugins one at a time until the problem returns. The last one enabled is your suspect.</li>
-</ol>
+<h2>Fix WordPress plugin conflicts with WP-CLI</h2>
+<p>If your host offers SSH, WP-CLI makes the halving method much faster, and works even when wp-admin is down. Try it on staging first:</p>
+<ul>
+  <li><code>wp plugin list --status=active</code> records which plugins are active, so you can restore them later.</li>
+  <li><code>wp --skip-plugins --skip-themes plugin list</code> runs a command even when a plugin causes a fatal error.</li>
+  <li><code>wp plugin deactivate plugin-one plugin-two</code> switches off half the list; <code>wp plugin activate</code> brings them back.</li>
+  <li><code>wp theme activate twentytwentyfive</code> rules the theme in or out (use any default theme you have installed).</li>
+  <li><code>wp plugin install plugin-slug --version=1.2.3 --force</code> rolls a WordPress.org plugin back to an earlier version.</li>
+  <li><code>tail -n 50 wp-content/debug.log</code> shows the latest errors once debugging is on.</li>
+</ul>
 
 <h2>When to get help</h2>
 <p>Get help when the conflict involves checkout, payments or forms, when both conflicting plugins are essential, or when the problem only happens on the live server. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing updates on staging before they reach the live site. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
@@ -59878,8 +59948,12 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually caching or JavaScript optimisation, because logged-in users often bypass the page cache. Purge every cache and test the optimisation settings one by one.</p>
 <h3>What if the conflicting plugins are both essential?</h3>
 <p>Check for updates, report it to both developers, and try changing the overlapping setting or excluding a script from optimisation. If nothing works, replace the less important plugin or use a small piece of custom code.</p>
-<h3>What is the quickest WordPress plugin conflict fix?</h3>
-<p>Roll back or deactivate the plugin you updated or installed most recently, since that is the usual trigger. If that does not help, use troubleshooting mode or a staging copy and the halving method to find the exact pair.</p>
+
+<h3>How do I fix a plugin conflict after a WordPress update?</h3>
+<p>Start with whatever updated last. Roll that plugin back to its previous version on staging, check whether the problem stops, and read its changelog and support forum for known issues. Keep the older version only until a fixed release is available.</p>
+
+<h3>Can two plugins that do the same job conflict?</h3>
+<p>Yes. Two caching plugins, two SEO plugins or two security plugins often fight over the same settings, files or page output. Keep one plugin per job and remove the other properly, including any files or rules it added.</p>
 `,
   },
   {
@@ -61383,6 +61457,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li><strong>Check for crawl waste:</strong> in Google Search Console, open <em>Indexing, Pages</em> and look for many filter URLs with <code>?filter_</code> or <code>?pa_</code> in them.</li>
 </ol>
 
+<p>For which product category and tag archives should be indexed, see <a href="/blog/category-tag-pages-seo/">category and tag pages for SEO</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when filters show empty results, slow down category pages, or create thousands of indexed URLs. <a href="/woocommerce-developer/">WooCommerce development</a> covers attributes and filter setup, and <a href="/wordpress-seo-services/">WordPress SEO services</a> handles crawl and indexing for filtered pages. <a href="/#contact">Get in touch</a> with your category URL.</p>
 
@@ -62858,6 +62934,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li><strong>Check update emails:</strong> search your admin email inbox for "Some plugins were automatically updated" to see what changed recently and whether anything failed.</li>
 </ol>
 
+<p>If an automatic update breaks something, use <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">this method to find and fix a WordPress plugin conflict</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when an auto-update has broken the site, when you run WooCommerce or a page builder where updates need testing, or when you'd rather not watch updates yourself. <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates with backups, and <a href="/wordpress-website-development/">WordPress website development</a> sets sensible update rules from launch. <a href="/#contact">Get in touch</a> with the plugins you rely on.</p>
 
@@ -64002,6 +64080,8 @@ wp db check</code></pre>
   <li>Check the category, address and hours are complete and match the website.</li>
 </ol>
 
+<p>Creating dozens of near-identical city pages will not fix Maps visibility and can hurt the site; see <a href="/blog/local-landing-pages-without-doorway-pages/">SEO doorway pages explained</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when the profile is suspended or missing, or when your website needs local pages linked to it. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -64139,6 +64219,8 @@ wp db check</code></pre>
 <li><strong>Place a test order:</strong> use your own mobile number and confirm the SMS or WhatsApp message arrives, with the right order number and name.</li>
 <li><strong>Check templates:</strong> in your messaging provider's dashboard, confirm WhatsApp templates are approved and SMS templates are registered on DLT, as Indian SMS requires.</li>
 </ol>
+
+<p>If notifications stop because orders are not being created, see <a href="/blog/woocommerce-orders-not-showing-fix/">how to fix WooCommerce orders not showing</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when messages stop sending, when templates get rejected, or when you want COD confirmation or shipping updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers notification setup and testing, and <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development</a> covers both platforms. <a href="/#contact">Get in touch</a> with your messaging provider.</p>
@@ -65202,6 +65284,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>List which sites have no uptime monitoring.</li>
 </ol>
 
+<p>For typical prices and what clients expect in each package, see <a href="/blog/website-maintenance-cost-india/">website maintenance cost in India</a>.</p>
+
 <h2>When to get help</h2>
 <p>Get help when care plans take more hours than they earn, or when you need a white-label partner. <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -65323,6 +65407,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>List each page template, form and integration in one brief.</li>
   <li>Agree who owns hosting, staging and launch.</li>
 </ol>
+
+<p>When a handover never happened, see <a href="/blog/regain-website-access-old-developer/">how clients regain website access from an old developer</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when you need a white-label developer who works to your brief. <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -66497,6 +66583,8 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Paste the address into the <strong>URL Inspection</strong> bar at the top of <strong>Google Search Console</strong> for the homepage and click <strong>Request indexing</strong>.</li>
   <li>Search <strong>site:yourdomain.com</strong> after a week to see which pages are indexed.</li>
 </ol>
+
+<p>If you are not sure where your sitemap is or what it should contain, see <a href="/blog/xml-sitemaps-explained/">XML sitemaps explained</a>.</p>
 
 <h2>When to get help</h2>
 <p>Get help when a new site is not getting indexed, or when you need service pages planned for search. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -68563,6 +68651,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
   <li>In WordPress, open <strong>Tools &gt; Site Health</strong> and read the critical issues and recommendations.</li>
   <li>Check your backup plugin ran a fresh backup before you try updates again.</li>
 </ol>
+
+<p>If the site loads but something breaks after the update, see <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts</a>.</p>
 
 <h2>When to get help</h2>
 <p>If you are unsure which files to touch or the site still does not load, get help before deleting more. A <a href="/wordpress-maintenance/">WordPress maintenance service</a> can take care of updates, backups and monitoring so this does not happen during a sale or campaign. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer</a> or contact a <a href="/wordpress-developer-pune/">WordPress developer in Pune</a> for an urgent fix.</p>
@@ -71580,12 +71670,14 @@ or a cookie name starts with:
     title: 'WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead "Place Order" Button',
     description: 'WooCommerce checkout not working, slow or showing an error? Fix endless spinners, a dead Place Order button, slow loading, payment errors and caching issues.',
     date: '2026-10-11',
-    updated: '2026-11-09',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>When WooCommerce checkout is not working, the cause is usually one of five things: cached checkout pages, a JavaScript conflict from a plugin or theme, a payment plugin problem, an SSL or mixed content issue, or broken sessions. Open the browser console and the WooCommerce logs first; the error message normally tells you which one it is.</p>
 <p>This guide covers the common symptoms, an endless spinner, a Place Order button that does nothing, a generic error or a payment that goes through without an order, with checks in a safe order. Every hour checkout is down costs sales, so if you need it fixed quickly, <a href="/woocommerce-developer/">WooCommerce development and support</a> can help.</p>
+<blockquote><strong>Short answer:</strong> WooCommerce checkout not working is usually one of five things: cached cart or checkout pages, a plugin or theme JavaScript conflict, a payment plugin fault, an SSL or mixed content issue, or broken sessions. A slow checkout usually means heavy plugins, slow shipping or payment calls, or weak hosting. Read the browser console and WooCommerce logs first.</blockquote>
+
 <h2>WooCommerce checkout not working: match the symptom</h2>
 <table>
   <thead><tr><th>Symptom</th><th>Most likely cause</th><th>Where to look first</th></tr></thead>
@@ -71663,11 +71755,14 @@ or a cookie name starts with:
   <li>Repeat on a phone over mobile data.</li>
 </ul>
 <p>Update on staging first for major versions, and keep a recent backup so you can roll back if checkout breaks.</p>
-<h2>Quick check: after the fix</h2>
+<h2>Check WooCommerce page setup and system status</h2>
 <ol>
-  <li>Place a test order in a private window on a phone.</li>
-  <li>Check <strong>WooCommerce &gt; Status &gt; Logs</strong> for new errors.</li>
-  <li>Check the order email arrives for both you and the customer.</li>
+  <li>Go to WooCommerce &gt; Settings &gt; Advanced &gt; Page setup and confirm the Cart and Checkout pages are assigned to the right pages.</li>
+  <li>Open the Checkout page in the editor and confirm it holds the Checkout block or the <code>[woocommerce_checkout]</code> shortcode, not both and not neither.</li>
+  <li>Open WooCommerce &gt; Status &gt; System status and check the WooCommerce pages section for errors.</li>
+  <li>In the same report, look under Templates for "outdated copies" of WooCommerce templates in your theme; outdated checkout templates often break it after an update.</li>
+  <li>Re-save Settings &gt; Permalinks to refresh rewrite rules.</li>
+  <li>In WooCommerce &gt; Status &gt; Tools, run "Clear transients"; use "Clear customer sessions" only if carts are clearly broken, as it empties every cart.</li>
 </ol>
 
 <h2>When to get help</h2>
@@ -71685,6 +71780,12 @@ or a cookie name starts with:
 <p>Yes. Cart, checkout and account pages must be excluded from page caching and CDN caching, or sessions and security tokens fail.</p>
 <h3>How do I fix a WooCommerce checkout error message?</h3>
 <p>Read the exact message, then check the browser console and WooCommerce, then Status, then Logs at the same time. Most checkout errors point to a payment plugin, a validation rule, an expired session or a caching problem, and the log usually names which.</p>
+
+<h3>Why is my WooCommerce checkout so slow?</h3>
+<p>Checkout cannot be fully cached, so every step runs on the server. Slow hosting, many active plugins, live shipping-rate or pincode lookups, and payment or analytics scripts all add time. Test with Query Monitor and the browser's Network tab to see which request is slow.</p>
+
+<h3>How do I test WooCommerce checkout without real payments?</h3>
+<p>Put your payment gateway into test or sandbox mode with its test keys, or enable Cash on delivery temporarily, and place orders on a staging copy. Check that the order, stock change and emails all happen, then switch back to live keys.</p>
 `,
   },
   {
@@ -71814,6 +71915,8 @@ or a cookie name starts with:
 </ol>
 
 <p>Planning a new store and budgeting for it? See the <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost in India</a> guide.</p>
+
+<p>If payments go through but orders are missing, see <a href="/blog/woocommerce-orders-not-showing-fix/">WooCommerce orders not showing</a>.</p>
 
 <h2>When to get help</h2>
 <p>If payments are failing and you are losing orders, fixing it fast matters more than learning every detail. A <a href="/woocommerce-developer/">WooCommerce developer</a> can check gateway settings, webhooks, logs and conflicts and set up monitoring so it does not happen again. You can also <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> for ongoing <a href="/wordpress-maintenance/">WooCommerce maintenance</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
@@ -72428,12 +72531,14 @@ or a cookie name starts with:
     title: 'WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails',
     description: "WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.",
     date: '2026-10-11',
-    updated: '2026-11-07',
+    updated: '2026-11-10',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>If WooCommerce orders are not showing, first check the order list filters and the "Pending payment" and "Drafts" views, then check whether your store uses HPOS (High-Performance Order Storage) and whether sync is set correctly. If a customer has paid but no order exists, the payment gateway's callback probably failed. If orders exist but nobody received the email, that is an email delivery problem, not a missing order.</p>
 <p>This guide separates those three problems and walks through how to fix each.</p>
+<blockquote><strong>Short answer:</strong> If WooCommerce orders are not showing, clear the order list filters and check the Pending payment and Drafts views, then check the order storage setting under WooCommerce &gt; Settings &gt; Advanced &gt; Features. If a customer paid but no order exists, the gateway callback failed. If orders exist but no email arrived, fix email delivery instead.</blockquote>
+
 <h2>Three different problems that look the same</h2>
 <table>
 <thead><tr><th>What you see</th><th>Likely problem</th><th>Where to look</th></tr></thead>
@@ -72526,9 +72631,16 @@ or a cookie name starts with:
 <li>Review orders against gateway payments regularly, especially pending ones. <a href="/blog/woocommerce-order-management-workflow/">An order management workflow</a> helps make this routine.</li>
 </ul>
 <p>Whatever the cause turns out to be, write down what happened, what you checked and what fixed it. A short incident note saves a lot of time if the same problem appears after a future update, and it gives a developer a useful starting point if you need outside help. Keep a list of orders you corrected manually so you can check they were shipped and invoiced properly.</p>
-<h2>Quick check: the gateway log and order storage setting</h2>
-<p>Two screens answer most "paid but no order" cases. First, go to <strong>WooCommerce &gt; Status &gt; Logs</strong> and pick the log for your payment gateway (for example a Razorpay or PayU log) for the date of the missing order. Look for webhook or callback errors around the payment time, then compare it with the webhook section of your gateway's dashboard, which shows whether each notification reached your site and what response it got.</p>
-<p>Second, open <strong>WooCommerce &gt; Settings &gt; Advanced &gt; Features</strong> and note which order storage is active and whether compatibility mode (sync) is on. If you switched storage recently, orders created during the switch are the first ones to check.</p>
+<h2>Find a missing WooCommerce order: step by step</h2>
+<ol>
+  <li>Go to WooCommerce &gt; Orders, choose "All" and search by the customer's email, phone or name.</li>
+  <li>Check the Pending payment, Failed, Cancelled and Drafts views; unfinished block checkouts are kept as drafts.</li>
+  <li>Open WooCommerce &gt; Status &gt; Logs and read the payment gateway's log for the time of the purchase.</li>
+  <li>In your payment gateway's dashboard, find the transaction, note the order ID it carries and check whether the webhook to your site succeeded.</li>
+  <li>Open WooCommerce &gt; Status &gt; Scheduled Actions and look for failed or long-pending actions.</li>
+  <li>Under WooCommerce &gt; Settings &gt; Advanced &gt; Features, check which order storage is active and whether compatibility mode is syncing both tables.</li>
+  <li>If the payment exists but no order, create the order manually from the transaction details and fix the callback before the next sale.</li>
+</ol>
 
 <h2>When to get help</h2>
 <p>Get help when paid orders are missing, when orders disappear after a migration or update, or when you cannot tell whether the problem is the gateway, a plugin or the server. Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly, and <a href="/wordpress-maintenance/">store maintenance</a> keeps an eye on it afterwards.</p>
@@ -72546,6 +72658,12 @@ or a cookie name starts with:
 <p>If the order exists in the database, yes, by fixing filters or sync. If it was never created, you can create it manually from the gateway payment details.</p>
 <h3>Why are WooCommerce orders showing as pending payment?</h3>
 <p>Pending payment means the order was created but WooCommerce never received the payment confirmation. The customer may have left the gateway page, or the gateway callback or webhook is failing. Check the payment in your gateway dashboard before marking it paid by hand.</p>
+
+<h3>Why are WooCommerce orders not showing after enabling HPOS?</h3>
+<p>Usually an older plugin or report still reads orders from the posts table while new orders are saved in the HPOS tables. Turn on compatibility mode so both are synced, update or replace plugins that are not HPOS-compatible, and check the Features screen for warnings.</p>
+
+<h3>Where are WooCommerce orders stored in the database?</h3>
+<p>With HPOS, orders live in their own tables such as wp_wc_orders, wp_wc_order_addresses and wp_wc_orders_meta. With legacy storage they are posts of type shop_order in wp_posts, with details in wp_postmeta. Your table prefix may differ.</p>
 `,
   },
   {

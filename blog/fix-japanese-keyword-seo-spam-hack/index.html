@@ -331,6 +331,8 @@ RewriteRule ^spam-folder/ - [G,L]</code></pre>
 curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" https://yourdomain.com/ | grep -i "&lt;title"</code></pre>
 <p>If the second title is in Japanese or full of brand and discount keywords, the site is cloaking. Repeat it on one of the spam URLs from your site: search. A clean result does not prove the site is clean, because some cloaking also checks Google's IP addresses, so the URL Inspection live test in Search Console stays the final proof.</p>
 
+<p>If visitors from Google are also being sent to spam sites, the same attack has usually added redirect code; see <a href="/blog/fix-wordpress-redirect-hack/">how to find and remove WordPress redirect malware</a>.</p>
+
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help when spam pages keep coming back, when there are thousands of them in Google, or when you find an unknown owner in Search Console. My <a href="/wordpress-malware-removal/">WordPress malware removal service</a> covers SEO spam hacks: the generator code, cloaking in theme files, backdoors, unknown owners and sitemaps, and the review request. Once it is clean, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and security monitoring running every month.</p>
 

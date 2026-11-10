@@ -43,7 +43,7 @@
       "headline": "WordPress Categories and Tags for SEO: When to Index, Noindex or Improve Them",
       "description": "WordPress categories and tags for SEO: how to use each, when to index or noindex archives, how to fix thin tag pages and make WooCommerce categories rank.",
       "datePublished": "2026-09-30",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/category-tag-pages-seo/",
       "image": "https://samverse.space/assets/og/blog-category-tag-pages-seo.png",
       "articleSection": "SEO",
@@ -143,6 +143,22 @@
             "@type": "Answer",
             "text": "Rarely on their own. Tags help readers find related posts, but most tag archives on small sites are thin and are better set to noindex. Only a tag with many posts and a clear topic is worth indexing and improving."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I noindex tags in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use your SEO plugin's taxonomy settings: in Yoast turn off \"Show tags in search results\", in Rank Math set the Tags robots meta to No Index, and in All in One SEO turn off \"Show in Search Results\" for Tags. Then check the page source."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should categories and tags be in the sitemap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the ones you want indexed. Useful category pages belong in the sitemap; noindexed tag pages do not, because a sitemap should list pages you want Google to index. SEO plugins normally drop noindexed archives from the sitemap automatically."
+          }
         }
       ]
     }
@@ -189,7 +205,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-30">30 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Categories%20and%20Tags%20for%20SEO%3A%20When%20to%20Index%2C%20Noindex%20or%20Improve%20Them%20https%3A%2F%2Fsamverse.space%2Fblog%2Fcategory-tag-pages-seo%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -217,7 +233,7 @@
               <li><a href="#pagination-urls-and-the-category-base">Pagination, URLs and the category base</a></li>
               <li><a href="#category-pages-vs-landing-pages">Category pages vs landing pages</a></li>
               <li><a href="#a-sensible-structure-for-small-business-blogs">A sensible structure for small business blogs</a></li>
-              <li><a href="#quick-check-how-are-archive-pages-indexed">Quick check: how are archive pages indexed?</a></li>
+              <li><a href="#how-to-noindex-tag-pages-in-yoast-rank-math-and-aioseo">How to noindex tag pages in Yoast, Rank Math and AIOSEO</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -232,6 +248,8 @@
           </div>
 <p>For WordPress categories and tags SEO, the short answer is this: keep useful category pages indexed and improve them, and set most tag pages to noindex unless each tag has enough posts and a clear purpose. Category pages, especially on online stores, can be some of the best ranking pages on a site. Tag pages, on most small business blogs, end up as thin lists of one or two posts that add little and compete with your real articles.</p>
 <p>This guide explains how WordPress and WooCommerce archives work, how to decide what to index, and how to improve the archives worth keeping.</p>
+<blockquote><strong>Short answer:</strong> Keep WordPress category pages indexed and improve them with an intro and good internal links, because they can rank, especially on stores. Set most tag pages to noindex unless a tag has several posts and a clear purpose, so thin one-post tags do not compete with your real articles. Noindexed archives should also leave the sitemap.</blockquote>
+
 <h2 id="how-category-and-tag-archives-work-in-wordpress">How category and tag archives work in WordPress</h2>
 <p>WordPress creates an archive page for every category and every tag you use. If a post is filed under the category Speed and tagged images, caching and hosting, that single post appears on four archive pages. On a store, WooCommerce does the same for product categories and product tags.</p>
 <p>Categories are meant to be broad and hierarchical, like sections of a library. Tags are meant to be specific and flat, like index entries. The problem is that over time many sites add tags freely, end up with hundreds of them, and most are used once or twice. Each one becomes a thin page Google may crawl and judge.</p>
@@ -320,11 +338,14 @@
 <p>For most service businesses in India, five to ten categories are plenty. Name them after topics customers actually search, such as website costs, SEO, speed or maintenance. Use tags sparingly or not at all. Give each category a short intro and link to it from the main navigation or the blog page. This keeps the site easier to browse and helps search engines understand what you cover.</p>
 <p>Before writing a new post, decide which category it belongs in and whether it needs tags at all. A short written list of approved categories and their purpose, shared with anyone who publishes on the site, prevents the slow drift back into dozens of overlapping archives. Review the list once or twice a year, and merge or retire categories that stopped getting new posts, redirecting any that still receive visits.</p>
 <p>When you reorganise, do it in one planned pass rather than piecemeal changes, and recheck Search Console a few weeks later for errors or lost pages.</p>
-<h2 id="quick-check-how-are-archive-pages-indexed">Quick check: how are archive pages indexed?</h2>
+<h2 id="how-to-noindex-tag-pages-in-yoast-rank-math-and-aioseo">How to noindex tag pages in Yoast, Rank Math and AIOSEO</h2>
 <ol>
-  <li>Search <strong>site:yourdomain.com/tag/</strong> and <strong>site:yourdomain.com/category/</strong> to see how many archive pages Google shows.</li>
-  <li>In <strong>Google Search Console</strong>, open <strong>Indexing &gt; Pages</strong> and look for tag pages under "Crawled - currently not indexed".</li>
-  <li>In WordPress, open <strong>Posts &gt; Tags</strong> and count tags with one post or none.</li>
+  <li><strong>Yoast SEO:</strong> go to Yoast SEO &gt; Settings &gt; Categories &amp; tags &gt; Tags and turn off "Show tags in search results".</li>
+  <li><strong>Rank Math:</strong> go to Rank Math &gt; Titles &amp; Meta &gt; Tags and set Robots Meta to No Index.</li>
+  <li><strong>All in One SEO:</strong> go to All in One SEO &gt; Search Appearance &gt; Taxonomies, open Tags and turn off "Show in Search Results".</li>
+  <li>To change one category or tag only, edit it under Posts &gt; Categories or Posts &gt; Tags and use the SEO plugin's settings box there.</li>
+  <li>Open a tag page, view the source and confirm <code>noindex</code> appears in the robots meta tag.</li>
+  <li>Check that tags have dropped out of your sitemap, then watch Search Console's Pages report as they leave the index over the following weeks.</li>
 </ol>
 
 <h2 id="when-to-get-help">When to get help</h2>
@@ -343,6 +364,12 @@
 <p>If the tag page had links or clicks, redirect it to the closest relevant category or post. Tags with no traffic or links can simply be removed.</p>
 <h3>Do WordPress tags help SEO?</h3>
 <p>Rarely on their own. Tags help readers find related posts, but most tag archives on small sites are thin and are better set to noindex. Only a tag with many posts and a clear topic is worth indexing and improving.</p>
+
+<h3>How do I noindex tags in WordPress?</h3>
+<p>Use your SEO plugin's taxonomy settings: in Yoast turn off "Show tags in search results", in Rank Math set the Tags robots meta to No Index, and in All in One SEO turn off "Show in Search Results" for Tags. Then check the page source.</p>
+
+<h3>Should categories and tags be in the sitemap?</h3>
+<p>Only the ones you want indexed. Useful category pages belong in the sitemap; noindexed tag pages do not, because a sitemap should list pages you want Google to index. SEO plugins normally drop noindexed archives from the sitemap automatically.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -388,7 +415,7 @@
               <li><a href="#pagination-urls-and-the-category-base">Pagination, URLs and the category base</a></li>
               <li><a href="#category-pages-vs-landing-pages">Category pages vs landing pages</a></li>
               <li><a href="#a-sensible-structure-for-small-business-blogs">A sensible structure for small business blogs</a></li>
-              <li><a href="#quick-check-how-are-archive-pages-indexed">Quick check: how are archive pages indexed?</a></li>
+              <li><a href="#how-to-noindex-tag-pages-in-yoast-rank-math-and-aioseo">How to noindex tag pages in Yoast, Rank Math and AIOSEO</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -417,9 +444,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/topic-clusters-pillar-pages/"><img class="post-card-img" src="/assets/og/blog-topic-clusters-pillar-pages.webp" alt="Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Topic Clusters and Pillar Pages Explained: How to Plan Them and Build Them in WordPress</h3><p>Pillar page WordPress guide: what a pillar page is, how to plan a topic cluster, and how to build pillar and cluster pages with links, blocks and menus.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/wordpress-seo-plugins-compared/"><img class="post-card-img" src="/assets/og/blog-wordpress-seo-plugins-compared.webp" alt="Yoast SEO vs Rank Math vs All in One SEO: Which WordPress SEO Plugin Should You Use?" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Yoast SEO vs Rank Math vs All in One SEO: Which WordPress SEO Plugin Should You Use?</h3><p>Yoast vs Rank Math vs AIOSEO compared for Indian business sites: features, schema, sitemaps, WooCommerce support, switching safely and what matters more.</p><span class="post-card-meta">1 October 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/technical-seo-audit-wordpress/"><img class="post-card-img" src="/assets/og/blog-technical-seo-audit-wordpress.webp" alt="WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)</h3><p>How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema and WooCommerce checks, what to fix first and how to report it.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/google-search-console-reports-explained/"><img class="post-card-img" src="/assets/og/blog-google-search-console-reports-explained.webp" alt="Google Search Console Reports Explained: A Tour of Every Report, What It Shows and What to Do About It" width="1200" height="630" loading="lazy"><span class="work-tag">SEO</span><h3>Google Search Console Reports Explained: A Tour of Every Report, What It Shows and What to Do About It</h3><p>Google Search Console reports explained: Performance, URL Inspection, Pages, Sitemaps, Core Web Vitals, Links and more, and what to do with each.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>
     </section>

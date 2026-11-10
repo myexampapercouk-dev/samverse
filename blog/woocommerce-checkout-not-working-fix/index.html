@@ -43,7 +43,7 @@
       "headline": "WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead \"Place Order\" Button",
       "description": "WooCommerce checkout not working, slow or showing an error? Fix endless spinners, a dead Place Order button, slow loading, payment errors and caching issues.",
       "datePublished": "2026-10-11",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "mainEntityOfPage": "https://samverse.space/blog/woocommerce-checkout-not-working-fix/",
       "image": "https://samverse.space/assets/og/blog-woocommerce-checkout-not-working-fix.png",
       "articleSection": "E-commerce",
@@ -143,6 +143,22 @@
             "@type": "Answer",
             "text": "Read the exact message, then check the browser console and WooCommerce, then Status, then Logs at the same time. Most checkout errors point to a payment plugin, a validation rule, an expired session or a caching problem, and the log usually names which."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WooCommerce checkout so slow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Checkout cannot be fully cached, so every step runs on the server. Slow hosting, many active plugins, live shipping-rate or pincode lookups, and payment or analytics scripts all add time. Test with Query Monitor and the browser's Network tab to see which request is slow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I test WooCommerce checkout without real payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Put your payment gateway into test or sandbox mode with its test keys, or enable Cash on delivery temporarily, and place orders on a staging copy. Check that the order, stock change and emails all happen, then switch back to live keys."
+          }
         }
       ]
     }
@@ -189,7 +205,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WooCommerce%20Checkout%20Not%20Working%20or%20Slow%3F%20Fixing%20Spinners%2C%20Errors%20and%20a%20Dead%20%22Place%20Order%22%20Button%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwoocommerce-checkout-not-working-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -218,7 +234,7 @@
               <li><a href="#woocommerce-checkout-slow-why-it-lags-and-what-to-fix">WooCommerce checkout slow: why it lags and what to fix</a></li>
               <li><a href="#signs-it-might-be-something-worse">Signs it might be something worse</a></li>
               <li><a href="#a-safe-test-routine">A safe test routine</a></li>
-              <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
+              <li><a href="#check-woocommerce-page-setup-and-system-status">Check WooCommerce page setup and system status</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -233,6 +249,8 @@
           </div>
 <p>When WooCommerce checkout is not working, the cause is usually one of five things: cached checkout pages, a JavaScript conflict from a plugin or theme, a payment plugin problem, an SSL or mixed content issue, or broken sessions. Open the browser console and the WooCommerce logs first; the error message normally tells you which one it is.</p>
 <p>This guide covers the common symptoms, an endless spinner, a Place Order button that does nothing, a generic error or a payment that goes through without an order, with checks in a safe order. Every hour checkout is down costs sales, so if you need it fixed quickly, <a href="/woocommerce-developer/">WooCommerce development and support</a> can help.</p>
+<blockquote><strong>Short answer:</strong> WooCommerce checkout not working is usually one of five things: cached cart or checkout pages, a plugin or theme JavaScript conflict, a payment plugin fault, an SSL or mixed content issue, or broken sessions. A slow checkout usually means heavy plugins, slow shipping or payment calls, or weak hosting. Read the browser console and WooCommerce logs first.</blockquote>
+
 <h2 id="woocommerce-checkout-not-working-match-the-symptom">WooCommerce checkout not working: match the symptom</h2>
 <table>
   <thead><tr><th>Symptom</th><th>Most likely cause</th><th>Where to look first</th></tr></thead>
@@ -316,11 +334,14 @@
   <li>Repeat on a phone over mobile data.</li>
 </ul>
 <p>Update on staging first for major versions, and keep a recent backup so you can roll back if checkout breaks.</p>
-<h2 id="quick-check-after-the-fix">Quick check: after the fix</h2>
+<h2 id="check-woocommerce-page-setup-and-system-status">Check WooCommerce page setup and system status</h2>
 <ol>
-  <li>Place a test order in a private window on a phone.</li>
-  <li>Check <strong>WooCommerce &gt; Status &gt; Logs</strong> for new errors.</li>
-  <li>Check the order email arrives for both you and the customer.</li>
+  <li>Go to WooCommerce &gt; Settings &gt; Advanced &gt; Page setup and confirm the Cart and Checkout pages are assigned to the right pages.</li>
+  <li>Open the Checkout page in the editor and confirm it holds the Checkout block or the <code>[woocommerce_checkout]</code> shortcode, not both and not neither.</li>
+  <li>Open WooCommerce &gt; Status &gt; System status and check the WooCommerce pages section for errors.</li>
+  <li>In the same report, look under Templates for "outdated copies" of WooCommerce templates in your theme; outdated checkout templates often break it after an update.</li>
+  <li>Re-save Settings &gt; Permalinks to refresh rewrite rules.</li>
+  <li>In WooCommerce &gt; Status &gt; Tools, run "Clear transients"; use "Clear customer sessions" only if carts are clearly broken, as it empties every cart.</li>
 </ol>
 
 <h2 id="when-to-get-help">When to get help</h2>
@@ -338,6 +359,12 @@
 <p>Yes. Cart, checkout and account pages must be excluded from page caching and CDN caching, or sessions and security tokens fail.</p>
 <h3>How do I fix a WooCommerce checkout error message?</h3>
 <p>Read the exact message, then check the browser console and WooCommerce, then Status, then Logs at the same time. Most checkout errors point to a payment plugin, a validation rule, an expired session or a caching problem, and the log usually names which.</p>
+
+<h3>Why is my WooCommerce checkout so slow?</h3>
+<p>Checkout cannot be fully cached, so every step runs on the server. Slow hosting, many active plugins, live shipping-rate or pincode lookups, and payment or analytics scripts all add time. Test with Query Monitor and the browser's Network tab to see which request is slow.</p>
+
+<h3>How do I test WooCommerce checkout without real payments?</h3>
+<p>Put your payment gateway into test or sandbox mode with its test keys, or enable Cash on delivery temporarily, and place orders on a staging copy. Check that the order, stock change and emails all happen, then switch back to live keys.</p>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -384,7 +411,7 @@
               <li><a href="#woocommerce-checkout-slow-why-it-lags-and-what-to-fix">WooCommerce checkout slow: why it lags and what to fix</a></li>
               <li><a href="#signs-it-might-be-something-worse">Signs it might be something worse</a></li>
               <li><a href="#a-safe-test-routine">A safe test routine</a></li>
-              <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
+              <li><a href="#check-woocommerce-page-setup-and-system-status">Check WooCommerce page setup and system status</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
