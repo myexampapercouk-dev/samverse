@@ -169,7 +169,7 @@ ${others.slice(0, 3).map(x => '          ' + card(x)).join('\n')}
 `;
   };
 
-  const card = x => `<a class="post-card" href="/tutorials/${x.slug}/"><span class="work-tag">Tutorial</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${readMins(body(x))} min read</span></a>`;
+  const card = x => { const im=(body(x).match(/\/assets\/tutorials\/[\w-]+\.svg/)||[])[0]; return `<a class="post-card" href="/tutorials/${x.slug}/">${im?`<img class="post-card-img" src="${im}" alt="${esc(x.title)} step preview" width="1200" height="630" loading="lazy" decoding="async">`:''}<span class="work-tag">Tutorial</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="post-card-meta">${readMins(body(x))} min read</span></a>`; };
 
   const renderIndex = () => {
     const url = `${SITE}/tutorials/`;
