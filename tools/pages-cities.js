@@ -524,6 +524,8 @@ const guides = {
 <li>Who will actually build the site?</li>
 <li>What happens after launch if something breaks?</li>
 </ul>
+<h2>WordPress development company in India vs a freelancer</h2>
+<p>A WordPress development company in India gives you a team: a project manager, designers, developers and testers, which helps when a large project needs several people working at once. A freelancer like Samverse gives you one experienced developer, direct contact and no agency overheads in the quote. For business websites, catalogues and stores with one decision-maker, that is usually enough; for very large builds with many parallel streams, an agency may suit you better. <a href="/blog/freelancer-vs-agency-web-developer/">Freelancer vs agency</a> covers the trade-offs in detail.</p>
 <h2>How a remote project runs</h2>
 <p>I have built sites for clients in Delhi NCR, Agra, Bengaluru, Hyderabad and the UK without needing to meet. We plan on a call, you share content on WhatsApp, and the site is built on a private staging link you can open on your phone. You approve it before it goes live, and I stay available for changes and support.</p>
 <h2>Find a page for your city</h2>
@@ -551,6 +553,15 @@ const guides = {
 <li><strong>Clinics and wellness practices</strong> in the suburbs who want appointment requests from Google searches.</li>
 <li><strong>Traders and wholesalers</strong> who want a product catalogue with enquiry forms.</li>
 </ul>
+<h2>Ecommerce website development in Mumbai</h2>
+<p>For ecommerce website development in Mumbai, I build stores on Shopify or WooCommerce, depending on your catalogue and how much you want to manage yourself. Mumbai brands often sell to the whole country from day one, so the points that matter most are:</p>
+<ul>
+<li><strong>Delivery promises by pin code.</strong> Same-day or next-day delivery inside Mumbai, Thane and Navi Mumbai, with slower rates and times shown for the rest of India.</li>
+<li><strong>Payments buyers trust.</strong> UPI, cards and net banking through Razorpay or a similar gateway, plus COD with limits if returns are a worry.</li>
+<li><strong>GST invoices from the first order,</strong> with your GSTIN and the right tax for each buyer's state.</li>
+<li><strong>Marketplace and Instagram links.</strong> Many Mumbai D2C brands also sell on marketplaces and Instagram, so products, stock and pricing need to stay consistent across channels.</li>
+</ul>
+<p>I am a freelancer, not an ecommerce agency, so you get one developer and a fixed quote. Compare the platforms in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
 <h2>Local search across a big city</h2>
 <p>Mumbai searches are often very local: "near me", or a suburb such as Andheri, Bandra or Thane. Your Google Business Profile does most of the work for these, and your website supports it with clear service pages, your address, and consistent contact details.</p>
 <h2>How we work together</h2>
@@ -566,6 +577,7 @@ const guides = {
 <p>Patients check credentials before they call. The <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora</a> website presents a doctor trained at Maulana Azad Medical College, Delhi, with qualifications, experience, timings and contact options laid out clearly.</p>
 <h2>Shopify and online stores</h2>
 <p>For brands in NCR selling across India, Shopify handles hosting, checkout and apps, while WooCommerce gives more control. Either way the store needs UPI, COD rules, shipping and GST invoices set up correctly.</p>
+<p>If you are comparing ecommerce website development companies in Gurgaon, note that Gurugram sellers often ship from a warehouse in Manesar or another state, so the store should calculate GST by the buyer's state, show delivery times by pin code and connect to a shipping aggregator rather than one courier. Samverse is a freelancer working remotely, not a Gurgaon agency, so you deal with the person building the store on <a href="/shopify-developer/">Shopify</a> or <a href="/woocommerce-developer/">WooCommerce</a>.</p>
 <h2>Working remotely</h2>
 <p>All my NCR projects have run over WhatsApp, calls and video. Send a short note about your business for a fixed quote, or read the <a href="/wordpress-shopify-developer-india/">India page</a>.</p>
 `,

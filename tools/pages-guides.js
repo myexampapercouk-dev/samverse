@@ -6,7 +6,7 @@ module.exports = {
 <h2>Hiring a website developer in Pune: a practical guide</h2>
 <p>If you run a business in Pune, Pimpri-Chinchwad or Mumbai and are comparing developers, this covers how a project with me runs, what local businesses usually need, a checklist you can use on anyone (me included) and the local SEO basics to launch with.</p>
 <h2>Ecommerce website development in Pune</h2>
-<p>For an online store, the choice is usually WooCommerce or Shopify, and I build on both, so the advice is about your products rather than a preference. Pune shops, food brands, manufacturers and D2C brands usually need the same few things set up properly before the first order:</p>
+<p>For an online store, the choice is usually WooCommerce or Shopify, and I build on both, so the advice is about your products rather than a preference. Pune shops, food brands, manufacturers and D2C brands usually need the same few things set up properly before the first order. If you were searching for an ecommerce website development company in Pune, note that Samverse is a freelancer rather than a company, so you get one developer working directly with you and a fixed quote:</p>
 <ol>
 <li><strong>The right platform.</strong> <a href="/woocommerce-developer/">WooCommerce development</a> suits stores that want lower running costs, full control and plenty of content; <a href="/shopify-developer/">Shopify development</a> suits brands that want hosting, security and checkout handled for them.</li>
 <li><strong>Cash on delivery.</strong> COD enabled with the rules you want, such as a minimum order value or limited pin codes, since many Indian buyers still prefer it.</li>
@@ -465,6 +465,8 @@ module.exports = {
 <p>Tax is calculated on the customer's shipping state, with CGST and SGST for orders within your state and IGST for the rest. Each GST rate gets its own tax class, and an invoice plugin adds your GSTIN, HSN codes and consecutive invoice numbers. Business buyers can enter their GSTIN at checkout. Your CA should confirm the rates and invoice format; <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup</a> shows each step.</p>
 <h3>Shipping across India</h3>
 <p>Shipping zones usually run from your city to your state to the rest of India, with flat, weight-based or free-above-a-threshold rates. Accurate product weights matter, and a courier or shipping aggregator can be connected for labels and tracking emails. A pin code checker on product pages shows delivery dates and COD availability before checkout. See <a href="/blog/woocommerce-shipping-setup-india/">WooCommerce shipping setup for India</a>.</p>
+<h2>Ecommerce website development company in India, or a freelancer?</h2>
+<p>If you are looking for an ecommerce website development company in India, a freelancer is a real alternative for most small and mid-sized stores. Samverse is one developer, not an agency: you deal directly with the person building your store, there is no account manager in between, and the fixed quote carries no agency overheads. A larger company makes sense if you need design, photography, catalogue entry and marketing handled by one team at once. For what a store costs either way, see <a href="/blog/ecommerce-website-cost-india/">ecommerce website cost in India</a>.</p>
 <h2>WooCommerce, Shopify or a marketplace?</h2>
 <table>
 <thead><tr><th></th><th>WooCommerce store</th><th>Shopify</th><th>Amazon or Flipkart</th></tr></thead>
@@ -648,8 +650,27 @@ module.exports = {
 <li><strong>SEO foundations</strong>: titles, schema, sitemap and Search Console.</li>
 <li><strong>Maintenance and support</strong>; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</li>
 </ol>
+<h2>WordPress website design packages</h2>
+<p>Most projects fit one of these package types. Each gets a fixed quote after a free review, because the scope inside a type still varies.</p>
+<table>
+<thead><tr><th>Package type</th><th>Suits</th><th>What is included</th></tr></thead>
+<tbody>
+<tr><td>Starter business website</td><td>New businesses and sole professionals</td><td>Five to eight pages, mobile-friendly design, contact form, WhatsApp button, Google Maps, SEO basics and Search Console setup</td></tr>
+<tr><td>Service business website</td><td>Clinics, consultants and service companies</td><td>A page for each service, enquiry or booking forms, Google Business Profile links, schema and speed setup</td></tr>
+<tr><td>Catalogue or B2B website</td><td>Manufacturers, traders and suppliers</td><td>Product categories, specification tables, RFQ forms and a downloadable catalogue</td></tr>
+<tr><td>Online store</td><td>Shops and D2C brands</td><td>WooCommerce with Indian payments, COD, GST invoices and shipping rules, tested with real orders</td></tr>
+<tr><td>Redesign</td><td>Businesses with an outdated site</td><td>New design on staging, content carried over, 301 redirects and a check of rankings after launch</td></tr>
+</tbody>
+</table>
+<p>Every package includes a staging review, hosting and domain in your name, your own admin login and a handover walkthrough.</p>
 <h2>A freelancer or a WordPress development company?</h2>
 <p>If you searched for a WordPress development company in India, you should know what you are getting here: one developer, not a company with departments. You talk directly to the person building your site, with no account manager in between and no agency overheads in the price. That suits business websites, catalogues and portals with one clear decision-maker. If you need branding, copywriting, photography and ads handled by one team at the same time, a larger agency may suit you better.</p>
+<h3>Agency vs freelance WordPress website design company</h3>
+<ul>
+<li><strong>Agency:</strong> a team with set roles, more capacity for large or parallel projects, and usually higher overheads in the price.</li>
+<li><strong>Freelancer:</strong> one point of contact who also does the build, quicker decisions and lower overheads, with less capacity for very large projects.</li>
+</ul>
+<p>Either way, check live sites they have built and confirm that the domain and hosting will be in your name. <a href="/blog/freelancer-vs-agency-web-developer/">Freelancer vs agency web developer</a> goes into more detail.</p>
 <h2>What is included, and what is not</h2>
 <p>The list near the top of this page is what every website includes. These are quoted separately or paid to someone else:</p>
 <ul>
@@ -806,6 +827,16 @@ module.exports = {
 <h2>Message match: the page must repeat the ad</h2>
 <p>Someone who clicks an ad for "same-day AC repair in Kothrud" and lands on a page headed "Welcome to our company" wonders if they are in the right place, and many leave. Message match means the headline repeats the ad's promise in the same words, the offer and location are the same, and the button asks for the action the ad suggested.</p>
 <p>When ad groups promise different things, such as a free inspection in one and an annual contract in another, each gets its own version of the page. Google Ads also scores landing page experience in Quality Score, so relevance helps the ads too. <a href="/blog/landing-page-mistakes-google-ads/">Ten landing page mistakes that waste ad budget</a> shows what usually goes wrong.</p>
+<h2>Service landing page design</h2>
+<p>A service landing page sells one service to people searching or clicking an ad for it, so it is built around the questions a buyer asks before calling. A good one includes:</p>
+<ul>
+<li><strong>The service and area in the headline,</strong> such as "AC repair in Kothrud, same day", matching the ad.</li>
+<li><strong>What is included,</strong> in a short list, with what happens after the visitor gets in touch.</li>
+<li><strong>Proof:</strong> real photos of your work, your Google rating if you have one, and certifications you actually hold.</li>
+<li><strong>Answers to objections:</strong> timings, service areas, warranty and how pricing works.</li>
+<li><strong>One action,</strong> a call, WhatsApp message or short form, repeated down the page.</li>
+</ul>
+<p>Typical examples are repair and installation services, clinics promoting one treatment, coaching classes taking admissions and B2B firms offering a single service such as generator rental. If you run ads for several services, each one usually needs its own page.</p>
 <h2>One goal per page</h2>
 <p>A landing page asks for one thing; a menu, blog links or a second offer give visitors somewhere else to go. The form, WhatsApp button and phone number are fine together, because they are three routes to the same enquiry. The online consultation page on <a href="/work/dr-sudhir-arora/">Dr. Sudhir Arora's</a> site works this way on a normal website: one instruction, send a WhatsApp message to book, with the message already written.</p>
 <h2>Forms, WhatsApp and calls: the conversion paths</h2>
@@ -1955,6 +1986,18 @@ module.exports = {
 </ol>
 <h2>Shopify developer in Pune, working with stores across India</h2>
 <p>Samverse is based in Pune and works remotely with Shopify stores across India, over WhatsApp, calls and screen sharing, so the city you sell from makes no difference to how the project runs. If you are in Pune and prefer to meet in person, that can be arranged. For other cities, see Shopify store development in <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-bangalore/">Bangalore</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, or the <a href="/wordpress-shopify-developer-india/">India-wide page</a>.</p>
+<h2>Shopify store setup service</h2>
+<p>The Shopify store setup service is for brands that want a working store launched on a ready theme, without custom development. It includes:</p>
+<ul>
+<li><strong>Store and theme setup:</strong> a suitable theme chosen and configured with your logo, colours, homepage sections and menus.</li>
+<li><strong>Products and collections:</strong> your products imported from a spreadsheet, with variants, photos and collections.</li>
+<li><strong>Payments and COD:</strong> Shopify Payments or Razorpay connected, with cash on delivery rules if you want them.</li>
+<li><strong>Taxes and shipping:</strong> GST settings and shipping rates by zone or weight.</li>
+<li><strong>Policies and pages:</strong> shipping, returns, privacy and contact pages, plus About and FAQ.</li>
+<li><strong>Domain, apps and tracking:</strong> your domain connected, only the apps you need, and Google Analytics and Search Console set up.</li>
+<li><strong>Test orders and handover:</strong> test orders before launch, and a walkthrough of products and orders.</li>
+</ul>
+<p>The store stays in your Shopify account. For a step-by-step view, read <a href="/blog/shopify-store-setup-india/">Shopify store setup in India</a>.</p>
 <h2>What a Shopify project costs</h2>
 <p>Every project gets a fixed quote after a free review, so you know the full price before work starts. The total is made of these parts:</p>
 <ul>
