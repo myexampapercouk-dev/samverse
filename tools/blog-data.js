@@ -74547,7 +74547,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <ol>
   <li>Make a small change, such as editing a heading, and check whether the button becomes active.</li>
   <li>Check your role: in <strong>Elementor &gt; Role Manager</strong>, a role can be limited to editing content only, and roles without publishing rights see a different button.</li>
-  <li>Go to <strong>Elementor &gt; Tools</strong> and use <strong>Regenerate CSS &amp; Data</strong> (Clear Files &amp; Data in newer versions), then clear any caching plugin and your browser cache.</li>
+  <li>Go to <strong>Elementor &gt; Tools</strong> and use <strong>Regenerate CSS &amp; Data</strong> (Regenerate Files &amp; Data in newer versions), then clear any caching plugin and your browser cache.</li>
   <li>Update Elementor and Elementor Pro together, so both run compatible versions.</li>
   <li>Deactivate other plugins on staging to look for a conflict, especially caching, optimisation and security plugins.</li>
   <li>Open the browser console in the editor and look for JavaScript errors or blocked requests; a server firewall rule such as ModSecurity can block saving.</li>
