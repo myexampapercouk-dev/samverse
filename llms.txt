@@ -110,6 +110,7 @@
 - [For agencies](https://samverse.space/blog/topic/agencies/): White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.
 
 ## Blog
+- [Shopify vs WordPress: Which Platform Should You Choose for Your Website in India?](https://samverse.space/blog/shopify-vs-wordpress/): Shopify vs WordPress compared for Indian businesses: stores vs content sites, blogging, SEO control, ownership, maintenance, payments, GST and migration.
 - [What Is WooCommerce? How It Works, What You Need and Who It Suits](https://samverse.space/blog/what-is-woocommerce/): WooCommerce is a free plugin that turns a WordPress site into an online store. How it works, what you need, costs, pros, cons and how to start.
 - [WooCommerce Shortcodes: Complete List, Attributes and Copy-Paste Examples](https://samverse.space/blog/woocommerce-shortcodes/): Every built-in WooCommerce shortcode in one table: [products] attributes, categories, add to cart, cart, checkout and account, with examples and fixes.
 - [WordPress Error Log Location: How to Turn On, Find and Read WordPress Error Logs](https://samverse.space/blog/wordpress-error-log-location/): Where the WordPress error log is, how to turn on WP_DEBUG_LOG safely, where hosts keep PHP error_log files, and how to read a fatal error line.
