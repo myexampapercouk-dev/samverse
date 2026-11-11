@@ -43,7 +43,7 @@
       "headline": "Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones",
       "description": "Elementor mobile view not working or the site looks different on a real phone? Fix responsive settings, breakpoints, caching and overflow, step by step.",
       "datePublished": "2026-10-31",
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-11",
       "mainEntityOfPage": "https://samverse.space/blog/elementor-mobile-view-not-working/",
       "image": "https://samverse.space/assets/og/blog-elementor-mobile-view-not-working.png",
       "articleSection": "Maintenance",
@@ -191,7 +191,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-31">31 October 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-31">31 October 2026</time> · Updated <time datetime="2026-11-11">11 November 2026</time> · 9 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Elementor%20Mobile%20View%20Not%20Working%3F%20How%20to%20Fix%20Responsive%20Settings%20That%20Do%20Not%20Show%20on%20Phones%20https%3A%2F%2Fsamverse.space%2Fblog%2Felementor-mobile-view-not-working%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -215,6 +215,7 @@
               <li><a href="#how-to-test-mobile-layouts-properly">How to test mobile layouts properly</a></li>
               <li><a href="#how-to-stop-mobile-problems-coming-back">How to stop mobile problems coming back</a></li>
               <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
+              <li><a href="#two-checks-on-the-phone-itself">Two checks on the phone itself</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -227,11 +228,12 @@
               <li>Test on a real Android phone over mobile data, not only the editor preview, because Indian visitors mostly arrive on mid-range phones.</li>
             </ul>
           </div>
-<p>If Elementor mobile view is not working, the usual cause is one of three things: the change was made on the desktop or tablet setting instead of mobile, a cached CSS file is still being served, or the site uses breakpoints that do not match the phone you are testing on. Go to Elementor, Tools, click Regenerate CSS and Data, clear every cache, then open the page on your phone in a private tab. That fixes a large share of cases in a few minutes.</p>
+<p>Elementor mobile view is not working usually because the change was made on the desktop or tablet setting, a cached CSS file is still being served, or the phone is wider than the mobile breakpoint (767px by default) and gets tablet styles. Use <strong>Elementor &gt; Tools &gt; Regenerate Files &amp; Data</strong>, clear every cache, and test on your phone in a private tab.</p>
 <p>If it does not, work through the checks below in order. Each one rules out a cause before you start changing the design.</p>
 <h2 id="quick-fix-the-5-minute-checklist">Quick fix: the 5-minute checklist</h2>
 <ol><li>In the editor, check which device icon is active at the bottom of the left panel (or in the top bar in newer versions). Settings with a small device icon next to them only apply to that device.</li><li>Click Update, then go to Elementor, Tools, General and use Regenerate CSS and Data (older versions call it Regenerate Files and Data).</li><li>Clear your caching plugin (LiteSpeed Cache, WP Rocket, W3 Total Cache and similar), any server cache in hPanel or cPanel, and Cloudflare if you use it.</li><li>Open the page on your phone in a private or incognito tab so the phone browser cache does not hide the change.</li><li>If it still looks wrong, temporarily switch Elementor, Settings, Performance or Features options back to their defaults and test again.</li></ol>
 <p>If you want the background on why caches cause so much confusion, see <a href="/blog/wordpress-changes-not-showing/">why WordPress changes are not showing</a>. The rest of this guide covers problems that are specific to Elementor responsive editing.</p>
+<figure class="step-shot"><img src="/assets/blog/elementor-mobile-view-not-working-step-1.svg" alt="Elementor mobile view not working: Site Settings Layout Breakpoints with Mobile Portrait 767 and Tablet Portrait 1024" width="960" height="560" loading="lazy" decoding="async"><figcaption>Check Site Settings > Layout > Breakpoints. A phone held sideways, or wider than the Mobile value, uses tablet styles instead.</figcaption></figure>
 <h2 id="why-elementor-mobile-view-is-not-working-the-common-causes">Why Elementor mobile view is not working: the common causes</h2>
 <h3>1. You edited the wrong device</h3>
 <p>Elementor lets most settings differ by device: padding, margin, font size, column width, alignment, background images and visibility. When you switch to the mobile view in the editor and change a value, that value only applies to mobile. When you change a value while desktop is active, it cascades down to tablet and mobile unless they already have their own value.</p>
@@ -276,6 +278,9 @@
   <li>Clear the site cache and regenerate CSS in <strong>Elementor &gt; Tools</strong>.</li>
 </ol>
 
+<h2 id="two-checks-on-the-phone-itself">Two checks on the phone itself</h2>
+<p><strong>Desktop site is switched on.</strong> Chrome and Safari on phones have a "Desktop site" option. If it is on, the phone requests the desktop layout and your mobile settings never appear. Turn it off in the browser menu before you judge the design.</p>
+<p><strong>The phone is in landscape.</strong> Most phones are wider than 767px when turned sideways, so they get tablet styles. Test in portrait first, then decide whether you need the optional Mobile Landscape breakpoint.</p>
 <h2 id="when-to-get-help">When to get help</h2>
 <p>If the layout breaks only on certain phones, the cause is buried in theme CSS, or the page has years of duplicated sections, it is often quicker to have it cleaned up than to keep patching. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the problem sections with containers, remove duplicates and test on real devices. If speed is part of the problem, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> covers mobile performance as well. For ongoing fixes after updates, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2 id="faqs">FAQs</h2><h3>Why is Elementor mobile view not working after I make changes?</h3><p>Usually the change was made with the desktop or tablet device active, or the mobile setting already had its own value. Check the device icon next to the setting, set the mobile value directly, click Update, regenerate CSS and clear all caches.</p>
@@ -325,6 +330,7 @@
               <li><a href="#how-to-test-mobile-layouts-properly">How to test mobile layouts properly</a></li>
               <li><a href="#how-to-stop-mobile-problems-coming-back">How to stop mobile problems coming back</a></li>
               <li><a href="#quick-check-after-the-fix">Quick check: after the fix</a></li>
+              <li><a href="#two-checks-on-the-phone-itself">Two checks on the phone itself</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
               <li><a href="#faqs">FAQs</a></li>
             </ol>
@@ -355,7 +361,7 @@
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-changes-not-showing/"><img class="post-card-img" src="/assets/og/blog-wordpress-changes-not-showing.webp" alt="WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template</h3><p>Edits saved but the live site looks the same? Check the save, then clear browser, plugin, server and CDN caches in order, and rule out the wrong template.</p><span class="post-card-meta">28 September 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/elementor-not-loading-fix/"><img class="post-card-img" src="/assets/og/blog-elementor-not-loading-fix.webp" alt="Elementor Stuck on Loading or &quot;Preview Could Not Be Loaded&quot;? How to Fix the Elementor Loading Problem" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Stuck on Loading or &quot;Preview Could Not Be Loaded&quot;? How to Fix the Elementor Loading Problem</h3><p>Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.</p><span class="post-card-meta">28 September 2026 · 8 min read</span></a>
+          <a class="post-card" href="/blog/elementor-not-loading-fix/"><img class="post-card-img" src="/assets/og/blog-elementor-not-loading-fix.webp" alt="Elementor Stuck on Loading or &quot;Preview Could Not Be Loaded&quot;? How to Fix the Elementor Loading Problem" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Elementor Stuck on Loading or &quot;Preview Could Not Be Loaded&quot;? How to Fix the Elementor Loading Problem</h3><p>Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.</p><span class="post-card-meta">28 September 2026 · 9 min read</span></a>
           <a class="post-card" href="/blog/staging-sites-explained/"><img class="post-card-img" src="/assets/og/blog-staging-sites-explained.webp" alt="Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>Staging Sites Explained: How to Set Up WordPress Staging, Test Changes and Push Them Live Safely</h3><p>Staging sites explained: set up WordPress staging on Hostinger, SiteGround or WP Staging, keep it out of Google and go live without losing orders.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
         </div>
       </div>

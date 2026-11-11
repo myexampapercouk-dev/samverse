@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/topic/ecommerce/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -708,7 +708,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/regain-website-access-old-developer/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/regain-website-access-old-developer-step-1.svg</image:loc></image:image>
@@ -1226,7 +1226,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/fix-wordpress-critical-error/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/fix-wordpress-critical-error-step-1.svg</image:loc></image:image>
@@ -1240,13 +1240,14 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/elementor-not-loading-fix/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-not-loading-fix-step-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/elementor-layout-broken-after-update/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/elementor-layout-broken-after-update-step-1.svg</image:loc></image:image>
@@ -2022,7 +2023,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/woocommerce-checkout-not-working-fix/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-checkout-not-working-fix-step-1.svg</image:loc></image:image>
@@ -2066,7 +2067,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/woocommerce-orders-not-showing-fix/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/woocommerce-orders-not-showing-fix-step-1.svg</image:loc></image:image>
@@ -2152,7 +2153,7 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/wordpress-update-button-missing/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://samverse.space/assets/blog/wordpress-update-button-missing-step-1.svg</image:loc></image:image>
@@ -2202,21 +2203,24 @@
   </url>
   <url>
     <loc>https://samverse.space/blog/elementor-header-footer-not-showing/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-header-footer-not-showing-step-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/elementor-mobile-view-not-working/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-mobile-view-not-working-step-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/elementor-not-saving-changes/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://samverse.space/assets/blog/elementor-not-saving-changes-step-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://samverse.space/blog/woocommerce-product-images-wrong-size/</loc>

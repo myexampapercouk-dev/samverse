@@ -14511,12 +14511,12 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
     title: 'How to Regain Control of Your Website From a Previous Developer: Domain, Hosting, WordPress, Google Accounts and Email',
     description: 'Developer gone silent? How to regain access to your domain, hosting, WordPress admin, DNS, Google accounts and email, plus a handover checklist.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'Guides',
     related: ['wordpress-migration', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>To get your website back from a developer who has stopped replying, work out who controls each piece the site depends on: the domain registrar, DNS, hosting, the WordPress administrator account, business email and your Google accounts. Anything registered in your name can usually be recovered from the provider with proof of ownership. Anything in the developer's name needs their cooperation, so start with a polite written request, and deal with the domain first, because whoever controls the domain controls everything that hangs off it.</p>
-<p>It happens more often than people expect: a freelancer changes careers, an agency closes, or a relationship ends over an unpaid invoice, and every login turns out to sit with someone else. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take on sites I didn't build, and the first step is a health check that includes who has administrator access and whose name the licences are in. Below is the order I'd work in, what providers typically ask for, and how to stop it happening again.</p>
+<p>To get your website back from an old developer, start with the domain, because whoever controls the domain controls the site and email. Then recover DNS, hosting, the WordPress admin account, email and Google accounts. Anything in your name can be recovered from the provider with proof of ownership; anything in the developer's name needs their cooperation.</p>
+<p>It happens often: a freelancer moves on or an agency closes, and every login sits with someone else. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take on sites I didn't build, and the first step is a health check that includes who has administrator access and whose name the licences are in. Below is the order I'd work in, what providers typically ask for, and how to stop it happening again.</p>
 
 <blockquote><strong>Short answer:</strong> To get your website back from an old developer, list who controls the domain, DNS, hosting, WordPress admin, email and Google accounts. Recover anything in your name from the provider with proof of ownership. For anything in the developer's name, send a polite written request, and secure the domain first, because it controls everything else.</blockquote>
 
@@ -14606,6 +14606,7 @@ wp user create newowner owner@example.com --role=administrator --send-email</cod
   <li><strong>DNS:</strong> a copy of every DNS record, including email records.</li>
 </ul>
 
+<p><strong>Timing trap:</strong> after the registrant name on a domain changes, many registrars apply a 60-day transfer lock. Change the owner details at the current registrar first, then plan any move to a new registrar for later.</p>
 <h2>When to get help</h2>
 <p>Get help when the developer has stopped replying, when the domain or hosting is in their name, or when you need access recovered and moved to your accounts. <a href="/wordpress-migration/">WordPress migration</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -37963,11 +37964,11 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
     title: "WordPress Critical Error (Fatal Error): How to Fix \"There Has Been a Critical Error on This Website\", Step by Step",
     description: 'Fix "There has been a critical error on this website" in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.',
     date: '2026-09-28',
-    updated: "2026-11-10",
+    updated: "2026-11-11",
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
-<p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, theme or PHP version change, so WordPress stopped loading the page. To fix it, use the recovery mode link in the email WordPress sends to the admin address to deactivate the plugin or theme it names, or, if no email arrives, read debug.log or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
+<p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, a theme or a PHP version change. Use the recovery mode link WordPress emails to the admin address to deactivate what it names; with no email, read debug.log or rename the plugins folder in File Manager.</p>
 <blockquote><strong>Short answer:</strong> The WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts and orders are in the database and are almost always untouched. Use the recovery email, read debug.log, then disable the plugin or theme the error names.</blockquote>
 
 <h2>What the critical error actually means</h2>
@@ -38070,6 +38071,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </ol>
 <p><strong>What I check on client sites:</strong> the exact line in debug.log, the plugin and PHP versions involved, whether a backup from before the error exists, and whether the same plugin causes problems on staging.</p>
 
+<p><strong>No recovery email?</strong> It goes to the address in <strong>Settings &gt; General &gt; Administration Email Address</strong>, which is often an old developer's inbox. If you can reach wp-admin, update it; WordPress only switches after you confirm the new address.</p>
 <h2>When to get help</h2>
 <p>Get help if the error returns after every update, the log points to core files or files you don't recognise, you have no recent backup, or it's a store losing orders. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages afterwards and roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
@@ -38236,12 +38238,15 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Elementor Stuck on Loading or "Preview Could Not Be Loaded"? How to Fix the Elementor Loading Problem',
     description: 'Elementor stuck on loading forever? Step-by-step fixes for PHP memory, plugin conflicts, mod_security, caching and CDN, the editor loader setting and PHP.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>You click "Edit with Elementor" and the loading screen spins forever, the editor stays blank, or you see "Preview could not be loaded". The Elementor loading problem is common, and it's usually caused by something around Elementor rather than Elementor itself: low PHP memory, a plugin conflict, a server security rule, or caching and CDN scripts interfering with the editor.</p>
-<p>Work through the fixes below in order. Make a backup first, and where you can, test on a staging copy rather than the live site. Elementor's menus change between versions, so if a setting isn't where I describe it, check Elementor's current docs.</p>
+<p>Elementor is stuck on the loading screen because something around it is blocking the editor's scripts or requests: low PHP memory, a plugin conflict, a server security rule, or a caching or CDN feature such as Cloudflare Rocket Loader. Check the browser console first; the red error usually names the cause.</p>
+<p>Fastest fixes, in the order they usually work:</p>
+<ol><li>Turn off Cloudflare Rocket Loader and any JavaScript delay or combine setting for wp-admin and the editor.</li><li>Raise the PHP memory limit to 256M.</li><li>Turn on <strong>Elementor &gt; Tools &gt; General &gt; Safe Mode</strong> to rule out plugin and theme conflicts.</li><li>Set <strong>Elementor &gt; Settings &gt; Advanced &gt; Switch Editor Loader Method</strong> to Enable.</li><li>Update PHP, Elementor and Elementor Pro together.</li></ol>
+<figure class="step-shot"><img src="/assets/blog/elementor-not-loading-fix-step-1.svg" alt="Elementor stuck on loading fix: Elementor Settings Advanced tab with Switch Editor Loader Method set to Enable" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 4: Elementor > Settings > Advanced, set Switch Editor Loader Method to Enable, click Save Changes, then reopen the editor.</figcaption></figure>
+<p>Back up first and test on staging where you can. Elementor's menus change between versions, so check its current docs if a setting has moved.</p>
 
 <h2>Before you start: find the error behind the loading screen</h2>
 <p>Two minutes of checking saves an hour of guessing:</p>
@@ -38337,6 +38342,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>Open <strong>Elementor &gt; System Info</strong> and check the PHP memory limit and PHP version; a low memory limit is a common cause of a stuck editor. Then open the editor with the browser console open (right-click, Inspect, Console) and note the first red error, which often names the plugin causing the conflict. To test for a plugin conflict quickly on a staging copy:</p>
 <pre><code>wp plugin deactivate --all --exclude=elementor,elementor-pro</code></pre>
 
+<h2>Editor loads for one admin but not another</h2>
+<p>If the editor works for one user and not another, compare their browsers before touching the server. Ad blockers and privacy extensions are the usual difference. Also check <strong>Elementor &gt; Role Manager</strong>, because a role with limited access sees a restricted editor, not a full one.</p>
 <h2>When to get help</h2>
 <p>If the editor still won't load after raising memory and disabling plugins, or you can't test safely on a live site, get the conflict found on staging. Fixing Elementor editor, plugin and server issues is the job of an <a href="/elementor-developer/">Elementor developer</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
@@ -38361,13 +38368,13 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
     title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
     description: 'Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.',
     date: '2026-09-28',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'website-redesign'],
     body: `
-<p>When an Elementor layout breaks after an update, the cause is usually one of three things: Elementor's generated CSS files are out of date, a cache is still serving old files, or Elementor and Elementor Pro (or an add-on) are on versions that don't work together. Regenerate Elementor's files and data, clear every cache, and check the versions match. If the layout is still broken, use Safe Mode and staging to find the conflict, and roll back only as a temporary measure.</p>
-<p>If you would rather hand it over, see <a href="/elementor-developer/">Elementor development and fixes</a>. Otherwise, work through the fixes below in order, because the first two solve most cases.</p>
-<p>This guide is about pages that look wrong after an update. If the Elementor editor won't open at all, or spins on the loading screen, that's a different problem; see <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>
+<p>An Elementor layout breaks after an update because the generated CSS files are out of date, a cache is serving old files, or Elementor and Elementor Pro (or an add-on) are on mismatched versions. Run <strong>Elementor &gt; Tools &gt; Regenerate Files &amp; Data</strong>, clear every cache, and make sure the versions match.</p>
+<p>If it is still broken, use Safe Mode to find the conflict and roll back only as a temporary measure. Work through the fixes below in order; the first two solve most cases, or hand it to <a href="/elementor-developer/">Elementor development and fixes</a>.</p>
+<p>If the editor won't open at all or spins on the loading screen, see <a href="/blog/elementor-not-loading-fix/">Elementor stuck on loading</a>.</p>
 
 <h2>What broke? Match the symptom to the cause</h2>
 <table>
@@ -38484,6 +38491,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </ol>
 
 <figure class="step-shot"><img src="/assets/blog/elementor-layout-broken-after-update-step-2.svg" alt="Elementor broken after update: Elementor, System Info, Server Environment with PHP Memory Limit highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Elementor, System Info, check the PHP version and PHP Memory Limit before asking for help.</figcaption></figure>
+<p><strong>Quick test:</strong> set <strong>Elementor &gt; Settings &gt; Advanced &gt; CSS Print Method</strong> to Internal Embedding and reload. If the layout comes back, the CSS files (cache, CDN or permissions) are the problem.</p>
 <h2>When to get help</h2>
 <p>Get help when the layout is still broken after regenerating CSS and clearing caches, when there is no recent backup, or when a rollback would mean leaving a security fix uninstalled. <a href="/elementor-developer/">Elementor development</a> covers fixing broken layouts and conflicts, and <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates every month. <a href="/#contact">send your website address</a> and the versions you updated for a free review and a fixed quote.</p>
 
@@ -71687,11 +71695,11 @@ or a cookie name starts with:
     title: 'WooCommerce Checkout Not Working or Slow? Fixing Spinners, Errors and a Dead "Place Order" Button',
     description: 'WooCommerce checkout not working, slow or showing an error? Fix endless spinners, a dead Place Order button, slow loading, payment and caching issues.',
     date: '2026-10-11',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>When WooCommerce checkout is not working, the cause is usually one of five things: cached checkout pages, a JavaScript conflict from a plugin or theme, a payment plugin problem, an SSL or mixed content issue, or broken sessions. Open the browser console and the WooCommerce logs first; the error message normally tells you which one it is.</p>
+<p>WooCommerce checkout is not working usually because of a cached checkout page, a plugin or theme JavaScript conflict, a payment plugin fault, an SSL or mixed content issue, or broken sessions. Read the browser console and <strong>WooCommerce &gt; Status &gt; Logs</strong> first; the newest fatal-errors log usually names the plugin.</p>
 <p>This guide covers the common symptoms, an endless spinner, a Place Order button that does nothing, a generic error or a payment that goes through without an order, with checks in a safe order. Every hour checkout is down costs sales, so if you need it fixed quickly, <a href="/woocommerce-developer/">WooCommerce development and support</a> can help.</p>
 <blockquote><strong>Short answer:</strong> WooCommerce checkout not working is usually one of five things: cached cart or checkout pages, a plugin or theme JavaScript conflict, a payment plugin fault, an SSL or mixed content issue, or broken sessions. A slow checkout usually means heavy plugins, slow shipping or payment calls, or weak hosting. Read the browser console and WooCommerce logs first.</blockquote>
 
@@ -71784,6 +71792,7 @@ or a cookie name starts with:
 <figure class="step-shot"><img src="/assets/blog/woocommerce-checkout-not-working-fix-step-1.svg" alt="WooCommerce checkout not working: Settings, Advanced, Page setup with the Checkout page field" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Settings, Advanced, Page setup, assign the correct Checkout page.</figcaption></figure>
 <figure class="step-shot"><img src="/assets/blog/woocommerce-checkout-not-working-fix-step-2.svg" alt="WooCommerce checkout not working: Status, System status, WooCommerce pages section" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Status, System status, the WooCommerce pages section should show no errors.</figcaption></figure>
 
+<p><strong>Check this too:</strong> under <strong>WooCommerce &gt; Status &gt; System Status</strong>, scroll to Templates. Theme template overrides marked as outdated are a common cause of a checkout that broke after a WooCommerce update, even when no plugin changed.</p>
 <h2>When to get help</h2>
 <p>If the cause is not clear from the logs, or checkout is broken during a sale or festival campaign, it is usually cheaper to get help than to keep experimenting on a live store. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it, and set up a test routine so it does not happen again. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2>FAQs</h2>
@@ -72550,13 +72559,12 @@ or a cookie name starts with:
     title: 'WooCommerce Orders Not Showing? Missing Orders, Paid-but-No-Order and Missing Emails',
     description: "WooCommerce orders not showing? Check filters and HPOS sync, fix paid-but-no-order gateway callbacks, missing order emails and stuck scheduled tasks.",
     date: '2026-10-11',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-maintenance'],
     body: `
-<p>If WooCommerce orders are not showing, first check the order list filters and the "Pending payment" and "Drafts" views, then check whether your store uses HPOS (High-Performance Order Storage) and whether sync is set correctly. If a customer has paid but no order exists, the payment gateway's callback probably failed. If orders exist but nobody received the email, that is an email delivery problem, not a missing order.</p>
-<p>This guide separates those three problems and walks through how to fix each.</p>
-<blockquote><strong>Short answer:</strong> If WooCommerce orders are not showing, clear the order list filters and check the Pending payment and Drafts views, then check the order storage setting under WooCommerce &gt; Settings &gt; Advanced &gt; Features. If a customer paid but no order exists, the gateway callback failed. If orders exist but no email arrived, fix email delivery instead.</blockquote>
+<p>WooCommerce orders are not showing usually because of a list filter or status view, an HPOS order storage sync problem, or a failed payment gateway callback that never created the order. Check <strong>WooCommerce &gt; Orders</strong> with all filters cleared, then <strong>WooCommerce &gt; Settings &gt; Advanced &gt; Features</strong>.</p>
+<blockquote><strong>Short answer:</strong> Clear the filters and check the Pending payment and Drafts views, then the HPOS setting. Paid but no order means the gateway callback failed. Order exists but no email means an email delivery problem.</blockquote>
 
 <h2>Three different problems that look the same</h2>
 <table>
@@ -72663,6 +72671,7 @@ or a cookie name starts with:
   <li>If the payment exists but no order, create the order manually from the transaction details and fix the callback before the next sale.</li>
 </ol>
 
+<p><strong>Edge case after a manual import:</strong> WooCommerce only lists orders whose status has the wc- prefix, such as wc-pending or wc-processing. Orders imported by hand with a plain status like "pending" sit in the database but never appear in the list. Also check the Trash view; trashed orders stay there until deleted.</p>
 <h2>When to get help</h2>
 <p>Get help when paid orders are missing, when orders disappear after a migration or update, or when you cannot tell whether the problem is the gateway, a plugin or the server. Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly, and <a href="/wordpress-maintenance/">store maintenance</a> keeps an eye on it afterwards.</p>
 
@@ -74461,15 +74470,15 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
     title: 'WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely',
     description: 'WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.',
     date: '2026-10-30',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>If the WordPress update button is missing, the most common causes are that your user account is not an administrator, updates have been disabled in wp-config.php or by a plugin, your host manages updates from its own panel, or a premium plugin or theme licence has expired so its updates are not offered. Less often, file permissions or a multisite setup hide the button. Work through these checks in order, take a backup, and only then re-enable updates.</p>
+<p>The WordPress update button is missing because your account is not an administrator, updates are disabled in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired. Check them in that order, take a backup, then re-enable updates.</p>
 
 <blockquote><strong>Short answer:</strong> If the WordPress update button is missing, first check you are logged in as an administrator (on multisite, a Super Admin in Network Admin). Then look in wp-config.php for <code>DISALLOW_FILE_MODS</code> or <code>AUTOMATIC_UPDATER_DISABLED</code>, check for update-blocking plugins or host-managed updates, and renew expired premium plugin licences.</blockquote>
 
-<p>A site that cannot be updated is a security risk, so it is worth fixing quickly. This guide explains each cause and the safe fix.</p>
+<p>A site that cannot be updated is a security risk. Note that WordPress checks for new versions about twice a day, so a release from this morning may not show yet: click <strong>Dashboard &gt; Updates &gt; Check again</strong> before assuming something is blocked.</p>
 
 <h2>Quick diagnosis table</h2>
 <table>
@@ -75357,14 +75366,15 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'Elementor Header or Footer Not Showing? How to Fix Theme Builder Templates That Do Not Appear',
     description: 'Elementor header or footer not showing? Fix display conditions, theme support, Pro licence issues and caching, with the checks in the right order.',
     date: '2026-10-31',
-    updated: '2026-11-09',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>If your Elementor header or footer is not showing, first open Templates, Theme Builder and check the template is published and has a display condition such as Entire Site. A header saved as a draft, or published without conditions, will never appear. If the conditions are correct, check that Elementor Pro is active and that your theme supports Elementor header and footer locations.</p>
+<p>An Elementor header or footer is not showing because the Theme Builder template is still a draft, has no display condition, or the page uses the Elementor Canvas layout, which hides both on purpose. Open <strong>Templates &gt; Theme Builder</strong>, check the template is published with the condition <strong>Include &gt; Entire Site</strong>, and check the page layout.</p>
 <p>Those three checks fix most cases. The rest of this guide covers what to do when they do not, including duplicate headers, a theme header showing instead of yours and footers that vanish only on some pages.</p>
 <h2>Quick fix: check these first</h2>
-<ol><li>Go to Templates, Theme Builder, Header (or Footer). Confirm the template status is Published, not Draft.</li><li>Hover the template and choose Edit Conditions. Add Include, Entire Site, unless you want it only on some pages.</li><li>Go to Plugins and confirm Elementor Pro is active. Theme Builder templates do not work with the free plugin alone.</li><li>Go to Elementor, Tools and use Regenerate CSS and Data, then clear your caching plugin, server cache and CDN.</li><li>Open the page in a private tab to see what logged-out visitors see.</li></ol>
+<ol><li>Go to <strong>Templates &gt; Theme Builder &gt; Header</strong> (or Footer). Confirm the status is Published, not Draft.</li><li>Open the template's <strong>Edit Conditions</strong> and add <strong>Include &gt; Entire Site</strong>, unless you want it only on some pages.</li><li>Go to <strong>Plugins</strong> and confirm Elementor Pro is active. Theme Builder templates do not work with the free plugin alone.</li><li>Use <strong>Elementor &gt; Tools &gt; Regenerate Files &amp; Data</strong>, then clear your caching plugin, server cache and CDN.</li><li>Open the page in a private tab to see what logged-out visitors see.</li></ol>
+<figure class="step-shot"><img src="/assets/blog/elementor-header-footer-not-showing-step-1.svg" alt="Elementor header not showing fix: Theme Builder publish settings with Include Entire Site condition" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In the template's publish settings, set the condition to Include, Entire Site, then click Save & Close.</figcaption></figure>
 <h2>Why the Elementor header or footer is not showing</h2>
 <h3>1. Display conditions are missing or too narrow</h3>
 <p>Every Theme Builder template needs conditions that tell Elementor where to use it. When you publish a new header, Elementor asks for conditions; if you close that window, the template is published but used nowhere. Conditions can also be narrower than you think, for example only the front page, only posts or only a single page that has since been deleted.</p>
@@ -75402,6 +75412,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Open <strong>Elementor &gt; Tools</strong> and use <strong>Regenerate CSS &amp; Data</strong>.</li>
 </ol>
 
+<h2>Header missing on translated pages only</h2>
+<p>If the site uses WPML or Polylang and the header shows in one language but not another, the template usually has not been translated or assigned for that language. Open the template in the missing language and check its conditions there too. The same applies to a footer that disappears only on translated pages.</p>
 <h2>When to get help</h2>
 <p>If templates look correct but the header still does not appear, the cause is usually in the theme or custom code. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the Theme Builder setup cleanly, move the site to a supported theme and test every page type. If you prefer someone to look after updates so this does not happen again, see our <a href="/wordpress-maintenance/">WordPress maintenance service</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2>FAQs</h2><h3>Why is my Elementor header not showing?</h3><p>The usual causes are a header template that is still a draft, no display conditions, Elementor Pro being inactive or a theme that does not support Elementor header locations. Check Theme Builder conditions first, then Pro, then the theme.</p>
@@ -75418,15 +75430,16 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'Elementor Mobile View Not Working? How to Fix Responsive Settings That Do Not Show on Phones',
     description: 'Elementor mobile view not working or the site looks different on a real phone? Fix responsive settings, breakpoints, caching and overflow, step by step.',
     date: '2026-10-31',
-    updated: '2026-11-09',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'wordpress-speed-optimization'],
     body: `
-<p>If Elementor mobile view is not working, the usual cause is one of three things: the change was made on the desktop or tablet setting instead of mobile, a cached CSS file is still being served, or the site uses breakpoints that do not match the phone you are testing on. Go to Elementor, Tools, click Regenerate CSS and Data, clear every cache, then open the page on your phone in a private tab. That fixes a large share of cases in a few minutes.</p>
+<p>Elementor mobile view is not working usually because the change was made on the desktop or tablet setting, a cached CSS file is still being served, or the phone is wider than the mobile breakpoint (767px by default) and gets tablet styles. Use <strong>Elementor &gt; Tools &gt; Regenerate Files &amp; Data</strong>, clear every cache, and test on your phone in a private tab.</p>
 <p>If it does not, work through the checks below in order. Each one rules out a cause before you start changing the design.</p>
 <h2>Quick fix: the 5-minute checklist</h2>
 <ol><li>In the editor, check which device icon is active at the bottom of the left panel (or in the top bar in newer versions). Settings with a small device icon next to them only apply to that device.</li><li>Click Update, then go to Elementor, Tools, General and use Regenerate CSS and Data (older versions call it Regenerate Files and Data).</li><li>Clear your caching plugin (LiteSpeed Cache, WP Rocket, W3 Total Cache and similar), any server cache in hPanel or cPanel, and Cloudflare if you use it.</li><li>Open the page on your phone in a private or incognito tab so the phone browser cache does not hide the change.</li><li>If it still looks wrong, temporarily switch Elementor, Settings, Performance or Features options back to their defaults and test again.</li></ol>
 <p>If you want the background on why caches cause so much confusion, see <a href="/blog/wordpress-changes-not-showing/">why WordPress changes are not showing</a>. The rest of this guide covers problems that are specific to Elementor responsive editing.</p>
+<figure class="step-shot"><img src="/assets/blog/elementor-mobile-view-not-working-step-1.svg" alt="Elementor mobile view not working: Site Settings Layout Breakpoints with Mobile Portrait 767 and Tablet Portrait 1024" width="960" height="560" loading="lazy" decoding="async"><figcaption>Check Site Settings > Layout > Breakpoints. A phone held sideways, or wider than the Mobile value, uses tablet styles instead.</figcaption></figure>
 <h2>Why Elementor mobile view is not working: the common causes</h2>
 <h3>1. You edited the wrong device</h3>
 <p>Elementor lets most settings differ by device: padding, margin, font size, column width, alignment, background images and visibility. When you switch to the mobile view in the editor and change a value, that value only applies to mobile. When you change a value while desktop is active, it cascades down to tablet and mobile unless they already have their own value.</p>
@@ -75465,6 +75478,9 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Clear the site cache and regenerate CSS in <strong>Elementor &gt; Tools</strong>.</li>
 </ol>
 
+<h2>Two checks on the phone itself</h2>
+<p><strong>Desktop site is switched on.</strong> Chrome and Safari on phones have a "Desktop site" option. If it is on, the phone requests the desktop layout and your mobile settings never appear. Turn it off in the browser menu before you judge the design.</p>
+<p><strong>The phone is in landscape.</strong> Most phones are wider than 767px when turned sideways, so they get tablet styles. Test in portrait first, then decide whether you need the optional Mobile Landscape breakpoint.</p>
 <h2>When to get help</h2>
 <p>If the layout breaks only on certain phones, the cause is buried in theme CSS, or the page has years of duplicated sections, it is often quicker to have it cleaned up than to keep patching. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the problem sections with containers, remove duplicates and test on real devices. If speed is part of the problem, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> covers mobile performance as well. For ongoing fixes after updates, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2>FAQs</h2><h3>Why is Elementor mobile view not working after I make changes?</h3><p>Usually the change was made with the desktop or tablet device active, or the mobile setting already had its own value. Check the device icon next to the setting, set the mobile value directly, click Update, regenerate CSS and clear all caches.</p>
@@ -75481,14 +75497,15 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
     title: 'Elementor Not Saving Changes? How to Fix the Update Button, Server Errors and Lost Edits',
     description: 'Elementor not saving changes or the Update button keeps spinning? Fix server errors, memory limits, security rules and conflicts, and stop losing edits.',
     date: '2026-10-31',
-    updated: '2026-11-09',
+    updated: '2026-11-11',
     category: 'Maintenance',
     related: ['elementor-developer', 'wordpress-maintenance', 'hire-wordpress-developer'],
     body: `
-<p>If Elementor is not saving changes, the editor is failing to send your page to the server. The most common causes are a server error (often shown as 500, 403 or a generic Server Error message), a PHP memory or input limit, a security or firewall rule blocking the request, or a plugin conflict. Before you try anything, copy important text to a document, then check the Revisions panel so you do not lose work.</p>
-<p>Then go through the checks below in order. Most sites are fixed by the first four.</p>
+<p>Elementor is not saving changes because the save request is failing on the server, most often from a PHP memory limit, a firewall or ModSecurity rule (403), or a plugin conflict. The error code on screen tells you which one, so note it before you reload.</p>
+<p>Copy important text to a document and check the Revisions panel first so you do not lose work. Most sites are fixed by the first four steps below.</p>
 <h2>Quick fix: try these first</h2>
-<ol><li>Note the exact message: Server Error 500, 403 Forbidden, 413, Request Timeout, or the Update button simply spinning.</li><li>Open the History panel, Revisions, and make sure a recent version exists before you reload.</li><li>Log out, clear the browser cache, log back in and try again in a private window with extensions off.</li><li>Raise the WordPress memory limit (ask your host if you cannot edit wp-config.php).</li><li>Temporarily pause the security plugin firewall or ask your host whether ModSecurity blocked the request, then try saving.</li></ol>
+<ol><li>Note the exact message: Server Error 500, 403 Forbidden, 413, Request Timeout, or the <strong>Update</strong> button simply spinning.</li><li>Open <strong>History &gt; Revisions</strong> in the editor and make sure a recent version exists before you reload.</li><li>Raise the WordPress memory limit to 256M in wp-config.php (or ask your host).</li><li>Pause the security plugin firewall, or ask your host whether ModSecurity blocked the request, then save again.</li><li>Turn on <strong>Elementor &gt; Tools &gt; General &gt; Safe Mode</strong> and try saving. If it works, a plugin or the theme is the conflict.</li><li>If it started after an update, use <strong>Elementor &gt; Tools &gt; Version Control</strong> to roll back one version while you investigate.</li></ol>
+<figure class="step-shot"><img src="/assets/blog/elementor-not-saving-changes-step-1.svg" alt="Elementor not saving changes fix: wp-config.php with WP_MEMORY_LIMIT set to 256M" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 3: In your host's File Manager, add the WP_MEMORY_LIMIT line above "stop editing" in wp-config.php, then save and retry the Elementor update.</figcaption></figure>
 <h2>Elementor not saving changes: what each error means</h2>
 <h3>Server Error 500</h3>
 <p>A 500 error means PHP crashed while saving. The cause is often a memory limit, a plugin error or a timeout. Check the PHP error log in hPanel or cPanel, or turn on WordPress debug logging on staging. If the log shows memory exhausted, read <a href="/blog/wordpress-memory-limit-errors/">how to fix WordPress memory limit errors</a>. If it names a plugin file, that plugin is your suspect.</p>
@@ -75528,6 +75545,9 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
   <li>Edit a page, save and reload to check the change stays.</li>
 </ol>
 
+<h2>Two causes most guides miss</h2>
+<p><strong>The page is open in two tabs.</strong> Elementor saves the whole page each time. If an older tab is still open and you click Update there, it replaces the newer version. Close every other editor tab before you save.</p>
+<p><strong>Your login session expired.</strong> After a long editing session, or if a security plugin shortens login time, the save is rejected even though nothing else is wrong. Copy your work, log in again in a new tab, then save.</p>
 <h2>When to get help</h2>
 <p>If saving fails even with plugins disabled and limits raised, the cause is usually on the server or in custom code. An <a href="/elementor-developer/">Elementor developer</a> can read the error logs, work with your host on limits and firewall rules and rebuild heavy pages so they save reliably. For regular care, see our <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <h2>FAQs</h2><h3>Why is Elementor not saving my changes?</h3><p>The editor cannot send the page data to the server. Usual causes are a PHP error or memory limit, a firewall rule, a plugin conflict, caching of admin requests or a very large page. The error code tells you where to start.</p>

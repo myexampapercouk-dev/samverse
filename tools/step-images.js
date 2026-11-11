@@ -599,6 +599,45 @@ images['backlink-audit-disavow-step-2'] = doc('Google disavow links tool Upload 
   return s + mark([144, 336, 190, 38], [480, 460, 'Keep a master copy first']);
 })());
 
+// AI Overview batch (11 Nov): one step image each for four Elementor troubleshooting posts
+images['elementor-not-saving-changes-step-1'] = doc('wp-config.php in a hosting File Manager with WP_MEMORY_LIMIT set to 256M', 'Illustrated hosting File Manager editor with public_html/wp-config.php open and the define WP_MEMORY_LIMIT 256M line highlighted above the stop editing comment.', (() => {
+  let s = fileMgr('public_html / wp-config.php') + r(0, 50, W, H - 50, '#1e1e1e');
+  const lines = ["define( 'DB_COLLATE', '' );", '', "$table_prefix = 'wp_';", '', "define( 'WP_DEBUG', false );", '', "define( 'WP_MEMORY_LIMIT', '256M' );", '', "/* That's all, stop editing! Happy publishing. */", '', "if ( ! defined( 'ABSPATH' ) ) {", "  define( 'ABSPATH', __DIR__ . '/' );", '}', "require_once ABSPATH . 'wp-settings.php';"];
+  s += codeLines(lines, 82, 90, l => l.includes('WP_MEMORY_LIMIT'));
+  return s + mark([60, 234, 330, 26], [500, 340, 'Add above "stop editing", then save']);
+})());
+
+images['elementor-header-footer-not-showing-step-1'] = doc('Elementor Theme Builder publish settings: Where do you want to display your template, Include Entire Site', 'Illustrated Elementor Theme Builder publish settings dialog with a condition row set to Include and Entire Site, and the Save and Close button highlighted.', (() => {
+  const m = wp(EL_MENU, 'Templates', ['Saved Templates', 'Theme Builder', 'Popups', 'Kit Library'], 'Theme Builder');
+  let s = m.s + r(160, 32, W - 160, H - 32, '#00000055');
+  s += r(250, 80, 620, 380, '#fff', { rx: 8, stroke: '#c3c4c7' }) + t(270, 112, 'Publish Settings', { size: 15, bold: true }) + t(850, 112, '✕', { size: 16, anchor: 'end' });
+  s += t(560, 172, 'Where Do You Want to Display Your Template?', { size: 17, bold: true, anchor: 'middle' }) + t(560, 198, 'Set the conditions that determine where your template is used throughout your site.', { size: 12.5, fill: '#646970', anchor: 'middle' });
+  s += select(300, 236, 130, 'Include') + select(440, 236, 300, 'Entire Site') + t(760, 255, '✕', { fill: '#a7aaad' });
+  s += r(470, 296, 180, 30, '#f6f7f7', { rx: 3, stroke: '#c3c4c7' }) + t(560, 316, 'Add Condition', { anchor: 'middle', fill: '#50575e' });
+  s += r(720, 400, 130, 34, '#92003b', { rx: 3 }) + t(785, 422, 'Save & Close', { fill: '#fff', anchor: 'middle', bold: true });
+  return s + mark([300, 236, 440, 28], [270, 360, 'Include + Entire Site']);
+})());
+
+images['elementor-mobile-view-not-working-step-1'] = doc('Elementor Site Settings Layout Breakpoints with Mobile Portrait 767 and Tablet Portrait 1024', 'Illustrated Elementor editor Site Settings, Layout, Breakpoints panel showing Mobile Portrait 767px and Tablet Portrait 1024px values, highlighted.', (() => {
+  let s = r(0, 0, 300, H, '#fff', { stroke: '#dcdcde' }) + r(0, 0, 300, 46, '#f0f0f1') + t(16, 29, '‹ Site Settings', { size: 14, bold: true });
+  s += t(16, 80, 'Layout', { size: 13, bold: true }) + t(16, 112, 'Breakpoints', { size: 13, bold: true, fill: '#92003b' });
+  const rows = [['Mobile Portrait', '767'], ['Mobile Landscape', '880'], ['Tablet Portrait', '1024'], ['Tablet Landscape', '1200'], ['Laptop', '1366']];
+  rows.forEach(([k, v], i) => { const y = 140 + i * 58; s += t(16, y + 4, k + ' (px)', { size: 12.5 }) + input(16, y + 12, 268, v); });
+  s += r(16, 456, 268, 34, '#92003b', { rx: 3 }) + t(150, 478, 'Update', { fill: '#fff', anchor: 'middle', bold: true });
+  s += r(300, 0, W - 300, H, '#f6f7f7') + r(520, 60, 240, 420, '#fff', { rx: 18, stroke: '#c3c4c7' }) + t(640, 270, 'Mobile preview', { fill: '#646970', anchor: 'middle' }) + t(640, 292, 'width under 767px', { fill: '#646970', anchor: 'middle', size: 12 });
+  return s + mark([16, 152, 268, 28], [330, 520, 'Phone wider than this? It gets tablet styles']);
+})());
+
+images['elementor-not-loading-fix-step-1'] = doc('Elementor Settings Advanced Switch Editor Loader Method set to Enable', 'Illustrated WordPress admin, Elementor > Settings > Advanced tab, with the Switch Editor Loader Method dropdown set to Enable and highlighted.', (() => {
+  const m = wp(EL_MENU, 'Elementor', ['Settings', 'Role Manager', 'Tools', 'System Info'], 'Settings');
+  let s = m.s + h1(190, 74, 'Settings') + tabs(190, 92, ['General', 'Integrations', 'Advanced', 'Performance', 'Features'], 'Advanced');
+  s += t(190, 170, 'CSS Print Method', { bold: true }) + select(430, 152, 200, 'External File');
+  s += t(190, 224, 'Switch Editor Loader Method', { bold: true }) + select(430, 206, 200, 'Enable') + t(430, 254, 'For troubleshooting server configuration conflicts.', { size: 12.5, fill: '#646970' });
+  s += t(190, 300, 'Unfiltered File Uploads', { bold: true }) + select(430, 282, 200, 'Disable');
+  s += btn(190, 380, 'Save Changes');
+  return s + mark([430, 206, 200, 28], [680, 330, 'Set to Enable, save, reopen editor']);
+})());
+
 for (const [name, svg] of Object.entries(images)) {
   fs.writeFileSync(path.join(OUT, name + '.svg'), svg);
   console.log(name + '.svg', svg.length, 'bytes');

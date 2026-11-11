@@ -43,7 +43,7 @@
       "headline": "WordPress Critical Error (Fatal Error): How to Fix \"There Has Been a Critical Error on This Website\", Step by Step",
       "description": "Fix \"There has been a critical error on this website\" in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.",
       "datePublished": "2026-09-28",
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-11",
       "mainEntityOfPage": "https://samverse.space/blog/fix-wordpress-critical-error/",
       "image": "https://samverse.space/assets/og/blog-fix-wordpress-critical-error.png",
       "articleSection": "Maintenance",
@@ -191,7 +191,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-28">28 September 2026</time> · Updated <time datetime="2026-11-11">11 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Critical%20Error%20(Fatal%20Error)%3A%20How%20to%20Fix%20%22There%20Has%20Been%20a%20Critical%20Error%20on%20This%20Website%22%2C%20Step%20by%20Step%20https%3A%2F%2Fsamverse.space%2Fblog%2Ffix-wordpress-critical-error%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -231,7 +231,7 @@
               <li>No log access? Rename the plugins folder in File Manager or SFTP to find the culprit, switch to a default theme, then check PHP version and memory before restoring a backup.</li>
             </ul>
           </div>
-<p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, theme or PHP version change, so WordPress stopped loading the page. To fix it, use the recovery mode link in the email WordPress sends to the admin address to deactivate the plugin or theme it names, or, if no email arrives, read debug.log or rename the plugins folder through your host's File Manager or SFTP to find the culprit.</p>
+<p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, a theme or a PHP version change. Use the recovery mode link WordPress emails to the admin address to deactivate what it names; with no email, read debug.log or rename the plugins folder in File Manager.</p>
 <blockquote><strong>Short answer:</strong> The WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts and orders are in the database and are almost always untouched. Use the recovery email, read debug.log, then disable the plugin or theme the error names.</blockquote>
 
 <h2 id="what-the-critical-error-actually-means">What the critical error actually means</h2>
@@ -340,6 +340,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 </ol>
 <p><strong>What I check on client sites:</strong> the exact line in debug.log, the plugin and PHP versions involved, whether a backup from before the error exists, and whether the same plugin causes problems on staging.</p>
 
+<p><strong>No recovery email?</strong> It goes to the address in <strong>Settings &gt; General &gt; Administration Email Address</strong>, which is often an old developer's inbox. If you can reach wp-admin, update it; WordPress only switches after you confirm the new address.</p>
 <h2 id="when-to-get-help">When to get help</h2>
 <p>Get help if the error returns after every update, the log points to core files or files you don't recognise, you have no recent backup, or it's a store losing orders. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages afterwards and roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
