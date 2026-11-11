@@ -2034,4 +2034,153 @@ module.exports = {
 <p>The store, the domain, the payment provider and every app subscription stay in your name, and you pay Shopify and the app makers directly. My access is a collaborator or staff account that you control. Send me your store address, or a short note on what you plan to sell, for a free review and a fixed quote.</p>
 `,
   ...require('./pages-cities').guides,
+  'website-for-interior-designers': `
+<h2>Building an interior designer website, in detail</h2>
+<p>An interior design website is judged in the first few photos. This is how I plan and build sites for interior designers, architects and design-and-build studios. For a deeper planning read, see <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a>.</p>
+<h2>Must-have features</h2>
+<ul>
+<li><strong>Project pages, not one gallery.</strong> Each project gets its own page: space type, city, the brief in two or three lines, what you changed, and 10 to 30 photos in a logical order (entrance, living, kitchen, bedrooms).</li>
+<li><strong>Portfolio filters.</strong> Residential, commercial, hospitality, or by room type, so a client looking for an office fit-out does not scroll through bedrooms.</li>
+<li><strong>Fast images.</strong> WebP conversion, responsive sizes and lazy loading. Image weight is the main reason studio sites feel slow.</li>
+<li><strong>A process page.</strong> Consultation, concept, 3D views, execution, handover. Clients want to know what happens and when they pay.</li>
+<li><strong>A qualifying enquiry form.</strong> Property type, approximate area, city, timeline and an optional budget band.</li>
+</ul>
+<h2>Pages list</h2>
+<ol>
+<li>Home: a few hero projects, services, process and a clear enquiry button.</li>
+<li>Portfolio, with filters, and a page for each project.</li>
+<li>Services: residential interiors, commercial, turnkey, consultation only.</li>
+<li>About the studio, with team and approach.</li>
+<li>Process and FAQs.</li>
+<li>Contact, with map, studio timings and appointment request.</li>
+</ol>
+<h2>Integrations</h2>
+<ul>
+<li><strong>WhatsApp</strong> with a pre-filled message that names the page the visitor came from.</li>
+<li><strong>Google Maps</strong> embed and a link to your Google Business Profile.</li>
+<li><strong>Appointment requests</strong> for a site visit or studio consultation, through a form or a booking calendar.</li>
+<li><strong>Instagram</strong> link or feed for work in progress.</li>
+</ul>
+<h2>Content checklist</h2>
+<ul>
+<li>Professional photos of 4 to 8 completed projects (more can be added later).</li>
+<li>For each project: location, space type, size if you want to share it, and a few lines on the brief.</li>
+<li>Your services list, process stages and studio photos.</li>
+<li>Logo, contact numbers and the studio address.</li>
+</ul>
+<h2>What is not included</h2>
+<p>Photography, 3D rendering and paid ads are separate. I can suggest what to shoot so the photos work on the site. Send me your current site or Instagram for a free review and a fixed quote.</p>
+`,
+  'website-for-salons-and-spas': `
+<h2>Building a salon or spa website, in detail</h2>
+<p>Most salon customers decide within a minute: can they get the service they want, near them, at a time that suits them? The site is planned around that. For more ideas, see <a href="/blog/website-for-salons-spas/">websites for salons and spas</a>.</p>
+<h2>Must-have features</h2>
+<ul>
+<li><strong>A service menu that reads well on a phone.</strong> Grouped by category, with duration and, if you want, price. No PDF menus.</li>
+<li><strong>Booking on every screen.</strong> A sticky WhatsApp or "Book now" button so nobody has to scroll to find it.</li>
+<li><strong>Bridal and package pages.</strong> These are researched for weeks before booking, so they deserve their own pages with what is included.</li>
+<li><strong>Real gallery.</strong> Your own work and your interior. Ask clients before posting their photos.</li>
+<li><strong>Hygiene and products.</strong> A short section on sterilisation and the product brands you use answers a common worry.</li>
+</ul>
+<h2>Pages list</h2>
+<ol>
+<li>Home: services, booking, location and reviews.</li>
+<li>Services, with sections or pages for hair, skin, nails, spa and makeup.</li>
+<li>Bridal and party packages.</li>
+<li>Team: stylists and therapists with their specialities.</li>
+<li>Gallery.</li>
+<li>Contact and branches, each with map and timings.</li>
+</ol>
+<h2>Integrations</h2>
+<ul>
+<li><strong>WhatsApp booking</strong> with the chosen service written into the message.</li>
+<li><strong>Online booking calendar</strong> where customers pick a stylist and slot, if you want it.</li>
+<li><strong>UPI deposits</strong> through Razorpay or a similar gateway for bridal bookings.</li>
+<li><strong>Google Maps</strong> and a <a href="/blog/google-reviews-on-website/">Google reviews widget</a> linked to your profile.</li>
+</ul>
+<h2>Content checklist</h2>
+<ul>
+<li>Full service list with durations, and prices if you want them shown.</li>
+<li>Photos of your work and salon, logo and brand colours.</li>
+<li>Team names and specialities (optional).</li>
+<li>Address, timings, booking phone and WhatsApp number, Google Business Profile link.</li>
+</ul>
+<p>See the <a href="/blog/google-business-profile-checklist/">Google Business Profile checklist</a> for the listing side. Send me your Instagram or current site for a free review and a fixed quote.</p>
+`,
+  'website-for-gyms-and-fitness-studios': `
+<h2>Building a gym or fitness studio website, in detail</h2>
+<p>A gym website has one main job: get a nearby person to come in for a trial. Everything else supports that. For more detail, see <a href="/blog/website-for-gyms-fitness-studios/">websites for gyms, fitness studios and yoga studios</a>.</p>
+<h2>Must-have features</h2>
+<ul>
+<li><strong>Timetable.</strong> Classes and batches by day, editable by your staff, and readable on a phone without zooming.</li>
+<li><strong>Membership plans.</strong> Laid out side by side with what each includes. You decide whether prices are shown.</li>
+<li><strong>Trial pass form.</strong> Name, phone, preferred time and goal, sent to WhatsApp and email.</li>
+<li><strong>Trainer profiles.</strong> Name, certifications and specialities.</li>
+<li><strong>Facility photos.</strong> Equipment, changing rooms, parking. These answer the "is it worth visiting?" question.</li>
+</ul>
+<h2>Pages list</h2>
+<ol>
+<li>Home: trial offer, facilities, timetable preview, location.</li>
+<li>Classes or programmes, each with a short description.</li>
+<li>Timetable.</li>
+<li>Membership plans.</li>
+<li>Trainers.</li>
+<li>Contact with map, timings and the trial form.</li>
+</ol>
+<h2>Integrations</h2>
+<ul>
+<li><strong>WhatsApp</strong> for trial sign-ups and quick questions.</li>
+<li><strong>UPI and card payments</strong> for plans or class packs through Razorpay, if you want online payments.</li>
+<li><strong>Gym software</strong> booking widgets or member login links, embedded where available.</li>
+<li><strong>Google Maps</strong> and your Google Business Profile, so "gym near me" searches match the site.</li>
+</ul>
+<h2>Content checklist</h2>
+<ul>
+<li>Photos of the space and classes (with members' consent).</li>
+<li>Timetable, plans and what each includes.</li>
+<li>Trainer names, photos and certifications.</li>
+<li>Address, timings, phone and WhatsApp number.</li>
+</ul>
+<p>Send me your current site or Instagram for a free review and a fixed quote.</p>
+`,
+  'website-for-jewellery-shop': `
+<h2>Building a jewellery website, in detail</h2>
+<p>Jewellery is a high-trust purchase, so the site has to answer questions about purity, weight and authenticity before a buyer will visit or pay. For more background, see <a href="/blog/website-for-jewellers/">websites for jewellers</a>.</p>
+<h2>Must-have features</h2>
+<ul>
+<li><strong>Product detail fields.</strong> Metal, purity (for example 22K or 18K), gross and net weight, stone details and hallmark information, shown in the same place on every product.</li>
+<li><strong>Close-up photography.</strong> Several angles and zoom. Consistent lighting matters more than an expensive camera.</li>
+<li><strong>Pricing that fits your business.</strong> Rate-based pricing from weight and making charge, fixed prices for lighter pieces, or "price on request".</li>
+<li><strong>Enquire on WhatsApp</strong> on each product, with the product name and code already in the message.</li>
+<li><strong>Store visit and video-call booking</strong> for bridal and high-value pieces.</li>
+<li><strong>Clear policies.</strong> Shipping, returns, exchange and buyback terms written in plain language from your own rules.</li>
+</ul>
+<h2>Pages list</h2>
+<ol>
+<li>Home: collections, trust points, store visit button.</li>
+<li>Category pages: rings, earrings, necklaces, bangles, bridal sets, silver.</li>
+<li>Product pages with full details.</li>
+<li>About the store and certifications you hold.</li>
+<li>Store locations with maps and timings.</li>
+<li>Policies: shipping, returns, exchange.</li>
+</ol>
+<h2>Integrations</h2>
+<ul>
+<li><strong>Payment gateway</strong> for UPI, cards and netbanking (Razorpay, PayU or Cashfree).</li>
+<li><strong>Shipping</strong> through a courier aggregator that offers insured shipping, if you sell online.</li>
+<li><strong>WhatsApp</strong> product enquiries and order updates.</li>
+<li><strong>Google Maps</strong> and Google Business Profile for each store.</li>
+<li><strong>Product schema</strong> so products can appear with details in search results.</li>
+</ul>
+<h2>WooCommerce or Shopify?</h2>
+<p>WooCommerce suits jewellers who want rate-based pricing and custom product fields without monthly app costs. Shopify suits brands with fixed-price fashion jewellery who want a simpler dashboard. See <a href="/woocommerce-developer/">WooCommerce development</a> and <a href="/shopify-developer/">Shopify development</a>.</p>
+<h2>Content checklist</h2>
+<ul>
+<li>Photos of each product, and a spreadsheet with code, category, metal, purity, weights and stones.</li>
+<li>Your pricing method and making charges, if prices will be shown.</li>
+<li>Store addresses, timings, phone and WhatsApp numbers.</li>
+<li>Your shipping, return and exchange rules.</li>
+</ul>
+<p>Send me your current site, catalogue or Instagram for a free review and a fixed quote.</p>
+`,
 };

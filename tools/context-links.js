@@ -3,6 +3,11 @@
 // Skipped when the post already links to the target. Keep each post to at most one entry here.
 const W = 'WordPress and Shopify';
 module.exports = {
+  // Industry landing pages
+  'website-for-salons-spas': 'If you want this built for your salon, see <a href="/website-for-salons-and-spas/">salon and spa website design</a> for what is included.',
+  'website-for-jewellers': 'For a catalogue or online store built around these details, see <a href="/website-for-jewellery-shop/">jewellery website design</a>.',
+  'website-for-gyms-fitness-studios': 'To have this set up for your gym or studio, see <a href="/website-for-gyms-and-fitness-studios/">gym and fitness studio website design</a>.',
+  'website-for-interior-designers-architects': 'If you would like a studio site built this way, see <a href="/website-for-interior-designers/">website design for interior designers</a>.',
   // Free tools
   'why-is-my-wordpress-site-slow': 'Heavy images are the usual first fix: the free <a href="/free-tools/image-compressor/">image compressor</a> shrinks them in your browser before you upload.',
   'core-web-vitals-explained': 'For a quick LCP win, convert large hero images with the free <a href="/free-tools/image-converter/">PNG and JPG to WebP converter</a>.',

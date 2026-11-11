@@ -83,6 +83,10 @@
 - [Lawyers, CAs & Consultants](https://samverse.space/website-for-lawyers-and-consultants/): Professional WordPress websites for lawyers, law firms, chartered accountants and consultants that build credibility and bring in client consultations.
 - [Startups](https://samverse.space/website-for-startups/): Launch your startup website fast on WordPress, or a Shopify store for D2C brands: landing and product pages, blog and analytics your team can edit.
 - [Solar & Power Companies](https://samverse.space/website-for-solar-and-power-companies/): WordPress websites for solar installers, power solution providers and electrical companies: product and service pages, project galleries and quote forms.
+- [Interior Designers & Architects](https://samverse.space/website-for-interior-designers/): Portfolio-first websites for interior designers and architects: project pages, fast galleries and enquiry forms that qualify clients.
+- [Salons & Spas](https://samverse.space/website-for-salons-and-spas/): Websites for salons, spas and beauty studios with service menus, WhatsApp and online booking, Google Maps and reviews.
+- [Gyms & Fitness Studios](https://samverse.space/website-for-gyms-and-fitness-studios/): Websites for gyms, fitness and yoga studios with timetables, membership plans, trial pass forms, UPI payments and WhatsApp.
+- [Jewellery Shops](https://samverse.space/website-for-jewellery-shop/): Jewellery websites and stores on WooCommerce or Shopify: catalogue, gold rate pricing, hallmark details, store visits, UPI.
 
 ## Case studies
 - [Third Eye Social](https://samverse.space/work/third-eye-social/): A bold, dark-themed website for an AI automation agency that helps businesses deploy AI agents across sales, support, finance, HR and operations.
