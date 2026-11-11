@@ -199,7 +199,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-30">30 October 2026</time> · Updated <time datetime="2026-11-11">11 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-10-30">30 October 2026</time> · Updated <time datetime="2026-11-11">11 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Update%20Button%20Missing%3F%20Why%20Updates%20Do%20Not%20Show%20and%20How%20to%20Fix%20It%20Safely%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-update-button-missing%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -224,6 +224,7 @@
               <li><a href="#your-host-manages-updates">Your host manages updates</a></li>
               <li><a href="#premium-plugin-or-theme-licence-expired">Premium plugin or theme licence expired</a></li>
               <li><a href="#file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</a></li>
+              <li><a href="#elementor-update-button-missing-or-greyed-out">Elementor Update button missing or greyed out</a></li>
               <li><a href="#before-you-re-enable-updates">Before you re-enable updates</a></li>
               <li><a href="#update-button-missing-on-multisite">Update button missing on multisite</a></li>
               <li><a href="#when-updates-show-but-nothing-new-appears">When updates show but nothing new appears</a></li>
@@ -292,6 +293,18 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
 
 <p>Updates sometimes break things when two plugins clash. Learn how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> before turning automatic updates back on.</p>
+
+<h2 id="elementor-update-button-missing-or-greyed-out">Elementor Update button missing or greyed out</h2>
+<p>In the Elementor editor, the green Update button stays greyed out until you change something on the page, so a greyed-out button right after opening a page is normal. If it stays greyed out or disappears after you edit, work through these fixes:</p>
+<ol>
+  <li>Make a small change, such as editing a heading, and check whether the button becomes active.</li>
+  <li>Check your role: in <strong>Elementor &gt; Role Manager</strong>, a role can be limited to editing content only, and roles without publishing rights see a different button.</li>
+  <li>Go to <strong>Elementor &gt; Tools</strong> and use <strong>Regenerate CSS &amp; Data</strong> (Clear Files &amp; Data in newer versions), then clear any caching plugin and your browser cache.</li>
+  <li>Update Elementor and Elementor Pro together, so both run compatible versions.</li>
+  <li>Deactivate other plugins on staging to look for a conflict, especially caching, optimisation and security plugins.</li>
+  <li>Open the browser console in the editor and look for JavaScript errors or blocked requests; a server firewall rule such as ModSecurity can block saving.</li>
+  <li>Increase the PHP memory limit if the editor loads slowly or only partly, or ask your host to.</li>
+</ol>
 
 <h2 id="before-you-re-enable-updates">Before you re-enable updates</h2>
 <p>A site that has not been updated for months may have many updates waiting. Updating everything at once can break it. A safer order:</p>
@@ -383,6 +396,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
               <li><a href="#your-host-manages-updates">Your host manages updates</a></li>
               <li><a href="#premium-plugin-or-theme-licence-expired">Premium plugin or theme licence expired</a></li>
               <li><a href="#file-permissions-and-the-ftp-prompt">File permissions and the FTP prompt</a></li>
+              <li><a href="#elementor-update-button-missing-or-greyed-out">Elementor Update button missing or greyed out</a></li>
               <li><a href="#before-you-re-enable-updates">Before you re-enable updates</a></li>
               <li><a href="#update-button-missing-on-multisite">Update button missing on multisite</a></li>
               <li><a href="#when-updates-show-but-nothing-new-appears">When updates show but nothing new appears</a></li>
@@ -417,7 +431,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
           <a class="post-card" href="/blog/wordpress-update-failed-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-update-failed-fix.webp" alt="WordPress Update Failed? How to Fix &quot;Download Failed&quot;, Locked Updates and Half-Finished Plugin Updates" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Update Failed? How to Fix &quot;Download Failed&quot;, Locked Updates and Half-Finished Plugin Updates</h3><p>WordPress update failed? Fix &quot;download failed&quot;, &quot;another update is in progress&quot; and half-finished plugin updates in a safe order, without losing data.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/update-wordpress-safely/"><img class="post-card-img" src="/assets/og/blog-update-wordpress-safely.webp" alt="How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site</h3><p>How to update WordPress safely: backups, staging, the right update order, testing, rolling back a bad update, and best practices for plugins and themes.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/update-wordpress-safely/"><img class="post-card-img" src="/assets/og/blog-update-wordpress-safely.webp" alt="How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update WordPress Safely: Core, Plugins and Themes Without Breaking Your Site</h3><p>How to update WordPress safely: backups, staging, the right update order, testing, rolling back a bad update, and best practices for plugins and themes.</p><span class="post-card-meta">27 September 2026 · 10 min read</span></a>
           <a class="post-card" href="/blog/update-php-version-wordpress/"><img class="post-card-img" src="/assets/og/blog-update-php-version-wordpress.webp" alt="How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>How to Update Your WordPress Site's PHP Version Safely: Compatibility Checks, Hosting Panel Steps and Fixes</h3><p>Update your WordPress PHP version safely: check compatibility on staging, switch in hPanel or cPanel, re-enable extensions and fix anything that breaks.</p><span class="post-card-meta">27 September 2026 · 9 min read</span></a>
         </div>
       </div>

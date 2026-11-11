@@ -122,6 +122,22 @@
         },
         {
           "@type": "Question",
+          "name": "Why is there no update button in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because only administrators see update buttons, and they disappear for everyone when updates are disabled in wp-config.php (DISALLOW_FILE_MODS), blocked by a plugin or managed by your host. For a single premium plugin, an expired licence is the usual cause. On multisite, only a Super Admin sees them, in Network Admin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the Elementor Update button greyed out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elementor keeps the Update button greyed out until you make a change. If it stays inactive after editing, regenerate CSS and data in Elementor Tools, clear caches and check for plugin conflicts or blocked requests."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Why is the WordPress update button missing?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -191,7 +207,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 9 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-07">7 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=How%20to%20Update%20WordPress%20Safely%3A%20Core%2C%20Plugins%20and%20Themes%20Without%20Breaking%20Your%20Site%20https%3A%2F%2Fsamverse.space%2Fblog%2Fupdate-wordpress-safely%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -371,6 +387,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually plugins first, then the theme, then core, because plugin updates often add support for the newest WordPress. If a plugin update says it needs a newer WordPress version, update core first. Always take a backup before either.</p>
 <h3>Is it safe to update WordPress without a backup?</h3>
 <p>Most updates go fine, but when one doesn't, a backup is the difference between a five-minute restore and hours of repair or lost content. Take one every time, especially before WooCommerce, page builder or major core updates.</p>
+<h3>Why is there no update button in WordPress?</h3>
+<p>Because only administrators see update buttons, and they disappear for everyone when updates are disabled in wp-config.php (DISALLOW_FILE_MODS), blocked by a plugin or managed by your host. For a single premium plugin, an expired licence is the usual cause. On multisite, only a Super Admin sees them, in Network Admin.</p>
+<h3>Why is the Elementor Update button greyed out?</h3>
+<p>Elementor keeps the Update button greyed out until you make a change. If it stays inactive after editing, regenerate CSS and data in Elementor Tools, clear caches and check for plugin conflicts or blocked requests.</p>
 <h3>Why is the WordPress update button missing?</h3>
 <p>Common reasons are that your user account isn't an administrator, your host manages updates itself, a developer has disabled updates in wp-config.php (for example with DISALLOW_FILE_MODS), or a premium plugin's licence isn't activated. On a Multisite network, only the Super Admin can update.</p>
 <h3>How do I roll back a WordPress plugin update?</h3>

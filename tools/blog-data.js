@@ -3126,15 +3126,15 @@ curl -sI https://example.com/product-page/old-product | grep -iE "^(HTTP|locatio
   },
   {
     slug: 'google-business-profile-checklist',
-    seoTitle: 'Google Business Profile Checklist: Setup and Monthly Tasks',
+    seoTitle: 'Google Business Profile Checklist: Rank Higher in Maps',
     title: 'Google Business Profile Checklist: Setup, Optimisation and Monthly Management',
-    description: 'A Google Business Profile checklist for service businesses: setup, categories, services, photos, reviews and a monthly management routine to rank in Maps.',
+    description: 'Google Business Profile checklist: verify, pick the right category, add services and photos, win reviews, then follow a monthly routine to rank in Maps.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-11',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-for-doctors', 'website-for-restaurants'],
     body: `
-<p>To optimise a Google Business Profile, claim and verify it in your business's own Google account, use your real business name, choose the most specific primary category, set an accurate address or service area, hours, phone and website link, add every service with a description, upload real photos, collect and reply to reviews, and keep it updated every month. Your website should show exactly the same name, address and phone number.</p>
+<p>To optimise a Google Business Profile, work through this checklist: claim and verify it in your business's own Google account, use your real business name, choose the most specific primary category, set an accurate address or service area, hours, phone and website link, add every service with a description, upload real photos, collect and reply to reviews, and keep it updated every month. Your website should show exactly the same name, address and phone number.</p>
 <p>If you want help with the profile and the website side of local search, it's part of my <a href="/wordpress-seo-services/">WordPress SEO services</a>.</p>
 
 <h2>1. Claim, verify and secure the profile</h2>
@@ -4899,7 +4899,7 @@ Facts to check:    Warranty terms, service areas</code></pre>
     title: 'Industrial Catalog Website: How to Build a Product Catalogue for an Industrial Company (Categories, Spec Tables, Datasheets and RFQs)',
     description: 'How to build an industrial catalog website: category structure, spec tables, datasheets, RFQ baskets, WooCommerce catalogue mode, filters and a checklist.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -11439,6 +11439,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Usually plugins first, then the theme, then core, because plugin updates often add support for the newest WordPress. If a plugin update says it needs a newer WordPress version, update core first. Always take a backup before either.</p>
 <h3>Is it safe to update WordPress without a backup?</h3>
 <p>Most updates go fine, but when one doesn't, a backup is the difference between a five-minute restore and hours of repair or lost content. Take one every time, especially before WooCommerce, page builder or major core updates.</p>
+<h3>Why is there no update button in WordPress?</h3>
+<p>Because only administrators see update buttons, and they disappear for everyone when updates are disabled in wp-config.php (DISALLOW_FILE_MODS), blocked by a plugin or managed by your host. For a single premium plugin, an expired licence is the usual cause. On multisite, only a Super Admin sees them, in Network Admin.</p>
+<h3>Why is the Elementor Update button greyed out?</h3>
+<p>Elementor keeps the Update button greyed out until you make a change. If it stays inactive after editing, regenerate CSS and data in Elementor Tools, clear caches and check for plugin conflicts or blocked requests.</p>
 <h3>Why is the WordPress update button missing?</h3>
 <p>Common reasons are that your user account isn't an administrator, your host manages updates itself, a developer has disabled updates in wp-config.php (for example with DISALLOW_FILE_MODS), or a premium plugin's licence isn't activated. On a Multisite network, only the Super Admin can update.</p>
 <h3>How do I roll back a WordPress plugin update?</h3>
@@ -33501,7 +33505,7 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
     title: 'Web Designer vs Web Developer vs WordPress Developer: What Each Does and Who You Need',
     description: 'WordPress developer vs web designer: what each does, a task-by-task comparison, a checklist to decide who to hire and when one person can do both.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-11',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'figma-to-wordpress', 'wordpress-website-development'],
     body: `
@@ -33585,6 +33589,9 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 </ol>
 <p>Whichever you choose, ask who will look after updates, backups and fixes after launch. If you're comparing options across cities, see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developers in India</a>.</p>
 
+<h2>Do web designers use WordPress?</h2>
+<p>Yes, many web designers use WordPress, because it lets them hand clients a site they can edit themselves. Some design in Figma and build the site in WordPress with a block theme or a page builder such as Elementor; others design only and pass the files to a WordPress developer to build. When you hire a WordPress web designer, ask which of these they do, and who handles plugins, speed, security and updates after launch.</p>
+
 <h2>What to look for in a web designer for WordPress</h2>
 <ul>
   <li><strong>WordPress portfolio:</strong> live WordPress sites you can open, not only design mock-ups.</li>
@@ -33636,6 +33643,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p>Get help when you need design and development handled together, when a design needs building in WordPress, or when an existing site needs new features. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
 <h2>FAQs</h2>
+<h3>Do web designers use WordPress?</h3>
+<p>Yes. Many web designers build client sites in WordPress with a block theme or page builder, while others design in Figma and hand over to a WordPress developer for the build.</p>
 <h3>Do I need a web designer for WordPress?</h3>
 <p>Not always. With a good theme and your own content, a WordPress developer can set up a clean, professional site. Hire a web designer for WordPress when the look matters for sales, you have no brand style yet, or you need custom page layouts designed before they are built.</p>
 <h3>What is the difference between a web designer and a web developer?</h3>
@@ -74532,6 +74541,18 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>If WordPress asks for FTP credentials when you click update, it cannot write to its own files. That usually means file ownership on the server does not match the web server user, often after a migration. Do not loosen permissions to fully writable for everyone. Ask your host to correct ownership, or have a developer do it. If an update starts but fails, <a href="/blog/wordpress-update-failed-fix/">WordPress update failed</a> walks through download, permission and maintenance-mode errors.</p>
 
 <p>Updates sometimes break things when two plugins clash. Learn how to <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">fix WordPress plugin conflicts</a> before turning automatic updates back on.</p>
+
+<h2>Elementor Update button missing or greyed out</h2>
+<p>In the Elementor editor, the green Update button stays greyed out until you change something on the page, so a greyed-out button right after opening a page is normal. If it stays greyed out or disappears after you edit, work through these fixes:</p>
+<ol>
+  <li>Make a small change, such as editing a heading, and check whether the button becomes active.</li>
+  <li>Check your role: in <strong>Elementor &gt; Role Manager</strong>, a role can be limited to editing content only, and roles without publishing rights see a different button.</li>
+  <li>Go to <strong>Elementor &gt; Tools</strong> and use <strong>Regenerate CSS &amp; Data</strong> (Clear Files &amp; Data in newer versions), then clear any caching plugin and your browser cache.</li>
+  <li>Update Elementor and Elementor Pro together, so both run compatible versions.</li>
+  <li>Deactivate other plugins on staging to look for a conflict, especially caching, optimisation and security plugins.</li>
+  <li>Open the browser console in the editor and look for JavaScript errors or blocked requests; a server firewall rule such as ModSecurity can block saving.</li>
+  <li>Increase the PHP memory limit if the editor loads slowly or only partly, or ask your host to.</li>
+</ol>
 
 <h2>Before you re-enable updates</h2>
 <p>A site that has not been updated for months may have many updates waiting. Updating everything at once can break it. A safer order:</p>
