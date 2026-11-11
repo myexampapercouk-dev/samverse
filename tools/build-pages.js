@@ -325,7 +325,7 @@ ${p.gets.map(g => `          <li>${tick} ${esc(g)}</li>`).join('\n')}
     </section>
 
 ${depthFor(p)}
-${proofFor(p)}    <section class="section" id="work">
+${proofFor(p)}${p.noWork ? "" : `    <section class="section" id="work">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Related work</span>
@@ -337,7 +337,7 @@ ${projectCards(p.projects)}
         </div>
       </div>
     </section>
-
+`}
     ${p.steps ? stepsFor(p) : process_}
 
     <section class="section" id="faq">

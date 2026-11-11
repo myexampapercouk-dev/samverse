@@ -893,7 +893,7 @@ const PAGES = [
     ],
     getsTitle: 'What your salon website includes',
     gets: ['Service menu with durations', 'Bridal and package pages', 'WhatsApp & online booking', 'Stylist / therapist profiles', 'Photo gallery', 'Google Maps & timings', 'Google reviews widget', 'Local SEO setup'],
-    projects: ['Third Eye Social', 'Streak Creative'],
+    noWork: true,
     faqs: [
       ['Can customers book a slot online?', 'Yes. The simplest option is a WhatsApp button that opens a chat with the service and preferred time already written. If you want customers to pick a free slot themselves, I connect a booking calendar plugin or link the booking tool you already use.'],
       ['Can customers pay a deposit online?', 'Yes. For bridal or long spa bookings, a booking can require an advance through Razorpay or another UPI-enabled gateway. Day-to-day appointments usually work fine without online payment.'],
@@ -922,7 +922,7 @@ const PAGES = [
     ],
     getsTitle: 'What your gym website includes',
     gets: ['Class timetable', 'Membership plans page', 'Trial pass sign-up form', 'Trainer profiles', 'UPI / Razorpay payments (optional)', 'WhatsApp & one-tap call', 'Google Maps & timings', 'Local SEO setup'],
-    projects: ['Third Eye Social', 'Streak Creative'],
+    noWork: true,
     faqs: [
       ['Can members pay fees online?', 'Yes. Memberships or class packs can be paid through Razorpay, which supports UPI, cards and netbanking. If you prefer to collect at the desk, the site just takes enquiries.'],
       ['Can I update the timetable myself?', 'Yes. The timetable is managed from the dashboard, so a new batch or a holiday change takes a minute.'],
@@ -951,7 +951,7 @@ const PAGES = [
     ],
     getsTitle: 'What your jewellery website includes',
     gets: ['Product catalogue by category', 'Purity, weight & hallmark fields', 'Gold rate based pricing', 'Enquire on WhatsApp per product', 'Store visit booking', 'UPI / card checkout', 'Google Maps & store timings', 'Product schema & SEO'],
-    projects: ['CNN Food & Spices', 'Southern Flavours'],
+    noWork: true,
     faqs: [
       ['Can prices update with the daily gold rate?', 'Yes. On WooCommerce, prices can be calculated from each product\'s weight, purity and making charge, and you update the rate once a day. On Shopify this usually needs an app. Some jewellers prefer "price on request" for heavier pieces, which is also supported.'],
       ['WooCommerce or Shopify for jewellery?', 'WooCommerce gives more control over gold-rate pricing and product fields with no monthly platform fee. Shopify is simpler to run but leans on paid apps for this. I explain the trade-off for your catalogue before you choose; see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify</a>.'],
