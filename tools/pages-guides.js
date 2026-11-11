@@ -1930,8 +1930,9 @@ module.exports = {
 <p>Send me your current website or social page for a free review and a fixed quote.</p>
 `,
   'shopify-developer': `
-<h2>Shopify services, one developer</h2>
-<ul>
+<h2>Shopify development services</h2>
+<p>Shopify development services from Samverse cover seven jobs, delivered by one freelance developer in Pune rather than a Shopify website development company with a sales team and hand-offs:</p>
+<ol>
 <li><strong>Store setup.</strong> A new store set up from scratch: theme, products and collections, payments, shipping, taxes, domain and launch checks. <a href="/blog/shopify-store-setup-india/">How to set up a Shopify store in India</a> walks through the steps.</li>
 <li><strong>Theme customisation and Figma to Shopify.</strong> Sections and templates edited in Liquid, CSS and JavaScript, or a Figma design turned into a working Online Store 2.0 theme. See <a href="/blog/shopify-theme-customisation/">Shopify theme customisation</a>.</li>
 <li><strong>App setup and clean-up.</strong> Only the apps the store needs, configured properly, with unused apps and their leftover code removed.</li>
@@ -1939,7 +1940,7 @@ module.exports = {
 <li><strong>Shopify SEO.</strong> Titles, descriptions, collection pages, structured data and redirects. The <a href="/blog/shopify-seo-checklist/">Shopify SEO checklist</a> lists what gets checked.</li>
 <li><strong>Migration.</strong> Stores moved from WooCommerce, WordPress or Wix to Shopify, or the other way, with 301 redirects. See <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a>.</li>
 <li><strong>Monthly support.</strong> Theme edits, new banners and sections, app checks and fixes when something breaks, on an agreed monthly scope.</li>
-</ul>
+</ol>
 <h2>How to choose a Shopify development company or developer</h2>
 <p>Whether you are shortlisting the best Shopify development company for your brand or a freelancer, the same checks apply:</p>
 <ol>

@@ -190,7 +190,7 @@ module.exports = [
     title: 'WordPress vs Wix vs Shopify: Which Is Best for Your Business in India? Cost, UPI Payments, GST and Ownership Compared',
     description: 'WordPress vs Wix vs Shopify for Indian businesses: running costs, UPI and Indian payment gateways, GST invoices, SEO, ownership and finding developers.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-11',
     category: 'Guides',
     related: ['website-redesign', 'woocommerce-developer', 'wordpress-migration'],
     body: `
@@ -890,7 +890,7 @@ module.exports = [
   },
   {
     slug: 'woocommerce-vs-shopify-india',
-    seoTitle: 'WooCommerce vs Shopify in India: Costs, GST, COD and UPI',
+    seoTitle: 'WooCommerce vs Shopify: India Costs, GST, COD and UPI',
     title: 'WooCommerce vs Shopify in India: Costs, Payment Gateways, GST, COD and Shipping Compared for Online Stores',
     description: 'WooCommerce vs Shopify for Indian stores: running costs, transaction fees, Razorpay and UPI, GST invoices, COD, Shiprocket, apps vs plugins and ownership.',
     date: '2026-09-27',
@@ -898,7 +898,7 @@ module.exports = [
     category: 'E-commerce',
     related: ['woocommerce-developer', 'shopify-developer', 'wordpress-speed-optimization'],
     body: `
-<p>For most small and growing Indian online stores, WooCommerce is the better fit: there is no platform fee, you pay only your payment gateway's charges, cash on delivery, GST and shipping rules can be set exactly how you work, and the store, data and content are fully yours. Shopify is the better fit if you want a hosted store where hosting, security and updates are handled for you, and you accept a monthly plan, monthly app costs and any Shopify transaction fee that applies to third-party gateways.</p>
+<p>WooCommerce vs Shopify, in short: for most small and growing Indian online stores, WooCommerce is the better fit: there is no platform fee, you pay only your payment gateway's charges, cash on delivery, GST and shipping rules can be set exactly how you work, and the store, data and content are fully yours. Shopify is the better fit if you want a hosted store where hosting, security and updates are handled for you, and you accept a monthly plan, monthly app costs and any Shopify transaction fee that applies to third-party gateways.</p>
 <p>I build WooCommerce stores, so read this with that in mind; if Shopify genuinely suits a store better, I say so. If you want a <a href="/woocommerce-developer/">WooCommerce developer in India</a> to set up payments, COD, GST and shipping properly, that page explains how I work. This comparison is store-specific; for business websites in general, including Wix, see <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a>.</p>
 
 <h2>Verdict by store type</h2>
@@ -76858,8 +76858,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <li><strong>Working email delivery</strong> so order emails reach customers. See <a href="/tutorials/setup-smtp-wordpress/">how to set up SMTP on WordPress</a>.</li>
 </ol>
 
-<h2>How much does WooCommerce cost?</h2>
-<p>The core WooCommerce plugin is free. The running costs come from the things around it, and they vary by store size and choices:</p>
+<h2>WooCommerce pricing in India</h2>
+<p>The core WooCommerce plugin is free in India as everywhere else. Your real WooCommerce pricing comes from hosting, a domain, an optional paid theme, any paid extensions and your payment gateway's per-transaction fees, and each of these varies by provider and store size:</p>
 <table>
 <thead><tr><th>Cost item</th><th>Free or paid?</th><th>What changes the amount</th></tr></thead>
 <tbody>
