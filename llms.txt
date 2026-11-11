@@ -106,6 +106,8 @@
 - [For agencies](https://samverse.space/blog/topic/agencies/): White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.
 
 ## Blog
+- [What Is WooCommerce? How It Works, What You Need and Who It Suits](https://samverse.space/blog/what-is-woocommerce/): WooCommerce is a free plugin that turns a WordPress site into an online store. How it works, what you need, costs, pros, cons and how to start.
+- [WooCommerce Shortcodes: Complete List, Attributes and Copy-Paste Examples](https://samverse.space/blog/woocommerce-shortcodes/): Every built-in WooCommerce shortcode in one table: [products] attributes, categories, add to cart, cart, checkout and account, with examples and fixes.
 - [WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares](https://samverse.space/blog/wordpress-featured-image-not-showing-fix/): WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.
 - [WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus](https://samverse.space/blog/wordpress-menu-not-showing-fix/): WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.
 - [WordPress "Updating Failed" or "Publishing Failed"? How to Fix the Not a Valid JSON Response Error](https://samverse.space/blog/wordpress-updating-failed-error-fix/): Fix WordPress "Updating failed" and "The response is not a valid JSON response" errors: permalinks, SSL, firewalls, plugins and the REST API.

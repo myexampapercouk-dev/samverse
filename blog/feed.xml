@@ -2204,5 +2204,19 @@
     <pubDate>Fri, 06 Nov 2026 03:30:00 GMT</pubDate>
     <description>Fix WordPress &quot;Updating failed&quot; and &quot;The response is not a valid JSON response&quot; errors: permalinks, SSL, firewalls, plugins and the REST API.</description>
   </item>
+  <item>
+    <title>What Is WooCommerce? How It Works, What You Need and Who It Suits</title>
+    <link>https://samverse.space/blog/what-is-woocommerce/</link>
+    <guid>https://samverse.space/blog/what-is-woocommerce/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>WooCommerce is a free plugin that turns a WordPress site into an online store. How it works, what you need, costs, pros, cons and how to start.</description>
+  </item>
+  <item>
+    <title>WooCommerce Shortcodes: Complete List, Attributes and Copy-Paste Examples</title>
+    <link>https://samverse.space/blog/woocommerce-shortcodes/</link>
+    <guid>https://samverse.space/blog/woocommerce-shortcodes/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Every built-in WooCommerce shortcode in one table: [products] attributes, categories, add to cart, cart, checkout and account, with examples and fixes.</description>
+  </item>
 </channel>
 </rss>

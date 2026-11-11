@@ -1025,6 +1025,7 @@ module.exports = [
 <h2>When to get help</h2>
 <p>If you have chosen a platform and want it set up properly, with Indian payments, COD, GST invoices and shipping tested before launch, get a fixed quote after a free review: <a href="/shopify-developer/">Shopify development in India</a> or <a href="/woocommerce-developer/">WooCommerce development</a>. Since Samverse builds on both, the advice is about your store, not a preference for one platform.</p>
 
+<p>New to the platform? Read <a href="/blog/what-is-woocommerce/">what WooCommerce is and how it works</a>.</p>
 <h2>FAQs</h2>
 <h3>Is WooCommerce cheaper than Shopify in India?</h3>
 <p>Usually, over time. WooCommerce has no platform fee or transaction fee, so you pay for hosting, a domain, any premium plugins and optional maintenance. Shopify has a monthly plan, monthly apps and possibly its own transaction fee. Shopify can be cheaper if you'd otherwise pay a developer for every small change.</p>
@@ -6551,6 +6552,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <h2>When to get help</h2>
 <p>If test orders fail, payments succeed but orders stay pending, or order emails don't arrive, fix that before the first real customer. Setting up and testing gateways, shipping, taxes and order emails is part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
+<p>Still deciding on the platform? See <a href="/blog/what-is-woocommerce/">what WooCommerce is and what you need to run it</a>. For placing product grids and the cart or checkout on pages, see the <a href="/blog/woocommerce-shortcodes/">WooCommerce shortcodes list</a>.</p>
 <h2>FAQs</h2>
 <h3>How do I take a WooCommerce store live?</h3>
 <p>Switch the payment gateway from test to live keys, turn off Coming soon mode, untick "Discourage search engines", clear caches, then place and refund one real low-value order to confirm payments, emails and stock all work.</p>
@@ -9522,6 +9524,7 @@ ls -lh backup-test.sql</code></pre>
 <h2>When to get help</h2>
 <p>If product schema keeps failing, filter URLs are filling the index, or category pages get impressions but no clicks, get the store audited. Store structure, product schema and speed are handled in <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
+<p>Building category landing pages? The <a href="/blog/woocommerce-shortcodes/">WooCommerce shortcodes guide</a> shows how to add filtered product grids to any page.</p>
 <h2>FAQs</h2>
 <h3>Is WooCommerce good for SEO?</h3>
 <p>Yes. Because it runs on WordPress you control every title, URL, redirect and piece of content, and it outputs basic product schema by default. Rankings depend on how you set it up: category content, unique product pages, controlled filter URLs and speed.</p>
@@ -31318,6 +31321,7 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>When to get help</h2>
 <p>Get help when variations show the wrong price or image, when a product has too many combinations, or when you need variation swatches built. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>To show variable products on any page, use the <a href="/blog/woocommerce-shortcodes/">WooCommerce shortcodes</a> such as [products] with a category or attribute filter.</p>
 <h2>FAQs</h2>
 <h3>What are product-type variations in WooCommerce?</h3>
 <p>They are the options you create after setting a product's type to Variable product. You add attributes such as size and colour, then WooCommerce creates a variation for each combination, and each variation can have its own price, SKU, stock and image.</p>
@@ -76818,6 +76822,213 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Build service pages that match searches like GST registration consultant in your city, keep the Google Business Profile complete, prepare before filing peaks and make WhatsApp and booking easy.</p>
 
 <p>Planning a site for your tax practice? <a href="/#contact">Ask for a free quote</a> and we can set up service pages, booking and secure document sharing on WordPress.</p>
+`,
+  },
+  {
+    slug: 'what-is-woocommerce',
+    seoTitle: 'What Is WooCommerce? How It Works, Costs, Pros and Cons',
+    title: 'What Is WooCommerce? How It Works, What You Need and Who It Suits',
+    description: 'WooCommerce is a free plugin that turns a WordPress site into an online store. How it works, what you need, costs, pros, cons and how to start.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>WooCommerce is a free, open-source plugin that turns a WordPress website into an online store, adding products, a cart, checkout, payments, shipping, tax and order management to the site you already control.</p>
+<p>It is not a separate website builder or a hosted service. You install it on a self-hosted WordPress site, the same way you install any other plugin, and your store lives on your own hosting.</p>
+
+<h2>How WooCommerce works</h2>
+<p>WordPress handles the website: pages, blog, menus, users and the theme. WooCommerce plugs into it and adds the shop layer:</p>
+<ul>
+<li><strong>Products:</strong> simple, variable (sizes, colours), grouped and external products, each with price, stock, SKU, images and categories.</li>
+<li><strong>Cart and checkout:</strong> customers add items, enter address details and pay. Newer installs use the Cart and Checkout blocks.</li>
+<li><strong>Payments:</strong> through payment gateway plugins, for example Razorpay, PayU, Stripe, PayPal, or offline methods such as cash on delivery and bank transfer.</li>
+<li><strong>Shipping and tax:</strong> shipping zones, flat rates, free shipping rules and tax settings under <strong>WooCommerce &gt; Settings</strong>.</li>
+<li><strong>Orders and customers:</strong> each order gets a status (Pending payment, Processing, Completed, Refunded) under <strong>WooCommerce &gt; Orders</strong>, with emails sent to you and the buyer.</li>
+</ul>
+<p>Everything else (subscriptions, bookings, GST invoices, product filters, abandoned cart emails) comes from extensions, which are also plugins.</p>
+
+<h2>What you need to run a WooCommerce store</h2>
+<ol>
+<li><strong>A domain name</strong>, such as yourbrand.in or yourbrand.com.</li>
+<li><strong>Web hosting</strong> that runs WordPress well. A store needs more server resources than a brochure site because cart and checkout pages cannot be fully cached.</li>
+<li><strong>WordPress</strong>, the self-hosted version from wordpress.org (not a WordPress.com plan that limits plugins).</li>
+<li><strong>An SSL certificate</strong> so the site loads on https. See <a href="/tutorials/install-ssl-wordpress/">how to install SSL on WordPress</a>.</li>
+<li><strong>A theme</strong> that supports WooCommerce, for example Storefront, Astra, Kadence or a block theme.</li>
+<li><strong>A payment gateway account</strong>. For Indian stores, see <a href="/tutorials/add-razorpay-to-woocommerce/">how to add Razorpay to WooCommerce</a>.</li>
+<li><strong>Working email delivery</strong> so order emails reach customers. See <a href="/tutorials/setup-smtp-wordpress/">how to set up SMTP on WordPress</a>.</li>
+</ol>
+
+<h2>How much does WooCommerce cost?</h2>
+<p>The core WooCommerce plugin is free. The running costs come from the things around it, and they vary by store size and choices:</p>
+<table>
+<thead><tr><th>Cost item</th><th>Free or paid?</th><th>What changes the amount</th></tr></thead>
+<tbody>
+<tr><td>WooCommerce plugin</td><td>Free</td><td>Nothing; core is free to use</td></tr>
+<tr><td>Domain</td><td>Paid, yearly</td><td>Extension (.in, .com) and registrar</td></tr>
+<tr><td>Hosting</td><td>Paid, monthly or yearly</td><td>Traffic, number of products, shared vs managed or cloud hosting</td></tr>
+<tr><td>Theme</td><td>Free or paid</td><td>Free themes work; premium themes add design options and support</td></tr>
+<tr><td>Extensions</td><td>Many free, many paid (often yearly licences)</td><td>Features you need: subscriptions, bookings, filters, invoices</td></tr>
+<tr><td>Payment gateway fees</td><td>Per transaction</td><td>Your gateway's pricing and payment method</td></tr>
+<tr><td>Development and maintenance</td><td>Your time or a developer's</td><td>Custom design, integrations, updates, backups and security</td></tr>
+</tbody>
+</table>
+<p>WooCommerce itself does not take a platform fee on each sale, but your payment gateway still charges its own fee.</p>
+
+<h2>WooCommerce pros</h2>
+<ul>
+<li><strong>Free core and no platform fee</strong> on sales.</li>
+<li><strong>Full ownership:</strong> your files, database and customer data sit on your hosting and can be moved.</li>
+<li><strong>Flexible:</strong> thousands of plugins and full code access for custom features.</li>
+<li><strong>Content and SEO:</strong> WordPress is strong for blogs, landing pages and SEO plugins alongside the shop.</li>
+<li><strong>Local payment and shipping options</strong> through Indian gateway and courier plugins.</li>
+</ul>
+
+<h2>WooCommerce cons</h2>
+<ul>
+<li><strong>You manage it:</strong> updates, backups, security and hosting are your responsibility (or your developer's).</li>
+<li><strong>Plugin overload:</strong> too many extensions slow the store and cause conflicts.</li>
+<li><strong>Performance depends on hosting:</strong> cheap shared hosting struggles with busy checkouts.</li>
+<li><strong>Paid extensions add up</strong> over time with yearly renewals.</li>
+</ul>
+
+<h2>WooCommerce vs Shopify: who each suits</h2>
+<p>WooCommerce suits you if you already have a WordPress site, want full control and custom features, publish a lot of content, or don't want a monthly platform subscription. Shopify suits you if you want a hosted platform where security, hosting and updates are handled for you and you are happy to work within its apps and plans.</p>
+<p>For a detailed comparison for Indian sellers, read <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
+
+<h2>How to start a WooCommerce store</h2>
+<ol>
+<li>Buy a domain and hosting, then install WordPress (most hosts offer one-click install).</li>
+<li>Install SSL and confirm the site loads on https.</li>
+<li>Go to <strong>Plugins &gt; Add New Plugin</strong>, search for WooCommerce, click <strong>Install Now</strong> and then <strong>Activate</strong>.</li>
+<li>Complete the setup wizard: store address, industry, product types and currency (Indian Rupee for India).</li>
+<li>Set payments in <strong>WooCommerce &gt; Settings &gt; Payments</strong>, shipping in <strong>WooCommerce &gt; Settings &gt; Shipping</strong> and tax in <strong>WooCommerce &gt; Settings &gt; Tax</strong>.</li>
+<li>Add products under <strong>Products &gt; Add New Product</strong>.</li>
+<li>Place a test order end to end before launch. The <a href="/blog/woocommerce-store-launch-checklist/">WooCommerce launch checklist</a> covers what to check.</li>
+</ol>
+<p>Two edge cases people miss: the Shop, Cart, Checkout and My account pages are created by the wizard, so if you delete one, reassign it in <strong>WooCommerce &gt; Settings &gt; Advanced</strong> or checkout breaks. And caching plugins must exclude cart, checkout and my-account pages, or customers can see stale carts.</p>
+<p>If you would rather have the store built and configured for you, see our <a href="/woocommerce-developer/">WooCommerce development service</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Is WooCommerce free?</h3>
+<p>Yes, the core WooCommerce plugin is free and open source. You still pay for a domain, hosting, any paid themes or extensions, and payment gateway transaction fees.</p>
+<h3>Is WooCommerce the same as WordPress?</h3>
+<p>No. WordPress is the content management system; WooCommerce is a plugin that adds e-commerce to it. You need WordPress to use WooCommerce.</p>
+<h3>Can I use WooCommerce on WordPress.com?</h3>
+<p>Only on WordPress.com plans that allow plugins. Most stores use self-hosted WordPress from wordpress.org on their own hosting.</p>
+<h3>Is WooCommerce good for beginners?</h3>
+<p>It is manageable if you are comfortable with WordPress, but you handle hosting, updates and backups yourself. Beginners who want everything managed often find Shopify simpler.</p>
+<h3>Does WooCommerce work in India?</h3>
+<p>Yes. It supports Indian Rupee, GST tax settings, and Indian payment gateways such as Razorpay, PayU and Cashfree, plus cash on delivery.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-shortcodes',
+    seoTitle: 'WooCommerce Shortcodes: Full List with Examples',
+    title: 'WooCommerce Shortcodes: Complete List, Attributes and Copy-Paste Examples',
+    description: 'Every built-in WooCommerce shortcode in one table: [products] attributes, categories, add to cart, cart, checkout and account, with examples and fixes.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>WooCommerce shortcodes are short tags in square brackets, such as <code>[products limit="4"]</code>, that display products, categories, add-to-cart buttons, the cart, checkout and account pages anywhere on a WordPress page or post.</p>
+<p>They are built into WooCommerce, so no extra plugin is needed. Paste them into a <strong>Shortcode</strong> block, and change what they show with attributes.</p>
+
+<h2>All WooCommerce shortcodes</h2>
+<table>
+<thead><tr><th>Shortcode</th><th>What it shows</th><th>Main attributes</th></tr></thead>
+<tbody>
+<tr><td><code>[products]</code></td><td>A grid of products, filtered and sorted</td><td>limit, columns, paginate, orderby, order, category, tag, attribute, terms, ids, skus, on_sale, best_selling, top_rated, visibility, class</td></tr>
+<tr><td><code>[product_page]</code></td><td>A full single product page</td><td>id or sku</td></tr>
+<tr><td><code>[product_category]</code></td><td>Products from one or more categories</td><td>category, limit, columns, orderby, order</td></tr>
+<tr><td><code>[product_categories]</code></td><td>A grid of product categories (not products)</td><td>number, columns, orderby, order, hide_empty, parent, ids</td></tr>
+<tr><td><code>[add_to_cart]</code></td><td>Price and add-to-cart button for one product</td><td>id or sku, show_price, style, class, quantity</td></tr>
+<tr><td><code>[add_to_cart_url]</code></td><td>The plain add-to-cart URL (text, not a button)</td><td>id or sku</td></tr>
+<tr><td><code>[shop_messages]</code></td><td>WooCommerce notices (such as "added to cart") on non-Woo pages</td><td>None</td></tr>
+<tr><td><code>[woocommerce_cart]</code></td><td>The cart page</td><td>None</td></tr>
+<tr><td><code>[woocommerce_checkout]</code></td><td>The checkout page</td><td>None</td></tr>
+<tr><td><code>[woocommerce_my_account]</code></td><td>The customer account and login page</td><td>None</td></tr>
+<tr><td><code>[woocommerce_order_tracking]</code></td><td>An order tracking form (order ID and billing email)</td><td>None</td></tr>
+</tbody>
+</table>
+
+<h2>[products] attributes explained</h2>
+<ul>
+<li><strong>limit</strong>: how many products to show. <code>-1</code> shows all.</li>
+<li><strong>columns</strong>: products per row (default 4).</li>
+<li><strong>paginate</strong>: <code>true</code> adds page numbers; use it with limit.</li>
+<li><strong>orderby</strong>: <code>title</code>, <code>date</code>, <code>id</code>, <code>menu_order</code>, <code>popularity</code>, <code>rand</code> or <code>rating</code>.</li>
+<li><strong>order</strong>: <code>ASC</code> or <code>DESC</code>.</li>
+<li><strong>category</strong> and <strong>tag</strong>: comma-separated slugs (not names).</li>
+<li><strong>attribute</strong> and <strong>terms</strong>: filter by a product attribute, for example colour = blue.</li>
+<li><strong>ids</strong> and <strong>skus</strong>: show specific products.</li>
+<li><strong>on_sale</strong>, <strong>best_selling</strong>, <strong>top_rated</strong>: set to <code>true</code>. Use only one of these per shortcode.</li>
+<li><strong>visibility</strong>: <code>visible</code>, <code>catalog</code>, <code>search</code>, <code>hidden</code> or <code>featured</code>.</li>
+</ul>
+
+<h2>Copy-paste examples</h2>
+<p>Latest 8 products, 4 per row:</p>
+<pre><code>[products limit="8" columns="4" orderby="date" order="DESC"]</code></pre>
+<p>Products on sale:</p>
+<pre><code>[products limit="8" columns="4" on_sale="true"]</code></pre>
+<p>Best sellers:</p>
+<pre><code>[products limit="4" columns="4" best_selling="true"]</code></pre>
+<p>Featured products:</p>
+<pre><code>[products limit="4" columns="4" visibility="featured"]</code></pre>
+<p>One category, paginated, 12 per page:</p>
+<pre><code>[products category="t-shirts" limit="12" columns="3" paginate="true"]</code></pre>
+<p>Filter by attribute:</p>
+<pre><code>[products attribute="colour" terms="blue" limit="8"]</code></pre>
+<p>Specific products by ID:</p>
+<pre><code>[products ids="21, 35, 48" columns="3"]</code></pre>
+<p>Single product page and add-to-cart button:</p>
+<pre><code>[product_page id="99"]
+[add_to_cart id="99" show_price="true"]</code></pre>
+<p>Top-level product categories, hiding empty ones:</p>
+<pre><code>[product_categories number="0" parent="0" hide_empty="1" columns="4"]</code></pre>
+<p>Find a product ID by hovering over the product in <strong>Products &gt; All Products</strong>; the ID shows under the name. Find a category slug in <strong>Products &gt; Categories</strong>.</p>
+
+<h2>Where to paste a shortcode</h2>
+<ol>
+<li>Open the page in the block editor (<strong>Pages &gt; All Pages &gt; Edit</strong>).</li>
+<li>Click the <strong>+</strong> inserter and add a <strong>Shortcode</strong> block.</li>
+<li>Paste the shortcode, then click <strong>Update</strong> (or <strong>Save</strong>) and view the page. The editor shows the raw tag; the front end shows the output.</li>
+</ol>
+<p>In Elementor, use the <strong>Shortcode</strong> widget. In classic widgets, a Text or Custom HTML widget works. In PHP templates, use <code>echo do_shortcode('[products limit="4"]');</code>.</p>
+
+<h2>Cart and Checkout blocks vs shortcodes</h2>
+<p>Stores set up on newer WooCommerce versions use the <strong>Cart block</strong> and <strong>Checkout block</strong> by default instead of <code>[woocommerce_cart]</code> and <code>[woocommerce_checkout]</code>. Some older payment, shipping or checkout field plugins only work with the shortcode version.</p>
+<p>To switch back to the shortcode checkout:</p>
+<ol>
+<li>Go to <strong>Pages</strong> and edit the Checkout page.</li>
+<li>Select the Checkout block and delete it (or use the block's switch-to-classic option if your version shows one).</li>
+<li>Add a <strong>Shortcode</strong> block containing <code>[woocommerce_checkout]</code> and update the page.</li>
+<li>Repeat on the Cart page with <code>[woocommerce_cart]</code>.</li>
+<li>Check <strong>WooCommerce &gt; Settings &gt; Advanced</strong> still points Cart and Checkout at these pages, then place a test order.</li>
+</ol>
+<p>Keep the blocks if all your plugins support them; WooCommerce focuses new checkout features on the blocks.</p>
+
+<h2>Troubleshooting WooCommerce shortcodes</h2>
+<ol>
+<li><strong>The shortcode shows as plain text:</strong> it was pasted into a Paragraph or Code block. Move it to a Shortcode block, and replace curly quotes copied from a document with straight quotes.</li>
+<li><strong>No products appear:</strong> the category uses a name instead of the slug, the products are drafts, out-of-stock items are hidden (<strong>WooCommerce &gt; Settings &gt; Products &gt; Inventory</strong>), or the IDs are wrong.</li>
+<li><strong>Layout looks broken or columns ignored:</strong> the theme overrides WooCommerce styles. Test with a default theme such as Storefront, or add custom CSS.</li>
+<li><strong>Changes don't show:</strong> clear the page cache and any CDN cache. Shortcode output is cached like the rest of the page.</li>
+<li><strong>Checkout shortcode shows a notice instead of the form:</strong> the cart is empty, or the page is not set as the Checkout page in <strong>WooCommerce &gt; Settings &gt; Advanced</strong>.</li>
+</ol>
+<p>Edge case: <code>best_selling</code> and <code>top_rated</code> rely on sales and review data, so on a new store with no orders or reviews the order can look random.</p>
+<p>Need custom product layouts or a checkout that works with your plugins? Our <a href="/woocommerce-developer/">WooCommerce developer service</a> can set it up. New to the platform? Start with <a href="/blog/what-is-woocommerce/">what WooCommerce is and how it works</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Do I need a plugin for WooCommerce shortcodes?</h3>
+<p>No. The shortcodes listed here are built into WooCommerce and work as soon as it is active.</p>
+<h3>How do I show products from one category with a shortcode?</h3>
+<p>Use <code>[products category="your-category-slug" limit="8" columns="4"]</code>, using the category slug from Products &gt; Categories.</p>
+<h3>What replaced the old [recent_products] and [sale_products] shortcodes?</h3>
+<p>The single <code>[products]</code> shortcode with attributes such as <code>orderby="date"</code> or <code>on_sale="true"</code>. The older shortcodes still work for backward compatibility, but <code>[products]</code> is the recommended one.</p>
+<h3>Can I use WooCommerce shortcodes in Elementor?</h3>
+<p>Yes. Add the Shortcode widget and paste the shortcode into it.</p>
+<h3>Should I use the Checkout block or the checkout shortcode?</h3>
+<p>Use the block if your payment and checkout plugins support it. Switch to <code>[woocommerce_checkout]</code> if a plugin you rely on only works with the classic checkout.</p>
 `,
   },
 ];
