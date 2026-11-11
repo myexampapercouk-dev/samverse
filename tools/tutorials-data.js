@@ -690,6 +690,646 @@ ${fig(s, 3, 'Google Search Console URL Inspection for a new permalink with the R
 <p>Edit the page, open the Page settings sidebar, change the Slug (or URL) field and update. Add a 301 from the old URL if the page was already indexed.</p>
 `,
   },
+
+  {
+    slug: 'install-ssl-wordpress',
+    title: 'How to Install an SSL Certificate on WordPress (2026)',
+    description: 'Install a free SSL certificate on WordPress: issue it in your hosting panel, switch both URLs to https, force HTTPS and fix mixed content.',
+    date: '2026-11-11',
+    service: 'wordpress-maintenance',
+    serviceText: 'I move WordPress sites to HTTPS, fix mixed content and redirects, and keep certificates renewing as part of WordPress maintenance.',
+    time: '20 to 40 minutes (the certificate itself can take up to a few hours to issue)',
+    need: ['Login to your hosting panel (hPanel, cPanel or similar)', 'WordPress admin access', 'A full backup taken today', 'Your domain already pointing at the hosting'],
+    linkFrom: [
+      ['ssl-certificate-errors-fix', 'If your site has no certificate at all yet, follow the tutorial on <a href="/tutorials/install-ssl-wordpress/">how to install an SSL certificate on WordPress</a>, from the hosting panel to forcing HTTPS.'],
+      ['domain-hosting-ssl-explained', 'For the hands-on part on a WordPress site, see <a href="/tutorials/install-ssl-wordpress/">installing an SSL certificate on WordPress step by step</a>.'],
+    ],
+    body: (s) => `
+<p>To install an SSL certificate on WordPress, issue the free certificate (usually Let's Encrypt) in your hosting panel, change both the <strong>WordPress Address</strong> and <strong>Site Address</strong> in <strong>Settings &gt; General</strong> to <code>https://</code>, redirect all HTTP traffic to HTTPS, and replace old <code>http://</code> links in the database so there is no mixed content. Most hosts include the certificate free and renew it automatically.</p>
+<p>If you see "Not secure" or "Your connection is not private" after this, read <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> for what each message means.</p>
+
+<h2>Step 1: Take a backup</h2>
+${path_('Hosting panel &gt; Backups, or your backup plugin')}
+<p>Switching to HTTPS changes the site address. If something goes wrong you can be locked out of the admin, so take a full backup (files and database) first. The <a href="/tutorials/backup-wordpress-updraftplus/">UpdraftPlus backup tutorial</a> shows one way to do it.</p>
+
+<h2>Step 2: Issue the free SSL certificate in your hosting panel</h2>
+${path_('hPanel &gt; Security &gt; SSL (cPanel: SSL/TLS Status or Let\'s Encrypt)')}
+<ol>
+  <li>Log in to your hosting panel and open the <strong>SSL</strong> section.</li>
+  <li>Find your domain. If the status is not Active, click <strong>Install SSL</strong> (or Run AutoSSL in cPanel).</li>
+  <li>Choose the free certificate and make sure it covers both <code>yourdomain.com</code> and <code>www.yourdomain.com</code>.</li>
+</ol>
+${fig(s, 1, 'How to install an SSL certificate on WordPress: hosting panel SSL page with the Install SSL button highlighted', 'Step 2: In the hosting panel SSL page, install the free certificate for the domain and www.')}
+<p>Issuing can take from a few minutes to a few hours. It fails if the domain does not yet point at this hosting, so check DNS first.</p>
+
+<h2>Step 3: Check the certificate in the browser</h2>
+<p>Open <code>https://yourdomain.com</code> in a private window. You should see the padlock (the page may still show warnings about insecure content; that is fixed in Step 6). If the browser says the certificate is for another name, the certificate has not finished issuing or does not cover that variant.</p>
+
+<h2>Step 4: Change the WordPress and Site Address to https</h2>
+${path_('WordPress admin &gt; Settings &gt; General')}
+<ol>
+  <li>Go to <strong>Settings &gt; General</strong>.</li>
+  <li>Change <strong>WordPress Address (URL)</strong> and <strong>Site Address (URL)</strong> from <code>http://</code> to <code>https://</code>. Keep www or non-www exactly as it was.</li>
+  <li>Click <strong>Save Changes</strong>. WordPress logs you out; log back in on the https address.</li>
+</ol>
+${fig(s, 2, 'WordPress Settings General with WordPress Address and Site Address both changed to https highlighted', 'Step 4: Both address fields start with https://. Save, then log back in.')}
+
+<h2>Step 5: Force HTTPS with a 301 redirect</h2>
+${path_('Hosting panel &gt; Force HTTPS toggle, or .htaccess in the site root')}
+<p>Many panels have a <strong>Force HTTPS</strong> switch next to the certificate. Turn it on. If yours does not, add this at the top of <code>.htaccess</code> on Apache or LiteSpeed hosting:</p>
+<pre><code>RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
+<p>Test by opening <code>http://yourdomain.com/any-page/</code>: it should land on the https version of the same page in one hop.</p>
+
+<h2>Step 6: Fix mixed content</h2>
+${path_('WordPress admin &gt; Tools &gt; Better Search Replace')}
+<p>Old posts and page-builder data still contain <code>http://yourdomain.com</code> links to images and pages, which cause "not fully secure" warnings.</p>
+<ol>
+  <li>Install and activate <strong>Better Search Replace</strong>.</li>
+  <li>Search for <code>http://yourdomain.com</code>, replace with <code>https://yourdomain.com</code>, select all tables.</li>
+  <li>Run it once with <strong>Run as dry run</strong> ticked, check the count, then untick it and run for real.</li>
+  <li>Clear every cache (plugin, host and CDN).</li>
+</ol>
+${fig(s, 3, 'Better Search Replace screen replacing http://yourdomain.com with https://yourdomain.com with the dry run box highlighted', 'Step 6: Replace http:// with https:// across the database. Dry run first.')}
+<p>If you use Elementor, also run <strong>Elementor &gt; Tools &gt; Replace URL</strong>. Hard-coded http links in theme files or custom code need editing by hand.</p>
+
+<h2>Step 7: Update Search Console and analytics</h2>
+<ul>
+  <li>In Google Search Console, a Domain property covers https automatically. If you use URL-prefix properties, add the https version and submit <code>/sitemap.xml</code> there.</li>
+  <li>In GA4, update the web stream URL to https.</li>
+  <li>Update the website link on your Google Business Profile and social profiles.</li>
+</ul>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Too many redirects after Step 4 or 5:</strong> often a CDN such as Cloudflare set to Flexible SSL. Set it to Full (strict), or remove the extra redirect rule.</li>
+  <li><strong>Locked out after changing the addresses:</strong> add <code>define('WP_HOME','https://yourdomain.com');</code> and <code>define('WP_SITEURL','https://yourdomain.com');</code> to <code>wp-config.php</code>, or fix the <code>siteurl</code> and <code>home</code> rows in <code>wp_options</code>.</li>
+  <li><strong>Padlock still missing on some pages:</strong> open DevTools &gt; Console; it lists each http resource still loading.</li>
+  <li><strong>Certificate will not issue:</strong> check the A record points at this host and there is no old AAAA record pointing elsewhere.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Do I need to buy an SSL certificate for WordPress?</h3>
+<p>Usually not. Most hosts provide a free Let's Encrypt certificate that renews automatically. A paid certificate does not make the padlock more secure for a normal business site.</p>
+<h3>Will moving to HTTPS hurt my SEO?</h3>
+<p>Not if every http URL redirects with a 301 to the same https URL. Google treats it as a site move on the same domain, and rankings normally carry over.</p>
+<h3>Do I need the Really Simple SSL plugin?</h3>
+<p>It is optional. It automates Steps 4 to 6, but the manual method keeps one fewer plugin on the site. Either way the certificate itself comes from your host.</p>
+`,
+  },
+
+  {
+    slug: 'add-google-search-console-shopify',
+    title: 'How to Add Google Search Console to Shopify (2026)',
+    description: 'Add Google Search Console to Shopify: create a Domain property, verify with a DNS TXT record (or HTML tag), then submit the Shopify sitemap.',
+    date: '2026-11-11',
+    service: 'shopify-developer',
+    serviceText: 'I set up Search Console, analytics and SEO basics on new Shopify stores so you can see what Google indexes from day one.',
+    time: '15 to 20 minutes, plus a short wait for DNS to update',
+    need: ['A Shopify store on your own domain', 'A Google account (ideally a business one you will keep)', 'Login to where your domain DNS is managed (Shopify, GoDaddy, Hostinger, Cloudflare and so on)'],
+    linkFrom: [
+      ['google-search-console-reports-explained', 'Running a Shopify store? The tutorial on <a href="/tutorials/add-google-search-console-shopify/">how to add Google Search Console to Shopify</a> covers verification and the sitemap.'],
+      ['xml-sitemaps-explained', 'On Shopify the sitemap is created for you; the <a href="/tutorials/add-google-search-console-shopify/">Search Console for Shopify tutorial</a> shows where to submit it.'],
+    ],
+    body: (s) => `
+<p>To add Google Search Console to Shopify, open Search Console, add a <strong>Domain</strong> property for <code>yourdomain.com</code>, copy the <strong>TXT record</strong> Google gives you, add it in your domain's DNS (in Shopify under <strong>Settings &gt; Domains</strong> if Shopify manages the domain), click Verify, then submit <code>https://yourdomain.com/sitemap.xml</code> in <strong>Sitemaps</strong>.</p>
+<p>Shopify creates the sitemap and robots.txt for you, so there is no plugin to install. For what each report means once data arrives, see <a href="/blog/google-search-console-reports-explained/">Google Search Console reports explained</a>.</p>
+
+<h2>Step 1: Open Search Console and add a property</h2>
+${path_('search.google.com/search-console &gt; Add property')}
+<ol>
+  <li>Sign in at Google Search Console with the Google account the business will keep.</li>
+  <li>Click the property menu (top left) and choose <strong>Add property</strong>.</li>
+  <li>Choose <strong>Domain</strong> and type <code>yourdomain.com</code> without https or www.</li>
+</ol>
+${fig(s, 1, 'How to add Google Search Console to Shopify: Select property type dialog with the Domain option highlighted', 'Step 1: Choose a Domain property: it covers https, http, www and non-www in one place.')}
+<p>A Domain property needs DNS access. If you cannot edit DNS, use <strong>URL prefix</strong> instead and verify with the HTML tag in Step 3.</p>
+
+<h2>Step 2: Add the TXT record to your DNS</h2>
+${path_('Shopify admin &gt; Settings &gt; Domains &gt; your domain &gt; DNS settings (or your registrar\'s DNS page)')}
+<ol>
+  <li>Copy the TXT value Google shows. It starts with <code>google-site-verification=</code>.</li>
+  <li>If you bought the domain through Shopify, go to <strong>Settings &gt; Domains</strong>, open the domain, then <strong>DNS settings &gt; Add custom record &gt; TXT</strong>. Otherwise open the DNS page at your registrar or Cloudflare.</li>
+  <li>Set name/host to <code>@</code> and paste the value. Save. Do not change any other records.</li>
+</ol>
+${fig(s, 2, 'Shopify domain DNS settings with a new TXT record for @ containing google-site-verification highlighted', 'Step 2: Add one TXT record on @ with the google-site-verification value. Leave the rest alone.')}
+
+<h2>Step 3: Verify (or use the HTML tag method)</h2>
+<p>Back in Search Console click <strong>Verify</strong>. If it fails, wait 15 to 60 minutes and try again. For a URL-prefix property, choose <strong>HTML tag</strong>, copy the meta tag, then in Shopify go to <strong>Online Store &gt; Themes &gt; ... &gt; Edit code</strong>, open <code>theme.liquid</code> and paste it on a new line just after <code>&lt;head&gt;</code>. Save and click Verify.</p>
+<p>Keep the TXT record or tag in place afterwards. Removing it can make you lose verification.</p>
+
+<h2>Step 4: Submit the Shopify sitemap</h2>
+${path_('Search Console &gt; Indexing &gt; Sitemaps')}
+<ol>
+  <li>Open <strong>Sitemaps</strong> in the left menu.</li>
+  <li>Type <code>sitemap.xml</code> after your domain and click <strong>Submit</strong>.</li>
+  <li>The status should read <strong>Success</strong>. Shopify's sitemap is an index that links to product, collection, page and blog sitemaps; you only submit the main one.</li>
+</ol>
+${fig(s, 3, 'Search Console Sitemaps page with sitemap.xml typed and the Submit button highlighted', 'Step 4: Submit only /sitemap.xml. Shopify keeps the child sitemaps up to date itself.')}
+<p>"Couldn't fetch" just after submitting is common and usually clears on its own; see <a href="/blog/search-console-sitemap-couldnt-fetch/">sitemap couldn't fetch</a>.</p>
+
+<h2>Step 5: Inspect your homepage and a product</h2>
+<p>Paste your homepage URL into the search bar at the top (URL Inspection). If it says the URL is not on Google, click <strong>Request indexing</strong>. Repeat for one or two main collections. There is no need to do this for every product.</p>
+
+<h2>Step 6: Remove the store password and add users</h2>
+<ul>
+  <li>If <strong>Online Store &gt; Preferences &gt; Password protection</strong> is still on, Google cannot crawl the store. Turn it off at launch.</li>
+  <li>In Search Console <strong>Settings &gt; Users and permissions</strong>, add your developer or marketer with Full rather than giving them your login.</li>
+  <li>Link Search Console to GA4 (Admin &gt; Product links) once analytics is set up; see <a href="/tutorials/add-google-analytics-shopify/">adding Google Analytics to Shopify</a>.</li>
+</ul>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Verification failed:</strong> the TXT record is on the wrong name (for example <code>www</code>), has extra quotes, or DNS is managed somewhere else (check the nameservers).</li>
+  <li><strong>Many "Duplicate without user-selected canonical" or "Alternate page" rows:</strong> normal on Shopify for variant and collection-product URLs. Shopify sets canonicals; leave them.</li>
+  <li><strong>"Blocked by robots.txt" for /cart, /checkout, /search:</strong> expected. Shopify blocks these on purpose.</li>
+  <li><strong>No data after verifying:</strong> reports fill in over a few days.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Does Shopify have a built-in Search Console integration?</h3>
+<p>No. Shopify generates the sitemap and robots.txt, but you add and verify the property in Search Console yourself, as above.</p>
+<h3>Where is my Shopify sitemap?</h3>
+<p>At <code>https://yourdomain.com/sitemap.xml</code>. It is created automatically and updates when you add products, collections, pages or blog posts.</p>
+<h3>Should I use a Domain or URL-prefix property for Shopify?</h3>
+<p>Domain, if you can edit DNS. It covers every version of the address. URL prefix with the HTML tag is the fallback when DNS is out of reach.</p>
+`,
+  },
+
+  {
+    slug: 'add-google-analytics-shopify',
+    title: 'How to Add Google Analytics 4 to Shopify (2026)',
+    description: 'Add Google Analytics 4 to Shopify with the Google & YouTube app: create a GA4 property, connect it in the app, check purchase events, avoid double counts.',
+    date: '2026-11-11',
+    service: 'shopify-developer',
+    serviceText: 'I set up GA4, ecommerce events and Search Console on Shopify stores and check that purchases are tracked once, not twice.',
+    time: '20 to 30 minutes, plus up to a day for reports to fill in',
+    need: ['A Shopify store and staff access with permission to install apps', 'A Google account with access to Google Analytics', 'A test product you can order and refund'],
+    linkFrom: [
+      ['ga4-events-explained', 'On Shopify, the purchase and checkout events come from the Google &amp; YouTube app; the tutorial on <a href="/tutorials/add-google-analytics-shopify/">how to add Google Analytics 4 to Shopify</a> shows the setup.'],
+      ['website-analytics-metrics-that-matter', 'Selling on Shopify? Start with the <a href="/tutorials/add-google-analytics-shopify/">GA4 for Shopify setup tutorial</a> so these numbers include your orders.'],
+    ],
+    body: (s) => `
+<p>To add Google Analytics 4 to Shopify, create a GA4 property and web data stream in Google Analytics, install Shopify's <strong>Google &amp; YouTube</strong> app, connect your Google account in it and select the GA4 property. The app then sends page views and ecommerce events (view item, add to cart, begin checkout, purchase) without any code.</p>
+<p>For what those events mean and which ones to report on, see <a href="/blog/ga4-events-explained/">GA4 events explained</a>.</p>
+
+<h2>Step 1: Create a GA4 property and web stream</h2>
+${path_('analytics.google.com &gt; Admin &gt; Create &gt; Property')}
+<ol>
+  <li>In Google Analytics click <strong>Admin</strong> (gear icon), then <strong>Create &gt; Property</strong>.</li>
+  <li>Name it after the store, set your reporting time zone and currency (the currency your store sells in).</li>
+  <li>Choose <strong>Web</strong> as the platform, enter <code>https://yourdomain.com</code> and create the stream.</li>
+</ol>
+${fig(s, 1, 'How to add Google Analytics 4 to Shopify: GA4 Admin create property screen with time zone and currency highlighted', 'Step 1: Create the GA4 property with the store\'s time zone and currency, then a Web stream.')}
+<p>If you already have a GA4 property for the store, skip this step and use that one.</p>
+
+<h2>Step 2: Remove any old tracking code</h2>
+${path_('Shopify admin &gt; Online Store &gt; Themes &gt; Edit code &gt; theme.liquid, and Settings &gt; Customer events')}
+<p>Before connecting the app, look for an older gtag snippet (<code>G-</code> or <code>UA-</code> ID) in <code>theme.liquid</code>, and any custom pixel under <strong>Settings &gt; Customer events</strong> that also sends to Google Analytics. Two setups at once count every purchase twice. Remove the old one after the app is working.</p>
+
+<h2>Step 3: Install the Google &amp; YouTube app</h2>
+${path_('Shopify App Store &gt; Google &amp; YouTube')}
+<ol>
+  <li>In Shopify admin, open <strong>Apps</strong> and search the Shopify App Store for <strong>Google &amp; YouTube</strong> (published by Google).</li>
+  <li>Click <strong>Install</strong> and approve the permissions.</li>
+  <li>In the app, click <strong>Connect Google account</strong> and sign in with the account that has GA4 access.</li>
+</ol>
+${fig(s, 2, 'Shopify App Store page for the Google and YouTube app with the Install button highlighted', 'Step 3: Install Google &amp; YouTube from the Shopify App Store, then connect your Google account.')}
+
+<h2>Step 4: Connect the GA4 property</h2>
+${path_('Shopify admin &gt; Apps &gt; Google &amp; YouTube &gt; Settings &gt; Google Analytics')}
+<ol>
+  <li>In the app's settings, find <strong>Google Analytics</strong> and click <strong>Connect</strong>.</li>
+  <li>Select the GA4 property from Step 1 and confirm.</li>
+  <li>You can skip Merchant Center and Google Ads for now if you only want analytics.</li>
+</ol>
+
+<h2>Step 5: Check it in Realtime</h2>
+${path_('Google Analytics &gt; Reports &gt; Realtime')}
+<ol>
+  <li>Open your store in a private window and click through a product and the cart.</li>
+  <li>In GA4 open <strong>Reports &gt; Realtime</strong>. You should see yourself as a user and events such as <code>page_view</code>, <code>view_item</code> and <code>add_to_cart</code>.</li>
+  <li>Place a test order (for example with a discount code or a manual payment method), then refund or cancel it.</li>
+</ol>
+${fig(s, 3, 'GA4 Realtime report with page_view, view_item, add_to_cart and purchase events listed and purchase highlighted', 'Step 5: In Realtime, look for one purchase event per test order, not two.')}
+
+<h2>Step 6: Link Search Console and set key events</h2>
+<ul>
+  <li>In GA4 <strong>Admin &gt; Product links &gt; Search Console links</strong>, link the property you created in the <a href="/tutorials/add-google-search-console-shopify/">Search Console for Shopify tutorial</a>.</li>
+  <li>Under <strong>Admin &gt; Events</strong>, make sure <code>purchase</code> is marked as a key event.</li>
+  <li>Set data retention to the longest option under <strong>Admin &gt; Data collection and modification &gt; Data retention</strong>.</li>
+</ul>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Purchases counted twice:</strong> an old gtag snippet or a second pixel is still sending. Keep one source only.</li>
+  <li><strong>No purchase events:</strong> they can take time to appear outside Realtime. Also check the customer privacy settings: in regions where consent is required, visitors who decline are not tracked.</li>
+  <li><strong>Revenue in the wrong currency:</strong> check the GA4 property currency in Admin &gt; Property details.</li>
+  <li><strong>Can't see the property in the app:</strong> the Google account you connected does not have Editor access on that GA4 property.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Does Shopify have Google Analytics built in?</h3>
+<p>Not directly. The free Google &amp; YouTube app is the supported way to connect GA4; the old field for a tracking ID in preferences was for the retired Universal Analytics.</p>
+<h3>Will GA4 match my Shopify sales report exactly?</h3>
+<p>No. Ad blockers, declined cookie consent and refunds mean GA4 usually shows fewer orders than Shopify. Use Shopify for sales totals and GA4 for where visitors came from.</p>
+<h3>Can I use Google Tag Manager on Shopify instead?</h3>
+<p>Yes, through a custom pixel in Customer events, but it takes more setup. For most stores the Google &amp; YouTube app is enough.</p>
+`,
+  },
+
+  {
+    slug: 'backup-wordpress-updraftplus',
+    title: 'How to Back Up WordPress with UpdraftPlus (2026)',
+    description: 'Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.',
+    date: '2026-11-11',
+    service: 'wordpress-maintenance',
+    serviceText: 'Scheduled off-site backups and tested restores are part of every WordPress maintenance plan I run.',
+    time: '15 to 20 minutes, plus the first backup run',
+    need: ['WordPress admin access', 'A Google Drive (or Dropbox) account that the business owns', 'Enough free space in that account for a few copies of the site'],
+    linkFrom: [
+      ['wordpress-backup-plugins-compared', 'If you pick UpdraftPlus, the tutorial on <a href="/tutorials/backup-wordpress-updraftplus/">how to back up WordPress with UpdraftPlus</a> walks through schedules, Google Drive and a test restore.'],
+      ['wordpress-backup-restore-guide', 'For a click-by-click setup of one plugin, see <a href="/tutorials/backup-wordpress-updraftplus/">backing up WordPress with UpdraftPlus</a>.'],
+    ],
+    body: (s) => `
+<p>To back up WordPress with UpdraftPlus, install the free <strong>UpdraftPlus</strong> plugin, open <strong>Settings &gt; UpdraftPlus Backups &gt; Settings</strong>, set schedules for files and the database, choose remote storage such as Google Drive and authorise it, save, then click <strong>Backup Now</strong>. Backups then run on schedule and are stored off the server.</p>
+<p>Not sure UpdraftPlus is right for you? See <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a>.</p>
+
+<h2>Step 1: Install UpdraftPlus</h2>
+${path_('WordPress admin &gt; Plugins &gt; Add New Plugin')}
+<ol>
+  <li>Search for <strong>UpdraftPlus</strong>.</li>
+  <li>Install and activate <strong>UpdraftPlus: WP Backup &amp; Migration Plugin</strong>.</li>
+  <li>Open <strong>Settings &gt; UpdraftPlus Backups</strong>. Close the welcome tour if it appears.</li>
+</ol>
+
+<h2>Step 2: Set the backup schedules</h2>
+${path_('Settings &gt; UpdraftPlus Backups &gt; Settings tab')}
+<ol>
+  <li><strong>Files backup schedule:</strong> Weekly suits most brochure sites. Retain 4.</li>
+  <li><strong>Database backup schedule:</strong> Daily for shops, blogs and sites with forms. Retain 14.</li>
+  <li>If you take orders every hour, ask your host about more frequent database backups too.</li>
+</ol>
+${fig(s, 1, 'How to back up WordPress with UpdraftPlus: Settings tab with files backup weekly and database backup daily highlighted', 'Step 2: Files weekly, database daily is a sensible start. Retain several copies of each.')}
+
+<h2>Step 3: Choose remote storage and authorise it</h2>
+${path_('Settings tab &gt; Choose your remote storage')}
+<ol>
+  <li>Click <strong>Google Drive</strong> (or Dropbox, OneDrive, S3).</li>
+  <li>Scroll down and click <strong>Save Changes</strong>. A popup asks you to authorise.</li>
+  <li>Sign in with the business Google account, allow access, then click <strong>Complete setup</strong>.</li>
+</ol>
+${fig(s, 2, 'UpdraftPlus remote storage icons with Google Drive selected and highlighted', 'Step 3: Pick an off-site destination. A backup kept only on the same server is lost with the server.')}
+<p>Use an account the business owns, not a developer's personal Drive, so access survives a change of developer.</p>
+
+<h2>Step 4: Choose what to include</h2>
+<p>Leave Plugins, Themes, Uploads and Others ticked. If you have large folders that are not needed (old backup zips from other plugins, cache folders), add them to the exclude list so backups stay small.</p>
+
+<h2>Step 5: Run the first backup</h2>
+${path_('Settings &gt; UpdraftPlus Backups &gt; Backup / Restore tab')}
+<ol>
+  <li>Click <strong>Backup Now</strong>.</li>
+  <li>Keep <strong>Include your database</strong>, <strong>Include your files</strong> and <strong>Send this backup to remote storage</strong> ticked.</li>
+  <li>Click Backup Now in the dialog and wait. It shows progress and then lists the backup under Existing backups.</li>
+</ol>
+${fig(s, 3, 'UpdraftPlus Backup Restore tab with the Backup Now button highlighted and an existing backup listed', 'Step 5: Backup Now, then check the new set appears under Existing backups and in Google Drive.')}
+
+<h2>Step 6: Check the files reached Google Drive</h2>
+<p>Open Google Drive and find the <strong>UpdraftPlus</strong> folder. You should see a database file and several zip files (plugins, themes, uploads, others) with today's date.</p>
+
+<h2>Step 7: Test a restore</h2>
+<p>A backup is only proven when it restores. Restore it on a staging copy or a test install, not on the live site: in Existing backups click <strong>Restore</strong>, choose the components and follow the steps. Repeat the test every few months and after big changes.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Backup stuck or never finishes:</strong> WordPress cron is not running because the site gets few visits. Set a real server cron job, or ask your host.</li>
+  <li><strong>Google Drive upload fails:</strong> re-authorise in Settings, and check the Drive account has free space.</li>
+  <li><strong>Backups are huge:</strong> exclude cache folders and old backup files, and compress images.</li>
+  <li><strong>"Insufficient permissions" or timeouts:</strong> look in the log (Backup / Restore tab &gt; View log) for the exact error.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Is UpdraftPlus free?</h3>
+<p>Yes, the core plugin with scheduled backups to Google Drive, Dropbox and others is free. A paid version adds features such as incremental backups and more storage options.</p>
+<h3>Do I still need UpdraftPlus if my host takes backups?</h3>
+<p>It is a sensible second copy. Host backups sit with the same company as the site; a plugin copy in your own Drive is independent.</p>
+<h3>How do I restore WordPress from UpdraftPlus?</h3>
+<p>In Settings &gt; UpdraftPlus Backups, open the Backup / Restore tab, click Restore on the backup set, tick the components and follow the prompts. If the site will not load, install a fresh WordPress, add UpdraftPlus, connect the same Drive and restore from there.</p>
+`,
+  },
+
+  {
+    slug: 'setup-zoho-mail-custom-domain',
+    title: 'How to Set Up Zoho Mail with Your Own Domain (2026)',
+    description: 'Set up Zoho Mail on your own domain: sign up, verify with a TXT record, add MX, SPF and DKIM records, create mailboxes, then test sending and receiving.',
+    date: '2026-11-11',
+    service: 'wordpress-maintenance',
+    serviceText: 'I set up business email, DNS records and website form delivery so enquiries reach the inbox, as part of WordPress maintenance.',
+    time: '30 to 45 minutes, plus time for DNS to update',
+    need: ['A domain you own and login to its DNS (registrar, Hostinger, Cloudflare and so on)', 'A phone number for the Zoho sign-up', 'A list of the mailboxes you need, for example hello@ and accounts@'],
+    linkFrom: [
+      ['business-email-options', 'If Zoho Mail is your pick, the tutorial on <a href="/tutorials/setup-zoho-mail-custom-domain/">how to set up Zoho Mail with your own domain</a> covers every DNS record in order.'],
+      ['business-email-deliverability-spf-dkim-dmarc', 'Using Zoho? See <a href="/tutorials/setup-zoho-mail-custom-domain/">setting up Zoho Mail on a custom domain</a> for where its SPF and DKIM values go.'],
+    ],
+    body: (s) => `
+<p>To set up Zoho Mail with your own domain, sign up for a Zoho Mail plan with your domain, add the <strong>TXT verification record</strong> Zoho gives you in your DNS, then replace the <strong>MX records</strong> with Zoho's, add Zoho's <strong>SPF</strong> and <strong>DKIM</strong> records, create your mailboxes and send a test both ways. Zoho shows the exact values for your account in its setup screens.</p>
+<p>Comparing providers first? Read <a href="/blog/business-email-options/">business email options for small businesses</a>.</p>
+
+<h2>Step 1: Sign up with your domain</h2>
+${path_('zoho.com/mail &gt; Pricing &gt; choose a plan')}
+<ol>
+  <li>Choose a business email plan and pick the option to use a domain you already own.</li>
+  <li>Enter <code>yourdomain.com</code>, your name and phone, and create the account.</li>
+  <li>Pick the data centre closest to your customers if asked (for example India or Europe).</li>
+</ol>
+<p>Check current plan features and limits on Zoho's pricing page before choosing; they change from time to time.</p>
+
+<h2>Step 2: Verify the domain with a TXT record</h2>
+${path_('Zoho Mail Admin Console &gt; Domains &gt; Verify, and your DNS manager')}
+<ol>
+  <li>Zoho shows a TXT value starting with <code>zoho-verification=</code>. Copy it.</li>
+  <li>In your DNS manager add a <strong>TXT</strong> record with host <code>@</code> and that value.</li>
+  <li>Back in Zoho, click <strong>Verify TXT Record</strong>. Retry after 15 to 30 minutes if it is not found yet.</li>
+</ol>
+${fig(s, 1, 'How to set up Zoho Mail with your own domain: Zoho Admin Console domain verification with the TXT method and Verify button highlighted', 'Step 2: Add the zoho-verification TXT record at your DNS, then click Verify.')}
+
+<h2>Step 3: Create your mailboxes</h2>
+${path_('Admin Console &gt; Users &gt; Add user')}
+<p>Create each person's mailbox, for example <code>hello@yourdomain.com</code>, and set up group addresses (such as <code>sales@</code> delivered to two people) under <strong>Groups</strong>. Set strong passwords and turn on two-factor sign-in.</p>
+
+<h2>Step 4: Point the MX records to Zoho</h2>
+${path_('Your DNS manager &gt; MX records')}
+<ol>
+  <li>Delete the existing MX records (from your host or old email provider). Take a screenshot first.</li>
+  <li>Add the three MX records Zoho lists for your data centre, with the priorities shown (for example <code>mx.zoho.in</code>, <code>mx2.zoho.in</code>, <code>mx3.zoho.in</code> for India).</li>
+  <li>Save, then click <strong>Verify MX</strong> in Zoho's setup.</li>
+</ol>
+${fig(s, 2, 'DNS zone with three Zoho MX records and their priorities, plus SPF and DKIM TXT records highlighted', 'Step 4 and 5: Only Zoho\'s MX records remain; SPF and DKIM are TXT records alongside them.')}
+<p>New mail starts arriving at Zoho once DNS updates. Leave the old mailboxes open for a few days to collect stragglers.</p>
+
+<h2>Step 5: Add SPF, DKIM and DMARC</h2>
+${path_('Admin Console &gt; Domains &gt; Email configuration')}
+<ul>
+  <li><strong>SPF:</strong> one TXT record on <code>@</code>, such as <code>v=spf1 include:zoho.in ~all</code> (use the include Zoho shows). If an SPF record already exists, merge the includes into one record; never have two.</li>
+  <li><strong>DKIM:</strong> in Zoho, add a selector, copy the TXT host (like <code>zmail._domainkey</code>) and value into DNS, then click Verify.</li>
+  <li><strong>DMARC:</strong> add a TXT on <code>_dmarc</code> such as <code>v=DMARC1; p=none; rua=mailto:hello@yourdomain.com</code> to start monitoring.</li>
+</ul>
+<p>Why these matter is explained in <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC for business email</a>.</p>
+
+<h2>Step 6: Test, then connect your phone and website</h2>
+<ol>
+  <li>Send from Gmail to your new address and reply. Check the reply lands in the inbox, not spam.</li>
+  <li>Install the Zoho Mail app on phones, or add the account to Outlook with Zoho's IMAP/SMTP settings.</li>
+  <li>Point your website's form emails at the new mailbox through SMTP; see <a href="/tutorials/setup-smtp-wordpress/">how to set up SMTP in WordPress</a>.</li>
+</ol>
+${fig(s, 3, 'Zoho Mail inbox showing a test email received from Gmail with the message highlighted', 'Step 6: A test from Gmail arrives and your reply reaches Gmail\'s inbox: setup done.')}
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Mail still goes to the old provider:</strong> an old MX record is still present, or DNS is managed elsewhere (check nameservers, for example Cloudflare).</li>
+  <li><strong>Sent mail lands in spam:</strong> DKIM not verified, or two SPF records. Fix to one SPF record.</li>
+  <li><strong>Website broke after editing DNS:</strong> an A or CNAME record was changed by mistake. Restore it from your screenshot.</li>
+  <li><strong>Wrong data centre values:</strong> zoho.com, zoho.in and zoho.eu use different hostnames. Use the ones in your own Admin Console.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Will setting up Zoho Mail affect my website?</h3>
+<p>No, as long as you only add TXT records and change MX records. The website runs on A and CNAME records, which stay as they are.</p>
+<h3>Can I keep my old emails when moving to Zoho?</h3>
+<p>Yes. Zoho has a migration tool in the Admin Console that imports mail from IMAP accounts such as your hosting email or Gmail.</p>
+<h3>Do I need a separate domain for Zoho Mail?</h3>
+<p>No. Use the same domain as your website so addresses read hello@yourdomain.com.</p>
+`,
+  },
+
+  {
+    slug: 'add-favicon-wordpress',
+    title: 'How to Add a Favicon in WordPress: Step-by-Step (2026)',
+    description: 'Add a favicon in WordPress: make a 512x512 square icon, upload it as the Site Icon, publish, then check it in browser tabs and on mobile.',
+    date: '2026-11-11',
+    service: 'wordpress-website-development',
+    serviceText: 'I build WordPress sites with the favicon, social share images and brand details set up properly from launch.',
+    time: '10 minutes',
+    need: ['Your logo or brand mark as a PNG or SVG', 'WordPress admin access', 'An image editor (or a free online resizer)'],
+    linkFrom: [
+      ['logo-favicon-brand-basics-website', 'To put the icon on a WordPress site, follow the tutorial on <a href="/tutorials/add-favicon-wordpress/">how to add a favicon in WordPress</a>.'],
+    ],
+    body: (s) => `
+<p>To add a favicon in WordPress, make a square PNG at least <strong>512 x 512 pixels</strong>, then go to <strong>Appearance &gt; Customize &gt; Site Identity &gt; Site Icon</strong> (classic themes) and click <strong>Select site icon</strong>, upload it, crop and Publish. On block themes, set it in <strong>Settings &gt; General</strong> or the Site Logo block settings. WordPress then creates the sizes browsers and phones need.</p>
+<p>For which file format and design work best at tiny sizes, see <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
+
+<h2>Step 1: Prepare a square icon</h2>
+<ul>
+  <li>Use a simple mark, not the full logo with small text: at 16 pixels text becomes a blur.</li>
+  <li>Make it square, 512 x 512 pixels, PNG with a transparent or solid background.</li>
+  <li>Leave a little padding so the mark is not cut off in round icons on phones.</li>
+</ul>
+<p>Use the <a href="/free-tools/image-resizer/">image resizer</a> to get it to 512 x 512, and the <a href="/free-tools/favicon-size-checker/">favicon size checker</a> to confirm it.</p>
+
+<h2>Step 2: Open Site Identity in the Customizer</h2>
+${path_('WordPress admin &gt; Appearance &gt; Customize &gt; Site Identity')}
+<ol>
+  <li>Go to <strong>Appearance &gt; Customize</strong>.</li>
+  <li>Click <strong>Site Identity</strong>.</li>
+  <li>Scroll to <strong>Site Icon</strong> and click <strong>Select site icon</strong>.</li>
+</ol>
+${fig(s, 1, 'How to add a favicon in WordPress: Customizer Site Identity panel with the Select site icon button highlighted', 'Step 2: Appearance &gt; Customize &gt; Site Identity &gt; Select site icon.')}
+<p>Using a block theme such as Twenty Twenty-Five, there is no Customize menu. Go to <strong>Settings &gt; General</strong> and use <strong>Site Icon</strong> there, or open <strong>Appearance &gt; Editor</strong>, select the Site Logo block and turn on <strong>Use as site icon</strong>.</p>
+
+<h2>Step 3: Upload and crop the icon</h2>
+<ol>
+  <li>In the media window, click <strong>Upload files</strong> and choose your 512 x 512 PNG.</li>
+  <li>Click <strong>Select</strong>. If the image is not square, WordPress asks you to crop it; keep the mark centred.</li>
+</ol>
+${fig(s, 2, 'WordPress media library with the uploaded square icon selected and the Select button highlighted', 'Step 3: Upload the square PNG and click Select. A 512 x 512 image skips the crop.')}
+
+<h2>Step 4: Check the preview and publish</h2>
+${path_('Customizer &gt; Site Identity &gt; Site Icon preview')}
+<p>The panel previews the icon in a browser tab and as an app icon. If it looks right, click <strong>Publish</strong> at the top.</p>
+${fig(s, 3, 'Customizer Site Icon preview showing the icon in a browser tab and as an app icon with Publish highlighted', 'Step 4: Check both previews, then Publish.')}
+
+<h2>Step 5: Clear caches and test</h2>
+<ol>
+  <li>Clear your caching plugin, host cache and CDN.</li>
+  <li>Open the site in a private window and look at the tab.</li>
+  <li>On a phone, use Add to Home Screen to check the larger icon.</li>
+</ol>
+<p>Browsers cache favicons stubbornly. If you still see the old one, try another browser before assuming it failed.</p>
+
+<h2>Step 6: Remove old favicon code</h2>
+<p>If a theme option, SEO plugin or a hard-coded <code>&lt;link rel="icon"&gt;</code> in <code>header.php</code> also sets a favicon, the page may output two. View the page source and search for <code>rel="icon"</code>; keep only the WordPress Site Icon ones.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Old icon still shows:</strong> browser cache. Test in a private window or another browser, and clear site caches.</li>
+  <li><strong>Google search shows the wrong icon:</strong> Google updates favicons in results on its own schedule after recrawling the homepage. Make sure the icon is a multiple of 48 pixels square (512 works) and not blocked by robots.txt.</li>
+  <li><strong>No Site Icon option:</strong> some themes hide it. Use Settings &gt; General on recent WordPress versions, or check the theme's own options panel.</li>
+  <li><strong>Icon looks blurry:</strong> the source was too small. Upload a fresh 512 x 512 file.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>What size should a WordPress favicon be?</h3>
+<p>Upload a square image of at least 512 x 512 pixels. WordPress generates the smaller sizes (such as 32 x 32 and 180 x 180) automatically.</p>
+<h3>Can I use an SVG or ICO file as the WordPress site icon?</h3>
+<p>The Site Icon setting expects an image WordPress can crop, so PNG or JPG is the safe choice. SVG and ICO need a plugin or manual code.</p>
+<h3>Do I need a favicon plugin?</h3>
+<p>No. The built-in Site Icon setting covers browsers, Android and iOS for most sites.</p>
+`,
+  },
+
+  {
+    slug: 'enable-maintenance-mode-wordpress',
+    title: 'How to Put WordPress in Maintenance Mode (2026)',
+    description: 'Put WordPress in maintenance mode or show a coming soon page: install a free plugin, design the page, turn it on, check it logged out, then switch it off.',
+    date: '2026-11-11',
+    service: 'wordpress-maintenance',
+    serviceText: 'I run updates and redesign work on staging or behind a maintenance page so visitors and Google never see a broken site.',
+    time: '15 to 20 minutes',
+    need: ['WordPress admin access', 'Your logo and a short message for visitors', 'A contact email or WhatsApp number to show on the page'],
+    linkFrom: [
+      ['wordpress-stuck-in-maintenance-mode', 'If you want to put the site into maintenance mode on purpose, with your own page, follow the tutorial on <a href="/tutorials/enable-maintenance-mode-wordpress/">how to put WordPress in maintenance mode</a>.'],
+      ['monthly-website-maintenance-plan', 'For bigger changes on a live site, the <a href="/tutorials/enable-maintenance-mode-wordpress/">WordPress maintenance mode tutorial</a> shows how to show visitors a proper holding page.'],
+    ],
+    body: (s) => `
+<p>To put WordPress in maintenance mode, install a free maintenance plugin such as <strong>LightStart</strong> (formerly WP Maintenance Mode), set the status to <strong>Activated</strong>, choose <strong>Maintenance</strong> (or Coming Soon for a site not yet launched), edit the message, save, and check the site in a logged-out window. Visitors see the page while you, as a logged-in admin, still see and work on the real site.</p>
+<p>This is different from the automatic "Briefly unavailable for scheduled maintenance" message during updates; if that one is stuck, see <a href="/blog/wordpress-stuck-in-maintenance-mode/">WordPress stuck in maintenance mode</a>.</p>
+
+<h2>Step 1: Decide if you need it</h2>
+<p>For updates and design changes, a <strong>staging copy</strong> is better: you work on the copy and the live site never goes down. Use maintenance mode for short jobs on the live site, for a site that is not launched yet (coming soon), or when you must stop orders for a while.</p>
+
+<h2>Step 2: Install the maintenance plugin</h2>
+${path_('WordPress admin &gt; Plugins &gt; Add New Plugin')}
+<ol>
+  <li>Search for <strong>LightStart</strong> or <strong>WP Maintenance Mode</strong>.</li>
+  <li>Install and activate <strong>LightStart - Maintenance Mode, Coming Soon and Landing Page Builder</strong>.</li>
+</ol>
+${fig(s, 1, 'How to put WordPress in maintenance mode: Add Plugins screen with the LightStart maintenance plugin Install Now button highlighted', 'Step 2: Install and activate a well-maintained maintenance mode plugin.')}
+
+<h2>Step 3: Set status and mode</h2>
+${path_('WordPress admin &gt; Settings &gt; LightStart &gt; General')}
+<ol>
+  <li>Set <strong>Status</strong> to <strong>Activated</strong>.</li>
+  <li>Choose <strong>Maintenance</strong> for a live site, or <strong>Coming soon</strong> for a new one.</li>
+  <li>Leave <strong>Bypass for search bots</strong> off, and keep administrators in the roles that can see the site.</li>
+  <li>Click <strong>Save settings</strong>.</li>
+</ol>
+${fig(s, 2, 'Maintenance mode plugin General settings with Status set to Activated and the mode set to Maintenance highlighted', 'Step 3: Status Activated, mode Maintenance, then Save settings.')}
+<p>In maintenance mode the plugin returns a <strong>503</strong> status, which tells Google the outage is temporary so it does not drop your pages. Keep it short: hours, not weeks.</p>
+
+<h2>Step 4: Edit the page</h2>
+${path_('Settings &gt; LightStart &gt; Design')}
+<ul>
+  <li>Add your logo, a clear heading such as "We'll be back shortly" and when you expect to be back.</li>
+  <li>Add a way to reach you: phone, email or a WhatsApp link (the <a href="/free-tools/whatsapp-link-generator/">WhatsApp link generator</a> makes one).</li>
+  <li>Keep it light and fast: one image at most.</li>
+</ul>
+
+<h2>Step 5: Check it logged out</h2>
+<p>Open the site in a private window or on your phone's mobile data. You should see the maintenance page. In your normal browser, where you are logged in, you still see the real site; that is expected.</p>
+${fig(s, 3, 'Browser showing a simple maintenance page with logo, We will be back shortly heading and a contact link, viewed in a private window', 'Step 5: In a private window, visitors see the holding page with a way to contact you.')}
+
+<h2>Step 6: Turn it off and clear caches</h2>
+<ol>
+  <li>When the work is done, set <strong>Status</strong> to <strong>Deactivated</strong> and save.</li>
+  <li>Clear your caching plugin, host cache and CDN, or some visitors keep seeing the maintenance page.</li>
+  <li>Check the homepage, a key page and the checkout in a private window.</li>
+</ol>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Visitors still see the maintenance page after switching off:</strong> a cache is serving the old page. Purge all caches, including Cloudflare.</li>
+  <li><strong>You see the maintenance page while logged in:</strong> your role is not in the bypass list, or you are logged in on a different address (www vs non-www).</li>
+  <li><strong>Payment gateway or webhooks stop working:</strong> some plugins block webhook URLs too. Exclude them in the plugin's settings, or avoid maintenance mode on a live shop.</li>
+  <li><strong>Locked out:</strong> rename the plugin's folder in <code>wp-content/plugins</code> by FTP or File Manager to switch it off.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Can I put WordPress in maintenance mode without a plugin?</h3>
+<p>Yes, with a small code snippet that shows a message to logged-out users and returns a 503, but a plugin is easier to turn on and off safely.</p>
+<h3>Does maintenance mode hurt SEO?</h3>
+<p>Not for a short time, as long as the page returns a 503 status. Leaving it on for weeks can lead Google to drop pages.</p>
+<h3>What is the difference between maintenance mode and coming soon mode?</h3>
+<p>Maintenance mode is for an existing site that is temporarily unavailable (503 status). Coming soon is for a site that has not launched yet and usually returns a normal 200 status.</p>
+`,
+  },
+
+  {
+    slug: 'add-whatsapp-button-wordpress',
+    title: 'How to Add a WhatsApp Button to WordPress (2026)',
+    description: 'Add a WhatsApp chat button to WordPress: install Click to Chat, add your number in international format, set a pre-filled message, test, track clicks.',
+    date: '2026-11-11',
+    service: 'wordpress-website-development',
+    serviceText: 'I add WhatsApp, call and enquiry buttons to WordPress sites and track the clicks in GA4 so you know what brings leads.',
+    time: '15 minutes',
+    need: ['WordPress admin access', 'The WhatsApp or WhatsApp Business number you want enquiries on', 'A short pre-filled message, for example "Hi, I have a question about your services"'],
+    linkFrom: [
+      ['whatsapp-on-business-website', 'On WordPress, the tutorial on <a href="/tutorials/add-whatsapp-button-wordpress/">how to add a WhatsApp button to WordPress</a> covers the plugin, the pre-filled message and click tracking.'],
+    ],
+    body: (s) => `
+<p>To add a WhatsApp button to WordPress, install the free <strong>Click to Chat</strong> plugin, go to <strong>Click to Chat &gt; Settings</strong>, enter your number in international format with the country code (for example <code>919876543210</code>), add a pre-filled message, pick a style and position, save, and test on your phone. The button opens a chat with you in WhatsApp on mobile or WhatsApp Web on desktop.</p>
+<p>Whether a floating button, a contact-page link or both suits you is covered in <a href="/blog/whatsapp-on-business-website/">WhatsApp on your business website</a>.</p>
+
+<h2>Step 1: Get the number in the right format</h2>
+<p>WhatsApp links need the full number with country code and no plus, spaces, zeros or dashes: <code>91</code> then the 10-digit mobile for India, <code>44</code> then the number without its leading 0 for the UK, <code>1</code> for the USA and Canada, <code>971</code> for the UAE. Use a number that has WhatsApp Business with a business profile, greeting and away messages set up.</p>
+<p>You can build and test the link with the <a href="/free-tools/whatsapp-link-generator/">WhatsApp link generator</a>.</p>
+
+<h2>Step 2: Install Click to Chat</h2>
+${path_('WordPress admin &gt; Plugins &gt; Add New Plugin')}
+<ol>
+  <li>Search for <strong>Click to Chat</strong>.</li>
+  <li>Install and activate <strong>Click to Chat - HoliThemes</strong>.</li>
+</ol>
+${fig(s, 1, 'How to add a WhatsApp button to WordPress: Add Plugins screen with Click to Chat Install Now highlighted', 'Step 2: Install and activate Click to Chat from the plugin directory.')}
+
+<h2>Step 3: Add your number and pre-filled message</h2>
+${path_('WordPress admin &gt; Click to Chat &gt; Settings')}
+<ol>
+  <li>Choose your country code and enter the number.</li>
+  <li>In <strong>Pre-filled message</strong>, write a short opener. You can include <code>{{url}}</code> so you see which page they came from.</li>
+  <li>Set <strong>Call to action</strong> text, for example "Chat on WhatsApp".</li>
+</ol>
+${fig(s, 2, 'Click to Chat settings with the WhatsApp number in international format and the pre-filled message fields highlighted', 'Step 3: Number with country code, a short pre-filled message, and a clear call to action.')}
+
+<h2>Step 4: Choose the style and position</h2>
+<ul>
+  <li>Pick a style (an icon, or icon with text) that does not cover the cart, cookie banner or chat widgets.</li>
+  <li>Bottom right is usual. Leave enough space from the edge on mobile so it does not block the menu.</li>
+  <li>Under display settings, hide it on pages where it gets in the way, such as checkout.</li>
+</ul>
+<p>Click <strong>Save Changes</strong>.</p>
+
+<h2>Step 5: Test on mobile and desktop</h2>
+<ol>
+  <li>Open the site on your phone, tap the button: WhatsApp should open with your number and the message ready to send.</li>
+  <li>On desktop it should open WhatsApp Web or the desktop app.</li>
+  <li>Send a test message from another phone and check it arrives on the business number.</li>
+</ol>
+${fig(s, 3, 'Phone mock-up of a WordPress site with the floating WhatsApp button in the bottom right corner highlighted', 'Step 5: On a phone, the floating button sits bottom right and opens a ready-to-send chat.')}
+
+<h2>Step 6: Track clicks in GA4</h2>
+<p>Click to Chat can send an event to Google Analytics when someone taps the button (in its <strong>Other Settings &gt; Analytics</strong>). Turn it on, then mark that event as a key event in GA4 so WhatsApp enquiries show up next to form leads. Tag WhatsApp links you share elsewhere with the <a href="/free-tools/utm-builder/">UTM builder</a> if you send people to the site from campaigns.</p>
+
+<h2>Step 7: Add it to key pages too</h2>
+<p>Besides the floating button, add a normal WhatsApp link or button on the contact page and at the end of service pages, using a Button block with the <code>https://wa.me/919876543210</code> style link.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>"Phone number shared via url is invalid":</strong> the number has a plus, a leading zero or spaces, or is not on WhatsApp.</li>
+  <li><strong>Button does not appear:</strong> clear caches, and check the display settings are not hiding it on that page or device.</li>
+  <li><strong>Button covers other buttons:</strong> change the position offset or style in the plugin settings.</li>
+  <li><strong>No events in GA4:</strong> check GA4 is installed on the site and look in Realtime while you tap the button.</li>
+</ul>
+
+<h2>FAQs</h2>
+<h3>Can I add a WhatsApp button to WordPress without a plugin?</h3>
+<p>Yes. Add a Button block that links to <code>https://wa.me/yournumber</code>. A plugin is only needed for the floating button on every page.</p>
+<h3>Does a WhatsApp button slow down my site?</h3>
+<p>A simple button adds very little. Heavy chat widgets with many scripts can; test with PageSpeed Insights after adding one.</p>
+<h3>Can I use a WhatsApp Business number?</h3>
+<p>Yes, and it is recommended: you get a business profile, quick replies and away messages, all free in the WhatsApp Business app.</p>
+`,
+  },
 ];
 
 // Extra section per tutorial, inserted before its Troubleshooting heading

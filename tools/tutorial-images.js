@@ -346,6 +346,195 @@ images['change-wordpress-permalinks-step-3'] = doc('Google Search Console URL In
   return s + mark([280, 256, 140, 22], [480, 400, 'Do this for your key pages']);
 })());
 
+// ---------- 9-16 (batch 2) shared helpers ----------
+const plugCard = (m, search, name, l1, l2, by) => {
+  let s = m.s + h1(190, 74, 'Add Plugins') + r(650, 54, 286, 32, '#fff', { rx: 3, stroke: '#8c8f94' }) + t(662, 75, search);
+  s += panel(190, 110, 400, 230) + r(206, 126, 90, 90, '#dcdcde', { rx: 6 }) + t(251, 177, name[0], { size: 36, fill: '#50575e', anchor: 'middle', bold: true });
+  s += t(312, 146, name, { size: 15, bold: true, fill: '#2271b1' }) + t(312, 170, l1, { fill: '#50575e' }) + t(312, 190, l2, { fill: '#50575e' });
+  s += btn(460, 230, 'Install Now', false, 110) + t(206, 300, 'By ' + by, { fill: '#50575e' }) + panel(610, 110, 326, 230) + t(630, 150, 'Similar plugins', { size: 15, fill: '#8c8f94' });
+  return s + mark([460, 230, 110, 30], [560, 410, 'Install, then Activate']) + ring(m.pos['sub:Add New Plugin'], 6);
+};
+const PLUG = () => wp(WPM, 'Plugins', ['Installed Plugins', 'Add New Plugin', 'Plugin File Editor'], 'Add New Plugin');
+function gsc(active, url) {
+  let s = r(0, 0, W, 56, '#fff', { stroke: '#dadce0' }) + t(24, 35, 'Google Search Console', { size: 17, fill: '#5f6368' }) + r(300, 14, 520, 30, '#f1f3f4', { rx: 6 }) + t(316, 34, url || 'Inspect any URL in yourdomain.com', { fill: '#5f6368' });
+  s += r(0, 56, 230, H - 56, '#fff', { stroke: '#dadce0' });
+  ['Overview', 'Performance', 'URL inspection', 'Pages', 'Sitemaps', 'Settings'].forEach((n, i) => { const on = n === active; if (on) s += r(8, 74 + i * 34, 214, 30, '#e8f0fe', { rx: 15 }); s += t(28, 94 + i * 34, n, { fill: on ? '#1a73e8' : '#3c4043', bold: on }); });
+  return s;
+}
+function ga(active) {
+  let s = r(0, 0, W, 56, '#fff', { stroke: '#dadce0' }) + t(24, 35, 'Google Analytics', { size: 17, fill: '#5f6368' }) + t(W - 24, 35, 'My Store - GA4', { anchor: 'end', fill: '#5f6368' }) + r(0, 56, 200, H - 56, '#fff', { stroke: '#dadce0' });
+  ['Home', 'Reports', 'Explore', 'Advertising', 'Admin'].forEach((n, i) => { const on = n === active; if (on) s += r(8, 74 + i * 34, 184, 30, '#e8f0fe', { rx: 15 }); s += t(28, 94 + i * 34, n, { fill: on ? '#1a73e8' : '#3c4043', bold: on }); });
+  return s;
+}
+const dnsRows = (x, y, rows, hi) => { let s = r(x, y, W - x - 24, 36 + rows.length * 40, '#fff', { rx: 8, stroke: '#e1e3e5' }); ['Type', 'Name', 'Value', 'Priority / TTL'].forEach((c, i) => s += t(x + 16 + [0, 80, 190, 560][i], y + 24, c, { bold: true })); rows.forEach((rw, i) => { const yy = y + 36 + i * 40; s += `<line x1="${x}" y1="${yy}" x2="${W - 24}" y2="${yy}" stroke="#e1e3e5"/>` + t(x + 16, yy + 25, rw[0], { bold: true }) + t(x + 96, yy + 25, rw[1], { mono: true, size: 12 }) + t(x + 206, yy + 25, rw[2], { mono: true, size: 12 }) + t(x + 576, yy + 25, rw[3] || '3600', { size: 12 }); }); return s; };
+const UPD = ['Dashboard', 'Posts', 'Media', 'Pages', 'Comments', 'Appearance', 'Plugins', 'Users', 'Tools', 'Settings'];
+const updTabs = on => tabs(190, 100, ['Backup / Restore', 'Migrate / Clone', 'Settings', 'Advanced Tools'], on);
+function custom(inner) {
+  let s = r(0, 0, 300, H, '#fff', { stroke: '#dcdcde' }) + r(0, 0, 300, 50, '#f6f7f7', { stroke: '#dcdcde' }) + t(16, 31, '×  Customizing', { size: 13, fill: '#50575e' }) + btn(200, 10, 'Publish', true, 84);
+  s += t(16, 80, 'Site Identity', { size: 18 }) + r(300, 0, W - 300, H, '#fafafa') + r(340, 40, 580, 420, '#fff', { stroke: '#dcdcde' }) + t(630, 240, 'Live preview of your site', { fill: '#a7aaad', anchor: 'middle', size: 16 });
+  return s + inner;
+}
+
+// ---------- 9. Install SSL on WordPress ----------
+images['install-ssl-wordpress-step-1'] = doc('Hosting panel SSL page with Install SSL for the domain', 'Illustrated hosting panel Security > SSL page listing yourdomain.com with no certificate and the Install SSL button highlighted.', (() => {
+  const m = hpanel('SSL', ['Dashboard', 'Security', '  SSL', '  Malware Scanner', 'Performance', 'WordPress', 'Domains', 'Files', 'Databases', 'Advanced']);
+  let s = m.s + t(240, 100, 'SSL', { size: 22, bold: true }) + card_(240, 124, 696, 200) + t(264, 160, 'Domain', { bold: true }) + t(480, 160, 'Status', { bold: true }) + t(640, 160, 'Certificate', { bold: true });
+  s += `<line x1="240" y1="176" x2="936" y2="176" stroke="#e1e3e5"/>` + t(264, 210, 'yourdomain.com') + pill(470, 190, 'No SSL', '#fde8e8', '#b42318', 80) + t(640, 210, 'Free (Let\'s Encrypt)') + t(264, 250, 'www.yourdomain.com', { fill: '#5c6370' }) + t(264, 290, 'Covers the domain and www', { fill: '#5c6370', size: 12 });
+  s += pill(800, 270, 'Install SSL', '#673de6', '#fff', 116);
+  return s + mark([800, 270, 116, 30], [470, 400, 'Free certificate, auto-renews']) + ring(m.pos['SSL'], 6);
+})());
+images['install-ssl-wordpress-step-2'] = doc('WordPress Settings General with both addresses set to https', 'Illustrated WordPress Settings > General with WordPress Address (URL) and Site Address (URL) both starting with https highlighted.', (() => {
+  const m = wp(TOOLM, 'Settings', ['General', 'Writing', 'Reading', 'Discussion', 'Media', 'Permalinks', 'Privacy'], 'General');
+  let s = m.s + h1(190, 74, 'General Settings') + panel(190, 92, 746, 370);
+  [['Site Title', 'My Business'], ['Tagline', 'Quality services in your city'], ['WordPress Address (URL)', 'https://yourdomain.com'], ['Site Address (URL)', 'https://yourdomain.com']].forEach(([l, v], i) => { const y = 112 + i * 62; s += t(214, y + 26, l, { bold: true }) + r(450, y + 6, 420, 32, '#fff', { rx: 3, stroke: '#8c8f94' }) + t(462, y + 27, v, { mono: i > 1 }); });
+  s += btn(214, 400, 'Save Changes');
+  return s + mark([450, 236, 420, 94], [520, 470, 'Both start with https://']) + ring(m.pos['sub:General'], 6);
+})());
+images['install-ssl-wordpress-step-3'] = doc('Better Search Replace replacing http with https', 'Illustrated Better Search Replace tool with http://yourdomain.com in Search for, https://yourdomain.com in Replace with, all tables selected and the Run as dry run box highlighted.', (() => {
+  const m = wp(TOOLM, 'Tools', ['Available Tools', 'Import', 'Export', 'Site Health', 'Better Search Replace'], 'Better Search Replace');
+  let s = m.s + h1(190, 74, 'Better Search Replace') + panel(190, 92, 746, 400);
+  s += field(214, 124, 500, 'Search for', 'http://yourdomain.com', { mono: true }) + field(214, 194, 500, 'Replace with', 'https://yourdomain.com', { mono: true });
+  s += t(214, 270, 'Select tables', { bold: true }) + r(214, 280, 300, 90, '#fff', { stroke: '#8c8f94' }); ['wp_options', 'wp_postmeta', 'wp_posts'].forEach((n, i) => s += r(216, 282 + i * 28, 296, 26, '#2271b1') + t(226, 300 + i * 28, n, { fill: '#fff', mono: true, size: 12 }));
+  s += checkbox(560, 300, true) + t(586, 313, 'Run as dry run?', { bold: true }) + btn(214, 420, 'Run Search/Replace', true, 170);
+  return s + mark([556, 296, 150, 24], [640, 400, 'Dry run first, then for real']) + ring(m.pos['sub:Better Search Replace'], 6);
+})());
+
+// ---------- 10. Search Console on Shopify ----------
+images['add-google-search-console-shopify-step-1'] = doc('Search Console Select property type with Domain option', 'Illustrated Google Search Console Select property type dialog with the Domain option and yourdomain.com typed in highlighted, next to the URL prefix option.', (() => {
+  let s = gsc('Overview') + r(0, 0, W, H, '#000000', {}).replace('fill="#000000"', 'fill="#000" fill-opacity="0.35"') + r(150, 70, 660, 400, '#fff', { rx: 10 }) + t(180, 112, 'Select property type', { size: 20 });
+  s += r(180, 136, 290, 270, '#fff', { rx: 8, stroke: '#dadce0' }) + t(204, 170, 'Domain', { size: 16, bold: true }) + t(204, 196, 'All URLs across subdomains', { size: 12, fill: '#5f6368' }) + t(204, 214, 'and https / http', { size: 12, fill: '#5f6368' }) + r(204, 236, 242, 32, '#fff', { rx: 4, stroke: '#1a73e8' }) + t(214, 257, 'yourdomain.com') + t(204, 300, 'Needs DNS verification', { size: 12, fill: '#5f6368' }) + r(370, 360, 80, 30, '#1a73e8', { rx: 4 }) + t(410, 380, 'CONTINUE', { size: 12, fill: '#fff', anchor: 'middle', bold: true });
+  s += r(490, 136, 290, 270, '#fff', { rx: 8, stroke: '#dadce0' }) + t(514, 170, 'URL prefix', { size: 16, bold: true }) + t(514, 196, 'Only URLs under the address', { size: 12, fill: '#5f6368' }) + r(514, 236, 242, 32, '#fff', { rx: 4, stroke: '#dadce0' }) + t(524, 257, 'https://yourdomain.com', { fill: '#8c8f94' });
+  return s + mark([204, 236, 242, 32], [500, 430, 'Domain, no https or www']);
+})());
+images['add-google-search-console-shopify-step-2'] = doc('Shopify domain DNS settings with Google verification TXT record', 'Illustrated Shopify admin domain DNS settings showing A, CNAME and MX records with a new TXT record for @ containing google-site-verification highlighted.', (() => {
+  const m = app(Object.assign({}, SHOP, { nav: ['Home', 'Orders', 'Products', 'Customers', 'Online Store', 'Settings', '  Domains'], active: 'Domains' }));
+  let s = m.s + t(m.x, 96, 'DNS settings: yourdomain.com', { size: 20, bold: true }) + pill(m.x + 520, 72, 'Add custom record', '#1a1a1a', '#fff', 170);
+  s += dnsRows(m.x, 124, [['A', '@', '23.227.38.65'], ['CNAME', 'www', 'shops.myshopify.com'], ['MX', '@', 'your email provider', '10'], ['TXT', '@', 'google-site-verification=abc123…']]);
+  return s + mark([m.x + 4, 286, 700, 36], [m.x + 120, 420, 'New TXT on @, nothing else changes']) + ring(m.pos['Domains'], 6);
+})());
+images['add-google-search-console-shopify-step-3'] = doc('Search Console Sitemaps page submitting sitemap.xml', 'Illustrated Google Search Console Sitemaps page with sitemap.xml typed after the domain and the Submit button highlighted, and a Success status below.', (() => {
+  let s = gsc('Sitemaps') + t(260, 100, 'Sitemaps', { size: 22 }) + r(260, 124, 676, 110, '#fff', { rx: 8, stroke: '#dadce0' }) + t(284, 156, 'Add a new sitemap', { bold: true });
+  s += t(284, 196, 'https://yourdomain.com/', { fill: '#5f6368' }) + r(460, 176, 300, 32, '#fff', { rx: 4, stroke: '#1a73e8' }) + t(472, 197, 'sitemap.xml') + r(780, 176, 130, 32, '#1a73e8', { rx: 4 }) + t(845, 197, 'SUBMIT', { fill: '#fff', anchor: 'middle', bold: true });
+  s += r(260, 254, 676, 110, '#fff', { rx: 8, stroke: '#dadce0' }) + t(284, 286, 'Submitted sitemaps', { bold: true }) + t(284, 326, '/sitemap.xml', { mono: true }) + t(520, 326, 'Sitemap index') + t(720, 326, 'Success', { fill: '#137333', bold: true });
+  return s + mark([460, 176, 450, 32], [420, 420, 'Only the main sitemap.xml']) + ring([8, 210, 214, 30], 15);
+})());
+
+// ---------- 11. GA4 on Shopify ----------
+images['add-google-analytics-shopify-step-1'] = doc('GA4 Admin create property with time zone and currency', 'Illustrated Google Analytics Admin Create property screen with property name, reporting time zone and currency fields, the time zone and currency highlighted.', (() => {
+  let s = ga('Admin') + t(230, 100, 'Create property', { size: 22 }) + r(230, 120, 706, 340, '#fff', { rx: 8, stroke: '#dadce0' });
+  s += field(256, 156, 420, 'Property name', 'My Store') + field(256, 230, 300, 'Reporting time zone', 'India - (GMT+05:30)') + field(576, 230, 300, 'Currency', 'Indian Rupee (INR)');
+  s += r(780, 400, 130, 34, '#1a73e8', { rx: 4 }) + t(845, 422, 'Next', { fill: '#fff', anchor: 'middle', bold: true });
+  return s + mark([256, 240, 620, 34], [300, 360, 'Match the store\'s time zone and currency']) + ring([8, 210, 184, 30], 15);
+})());
+images['add-google-analytics-shopify-step-2'] = doc('Shopify App Store Google and YouTube app with Install button', 'Illustrated Shopify App Store listing for the Google and YouTube app by Google with the Install button highlighted.', (() => {
+  let s = r(0, 0, W, 60, '#fff', { stroke: '#e1e3e5' }) + t(24, 38, 'Shopify App Store', { size: 18, bold: true, fill: '#1a1a1a' }) + r(300, 15, 400, 32, '#f1f1f1', { rx: 16 }) + t(320, 36, 'Google & YouTube', { fill: '#303030' });
+  s += r(40, 100, 120, 120, '#f1f1f1', { rx: 16 }) + t(100, 172, 'G', { size: 48, anchor: 'middle', bold: true, fill: '#5f6368' }) + t(190, 136, 'Google & YouTube', { size: 26, bold: true }) + t(190, 168, 'By Google', { fill: '#5c6370' }) + t(190, 198, 'Connect Google Analytics, Merchant Center and Google Ads.', { fill: '#303030' });
+  s += pill(190, 230, 'Install', '#1a1a1a', '#fff', 140) + card_(40, 300, 880, 150) + t(64, 340, 'Highlights', { bold: true, size: 15 }) + t(64, 372, 'Works with: Google Analytics 4, Google Merchant Center, Google Ads', { fill: '#5c6370' }) + t(64, 400, 'Sends ecommerce events: view_item, add_to_cart, begin_checkout, purchase', { fill: '#5c6370' });
+  return s + mark([190, 230, 140, 30], [480, 250, 'Free app by Google']);
+})());
+images['add-google-analytics-shopify-step-3'] = doc('GA4 Realtime report listing ecommerce events', 'Illustrated Google Analytics Realtime report with one active user and an event count list including page_view, view_item, add_to_cart, begin_checkout and purchase, with purchase highlighted.', (() => {
+  let s = ga('Reports') + t(230, 100, 'Realtime overview', { size: 22 }) + r(230, 120, 300, 140, '#fff', { rx: 8, stroke: '#dadce0' }) + t(254, 154, 'Active users in last 30 minutes', { size: 12, fill: '#5f6368' }) + t(254, 210, '1', { size: 44 });
+  s += r(550, 120, 386, 330, '#fff', { rx: 8, stroke: '#dadce0' }) + t(574, 154, 'Event count by Event name', { bold: true });
+  [['page_view', 6], ['view_item', 2], ['add_to_cart', 1], ['begin_checkout', 1], ['purchase', 1]].forEach(([n, c], i) => { const y = 190 + i * 46; s += t(574, y, n, { mono: true }) + t(900, y, String(c), { anchor: 'end' }) + `<line x1="574" y1="${y + 14}" x2="910" y2="${y + 14}" stroke="#eee"/>`; });
+  return s + mark([566, 360, 352, 26], [250, 400, 'One purchase per test order']) + ring([8, 108, 184, 30], 15);
+})());
+
+// ---------- 12. UpdraftPlus ----------
+images['backup-wordpress-updraftplus-step-1'] = doc('UpdraftPlus Settings tab with backup schedules', 'Illustrated UpdraftPlus Settings tab with Files backup schedule set to Weekly retaining 4 and Database backup schedule set to Daily retaining 14, highlighted.', (() => {
+  const m = wp(UPD, 'Settings', ['General', 'Reading', 'Permalinks', 'UpdraftPlus Backups'], 'UpdraftPlus Backups');
+  let s = m.s + h1(190, 74, 'UpdraftPlus Backup/Restore') + updTabs('Settings') + panel(190, 140, 746, 320);
+  [['Files backup schedule:', 'Weekly', '4'], ['Database backup schedule:', 'Daily', '14']].forEach(([l, v, k], i) => { const y = 170 + i * 70; s += t(214, y + 20, l, { bold: true }) + r(420, y, 140, 30, '#fff', { rx: 3, stroke: '#8c8f94' }) + t(432, y + 20, v + '  ▾') + t(580, y + 20, 'and retain this many:') + r(730, y, 50, 30, '#fff', { rx: 3, stroke: '#8c8f94' }) + t(744, y + 20, k); });
+  s += t(214, 340, 'Choose your remote storage:', { bold: true, fill: '#8c8f94' });
+  return s + mark([414, 164, 372, 112], [470, 400, 'Files weekly, database daily']) + ring(m.pos['sub:UpdraftPlus Backups'], 6);
+})());
+images['backup-wordpress-updraftplus-step-2'] = doc('UpdraftPlus remote storage choices with Google Drive selected', 'Illustrated UpdraftPlus Settings tab remote storage grid with Google Drive selected and highlighted among Dropbox, Amazon S3, OneDrive, FTP and Email.', (() => {
+  const m = wp(UPD, 'Settings', ['General', 'Reading', 'Permalinks', 'UpdraftPlus Backups'], 'UpdraftPlus Backups');
+  let s = m.s + h1(190, 74, 'UpdraftPlus Backup/Restore') + updTabs('Settings') + panel(190, 140, 746, 320) + t(214, 172, 'Choose your remote storage (tap on an icon to select or unselect):', { bold: true });
+  ['Google Drive', 'Dropbox', 'Amazon S3', 'OneDrive', 'FTP', 'Email'].forEach((n, i) => { const x = 214 + (i % 3) * 230, y = 196 + Math.floor(i / 3) * 70; const on = i === 0; s += r(x, y, 210, 54, on ? '#e7f1fa' : '#fff', { rx: 6, stroke: on ? '#2271b1' : '#c3c4c7' }) + t(x + 105, y + 33, n, { anchor: 'middle', bold: on }); });
+  s += t(214, 370, 'After saving, follow the link to authorise access to your Google account.', { fill: '#50575e' }) + btn(214, 400, 'Save Changes');
+  return s + mark([214, 196, 210, 54], [520, 420, 'Off-site: the business\'s own Drive']);
+})());
+images['backup-wordpress-updraftplus-step-3'] = doc('UpdraftPlus Backup Now button and existing backups', 'Illustrated UpdraftPlus Backup / Restore tab with next scheduled backups, the Backup Now button highlighted and one existing backup set listed with database, plugins, themes, uploads and others.', (() => {
+  const m = wp(UPD, 'Settings', ['General', 'Reading', 'Permalinks', 'UpdraftPlus Backups'], 'UpdraftPlus Backups');
+  let s = m.s + h1(190, 74, 'UpdraftPlus Backup/Restore') + updTabs('Backup / Restore') + panel(190, 140, 746, 120) + t(214, 172, 'Next scheduled backups:', { bold: true }) + t(214, 200, 'Files: weekly    Database: daily', { fill: '#50575e' });
+  s += r(700, 166, 200, 50, '#2271b1', { rx: 4 }) + t(800, 197, 'Backup Now', { size: 17, fill: '#fff', anchor: 'middle', bold: true });
+  s += panel(190, 280, 746, 170) + t(214, 310, 'Existing backups (1)', { bold: true }) + t(214, 350, 'Nov 11, 2026 10:30') + ['Database', 'Plugins', 'Themes', 'Uploads', 'Others'].map((n, i) => r(400 + i * 92, 334, 84, 26, '#f6f7f7', { rx: 3, stroke: '#2271b1' }) + t(442 + i * 92, 352, n, { size: 12, anchor: 'middle', fill: '#2271b1' })).join('') + t(214, 400, 'Stored in: Google Drive', { fill: '#00a32a', bold: true });
+  return s + mark([700, 166, 200, 50], [380, 230, 'Run the first one now']);
+})());
+
+// ---------- 13. Zoho Mail ----------
+const ZOHO = { brand: 'Zoho Mail Admin Console', brandFill: '#c8202f', nav: ['Dashboard', 'Users', 'Groups', 'Domains', 'Mail Settings', 'Security'], active: 'Domains', onBg: '#fdecee', onFill: '#c8202f' };
+images['setup-zoho-mail-custom-domain-step-1'] = doc('Zoho Mail Admin Console domain verification with TXT method', 'Illustrated Zoho Mail Admin Console Domains page showing the TXT verification method, the zoho-verification value to copy and the Verify TXT Record button highlighted.', (() => {
+  const m = app(ZOHO);
+  let s = m.s + t(m.x, 96, 'Verify yourdomain.com', { size: 20, bold: true }) + card_(m.x, 120, 696, 330);
+  s += t(m.x + 24, 156, 'Method:', { bold: true }) + radio(m.x + 100, 144, true) + t(m.x + 124, 157, 'TXT') + radio(m.x + 180, 144, false) + t(m.x + 204, 157, 'CNAME') + radio(m.x + 280, 144, false) + t(m.x + 304, 157, 'HTML');
+  s += t(m.x + 24, 200, 'Add this record in your DNS manager:', { fill: '#5c6370' }) + field(m.x + 24, 220, 200, 'Host / Name', '@', { mono: true }) + field(m.x + 244, 220, 420, 'TXT value', 'zoho-verification=zb12345678.zmverify.zoho.in', { mono: true });
+  s += pill(m.x + 24, 380, 'Verify TXT Record', '#c8202f', '#fff', 170);
+  return s + mark([m.x + 24, 230, 640, 34], [m.x + 260, 330, 'Copy into your DNS as TXT on @']) + ring([m.x + 20, 376, 178, 38]);
+})());
+images['setup-zoho-mail-custom-domain-step-2'] = doc('DNS zone with Zoho MX, SPF and DKIM records', 'Illustrated DNS zone listing three Zoho MX records with priorities 10, 20 and 50, an SPF TXT record including zoho.in and a DKIM TXT record on zmail._domainkey, highlighted.', (() => {
+  const m = app({ brand: 'DNS manager', nav: ['Domains', 'DNS / Nameservers', 'Forwarding', 'SSL'], active: 'DNS / Nameservers' });
+  let s = m.s + t(m.x, 96, 'DNS records: yourdomain.com', { size: 20, bold: true });
+  s += dnsRows(m.x, 116, [['A', '@', 'your website host IP'], ['MX', '@', 'mx.zoho.in', '10'], ['MX', '@', 'mx2.zoho.in', '20'], ['MX', '@', 'mx3.zoho.in', '50'], ['TXT', '@', 'v=spf1 include:zoho.in ~all'], ['TXT', 'zmail._domainkey', 'v=DKIM1; k=rsa; p=MIGf…']]);
+  return s + mark([m.x + 4, 196, 700, 236], [m.x + 160, 470, 'Zoho MX, one SPF, DKIM']);
+})());
+images['setup-zoho-mail-custom-domain-step-3'] = doc('Zoho Mail inbox with a test email from Gmail', 'Illustrated Zoho Mail inbox for hello@yourdomain.com with a test message received from a Gmail address highlighted at the top of the list.', (() => {
+  const m = app({ brand: 'Zoho Mail', brandFill: '#c8202f', right: 'hello@yourdomain.com', nav: ['Inbox', 'Drafts', 'Sent', 'Spam', 'Trash'], active: 'Inbox', onBg: '#fdecee', onFill: '#c8202f' });
+  let s = m.s + pill(m.x, 70, 'New Mail', '#c8202f', '#fff', 110) + card_(m.x, 116, 696, 330);
+  [['you@gmail.com', 'Test: does the new email work?', '10:42'], ['Zoho Mail', 'Welcome to Zoho Mail', '10:05']].forEach(([f, sub, tm], i) => { const y = 136 + i * 56; s += t(m.x + 24, y + 20, f, { bold: i === 0 }) + t(m.x + 220, y + 20, sub, { bold: i === 0 }) + t(m.x + 670, y + 20, tm, { anchor: 'end', fill: '#5c6370' }) + `<line x1="${m.x}" y1="${y + 40}" x2="${m.x + 696}" y2="${y + 40}" stroke="#eee"/>`; });
+  return s + mark([m.x + 16, 138, 664, 30], [m.x + 200, 340, 'Arrives in Inbox, reply reaches Gmail']);
+})());
+
+// ---------- 14. Favicon ----------
+images['add-favicon-wordpress-step-1'] = doc('WordPress Customizer Site Identity with Select site icon', 'Illustrated WordPress Customizer Site Identity panel with Site Title and Tagline fields and the Select site icon button highlighted.', (() => {
+  let s = custom(field(16, 110, 268, 'Site Title', 'My Business') + field(16, 180, 268, 'Tagline', 'Quality services') + t(16, 262, 'Site Icon', { bold: true }) + t(16, 284, 'Square, at least 512 × 512 pixels.', { size: 12, fill: '#50575e' }) + r(16, 300, 268, 80, '#f6f7f7', { stroke: '#c3c4c7', rx: 3 }) + t(150, 345, 'No image selected', { anchor: 'middle', fill: '#8c8f94' }) + btn(16, 394, 'Select site icon', false, 150));
+  return s + mark([16, 394, 150, 30], [360, 480, 'Upload a square PNG here']);
+})());
+images['add-favicon-wordpress-step-2'] = doc('WordPress media library selecting the square site icon', 'Illustrated WordPress media modal Select site icon with a square brand mark selected (blue border) and the Select button highlighted.', (() => {
+  let s = r(40, 30, 880, 500, '#fff', { stroke: '#c3c4c7' }) + t(64, 70, 'Select site icon', { size: 20 }) + sublinks(64, 104, ['Upload files', 'Media Library'], 'Media Library');
+  for (let i = 0; i < 5; i++) { const x = 64 + i * 130; s += r(x, 130, 116, 116, i === 0 ? '#fff' : '#e8e8e8', { stroke: i === 0 ? '#2271b1' : '#dcdcde' }); }
+  s += r(84, 150, 76, 76, '#1d2327', { rx: 14 }) + t(122, 200, 'S', { size: 40, fill: '#fff', anchor: 'middle', bold: true }) + r(64, 130, 116, 116, 'none', { stroke: '#2271b1' }).replace('stroke="#2271b1"', 'stroke="#2271b1" stroke-width="4"');
+  s += r(720, 130, 180, 200, '#f6f7f7') + t(732, 156, 'site-icon.png', { bold: true, size: 12 }) + t(732, 178, '512 by 512 pixels', { size: 12, fill: '#50575e' }) + r(40, 470, 880, 60, '#f6f7f7', { stroke: '#c3c4c7' }) + btn(810, 485, 'Select', true, 90);
+  return s + mark([810, 485, 90, 30], [500, 380, '512 × 512 skips the crop']) + ring([64, 130, 116, 116], 4);
+})());
+images['add-favicon-wordpress-step-3'] = doc('Customizer Site Icon preview in browser tab and app icon', 'Illustrated Customizer Site Identity showing the site icon preview as a browser tab and as an app icon, with the Publish button highlighted.', (() => {
+  let s = custom(t(16, 120, 'Site Icon', { bold: true }) + r(16, 136, 268, 160, '#f6f7f7', { stroke: '#c3c4c7', rx: 3 }) + r(30, 152, 240, 34, '#fff', { rx: 6, stroke: '#dcdcde' }) + r(40, 161, 16, 16, '#1d2327', { rx: 3 }) + t(64, 174, 'My Business', { size: 12 }) + r(120, 204, 60, 60, '#1d2327', { rx: 14 }) + t(150, 244, 'S', { size: 30, fill: '#fff', anchor: 'middle', bold: true }) + t(150, 284, 'App icon', { size: 11, anchor: 'middle', fill: '#50575e' }) + btn(16, 312, 'Change image', false, 120) + t(150, 380, 'Remove', { fill: '#b32d2e', anchor: 'middle' }));
+  return s + mark([200, 10, 84, 30], [400, 120, 'Looks right? Publish']) + ring([16, 136, 268, 160], 4);
+})());
+
+// ---------- 15. Maintenance mode ----------
+images['enable-maintenance-mode-wordpress-step-1'] = doc('Add Plugins screen with the LightStart maintenance plugin', 'Illustrated WordPress Plugins > Add New Plugin with LightStart typed in search and the Install Now button highlighted on the maintenance mode plugin card.', plugCard(PLUG(), 'LightStart maintenance', 'LightStart - Maintenance Mode', 'Maintenance mode, coming soon', 'and landing pages.', 'the plugin authors'));
+images['enable-maintenance-mode-wordpress-step-2'] = doc('Maintenance plugin General settings with Status Activated', 'Illustrated maintenance mode plugin General tab with Status set to Activated and mode set to Maintenance highlighted, plus bypass and Save settings.', (() => {
+  const m = wp(TOOLM, 'Settings', ['General', 'Reading', 'Permalinks', 'LightStart'], 'LightStart');
+  let s = m.s + h1(190, 74, 'LightStart') + tabs(190, 100, ['General', 'Design', 'Modules', 'Manage Bot'], 'General') + panel(190, 140, 746, 320);
+  s += t(214, 186, 'Status', { bold: true }) + radio(400, 174, true) + t(424, 187, 'Activated', { bold: true }) + radio(540, 174, false) + t(564, 187, 'Deactivated');
+  s += t(214, 246, 'Mode', { bold: true }) + radio(400, 234, true) + t(424, 247, 'Maintenance (503)', { bold: true }) + radio(590, 234, false) + t(614, 247, 'Coming soon');
+  s += t(214, 306, 'Bypass for search bots', { bold: true }) + toggle(400, 292, false) + t(214, 356, 'Backend role', { bold: true }) + t(400, 356, 'Administrator can see the site', { fill: '#50575e' }) + btn(214, 410, 'Save settings');
+  return s + mark([396, 170, 340, 92], [560, 400, 'Activated + Maintenance']) + ring(m.pos['sub:LightStart'], 6);
+})());
+images['enable-maintenance-mode-wordpress-step-3'] = doc('Visitor view of a maintenance page in a private window', 'Illustrated browser private window showing a simple maintenance page with a logo, the heading We will be back shortly, an expected return time and a contact link highlighted.', (() => {
+  let s = r(40, 20, 880, 500, '#fff', { rx: 10, stroke: '#c3c4c7' }) + r(40, 20, 880, 44, '#3c3c46', { rx: 10 }) + t(64, 48, 'Private window', { fill: '#fff', size: 12 }) + r(200, 30, 520, 24, '#55555f', { rx: 12 }) + t(216, 47, 'https://yourdomain.com', { fill: '#fff', size: 12 });
+  s += r(445, 110, 70, 70, '#1d2327', { rx: 14 }) + t(480, 158, 'S', { size: 34, fill: '#fff', anchor: 'middle', bold: true }) + t(480, 240, 'We\'ll be back shortly', { size: 30, bold: true, anchor: 'middle' }) + t(480, 280, 'We are updating the website and expect to be back by 6 pm today.', { anchor: 'middle', fill: '#50575e', size: 15 });
+  s += pill(360, 320, 'Chat on WhatsApp', '#1d2327', '#fff', 160) + pill(540, 320, 'Email us', '#f0f0f1', '#1d2327', 100);
+  return s + mark([360, 320, 280, 30], [620, 420, 'Give visitors a way to reach you']);
+})());
+
+// ---------- 16. WhatsApp button ----------
+images['add-whatsapp-button-wordpress-step-1'] = doc('Add Plugins screen with Click to Chat plugin', 'Illustrated WordPress Plugins > Add New Plugin with Click to Chat typed in search and the Install Now button highlighted on the Click to Chat plugin card.', plugCard(PLUG(), 'Click to Chat', 'Click to Chat', 'WhatsApp chat button, share', 'and group invite links.', 'HoliThemes'));
+images['add-whatsapp-button-wordpress-step-2'] = doc('Click to Chat settings with number and pre-filled message', 'Illustrated Click to Chat settings with the country code 91, the WhatsApp number, the pre-filled message and the call to action fields highlighted.', (() => {
+  const m = wp(['Dashboard', 'Posts', 'Media', 'Pages', 'Click to Chat', 'Appearance', 'Plugins', 'Settings'], 'Click to Chat', ['Click to Chat', 'Customize Styles', 'Other Settings'], 'Click to Chat');
+  let s = m.s + h1(190, 74, 'Click to Chat') + panel(190, 92, 746, 380);
+  s += field(214, 124, 120, 'Country code', '+91') + field(354, 124, 300, 'WhatsApp number', '9876543210', { mono: true });
+  s += field(214, 200, 680, 'Pre-filled message', 'Hi, I have a question about your services. Page: {{url}}') + field(214, 276, 300, 'Call to action', 'Chat on WhatsApp') + btn(214, 420, 'Save Changes');
+  return s + mark([214, 134, 680, 110], [560, 330, 'Country code + number + opener']) + ring(m.pos['sub:Click to Chat'], 6);
+})());
+images['add-whatsapp-button-wordpress-step-3'] = doc('Phone mock-up with floating WhatsApp button', 'Illustrated phone showing a WordPress site homepage with a floating Chat on WhatsApp button in the bottom right corner highlighted.', (() => {
+  let s = r(330, 20, 300, 520, '#1d2327', { rx: 36 }) + r(344, 40, 272, 480, '#fff', { rx: 24 }) + r(344, 40, 272, 50, '#f6f7f7', { rx: 24 }) + t(364, 72, 'My Business', { bold: true }) + t(596, 72, '☰', { anchor: 'end', size: 18 });
+  s += t(364, 140, 'Quality services', { size: 20, bold: true }) + t(364, 166, 'in your city', { size: 20, bold: true }) + r(364, 190, 232, 12, '#e8e8e8', { rx: 6 }) + r(364, 212, 200, 12, '#e8e8e8', { rx: 6 }) + r(364, 250, 232, 120, '#f0f0f1', { rx: 8 });
+  s += r(456, 460, 146, 40, '#1d2327', { rx: 20 }) + `<circle cx="478" cy="480" r="10" fill="#fff"/>` + t(534, 485, 'Chat on WhatsApp', { size: 12, fill: '#fff', anchor: 'middle', bold: true });
+  return s + mark([456, 460, 146, 40], [660, 300, 'Tap: chat opens, message ready']);
+})());
+
 for (const [name, svg] of Object.entries(images)) {
   fs.writeFileSync(path.join(OUT, name + '.svg'), svg);
   console.log(name + '.svg', svg.length, 'bytes');

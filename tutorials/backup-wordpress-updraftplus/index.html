@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Back Up WordPress with UpdraftPlus (2026) | Samverse</title>
+  <meta name="description" content="Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/tutorials/backup-wordpress-updraftplus/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/tutorials/backup-wordpress-updraftplus/">
+  <meta property="og:title" content="How to Back Up WordPress with UpdraftPlus (2026) | Samverse">
+  <meta property="og:description" content="Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.">
+  <meta property="og:image" content="https://samverse.space/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og-image.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=b0a556b7">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-11-11">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#article",
+      "headline": "How to Back Up WordPress with UpdraftPlus (2026)",
+      "description": "Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "mainEntityOfPage": "https://samverse.space/tutorials/backup-wordpress-updraftplus/",
+      "inLanguage": "en-IN",
+      "image": [
+        "https://samverse.space/assets/tutorials/backup-wordpress-updraftplus-step-1.svg",
+        "https://samverse.space/assets/tutorials/backup-wordpress-updraftplus-step-2.svg",
+        "https://samverse.space/assets/tutorials/backup-wordpress-updraftplus-step-3.svg"
+      ],
+      "author": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Samverse",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samverse.space/assets/icon-512.png"
+        }
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#howto",
+      "name": "How to Back Up WordPress with UpdraftPlus (2026)",
+      "description": "Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Install UpdraftPlus",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-1-install-updraftplus"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Set the backup schedules",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-2-set-the-backup-schedules"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Choose remote storage and authorise it",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-3-choose-remote-storage-and-authorise-it"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Choose what to include",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-4-choose-what-to-include"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Run the first backup",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-5-run-the-first-backup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Check the files reached Google Drive",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-6-check-the-files-reached-google-drive"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Test a restore",
+          "url": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#step-7-test-a-restore"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tutorials",
+          "item": "https://samverse.space/tutorials/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Back Up WordPress with UpdraftPlus (2026)",
+          "item": "https://samverse.space/tutorials/backup-wordpress-updraftplus/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/tutorials/backup-wordpress-updraftplus/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is UpdraftPlus free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the core plugin with scheduled backups to Google Drive, Dropbox and others is free. A paid version adds features such as incremental backups and more storage options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I still need UpdraftPlus if my host takes backups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a sensible second copy. Host backups sit with the same company as the site; a plugin copy in your own Drive is independent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I restore WordPress from UpdraftPlus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Settings > UpdraftPlus Backups, open the Backup / Restore tab, click Restore on the backup set, tick the components and follow the prompts. If the site will not load, install a fresh WordPress, add UpdraftPlus, connect the same Drive and restore from there."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/tutorials-data.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tutorials/">Tutorials</a>
+        <a href="/contact/">Contact</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
+  <main>
+    <article class="post">
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/tutorials/">Tutorials</a></nav>
+          <a class="post-cat" href="/tutorials/">Tutorial</a>
+          <h1>How to Back Up WordPress with UpdraftPlus (2026)</h1>
+          <p class="post-dek">Back up WordPress with UpdraftPlus: install the free plugin, set file and database schedules, connect Google Drive, run the first backup, test a restore.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Samverse</a>
+              <span><time datetime="2026-11-11">11 November 2026</time> · 4 min read</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="post-layout container">
+        <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#step-1-install-updraftplus">Step 1: Install UpdraftPlus</a></li>
+              <li><a href="#step-2-set-the-backup-schedules">Step 2: Set the backup schedules</a></li>
+              <li><a href="#step-3-choose-remote-storage-and-authorise-it">Step 3: Choose remote storage and authorise it</a></li>
+              <li><a href="#step-4-choose-what-to-include">Step 4: Choose what to include</a></li>
+              <li><a href="#step-5-run-the-first-backup">Step 5: Run the first backup</a></li>
+              <li><a href="#step-6-check-the-files-reached-google-drive">Step 6: Check the files reached Google Drive</a></li>
+              <li><a href="#step-7-test-a-restore">Step 7: Test a restore</a></li>
+              <li><a href="#troubleshooting">Troubleshooting</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </details>
+<p>To back up WordPress with UpdraftPlus, install the free <strong>UpdraftPlus</strong> plugin, open <strong>Settings &gt; UpdraftPlus Backups &gt; Settings</strong>, set schedules for files and the database, choose remote storage such as Google Drive and authorise it, save, then click <strong>Backup Now</strong>. Backups then run on schedule and are stored off the server.</p>
+<div class="tut-need">
+  <p><strong>Time required:</strong> 15 to 20 minutes, plus the first backup run</p>
+  <p><strong>What you'll need:</strong></p>
+  <ul>
+    <li>WordPress admin access</li>
+    <li>A Google Drive (or Dropbox) account that the business owns</li>
+    <li>Enough free space in that account for a few copies of the site</li>
+  </ul>
+</div>
+
+<p>Not sure UpdraftPlus is right for you? See <a href="/blog/wordpress-backup-plugins-compared/">WordPress backup plugins compared</a>.</p>
+
+<h2 id="step-1-install-updraftplus">Step 1: Install UpdraftPlus</h2>
+<p class="tut-path"><strong>Where:</strong> WordPress admin &gt; Plugins &gt; Add New Plugin</p>
+<ol>
+  <li>Search for <strong>UpdraftPlus</strong>.</li>
+  <li>Install and activate <strong>UpdraftPlus: WP Backup &amp; Migration Plugin</strong>.</li>
+  <li>Open <strong>Settings &gt; UpdraftPlus Backups</strong>. Close the welcome tour if it appears.</li>
+</ol>
+
+<h2 id="step-2-set-the-backup-schedules">Step 2: Set the backup schedules</h2>
+<p class="tut-path"><strong>Where:</strong> Settings &gt; UpdraftPlus Backups &gt; Settings tab</p>
+<ol>
+  <li><strong>Files backup schedule:</strong> Weekly suits most brochure sites. Retain 4.</li>
+  <li><strong>Database backup schedule:</strong> Daily for shops, blogs and sites with forms. Retain 14.</li>
+  <li>If you take orders every hour, ask your host about more frequent database backups too.</li>
+</ol>
+<figure class="step-shot"><img src="/assets/tutorials/backup-wordpress-updraftplus-step-1.svg" alt="How to back up WordPress with UpdraftPlus: Settings tab with files backup weekly and database backup daily highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: Files weekly, database daily is a sensible start. Retain several copies of each.</figcaption></figure>
+
+<h2 id="step-3-choose-remote-storage-and-authorise-it">Step 3: Choose remote storage and authorise it</h2>
+<p class="tut-path"><strong>Where:</strong> Settings tab &gt; Choose your remote storage</p>
+<ol>
+  <li>Click <strong>Google Drive</strong> (or Dropbox, OneDrive, S3).</li>
+  <li>Scroll down and click <strong>Save Changes</strong>. A popup asks you to authorise.</li>
+  <li>Sign in with the business Google account, allow access, then click <strong>Complete setup</strong>.</li>
+</ol>
+<figure class="step-shot"><img src="/assets/tutorials/backup-wordpress-updraftplus-step-2.svg" alt="UpdraftPlus remote storage icons with Google Drive selected and highlighted" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 3: Pick an off-site destination. A backup kept only on the same server is lost with the server.</figcaption></figure>
+<p>Use an account the business owns, not a developer's personal Drive, so access survives a change of developer.</p>
+
+<h2 id="step-4-choose-what-to-include">Step 4: Choose what to include</h2>
+<p>Leave Plugins, Themes, Uploads and Others ticked. If you have large folders that are not needed (old backup zips from other plugins, cache folders), add them to the exclude list so backups stay small.</p>
+
+<h2 id="step-5-run-the-first-backup">Step 5: Run the first backup</h2>
+<p class="tut-path"><strong>Where:</strong> Settings &gt; UpdraftPlus Backups &gt; Backup / Restore tab</p>
+<ol>
+  <li>Click <strong>Backup Now</strong>.</li>
+  <li>Keep <strong>Include your database</strong>, <strong>Include your files</strong> and <strong>Send this backup to remote storage</strong> ticked.</li>
+  <li>Click Backup Now in the dialog and wait. It shows progress and then lists the backup under Existing backups.</li>
+</ol>
+<figure class="step-shot"><img src="/assets/tutorials/backup-wordpress-updraftplus-step-3.svg" alt="UpdraftPlus Backup Restore tab with the Backup Now button highlighted and an existing backup listed" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 5: Backup Now, then check the new set appears under Existing backups and in Google Drive.</figcaption></figure>
+
+<h2 id="step-6-check-the-files-reached-google-drive">Step 6: Check the files reached Google Drive</h2>
+<p>Open Google Drive and find the <strong>UpdraftPlus</strong> folder. You should see a database file and several zip files (plugins, themes, uploads, others) with today's date.</p>
+
+<h2 id="step-7-test-a-restore">Step 7: Test a restore</h2>
+<p>A backup is only proven when it restores. Restore it on a staging copy or a test install, not on the live site: in Existing backups click <strong>Restore</strong>, choose the components and follow the steps. Repeat the test every few months and after big changes.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+  <li><strong>Backup stuck or never finishes:</strong> WordPress cron is not running because the site gets few visits. Set a real server cron job, or ask your host.</li>
+  <li><strong>Google Drive upload fails:</strong> re-authorise in Settings, and check the Drive account has free space.</li>
+  <li><strong>Backups are huge:</strong> exclude cache folders and old backup files, and compress images.</li>
+  <li><strong>"Insufficient permissions" or timeouts:</strong> look in the log (Backup / Restore tab &gt; View log) for the exact error.</li>
+</ul>
+
+<aside class="inline-cta tut-help">
+  <strong>Need it done for you?</strong>
+  <p>Scheduled off-site backups and tested restores are part of every WordPress maintenance plan I run.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="#contact" class="link-inline">Get a free quote</a></div>
+</aside>
+
+<h2 id="faqs">FAQs</h2>
+<h3>Is UpdraftPlus free?</h3>
+<p>Yes, the core plugin with scheduled backups to Google Drive, Dropbox and others is free. A paid version adds features such as incremental backups and more storage options.</p>
+<h3>Do I still need UpdraftPlus if my host takes backups?</h3>
+<p>It is a sensible second copy. Host backups sit with the same company as the site; a plugin copy in your own Drive is independent.</p>
+<h3>How do I restore WordPress from UpdraftPlus?</h3>
+<p>In Settings &gt; UpdraftPlus Backups, open the Backup / Restore tab, click Restore on the backup set, tick the components and follow the prompts. If the site will not load, install a fresh WordPress, add UpdraftPlus, connect the same Drive and restore from there.</p>
+
+          <div class="post-cta">
+            <h2>Stuck on a step?</h2>
+            <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Get a Free Quote</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20tutorial%20%22How%20to%20Back%20Up%20WordPress%20with%20UpdraftPlus%20(2026)%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#step-1-install-updraftplus">Step 1: Install UpdraftPlus</a></li>
+              <li><a href="#step-2-set-the-backup-schedules">Step 2: Set the backup schedules</a></li>
+              <li><a href="#step-3-choose-remote-storage-and-authorise-it">Step 3: Choose remote storage and authorise it</a></li>
+              <li><a href="#step-4-choose-what-to-include">Step 4: Choose what to include</a></li>
+              <li><a href="#step-5-run-the-first-backup">Step 5: Run the first backup</a></li>
+              <li><a href="#step-6-check-the-files-reached-google-drive">Step 6: Check the files reached Google Drive</a></li>
+              <li><a href="#step-7-test-a-restore">Step 7: Test a restore</a></li>
+              <li><a href="#troubleshooting">Troubleshooting</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need it done for you?</strong>
+            <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20tutorial%20%22How%20to%20Back%20Up%20WordPress%20with%20UpdraftPlus%20(2026)%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
+        <div class="post-grid reveal">
+          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">7 min read</span></a>
+          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">6 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
+        </div>
+        <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">I reply within 24 hours, usually the same day. Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/tutorials/">Tutorials</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="/free-tools/">Free tools</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
