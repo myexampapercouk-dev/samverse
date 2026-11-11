@@ -311,6 +311,8 @@ grep -o "A=dovecot_[a-z]*:[^ ]*" /var/log/exim_mainlog | sort | uniq -c | sort -
 <h2 id="when-to-get-help">When to get help</h2>
 <p>If your host has suspended email, you find scripts you didn't upload, or spam restarts after you delete files, have the site cleaned and the entry point closed. Tracing whether it is a script, a stolen password or a form is part of <a href="/wordpress-malware-removal/">WordPress malware removal</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
+<p>Once the site is clean, route real mail through an authenticated sender; see <a href="/tutorials/setup-smtp-wordpress/">setting up SMTP in WordPress</a>.</p>
+
 <h2 id="faqs">FAQs</h2>
 <h3>Why is my website sending spam emails?</h3>
 <p>Usually because a malicious script was uploaded after a hack, a mailbox or SMTP password was stolen, or a form is being abused. The message headers and your host's mail logs show which.</p>

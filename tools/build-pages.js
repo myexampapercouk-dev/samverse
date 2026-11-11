@@ -41,6 +41,27 @@ const POSTS = require('./blog-data');
 const TOOL_LINKS = require('./tool-links'); // contextual links from posts to the free tools
 const TUT = require('./tutorials-build');
 TUT.injectLinks(POSTS); // contextual links from related posts to /tutorials/ pages
+// Extra contextual links (free tools, tutorials, country pages): one sentence per post, before the FAQ heading
+for (const [slug, sentence] of Object.entries(require('./context-links'))) {
+  const p = POSTS.find(x => x.slug === slug); const href = (sentence.match(/href="([^"]+)"/) || [])[1];
+  if (!p || p.body.includes(`href="${href}"`)) continue;
+  const para = `<p>${sentence}</p>\n\n`, m = p.body.match(/<h2[^>]*>\s*(?:FAQs?|Frequently asked questions)/i);
+  p.body = m ? p.body.slice(0, m.index) + para + p.body.slice(m.index) : p.body.trimEnd() + '\n\n' + para;
+}
+// Service pages: tutorials (by tutorial.service) and free tools that fit the service
+const TOOLS_BY_SLUG = Object.fromEntries(require('./tools-pages').filter(x => /^free-tools\//.test(x.slug)).map(x => [x.slug.split('/')[1], { name: x.crumb }]));
+const SERVICE_TOOLS = {
+  'wordpress-speed-optimization': ['image-compressor', 'image-converter'],
+  'woocommerce-developer': ['image-resizer', 'background-remover'],
+  'shopify-developer': ['background-remover', 'image-resizer'],
+  'wordpress-seo-services': ['meta-title-description-checker', 'robots-txt-generator', 'faq-schema-generator'],
+  'wordpress-migration': ['redirect-htaccess-generator'],
+  'website-redesign': ['redirect-htaccess-generator', 'color-contrast-checker'],
+  'landing-page-design': ['utm-builder', 'whatsapp-link-generator'],
+  'wordpress-website-development': ['favicon-size-checker', 'color-contrast-checker'],
+  'figma-to-wordpress': ['color-contrast-checker', 'image-converter'],
+  'wordpress-maintenance': ['json-formatter'],
+};
 const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and that we link to
 const SUMMARIES = require('./blog-summaries');
 const H1 = require("./h1-overrides"); // keyword-led H1s for posts and case studies
@@ -142,6 +163,21 @@ ${items}
       </div>
     </section>
 `;
+};
+const resourcesFor = p => {
+  const tuts = TUT.TUTORIALS.filter(t => t.service === p.slug).map(t => [`/tutorials/${t.slug}/`, t.title.replace(/:? ?(Step-by-Step )?\(\d{4}\)$/, '').trim(), 'Tutorial']);
+  const tools = (SERVICE_TOOLS[p.slug] || []).map(slug => { const t = TOOLS_BY_SLUG[slug]; if (!t) throw new Error('service tool missing: ' + slug); return [`/free-tools/${slug}/`, t.name, 'Free tool']; });
+  const items = tuts.concat(tools);
+  if (!items.length) return '';
+  return `
+    <section class="section reading">
+      <div class="container faq-wrap">
+        <div class="section-head reveal"><span class="eyebrow">Do it yourself</span><h2>Related tutorials and free tools</h2></div>
+        <ul class="reading-list reveal">
+${items.map(([h, t, c]) => `          <li><a href="${h}">${esc(t)}</a><span>${c}</span></li>`).join("\n")}
+        </ul>
+      </div>
+    </section>`;
 };
 const readingFor = p => {
   const key = p.readingFrom || p.slug;
@@ -316,7 +352,7 @@ ${p.faqs.map(([q, a]) => `          <details>\n            <summary>${esc(q)}</s
       </div>
     </section>
 
-${readingFor(p)}
+${readingFor(p)}${resourcesFor(p)}
     <section class="section related">
       <div class="container">
         <div class="section-head reveal">
