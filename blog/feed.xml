@@ -2218,5 +2218,54 @@
     <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
     <description>Every built-in WooCommerce shortcode in one table: [products] attributes, categories, add to cart, cart, checkout and account, with examples and fixes.</description>
   </item>
+  <item>
+    <title>WordPress Error Log Location: How to Turn On, Find and Read WordPress Error Logs</title>
+    <link>https://samverse.space/blog/wordpress-error-log-location/</link>
+    <guid>https://samverse.space/blog/wordpress-error-log-location/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Where the WordPress error log is, how to turn on WP_DEBUG_LOG safely, where hosts keep PHP error_log files, and how to read a fatal error line.</description>
+  </item>
+  <item>
+    <title>PCLZIP_ERR_BAD_FORMAT (-10) in WordPress: Why the Package Could Not Be Installed and How to Fix It</title>
+    <link>https://samverse.space/blog/pclzip-err-bad-format-wordpress-fix/</link>
+    <guid>https://samverse.space/blog/pclzip-err-bad-format-wordpress-fix/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Fix &quot;The package could not be installed. PCLZIP_ERR_BAD_FORMAT (-10)&quot; in WordPress: wrong or broken ZIP, nested ZIP, full disk, or a failed download.</description>
+  </item>
+  <item>
+    <title>WordPress 503 Service Unavailable: Causes and Fixes for WordPress and WooCommerce</title>
+    <link>https://samverse.space/blog/wordpress-503-service-unavailable-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-503-service-unavailable-fix/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>A WordPress 503 error means the server can't answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.</description>
+  </item>
+  <item>
+    <title>&quot;Error Establishing a Redis Connection&quot; in WordPress: What It Means and How to Fix It</title>
+    <link>https://samverse.space/blog/wordpress-redis-connection-error-fix/</link>
+    <guid>https://samverse.space/blog/wordpress-redis-connection-error-fix/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Fix &quot;Error establishing a Redis connection&quot; in WordPress: Redis stopped, wrong host or port after a migration, a leftover object-cache.php or memory.</description>
+  </item>
+  <item>
+    <title>How to Migrate WordPress from Localhost to a Live Server (Plugin and Manual Methods)</title>
+    <link>https://samverse.space/blog/migrate-wordpress-localhost-to-live/</link>
+    <guid>https://samverse.space/blog/migrate-wordpress-localhost-to-live/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Move a WordPress site from XAMPP, Local or MAMP to live hosting: plugin method, manual files and database method, fixing URLs, and launch checks.</description>
+  </item>
+  <item>
+    <title>How to Check if a Website Is Shopify or WordPress (6 Quick Ways, No Tools Needed)</title>
+    <link>https://samverse.space/blog/check-if-website-is-shopify-or-wordpress/</link>
+    <guid>https://samverse.space/blog/check-if-website-is-shopify-or-wordpress/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Tell if any site runs on Shopify or WordPress in under a minute: URL patterns, page source, /wp-admin and /admin, cdn.shopify.com, and lookup tools.</description>
+  </item>
+  <item>
+    <title>Landing Page Size: Standard Width, Hero Height and Image Dimensions for Desktop and Mobile</title>
+    <link>https://samverse.space/blog/landing-page-size-dimensions/</link>
+    <guid>https://samverse.space/blog/landing-page-size-dimensions/</guid>
+    <pubDate>Wed, 11 Nov 2026 03:30:00 GMT</pubDate>
+    <description>Standard landing page sizes: design widths for desktop and mobile, content width, hero height above the fold, image dimensions and file size limits.</description>
+  </item>
 </channel>
 </rss>

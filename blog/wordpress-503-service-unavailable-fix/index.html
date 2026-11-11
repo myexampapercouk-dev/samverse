@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress 503 Service Unavailable Error: How to Fix</title>
+  <meta name="description" content="A WordPress 503 error means the server can't answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.">
+  <meta name="author" content="Samverse">
+  <meta name="google-adsense-account" content="ca-pub-7430741863334470">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://samverse.space/blog/wordpress-503-service-unavailable-fix/">
+  <meta property="og:site_name" content="Samverse">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://samverse.space/blog/wordpress-503-service-unavailable-fix/">
+  <meta property="og:title" content="WordPress 503 Service Unavailable Error: How to Fix">
+  <meta property="og:description" content="A WordPress 503 error means the server can't answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.">
+  <meta property="og:image" content="https://samverse.space/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://samverse.space/assets/og-image.png">
+  <meta name="theme-color" content="#6D4AFF">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="Samverse Blog" href="https://samverse.space/blog/feed.xml">
+  <script src="/config.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/style.min.css?v=b0a556b7">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-11-11">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://samverse.space/blog/wordpress-503-service-unavailable-fix/#article",
+      "headline": "WordPress 503 Service Unavailable: Causes and Fixes for WordPress and WooCommerce",
+      "description": "A WordPress 503 error means the server can't answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "mainEntityOfPage": "https://samverse.space/blog/wordpress-503-service-unavailable-fix/",
+      "image": "https://samverse.space/assets/og-image.png",
+      "articleSection": "Maintenance",
+      "inLanguage": "en-IN",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://samverse.space/#service",
+        "name": "Samverse",
+        "url": "https://samverse.space/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Samverse",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samverse.space/assets/icon-512.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samverse.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://samverse.space/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Speed, security & maintenance",
+          "item": "https://samverse.space/blog/topic/speed-security/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WordPress 503 Service Unavailable: Causes and Fixes for WordPress and WooCommerce",
+          "item": "https://samverse.space/blog/wordpress-503-service-unavailable-fix/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://samverse.space/blog/wordpress-503-service-unavailable-fix/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a 500 and a 503 error in WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 500 means something crashed while building the page, usually code. A 503 means the server was too busy or deliberately unavailable. A 500 is usually constant; a 503 often comes and goes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin cause a 503 error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A plugin running heavy background jobs or many slow database queries can use up the processes your plan allows, and the server answers new visitors with 503."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a 503 error last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seconds to minutes when it is a traffic spike, until fixed when it is a stuck maintenance file, a runaway plugin or a host outage."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <!-- Generated by tools/build-pages.js from tools/blog-data.js -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Samverse home">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <span class="brand-text">sam<span class="grad">verse</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tutorials/">Tutorials</a>
+        <a href="/contact/">Contact</a>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="read-progress" aria-hidden="true"><span id="readProgress"></span></div>
+
+  <main>
+    <article class="post">
+      <header class="post-hero">
+        <div class="container post-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/speed-security/">Speed, security &amp; maintenance</a></nav>
+          <a class="post-cat" href="/blog/topic/speed-security/">Maintenance</a>
+          <h1>WordPress 503 Service Unavailable: Causes and Fixes for WordPress and WooCommerce</h1>
+          <p class="post-dek">A WordPress 503 error means the server can't answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.</p>
+          <div class="post-byline">
+            <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
+            <div class="post-byline-text">
+              <a href="/about/">Samverse</a>
+              <span><time datetime="2026-11-11">11 November 2026</time> · 5 min read</span>
+            </div>
+            <div class="share share-top">
+              <a href="https://wa.me/?text=WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-503-service-unavailable-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="post-layout container">
+        <div class="post-body">
+          <details class="toc-mobile">
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#first-two-quick-checks">First, two quick checks</a></li>
+              <li><a href="#how-to-fix-a-wordpress-503-error">How to fix a WordPress 503 error</a></li>
+              <li><a href="#woocommerce-error-503">WooCommerce error 503</a></li>
+              <li><a href="#edge-cases-competitors-skip">Edge cases competitors skip</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </details>
+          <div class="takeaways">
+            <strong>Key takeaways</strong>
+            <ul>
+              <li>A WordPress 503 means the server can't answer right now, usually from a stuck .maintenance file, hosting resource limits, a heavy plugin, bots or a host outage.</li>
+              <li>Check resource usage in the hosting panel first, then disable plugins, tame cron and Heartbeat, block abusive bots and add page caching.</li>
+              <li>WooCommerce stores also hit 503s from sale traffic, Action Scheduler backlogs and feed or import jobs.</li>
+            </ul>
+          </div>
+<p>A WordPress 503 Service Unavailable error means the server is reachable but cannot handle the request right now, usually because the site is stuck in maintenance mode, the hosting account has hit its CPU or process limits, a plugin or cron job is overloading PHP, bots are flooding the site, or the host itself is down.</p>
+<p>Unlike a 500 error, a 503 is often temporary. If it clears after a few minutes and comes back at busy times, the cause is almost always resources, not broken code.</p>
+
+<h2 id="first-two-quick-checks">First, two quick checks</h2>
+<ol>
+<li><strong>Is it the whole site or one page?</strong> Open the homepage, a blog post and <code>/wp-admin/</code>. If only the admin or checkout fails, a plugin running there is the likely cause.</li>
+<li><strong>Is it the host?</strong> Check your host's status page and the hosting panel for an outage or a "resource limit reached" notice. If other sites on the same account are also down, contact the host before changing WordPress.</li>
+</ol>
+
+<h2 id="how-to-fix-a-wordpress-503-error">How to fix a WordPress 503 error</h2>
+<ol>
+<li><strong>Remove a stuck maintenance file.</strong> WordPress shows "Briefly unavailable for scheduled maintenance" with a 503 status during updates. If an update was interrupted, open <strong>File Manager</strong> and delete the <code>.maintenance</code> file in the site root (it is hidden, so turn on <strong>Show Hidden Files</strong>).</li>
+<li><strong>Check resource usage in the panel.</strong> In cPanel open <strong>Metrics &gt; Resource Usage</strong>; on Hostinger check the website's resource usage page. If CPU, entry processes or memory hit the limit at the times of the errors, that is your cause.</li>
+<li><strong>Turn off plugins to find the culprit.</strong> If the admin won't load, rename <code>/wp-content/plugins</code> to <code>plugins-off</code> over SFTP. If the site comes back, rename it back and disable plugins one at a time. Backup, security scan, broken-link checker and statistics plugins are frequent offenders because they run heavy jobs.</li>
+<li><strong>Switch to a default theme</strong> if plugins are not the cause. Rename the active theme's folder in <code>/wp-content/themes/</code>, and WordPress falls back to a default theme if one is installed.</li>
+<li><strong>Calm the Heartbeat and cron.</strong> Several editors left open in browser tabs send Heartbeat requests every 15 to 60 seconds. Close unused editor tabs, and if WP-Cron runs on every visit, replace it with a server cron job: add <code>define( 'DISABLE_WP_CRON', true );</code> to <code>wp-config.php</code> and set a cron job in <strong>cPanel &gt; Advanced &gt; Cron Jobs</strong> to call <code>wp-cron.php</code> every 15 minutes.</li>
+<li><strong>Block abusive bots.</strong> Look at the raw access log or <strong>cPanel &gt; Metrics &gt; Visitors</strong>. Hundreds of hits a minute to <code>wp-login.php</code>, <code>xmlrpc.php</code> or search URLs mean a bot flood. A firewall such as Cloudflare's free plan, or blocking <code>xmlrpc.php</code> if you don't use it, usually ends the 503s.</li>
+<li><strong>Add page caching.</strong> Cached pages are served without starting PHP, so the same traffic uses far fewer processes. LiteSpeed Cache on LiteSpeed hosts, or your host's own cache, is the first thing to set up. See <a href="/blog/why-is-my-wordpress-site-slow/">why a WordPress site is slow</a> for the wider picture.</li>
+<li><strong>Read the error logs.</strong> If none of this explains it, check the PHP and web server logs; our guide to <a href="/blog/wordpress-error-log-location/">finding the WordPress error log</a> shows where they are.</li>
+<li><strong>Upgrade or move hosting</strong> if the site is simply busier than the plan allows. A growing WooCommerce store on the cheapest shared plan will keep hitting limits however well it is tuned.</li>
+</ol>
+
+<aside class="inline-cta">
+  <strong>Need help with website maintenance?</strong>
+  <p>WordPress website maintenance services: tested updates with a backup first, off-site backups, security and uptime checks, small edits and a monthly report.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
+<h2 id="woocommerce-error-503">WooCommerce error 503</h2>
+<p>Stores hit 503s for a few extra reasons:</p>
+<ul>
+<li><strong>Sale traffic.</strong> Cart, checkout and account pages can't be fully cached, so a sale or a viral post means many uncached PHP requests at once. Test with your host before a big launch.</li>
+<li><strong>Action Scheduler backlog.</strong> Check <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong>. Thousands of pending or failed actions from a sync, email or feed plugin can keep the server busy around the clock.</li>
+<li><strong>Product feeds and imports.</strong> Feed plugins rebuilding a catalogue every hour, or a large CSV import, can push a small plan over its limits. Schedule them for night-time in India.</li>
+<li><strong>Payment webhooks.</strong> If the site returns 503 when Razorpay, PayU or another gateway sends a webhook, orders can stay "pending payment" even though money was taken. Check the gateway's webhook log after an outage.</li>
+</ul>
+
+<h2 id="edge-cases-competitors-skip">Edge cases competitors skip</h2>
+<ul>
+<li><strong>A 503 from Cloudflare or a CDN</strong> may come from the CDN itself, not your server. The error page branding tells you which. If it is Cloudflare's own page, check their status and your origin separately.</li>
+<li><strong>Maintenance mode plugins</strong> send a deliberate 503 so Google knows the downtime is temporary. If the site shows a "coming soon" page you didn't expect, check <strong>Settings</strong> for a maintenance or coming soon plugin that is switched on.</li>
+<li><strong>Google and long 503s.</strong> A short 503 is harmless for SEO. If it lasts more than a day or two, Google may start dropping pages, so fix it quickly and check <strong>Search Console &gt; Settings &gt; Crawl stats</strong> afterwards.</li>
+</ul>
+<p>If 503s keep returning at busy times, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> looks at caching, cron, bots and hosting together.</p>
+
+<h2 id="faqs">FAQs</h2>
+<h3>What is the difference between a 500 and a 503 error in WordPress?</h3>
+<p>A 500 means something crashed while building the page, usually code. A 503 means the server was too busy or deliberately unavailable. A 500 is usually constant; a 503 often comes and goes.</p>
+<h3>Can a plugin cause a 503 error?</h3>
+<p>Yes. A plugin running heavy background jobs or many slow database queries can use up the processes your plan allows, and the server answers new visitors with 503.</p>
+<h3>How long does a 503 error last?</h3>
+<p>Seconds to minutes when it is a traffic spike, until fixed when it is a stuck maintenance file, a runaway plugin or a host outage.</p>
+
+          <div class="post-cta">
+            <h2>Need help with your website?</h2>
+            <p>I'm a freelance WordPress developer building fast, SEO-friendly websites since 2020. Tell me what you need and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Get a Free Quote</a>
+              <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce%22%20and%20need%20help." class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            </div>
+          </div>
+
+          <div class="post-share-end">
+            <strong>Found this useful? Share it:</strong>
+            <div class="share share-end">
+              <a href="https://wa.me/?text=WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://twitter.com/intent/tweet?text=WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce&url=https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-503-service-unavailable-fix%2F" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+              <button type="button" class="share-copy" data-url="https://samverse.space/blog/wordpress-503-service-unavailable-fix/" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+
+          <div class="post-author">
+            <img src="/assets/logo-mark.svg" alt="" width="56" height="56">
+            <div><strong><a href="/about/">Samverse</a></strong><p>Freelance WordPress development, building websites for clinics, manufacturers, agencies and online stores since 2020.</p><a href="/about/" class="link-inline">More about me</a></div>
+          </div>
+
+          <nav class="post-nav" aria-label="More in Speed, security &amp; maintenance">
+            <a class="post-nav-prev" href="/blog/pclzip-err-bad-format-wordpress-fix/"><span>← Previous in Speed, security &amp; maintenance</span><strong>PCLZIP_ERR_BAD_FORMAT (-10) in WordPress: Why the Package Could Not Be Installed and How to Fix It</strong></a>
+            <a class="post-nav-next" href="/blog/wordpress-redis-connection-error-fix/"><span>Next in Speed, security &amp; maintenance →</span><strong>&quot;Error Establishing a Redis Connection&quot; in WordPress: What It Means and How to Fix It</strong></a>
+          </nav>
+        </div>
+
+        <aside class="post-side">
+          <nav class="post-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#first-two-quick-checks">First, two quick checks</a></li>
+              <li><a href="#how-to-fix-a-wordpress-503-error">How to fix a WordPress 503 error</a></li>
+              <li><a href="#woocommerce-error-503">WooCommerce error 503</a></li>
+              <li><a href="#edge-cases-competitors-skip">Edge cases competitors skip</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ol>
+          </nav>
+          <div class="side-cta">
+            <strong>Need help with this?</strong>
+            <p>Get a clear plan and a fixed quote, usually within 24 hours.</p>
+            <a href="#contact" class="btn btn-sm btn-block">Get a Free Quote</a>
+            <a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20503%20Service%20Unavailable%3A%20Causes%20and%20Fixes%20for%20WordPress%20and%20WooCommerce%22%20and%20need%20help." class="side-cta-wa" target="_blank" rel="noopener">or chat on WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+
+    <section class="section related">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Services</span><h2>How I can help</h2></div>
+        <div class="industries related-grid reveal">
+          <a class="industry" href="/wordpress-maintenance/"><h3>Website Maintenance</h3><p>WordPress website maintenance services: tested updates with a backup first, off-site backups, security and uptime checks, small edits and a monthly report.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/wordpress-speed-optimization/"><h3>Speed Optimization</h3><p>WordPress &amp; WooCommerce speed optimization service: a full audit, caching, image, plugin, script and database fixes, and a before-and-after report.</p><span class="ind-arrow">→</span></a>
+          <a class="industry" href="/woocommerce-developer/"><h3>Online Stores</h3><p>WooCommerce development services from a freelance developer in India: store setup, Razorpay and UPI, GST invoices, COD, shipping and a fast checkout.</p><span class="ind-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
+        <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-error-log-location/"><span class="work-tag">Maintenance</span><h3>WordPress Error Log Location: How to Turn On, Find and Read WordPress Error Logs</h3><p>Where the WordPress error log is, how to turn on WP_DEBUG_LOG safely, where hosts keep PHP error_log files, and how to read a fatal error line.</p><span class="post-card-meta">11 November 2026 · 5 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-502-504-gateway-timeout-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-502-504-gateway-timeout-fix.webp" alt="WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress 502 Bad Gateway and 504 Gateway Timeout: What They Mean and How to Fix Them</h3><p>Fix WordPress 502 Bad Gateway and 504 Gateway Timeout errors: PHP workers, slow plugins and queries, Cloudflare, hosting limits and what to tell your host.</p><span class="post-card-meta">11 October 2026 · 10 min read</span></a>
+          <a class="post-card" href="/blog/why-is-my-wordpress-site-slow/"><img class="post-card-img" src="/assets/og/blog-why-is-my-wordpress-site-slow.webp" alt="Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)" width="1200" height="630" loading="lazy"><span class="work-tag">Speed</span><h3>Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)</h3><p>Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.</p><span class="post-card-meta">27 September 2026 · 11 min read</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build your next <span class="grad">website</span></h2>
+            <p class="muted">Available for freelance projects, agency white-label work and long-term maintenance. Feel free to pass this along to your team or company.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+917417049145">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+                  <span><small>Call</small>+91 74170 49145</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 7H4v.3l8 5.3 8-5.3V7h-.2L12 12.2z"/></svg></span>
+                  <span><small>Email</small>samverse9719@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">
+                  <span class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+                  <span><small>WhatsApp</small>Chat instantly</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot: hidden from people, bots fill it in -->
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required maxlength="120" placeholder="John Doe" autocomplete="name"></label>
+            <div class="form-row">
+              <label>Phone / WhatsApp<input type="tel" name="phone" required maxlength="40" placeholder="+91 98765 43210" autocomplete="tel"></label>
+              <label>Email <span class="opt">(optional)</span><input type="email" name="email" maxlength="160" placeholder="you@company.com" autocomplete="email"></label>
+            </div>
+            <label>Project type
+              <select name="type">
+                <option>New WordPress website</option>
+                <option>WooCommerce store</option>
+                <option>Shopify store</option>
+                <option>Website redesign</option>
+                <option>Speed / SEO optimization</option>
+                <option>Maintenance &amp; support</option>
+                <option>Agency / white-label work</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="Tell me a bit about your project…"></textarea></label>
+            <div class="captcha">
+              <label for="captchaInput">Quick check: <strong id="captchaQ">3 + 4</strong> = ?</label>
+              <div class="captcha-row">
+                <input type="text" id="captchaInput" name="captcha" inputmode="numeric" required placeholder="Answer" autocomplete="off">
+                <button type="button" class="captcha-refresh" id="captchaRefresh" aria-label="New question">↻</button>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-block" id="formSubmit">Send Enquiry</button>
+            <p class="form-msg" id="msg" role="status"></p>
+            <p class="form-note">I reply within 24 hours, usually the same day. Your details are emailed to me, then WhatsApp opens so we can chat right away.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <h2>Have a WordPress project in mind?</h2>
+          <p>Tell me about it and I'll reply within 24 hours with a plan and a quote.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." class="btn btn-light" target="_blank" rel="noopener">WhatsApp Me</a>
+          <a href="mailto:samverse9719@gmail.com?subject=WordPress%20project%20enquiry" class="btn btn-outline-light">Send an Email</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+            <span class="brand-text">sam<span class="grad">verse</span><span class="tld">.space</span></span>
+          </a>
+          <p>Samverse: freelance <a href="/wordpress-developer-pune/">Pune-based WordPress web studio</a>. I've been building fast, responsive and SEO-friendly websites for businesses and agencies since 2020. <a href="/wordpress-shopify-developer-india/">WordPress &amp; Shopify development across India</a>, including <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi NCR</a>, <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, and remote projects: <a href="/wordpress-shopify-developer-uk/">WordPress &amp; Shopify developer UK</a>, <a href="/wordpress-shopify-developer-usa/">WordPress &amp; Shopify developer USA</a>, <a href="/wordpress-shopify-developer-canada/">WordPress &amp; Shopify developer Canada</a>, <a href="/wordpress-shopify-developer-uae/">WordPress &amp; Shopify developer UAE</a> and <a href="/wordpress-shopify-developer-europe/">WordPress &amp; Shopify developer Europe</a>.</p>
+          <span class="footer-status"><span class="dot"></span> Taking new projects</span>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Explore</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Portfolio</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/tutorials/">Tutorials</a></li>
+            <li><a href="/wordpress-glossary/">Glossary</a></li>
+            <li><a href="/free-tools/">Free tools</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Services</h3>
+          <ul>
+            <li><a href="/wordpress-maintenance/">WordPress Maintenance</a></li>
+            <li><a href="/wordpress-speed-optimization/">Speed Optimization</a></li>
+            <li><a href="/wordpress-malware-removal/">Malware Removal</a></li>
+            <li><a href="/wordpress-seo-services/">WordPress SEO</a></li>
+            <li><a href="/elementor-developer/">Elementor Developer</a></li>
+            <li><a href="/landing-page-design/">Landing Page Design</a></li>
+            <li><a href="/shopify-developer/">Shopify Developer</a></li>
+            <li><a href="/hire-wordpress-developer/">Hire a WordPress Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Industries</h3>
+          <ul>
+            <li><a href="/wordpress-developer-for-agencies/">White-label for Agencies</a></li>
+            <li><a href="/wordpress-website-for-doctors/">Doctors &amp; Clinics</a></li>
+            <li><a href="/website-for-manufacturers/">Manufacturers &amp; B2B</a></li>
+            <li><a href="/woocommerce-developer/">WooCommerce Stores</a></li>
+            <li><a href="/website-for-startups/">Startups</a></li>
+            <li><a href="/website-for-schools-and-coaching/">Schools &amp; Coaching</a></li>
+            <li><a href="/solutions/">All Industries &amp; Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-h">Get in touch</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+917417049145">+91 74170 49145</a></li>
+            <li><a href="mailto:samverse9719@gmail.com">samverse9719@gmail.com</a></li>
+            <li><a href="https://wa.me/917417049145?text=Hi%2C%20I%20found%20you%20on%20samverse.space%20and%20have%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><span>India · Working worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Samverse · samverse.space. All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a></p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417049145?text=Hi%2C%20I%20saw%20your%20website%20and%20have%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span>Chat now</span>
+  </a>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

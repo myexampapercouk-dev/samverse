@@ -233,6 +233,7 @@
           </div>
 <p>A <strong>WordPress 502 Bad Gateway</strong> means the server that answered your browser, such as Nginx, LiteSpeed or Cloudflare, got an invalid reply from the server behind it, usually PHP. A <strong>504 Gateway Timeout</strong> on WordPress means it waited for that reply and gave up. Both are server-side problems: PHP is overloaded, a plugin or database query is too slow, an outside service is hanging, or the host or CDN is having trouble. Visitors can't fix them by refreshing; you or your host need to find the slow or failing part.</p>
 
+<p>If the status is 503 Service Unavailable instead, the server is overloaded or in maintenance mode; see <a href="/blog/wordpress-503-service-unavailable-fix/">how to fix a WordPress 503 error</a>.</p>
 <h2 id="proxy-php-and-upstream-in-plain-words">Proxy, PHP and upstream in plain words</h2>
 <p>When someone opens your site, the request usually passes through several layers before WordPress runs:</p>
 <ol>

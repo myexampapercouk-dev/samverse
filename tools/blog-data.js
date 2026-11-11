@@ -198,6 +198,7 @@ module.exports = [
 <p>I build on WordPress, so read this with that in mind, but Shopify in particular is a good platform and the right choice for some Indian brands. Here's how the three compare on the things that matter to a business in India: cost, UPI payments, GST, SEO, ownership and help. If WordPress fits, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 <p>This is the three-way overview. For a deeper look at stores only, see <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for Indian stores</a>, and if you're also considering other builders, <a href="/blog/wordpress-vs-squarespace/">WordPress vs Squarespace</a> and <a href="/blog/wordpress-vs-webflow/">WordPress vs Webflow</a>.</p>
 
+<p>Want to see what similar businesses chose? You can <a href="/blog/check-if-website-is-shopify-or-wordpress/">check if a website is Shopify or WordPress</a> in under a minute.</p>
 <h2>WordPress vs Wix vs Shopify at a glance</h2>
 <table>
   <thead><tr><th></th><th>WordPress</th><th>Wix</th><th>Shopify</th></tr></thead>
@@ -5372,6 +5373,7 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>I build both. A focused <a href="/landing-page-design/">landing page for Google and Meta ads</a> comes with GA4, Meta Pixel and Google Ads conversion tracking set up, and my website cost guide puts a single landing page at about ₹5,000 to ₹15,000, against ₹15,000 to ₹40,000 for a small business website.</p>
 <p>Below: the differences side by side, landing page vs homepage, the types of landing page including squeeze pages, and how to decide where your ad clicks should go.</p>
 
+<p>Planning the layout? See <a href="/blog/landing-page-size-dimensions/">standard landing page sizes for desktop and mobile</a>.</p>
 <h2>Landing page vs website: the key differences</h2>
 <table>
   <thead><tr><th></th><th>Website</th><th>Landing page</th></tr></thead>
@@ -11457,6 +11459,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Redesigns and bigger changes I work on are built on staging, so the live site stays untouched until the new version is approved. For routine updates, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup first and then test key pages, forms and, on stores, a test order, so problems are caught and rolled back quickly.</p>
 <p>Here's how staging works, how to set it up on popular Indian hosts, how to keep it private, and how to push changes live without overwriting anything.</p>
 
+<p>Built your site on your own computer instead? Here is <a href="/blog/migrate-wordpress-localhost-to-live/">how to move WordPress from localhost to a live server</a>.</p>
 <h2>What a staging site is, and what it isn't</h2>
 <ul>
   <li><strong>Not a backup.</strong> A backup is a snapshot you restore from. A staging site is a working copy you change and test. You need both.</li>
@@ -15219,6 +15222,7 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 <p>Most WordPress errors come from a small set of causes: a plugin or theme with faulty code, a server limit such as memory or PHP version, a database problem, a broken configuration file such as .htaccess, or an SSL or DNS setting. For any error, the safe first steps are the same: stop changing things, note what changed just before it started, take a backup, then read the recovery mode email or the error log so you know the real cause before you fix it.</p>
 <p>This page is the map. The table below matches each common error to its usual cause and first fix, and each section links to a step-by-step guide for that error. If you'd rather not deal with errors at all, my <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update and test the site afterwards, so problems are caught and rolled back quickly.</p>
 
+<p>Most of these fixes start with the error message itself, so first <a href="/blog/wordpress-error-log-location/">turn on and find the WordPress error log</a>.</p>
 <h2>Quick reference: WordPress errors, causes and first fixes</h2>
 <table>
   <thead><tr><th>Error or symptom</th><th>Usually caused by</th><th>First thing to try</th></tr></thead>
@@ -63368,6 +63372,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>If you would rather hand it to someone, this is exactly the kind of outage my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans are set up to catch.</p>
 <p>A note before you touch anything: download a copy of wp-config.php and take a database export if phpMyAdmin will open. With those two, every step below can be undone.</p>
 
+<p>If the message mentions Redis rather than the database, it is an object cache problem; see <a href="/blog/wordpress-redis-connection-error-fix/">error establishing a Redis connection</a>.</p>
 <h2>Two minutes of triage before you change anything</h2>
 <p>Answer four questions first.</p>
 <ol>
@@ -71057,6 +71062,7 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <p>A <strong>500 internal server error in WordPress</strong> means the server hit a problem it could not describe, usually a PHP fatal error from a plugin or theme, a broken .htaccess file, a memory limit or a PHP version mismatch. The fastest fix is to read the error log: your hosting panel's error log or WordPress's debug.log names the file and line that failed. From there, you rename the faulty plugin, reset .htaccess or raise the limit, one change at a time.</p>
 <p>Below is the order to work in, with the safe way to turn on logging and what to tell your host if the cause is on their side.</p>
 
+<p>The exact cause of a 500 is almost always in a log file; here is <a href="/blog/wordpress-error-log-location/">where the WordPress error log is and how to read it</a>.</p>
 <h2>A 500 error or a critical error?</h2>
 <p>Since WordPress 5.2, many PHP fatal errors show "There has been a critical error on this website" instead of a bare 500 page, and WordPress may email the admin address a recovery mode link. The cause is the same family of problems; the critical error message is just friendlier. If you see that message or got that email, also read <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a>, which covers recovery mode. If the screen is completely blank, see <a href="/blog/wordpress-white-screen-of-death/">the white screen of death</a>.</p>
 <table>
@@ -71174,6 +71180,7 @@ wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre
     body: `
 <p>A <strong>WordPress 502 Bad Gateway</strong> means the server that answered your browser, such as Nginx, LiteSpeed or Cloudflare, got an invalid reply from the server behind it, usually PHP. A <strong>504 Gateway Timeout</strong> on WordPress means it waited for that reply and gave up. Both are server-side problems: PHP is overloaded, a plugin or database query is too slow, an outside service is hanging, or the host or CDN is having trouble. Visitors can't fix them by refreshing; you or your host need to find the slow or failing part.</p>
 
+<p>If the status is 503 Service Unavailable instead, the server is overloaded or in maintenance mode; see <a href="/blog/wordpress-503-service-unavailable-fix/">how to fix a WordPress 503 error</a>.</p>
 <h2>Proxy, PHP and upstream in plain words</h2>
 <p>When someone opens your site, the request usually passes through several layers before WordPress runs:</p>
 <ol>
@@ -71970,6 +71977,7 @@ or a cookie name starts with:
 <p>If a WordPress update failed, the fix is usually quick: read the exact error, take a backup, clear any update lock, check disk space and file permissions, then retry the update or replace the affected plugin with a clean copy. Most failures leave your content untouched; the risk comes from rushing into deletes and reinstalls before you know the cause.</p>
 <p>This guide covers the common messages, including "Download failed", "Another update is currently in progress", "Could not create directory" and a plugin left half updated, with a safe order of checks. If you would rather hand it over, my <a href="/wordpress-maintenance/">WordPress maintenance and support</a> plans can include tested updates.</p>
 
+<p>If the message says "PCLZIP_ERR_BAD_FORMAT (-10)", the downloaded ZIP is the problem; see <a href="/blog/pclzip-err-bad-format-wordpress-fix/">how to fix PCLZIP_ERR_BAD_FORMAT</a>.</p>
 <h2>WordPress update failed: what the error is telling you</h2>
 <p>WordPress downloads a zip file, unpacks it into a temporary folder, switches on maintenance mode, replaces the old files and then switches maintenance mode off. A failure at any step produces a different message, so the wording points you to the cause.</p>
 <table>
@@ -77029,6 +77037,467 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Yes. Add the Shortcode widget and paste the shortcode into it.</p>
 <h3>Should I use the Checkout block or the checkout shortcode?</h3>
 <p>Use the block if your payment and checkout plugins support it. Switch to <code>[woocommerce_checkout]</code> if a plugin you rely on only works with the classic checkout.</p>
+`,
+  },
+  {
+    slug: 'wordpress-error-log-location',
+    seoTitle: 'WordPress Error Log: Where It Is and How to Read It',
+    title: 'WordPress Error Log Location: How to Turn On, Find and Read WordPress Error Logs',
+    description: 'Where the WordPress error log is, how to turn on WP_DEBUG_LOG safely, where hosts keep PHP error_log files, and how to read a fatal error line.',
+    date: '2026-11-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-speed-optimization'],
+    body: `
+<p>WordPress does not keep an error log until you turn one on: add <code>define( 'WP_DEBUG', true );</code> and <code>define( 'WP_DEBUG_LOG', true );</code> to <code>wp-config.php</code>, and errors are written to <code>/wp-content/debug.log</code>. Separately, your server keeps its own PHP error log, usually a file called <code>error_log</code> or a log viewer in the hosting panel.</p>
+<p>Those two places answer almost every "where are my WordPress errors" question. The rest of this guide shows how to switch logging on without showing errors to visitors, where each host type keeps the files, and how to read the lines you find.</p>
+
+<h2>Where WordPress error logs are kept</h2>
+<table>
+<thead><tr><th>Log</th><th>Usual location</th><th>What it records</th></tr></thead>
+<tbody>
+<tr><td>WordPress debug log</td><td><code>/wp-content/debug.log</code> (only after you enable it)</td><td>PHP notices, warnings and fatal errors raised while WordPress runs</td></tr>
+<tr><td>PHP error log</td><td>A file named <code>error_log</code> in the site root or <code>/wp-admin/</code>, or a path set by the host</td><td>PHP errors even when WordPress debugging is off</td></tr>
+<tr><td>Web server log</td><td>Hosting panel, for example <strong>cPanel &gt; Metrics &gt; Errors</strong> or hPanel's log section</td><td>500, 403 and timeout errors from Apache, LiteSpeed or Nginx</td></tr>
+<tr><td>WooCommerce logs</td><td><strong>WooCommerce &gt; Status &gt; Logs</strong></td><td>Payment gateway, webhook and fatal error logs for the store</td></tr>
+</tbody>
+</table>
+<p>A fatal error email from WordPress ("Your Site is Experiencing a Technical Issue") also names the file and line. It goes to the admin email in <strong>Settings &gt; General</strong>, so check that address is yours and not an old developer's.</p>
+
+<h2>How to turn on the WordPress error log</h2>
+<ol>
+<li><strong>Take a backup</strong> of <code>wp-config.php</code>, or copy it to your computer first.</li>
+<li><strong>Open the file.</strong> Use <strong>File Manager</strong> in your hosting panel or SFTP, and open <code>wp-config.php</code> in the site root.</li>
+<li><strong>Find the existing WP_DEBUG line.</strong> Most installs already have <code>define( 'WP_DEBUG', false );</code>. Replace it rather than adding a second copy, because a duplicate define causes its own warning.</li>
+<li><strong>Paste these lines</strong> above <code>/* That's all, stop editing! */</code>:
+<pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );</code></pre></li>
+<li><strong>Reproduce the problem.</strong> Load the broken page, save the post or run the checkout that fails.</li>
+<li><strong>Open <code>/wp-content/debug.log</code></strong> in File Manager and read the newest lines at the bottom.</li>
+</ol>
+<p><code>WP_DEBUG_DISPLAY</code> set to false keeps errors out of the page, so visitors do not see paths or messages. Logging works on a live site this way.</p>
+
+<h3>Log to a private location</h3>
+<p>By default <code>debug.log</code> sits in <code>wp-content</code>, which a browser can often open by URL. Since WordPress 5.1 you can give a path instead of true:</p>
+<pre><code>define( 'WP_DEBUG_LOG', '/home/youruser/logs/wp-debug.log' );</code></pre>
+<p>Use a folder above <code>public_html</code> so it can't be downloaded. If you leave the default path, delete the file when you finish.</p>
+
+<h2>How to find the PHP error log on your host</h2>
+<ol>
+<li><strong>cPanel hosts:</strong> look for an <code>error_log</code> file in <code>public_html</code> and in <code>public_html/wp-admin</code>. <strong>cPanel &gt; Metrics &gt; Errors</strong> shows the last web server errors.</li>
+<li><strong>Hostinger hPanel:</strong> open the website, then search the sidebar for logs or check <strong>Advanced &gt; PHP Configuration</strong> to confirm error logging is on; error files appear in the site's folders through File Manager.</li>
+<li><strong>Managed WordPress hosts</strong> usually give a log viewer in their dashboard (for example under the site's Logs or Tools tab) rather than file access.</li>
+<li><strong>VPS with Nginx:</strong> check <code>/var/log/nginx/error.log</code> and the PHP-FPM log, often under <code>/var/log/</code> with the PHP version in the name.</li>
+<li><strong>Still not sure?</strong> Create a temporary PHP file with <code>&lt;?php phpinfo();</code>, open it, and search for <code>error_log</code> to see the exact path. Delete the file straight after.</li>
+</ol>
+
+<h2>How to read a WordPress error log line</h2>
+<p>A typical line looks like this:</p>
+<pre><code>[11-Nov-2026 06:42:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function some_function() in /home/user/public_html/wp-content/plugins/example-plugin/inc/init.php:42</code></pre>
+<ul>
+<li><strong>The time</strong> is usually UTC, which is 5 hours 30 minutes behind India time. Match it to when you saw the problem.</li>
+<li><strong>The level</strong> tells you how serious it is. A <em>Fatal error</em> stops the page. <em>Warning</em>, <em>Notice</em> and <em>Deprecated</em> lines rarely break anything.</li>
+<li><strong>The path</strong> names the culprit. <code>/plugins/example-plugin/</code> points to that plugin, <code>/themes/</code> to the theme, and <code>/wp-includes/</code> usually means a plugin passed bad data into core.</li>
+<li><strong>The line number</strong> is what a developer needs. Copy the whole line, including the stack trace below a fatal error.</li>
+</ul>
+<p>Once you know the plugin, deactivate it from <strong>Plugins &gt; Installed Plugins</strong>, or rename its folder over SFTP if the admin won't load. Our guide to <a href="/blog/fix-wordpress-critical-error/">fixing the WordPress critical error</a> walks through that part.</p>
+
+<h2>Edge cases that hide errors</h2>
+<ul>
+<li><strong>The log stays empty.</strong> A caching plugin or server cache may be serving an old copy of the page, so PHP never runs. Purge the cache, or test while logged in.</li>
+<li><strong>Constants defined twice.</strong> Some hosts or security plugins add their own <code>WP_DEBUG</code> line further down <code>wp-config.php</code>. The first one wins, so search the whole file.</li>
+<li><strong>Errors from a must-use plugin.</strong> Files in <code>/wp-content/mu-plugins/</code> can't be deactivated from the Plugins screen; they have to be renamed or moved.</li>
+<li><strong>A huge debug.log.</strong> Old notices can grow the file to hundreds of megabytes and use up disk space. Delete or rename it before testing so you only see fresh lines.</li>
+<li><strong>Memory errors.</strong> "Allowed memory size exhausted" lines point to the memory limit rather than one plugin; see <a href="/blog/wordpress-memory-limit-errors/">WordPress memory limit errors</a>.</li>
+</ul>
+
+<h2>Turn logging off when you finish</h2>
+<ol>
+<li>Set <code>WP_DEBUG</code> back to <code>false</code> in <code>wp-config.php</code>.</li>
+<li>Delete <code>/wp-content/debug.log</code>, or the custom log file, so file paths are not left readable.</li>
+<li>Clear any cache and check the front end once.</li>
+</ol>
+<p>If you'd rather someone else watched logs, updates and backups each month, that is part of our <a href="/wordpress-maintenance/">WordPress maintenance service</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Where is the WordPress error log by default?</h3>
+<p>There isn't one until you set <code>WP_DEBUG_LOG</code> to true. After that the file is <code>/wp-content/debug.log</code>.</p>
+<h3>Can I view WordPress error logs from the dashboard?</h3>
+<p>Not by default. WooCommerce stores have <strong>WooCommerce &gt; Status &gt; Logs</strong>, and some hosts and log viewer plugins show <code>debug.log</code> inside the admin. For a white screen you still need File Manager or SFTP.</p>
+<h3>Is it safe to keep WP_DEBUG on a live site?</h3>
+<p>Only for a short time, with <code>WP_DEBUG_DISPLAY</code> false and the log outside the public folder or deleted afterwards.</p>
+<h3>Why does debug.log not appear?</h3>
+<p>Either no error has happened since you enabled it, the folder isn't writable, or another <code>WP_DEBUG</code> line overrides yours. Check file permissions on <code>wp-content</code> and search <code>wp-config.php</code> for duplicates.</p>
+`,
+  },
+  {
+    slug: 'pclzip-err-bad-format-wordpress-fix',
+    seoTitle: 'PCLZIP_ERR_BAD_FORMAT (-10) in WordPress: How to Fix',
+    title: 'PCLZIP_ERR_BAD_FORMAT (-10) in WordPress: Why the Package Could Not Be Installed and How to Fix It',
+    description: 'Fix "The package could not be installed. PCLZIP_ERR_BAD_FORMAT (-10)" in WordPress: wrong or broken ZIP, nested ZIP, full disk, or a failed download.',
+    date: '2026-11-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'hire-wordpress-developer', 'wordpress-website-development'],
+    body: `
+<p><strong>PCLZIP_ERR_BAD_FORMAT (-10)</strong> means WordPress could not unzip the plugin or theme file you gave it, usually because the ZIP is the wrong file, is broken or incomplete, contains another ZIP inside it, or the server has run out of space to extract it.</p>
+<p>The full message is normally "The package could not be installed. PCLZIP_ERR_BAD_FORMAT (-10) : Unable to find End of Central Dir Record signature" or "Invalid archive structure". Both point at the archive or the server, not at your site's content, so the fixes below are safe to try in order.</p>
+
+<h2>Fixes in order of how often they work</h2>
+<ol>
+<li><strong>Download the file again.</strong> A download cut short on a slow or mobile connection produces a ZIP that looks normal but is incomplete. Get a fresh copy from your account on the seller's site or from WordPress.org, then try <strong>Plugins &gt; Add New Plugin &gt; Upload Plugin</strong> again.</li>
+<li><strong>Check you downloaded the installable file.</strong> Many premium theme and plugin sellers offer a "full package" containing documentation, licences and the real plugin ZIP inside it. Unzip the download on your computer; if you see another ZIP named after the plugin or theme, upload that inner ZIP.</li>
+<li><strong>Don't upload a ZIP your computer re-made.</strong> Safari on Mac unzips downloads automatically, and right-click "Compress" can create an archive WordPress reads badly. Download with a browser setting that keeps the original ZIP, or use the next fix.</li>
+<li><strong>Upload in the right place.</strong> A theme ZIP uploaded at <strong>Plugins &gt; Add New Plugin</strong>, or a plugin at <strong>Appearance &gt; Themes &gt; Add New Theme</strong>, gives a different error ("no valid plugins were found") but people often mix it up with this one. Confirm which kind of file it is.</li>
+<li><strong>Check disk space.</strong> In your hosting panel look at disk usage. If the account is at or near its limit, WordPress can't extract the package and reports a bad format. Delete old backups stored on the server or old <code>debug.log</code> files, then retry.</li>
+<li><strong>Install manually over SFTP or File Manager.</strong> Unzip the plugin on your computer, then upload the folder to <code>/wp-content/plugins/</code> (or <code>/wp-content/themes/</code> for a theme). Activate it from <strong>Plugins &gt; Installed Plugins</strong>. In cPanel File Manager you can also upload the ZIP and use <strong>Extract</strong>, which uses the server's own unzip tool.</li>
+<li><strong>Ask the host to check the server.</strong> If every ZIP fails, including fresh ones from WordPress.org, the PHP zip extension may be missing or the temp folder full. Hosts can fix this quickly.</li>
+</ol>
+
+<h2>When the error appears during an automatic update</h2>
+<p>If you see PCLZIP_ERR_BAD_FORMAT when clicking <strong>Update now</strong> rather than uploading, WordPress downloaded a bad package itself. This is common with premium plugins whose licence has expired or isn't activated: the update server returns an error page instead of a ZIP, and WordPress tries to unzip that page.</p>
+<ol>
+<li>Go to the plugin's licence screen (often under its own menu or <strong>Settings</strong>) and confirm the licence key is active for this domain.</li>
+<li>Wait a few minutes and retry, in case the vendor's server was busy.</li>
+<li>If it still fails, download the latest version from your account with the vendor and update manually by uploading it. WordPress will offer <strong>Replace current with uploaded</strong>.</li>
+</ol>
+<p>If a failed update has left the site in maintenance mode or a plugin half-installed, our guide on <a href="/blog/wordpress-update-failed-fix/">WordPress update failed errors</a> covers cleaning that up.</p>
+
+<h2>Restoring a backup that shows this error</h2>
+<p>Backup plugins such as UpdraftPlus and All-in-One WP Migration can show the same message when a backup archive is incomplete. Before you assume the backup is lost:</p>
+<ul>
+<li>Compare the file size with what the backup plugin or remote storage lists. A smaller file means the upload or download stopped part way.</li>
+<li>Download the archive again from Google Drive, Dropbox or wherever it is stored, rather than reusing a copy on your computer.</li>
+<li>Try opening the ZIP on your computer. If your computer can't open it either, the archive itself is damaged, and an older backup is the safer choice.</li>
+</ul>
+
+<h2>Edge cases</h2>
+<ul>
+<li><strong>Nulled or "free premium" downloads.</strong> ZIPs from unofficial sites are often repacked and can carry malware. Treat the error as a warning and get the plugin from its real seller.</li>
+<li><strong>Very large themes.</strong> A bundle over the upload size limit gives a different message, but some hosts cut the upload silently and the partial file then fails to unzip. Raise the limit using <a href="/blog/increase-wordpress-upload-size-limit/">our upload size guide</a> or install over SFTP.</li>
+<li><strong>Same-name folder already exists.</strong> If a manual upload leaves a broken folder in <code>/wp-content/plugins/</code>, delete that folder first, then upload the clean one.</li>
+</ul>
+<p>If plugin installs and updates keep failing, our <a href="/wordpress-maintenance/">WordPress maintenance service</a> takes care of updates and backups for you.</p>
+
+<h2>FAQs</h2>
+<h3>What does PCLZIP_ERR_BAD_FORMAT (-10) mean?</h3>
+<p>PclZip is the library WordPress falls back on to unzip packages. Error -10 means the file it got is not a ZIP it can read, usually because it is broken, incomplete or the wrong file.</p>
+<h3>Does this error damage my website?</h3>
+<p>No. WordPress stops before installing anything, so your existing site is unchanged. The only risk is a half-finished update, which shows as maintenance mode or a missing plugin.</p>
+<h3>Why do WordPress.org plugins install fine but my premium one fails?</h3>
+<p>Almost always because the premium download is a bundle with the real plugin ZIP inside it, or the licence isn't active for updates.</p>
+`,
+  },
+  {
+    slug: 'wordpress-503-service-unavailable-fix',
+    seoTitle: 'WordPress 503 Service Unavailable Error: How to Fix',
+    title: 'WordPress 503 Service Unavailable: Causes and Fixes for WordPress and WooCommerce',
+    description: 'A WordPress 503 error means the server can\'t answer right now: maintenance mode, resource limits, a plugin, bots or the host. Fixes in order.',
+    date: '2026-11-11',
+    category: 'Maintenance',
+    related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'woocommerce-developer'],
+    body: `
+<p>A WordPress 503 Service Unavailable error means the server is reachable but cannot handle the request right now, usually because the site is stuck in maintenance mode, the hosting account has hit its CPU or process limits, a plugin or cron job is overloading PHP, bots are flooding the site, or the host itself is down.</p>
+<p>Unlike a 500 error, a 503 is often temporary. If it clears after a few minutes and comes back at busy times, the cause is almost always resources, not broken code.</p>
+
+<h2>First, two quick checks</h2>
+<ol>
+<li><strong>Is it the whole site or one page?</strong> Open the homepage, a blog post and <code>/wp-admin/</code>. If only the admin or checkout fails, a plugin running there is the likely cause.</li>
+<li><strong>Is it the host?</strong> Check your host's status page and the hosting panel for an outage or a "resource limit reached" notice. If other sites on the same account are also down, contact the host before changing WordPress.</li>
+</ol>
+
+<h2>How to fix a WordPress 503 error</h2>
+<ol>
+<li><strong>Remove a stuck maintenance file.</strong> WordPress shows "Briefly unavailable for scheduled maintenance" with a 503 status during updates. If an update was interrupted, open <strong>File Manager</strong> and delete the <code>.maintenance</code> file in the site root (it is hidden, so turn on <strong>Show Hidden Files</strong>).</li>
+<li><strong>Check resource usage in the panel.</strong> In cPanel open <strong>Metrics &gt; Resource Usage</strong>; on Hostinger check the website's resource usage page. If CPU, entry processes or memory hit the limit at the times of the errors, that is your cause.</li>
+<li><strong>Turn off plugins to find the culprit.</strong> If the admin won't load, rename <code>/wp-content/plugins</code> to <code>plugins-off</code> over SFTP. If the site comes back, rename it back and disable plugins one at a time. Backup, security scan, broken-link checker and statistics plugins are frequent offenders because they run heavy jobs.</li>
+<li><strong>Switch to a default theme</strong> if plugins are not the cause. Rename the active theme's folder in <code>/wp-content/themes/</code>, and WordPress falls back to a default theme if one is installed.</li>
+<li><strong>Calm the Heartbeat and cron.</strong> Several editors left open in browser tabs send Heartbeat requests every 15 to 60 seconds. Close unused editor tabs, and if WP-Cron runs on every visit, replace it with a server cron job: add <code>define( 'DISABLE_WP_CRON', true );</code> to <code>wp-config.php</code> and set a cron job in <strong>cPanel &gt; Advanced &gt; Cron Jobs</strong> to call <code>wp-cron.php</code> every 15 minutes.</li>
+<li><strong>Block abusive bots.</strong> Look at the raw access log or <strong>cPanel &gt; Metrics &gt; Visitors</strong>. Hundreds of hits a minute to <code>wp-login.php</code>, <code>xmlrpc.php</code> or search URLs mean a bot flood. A firewall such as Cloudflare's free plan, or blocking <code>xmlrpc.php</code> if you don't use it, usually ends the 503s.</li>
+<li><strong>Add page caching.</strong> Cached pages are served without starting PHP, so the same traffic uses far fewer processes. LiteSpeed Cache on LiteSpeed hosts, or your host's own cache, is the first thing to set up. See <a href="/blog/why-is-my-wordpress-site-slow/">why a WordPress site is slow</a> for the wider picture.</li>
+<li><strong>Read the error logs.</strong> If none of this explains it, check the PHP and web server logs; our guide to <a href="/blog/wordpress-error-log-location/">finding the WordPress error log</a> shows where they are.</li>
+<li><strong>Upgrade or move hosting</strong> if the site is simply busier than the plan allows. A growing WooCommerce store on the cheapest shared plan will keep hitting limits however well it is tuned.</li>
+</ol>
+
+<h2>WooCommerce error 503</h2>
+<p>Stores hit 503s for a few extra reasons:</p>
+<ul>
+<li><strong>Sale traffic.</strong> Cart, checkout and account pages can't be fully cached, so a sale or a viral post means many uncached PHP requests at once. Test with your host before a big launch.</li>
+<li><strong>Action Scheduler backlog.</strong> Check <strong>WooCommerce &gt; Status &gt; Scheduled Actions</strong>. Thousands of pending or failed actions from a sync, email or feed plugin can keep the server busy around the clock.</li>
+<li><strong>Product feeds and imports.</strong> Feed plugins rebuilding a catalogue every hour, or a large CSV import, can push a small plan over its limits. Schedule them for night-time in India.</li>
+<li><strong>Payment webhooks.</strong> If the site returns 503 when Razorpay, PayU or another gateway sends a webhook, orders can stay "pending payment" even though money was taken. Check the gateway's webhook log after an outage.</li>
+</ul>
+
+<h2>Edge cases competitors skip</h2>
+<ul>
+<li><strong>A 503 from Cloudflare or a CDN</strong> may come from the CDN itself, not your server. The error page branding tells you which. If it is Cloudflare's own page, check their status and your origin separately.</li>
+<li><strong>Maintenance mode plugins</strong> send a deliberate 503 so Google knows the downtime is temporary. If the site shows a "coming soon" page you didn't expect, check <strong>Settings</strong> for a maintenance or coming soon plugin that is switched on.</li>
+<li><strong>Google and long 503s.</strong> A short 503 is harmless for SEO. If it lasts more than a day or two, Google may start dropping pages, so fix it quickly and check <strong>Search Console &gt; Settings &gt; Crawl stats</strong> afterwards.</li>
+</ul>
+<p>If 503s keep returning at busy times, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> looks at caching, cron, bots and hosting together.</p>
+
+<h2>FAQs</h2>
+<h3>What is the difference between a 500 and a 503 error in WordPress?</h3>
+<p>A 500 means something crashed while building the page, usually code. A 503 means the server was too busy or deliberately unavailable. A 500 is usually constant; a 503 often comes and goes.</p>
+<h3>Can a plugin cause a 503 error?</h3>
+<p>Yes. A plugin running heavy background jobs or many slow database queries can use up the processes your plan allows, and the server answers new visitors with 503.</p>
+<h3>How long does a 503 error last?</h3>
+<p>Seconds to minutes when it is a traffic spike, until fixed when it is a stuck maintenance file, a runaway plugin or a host outage.</p>
+`,
+  },
+  {
+    slug: 'wordpress-redis-connection-error-fix',
+    seoTitle: 'Error Establishing a Redis Connection in WordPress: Fix',
+    title: '"Error Establishing a Redis Connection" in WordPress: What It Means and How to Fix It',
+    description: 'Fix "Error establishing a Redis connection" in WordPress: Redis stopped, wrong host or port after a migration, a leftover object-cache.php or memory.',
+    date: '2026-11-11',
+    category: 'Maintenance',
+    related: ['wordpress-speed-optimization', 'wordpress-migration', 'wordpress-maintenance'],
+    body: `
+<p>"Error establishing a Redis connection" means WordPress has an object cache drop-in (<code>wp-content/object-cache.php</code>) that tells it to use Redis, but it cannot reach the Redis server, usually because Redis has stopped, the host or port in <code>wp-config.php</code> is wrong after a migration, or the drop-in was left behind on a server without Redis.</p>
+<p>Your posts and orders are safe. Redis only stores temporary copies of database results, so the quickest way to get the site back is to remove the drop-in; then fix Redis and switch caching back on.</p>
+
+<h2>Get the site back online first</h2>
+<ol>
+<li><strong>Open File Manager or SFTP</strong> and go to <code>/wp-content/</code>.</li>
+<li><strong>Rename <code>object-cache.php</code></strong> to <code>object-cache.php.off</code>. WordPress now ignores Redis and reads straight from the database.</li>
+<li><strong>Load the site.</strong> It should work, a little slower than before. If it still fails, the error is something else; check <a href="/blog/error-establishing-database-connection-fix/">error establishing a database connection</a>, which is a different message about MySQL.</li>
+</ol>
+
+<h2>Find and fix the cause</h2>
+<ol>
+<li><strong>Check Redis is running.</strong> On a VPS, run <code>redis-cli ping</code>. A reply of <code>PONG</code> means Redis is up. No reply means start it with <code>sudo systemctl start redis-server</code> (the service may be named <code>redis</code> on some systems) and enable it at boot with <code>sudo systemctl enable redis-server</code>. On shared or managed hosting, check that Redis or "object cache" is still switched on in the panel, for example <strong>hPanel &gt; Advanced</strong> or the host's caching page.</li>
+<li><strong>Check the connection settings.</strong> Open <code>wp-config.php</code> and look for lines like <code>WP_REDIS_HOST</code>, <code>WP_REDIS_PORT</code>, <code>WP_REDIS_PATH</code> (for a Unix socket) and <code>WP_REDIS_PASSWORD</code>. After a move to new hosting these often still point at the old server. The usual local values are host <code>127.0.0.1</code> and port <code>6379</code>, but many hosts use a socket path or a custom port, so copy the exact values from the host's Redis page.</li>
+<li><strong>Check the database number and prefix</strong> if several sites share one Redis server. Two sites using the same database index and no prefix will overwrite each other's cache. Set a unique <code>WP_REDIS_PREFIX</code> (or <code>WP_CACHE_KEY_SALT</code>) for each site.</li>
+<li><strong>Check Redis memory.</strong> If Redis is full and has no eviction policy, writes fail. Run <code>redis-cli info memory</code> and look at <code>used_memory_human</code> against <code>maxmemory</code>. Setting <code>maxmemory-policy allkeys-lru</code> in the Redis config lets old keys drop out instead of failing.</li>
+<li><strong>Read the Redis log</strong> for crashes or out-of-memory kills, usually at <code>/var/log/redis/redis-server.log</code> on Ubuntu.</li>
+<li><strong>Turn the cache back on.</strong> Rename <code>object-cache.php.off</code> back, or in the Redis Object Cache plugin go to <strong>Settings &gt; Redis</strong> and click <strong>Enable Object Cache</strong>. The status should say "Connected".</li>
+</ol>
+
+<h2>The error appears only some of the time</h2>
+<p>Intermittent Redis errors usually mean Redis is restarting, running out of memory, or taking too long to answer under load. Add a short timeout to <code>wp-config.php</code>, for example <code>define( 'WP_REDIS_TIMEOUT', 1 );</code> and <code>define( 'WP_REDIS_READ_TIMEOUT', 1 );</code>, then check memory and the log as above. If it happens during backups, the server may be short of RAM for both jobs at once.</p>
+
+<h2>After a migration or a host change</h2>
+<p>This is the most common time to see the error. A backup or migration plugin copies <code>object-cache.php</code> along with everything else, but the new host may not have Redis at all, or has it on a different socket.</p>
+<ul>
+<li>If the new host has no Redis, delete <code>object-cache.php</code> and remove the Redis plugin, or switch to the host's own object cache if it has one.</li>
+<li>If it does, update the host, port or socket path to the new values.</li>
+<li>Add this check to your move plan; our <a href="/wordpress-migration/">WordPress migration service</a> includes it for every move.</li>
+</ul>
+
+<h2>Edge cases</h2>
+<ul>
+<li><strong>Two drop-ins fighting.</strong> LiteSpeed Cache, W3 Total Cache and the Redis Object Cache plugin can each write <code>object-cache.php</code>. Use object caching in one plugin only.</li>
+<li><strong>Plugin removed, drop-in kept.</strong> Deleting the plugin doesn't always delete the drop-in. If the error appears after you "removed Redis", delete the file by hand.</li>
+<li><strong>Docker setups.</strong> Inside a container <code>127.0.0.1</code> means the container itself. Use the Redis service name from your compose file as the host.</li>
+</ul>
+<p>If you're adding Redis for speed, it helps logged-in users, WooCommerce and busy admin screens most; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> for where it fits.</p>
+
+<h2>FAQs</h2>
+<h3>Will I lose data if I delete object-cache.php?</h3>
+<p>No. Redis holds only cached copies. Everything real is in the MySQL database.</p>
+<h3>Do I need Redis for WordPress?</h3>
+<p>No. Small brochure sites do fine with page caching alone. Redis helps sites with many logged-in users, stores and heavy admin use.</p>
+<h3>Why does the admin show "Not connected" in the Redis plugin?</h3>
+<p>The plugin can't reach Redis with the settings in <code>wp-config.php</code>. Check that the service is running and that host, port, socket and password match what your host gives.</p>
+`,
+  },
+  {
+    slug: 'migrate-wordpress-localhost-to-live',
+    seoTitle: 'Move WordPress from Localhost to a Live Server',
+    title: 'How to Migrate WordPress from Localhost to a Live Server (Plugin and Manual Methods)',
+    description: 'Move a WordPress site from XAMPP, Local or MAMP to live hosting: plugin method, manual files and database method, fixing URLs, and launch checks.',
+    date: '2026-11-11',
+    category: 'Guides',
+    related: ['wordpress-migration', 'wordpress-website-development', 'wordpress-maintenance'],
+    body: `
+<p>To migrate WordPress from localhost to a live server, copy the site's files and database to your hosting, point <code>wp-config.php</code> at the new database, and replace every <code>http://localhost/...</code> address with your real domain using a serialisation-safe search and replace.</p>
+<p>A migration plugin does all three for you, and works for most small sites. The manual method is for big sites or when a plugin's upload limit gets in the way. Both are below, followed by the checks people forget on launch day.</p>
+
+<h2>Before you start</h2>
+<ul>
+<li>Hosting with a domain connected and SSL issued. Install the free certificate first so the live address is <code>https://</code> from day one.</li>
+<li>Your local site working, with the same PHP version as the host, or close to it. Check <strong>Tools &gt; Site Health &gt; Info &gt; Server</strong> locally and the PHP setting in your hosting panel.</li>
+<li>An empty database on the host (for the manual method), with its name, user and password noted.</li>
+</ul>
+
+<h2>Method 1: move it with a migration plugin</h2>
+<ol>
+<li><strong>Install fresh WordPress on the live host</strong> using the host's installer, for example <strong>hPanel &gt; Websites &gt; Add Website</strong> or Softaculous in cPanel.</li>
+<li><strong>On your local site</strong>, install a migration plugin such as Duplicator, All-in-One WP Migration or Migrate Guru (Migrate Guru needs the source to be reachable online, so it isn't suited to a site on your laptop).</li>
+<li><strong>Create the export.</strong> In Duplicator go to <strong>Duplicator &gt; Packages &gt; Create New</strong> and download both the installer and the archive. In All-in-One WP Migration use <strong>All-in-One WP Migration &gt; Export &gt; Export To &gt; File</strong>.</li>
+<li><strong>Import on the live site.</strong> For All-in-One WP Migration, install it on the live site and use <strong>Import</strong>. For Duplicator, upload <code>installer.php</code> and the archive to the site folder over File Manager, then open <code>yourdomain.com/installer.php</code> and follow the steps.</li>
+<li><strong>Let the plugin replace the URLs.</strong> Both plugins swap the localhost address for the live one automatically.</li>
+<li><strong>Log in and resave permalinks</strong> at <strong>Settings &gt; Permalinks &gt; Save Changes</strong>.</li>
+<li><strong>Delete the installer files</strong> and old archives from the server, which Duplicator offers to do for you.</li>
+</ol>
+<p>If the import stops because the file is too big, raise the limit (see <a href="/blog/increase-wordpress-upload-size-limit/">increase the WordPress upload size</a>) or switch to the manual method.</p>
+
+<h2>Method 2: move it by hand</h2>
+<ol>
+<li><strong>Export the database.</strong> Open phpMyAdmin locally (in XAMPP it is <code>http://localhost/phpmyadmin</code>; in Local use <strong>Database &gt; Adminer</strong>), select the site's database, then <strong>Export &gt; Quick &gt; SQL &gt; Export</strong>.</li>
+<li><strong>Zip the files.</strong> Compress the whole site folder, for example <code>C:\\xampp\\htdocs\\mysite</code> or the <code>app/public</code> folder in Local.</li>
+<li><strong>Upload and extract.</strong> In the hosting File Manager, open <code>public_html</code> (or the domain's folder), upload the ZIP and click <strong>Extract</strong>. Make sure <code>wp-config.php</code> ends up directly inside the folder, not one level down.</li>
+<li><strong>Import the database.</strong> Open phpMyAdmin from the hosting panel, select the new empty database, then <strong>Import</strong> and choose the SQL file.</li>
+<li><strong>Edit wp-config.php.</strong> Change <code>DB_NAME</code>, <code>DB_USER</code>, <code>DB_PASSWORD</code> and <code>DB_HOST</code> to the host's values. <code>DB_HOST</code> is often <code>localhost</code> on shared hosting, but some hosts give a different hostname.</li>
+<li><strong>Check the table prefix.</strong> <code>$table_prefix</code> in <code>wp-config.php</code> must match the prefix of the imported tables, for example <code>wp_</code>.</li>
+<li><strong>Replace the URLs safely.</strong> Don't do a plain find and replace on the SQL file, because WordPress stores some settings as serialised data with character counts, and changing the length breaks them. Use WP-CLI (<code>wp search-replace 'http://localhost/mysite' 'https://yourdomain.com' --all-tables</code>) if the host offers SSH, or log in and use the Better Search Replace plugin under <strong>Tools &gt; Better Search Replace</strong>, doing a dry run first.</li>
+<li><strong>Resave permalinks</strong> so the <code>.htaccess</code> file is rebuilt for the live server.</li>
+</ol>
+<p>If you can't log in because the site redirects to localhost, set the two addresses directly in <code>wp-config.php</code> for now: <code>define( 'WP_HOME', 'https://yourdomain.com' );</code> and <code>define( 'WP_SITEURL', 'https://yourdomain.com' );</code>. Remove them once the search and replace is done.</p>
+
+<h2>Launch checks people skip</h2>
+<ol>
+<li><strong>Turn search engines back on.</strong> Local sites are often set to hide from search. Untick <strong>Settings &gt; Reading &gt; Discourage search engines from indexing this site</strong>.</li>
+<li><strong>Look for mixed content.</strong> Images with <code>http://localhost</code> in page builder data or theme options don't always get replaced. Open a few pages, check the browser console, and run the search again for <code>localhost</code>.</li>
+<li><strong>Regenerate builder files.</strong> In Elementor use <strong>Elementor &gt; Tools &gt; Regenerate Files &amp; Data</strong>, then clear any cache.</li>
+<li><strong>Change the admin password and email.</strong> Local installs often use "admin" and a weak password. Check <strong>Users</strong> and <strong>Settings &gt; General</strong> for the admin email.</li>
+<li><strong>Set up email sending</strong> so contact forms work; see <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress not sending emails</a>.</li>
+<li><strong>Add backups</strong> before you make any more changes.</li>
+</ol>
+
+<h2>Edge cases</h2>
+<ul>
+<li><strong>Port numbers.</strong> Local by Flywheel and MAMP use addresses like <code>http://localhost:8888</code> or <code>http://mysite.local</code>. Search for exactly what is in <strong>Settings &gt; General</strong>, including the port.</li>
+<li><strong>Windows line endings and case.</strong> Windows ignores capital letters in file names; Linux servers don't. An image saved as <code>Logo.PNG</code> but linked as <code>logo.png</code> works locally and breaks live.</li>
+<li><strong>Database collation errors.</strong> A newer local MySQL may export <code>utf8mb4_0900_ai_ci</code>, which older hosts reject. Replace it with <code>utf8mb4_unicode_ci</code> in the SQL file before import.</li>
+</ul>
+<p>Prefer to hand it over? Our <a href="/wordpress-migration/">WordPress migration service</a> moves local, staging and live sites with the URL, SSL and email checks done for you. For the difference between local and staging copies, see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Can I upload a localhost WordPress site to Hostinger?</h3>
+<p>Yes. Either install WordPress through hPanel and import with a migration plugin, or upload the files through File Manager and import the database in phpMyAdmin as above.</p>
+<h3>Why are my images missing after moving from localhost?</h3>
+<p>Their addresses still point at localhost, or the <code>uploads</code> folder wasn't copied. Run the search and replace again and check <code>/wp-content/uploads/</code> exists on the server.</p>
+<h3>Do I need to install WordPress on the server first?</h3>
+<p>For plugins like All-in-One WP Migration, yes. For Duplicator's installer or the manual method, no; you upload your own files.</p>
+`,
+  },
+  {
+    slug: 'check-if-website-is-shopify-or-wordpress',
+    seoTitle: 'How to Check if a Website Is Shopify or WordPress',
+    title: 'How to Check if a Website Is Shopify or WordPress (6 Quick Ways, No Tools Needed)',
+    description: 'Tell if any site runs on Shopify or WordPress in under a minute: URL patterns, page source, /wp-admin and /admin, cdn.shopify.com, and lookup tools.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-website-development', 'woocommerce-developer'],
+    body: `
+<p>You can tell whether a website is Shopify or WordPress by viewing its page source: WordPress sites load files from <code>/wp-content/</code> or <code>/wp-includes/</code>, while Shopify stores load files from <code>cdn.shopify.com</code> and have a <code>Shopify</code> JavaScript object on the page.</p>
+<p>That one check settles most cases. The other methods below help when a site hides the obvious signs, and the last section explains what the answer tells you if you're choosing a platform yourself.</p>
+
+<h2>Six ways to check</h2>
+<ol>
+<li><strong>Look at the page source.</strong> On a computer, right-click the page and choose <strong>View page source</strong> (or press <strong>Ctrl+U</strong>). Press <strong>Ctrl+F</strong> and search for:
+<ul>
+<li><code>wp-content</code> or <code>wp-json</code>: WordPress.</li>
+<li><code>cdn.shopify.com</code> or <code>Shopify.theme</code>: Shopify.</li>
+<li><code>woocommerce</code> in class names or file paths: WordPress with WooCommerce.</li>
+</ul></li>
+<li><strong>Read the URLs.</strong> Shopify stores use fixed paths: <code>/products/</code>, <code>/collections/</code>, <code>/pages/</code> and <code>/cart</code>. WooCommerce often uses <code>/product/</code> (singular) and <code>/product-category/</code>, and WordPress blogs often have dates or <code>/category/</code> in addresses. URLs alone are a hint, not proof, because both platforms can be customised.</li>
+<li><strong>Try the login address.</strong> Add <code>/wp-admin</code> or <code>/wp-login.php</code> to the domain. A WordPress login screen confirms WordPress. Adding <code>/admin</code> to a Shopify store usually redirects to a Shopify login page on a <code>shopify.com</code> address. Don't try to log in; just look at where it lands.</li>
+<li><strong>Check WordPress-only files.</strong> <code>yourdomain.com/wp-json/</code> returns a block of JSON on most WordPress sites, and <code>/license.txt</code> may show the WordPress licence. Security plugins sometimes block these, so a missing file doesn't prove it isn't WordPress.</li>
+<li><strong>Check the browser console on a Shopify suspect.</strong> Press <strong>F12</strong>, open <strong>Console</strong>, type <code>Shopify</code> and press Enter. On a Shopify store it returns an object with the shop's details; elsewhere it says "not defined".</li>
+<li><strong>Use a lookup tool.</strong> Browser extensions such as Wappalyzer, or BuiltWith's free website lookup, list the platform, theme and many apps or plugins in one click. They are quick but occasionally wrong on heavily customised sites.</li>
+</ol>
+
+<h2>On a phone</h2>
+<p>Mobile browsers don't show page source easily. The quickest checks are the address tricks: add <code>/wp-admin</code> or <code>/admin</code>, or look at product URLs for <code>/products/</code> and <code>/collections/</code>. In Chrome on Android you can also type <code>view-source:</code> before the address to see the source.</p>
+
+<h2>When the answer is "neither" or "both"</h2>
+<ul>
+<li><strong>Headless sites.</strong> Some brands use Shopify for checkout with a custom front end, or WordPress only for content behind a JavaScript site. You may see Shopify only at checkout (<code>checkout.shopify.com</code> or a <code>/checkouts/</code> path) and nothing on the home page.</li>
+<li><strong>Shop on a subdomain.</strong> A WordPress site at <code>example.com</code> with a Shopify store at <code>shop.example.com</code> is common. Check both.</li>
+<li><strong>Other platforms.</strong> Wix pages load from <code>static.wixstatic.com</code>, Squarespace from <code>squarespace-cdn.com</code>, and Webflow from <code>website-files.com</code> or similar Webflow addresses.</li>
+<li><strong>Behind Cloudflare.</strong> A CDN hides the server, but not the files the page loads, so the page source check still works.</li>
+</ul>
+
+<h2>What the answer tells you about the business</h2>
+<p>If you're checking competitors to choose a platform, copying their choice isn't enough on its own. Brands on Shopify usually wanted hosting, security and checkout handled for a monthly fee. Businesses on WordPress or WooCommerce usually wanted lower running costs, more control over content and SEO, or Indian payment and shipping setups without app fees. Our comparison of <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a> and the detailed <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> guide go through those trade-offs.</p>
+<p>If you've decided on Shopify and want the store built or set up properly, see our <a href="/shopify-developer/">Shopify developer service</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Can a website use both Shopify and WordPress?</h3>
+<p>Yes. A common setup is WordPress for the blog and main pages with a Shopify store on a subdomain, or the Shopify Buy Button embedded in WordPress pages.</p>
+<h3>Can a site hide that it uses WordPress?</h3>
+<p>It can remove the generator tag and block some files, but the theme and plugin files almost always still load from <code>/wp-content/</code>, so the page source usually gives it away.</p>
+<h3>How do I find which Shopify theme a store uses?</h3>
+<p>In the page source search for <code>Shopify.theme</code>. The line shows a theme name, though stores often rename their theme, so it may not match the theme store name.</p>
+`,
+  },
+  {
+    slug: 'landing-page-size-dimensions',
+    seoTitle: 'Landing Page Size: Standard Width, Height and Image Sizes',
+    title: 'Landing Page Size: Standard Width, Hero Height and Image Dimensions for Desktop and Mobile',
+    description: 'Standard landing page sizes: design widths for desktop and mobile, content width, hero height above the fold, image dimensions and file size limits.',
+    date: '2026-11-11',
+    category: 'Guides',
+    related: ['landing-page-design', 'wordpress-website-development', 'wordpress-speed-optimization'],
+    body: `
+<p>There is no single standard landing page size, but most landing pages are designed at 1440px wide for desktop and 375px to 390px wide for mobile, with the main content kept inside a container of about 1140px to 1280px so it reads well on laptops.</p>
+<p>Height is not fixed: a landing page scrolls. What matters is what fits in the first screen, so the sizes below focus on widths, the hero area and images.</p>
+
+<h2>Common landing page sizes</h2>
+<table>
+<thead><tr><th>Item</th><th>Common size</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Desktop design frame</td><td>1440px wide</td><td>A common laptop and desktop width; designs scale down to 1280px and 1366px laptops</td></tr>
+<tr><td>Content container</td><td>1140px to 1280px max width</td><td>Keeps lines and layouts readable on wide screens</td></tr>
+<tr><td>Text column</td><td>About 600px to 720px</td><td>Roughly 60 to 80 characters per line, comfortable to read</td></tr>
+<tr><td>Mobile design frame</td><td>375px to 390px wide</td><td>Matches common phone widths in CSS pixels</td></tr>
+<tr><td>Tablet check</td><td>768px wide</td><td>Catches layouts that break between phone and laptop</td></tr>
+<tr><td>Desktop first screen</td><td>About 650px to 800px visible height</td><td>What fits on a typical laptop after the browser bar</td></tr>
+<tr><td>Mobile first screen</td><td>About 600px to 700px visible height</td><td>Varies with phone and browser bars</td></tr>
+</tbody>
+</table>
+<p>Most visitors to Indian small business landing pages arrive on phones from ads, WhatsApp or Google, so design the 375px version first and check it on a real phone.</p>
+
+<h2>How to size the hero section</h2>
+<ol>
+<li><strong>Put the offer, one line of proof and the main button in the first screen.</strong> On a 375px phone that is roughly the top 600px.</li>
+<li><strong>Don't force the hero to <code>100vh</code> on mobile.</strong> A full-height hero pushes everything else down, and mobile browser bars change the height as you scroll. A <code>min-height</code> that fits the content is safer.</li>
+<li><strong>Keep the headline short enough</strong> to fit in two or three lines at about 28px to 36px on mobile.</li>
+<li><strong>Show the form or button without scrolling,</strong> or a clear button that jumps to it.</li>
+</ol>
+
+<h2>Image sizes for landing pages</h2>
+<table>
+<thead><tr><th>Image</th><th>Upload size</th><th>File size goal</th></tr></thead>
+<tbody>
+<tr><td>Full-width hero background</td><td>1920px wide (2560px only if it must be very sharp on large screens)</td><td>Under about 200KB as WebP or AVIF</td></tr>
+<tr><td>Hero image beside text</td><td>About 1000px to 1200px wide</td><td>Under about 150KB</td></tr>
+<tr><td>Feature or service images</td><td>About 600px to 800px wide</td><td>Under about 80KB each</td></tr>
+<tr><td>Logos and icons</td><td>SVG where possible</td><td>A few KB</td></tr>
+<tr><td>Social share (Open Graph) image</td><td>1200 x 630px</td><td>Under about 300KB</td></tr>
+</tbody>
+</table>
+<p>These are working targets, not rules. Upload images at about twice the size they display for sharp phone screens, then let WordPress create smaller versions through <code>srcset</code>. Set width and height on images so the layout doesn't jump while loading.</p>
+
+<h2>How long should a landing page be?</h2>
+<p>As long as the offer needs. A simple offer for warm traffic, such as a free consultation for people who searched your service, can work in three or four sections. A higher-priced or unfamiliar offer needs more proof, answers to objections and FAQs. Repeat the call to action after every two or three sections so nobody has to scroll back up.</p>
+
+<h2>Sizes in WordPress and Elementor</h2>
+<ol>
+<li>In Elementor, set the content width at <strong>Site Settings &gt; Layout &gt; Content Width</strong>, for example 1140px.</li>
+<li>Check the breakpoints at <strong>Site Settings &gt; Layout &gt; Breakpoints</strong>. Defaults are mobile up to 767px and tablet up to 1024px.</li>
+<li>Preview each breakpoint with the device icons at the bottom of the editor, then check on a real phone, because the editor preview doesn't show browser bars.</li>
+<li>In the block editor, theme settings at <strong>Appearance &gt; Editor &gt; Styles &gt; Layout</strong> control content and wide widths for block themes.</li>
+</ol>
+
+<h2>Edge cases</h2>
+<ul>
+<li><strong>"Desktop site" on phones.</strong> Some visitors have Chrome's <strong>Desktop site</strong> setting turned on and see a shrunken 980px layout. If a client says the page looks tiny on their phone, check this first.</li>
+<li><strong>Large text settings.</strong> Many people raise font size on their phones, which can push buttons below the first screen. Test with the phone's text size increased.</li>
+<li><strong>Ultra-wide monitors.</strong> Without a max width, a 2560px screen stretches text lines across the whole screen. Always cap the container.</li>
+</ul>
+<p>Size is only one part of a page that converts; see <a href="/blog/landing-page-mistakes-google-ads/">landing page mistakes that waste Google Ads budget</a>, or let our <a href="/landing-page-design/">landing page design service</a> build and test it for you.</p>
+
+<h2>FAQs</h2>
+<h3>What is the standard landing page width?</h3>
+<p>Design at 1440px wide for desktop with content capped at about 1140px to 1280px, and at 375px to 390px for mobile.</p>
+<h3>What size should a landing page hero image be?</h3>
+<p>About 1920px wide for a full-width background, or about 1000px to 1200px when it sits beside text, compressed to WebP.</p>
+<h3>What is above the fold on mobile?</h3>
+<p>Roughly the top 600px to 700px on most phones, which is enough for a headline, a line of proof and one button.</p>
 `,
   },
 ];
