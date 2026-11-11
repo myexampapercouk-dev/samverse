@@ -95,6 +95,18 @@ module.exports = {
 <p>Send me a WhatsApp message with what your business needs, and you will get a fixed quote after a free review.</p>
 `,
   'wordpress-maintenance': `
+<h2>What\'s included in a WordPress maintenance package</h2>
+<p>A WordPress maintenance package is a fixed monthly service that keeps the site updated, backed up, secure and working. Mine covers seven things:</p>
+<ol>
+<li><strong>Updates:</strong> WordPress core, theme and plugins, each after a fresh backup, with key pages, forms and checkout tested afterwards.</li>
+<li><strong>Backups:</strong> scheduled off-site backups stored away from your hosting, so a restore does not depend on the server that failed.</li>
+<li><strong>Security:</strong> malware scans, login protection, removal of unused plugins and a check of who has administrator access.</li>
+<li><strong>Uptime monitoring:</strong> an alert when the site goes down, so it is looked at before customers notice.</li>
+<li><strong>Speed checks:</strong> key pages measured against the starting baseline, with slow-downs traced to the plugin or image causing them.</li>
+<li><strong>Fixes and small edits:</strong> broken links, failing forms and small text, image or price changes.</li>
+<li><strong>Monthly report:</strong> what was updated, checked and fixed, in plain English.</li>
+</ol>
+<p>Packages differ in how often each task runs and how many edits are included, not in the tasks themselves. A busy WooCommerce store needs more frequent backups and a test order after updates; a five-page site does not. Larger jobs such as new pages, redesigns or malware clean-ups are quoted separately before any work starts.</p>
 <h2>How a WordPress maintenance plan starts: the first health check</h2>
 <p>I do not start clicking "update" on day one. Whether I built your site or someone else did, the first job is to understand it, because most maintenance problems come from things nobody knew were there.</p>
 <ol>
@@ -412,6 +424,26 @@ module.exports = {
 <p>The <a href="/blog/website-ownership-checklist/">website handover checklist</a> lists everything you should receive from any developer. To hire me, send your requirements on WhatsApp or through the form, and you will get a fixed quote after a free review.</p>
 `,
   'woocommerce-developer': `
+<h2>WooCommerce development services</h2>
+<p>WooCommerce development services cover everything needed to build, extend or fix a store on WordPress. I am a freelance developer, not an agency, so the person you talk to is the person who builds the store. The work covers:</p>
+<ol>
+<li><strong>New store builds:</strong> design, shop, product, cart and checkout pages, built on staging.</li>
+<li><strong>Payment gateways:</strong> Razorpay, PayU, Cashfree or PhonePe for UPI and cards, PayPal for overseas buyers, and cash on delivery rules.</li>
+<li><strong>GST and invoices:</strong> tax classes, CGST, SGST and IGST by shipping state, and invoices with your GSTIN and HSN codes.</li>
+<li><strong>Shipping:</strong> zones, weight-based or free-shipping rules, courier or aggregator connections and tracking emails.</li>
+<li><strong>Product import and catalogue setup:</strong> categories, attributes and variations, imported from your spreadsheet.</li>
+<li><strong>Migration:</strong> moving products, customers and orders from Shopify or another platform, with redirects for old URLs.</li>
+<li><strong>Custom features and fixes:</strong> checkout changes, plugin conflicts, slow stores and broken order emails.</li>
+<li><strong>Speed and maintenance:</strong> a light, fast checkout on phones, and updates tested with a test order afterwards.</li>
+</ol>
+<h3>Hire a WooCommerce developer: what to check</h3>
+<ul>
+<li>Live stores they built, which you can open and try on your phone.</li>
+<li>A written scope with exclusions and a fixed price, not just a day rate.</li>
+<li>Test orders with the gateway in test mode before launch, including failed payments and webhooks.</li>
+<li>The domain, hosting, gateway account and plugin licences in your name.</li>
+<li>Who looks after updates after launch, and how a broken update is rolled back.</li>
+</ul>
 <h2>WooCommerce store setup in India, step by step</h2>
 <p>An Indian online store has more moving parts than a business website: payment gateway approval, cash on delivery rules, GST and couriers. This is how I set up a WooCommerce store, from your first message to your first real order.</p>
 <ol>
@@ -1142,6 +1174,19 @@ module.exports = {
 <p>Send me your pitch deck or product summary for a free review and a fixed quote.</p>
 `,
   'website-redesign': `
+<h2>Advantages of a website redesign</h2>
+<p>A website redesign is worth it when the current site is costing you enquiries, not just when it looks old. Done properly, it brings these advantages:</p>
+<ol>
+<li><strong>It works on phones.</strong> A mobile-first layout means visitors from Google, WhatsApp and Instagram can read, tap and contact you without zooming.</li>
+<li><strong>Visitors find what they need faster.</strong> A clearer menu and one page per service or product family answer questions before people leave.</li>
+<li><strong>More visitors become enquiries.</strong> Visible call, WhatsApp and form buttons on every key page give ready buyers an obvious next step.</li>
+<li><strong>Pages load faster.</strong> A lighter theme, compressed images and fewer plugins cut the wait that makes visitors give up.</li>
+<li><strong>You can edit it yourself.</strong> Text, photos and prices can be changed from the dashboard instead of waiting for a developer.</li>
+<li><strong>A cleaner base for SEO.</strong> Proper headings, titles, structured data and internal links make each page easier for Google to understand.</li>
+<li><strong>Old problems get fixed in one go.</strong> Abandoned plugins, broken forms, expired licences and accounts in a former developer\'s name are cleaned up.</li>
+<li><strong>It matches your business today.</strong> New services, locations and proof are added, and services you no longer offer are retired with redirects.</li>
+</ol>
+<p>A redesign is not automatically better. If only the photos and buttons are weak, a refresh costs less and carries less risk, and the table below helps you decide.</p>
 <h2>Redesigning a website without losing what works</h2>
 <p>A redesign is the riskiest thing most businesses do to their website. The new design rarely causes trouble; the losses come from pages quietly removed, URLs changed without redirects, or a staging setting left on at launch. This is how I run a redesign so the pages that already bring traffic and enquiries survive it.</p>
 <h2>A redesign project, step by step</h2>

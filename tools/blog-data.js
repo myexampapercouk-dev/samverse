@@ -7311,25 +7311,16 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
   },
   {
     slug: 'website-brief-template',
-    noindex: true,
-    seoTitle: 'Website Brief Template: What to Send Your Web Developer',
-    title: 'Website Brief Template: What to Send Your Web Developer for an Accurate Quote, With a Copy-and-Fill Version',
-    description: 'A website brief template with a copy-and-fill version: what to tell your developer about goals, pages, features, content and budget for an accurate quote.',
+    seoTitle: 'Website Brief Template and Website Redesign RFP Template',
+    title: 'Website Brief Template and Website Redesign RFP Template: What to Send Your Web Developer, With Copy-and-Fill Versions',
+    description: 'A free website brief template and a website redesign RFP template to copy: goals, pages, features, content, SEO migration, budget and evaluation criteria.',
     date: '2026-09-27',
-    updated: '2026-11-07',
+    updated: '2026-11-11',
     category: 'Guides',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
 <p>A website brief is a short document that tells a web developer what your business does, what the website must achieve, which pages and features it needs, who will provide content, and your timeline and budget range. Sending a clear brief gets you accurate, comparable quotes instead of guesses; the copy-and-fill template below covers everything a developer needs and takes about an hour to complete.</p>
 <p>Two to four pages of honest answers beat a polished document full of jargon.</p>
-
-<h2>What a good brief does for you</h2>
-<ul>
-<li><strong>Accurate quotes:</strong> developers price what you describe. Vague briefs get padded quotes to cover the unknown, or low quotes that grow later.</li>
-<li><strong>Comparable quotes:</strong> when everyone quotes the same scope, you can compare price, approach and timeline fairly.</li>
-<li><strong>Fewer disputes:</strong> the brief becomes the basis of the scope, which later decides what is a bug and what is a change.</li>
-<li><strong>Clearer thinking:</strong> writing it often shows you which features you actually need.</li>
-</ul>
 
 <h2>The website brief template, section by section</h2>
 <h3>1. About your business</h3>
@@ -7398,6 +7389,66 @@ Budget range:
 After launch: we will update it / need maintenance / need SEO
 Main contact person and best time to reach:</code></pre>
 
+<h2>Website redesign RFP template</h2>
+<p>A website redesign RFP (request for proposal) is a brief written for a formal selection: several developers or agencies get the same document, a deadline to reply and the criteria you will judge them on. Use it when more than one person signs off the choice, or when you need written proposals you can score side by side. For a small site, the brief above is enough.</p>
+<p>A redesign RFP needs two things a new-site brief does not: <strong>what is wrong with the current site</strong>, and <strong>what must survive the move</strong>, such as URLs that rank, forms that bring enquiries and accounts in your name. Copy this outline and replace each line with your answers:</p>
+<pre><code>WEBSITE REDESIGN RFP
+
+1. Company background
+   What we do, where we sell, who decides, main contact.
+
+2. Goals of the redesign
+   Top 3 goals, and how we will measure each
+   (e.g. enquiries per month, online orders, bookings).
+
+3. Current site problems
+   Current URL and platform:
+   What does not work (mobile layout, speed, editing, design, leads):
+   What does work and must be kept:
+
+4. Scope and pages
+   Page list for the new site (or "propose a structure"):
+   Pages that share a layout vs unique pages:
+
+5. Features
+   Must-have:
+   Nice-to-have / phase two:
+
+6. Content
+   Who writes, edits and translates text; who supplies photos:
+   Content that moves from the old site as it is:
+
+7. Integrations
+   Payments, shipping, CRM, email marketing, analytics, ERP:
+
+8. SEO and migration needs
+   Top pages from Search Console that must keep ranking:
+   Require a URL redirect map (old URL -> new URL) before launch: Yes
+   Platform change? From ___ to ___
+   Who checks Search Console after launch, and for how long:
+
+9. Timeline
+   Proposal deadline:
+   Decision date:
+   Target launch (fixed or flexible):
+
+10. Budget range
+   Range: ____ to ____ (incl. or excl. GST)
+   Ongoing budget for hosting / maintenance:
+
+11. Evaluation criteria
+   e.g. relevant past work, approach to SEO migration,
+   clarity of scope and exclusions, timeline, price, support.
+
+12. Submission instructions
+   Send to:            By (date):
+   Include: scope, exclusions, milestones, fixed price or
+   estimate, payment terms, who does the work, post-launch
+   support, and confirmation that domain, hosting, code
+   and licences will be in our name.</code></pre>
+<p>Two points most RFP templates skip. First, ask who will actually do the work, because an agency may pass the build to a subcontractor and a freelancer does it personally. Second, state the evaluation criteria in the RFP itself; when bidders know you score the SEO migration plan, you get a real plan instead of a line saying "SEO-friendly".</p>
+<p>Redesigns carry the risk of losing rankings, so read <a href="/blog/redesign-website-without-losing-rankings/">redesigning without losing rankings</a> before you send it, or see how a <a href="/website-redesign/">website redesign</a> project runs.</p>
+
 <h2>How to fill in the sections that drive cost</h2>
 <p>Some sections change the quote far more than others. Spend most of your time on these:</p>
 <table>
@@ -7412,30 +7463,10 @@ Main contact person and best time to reach:</code></pre>
 </table>
 <p>For more on how these factors turn into a price, read <a href="/blog/wordpress-website-cost-india/">WordPress website cost in India</a> and <a href="/blog/wordpress-website-cost-india/">hidden website costs</a>.</p>
 
-<h2>Extra sections for redesigns, stores and agencies</h2>
-<p><strong>Redesigns:</strong> add your current traffic sources, top pages from Google Search Console, and what does not work on the current site. Note that existing URLs and rankings must be protected; see <a href="/blog/redesign-website-without-losing-rankings/">redesign without losing rankings</a>.</p>
+<h2>Extra sections for stores and agencies</h2>
 <p><strong>Online stores:</strong> add product count, payment and shipping partners, GST invoicing needs, COD rules and return policy. Our <a href="/blog/ecommerce-website-cost-india/">e-commerce website cost guide</a> explains what each adds.</p>
 <p><strong>Agencies outsourcing a build:</strong> add design files (Figma links), the hosting environment, coding standards, deadlines for each milestone, who talks to the end client, and whether the work is white-label.</p>
 
-<h2>Using the brief to compare quotes</h2>
-<p>Send the same brief to every developer, then compare:</p>
-<ul>
-<li>Does each quote list what is included and what is not?</li>
-<li>Did they ask sensible questions about unclear points?</li>
-<li>Do timelines include your content and feedback rounds?</li>
-<li>Is post-launch support, warranty and training mentioned?</li>
-<li>Who owns the domain, hosting, code and licences at the end?</li>
-</ul>
-<p>A much lower quote often leaves out items others included. Our guide on how to <a href="/blog/compare-website-quotes/">compare website quotes</a> walks through this in detail.</p>
-
-<h2>Common brief mistakes</h2>
-<ul>
-<li><strong>"Like Amazon, but simpler":</strong> naming huge platforms without saying which features you mean.</li>
-<li><strong>Listing every possible feature:</strong> separate must-haves from later phases to keep the first launch affordable.</li>
-<li><strong>Hiding the budget:</strong> developers then guess, and the quotes are hard to compare.</li>
-<li><strong>Ignoring content:</strong> assuming the developer will write all the text without saying so.</li>
-<li><strong>No single decision-maker:</strong> feedback from five people with different views delays everything.</li>
-</ul>
 <p>Once you have a brief ready, send it to me through the enquiry form and I will reply with questions or a quote for <a href="/wordpress-website-development/">WordPress website development</a>, or see how it works when you <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>.</p>
 
 <h2>A filled-in example: a physiotherapy clinic</h2>
@@ -7449,11 +7480,6 @@ Main contact person and best time to reach:</code></pre>
 <li><strong>Content:</strong> therapists will write condition pages in rough form; we need editing. Photos of both branches needed.</li>
 <li><strong>Timeline:</strong> launch before a new branch opens; date fixed.</li>
 </ul>
-<p>Notice the nice-to-have list. Booking with live slots and payments is a separate piece of work; parking it for phase two keeps the first launch focused while letting the developer plan for it.</p>
-
-<h2>What happens after you send the brief</h2>
-<p>A careful developer usually replies with questions before quoting. Expect questions about content readiness, integrations, who approves designs, and what "done" means for each feature. Then you should receive a written proposal with scope, exclusions, milestones, payment terms, timeline and support terms. Read the exclusions first; that is where quotes differ most. Once agreed, the brief and proposal together become the reference for the whole project, so keep both in one shared folder.</p>
-
 <h2>Technical details and access to share</h2>
 <p>Developers lose days chasing logins. In the brief, say who controls each account, and be ready to share access securely once the project starts (through a password manager or by adding the developer as a user, never by posting passwords in a group chat):</p>
 <ul>
@@ -7470,15 +7496,7 @@ Main contact person and best time to reach:</code></pre>
 <p><strong>Design only:</strong> if you want a designer to create Figma designs that someone else will build, the brief should also list the pages that need unique designs, the breakpoints (phone, tablet, desktop), and whether a style guide or component library is needed for the developer.</p>
 <p><strong>Small websites:</strong> even a five-page site benefits from a one-page brief. Goals, page list, content readiness and budget range take ten minutes to write and still prevent most misunderstandings.</p>
 
-<h2>Is the brief the same as the project scope?</h2>
-<p>No. The brief is your description of what you want. The scope (or statement of work) is the developer's written response: exactly what will be delivered, what is excluded, the milestones and the acceptance criteria. The brief feeds the scope, and the signed scope is what decides later whether something is a bug or a change request; see <a href="/blog/website-bug-vs-change-request/">bug vs change request</a>.</p>
-
-<h2>Attach what you already have</h2>
-<p>Along with the brief, attach anything that saves the developer guessing: your logo files in the highest quality available, brand guidelines, a company profile or brochure PDF, existing product lists in a spreadsheet, photos you own, and screenshots of competitor or reference pages with notes on what you like. Label files clearly so they are easy to find later.</p>
-
 <p>Deciding who to send it to? See <a href="/blog/freelancer-vs-agency-web-developer/">freelancer vs agency</a> and the questions to ask before hiring.</p>
-
-<p>Brand assets checklist: <a href="/blog/logo-favicon-brand-basics-website/">logo, favicon and brand basics</a>.</p>
 
 <p>Once you choose a developer, agree the details in writing; see the <a href="/blog/website-design-contract-checklist/">website contract checklist</a>.</p>
 
@@ -7498,6 +7516,8 @@ Main contact person and best time to reach:</code></pre>
 <h2>FAQs</h2>
 <h3>What should a website brief include?</h3>
 <p>Your business overview, goals, audience, list of pages, features, who provides content, design examples, technical details, timeline, budget range and what support you need after launch.</p>
+<h3>What is a website redesign RFP?</h3>
+<p>A request for proposal sent to several developers or agencies, describing the current site, the goals of the redesign, scope, SEO migration needs, timeline, budget range and how proposals will be judged, so the replies can be compared fairly.</p>
 <h3>How long should a website brief be?</h3>
 <p>Two to four pages is enough for most business websites. Clear answers matter more than length.</p>
 <h3>Should I share my budget with a web developer?</h3>
