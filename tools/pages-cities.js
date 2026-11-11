@@ -47,11 +47,11 @@ const CITIES = [
     city: 'Mumbai',
     slug: 'wordpress-shopify-developer-mumbai',
     nav: 'WordPress & Shopify Developer in Mumbai',
-    title: 'WordPress & Shopify Developer in Mumbai | Samverse',
-    description: 'Freelance WordPress and Shopify developer for Mumbai businesses: fast service websites, WooCommerce and Shopify stores, redesigns and fixes. Fixed quotes.',
+    title: 'WordPress Website Development in Mumbai | Samverse',
+    description: 'WordPress website development in Mumbai, Thane and Navi Mumbai: service sites and stores built remotely from Pune, with staging reviews and fixed quotes.',
     eyebrow: 'Mumbai, Thane & Navi Mumbai',
-    h1: 'WordPress & Shopify developer for <span class="grad">Mumbai</span> businesses',
-    lead: 'I build fast WordPress websites and Shopify stores for Mumbai businesses, from D2C brands and consultants to clinics and traders. I\'m based in Pune, a few hours down the expressway, and work with Mumbai clients directly over WhatsApp, calls and video.',
+    h1: 'WordPress website development in <span class="grad">Mumbai</span>',
+    lead: 'Samverse offers WordPress website development in Mumbai for consultants, CA and law firms, clinics, D2C brands and traders, with Shopify stores where they fit better. I\'m based in Pune, a few hours down the expressway, and work with Mumbai clients directly over WhatsApp, calls and video.',
     pains: [
       ['Competing in a crowded market', 'Mumbai buyers compare several options on their phone before calling. Clear service pages, proof of work and one-tap WhatsApp make you the easy choice.'],
       ['D2C brands that need to sell online', 'Shopify stores set up with UPI, cards and cash on delivery, shipping, GST invoices and a theme that loads quickly on mobile data.'],
@@ -164,11 +164,11 @@ const CITIES = [
     city: 'Ahmedabad',
     slug: 'wordpress-shopify-developer-ahmedabad',
     nav: 'WordPress & Shopify Developer in Ahmedabad',
-    title: 'WordPress & Shopify Developer in Ahmedabad | Samverse',
-    description: 'WordPress and Shopify developer for Ahmedabad and Gujarat traders, manufacturers and brands: catalogue websites, B2B enquiry sites and online stores.',
+    title: 'Shopify Development in Ahmedabad: WordPress Too | Samverse',
+    description: 'Shopify development for Ahmedabad textile, wholesale and D2C brands, with COD, GST invoices and bulk enquiries, plus WordPress catalogue websites.',
     eyebrow: 'Ahmedabad & Gandhinagar',
-    h1: 'WordPress & Shopify developer for <span class="grad">Ahmedabad</span>',
-    lead: 'Ahmedabad businesses, from textile and chemical manufacturers to pharma suppliers, traders and food brands, need websites that turn visitors into enquiries and orders. I build WordPress catalogue sites and Shopify stores that do exactly that.',
+    h1: 'Looking for a Shopify development company in <span class="grad">Ahmedabad</span>?',
+    lead: 'Samverse is a freelance developer, not an agency, offering Shopify development for Ahmedabad businesses, plus WordPress catalogue sites. Ahmedabad businesses, from textile and chemical manufacturers to pharma suppliers, traders and food brands, need websites that turn visitors into enquiries and orders. I build WordPress catalogue sites and Shopify stores that do exactly that.',
     pains: [
       ['Big catalogues, simple management', 'Products organised by category with specifications and bulk enquiry forms, easy to update from the WordPress admin.'],
       ['Wholesale and retail together', 'WooCommerce or Shopify stores that can show retail prices to consumers and take bulk enquiries from dealers.'],
@@ -534,6 +534,16 @@ const guides = {
   'wordpress-shopify-developer-mumbai': `
 <h2>Websites for Mumbai businesses: what usually matters</h2>
 <p>Mumbai buyers are busy and compare quickly, mostly on their phones. The websites that win are the ones that load fast, show proof and make contact one tap away.</p>
+<h2>WordPress website development for Mumbai, done remotely</h2>
+<p>Samverse is based in Pune, not Mumbai, so a Mumbai project is run remotely, in a way that suits busy owners and partners:</p>
+<ol>
+<li><strong>A short first call.</strong> A 20 to 30 minute phone or video call at a time that suits you, including early mornings or evenings if your working day is full.</li>
+<li><strong>One WhatsApp thread.</strong> Questions, content and approvals in one place, with the final decision-maker included so sign-off does not stall.</li>
+<li><strong>Staging links instead of meetings.</strong> Every stage is shared on a private staging link you can check on your phone between meetings or on a commute.</li>
+<li><strong>Screen-share walkthroughs.</strong> Reviews and the handover training happen on video, recorded if your team wants to watch again.</li>
+<li><strong>An in-person meeting when it helps.</strong> Pune is close to Mumbai, so a meeting can be arranged for a larger project.</li>
+</ol>
+<p>Everything runs on Indian time, so there is no timezone gap. Typical Mumbai WordPress projects are service sites for CA firms, lawyers and consultants, clinic sites, B2B sites for traders and importers, and content sites for agencies and media businesses, with <a href="/shopify-developer/">Shopify</a> or <a href="/woocommerce-developer/">WooCommerce</a> stores for fashion, food and lifestyle brands.</p>
 <h2>Common Mumbai projects</h2>
 <ul>
 <li><strong>D2C and fashion brands</strong> launching on Shopify, with UPI, COD, shipping and GST invoices set up from day one.</li>
@@ -599,6 +609,16 @@ const guides = {
   'wordpress-shopify-developer-ahmedabad': `
 <h2>Websites for Ahmedabad manufacturers, traders and brands</h2>
 <p>Ahmedabad and the wider Gujarat belt have a dense mix of manufacturers, traders and family brands. The most useful websites here are catalogue and enquiry sites, and stores that handle both retail and wholesale buyers.</p>
+<h2>Shopify development for Ahmedabad businesses</h2>
+<p>Many Ahmedabad textile, apparel, handicraft and food businesses sell both wholesale and retail. A Shopify store for them usually needs:</p>
+<ol>
+<li><strong>Catalogues with variants.</strong> Fabrics, colours, sizes and pack quantities organised into collections customers can filter.</li>
+<li><strong>Wholesale and retail together.</strong> Retail prices online, with bulk or dealer orders taken as enquiries, a minimum order quantity or a separate trade price setup where the plan and apps allow.</li>
+<li><strong>Cash on delivery.</strong> COD enabled alongside Razorpay or another Indian gateway for UPI and cards, with COD limits if returns are a concern.</li>
+<li><strong>GST invoices.</strong> Tax settings, your GSTIN and invoice numbering set up so every order has a proper GST invoice, including B2B buyers who need their GSTIN on it.</li>
+<li><strong>WhatsApp on product pages.</strong> So buyers can ask about a design or a bulk quantity before ordering.</li>
+</ol>
+<p>Samverse is a freelance developer rather than a Shopify development company, so you deal directly with the person building the store. See <a href="/shopify-developer/">Shopify development</a> for how projects run.</p>
 <h2>Catalogue websites that bring enquiries</h2>
 <p>Each product or category gets its own page with specifications, photos and an enquiry button that records which product the buyer asked about. That helps buyers and helps Google index every product.</p>
 <h2>Retail plus wholesale</h2>

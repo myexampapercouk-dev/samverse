@@ -5,6 +5,17 @@ module.exports = {
   'wordpress-developer-pune': `
 <h2>Hiring a website developer in Pune: a practical guide</h2>
 <p>If you run a business in Pune, Pimpri-Chinchwad or Mumbai and are comparing developers, this covers how a project with me runs, what local businesses usually need, a checklist you can use on anyone (me included) and the local SEO basics to launch with.</p>
+<h2>Ecommerce website development in Pune</h2>
+<p>For an online store, the choice is usually WooCommerce or Shopify, and I build on both, so the advice is about your products rather than a preference. Pune shops, food brands, manufacturers and D2C brands usually need the same few things set up properly before the first order:</p>
+<ol>
+<li><strong>The right platform.</strong> <a href="/woocommerce-developer/">WooCommerce development</a> suits stores that want lower running costs, full control and plenty of content; <a href="/shopify-developer/">Shopify development</a> suits brands that want hosting, security and checkout handled for them.</li>
+<li><strong>Cash on delivery.</strong> COD enabled with the rules you want, such as a minimum order value or limited pin codes, since many Indian buyers still prefer it.</li>
+<li><strong>Online payments.</strong> Razorpay or another Indian gateway for UPI, cards and net banking, tested with real orders before launch.</li>
+<li><strong>GST invoices.</strong> Tax settings, your GSTIN and invoice numbering set up so every order produces a proper GST invoice.</li>
+<li><strong>Shipping.</strong> Rates by zone or weight, and a courier or shipping aggregator connected where it saves manual work.</li>
+<li><strong>Mobile-first product pages.</strong> Clear photos, variants, delivery details and a WhatsApp button, because most buyers shop on their phones.</li>
+</ol>
+<p>The store, domain and payment accounts stay in your business name, and you are shown how to add products and process orders at handover.</p>
 <h2>How working together works</h2>
 <p>I work on my own, so the person you message is the person building your site. Most projects use three channels, each for what it does best:</p>
 <ul>
@@ -594,6 +605,17 @@ module.exports = {
 <li><strong>Personal brands.</strong> Dr. Sudhir Arora's site has a page for each life challenge his programs address and a free anxiety self-assessment tool to engage visitors.</li>
 <li><strong>Directories and portals.</strong> Our Temples lists temples by state and by deity, with user registration and Telugu content, while India Automation Hub organises a large volume of technical news into a deep category structure.</li>
 </ul>
+<h2>WordPress development services I offer</h2>
+<ol>
+<li><strong>Business and service websites</strong> with a page for each service, forms and WhatsApp.</li>
+<li><strong>WooCommerce online stores</strong> with Indian payments, COD and GST invoices; see <a href="/woocommerce-developer/">WooCommerce development</a>.</li>
+<li><strong>Catalogue and B2B websites</strong> with product specifications and enquiry forms.</li>
+<li><strong>Website redesigns and migrations</strong> with 301 redirects; see <a href="/website-redesign/">website redesign</a>.</li>
+<li><strong>Figma or design to WordPress</strong> builds in Elementor or the block editor.</li>
+<li><strong>Speed optimization</strong>; see <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</li>
+<li><strong>SEO foundations</strong>: titles, schema, sitemap and Search Console.</li>
+<li><strong>Maintenance and support</strong>; see <a href="/wordpress-maintenance/">WordPress maintenance</a>.</li>
+</ol>
 <h2>A freelancer or a WordPress development company?</h2>
 <p>If you searched for a WordPress development company in India, you should know what you are getting here: one developer, not a company with departments. You talk directly to the person building your site, with no account manager in between and no agency overheads in the price. That suits business websites, catalogues and portals with one clear decision-maker. If you need branding, copywriting, photography and ads handled by one team at the same time, a larger agency may suit you better.</p>
 <h2>What is included, and what is not</h2>
@@ -1873,6 +1895,18 @@ module.exports = {
 <li><strong>Migration.</strong> Stores moved from WooCommerce, WordPress or Wix to Shopify, or the other way, with 301 redirects. See <a href="/blog/migrate-woocommerce-to-shopify/">moving from WooCommerce to Shopify</a>.</li>
 <li><strong>Monthly support.</strong> Theme edits, new banners and sections, app checks and fixes when something breaks, on an agreed monthly scope.</li>
 </ul>
+<h2>How to choose a Shopify development company or developer</h2>
+<p>Whether you are shortlisting the best Shopify development company for your brand or a freelancer, the same checks apply:</p>
+<ol>
+<li><strong>Open live stores they built.</strong> Check them on your phone: speed, product pages and checkout.</li>
+<li><strong>Ask who does the work.</strong> Find out whether the person you talk to builds the store or hands it on.</li>
+<li><strong>Get a written scope and fixed quote.</strong> It should list pages, apps, payments and shipping, and what counts as extra.</li>
+<li><strong>Ask how theme edits are made.</strong> Work should happen on a duplicate theme, never on the live store.</li>
+<li><strong>Check Indian payment and tax experience.</strong> Razorpay or another gateway, cash on delivery and GST invoices should be familiar.</li>
+<li><strong>Ask which apps they will install, and why.</strong> Every app adds monthly cost and scripts; fewer is usually better.</li>
+<li><strong>Confirm ownership.</strong> The Shopify account, domain and payment accounts must be in your name, with collaborator access only.</li>
+<li><strong>Agree support after launch.</strong> Know who fixes things when an app update breaks a section.</li>
+</ol>
 <h2>Shopify developer in Pune, working with stores across India</h2>
 <p>Samverse is based in Pune and works remotely with Shopify stores across India, over WhatsApp, calls and screen sharing, so the city you sell from makes no difference to how the project runs. If you are in Pune and prefer to meet in person, that can be arranged. For other cities, see Shopify store development in <a href="/wordpress-shopify-developer-mumbai/">Mumbai</a>, <a href="/wordpress-shopify-developer-bangalore/">Bangalore</a>, <a href="/wordpress-shopify-developer-delhi/">Delhi</a> and <a href="/wordpress-shopify-developer-hyderabad/">Hyderabad</a>, or the <a href="/wordpress-shopify-developer-india/">India-wide page</a>.</p>
 <h2>What a Shopify project costs</h2>
