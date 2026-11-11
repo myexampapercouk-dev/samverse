@@ -47771,6 +47771,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <h2>When to get help</h2>
 <p>Get help when order emails do not arrive, when you need GST invoices attached, or when you want template changes that survive WooCommerce updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers email templates and reliable sending. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>If the emails are not arriving at all, see <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I customize WooCommerce emails?</h3>
 <p>Use WooCommerce, Settings, Emails for logo, colours and text, the block email editor or a customiser plugin for layout, and child theme template overrides for exact control.</p>
@@ -67361,6 +67363,8 @@ any unused part of the advance refunded as agreed</code></pre>
 <h2>When to get help</h2>
 <p>Get help when the block editor shows "Updating failed", when you need WordPress connected to a CRM, app or inventory system, or when an integration needs secure authentication. <a href="/hire-wordpress-developer/">Hire a WordPress developer</a> to plan and build it, or see <a href="/wordpress-website-development/">WordPress website development</a>. <a href="/#contact">Get in touch</a> with what you want to connect.</p>
 
+<p>If a WooCommerce integration gets a 401 Unauthorized reply, see <a href="/blog/woocommerce-rest-api-401-error/">fixing the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the WordPress REST API?</h3>
 <p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
@@ -71953,6 +71957,8 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>If payments are failing and you are losing orders, fixing it fast matters more than learning every detail. A <a href="/woocommerce-developer/">WooCommerce developer</a> can check gateway settings, webhooks, logs and conflicts and set up monitoring so it does not happen again. You can also <a href="/wordpress-shopify-developer-india/">hire a WordPress developer in India</a> for ongoing <a href="/wordpress-maintenance/">WooCommerce maintenance</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>If the gateway settings themselves refuse to save, see <a href="/blog/woocommerce-error-saving-settings/">WooCommerce error saving settings</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WooCommerce payment gateway not working in India?</h3>
 <p>The usual causes are wrong keys or mode, an inactive or under-review gateway account, webhooks not reaching the site, caching on checkout pages, or a plugin conflict. Check settings, webhook logs and WooCommerce logs first.</p>
@@ -73424,6 +73430,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Get help when you are choosing between plans and apps before launch, when the app bill keeps growing, or when you need Indian payments, COD controls and GST invoices set up properly. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review of your plans and a fixed quote for the setup, with the store, domain and every subscription in your own name.</p>
+
+<p>If Shopify will not accept your card for the monthly bill, see <a href="/blog/shopify-error-adding-card/">fixing Shopify card errors in billing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Is Shopify cheaper than WooCommerce in India?</h3>
@@ -76157,6 +76165,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Most store owners can remove the password themselves. Get help if the store is ready but checkout, the domain or the gateway is not, or if you want the launch done in one go without missing steps. A <a href="/shopify-developer/">Shopify developer</a> can run the full pre-launch check, fix what fails and take the store live, and you can work with a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> remotely from any city. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>If you cannot log in because the verification code is not arriving, see <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification code</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I remove the password page on Shopify?</h3>
 <p>Go to Online Store, then Preferences, untick the option that restricts access to visitors with the password, and save. You need an active paid plan for this to work.</p>
@@ -77605,6 +77615,238 @@ define( 'WP_DEBUG_DISPLAY', false );
 <p>About 1920px wide for a full-width background, or about 1000px to 1200px when it sits beside text, compressed to WebP.</p>
 <h3>What is above the fold on mobile?</h3>
 <p>Roughly the top 600px to 700px on most phones, which is enough for a headline, a line of proof and one button.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-not-sending-order-emails',
+    seoTitle: 'WooCommerce Not Sending Order Emails? 8 Fixes',
+    title: 'WooCommerce Not Sending Order Emails? 8 Fixes That Work (Customer and Admin)',
+    description: 'WooCommerce order emails fail because the email is switched off, the order never reaches the right status, or server mail is blocked. Fix it step by step.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>WooCommerce is not sending order emails because the notification is switched off, the order never reached the status that triggers it, or your server's default PHP mail is being blocked or sent to spam.</p>
+<p>The third cause is the most common. WordPress sends mail through PHP's <code>mail()</code> function unless you tell it otherwise, and many hosts limit it or receiving servers distrust it. The fixes below go from quickest to most involved.</p>
+
+<h2>First, find out which emails are missing</h2>
+<ul>
+<li><strong>Only the admin "New order" email is missing:</strong> usually a wrong recipient address or the shop's own inbox filtering it.</li>
+<li><strong>Only customer emails are missing:</strong> usually deliverability (spam folders, no SPF or DKIM) or a payment that never moved the order to Processing.</li>
+<li><strong>No emails at all, including password resets:</strong> the server isn't sending mail. Go straight to fix 3.</li>
+</ul>
+
+<h2>How to fix WooCommerce order emails</h2>
+<ol>
+<li><strong>Check each email is enabled.</strong> Go to <strong>WooCommerce &gt; Settings &gt; Emails</strong>. Click <strong>Manage</strong> next to New order, Processing order and Completed order, and make sure <strong>Enable this email notification</strong> is ticked. For New order, check the <strong>Recipient(s)</strong> field; it often still holds an old developer's or agency's address.</li>
+<li><strong>Check the order status.</strong> Customer emails fire on status changes, not on order creation. The Processing order email goes when an order moves to Processing, and the Completed email when you mark it Completed. Orders stuck in <strong>Pending payment</strong> or <strong>Failed</strong> send no customer email. If online payments stay Pending, the gateway's callback isn't reaching your site; see <a href="/blog/woocommerce-payment-gateway-not-working-india/">payment gateway not working</a>.</li>
+<li><strong>Send mail through SMTP.</strong> Install an SMTP plugin such as WP Mail SMTP, FluentSMTP or Post SMTP and connect it to a real mailbox or sending service (Google Workspace, Zoho, Brevo, Amazon SES or your host's email). Use the plugin's <strong>Send a test email</strong> tool. If the test arrives, order emails will too. Our <a href="/blog/wordpress-not-sending-emails-smtp/">WordPress SMTP guide</a> covers the settings for each provider.</li>
+<li><strong>Use a "From" address on your own domain.</strong> In <strong>WooCommerce &gt; Settings &gt; Emails</strong>, scroll to <strong>Email sender options</strong>. Set <strong>"From" address</strong> to something like orders@yourdomain.com, not a Gmail address. Gmail and Yahoo reject or junk mail that claims to be from their domains but comes from your server.</li>
+<li><strong>Add SPF, DKIM and DMARC records.</strong> Without them, customer emails land in spam even when they are sent. Add the records your mail provider gives you in your domain's DNS. See <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a>.</li>
+<li><strong>Check the email log.</strong> Most SMTP plugins can log every message. If WooCommerce emails appear in the log as sent, the problem is delivery (spam or the recipient's server). If they don't appear at all, WooCommerce never triggered them; go back to fixes 1 and 2.</li>
+<li><strong>Check scheduled actions.</strong> Some stores and plugins send emails in the background. Go to <strong>Tools &gt; Scheduled Actions</strong> and look at the <strong>Pending</strong> and <strong>Failed</strong> tabs. A long Pending queue means WP-Cron isn't running, often because the site gets little traffic or cron is disabled in <code>wp-config.php</code>. Set up a real server cron job that calls <code>wp-cron.php</code> every few minutes.</li>
+<li><strong>Rule out a plugin conflict.</strong> Check <strong>WooCommerce &gt; Status &gt; Logs</strong> for fatal errors around the order time. Then, on a staging copy, deactivate plugins other than WooCommerce and your SMTP plugin, place a test order, and reactivate them one at a time. Email customiser and order status plugins are frequent causes.</li>
+</ol>
+
+<h2>Edge cases most guides skip</h2>
+<ul>
+<li><strong>Manual orders don't email automatically.</strong> When you create an order in <strong>WooCommerce &gt; Orders &gt; Add order</strong>, the customer gets nothing until you choose <strong>Send order details to customer</strong> from <strong>Order actions</strong> and click <strong>Update</strong>.</li>
+<li><strong>Cash on delivery orders go to Processing.</strong> Bank transfer (BACS) and cheque orders go to On hold instead, which sends the On-hold order email, not Processing. If you disabled On-hold, those customers get nothing.</li>
+<li><strong>Your own inbox may hide them.</strong> If the From address and the admin recipient are the same mailbox, some providers file the message as sent mail or drop it. Use a different recipient for New order emails.</li>
+<li><strong>Host sending limits.</strong> Shared hosting often caps outgoing mail per hour. A sale or bulk status update can hit the cap and the rest silently fail. A dedicated sending service avoids this.</li>
+<li><strong>A staging copy with mail disabled.</strong> If the live site was cloned from staging, a "disable emails" setting or plugin may have come across with it.</li>
+</ul>
+
+<p>If emails still don't arrive after SMTP is working, the problem is usually in the order flow or a plugin. Our <a href="/woocommerce-developer/">WooCommerce developer service</a> can trace it on a staging copy and fix it without touching live orders. To change how the emails look rather than whether they send, see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a>.</p>
+
+<h2>FAQs</h2>
+<h3>Why does WooCommerce send the admin email but not the customer email?</h3>
+<p>Usually the order didn't reach Processing (so no customer email fired), or the customer's provider put it in spam. Check the order notes, which record each email sent.</p>
+<h3>Do I need an SMTP plugin for WooCommerce?</h3>
+<p>For a store, yes in practice. PHP mail works on some hosts but has no authentication, so it is far more likely to be blocked or junked.</p>
+<h3>How do I resend a WooCommerce order email?</h3>
+<p>Open the order, choose <strong>Resend new order notification</strong> or <strong>Send order details to customer</strong> under <strong>Order actions</strong>, and click <strong>Update</strong>.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-error-saving-settings',
+    seoTitle: 'WooCommerce Error Saving Settings? How to Fix It',
+    title: 'WooCommerce Error Saving Settings? 7 Fixes for Settings That Won\'t Save',
+    description: 'WooCommerce settings fail to save because a firewall, cache or plugin blocks the request, or the server limits it. Step-by-step fixes with menu paths.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-maintenance'],
+    body: `
+<p>WooCommerce shows an error saving settings, or quietly reverts them, because something between your browser and the database blocks the save: a security firewall, a caching layer, a conflicting plugin, an expired login session, or a server limit on how much data a form can send.</p>
+<p>Work through the fixes in order. Most stores are sorted by fix 2 or 3.</p>
+
+<h2>How to fix WooCommerce settings that won't save</h2>
+<ol>
+<li><strong>Reload, log in again and retry.</strong> WordPress forms carry a security token (a nonce) that expires. If the page was open for hours, the save is rejected. Log out, log back in, open the settings fresh and save again. Also try a private browser window to rule out an extension such as an ad blocker.</li>
+<li><strong>Check the firewall.</strong> Security plugins such as Wordfence, and server firewalls such as ModSecurity or Cloudflare's WAF, sometimes flag settings that contain code-like text (HTML in email footers, scripts in tracking fields, long API keys). In Wordfence, go to <strong>Wordfence &gt; Firewall</strong> and check the blocked requests log; allowlist the action if it's yours. On cPanel or Hostinger, ask the host whether ModSecurity blocked a <code>POST</code> to <code>/wp-admin/admin.php</code>. A 403 Forbidden right after clicking Save almost always means a firewall.</li>
+<li><strong>Clear and exclude caches.</strong> Purge your caching plugin, server cache and CDN. Make sure <code>/wp-admin/</code> is excluded from page caching. If an object cache (Redis or Memcached) is running, flush it; a stale object cache can show old values after a successful save, which looks exactly like a failed save.</li>
+<li><strong>Read the logs.</strong> Go to <strong>WooCommerce &gt; Status &gt; Logs</strong> and look for <strong>fatal-errors</strong> entries at the time you saved. For more detail, enable <code>WP_DEBUG_LOG</code> in <code>wp-config.php</code> and check <code>/wp-content/debug.log</code>. Our guide to the <a href="/blog/wordpress-error-log-location/">WordPress error log</a> explains how.</li>
+<li><strong>Test for a plugin or theme conflict.</strong> On a staging copy, switch to a default theme such as Storefront or Twenty Twenty-Four and deactivate everything except WooCommerce. If saving works, reactivate plugins one at a time. Translation plugins, other payment plugins and admin customisers are the usual suspects. A gateway's settings may only fail with one particular plugin active.</li>
+<li><strong>Raise the PHP input limit.</strong> Pages with many fields (shipping zones with many rates, table rate plugins, long product lists) can exceed <code>max_input_vars</code>, which defaults to 1000 on many servers. PHP drops the extra fields without an error, so the bottom part of the form doesn't save. Raise it to 3000 or more in your host's PHP settings or <code>php.ini</code>. Check the current value under <strong>WooCommerce &gt; Status &gt; System status</strong>.</li>
+<li><strong>Re-save permalinks and check the REST API.</strong> Newer WooCommerce screens (Payments, Home, Analytics, some settings pages) save through the WordPress REST API, not a normal form. Go to <strong>Settings &gt; Permalinks</strong> and click <strong>Save Changes</strong>. Then check <strong>Tools &gt; Site Health</strong> for a REST API error. If a security plugin disables the REST API for logged-in users, those screens can't save.</li>
+</ol>
+
+<h2>Edge cases most guides skip</h2>
+<ul>
+<li><strong>Two admin tabs overwrite each other.</strong> If you or a colleague saved the same settings page in another tab, the later save wins and your change seems to vanish.</li>
+<li><strong>A setting is fixed in code.</strong> Some values are forced by a filter in the theme's <code>functions.php</code>, a code snippets plugin or <code>wp-config.php</code>. The field saves, but the forced value is used. Search the theme and snippets for the option name.</li>
+<li><strong>Database write problems.</strong> A full disk or a crashed <code>wp_options</code> table means nothing saves anywhere in WordPress, not just WooCommerce. If general settings don't save either, contact your host.</li>
+<li><strong>Multilingual settings.</strong> With WPML or Polylang, some WooCommerce strings are saved per language. Changing them in one language doesn't change the other.</li>
+</ul>
+
+<p>If the settings that won't save are your payment gateway's, see <a href="/blog/woocommerce-payment-gateway-not-working-india/">payment gateway not working</a> as well. If you'd rather hand it over, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can find the conflict on a staging copy so the live store keeps taking orders.</p>
+
+<h2>FAQs</h2>
+<h3>Why do my WooCommerce settings go back to the old values?</h3>
+<p>Usually a cache (page, server or object cache) is showing the old value, or a code snippet forces it. Purge every cache, then reload the settings page.</p>
+<h3>Can a security plugin stop WooCommerce settings saving?</h3>
+<p>Yes. Firewalls can block saves that contain HTML, scripts or long keys. Check the plugin's blocked requests log or ask your host about ModSecurity.</p>
+<h3>Is it safe to disable plugins to test?</h3>
+<p>Do it on a staging copy. Disabling plugins on a live store can break checkout for real customers while you test.</p>
+`,
+  },
+  {
+    slug: 'woocommerce-rest-api-401-error',
+    seoTitle: 'WooCommerce REST API 401 Error: Causes and Fixes',
+    title: 'WooCommerce REST API 401 Unauthorized Error: 7 Causes and Fixes',
+    description: 'A WooCommerce REST API 401 means your keys never reached WordPress or lack permission. Fix the Authorization header, HTTPS, key scope and redirects.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['woocommerce-developer', 'wordpress-website-development'],
+    body: `
+<p>The WooCommerce REST API returns a 401 Unauthorized error because WordPress didn't receive valid credentials: the server stripped the Authorization header, the request used plain HTTP, the keys are wrong or revoked, or the key belongs to a user without permission.</p>
+<p>The error usually comes with a code such as <code>woocommerce_rest_cannot_view</code> ("Sorry, you cannot list resources"), <code>woocommerce_rest_authentication_error</code> or <code>woocommerce_rest_cannot_create</code>. The code tells you whether WooCommerce saw your keys at all.</p>
+
+<h2>Read the error code first</h2>
+<ul>
+<li><strong><code>woocommerce_rest_cannot_view</code> or <code>cannot_create</code>:</strong> WooCommerce treated the request as coming from nobody, or from a user who can't do that. Most often the keys never arrived.</li>
+<li><strong><code>woocommerce_rest_authentication_error</code> with "Consumer key is invalid":</strong> the keys arrived but don't match. Check for typos or revoked keys.</li>
+<li><strong>"Invalid signature":</strong> you are on plain HTTP using OAuth 1.0a, and the signature was built for a different URL than the one the server sees.</li>
+</ul>
+
+<h2>How to fix a WooCommerce REST API 401</h2>
+<ol>
+<li><strong>Use HTTPS.</strong> Over HTTPS, WooCommerce accepts the consumer key and secret through HTTP Basic Auth. Over plain HTTP it expects OAuth 1.0a signatures instead, so a Basic Auth request on <code>http://</code> fails. Make sure the site has SSL and that your request URL starts with <code>https://</code>.</li>
+<li><strong>Pass the Authorization header through to PHP.</strong> Many Apache and some CGI/FastCGI setups drop the <code>Authorization</code> header before PHP sees it. Add this near the top of <code>.htaccess</code>, above the WordPress block:
+<pre><code>RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]</code></pre>
+Some hosts need <code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code> instead. On Nginx, ask the host to pass the header to PHP-FPM.</li>
+<li><strong>Test with query-string credentials.</strong> As a diagnosis, call <code>https://yourdomain.com/wp-json/wc/v3/products?consumer_key=ck_...&amp;consumer_secret=cs_...</code>. If this works and the header doesn't, the server is stripping the header (fix 2). Keep query-string keys to HTTPS only, because they end up in server logs.</li>
+<li><strong>Check the key's permissions.</strong> Go to <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong>. A <strong>Read</strong> key gets 401 on <code>POST</code>, <code>PUT</code> or <code>DELETE</code>. Generate a <strong>Read/Write</strong> key if your app creates or updates orders or products.</li>
+<li><strong>Check the key's user.</strong> Each key is tied to a WordPress user. If that user was deleted, demoted from Administrator or Shop Manager, or had capabilities removed by a role plugin, the key stops working. Create a fresh key for an active admin or shop manager.</li>
+<li><strong>Avoid redirects.</strong> If the request goes to <code>http://</code> or the non-www address and gets a 301 to the real URL, many HTTP clients follow the redirect but drop the Authorization header, so the second request arrives with no credentials. Call the exact final URL, including <code>https://</code> and the right www or non-www form, so there is no redirect.</li>
+<li><strong>Check permalinks and security plugins.</strong> With <strong>Plain</strong> permalinks, <code>/wp-json/</code> doesn't exist; use <code>?rest_route=/wc/v3/products</code> or switch permalinks to <strong>Post name</strong> in <strong>Settings &gt; Permalinks</strong>. Security plugins that "disable REST API for non-logged-in users" also block key-based requests; allow the <code>wc/</code> namespace.</li>
+</ol>
+
+<h2>Edge cases most guides skip</h2>
+<ul>
+<li><strong>Old <code>/wc-api/</code> URLs.</strong> The Legacy REST API (<code>/wc-api/v3/</code>) was removed from WooCommerce core in version 9.0 and now needs a separate plugin. Old integrations calling it fail. Move them to <code>/wp-json/wc/v3/</code>.</li>
+<li><strong>Cloudflare or a host firewall.</strong> A WAF rule can block requests from a server IP or strip headers. If the 401 or 403 page looks like Cloudflare's, check the firewall events.</li>
+<li><strong>Keys with spaces.</strong> Copying keys from email or a PDF can add a space or line break. Paste them into a plain text editor first.</li>
+<li><strong>Staging and live keys.</strong> Keys are stored in the database. Keys made on staging don't exist on live unless the database was copied, and a database copy brings staging keys to live.</li>
+</ul>
+
+<p>For how the REST API fits into WordPress generally, see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a>. If an ERP, courier, marketplace or app integration still won't connect, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can debug the request end to end.</p>
+
+<h2>FAQs</h2>
+<h3>Where do I create WooCommerce API keys?</h3>
+<p>Go to <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong> and click <strong>Add key</strong>. The secret is shown only once, so copy it straight away.</p>
+<h3>Why does the API work in Postman but not in my app?</h3>
+<p>Usually your app hits a redirect and drops the header, uses <code>http://</code>, or uses a Read key for a write request.</p>
+<h3>What's the difference between 401 and 403 here?</h3>
+<p>401 means WooCommerce didn't accept who you are. 403 often comes from a firewall or a user who is known but not allowed.</p>
+`,
+  },
+  {
+    slug: 'shopify-error-adding-card',
+    seoTitle: 'Shopify Error Adding Card to Billing? How to Fix It',
+    title: 'Shopify "There Was an Error Adding Your Card"? How to Fix Billing Card Errors (India Notes)',
+    description: 'Shopify rejects a billing card because details don\'t match the bank, the card type isn\'t accepted or the bank blocks it. Fixes for Indian cards too.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india'],
+    body: `
+<p>Shopify shows an error adding your card because the card details or billing address don't match what your bank has on file, the card type isn't accepted (prepaid cards usually aren't), or your bank declines the verification charge, which with Indian cards is often because international or recurring online payments aren't enabled.</p>
+<p>This post is about adding a card to pay your Shopify bill. If customers see card errors at your checkout, see <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a> instead.</p>
+
+<h2>How to fix the error</h2>
+<ol>
+<li><strong>Re-enter the details carefully.</strong> Go to <strong>Settings &gt; Billing</strong>, then <strong>Payment methods</strong>, and add the card again. Check the card number, expiry and CVV, and type the billing address exactly as your bank has it, including the postcode or PIN code. Avoid browser autofill for the address; a filled-in field the form doesn't recognise, such as state, can cause a rejection.</li>
+<li><strong>Use an accepted card.</strong> Shopify accepts Visa, Mastercard and American Express credit and debit cards for billing. Prepaid and gift cards are usually refused. In India, RuPay-only cards may not work for international billing, so use a Visa or Mastercard.</li>
+<li><strong>Enable international and online use (India).</strong> Shopify bills from outside India, so the bank sees an international online transaction. In your bank's app or net banking, open card settings and turn on <strong>International usage</strong> and <strong>Online transactions</strong>, and set a limit high enough for the charge. Many Indian debit cards have these off by default.</li>
+<li><strong>Allow recurring payments.</strong> Under RBI rules on recurring card payments, a card saved for recurring charges needs the bank to support e-mandates, and you may need to approve the first charge with an OTP. Some banks or card types don't support them for international merchants. If your card fails, ask the bank whether it supports e-mandates for international recurring charges, or try a credit card from another bank.</li>
+<li><strong>Clear the browser state.</strong> Log in from a private window or another browser with extensions off. Ad blockers and privacy extensions can block the card form, which loads from a payment processor.</li>
+<li><strong>Wait out "too many attempts".</strong> After several failed tries, Shopify can block new cards for a while. Stop retrying, call your bank to see why the attempts were declined, then try once the block lifts or contact Shopify support from the admin.</li>
+<li><strong>Use a different method if offered.</strong> Depending on your country and plan, Shopify may also offer PayPal or another method on the same screen. Paying the bill matters more than which card does it; an unpaid bill freezes the store.</li>
+</ol>
+
+<h2>Edge cases most guides skip</h2>
+<ul>
+<li><strong>The bank shows a small charge you don't recognise.</strong> Card checks often place a small temporary authorisation that falls off. It isn't a payment, and it can show even when the card is then rejected.</li>
+<li><strong>Your card works elsewhere.</strong> A card that pays for Indian sites can still fail at Shopify, because the international and recurring settings are separate from domestic online use.</li>
+<li><strong>Staff can't add cards.</strong> Only the store owner, or staff with billing permission, can change payment methods. A staff account may see an error or no option at all.</li>
+<li><strong>Frozen store.</strong> If a bill already failed, the store may be frozen until you pay. Adding a working card and paying the outstanding bill under <strong>Settings &gt; Billing</strong> lifts it.</li>
+</ul>
+
+<p>Watch for fake "Shopify support" numbers in search results and social media. Contact support only from <strong>Help</strong> inside your Shopify admin or help.shopify.com, and never share your card details or login code with anyone who calls you.</p>
+<p>For what you'll be paying each month and why, see <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>. If you're setting up a new store and want billing, domain and payments done together, our <a href="/shopify-developer/">Shopify developer service</a> covers it.</p>
+
+<h2>FAQs</h2>
+<h3>Can I pay Shopify with a debit card in India?</h3>
+<p>Often yes, with a Visa or Mastercard debit card that has international and online use turned on. Some banks' debit cards don't support international recurring charges.</p>
+<h3>Why does Shopify keep declining my card?</h3>
+<p>Usually a mismatched billing address, a card type Shopify doesn't take, or the bank blocking international charges. Your bank can see the decline and tell you the reason.</p>
+<h3>Will my store close if the card fails?</h3>
+<p>Not straight away, but unpaid bills lead to the store being frozen. Add a working payment method and pay the bill to restore it.</p>
+`,
+  },
+  {
+    slug: 'shopify-not-sending-verification-code',
+    seoTitle: 'Shopify Not Sending Verification Code to Phone? Fixes',
+    title: 'Shopify Not Sending Verification Code to Your Phone? How to Get Back In',
+    description: 'Shopify login codes fail to arrive due to carrier filtering, an old number, DND or delays. Use recovery codes, then switch to an authenticator app.',
+    date: '2026-11-11',
+    category: 'E-commerce',
+    related: ['shopify-developer', 'wordpress-shopify-developer-india'],
+    body: `
+<p>Shopify is not sending a verification code to your phone because the SMS is delayed or filtered by your mobile carrier, the number on your account is old or entered wrongly, or your phone is blocking messages from unknown short codes; the fastest way back in is a recovery code or an authenticator app.</p>
+<p>The steps below cover the login code for your Shopify account (two-step authentication). If customers aren't getting codes to log in to your store, that's a different setting; see the edge cases.</p>
+
+<h2>How to get the code or log in without it</h2>
+<ol>
+<li><strong>Wait a minute, then request once more.</strong> SMS codes can take a few minutes. Requesting many codes quickly can trigger a temporary limit and makes older codes invalid. Use only the newest one.</li>
+<li><strong>Check signal and blocking on the phone.</strong> Turn airplane mode on and off. Check your phone's spam or "unknown senders" SMS folder. On Android, open Messages, then <strong>Spam &amp; blocked</strong>. On iPhone, check <strong>Settings &gt; Apps &gt; Messages</strong> for <strong>Filter Unknown Senders</strong>.</li>
+<li><strong>Check DND in India.</strong> Transactional OTPs should pass DND (Do Not Disturb) registration, but international senders' messages can still be filtered by Indian carriers. If your carrier app has a DND or spam filter, relax it and retry. If you're travelling, roaming must be on to receive SMS.</li>
+<li><strong>Use a recovery code.</strong> On the code screen, choose the option to try another method and select <strong>recovery code</strong>. Shopify gave you recovery codes when you set up two-step authentication. Each works once.</li>
+<li><strong>Use another method you set up.</strong> If you added an authenticator app (Google Authenticator, Microsoft Authenticator, Authy) or a security key, pick it from the same screen.</li>
+<li><strong>Contact Shopify through the login help flow.</strong> If you have no recovery codes and no other method, use the help link on the login screen or help.shopify.com. Shopify will verify ownership, which can take time. Have the store URL, account email and recent billing details ready.</li>
+<li><strong>Once back in, switch to an app.</strong> Go to your Shopify account settings, open <strong>Security</strong>, and under two-step authentication add an <strong>authenticator app</strong> or <strong>security key</strong>. Generate new recovery codes and store them in a password manager. Update the phone number if it changed.</li>
+</ol>
+
+<h2>Edge cases most guides skip</h2>
+<ul>
+<li><strong>Codes went to a former developer's phone.</strong> If an agency or freelancer set up the store under their details, the code goes to them. Ask them to send it or transfer store ownership properly, under <strong>Settings &gt; Users</strong>. See <a href="/blog/website-ownership-checklist/">website ownership checklist</a> for what else to collect.</li>
+<li><strong>Customer login codes.</strong> With new customer accounts, customers log in with a code sent to their email, not SMS. If those don't arrive, it's an email deliverability problem; see <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>.</li>
+<li><strong>Shopify POS or the mobile app.</strong> The Shopify app can ask for the same login code. If you're logged in on another device, you may be able to approve the login there.</li>
+<li><strong>Dual-SIM phones.</strong> The SMS goes to the SIM with that number. Check that SIM is active and has signal, not just the data SIM.</li>
+</ul>
+
+<p>Beware of scammers. Search results and social media carry fake "Shopify support" phone numbers aimed at locked-out owners. Shopify will never ask you for the code you just received. Only use help links from shopify.com.</p>
+<p>If you've just regained access, it's a good time to review staff accounts and apps. Our <a href="/shopify-developer/">Shopify developer service</a> can audit who has access and tidy up ownership.</p>
+
+<h2>FAQs</h2>
+<h3>Can I turn off SMS codes on Shopify?</h3>
+<p>You can replace SMS with an authenticator app or security key in your account's Security settings, which is more reliable and safer than SMS.</p>
+<h3>I lost my recovery codes. What now?</h3>
+<p>If you're still logged in somewhere, generate new ones in Security settings. If you're locked out, go through Shopify's login help to verify ownership.</p>
+<h3>Why does the code say expired?</h3>
+<p>Codes are short-lived and each new request replaces the old one. Request one, wait, and use only the latest.</p>
 `,
   },
 ];
