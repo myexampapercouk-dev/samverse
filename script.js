@@ -69,6 +69,8 @@ if ("IntersectionObserver" in window) {
     });
   }, { threshold: 0.12 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  // Safety net: never leave content hidden (slow devices, anchor jumps, background tabs)
+  setTimeout(() => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")), 1500);
 } else {
   document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
 }
