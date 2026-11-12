@@ -232,7 +232,7 @@ const guides = {
 `,
   'wordpress-shopify-developer-uk': `
 <h2>Freelance WordPress developer for the UK: what I do</h2>
-<p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for a wide range of UK small businesses and agencies. Everything below is work I do day to day.</p>
+<p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for UK small businesses and agencies, covering a wide range of WordPress and Shopify work. Everything below is work I do day to day.</p>
 <h3>WordPress development</h3>
 <p>New WordPress websites built on a lightweight theme or custom blocks, editable by you without a page-builder mess. Redesigns of existing sites, keeping your URLs and rankings intact.</p>
 <h3>WooCommerce development</h3>
