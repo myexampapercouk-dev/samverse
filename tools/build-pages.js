@@ -66,6 +66,8 @@ const LIVE_POSTS = POSTS.filter(p => !p.noindex); // posts Google should see and
 const SUMMARIES = require('./blog-summaries');
 const H1 = require("./h1-overrides"); // keyword-led H1s for posts and case studies
 
+// Self-hosted WebP screenshots in assets/work/<host>.webp (1200x750) and -800.webp; mShots only as a fallback
+const localShot = (url, w800) => { const f = `/assets/work/${new URL(url).hostname.replace(/^www\./, '').replace(/\./g, '-')}${w800 ? '-800' : ''}.webp`; return fs.existsSync(path.join(ROOT, f)) ? f : null; };
 // Static portfolio cards (crawlable links); script.js only manages the screenshots
 const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names.includes(p.name)).map(p => {
   const host = new URL(p.url).hostname.replace(/^www\./, '');
@@ -975,8 +977,6 @@ console.log('built /blog/ + feed.xml');
 
 // ===================== CASE STUDIES (/work/<slug>/) =====================
 const WORK = require('./work-data');
-// Self-hosted WebP screenshots in assets/work/<host>.webp (1200x750) and -800.webp; mShots only as a fallback
-const localShot = (url, w800) => { const f = `/assets/work/${new URL(url).hostname.replace(/^www./, '').replace(/./g, '-')}${w800 ? '-800' : ''}.webp`; return fs.existsSync(path.join(ROOT, f)) ? f : null; };
 const shotFor = w => w.thumb || localShot(w.url) || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`;
 
 const renderWork = (w, i) => {
