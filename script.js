@@ -77,7 +77,7 @@ if ("IntersectionObserver" in window) {
 // CONFIG: fill these in when the accounts exist. Leave empty and nothing extra loads.
 //   ga4: GA4 Measurement ID ("G-..."), only needed if config.js isn't already loading GA4
 //   adsConversion: Google Ads conversion "AW-XXXXXXXXX/AbCdEfGh" for the form lead
-window.SAMVERSE_TRACKING = window.SAMVERSE_TRACKING || { ga4: "G-E1VBTDV47L", adsConversion: "" };
+window.SAMVERSE_TRACKING = window.SAMVERSE_TRACKING || { ga4: "G-E1VBTDV47L", adsConversion: "AW-18571127566/GPM-CLXr_bYdEI7Ws5dF" };
 window.dataLayer = window.dataLayer || [];
 (function (t) {
   // Live domain only, like config.js
