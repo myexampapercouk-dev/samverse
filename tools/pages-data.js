@@ -497,7 +497,7 @@ const PAGES = [
     slug: 'wordpress-developer-pune',
     nav: 'WordPress Developer in Pune',
     title: 'Website Developer & Web Design in Pune | Samverse',
-    description: 'Website design and development in Pune for business websites and ecommerce stores on WordPress, WooCommerce and Shopify, with COD, Razorpay and GST invoices.',
+    description: 'Website design and development in Pune for business sites and ecommerce stores on WordPress, WooCommerce and Shopify, with COD, Razorpay and GST invoices.',
     eyebrow: 'Based in Pune',
     h1: 'Website developer in Pune for <span class="grad">WordPress &amp; Shopify</span>',
     lead: 'Samverse is a freelance website developer in Pune who builds business websites on WordPress and online stores on WooCommerce and Shopify. Since 2020 I\'ve built fast, mobile-friendly websites for businesses, clinics, manufacturers, restaurants and agencies, and I work directly with every client, from the first call to launch and beyond.',
