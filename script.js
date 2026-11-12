@@ -28,13 +28,14 @@ document.querySelectorAll(".work-thumb img[data-shot]").forEach(img => {
 
 // ---------- Header shadow on scroll ----------
 const header = document.querySelector(".header");
-const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 10);
+const onScroll = () => header && header.classList.toggle("scrolled", window.scrollY > 10);
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
 // ---------- Mobile menu ----------
 const toggle = document.getElementById("menuToggle");
 const links = document.getElementById("navLinks");
+if (toggle && links) {
 toggle.addEventListener("click", () => {
   const open = links.classList.toggle("open");
   toggle.setAttribute("aria-expanded", open);
@@ -43,6 +44,7 @@ links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
   links.classList.remove("open");
   toggle.setAttribute("aria-expanded", "false");
 }));
+}
 
 // ---------- Hero counters (hero is visible immediately) + reveal on scroll ----------
 const countUp = el => {
@@ -71,9 +73,64 @@ if ("IntersectionObserver" in window) {
   document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
 }
 
+// ---------- Ads conversion tracking (Google Ads / GA4 / Meta via GTM dataLayer) ----------
+// CONFIG: fill these in when the accounts exist. Leave empty and nothing extra loads.
+//   ga4: GA4 Measurement ID ("G-..."), only needed if config.js isn't already loading GA4
+//   adsConversion: Google Ads conversion "AW-XXXXXXXXX/AbCdEfGh" for the form lead
+window.SAMVERSE_TRACKING = window.SAMVERSE_TRACKING || { ga4: "G-E1VBTDV47L", adsConversion: "" };
+window.dataLayer = window.dataLayer || [];
+(function (t) {
+  // Live domain only, like config.js
+  if (!/(^|\.)samverse\.space$/.test(location.hostname)) return;
+  const id = t.ga4 || (t.adsConversion ? t.adsConversion.split("/")[0] : "");
+  if (!id || typeof window.gtag === "function") {
+    // gtag already loaded by config.js: just add our IDs to it
+    if (id && t.ga4) gtag("config", t.ga4);
+    if (id && t.adsConversion) gtag("config", t.adsConversion.split("/")[0]);
+    return;
+  }
+  const g = document.createElement("script");
+  g.async = true;
+  g.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+  document.head.appendChild(g);
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  if (t.ga4) gtag("config", t.ga4);
+  if (t.adsConversion) gtag("config", t.adsConversion.split("/")[0]);
+})(window.SAMVERSE_TRACKING);
+
+// UTM / click-ID capture: first landing values are kept for the session and sent with the form
+const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "fbclid"];
+const getUtm = () => { try { return JSON.parse(sessionStorage.getItem("sv_utm") || "{}"); } catch (e) { return {}; } };
+try {
+  const q = new URLSearchParams(location.search);
+  const found = {};
+  UTM_KEYS.forEach(k => { if (q.get(k)) found[k] = q.get(k).slice(0, 100); });
+  if (Object.keys(found).length) sessionStorage.setItem("sv_utm", JSON.stringify(found));
+} catch (e) {}
+const utmString = () => Object.entries(getUtm()).map(([k, v]) => k + "=" + v).join("&");
+
+const trackEvent = (name, params = {}) => {
+  const data = Object.assign({ form_page: location.pathname }, getUtm(), params);
+  window.dataLayer.push(Object.assign({ event: name }, data));
+  if (typeof gtag === "function") {
+    gtag("event", name, data);
+    const conv = window.SAMVERSE_TRACKING.adsConversion;
+    if (name === "generate_lead" && conv) gtag("event", "conversion", { send_to: conv });
+  }
+};
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[href]");
+  if (!a) return;
+  const href = a.getAttribute("href");
+  if (href.startsWith("https://wa.me/") || href.startsWith("https://api.whatsapp.com/")) trackEvent("whatsapp_click", { link_text: a.textContent.trim().slice(0, 60) });
+  else if (href.startsWith("tel:")) trackEvent("phone_click");
+});
+
 // ---------- Contact form spam protection ----------
 // Math question + hidden honeypot field + minimum time on page.
 const form = document.getElementById("contactForm");
+if (form) {
 const captchaQ = document.getElementById("captchaQ");
 const captchaInput = document.getElementById("captchaInput");
 const formError = document.getElementById("formError");
@@ -114,6 +171,7 @@ form.addEventListener("submit", async e => {
   const payload = new URLSearchParams(new FormData(f));
   payload.delete("captcha");
   payload.set("page", location.pathname);
+  if (utmString()) payload.set("utm", utmString());
 
   // Email the enquiry; WhatsApp still opens if email fails, so no lead is lost
   let emailed = false;
@@ -130,7 +188,7 @@ form.addEventListener("submit", async e => {
     emailed = (await res.json().catch(() => ({}))).ok === true;
   } catch (err) {}
 
-  if (typeof gtag === "function") gtag("event", "generate_lead", { form_name: "contact", emailed });
+  trackEvent("generate_lead", { form_name: "contact", emailed });
 
   // Note: an input named "name" shadows form.name, so f.name.value reads the Name field
   const text =
@@ -148,8 +206,11 @@ form.addEventListener("submit", async e => {
   setTimeout(() => { location.href = `https://wa.me/917417049145?text=${encodeURIComponent(text)}`; }, 1200);
 });
 
+}
+
 // ---------- Footer year ----------
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ---------- Analytics: track contact clicks and portfolio visits (GA4) ----------
 document.addEventListener("click", e => {

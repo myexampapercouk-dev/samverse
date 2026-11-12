@@ -1223,6 +1223,9 @@ EXTRA.forEach(x => {
   console.log('built', `/${x.slug}/`);
 });
 
+// Paid-ads landing pages (/lp/...): noindex, not in the sitemap, nav or llms.txt
+require('./lp-pages')({ ROOT, SITE, WA, esc, headCommon, contact, projectCards });
+
 // Homepage "From the blog": 3 pinned essentials + the 3 newest other articles
 {
   const PINNED = ['wordpress-website-cost-india', 'why-is-my-wordpress-site-slow', 'clinic-website-checklist-for-doctors'];

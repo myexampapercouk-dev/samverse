@@ -51,6 +51,7 @@ $f = [
 	'type'    => $clip('type', 60),
 	'message' => $clip('message', 4000),
 	'page'    => $clip('page', 200),
+	'utm'     => $clip('utm', 300),
 ];
 if ($f['name'] === '' || $f['phone'] === '') {
 	reply(400, ['ok' => false, 'error' => 'Name and phone are required']);
@@ -80,7 +81,7 @@ if (empty($cfg['mail_to'])) {
 $oneLine = function ($s) { return trim(preg_replace('/[\r\n]+/', ' ', $s)); };
 $isEmail = function ($s) { return (bool) preg_match('/^[^\s@,;<>"]+@[^\s@,;<>"]+\.[^\s@,;<>"]+$/', $s); };
 
-$rows = [['Name', $f['name']], ['Phone', $f['phone']], ['Email', $f['email']], ['Project type', $f['type']], ['Message', $f['message']], ['Sent from', $f['page']]];
+$rows = [['Name', $f['name']], ['Phone', $f['phone']], ['Email', $f['email']], ['Project type', $f['type']], ['Message', $f['message']], ['Sent from', $f['page']], ['Ad source', $f['utm']]];
 $text = "New {$f['form']} request from samverse.space\n\n";
 foreach ($rows as $r) {
 	if ($r[1] !== '') {
