@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
-  <link rel="stylesheet" href="/style.min.css?v=f0b84cd9">
+  <link rel="stylesheet" href="/style.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -284,8 +284,8 @@
 <p>A platform migration is a rebuild with your content carried across, not a copy. Each platform has its own catch:</p>
 <ul>
 <li><strong>Wix</strong> has no export of its design, so pages are rebuilt in WordPress, images re-uploaded and blog posts often imported from the RSS feed; see <a href="/blog/migrate-wix-to-wordpress/">moving from Wix to WordPress</a>.</li>
-<li><strong>Blogger</strong> posts and comments import well, but images hosted on Blogger must be pulled into your media library and old post URLs redirected; see moving from Blogger to WordPress.</li>
-<li><strong>Shopify</strong> products, customers and orders can move to WooCommerce, but customer passwords usually cannot, and /products/ and /collections/ URLs need mapping; see moving from Shopify to WooCommerce.</li>
+<li><strong>Blogger</strong> posts and comments import well, but images hosted on Blogger must be pulled into your media library and old post URLs redirected; see <a href="/blog/migrate-blogger-to-wordpress/">moving from Blogger to WordPress</a>.</li>
+<li><strong>Shopify</strong> products, customers and orders can move to WooCommerce, but customer passwords usually cannot, and /products/ and /collections/ URLs need mapping; see <a href="/blog/migrate-shopify-to-woocommerce/">moving from Shopify to WooCommerce</a>.</li>
 <li><strong>Squarespace, Joomla and static HTML</strong> follow the same pattern: list every page, move the content, map the URLs.</li>
 </ul>
 <p>Because the design is rebuilt anyway, many clients refresh it at the same time; that becomes a <a href="/website-redesign/">website redesign</a> with the migration included.</p>
@@ -294,7 +294,7 @@
 <ul>
 <li><strong>Staging and a temporary address.</strong> The copied site is tested through a preview URL or a hosts-file change on my computer before your domain points to it.</li>
 <li><strong>DNS TTL lowered in advance,</strong> so when the record changes, most visitors reach the new host within minutes to a few hours rather than a day.</li>
-<li><strong>Email records recreated exactly.</strong> If your email runs on Google Workspace, Zoho or your old host, the MX, SPF, DKIM and DMARC records are copied to the new DNS before nameservers change. This is the most common migration mistake; SPF, DKIM and DMARC explained covers what each record does.</li>
+<li><strong>Email records recreated exactly.</strong> If your email runs on Google Workspace, Zoho or your old host, the MX, SPF, DKIM and DMARC records are copied to the new DNS before nameservers change. This is the most common migration mistake; <a href="/blog/business-email-deliverability-spf-dkim-dmarc/">SPF, DKIM and DMARC explained</a> covers what each record does.</li>
 </ul>
 <p>For stores, the switch happens in a quiet period, and orders placed on the old site during the change are synced across.</p>
 <h2>SEO-safe redirects</h2>
