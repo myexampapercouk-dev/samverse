@@ -77,7 +77,7 @@ const REGIONS = [
     when: 'usually by the start of your next business day',
     slug: 'wordpress-shopify-developer-usa',
     nav: 'WordPress & Shopify Developer for the USA',
-    title: 'WordPress & Shopify Developer for US Businesses | Samverse',
+    title: 'Freelance WordPress & Shopify Developer USA | Samverse',
     description: 'Freelance WordPress and Shopify developer for US businesses: sales tax apps, ADA-minded accessibility, Stripe and Shopify Payments. Invoiced in USD.',
     eyebrow: 'East Coast to West Coast',
     h1: 'Freelance WordPress &amp; Shopify developer for <span class="grad">US</span> businesses, invoiced in USD',
@@ -179,11 +179,55 @@ const REGIONS = [
       ['WPML or Polylang for a multilingual site?', 'WPML suits larger sites and WooCommerce stores that need translated products, attributes and checkout. Polylang is lighter and works well for brochure sites in two or three languages. I recommend one after seeing how many languages and pages you have.'],
     ],
   },
+  {
+    region: 'Australia',
+    cur: 'AUD',
+    when: 'usually by the start of your next business day',
+    slug: 'wordpress-shopify-developer-australia',
+    nav: 'WordPress & Shopify Developer for Australia',
+    title: 'Shopify & WordPress Developer for Australia | Samverse',
+    description: 'Freelance Shopify and WordPress developer for Australian businesses, working remotely from India: GST, Afterpay, Australia Post shipping and fast stores.',
+    eyebrow: 'Sydney, Melbourne, Brisbane, Perth & Adelaide',
+    h1: 'Freelance Shopify &amp; WordPress developer for <span class="grad">Australian</span> businesses',
+    lead: 'I build Shopify and WooCommerce stores and WordPress websites for Australian businesses and agencies, working remotely from Pune, India. Your afternoon overlaps my working morning, the store is set up for GST, Afterpay and Australian shipping, and every account stays in your name.',
+    pains: [
+      ['Afternoon overlap, overnight progress', 'India is 4.5 hours behind Sydney and Melbourne (5.5 during daylight saving) and 2.5 hours behind Perth. Your afternoon is my morning, so calls are easy then, and feedback sent late in your day is often done when you start the next one.'],
+      ['GST set up properly', 'Prices shown including 10% GST, tax settings that match your registration, and your ABN on tax invoices and order emails.'],
+      ['Payments Australians use', 'Shopify Payments or Stripe for cards, Apple Pay and Google Pay, plus Afterpay, Zip or PayPal once each provider has approved your business.'],
+      ['Shipping that quotes correctly', 'Australia Post, Sendle or courier rates by postcode or zone, free-shipping thresholds and separate rates for New Zealand if you ship there.'],
+    ],
+    gets: ['Shopify stores', 'WooCommerce stores', 'WordPress business websites', 'Shopify theme customisation', 'Store migrations', 'Speed optimisation', 'White-label work for Australian agencies', 'Monthly maintenance'],
+    projects: ['Southern Flavours', 'Third Eye Social', 'Streak Creative', 'Vansh Group'],
+    areaServed: [country('Australia'), city('Sydney'), city('Melbourne'), city('Brisbane'), city('Perth'), city('Adelaide')],
+    readingFrom: 'shopify-developer',
+    faqs: [
+      ['Are you based in Australia?', 'No. Samverse is a freelance developer based in Pune, India, working remotely for Australian clients. If you need someone who can visit your office, a local developer will suit you better; if you are happy working over email, video calls and WhatsApp, the work is the same.'],
+      ['Are you a Shopify Partner directory expert?', 'Samverse is not listed in the Shopify Partner directory. You get a freelance Shopify developer who works inside your store as a collaborator or staff user, makes theme changes on a duplicate theme and hands everything back in your name.'],
+      ['Can you set up Afterpay or Zip?', 'Yes, once Afterpay or Zip has approved your business. On Shopify they are added as payment methods; on WooCommerce through the provider plugin, then tested with a real order flow before launch.'],
+      ['Do you build accessible sites?', 'Sites are built to follow WCAG 2.1 AA, the standard referred to under Australian accessibility guidance: headings, labels, contrast, alt text and keyboard use, checked on key pages before launch.'],
+    ],
+  },
 ];
 
 const pages = REGIONS.map(page);
 
 const guides = {
+  'wordpress-shopify-developer-australia': `
+<h2>Hiring a freelance Shopify or WordPress developer from Australia</h2>
+<p>To be clear upfront: Samverse is not based in Australia. I work remotely from Pune, India. Many Australian store owners and agencies work this way because one developer handles the build, the store settings and later fixes, with a written scope and fixed quote before anything starts, and the store, domain and payment accounts registered in your business name.</p>
+<h2>Australian store setup checklist</h2>
+<ul>
+<li><strong>GST:</strong> prices including 10% GST, tax settings matching your registration, ABN on tax invoices.</li>
+<li><strong>Payments:</strong> Shopify Payments or Stripe, Apple Pay and Google Pay, and Afterpay, Zip or PayPal once approved.</li>
+<li><strong>Shipping:</strong> Australia Post, Sendle or courier rates by postcode or zone, with click and collect if you have a shop.</li>
+<li><strong>Accessibility and privacy:</strong> WCAG 2.1 AA checks on templates and checkout, and a privacy policy and cookie notice you have reviewed.</li>
+</ul>
+<h2>Working hours across Australian time zones</h2>
+<p>India is 4.5 hours behind AEST and 5.5 hours behind AEDT, 3.5 to 4 hours behind Brisbane and Adelaide, and 2.5 hours behind Perth. In practice, calls work best in your afternoon, which is my morning, and the rest runs by email, Loom videos and WhatsApp.</p>
+<h2>Proof of work</h2>
+<p>There is no Australian case study yet. You can check live work for <a href="/work/southern-flavours/">Southern Flavours</a> in the UK and <a href="/work/third-eye-social/">Third Eye Social</a>, and for store work see <a href="/shopify-developer/">Shopify development</a> and <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
+<p>Also selling to the US? See the <a href="/wordpress-shopify-developer-usa/">USA page</a>.</p>
+`,
   'wordpress-shopify-developer-uk': `
 <h2>Freelance WordPress developer for the UK: what I do</h2>
 <p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for UK clients. Everything below is work I do day to day.</p>
@@ -230,6 +274,8 @@ const guides = {
 <li><strong>Shipping:</strong> USPS, UPS and FedEx rates through a shipping app, free-shipping thresholds and US address validation.</li>
 <li><strong>Accessibility:</strong> WCAG 2.1 AA checks on templates, forms and checkout: headings, labels, contrast, alt text and keyboard navigation.</li>
 </ul>
+<h2>A freelance developer, or Upwork, Toptal and Codeable?</h2>
+<p>Most searches for a freelance WordPress developer in the US lead to marketplaces. They are useful for finding people quickly, but you pay platform fees and the relationship runs through the platform. Hiring a freelancer directly means one person you can talk to, a written scope and fixed quote, and no platform in the middle. The trade-off is capacity: one developer, so very large or urgent projects may suit an agency better.</p>
 <h2>Agencies and white-label work</h2>
 <p>Many US agencies use offshore developers for builds and maintenance. I build from your designs, follow your coding and handover standards, and stay in the background. See <a href="/shopify-developer/">Shopify development</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for the details of each service.</p>
 <h2>Proof of work</h2>

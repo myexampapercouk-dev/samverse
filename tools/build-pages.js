@@ -75,7 +75,7 @@ const projectCards = (names = []) => PROJECTS.filter(p => !names.length || names
             <div class="browser-bar"><i></i><i></i><i></i></div>
             <div class="work-thumb" style="background:${p.color}">
               <div class="fallback">${esc(p.name)}</div>
-              <img src="${p.thumb || shot}" data-shot="${shot}" alt="Screenshot of the ${esc(p.name)} website" width="800" height="500" loading="lazy">
+              <img src="${p.thumb || localShot(p.url, true) || shot}" data-shot="${shot}" alt="Screenshot of the ${esc(p.name)} website" width="800" height="500" loading="lazy">
             </div>
             <div class="work-body">
               <span class="work-tag">${esc(p.tag)}</span>
@@ -975,7 +975,9 @@ console.log('built /blog/ + feed.xml');
 
 // ===================== CASE STUDIES (/work/<slug>/) =====================
 const WORK = require('./work-data');
-const shotFor = w => w.thumb || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`;
+// Self-hosted WebP screenshots in assets/work/<host>.webp (1200x750) and -800.webp; mShots only as a fallback
+const localShot = (url, w800) => { const f = `/assets/work/${new URL(url).hostname.replace(/^www./, '').replace(/./g, '-')}${w800 ? '-800' : ''}.webp`; return fs.existsSync(path.join(ROOT, f)) ? f : null; };
+const shotFor = w => w.thumb || localShot(w.url) || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`;
 
 const renderWork = (w, i) => {
   const url = `${SITE}/work/${w.slug}/`;
@@ -986,7 +988,7 @@ const renderWork = (w, i) => {
     '@graph': [
       {
         '@type': 'CreativeWork', '@id': `${url}#work`, name: `${w.name} website`, description: w.summary, url,
-        image: w.thumb ? `${SITE}${w.thumb}` : shotFor(w), genre: w.industry, inLanguage: 'en-IN',
+        image: shotFor(w).startsWith('/') ? `${SITE}${shotFor(w)}` : shotFor(w), genre: w.industry, inLanguage: 'en-IN',
         creator: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/` },
         about: { '@type': 'Organization', name: w.name, url: w.url },
       },
@@ -1024,7 +1026,7 @@ ${JSON.stringify(schema, null, 2)}
         </div>
         <figure class="cs-shot">
           <div class="browser-bar"><i></i><i></i><i></i></div>
-          <img src="${shotFor(w)}" alt="Homepage of the ${esc(w.name)} website" width="1200" height="750" loading="eager">
+          <img src="${shotFor(w)}" alt="Homepage of the ${esc(w.name)} website" width="1200" height="750" loading="eager" fetchpriority="high" decoding="async">
         </figure>
       </div>
     </section>
