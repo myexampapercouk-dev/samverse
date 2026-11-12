@@ -324,7 +324,13 @@ ${p.gets.map(g => `          <li>${tick} ${esc(g)}</li>`).join('\n')}
       </div>
     </section>
 
-${depthFor(p)}
+${(p.extra || []).map(x => `    <section class="section">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">${esc(x.h)}</h2>
+${x.p.map(t => `        <p>${t}</p>`).join('\n')}
+      </div>
+    </section>
+`).join("")}${depthFor(p)}
 ${proofFor(p)}${p.noWork ? "" : `    <section class="section" id="work">
       <div class="container">
         <div class="section-head reveal">

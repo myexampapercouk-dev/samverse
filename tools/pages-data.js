@@ -74,6 +74,7 @@ const PAGES = [
   {
     type: 'industry',
     slug: 'website-for-manufacturers',
+    extra: [{"h":"B2B website design","p":["B2B website design is different from a consumer site: buyers compare suppliers, look for specifications and certifications, and want to send an RFQ rather than check out. Pages are planned around product families, capability and the enquiry form, so procurement teams find what they need quickly and your sales team gets enquiries with the details they need to quote."]}],
     nav: 'Manufacturers & B2B',
     title: 'Website Design for Manufacturers in India | Samverse',
     description: 'WordPress websites for manufacturers and B2B suppliers: product catalogues, RFQ forms and SEO that bring bulk and export enquiries. Shopify for D2C sales.',
@@ -105,6 +106,7 @@ const PAGES = [
   {
     type: 'service',
     slug: 'woocommerce-developer',
+    extra: [{"h":"Ecommerce development in Pune and across India","p":["If you are comparing an ecommerce development company in Pune with a freelancer, Samverse is the freelancer option: one developer based in Pune who plans, builds and supports your WooCommerce or <a href=\"/shopify-developer/\">Shopify</a> store. Stores are built for brands in Pune and for sellers anywhere in India or abroad, with Indian gateways, GST invoices, COD and shipping rules set up and tested."]}],
     nav: 'Online Stores',
     title: 'Ecommerce Website Development in Pune: WooCommerce',
     description: 'Ecommerce website development in Pune and India on WooCommerce: store setup, Razorpay and UPI, GST invoices, COD, shipping and a fast checkout.',
@@ -139,6 +141,7 @@ const PAGES = [
   {
     type: 'service',
     slug: 'shopify-developer',
+    extra: [{"h":"Shopify ecommerce development","p":["Shopify ecommerce development here covers the store setup, theme customisation in Liquid, product and collection structure, Indian payments such as Razorpay and UPI, COD, shipping, and the apps you actually need. Stores are built for brands in Pune and across India, and for sellers abroad. For stores that need more control or no monthly platform fee, <a href=\"/woocommerce-developer/\">WooCommerce</a> is the alternative."]}],
     nav: 'Shopify Stores',
     title: 'Shopify Development Company or Freelancer? | Samverse',
     description: 'Comparing Shopify development companies? Freelance Shopify developer in Pune for store setup, Liquid themes, Razorpay and COD, speed and SEO.',
@@ -495,11 +498,12 @@ const PAGES = [
     // Location page: the business is based in Pune (matches the Google Business Profile service area). Keep claims factual.
     type: 'service',
     slug: 'wordpress-developer-pune',
+    extra: [{"h":"Web developer in Pune","p":["Development covers the WordPress or Shopify build itself: page templates, forms, WhatsApp and call buttons, speed, SEO basics and hosting set up in your name. For businesses comparing a WordPress development company in Pune with a freelancer, the difference here is that the developer you talk to is the one who builds and supports the site."]},{"h":"Web designer in Pune","p":["Design comes first: the page structure, mobile layout and calls to action are planned around the enquiries you want, then built on a staging link you can check on your phone. If you already have a design in Figma, it can be <a href=\"/figma-to-wordpress/\">built as it is</a>."]},{"h":"Pune areas I serve","p":["Samverse works with businesses across Pune and Pimpri-Chinchwad, including Hinjewadi, Wakad, Baner, Aundh, Kothrud, Viman Nagar, Kharadi, Hadapsar, Magarpatta, Chakan and Bhosari. Most of the work happens over WhatsApp, calls and video, so location never holds a project up, and the same service is available to clients in Mumbai, <a href=\"/wordpress-shopify-developer-india/\">across India</a> and abroad."]}],
     nav: 'WordPress Developer in Pune',
-    title: 'Website Developer & Web Design in Pune | Samverse',
+    title: 'WordPress Development & Web Design in Pune | Samverse',
     description: 'Website design and development in Pune for business sites and ecommerce stores on WordPress, WooCommerce and Shopify, with COD, Razorpay and GST invoices.',
     eyebrow: 'Based in Pune',
-    h1: 'Website developer in Pune for <span class="grad">WordPress &amp; Shopify</span>',
+    h1: 'Website developer in Pune for <span class="grad">WordPress development &amp; Shopify</span>',
     lead: 'Samverse is a freelance website developer in Pune who builds business websites on WordPress and online stores on WooCommerce and Shopify. Since 2020 I\'ve built fast, mobile-friendly websites for businesses, clinics, manufacturers, restaurants and agencies, and I work directly with every client, from the first call to launch and beyond.',
     wa: 'Hi, I found your Pune page. I need help with a website.',
     glance: { get: 'a fast, mobile-friendly WordPress website or WooCommerce store, set up in your name, with SEO basics and WhatsApp and call buttons.', who: 'Pune and PCMC businesses, clinics, manufacturers and shops that want to deal directly with one developer.' },
@@ -698,6 +702,7 @@ const PAGES = [
   {
     type: 'service',
     slug: 'figma-to-wordpress',
+    extra: [{"h":"PSD to WordPress conversion","p":["Photoshop (PSD) designs are converted the same way as Figma files: each section is rebuilt as responsive WordPress blocks or Elementor layouts, not sliced images, so text stays editable and pages load fast. Layers, fonts and spacing are taken from the PSD, mobile and tablet layouts are worked out where the file only has a desktop view, and the result is compared side by side with the design before launch."]}],
     nav: 'Figma to WordPress',
     title: 'Figma to WordPress Conversion | Pixel-Perfect | Samverse',
     description: 'Convert Figma, Adobe XD or PSD designs into pixel-perfect, responsive WordPress websites with Elementor, built fast, clean and easy to edit.',
