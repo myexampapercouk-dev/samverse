@@ -95,6 +95,7 @@ const REGIONS = [
     faqs: [
       ['How do calls work with the time difference?', 'Calls are usually scheduled in your early morning on the East Coast, around 7am to 10am ET, which is my evening in India. West Coast clients mostly work by email, Loom videos and WhatsApp, with an occasional early call. Day to day, the time gap means feedback you send in the afternoon is often done by the next morning.'],
       ['Can you make my site ADA compliant?', 'I build and fix sites to follow WCAG 2.1 AA, the standard US accessibility claims usually refer to: headings, form labels, colour contrast, alt text, focus states and keyboard use. I can test and fix an existing site too. No developer can guarantee you will never receive a claim, but a site built this way is far easier to defend and to use.'],
+      ['Which hiring model works best: fixed-price, part-time or a dedicated developer?', 'A fixed-price project suits a defined build or set of fixes. A part-time or monthly retainer suits ongoing changes and maintenance. A full-time dedicated developer suits teams with daily development work. Samverse offers fixed-price projects with a written scope, and monthly plans for maintenance and ongoing work, but not a full-time dedicated developer.'],
       ['Do you handle US sales tax on Shopify or WooCommerce?', 'Yes. On Shopify I set up Shopify Tax for the states where you are registered. On WooCommerce I connect a sales tax service such as TaxJar or Avalara. Which states you must collect in is a question for your accountant; the store then follows those settings.'],
     ],
   },
@@ -215,6 +216,7 @@ const guides = {
   'wordpress-shopify-developer-australia': `
 <h2>Hiring a freelance Shopify or WordPress developer from Australia</h2>
 <p>To be clear upfront: Samverse is not based in Australia. I work remotely from Pune, India. Many Australian store owners and agencies work this way because one developer handles the build, the store settings and later fixes, with a written scope and fixed quote before anything starts, and the store, domain and payment accounts registered in your business name.</p>
+<p>Compared with hiring local WordPress developers, the main differences are the time zone and that all contact is remote, by calls, email and WhatsApp.</p>
 <h2>Australian store setup checklist</h2>
 <ul>
 <li><strong>GST:</strong> prices including 10% GST, tax settings matching your registration, ABN on tax invoices.</li>
@@ -230,7 +232,7 @@ const guides = {
 `,
   'wordpress-shopify-developer-uk': `
 <h2>Freelance WordPress developer for the UK: what I do</h2>
-<p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for UK clients. Everything below is work I do day to day.</p>
+<p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for a wide range of UK small businesses and agencies. Everything below is work I do day to day.</p>
 <h3>WordPress development</h3>
 <p>New WordPress websites built on a lightweight theme or custom blocks, editable by you without a page-builder mess. Redesigns of existing sites, keeping your URLs and rankings intact.</p>
 <h3>WooCommerce development</h3>
@@ -267,6 +269,8 @@ const guides = {
 <p>Working with a developer in India can work very well for US businesses and agencies, as long as the scope is written down, the accounts stay in your name and communication has a clear rhythm. Here is how I set that up.</p>
 <h2>A working day that runs overnight</h2>
 <p>India is 9.5 hours ahead of New York in summer (10.5 in winter) and 12.5 hours ahead of Los Angeles (13.5 in winter). The useful pattern is simple: you send feedback before you finish your day, I work on it during mine, and you wake up to the changes on the staging link. When a live call helps, we book it in your early morning.</p>
+<h2>How a US project runs</h2>
+<p>Each project starts from your business goals: what the site must sell or generate, and for whom. From that comes a written scope covering pages, store settings and any custom plugin work, then a fixed quote. Whether you are looking for a WordPress expert or a WordPress programmer, you work with the one developer who writes the code.</p>
 <h2>US store setup checklist</h2>
 <ul>
 <li><strong>Sales tax:</strong> Shopify Tax, or TaxJar or Avalara on WooCommerce, for the states where you are registered.</li>
