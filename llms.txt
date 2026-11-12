@@ -30,7 +30,7 @@
 - [Contrast Checker](https://samverse.space/free-tools/color-contrast-checker/): Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.
 
 ## Services
-- [Online Stores](https://samverse.space/woocommerce-developer/): WooCommerce development services from a freelance developer in India: store setup, Razorpay and UPI, GST invoices, COD, shipping and a fast checkout.
+- [Online Stores](https://samverse.space/woocommerce-developer/): Ecommerce website development in Pune and India on WooCommerce: store setup, Razorpay and UPI, GST invoices, COD, shipping and a fast checkout.
 - [Shopify Stores](https://samverse.space/shopify-developer/): Comparing Shopify development companies? Freelance Shopify developer in Pune for store setup, Liquid themes, Razorpay and COD, speed and SEO.
 - [WordPress Website Development](https://samverse.space/wordpress-website-development/): WordPress development services from a freelancer, not a WordPress development company: business sites, stores, redesigns, speed and support.
 - [Hire a WordPress Developer](https://samverse.space/hire-wordpress-developer/): Hire a freelance WordPress developer in India for new sites, fixes, monthly support or white-label agency work. Fixed quotes and direct contact.
