@@ -97,7 +97,7 @@ ${JSON.stringify(schema, null, 2)}
         <div class="container post-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/tutorials/">Tutorials</a></nav>
           <a class="post-cat" href="/tutorials/">Tutorial</a>
-          <h1>${esc(tu.title)}</h1>
+          <h1>${esc(tu.title.replace(/:\s*Step-by-Step\s*\(\d{4}\)\s*$/i, '').replace(/\s*\(\d{4}\)\s*$/, ''))}</h1>
           <p class="post-dek">${esc(tu.description)}</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
