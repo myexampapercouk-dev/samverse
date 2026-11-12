@@ -224,7 +224,7 @@ const PAGES = [
       ['Do I need to show my FSSAI number on my website?', 'If you take orders on your website, yes. FSSAI expects food businesses to display their licence or registration number to customers, including when food is sold online, and it reassures diners too. I add it to the footer and the ordering pages. Your FSSAI consultant can confirm the current requirements for your licence type.'],
       ['Can the website stop taking orders when the kitchen is closed?', 'Yes. Online ordering can follow your opening hours, pausing outside them and on holidays, with a message saying when ordering opens again. You can also switch ordering off for a busy evening from the dashboard.'],
       ["Can you build a website for a cloud kitchen with several brands?","Yes. One site can carry several brands with their own menus and ordering, or each brand can have its own domain on the same setup, with delivery areas and ordering hours set per kitchen."],
-      ["Do you build restaurant websites outside India?","Yes. The work is done remotely; Southern Flavours in the UK is one example."],
+      ["Do you build restaurant websites outside India?","Yes. Restaurant website design for the UK, US and Australia is done remotely, with the menu, reservations and ordering built on a staging link you test on your phone. Southern Flavours in Solihull, UK, is a live example with table reservations and a WooCommerce shop for online ordering."],
     ],
   },
   {

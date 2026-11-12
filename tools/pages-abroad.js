@@ -68,6 +68,7 @@ const REGIONS = [
       ['What time are you available for UK calls?', 'India is 4.5 hours ahead of the UK during British Summer Time and 5.5 hours ahead in winter. Calls are easiest between about 8am and 1pm UK time, which is my afternoon and evening. Messages sent later in your day are usually answered by your next morning.'],
       ['Can you set up VAT on my WooCommerce or Shopify store?', 'Yes. I configure the standard, reduced and zero VAT rates you need, choose whether prices show including VAT, and set invoices to show your VAT number. Your accountant should confirm which rates apply to your products; I make the store follow them.'],
       ['Do you build for UK restaurants and hospitality?', 'Yes. The Southern Flavours site in Solihull includes table reservations with instant confirmation, a weekend buffet section, menus and a WooCommerce shop for online ordering.'],
+      ['Do you offer website maintenance services for UK sites?', 'Yes. Monthly plans cover updates after a backup, uptime and security checks, WooCommerce checkout tests and small content changes, with a short report each month. You are quoted a fixed monthly price in GBP after a free review of the site.'],
       ['Do you work white-label for UK agencies?', 'Yes. I build from your Figma or Adobe XD designs, handle WordPress fixes and speed work, and stay in the background so your client relationship stays with you.'],
     ],
   },
@@ -77,10 +78,10 @@ const REGIONS = [
     when: 'usually by the start of your next business day',
     slug: 'wordpress-shopify-developer-usa',
     nav: 'WordPress & Shopify Developer for the USA',
-    title: 'Freelance WordPress & Shopify Developer USA | Samverse',
+    title: 'WordPress Website Developer & Shopify Expert USA | Samverse',
     description: 'Freelance WordPress and Shopify developer for US businesses: sales tax apps, ADA-minded accessibility, Stripe and Shopify Payments. Invoiced in USD.',
     eyebrow: 'East Coast to West Coast',
-    h1: 'Freelance WordPress &amp; Shopify developer for <span class="grad">US</span> businesses, invoiced in USD',
+    h1: 'Freelance WordPress website developer and Shopify expert for <span class="grad">US</span> businesses, invoiced in USD',
     lead: 'I build WordPress websites and Shopify and WooCommerce stores for US businesses and agencies, working remotely from India. The time difference means work moves forward overnight while you sleep, you are invoiced in USD, and every account stays in your name.',
     pains: [
       ['Progress while you sleep', 'India is 9.5 to 10.5 hours ahead of US Eastern time and 12.5 to 13.5 hours ahead of Pacific. Send feedback at the end of your day and the changes are usually ready the next morning.'],
@@ -96,6 +97,8 @@ const REGIONS = [
       ['How do calls work with the time difference?', 'Calls are usually scheduled in your early morning on the East Coast, around 7am to 10am ET, which is my evening in India. West Coast clients mostly work by email, Loom videos and WhatsApp, with an occasional early call. Day to day, the time gap means feedback you send in the afternoon is often done by the next morning.'],
       ['Can you make my site ADA compliant?', 'I build and fix sites to follow WCAG 2.1 AA, the standard US accessibility claims usually refer to: headings, form labels, colour contrast, alt text, focus states and keyboard use. I can test and fix an existing site too. No developer can guarantee you will never receive a claim, but a site built this way is far easier to defend and to use.'],
       ['Which hiring model works best: fixed-price, part-time or a dedicated developer?', 'A fixed-price project suits a defined build or set of fixes. A part-time or monthly retainer suits ongoing changes and maintenance. A full-time dedicated developer suits teams with daily development work. Samverse offers fixed-price projects with a written scope, and monthly plans for maintenance and ongoing work, but not a full-time dedicated developer.'],
+      ['Are you a certified Shopify expert?', 'Samverse is not listed in the Shopify Partner or Shopify Experts directory. You get a freelance developer with WordPress, WooCommerce and Shopify experience who works inside your store as a collaborator, with a written scope and fixed quote for each job.'],
+      ['Do you offer WooCommerce development consulting before a build?', 'Yes. The free review covers whether WooCommerce suits your products, which plugins you actually need, and what a custom build would involve. You get that in writing with a fixed quote, and there is no obligation to go ahead.'],
       ['Do you handle US sales tax on Shopify or WooCommerce?', 'Yes. On Shopify I set up Shopify Tax for the states where you are registered. On WooCommerce I connect a sales tax service such as TaxJar or Avalara. Which states you must collect in is a question for your accountant; the store then follows those settings.'],
     ],
   },
@@ -217,6 +220,8 @@ const guides = {
 <h2>Hiring a freelance Shopify or WordPress developer from Australia</h2>
 <p>To be clear upfront: Samverse is not based in Australia. I work remotely from Pune, India. Many Australian store owners and agencies work this way because one developer handles the build, the store settings and later fixes, with a written scope and fixed quote before anything starts, and the store, domain and payment accounts registered in your business name.</p>
 <p>Compared with hiring local WordPress developers, the main differences are the time zone and that all contact is remote, by calls, email and WhatsApp.</p>
+<h2>Shopify expert or freelance developer?</h2>
+<p>Australian store owners often search for a Shopify expert when they need theme customisation, a faster store, app clean-up or a migration from WooCommerce. That is the work I do: theme edits on a duplicate theme, apps reviewed and removed where they slow the store, and changes published only after you approve them. I am not in the Shopify Partner directory, so the trade-off is a direct relationship with one developer rather than an agency listing.</p>
 <h2>Australian store setup checklist</h2>
 <ul>
 <li><strong>GST:</strong> prices including 10% GST, tax settings matching your registration, ABN on tax invoices.</li>
@@ -247,6 +252,8 @@ const guides = {
 <p>Broken layouts after updates, plugin conflicts, white screens, malware clean-up and monthly care plans with updates and backups.</p>
 <h3>WordPress hosting advice</h3>
 <p>Help choosing and moving to UK or EU hosting that suits your traffic, with the account kept in your name.</p>
+<h2>Website maintenance services for UK businesses</h2>
+<p>Most UK clients who start with a build or a fix later ask for ongoing care. A monthly maintenance plan covers WordPress core, plugin and theme updates after a backup, uptime and security monitoring, WooCommerce checkout checks, small content changes and a short monthly summary. If you already have a site built by someone else, it starts with a health check so you know what state it is in. See <a href="/wordpress-maintenance/">WordPress website maintenance</a> for what each plan includes.</p>
 <h2>Why hire a freelance WordPress developer instead of an agency?</h2>
 <p>You talk directly to the person building your site, decisions are faster, and you are not paying for account managers. The trade-off is capacity: one developer can take on fewer projects at once, so timelines are agreed before work starts.</p>
 <h2>Hiring a WordPress or Shopify developer for a UK business</h2>
@@ -278,6 +285,14 @@ const guides = {
 <li><strong>Shipping:</strong> USPS, UPS and FedEx rates through a shipping app, free-shipping thresholds and US address validation.</li>
 <li><strong>Accessibility:</strong> WCAG 2.1 AA checks on templates, forms and checkout: headings, labels, contrast, alt text and keyboard navigation.</li>
 </ul>
+<h2>WordPress website developer for US small businesses</h2>
+<p>For a service business, a WordPress website is usually the right fit: you can edit pages yourself, add a blog, and connect forms to the CRM you already use. I build on a lightweight theme or custom blocks, set up SEO basics, forms and analytics, and hand over the admin login in your name. See <a href="/wordpress-website-development/">WordPress website development</a> for the full process.</p>
+<h2>WooCommerce developer for US stores</h2>
+<p>If you sell on WordPress, WooCommerce keeps the store, customer data and content in one place you control. Typical WooCommerce work for US stores covers custom product types, subscriptions and bookings, sales tax with TaxJar or Avalara, USPS, UPS and FedEx rates, checkout fixes and performance on large catalogs. Read more on the <a href="/woocommerce-developer/">WooCommerce developer</a> page.</p>
+<h2>Shopify expert for theme and store work</h2>
+<p>Many US store owners searching for a Shopify expert need theme changes, a faster store, app clean-up or a migration rather than a full rebuild. Theme edits are made on a duplicate theme and published only after you check them. Samverse is not listed in the Shopify Partner directory; you work with a freelance Shopify developer inside your own store account.</p>
+<h2>Website maintenance services for US businesses</h2>
+<p>After launch, a monthly plan covers plugin, theme and core updates after a backup, uptime and security checks, small content changes and a short monthly note of what was done. Details are on the <a href="/wordpress-maintenance/">website maintenance</a> page.</p>
 <h2>A freelance developer, or Upwork, Toptal and Codeable?</h2>
 <p>Most searches for a freelance WordPress developer in the US lead to marketplaces. They are useful for finding people quickly, but you pay platform fees and the relationship runs through the platform. Hiring a freelancer directly means one person you can talk to, a written scope and fixed quote, and no platform in the middle. The trade-off is capacity: one developer, so very large or urgent projects may suit an agency better.</p>
 <h2>Agencies and white-label work</h2>
