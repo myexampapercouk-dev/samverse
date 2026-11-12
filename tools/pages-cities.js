@@ -54,7 +54,7 @@ const CITIES = [
     title: 'WordPress Website Development in Mumbai | Samverse',
     description: 'WordPress website development in Mumbai, Thane and Navi Mumbai: service sites and stores built remotely from Pune, with staging reviews and fixed quotes.',
     eyebrow: 'Mumbai, Thane & Navi Mumbai',
-    h1: 'WordPress website development in <span class="grad">Mumbai</span>',
+    h1: 'WordPress website development in <span class="grad">Mumbai</span> for growing businesses',
     lead: 'Samverse offers WordPress website development in Mumbai for consultants, CA and law firms, clinics, D2C brands and traders, with Shopify stores where they fit better. I\'m based in Pune, a few hours down the expressway, and work with Mumbai clients directly over WhatsApp, calls and video.',
     pains: [
       ['Competing in a crowded market', 'Mumbai buyers compare several options on their phone before calling. Clear service pages, proof of work and one-tap WhatsApp make you the easy choice.'],

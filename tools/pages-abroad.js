@@ -52,7 +52,7 @@ const REGIONS = [
     title: 'WordPress & Shopify Developer for UK Businesses | Samverse',
     description: 'Freelance WordPress and Shopify developer for UK businesses: VAT-ready stores, GDPR-friendly sites, Stripe and Royal Mail setup. Invoiced in GBP.',
     eyebrow: 'England, Scotland, Wales & Northern Ireland',
-    h1: 'WordPress &amp; Shopify developer for <span class="grad">UK</span> businesses',
+    h1: 'Freelance WordPress &amp; Shopify developer for <span class="grad">UK</span> businesses, working remotely',
     lead: 'I build WordPress websites, WooCommerce stores and Shopify stores for UK businesses, working remotely from India. Your mornings overlap my afternoon and evening, you are invoiced in GBP, and I have already built a live site for a UK restaurant.',
     pains: [
       ['A real UK project to look at', 'Southern Flavours, an Indian restaurant in Solihull, runs on a WordPress and WooCommerce site I built, with table reservations and online ordering.'],
@@ -80,7 +80,7 @@ const REGIONS = [
     title: 'WordPress & Shopify Developer for US Businesses | Samverse',
     description: 'Freelance WordPress and Shopify developer for US businesses: sales tax apps, ADA-minded accessibility, Stripe and Shopify Payments. Invoiced in USD.',
     eyebrow: 'East Coast to West Coast',
-    h1: 'WordPress &amp; Shopify developer for <span class="grad">US</span> businesses',
+    h1: 'Freelance WordPress &amp; Shopify developer for <span class="grad">US</span> businesses, invoiced in USD',
     lead: 'I build WordPress websites and Shopify and WooCommerce stores for US businesses and agencies, working remotely from India. The time difference means work moves forward overnight while you sleep, you are invoiced in USD, and every account stays in your name.',
     pains: [
       ['Progress while you sleep', 'India is 9.5 to 10.5 hours ahead of US Eastern time and 12.5 to 13.5 hours ahead of Pacific. Send feedback at the end of your day and the changes are usually ready the next morning.'],
