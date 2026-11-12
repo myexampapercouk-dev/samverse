@@ -1002,6 +1002,7 @@ const renderWork = (w, i) => {
     ],
   };
   return `${headCommon(title, w.metaDescription || w.summary, url, `  <meta property="og:type" content="article">
+  <link rel="preload" as="image" href="${shotFor(w)}" fetchpriority="high">
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
