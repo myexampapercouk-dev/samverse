@@ -373,7 +373,7 @@ ${related(p).map(x => '          ' + card(x)).join('\n')}
 
   ${waFloat.replace(/href="[^"]*"/, `href="${waLink}"`)}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -490,7 +490,7 @@ ${group('location', 'WordPress & Shopify developer by location', 'Working with b
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -745,7 +745,7 @@ ${others.map(x => '          ' + postCard(x)).join('\n')}
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -840,7 +840,7 @@ ${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a hre
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -931,7 +931,7 @@ ${grid(g.items)}
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -1065,7 +1065,7 @@ ${w.related.map(s => bySlug[s]).filter(Boolean).map(x => '          ' + card(x))
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -1144,7 +1144,7 @@ ${projectCards()}
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 </body>
 </html>
 `;
@@ -1211,7 +1211,7 @@ ${x.main}
 
   ${waFloat}
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=20261112" defer></script>
 ${x.script ? `  <script>\n${x.script}\n  </script>\n` : ''}</body>
 </html>
 `;
