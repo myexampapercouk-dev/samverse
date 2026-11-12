@@ -8,12 +8,19 @@ window.SITE_CONFIG = {
 (function (c) {
   // Only on the live domain, so local previews and the netlify.app address don't skew reports
   if (!/(^|\.)samverse\.space$/.test(location.hostname)) return;
+  // Third-party tags load after the first interaction or 4 s after page load, so they don't block the main thread
+  // during first paint (Core Web Vitals: TBT/LCP). gtag/dataLayer are defined now, so queued calls are kept.
+  var queue = [], fired = false;
+  var add = function (el) { if (fired) document.head.appendChild(el); else queue.push(el); };
+  var fire = function () { if (fired) return; fired = true; queue.forEach(function (el) { document.head.appendChild(el); }); };
+  ["scroll", "pointerdown", "keydown", "touchstart"].forEach(function (e) { addEventListener(e, fire, { once: true, passive: true }); });
+  addEventListener("load", function () { setTimeout(fire, 4000); });
   var real = function (id, prefix) { return id && id.indexOf(prefix) === 0 && id.indexOf("XXXX") === -1; };
   if (real(c.GA_ID, "G-")) {
     var g = document.createElement("script");
     g.async = true;
     g.src = "https://www.googletagmanager.com/gtag/js?id=" + c.GA_ID;
-    document.head.appendChild(g);
+    add(g);
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { dataLayer.push(arguments); };
     gtag("js", new Date());
@@ -26,13 +33,13 @@ window.SITE_CONFIG = {
     a.async = true;
     a.crossOrigin = "anonymous";
     a.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + c.ADSENSE_ID;
-    document.head.appendChild(a);
+    add(a);
   }
   if (c.CLARITY_ID && c.CLARITY_ID.indexOf("XXXX") === -1) {
     (function (w, d, t, id) {
       w.clarity = w.clarity || function () { (w.clarity.q = w.clarity.q || []).push(arguments); };
       var s = d.createElement(t); s.async = true; s.src = "https://www.clarity.ms/tag/" + id;
-      d.head.appendChild(s);
+      add(s);
     })(window, document, "script", c.CLARITY_ID);
   }
 })(window.SITE_CONFIG);

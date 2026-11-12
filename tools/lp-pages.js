@@ -182,7 +182,7 @@ ${p.faqs.map(([q, a]) => `          <details>\n            <summary>${esc(q)}</s
     <a href="#contact" class="lp-sticky-quote">Get Quote</a>
   </nav>
 
-  <script src="/script.js?v=20261112" defer></script>
+  <script src="/script.js?v=20261112b" defer></script>
 </body>
 </html>
 `;

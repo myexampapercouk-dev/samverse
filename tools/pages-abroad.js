@@ -49,10 +49,10 @@ const REGIONS = [
     when: 'usually by your next morning UK time',
     slug: 'wordpress-shopify-developer-uk',
     nav: 'WordPress & Shopify Developer for the UK',
-    title: 'WordPress & Shopify Developer for UK Businesses | Samverse',
-    description: 'Freelance WordPress and Shopify developer for UK businesses: VAT-ready stores, GDPR-friendly sites, Stripe and Royal Mail setup. Invoiced in GBP.',
+    title: 'Freelance WordPress Developer UK (and Shopify) | Samverse',
+    description: 'Freelance WordPress developer for UK businesses, working remotely from India: WordPress, WooCommerce and Shopify builds, speed optimisation and fixes.',
     eyebrow: 'England, Scotland, Wales & Northern Ireland',
-    h1: 'Freelance WordPress &amp; Shopify developer for <span class="grad">UK</span> businesses, working remotely',
+    h1: 'Freelance WordPress developer for <span class="grad">UK</span> businesses (and Shopify), working remotely from India',
     lead: 'I build WordPress websites, WooCommerce stores and Shopify stores for UK businesses, working remotely from India. Your mornings overlap my afternoon and evening, you are invoiced in GBP, and I have already built a live site for a UK restaurant.',
     pains: [
       ['A real UK project to look at', 'Southern Flavours, an Indian restaurant in Solihull, runs on a WordPress and WooCommerce site I built, with table reservations and online ordering.'],
@@ -185,6 +185,24 @@ const pages = REGIONS.map(page);
 
 const guides = {
   'wordpress-shopify-developer-uk': `
+<h2>Freelance WordPress developer for the UK: what I do</h2>
+<p>To be clear upfront: Samverse is not based in the UK. I work remotely from Pune, India, for UK clients. Everything below is work I do day to day.</p>
+<h3>WordPress development</h3>
+<p>New WordPress websites built on a lightweight theme or custom blocks, editable by you without a page-builder mess. Redesigns of existing sites, keeping your URLs and rankings intact.</p>
+<h3>WooCommerce development</h3>
+<p>WooCommerce stores with UK VAT, Stripe, PayPal and Royal Mail or courier shipping, plus fixes and upgrades on stores that already exist.</p>
+<h3>Shopify development</h3>
+<p>Shopify store setup, theme customisation and migrations from WooCommerce to Shopify for UK sellers who want less maintenance.</p>
+<h3>WordPress speed optimisation</h3>
+<p>Core Web Vitals work: image and script clean-up, caching, removing heavy plugins, and checking the checkout and cart pages, not only the homepage.</p>
+<h3>WordPress technical SEO</h3>
+<p>Redirects, sitemaps, schema, internal links and indexing fixes in Google Search Console, so the site is easy for Google to crawl.</p>
+<h3>WordPress troubleshooting and maintenance</h3>
+<p>Broken layouts after updates, plugin conflicts, white screens, malware clean-up and monthly care plans with updates and backups.</p>
+<h3>WordPress hosting advice</h3>
+<p>Help choosing and moving to UK or EU hosting that suits your traffic, with the account kept in your name.</p>
+<h2>Why hire a freelance WordPress developer instead of an agency?</h2>
+<p>You talk directly to the person building your site, decisions are faster, and you are not paying for account managers. The trade-off is capacity: one developer can take on fewer projects at once, so timelines are agreed before work starts.</p>
 <h2>Hiring a WordPress or Shopify developer for a UK business</h2>
 <p>If you are in the UK and comparing local agencies with a remote developer, the questions that matter are the same: can you see live work, will you own everything, and how will day-to-day communication work. This page answers those for my setup.</p>
 <h2>The UK project you can check</h2>
@@ -196,7 +214,7 @@ const guides = {
 <li><strong>Shipping:</strong> Royal Mail and courier rates by weight or zone, Click &amp; Drop or a shipping app for labels.</li>
 <li><strong>GDPR and PECR:</strong> a cookie banner that blocks analytics until consent, a privacy policy, and opt-in boxes for marketing emails.</li>
 </ul>
-<h2>Working across the time difference</h2>
+<h2>Working with clients across London and the UK</h2>
 <p>India is 4.5 hours ahead in summer and 5.5 in winter. In practice your morning overlaps my afternoon and evening, so a call at 9 or 10am UK time is easy, and anything you send after lunch is usually done when you start the next day. Day-to-day contact runs on email, WhatsApp and short screen recordings.</p>
 <p>Elsewhere? See the pages for the <a href="/wordpress-shopify-developer-europe/">EU</a>, <a href="/wordpress-shopify-developer-usa/">USA</a> and <a href="/wordpress-shopify-developer-uae/">UAE</a>, or read about <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 `,
