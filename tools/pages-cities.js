@@ -40,14 +40,18 @@ const cityPage = c => ({
   stepsTitle: `How to start your ${c.city} website`,
   steps: startSteps(c.city),
   faqs: c.faqs.concat(commonFaqs(c.city)),
+  call: c.call,
+  extra: c.extra,
 });
 
 const CITIES = [
   {
     city: 'Mumbai',
     slug: 'wordpress-shopify-developer-mumbai',
+    call: true,
+    extra: [{"h":"Website design company in Mumbai, or one developer?","p":["If you are comparing a website design company in Mumbai with a freelancer, Samverse is the freelancer option: design, development and support from one developer based in Pune, working remotely with Mumbai, Thane and Navi Mumbai businesses. You get a written scope and a fixed quote before work starts."]},{"h":"Ecommerce website development for Mumbai brands","p":["Ecommerce website development for Mumbai D2C brands and traders is done on <a href=\"/shopify-developer/\">Shopify</a> or <a href=\"/woocommerce-developer/\">WooCommerce</a>, with UPI, cards, COD, shipping rules and GST invoices set up and checked with test orders before launch."]},{"h":"Website maintenance services in Mumbai","p":["For sites that are already live, <a href=\"/wordpress-maintenance/\">website maintenance</a> covers updates with a backup first, off-site backups, security and uptime checks, small edits and a monthly report, handled remotely for Mumbai businesses."]}],
     nav: 'WordPress & Shopify Developer in Mumbai',
-    title: 'WordPress Website Development in Mumbai | Samverse',
+    title: 'Website Design & Development in Mumbai | Samverse',
     description: 'WordPress website development in Mumbai, Thane and Navi Mumbai: service sites and stores built remotely from Pune, with staging reviews and fixed quotes.',
     eyebrow: 'Mumbai, Thane & Navi Mumbai',
     h1: 'WordPress website development in <span class="grad">Mumbai</span>',

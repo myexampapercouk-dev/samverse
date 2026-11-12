@@ -278,7 +278,8 @@ ${p.glance ? `          <ul class="lp-glance">
           </ul>
 ` : ''}          <div class="hero-cta">
             <a href="#contact" class="btn">Get a Free Quote</a>
-            <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
+            <a href="${waLink}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>${p.call ? `
+            <a href="tel:+917417049145" class="btn btn-ghost">Call +91 74170 49145</a>` : ""}
           </div>
           <ul class="lp-trust">
             <li>${tick} ${p.slug === 'shopify-developer' ? 'WordPress and Shopify, one developer' : 'Building WordPress sites since 2020'}</li>
