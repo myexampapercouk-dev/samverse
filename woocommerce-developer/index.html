@@ -193,6 +193,14 @@
         },
         {
           "@type": "Question",
+          "name": "Can you set up Stripe or Razorpay on my existing WooCommerce store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The gateway plugin is installed and connected to your own Razorpay or Stripe account, tested in test mode with webhooks and refunds, then switched live after one real low-value order. Your existing products, orders and theme are not changed."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "How do I choose a WooCommerce developer?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -335,6 +343,13 @@
         <h2 class="reveal">Theme customization, plugin development and long-term support</h2>
         <p>Theme customization is done in a child theme so updates do not undo it: product page layouts, category pages and checkout design. Plugin development covers small custom plugins where an existing one does not fit, such as custom checkout fields, pricing rules or an integration with your courier or ERP, quoted after a review.</p>
         <p>For long-term support, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> keeps the store updated, backed up and tested after each update, so the user experience at checkout stays smooth over the long term.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">WooCommerce payment gateway integration: Razorpay, Stripe and PayPal</h2>
+        <p>Payment gateway integration is part of every store build, and it can also be booked on its own for an existing store. For India, Razorpay WooCommerce setup covers UPI, cards, netbanking and wallets through the official plugin; PayU, Cashfree and PhonePe are set up the same way. For international customers, Stripe WooCommerce setup and PayPal are added for card payments in other currencies.</p>
+        <p>Each gateway is connected in test mode first, webhooks are checked so paid orders move to Processing on their own, refunds are tested from the WooCommerce order screen, and one real low-value order is placed before the gateway is left live. The gateway account stays in your name. If payments are already failing, see <a href="/blog/woocommerce-payment-gateway-not-working-india/">WooCommerce payment gateway not working</a>.</p>
       </div>
     </section>
     <section class="section depth">
@@ -577,6 +592,10 @@
           <details>
             <summary>Do I need a full-time WooCommerce developer?</summary>
             <p>Usually not. Most stores need a developer for the build, then occasional changes and monthly maintenance. A full-time developer makes sense only if you are shipping new features every week; otherwise a fixed-price project plus a maintenance plan is usually enough.</p>
+          </details>
+          <details>
+            <summary>Can you set up Stripe or Razorpay on my existing WooCommerce store?</summary>
+            <p>Yes. The gateway plugin is installed and connected to your own Razorpay or Stripe account, tested in test mode with webhooks and refunds, then switched live after one real low-value order. Your existing products, orders and theme are not changed.</p>
           </details>
           <details>
             <summary>How do I choose a WooCommerce developer?</summary>
