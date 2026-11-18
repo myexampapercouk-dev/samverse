@@ -719,7 +719,7 @@ const PAGES = [
     call: true,
     nav: 'Ecommerce Website Development in Pune',
     title: 'Ecommerce Website Development Company in Pune | Samverse',
-    description: 'Ecommerce website development in Pune on WooCommerce or Shopify: Razorpay, PhonePe, UPI, COD, GST invoices and shipping, with a fixed quote.
+    description: 'Ecommerce website development in Pune on WooCommerce or Shopify: Razorpay, PhonePe, UPI, COD, GST invoices and shipping, with a fixed quote.',
     eyebrow: 'Online stores, built in Pune',
     h1: 'Ecommerce website development in Pune: <span class="grad">WooCommerce &amp; Shopify stores</span>',
     lead: 'Samverse builds online stores for Pune shops, D2C brands and manufacturers on WooCommerce or Shopify, with Indian payments, COD, shipping and GST invoices set up and tested before launch. You deal with one developer from the first call to the first order, not an account manager.',
