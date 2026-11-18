@@ -331,6 +331,11 @@ ${(p.extra || []).map(x => `    <section class="section">
       <div class="container" style="max-width:820px">
         <h2 class="reveal">${esc(x.h)}</h2>
 ${x.p.map(t => `        <p>${t}</p>`).join('\n')}
+${x.table ? `        <div class="table-wrap"><table>
+          <thead><tr>${x.table.head.map(c => `<th>${c}</th>`).join('')}</tr></thead>
+          <tbody>${x.table.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
+        </table></div>
+${(x.after || []).map(t => `        <p>${t}</p>`).join('\n')}` : ''}
       </div>
     </section>
 `).join("")}${depthFor(p)}

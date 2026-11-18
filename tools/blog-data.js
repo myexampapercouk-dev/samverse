@@ -4914,11 +4914,11 @@ Facts to check:    Warranty terms, service areas</code></pre>
   },
   {
     slug: 'industrial-website-product-catalogue',
-    seoTitle: 'Industrial Catalog Website: How to Build One That Sells',
+    seoTitle: 'Industrial Catalog Website: Build a Product Catalogue',
     title: 'Industrial Catalog Website: How to Build a Product Catalogue for an Industrial Company (Categories, Spec Tables, Datasheets and RFQs)',
     description: 'How to build an industrial catalog website: category structure, spec tables, datasheets, RFQ baskets, WooCommerce catalogue mode, filters and a checklist.',
     date: '2026-09-27',
-    updated: '2026-11-11',
+    updated: '2026-11-18',
     category: 'Industries',
     related: ['website-for-manufacturers', 'wordpress-seo-services', 'woocommerce-developer'],
     body: `
@@ -5055,6 +5055,10 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <h2>When to get help</h2>
 <p>Get help when your catalogue is a PDF buyers cannot search, or product pages are missing specifications and enquiry buttons. See <a href="/website-for-manufacturers/">websites for manufacturers</a> and <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/#contact">send your website address</a> and product list for a free review.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/website-for-manufacturers/">websites for manufacturers</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 <h3>What is the best platform for an industrial catalog website?</h3>
 <p>For most manufacturers, WordPress with WooCommerce in catalogue mode works well: it handles thousands of products, specification attributes, filters, datasheet downloads and quote baskets without showing prices. A plain WordPress site with custom post types also works for smaller ranges.</p>
@@ -5072,6 +5076,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <p>Generally not product rich results, which need a price, review or rating. Product, Breadcrumb and Organization markup are still worth adding, because they help search engines understand your pages.</p>
 <h3>What should an industrial catalog website include?</h3>
 <p>A clear category tree, one page per product family with a text specification table, photos, drawings and a downloadable datasheet, a Request a Quote button or enquiry basket, filters on the specifications buyers use, and search that recognises model numbers.</p>
+
+<p>Related reading: <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> and <a href="/blog/faq-page-seo/">how to write an FAQ for a sales page and for SEO</a>.</p>
 `,
   },
   {
@@ -14961,11 +14967,11 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
   },
   {
     slug: 'faq-page-seo',
-    seoTitle: 'FAQ Pages for SEO: How to Write FAQs That Rank and Sell',
+    seoTitle: 'FAQ SEO: How to Write an FAQ for a Sales Page That Ranks',
     title: 'FAQ SEO: How to Write FAQ Pages and FAQs for SEO on Service, Sales and Local Pages',
     description: 'FAQ pages for SEO: are FAQs good for SEO, one FAQ page or FAQs on each page, how to write an FAQ for a sales page, and what FAQ schema does today.',
     date: '2026-09-27',
-    updated: '2026-11-11',
+    updated: '2026-11-18',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -15009,6 +15015,10 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 <tr><td>Never updated</td><td>Checked when prices or policies change</td></tr>
 </tbody>
 </table>
+
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/wordpress-seo-services/">WordPress SEO services</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>FAQs for SEO: how they help</h2>
 <p>Well-chosen FAQs help in four practical ways:</p>
@@ -15115,6 +15125,8 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 <h3>How do you write an FAQ for a sales page?</h3>
 <p>List the objections people raise before buying (price, timing, fit, risk, what happens next), answer each in one or two plain sentences, and place the FAQ just above or below the main call to action.</p>
 
+
+<p>Related reading: <a href="/blog/industrial-website-product-catalogue/">building an industrial catalog website</a>.</p>
 `,
   },
   {
@@ -28031,15 +28043,25 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   },
   {
     slug: 'woocommerce-gst-invoices-india',
-    seoTitle: 'WooCommerce GST Setup India: CGST, SGST, IGST and Invoices',
+    seoTitle: 'WooCommerce GST India: Tax Setup and GST Invoices',
     title: 'WooCommerce GST Setup for Indian Stores: CGST, SGST, IGST, HSN Codes and GST Invoices',
     description: 'Set up GST in WooCommerce step by step: tax classes per rate, CGST+SGST for your state, IGST for others, HSN codes, GSTIN at checkout and GST invoices.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-18',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'wordpress-website-development', 'website-for-startups'],
     body: `
 <p>To set up GST in WooCommerce, enable taxes, calculate tax on the customer's shipping address, create a tax class for each GST rate you charge, add CGST and SGST rates for your home state and IGST for every other state, assign each product its tax class, then add an invoice plugin that prints your GSTIN, HSN codes, the tax split and the place of supply. WooCommerce does the maths once it's configured, but it doesn't know Indian GST rules out of the box.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>Enable taxes and calculate tax on the customer shipping address.</li>
+  <li>Create one tax class per GST rate.</li>
+  <li>Add CGST and SGST for your home state and IGST for other states.</li>
+  <li>Assign tax classes to products and add a GST invoice plugin with your GSTIN and HSN codes.</li>
+</ol>
+</div>
 
 <h2>What to get from your CA first</h2>
 <ul>
@@ -28176,6 +28198,10 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>A simple store with one GST rate and no business buyers can usually follow the steps above. Get help when you sell at more than one rate, invoice B2B buyers who claim input tax credit, need e-invoices, or already have live orders with the wrong tax split, because correcting past invoices is an accounting job as well as a website one.</p>
 <p><a href="/woocommerce-developer/">WooCommerce development</a> covers GST tax classes, GSTIN fields and invoices set up from your CA's figures. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/woocommerce-developer/">WooCommerce development services</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 <h3>Does WooCommerce support GST?</h3>
 <p>Yes, through its standard tax settings. You create tax classes for each GST rate and add CGST, SGST and IGST rates by state. HSN codes, a GSTIN checkout field and GST-format invoices need a plugin or custom work.</p>
@@ -28189,6 +28215,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately.</p>
 <h3>Can WooCommerce generate e-invoices with an IRN?</h3>
 <p>Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store.</p>
+
+<p>Related reading: <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to the Meta catalog for Instagram Shopping</a>.</p>
 `,
   },
   {
@@ -32803,15 +32831,25 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'compare-website-quotes',
-    seoTitle: 'Why Website Quotes Differ and How to Compare Them',
+    seoTitle: 'How to Compare Website Quotes (and Why They Differ)',
     title: 'Why Are Website Quotes So Different? How to Compare Website Quotes Fairly',
     description: 'Website quotes differ because each prices a different job. Send one brief, compare line by line with our checklist and add up 3-year costs before you pick.',
     date: '2026-09-27',
-    updated: '2026-11-11',
+    updated: '2026-11-18',
     category: 'Pricing',
     related: ['hire-wordpress-developer', 'wordpress-website-development', 'website-redesign'],
     body: `
 <p>Why are website quotes different? Because each developer is usually pricing a different job: a lightly edited template or a custom design, your text or theirs, ten unique layouts or three, testing and SEO setup or none. To compare them fairly, send everyone the same written brief, put every quote into one comparison sheet line by line, ask the same follow-up questions, and compare the total cost over three years rather than the build price alone.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>Send every developer the same written brief.</li>
+  <li>Put each quote in one table: pages, design, content, SEO, testing, support.</li>
+  <li>Ask who owns the domain, hosting and admin accounts.</li>
+  <li>Compare what is included, not just the total.</li>
+</ol>
+</div>
 <p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a written scope, a fixed price and a timeline, usually within 24 hours of sending your requirements, and the scope lists what is excluded as well as what is included. Whoever you choose, the method below makes any set of quotes comparable.</p>
 
 <h2>Why are website quotes so different?</h2>
@@ -32936,6 +32974,10 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p>Get help when quotes differ so much that you can't tell whether they cover the same job, or when none of them says who will own the domain, hosting and logins. A written scope, built from your brief, is what makes quotes comparable, and it is useful even if you hire someone else.</p>
 <p>Want a quote that is easy to compare? Send your requirements and you'll get a written scope with inclusions, exclusions, a fixed price and a timeline after a free review; see <a href="/hire-wordpress-developer/">hire a WordPress developer</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/wordpress-website-development/">WordPress website development</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 <h3>Why are website quotes different?</h3>
 <p>Because they usually cover different work: template or custom design, who writes the content, how many unique layouts, which features, how much testing and SEO setup, and what support follows launch. Aligning the scope removes most of the gap.</p>
@@ -32953,6 +32995,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 
 <h3>How do I compare website quotes?</h3>
 <p>Send the same written brief to each developer, list every quote line by line in one sheet, note what each one excludes, then compare the three-year cost and the quality of their live work. Negotiate scope, not rate, if the best quote is over budget.</p>
+
+<p>Related reading: <a href="/blog/rebranding-your-website/">rebranding your website without losing SEO</a> and <a href="/blog/outsource-wordpress-development-india/">outsourcing WordPress development to India</a> and <a href="/blog/industrial-website-product-catalogue/">building an industrial catalog website</a>.</p>
 `,
   },
   {
@@ -33400,11 +33444,21 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
     title: 'Outsource WordPress Development to India: How to Choose a Developer and What Drives Cost',
     description: 'Outsource WordPress development to India safely: a 10-point checklist for choosing a developer, what drives cost, and how to run a paid test task.',
     date: '2026-09-27',
-    updated: '2026-11-11',
+    updated: '2026-11-18',
     category: 'Agencies',
     related: ['wordpress-developer-for-agencies', 'hire-wordpress-developer', 'figma-to-wordpress'],
     body: `
 <p>To outsource WordPress development to India safely, choose a developer or small team by their live work and how they communicate, start with one small paid test task, put scope, milestones, ownership and an NDA in writing, keep hosting and licences in your or your client's name, and check every delivery against a fixed QA list. Below: a checklist for choosing a developer, what actually drives the cost, and which projects outsource best.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>Shortlist developers by live work and how clearly they reply.</li>
+  <li>Start with one small paid test task.</li>
+  <li>Put scope, milestones, ownership and an NDA in writing.</li>
+  <li>Keep hosting and licences in your or your client name.</li>
+</ol>
+</div>
 <p>If you run an agency and want a dependable partner rather than a marketplace hire, see how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>.</p>
 
 <h2>Why agencies outsource WordPress work to India</h2>
@@ -33545,6 +33599,10 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <h2>When to get help</h2>
 <p>I work white-label for agencies under NDA: Figma, XD and PDF designs built in Elementor or the block editor, WooCommerce stores, speed fixes and ongoing maintenance, with fixed quotes and direct communication. See <a href="/wordpress-developer-for-agencies/">WordPress development for agencies</a> or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>; Shopify builds are covered under <a href="/shopify-developer/">Shopify development</a>. <a href="/#contact">Send your next brief</a> for a quote.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 
 <h3>Is it safe to outsource WordPress development to India?</h3>
@@ -33564,6 +33622,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 
 <h3>Can I resell outsourced WordPress development under my agency's name?</h3>
 <p>Yes. That is what white-label work means: the developer builds and supports the site, and you present it, invoice it and own the client relationship. Put confidentiality, non-solicitation and code ownership in the agreement.</p>
+
+<p>Related reading: <a href="/blog/compare-website-quotes/">how to compare website quotes fairly</a>.</p>
 `,
   },
   {
@@ -37275,15 +37335,25 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger Website Slow? Fix It in hPanel, Step by Step',
+    seoTitle: 'Hostinger Website Slow? How to Fix a Slow Hostinger Site',
     title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
     description: 'Hostinger site slow? Check hPanel CPU and memory limits, confirm LiteSpeed cache hits, then fix PHP, plugins and bots. Do this before you pay to upgrade.',
     date: '2026-09-28',
-    updated: '2026-11-10',
+    updated: '2026-11-18',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
 <p>Hostinger slow? In most cases the site is hitting its plan's CPU or memory limits, or pages aren't being served from the LiteSpeed cache, so check resource usage in hPanel and confirm caching works before you blame the host or upgrade. Here's how to tell which cause you're dealing with, in the order I check.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>In hPanel, open Performance or Resource usage and check whether CPU, memory or entry processes are hitting the plan limit.</li>
+  <li>Confirm LiteSpeed Cache is active and pages return a cache HIT.</li>
+  <li>Turn off or replace heavy plugins, then test with PageSpeed Insights.</li>
+  <li>Only upgrade the plan if limits are still being hit after caching works.</li>
+</ol>
+</div>
 <p>(This guide isn't sponsored. Hostinger changes its plans and panel from time to time, so check its current help pages for exact menu names.)</p>
 
 <h2>Hostinger slow? A step-by-step fix checklist</h2>
@@ -37415,6 +37485,10 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <h2>When to get help</h2>
 <p>Get help when hPanel shows the plan hitting its CPU or memory limit every day, the cache check says "hit" but pages still take several seconds, or the admin area is slow even with caching working, which points to plugins, the database or scheduled tasks rather than the host. Upgrading the plan first often just hides the problem for a few months.</p>
 <p>My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> measures first, fixes the real bottleneck with a backup taken beforehand, then re-tests so you can see the difference. If you're weighing a move, read <a href="/blog/shared-vs-vps-vs-managed-wordpress-hosting/">shared vs VPS vs managed hosting</a> first. For a slow WooCommerce store on Hostinger, see <a href="/woocommerce-developer/">WooCommerce development</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>FAQs</h2>
 <h3>Why is Hostinger so slow?</h3>
@@ -42015,6 +42089,8 @@ add_action( 'after_setup_theme', function () {
 <p>No single plugin fixes everything. A good caching plugin, an image optimisation plugin and an asset manager help, but hosting and removing unnecessary plugins usually make the biggest difference.</p>
 <h3>Is WooCommerce slower than Shopify?</h3>
 <p>Not necessarily. A well-hosted, well-optimised WooCommerce store can be very fast. Shopify handles hosting for you, while WooCommerce speed depends on your setup. See our <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify comparison</a>.</p>
+
+<p>Related reading: <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to the Meta catalog for Instagram Shopping</a> and <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and GST invoices in India</a>.</p>
 `,
   },
   {
@@ -60349,15 +60425,25 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'rebranding-your-website',
-    seoTitle: 'Rebranding a Website Without Losing SEO: 2026 Checklist',
+    seoTitle: 'Rebranding Your Website Without Losing SEO: Checklist',
     title: 'Rebranding Your Website: What to Update, How to Protect SEO and a Launch Checklist',
     description: 'Changing your brand name or domain? Keep URLs, map 301 redirects, update titles, schema and Google Business Profile. A launch checklist to keep rankings.',
     date: '2026-10-01',
-    updated: '2026-11-10',
+    updated: '2026-11-18',
     category: 'Guides',
     related: ['website-redesign', 'wordpress-seo-services'],
     body: `
 <p>Website rebrand SEO comes down to changing as little as Google relies on as possible: keep your URLs and page content where you can, 301-redirect anything that moves, and update every mention of the old name so search engines connect the old brand with the new one. Rebrands that lose rankings usually changed the domain, URLs, content and design all at once without a redirect map.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>Keep URLs and page content where you can.</li>
+  <li>301-redirect every URL that changes, including from an old domain.</li>
+  <li>Update the name, logo, schema and Google Business Profile everywhere.</li>
+  <li>Use the Change of Address tool in Search Console if the domain changes.</li>
+</ol>
+</div>
 <p>This guide covers what to update, how to protect rankings and a launch checklist.</p>
 <p>The short version: decide exactly what is changing, keep your existing URLs wherever you can, 301-redirect anything that must change, update every brand asset and every mention of the old name, use Search Console's Change of Address tool if the domain changes, then tell customers and watch your data closely for a few months. Here is how to do each step in a sensible order, with a launch checklist at the end.</p>
 
@@ -60500,6 +60586,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when the rebrand changes the domain or URL structure, when the site has rankings or leads you cannot afford to lose, or when the new design is a full rebuild rather than a logo swap. A <a href="/website-redesign/">website redesign</a> covers the new brand, the redirect map and post-launch checks in Search Console, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for the technical side only. To start, <a href="/#contact">send your website address</a> and the new brand files for a free review and a fixed quote.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/website-redesign/">website redesign services</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 <h3>How do I handle website rebrand SEO without losing rankings?</h3>
 <p>Keep URLs and content where you can, 301-redirect every URL that changes, update titles, schema and listings with the new name, and check Search Console for 404s after launch. A name change on the same domain is usually low risk; a new domain needs the most care.</p>
@@ -60511,6 +60601,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>It varies. Titles usually update as pages are recrawled, while the site name in results and your business profile can take longer. Consistent naming across the site, structured data and listings helps.</p>
 <h3>Should I mention my old name on the new website?</h3>
 <p>Yes. A "formerly Old Name" line on the About page and footer, plus an alternate name in structured data, helps customers and Google connect the two names.</p>
+
+<p>Related reading: <a href="/blog/compare-website-quotes/">how to compare website quotes fairly</a> and <a href="/blog/faq-page-seo/">how to write an FAQ for a sales page and for SEO</a>.</p>
 `,
   },
   {
@@ -61068,15 +61160,25 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'meta-catalog-instagram-shopping-woocommerce',
-    seoTitle: 'WooCommerce to Instagram Shopping: Meta Catalog Setup',
+    seoTitle: 'WooCommerce Instagram Shopping: Meta Catalog Setup Guide',
     title: 'Connecting WooCommerce to Meta\'s Catalog for Instagram and Facebook Shopping',
     description: 'Connect WooCommerce to Meta\'s catalog with the official plugin or a feed, tag products on Instagram and Facebook, and keep price and stock in sync.',
     date: '2026-10-01',
-    updated: '2026-11-10',
+    updated: '2026-11-18',
     category: 'E-commerce',
     related: ['woocommerce-developer', 'landing-page-design'],
     body: `
 <p>To connect WooCommerce to Meta's catalog, install the official Facebook for WooCommerce plugin or create a product feed, link it to a catalog in Meta Commerce Manager, and keep prices and stock in sync automatically. On Shopify, the Facebook and Instagram sales channel app does the same job. Once the catalog is approved, you can tag products in Instagram posts and run catalog-based ads.</p>
+
+<div class="quick-fix">
+<p><strong>Short answer (4 steps):</strong></p>
+<ol>
+  <li>Install the Facebook for WooCommerce plugin, or create a product feed.</li>
+  <li>Connect it to a catalog in Meta Commerce Manager.</li>
+  <li>Check that prices, stock and images sync without errors.</li>
+  <li>Apply for Instagram Shopping and tag products once approved.</li>
+</ol>
+</div>
 <p>This guide covers both setups, the product data Meta needs, common rejection reasons, and how Indian stores can use the catalog for ads and Instagram, whether they sell on WooCommerce or Shopify.</p>
 
 <h2>What Meta's catalog does for a store</h2>
@@ -61186,6 +61288,10 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when products keep getting rejected, when catalog IDs do not match pixel events, or when you need the Conversions API set up on the server. For WooCommerce stores see <a href="/woocommerce-developer/">WooCommerce development</a>, and for Shopify see <a href="/shopify-developer/">Shopify development</a>. To start, <a href="/#contact">send your store address</a> for a free review and a fixed quote.</p>
 
+<div class="fix-cta">
+<p><strong>Want this done for you?</strong> See <a href="/woocommerce-developer/">WooCommerce development services</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>FAQs</h2>
 <h3>How do I connect WooCommerce to Meta's catalog?</h3>
 <p>Install the Facebook for WooCommerce plugin, connect your Business Manager, Page, Instagram account, pixel and catalog, choose products to sync, and fix any errors shown in Commerce Manager. A product feed plugin is an alternative for large or custom catalogues.</p>
@@ -61197,6 +61303,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>With the official plugin, a feed on a schedule, or the Shopify channel, yes. Manual uploads do not, so they go out of date.</p>
 <h3>Do I need the Conversions API as well as the pixel?</h3>
 <p>It is recommended. Sending events from the server as well as the browser makes tracking more reliable when browsers block scripts.</p>
+
+<p>Related reading: <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and GST invoices in India</a>.</p>
 `,
   },
   {
