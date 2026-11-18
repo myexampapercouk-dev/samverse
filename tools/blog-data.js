@@ -5,15 +5,17 @@
 module.exports = [
   {
     slug: 'wordpress-website-cost-india',
-    seoTitle: "WordPress Website Cost in India: Plans and Pricing",
-    title: 'WordPress Plans and Pricing: How Much Does a WordPress Website Cost in India? (2026 Guide)',
+    seoTitle: "WordPress Website Development Cost in India (2026)",
+    title: "WordPress Website Development Cost in India: Real Price Ranges (2026)",
     description: "What a WordPress website costs in India: free WordPress.org vs WordPress.com plans, build cost, yearly domain and hosting, and how to get a fixed quote.",
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: "2026-11-18",
     category: 'Pricing',
     related: ['wordpress-website-development', 'woocommerce-developer', 'wordpress-maintenance'],
     body: `
 <p>WordPress plans are the paid hosting tiers sold by WordPress.com, but most Indian business websites don't need one: the WordPress.org software is free, and what you actually pay for is a domain, hosting and the build. For most small businesses in India, that means roughly ₹15,000 to ₹40,000 to build a professional WordPress website, plus a few thousand rupees a year for domain and hosting.</p>
+
+<p><strong>WordPress website development cost in India</strong> for a typical small business is ₹15,000 to ₹40,000 for a 5 to 8 page site, ₹5,000 to ₹15,000 for a single landing page and ₹30,000 to ₹90,000+ for a WooCommerce store, with domain and hosting adding roughly ₹3,000 to ₹16,000 a year.</p>
 
 <blockquote><strong>Short answer:</strong> A WordPress website in India usually costs about ₹15,000 to ₹40,000 to build for a small business, more for catalogues, bookings or WooCommerce stores. WordPress.org itself is free. Yearly running costs are the domain, hosting and optional maintenance, so compare renewal prices, not first-year offers, and ask for a fixed written quote.</blockquote>
 
@@ -71,13 +73,16 @@ module.exports = [
 
 <h2>Typical price ranges by type of website</h2>
 <p>These are typical freelance market ranges in India. Agencies usually charge more; very cheap offers often cut corners on speed, security or mobile design.</p>
-<ul>
-  <li><strong>Landing page (1 page):</strong> ₹5,000 – ₹15,000. Ideal for ad campaigns or a single product or service.</li>
-  <li><strong>Small business website (5–8 pages):</strong> ₹15,000 – ₹40,000. Home, about, services, gallery, contact, with a mobile-friendly design.</li>
-  <li><strong>Larger business or B2B website:</strong> ₹35,000 – ₹80,000. Product catalogues, many service pages, brochures and quote forms.</li>
-  <li><strong>WooCommerce online store:</strong> ₹30,000 – ₹90,000+. Products, payment gateway, shipping, order emails and coupons.</li>
-  <li><strong>Custom features:</strong> booking systems, memberships, multilingual sites or custom integrations add to the cost based on complexity.</li>
-</ul>
+<table>
+<thead><tr><th>Type of WordPress website</th><th>Typical development cost in India</th><th>Usual timeline</th></tr></thead>
+<tbody>
+<tr><td>Landing page (1 page)</td><td>₹5,000 to ₹15,000</td><td>3 to 7 days</td></tr>
+<tr><td>Small business website (5 to 8 pages)</td><td>₹15,000 to ₹40,000</td><td>1 to 3 weeks</td></tr>
+<tr><td>Larger business or B2B website</td><td>₹35,000 to ₹80,000</td><td>3 to 6 weeks</td></tr>
+<tr><td>WooCommerce online store</td><td>₹30,000 to ₹90,000+</td><td>3 to 8 weeks</td></tr>
+<tr><td>Custom features (bookings, memberships, multilingual)</td><td>Quoted on scope</td><td>Depends on scope</td></tr>
+</tbody>
+</table>
 
 <p>Planning an online store? See <a href="/blog/ecommerce-website-cost-india/">what affects the cost of an e-commerce website in India</a> for platform, payment, shipping and running-cost factors.</p>
 
@@ -164,10 +169,16 @@ module.exports = [
 </ol>
 <p>A quote that leaves out renewals is not the full cost of the website.</p>
 
+<div class="fix-cta">
+<p><strong>Want a fixed quote for your WordPress website?</strong> See <a href="/wordpress-developer-pune/">WordPress developer in Pune (remote across India)</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>When to get help</h2>
 <p>Get help when the site has to bring in enquiries or sales, when you need payments, bookings or a store, or when you want a fixed price instead of an open-ended hourly bill. Through <a href="/wordpress-website-development/">WordPress website development</a> you send your page list, a few sites you like and the features you need, and get a written scope and a fixed quote with the domain, hosting and licences in your own name. For a store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
 <h2>FAQs</h2>
+<h3>What is the WordPress website development cost in India?</h3>
+<p>Most WordPress websites in India cost ₹15,000 to ₹40,000 to develop for a small business, ₹35,000 to ₹80,000 for a larger business or B2B site and ₹30,000 to ₹90,000+ for a WooCommerce store. Domain and hosting are extra and renew yearly.</p>
 <h3>What is the WordPress website cost in India for a small business?</h3>
 <p>For a small business site of around five to ten pages built on a good theme, expect roughly ₹15,000 to ₹40,000 for the build, plus a few thousand rupees a year for domain and hosting. Stores and custom features cost more.</p>
 <h3>How much does a WordPress domain cost in India?</h3>
@@ -374,6 +385,10 @@ module.exports = [
   </tbody>
 </table>
 
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>WordPress site slow? How to fix it, cause by cause</h2>
 <p>Roughly in order of impact. Back up first and re-test after each change.</p>
 
@@ -525,6 +540,10 @@ module.exports = [
 
 <figure class="step-shot"><img src="/assets/blog/signs-wordpress-site-hacked-step-1.svg" alt="Signs WordPress site hacked: Google Search Console Security issues report showing hacked content injection" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Search Console, Security issues, any listed issue (such as hacked content) confirms a problem.</figcaption></figure>
 <figure class="step-shot"><img src="/assets/blog/signs-wordpress-site-hacked-step-2.svg" alt="Signs your WordPress site is hacked: Users, All Users filtered by Administrator showing an unknown admin account" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 2: In Users, All Users, filter by Administrator and remove any account you do not recognise.</figcaption></figure>
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-malware-removal/">WordPress malware removal</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>How to check if a WordPress site is hacked without logging in</h2>
 <p>If you cannot log in, checks 1, 2 and 4 above still work from outside. Also:</p>
 <ul>
@@ -5204,11 +5223,11 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
   },
   {
     slug: 'website-maintenance-cost-india',
-    seoTitle: "Website Maintenance Cost in India: Packages and Plans",
-    title: 'Website Maintenance Cost in India: Monthly Packages, Yearly Running Costs and What Is Included',
+    seoTitle: "Website Maintenance Cost in India: Monthly and Yearly",
+    title: "Website Maintenance Cost in India: Monthly Plans, Yearly Costs and What Is Included",
     description: "Website maintenance cost in India: what monthly plans and AMCs include, yearly domain and hosting costs, what costs extra, and how to choose a provider.",
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: "2026-11-18",
     category: 'Pricing',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-speed-optimization'],
     body: `
@@ -5242,6 +5261,18 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <li>A monthly report of what was done</li>
 </ul>
 <p><a href="/blog/monthly-website-maintenance-plan/">What a monthly maintenance plan should include</a> goes through each item in detail.</p>
+
+<h2>Website maintenance cost in India by package</h2>
+<table>
+<thead><tr><th>Package</th><th>Best for</th><th>Typical monthly cost</th><th>Typical yearly (AMC)</th></tr></thead>
+<tbody>
+<tr><td>Basic care</td><td>Brochure sites that rarely change</td><td>₹1,500 to ₹2,500</td><td>₹15,000 to ₹25,000</td></tr>
+<tr><td>Standard</td><td>Service businesses with regular updates</td><td>₹2,500 to ₹4,000</td><td>₹25,000 to ₹40,000</td></tr>
+<tr><td>Store or business-critical</td><td>WooCommerce stores and lead-heavy sites</td><td>₹4,000 to ₹6,000+</td><td>₹40,000 to ₹60,000+</td></tr>
+<tr><td>Pay-as-you-go</td><td>Very small sites with no budget for a plan</td><td>Per task</td><td>Varies</td></tr>
+</tbody>
+</table>
+<p>Yearly AMC figures assume a small discount for paying upfront. Domain, hosting and licences are on top of these figures.</p>
 
 <h2>Types of website maintenance packages</h2>
 <ul>
@@ -5337,10 +5368,16 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 </ul>
 <p>Clear written answers to these matter more than the monthly figure, wherever in India the provider is based; see <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer in India</a> for how remote support works.</p>
 
+<div class="fix-cta">
+<p><strong>Want your website maintained for a fixed monthly price?</strong> See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>When to get help</h2>
 <p>Get help when updates have been skipped for months, when the site takes orders or enquiries you cannot afford to lose, or when nobody on the team has time to check backups and security each month. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers tested updates with a backup first, uptime and security monitoring, small content changes and a monthly report, with hosting, domain and licences kept in your name. Send your website address and the numbers from the check above for a fixed monthly quote.</p>
 
 <h2>FAQs</h2>
+<h3>What is the website maintenance cost in India per month?</h3>
+<p>Website maintenance in India usually costs ₹1,500 to ₹6,000 a month with a freelancer: around ₹1,500 to ₹2,500 for a basic brochure site, ₹2,500 to ₹4,000 for a standard business site and ₹4,000 to ₹6,000+ for a WooCommerce store.</p>
 <h3>What are website maintenance charges in India?</h3>
 <p>Freelance WordPress maintenance plans for small and medium sites typically cost about ₹1,500 to ₹6,000 a month. Simple brochure sites sit at the lower end and WooCommerce stores at the higher end.</p>
 <h3>What is the monthly cost of a WordPress website?</h3>
@@ -9845,6 +9882,10 @@ site:example.com/blog/ "net metering"</code></pre>
 <p>Our guide to <a href="/blog/search-console-page-indexing-errors/">Search Console page indexing errors</a> explains each status. Also run a site:yourdomain.com search to spot spam pages, staging URLs or tag archives that should not be in Google.</p>
 
 <figure class="step-shot"><img src="/assets/blog/technical-seo-audit-wordpress-step-1.svg" alt="Technical SEO audit WordPress: Search Console Page indexing report, Why pages aren't indexed table" width="960" height="560" loading="lazy" decoding="async"><figcaption>Step 1: In Search Console, Pages, read every reason in the "Why pages aren't indexed" table.</figcaption></figure>
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-seo-services/">WordPress SEO services</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>Step 2: Check WordPress settings that block SEO</h2>
 <ul>
 <li><strong>Search engine visibility:</strong> in Settings, Reading, make sure "Discourage search engines from indexing this site" is unticked. With WP-CLI, <code>wp option get blog_public</code> should return 1.</li>
@@ -13686,11 +13727,11 @@ function my_only_free_shipping( $rates ) {
   },
   {
     slug: 'local-landing-pages-without-doorway-pages',
-    seoTitle: 'SEO Doorway Pages: What They Are and How to Avoid Them',
-    title: 'SEO Doorway Pages: What They Are and How to Build City Pages That Rank Without Becoming Doorways',
+    seoTitle: "Doorway Pages in SEO: What They Are and Examples",
+    title: "Doorway Pages in SEO: What They Are, Examples, and Safe City Pages",
     description: 'SEO doorway pages explained: what Google\'s policy says, examples, a 10-point audit for city and area pages, the unique content each needs and how to fix.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: "2026-11-18",
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'website-for-solar-and-power-companies'],
     body: `
@@ -20729,15 +20770,22 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
   },
   {
     slug: 'robots-txt-explained',
-    seoTitle: 'WordPress Robots.txt: Safe Example, Editing and Mistakes',
-    title: 'Robots.txt WordPress Guide: How It Works, Safe Examples, Sitemaps and Mistakes to Avoid',
+    seoTitle: "Robots.txt for WordPress: Default File, How to Edit It",
+    title: "Robots.txt for WordPress: Default File, How to Edit It, Best Example",
     description: 'Copy a safe WordPress robots.txt, edit it in Yoast or Rank Math, add your sitemap line and avoid the blocking mistakes that drop pages from Google.',
     date: '2026-09-27',
-    updated: "2026-11-10",
+    updated: "2026-11-18",
     category: 'SEO',
     related: ['wordpress-seo-services', 'website-redesign', 'wordpress-migration'],
     body: `
 <p>A WordPress robots.txt is a small plain-text file at yourdomain/robots.txt, generated automatically unless you upload your own, that tells search engine crawlers which URLs they may crawl. A safe version blocks only /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and everything else should stay crawlable.</p>
+
+<p><strong>The default WordPress robots.txt:</strong> WordPress creates a virtual robots.txt automatically (there is no file on the server until you upload one or edit it in an SEO plugin). On a normal site it looks like this:</p>
+<pre><code>User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://yourdomain.com/wp-sitemap.xml</code></pre>
 <blockquote><strong>Short answer:</strong> A WordPress robots.txt controls crawling, not indexing. A safe file blocks /wp-admin/ (allowing admin-ajax.php) and lists your XML sitemap, and nothing else important. To keep a page out of Google, use a noindex tag on a crawlable page instead. The biggest risk is a leftover "Disallow: /" from a staging site.</blockquote>
 <p>If Search Console is already showing "Indexed, though blocked by robots.txt" or "Blocked by robots.txt", see <a href="/blog/indexed-though-blocked-by-robots-txt-fix/">what those robots.txt statuses mean and how to fix them</a>.</p>
 
@@ -21208,17 +21256,28 @@ Disallow: /</code></pre>
   },
   {
     slug: '301-vs-302-redirects',
-    seoTitle: '301 vs 302 Redirect: Which to Use and the SEO Difference',
-    title: '301 vs 302 Redirects: The Difference, Which to Use, How They Affect SEO and How to Set Them Up in WordPress',
+    seoTitle: "301 vs 302 Redirect: Difference and SEO Impact",
+    title: "301 vs 302 Redirect: Difference and SEO Impact (With WordPress Setup)",
     description: '301 vs 302: a 301 is a permanent redirect, a 302 is temporary. Which to use, the SEO impact, how to check a redirect with curl and set it up in WordPress.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: "2026-11-18",
     category: 'SEO',
     related: ['wordpress-migration', 'website-redesign', 'wordpress-seo-services'],
     body: `
 <p>The difference between a 301 and a 302 redirect is that a 301 means a page has moved permanently, while a 302 means it has moved temporarily and the original URL will return. For SEO, use a 301 whenever the change is permanent, such as a new URL, a deleted page with a replacement or a domain change, so Google moves the old page's signals to the new address and shows the new URL in results.</p>
 
 <p><strong>Short answer:</strong> 301 = permanent, pass signals and replace the old URL. 302 = temporary, keep the old URL in Google's index. If you are not sure which you need, ask "will the old URL ever be used again?" If the answer is no, use a 301.</p>
+
+<h2>302 vs 301 redirect: the difference in one table</h2>
+<table>
+<thead><tr><th>Question</th><th>301 redirect</th><th>302 redirect</th></tr></thead>
+<tbody>
+<tr><td>Meaning</td><td>Moved permanently</td><td>Moved temporarily</td></tr>
+<tr><td>URL Google shows</td><td>The new URL</td><td>Usually the old URL</td></tr>
+<tr><td>Ranking signals</td><td>Move to the new URL</td><td>Stay with the old URL while the 302 is short-term</td></tr>
+<tr><td>Use it for</td><td>New URLs, deleted pages with a replacement, domain or HTTPS moves</td><td>Short maintenance, A/B tests, out-of-stock or seasonal swaps</td></tr>
+</tbody>
+</table>
 
 <h2>301 vs 302: what each redirect means</h2>
 <p>A redirect is an instruction from your server that says "the page you asked for is somewhere else". The number is the HTTP status code that comes with it, and it tells browsers and search engines how to treat the move.</p>
@@ -31667,6 +31726,10 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
   <li><strong>No placeholder content:</strong> no "Lorem ipsum", sample products or "coming soon" pages</li>
   <li><strong>Honest claims:</strong> no fake discounts, invented reviews or "best in India" claims you can't back up</li>
 </ul>
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/woocommerce-developer/">WooCommerce development</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
+
 <h2>Step 1: Create your Merchant Center account</h2>
 <ol>
   <li>Sign in at Google Merchant Center with the Google account your business will keep long term, not a developer's personal account.</li>
@@ -32366,6 +32429,10 @@ dig yourdomain.com +short</code></pre>
     <tr><td>WooCommerce admin crawls</td><td>Analytics, a backlog of scheduled actions, large order tables</td><td>WooCommerce &gt; Status &gt; Scheduled Actions</td></tr>
   </tbody>
 </table>
+
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>How to find the cause</h2>
 <h3>Rule out your browser and connection</h3>
@@ -37970,15 +38037,26 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
   },
   {
     slug: 'fix-wordpress-critical-error',
-    seoTitle: 'There Has Been a Critical Error on This Website: Fix It',
-    title: "WordPress Critical Error (Fatal Error): How to Fix \"There Has Been a Critical Error on This Website\", Step by Step",
+    seoTitle: "There Has Been a Critical Error on This Website: 7 Fixes",
+    title: "There Has Been a Critical Error on This Website (WordPress): 7 Fixes",
     description: 'Fix "There has been a critical error on this website" in WordPress: use the recovery email, read debug.log or disable plugins by File Manager.',
     date: '2026-09-28',
-    updated: "2026-11-11",
+    updated: "2026-11-18",
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-malware-removal', 'wordpress-migration'],
     body: `
 <p>"There has been a critical error on this website" means PHP hit a fatal error, usually from a plugin, a theme or a PHP version change. Use the recovery mode link WordPress emails to the admin address to deactivate what it names; with no email, read debug.log or rename the plugins folder in File Manager.</p>
+
+<div class="quick-fix">
+<p><strong>Quick fix (5 steps):</strong></p>
+<ol>
+  <li>Check the admin email inbox for the WordPress "recovery mode" link, log in through it and deactivate the plugin or theme it names.</li>
+  <li>No email? Turn on <code>WP_DEBUG</code> and <code>WP_DEBUG_LOG</code> in wp-config.php and read wp-content/debug.log to see which file failed.</li>
+  <li>Rename the wp-content/plugins folder in your host's File Manager to switch off every plugin, then rename it back and reactivate them one by one.</li>
+  <li>Switch to a default theme such as Twenty Twenty-Five by renaming your active theme's folder.</li>
+  <li>Raise the PHP memory limit (for example <code>define('WP_MEMORY_LIMIT', '256M');</code>) or roll back the PHP version in your hosting panel if the error started after a PHP upgrade.</li>
+</ol>
+</div>
 <blockquote><strong>Short answer:</strong> The WordPress critical error is a safe wrapper around a PHP fatal error, almost always caused by a plugin, theme, PHP version change or memory limit. Your pages, posts and orders are in the database and are almost always untouched. Use the recovery email, read debug.log, then disable the plugin or theme the error names.</blockquote>
 
 <h2>What the critical error actually means</h2>
@@ -37999,6 +38077,10 @@ TXT     _dmarc                v=DMARC1; p=none; rua=mailto:dmarc@example.com</co
     <tr><td>Malware or modified files</td><td>Unfamiliar file names in the log, odd code at the top of files</td><td>Treat it as a hack, not just an error</td></tr>
   </tbody>
 </table>
+
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>Before you change anything</h2>
 <ul>
@@ -41803,6 +41885,10 @@ add_action( 'after_setup_theme', function () {
 
 <h2>Step 1: Measure the right pages</h2>
 <p>Test the homepage, a busy category page, a product page with variations, the cart and the checkout. Use PageSpeed Insights for Core Web Vitals, and time the checkout yourself. Our guide to <a href="/blog/website-speed-test-tools-explained/">speed test tools</a> explains which numbers to trust. Note the server response time (TTFB) separately from front-end load time; they need different fixes.</p>
+
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-speed-optimization/">WordPress and WooCommerce speed optimization</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>Step 2: Get hosting that suits WooCommerce</h2>
 <p>If uncached pages such as cart and checkout take several seconds before anything starts loading, the server is usually the bottleneck. Look for:</p>
@@ -50095,6 +50181,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <h2>Step 1: clear cookies and test in a private window</h2>
 <p>Before changing anything, open the site in a private or incognito window and on a mobile using data rather than Wi-Fi. If it works there, the problem may be stale cookies or browser cache. Clear cookies for your domain and test again.</p>
 <p>Also clear any caching layers: your caching plugin, the hosting cache (many Indian hosts such as Hostinger include their own cache) and Cloudflare's cache. A loop that was fixed can keep appearing if an old redirect is cached.</p>
+
+<div class="fix-cta">
+<p><strong>Need this fixed? Samverse can do it.</strong> See <a href="/wordpress-maintenance/">WordPress maintenance and support</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
+</div>
 
 <h2>Step 2: check Cloudflare SSL mode</h2>
 <p>This is one of the most common causes. In Cloudflare's &quot;Flexible&quot; SSL mode, visitors connect to Cloudflare over https, but Cloudflare connects to your server over http. If WordPress or your server then forces https, it redirects back, and the loop begins.</p>
