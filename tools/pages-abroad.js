@@ -78,7 +78,7 @@ const REGIONS = [
     when: 'usually by the start of your next business day',
     slug: 'wordpress-shopify-developer-usa',
     nav: 'WordPress & Shopify Developer for the USA',
-    title: 'WordPress Website Developer & Shopify Expert USA | Samverse',
+    title: 'Hire WordPress Developer in India from the USA | Samverse',
     description: 'Freelance WordPress and Shopify developer for US businesses: sales tax apps, ADA-minded accessibility, Stripe and Shopify Payments. Invoiced in USD.',
     eyebrow: 'East Coast to West Coast',
     h1: 'Freelance WordPress website developer and Shopify expert for <span class="grad">US</span> businesses, invoiced in USD',
@@ -135,7 +135,7 @@ const REGIONS = [
     when: 'usually the same day',
     slug: 'wordpress-shopify-developer-uae',
     nav: 'WordPress & Shopify Developer for UAE & GCC',
-    title: 'WordPress & Shopify Developer Dubai & UAE | Samverse',
+    title: 'WordPress Development Company Dubai & UAE | Samverse',
     description: 'Freelance WordPress and Shopify developer for Dubai, Abu Dhabi and GCC businesses: Arabic RTL sites, VAT, COD, Tabby and Tamara. Invoiced in AED.',
     eyebrow: 'Dubai, Abu Dhabi, Sharjah & the wider GCC',
     h1: 'WordPress &amp; Shopify developer for <span class="grad">Dubai &amp; the UAE</span>',
@@ -300,6 +300,10 @@ const guides = {
 <h2>Proof of work</h2>
 <p>My case studies include <a href="/work/third-eye-social/">Third Eye Social</a>, an AI automation agency, <a href="/work/streak-creative/">Streak Creative</a>, a growth marketing agency, and <a href="/work/southern-flavours/">Southern Flavours</a>, a restaurant in the UK. Each one is a live site you can open and test.</p>
 <p>Also selling into Canada? See the <a href="/wordpress-shopify-developer-canada/">Canada page</a>.</p>
+<h2>Hire a WordPress developer in India: how it works for US teams</h2>
+<p>When US businesses hire a WordPress developer in India, the usual worries are time zones, communication and ownership. Work runs asynchronously: you send the brief or tickets at the end of your day, and progress is ready on staging when you start the next morning, with a call overlap in your morning or my evening. The domain, hosting and admin accounts stay in your name, and the quote is fixed in USD before work starts.</p>
+<h2>Why agencies hire WordPress developers in India</h2>
+<p>US agencies hire WordPress developers in India for Figma or Elementor builds, WooCommerce stores, speed fixes and maintenance overflow, usually white-label. You get one named developer rather than a rotating team. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a> and <a href="/hire-wordpress-developer/">hire a WordPress developer</a>.</p>
 `,
   'wordpress-shopify-developer-canada': `
 <h2>Hiring a WordPress or Shopify developer for a Canadian business</h2>
@@ -341,6 +345,8 @@ const guides = {
 <p>For hospitality, the <a href="/work/southern-flavours/">Southern Flavours</a> restaurant site in the UK shows table reservations with instant confirmation, menus and online ordering. For clinics, the <a href="/work/dr-sunaina-dental-care/">dental clinic</a> case study shows treatments, timings and appointment requests that work on a phone.</p>
 <h2>Working across the GCC</h2>
 <p>I work with businesses in Dubai, Abu Dhabi, Sharjah, Riyadh, Jeddah, Doha and the rest of the Gulf remotely over WhatsApp, calls and video. The UAE weekend is Saturday and Sunday, while Saudi Arabia and Qatar take Friday and Saturday, so we agree review days that suit your team. See <a href="/shopify-developer/">Shopify development</a> or <a href="/woocommerce-developer/">WooCommerce development</a> for platform details.</p>
+<h2>WordPress development company in Dubai or a remote developer?</h2>
+<p>A WordPress development company in Dubai gives you a local office in Business Bay or Dubai Internet City, usually at Dubai rates. A remote developer in India works only 1.5 hours ahead of Gulf time, so calls and reviews fit inside the UAE working day, and the quote is fixed before work starts. Typical UAE briefs are English and Arabic WordPress sites for consultancies and clinics, real estate brokers needing project pages, and WooCommerce or Shopify stores with AED pricing and local delivery. The domain, hosting and accounts stay in your company name.</p>
 `,
   'wordpress-shopify-developer-europe': `
 <h2>Hiring a WordPress or Shopify developer for a European business</h2>
