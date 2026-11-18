@@ -577,7 +577,7 @@ const guides = {
 <li><strong>Marketplace and Instagram links.</strong> Many Mumbai D2C brands also sell on marketplaces and Instagram, so products, stock and pricing need to stay consistent across channels.</li>
 </ul>
 <p>If you are shortlisting an ecommerce website development company in Mumbai, note that Samverse is a freelancer, not an ecommerce agency, so you get one developer and a fixed quote. The full scope, process and price ranges are on the <a href="/ecommerce-website-development-pune/">ecommerce website development</a> page. Compare the platforms in <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify in India</a>.</p>
-<h2>Website maintenance services in Mumbai</h2>
+<h2>Website support and AMC for Mumbai businesses</h2>
 <p>For Mumbai businesses that already have a WordPress site, website maintenance services cover tested plugin and theme updates with a backup first, off-site backups, security and uptime checks and small content edits each month, all done remotely. Plans start at about ₹1,500 a month for a brochure site; see <a href="/wordpress-maintenance/">website maintenance services and packages</a>.</p>
 <h2>Local search across a big city</h2>
 <p>Mumbai searches are often very local: "near me", or a suburb such as Andheri, Bandra or Thane. Your Google Business Profile does most of the work for these, and your website supports it with clear service pages, your address, and consistent contact details.</p>
