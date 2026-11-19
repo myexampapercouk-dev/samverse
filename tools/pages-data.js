@@ -1215,7 +1215,7 @@ h1: 'Website maintenance services: WordPress maintenance <span class="grad">pack
     slug: 'website-for-interior-designers',
     extra: [{"h":"Interior design website templates vs a custom portfolio","p":["Interior design website templates are a quick start, but many studios in your city use the same few themes, so your work looks like theirs. A custom portfolio is built around your own project photos: one page per project, galleries that load fast on phones, services split into residential, commercial and turnkey, and an enquiry form that asks for budget, location and timeline. It can still be built on WordPress, so you add new projects yourself without a developer."]},{"h":"Best interior design websites: what they have in common","p":["The best interior design websites are portfolios first. Each project gets its own page with a short brief, the space, the style and large photos that still load fast, instead of one long gallery. Services are split into residential, commercial and turnkey work, the process is explained step by step, and the enquiry form asks for the space type, city and budget range. <a href=\"/work/studio-agama-interiors/\">Studio Agama Interiors</a> is a Samverse case study built around this project-first layout."]}],
     nav: 'Interior Designers & Architects',
-    title: 'Interior Design Websites for Designers & Architects | Samverse',
+    title: 'Interior Design Websites for Designers & Architects',
     description: 'Portfolio-first websites for interior designers and architects: project pages, fast galleries and enquiry forms that qualify clients.',
     eyebrow: 'For interior designers, architects & studios',
     h1: 'Interior designer website design that <span class="grad">shows your projects</span> and wins briefs',
