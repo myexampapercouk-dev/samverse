@@ -166,6 +166,30 @@
             "@type": "Answer",
             "text": "It is optional. It automates Steps 4 to 6, but the manual method keeps one fewer plugin on the site. Either way the certificate itself comes from your host."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is free SSL good enough for WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Free certificates encrypt the same way as paid ones and are fine for business sites and stores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I get \"too many redirects\" after enabling SSL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two layers are forcing HTTPS against each other, often Cloudflare Flexible SSL plus a server redirect. Use Full (strict) in Cloudflare or remove one redirect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to update Google Search Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add the https version (or use a Domain property) and resubmit the sitemap."
+          }
         }
       ]
     }
@@ -214,7 +238,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-11-11">11 November 2026</time> · 5 min read</span>
+              <span><time datetime="2026-11-11">11 November 2026</time> · 6 min read</span>
             </div>
           </div>
         </div>
@@ -225,6 +249,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#how-do-i-install-an-ssl-certificate-on-wordpress">How do I install an SSL certificate on WordPress?</a></li>
               <li><a href="#step-1-take-a-backup">Step 1: Take a backup</a></li>
               <li><a href="#step-2-issue-the-free-ssl-certificate-in-your-hosting-panel">Step 2: Issue the free SSL certificate in your hosting panel</a></li>
               <li><a href="#step-3-check-the-certificate-in-the-browser">Step 3: Check the certificate in the browser</a></li>
@@ -236,7 +261,8 @@
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
-<p>To install an SSL certificate on WordPress, issue the free certificate (usually Let's Encrypt) in your hosting panel, change both the <strong>WordPress Address</strong> and <strong>Site Address</strong> in <strong>Settings &gt; General</strong> to <code>https://</code>, redirect all HTTP traffic to HTTPS, and replace old <code>http://</code> links in the database so there is no mixed content. Most hosts include the certificate free and renew it automatically.</p>
+<h2 id="how-do-i-install-an-ssl-certificate-on-wordpress">How do I install an SSL certificate on WordPress?</h2>
+<p><strong>Short answer:</strong> Turn on the free SSL in your hosting panel, wait for it to issue, change both URLs in Settings &gt; General to https, then force HTTPS and fix any mixed content.</p>
 <div class="tut-need">
   <p><strong>Time required:</strong> 20 to 40 minutes (the certificate itself can take up to a few hours to issue)</p>
   <p><strong>What you'll need:</strong></p>
@@ -248,6 +274,8 @@
   </ul>
 </div>
 
+
+<p>To install an SSL certificate on WordPress, issue the free certificate (usually Let's Encrypt) in your hosting panel, change both the <strong>WordPress Address</strong> and <strong>Site Address</strong> in <strong>Settings &gt; General</strong> to <code>https://</code>, redirect all HTTP traffic to HTTPS, and replace old <code>http://</code> links in the database so there is no mixed content. Most hosts include the certificate free and renew it automatically.</p>
 <p>If you see "Not secure" or "Your connection is not private" after this, read <a href="/blog/ssl-certificate-errors-fix/">SSL certificate errors explained</a> for what each message means.</p>
 
 <h2 id="step-1-take-a-backup">Step 1: Take a backup</h2>
@@ -305,11 +333,16 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
+  <li><strong>Padlock missing (mixed content):</strong> some images, scripts or CSS still load over http. Run a search-replace from <code>http://yourdomain</code> to <code>https://yourdomain</code> in the database, then check the browser console for leftovers.</li>
+  <li><strong>Forcing HTTPS: htaccess or plugin?:</strong> a redirect in <code>.htaccess</code> or the host panel is lighter and runs before WordPress. A plugin is easier but adds a dependency. Use one, not both, or you risk a redirect loop.</li>
+  <li><strong>SSL renewal failed:</strong> free certificates renew automatically only while DNS points at the host. Check the A record, and that no Cloudflare or firewall rule blocks the validation path.</li>
   <li><strong>Too many redirects after Step 4 or 5:</strong> often a CDN such as Cloudflare set to Flexible SSL. Set it to Full (strict), or remove the extra redirect rule.</li>
   <li><strong>Locked out after changing the addresses:</strong> add <code>define('WP_HOME','https://yourdomain.com');</code> and <code>define('WP_SITEURL','https://yourdomain.com');</code> to <code>wp-config.php</code>, or fix the <code>siteurl</code> and <code>home</code> rows in <code>wp_options</code>.</li>
   <li><strong>Padlock still missing on some pages:</strong> open DevTools &gt; Console; it lists each http resource still loading.</li>
   <li><strong>Certificate will not issue:</strong> check the A record points at this host and there is no old AAAA record pointing elsewhere.</li>
 </ul>
+
+<p class="tut-related">Related: <a href="/blog/ssl-certificate-errors-fix/">read the full guide on the blog</a>, or see <a href="/wordpress-maintenance/">WordPress maintenance</a> if you would rather have it done for you.</p>
 
 <aside class="inline-cta tut-help">
   <strong>Need it done for you?</strong>
@@ -325,6 +358,13 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
 <h3>Do I need the Really Simple SSL plugin?</h3>
 <p>It is optional. It automates Steps 4 to 6, but the manual method keeps one fewer plugin on the site. Either way the certificate itself comes from your host.</p>
 
+<h3>Is free SSL good enough for WordPress?</h3>
+<p>Yes. Free certificates encrypt the same way as paid ones and are fine for business sites and stores.</p>
+<h3>Why do I get "too many redirects" after enabling SSL?</h3>
+<p>Two layers are forcing HTTPS against each other, often Cloudflare Flexible SSL plus a server redirect. Use Full (strict) in Cloudflare or remove one redirect.</p>
+<h3>Do I need to update Google Search Console?</h3>
+<p>Add the https version (or use a Domain property) and resubmit the sitemap.</p>
+
           <div class="post-cta">
             <h2>Stuck on a step?</h2>
             <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
@@ -339,6 +379,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#how-do-i-install-an-ssl-certificate-on-wordpress">How do I install an SSL certificate on WordPress?</a></li>
               <li><a href="#step-1-take-a-backup">Step 1: Take a backup</a></li>
               <li><a href="#step-2-issue-the-free-ssl-certificate-in-your-hosting-panel">Step 2: Issue the free SSL certificate in your hosting panel</a></li>
               <li><a href="#step-3-check-the-certificate-in-the-browser">Step 3: Check the certificate in the browser</a></li>
@@ -364,9 +405,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</code></pre>
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">7 min read</span></a>
-          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">6 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
+          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">8 min read</span></a>
+          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">7 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">6 min read</span></a>
         </div>
         <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
       </div>

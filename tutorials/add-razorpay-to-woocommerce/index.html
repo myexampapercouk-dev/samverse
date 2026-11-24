@@ -160,6 +160,30 @@
             "@type": "Answer",
             "text": "Yes. Enable both under WooCommerce > Settings > Payments. See cash on delivery on WooCommerce in India for limiting COD to keep returns down."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Razorpay test mode on a live site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Test keys only create test payments, but switch to live keys before real customers check out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Razorpay work with UPI on WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. UPI, cards, netbanking and wallets appear in the Razorpay popup, depending on what is enabled on your account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a webhook?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is strongly recommended. Without it, an order can stay unpaid if the customer closes the browser before returning to your site."
+          }
         }
       ]
     }
@@ -208,7 +232,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-11-10">10 November 2026</time> · 7 min read</span>
+              <span><time datetime="2026-11-10">10 November 2026</time> · 8 min read</span>
             </div>
           </div>
         </div>
@@ -219,6 +243,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#how-do-i-integrate-razorpay-with-woocommerce">How do I integrate Razorpay with WooCommerce?</a></li>
               <li><a href="#step-1-check-your-razorpay-account-is-ready">Step 1: Check your Razorpay account is ready</a></li>
               <li><a href="#step-2-install-the-razorpay-for-woocommerce-plugin">Step 2: Install the Razorpay for WooCommerce plugin</a></li>
               <li><a href="#step-3-generate-test-api-keys-in-razorpay">Step 3: Generate test API keys in Razorpay</a></li>
@@ -230,7 +255,8 @@
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
-<p>To add Razorpay to WooCommerce, install the official <strong>Razorpay for WooCommerce</strong> plugin, generate API keys in the Razorpay Dashboard, paste the Key ID and Key Secret into <strong>WooCommerce &gt; Settings &gt; Payments &gt; Razorpay</strong>, add a webhook, and place a test order before switching to live keys. Customers then pay by UPI, cards, netbanking or wallets on your checkout.</p>
+<h2 id="how-do-i-integrate-razorpay-with-woocommerce">How do I integrate Razorpay with WooCommerce?</h2>
+<p><strong>Short answer:</strong> Install the official Razorpay for WooCommerce plugin, paste your Key ID and Key Secret in WooCommerce &gt; Settings &gt; Payments &gt; Razorpay, add the webhook, and test in Test Mode before going live.</p>
 <div class="tut-need">
   <p><strong>Time required:</strong> 30 to 45 minutes (plus Razorpay account activation, which can take a few days)</p>
   <p><strong>What you'll need:</strong></p>
@@ -242,6 +268,8 @@
   </ul>
 </div>
 
+
+<p>To add Razorpay to WooCommerce, install the official <strong>Razorpay for WooCommerce</strong> plugin, generate API keys in the Razorpay Dashboard, paste the Key ID and Key Secret into <strong>WooCommerce &gt; Settings &gt; Payments &gt; Razorpay</strong>, add a webhook, and place a test order before switching to live keys. Customers then pay by UPI, cards, netbanking or wallets on your checkout.</p>
 <p>This tutorial is the hands-on part. If you are still choosing a gateway, read <a href="/blog/accept-online-payments-wordpress-india/">how to accept online payments on WordPress in India</a> first.</p>
 
 <h2 id="step-1-check-your-razorpay-account-is-ready">Step 1: Check your Razorpay account is ready</h2>
@@ -322,11 +350,15 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
+  <li><strong>Razorpay missing on the block checkout:</strong> update the plugin to the latest version, which supports the Checkout block. If it still does not appear, switch the Checkout page back to the classic shortcode as a test.</li>
+  <li><strong>Orders stay "Pending payment" after paying:</strong> the webhook is not reaching the site. Check the webhook URL, the secret, and whether a security or firewall plugin is blocking Razorpay requests.</li>
   <li><strong>Razorpay does not appear at checkout:</strong> check it is enabled under Payments, that your store currency is INR (or a currency your account supports), and clear any page cache. If you use the block-based checkout, update the plugin to the latest version.</li>
   <li><strong>Orders stay "Pending payment" though money was taken:</strong> the webhook is missing, has the wrong secret, or is blocked by a firewall. Check the webhook's delivery log in the Razorpay Dashboard.</li>
   <li><strong>"Authentication failed" error:</strong> the Key ID and Key Secret do not match, or you mixed a test key with a live secret. Regenerate and paste both again.</li>
   <li><strong>Popup opens and closes immediately:</strong> a JavaScript optimisation setting (combine or delay JS) is breaking the checkout. Exclude the checkout page and the Razorpay script from JS optimisation.</li>
 </ul>
+
+<p class="tut-related">Related: <a href="/blog/woocommerce-payment-gateway-not-working-india/">read the full guide on the blog</a>, or see <a href="/woocommerce-developer/">WooCommerce development</a> if you would rather have it done for you.</p>
 
 <aside class="inline-cta tut-help">
   <strong>Need it done for you?</strong>
@@ -342,6 +374,13 @@
 <h3>Can I offer Razorpay and cash on delivery together?</h3>
 <p>Yes. Enable both under WooCommerce &gt; Settings &gt; Payments. See cash on delivery on WooCommerce in India for limiting COD to keep returns down.</p>
 
+<h3>Can I use Razorpay test mode on a live site?</h3>
+<p>Yes. Test keys only create test payments, but switch to live keys before real customers check out.</p>
+<h3>Does Razorpay work with UPI on WooCommerce?</h3>
+<p>Yes. UPI, cards, netbanking and wallets appear in the Razorpay popup, depending on what is enabled on your account.</p>
+<h3>Do I need a webhook?</h3>
+<p>It is strongly recommended. Without it, an order can stay unpaid if the customer closes the browser before returning to your site.</p>
+
           <div class="post-cta">
             <h2>Stuck on a step?</h2>
             <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
@@ -356,6 +395,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#how-do-i-integrate-razorpay-with-woocommerce">How do I integrate Razorpay with WooCommerce?</a></li>
               <li><a href="#step-1-check-your-razorpay-account-is-ready">Step 1: Check your Razorpay account is ready</a></li>
               <li><a href="#step-2-install-the-razorpay-for-woocommerce-plugin">Step 2: Install the Razorpay for WooCommerce plugin</a></li>
               <li><a href="#step-3-generate-test-api-keys-in-razorpay">Step 3: Generate test API keys in Razorpay</a></li>
@@ -381,9 +421,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">6 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-301-redirects-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-301-redirects-wordpress-step-1.svg" alt="How to Add 301 Redirects in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add 301 Redirects in WordPress: Step-by-Step (2026)</h3><p>Add 301 redirects in WordPress with the free Redirection plugin: add old and new URLs, fix 404s from the log, use regex for old date URLs and test.</p><span class="post-card-meta">5 min read</span></a>
+          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">7 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">6 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-301-redirects-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-301-redirects-wordpress-step-1.svg" alt="How to Add 301 Redirects in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add 301 Redirects in WordPress: Step-by-Step (2026)</h3><p>Add 301 redirects in WordPress with the free Redirection plugin: add old and new URLs, fix 404s from the log, use regex for old date URLs and test.</p><span class="post-card-meta">6 min read</span></a>
         </div>
         <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
       </div>

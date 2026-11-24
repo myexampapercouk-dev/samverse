@@ -160,6 +160,30 @@
             "@type": "Answer",
             "text": "Yes. Google treats a 301 as a strong signal that the new URL replaces the old one, and rankings and links consolidate on the new page over time."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "301 or 302?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use 301 for permanent moves so search engines pass the old page's value to the new one. 302 is for temporary changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do 301 redirects slow the site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One hop is negligible. Avoid chains: point old URLs straight to the final page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I keep redirects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At least a year, and indefinitely for pages with backlinks."
+          }
         }
       ]
     }
@@ -208,7 +232,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-11-10">10 November 2026</time> · 5 min read</span>
+              <span><time datetime="2026-11-10">10 November 2026</time> · 6 min read</span>
             </div>
           </div>
         </div>
@@ -219,6 +243,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#how-do-i-set-up-a-301-redirect-in-wordpress">How do I set up a 301 redirect in WordPress?</a></li>
               <li><a href="#step-1-install-redirection-and-run-the-setup">Step 1: Install Redirection and run the setup</a></li>
               <li><a href="#step-2-add-a-single-301-redirect">Step 2: Add a single 301 redirect</a></li>
               <li><a href="#step-3-add-many-redirects-at-once">Step 3: Add many redirects at once</a></li>
@@ -230,7 +255,8 @@
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
-<p>To add a 301 redirect in WordPress, install the free <strong>Redirection</strong> plugin, open <strong>Tools &gt; Redirection</strong>, enter the old path as the <strong>Source URL</strong> and the new address as the <strong>Target URL</strong>, and click <strong>Add Redirect</strong>. Redirection uses 301 (permanent) by default, and its 404s tab shows broken URLs that need one.</p>
+<h2 id="how-do-i-set-up-a-301-redirect-in-wordpress">How do I set up a 301 redirect in WordPress?</h2>
+<p><strong>Short answer:</strong> Install the Redirection plugin, go to Tools &gt; Redirection, enter the old URL as the source and the new URL as the target, keep the type as 301 and click Add Redirect. Test it in a private window.</p>
 <div class="tut-need">
   <p><strong>Time required:</strong> 15 minutes for a few redirects; longer for a full redesign map</p>
   <p><strong>What you'll need:</strong></p>
@@ -241,6 +267,8 @@
   </ul>
 </div>
 
+
+<p>To add a 301 redirect in WordPress, install the free <strong>Redirection</strong> plugin, open <strong>Tools &gt; Redirection</strong>, enter the old path as the <strong>Source URL</strong> and the new address as the <strong>Target URL</strong>, and click <strong>Add Redirect</strong>. Redirection uses 301 (permanent) by default, and its 404s tab shows broken URLs that need one.</p>
 <p>When to use a 301 rather than a 302 is covered in <a href="/blog/301-vs-302-redirects/">301 vs 302 redirects explained</a>. This page is the how-to.</p>
 
 <h2 id="step-1-install-redirection-and-run-the-setup">Step 1: Install Redirection and run the setup</h2>
@@ -310,11 +338,15 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
+  <li><strong>Redirect loop ("too many redirects"):</strong> a rule points back at itself or chains with another. Check the source and target, and remove duplicate rules in <code>.htaccess</code> or your SEO plugin.</li>
+  <li><strong>Redirect not working:</strong> clear caches, check the source for a trailing slash or domain mismatch, and make sure no other plugin handles the same URL first.</li>
   <li><strong>Redirect does nothing:</strong> a cached copy is being served. Purge your cache plugin and CDN cache, then retest.</li>
   <li><strong>Redirect loop:</strong> the target matches the source pattern (common with regex). Make the pattern stricter.</li>
   <li><strong>Old URL still shows the page:</strong> the old page still exists. Delete or unpublish it, or the redirect will not trigger.</li>
   <li><strong>Hit counter stays at zero:</strong> another redirect (host, .htaccess or SEO plugin) is catching the URL first.</li>
 </ul>
+
+<p class="tut-related">Related: <a href="/blog/301-vs-302-redirects/">read the full guide on the blog</a>, or see <a href="/wordpress-migration/">WordPress migration</a> if you would rather have it done for you.</p>
 
 <aside class="inline-cta tut-help">
   <strong>Need it done for you?</strong>
@@ -330,6 +362,13 @@
 <h3>Do 301 redirects pass SEO value?</h3>
 <p>Yes. Google treats a 301 as a strong signal that the new URL replaces the old one, and rankings and links consolidate on the new page over time.</p>
 
+<h3>301 or 302?</h3>
+<p>Use 301 for permanent moves so search engines pass the old page's value to the new one. 302 is for temporary changes.</p>
+<h3>Do 301 redirects slow the site?</h3>
+<p>One hop is negligible. Avoid chains: point old URLs straight to the final page.</p>
+<h3>How long should I keep redirects?</h3>
+<p>At least a year, and indefinitely for pages with backlinks.</p>
+
           <div class="post-cta">
             <h2>Stuck on a step?</h2>
             <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
@@ -344,6 +383,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#how-do-i-set-up-a-301-redirect-in-wordpress">How do I set up a 301 redirect in WordPress?</a></li>
               <li><a href="#step-1-install-redirection-and-run-the-setup">Step 1: Install Redirection and run the setup</a></li>
               <li><a href="#step-2-add-a-single-301-redirect">Step 2: Add a single 301 redirect</a></li>
               <li><a href="#step-3-add-many-redirects-at-once">Step 3: Add many redirects at once</a></li>
@@ -369,9 +409,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">7 min read</span></a>
-          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">6 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
+          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">8 min read</span></a>
+          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">7 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">6 min read</span></a>
         </div>
         <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
       </div>

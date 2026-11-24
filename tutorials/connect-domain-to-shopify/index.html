@@ -154,6 +154,30 @@
             "@type": "Answer",
             "text": "No. Connecting keeps the domain at your current registrar. Transfer only if you want Shopify to handle renewals and DNS."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to connect a domain to Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often under an hour, but DNS changes can take up to 48 hours to spread everywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my email stop working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, as long as you only change the A record and www CNAME and leave MX records alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to transfer my domain to Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Connecting keeps it at your registrar; transferring is optional."
+          }
         }
       ]
     }
@@ -202,7 +226,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-11-10">10 November 2026</time> · 6 min read</span>
+              <span><time datetime="2026-11-10">10 November 2026</time> · 7 min read</span>
             </div>
           </div>
         </div>
@@ -213,6 +237,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#how-do-i-connect-my-domain-to-shopify">How do I connect my domain to Shopify?</a></li>
               <li><a href="#step-1-start-the-connection-in-shopify">Step 1: Start the connection in Shopify</a></li>
               <li><a href="#step-2-write-down-your-current-dns-records">Step 2: Write down your current DNS records</a></li>
               <li><a href="#step-3-point-the-a-record-and-the-www-cname-to-shopify">Step 3: Point the A record and the www CNAME to Shopify</a></li>
@@ -223,7 +248,8 @@
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
-<p>To connect a domain to Shopify, go to <strong>Settings &gt; Domains &gt; Connect existing domain</strong> in Shopify, enter your domain, then at your domain registrar set an <strong>A record</strong> for <code>@</code> to <code>23.227.38.65</code> and a <strong>CNAME</strong> for <code>www</code> to <code>shops.myshopify.com</code>. Back in Shopify, click Verify, and set the domain as primary.</p>
+<h2 id="how-do-i-connect-my-domain-to-shopify">How do I connect my domain to Shopify?</h2>
+<p><strong>Short answer:</strong> In Shopify go to Settings &gt; Domains &gt; Connect existing domain, then at your registrar point the A record to Shopify's IP and the www CNAME to <code>shops.myshopify.com</code>. Verify in Shopify once DNS updates.</p>
 <div class="tut-need">
   <p><strong>Time required:</strong> 15 minutes of work, then up to 48 hours for DNS to update (often much less)</p>
   <p><strong>What you'll need:</strong></p>
@@ -234,6 +260,8 @@
   </ul>
 </div>
 
+
+<p>To connect a domain to Shopify, go to <strong>Settings &gt; Domains &gt; Connect existing domain</strong> in Shopify, enter your domain, then at your domain registrar set an <strong>A record</strong> for <code>@</code> to <code>23.227.38.65</code> and a <strong>CNAME</strong> for <code>www</code> to <code>shops.myshopify.com</code>. Back in Shopify, click Verify, and set the domain as primary.</p>
 <p>This keeps the domain registered where it is (you keep paying the renewal there) and leaves your email records alone. If you want Shopify to manage the whole domain instead, you can transfer it, but that is a separate process (see <a href="/blog/transfer-domain-to-another-registrar/">transferring a domain to another registrar</a>).</p>
 
 <h2 id="step-1-start-the-connection-in-shopify">Step 1: Start the connection in Shopify</h2>
@@ -293,11 +321,15 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
+  <li><strong>Shopify says the domain is not connected:</strong> remove any old or duplicate A and AAAA records for <code>@</code>, and make sure the www CNAME has no extra dot or typo.</li>
+  <li><strong>SSL stays "pending":</strong> it waits for DNS to point at Shopify. Fix the records, then wait; it usually issues once both records resolve.</li>
   <li><strong>"Domain not connected" after a day:</strong> check for a second A record or an AAAA record on <code>@</code> still pointing to the old host. Use a public DNS checker to see what the world sees.</li>
   <li><strong>www works but the bare domain does not (or the reverse):</strong> one of the two records is wrong. The A record handles the bare domain; the CNAME handles www.</li>
   <li><strong>Your domain uses Cloudflare nameservers:</strong> make the changes in Cloudflare's DNS tab, not at the registrar, and set both records to DNS only (grey cloud).</li>
   <li><strong>Email stopped working:</strong> an MX record was deleted or changed. Restore it from your screenshot.</li>
 </ul>
+
+<p class="tut-related">Related: <a href="/blog/shopify-domain-not-connecting/">read the full guide on the blog</a>, or see <a href="/shopify-developer/">Shopify development</a> if you would rather have it done for you.</p>
 
 <aside class="inline-cta tut-help">
   <strong>Need it done for you?</strong>
@@ -313,6 +345,13 @@
 <h3>Do I have to transfer my domain to Shopify?</h3>
 <p>No. Connecting keeps the domain at your current registrar. Transfer only if you want Shopify to handle renewals and DNS.</p>
 
+<h3>How long does it take to connect a domain to Shopify?</h3>
+<p>Often under an hour, but DNS changes can take up to 48 hours to spread everywhere.</p>
+<h3>Will my email stop working?</h3>
+<p>No, as long as you only change the A record and www CNAME and leave MX records alone.</p>
+<h3>Do I have to transfer my domain to Shopify?</h3>
+<p>No. Connecting keeps it at your registrar; transferring is optional.</p>
+
           <div class="post-cta">
             <h2>Stuck on a step?</h2>
             <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
@@ -327,6 +366,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#how-do-i-connect-my-domain-to-shopify">How do I connect my domain to Shopify?</a></li>
               <li><a href="#step-1-start-the-connection-in-shopify">Step 1: Start the connection in Shopify</a></li>
               <li><a href="#step-2-write-down-your-current-dns-records">Step 2: Write down your current DNS records</a></li>
               <li><a href="#step-3-point-the-a-record-and-the-www-cname-to-shopify">Step 3: Point the A record and the www CNAME to Shopify</a></li>
@@ -351,9 +391,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">7 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-301-redirects-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-301-redirects-wordpress-step-1.svg" alt="How to Add 301 Redirects in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add 301 Redirects in WordPress: Step-by-Step (2026)</h3><p>Add 301 redirects in WordPress with the free Redirection plugin: add old and new URLs, fix 404s from the log, use regex for old date URLs and test.</p><span class="post-card-meta">5 min read</span></a>
+          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">8 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">6 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-301-redirects-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-301-redirects-wordpress-step-1.svg" alt="How to Add 301 Redirects in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add 301 Redirects in WordPress: Step-by-Step (2026)</h3><p>Add 301 redirects in WordPress with the free Redirection plugin: add old and new URLs, fix 404s from the log, use regex for old date URLs and test.</p><span class="post-card-meta">6 min read</span></a>
         </div>
         <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
       </div>

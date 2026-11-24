@@ -160,6 +160,30 @@
             "@type": "Answer",
             "text": "Edit the page, open the Page settings sidebar, change the Slug (or URL) field and update. Add a 301 from the old URL if the page was already indexed."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does changing permalinks affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, every URL changes. With 301 redirects in place, rankings usually carry over, but expect some movement while Google recrawls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best permalink structure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Post name ( /%postname%/ ) suits most business sites and blogs: short, readable and stable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change one post's URL only?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Edit its slug in the post sidebar and add a redirect from the old URL."
+          }
         }
       ]
     }
@@ -219,6 +243,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#how-do-i-change-the-permalink-structure-in-wordpress">How do I change the permalink structure in WordPress?</a></li>
               <li><a href="#step-1-decide-whether-to-change-at-all">Step 1: Decide whether to change at all</a></li>
               <li><a href="#step-2-back-up-and-export-your-current-urls">Step 2: Back up and export your current URLs</a></li>
               <li><a href="#step-3-choose-post-name-in-settings-gt-permalinks">Step 3: Choose Post name in Settings &gt; Permalinks</a></li>
@@ -230,7 +255,8 @@
               <li><a href="#faqs">FAQs</a></li>
             </ol>
           </details>
-<p>To change WordPress permalinks, go to <strong>Settings &gt; Permalinks</strong>, choose <strong>Post name</strong> (<code>/%postname%/</code>) and click <strong>Save Changes</strong>. On a new site that is all. On a site that already has traffic, take a backup first, add 301 redirects from the old URL pattern to the new one, update internal links, and re-submit your sitemap in Search Console.</p>
+<h2 id="how-do-i-change-the-permalink-structure-in-wordpress">How do I change the permalink structure in WordPress?</h2>
+<p><strong>Short answer:</strong> Go to Settings &gt; Permalinks, choose Post name (or a custom structure), and click Save Changes. On an existing site, set up 301 redirects from the old URLs as part of the same change.</p>
 <div class="tut-need">
   <p><strong>Time required:</strong> 10 minutes on a new site; 1 to 2 hours on an established site with redirects and checks</p>
   <p><strong>What you'll need:</strong></p>
@@ -242,6 +268,8 @@
   </ul>
 </div>
 
+
+<p>To change WordPress permalinks, go to <strong>Settings &gt; Permalinks</strong>, choose <strong>Post name</strong> (<code>/%postname%/</code>) and click <strong>Save Changes</strong>. On a new site that is all. On a site that already has traffic, take a backup first, add 301 redirects from the old URL pattern to the new one, update internal links, and re-submit your sitemap in Search Console.</p>
 <p>Changing one post's slug is different from changing the whole structure; both are covered below. For how URLs fit into on-page SEO, see the <a href="/blog/on-page-seo-checklist/">on-page SEO checklist</a>.</p>
 
 <h2 id="step-1-decide-whether-to-change-at-all">Step 1: Decide whether to change at all</h2>
@@ -298,11 +326,15 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
+  <li><strong>All pages show 404 after saving:</strong> the rewrite rules did not update. Save Permalinks again; on Apache, check that <code>.htaccess</code> is writable and contains the WordPress rules.</li>
+  <li><strong>Old URLs still in Google:</strong> add 301 redirects from each old URL and resubmit the sitemap in Search Console.</li>
   <li><strong>Every page shows 404 after the change:</strong> rewrite rules were not saved. Save permalinks again, check .htaccess is writable, or ask your host.</li>
   <li><strong>Old URLs show the homepage:</strong> a plugin is redirecting all 404s to the homepage. Turn that off and use proper one-to-one redirects.</li>
   <li><strong>Redirect chains:</strong> an old redirect points to another redirect. Update the first one to point straight at the final URL.</li>
   <li><strong>WooCommerce product URLs did not change:</strong> products use their own base, set in the Product permalinks section on the same Settings &gt; Permalinks page.</li>
 </ul>
+
+<p class="tut-related">Related: <a href="/blog/wordpress-pages-404-permalinks-fix/">read the full guide on the blog</a>, or see <a href="/wordpress-seo-services/">WordPress SEO</a> if you would rather have it done for you.</p>
 
 <aside class="inline-cta tut-help">
   <strong>Need it done for you?</strong>
@@ -318,6 +350,13 @@
 <h3>How do I change the permalink of a single page in WordPress?</h3>
 <p>Edit the page, open the Page settings sidebar, change the Slug (or URL) field and update. Add a 301 from the old URL if the page was already indexed.</p>
 
+<h3>Does changing permalinks affect SEO?</h3>
+<p>Yes, every URL changes. With 301 redirects in place, rankings usually carry over, but expect some movement while Google recrawls.</p>
+<h3>What is the best permalink structure?</h3>
+<p>Post name (<code>/%postname%/</code>) suits most business sites and blogs: short, readable and stable.</p>
+<h3>Can I change one post's URL only?</h3>
+<p>Yes. Edit its slug in the post sidebar and add a redirect from the old URL.</p>
+
           <div class="post-cta">
             <h2>Stuck on a step?</h2>
             <p>Tell me where you got stuck and I'll reply with a plan and a fixed quote, usually within 24 hours.</p>
@@ -332,6 +371,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#how-do-i-change-the-permalink-structure-in-wordpress">How do I change the permalink structure in WordPress?</a></li>
               <li><a href="#step-1-decide-whether-to-change-at-all">Step 1: Decide whether to change at all</a></li>
               <li><a href="#step-2-back-up-and-export-your-current-urls">Step 2: Back up and export your current URLs</a></li>
               <li><a href="#step-3-choose-post-name-in-settings-gt-permalinks">Step 3: Choose Post name in Settings &gt; Permalinks</a></li>
@@ -357,9 +397,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep learning</span><h2>More tutorials</h2></div>
         <div class="post-grid reveal">
-          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">7 min read</span></a>
-          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">6 min read</span></a>
-          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">5 min read</span></a>
+          <a class="post-card" href="/tutorials/add-razorpay-to-woocommerce/"><img class="post-card-img" src="/assets/tutorials/add-razorpay-to-woocommerce-step-1.svg" alt="How to Add Razorpay to WooCommerce: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Add Razorpay to WooCommerce: Step-by-Step (2026)</h3><p>Add Razorpay to WooCommerce in 6 steps: install the official plugin, create test API keys, paste them in Payments, add the webhook, test, then go live.</p><span class="post-card-meta">8 min read</span></a>
+          <a class="post-card" href="/tutorials/connect-domain-to-shopify/"><img class="post-card-img" src="/assets/tutorials/connect-domain-to-shopify-step-1.svg" alt="How to Connect a Domain to Shopify: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Connect a Domain to Shopify: Step-by-Step (2026)</h3><p>Connect a domain you own to Shopify: add it in Settings &gt; Domains, set the A and www CNAME records at your registrar, verify, then make it primary.</p><span class="post-card-meta">7 min read</span></a>
+          <a class="post-card" href="/tutorials/setup-smtp-wordpress/"><img class="post-card-img" src="/assets/tutorials/setup-smtp-wordpress-step-1.svg" alt="How to Set Up SMTP in WordPress: Step-by-Step (2026) step preview" width="1200" height="630" loading="lazy" decoding="async"><span class="work-tag">Tutorial</span><h3>How to Set Up SMTP in WordPress: Step-by-Step (2026)</h3><p>Set up SMTP in WordPress with WP Mail SMTP so contact form and order emails reach the inbox: install, choose Other SMTP, add host and port, send a test.</p><span class="post-card-meta">6 min read</span></a>
         </div>
         <p class="related-all"><a href="/tutorials/" class="link-inline">All tutorials →</a></p>
       </div>
