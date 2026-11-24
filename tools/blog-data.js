@@ -4928,6 +4928,9 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <p>If you'd like it planned and built for you, see my <a href="/website-for-manufacturers/">websites for manufacturers and industrial suppliers</a>. For the wider strategy of winning B2B and export enquiries, see the <a href="/blog/b2b-manufacturer-website-guide/">B2B manufacturer website guide</a>.</p>
 
+<h2>Industrial website catalogs: what buyers need to find</h2>
+<p>Good industrial website catalogs let a buyer filter by category, size, material or standard, open a product page with full specifications and drawings, download a datasheet, and send an enquiry for that exact item. Each product gets its own indexable page, so Google can rank part names and model numbers instead of one PDF.</p>
+
 <h2>Catalogue, quote basket or online store?</h2>
 <table>
   <thead><tr><th>Model</th><th>How buyers enquire</th><th>Best for</th><th>Typical WordPress setup</th></tr></thead>
@@ -5552,6 +5555,9 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
     body: `
 <p>To get your website indexed by Google faster, link to it from pages Google already crawls often, such as your homepage, main menu and existing posts, list it in your XML sitemap with an accurate last-modified date, and request indexing for your most important URLs in Search Console. Beyond that, speed depends on whether Google thinks the page is worth indexing: substantial, unique pages on a fast site are indexed sooner than thin or near-duplicate ones. No button or plugin forces Google to index anything.</p>
 <blockquote><strong>Short answer:</strong> To get your website indexed by Google faster, link each new page from pages Google already crawls, list it in a clean XML sitemap with an honest lastmod date, and use Request indexing in Search Console for key URLs. Make the page substantial and unique, because no tool or plugin can force Google to index a page.</blockquote>
+
+<h2>How to get a website indexed: the short answer</h2>
+<p>To get a website indexed, verify it in Google Search Console, submit your XML sitemap, run URL Inspection on key pages and click Request Indexing. Make sure pages are not blocked by robots.txt or a noindex tag, link to them from your homepage or menu, and give Google a few days to a few weeks.</p>
 
 <h2>From unknown to indexed: the stages</h2>
 <table>
@@ -31296,6 +31302,9 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <p>So instead of 20 separate products for a T-shirt in five sizes and four colours, you get one product where customers choose their option.</p>
 <p>The quick version: set the product type to "Variable product", add attributes such as Size and Colour, tick "Used for variations", generate the variations, then give each one a price, SKU, stock and image. A variation with no price won't be sold, so don't skip that step. The rest of this guide covers each step properly, plus bulk editing, swatches, performance limits and SEO.</p>
 
+<h2>WooCommerce product variants: what they are</h2>
+<p>WooCommerce product variants are the individual options of a Variable product, such as a Medium Blue T-shirt. Each variant is built from attributes marked "Used for variations" and can have its own price, SKU, stock level, weight and image. Customers pick the options on one product page instead of browsing separate products.</p>
+
 <h2>Product-type variations: which product type do you need?</h2>
 <p>WooCommerce has four core product types. Only one of them creates variations, so pick the type first:</p>
 <table>
@@ -32863,6 +32872,9 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 </div>
 <p>When you <a href="/hire-wordpress-developer/">hire me as your WordPress developer</a>, you get a written scope, a fixed price and a timeline, usually within 24 hours of sending your requirements, and the scope lists what is excluded as well as what is included. Whoever you choose, the method below makes any set of quotes comparable.</p>
 
+<h2>Why are website quotes different? The short answer</h2>
+<p>Website quotes differ because each one prices a different job. One may be a ready theme with your logo; another includes custom design, copywriting, SEO setup, speed work, training and a year of support. Ask every supplier for the same written scope, page list and post-launch terms, then compare line by line.</p>
+
 <h2>Why are website quotes so different?</h2>
 <p>Website quotes are so different because each developer prices the job they imagine from your message, not a shared scope. The same request can be read as a template with your logo or as a custom-designed site, and both readings are honest. These are the real reasons, roughly in order of how much they move the price:</p>
 <ol>
@@ -33471,6 +33483,9 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 </ol>
 </div>
 <p>If you run an agency and want a dependable partner rather than a marketplace hire, see how I work as a <a href="/wordpress-developer-for-agencies/">white-label WordPress developer for agencies</a>.</p>
+
+<h2>Outsource WordPress development to India: the short answer</h2>
+<p>To outsource WordPress development to India well, pick a developer who shows live sites similar to yours, agree a written scope with fixed milestones, keep the hosting and domain in your own name, and test on a staging copy before anything goes live. Time zones help: work done overnight is ready for review in the morning.</p>
 
 <h2>Why agencies outsource WordPress work to India</h2>
 <ul>
@@ -51372,6 +51387,9 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>A steep, lasting fall after a move almost always means redirects are missing, chained or pointing at the wrong pages. The checklist below is the order I follow, and the sections after it explain each step in detail.</p>
 <p>Businesses change domains for good reasons: a rebrand, a shorter name, a .com for international buyers, or finally getting the name they wanted. This guide is about moving your website to a different domain name. If you are keeping the same name and only changing where it is registered, see <a href="/blog/transfer-domain-to-another-registrar/">how to transfer a domain to another registrar</a>.</p>
 
+<h2>SEO when you change domain name: the short answer</h2>
+<p>A domain name change keeps most of its SEO when every old URL 301-redirects to the matching new URL, the new domain is verified in Search Console, the Change of Address tool is used, and internal links, canonicals and the sitemap point to the new domain. Expect a temporary dip for a few weeks while Google recrawls.</p>
+
 <h2>How to change domain without losing SEO: the 10-step checklist</h2>
 <ol>
 <li><strong>Keep the old domain.</strong> Leave it on auto-renew for years; if it expires, every redirect and old backlink dies with it.</li>
@@ -63061,6 +63079,9 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>WordPress can update itself in the background: core, plugins, themes and translations. It sounds like the perfect way to stay secure without effort, and for some parts of your site it is. For others, an update that arrives at 3am can break a layout, a form or your checkout before anyone notices.</p>
 <p><strong>The short answer:</strong> for most business sites, leave minor core updates and translations on, turn on auto-updates for small, well-maintained plugins, and update major core releases, your theme, page builder and anything to do with WooCommerce or payments by hand, after a backup and ideally a test on staging. Here's what each setting does and how to decide.</p>
 <p>This article is about the auto-update settings themselves. For the hands-on process of updating by hand, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
+
+<h2>WordPress auto updates: should you use them?</h2>
+<p>WordPress auto updates for minor core and security releases are safe to leave on for almost every site. For plugins and themes, auto-update small, well-maintained ones and update large ones such as WooCommerce, page builders and payment plugins by hand after a backup, ideally testing on staging first. Always keep daily backups running.</p>
 
 <h2>What each auto-update setting does</h2>
 <p>WordPress version numbers explain the first two rows. A change in the first two numbers, such as 6.7 to 6.8, is a major release with new features and bigger changes. A change in the third number, such as 6.8.1 to 6.8.2, is a minor maintenance or security release.</p>

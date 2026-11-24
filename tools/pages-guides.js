@@ -267,6 +267,8 @@ module.exports = {
 <p>Business owners whose site is showing warnings or redirecting visitors, online stores where a hack puts payments at risk, and agencies with a hacked client site. Any site with public sign-ups or customer accounts needs the user audit done with extra care after a hack, because a rogue account can hide among the genuine ones. If your site is hacked right now, send me a WhatsApp message and I will review it and send a fixed quote.</p>
 `,
   'wordpress-speed-optimization': `
+<h2>WordPress speed optimisation service: what you get</h2>
+<p>This WordPress speed optimisation service starts with an audit of your key pages, then fixes the real causes: slow hosting response, heavy images, unused plugins, render-blocking scripts and missing caching. A backup is taken first, changes are tested on staging where possible, and you get a before-and-after report for the same pages.</p>
 <h2>What a speed optimization job looks like, step by step</h2>
 <p>Most speed work is invisible, so here is exactly what happens when you hire me to speed up your WordPress site or WooCommerce store, from your first message to the final report.</p>
 <ol>
@@ -526,6 +528,9 @@ module.exports = {
 <p>Send me what you sell and roughly how many products you have, and you will get a fixed quote after a free review.</p>
 `,
   'wordpress-developer-for-agencies': `
+<h2>Resell WordPress development under your agency brand</h2>
+<p>If you want to resell WordPress development, I build the sites and you sell them as your own. You set your client price, I give you a fixed quote per project, and the work is delivered under NDA with no Samverse credit. Your team keeps the client relationship; I handle the build, fixes and ongoing maintenance.</p>
+<p>Common resell setups: agencies that sell design and marketing but have no developer, freelancers who need overflow capacity, and hosting or SEO providers adding websites to their services. Ask for a test project first if you want to check quality before committing.</p>
 <h2>White-label WordPress development from India: how it works with me</h2>
 <p>For agencies in the UK, US and Australia outsourcing WordPress development to India: how projects, time-zone handoffs, confidentiality and pricing work with me. New to the model? Start with <a href="/blog/white-label-wordpress-development-agencies/">white-label WordPress development explained</a>.</p>
 <h2>A white-label project, step by step</h2>

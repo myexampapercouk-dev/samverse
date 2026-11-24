@@ -201,6 +201,7 @@
           <details class="toc-mobile">
             <summary>On this page</summary>
             <ol>
+              <li><a href="#wordpress-auto-updates-should-you-use-them">WordPress auto updates: should you use them?</a></li>
               <li><a href="#what-each-auto-update-setting-does">What each auto-update setting does</a></li>
               <li><a href="#how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</a></li>
               <li><a href="#the-case-for-turning-them-on">The case for turning them on</a></li>
@@ -229,6 +230,9 @@
 <p><strong>The short answer:</strong> for most business sites, leave minor core updates and translations on, turn on auto-updates for small, well-maintained plugins, and update major core releases, your theme, page builder and anything to do with WooCommerce or payments by hand, after a backup and ideally a test on staging. Here's what each setting does and how to decide.</p>
 <p>This article is about the auto-update settings themselves. For the hands-on process of updating by hand, see <a href="/blog/update-wordpress-safely/">how to update WordPress safely</a>.</p>
 
+<h2 id="wordpress-auto-updates-should-you-use-them">WordPress auto updates: should you use them?</h2>
+<p>WordPress auto updates for minor core and security releases are safe to leave on for almost every site. For plugins and themes, auto-update small, well-maintained ones and update large ones such as WooCommerce, page builders and payment plugins by hand after a backup, ideally testing on staging first. Always keep daily backups running.</p>
+
 <h2 id="what-each-auto-update-setting-does">What each auto-update setting does</h2>
 <p>WordPress version numbers explain the first two rows. A change in the first two numbers, such as 6.7 to 6.8, is a major release with new features and bigger changes. A change in the third number, such as 6.8.1 to 6.8.2, is a minor maintenance or security release.</p>
 <table>
@@ -249,6 +253,12 @@
   <li>Some hosts manage updates themselves or hide these toggles. If a setting is missing or greyed out, check with your host or developer.</li>
 </ul>
 
+<aside class="inline-cta">
+  <strong>Need help with website maintenance?</strong>
+  <p>Website maintenance services in India from ₹1,500 a month: WordPress website maintenance packages with tested updates, backups and security checks.</p>
+  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Auto-Updates%3A%20Should%20You%20Turn%20Them%20On%20for%20Core%2C%20Plugins%20and%20Themes%3F%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</aside>
+
 <h2 id="how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</h2>
 <ol>
   <li><strong>Core:</strong> go to Dashboard &gt; Updates. Near the top, WordPress says whether the site updates automatically for maintenance and security releases only, or for all new versions, with a link to switch.</li>
@@ -258,12 +268,6 @@
 <p>Developers can also fix these rules in code so they can't be changed by accident. For example, this line in wp-config.php limits core to minor updates:</p>
 <pre><code>define( 'WP_AUTO_UPDATE_CORE', 'minor' );</code></pre>
 <p>Setting it to true allows all core updates, and false turns core auto-updates off. Plugins and themes can be controlled with filters in a small site-specific plugin. If the dashboard toggles are missing, something like this is probably already in place.</p>
-
-<aside class="inline-cta">
-  <strong>Need help with website maintenance?</strong>
-  <p>Website maintenance services in India from ₹1,500 a month: WordPress website maintenance packages with tested updates, backups and security checks.</p>
-  <div><a href="/wordpress-maintenance/" class="link-inline">See Website Maintenance →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20read%20your%20article%20%22WordPress%20Auto-Updates%3A%20Should%20You%20Turn%20Them%20On%20for%20Core%2C%20Plugins%20and%20Themes%3F%22%20and%20need%20help." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-</aside>
 
 <h2 id="the-case-for-turning-them-on">The case for turning them on</h2>
 <p>Outdated plugins are one of the most common ways WordPress sites get hacked. When a security fix is released, auto-updates get it onto your site within hours rather than whenever someone remembers to log in. They make most sense when:</p>
@@ -399,6 +403,7 @@
           <nav class="post-toc" aria-label="On this page">
             <strong>On this page</strong>
             <ol>
+              <li><a href="#wordpress-auto-updates-should-you-use-them">WordPress auto updates: should you use them?</a></li>
               <li><a href="#what-each-auto-update-setting-does">What each auto-update setting does</a></li>
               <li><a href="#how-to-turn-auto-updates-on-or-off">How to turn auto-updates on or off</a></li>
               <li><a href="#the-case-for-turning-them-on">The case for turning them on</a></li>
