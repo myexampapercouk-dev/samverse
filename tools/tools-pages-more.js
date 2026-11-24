@@ -153,7 +153,7 @@ ${inner}
     ],
   });
   T.push({
-    cat: 'Image tools', slug: `${HUB}/image-to-base64`, name: 'Image to Base64 Converter', crumb: 'Image to Base64',
+    cat: 'Image tools', slug: `${HUB}/image-to-base64`, noindex: true, name: 'Image to Base64 Converter', crumb: 'Image to Base64',
     title: 'Image to Base64 & Base64 to Image Converter | Samverse',
     description: 'Convert an image to a Base64 data URI for HTML or CSS, or paste Base64 to preview and download the image. Free, in your browser, no upload.',
     blurb: 'Turn an image into a Base64 data URI for HTML or CSS, or decode Base64 back into a downloadable image.',
@@ -276,7 +276,7 @@ ${out('ogOut', 'Meta tags', 12)}`)),
     ],
   });
   T.push({
-    cat: 'SEO tools', slug: `${HUB}/word-counter`, name: 'Word Counter & Keyword Density', crumb: 'Word Counter',
+    cat: 'SEO tools', slug: `${HUB}/word-counter`, noindex: true, name: 'Word Counter & Keyword Density', crumb: 'Word Counter',
     title: 'Word Counter, Reading Time & Keyword Density | Samverse',
     description: 'Count words, characters, sentences and paragraphs, estimate reading and speaking time, and see keyword density and top phrases. Free and private.',
     blurb: 'Count words and characters, estimate reading time, and see the most used keywords and two-word phrases.',
@@ -404,7 +404,7 @@ ${out('waHtml', 'HTML button snippet', 3)}
 
   // ---------------- Developer tools ----------------
   T.push({
-    cat: 'Developer tools', slug: `${HUB}/json-formatter`, name: 'JSON & JSON-LD Formatter', crumb: 'JSON Formatter',
+    cat: 'Developer tools', slug: `${HUB}/json-formatter`, noindex: true, name: 'JSON & JSON-LD Formatter', crumb: 'JSON Formatter',
     title: 'JSON & JSON-LD Formatter and Validator | Samverse',
     description: 'Format, minify and validate JSON or JSON-LD schema. Shows the line and column of errors and hints for trailing commas, curly quotes and @context.',
     blurb: 'Pretty-print, minify and validate JSON and JSON-LD, with the exact error position and schema hints.',

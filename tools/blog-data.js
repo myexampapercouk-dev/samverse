@@ -316,7 +316,7 @@ module.exports = [
     title: 'Why Is My WordPress Site Slow? Causes and How to Fix It (Front End and Admin)',
     description: 'Slow WordPress site? Find out in 5 minutes whether hosting, caching, images, plugins or scripts are to blame, then fix the front end and admin in order.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'elementor-developer'],
     body: `
@@ -452,6 +452,26 @@ module.exports = [
 <p><strong>Mobile:</strong> lower mobile scores are normal. If real visitors find pages slow on phones, check hero sliders, background videos and heavy JavaScript first. See <a href="/blog/wordpress-site-slow-on-mobile-fix/">fixing a WordPress site that is slow on mobile</a>.</p>
 <p><strong>After an update:</strong> clear every cache (plugin, server and CDN), give background database upgrades time to finish, then use the Health Check &amp; Troubleshooting plugin on staging to disable plugins one at a time and find the culprit. Roll that plugin back until a fix is released.</p>
 
+<h2>WordPress site slow on Hostinger? What to check</h2>
+<p>A WordPress site on Hostinger is usually slow because the LiteSpeed Cache plugin is missing or misconfigured, the plan is hitting its resource limits, or the site is served from a data centre far from your visitors. Check these in order:</p>
+<ol>
+  <li><strong>LiteSpeed Cache:</strong> Hostinger servers run LiteSpeed, so the free LiteSpeed Cache plugin is the right page cache. Make sure it is active and that page caching is on, and do not run a second page cache plugin next to it.</li>
+  <li><strong>Resource usage:</strong> in hPanel, check whether CPU, memory or process limits are being reached. If they are, slow pages and 503 errors are the plan running out, not WordPress.</li>
+  <li><strong>Server location:</strong> if your customers are in India, the site should be hosted in the closest available data centre. A site served from another continent adds delay to every uncached request.</li>
+  <li><strong>PHP version:</strong> use a current, supported PHP version in hPanel. Old versions are slower and less secure.</li>
+</ol>
+<p>The full walkthrough is in <a href="/blog/hostinger-website-slow-fix/">Hostinger website slow: how to fix it</a>.</p>
+
+<h2>When the theme or page builder is the problem</h2>
+<p>If a fast server and a working cache still give you a slow page, look at the theme and builder. Signs that they are the cause:</p>
+<ul>
+  <li>A blank test page with the same theme loads quickly, but your real pages do not. The weight is in the layout, not the server.</li>
+  <li>Pages built with many nested sections, sliders, animations and icon libraries load far more CSS and JavaScript than they use.</li>
+  <li>The theme loads every feature (sliders, portfolios, shop styles) on every page, whether that page needs it or not.</li>
+  <li>Switching to a default theme on a staging copy makes the same content noticeably faster.</li>
+</ul>
+<p>Fixes, from smallest to largest: remove sliders and heavy widgets you do not need, turn on the builder's own performance options (such as loading only used assets), simplify the slowest templates, and only then consider a lighter theme or a rebuild. Test on a staging copy first. If you would rather hand this over, <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers the theme and builder work as well as caching and hosting.</p>
+
 <h2>How to speed up WooCommerce</h2>
 <p>Cart, checkout and account pages cannot be page-cached, so hosting and an object cache matter more. The full process is in <a href="/blog/woocommerce-speed-optimization/">WooCommerce performance optimization</a>.</p>
 
@@ -490,7 +510,7 @@ module.exports = [
     title: 'How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
     description: 'How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Security',
     related: ['wordpress-malware-removal', 'wordpress-maintenance', 'wordpress-migration'],
     body: `
@@ -571,6 +591,33 @@ module.exports = [
 <li><code>wp db search "&lt;script" wp_options wp_posts</code> finds script tags injected into settings and content.</li>
 </ul>
 <p>Also look for a <code>wp-content/mu-plugins</code> folder you did not create. Must-use plugins load automatically and do not appear in the normal Plugins list, which makes them a favourite hiding place.</p>
+
+<h2>Free scanners to check if your WordPress site is hacked</h2>
+<p>No scanner catches everything, so use more than one and treat a clean result as a good sign, not proof.</p>
+<ul>
+  <li><strong>Google Search Console, Security Issues:</strong> shows hacked content or malware that Google itself has found. Check it first.</li>
+  <li><strong>Google Safe Browsing site status:</strong> tells you whether Google currently flags your domain as unsafe.</li>
+  <li><strong>Sucuri SiteCheck:</strong> a free remote scan of your public pages for known malware, spam links and blocklist status. It cannot see files that are not loaded on a page.</li>
+  <li><strong>Wordfence (free plugin):</strong> scans the files on your server and compares WordPress core, theme and plugin files with the official versions.</li>
+  <li><strong>Your host's malware scanner:</strong> many hosts include one in the control panel. Run it as a second opinion.</li>
+</ul>
+
+<h2>Hacked redirects only on mobile or from Google</h2>
+<p>A common trick: the site looks normal when you type the address on your laptop, but visitors who arrive from Google, or on a phone, are sent to a spam or scam site. The malware checks the referrer, the device or whether you are logged in, so the owner rarely sees it.</p>
+<ol>
+  <li>Log out of WordPress, open a private window on your phone (mobile data, not office WiFi), search Google for your business and click your result.</li>
+  <li>Run <code>site:yourdomain.com</code> and look for pages, titles or languages you did not create.</li>
+  <li>Check <code>.htaccess</code>, <code>wp-config.php</code> and the theme's <code>functions.php</code> and <code>header.php</code> for code you did not add, and look in the database options table for unfamiliar scripts.</li>
+</ol>
+
+<h2>What to do in the first hour</h2>
+<ol>
+  <li>Take a full backup of files and database as they are now, so evidence and content are not lost.</li>
+  <li>Change the hosting, WordPress admin, database and FTP or SFTP passwords, and remove admin users you do not recognise.</li>
+  <li>If customers are being sent to scam pages or a payment page is affected, put the site into maintenance mode until it is clean.</li>
+  <li>Update WordPress, the theme and all plugins, and delete ones you do not use.</li>
+  <li>Then clean the files properly or get help. A quick fix that leaves a backdoor usually means the hack comes back within days. <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers the clean-up, hardening and a Google review request if your site was flagged.</li>
+</ol>
 
 <h2>Hacked or just broken? Common false alarms</h2>
 <p>Not every problem is a hack. Rule out these first:</p>
@@ -8259,133 +8306,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 `,
   },
   {
-    slug: 'website-for-interior-designers-architects',
-    noindex: true,
-    seoTitle: 'Websites for Interior Designers and Architects That Win Work',
-    title: 'Websites for Interior Designers and Architects: Portfolio-First Design, Project Pages, Fast Images and Enquiries That Qualify Clients',
-    description: 'Portfolio-first websites for interior designers and architects: project pages, fast galleries, your process, qualifying enquiry forms and design partners.',
-    date: '2026-09-27',
-    updated: '2026-11-07',
-    category: 'Industries',
-    related: ['wordpress-website-development', 'website-redesign', 'wordpress-seo-services'],
-    body: `
-<p>An interior designer's or architect's website should be portfolio-first: a small number of strong projects, each with its own page that tells the story from brief to finished space, organised so visitors can find work like the project they have in mind. Around that portfolio, the site needs to explain your process and how fees work, load large images quickly, and ask enough in the enquiry form to show whether a lead fits your budget, scope and timeline before you spend an evening on a site visit.</p>
-<p>I build this kind of site as part of <a href="/wordpress-website-development/">WordPress website development</a>: a custom design for your brand, mobile-first and fast, with forms and WhatsApp, SEO basics, and projects you can add yourself after launch. This guide covers what a design practice's site needs, using a real example from an interior studio.</p>
-
-<h2>A structure built around the portfolio</h2>
-<ul>
-  <li><strong>Projects:</strong> a grid of your best work, with categories and, once you have enough, filters.</li>
-  <li><strong>Project pages:</strong> one per project, telling its story.</li>
-  <li><strong>Services:</strong> what you offer, from design-only consultations to turnkey execution.</li>
-  <li><strong>Process and fees:</strong> how a project runs and how you charge.</li>
-  <li><strong>Studio:</strong> the people, their training and how you work.</li>
-  <li><strong>Partners and careers:</strong> separate routes for collaborators and job seekers.</li>
-  <li><strong>Journal:</strong> articles on questions clients ask.</li>
-  <li><strong>Enquiry:</strong> a form that qualifies the project.</li>
-</ul>
-<p>Curate hard. Eight to fifteen projects that show your range and standard say more than fifty thumbnails, and a weak project pulls down the strong ones next to it.</p>
-
-<h2>The project page, section by section</h2>
-<p>Clients hiring a designer want to see how you think, not only what the finished room looks like. A project page that does that:</p>
-<table>
-  <thead><tr><th>Section</th><th>What to show</th><th>Why it matters</th></tr></thead>
-  <tbody>
-    <tr><td>Opening image and summary</td><td>Project type, area or city, approximate size and your scope in one line</td><td>Tells the visitor at a glance whether it is relevant to them</td></tr>
-    <tr><td>The brief</td><td>Who it was for, how they live or work, and the constraints</td><td>Clients recognise their own situation in it</td></tr>
-    <tr><td>The site as found</td><td>Before photos or a short description of the starting point</td><td>Shows what you changed, not just the result</td></tr>
-    <tr><td>Drawings and renders</td><td>Plans, sketches or 3D views, labelled as such</td><td>Shows your process and how you communicate ideas</td></tr>
-    <tr><td>Key decisions</td><td>Layout changes, storage, light, materials and why you chose them</td><td>The part that shows your judgement</td></tr>
-    <tr><td>Materials and finishes</td><td>Main materials and finishes, with brands named only where accurate</td><td>Answers the questions clients ask in meetings</td></tr>
-    <tr><td>Scope and credits</td><td>What you did (design, execution or both), plus the photographer and any partner firms</td><td>Honest about your role, and fair to collaborators</td></tr>
-    <tr><td>Client's words</td><td>A short quote, only with the client's permission</td><td>Another voice besides your own</td></tr>
-  </tbody>
-</table>
-<p>Get written permission before showing a private home, and leave out house numbers, family photos and anything that identifies the address. For architects, label unbuilt, concept and competition work clearly so it isn't mistaken for completed buildings. <a href="/blog/website-for-3d-visualisation-studios/">Websites for 3D visualisation studios</a> covers presenting renders in more depth.</p>
-
-<h2>Captions, categories and filters</h2>
-<p>Visitors browse portfolios by taste and by room as much as by project type. <a href="/work/studio-agama-interiors/">Studio Agama Interiors</a>, a Hyderabad interior design and turnkey execution studio I built a site for, captions its homepage project images by style and by room, such as "The Minimalist: Modern Interior", "Boho Styles: Sleeping Space" and "New Kitchen: Dinner Space", so a homeowner can see quickly whether the studio's work suits their own home. Useful ways to organise:</p>
-<ul>
-  <li><strong>By type:</strong> apartments, villas, offices, retail, hospitality, institutional</li>
-  <li><strong>By room or space:</strong> kitchens, bedrooms, living rooms, workspaces</li>
-  <li><strong>By style:</strong> minimal, contemporary, traditional, eclectic, in words your clients use</li>
-  <li><strong>By status,</strong> for architects: completed, under construction, concept</li>
-</ul>
-<p>Filters earn their place once you have more projects than fit comfortably on one screen; before that, clear captions do the job.</p>
-
-<h2>Large images that still load fast</h2>
-<p>Design portfolios are image-heavy by nature, and a slow gallery undersells the work it shows. The fixes are mostly in how images are prepared and served:</p>
-<ol>
-  <li>Never upload camera originals. Export images at the size they will actually be displayed, with a larger version only for full-screen viewing.</li>
-  <li>Serve modern formats such as WebP, with WordPress providing smaller sizes automatically for phones.</li>
-  <li>Load the first image on each page straight away, and lazy-load the rest of the gallery as visitors scroll.</li>
-  <li>Open full-resolution images in a lightbox only when someone taps them.</li>
-  <li>Embed walkthrough videos from YouTube or Vimeo so they load only when played, rather than as autoplay backgrounds.</li>
-</ol>
-<p>Done this way, images stay sharp on a large monitor and fast on a phone over mobile data; <a href="/blog/image-optimization-wordpress/">image optimisation for WordPress</a> goes through sizes, formats and compression step by step.</p>
-
-<h2>Explain your process and how fees work</h2>
-<p>Clients worry about what happens after they say yes, and about cost surprises. A process page answers both:</p>
-<ul>
-  <li>The stages, such as first consultation, site measurement, concept and mood boards, 3D views, approval, estimate, execution and handover</li>
-  <li>How many design revisions are included, and what happens after that</li>
-  <li>What the client sees before work starts; Studio Agama explains that clients see product samples and detailed 3D renderings first</li>
-  <li>How you charge, whether a design fee, a percentage of project cost, a rate per area or turnkey pricing, without needing to publish figures</li>
-  <li>How payments are staged, and whether they can be spread out</li>
-  <li>What support continues after handover</li>
-</ul>
-<p>Studio Agama's FAQ also answers the comparison questions buyers ask: the difference between modular and full home interiors, whether one room can be designed without redoing the whole home, and how a studio differs from contractors and individual designers. Architects registered with the Council of Architecture should check its current professional conduct rules, which restrict how architects promote their services, and keep the site factual.</p>
-
-<h2>Enquiry forms that qualify the project</h2>
-<p>A designer's time is the product, so a lead that turns out to be the wrong size, stage or budget is expensive. Studio Agama's "Your Design Enquiry" form asks, beyond name, email, phone and locality, for the type of enquiry (a turnkey home, luxury interiors, commercial or multi-functional spaces, or renovation and space planning), how the person heard about the studio, the project stage, and the budget and time frame. The team can see the type, scale and budget of a job before the first call. A form for your practice might ask:</p>
-<ul>
-  <li><strong>Project type and scope:</strong> full home, a single room, office, retail</li>
-  <li><strong>Property and location:</strong> apartment or villa, approximate size, locality</li>
-  <li><strong>Stage:</strong> just bought, under construction, ready to move in, or renovating</li>
-  <li><strong>Budget:</strong> ranges you choose, plus "not sure yet"</li>
-  <li><strong>Timeline:</strong> a target move-in or opening date</li>
-  <li><strong>Source:</strong> how they found you, so you know which channels work</li>
-</ul>
-<p>That is a lot of questions for one screen, so on a phone a form in short stages, starting with the easy choices, keeps more people going; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> explains how to qualify leads without losing them.</p>
-
-<h2>Design partner, trade and careers enquiries</h2>
-<p>A practice receives more than client enquiries: designers who want to collaborate, contractors and vendors offering their services, and job seekers. Mixing them into the client form clutters your inbox and slows replies to the people who might hire you. Studio Agama has a separate "Become a Design Partner" page with its own form, asking for name, mobile number, email, project stage and a message, and its contact page lists a separate email address for careers. Give each audience its own route, and ask job seekers to send a portfolio link rather than large files.</p>
-
-<h2>Local search, social media and the journal</h2>
-<p>Clients search by service and city, such as "interior designer in Gachibowli" or "office interior design in Pune", so service pages and project captions should use those words naturally. A journal adds depth: Studio Agama publishes articles on residential design trends in Hyderabad, Vijayawada and Vizag and on common interior design mistakes in Hyderabad. Many clients first see your work on Instagram or Pinterest, so link posts back to the full project pages, where the enquiry form is; <a href="/blog/instagram-to-website-enquiries/">turning Instagram followers into website enquiries</a> shows how.</p>
-<p>If your current site shows projects from years ago, loads slowly or can't be updated without a developer, a <a href="/website-redesign/">website redesign</a> can rebuild the portfolio while keeping the pages that already bring in enquiries.</p>
-
-<p>Many of the same principles apply to any creative portfolio; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>.</p>
-
-<p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
-
-<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>
-
-<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
-
-<h2>Quick check: does your portfolio load and convert?</h2>
-<ol>
-  <li>Open your heaviest project page in <a href="https://pagespeed.web.dev/" rel="noopener">PageSpeed Insights</a> and look at the images it flags.</li>
-  <li>On your phone, check each project shows its location, scope and your role.</li>
-  <li>Submit your enquiry form and check it asks for project type, location and timeline.</li>
-</ol>
-
-<h2>When to get help</h2>
-<p>Get help when your portfolio is slow on phones, projects lack context, or enquiries do not fit your practice. See <a href="/wordpress-website-development/">WordPress website development</a> and <a href="/website-redesign/">website redesign</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
-
-<h2>FAQs</h2>
-<h3>How many projects should an interior designer show on their website?</h3>
-<p>Usually eight to fifteen of your strongest projects, chosen to show your range. Add new ones and retire weaker ones over time rather than showing everything.</p>
-<h3>Should we show prices or budgets on our website?</h3>
-<p>Many practices explain how they charge without publishing figures. Asking for a budget range in the enquiry form, with a "not sure yet" option, helps you see which leads fit.</p>
-<h3>Can I add new projects myself after launch?</h3>
-<p>Yes. Projects can be added from the dashboard with a template for the story, images and captions, so every project page stays consistent.</p>
-<h3>Can we show renders as well as completed photos?</h3>
-<p>Yes, as long as they are labelled as renders or concepts, so visitors know which projects are built and which are designs.</p>
-<h3>How do we stop large images slowing the site?</h3>
-<p>Export images at the size they are displayed, serve modern formats, lazy-load galleries and open full-resolution versions only on request.</p>
-`,
-  },
-  {
     slug: 'website-for-gyms-fitness-studios',
     noindex: true,
     seoTitle: 'Websites for Gyms, Fitness Studios and Yoga Studios',
@@ -8928,7 +8848,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
     <tr><td>Interior designers and architects</td><td>Project stories with photos, plans and the brief</td><td>Galleries with no explanation of the problem solved</td></tr>
   </tbody>
 </table>
-<p>Photographers have <a href="/blog/website-for-photographers/">a full guide of their own</a>, and so do <a href="/blog/website-for-interior-designers-architects/">interior designers and architects</a>.</p>
+<p>Photographers have <a href="/blog/website-for-photographers/">a full guide of their own</a>, and so do <a href="/website-for-interior-designers/">interior designers and architects</a>.</p>
 
 <h2>Keep an image-heavy portfolio fast</h2>
 <p>Portfolios are image-heavy by nature, and a gallery that crawls on a phone undoes the work you're showing. The essentials:</p>
@@ -9880,7 +9800,7 @@ site:example.com/blog/ "net metering"</code></pre>
     title: 'WordPress SEO Audit: A Practical Step-by-Step Checklist (With WooCommerce Checks)',
     description: 'How to do a WordPress SEO audit step by step: indexing, crawl errors, speed, on-page SEO, schema, WooCommerce checks, what to fix first and how to report.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-speed-optimization', 'wordpress-migration'],
     body: `
@@ -10005,6 +9925,32 @@ site:example.com/blog/ "net metering"</code></pre>
   <li><strong>Structured data:</strong> Rich Results Test and the Search Console Enhancements reports.</li>
   <li><strong>Security and spam:</strong> Search Console Security Issues and Manual Actions.</li>
 </ol>
+
+<h2>Yoast and Rank Math settings to check in a WordPress SEO audit</h2>
+<p>Most WordPress sites use one of these two plugins, and a single wrong setting can hide pages from Google. Check:</p>
+<ul>
+  <li><strong>Only one SEO plugin is active.</strong> Two plugins print two sets of titles, canonicals and schema.</li>
+  <li><strong>Search appearance or Titles &amp; Meta:</strong> posts, pages, products and the main categories are set to show in search results; thin archives (tags, author archives on a one-author site, date archives, attachment pages) are set to noindex.</li>
+  <li><strong>Sitemap:</strong> the plugin's sitemap is enabled, lists only post types you want indexed, and is the one submitted in Search Console.</li>
+  <li><strong>Per-page overrides:</strong> crawl a list of pages set to noindex or with a custom canonical, and confirm each one is intentional.</li>
+  <li><strong>Schema settings:</strong> the site is described as an organisation or a person correctly, with the right name and logo, and no other plugin adds duplicate schema.</li>
+  <li><strong>Breadcrumbs and redirects:</strong> if the plugin manages redirects, check they point straight to final URLs with no chains.</li>
+</ul>
+
+<h2>A WordPress SEO audit template you can copy</h2>
+<p>Keep the audit in a simple spreadsheet with one row per issue. These columns are enough:</p>
+<table>
+  <thead><tr><th>Column</th><th>What to write</th></tr></thead>
+  <tbody>
+    <tr><td>Area</td><td>Indexing, settings, speed, on-page, schema, content or security</td></tr>
+    <tr><td>Issue</td><td>One sentence, such as "12 product pages set to noindex"</td></tr>
+    <tr><td>URLs affected</td><td>A link to the list or the count</td></tr>
+    <tr><td>Impact</td><td>High, medium or low, based on traffic and how close the page is to ranking</td></tr>
+    <tr><td>Fix</td><td>The exact change, with the menu path</td></tr>
+    <tr><td>Owner and status</td><td>Who does it and whether it is done and re-checked</td></tr>
+  </tbody>
+</table>
+<p>Want a second pair of eyes first? Ask for a <a href="/contact/?topic=Free%20website%20review%3A%20WordPress%20SEO%20audit">free website review</a>, or see <a href="/wordpress-seo-services/">WordPress SEO services</a> if you would like the audit and the fixes done for you.</p>
 
 <h2>How to prioritise what you find</h2>
 <table>
@@ -15014,7 +14960,7 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
     title: 'FAQ SEO: How to Write FAQ Pages and FAQs for SEO on Service, Sales and Local Pages',
     description: 'FAQ pages for SEO: are FAQs good for SEO, one FAQ page or FAQs on each page, how to write an FAQ for a sales page, and what FAQ schema does today.',
     date: '2026-09-27',
-    updated: '2026-11-18',
+    updated: '2026-11-24',
     category: 'SEO',
     related: ['wordpress-seo-services', 'landing-page-design', 'wordpress-website-development'],
     body: `
@@ -15136,6 +15082,22 @@ nslookup -type=txt _dmarc.yourdomain.com</code></pre>
 </ul>
 <p>On WordPress, many SEO plugins and FAQ blocks add the markup for you. Check the output with the Rich Results Test or Schema Markup Validator; see testing structured data and <a href="/blog/schema-markup-explained/">schema markup explained</a>.</p>
 
+
+<h2>10 sample FAQs for service businesses</h2>
+<p>These are the questions buyers of a service usually have before they enquire. Use them as a starting list, then rewrite each answer with your own prices, areas, timelines and rules. A generic answer copied from another site helps nobody.</p>
+<ol>
+  <li><strong>How much does it cost?</strong> Give a starting price or a range and say what moves it up or down. "It depends" with no numbers loses the reader.</li>
+  <li><strong>How long does it take?</strong> State the usual timeline and what the customer must provide for you to keep to it.</li>
+  <li><strong>Which areas or cities do you serve?</strong> Name them. Say whether you work remotely for clients elsewhere.</li>
+  <li><strong>What is included, and what is not?</strong> List the common extras people assume are free.</li>
+  <li><strong>Do I have to pay in advance?</strong> Explain the payment stages and the methods you accept (UPI, bank transfer, card).</li>
+  <li><strong>Do you give a GST invoice?</strong> A one-line answer removes a common doubt for business buyers in India.</li>
+  <li><strong>What happens if I am not happy with the result?</strong> Describe revisions, fixes or your refund rules honestly.</li>
+  <li><strong>Who will actually do the work?</strong> Say whether it is you, your team or a partner.</li>
+  <li><strong>What do you need from me to start?</strong> Content, logins, photos, approvals: a short list.</li>
+  <li><strong>How do I contact you, and how fast do you reply?</strong> Give the channel (WhatsApp, phone, form) and a realistic reply time.</li>
+</ol>
+<p>Put the two or three questions that most affect the decision (price, timeline, area) on the service page itself, close to the enquiry button, and keep the full list on the FAQ page. If you want a site where every service page answers these properly, see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
 <h2>FAQ pages for SEO: a quick checklist</h2>
 <ul>
@@ -15448,7 +15410,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when the site is down and takes orders or enquiries, when the error returns after each fix, or when the logs point to the server and the host will not help. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix, and <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update and monitor the site, so most of these errors are caught early.</p>
 
-<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the most common WordPress error?</h3>
@@ -36942,7 +36904,7 @@ stat -c "%a %U %n" wp-config.php</code></pre>
 </table>
 <p>Start with generous limits and tighten them only if attacks get through. Set them too strict and customers on office or mobile networks, who can share one IP address, get blocked.</p>
 
-<p>A common false positive is the block editor's save request, which shows up as <a href="/blog/wordpress-updating-failed-error-fix/">WordPress "Updating failed. The response is not a valid JSON response"</a>.</p>
+<p>A common false positive is the block editor's save request, which shows up as <a href="/blog/wordpress-update-failed-fix/">WordPress "Updating failed. The response is not a valid JSON response"</a>.</p>
 
 <h2>False positives: when the firewall blocks the wrong thing</h2>
 <p>Every firewall blocks something legitimate eventually. Common cases:</p>
@@ -38331,7 +38293,7 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h2>When to get help</h2>
 <p>Get help if the error returns after every update, the log points to core files or files you don't recognise, you have no recent backup, or it's a store losing orders. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages afterwards and roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
-<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Is my content lost when WordPress shows a critical error?</h3>
@@ -40509,7 +40471,7 @@ add_action( 'after_setup_theme', function () {
 <li><strong>Wardrobes:</strong> sliding, hinged, walk-in, with lofts, and storage for children&#39;s rooms</li>
 <li><strong>Other units</strong> you make, such as TV units, crockery units, study tables and vanities</li>
 </ul>
-<p>Mark clearly which images are real installations and which are 3D renders. Buyers notice, and honest labelling builds trust. For each installed project, a short note on the layout, materials, finish and city helps far more than a photo alone. If you also handle full home interiors, see <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a> for how to present complete projects.</p>
+<p>Mark clearly which images are real installations and which are 3D renders. Buyers notice, and honest labelling builds trust. For each installed project, a short note on the layout, materials, finish and city helps far more than a photo alone. If you also handle full home interiors, see <a href="/website-for-interior-designers/">websites for interior designers and architects</a> for how to present complete projects.</p>
 <p>For a real example of this structure, see the <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a>: a Hyderabad interior design and turnkey studio whose site presents modular interiors alongside full home, luxury, commercial and renovation services, with a project gallery and &quot;Get A Free Quote&quot; calls to action throughout.</p>
 
 <h2>Explain materials, finishes and hardware</h2>
@@ -57088,7 +57050,7 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Engineering enquiries are high value, so the response matters as much as the form. Ask for project type, location, stage (concept, approvals, construction, existing building) and approximate size, so you can call back prepared. Send form entries to a shared inbox and a WhatsApp alert so nothing waits over a weekend. Add an auto-reply that confirms receipt and says when you will respond. Track form submissions in analytics so you know which pages produce real leads.</p>
 
 <h2>WordPress or custom build?</h2>
-<p>For most consultancies, WordPress is a sensible choice. Your team can add projects and openings without a developer, and a custom post type for projects with fields for role, sector, city and scope keeps every project page consistent. A fully custom-coded site rarely adds value here unless you need a client portal or document system. Related sectors may find <a href="/blog/website-for-construction-companies/">websites for construction companies</a> and <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a> useful too.</p>
+<p>For most consultancies, WordPress is a sensible choice. Your team can add projects and openings without a developer, and a custom post type for projects with fields for role, sector, city and scope keeps every project page consistent. A fully custom-coded site rarely adds value here unless you need a client portal or document system. Related sectors may find <a href="/blog/website-for-construction-companies/">websites for construction companies</a> and <a href="/website-for-interior-designers/">websites for interior designers and architects</a> useful too.</p>
 
 <h2>Quick check: can clients see your projects and services?</h2>
 <ol>
@@ -62137,7 +62099,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <li><strong>Use real photos in good light.</strong> A clean, well-lit phone photo is better than a dark professional one. Avoid stock images of furniture you did not make.</li>
 <li><strong>Compress images</strong> so the gallery loads quickly on mobile data.</li>
 </ul>
-<p>If you work with interior designers, ask before posting their projects and credit them where appropriate. For ideas on presenting design-led work, see the guide to a <a href="/blog/website-for-interior-designers-architects/">website for interior designers and architects</a>, and the real <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows how an interiors portfolio can be organised.</p>
+<p>If you work with interior designers, ask before posting their projects and credit them where appropriate. For ideas on presenting design-led work, see the guide to a <a href="/website-for-interior-designers/">website for interior designers and architects</a>, and the real <a href="/work/studio-agama-interiors/">Studio Agama Interiors case study</a> shows how an interiors portfolio can be organised.</p>
 
 <h2>Explaining materials and pricing factors</h2>
 <p>Clients often compare carpenters only on price, without understanding why quotes differ. A materials page helps. Explain the difference between plywood grades, MDF and solid wood, laminate versus veneer finishes, and branded versus local hardware. You do not need to publish rates. Instead, explain what drives cost: size, material, finish, hardware, design complexity and installation conditions.</p>
@@ -63688,7 +63650,7 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>Before you contact anyone, collect the useful facts: when the white screen started, what changed just before (an update, a new plugin, a hosting change), the last few lines of the debug log, and your hosting panel access. That shortens the fix considerably, whoever handles it.</p>
 <p>For a fix without touching server files yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers recovery, updates and backups, and <a href="/wordpress-malware-removal/">hacked site cleanup</a> handles a white screen caused by malware. Send the error from your log and <a href="/#contact">get in touch</a>.</p>
 
-<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the WordPress white screen of death?</h3>
@@ -66654,7 +66616,7 @@ any unused part of the advance refunded as agreed</code></pre>
 <p>Both support Indian payments such as UPI and cards, along with GST invoices and shipping integrations. For managing sizes and colours, see <a href="/blog/woocommerce-product-variations/">WooCommerce product variations</a>. Keep made-to-measure enquiries and ready-made orders on separate, clearly labelled paths so customers are not confused.</p>
 
 <h2>Serving interior designers and builders</h2>
-<p>Interior designers, architects and builders can bring repeat and bulk work. Give them a separate page that explains how you handle trade projects, sample books, site coordination and timelines, with its own enquiry form. Keep any trade pricing private and share it directly. See <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a> to understand what they look for in suppliers.</p>
+<p>Interior designers, architects and builders can bring repeat and bulk work. Give them a separate page that explains how you handle trade projects, sample books, site coordination and timelines, with its own enquiry form. Keep any trade pricing private and share it directly. See <a href="/website-for-interior-designers/">websites for interior designers and architects</a> to understand what they look for in suppliers.</p>
 
 <h2>Care, warranty and after-sales service</h2>
 <p>Curtains and blinds are used every day for years, so buyers want to know what happens after installation. A short page on care and service builds confidence and cuts down on repeat questions:</p>
@@ -67669,7 +67631,7 @@ any unused part of the advance refunded as agreed</code></pre>
   <li>Keep WordPress and plugins updated, since API vulnerabilities are usually fixed in updates.</li>
 </ul>
 <p>Treat the REST API as part of your general hardening, alongside the steps in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
-<p>The most visible REST API error is in the block editor itself; if pages won't save, see <a href="/blog/wordpress-updating-failed-error-fix/">how to fix the WordPress "Updating failed" error</a>.</p>
+<p>The most visible REST API error is in the block editor itself; if pages won't save, see <a href="/blog/wordpress-update-failed-fix/">how to fix the WordPress "Updating failed" error</a>.</p>
 
 <h2>Common REST API errors</h2>
 <table>
@@ -71521,7 +71483,7 @@ wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre
 <h2>When to get help</h2>
 <p>Get help when the log makes no sense, when no log is being written, or when the site is down during business hours and takes orders. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, so the next 500 does not happen on the live site, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
 
-<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix a 500 internal server error in WordPress?</h3>
@@ -71653,7 +71615,7 @@ curl -sI https://yourdomain.com/ | grep -iE "^(server|cf-ray|cf-cache-status|x-l
 <h2>When to get help</h2>
 <p>Get help when the errors happen during checkout or busy hours, when the host says the problem is your code, or when you have already tried lighter tasks and caching. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers slow plugins, queries, PHP workers and caching, and <a href="/wordpress-maintenance/">WordPress maintenance</a> adds uptime monitoring so you hear about timeouts before customers do.</p>
 
-<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix a 502 bad gateway or 504 gateway timeout on WordPress?</h3>
@@ -71800,6 +71762,18 @@ or a cookie name starts with:
   </tbody>
 </table>
 <p>Send your host the Ray ID from the error page, the time and the URL. For timeouts that start on the server, see <a href="/blog/wordpress-502-504-gateway-timeout-fix/">502 and 504 errors on WordPress</a>.</p>
+
+<h2>Step-by-step setup: the short version</h2>
+<p>If you have done this before and only need the order of work, here it is in six steps. Each is covered in detail above.</p>
+<ol>
+  <li>Make sure your site already has SSL</li>
+  <li>Add your domain to Cloudflare</li>
+  <li>Check the imported DNS records</li>
+  <li>Change the nameservers at your registrar</li>
+  <li>Set SSL/TLS to Full (strict) and force HTTPS</li>
+  <li>Tidy up caching inside WordPress</li>
+</ol>
+<p>Two errors catch most people: <strong>too many redirects</strong> means the SSL mode is Flexible (switch to Full (strict)), and <strong>error 526</strong> means the certificate on your server is missing or expired, so reissue it at your host.</p>
 
 <h2>Quick check: is Cloudflare set up right?</h2>
 <ol>
@@ -72408,6 +72382,49 @@ or a cookie name starts with:
 <h2>Step 7: when the core WordPress update fails</h2>
 <p>A failed core update is rarer but more worrying. If the dashboard still loads, go to Dashboard, Updates and use "Re-install version" once the lock has cleared. If wp-admin will not load, a manual core update works: download WordPress, then upload the wp-admin and wp-includes folders and the root files over the old ones, leaving wp-content and wp-config.php alone. Visit /wp-admin/ afterwards and accept any database update prompt.</p>
 
+<h2>"Updating failed" or "not a valid JSON response" in the block editor</h2>
+<p>A different error with a similar name: the editor cannot save a post or page because WordPress's REST API request was blocked or returned something other than JSON. Work through these fixes in order.</p>
+<h3>Why the block editor shows "not a valid JSON response"</h3>
+<p>The block editor (Gutenberg) does not submit a normal form when you click Update. It sends your content to an address such as /wp-json/wp/v2/pages/123 and expects a short reply written in JSON. If that address returns a 404 page, a firewall block page, a login redirect, a PHP warning or an HTML error page instead, the editor cannot read it and shows the generic error.</p>
+<p>So the message does not tell you what went wrong; it tells you that something sat between the editor and WordPress. If you want the background, <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> covers what these requests are and why you should restrict the REST API rather than switch it off.</p>
+
+<h3>Fix 1: Re-save your permalinks</h3>
+<p>This is the quickest fix and solves a large share of cases. Go to Settings &gt; Permalinks and click Save Changes without changing anything. WordPress rewrites its URL rules, including the ones for /wp-json/.</p>
+<p>Then open yourdomain.com/wp-json/ in a browser. You should see a page of structured text starting with the site name. If you see your theme's 404 page instead, the rewrite rules are still not working. On Apache or LiteSpeed hosting, check that the .htaccess file in the site root contains the standard WordPress block. If ordinary pages also show 404 errors, follow <a href="/blog/wordpress-pages-404-permalinks-fix/">the fix for WordPress pages showing 404</a> first, because it is the same problem.</p>
+<p>If you use the "Plain" permalink setting, the REST API lives at ?rest_route=/ instead. Switching to "Post name" is better for SEO anyway, but set up redirects if the site already has traffic.</p>
+
+<h3>Fix 2: Make the site URLs match your HTTPS address</h3>
+<p>Open Settings &gt; General and look at WordPress Address (URL) and Site Address (URL). Both should show the exact address visitors use, including https and either www or no www. A mismatch is common after installing an SSL certificate, moving hosting or changing domain.</p>
+<p>When they don't match, the editor sends its save request to one address and the server redirects it to another. Browsers don't carry the request body across that redirect in a way WordPress accepts, so the save fails. If changing these fields causes a redirect loop and locks you out, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>, and check for padlock warnings once it saves again.</p>
+
+<h3>Fix 3: Check your firewall and security plugin</h3>
+<p>Security tools are the most common cause when only some posts fail. A web application firewall reads every request, and a post containing an iframe, a script tag, a SQL example or words that look like an attack can match a rule and be blocked. The editor then receives a block page instead of JSON.</p>
+<ol>
+  <li>Open your security plugin's firewall or activity log (Wordfence, Sucuri, Solid Security, All In One WP Security or similar) and look for blocked requests to /wp-json/ at the time you clicked Update.</li>
+  <li>If you find one, use the plugin's option to allow that specific request or rule for logged-in administrators, rather than turning the firewall off.</li>
+  <li>Check settings that "disable the REST API" or "restrict REST API to logged-in users". Restricting it to logged-in users is fine; disabling it entirely breaks the editor.</li>
+  <li>Check server-level tools too: ModSecurity in cPanel or hPanel, Cloudflare WAF rules and your host's own firewall. Hosting support can see ModSecurity hits in the server logs and whitelist the rule ID.</li>
+</ol>
+<p><a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers the difference between plugin, server and DNS-level firewalls, and how to deal with false positives without lowering protection for everyone.</p>
+
+<h3>Fix 4: Look for a plugin or theme conflict</h3>
+<p>If the error started after an update, a plugin or the theme may be printing a PHP warning, a blank line or extra HTML before the JSON reply. One stray character is enough to break it.</p>
+<ol>
+  <li>Open the editor, press F12 and choose the Network tab. Click Update, then click the failed request (it usually has the post ID in its name) and read the Response tab. A PHP warning naming a plugin folder tells you the culprit straight away.</li>
+  <li>If nothing obvious shows, install Health Check &amp; Troubleshooting and use Troubleshooting Mode. It disables plugins and switches to a default theme for your login only, so visitors see nothing.</li>
+  <li>Re-enable plugins one at a time and try to update a test draft after each.</li>
+</ol>
+<p>The full method, including how to test safely on a live site, is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts safely</a>. Plugins that add SEO meta boxes, custom fields, page builders, caching and security headers are the usual suspects, because they all hook into saving.</p>
+
+<h3>Fix 5: Check the server error log and PHP limits</h3>
+<p>If the Network tab shows a 500 status, the server crashed while saving. Open the error log in your hosting panel and look for lines around that time. "Allowed memory size exhausted" means PHP memory is too low; "Maximum execution time" means the save took too long, which happens on very long pages or slow shared hosting. A 403 status means a permission or server rule refused it. <a href="/blog/wordpress-500-internal-server-error-fix/">The WordPress 500 error guide</a> walks through reading those logs.</p>
+
+<h3>Fix 6: Use Site Health to confirm the REST API works</h3>
+<p>Go to Tools &gt; Site Health. If WordPress cannot reach its own REST API, it shows a critical issue such as "The REST API encountered an error" with the HTTP status code. Fix that issue and the editor usually saves again. Run the check again after every change so you know which fix worked.</p>
+
+<h3>"Updating failed" when uploading images in the editor</h3>
+<p>If the message appears only when you drag an image into the editor, the problem is the upload rather than the save. Large photos straight from a phone, low upload limits and missing image libraries on the server all cause it. See <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error when uploading images</a> fix and resize images before upload.</p>
+
 <h2>How to stop updates failing next time</h2>
 <ul>
   <li>Update one item at a time on busy sites, starting with the ones that matter least.</li>
@@ -72923,7 +72940,7 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>Get help when the mobile score stays low after removing sliders and resizing images, when the page builder or theme is the bottleneck, or when the site is a WooCommerce store. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for a full audit with fixes measured before and after, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing work.</p>
 
-<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress site slow on mobile but fast on desktop?</h3>
@@ -73149,7 +73166,7 @@ or a cookie name starts with:
 </ul>
 <p>Make these database changes on a backup first, or ask a developer if you are not comfortable with phpMyAdmin.</p>
 
-<p>If the dashboard loads but posts won't save, the same plugins may be blocking the REST API; see <a href="/blog/wordpress-updating-failed-error-fix/">fixes for WordPress updating failed</a>.</p>
+<p>If the dashboard loads but posts won't save, the same plugins may be blocking the REST API; see <a href="/blog/wordpress-update-failed-fix/">fixes for WordPress updating failed</a>.</p>
 
 <h2>A security plugin hiding or blocking wp-admin</h2>
 <p>Security plugins can change the login address, block wp-admin for certain IP addresses or countries, or lock out users after failed attempts. If wp-admin returns a 404 or a block message:</p>
@@ -73997,6 +74014,9 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <li>Agree who marks COD orders as paid and how often, using the remittance report from your courier or aggregator.</li>
 </ol>
 <p>At the time of writing, this built-in COD is simply on or off for the whole store. Everything finer than that comes from apps or from a checkout tool provided by a logistics or payments company.</p>
+
+<h3>Where the setting is in Shopify admin</h3>
+<p>To enable Cash on Delivery on Shopify, go to <strong>Settings &gt; Payments</strong>, find <strong>Manual payment methods</strong>, click <strong>+ Manual payment method</strong>, choose <strong>Cash on Delivery (COD)</strong>, add the details customers see at checkout, and click <strong>Activate</strong>. COD then appears next to your online gateway at checkout.</p>
 
 <h2>COD fees, limits and pin code rules</h2>
 <p>Three controls make most of the difference to COD costs. Shopify's checkout can be customised by apps through its extension system, but what is allowed depends on your plan and changes as Shopify updates checkout, so treat the app routes below as options to verify rather than guarantees.</p>
@@ -75290,7 +75310,7 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when you have lost content that you need back and revisions are gone, when only an old backup holds it, or when a clean-up plugin has removed more than revisions. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes daily backups and restores. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
-<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-update-failed-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why are WordPress revisions not showing in the block editor?</h3>
@@ -76856,118 +76876,6 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Mobile menus often need their own location or header builder setting, and they rely on JavaScript. Check for a separate mobile menu location and for console errors caused by script delay or minify settings.</p>
 <h3>How do I add pages to a WordPress menu?</h3>
 <p>In Appearance &gt; Menus, tick the pages in the left panel and click Add to Menu, then drag to order and save. In a block theme, add a Page Link inside the Navigation block in the Site Editor.</p>
-`,
-  },
-  {
-    slug: 'wordpress-updating-failed-error-fix',
-    seoTitle: 'WordPress "Updating Failed" Error? How to Fix It',
-    title: 'WordPress "Updating Failed" or "Publishing Failed"? How to Fix the Not a Valid JSON Response Error',
-    description: 'Fix WordPress "Updating failed" and "The response is not a valid JSON response" errors: permalinks, SSL, firewalls, plugins and the REST API.',
-    date: '2026-11-06',
-    updated: '2026-11-07',
-    category: 'Maintenance',
-    related: ['wordpress-maintenance', 'hire-wordpress-developer'],
-    body: `
-<p>When WordPress shows "Updating failed" or "Publishing failed. The response is not a valid JSON response", the block editor tried to save your page through the WordPress REST API and got something other than the answer it expected. The fix is usually one of five things: re-save your permalinks, make the WordPress and Site Address URLs match your real HTTPS address, allow the request in your firewall or security plugin, find a plugin that prints errors into the response, or fix a server rule in .htaccess.</p>
-<p>Before you try anything, copy the text of the post you are editing into a plain text file. The editor keeps an autosave in some cases, but not always, and the error often appears exactly when you have written the most.</p>
-
-<h2>WordPress updating failed: quick diagnosis table</h2>
-<table>
-  <thead><tr><th>What you see</th><th>Most likely cause</th><th>First fix</th></tr></thead>
-  <tbody>
-    <tr><td>"Updating failed. The response is not a valid JSON response" on every page</td><td>Permalinks or .htaccess broken, so REST API URLs return 404</td><td>Settings &gt; Permalinks &gt; Save Changes</td></tr>
-    <tr><td>Error started after moving to HTTPS or a new domain</td><td>Site URLs still on http or the old domain</td><td>Match both URLs in Settings &gt; General</td></tr>
-    <tr><td>Only some posts fail, often ones with code, scripts or certain words</td><td>Firewall or security plugin blocking the request</td><td>Check the firewall log and allow the request</td></tr>
-    <tr><td>Error started after a plugin or theme update</td><td>PHP notice or extra output breaking the JSON</td><td>Plugin conflict test</td></tr>
-    <tr><td>"Updating failed. You are probably offline"</td><td>Connection dropped, or a timeout on slow hosting</td><td>Check your connection, then the server error log</td></tr>
-    <tr><td>Error only when uploading an image inside the editor</td><td>Upload limits or the image library</td><td>See the image upload fixes below</td></tr>
-  </tbody>
-</table>
-
-<h2>Why the block editor shows "not a valid JSON response"</h2>
-<p>The block editor (Gutenberg) does not submit a normal form when you click Update. It sends your content to an address such as /wp-json/wp/v2/pages/123 and expects a short reply written in JSON. If that address returns a 404 page, a firewall block page, a login redirect, a PHP warning or an HTML error page instead, the editor cannot read it and shows the generic error.</p>
-<p>So the message does not tell you what went wrong; it tells you that something sat between the editor and WordPress. If you want the background, <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> covers what these requests are and why you should restrict the REST API rather than switch it off.</p>
-
-<h2>Fix 1: Re-save your permalinks</h2>
-<p>This is the quickest fix and solves a large share of cases. Go to Settings &gt; Permalinks and click Save Changes without changing anything. WordPress rewrites its URL rules, including the ones for /wp-json/.</p>
-<p>Then open yourdomain.com/wp-json/ in a browser. You should see a page of structured text starting with the site name. If you see your theme's 404 page instead, the rewrite rules are still not working. On Apache or LiteSpeed hosting, check that the .htaccess file in the site root contains the standard WordPress block. If ordinary pages also show 404 errors, follow <a href="/blog/wordpress-pages-404-permalinks-fix/">the fix for WordPress pages showing 404</a> first, because it is the same problem.</p>
-<p>If you use the "Plain" permalink setting, the REST API lives at ?rest_route=/ instead. Switching to "Post name" is better for SEO anyway, but set up redirects if the site already has traffic.</p>
-
-<h2>Fix 2: Make the site URLs match your HTTPS address</h2>
-<p>Open Settings &gt; General and look at WordPress Address (URL) and Site Address (URL). Both should show the exact address visitors use, including https and either www or no www. A mismatch is common after installing an SSL certificate, moving hosting or changing domain.</p>
-<p>When they don't match, the editor sends its save request to one address and the server redirects it to another. Browsers don't carry the request body across that redirect in a way WordPress accepts, so the save fails. If changing these fields causes a redirect loop and locks you out, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>, and check for padlock warnings once it saves again.</p>
-
-<h2>Fix 3: Check your firewall and security plugin</h2>
-<p>Security tools are the most common cause when only some posts fail. A web application firewall reads every request, and a post containing an iframe, a script tag, a SQL example or words that look like an attack can match a rule and be blocked. The editor then receives a block page instead of JSON.</p>
-<ol>
-  <li>Open your security plugin's firewall or activity log (Wordfence, Sucuri, Solid Security, All In One WP Security or similar) and look for blocked requests to /wp-json/ at the time you clicked Update.</li>
-  <li>If you find one, use the plugin's option to allow that specific request or rule for logged-in administrators, rather than turning the firewall off.</li>
-  <li>Check settings that "disable the REST API" or "restrict REST API to logged-in users". Restricting it to logged-in users is fine; disabling it entirely breaks the editor.</li>
-  <li>Check server-level tools too: ModSecurity in cPanel or hPanel, Cloudflare WAF rules and your host's own firewall. Hosting support can see ModSecurity hits in the server logs and whitelist the rule ID.</li>
-</ol>
-<p><a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers the difference between plugin, server and DNS-level firewalls, and how to deal with false positives without lowering protection for everyone.</p>
-
-<h2>Fix 4: Look for a plugin or theme conflict</h2>
-<p>If the error started after an update, a plugin or the theme may be printing a PHP warning, a blank line or extra HTML before the JSON reply. One stray character is enough to break it.</p>
-<ol>
-  <li>Open the editor, press F12 and choose the Network tab. Click Update, then click the failed request (it usually has the post ID in its name) and read the Response tab. A PHP warning naming a plugin folder tells you the culprit straight away.</li>
-  <li>If nothing obvious shows, install Health Check &amp; Troubleshooting and use Troubleshooting Mode. It disables plugins and switches to a default theme for your login only, so visitors see nothing.</li>
-  <li>Re-enable plugins one at a time and try to update a test draft after each.</li>
-</ol>
-<p>The full method, including how to test safely on a live site, is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts safely</a>. Plugins that add SEO meta boxes, custom fields, page builders, caching and security headers are the usual suspects, because they all hook into saving.</p>
-
-<h2>Fix 5: Check the server error log and PHP limits</h2>
-<p>If the Network tab shows a 500 status, the server crashed while saving. Open the error log in your hosting panel and look for lines around that time. "Allowed memory size exhausted" means PHP memory is too low; "Maximum execution time" means the save took too long, which happens on very long pages or slow shared hosting. A 403 status means a permission or server rule refused it. <a href="/blog/wordpress-500-internal-server-error-fix/">The WordPress 500 error guide</a> walks through reading those logs.</p>
-
-<h2>Fix 6: Use Site Health to confirm the REST API works</h2>
-<p>Go to Tools &gt; Site Health. If WordPress cannot reach its own REST API, it shows a critical issue such as "The REST API encountered an error" with the HTTP status code. Fix that issue and the editor usually saves again. Run the check again after every change so you know which fix worked.</p>
-
-<h2>"Updating failed" when uploading images in the editor</h2>
-<p>If the message appears only when you drag an image into the editor, the problem is the upload rather than the save. Large photos straight from a phone, low upload limits and missing image libraries on the server all cause it. See <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error when uploading images</a> fix and resize images before upload.</p>
-
-<h2>Errors on Indian shared hosting</h2>
-<p>Many Indian business sites run on shared plans where ModSecurity rules, low PHP memory and aggressive caching are set by the host. Two things come up often on these plans:</p>
-<ul>
-  <li><strong>ModSecurity false positives.</strong> Pages that embed a Google Map, a YouTube video or a WhatsApp chat link can trigger generic rules. Raise a ticket with the exact time of the failed save and ask the host to check ModSecurity logs.</li>
-  <li><strong>Caching of /wp-json/.</strong> Some server caches or CDN rules cache everything. The REST API should never be cached for logged-in users, so exclude /wp-json/ and wp-admin from page cache and Cloudflare cache rules.</li>
-</ul>
-
-<h2>How to stop "Updating failed" coming back</h2>
-<ul>
-  <li>Update plugins in small groups and test saving a draft afterwards, ideally on a staging copy first; see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</li>
-  <li>Keep only one security plugin, and keep its REST API option on "logged-in users only" rather than "disabled".</li>
-  <li>After any SSL, domain or hosting change, check both site URLs and re-save permalinks.</li>
-  <li>Watch Site Health once a month. It flags REST API and loopback problems before editors notice them.</li>
-</ul>
-<p>If the editor keeps failing and you can't find the cause, a <a href="/wordpress-maintenance/">WordPress maintenance plan</a> covers this kind of fault, or you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. I'd start with the browser's Network tab and the server log, because together they name the cause in most cases.</p>
-
-<h2>Quick check: is the REST API reachable?</h2>
-<ol>
-  <li>Open <strong>Tools &gt; Site Health &gt; Status</strong> and look for "The REST API encountered an error" or "unexpected result".</li>
-  <li>Visit <code>yourdomain.com/wp-json/</code> in your browser. You should see JSON text, not an error page.</li>
-  <li>If either fails, disable security and firewall plugins with the Health Check &amp; Troubleshooting plugin and test again.</li>
-</ol>
-
-<p>If the site shows "There has been a critical error on this website" instead, follow <a href="/blog/fix-wordpress-critical-error/">how to fix the WordPress critical error</a> step by step.</p>
-
-<h2>When to get help</h2>
-<p>Get help when the REST API is blocked by your host's firewall, when the error appears only on some posts, or when it started after a migration or SSL change. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
-
-<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a> and <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a>.</p>
-
-<h2>FAQs</h2>
-<h3>What does "Updating failed. The response is not a valid JSON response" mean?</h3>
-<p>The block editor saves through the REST API and expects a JSON reply. It received something else, such as a 404 page, a firewall block page, a redirect or a PHP error. The message is generic; the cause is whatever replaced the reply.</p>
-<h3>Why does WordPress say "Publishing failed" on a new post?</h3>
-<p>It is the same error as "Updating failed", shown when the post has not been published yet. Work through the same fixes: permalinks, site URLs, firewall, plugins and server logs.</p>
-<h3>Will switching to the Classic Editor fix updating failed?</h3>
-<p>It often hides the symptom, because the classic editor saves through a normal form instead of the REST API. But anything else that uses the REST API, including some plugins and forms, may still be broken, so fix the cause rather than switching.</p>
-<h3>Can a security plugin cause the WordPress updating failed error?</h3>
-<p>Yes. Firewall rules can block a save that contains scripts, iframes or code samples, and options that disable the REST API break the block editor entirely. Check the plugin's log and allow the request for administrators.</p>
-<h3>Will I lose my content when updating fails?</h3>
-<p>The text stays in the editor while the tab is open, and WordPress may keep an autosave. Copy the content somewhere safe before refreshing or testing fixes, and check Revisions afterwards.</p>
-<h3>Why does updating fail only on one page?</h3>
-<p>When one page fails and others save, the content of that page is usually the trigger: an embed, a script, a very long table or a code sample matching a firewall rule. Try saving a copy with half the content removed to find the block responsible.</p>
 `,
   },
   {

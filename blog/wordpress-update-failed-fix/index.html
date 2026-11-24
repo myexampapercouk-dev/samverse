@@ -183,7 +183,7 @@
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 8 min read</span>
+              <span><time datetime="2026-10-11">11 October 2026</time> · Updated <time datetime="2026-11-09">9 November 2026</time> · 13 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=WordPress%20Update%20Failed%3F%20How%20to%20Fix%20%22Download%20Failed%22%2C%20Locked%20Updates%20and%20Half-Finished%20Plugin%20Updates%20https%3A%2F%2Fsamverse.space%2Fblog%2Fwordpress-update-failed-fix%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -209,6 +209,7 @@
               <li><a href="#step-5-premium-plugins-licences-and-blocked-downloads">Step 5: premium plugins, licences and blocked downloads</a></li>
               <li><a href="#step-6-repair-a-half-finished-plugin-or-theme-update">Step 6: repair a half-finished plugin or theme update</a></li>
               <li><a href="#step-7-when-the-core-wordpress-update-fails">Step 7: when the core WordPress update fails</a></li>
+              <li><a href="#updating-failed-or-not-a-valid-json-response-in-the-block-editor">"Updating failed" or "not a valid JSON response" in the block editor</a></li>
               <li><a href="#how-to-stop-updates-failing-next-time">How to stop updates failing next time</a></li>
               <li><a href="#quick-check-before-the-next-update">Quick check: before the next update</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
@@ -287,6 +288,49 @@
 
 <h2 id="step-7-when-the-core-wordpress-update-fails">Step 7: when the core WordPress update fails</h2>
 <p>A failed core update is rarer but more worrying. If the dashboard still loads, go to Dashboard, Updates and use "Re-install version" once the lock has cleared. If wp-admin will not load, a manual core update works: download WordPress, then upload the wp-admin and wp-includes folders and the root files over the old ones, leaving wp-content and wp-config.php alone. Visit /wp-admin/ afterwards and accept any database update prompt.</p>
+
+<h2 id="updating-failed-or-not-a-valid-json-response-in-the-block-editor">"Updating failed" or "not a valid JSON response" in the block editor</h2>
+<p>A different error with a similar name: the editor cannot save a post or page because WordPress's REST API request was blocked or returned something other than JSON. Work through these fixes in order.</p>
+<h3>Why the block editor shows "not a valid JSON response"</h3>
+<p>The block editor (Gutenberg) does not submit a normal form when you click Update. It sends your content to an address such as /wp-json/wp/v2/pages/123 and expects a short reply written in JSON. If that address returns a 404 page, a firewall block page, a login redirect, a PHP warning or an HTML error page instead, the editor cannot read it and shows the generic error.</p>
+<p>So the message does not tell you what went wrong; it tells you that something sat between the editor and WordPress. If you want the background, <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a> covers what these requests are and why you should restrict the REST API rather than switch it off.</p>
+
+<h3>Fix 1: Re-save your permalinks</h3>
+<p>This is the quickest fix and solves a large share of cases. Go to Settings &gt; Permalinks and click Save Changes without changing anything. WordPress rewrites its URL rules, including the ones for /wp-json/.</p>
+<p>Then open yourdomain.com/wp-json/ in a browser. You should see a page of structured text starting with the site name. If you see your theme's 404 page instead, the rewrite rules are still not working. On Apache or LiteSpeed hosting, check that the .htaccess file in the site root contains the standard WordPress block. If ordinary pages also show 404 errors, follow <a href="/blog/wordpress-pages-404-permalinks-fix/">the fix for WordPress pages showing 404</a> first, because it is the same problem.</p>
+<p>If you use the "Plain" permalink setting, the REST API lives at ?rest_route=/ instead. Switching to "Post name" is better for SEO anyway, but set up redirects if the site already has traffic.</p>
+
+<h3>Fix 2: Make the site URLs match your HTTPS address</h3>
+<p>Open Settings &gt; General and look at WordPress Address (URL) and Site Address (URL). Both should show the exact address visitors use, including https and either www or no www. A mismatch is common after installing an SSL certificate, moving hosting or changing domain.</p>
+<p>When they don't match, the editor sends its save request to one address and the server redirects it to another. Browsers don't carry the request body across that redirect in a way WordPress accepts, so the save fails. If changing these fields causes a redirect loop and locks you out, see <a href="/blog/too-many-redirects-error-fix/">how to fix ERR_TOO_MANY_REDIRECTS in WordPress</a>, and check for padlock warnings once it saves again.</p>
+
+<h3>Fix 3: Check your firewall and security plugin</h3>
+<p>Security tools are the most common cause when only some posts fail. A web application firewall reads every request, and a post containing an iframe, a script tag, a SQL example or words that look like an attack can match a rule and be blocked. The editor then receives a block page instead of JSON.</p>
+<ol>
+  <li>Open your security plugin's firewall or activity log (Wordfence, Sucuri, Solid Security, All In One WP Security or similar) and look for blocked requests to /wp-json/ at the time you clicked Update.</li>
+  <li>If you find one, use the plugin's option to allow that specific request or rule for logged-in administrators, rather than turning the firewall off.</li>
+  <li>Check settings that "disable the REST API" or "restrict REST API to logged-in users". Restricting it to logged-in users is fine; disabling it entirely breaks the editor.</li>
+  <li>Check server-level tools too: ModSecurity in cPanel or hPanel, Cloudflare WAF rules and your host's own firewall. Hosting support can see ModSecurity hits in the server logs and whitelist the rule ID.</li>
+</ol>
+<p><a href="/blog/wordpress-firewall-waf-explained/">WordPress firewalls explained</a> covers the difference between plugin, server and DNS-level firewalls, and how to deal with false positives without lowering protection for everyone.</p>
+
+<h3>Fix 4: Look for a plugin or theme conflict</h3>
+<p>If the error started after an update, a plugin or the theme may be printing a PHP warning, a blank line or extra HTML before the JSON reply. One stray character is enough to break it.</p>
+<ol>
+  <li>Open the editor, press F12 and choose the Network tab. Click Update, then click the failed request (it usually has the post ID in its name) and read the Response tab. A PHP warning naming a plugin folder tells you the culprit straight away.</li>
+  <li>If nothing obvious shows, install Health Check &amp; Troubleshooting and use Troubleshooting Mode. It disables plugins and switches to a default theme for your login only, so visitors see nothing.</li>
+  <li>Re-enable plugins one at a time and try to update a test draft after each.</li>
+</ol>
+<p>The full method, including how to test safely on a live site, is in <a href="/blog/wordpress-plugin-conflicts-troubleshooting/">how to fix WordPress plugin conflicts safely</a>. Plugins that add SEO meta boxes, custom fields, page builders, caching and security headers are the usual suspects, because they all hook into saving.</p>
+
+<h3>Fix 5: Check the server error log and PHP limits</h3>
+<p>If the Network tab shows a 500 status, the server crashed while saving. Open the error log in your hosting panel and look for lines around that time. "Allowed memory size exhausted" means PHP memory is too low; "Maximum execution time" means the save took too long, which happens on very long pages or slow shared hosting. A 403 status means a permission or server rule refused it. <a href="/blog/wordpress-500-internal-server-error-fix/">The WordPress 500 error guide</a> walks through reading those logs.</p>
+
+<h3>Fix 6: Use Site Health to confirm the REST API works</h3>
+<p>Go to Tools &gt; Site Health. If WordPress cannot reach its own REST API, it shows a critical issue such as "The REST API encountered an error" with the HTTP status code. Fix that issue and the editor usually saves again. Run the check again after every change so you know which fix worked.</p>
+
+<h3>"Updating failed" when uploading images in the editor</h3>
+<p>If the message appears only when you drag an image into the editor, the problem is the upload rather than the save. Large photos straight from a phone, low upload limits and missing image libraries on the server all cause it. See <a href="/blog/wordpress-http-error-image-upload-fix/">the HTTP error when uploading images</a> fix and resize images before upload.</p>
 
 <h2 id="how-to-stop-updates-failing-next-time">How to stop updates failing next time</h2>
 <ul>
@@ -371,6 +415,7 @@
               <li><a href="#step-5-premium-plugins-licences-and-blocked-downloads">Step 5: premium plugins, licences and blocked downloads</a></li>
               <li><a href="#step-6-repair-a-half-finished-plugin-or-theme-update">Step 6: repair a half-finished plugin or theme update</a></li>
               <li><a href="#step-7-when-the-core-wordpress-update-fails">Step 7: when the core WordPress update fails</a></li>
+              <li><a href="#updating-failed-or-not-a-valid-json-response-in-the-block-editor">"Updating failed" or "not a valid JSON response" in the block editor</a></li>
               <li><a href="#how-to-stop-updates-failing-next-time">How to stop updates failing next time</a></li>
               <li><a href="#quick-check-before-the-next-update">Quick check: before the next update</a></li>
               <li><a href="#when-to-get-help">When to get help</a></li>
@@ -401,9 +446,9 @@
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">Keep reading</span><h2>More articles</h2></div>
         <div class="post-grid reveal">
+          <a class="post-card" href="/blog/wordpress-500-internal-server-error-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-500-internal-server-error-fix.webp" alt="500 Internal Server Error in WordPress: How to Find the Cause and Fix It" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>500 Internal Server Error in WordPress: How to Find the Cause and Fix It</h3><p>Fix a 500 internal server error in WordPress: read the error log, turn on WP_DEBUG_LOG safely, reset .htaccess, find the faulty plugin, check PHP limits.</p><span class="post-card-meta">11 October 2026 · 9 min read</span></a>
+          <a class="post-card" href="/blog/wordpress-admin-bar-dashboard-missing-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-admin-bar-dashboard-missing-fix.webp" alt="WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Admin Bar or Dashboard Menus Missing? Fixing &quot;Sorry, You Are Not Allowed to Access This Page&quot;</h3><p>WordPress admin bar or dashboard menus missing? Check your profile setting, user role, plugins, caching, table prefix and security plugin settings.</p><span class="post-card-meta">11 October 2026 · 8 min read</span></a>
           <a class="post-card" href="/blog/wordpress-update-button-missing/"><img class="post-card-img" src="/assets/og/blog-wordpress-update-button-missing.webp" alt="WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely</h3><p>WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.</p><span class="post-card-meta">30 October 2026 · 10 min read</span></a>
-          <a class="post-card" href="/blog/wordpress-featured-image-not-showing-fix/"><img class="post-card-img" src="/assets/og/blog-wordpress-featured-image-not-showing-fix.webp" alt="WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares" width="1200" height="630" loading="lazy"><span class="work-tag">Maintenance</span><h3>WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares</h3><p>WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.</p><span class="post-card-meta">6 November 2026 · 8 min read</span></a>
-          <a class="post-card" href="/blog/pclzip-err-bad-format-wordpress-fix/"><span class="work-tag">Maintenance</span><h3>PCLZIP_ERR_BAD_FORMAT (-10) in WordPress: Why the Package Could Not Be Installed and How to Fix It</h3><p>Fix &quot;The package could not be installed. PCLZIP_ERR_BAD_FORMAT (-10)&quot; in WordPress: wrong or broken ZIP, nested ZIP, full disk, or a failed download.</p><span class="post-card-meta">11 November 2026 · 5 min read</span></a>
         </div>
       </div>
     </section>

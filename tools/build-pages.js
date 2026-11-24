@@ -803,7 +803,7 @@ const BLOG_TOPICS = [
     seoTitle: 'WooCommerce & E-commerce Guides | Samverse Blog', seoDesc: 'Guides to selling online in India with WooCommerce: payments, GST, shipping, cash on delivery, product pages, SEO and launching a store.' },
   { id: 'industries', name: 'Industry guides', cats: ['Industries'], intro: 'What websites need to do for clinics, manufacturers, real estate, hotels, schools and more.',
     seoTitle: 'Website Guides by Industry | Samverse Blog', seoDesc: 'What a website needs to do for clinics, manufacturers, real estate, hotels, schools, salons, retailers and dozens of other Indian businesses.' },
-  { id: 'agencies', name: 'For agencies', cats: ['Agencies'], intro: 'White-label WordPress delivery and design handoff for agencies and designers.',
+  { id: 'agencies', noindex: true, name: 'For agencies', cats: ['Agencies'], intro: 'White-label WordPress delivery and design handoff for agencies and designers.',
     seoTitle: 'WordPress Guides for Agencies & Designers | Samverse Blog', seoDesc: 'White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.' },
 ];
 const knownCats = BLOG_TOPICS.flatMap(t => t.cats);
@@ -978,7 +978,7 @@ fs.mkdirSync(path.join(ROOT, 'blog'), { recursive: true });
 BLOG_TOPICS.filter(t => topicPosts(t).length).forEach(t => {
   const dir = path.join(ROOT, 'blog', 'topic', t.id);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), renderTopic(t));
+  fs.writeFileSync(path.join(dir, 'index.html'), t.noindex ? renderTopic(t).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex, follow">') : renderTopic(t));
   console.log('built', topicHref(t));
 });
 POSTS.forEach((post, i) => {
@@ -1257,7 +1257,7 @@ ${x.script ? `  <script>\n${x.script}\n  </script>\n` : ''}</body>
 EXTRA.forEach(x => {
   const dir = path.join(ROOT, x.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'index.html'), renderExtra(x));
+  fs.writeFileSync(path.join(dir, 'index.html'), x.noindex ? renderExtra(x).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex, follow">') : renderExtra(x));
   console.log('built', `/${x.slug}/`);
 });
 
@@ -1304,7 +1304,7 @@ ${md('Home', `${SITE}/`, 'Services, portfolio, process, FAQ and contact')}
 ${md('About Samverse', `${SITE}/about/`, 'Background, approach and tools')}
 ${md('Portfolio', `${SITE}/work/`, 'Case studies of live client websites')}
 ${md('All services & industries', `${SITE}/solutions/`, 'Index of every service and industry page')}
-${EXTRA.filter(x => x.slug !== 'about').map(x => md(x.crumb, `${SITE}/${x.slug}/`, x.description)).join('\n')}
+${EXTRA.filter(x => x.slug !== 'about' && !x.noindex).map(x => md(x.crumb, `${SITE}/${x.slug}/`, x.description)).join('\n')}
 
 ## Services
 ${PAGES.filter(p => p.type === 'service').map(p => md(p.nav, `${SITE}/${p.slug}/`, p.description)).join('\n')}
@@ -1319,7 +1319,7 @@ ${PAGES.filter(p => p.type === 'industry').map(p => md(p.nav, `${SITE}/${p.slug}
 ${WORK.filter(w => !w.noindex).map(w => md(w.name, `${SITE}/work/${w.slug}/`, w.summary)).join('\n')}
 
 ## Blog topics
-${BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => md(t.name, `${SITE}${topicHref(t)}`, t.seoDesc)).join('\n')}
+${BLOG_TOPICS.filter(t => !t.noindex && topicPosts(t).length).map(t => md(t.name, `${SITE}${topicHref(t)}`, t.seoDesc)).join('\n')}
 
 ## Blog
 ${[...LIVE_POSTS].sort((a, b) => b.date.localeCompare(a.date)).map(p => md(p.title, `${SITE}/blog/${p.slug}/`, p.description)).join('\n')}
@@ -1337,9 +1337,9 @@ if (pubId) {
 const now = new Date(); // local date (IST), matching post dates
 const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 const urls = [{ loc: `${SITE}/`, pr: '1.0' }, { loc: `${SITE}/solutions/`, pr: '0.9' }, ...PAGES.map(p => ({ loc: `${SITE}/${p.slug}/`, pr: '0.8' })),
-  { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
+  { loc: `${SITE}/blog/`, pr: '0.8' }, ...BLOG_TOPICS.filter(t => !t.noindex && topicPosts(t).length).map(t => ({ loc: `${SITE}${topicHref(t)}`, pr: '0.7' })),
   ...LIVE_POSTS.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pr: '0.7', lastmod: p.updated || p.date, imgs: [...new Set((p.body.match(/\/assets\/blog\/[\w-]+\.svg/g) || []))] })),
-  { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
+  { loc: `${SITE}/work/`, pr: '0.8' }, ...EXTRA.filter(x => !x.noindex).map(x => ({ loc: `${SITE}/${x.slug}/`, pr: x.priority || '0.8' })), ...WORK.filter(w => !w.noindex).map(w => ({ loc: `${SITE}/work/${w.slug}/`, pr: '0.7' }))];
 urls.push(...TUT.build({ ROOT, SITE, headCommon, header, footer, contact, waFloat, esc, fmtDate, readMins, plainText, postFaqs, bySlug, WA }));
 
 // Pages without a post date get a lastmod that only moves when their <main> content changes,

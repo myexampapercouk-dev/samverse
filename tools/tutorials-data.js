@@ -286,8 +286,8 @@ ${fig(s, 3, 'WP Mail SMTP Tools Email Test tab with the Send To field and the Se
     time: '30 minutes, plus up to 24 hours for the nameserver change',
     need: ['Login to your domain registrar', 'Login to your hosting (to confirm the site has a valid SSL certificate)', 'WordPress admin access', 'A free Cloudflare account'],
     linkFrom: [
-      ['what-is-a-cdn', 'Want to try a CDN on your own site? The <a href="/tutorials/setup-cloudflare-wordpress/">Cloudflare for WordPress tutorial</a> covers the free plan, nameservers and the SSL setting that avoids redirect loops.'],
-      ['wordpress-caching-explained', 'Cloudflare adds a caching layer in front of your server; see <a href="/tutorials/setup-cloudflare-wordpress/">how to set up Cloudflare for WordPress</a> step by step.'],
+      ['what-is-a-cdn', 'Want to try a CDN on your own site? The <a href="/blog/cloudflare-wordpress-setup-guide/">Cloudflare for WordPress tutorial</a> covers the free plan, nameservers and the SSL setting that avoids redirect loops.'],
+      ['wordpress-caching-explained', 'Cloudflare adds a caching layer in front of your server; see <a href="/blog/cloudflare-wordpress-setup-guide/">how to set up Cloudflare for WordPress</a> step by step.'],
     ],
     body: (s) => `
 <p>To set up Cloudflare for WordPress, create a free Cloudflare account, <strong>add your domain</strong> and pick the Free plan, check the imported DNS records, replace your registrar's nameservers with the two Cloudflare gives you, then set <strong>SSL/TLS</strong> to <strong>Full (strict)</strong> and turn on <strong>Always Use HTTPS</strong>. The site keeps its hosting; Cloudflare sits in front as a proxy and CDN.</p>
@@ -371,8 +371,8 @@ ${fig(s, 3, 'Cloudflare SSL/TLS Overview with the Full (strict) encryption mode 
     time: '10 to 15 minutes',
     need: ['A Shopify store with Settings access (owner or staff with payments permission)', 'Your courier or shipping aggregator already supporting COD collection for your pincodes', 'Your COD rules decided: any order limits, fees or areas you will not serve'],
     linkFrom: [
-      ['woocommerce-cash-on-delivery-india', 'Selling on Shopify instead? The tutorial on <a href="/tutorials/enable-cash-on-delivery-shopify/">how to enable COD on Shopify in India</a> covers the manual payment method and testing.'],
-      ['woocommerce-vs-shopify-india', 'Both platforms handle cash on delivery; on Shopify it is a manual payment method, shown step by step in <a href="/tutorials/enable-cash-on-delivery-shopify/">this Shopify COD tutorial</a>.'],
+      ['woocommerce-cash-on-delivery-india', 'Selling on Shopify instead? The tutorial on <a href="/blog/shopify-cash-on-delivery-india/">how to enable COD on Shopify in India</a> covers the manual payment method and testing.'],
+      ['woocommerce-vs-shopify-india', 'Both platforms handle cash on delivery; on Shopify it is a manual payment method, shown step by step in <a href="/blog/shopify-cash-on-delivery-india/">this Shopify COD tutorial</a>.'],
     ],
     body: (s) => `
 <p>To enable Cash on Delivery on Shopify, go to <strong>Settings &gt; Payments</strong>, find <strong>Manual payment methods</strong>, click <strong>+ Manual payment method</strong>, choose <strong>Cash on Delivery (COD)</strong>, add the details customers see at checkout, and click <strong>Activate</strong>. COD then appears next to your online gateway at checkout.</p>
@@ -789,8 +789,8 @@ ${fig(s, 3, 'Better Search Replace screen replacing http://yourdomain.com with h
     time: '15 to 20 minutes, plus a short wait for DNS to update',
     need: ['A Shopify store on your own domain', 'A Google account (ideally a business one you will keep)', 'Login to where your domain DNS is managed (Shopify, GoDaddy, Hostinger, Cloudflare and so on)'],
     linkFrom: [
-      ['google-search-console-reports-explained', 'Running a Shopify store? The tutorial on <a href="/tutorials/add-google-search-console-shopify/">how to add Google Search Console to Shopify</a> covers verification and the sitemap.'],
-      ['xml-sitemaps-explained', 'On Shopify the sitemap is created for you; the <a href="/tutorials/add-google-search-console-shopify/">Search Console for Shopify tutorial</a> shows where to submit it.'],
+      ['google-search-console-reports-explained', 'Running a Shopify store? The tutorial on <a href="/tutorials/add-google-analytics-shopify/">how to add Google Search Console to Shopify</a> covers verification and the sitemap.'],
+      ['xml-sitemaps-explained', 'On Shopify the sitemap is created for you; the <a href="/tutorials/add-google-analytics-shopify/">Search Console for Shopify tutorial</a> shows where to submit it.'],
     ],
     body: (s) => `
 <p>To add Google Search Console to Shopify, open Search Console, add a <strong>Domain</strong> property for <code>yourdomain.com</code>, copy the <strong>TXT record</strong> Google gives you, add it in your domain's DNS (in Shopify under <strong>Settings &gt; Domains</strong> if Shopify manages the domain), click Verify, then submit <code>https://yourdomain.com/sitemap.xml</code> in <strong>Sitemaps</strong>.</p>
@@ -836,7 +836,7 @@ ${fig(s, 3, 'Search Console Sitemaps page with sitemap.xml typed and the Submit 
 <ul>
   <li>If <strong>Online Store &gt; Preferences &gt; Password protection</strong> is still on, Google cannot crawl the store. Turn it off at launch.</li>
   <li>In Search Console <strong>Settings &gt; Users and permissions</strong>, add your developer or marketer with Full rather than giving them your login.</li>
-  <li>Link Search Console to GA4 (Admin &gt; Product links) once analytics is set up; see <a href="/tutorials/add-google-analytics-shopify/">adding Google Analytics to Shopify</a>.</li>
+  <li>Link Search Console to GA4 (Admin &gt; Product links) as shown in Step 6 above.</li>
 </ul>
 
 <h2>Troubleshooting</h2>
@@ -916,7 +916,7 @@ ${fig(s, 3, 'GA4 Realtime report with page_view, view_item, add_to_cart and purc
 
 <h2>Step 6: Link Search Console and set key events</h2>
 <ul>
-  <li>In GA4 <strong>Admin &gt; Product links &gt; Search Console links</strong>, link the property you created in the <a href="/tutorials/add-google-search-console-shopify/">Search Console for Shopify tutorial</a>.</li>
+  <li>In GA4 <strong>Admin &gt; Product links &gt; Search Console links</strong>, link the property you created in Part 2 of this tutorial.</li>
   <li>Under <strong>Admin &gt; Events</strong>, make sure <code>purchase</code> is marked as a key event.</li>
   <li>Set data retention to the longest option under <strong>Admin &gt; Data collection and modification &gt; Data retention</strong>.</li>
 </ul>
@@ -1431,6 +1431,24 @@ for (const t of TUTORIALS) {
   const x = EXTRA[t.slug]; if (!x) continue;
   const b = t.body;
   t.body = s => b(s).replace('<h2>Troubleshooting</h2>', x.trim() + '\n\n<h2>Troubleshooting</h2>');
+}
+
+// 24 Nov prune: Search Console tutorial merged into the GA4 one; Cloudflare and COD tutorials merged into blog posts (301s in .htaccess)
+{
+  const gsc = TUTORIALS.find(t => t.slug === 'add-google-search-console-shopify');
+  const ga = TUTORIALS.find(t => t.slug === 'add-google-analytics-shopify');
+  ga.title = 'How to Add GA4 and Search Console to Shopify (2026)';
+  ga.description = 'Add Google Analytics 4 and Google Search Console to Shopify: connect GA4 in the Google & YouTube app, verify a Domain property, submit the sitemap.';
+  ga.need = [...new Set([...ga.need, ...gsc.need])];
+  ga.linkFrom = [...(ga.linkFrom || []), ...(gsc.linkFrom || []).map(([s, x]) => [s, x.split('/tutorials/add-google-analytics-shopify/').join('/tutorials/add-google-analytics-shopify/')])];
+  const gaBody = ga.body, gscBody = gsc.body;
+  ga.body = s => {
+    const a = gaBody(s), b = gscBody('add-google-search-console-shopify');
+    const [bMain, bFaq = ''] = b.split('<h2>FAQs</h2>');
+    const part = '<h2>Part 2: Add Google Search Console to Shopify</h2>' + bMain.trim().split('<h2>').join('<h3>').split('</h2>').join('</h3>');
+    return a.includes('<h2>FAQs</h2>') ? a.replace('<h2>FAQs</h2>', part + '<h2>FAQs</h2>') + bFaq : a + part + (bFaq ? '<h2>More FAQs</h2>' + bFaq : '');
+  };
+  for (const s of ['add-google-search-console-shopify', 'setup-cloudflare-wordpress', 'enable-cash-on-delivery-shopify']) TUTORIALS.splice(TUTORIALS.findIndex(t => t.slug === s), 1);
 }
 
 module.exports = TUTORIALS;

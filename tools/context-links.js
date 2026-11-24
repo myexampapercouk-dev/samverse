@@ -26,8 +26,7 @@ module.exports = {
   // Tutorials
   'wordpress-pages-404-permalinks-fix': 'If you need to change the URL structure itself, follow the <a href="/tutorials/change-wordpress-permalinks/">step-by-step permalinks tutorial</a> first.',
   'category-tag-pages-seo': 'Want cleaner category URLs? See <a href="/tutorials/change-wordpress-permalinks/">how to change WordPress permalinks safely</a>.',
-  'shopify-cash-on-delivery-india': 'For the exact settings screens, see the <a href="/tutorials/enable-cash-on-delivery-shopify/">tutorial on enabling COD in Shopify</a>.',
-  'shopify-shipping-india': 'Offering pay on delivery too? Here is <a href="/tutorials/enable-cash-on-delivery-shopify/">how to turn on cash on delivery in Shopify</a>, with screenshots.',
+  'shopify-shipping-india': 'Offering pay on delivery too? Here is <a href="/blog/shopify-cash-on-delivery-india/">how to turn on cash on delivery in Shopify</a>, step by step.',
   'wordpress-login-not-working-fix': 'Locked out completely? You can <a href="/tutorials/reset-wordpress-password-phpmyadmin/">reset the admin password from phpMyAdmin</a>.',
   'shopify-domain-not-connecting': 'Starting again from scratch? Follow the <a href="/tutorials/connect-domain-to-shopify/">domain connection tutorial for Shopify</a> step by step.',
   'wordpress-site-sending-spam-emails': 'Once the site is clean, route real mail through an authenticated sender; see <a href="/tutorials/setup-smtp-wordpress/">setting up SMTP in WordPress</a>.',

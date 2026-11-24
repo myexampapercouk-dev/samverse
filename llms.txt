@@ -18,15 +18,12 @@
 - [Image Converter](https://samverse.space/free-tools/image-converter/): Convert images between PNG, JPG and WebP (and AVIF where your browser supports it) in batches. Free, private, with a quality slider. No upload.
 - [Image Compressor](https://samverse.space/free-tools/image-compressor/): Compress JPG and WebP images in bulk with a quality slider and max width. See before and after file sizes, then download. Private and free.
 - [Image Resizer](https://samverse.space/free-tools/image-resizer/): Resize and crop images to exact pixels or presets: Instagram post and story, OG image 1200x630, YouTube thumbnail, WooCommerce product. Free, no upload.
-- [Image to Base64](https://samverse.space/free-tools/image-to-base64/): Convert an image to a Base64 data URI for HTML or CSS, or paste Base64 to preview and download the image. Free, in your browser, no upload.
 - [Meta Tag Checker](https://samverse.space/free-tools/meta-title-description-checker/): Check meta title and description length in pixels and characters with a live Google result preview for desktop and mobile, plus truncation warnings.
 - [Robots.txt Generator](https://samverse.space/free-tools/robots-txt-generator/): Create a robots.txt file with WordPress-safe defaults, a sitemap line, optional AI crawler blocks and warnings for risky rules like Disallow: /.
 - [Open Graph Generator](https://samverse.space/free-tools/open-graph-generator/): Generate Open Graph and Twitter card meta tags with a live share preview. Add title, description, image and URL, check warnings, copy the tags.
-- [Word Counter](https://samverse.space/free-tools/word-counter/): Count words, characters, sentences and paragraphs, estimate reading and speaking time, and see keyword density and top phrases. Free and private.
 - [UTM Builder](https://samverse.space/free-tools/utm-builder/): Build UTM tracking links for Google Analytics 4: source, medium, campaign, term and content, with checks for capitals and spaces and a bulk mode.
 - [WhatsApp Link Generator](https://samverse.space/free-tools/whatsapp-link-generator/): Create a wa.me click-to-chat link with a prefilled message, copy a ready button snippet and download a QR code for print. Free, no sign-up.
 - [QR Code Generator](https://samverse.space/free-tools/qr-code-generator/): Make QR codes for a URL, text, WiFi login or vCard contact. Choose size, colours and error correction, then download PNG or SVG. Free, no tracking.
-- [JSON Formatter](https://samverse.space/free-tools/json-formatter/): Format, minify and validate JSON or JSON-LD schema. Shows the line and column of errors and hints for trailing commas, curly quotes and @context.
 - [Contrast Checker](https://samverse.space/free-tools/color-contrast-checker/): Check text and background colour contrast against WCAG AA and AAA, with a live preview, and convert colours between HEX, RGB and HSL. Free.
 
 ## Services
@@ -116,7 +113,6 @@
 - [Speed, security & maintenance](https://samverse.space/blog/topic/speed-security/): How to keep a WordPress site fast, secure and well maintained: caching, Core Web Vitals, updates, PHP, backups, malware clean-up and hosting.
 - [E-commerce](https://samverse.space/blog/topic/ecommerce/): Guides to selling online in India with WooCommerce: payments, GST, shipping, cash on delivery, product pages, SEO and launching a store.
 - [Industry guides](https://samverse.space/blog/topic/industries/): What a website needs to do for clinics, manufacturers, real estate, hotels, schools, salons, retailers and dozens of other Indian businesses.
-- [For agencies](https://samverse.space/blog/topic/agencies/): White-label WordPress development and Figma-to-WordPress handoff guides for digital agencies, designers and freelancers.
 
 ## Blog
 - [Dynamic vs Static Website: The Difference and Which One Your Business Needs](https://samverse.space/blog/dynamic-vs-static-website/): The difference between a dynamic and static website: how each works, speed, cost, editing and security, with examples and when to choose each in India.
@@ -137,7 +133,6 @@
 - [Shopify Not Sending Verification Code to Your Phone? How to Get Back In](https://samverse.space/blog/shopify-not-sending-verification-code/): Shopify login codes fail to arrive due to carrier filtering, an old number, DND or delays. Use recovery codes, then switch to an authenticator app.
 - [WordPress Featured Image Not Showing? Fixes for Posts, Blog Pages, Thumbnails and Social Shares](https://samverse.space/blog/wordpress-featured-image-not-showing-fix/): WordPress featured image not showing on posts, the blog page or Facebook and WhatsApp shares? Fix theme settings, sizes, lazy loading, caches and OG tags.
 - [WordPress Menu Not Showing or Not Saving? How to Fix Missing, Unchanged and Broken Menus](https://samverse.space/blog/wordpress-menu-not-showing-fix/): WordPress menu not showing, not updating or not saving? Fix menu locations, block theme navigation, mobile menus, caches and the max_input_vars limit.
-- [WordPress "Updating Failed" or "Publishing Failed"? How to Fix the Not a Valid JSON Response Error](https://samverse.space/blog/wordpress-updating-failed-error-fix/): Fix WordPress "Updating failed" and "The response is not a valid JSON response" errors: permalinks, SSL, firewalls, plugins and the REST API.
 - [WordPress Revisions Not Showing? Why the Revisions Option Disappears and How to Get It Back](https://samverse.space/blog/wordpress-revisions-not-showing/): WordPress revisions not showing? Check the editor panel, wp-config limits, cleanup plugins, post type support and page builders, then restore a version.
 - [Website AMC in India: What an Annual Maintenance Contract for Your Website Should Cover](https://samverse.space/blog/website-amc-contract-india/): Website AMC contract in India explained: what an annual maintenance contract should include, exclusions, response times, renewal, ownership and red flags.
 - [Shopify Domain Not Connecting? How to Fix DNS, Verification and SSL Errors With GoDaddy, Hostinger and BigRock](https://samverse.space/blog/shopify-domain-not-connecting/): Shopify domain not connecting or stuck on SSL pending? Check the A and CNAME records, remove conflicts, fix Cloudflare and keep your email working.

@@ -66,6 +66,11 @@ AddType application/manifest+json .webmanifest
 	RewriteRule ^blog/remove-fake-pages-wordpress-site/?$ /blog/fix-japanese-keyword-seo-spam-hack/ [R=301,L]
 	RewriteRule ^blog/wordpress-developer-hourly-rate-india/?$ /blog/fixed-price-vs-hourly-website-projects/ [R=301,L]
 	RewriteRule ^blog/marathi-website-design/?$ /blog/multilingual-wordpress-website-hindi-english/ [R=301,L]
+	RewriteRule ^blog/wordpress-updating-failed-error-fix/?$ /blog/wordpress-update-failed-fix/ [R=301,L]
+	RewriteRule ^tutorials/setup-cloudflare-wordpress/?$ /blog/cloudflare-wordpress-setup-guide/ [R=301,L]
+	RewriteRule ^tutorials/enable-cash-on-delivery-shopify/?$ /blog/shopify-cash-on-delivery-india/ [R=301,L]
+	RewriteRule ^tutorials/add-google-search-console-shopify/?$ /tutorials/add-google-analytics-shopify/ [R=301,L]
+	RewriteRule ^blog/website-for-interior-designers-architects/?$ /website-for-interior-designers/ [R=301,L]
 
 	RewriteRule ^website-cost-calculator/?$ /blog/wordpress-website-cost-india/ [R=301,L]
 

@@ -392,7 +392,7 @@ ${faqHtml('About these tools', HUB_FAQ)}`,
     ],
   },
   ...TOOLS.map(t => ({
-    slug: t.slug, crumb: t.crumb, parent: ['Free Tools', `/${HUB}/`],
+    slug: t.slug, noindex: t.noindex, crumb: t.crumb, parent: ['Free Tools', `/${HUB}/`],
     title: t.title, description: t.description, eyebrow: t.eyebrow, h1: t.h1, lead: t.lead, priority: '0.7',
     main: t.main + `
     <section class="section" style="padding-top:0"><div class="container faq-wrap"><p class="related-all">More ${t.cat.toLowerCase()}: ${TOOLS.filter(o => o !== t && o.cat === t.cat).map(o => `<a href="/${o.slug}/" class="link-inline">${esc(o.name)}</a>`).join(', ')}, or see <a href="/${HUB}/" class="link-inline">all free tools</a>.</p></div></section>`,

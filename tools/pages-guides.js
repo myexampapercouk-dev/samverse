@@ -2084,7 +2084,7 @@ module.exports = {
   ...require('./pages-cities').guides,
   'website-for-interior-designers': `
 <h2>Building an interior designer website, in detail</h2>
-<p>An interior design website is judged in the first few photos. This is how I plan and build sites for interior designers, architects and design-and-build studios. For a deeper planning read, see <a href="/blog/website-for-interior-designers-architects/">websites for interior designers and architects</a>.</p>
+<p>An interior design website is judged in the first few photos. This is how I plan and build sites for interior designers, architects and design-and-build studios.</p>
 <h2>Must-have features</h2>
 <ul>
 <li><strong>Project pages, not one gallery.</strong> Each project gets its own page: space type, city, the brief in two or three lines, what you changed, and 10 to 30 photos in a logical order (entrance, living, kitchen, bedrooms).</li>
@@ -2116,6 +2116,48 @@ module.exports = {
 <li>Your services list, process stages and studio photos.</li>
 <li>Logo, contact numbers and the studio address.</li>
 </ul>
+
+<h2>The project page, section by section</h2>
+<p>Clients hiring a designer want to see how you think, not only what the finished room looks like. A project page that does that:</p>
+<table>
+  <thead><tr><th>Section</th><th>What to show</th><th>Why it matters</th></tr></thead>
+  <tbody>
+    <tr><td>Opening image and summary</td><td>Project type, area or city, approximate size and your scope in one line</td><td>Tells the visitor at a glance whether it is relevant to them</td></tr>
+    <tr><td>The brief</td><td>Who it was for, how they live or work, and the constraints</td><td>Clients recognise their own situation in it</td></tr>
+    <tr><td>The site as found</td><td>Before photos or a short description of the starting point</td><td>Shows what you changed, not just the result</td></tr>
+    <tr><td>Drawings and renders</td><td>Plans, sketches or 3D views, labelled as such</td><td>Shows your process and how you communicate ideas</td></tr>
+    <tr><td>Key decisions</td><td>Layout changes, storage, light, materials and why you chose them</td><td>The part that shows your judgement</td></tr>
+    <tr><td>Materials and finishes</td><td>Main materials and finishes, with brands named only where accurate</td><td>Answers the questions clients ask in meetings</td></tr>
+    <tr><td>Scope and credits</td><td>What you did (design, execution or both), plus the photographer and any partner firms</td><td>Honest about your role, and fair to collaborators</td></tr>
+    <tr><td>Client's words</td><td>A short quote, only with the client's permission</td><td>Another voice besides your own</td></tr>
+  </tbody>
+</table>
+<p>Get written permission before showing a private home, and leave out house numbers, family photos and anything that identifies the address. For architects, label unbuilt, concept and competition work clearly so it isn't mistaken for completed buildings. <a href="/blog/website-for-3d-visualisation-studios/">Websites for 3D visualisation studios</a> covers presenting renders in more depth.</p>
+
+<h2>Enquiry forms that qualify the project</h2>
+<p>A designer's time is the product, so a lead that turns out to be the wrong size, stage or budget is expensive. Studio Agama's "Your Design Enquiry" form asks, beyond name, email, phone and locality, for the type of enquiry (a turnkey home, luxury interiors, commercial or multi-functional spaces, or renovation and space planning), how the person heard about the studio, the project stage, and the budget and time frame. The team can see the type, scale and budget of a job before the first call. A form for your practice might ask:</p>
+<ul>
+  <li><strong>Project type and scope:</strong> full home, a single room, office, retail</li>
+  <li><strong>Property and location:</strong> apartment or villa, approximate size, locality</li>
+  <li><strong>Stage:</strong> just bought, under construction, ready to move in, or renovating</li>
+  <li><strong>Budget:</strong> ranges you choose, plus "not sure yet"</li>
+  <li><strong>Timeline:</strong> a target move-in or opening date</li>
+  <li><strong>Source:</strong> how they found you, so you know which channels work</li>
+</ul>
+<p>That is a lot of questions for one screen, so on a phone a form in short stages, starting with the easy choices, keeps more people going; <a href="/blog/multi-step-forms-lead-qualification/">multi-step forms</a> explains how to qualify leads without losing them.</p>
+
+<h2>Ranking for "interior designer in [your city]"</h2>
+<p>Clients search by service and city, such as "interior designer in Gachibowli" or "office interior design in Pune", so service pages and project captions should use those words naturally. A journal adds depth: Studio Agama publishes articles on residential design trends in Hyderabad, Vijayawada and Vizag and on common interior design mistakes in Hyderabad. Many clients first see your work on Instagram or Pinterest, so link posts back to the full project pages, where the enquiry form is; <a href="/blog/instagram-to-website-enquiries/">turning Instagram followers into website enquiries</a> shows how.</p>
+<p>If your current site shows projects from years ago, loads slowly or can't be updated without a developer, a <a href="/website-redesign/">website redesign</a> can rebuild the portfolio while keeping the pages that already bring in enquiries.</p>
+
+<p>Many of the same principles apply to any creative portfolio; see <a href="/blog/portfolio-website-freelancers-creatives/">portfolio websites for freelancers and creatives</a>.</p>
+
+<p>Selling furniture as well? See <a href="/blog/website-for-furniture-businesses/">websites for furniture showrooms and manufacturers</a>.</p>
+
+<p>If you design outdoor spaces such as terraces, lawns and society gardens, see <a href="/blog/website-for-landscaping-gardening-services/">websites for landscaping and gardening services</a>.</p>
+
+<p>Civil and structural engineering consultants can present projects the same way; see <a href="/blog/website-for-civil-engineering-consultants/">websites for civil and structural engineering consultants</a>.</p>
+
 <h2>What is not included</h2>
 <p>Photography, 3D rendering and paid ads are separate. I can suggest what to shoot so the photos work on the site. Send me your current site or Instagram for a free review and a fixed quote.</p>
 `,
