@@ -176,6 +176,8 @@ module.exports = [
 <h2>When to get help</h2>
 <p>Get help when the site has to bring in enquiries or sales, when you need payments, bookings or a store, or when you want a fixed price instead of an open-ended hourly bill. Through <a href="/wordpress-website-development/">WordPress website development</a> you send your page list, a few sites you like and the features you need, and get a written scope and a fixed quote with the domain, hosting and licences in your own name. For a store, see <a href="/woocommerce-developer/">WooCommerce development</a>.</p>
 
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the WordPress website development cost in India?</h3>
 <p>Most WordPress websites in India cost ₹15,000 to ₹40,000 to develop for a small business, ₹35,000 to ₹80,000 for a larger business or B2B site and ₹30,000 to ₹90,000+ for a WooCommerce store. Domain and hosting are extra and renew yearly.</p>
@@ -290,6 +292,8 @@ module.exports = [
 
 <h2>When to get help</h2>
 <p>Get help when you are choosing a platform for a new site, or planning to move off Wix or Shopify and need URLs, content and redirects carried over without losing search traffic. See <a href="/website-redesign/">website redesign</a> and <a href="/wordpress-migration/">WordPress migration</a>, or <a href="/#contact">send your website address</a> for a review.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Which is better: Wix, WordPress or Shopify?</h3>
@@ -455,6 +459,8 @@ module.exports = [
 
 <h2>When to get help</h2>
 <p>Still slow after the basics, or worried about breaking something? My <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> starts with a backup and full audit, fixes issues in order of impact and ends with a before-and-after report. If the site also needs ongoing care, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for regular maintenance. Send me your website address and I'll tell you what's slowing it down.</p>
+
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress site slow all of a sudden?</h3>
@@ -1048,6 +1054,8 @@ module.exports = [
 <p>If you have chosen a platform and want it set up properly, with Indian payments, COD, GST invoices and shipping tested before launch, get a fixed quote after a free review: <a href="/shopify-developer/">Shopify development in India</a> or <a href="/woocommerce-developer/">WooCommerce development</a>. Since Samverse builds on both, the advice is about your store, not a preference for one platform.</p>
 
 <p>New to the platform? Read <a href="/blog/what-is-woocommerce/">what WooCommerce is and how it works</a>.</p>
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is WooCommerce cheaper than Shopify in India?</h3>
 <p>Usually, over time. WooCommerce has no platform fee or transaction fee, so you pay for hosting, a domain, any premium plugins and optional maintenance. Shopify has a monthly plan, monthly apps and possibly its own transaction fee. Shopify can be cheaper if you'd otherwise pay a developer for every small change.</p>
@@ -2003,6 +2011,8 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you are paying for clicks that do not turn into enquiries, or when you cannot tell which ads produce leads. <a href="/landing-page-design/">Landing page design</a> builds fast, mobile-first pages with one goal, message match for each ad group and conversion tracking tested before launch, with a fixed quote. For a review of your ad and page, <a href="/#contact">send your website address</a>.</p>
+
+<p>Related fixes: <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why are my Google Ads getting clicks but no leads?</h3>
@@ -3695,6 +3705,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 <h2>When to get help</h2>
 <p>Get help when you are not sure which approach fits, or your current site is hard to edit and you want to rebuild it. See <a href="/hire-wordpress-developer/">hire a WordPress developer</a> and <a href="/wordpress-website-development/">WordPress website development</a>, or <a href="/#contact">send your website address</a> and a note on what the site must do.</p>
 
+<p>Related Shopify guides: <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a WordPress website and a custom-coded website?</h3>
 <p>A WordPress website is built on an existing content management system, with a theme, plugins and an editing dashboard. A custom-coded website is written from scratch or with a framework, so its features, editing tools and updates are all built and maintained by developers.</p>
@@ -3825,6 +3837,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when your website keeps sending guests back to the OTA, or when the booking set-up is hard to use on a phone. <a href="/hotel-website-design/">Hotel website design</a> rebuilds the site around the direct booking: room pages, the right booking set-up, WhatsApp and a Google listing that points to it. For a review, <a href="/#contact">send your website address</a> or OTA listing.</p>
+
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
 
 <h2>FAQs</h2>
 <h3>How can a hotel get more direct bookings instead of OTA bookings?</h3>
@@ -4214,6 +4228,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you have more client briefs than your team can build, or need WordPress and Elementor work delivered under NDA in your branding. See <a href="/wordpress-developer-for-agencies/">WordPress developer for agencies</a>, or <a href="/#contact">send a brief</a> for a small test project.</p>
+
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is white-label WordPress development?</h3>
@@ -4898,6 +4914,8 @@ Facts to check:    Warranty terms, service areas</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you have a finished design and want it built in WordPress as designed, or you are an agency that needs it delivered white-label. See <a href="/figma-to-wordpress/">Figma to WordPress conversion</a>, or <a href="/#contact">share your design link</a> for a free review.</p>
+
+<p>Related fixes: <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What should a designer send a WordPress developer?</h3>
@@ -6606,6 +6624,8 @@ example.com.        TXT    "v=spf1 include:spf.mail-provider.example ~all"</code
 <p>If test orders fail, payments succeed but orders stay pending, or order emails don't arrive, fix that before the first real customer. Setting up and testing gateways, shipping, taxes and order emails is part of <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
 <p>Still deciding on the platform? See <a href="/blog/what-is-woocommerce/">what WooCommerce is and what you need to run it</a>. For placing product grids and the cart or checkout on pages, see the <a href="/blog/woocommerce-shortcodes/">WooCommerce shortcodes list</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I take a WooCommerce store live?</h3>
 <p>Switch the payment gateway from test to live keys, turn off Coming soon mode, untick "Discourage search engines", clear caches, then place and refund one real low-value order to confirm payments, emails and stock all work.</p>
@@ -7216,6 +7236,8 @@ https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20a%20quote</code></pre
 
 <h2>When to get help</h2>
 <p>Get help when pages are still heavy after these steps, because the cause may be the theme, plugins, scripts or hosting rather than images alone. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> finds the real bottleneck, fixes it safely and ends with a before-and-after PageSpeed Insights report. To start, <a href="/#contact">send your website address</a>.</p>
+
+<p>Related fixes: <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a>, <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a> and <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the best image size for WordPress?</h3>
@@ -8629,6 +8651,8 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
 <h2>When to get help</h2>
 <p>Get help when packages are hard to find, enquiries arrive without travel dates, or the site loads slowly on phones. See <a href="/hotel-website-design/">hotel and travel website design</a> and <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send your website address</a> for a free review.</p>
 
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
+
 <h2>FAQs</h2>
 <h3>Should a travel agency show package prices?</h3>
 <p>A "starting from" price with its basis, dates and tax note helps travellers judge fit. Final prices depend on dates and hotel availability, so say that a detailed quote follows the enquiry.</p>
@@ -9271,6 +9295,8 @@ ls -lh backup-test.sql</code></pre>
 <h2>When to get help</h2>
 <p>If a restore has failed, your backups are stored only on the same hosting account, or you're not sure what your backup plugin actually saves, get it checked before you need it. Off-site backups kept separate from your hosting are part of <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
+<p>Related fixes: <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Are my hosting company's backups enough?</h3>
 <p>They're a good first layer, but not enough on their own. They're stored with the host, so a suspended or compromised account can take them too, and retention on cheaper plans can be short. Add an off-site backup you control.</p>
@@ -9420,6 +9446,8 @@ ls -lh backup-test.sql</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when product pages load slowly, when variations confuse shoppers, or when views rarely turn into add-to-carts. In <a href="/woocommerce-developer/">WooCommerce development</a> work, categories, attributes and variations are planned before products go in, and product pages, cart and checkout are kept light for phones. If people add to cart and then leave, see <a href="/blog/woocommerce-checkout-optimization/">checkout optimisation</a>, or <a href="/#contact">send your website address</a>.</p>
+
+<p>Related fixes: <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a> and <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What should a WooCommerce product page include?</h3>
@@ -13722,6 +13750,8 @@ function my_only_free_shipping( $rates ) {
 <h2>When to get help</h2>
 <p>If shipping charges come out wrong, COD shows where it shouldn't, or a courier integration is breaking orders, get the setup tested with real pin codes. Zones, rates, COD rules and courier connections are set up in <a href="/woocommerce-developer/">WooCommerce development</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I set up shipping zones in WooCommerce for India?</h3>
 <p>Go to WooCommerce &gt; Settings &gt; Shipping &gt; Shipping zones and add zones from most to least specific: local pin codes, your state, any remote regions, then India as a whole. WooCommerce uses the first zone that matches the address, so the order matters.</p>
@@ -13859,6 +13889,8 @@ function my_only_free_shipping( $rates ) {
 
 <h2>When to get help</h2>
 <p>Get help when local pages are near copies of each other, when they are not getting indexed, or when you need local pages planned around real service areas. <a href="/wordpress-seo-services/">WordPress SEO services</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What are doorway pages in SEO?</h3>
@@ -14416,6 +14448,8 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 
 <h2>When to get help</h2>
 <p>Get help when the site is slow on mobile data, when you are unsure whether hosting, images or plugins are to blame, or when checkout lags on phones. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my website slow on mobile data but fast on Wi-Fi?</h3>
@@ -15410,6 +15444,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the site is down and takes orders or enquiries, when the error returns after each fix, or when the logs point to the server and the host will not help. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix, and <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update and monitor the site, so most of these errors are caught early.</p>
+
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the most common WordPress error?</h3>
@@ -19968,6 +20004,8 @@ https://example.com/diwali-sale-2026/          starts from zero, dies after one 
 
 <p>Taxi operators serving tourists in Agra can see the page on <a href="/wordpress-shopify-developer-agra/">website development in Agra</a> for how booking forms and local pages are set up.</p>
 
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
+
 <h2>FAQs</h2>
 <h3>Should a taxi website show fixed fares?</h3>
 <p>Fixed fares work for airport transfers and a few regular routes. For other trips, show what a fare is made of and give estimates or quotes, explaining what can change the final amount.</p>
@@ -20630,6 +20668,8 @@ curl -sI https://yourstore.in/collections/old-collection | grep -iE "^(HTTP|loca
 
 <h2>When to get help</h2>
 <p>Get help when the store has many products with variants, years of orders, or rankings on product and collection pages, or when you need Indian payments, COD, shipping and GST invoices working on day one. Through <a href="/woocommerce-developer/">WooCommerce development</a>, I rebuild the store on staging, move products, customers and orders where Shopify's exports allow, and redirect your old URLs, after a free review and a fixed quote. For a wider move plan, see <a href="/wordpress-migration/">website migration</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a>, <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Can I migrate from Shopify to WooCommerce without losing SEO?</h3>
@@ -24177,6 +24217,8 @@ lighthouse https://www.example.com --preset=desktop --view</code></pre>
 <h2>Reviews, trek reports and real photos</h2>
 <p>Trekkers trust other trekkers. Use photos from your own batches, with the permission of the people in them, and label them with the trek and month. A short trek report after each batch, written by the leader, showing trail conditions, snow or water levels and anything that changed, keeps the site current and shows that you are actually out there. Short videos work well embedded from YouTube, where they can also be found in search; the guide to <a href="/blog/youtube-video-seo-small-business/">video SEO on YouTube</a> explains titles and chapters.</p>
 <p>Ask every trekker for a review after the batch and link to your Google profile, rather than retyping praise onto the site. Never edit a review to remove a complaint. <a href="/blog/collect-display-customer-testimonials/">Collecting and displaying testimonials</a> covers consent and display.</p>
+
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
 
 <h2>FAQs</h2>
 <h3>Can trekkers choose a batch and pay a deposit on the website?</h3>
@@ -28042,6 +28084,8 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <h2>When to get help</h2>
 <p>Get help when two cache plugins clash, when logged-in users or carts see stale pages, or when the site is still slow with caching on. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Do I need a caching plugin if my host already caches?</h3>
 <p>Often not for page caching. Use the host's cache, and on LiteSpeed hosting use the LiteSpeed Cache plugin, which works with it. Check your host's documentation before adding another caching plugin.</p>
@@ -29005,6 +29049,8 @@ wp db optimize</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the database is several hundred megabytes, when a WooCommerce store has years of orders and sessions, or when you are unsure which tables belong to plugins you removed. Always take a backup first. <a href="/wordpress-speed-optimization/">WordPress speed optimisation</a> includes database cleanup with before and after timings, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps it tidy each month. <a href="/#contact">Get in touch</a> with your database size from Site Health.</p>
+
+<p>Related fixes: <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I optimise my WordPress database?</h3>
@@ -31569,6 +31615,8 @@ hosting and domain fees, premium licences, ongoing SEO</code></pre>
 <h2>When to get help</h2>
 <p>Get help when stock is wrong after orders, when you sell on several channels or from a warehouse system, or when variations each need their own stock. <a href="/woocommerce-developer/">WooCommerce development</a> covers stock rules, syncing and testing, <a href="/website-for-manufacturers/">manufacturer websites</a> cover catalogues tied to production, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps inventory plugins updated. <a href="/#contact">Get in touch</a> with your product count and where stock is recorded today.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I manage stock in WooCommerce?</h3>
 <p>Turn on Manage stock under WooCommerce, Settings, Products, Inventory, then open each product, tick Manage stock on its Inventory tab and enter the quantity and a SKU. Set the low-stock threshold and notification email so you know when to reorder.</p>
@@ -32559,6 +32607,8 @@ wp transient delete --expired</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the dashboard stays slow after the checks above, when editors time out while saving, or when a WooCommerce store's orders screen takes too long to load. I can profile the dashboard, find the plugin, query or server limit responsible, and fix it in tested steps. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a>.</p>
+
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress admin so slow when the site is fast?</h3>
@@ -33629,6 +33679,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 <p><strong>Want this done for you?</strong> See <a href="/wordpress-developer-for-agencies/">white-label WordPress development for agencies</a> for what is included, or <a href="https://wa.me/917417049145" target="_blank" rel="noopener">message Samverse on WhatsApp</a> with your site address for a fixed quote.</p>
 </div>
 
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
+
 <h2>FAQs</h2>
 
 <h3>Is it safe to outsource WordPress development to India?</h3>
@@ -33953,6 +34005,10 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when updates break things, when you need custom features, or when the site is slow or failing Site Health checks. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is a WordPress developer in simple terms?</h3>
@@ -34844,6 +34900,8 @@ wp user list --role=shop_manager --fields=user_login,user_email</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when direct bookings are low, when the booking engine is hard to find, or when you need a hotel site connected to your engine. <a href="/hotel-website-design/">Hotel website design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
 
 <h2>FAQs</h2>
 
@@ -37346,6 +37404,8 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
 <h2>When to get help</h2>
 <p>Get help when you are moving an existing site onto Hostinger, when email and DNS need setting up at the same time, or when you want the site built properly rather than just installed. <a href="/wordpress-website-development/">WordPress website development</a> covers the build and setup, <a href="/wordpress-migration/">website migration</a> moves an existing site without downtime, and <a href="/wordpress-maintenance/">WordPress maintenance</a> looks after updates afterwards. <a href="/#contact">Get in touch</a> with your domain and plan.</p>
 
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is Hostinger good for WordPress?</h3>
 <p>It can run WordPress well, particularly small business sites, because its LiteSpeed servers work with the LiteSpeed Cache plugin. Whether it suits you depends on your traffic, whether you sell online and the plan's resources. I'm not ranking hosts; the checks in the hosting guide apply to any provider.</p>
@@ -38267,6 +38327,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h2>When to get help</h2>
 <p>Get help if the error returns after every update, the log points to core files or files you don't recognise, you have no recent backup, or it's a store losing orders. My <a href="/wordpress-maintenance/">WordPress maintenance plans</a> take a backup before every update, test key pages afterwards and roll back anything that breaks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is my content lost when WordPress shows a critical error?</h3>
 <p>Almost never. The error comes from PHP code, not the database. Once the faulty code is disabled or fixed, the content reappears exactly as it was.</p>
@@ -38409,6 +38471,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <h2>When to get help</h2>
 <p>Get help when changes still do not show after every cache is cleared, when the site has a staging copy and you are unsure which one is live, or when theme files were edited directly. Updates and fixes like this are part of <a href="/wordpress-maintenance/">WordPress maintenance</a>, builder-specific issues are covered under <a href="/elementor-developer/">Elementor development</a>, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> for a one-off fix. <a href="/#contact">send your website address</a> for a free review and a fixed quote.</p>
 
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WordPress changes not showing?</h3>
 <p>Usually a cache is still serving the old page. Clear your caching plugin, host cache and CDN, then check in a private window. If the change still isn't there, confirm it saved, and check you edited the right template, language or site rather than a staging copy.</p>
@@ -38538,6 +38602,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p>If the editor works for one user and not another, compare their browsers before touching the server. Ad blockers and privacy extensions are the usual difference. Also check <strong>Elementor &gt; Role Manager</strong>, because a role with limited access sees a restricted editor, not a full one.</p>
 <h2>When to get help</h2>
 <p>If the editor still won't load after raising memory and disabling plugins, or you can't test safely on a live site, get the conflict found on staging. Fixing Elementor editor, plugin and server issues is the job of an <a href="/elementor-developer/">Elementor developer</a>. Send the details through the <a href="/#contact">contact form</a> for a fixed quote.</p>
+
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is Elementor stuck on the loading screen?</h3>
@@ -38686,6 +38752,8 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
 <p><strong>Quick test:</strong> set <strong>Elementor &gt; Settings &gt; Advanced &gt; CSS Print Method</strong> to Internal Embedding and reload. If the layout comes back, the CSS files (cache, CDN or permissions) are the problem.</p>
 <h2>When to get help</h2>
 <p>Get help when the layout is still broken after regenerating CSS and clearing caches, when there is no recent backup, or when a rollback would mean leaving a security fix uninstalled. <a href="/elementor-developer/">Elementor development</a> covers fixing broken layouts and conflicts, and <a href="/wordpress-maintenance/">WordPress maintenance</a> covers tested updates every month. <a href="/#contact">send your website address</a> and the versions you updated for a free review and a fixed quote.</p>
+
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why did my Elementor layout break after updating?</h3>
@@ -46993,6 +47061,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 <h2>When to get help</h2>
 <p>Get help when payments succeed but orders stay pending, when the gateway needs setting up, or when you are switching providers. <a href="/woocommerce-developer/">WooCommerce development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Which payment gateway is best in India?</h3>
 <p>It depends on your customers' payment methods, your business category, settlement needs, international sales and platform. Compare providers on those factors and test the integration on your site.</p>
@@ -47970,6 +48040,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
 <p>If the emails are not arriving at all, see <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a>.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I customize WooCommerce emails?</h3>
 <p>Use WooCommerce, Settings, Emails for logo, colours and text, the block email editor or a customiser plugin for layout, and child theme template overrides for exact control.</p>
@@ -48617,6 +48689,8 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you want a landing page built for testing, or when tests never reach a result. <a href="/landing-page-design/">Landing page design</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is landing page A/B testing?</h3>
@@ -49712,6 +49786,8 @@ cd /home/USER/public_html &amp;&amp; wp cron event run --due-now &gt;/dev/null 2
 <h2>When to get help</h2>
 <p>Get help when the error returns after you raise the limit, which usually points to one plugin using far too much memory, or when the site shows a critical error and you cannot reach the dashboard. Through <a href="/wordpress-maintenance/">WordPress maintenance and support</a> the cause is traced in the error log, not hidden by a higher limit. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I fix WordPress memory limit errors?</h3>
 <p>Get the site back online, add WP_MEMORY_LIMIT set to 256M in wp-config.php, raise memory_limit in your hosting panel if WordPress can't, then find the plugin or task using the memory on a staging copy.</p>
@@ -50503,6 +50579,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>When to get help</h2>
 <p>Get help when order or enquiry emails have been missing for more than a day, when SPF or DKIM fail and you cannot edit DNS yourself, or when email runs through the same hosting as the site. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers SMTP setup, DNS records and a test of every form. To describe your case, <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is WordPress not sending emails?</h3>
 <p>Usually because it sends through the server&#39;s PHP mail, which the host may restrict and inboxes may distrust. Sending through SMTP with SPF and DKIM set up normally fixes it.</p>
@@ -50679,6 +50757,10 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 
 <h2>When to get help</h2>
 <p>Get help when the store has more than a few dozen products with variations, needs COD rules, pincode checks or GST invoices, or must connect to a courier or billing system. Through <a href="/woocommerce-developer/">WooCommerce development</a> you get a written scope and a fixed quote based on your product sheet, with the store and every account in your name. If you would rather not manage hosting and updates, <a href="/shopify-developer/">Shopify development</a> covers the same planning on Shopify.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
+
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
 
 <h2>FAQs</h2>
 
@@ -54872,6 +54954,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>When to get help</h2>
 <p>Get help when orders get stuck, when staff mark the wrong status, or when you need custom statuses, invoices or courier tracking. <a href="/woocommerce-developer/">WooCommerce development</a> covers order workflows and emails, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps order plugins updated. <a href="/#contact">Get in touch</a> with your order volume and the step that slows you down.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between Processing and Completed in WooCommerce?</h3>
 <p>Processing means the order is paid (or placed as COD) and waiting to be fulfilled. Completed means it has been fulfilled. Many stores add a Shipped status in between so customers are told when the parcel actually leaves.</p>
@@ -55694,6 +55778,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <p>Avoid creating dozens of near-identical route pages with only the place names changed; <a href="/blog/local-landing-pages-without-doorway-pages/">local pages without doorway pages</a> explains why Google treats those badly. If you also sell full tour packages with hotels, the site starts to overlap with <a href="/blog/website-for-travel-agencies/">travel agency websites</a>.</p>
 
 <p>Travel operators in Vidarbha can see the page on <a href="/wordpress-shopify-developer-nagpur/">website development in Nagpur</a> for how route and enquiry pages are set up.</p>
+
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
 
 <h2>FAQs</h2>
 <h3>Should a bus rental website show fares?</h3>
@@ -58429,6 +58515,8 @@ This overrides whatever is saved in the database, which is useful when a wrong U
 <h2>How it fits with travel businesses</h2>
 <p>If you also run multi-day tours, transport or packages, your site starts to look more like a travel agency site. <a href="/blog/website-for-travel-agencies/">Websites for travel agencies</a> covers itineraries and package pages, and <a href="/blog/hotel-website-direct-bookings/">websites for homestays</a> is useful if you host guests as well.</p>
 
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
+
 <h2>FAQs</h2>
 <h3>What should a website for tour guides and heritage walks include?</h3>
 <p>One page per walk with route, timing, meeting point, inclusions and languages, plus booking or WhatsApp, reviews, an about page, FAQs and a contact page with a map.</p>
@@ -60161,6 +60249,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the conflict involves checkout, payments or forms, when both conflicting plugins are essential, or when the problem only happens on the live server. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes testing updates on staging before they reach the live site. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I know which plugin is causing the problem?</h3>
@@ -62244,6 +62334,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when bookings happen only on WhatsApp, when rates and documents needed are unclear, or when you want pages for each bike and location. <a href="/wordpress-website-development/">WordPress website development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Running a tour or travel business? See <a href="/website-for-travel-agencies/">website design for travel agencies</a>, with package pages, enquiry forms and WhatsApp booking.</p>
+
 <h2>FAQs</h2>
 <h3>What should a website for bike rentals include?</h3>
 <p>A fleet page with photos and tariffs, deposit and document details, an online booking form with payment, clear rental terms, pickup locations with maps and a WhatsApp button.</p>
@@ -63354,6 +63446,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when you want a second opinion on a proposal or a fixed quote with a written scope. See <a href="/wordpress-developer-pune/">WordPress developer in Pune</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Should I hire a WordPress developer in Pune or anywhere in India?</h3>
 <p>Choose on live work, communication and a clear written scope first. A Pune developer is useful if you want in-person meetings or local knowledge, but remote work over WhatsApp and video calls works well for most projects.</p>
@@ -63584,6 +63678,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>If the debug log points to code you do not understand, the site is a live store taking orders, or you suspect the white screen followed a hack, it is safer to get help. Unknown files, new admin users or redirects to strange sites alongside a white screen can mean malware, which needs a proper clean-up rather than just disabling a plugin.</p>
 <p>Before you contact anyone, collect the useful facts: when the white screen started, what changed just before (an update, a new plugin, a hosting change), the last few lines of the debug log, and your hosting panel access. That shortens the fix considerably, whoever handles it.</p>
 <p>For a fix without touching server files yourself, <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers recovery, updates and backups, and <a href="/wordpress-malware-removal/">hacked site cleanup</a> handles a white screen caused by malware. Send the error from your log and <a href="/#contact">get in touch</a>.</p>
+
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What is the WordPress white screen of death?</h3>
@@ -64484,6 +64580,8 @@ wp db check</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when messages stop sending, when templates get rejected, or when you want COD confirmation or shipping updates. <a href="/woocommerce-developer/">WooCommerce development</a> covers notification setup and testing, and <a href="/wordpress-shopify-developer-india/">WordPress and Shopify development</a> covers both platforms. <a href="/#contact">Get in touch</a> with your messaging provider.</p>
+
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I send WooCommerce order notifications on WhatsApp?</h3>
@@ -67603,6 +67701,8 @@ any unused part of the advance refunded as agreed</code></pre>
 
 <p>If a WooCommerce integration gets a 401 Unauthorized reply, see <a href="/blog/woocommerce-rest-api-401-error/">fixing the WooCommerce REST API 401 error</a>.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-shipping-not-showing-at-checkout/">shipping not showing at WooCommerce checkout</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the WordPress REST API?</h3>
 <p>It is a built-in interface that lets other programs read and change WordPress content through URLs under /wp-json/, receiving data as JSON. The block editor and many plugins depend on it.</p>
@@ -68791,6 +68891,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 <h2>When to get help</h2>
 <p>Get help when the page has to work with paid ads and tracking, when you need it built quickly on your existing site, or when you want a fixed quote. See <a href="/landing-page-design/">landing page design</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/landing-page-size-dimensions/">landing page size and dimensions</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How much is a landing page in India?</h3>
 <p>Going by the cost guide here, one landing page typically costs ₹5,000 to ₹15,000. Custom copy, several integrations, multi-platform tracking or A/B variants can take it higher.</p>
@@ -68938,6 +69040,8 @@ $subject = apply_filters( 'samverse_enquiry_subject', 'New enquiry', $enquiry_id
 
 <p>For business sites, a stuck maintenance page is mostly a symptom of rushed or unplanned updates. A regular routine with backups, staging for big changes, small batches and a quick check of key pages afterwards prevents nearly all of these incidents, and makes any problem that does happen far quicker to undo. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress stuck in maintenance mode?</h3>
 <p>An update was interrupted, so WordPress did not delete its temporary .maintenance file. Deleting that file from the root folder usually fixes it.</p>
@@ -69066,6 +69170,8 @@ php_value max_input_time 300</code></pre>
 <h2>When to get help</h2>
 <p>Get help when your host will not raise the limit, when you need to import a large site backup, or when uploads fail even under the limit. For a site move, <a href="/wordpress-migration/">WordPress migration</a> handles large files on the server side. For upload and server errors, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the default WordPress upload limit?</h3>
 <p>WordPress has no default of its own; it uses your server's PHP settings. PHP's built-in defaults allow only 2 MB per file, but most hosts set something higher. Media &gt; Add New shows the limit on your site.</p>
@@ -69187,6 +69293,8 @@ RewriteRule . /index.php [L]
 
 <h2>When to get help</h2>
 <p>Get help when 404s follow a migration or domain change, when Search Console shows many "Not found" URLs, or when old URLs need redirects. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers permalink, server and redirect fixes, and <a href="/wordpress-migration/">WordPress migration</a> covers moves done without broken links. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why are my WordPress pages showing 404 but the homepage works?</h3>
@@ -70330,6 +70438,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when you see unknown admin users, when the admin email has changed, or when renaming plugins does not restore access. Those can point to a hack, which needs <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For login and access fixes with prevention afterwards, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress login not working even with the right password?</h3>
 <p>The usual causes are cookies that the browser can't save, a site address mismatch after an SSL or domain change, cached login pages, or a security plugin that has blocked your IP. Try a private window first, then check the WordPress Address and Site Address settings.</p>
@@ -71280,6 +71390,8 @@ define( 'WP_SITEURL', 'https://www.example.com' );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when the host firewall is blocking normal admin actions, when file permissions have been changed, or when the 403 appeared with other signs of a hack. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers server and permission fixes, and <a href="/wordpress-malware-removal/">WordPress malware removal</a> covers hacked sites. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a> and <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What causes a WordPress 403 forbidden error?</h3>
 <p>Most often a security plugin or firewall rule, a broken or strict .htaccess file, wrong file permissions or ownership, or your IP being blocked by the host or CDN.</p>
@@ -71398,6 +71510,8 @@ wp plugin deactivate plugin-folder-name --skip-plugins --skip-themes</code></pre
 
 <h2>When to get help</h2>
 <p>Get help when the log makes no sense, when no log is being written, or when the site is down during business hours and takes orders. You can <a href="/hire-wordpress-developer/">hire a WordPress developer</a> to find and fix the cause. To have updates tested with a backup first, so the next 500 does not happen on the live site, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>.</p>
+
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix a 500 internal server error in WordPress?</h3>
@@ -71528,6 +71642,8 @@ curl -sI https://yourdomain.com/ | grep -iE "^(server|cf-ray|cf-cache-status|x-l
 
 <h2>When to get help</h2>
 <p>Get help when the errors happen during checkout or busy hours, when the host says the problem is your code, or when you have already tried lighter tasks and caching. <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> covers slow plugins, queries, PHP workers and caching, and <a href="/wordpress-maintenance/">WordPress maintenance</a> adds uptime monitoring so you hear about timeouts before customers do.</p>
+
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a>, <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I fix a 502 bad gateway or 504 gateway timeout on WordPress?</h3>
@@ -72041,6 +72157,8 @@ or a cookie name starts with:
 <p><strong>Check this too:</strong> under <strong>WooCommerce &gt; Status &gt; System Status</strong>, scroll to Templates. Theme template overrides marked as outdated are a common cause of a checkout that broke after a WooCommerce update, even when no plugin changed.</p>
 <h2>When to get help</h2>
 <p>If the cause is not clear from the logs, or checkout is broken during a sale or festival campaign, it is usually cheaper to get help than to keep experimenting on a live store. You can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> to diagnose and fix it, and set up a test routine so it does not happen again. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a>, <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WooCommerce checkout not working?</h3>
 <p>The most common causes are cached checkout pages, JavaScript conflicts from optimisation or other plugins, payment gateway settings, mixed content and session problems. The browser console and WooCommerce logs usually show which.</p>
@@ -72197,6 +72315,8 @@ or a cookie name starts with:
 
 <p>If the gateway settings themselves refuse to save, see <a href="/blog/woocommerce-error-saving-settings/">WooCommerce error saving settings</a>.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WooCommerce payment gateway not working in India?</h3>
 <p>The usual causes are wrong keys or mode, an inactive or under-review gateway account, webhooks not reaching the site, caching on checkout pages, or a plugin conflict. Check settings, webhook logs and WooCommerce logs first.</p>
@@ -72298,6 +72418,8 @@ or a cookie name starts with:
 
 <h2>When to get help</h2>
 <p>If the failure has broken checkout, logins or layout, or you cannot reach the files at all, it is usually faster to have someone fix it than to experiment on a live site. Signs it is time to call in help: the site shows a critical error, you see several plugins failing at once, or you suspect the failure is linked to a hack. If you prefer to hand over updates entirely, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing care. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/migrate-wordpress-localhost-to-live/">moving WordPress from localhost to a live server</a> and <a href="/blog/wordpress-featured-image-not-showing-fix/">featured image not showing</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why does my WordPress update keep failing?</h3>
@@ -72422,6 +72544,8 @@ or a cookie name starts with:
 
 <h2>When to get help</h2>
 <p>Get help when the console shows server errors (500 or 403), when files appear to be missing from the server, or when the problem began after a migration. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress media library not loading?</h3>
@@ -72789,6 +72913,8 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>Get help when the mobile score stays low after removing sliders and resizing images, when the page builder or theme is the bottleneck, or when the site is a WooCommerce store. See <a href="/wordpress-speed-optimization/">WordPress speed optimization</a> for a full audit with fixes measured before and after, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for ongoing work.</p>
 
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress site slow on mobile but fast on desktop?</h3>
 <p>Phones have slower processors and connections. Sliders, large images, third-party scripts and fonts that a desktop handles easily take much longer on a phone, and mobile tests simulate those conditions.</p>
@@ -72924,6 +73050,8 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>Get help when paid orders are missing, when orders disappear after a migration or update, or when you cannot tell whether the problem is the gateway, a plugin or the server. Missing orders mean missed shipments and unhappy customers. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace the cause through logs, gateway records and settings and fix it properly, and <a href="/wordpress-maintenance/">store maintenance</a> keeps an eye on it afterwards.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a> and <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are WooCommerce orders not showing in my dashboard?</h3>
 <p>Usually because of status filters, pending payment or draft views, HPOS sync settings, caching or user role limits. Check All orders and clear filters first.</p>
@@ -73056,6 +73184,8 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>Get help when your account has lost its Administrator role and no other admin exists, or when unknown admin users appear. That may be a hack and needs <a href="/wordpress-malware-removal/">WordPress malware removal</a>. For access and role fixes, see <a href="/wordpress-maintenance/">WordPress maintenance and support</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WordPress admin bar or dashboard menus missing?</h3>
 <p>For the front-end admin bar: the profile setting, caching or a theme missing wp_footer. For dashboard menus: your role or capabilities changed, a plugin hides menus, or the table prefix stopped matching after a migration.</p>
@@ -73183,6 +73313,10 @@ or a cookie name starts with:
 
 <h2>When to get help</h2>
 <p>Get help when payments, GST or shipping need setting up, or when you want the store launched properly. <a href="/shopify-developer/">Shopify development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a> and <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a>.</p>
+
+<p>I work with businesses across India and abroad, including <a href="/wordpress-shopify-developer-bangalore/">Bengaluru</a>, <a href="/wordpress-shopify-developer-surat/">Surat</a>, <a href="/wordpress-shopify-developer-agra/">Agra</a> and <a href="/wordpress-shopify-developer-nashik/">Nashik</a>, plus remote projects for clients in <a href="/wordpress-shopify-developer-australia/">Australia</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How long does it take to set up a Shopify store in India?</h3>
@@ -73313,6 +73447,8 @@ or a cookie name starts with:
 <h2>When to get help</h2>
 <p>Get help when changes need code, or when the theme is slow. <a href="/shopify-developer/">Shopify development</a> covers this kind of work, with a written scope before anything starts. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can I customise a Shopify theme without coding?</h3>
 <p>Largely, yes. On an Online Store 2.0 theme you can add, remove and reorder sections and blocks, create templates for different products and change colours and fonts in the editor. Code is only needed for things the theme has no setting for.</p>
@@ -73410,6 +73546,8 @@ or a cookie name starts with:
 
 <h2>When to get help</h2>
 <p>Get help when the store is slow on phones, the theme has been edited by several people, or you are not sure which code is safe to remove. Through my <a href="/shopify-developer/">Shopify developer service</a>, I list what each app loads, remove what is not earning its place on a duplicate theme, and measure before and after, starting with a free review and a fixed quote.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Is Shopify's hosting the reason my store is slow?</h3>
@@ -73530,6 +73668,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Get help when the store has many variable products, subscriptions or customer accounts, or when organic traffic to product pages matters to sales. Through my <a href="/shopify-developer/">Shopify development service</a>, I review the WooCommerce store, list what moves and what needs replacing, and carry out the move with every product, customer and URL accounted for, after a free review and a fixed quote.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Will I lose Google rankings when moving to Shopify?</h3>
@@ -73671,6 +73811,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <p>If Shopify will not accept your card for the monthly bill, see <a href="/blog/shopify-error-adding-card/">fixing Shopify card errors in billing</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a>, <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is Shopify cheaper than WooCommerce in India?</h3>
 <p>Not automatically. Shopify bundles hosting and security into the plan but adds apps and possibly its own fee on outside gateways. WooCommerce has no platform fee but needs hosting, upkeep and sometimes paid plugins. Work out both from your expected orders rather than from headline prices.</p>
@@ -73791,6 +73933,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Most of this checklist can be done in the admin. Get help when the fixes need theme code, such as product grids linking to the long collection URLs, missing structured data or a slow theme, or when you are planning a redesign. Changing themes is the moment stores most often lose rankings; <a href="/blog/shopify-theme-change-without-losing-seo/">changing a Shopify theme without losing SEO</a> covers the checks. For hands-on work, a <a href="/shopify-developer/">Shopify developer in India</a> can audit the store and fix the theme on a duplicate copy, with a fixed quote after a free review. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Is Shopify good for SEO?</h3>
@@ -73930,6 +74074,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <h2>When to get help</h2>
 <p>Get help when COD orders are being returned often, when you need a confirmation step before dispatch, or when your courier app and COD settings do not agree. <a href="/shopify-developer/">Shopify development</a> covers COD set-up and testing. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I enable Shopify cash on delivery in India?</h3>
 <p>To enable Shopify cash on delivery in India, open the payments settings, add a manual payment method, choose cash on delivery, write short instructions for the buyer and save. Place a test order, then decide whether you need an app for COD fees, pin code or order-value limits and order confirmation. Online payments sit beside it; see <a href="/blog/shopify-payment-gateways-india/">payment gateways on Shopify in India</a>.</p>
@@ -74062,6 +74208,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <h2>When to get help</h2>
 <p>Get help when tax shows wrongly on invoices, when HSN codes are missing, or when your CA needs reports in a set format. <a href="/shopify-developer/">Shopify development</a> covers tax settings and invoice apps, tested with sample orders. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I create a Shopify GST invoice in India?</h3>
 <p>To create a Shopify GST invoice in India, set up India's tax options in the taxes and duties settings, add HSN codes to products, then install a GST invoice app and enter your GSTIN, business address and invoice numbering in it. The app builds an invoice for each order from Shopify's data. Place test orders inside and outside your state and have your CA check the result.</p>
@@ -74179,6 +74327,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Get help when payments succeed but orders do not appear, when UPI fails on some phones, or when you are switching gateways. <a href="/shopify-developer/">Shopify development</a> covers gateway set-up and testing. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Which Shopify payment gateway in India should I choose?</h3>
@@ -74302,6 +74452,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Get help when rates are wrong, when some pin codes cannot check out, or when your courier app does not sync tracking. <a href="/shopify-developer/">Shopify development</a> covers shipping set-up with real address tests. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a>, <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I set Shopify shipping rates in India?</h3>
@@ -74452,6 +74604,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 <h2>When to get help</h2>
 <p>Get help when the job goes beyond the theme editor, such as custom sections, app clean-ups, speed fixes, migrations or Indian payment and COD setup, or when a mistake on the live store would cost sales. Through my <a href="/shopify-developer/">Shopify development service</a> you get a free review, a written scope and a fixed quote, with collaborator access only and every account in your name from the start.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a>, <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Where can I hire a Shopify developer in India?</h3>
 <p>You can hire a Shopify developer in India through Shopify's partner directory, freelance platforms, referrals from other store owners or directly from a developer's own website. Whichever route you take, ask the questions above and check how they handle access and ownership. If you want to talk about your store, see my <a href="/shopify-developer/">Shopify developer services</a>.</p>
@@ -74574,6 +74728,8 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
 
 <h2>When to get help</h2>
 <p>Get help when the new theme drops content or apps, when URLs or collections are changing too, or when you want the switch tested on an unpublished copy. <a href="/shopify-developer/">Shopify development</a> covers theme changes with SEO checks. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I change my Shopify theme without losing SEO?</h3>
@@ -74816,6 +74972,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when your host manages updates and blocks them, when the site is several major versions behind, or when you are afraid an update will break it. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> tests updates on staging first and keeps backups. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/wordpress-503-service-unavailable-fix/">WordPress 503 Service Unavailable</a> and <a href="/blog/wordpress-redis-connection-error-fix/">the WordPress Redis connection error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is there no update button for plugins in WordPress?</h3>
 <p>Usually because your account is not an administrator, updates are switched off in wp-config.php or by a plugin, your host manages updates, or a premium licence has expired. On multisite, plugin updates are only shown in Network Admin to a Super Admin.</p>
@@ -74910,6 +75068,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the checker and checkout disagree, when your courier pincode list changes often, or when COD needs limiting. <a href="/shopify-developer/">Shopify development</a> covers pincode checkers and shipping setup, and <a href="/woocommerce-developer/">WooCommerce development</a> covers the same on WordPress. <a href="/#contact">Get in touch</a> with your courier name.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a>, <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
 
 <h2>FAQs</h2>
 <h3>How do I add a pincode checker to my Shopify store?</h3>
@@ -75024,6 +75184,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when messages don't send, when COD confirmations fail, or when you want order updates from Shopify to reach customers automatically. <a href="/shopify-developer/">Shopify development</a> covers WhatsApp setup and testing, and <a href="/woocommerce-developer/">WooCommerce development</a> covers the same on WordPress. <a href="/#contact">Get in touch</a> with your store URL.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification codes</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a> and <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I add WhatsApp ordering to my Shopify store in India?</h3>
 <p>Add a click-to-chat button for questions, connect a WhatsApp Business Platform app for order and COD confirmation messages, and create any orders taken in chat as Shopify draft orders with a payment link. Keep the normal checkout for everyone else.</p>
@@ -75117,6 +75279,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you have lost content that you need back and revisions are gone, when only an old backup holds it, or when a clean-up plugin has removed more than revisions. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> includes daily backups and restores. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-updating-failed-error-fix/">the "Updating failed" error in WordPress</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why are WordPress revisions not showing in the block editor?</h3>
@@ -75391,6 +75555,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>If records look correct but the store still shows "This store is unavailable", SSL stays pending for more than two days, or email broke during the change, it is worth having someone review the full DNS zone. We connect domains, migrate stores and fix DNS for Indian brands as part of our <a href="/shopify-developer/">Shopify development service</a>, and we work with businesses across the country through our <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer service in India</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a> and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my Shopify domain not connecting?</h3>
 <p>Usually because the root A record or the www CNAME is wrong, an old record still points to a previous host, or you edited DNS at the registrar while the nameservers point to another provider. Fix the records where DNS is actually managed, then verify again.</p>
@@ -75497,6 +75663,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>If records look correct but Gmail still shows failures, or your DNS has several services competing for SPF and DKIM, a short audit of the whole zone usually finds the conflict. We set up sender domains, notifications and store email for Indian brands as part of our <a href="/shopify-developer/">Shopify development service</a>, and businesses anywhere in the country can work with us through our <a href="/wordpress-shopify-developer-india/">WordPress and Shopify developer service in India</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related Shopify guides: <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a>, <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my Shopify emails going to spam?</h3>
 <p>Usually because the sender email is a free address or a domain that is not authenticated in Shopify, there is no DMARC record, or the domain's reputation has been hurt by marketing emails. Fix the sender and authentication first.</p>
@@ -75608,6 +75776,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Every hour the add to cart button fails costs sales, especially during festival offers. If you cannot find the conflict quickly, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can diagnose and fix it on a staging copy first, and our <a href="/wordpress-maintenance/">WordPress maintenance plans</a> include tested updates so the store keeps selling. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-not-sending-order-emails/">WooCommerce not sending order emails</a> and <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WooCommerce add to cart button not working?</h3>
 <p>The usual causes are cached cart pages, a JavaScript conflict from a plugin or speed optimisation, or product data such as a missing price, zero stock or an incomplete variation. Check the browser console and your cache exclusions first.</p>
@@ -75679,6 +75849,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>If the site uses WPML or Polylang and the header shows in one language but not another, the template usually has not been translated or assigned for that language. Open the template in the missing language and check its conditions there too. The same applies to a footer that disappears only on translated pages.</p>
 <h2>When to get help</h2>
 <p>If templates look correct but the header still does not appear, the cause is usually in the theme or custom code. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the Theme Builder setup cleanly, move the site to a supported theme and test every page type. If you prefer someone to look after updates so this does not happen again, see our <a href="/wordpress-maintenance/">WordPress maintenance service</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
+
 <h2>FAQs</h2><h3>Why is my Elementor header not showing?</h3><p>The usual causes are a header template that is still a draft, no display conditions, Elementor Pro being inactive or a theme that does not support Elementor header locations. Check Theme Builder conditions first, then Pro, then the theme.</p>
 <h3>How do I set an Elementor header for the entire site?</h3><p>Go to Templates, Theme Builder, Header, hover your template and choose Edit Conditions. Add Include, Entire Site and save. Remove or unpublish older headers with overlapping conditions.</p>
 <h3>Why is my Elementor footer not showing on some pages?</h3><p>Check whether those pages use the Elementor Canvas layout, have their own template conditions or exclusions, or contain an HTML widget with broken markup. Compare a working page with a broken one.</p>
@@ -75746,6 +75918,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p><strong>The phone is in landscape.</strong> Most phones are wider than 767px when turned sideways, so they get tablet styles. Test in portrait first, then decide whether you need the optional Mobile Landscape breakpoint.</p>
 <h2>When to get help</h2>
 <p>If the layout breaks only on certain phones, the cause is buried in theme CSS, or the page has years of duplicated sections, it is often quicker to have it cleaned up than to keep patching. An <a href="/elementor-developer/">Elementor developer</a> can rebuild the problem sections with containers, remove duplicates and test on real devices. If speed is part of the problem, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> covers mobile performance as well. For ongoing fixes after updates, see <a href="/wordpress-maintenance/">WordPress maintenance plans</a>. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/pclzip-err-bad-format-wordpress-fix/">the PCLZIP_ERR_BAD_FORMAT error</a> and <a href="/blog/wordpress-menu-not-showing-fix/">WordPress menu not showing</a>.</p>
+
 <h2>FAQs</h2><h3>Why is Elementor mobile view not working after I make changes?</h3><p>Usually the change was made with the desktop or tablet device active, or the mobile setting already had its own value. Check the device icon next to the setting, set the mobile value directly, click Update, regenerate CSS and clear all caches.</p>
 <h3>Why does my Elementor site look different on a real phone than in the editor?</h3><p>The editor preview is a resized desktop browser. Real phones use different widths, fonts and browser bars, and visitors see the cached page. Check breakpoints, clear caches and test in a private tab on the phone itself.</p>
 <h3>How do I fix horizontal scrolling on mobile in Elementor?</h3><p>Find the element wider than the screen: fixed pixel widths, negative margins, long headings, iframes or side entrance animations. Fix its width or margin on mobile. Overflow hidden on the section is a short-term fix only.</p>
@@ -75813,6 +75987,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p><strong>Your login session expired.</strong> After a long editing session, or if a security plugin shortens login time, the save is rejected even though nothing else is wrong. Copy your work, log in again in a new tab, then save.</p>
 <h2>When to get help</h2>
 <p>If saving fails even with plugins disabled and limits raised, the cause is usually on the server or in custom code. An <a href="/elementor-developer/">Elementor developer</a> can read the error logs, work with your host on limits and firewall rules and rebuild heavy pages so they save reliably. For regular care, see our <a href="/wordpress-maintenance/">WordPress maintenance plans</a>, or <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>, <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
+
 <h2>FAQs</h2><h3>Why is Elementor not saving my changes?</h3><p>The editor cannot send the page data to the server. Usual causes are a PHP error or memory limit, a firewall rule, a plugin conflict, caching of admin requests or a very large page. The error code tells you where to start.</p>
 <h3>How do I fix Elementor Server Error 500 when saving?</h3><p>Check the PHP error log. Raise the memory limit if it says memory exhausted, or disable the plugin named in the log on staging. Ask your host to raise execution time if the request times out.</p>
 <h3>Why does Elementor show 403 Forbidden when I click Update?</h3><p>A security rule blocked the save request, often because of code in an HTML widget or certain words in the content. Check your security plugin, Cloudflare or host firewall log and whitelist the rule.</p>
@@ -75895,6 +76071,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>If images are still uneven after setting the crop and regenerating, the theme or a builder is usually forcing its own sizes, and fixing it means editing theme settings or code. A <a href="/woocommerce-developer/">WooCommerce developer</a> can set consistent sizes and regenerate safely, a <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> can make sure the right sizes are served fast, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates from undoing the fix. Samverse handles all three for stores across India. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my WooCommerce product images the wrong size?</h3>
 <p>The theme, the WooCommerce image settings and your photos disagree, or old thumbnails were not regenerated after a change. Set the crop ratio, regenerate thumbnails and clear caches.</p>
@@ -75996,6 +76174,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>If you have checked zones, methods, products and caches and customers still see no shipping options, the cause is usually a plugin, a courier integration or custom code. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace it on staging without risking live orders, and <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates from breaking checkout again. If you would rather hand the whole store over, you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a>, <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why does WooCommerce say "no shipping options were found"?</h3>
 <p>The address did not match a zone with an enabled method, or every method's conditions (minimum order, weight, class) excluded the cart. Check the zone order and give the fallback zone a method.</p>
@@ -76082,6 +76262,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>If stock is synced with other systems or the cause is in a gateway or custom code, fixing it safely usually needs a developer and a staging copy. A <a href="/woocommerce-developer/">WooCommerce developer</a> can trace where quantities change, <a href="/wordpress-maintenance/">WordPress maintenance</a> keeps updates and scheduled tasks healthy, and you can <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a> through Samverse for a one-off fix. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a> and <a href="/blog/woocommerce-rest-api-401-error/">the WooCommerce REST API 401 error</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is WooCommerce stock not updating after an order?</h3>
 <p>Stock management is off for the product, or the order has not reached Processing, On hold or Completed. Check the order notes for "Stock levels reduced".</p>
@@ -76197,6 +76379,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when you cannot reproduce the error yourself, when payments are leaving customers' accounts without orders being created, or when the fault sits inside custom theme code. Every hour of a broken checkout costs orders. A <a href="/shopify-developer/">Shopify developer</a> can check the theme, apps, gateway and shipping set-up together and fix the cause rather than the symptom. If you are deciding who to bring in, our guide on how to <a href="/blog/hire-shopify-developer-india/">hire a Shopify developer in India</a> lists what to ask, and you can work with a <a href="/wordpress-shopify-developer-india/">Shopify developer anywhere in India</a> remotely. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related Shopify guides: <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-pincode-checker-india/">a pincode checker for Shopify</a> and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my Shopify checkout not working?</h3>
 <p>Usually because the payment gateway is not fully activated, the address has no shipping rate, an app or theme script is breaking the cart, or a setting such as the password page or inventory tracking is blocking the sale. Test an order yourself to find the exact step that fails.</p>
@@ -76293,6 +76477,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help if the account is suspended for misrepresentation, if hundreds of products show mismatches caused by apps or theme code, or if you sell many variants and need a cleaner product structure. A <a href="/shopify-developer/">Shopify developer</a> can audit the feed, theme and apps together and fix the root cause. If you are comparing options, read how to <a href="/blog/hire-shopify-developer-india/">hire a Shopify developer in India</a>, or work with a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> remotely. You can also <a href="/#contact">send the details through the contact form</a>.</p>
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a> and <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why are my Shopify products disapproved in Google Merchant Center?</h3>
 <p>Each product lists its own reason. Common ones are price or availability mismatches, missing GTIN or brand, image problems, missing shipping settings, or account-level issues such as unclear policies or a checkout that does not work.</p>
@@ -76417,6 +76603,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>Most store owners can remove the password themselves. Get help if the store is ready but checkout, the domain or the gateway is not, or if you want the launch done in one go without missing steps. A <a href="/shopify-developer/">Shopify developer</a> can run the full pre-launch check, fix what fails and take the store live, and you can work with a <a href="/wordpress-shopify-developer-india/">Shopify developer in India</a> remotely from any city. You can also <a href="/#contact">send the details through the contact form</a>.</p>
 <p>If you cannot log in because the verification code is not arriving, see <a href="/blog/shopify-not-sending-verification-code/">Shopify not sending verification code</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a> and <a href="/blog/check-if-website-is-shopify-or-wordpress/">how to check if a site is Shopify or WordPress</a>.</p>
+
 <h2>FAQs</h2>
 <h3>How do I remove the password page on Shopify?</h3>
 <p>Go to Online Store, then Preferences, untick the option that restricts access to visitors with the password, and save. You need an active paid plan for this to work.</p>
@@ -76523,6 +76711,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when images are missing across the whole site after a migration, when thumbnails are the wrong size everywhere, or when the theme template does not support featured images. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers fixes like these. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why is my WordPress featured image not showing?</h3>
@@ -76641,6 +76831,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <h2>When to get help</h2>
 <p>Get help when the menu disappeared after a theme or builder update, when the mobile menu will not open, or when the header was built in a page builder you cannot edit. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers fixes like these. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
 
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why is my WordPress menu not showing?</h3>
 <p>Usually because the menu is not assigned to the theme's menu location, the theme was changed, or a block theme or page builder now controls the header. Assign the menu in Manage Locations, the Navigation block or the builder's menu widget.</p>
@@ -76750,6 +76942,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 
 <h2>When to get help</h2>
 <p>Get help when the REST API is blocked by your host's firewall, when the error appears only on some posts, or when it started after a migration or SSL change. <a href="/wordpress-maintenance/">WordPress maintenance and support</a> covers diagnosis and repair. You can also <a href="/hire-wordpress-developer/">hire a WordPress developer in India</a>, or <a href="/#contact">send the details through the contact form</a>.</p>
+
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a> and <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a>.</p>
 
 <h2>FAQs</h2>
 <h3>What does "Updating failed. The response is not a valid JSON response" mean?</h3>
@@ -77184,6 +77378,8 @@ define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
 <p>The step people forget is URL redirects. Shopify's /products/ and /collections/ paths rarely match WordPress permalinks, so set up 301 redirects from every old URL to its new one, then submit the new sitemap in Google Search Console. Customer passwords cannot be moved between platforms, so customers need to reset them.</p>
 <p>For help building or moving a store, see our <a href="/shopify-developer/">Shopify developer</a> service or <a href="/wordpress-migration/">WordPress migration</a>.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-domain-not-connecting/">Shopify domain not connecting</a>, <a href="/blog/shopify-google-merchant-center-disapproved/">Shopify products disapproved in Merchant Center</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-shipping-india/">Shopify shipping in India</a> and <a href="/blog/shopify-whatsapp-ordering-india/">WhatsApp ordering on Shopify</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Is Shopify better than WordPress?</h3>
 <p>Shopify is better for owners who mainly sell products and want hosting and security handled. WordPress is better for content, service and custom sites and for full ownership.</p>
@@ -77487,6 +77683,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 </ol>
 <p>If you'd rather someone else watched logs, updates and backups each month, that is part of our <a href="/wordpress-maintenance/">WordPress maintenance service</a>.</p>
 
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Where is the WordPress error log by default?</h3>
 <p>There isn't one until you set <code>WP_DEBUG_LOG</code> to true. After that the file is <code>/wp-content/debug.log</code>.</p>
@@ -77546,6 +77744,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 </ul>
 <p>If plugin installs and updates keep failing, our <a href="/wordpress-maintenance/">WordPress maintenance service</a> takes care of updates and backups for you.</p>
 
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>, <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What does PCLZIP_ERR_BAD_FORMAT (-10) mean?</h3>
 <p>PclZip is the library WordPress falls back on to unzip packages. Error -10 means the file it got is not a ZIP it can read, usually because it is broken, incomplete or the wrong file.</p>
@@ -77603,6 +77803,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 </ul>
 <p>If 503s keep returning at busy times, our <a href="/wordpress-speed-optimization/">WordPress speed optimisation service</a> looks at caching, cron, bots and hosting together.</p>
 
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
+
 <h2>FAQs</h2>
 <h3>What is the difference between a 500 and a 503 error in WordPress?</h3>
 <p>A 500 means something crashed while building the page, usually code. A 503 means the server was too busy or deliberately unavailable. A 500 is usually constant; a 503 often comes and goes.</p>
@@ -77659,6 +77861,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 <li><strong>Docker setups.</strong> Inside a container <code>127.0.0.1</code> means the container itself. Use the Redis service name from your compose file as the host.</li>
 </ul>
 <p>If you're adding Redis for speed, it helps logged-in users, WooCommerce and busy admin screens most; see <a href="/blog/woocommerce-speed-optimization/">WooCommerce speed optimisation</a> for where it fits.</p>
+
+<p>Related fixes: <a href="/blog/elementor-not-saving-changes/">Elementor not saving changes</a>, <a href="/blog/wordpress-error-log-location/">where to find the WordPress error log</a> and <a href="/blog/wordpress-site-slow-on-mobile-fix/">WordPress site slow on mobile</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Will I lose data if I delete object-cache.php?</h3>
@@ -77731,6 +77935,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 </ul>
 <p>Prefer to hand it over? Our <a href="/wordpress-migration/">WordPress migration service</a> moves local, staging and live sites with the URL, SSL and email checks done for you. For the difference between local and staging copies, see <a href="/blog/staging-sites-explained/">staging sites explained</a>.</p>
 
+<p>Related fixes: <a href="/blog/elementor-header-footer-not-showing/">Elementor header or footer not showing</a>, <a href="/blog/wordpress-admin-bar-dashboard-missing-fix/">WordPress admin bar or dashboard missing</a> and <a href="/blog/wordpress-revisions-not-showing/">WordPress revisions not showing</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can I upload a localhost WordPress site to Hostinger?</h3>
 <p>Yes. Either install WordPress through hPanel and import with a migration plugin, or upload the files through File Manager and import the database in phpMyAdmin as above.</p>
@@ -77781,6 +77987,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 <h2>What the answer tells you about the business</h2>
 <p>If you're checking competitors to choose a platform, copying their choice isn't enough on its own. Brands on Shopify usually wanted hosting, security and checkout handled for a monthly fee. Businesses on WordPress or WooCommerce usually wanted lower running costs, more control over content and SEO, or Indian payment and shipping setups without app fees. Our comparison of <a href="/blog/wordpress-vs-wix-vs-shopify/">WordPress vs Wix vs Shopify</a> and the detailed <a href="/blog/woocommerce-vs-shopify-india/">WooCommerce vs Shopify for India</a> guide go through those trade-offs.</p>
 <p>If you've decided on Shopify and want the store built or set up properly, see our <a href="/shopify-developer/">Shopify developer service</a>.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-checkout-not-working/">Shopify checkout not working</a>, <a href="/blog/shopify-error-adding-card/">the Shopify "error adding card" fix</a>, <a href="/blog/shopify-payment-gateways-india/">Shopify payment gateways in India</a>, <a href="/blog/shopify-seo-checklist/">the Shopify SEO checklist</a> and <a href="/blog/shopify-theme-change-without-losing-seo/">changing your Shopify theme without losing SEO</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Can a website use both Shopify and WordPress?</h3>
@@ -77909,6 +78117,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 <p>If emails still don't arrive after SMTP is working, the problem is usually in the order flow or a plugin. Our <a href="/woocommerce-developer/">WooCommerce developer service</a> can trace it on a staging copy and fix it without touching live orders. To change how the emails look rather than whether they send, see <a href="/blog/customize-woocommerce-emails/">customising WooCommerce emails</a>.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a>, <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Why does WooCommerce send the admin email but not the customer email?</h3>
 <p>Usually the order didn't reach Processing (so no customer email fired), or the customer's provider put it in spam. Check the order notes, which record each email sent.</p>
@@ -77950,6 +78160,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 </ul>
 
 <p>If the settings that won't save are your payment gateway's, see <a href="/blog/woocommerce-payment-gateway-not-working-india/">payment gateway not working</a> as well. If you'd rather hand it over, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can find the conflict on a staging copy so the live store keeps taking orders.</p>
+
+<p>Related fixes: <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Why do my WooCommerce settings go back to the old values?</h3>
@@ -78004,6 +78216,8 @@ Some hosts need <code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code>
 
 <p>For how the REST API fits into WordPress generally, see <a href="/blog/wordpress-rest-api-explained/">the WordPress REST API explained</a>. If an ERP, courier, marketplace or app integration still won't connect, our <a href="/woocommerce-developer/">WooCommerce developer service</a> can debug the request end to end.</p>
 
+<p>Related fixes: <a href="/blog/woocommerce-error-saving-settings/">WooCommerce "error saving settings"</a>, <a href="/blog/woocommerce-product-images-wrong-size/">WooCommerce product images the wrong size</a> and <a href="/blog/woocommerce-stock-not-updating/">WooCommerce stock not updating</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Where do I create WooCommerce API keys?</h3>
 <p>Go to <strong>WooCommerce &gt; Settings &gt; Advanced &gt; REST API</strong> and click <strong>Add key</strong>. The secret is shown only once, so copy it straight away.</p>
@@ -78047,6 +78261,8 @@ Some hosts need <code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code>
 <p>Watch for fake "Shopify support" numbers in search results and social media. Contact support only from <strong>Help</strong> inside your Shopify admin or help.shopify.com, and never share your card details or login code with anyone who calls you.</p>
 <p>For what you'll be paying each month and why, see <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a>. If you're setting up a new store and want billing, domain and payments done together, our <a href="/shopify-developer/">Shopify developer service</a> covers it.</p>
 
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-emails-going-to-spam/">Shopify emails going to spam</a>, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
+
 <h2>FAQs</h2>
 <h3>Can I pay Shopify with a debit card in India?</h3>
 <p>Often yes, with a Visa or Mastercard debit card that has international and online use turned on. Some banks' debit cards don't support international recurring charges.</p>
@@ -78089,6 +78305,8 @@ Some hosts need <code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code>
 
 <p>Beware of scammers. Search results and social media carry fake "Shopify support" phone numbers aimed at locked-out owners. Shopify will never ask you for the code you just received. Only use help links from shopify.com.</p>
 <p>If you've just regained access, it's a good time to review staff accounts and apps. Our <a href="/shopify-developer/">Shopify developer service</a> can audit who has access and tidy up ownership.</p>
+
+<p>Related Shopify guides: <a href="/blog/shopify-cash-on-delivery-india/">setting up Cash on Delivery on Shopify</a>, <a href="/blog/shopify-gst-invoices-india/">GST invoices on Shopify</a>, <a href="/blog/shopify-remove-password-page/">removing the Shopify password page</a>, <a href="/blog/shopify-store-cost-india/">what a Shopify store costs in India</a> and <a href="/blog/hire-shopify-developer-india/">hiring a Shopify developer in India</a>.</p>
 
 <h2>FAQs</h2>
 <h3>Can I turn off SMS codes on Shopify?</h3>
