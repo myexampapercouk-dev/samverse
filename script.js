@@ -129,12 +129,20 @@ document.addEventListener("click", e => {
   const href = a.getAttribute("href");
   if (href.startsWith("https://wa.me/") || href.startsWith("https://api.whatsapp.com/")) trackEvent("whatsapp_click", { link_text: a.textContent.trim().slice(0, 60) });
   else if (href.startsWith("tel:")) trackEvent("phone_click");
+  else if (href.startsWith("mailto:")) trackEvent("email_click");
+  else if (href.startsWith("/contact/") || href === "#contact") trackEvent("contact_cta_click", { link_text: a.textContent.trim().slice(0, 60) });
 });
 
 // ---------- Contact form spam protection ----------
 // Math question + hidden honeypot field + minimum time on page.
 const form = document.getElementById("contactForm");
 if (form) {
+try {
+  const topic = new URLSearchParams(location.search).get("topic");
+  const msg = form.querySelector("textarea[name=message]");
+  if (topic && msg && !msg.value) msg.value = "Topic: " + topic.slice(0, 150) + "
+";
+} catch (e) {}
 const captchaQ = document.getElementById("captchaQ");
 const captchaInput = document.getElementById("captchaInput");
 const formError = document.getElementById("formError");

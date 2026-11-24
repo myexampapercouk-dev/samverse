@@ -163,7 +163,7 @@ ${others.slice(0, 3).map(x => '          ' + card(x)).join('\n')}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -221,7 +221,7 @@ ${TUTORIALS.map(x => '          ' + card(x)).join('\n')}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;

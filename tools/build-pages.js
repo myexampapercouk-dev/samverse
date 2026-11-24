@@ -199,6 +199,12 @@ ${posts.map(x => `          <li><a href="/blog/${x.slug}/">${esc(x.title)}</a><s
     </section>`;
 };
 
+const RECENT_WORK = {
+  'wordpress-website-for-doctors': [['/work/dr-sunaina-dental-care/', 'Dr. Sunaina Dental Care (dental clinic)'], ['/work/dr-nitish-gupta-pulmonologist/', 'Pulmonologist clinic website']],
+  'website-for-interior-designers': [['/work/studio-agama-interiors/', 'Studio Agama Interiors']],
+  'website-for-restaurants': [['/work/southern-flavours/', 'Southern Flavours (restaurant)']],
+};
+
 const render = p => {
   const url = `${SITE}/${p.slug}/`;
   const waLink = `https://wa.me/${WA}?text=${encodeURIComponent(p.wa)}`;
@@ -291,7 +297,17 @@ ${p.glance ? `          <ul class="lp-glance">
         </div>
       </div>
     </section>
-${p.why ? `
+${RECENT_WORK[p.slug] ? `
+    <section class="section" id="recent-work">
+      <div class="container">
+        <aside class="inline-cta reveal">
+          <strong>Recent work</strong>
+          <p>${RECENT_WORK[p.slug].map(([h, t]) => `<a href="${h}" class="link-inline">${t}</a>`).join(' · ')}</p>
+          <div><a href="/contact/?topic=${encodeURIComponent(p.nav)}" class="link-inline">Get a free quote →</a><a href="${waLink}" class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        </aside>
+      </div>
+    </section>
+` : ''}${p.why ? `
     <section class="section" id="why-samverse">
       <div class="container faq-wrap">
         <div class="section-head reveal"><span class="eyebrow">Why choose Samverse</span><h2>Why choose Samverse</h2></div>
@@ -387,7 +403,7 @@ ${related(p).map(x => '          ' + card(x)).join('\n')}
 
   ${waFloat.replace(/href="[^"]*"/, `href="${waLink}"`)}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -504,7 +520,7 @@ ${group('location', 'WordPress & Shopify developer by location', 'Working with b
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -636,6 +652,7 @@ const renderPost = (post, i) => {
     const box = `<aside class="inline-cta">
   <strong>Need help with ${esc(svc.nav.toLowerCase())}?</strong>
   <p>${esc(firstSentence(svc.description))}</p>
+  <p>Or get a <a href="/contact/?topic=${encodeURIComponent('Free website review: ' + post.title)}" class="link-inline">free website review</a> of your current site.</p>
   <div><a href="/${svc.slug}/" class="link-inline">See ${esc(svc.nav)} →</a><a href="${waLink}" class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 </aside>
 
@@ -691,6 +708,12 @@ ${SUMMARIES[post.slug].map(t => `              <li>${esc(t)}</li>`).join('\n')}
             </ul>
           </div>
 ` : ''}${withInlineCta(body.trim())}
+
+          <aside class="inline-cta">
+            <strong>Free website review</strong>
+            <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+            <div><a href="/contact/?topic=${encodeURIComponent('Free website review: ' + post.title)}" class="link-inline">Request a free review →</a><a href="${waLink}" class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+          </aside>
 
           <div class="post-cta">
             <h2>Need help with your website?</h2>
@@ -759,7 +782,7 @@ ${others.map(x => '          ' + postCard(x)).join('\n')}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -854,7 +877,7 @@ ${topicPosts(t).length > TOPIC_PREVIEW ? `          <p class="topic-more"><a hre
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -945,7 +968,7 @@ ${grid(g.items)}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -1080,7 +1103,7 @@ ${w.related.map(s => bySlug[s]).filter(Boolean).map(x => '          ' + card(x))
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -1159,7 +1182,7 @@ ${projectCards()}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 </body>
 </html>
 `;
@@ -1226,7 +1249,7 @@ ${x.main}
 
   ${waFloat}
 
-  <script src="/script.js?v=20261112b" defer></script>
+  <script src="/script.js?v=20261124a" defer></script>
 ${x.script ? `  <script>\n${x.script}\n  </script>\n` : ''}</body>
 </html>
 `;
