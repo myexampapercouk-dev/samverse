@@ -14507,7 +14507,9 @@ lighthouse https://www.example.com --throttling.cpuSlowdownMultiplier=6 --view</
 </ul>
 <p>In most themes the logo is set under <strong>Appearance &gt; Customize &gt; Site Identity</strong>. In a block theme, it's the Site Logo block in the header template, and in Elementor it's under <strong>Site Settings &gt; Site Identity</strong>.</p>
 
-<h2>Favicon sizes and app icons</h2>
+<h2>Favicon format and sizes: ICO, SVG or PNG?</h2>
+<p>The right favicon format depends on where the icon shows: use favicon.ico (16 and 32 px) for older browsers and Google results, an SVG favicon for modern browsers that supports dark mode, and PNG files for phone home screens (180 px for Apple, 192 and 512 px for Android).</p>
+<h3>Favicon sizes and app icons</h3>
 <p>The favicon shows in browser tabs, bookmarks and next to your site in Google's mobile results, and becomes the home screen icon when someone saves your site.</p>
 <h3>Favicon size chart</h3>
 <table>
