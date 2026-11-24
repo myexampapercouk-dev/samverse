@@ -38591,9 +38591,9 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'elementor-layout-broken-after-update',
-    seoTitle: 'Elementor Layout Broken After Update? Fix It in 8 Steps',
+    seoTitle: 'Elementor Layout Broken After Update? 8 Fixes, In Order',
     title: 'Elementor Layout Broken After an Update? How to Fix It, Roll Back Safely and Stop It Happening Again',
-    description: 'Layout broken after an Elementor update? Regenerate CSS, clear caches, match Elementor and Pro versions, and roll back safely if needed. Fixes in order.',
+    description: 'Elementor layout broken after an update? Regenerate Files & Data, clear every cache and match Elementor and Pro versions, then roll back safely if needed.',
     date: '2026-09-28',
     updated: '2026-11-11',
     category: 'Maintenance',
@@ -48027,9 +48027,9 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'woocommerce-multi-vendor-marketplace',
-    seoTitle: 'WooCommerce Multi-Vendor Marketplace: Setup and Payouts',
+    seoTitle: 'WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST',
     title: 'How to Build a WooCommerce Multi-Vendor Marketplace: Plugins, Payouts, GST and Scale',
-    description: 'Build a WooCommerce multi-vendor marketplace: pick a plugin, onboard and approve vendors, set commissions and payouts, and handle GST for Indian sellers.',
+    description: 'Yes, WooCommerce can run a multi-vendor marketplace. Compare Dokan, WCFM and MultiVendorX, onboard vendors in 7 steps, set commissions and handle GST.',
     date: '2026-09-28',
     updated: '2026-11-07',
     category: 'E-commerce',

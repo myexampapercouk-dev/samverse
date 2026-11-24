@@ -455,7 +455,7 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'CollectionPage', name: 'WordPress Services & Industries', url,
+        '@type': 'CollectionPage', name: 'WordPress Website Services by Industry', url,
         hasPart: PAGES.map(x => ({ '@type': 'WebPage', name: x.nav, url: `${SITE}/${x.slug}/` })),
       },
       {
@@ -471,16 +471,16 @@ ${PAGES.filter(x => x.type === type).map(x => '          ' + card(x)).join('\n')
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordPress Services &amp; Industries | Samverse</title>
-  <meta name="description" content="All WordPress services from Samverse: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
+  <title>WordPress Website Services by Industry | Samverse</title>
+  <meta name="description" content="WordPress website services by industry: clinics, manufacturers, restaurants, schools and stores, plus redesign, speed, SEO, maintenance and malware fixes.">
   <meta name="robots" content="index, follow">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <link rel="canonical" href="${url}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${url}">
   <meta property="og:site_name" content="Samverse">
-  <meta property="og:title" content="WordPress Services &amp; Industries | Samverse">
-  <meta property="og:description" content="All WordPress services from Samverse: websites for doctors, manufacturers, restaurants and more, plus redesign, speed, SEO, maintenance and security.">
+  <meta property="og:title" content="WordPress Website Services by Industry | Samverse">
+  <meta property="og:description" content="WordPress website services by industry: clinics, manufacturers, restaurants, schools and stores, plus redesign, speed, SEO, maintenance and malware fixes.">
   <meta property="og:image" content="${SITE}/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -510,7 +510,7 @@ ${JSON.stringify(schema, null, 2)}
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> Solutions</nav>
         <div class="lp-hero-copy">
           <h1>WordPress services &amp; industries: <span class="grad">solutions for every business</span></h1>
-          <p class="lead">Pick your industry or the service you need to see exactly how I can help. Not sure? Send me a message and I'll recommend the right approach.</p>
+          <p class="lead">Samverse builds and fixes WordPress, WooCommerce and Shopify websites for businesses in India and abroad. Pick your industry for a site planned around your customers, or a service such as speed, SEO, maintenance or malware removal for an existing site. Not sure? Send a message and get a recommendation.</p>
           <div class="hero-cta">
             <a href="#contact" class="btn">Get a Free Quote</a>
             <a href="https://wa.me/${WA}" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Me</a>
