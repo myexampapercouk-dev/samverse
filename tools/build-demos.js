@@ -187,6 +187,25 @@ const T = {
       ['Easy enquiry', 'Call or WhatsApp to ask about products.'],
     ],
   },
+  'restaurant': {
+    label: 'Restaurant', color: '#a8461b', soft: '#fbf0e8',
+    waText: 'Hi, I would like to reserve a table.',
+    tagline: 'Fresh, tasty food served with warm hospitality.',
+    services: [
+      ['Menu Highlights', 'Ask us about our popular dishes and daily specials.'],
+      ['Dine-In', 'Sit down and enjoy your meal with family and friends.'],
+      ['Takeaway', 'Call ahead and pick up your order on the way.'],
+      ['Family Meals', 'Space and dishes for family outings.'],
+      ['Group Bookings', 'Call to check availability for larger groups.'],
+      ['Table Reservations', 'Call or WhatsApp to reserve a table.'],
+    ],
+    why: [
+      ['Freshly prepared', 'Food made in our kitchen for every order.'],
+      ['Family friendly', 'A comfortable place for all ages.'],
+      ['Dine-in or takeaway', 'Eat with us or take your food home.'],
+      ['Easy reservations', 'Call or WhatsApp to reserve a table.'],
+    ],
+  },
 };
 
 const card =([h, d]) => `<div class="card"><h3>${esc(h)}</h3><p>${esc(d)}</p></div>`;
@@ -195,7 +214,7 @@ function page(p) {
   const t = T[p.category];
   if (!t) throw new Error('No template for category: ' + p.category);
   const tel = '+' + p.phone;
-  const wa = `https://wa.me/${p.phone}?text=${encodeURIComponent('Hi, I would like to book an appointment.')}`;
+  const wa = `https://wa.me/${p.phone}?text=${encodeURIComponent(t.waText || 'Hi, I would like to book an appointment.')}`;
   const n = esc(p.name);
   const city = esc(p.city);
   const rated = p.rating != null && p.reviews != null;

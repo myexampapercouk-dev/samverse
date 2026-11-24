@@ -26,4 +26,12 @@ module.exports = [
   { slug: 'smile-dental-clinic-nashik', name: 'Smile Dental Clinic', category: 'dental clinic', city: 'Nashik', rating: 4.9, reviews: 467, phone: '919975715505' },
   { slug: 'guru-dental-clinic-nashik', name: 'GURU Dental Clinic', category: 'dental clinic', city: 'Nashik', rating: 4.9, reviews: 391, phone: '919922008188' },
   { slug: 'somani-dental-clinic-aurangabad', name: 'Somani Dental Clinic', category: 'dental clinic', city: 'Aurangabad', rating: 4.9, reviews: 325, phone: '917566983598' },
+  { slug: 'bawada-misal-kolhapur', name: 'Bawada Misal', category: 'restaurant', city: 'Kolhapur', rating: 4.7, reviews: 12149, phone: '918830385571' },
+  { slug: 'hotel-manora-kolhapur', name: 'Hotel Manora', category: 'restaurant', city: 'Kolhapur', rating: 4.1, reviews: 3746, phone: '917744044060' },
+  { slug: 'laxmi-misal-kolhapur', name: 'Laxmi Misal', category: 'restaurant', city: 'Kolhapur', rating: 4.3, reviews: 2444, phone: '919049420515' },
+  { slug: 'davangiri-loni-dosa-kolhapur', name: 'Davangiri Loni Dosa Center', category: 'restaurant', city: 'Kolhapur', rating: 4.3, reviews: 2249, phone: '919922921331' },
+  { slug: 'nation-11-restaurant-satara', name: 'Nation 11 Multi Cuisine Restaurant', category: 'restaurant', city: 'Satara', rating: 4.2, reviews: 2208, phone: '919145237575' },
+  { slug: 'amar-only-veg-satara', name: 'Amar Only Veg', category: 'restaurant', city: 'Satara', rating: 4.1, reviews: 2003, phone: '919422010507' },
+  { slug: 'shivneri-misal-satara', name: 'Shivneri Misal', category: 'restaurant', city: 'Satara', rating: 4.0, reviews: 1398, phone: '918149604732' },
+  { slug: 'hotel-adarsh-restaurant-satara', name: 'Hotel Adarsh Family Restaurant (Pure Veg)', category: 'restaurant', city: 'Satara', rating: 4.0, reviews: 1392, phone: '917387346551' },
 ];
