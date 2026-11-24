@@ -79,6 +79,24 @@ const T = {
       ['Quick turnaround', 'Call or WhatsApp to book a slot.'],
     ],
   },
+  'skin clinic': {
+    label: 'Skin & Hair Clinic', color: '#9a4f6a', soft: '#faf0f4',
+    tagline: 'Thoughtful skin and hair care, explained clearly at every step.',
+    services: [
+      ['Skin Consultation', 'Assessment of skin concerns and a clear care plan.'],
+      ['Acne Care', 'Treatment options for acne and acne marks.'],
+      ['Pigmentation Care', 'Guidance and treatment for uneven skin tone.'],
+      ['Hair & Scalp Care', 'Evaluation of hair fall and scalp conditions.'],
+      ['Laser Procedures', 'Laser-based treatments where clinically suitable.'],
+      ['Skin Allergies', 'Care for rashes, eczema and other skin conditions.'],
+    ],
+    why: [
+      ['Personal attention', 'Each concern is examined and discussed in detail.'],
+      ['Clear guidance', 'Options and aftercare explained before treatment.'],
+      ['Comfortable clinic', 'A clean, calm space for every visit.'],
+      ['Easy appointments', 'Call or WhatsApp to book a convenient time.'],
+    ],
+  },
   'eye clinic': {
     label: 'Eye Clinic', color: '#1d5fa8', soft: '#eaf1fa',
     tagline: 'Caring eye check-ups and treatment for clear, healthy vision.',
@@ -221,6 +239,8 @@ const S = {
     gal: ['1618221195710-dd6b41faaea6', '1600210492486-724fe5c67fb0', '1586023492125-27b2c045efd7', '1616486338812-3dadae4b4ace', '1615529182904-14819c35db37', '1600585154340-be6161a56a0c'] },
   'car garage': { fonts: ['Oswald', 'Roboto'], accent: '#c2410c', soft: '#fdf1ea', layout: 'left', radius: 6,
     hero: '1487754180451-c456f719a1fc', about: '1619642751034-765dfdf7c58e', svc: ['1625047509248-ec889cbff17f', '1486262715619-67b85e0b08d3', '1619642751034-765dfdf7c58e'] },
+  'skin clinic': { fonts: ['Lora', 'Nunito Sans'], accent: '#9a4f6a', soft: '#faf0f4', layout: 'left', radius: 20,
+    hero: '1519494026892-80bbd2d6fd0d', about: '1612349317150-e413f6a5b16d', svc: ['1584515933487-779824d29309', '1559839734-2b71ea197ec2', '1631217868264-e5b90bb7e133'] },
   'eye clinic': { fonts: ['Manrope', 'Inter'], accent: '#1d4ed8', soft: '#eef3fd', layout: 'left', radius: 18,
     hero: '1574258495973-f010dfbb5371', about: '1579684385127-1ef15d508118', svc: ['1577401239170-897942555fb3', '1574258495973-f010dfbb5371', '1559839734-2b71ea197ec2'] },
   'ivf centre': { fonts: ['Lora', 'Nunito Sans'], accent: '#9d3b6c', soft: '#fbf0f5', layout: 'center', radius: 22,
