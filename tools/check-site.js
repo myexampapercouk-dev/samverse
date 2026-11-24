@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const SKIP = ['node_modules', '.git', 'docs', 'tools', 'netlify', '.claude'];
+const SKIP = ['node_modules', '.git', 'docs', 'tools', 'netlify', '.claude', 'demo'];
 const files = [];
 (function walk(dir) {
   for (const f of fs.readdirSync(dir)) {

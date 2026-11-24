@@ -1352,7 +1352,7 @@ console.log('updated sitemap.xml');
 
 // Cache-bust the stylesheet: browsers keep style.min.css for a week, so every page links it with a content hash
 const cssVer = crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, 'style.min.css'))).digest('hex').slice(0, 8);
-const SKIP = new Set(['.git', 'node_modules', 'docs', 'tools', '.claude']);
+const SKIP = new Set(['.git', 'node_modules', 'docs', 'tools', '.claude', 'demo']);
 const NOINDEX_SLUGS = new Set(POSTS.filter(p => p.noindex).map(p => p.slug));
 let cssPages = 0;
 (function walk(dir) {
