@@ -2029,14 +2029,15 @@ wp user list --role=administrator --fields=user_login,user_email</code></pre>
   },
   {
     slug: 'how-long-to-build-wordpress-website',
-    seoTitle: 'How Long to Build a WordPress Website? 2026 Timelines',
+    seoTitle: 'How Long Does It Take to Build a WordPress Website?',
     title: 'How Long Does It Take to Build a WordPress Website? Realistic Timelines by Type of Site',
-    description: 'Landing page 3-5 days, small business site 1-2 weeks, store 2-4 weeks. Realistic WordPress timelines by site type, and what actually causes delays.',
+    description: 'Landing page 3-5 days, small business site 1-2 weeks, store 2-4 weeks. Realistic WordPress website timelines by site type, and what causes delays.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Guides',
     related: ['wordpress-website-development', 'woocommerce-developer', 'landing-page-design'],
     body: `
+<p><strong>Short answer:</strong> How long it takes to build a WordPress website depends mostly on size and how ready your content is: about 3-5 working days for a landing page, 1-2 weeks for a small business site and 2-4 weeks for a WooCommerce store.</p>
 <p>Counted from the day your content is ready, a single landing page usually takes 3–5 working days, a small business website of 5–8 pages 1–2 weeks, a larger business or B2B site 2–4 weeks, and a WooCommerce store 2–4 weeks. Complex custom features such as bookings, memberships or a second language push a project to 4 weeks or more.</p>
 <p>The build itself is rarely what takes longest: content and feedback are. If you already know what you need, <a href="/wordpress-website-development/">WordPress website development</a> explains how a project with me runs, and every quote comes with a timeline.</p>
 
@@ -27796,14 +27797,15 @@ gtag('event', 'generate_lead', { form_name: 'contact' });</code></pre>
   },
   {
     slug: 'thank-you-pages-forms',
-    seoTitle: 'Thank You Page After Form Submit: Redirect and Track It',
+    seoTitle: 'Thank You Page After Form Submission: Setup + Tracking',
     title: 'Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It',
-    description: 'Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.',
+    description: 'Send visitors to a thank you page after form submission in WPForms, Elementor or Contact Form 7, then track it as a lead in GA4 and Google Ads.',
     date: '2026-09-27',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Growth',
     related: ['landing-page-design', 'wordpress-website-development', 'wordpress-seo-services'],
     body: `
+<p><strong>Short answer:</strong> To show a thank you page after form submission, create the page, then set the form's confirmation to redirect to that page in WPForms, Elementor Forms or Contact Form 7. Track a visit to that page as a lead in GA4 and Google Ads.</p>
 <p>A lead form thank you page redirect sends a visitor to a dedicated thank-you page after they successfully submit a form on your website. A good thank-you page confirms the enquiry arrived, says honestly what happens next, offers a faster route such as WhatsApp or a call, and points to something useful to read while they wait. It also gives you a reliable conversion to track in Google Analytics 4, Google Ads and Meta. Set your form to redirect there only after a successful submission, keep the page out of Google, and make sure each enquiry is counted once.</p>
 <p>Every landing page in my <a href="/landing-page-design/">landing page design</a> service comes with a thank-you page, and conversions are counted on successful submissions, through the thank-you page or the form's success event, never on clicks of the submit button, which also count failed attempts.</p>
 <p>A thank-you page can't help if submissions fail or the emails never arrive. If enquiries have dried up, check that first with <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
@@ -37423,11 +37425,11 @@ define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,*.wordpress.org' );</code></pr
   },
   {
     slug: 'hostinger-website-slow-fix',
-    seoTitle: 'Hostinger Website Slow? How to Fix a Slow Hostinger Site',
+    seoTitle: 'Hostinger Website Slow? What to Check Before Upgrading',
     title: 'Why Is Hostinger So Slow? How to Diagnose and Speed Up a WordPress Site on Hostinger',
-    description: 'Hostinger site slow? Check hPanel CPU and memory limits, confirm LiteSpeed cache hits, then fix PHP, plugins and bots. Do this before you pay to upgrade.',
+    description: 'Hostinger site slow? Check hPanel CPU and memory limits, confirm LiteSpeed cache hits, then fix PHP, plugins and bots before you pay to upgrade.',
     date: '2026-09-28',
-    updated: '2026-11-18',
+    updated: '2026-11-24',
     category: 'Speed',
     related: ['wordpress-speed-optimization', 'wordpress-maintenance', 'woocommerce-developer'],
     body: `
@@ -38348,14 +38350,15 @@ wp plugin deactivate old-slider --skip-plugins --skip-themes</code></pre>
   },
   {
     slug: 'wordpress-changes-not-showing',
-    seoTitle: 'WordPress Changes Not Showing? Causes and Fixes in Order',
+    seoTitle: 'WordPress Changes Not Showing? Clear the Right Cache',
     title: 'WordPress Changes Not Showing on Your Website? Every Cause, From Caches to the Wrong Template',
-    description: 'Edits saved but the live site looks the same? Check the save, then clear browser, plugin, server and CDN caches in order, and rule out the wrong template.',
+    description: 'Edits saved but the live site looks the same? Confirm the save, clear browser, plugin, server and CDN caches, then rule out the wrong template.',
     date: '2026-09-28',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Maintenance',
     related: ['wordpress-maintenance', 'wordpress-speed-optimization', 'elementor-developer'],
     body: `
+<p><strong>Short answer:</strong> WordPress changes not showing on the live site is usually a cache: clear your browser cache, then your caching plugin, then the host's server cache and finally Cloudflare or any CDN. If the change still does not appear, check that it saved and that you edited the right template.</p>
 <p>When WordPress changes don't show on your website, the cause is almost always one of three things: the change didn't actually save, a cache is still serving the old version, or you edited something other than what visitors see, such as a template, a staging copy or the wrong language. Check the page in a private window first, clear your caches in order (plugin, server, CDN, then browser), and if it's still old, trace where that part of the page really comes from.</p>
 <p>If you'd rather someone handled updates, small changes and problems like this for you, that's part of my <a href="/wordpress-maintenance/">WordPress maintenance</a> plans.</p>
 
@@ -46555,14 +46558,15 @@ curl -s https://yourdomain.com/page/ | grep -i 'name="robots"'</code></pre>
   },
   {
     slug: 'whatsapp-marketing-small-business',
-    seoTitle: 'WhatsApp Marketing for Small Business in India: Start Here',
+    seoTitle: 'WhatsApp Marketing for Small Business India: 30-Day Plan',
     title: 'WhatsApp Marketing for Small Businesses: Using WhatsApp Business to Win Repeat Customers',
-    description: 'WhatsApp marketing for small business in India: set up WhatsApp Business, build an opt-in list, follow a 30-day plan and send broadcasts that are not spam.',
+    description: 'How small businesses in India use WhatsApp marketing: set up WhatsApp Business, build an opt-in list and send broadcasts customers do not mark as spam.',
     date: '2026-09-28',
-    updated: '2026-11-07',
+    updated: '2026-11-24',
     category: 'Growth',
     related: ['landing-page-design', 'woocommerce-developer'],
     body: `
+<p><strong>Short answer:</strong> WhatsApp marketing for small business in India starts with the free WhatsApp Business app: a complete profile, quick replies, labels for leads, and broadcasts sent only to customers who agreed to receive them.</p>
 <p>WhatsApp marketing for small business means using WhatsApp Business to answer enquiries quickly, keep a list of customers who have agreed to hear from you, and send them occasional useful messages such as new stock, offers, reminders and order updates. Done well, it brings repeat customers at very low cost. Done badly, with mass forwards to people who never opted in, it gets your number reported and restricted.</p>
 <p>This guide covers the free app versus the paid platform, building an opt-in list, what to send, how often, and how your website fits in. Samverse builds websites with WhatsApp built into the enquiry flow; see <a href="/wordpress-website-development/">WordPress website development</a>.</p>
 
@@ -53470,14 +53474,15 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'hreflang-multilingual-seo-india',
-    seoTitle: 'Hreflang for Hindi and Indian Languages: Codes + Ready Tags',
+    seoTitle: 'Hreflang Codes for India: hi-IN, en-IN Tags to Copy',
     title: 'Hreflang Tags for India: Multilingual SEO for Hindi and Regional-Language Versions',
-    description: 'Hreflang codes for Hindi, Tamil, Marathi, Telugu and more, copy-ready hi-IN, en-IN and x-default tags, and the checks that catch common mistakes.',
+    description: 'Hreflang codes for Hindi (hi-IN), English India (en-IN), Tamil, Marathi and Telugu, with copy-ready tags, x-default and the checks that catch mistakes.',
     date: '2026-09-30',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'SEO',
     related: ['wordpress-seo-services', 'wordpress-website-development'],
     body: `
+<p><strong>Short answer:</strong> The hreflang code for Hindi in India is hi-IN and for English in India en-IN, and you add x-default for the fallback page. Every language version must list itself and all its alternates, using full URLs.</p>
 <p>This guide works as a simple hreflang generator for Indian languages: pick each language's code from the table below, then copy the ready-made tags for <code>hi-IN</code>, <code>en-IN</code>, <code>ta-IN</code> and <code>x-default</code> and swap in your own URLs. Hreflang is a tag that tells Google which language, and optionally which country, each version of a page is for, so a Hindi-speaking searcher sees your Hindi page and an English-speaking searcher sees your English page. On an Indian site with English and Hindi versions, each page lists itself and its translation using codes such as <code>en-IN</code> and <code>hi-IN</code>, plus an <code>x-default</code> fallback, and every version must link back to the others. Get that right, pair it with translations people trust, and Google can show the right version to the right person.</p>
 <p>This guide covers the SEO side. For whether you need a multilingual site at all, start with <a href="/blog/multilingual-wordpress-website-hindi-english/">multilingual WordPress websites</a>.</p>
 
@@ -54411,14 +54416,15 @@ This overrides whatever is saved in the database, which is useful when a wrong U
   },
   {
     slug: 'wordpress-activity-logs',
-    seoTitle: 'WordPress Activity Log: See Who Changed What (and When)',
+    seoTitle: 'WordPress Activity Log: Track Who Changed What',
     title: 'WordPress Activity Log and Change Log: Track Who Changed What on Your Site',
-    description: 'WordPress keeps no change log by default. Add an activity log to see who edited pages, changed prices, installed plugins or logged in, with time and IP.',
+    description: 'See who edited a page, changed a price or installed a plugin. How to add a WordPress activity log, what it records and how long to keep it.',
     date: '2026-09-30',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Security',
     related: ['wordpress-maintenance', 'wordpress-malware-removal'],
     body: `
+<p><strong>Short answer:</strong> A WordPress activity log is a record of every login, page edit, plugin install and settings change on your site, with the user, time and IP address. WordPress has none built in, so you add one with an activity log plugin and read it from the dashboard.</p>
 <p>WordPress doesn't keep a log of who changed what by default. To see who edited a page, changed a price or logged in, add an activity log plugin, which records logins, content edits, plugin, theme and setting changes with the user, time and IP address. For a single post or page, the Revisions panel in the editor already shows who saved each version.</p>
 <p>An activity log (also called an audit log or change log) answers questions like "who changed the price on this product?" or "did anyone log in last night?", and it helps with security, teamwork and troubleshooting.</p>
 <p><strong>In short:</strong> a WordPress activity log is a plugin that records events inside WordPress, such as logins, content edits, plugin updates and settings changes, with the user, time and IP address. It isn't the same as an error log or a server log, which record different things in different places; the table below shows which one answers which question.</p>
@@ -61529,14 +61535,15 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
   },
   {
     slug: 'hindi-devanagari-fonts-website',
-    seoTitle: 'Best Hindi Fonts for Websites: Pick, Load and Test (2026)',
+    seoTitle: 'Hindi Fonts for Website: Best Devanagari Picks (2026)',
     title: 'Hindi and Devanagari Fonts on Your Website: Readable, Fast and Tested',
-    description: 'Which Hindi fonts read well on phones: Unicode Devanagari picks, pairing with English, sizes and line height, fast loading and a quick test checklist.',
+    description: 'The best Hindi fonts for a website are Unicode Devanagari fonts that read well on phones. How to pick one, pair it with English, load it fast and test it.',
     date: '2026-10-01',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Guides',
     related: ['wordpress-website-development', 'wordpress-speed-optimization'],
     body: `
+<p><strong>Short answer:</strong> The best Hindi fonts for a website are free Unicode Devanagari web fonts such as Noto Sans Devanagari or Mukta from Google Fonts. Set Hindi slightly larger than your English text, give it more line height, and never put Hindi text in images.</p>
 <p>The best Hindi fonts for a website are Unicode Devanagari fonts that stay readable at small sizes on phones, pair well with your English font and load quickly. Use real Unicode text, never images of Hindi or old non-Unicode fonts, give Hindi a slightly larger size and more line height than English, and load only the weights you need.</p>
 <p>This guide covers choosing, pairing, sizing and loading Devanagari fonts, setting them up in WordPress and testing them. It applies to Hindi, Marathi and other languages written in Devanagari, which many Indian business, education, government-facing and community websites need.</p>
 
@@ -65388,14 +65395,15 @@ any unused part of the advance refunded as agreed</code></pre>
   },
   {
     slug: 'stop-spam-user-registrations-wordpress',
-    seoTitle: 'Stop Spam User Registrations in WordPress: Checklist',
+    seoTitle: 'How to Stop Spam User Registrations in WordPress',
     title: 'How to Stop Spam User Registrations in WordPress and WooCommerce',
     description: 'Fake signups flooding WordPress or WooCommerce? Turn off open registration, add Turnstile and a honeypot, then bulk-delete spam users safely.',
     date: '2026-10-01',
-    updated: '2026-11-10',
+    updated: '2026-11-24',
     category: 'Security',
     related: ['wordpress-malware-removal', 'woocommerce-developer'],
     body: `
+<p><strong>Short answer:</strong> To stop spam user registrations in WordPress, untick "Anyone can register" in Settings, General if visitors do not need accounts. If they do, add a CAPTCHA such as Cloudflare Turnstile and a honeypot to the registration form, then delete the fake users.</p>
 <p>To stop spam user registrations in WordPress, first decide whether visitors need to register at all. If not, turn off "Anyone can register" in Settings, General. If you run a WooCommerce store or membership site that needs accounts, add a CAPTCHA such as Cloudflare Turnstile to the registration form, a hidden honeypot field, email confirmation and rate limiting at the firewall. Then remove the fake accounts already created, after taking a backup.</p>
 <p>Spam sign-ups are common on Indian business sites and stores. They fill the database, trigger welcome emails to fake addresses that damage your email reputation, and sometimes hide a more serious problem.</p>
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You Page After Form Submit: Redirect and Track It</title>
-  <meta name="description" content="Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.">
+  <title>Thank You Page After Form Submission: Setup + Tracking</title>
+  <meta name="description" content="Send visitors to a thank you page after form submission in WPForms, Elementor or Contact Form 7, then track it as a lead in GA4 and Google Ads.">
   <meta name="author" content="Samverse">
   <meta name="google-adsense-account" content="ca-pub-7430741863334470">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Samverse">
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://samverse.space/blog/thank-you-pages-forms/">
-  <meta property="og:title" content="Thank You Page After Form Submit: Redirect and Track It">
-  <meta property="og:description" content="Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.">
+  <meta property="og:title" content="Thank You Page After Form Submission: Setup + Tracking">
+  <meta property="og:description" content="Send visitors to a thank you page after form submission in WPForms, Elementor or Contact Form 7, then track it as a lead in GA4 and Google Ads.">
   <meta property="og:image" content="https://samverse.space/assets/og/blog-thank-you-pages-forms.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,9 +41,9 @@
       "@type": "BlogPosting",
       "@id": "https://samverse.space/blog/thank-you-pages-forms/#article",
       "headline": "Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It",
-      "description": "Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.",
+      "description": "Send visitors to a thank you page after form submission in WPForms, Elementor or Contact Form 7, then track it as a lead in GA4 and Google Ads.",
       "datePublished": "2026-09-27",
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-24",
       "mainEntityOfPage": "https://samverse.space/blog/thank-you-pages-forms/",
       "image": "https://samverse.space/assets/og/blog-thank-you-pages-forms.png",
       "articleSection": "Growth",
@@ -194,12 +194,12 @@
           <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <a href="/blog/topic/seo-growth/">SEO &amp; growth</a></nav>
           <a class="post-cat" href="/blog/topic/seo-growth/">Growth</a>
           <h1>Lead Form Thank You Page Redirect: What to Put on the Page, How to Set It Up in WordPress and How to Track It</h1>
-          <p class="post-dek">Redirect to a thank you page after form submit in WPForms, Elementor or CF7, what to put on it, and how to track it as a lead in GA4 and Google Ads.</p>
+          <p class="post-dek">Send visitors to a thank you page after form submission in WPForms, Elementor or Contact Form 7, then track it as a lead in GA4 and Google Ads.</p>
           <div class="post-byline">
             <img src="/assets/logo-mark.svg" alt="" width="44" height="44">
             <div class="post-byline-text">
               <a href="/about/">Samverse</a>
-              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time> · 10 min read</span>
+              <span><time datetime="2026-09-27">27 September 2026</time> · Updated <time datetime="2026-11-24">24 November 2026</time> · 10 min read</span>
             </div>
             <div class="share share-top">
               <a href="https://wa.me/?text=Lead%20Form%20Thank%20You%20Page%20Redirect%3A%20What%20to%20Put%20on%20the%20Page%2C%20How%20to%20Set%20It%20Up%20in%20WordPress%20and%20How%20to%20Track%20It%20https%3A%2F%2Fsamverse.space%2Fblog%2Fthank-you-pages-forms%2F" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0zm5.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
@@ -235,6 +235,7 @@
               <li>Count each enquiry once: use a generate_lead key event set to once per session in GA4, set Google Ads to count one conversion, and test with a real submission.</li>
             </ul>
           </div>
+<p><strong>Short answer:</strong> To show a thank you page after form submission, create the page, then set the form's confirmation to redirect to that page in WPForms, Elementor Forms or Contact Form 7. Track a visit to that page as a lead in GA4 and Google Ads.</p>
 <p>A lead form thank you page redirect sends a visitor to a dedicated thank-you page after they successfully submit a form on your website. A good thank-you page confirms the enquiry arrived, says honestly what happens next, offers a faster route such as WhatsApp or a call, and points to something useful to read while they wait. It also gives you a reliable conversion to track in Google Analytics 4, Google Ads and Meta. Set your form to redirect there only after a successful submission, keep the page out of Google, and make sure each enquiry is counted once.</p>
 <p>Every landing page in my <a href="/landing-page-design/">landing page design</a> service comes with a thank-you page, and conversions are counted on successful submissions, through the thank-you page or the form's success event, never on clicks of the submit button, which also count failed attempts.</p>
 <p>A thank-you page can't help if submissions fail or the emails never arrive. If enquiries have dried up, check that first with <a href="/blog/contact-form-not-getting-enquiries/">why your contact form isn't getting enquiries</a>.</p>
