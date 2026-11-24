@@ -84,6 +84,30 @@
             "@type": "Answer",
             "text": "No. Tagging links between your own pages starts a new session with the wrong source. Use them only on links from outside your site."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need UTM tags for Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if auto-tagging is on and Google Ads is linked to GA4. Use UTMs for everything else: email, WhatsApp, social posts, QR codes and other ad platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I use as utm_medium for WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pick one value and keep it, such as \"social\" or \"messaging\", with utm_source=whatsapp. Consistency is what makes the report useful."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do UTM tags affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not when used on links from outside your site. Your pages should have a canonical tag pointing to the clean URL so tagged versions are not treated as separate pages."
+          }
         }
       ]
     },
@@ -193,14 +217,37 @@
         <h2>How to use it</h2>
         <ol>
           <li>Paste the page URL you want people to land on.</li>
-          <li>Fill in source, medium and campaign. Keep the names consistent across campaigns.</li>
+          <li>Fill in source, medium and campaign. Keep names lowercase and consistent across campaigns.</li>
           <li>Copy the tracking link, or paste a list of URLs in bulk mode.</li>
+          <li>Worked example for a Google Ads campaign without auto-tagging: utm_source=google, utm_medium=cpc, utm_campaign=diwali_sale, utm_term={keyword}. If auto-tagging (gclid) is on, you usually do not need UTMs on Google Ads at all.</li>
           <li>In GA4, find the results under Reports, Acquisition, Traffic acquisition, with the session campaign dimension.</li>
         </ol>
         <p>Related reading: <a href="/blog/utm-tags-explained/" class="link-inline">UTM tags explained</a>.</p>
         <p>Want it done for you? See <a href="/landing-page-design/" class="link-inline">landing page design</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common UTM mistakes</h2>
+      <ul>
+    <li><strong>Mixing cases and spellings.</strong> "Facebook", "facebook" and "fb" become three sources. Agree a naming list and stick to it.</li>
+    <li><strong>Tagging internal links.</strong> A UTM on a link from your own homepage restarts the session with the wrong source.</li>
+    <li><strong>Unusual mediums.</strong> GA4 groups traffic into channels using medium values such as cpc, email, social and paid_social. Made-up mediums land in "Unassigned".</li>
+    <li><strong>Spaces in values.</strong> Use underscores or hyphens instead.</li>
+    <li><strong>Tagging links that redirect and drop the query string.</strong> Click your tagged link once and check the parameters survive in the address bar.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> some caching and security setups strip or ignore query strings. Test a tagged link while logged out. If you use a redirect plugin, make sure it passes query parameters through.</p>
+  <p><strong>Shopify:</strong> UTM tags work on product, collection and landing pages, and Shopify's own reports show sessions by UTM as well. Use the same naming in both places so GA4 and Shopify figures can be compared.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20UTM%20Link%20Builder%20(GA4)" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20UTM%20Link%20Builder%20(GA4)%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>UTM builder questions</h2></div>
@@ -208,6 +255,9 @@
           <details><summary>Which UTM tags are required?</summary><p>GA4 needs utm_source to attribute the visit, and you should add utm_medium and utm_campaign too. utm_term, utm_content and utm_id are optional.</p></details>
           <details><summary>Are UTM values case-sensitive?</summary><p>Yes. &quot;Facebook&quot; and &quot;facebook&quot; show as two sources, which is why the tool lowercases values by default.</p></details>
           <details><summary>Should I use UTM tags on internal links?</summary><p>No. Tagging links between your own pages starts a new session with the wrong source. Use them only on links from outside your site.</p></details>
+          <details><summary>Do I need UTM tags for Google Ads?</summary><p>Not if auto-tagging is on and Google Ads is linked to GA4. Use UTMs for everything else: email, WhatsApp, social posts, QR codes and other ad platforms.</p></details>
+          <details><summary>What should I use as utm_medium for WhatsApp?</summary><p>Pick one value and keep it, such as &quot;social&quot; or &quot;messaging&quot;, with utm_source=whatsapp. Consistency is what makes the report useful.</p></details>
+          <details><summary>Do UTM tags affect SEO?</summary><p>Not when used on links from outside your site. Your pages should have a canonical tag pointing to the clean URL so tagged versions are not treated as separate pages.</p></details>
         </div>
       </div>
     </section>

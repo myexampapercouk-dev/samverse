@@ -84,6 +84,30 @@
             "@type": "Answer",
             "text": "Often more. An image shown 800 px wide on the page but saved 4000 px wide wastes a lot of data, so setting a maximum width is one of the biggest savings."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Will compressing images make my website faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes, because images are often the heaviest part of a page. The biggest gains come from resizing oversized images and serving WebP, then from lazy loading images below the fold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What quality setting should I use for WebP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Between 75 and 82 suits most photos. Go to the top of that range for product photos and images with fine text, and the bottom for large background images."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I compress images that are already on my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes for the heaviest ones, such as homepage banners and top product photos. Replace the file with the same name, or update the image in the page, and clear any cache."
+          }
         }
       ]
     },
@@ -180,15 +204,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Select the images you want to shrink.</li>
-          <li>Choose JPG or WebP and a quality. Start around 75 and check the result.</li>
-          <li>Set a maximum width. Most content images do not need to be wider than about 1600 px.</li>
-          <li>Press <strong>Compress</strong>, compare the sizes and download the files you want to keep.</li>
+          <li>Drop in one or more JPG, PNG or WebP images. Everything stays in your browser.</li>
+          <li>Choose WebP output and set quality between 75 and 82. That range keeps photos sharp while cutting file size hard.</li>
+          <li>Set a maximum width if the original is huge. A blog image rarely needs to be wider than the content column it sits in.</li>
+          <li>Compare the before and after preview at 100% zoom, looking at faces, text and edges, then download.</li>
+          <li>Worked example: a phone photo for a WordPress blog post. Set WebP, quality 80, max width 1600, then upload the result to the Media Library instead of the original.</li>
         </ol>
         <p>Related reading: <a href="/blog/image-optimization-wordpress/" class="link-inline">image optimization for WordPress</a>.</p>
         <p>Want it done for you? See <a href="/wordpress-speed-optimization/" class="link-inline">WordPress speed optimization</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common compression mistakes</h2>
+      <ul>
+    <li><strong>Compressing an image that is still far too large.</strong> Resizing does more than quality settings. Shrink the pixel size first, then compress.</li>
+    <li><strong>Compressing the same JPG again and again.</strong> Each save loses detail. Always start from the original file.</li>
+    <li><strong>Using PNG for photos.</strong> PNG is lossless and makes photos heavy. Keep PNG for logos, screenshots and images with transparency, and use WebP or JPG for photos.</li>
+    <li><strong>Going too low on quality.</strong> Below about 60, banding and blocky skies show up. Product photos lose trust fast when they look smudged.</li>
+    <li><strong>Forgetting the file name and alt text.</strong> A small file called <code>IMG_4821.webp</code> with no alt text still misses image search.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Recommended settings for WordPress and Shopify</h2>
+      <p><strong>WordPress:</strong> WordPress creates several resized copies of every upload, so compress before uploading and the copies start smaller too. WebP uploads are supported in current WordPress versions. If you already run an optimisation plugin, avoid double compression: either compress here and switch the plugin's compression off, or let the plugin do it and skip this step. For featured images, match the width your theme actually displays.</p>
+  <p><strong>Shopify:</strong> Shopify's CDN converts and resizes images for each device automatically, so your job is to upload a clean, sensibly sized original. Compress very large product photos at quality 80 to 82 before upload to keep the admin and theme editor quick, and keep all product images in a collection the same aspect ratio so the grid lines up.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Image%20Compressor" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Image%20Compressor%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Image compressor questions</h2></div>
@@ -196,6 +243,9 @@
           <details><summary>What quality should I use?</summary><p>For most photos, a quality between 70 and 85 looks almost the same as the original at a much smaller file size. Check the downloaded file and adjust if you see blur or blocky areas.</p></details>
           <details><summary>Why did a file get bigger?</summary><p>Images that are already well compressed, or simple graphics saved as PNG, can grow when re-encoded. The tool tells you, so you can keep the original.</p></details>
           <details><summary>Does resizing help as much as compression?</summary><p>Often more. An image shown 800 px wide on the page but saved 4000 px wide wastes a lot of data, so setting a maximum width is one of the biggest savings.</p></details>
+          <details><summary>Will compressing images make my website faster?</summary><p>Usually yes, because images are often the heaviest part of a page. The biggest gains come from resizing oversized images and serving WebP, then from lazy loading images below the fold.</p></details>
+          <details><summary>What quality setting should I use for WebP?</summary><p>Between 75 and 82 suits most photos. Go to the top of that range for product photos and images with fine text, and the bottom for large background images.</p></details>
+          <details><summary>Should I compress images that are already on my site?</summary><p>Yes for the heaviest ones, such as homepage banners and top product photos. Replace the file with the same name, or update the image in the page, and clear any cache.</p></details>
         </div>
       </div>
     </section>

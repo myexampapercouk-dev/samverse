@@ -84,6 +84,14 @@
             "@type": "Answer",
             "text": "HEX like #7C3AED or #fff, rgb(124, 58, 237), and hsl(262, 83%, 58%)."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does colour contrast affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not as a direct ranking factor, but readable pages keep visitors longer, and Lighthouse flags low contrast in its accessibility score."
+          }
         }
       ]
     },
@@ -185,15 +193,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Enter or pick the text colour and the background colour.</li>
-          <li>Read the contrast ratio and the AA and AAA results.</li>
-          <li>Adjust the colours until normal text passes AA (4.5:1) at least.</li>
-          <li>Use the converter to get the same colour as HEX, RGB or HSL for your CSS or theme settings.</li>
+          <li>Enter the text colour and the background colour as hex, RGB or HSL.</li>
+          <li>Read the contrast ratio and the WCAG results for normal text, large text and UI parts.</li>
+          <li>If it fails, use the suggested darker or lighter shade, or nudge the lightness until it passes AA.</li>
+          <li>Copy the passing colours into your theme settings or CSS.</li>
+          <li>Worked example: light grey #999999 text on white fails AA for body text. Darken it toward #595959 and check again until normal text passes, then use that grey for captions site-wide.</li>
         </ol>
-        <p>Related reading: <a href="/blog/choose-website-colours-fonts/" class="link-inline">choosing website colours and fonts</a>.</p>
+        <p>Related reading: website accessibility basics.</p>
         <p>Want it done for you? See <a href="/website-redesign/" class="link-inline">website redesign</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common contrast mistakes</h2>
+      <ul>
+    <li><strong>Light grey body text.</strong> It looks elegant on a designer's screen and is hard to read on a phone in sunlight.</li>
+    <li><strong>Text over photos.</strong> The contrast changes across the image. Add a solid or semi-opaque overlay behind the text.</li>
+    <li><strong>Forgetting button and link states.</strong> Check hover, focus and disabled colours, not only the default.</li>
+    <li><strong>Brand colour as text colour.</strong> A bright brand yellow or light blue often fails on white. Use it for shapes and use a darker shade for text.</li>
+    <li><strong>Relying on colour alone.</strong> Error messages and links should also use icons, text or underlines.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> in block themes, set colours once in Appearance, Editor, Styles, so every block uses passing pairs. The block editor also warns about low contrast on paragraph and button blocks. In classic themes, set them in the Customizer or theme options.</p>
+  <p><strong>Shopify:</strong> Online Store 2.0 themes use colour schemes under Theme settings, Colors. Check each scheme's text, background and button pairs here, because sections reuse those schemes across the whole store.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Colour%20Contrast%20Checker%20%26%20Converter" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Colour%20Contrast%20Checker%20%26%20Converter%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Colour contrast questions</h2></div>
@@ -201,6 +232,7 @@
           <details><summary>What contrast ratio do I need?</summary><p>WCAG 2 level AA asks for at least 4.5:1 for normal text and 3:1 for large text. Level AAA asks for 7:1 and 4.5:1.</p></details>
           <details><summary>What counts as large text?</summary><p>Text of at least 18 point (about 24px), or 14 point (about 18.66px) when bold.</p></details>
           <details><summary>Which colour formats can I enter?</summary><p>HEX like #7C3AED or #fff, rgb(124, 58, 237), and hsl(262, 83%, 58%).</p></details>
+          <details><summary>Does colour contrast affect SEO?</summary><p>Not as a direct ranking factor, but readable pages keep visitors longer, and Lighthouse flags low contrast in its accessibility score.</p></details>
         </div>
       </div>
     </section>

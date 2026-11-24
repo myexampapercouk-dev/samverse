@@ -100,6 +100,22 @@
             "@type": "Answer",
             "text": "Go to Appearance, Customize, Site Identity and upload a 512x512 square image as the Site Icon. WordPress then outputs the main sizes for you. Use the link tags below only if your theme or a static site needs them added by hand."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my old favicon still showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Browser and CDN caching. Clear the cache, test in a private window, and purge your CDN. Google search results update on their own schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the favicon show in Google search results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, on mobile and desktop. Google needs a square icon that is a multiple of 48 pixels and crawlable, which the 48, 192 and 512 files cover."
+          }
         }
       ]
     },
@@ -200,10 +216,11 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Pick a square image, ideally 512x512 pixels or larger. Non-square images are centred and fitted inside the square.</li>
-          <li>Check the previews, especially the 16px and 32px ones. If the icon is unreadable, simplify it to a single letter or mark.</li>
-          <li>Download each PNG and upload them to your site root (the same folder as your homepage).</li>
-          <li>Copy the link tags into your &lt;head&gt; and save the manifest as site.webmanifest in the root.</li>
+          <li>Upload one square image, at least 512 x 512 pixels. A simple mark or initial works better than a full logo with text.</li>
+          <li>Check the previews at 16 and 32 pixels. If it is unreadable, simplify the design or add more padding.</li>
+          <li>Download the PNGs: 16, 32, 48, 180 (apple-touch-icon), 192 and 512.</li>
+          <li>Copy the link tags and site.webmanifest into your site, upload the files to the root, then hard-refresh to check.</li>
+          <li>Worked example: a bakery logo with a wordmark is unreadable at 16 pixels. Use just the first letter in brand colour on a solid background instead, and generate every size from that.</li>
         </ol>
         <h3>What each size is for</h3>
         <ul>
@@ -213,8 +230,32 @@
           <li><strong>192x192 and 512x512:</strong> Android home screens and installable web apps, listed in the manifest.</li>
         </ul>
         <p>For choosing the image itself, read <a href="/blog/logo-favicon-brand-basics-website/" class="link-inline">logo and favicon basics for your website</a>.</p>
+        <p>Want it done for you? See <a href="/website-redesign/" class="link-inline">website redesign</a>.</p>
       </div>
     </section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common favicon mistakes</h2>
+      <ul>
+    <li><strong>A full logo with small text.</strong> At 16 pixels the text turns into a smudge. Use an icon or an initial.</li>
+    <li><strong>A transparent icon that vanishes on dark tabs.</strong> Add a solid background or check it on both light and dark browser themes.</li>
+    <li><strong>Thinking the change failed.</strong> Browsers cache favicons hard. Test in a private window, and give Google search results time to pick up the new icon.</li>
+    <li><strong>Missing apple-touch-icon.</strong> Without the 180-pixel file, iPhones show a screenshot when someone saves your site to the home screen.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify sizes</h2>
+      <p><strong>WordPress:</strong> go to Appearance, Customize, Site Identity (or Settings, General in block themes) and set the Site Icon with a 512 x 512 image. WordPress creates the smaller sizes and tags for you, so you only need the manual tags if your theme has no Site Icon setting.</p>
+  <p><strong>Shopify:</strong> upload the favicon in the theme editor under Theme settings, Logo or Favicon. Shopify recommends a square image, and 32 x 32 is the size it displays in tabs, so upload a clean square (the 512 file works) and check it at small size.</p>
+    </div></section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Favicon%20%26%20App%20Icon%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Favicon%20%26%20App%20Icon%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
 
     <section class="section">
       <div class="container faq-wrap">
@@ -225,6 +266,8 @@
           <details><summary>Do I still need favicon.ico?</summary><p>Modern browsers use the PNG link tags. Some older tools and crawlers still request /favicon.ico at the site root, so keeping one there is harmless. You can convert the 32x32 or 48x48 PNG with any ICO converter.</p></details>
           <details><summary>What image should I start from?</summary><p>A square PNG or SVG of at least 512x512 pixels works best. Use a simple mark or letter rather than a full logo with small text, because it has to stay readable at 16 pixels.</p></details>
           <details><summary>How do I add favicons in WordPress?</summary><p>Go to Appearance, Customize, Site Identity and upload a 512x512 square image as the Site Icon. WordPress then outputs the main sizes for you. Use the link tags below only if your theme or a static site needs them added by hand.</p></details>
+          <details><summary>Why is my old favicon still showing?</summary><p>Browser and CDN caching. Clear the cache, test in a private window, and purge your CDN. Google search results update on their own schedule.</p></details>
+          <details><summary>Does the favicon show in Google search results?</summary><p>Yes, on mobile and desktop. Google needs a square icon that is a multiple of 48 pixels and crawlable, which the 48, 192 and 512 files cover.</p></details>
         </div>
       </div>
     </section>

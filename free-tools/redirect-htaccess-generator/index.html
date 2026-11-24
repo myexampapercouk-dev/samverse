@@ -100,6 +100,30 @@
             "@type": "Answer",
             "text": "Hundreds are fine. Avoid chains (A to B to C) by pointing every old URL straight to its final page, and remove loops where a URL redirects to itself."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I keep 301 redirects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At least a year, and ideally for good if the old URLs have links pointing to them. They cost almost nothing to keep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my redirect not work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes are rules placed after the WordPress block, a caching layer serving the old page, Nginx hosting ignoring .htaccess, or a trailing slash mismatch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will redirects hurt my rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A correct 301 to a matching page passes ranking signals to the new URL. Rankings can move for a short while as Google recrawls."
+          }
         }
       ]
     },
@@ -203,15 +227,40 @@ https://example.com/contact-us.html,/contact/</textarea>
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>List each old URL and the page it should go to, one pair per line.</li>
-          <li>Choose 301 for permanent moves (almost always) or 302 for temporary ones.</li>
-          <li>Copy the rules for your server: .htaccess for Apache or LiteSpeed (most shared hosting), Nginx for VPS or Nginx hosts.</li>
-          <li>On WordPress you can skip server files: save the CSV output as a .csv file and import it in the free Redirection plugin.</li>
-          <li>Back up .htaccess first, then test each old URL in a private window after saving.</li>
+          <li>Paste old and new URLs, one pair per line, separated by a comma, tab or space.</li>
+          <li>Choose 301 for permanent moves or 302 for temporary ones.</li>
+          <li>Fix any warnings about loops, duplicates or chains.</li>
+          <li>Copy the output for your server: Apache .htaccess, Nginx, or the CSV for the WordPress Redirection plugin.</li>
+          <li>Worked example: /old-services/ to /services/. Apache gives a RewriteRule inside the mod_rewrite block in .htaccess; Nginx gives a location block with return 301 that goes inside the server block. Test both old URLs in a private window after reloading the server.</li>
         </ol>
         <p>Not sure which code to use? Read <a href="/blog/301-vs-302-redirects/" class="link-inline">301 vs 302 redirects explained</a>.</p>
+        <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>
       </div>
     </section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common redirect mistakes</h2>
+      <ul>
+    <li><strong>Redirect chains.</strong> A to B to C slows crawling and wastes link value. Point every old URL straight to the final page.</li>
+    <li><strong>Sending everything to the homepage.</strong> Google treats mass homepage redirects like missing pages. Map each old URL to its closest match.</li>
+    <li><strong>Using 302 for a permanent move.</strong> If the change is permanent, use 301.</li>
+    <li><strong>Placing rules below WordPress's own block.</strong> In .htaccess, put your redirects above the <code># BEGIN WordPress</code> section.</li>
+    <li><strong>Not updating internal links and the sitemap.</strong> Redirects are a safety net. Link to the new URL directly.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> on Apache or LiteSpeed hosting (most shared hosts, including Hostinger), use the .htaccess output, or import the CSV into the Redirection plugin if you prefer managing them in the dashboard. On Nginx hosting, .htaccess is ignored, so use the Nginx output or the plugin.</p>
+  <p><strong>Shopify:</strong> there is no server file to edit. Add redirects under Content or Online Store, Navigation, URL Redirects, or import them as a CSV with "Redirect from" and "Redirect to" columns. When moving from WooCommerce, map <code>/product/</code> URLs to <code>/products/</code> and <code>/product-category/</code> to <code>/collections/</code>.</p>
+    </div></section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Redirect%20Generator%20(.htaccess%20%26%20Nginx)" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Redirect%20Generator%20(.htaccess%20%26%20Nginx)%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
 
     <section class="section">
       <div class="container faq-wrap">
@@ -222,6 +271,9 @@ https://example.com/contact-us.html,/contact/</textarea>
           <details><summary>Does this work for Nginx hosting?</summary><p>Yes. Copy the Nginx output into the server block of your site configuration and reload Nginx. On managed hosts without config access, ask support to add the rules or use a redirect plugin.</p></details>
           <details><summary>Can I redirect full URLs from another domain?</summary><p>Yes. The tool reduces old full URLs to their path, because a rule on your server only sees the path. New URLs can be full URLs on any domain.</p></details>
           <details><summary>How many redirects can I add?</summary><p>Hundreds are fine. Avoid chains (A to B to C) by pointing every old URL straight to its final page, and remove loops where a URL redirects to itself.</p></details>
+          <details><summary>How long should I keep 301 redirects?</summary><p>At least a year, and ideally for good if the old URLs have links pointing to them. They cost almost nothing to keep.</p></details>
+          <details><summary>Why does my redirect not work?</summary><p>Common causes are rules placed after the WordPress block, a caching layer serving the old page, Nginx hosting ignoring .htaccess, or a trailing slash mismatch.</p></details>
+          <details><summary>Will redirects hurt my rankings?</summary><p>A correct 301 to a matching page passes ranking signals to the new URL. Rankings can move for a short while as Google recrawls.</p></details>
         </div>
       </div>
     </section>

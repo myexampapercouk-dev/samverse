@@ -84,6 +84,30 @@
             "@type": "Answer",
             "text": "The message is part of the link, so a new message needs a new link and a new QR code. If you print QR codes, keep the message general."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the wa.me link work on desktop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It opens WhatsApp Web or the desktop app, or asks the visitor to choose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add the product name to the message automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a little theme code that builds the link from the page title. The generator gives you the base link to start from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the WhatsApp QR code stop working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It holds the wa.me link directly, so it keeps working as long as the number is active on WhatsApp."
+          }
         }
       ]
     },
@@ -184,15 +208,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Enter your country code and WhatsApp number (no leading 0).</li>
-          <li>Type the message customers should see ready in their chat box.</li>
-          <li>Copy the link or the HTML snippet for your site.</li>
-          <li>Make a QR code and download it as PNG or SVG for flyers, shop counters and packaging.</li>
+          <li>Enter the WhatsApp number with country code and no plus sign, spaces or leading zero (for India, 91 followed by the 10-digit number).</li>
+          <li>Write a pre-filled message that tells you where the lead came from, such as "Hi, I saw your website and want a quote for...".</li>
+          <li>Copy the wa.me link or download the QR code.</li>
+          <li>Place it on your site as a button, and add UTM tags to the page link you share elsewhere so GA4 still sees the source.</li>
+          <li>Worked example: a clinic adds a "Book on WhatsApp" button with the message "Hi, I want to book an appointment" on its contact page, and a QR code of the same link on the front-desk poster.</li>
         </ol>
         <p>Related reading: <a href="/blog/whatsapp-on-business-website/" class="link-inline">adding WhatsApp to a business website</a>.</p>
         <p>Want it done for you? See <a href="/wordpress-website-development/" class="link-inline">WordPress website development</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common WhatsApp link mistakes</h2>
+      <ul>
+    <li><strong>Wrong number format.</strong> Including +, spaces, dashes or a leading 0 breaks the link.</li>
+    <li><strong>No pre-filled message.</strong> A blank chat makes visitors hesitate, and you cannot tell which page they came from.</li>
+    <li><strong>A floating button that covers other buttons.</strong> On mobile, keep it clear of "Add to cart", cookie banners and the menu.</li>
+    <li><strong>Not tracking clicks.</strong> Without a GA4 event on the button, WhatsApp leads look like nothing happened.</li>
+    <li><strong>Using a personal number with no business hours.</strong> A WhatsApp Business account with an away message sets expectations.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> you can add the link to any button block, or use a lightweight click-to-chat plugin. Track clicks in Google Tag Manager with a click trigger on links containing <code>wa.me</code>, sent to GA4 as a lead event.</p>
+  <p><strong>Shopify:</strong> add the link to a button in the theme editor, or use a chat app. On product pages, a pre-filled message that includes the product name helps you answer faster. Keep the button away from the sticky add-to-cart bar on mobile.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20WhatsApp%20Link%20%26%20QR%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20WhatsApp%20Link%20%26%20QR%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>WhatsApp link questions</h2></div>
@@ -200,6 +247,9 @@
           <details><summary>Does the link work for WhatsApp Business numbers?</summary><p>Yes. wa.me links work for both personal and WhatsApp Business numbers.</p></details>
           <details><summary>Why do I need the country code?</summary><p>wa.me links use the full international number without the plus sign or leading zero, for example 91 followed by the 10-digit number in India.</p></details>
           <details><summary>Can I change the message later?</summary><p>The message is part of the link, so a new message needs a new link and a new QR code. If you print QR codes, keep the message general.</p></details>
+          <details><summary>Does the wa.me link work on desktop?</summary><p>Yes. It opens WhatsApp Web or the desktop app, or asks the visitor to choose.</p></details>
+          <details><summary>Can I add the product name to the message automatically?</summary><p>Yes, with a little theme code that builds the link from the page title. The generator gives you the base link to start from.</p></details>
+          <details><summary>Will the WhatsApp QR code stop working?</summary><p>No. It holds the wa.me link directly, so it keeps working as long as the number is active on WhatsApp.</p></details>
         </div>
       </div>
     </section>

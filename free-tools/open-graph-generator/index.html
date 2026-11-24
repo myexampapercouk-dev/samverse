@@ -84,6 +84,22 @@
             "@type": "Answer",
             "text": "They do not change rankings directly, but a clear preview can earn more clicks when your pages are shared."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is WhatsApp showing no image for my link?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the og:image is missing, not a full https URL, or too heavy. Fix the tag, then share the link again; WhatsApp may cache the old preview for a while."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need separate Twitter card tags?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "X falls back to Open Graph tags for most fields. Adding twitter:card set to summary_large_image makes sure the large image layout is used."
+          }
         }
       ]
     },
@@ -189,15 +205,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Enter the title and description you want people to see when the link is shared.</li>
-          <li>Add the full page URL and a full https:// image URL.</li>
-          <li>Check the live preview and the warnings.</li>
-          <li>Copy the tags into the &lt;head&gt; of the page. On WordPress, Yoast and Rank Math have social fields that do this for you.</li>
+          <li>Enter the page URL, title and a short description written for social sharing.</li>
+          <li>Add the share image URL. Use a 1200 x 630 pixel image with any text kept away from the edges.</li>
+          <li>Choose the card type (summary_large_image for most pages) and copy the generated meta tags.</li>
+          <li>Paste the tags into the page head, or fill the same fields in your SEO plugin, then test the URL in the platform preview tools.</li>
+          <li>Worked example: a blog post shared in WhatsApp groups. Set og:image to a 1200 x 630 cover with the post title in large type, so the preview reads clearly even at thumbnail size.</li>
         </ol>
-        <p>Related reading: <a href="/blog/on-page-seo-checklist/" class="link-inline">the on-page SEO checklist</a>.</p>
+        <p>Related reading: repurposing website content for social media.</p>
         <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common Open Graph mistakes</h2>
+      <ul>
+    <li><strong>A wrong-sized image.</strong> Small or tall images get cropped or shown as a tiny thumbnail. 1200 x 630 works across Facebook, LinkedIn, WhatsApp and X.</li>
+    <li><strong>Relative image URLs.</strong> og:image must be a full https URL.</li>
+    <li><strong>Old previews after changes.</strong> Platforms cache previews. Re-scrape the URL in the platform's debugger after you update tags.</li>
+    <li><strong>Duplicate tags.</strong> A theme and an SEO plugin both adding og tags can make platforms pick the wrong image.</li>
+    <li><strong>Heavy share images.</strong> Very large files may not load in WhatsApp previews. Keep the image compressed.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> Yoast SEO and Rank Math add Open Graph tags for you. Set a default share image in the plugin's social settings, and a per-post image in the post's social tab. Avoid also pasting manual tags, or you will get duplicates.</p>
+  <p><strong>Shopify:</strong> most themes output og tags from the product image or the social sharing image set under Online Store, Preferences. Use a 1200 x 630 image there for the homepage and pages that have no product image.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Open%20Graph%20%26%20Twitter%20Card%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Open%20Graph%20%26%20Twitter%20Card%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Open Graph questions</h2></div>
@@ -205,6 +244,8 @@
           <details><summary>What image size should I use?</summary><p>1200x630 pixels works well for most platforms. Use a JPG or PNG under a few hundred KB and keep text away from the edges.</p></details>
           <details><summary>Why does Facebook or WhatsApp still show the old preview?</summary><p>Platforms cache previews. Use the Facebook Sharing Debugger to scrape the URL again; WhatsApp usually updates after some time or with a new URL.</p></details>
           <details><summary>Do Open Graph tags help SEO?</summary><p>They do not change rankings directly, but a clear preview can earn more clicks when your pages are shared.</p></details>
+          <details><summary>Why is WhatsApp showing no image for my link?</summary><p>Usually the og:image is missing, not a full https URL, or too heavy. Fix the tag, then share the link again; WhatsApp may cache the old preview for a while.</p></details>
+          <details><summary>Do I need separate Twitter card tags?</summary><p>X falls back to Open Graph tags for most fields. Adding twitter:card set to summary_large_image makes sure the large image layout is used.</p></details>
         </div>
       </div>
     </section>

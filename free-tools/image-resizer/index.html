@@ -84,6 +84,30 @@
             "@type": "Answer",
             "text": "Products look uneven when the photos have different aspect ratios. Cropping every photo to the same square size, such as 800x800, keeps the shop grid neat."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What size should product images be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use one consistent ratio, usually square, at a size large enough for zoom on your theme. Consistency matters more than any single magic number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does resizing reduce quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shrinking an image keeps it sharp. Enlarging it beyond the original size makes it soft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my images look cropped differently on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many themes crop banners to a different ratio on small screens. Keep the subject in the centre or upload a separate mobile banner if the theme allows it."
+          }
         }
       ]
     },
@@ -185,15 +209,37 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Choose your image.</li>
-          <li>Pick a preset, or type a custom width and height.</li>
-          <li>Choose crop to fill, fit with padding, or exact resize.</li>
-          <li>Check the preview and download.</li>
+          <li>Add your image and choose a preset or type an exact width and height.</li>
+          <li>Choose crop to fill the box, or fit to keep the whole image with no cropping.</li>
+          <li>Drag the crop area so the subject (a face, a product) stays in frame.</li>
+          <li>Download the resized file, then compress it with the image compressor if it is still heavy.</li>
+          <li>Worked example: product photos of mixed shapes for a WooCommerce shop. Crop every one to a 1:1 square at the same pixel size so the shop grid lines up with no gaps.</li>
         </ol>
         <p>Related reading: <a href="/blog/woocommerce-product-images-wrong-size/" class="link-inline">why WooCommerce product images show at the wrong size</a>.</p>
         <p>Want it done for you? See <a href="/woocommerce-developer/" class="link-inline">WooCommerce development</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common resizing mistakes</h2>
+      <ul>
+    <li><strong>Making small images bigger.</strong> Upscaling adds blur, not detail. Start from the largest original you have.</li>
+    <li><strong>Mixed aspect ratios in one grid.</strong> Product and gallery grids look broken when some images are square and some are tall.</li>
+    <li><strong>Cropping off the important part.</strong> Check that heads, product edges and text are not cut, especially in banners that crop again on mobile.</li>
+    <li><strong>Uploading at camera size.</strong> A 4000-pixel-wide photo in a 800-pixel column wastes data on every visit.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify sizes</h2>
+      <p><strong>WordPress and WooCommerce:</strong> your theme decides the display sizes. WooCommerce has image settings under Appearance, Customize, WooCommerce, Product Images, where you set the thumbnail crop (for example 1:1). After you change them, existing thumbnails need regenerating with a regenerate-thumbnails plugin. Resize uploads to roughly the largest size your theme shows.</p>
+  <p><strong>Shopify:</strong> square product images work with almost every theme. Keep all products in the same ratio, and check your theme's documentation for the recommended collection and slideshow banner sizes, since these vary between themes.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Image%20Resizer%20%26%20Cropper" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Image%20Resizer%20%26%20Cropper%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Image resizer questions</h2></div>
@@ -201,6 +247,9 @@
           <details><summary>What size should an Open Graph image be?</summary><p>1200x630 pixels is the widely used size for Facebook, LinkedIn and WhatsApp link previews. Keep important text away from the edges.</p></details>
           <details><summary>What is the difference between crop and fit?</summary><p>Crop to fill covers the whole frame and trims the edges that do not fit. Fit inside keeps the whole image and fills the empty space with a colour.</p></details>
           <details><summary>Why do my WooCommerce images look different sizes?</summary><p>Products look uneven when the photos have different aspect ratios. Cropping every photo to the same square size, such as 800x800, keeps the shop grid neat.</p></details>
+          <details><summary>What size should product images be?</summary><p>Use one consistent ratio, usually square, at a size large enough for zoom on your theme. Consistency matters more than any single magic number.</p></details>
+          <details><summary>Does resizing reduce quality?</summary><p>Shrinking an image keeps it sharp. Enlarging it beyond the original size makes it soft.</p></details>
+          <details><summary>Why do my images look cropped differently on mobile?</summary><p>Many themes crop banners to a different ratio on small screens. Keep the subject in the centre or upload a separate mobile banner if the theme allows it.</p></details>
         </div>
       </div>
     </section>

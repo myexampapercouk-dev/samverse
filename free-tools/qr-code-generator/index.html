@@ -92,6 +92,22 @@
             "@type": "Answer",
             "text": "Not with a static code. Put a UTM-tagged URL in the code and you can see the visits in Google Analytics."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track how many people scanned my QR code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, by adding UTM tags to the link before creating the code. Scans then show as visits from that source and medium in GA4."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "PNG or SVG for printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SVG, because it stays sharp at any size. PNG is fine for screens, social posts and documents."
+          }
         }
       ]
     },
@@ -202,15 +218,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Pick the type: URL, text, WiFi or contact card.</li>
-          <li>Fill in the details. The code updates as you type.</li>
-          <li>Set the size and colours. Keep strong contrast, dark on light, so phones can read it.</li>
-          <li>Scan it with your phone to test, then download PNG for screens or SVG for print.</li>
+          <li>Choose what the code should open: a web page, WhatsApp chat, phone number, email or plain text.</li>
+          <li>Paste the link. For web pages, add UTM tags first with the UTM builder so scans show up in GA4.</li>
+          <li>Pick colours with strong contrast (dark code on a light background) and add a quiet margin around it.</li>
+          <li>Download PNG for screens or SVG for print, then test the printed proof with two different phones before printing in bulk.</li>
+          <li>Worked example: a table card in a restaurant. Link to the menu page with utm_source=table_card and utm_medium=qr, download SVG, and print it at least a few centimetres wide.</li>
         </ol>
-        <p>Related reading: <a href="/blog/whatsapp-marketing-small-business/" class="link-inline">WhatsApp marketing for small businesses</a>.</p>
+        <p>Related reading: QR codes for a business website.</p>
         <p>Want it done for you? See <a href="/wordpress-website-development/" class="link-inline">WordPress website development</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common QR code mistakes</h2>
+      <ul>
+    <li><strong>Printing before testing.</strong> Always scan the final printed proof, not only the screen preview.</li>
+    <li><strong>Low contrast or inverted colours.</strong> Light codes on dark backgrounds and pastel codes fail on many phone cameras.</li>
+    <li><strong>Too small or too close to the edge.</strong> Leave a clear margin around the code and size it for the scanning distance.</li>
+    <li><strong>Linking to a page that may move.</strong> If the URL changes, printed codes break. Use a stable page, and set up a 301 redirect if you ever change it.</li>
+    <li><strong>No tracking.</strong> Without UTM tags, scans look like direct visits in analytics.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> point the code at a short, permanent URL such as <code>/menu/</code> or <code>/offer/</code>. If you later change the page, add a 301 redirect with the Redirection plugin so old prints keep working.</p>
+  <p><strong>Shopify:</strong> link to a collection or a specific product rather than the homepage, so the scan lands where the buyer wants to be. Shopify adds a redirect automatically when you change a product handle, but check it under Navigation, URL Redirects.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20QR%20Code%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20QR%20Code%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>QR code questions</h2></div>
@@ -219,6 +258,8 @@
           <details><summary>PNG or SVG?</summary><p>PNG for websites, slides and social posts. SVG for print, because it scales to any size without going blurry.</p></details>
           <details><summary>What does error correction do?</summary><p>Higher levels let the code still scan when part of it is damaged or covered, but make it denser. Medium suits most uses.</p></details>
           <details><summary>Can I track scans?</summary><p>Not with a static code. Put a UTM-tagged URL in the code and you can see the visits in Google Analytics.</p></details>
+          <details><summary>Can I track how many people scanned my QR code?</summary><p>Yes, by adding UTM tags to the link before creating the code. Scans then show as visits from that source and medium in GA4.</p></details>
+          <details><summary>PNG or SVG for printing?</summary><p>SVG, because it stays sharp at any size. PNG is fine for screens, social posts and documents.</p></details>
         </div>
       </div>
     </section>

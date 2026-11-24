@@ -100,6 +100,30 @@
             "@type": "Answer",
             "text": "Paste the full code into Google's Rich Results Test or the Schema Markup Validator. Both are free and show any errors or warnings."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FAQ schema still worth adding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, as long as the FAQ helps readers. The rich result is limited now, but structured, direct answers still help search engines and AI tools understand the page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use FAQ schema on product pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if the product page shows those questions and answers. Do not mark up customer questions that visitors cannot see."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many questions should I add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As many as the page genuinely answers. Three to eight focused questions is typical for a service or product page."
+          }
         }
       ]
     },
@@ -193,14 +217,39 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Type each question exactly as it appears on your page, then its answer in plain text.</li>
-          <li>Add at least two questions. Remove empty rows or they are left out of the code.</li>
-          <li>Copy the JSON-LD and paste it into the page that shows those questions.</li>
-          <li>Test the page in Google's Rich Results Test before and after publishing.</li>
+          <li>Add each question and its answer, exactly as they appear on the page.</li>
+          <li>Read the hints for empty answers, duplicate questions and HTML.</li>
+          <li>Copy the FAQPage JSON-LD and paste it into the same page, in a script tag of type application/ld+json.</li>
+          <li>Test the live URL in Google's Rich Results Test and the Schema Markup Validator.</li>
+          <li>Worked example: a service page with three questions on price factors, timelines and support. Generate the JSON-LD, add it to the page, then run the URL through the Rich Results Test and confirm "FAQ" is detected with no errors.</li>
         </ol>
         <p>For which questions to write and how to lay out the page, see <a href="/blog/faq-page-seo/" class="link-inline">how to write an FAQ page that helps SEO</a>. To check your markup, follow <a href="/blog/test-structured-data-rich-results/" class="link-inline">how to test structured data and rich results</a>.</p>
+        <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>
       </div>
     </section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common FAQ schema mistakes</h2>
+      <ul>
+    <li><strong>Schema for questions that are not on the page.</strong> The markup must match visible content, or it can be ignored or treated as spam.</li>
+    <li><strong>Two FAQPage blocks on one page.</strong> A plugin and manual code both adding FAQ schema causes duplicates. Keep one.</li>
+    <li><strong>Expecting the rich result everywhere.</strong> Since 2023, Google shows FAQ rich results mainly for well-known government and health sites. The markup is still valid and helps machines read your page.</li>
+    <li><strong>Sales copy as answers.</strong> Answer the question directly in the first sentence.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> Yoast SEO has an FAQ block that outputs the schema for you, and Rank Math has a similar block. If you use one of them, do not also paste this JSON-LD. On a page builder without a schema block, paste the code into a Custom HTML block on the same page.</p>
+  <p><strong>Shopify:</strong> paste the JSON-LD into the page content using the code view of the editor, or add it to the relevant template through a custom liquid section. Check the theme does not already output FAQ schema from an FAQ section.</p>
+    </div></section>
+
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20FAQ%20Schema%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20FAQ%20Schema%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
 
     <section class="section">
       <div class="container faq-wrap">
@@ -211,6 +260,9 @@
           <details><summary>Can I use FAQ schema for questions that are not on the page?</summary><p>No. Google's guidelines say the questions and answers in the markup must be visible to users on the same page. Hidden or different content can be treated as spammy structured data.</p></details>
           <details><summary>Can answers contain links or formatting?</summary><p>Google allows a few basic HTML tags in answers, such as links, lists and bold text. Plain text is the safest choice and is what this tool expects; any HTML you type is escaped so it shows up literally.</p></details>
           <details><summary>How do I test the output?</summary><p>Paste the full code into Google's Rich Results Test or the Schema Markup Validator. Both are free and show any errors or warnings.</p></details>
+          <details><summary>Is FAQ schema still worth adding?</summary><p>Yes, as long as the FAQ helps readers. The rich result is limited now, but structured, direct answers still help search engines and AI tools understand the page.</p></details>
+          <details><summary>Can I use FAQ schema on product pages?</summary><p>Yes, if the product page shows those questions and answers. Do not mark up customer questions that visitors cannot see.</p></details>
+          <details><summary>How many questions should I add?</summary><p>As many as the page genuinely answers. Three to eight focused questions is typical for a service or product page.</p></details>
         </div>
       </div>
     </section>

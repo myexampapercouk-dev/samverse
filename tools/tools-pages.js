@@ -31,15 +31,42 @@ ${steps.map(s => `          <li>${s}</li>`).join('\n')}
       </div>
     </section>`;
 
+const moreHtml = (more = []) => more.map(([h, html]) => `
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>${esc(h)}</h2>
+      ${html}
+    </div></section>`).join('');
+// Same free-review box the blog posts render (tools/build-pages.js, aside.inline-cta).
+const reviewCta = name => `
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=${encodeURIComponent('Free website review: ' + name)}" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=${encodeURIComponent('Hi, I used your free ' + name + ' and want a website review.')}" class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>`;
+
 // ---------------------------------------------------------------------------
 // 1. Favicon & app icon generator
 // ---------------------------------------------------------------------------
+const MORE_FAV = [
+  ['Common favicon mistakes', `<ul>
+    <li><strong>A full logo with small text.</strong> At 16 pixels the text turns into a smudge. Use an icon or an initial.</li>
+    <li><strong>A transparent icon that vanishes on dark tabs.</strong> Add a solid background or check it on both light and dark browser themes.</li>
+    <li><strong>Thinking the change failed.</strong> Browsers cache favicons hard. Test in a private window, and give Google search results time to pick up the new icon.</li>
+    <li><strong>Missing apple-touch-icon.</strong> Without the 180-pixel file, iPhones show a screenshot when someone saves your site to the home screen.</li>
+  </ul>`],
+  ['WordPress and Shopify sizes', `<p><strong>WordPress:</strong> go to Appearance, Customize, Site Identity (or Settings, General in block themes) and set the Site Icon with a 512 x 512 image. WordPress creates the smaller sizes and tags for you, so you only need the manual tags if your theme has no Site Icon setting.</p>
+  <p><strong>Shopify:</strong> upload the favicon in the theme editor under Theme settings, Logo or Favicon. Shopify recommends a square image, and 32 x 32 is the size it displays in tabs, so upload a clean square (the 512 file works) and check it at small size.</p>`],
+];
 const FAV_FAQ = [
   ['Which favicon sizes do I actually need?', 'For most sites: a 32x32 and 16x16 PNG for browser tabs, a 180x180 apple-touch-icon for iPhone and iPad home screens, and 192x192 and 512x512 icons listed in a web app manifest for Android and installable web apps. A 48x48 icon is a safe extra because Google asks for favicons that are a multiple of 48px.'],
   ['Is my image uploaded anywhere?', 'No. The image is read and resized by your own browser using the canvas API. Nothing is sent to a server.'],
   ['Do I still need favicon.ico?', 'Modern browsers use the PNG link tags. Some older tools and crawlers still request /favicon.ico at the site root, so keeping one there is harmless. You can convert the 32x32 or 48x48 PNG with any ICO converter.'],
   ['What image should I start from?', 'A square PNG or SVG of at least 512x512 pixels works best. Use a simple mark or letter rather than a full logo with small text, because it has to stay readable at 16 pixels.'],
   ['How do I add favicons in WordPress?', 'Go to Appearance, Customize, Site Identity and upload a 512x512 square image as the Site Icon. WordPress then outputs the main sizes for you. Use the link tags below only if your theme or a static site needs them added by hand.'],
+  ['Why is my old favicon still showing?', 'Browser and CDN caching. Clear the cache, test in a private window, and purge your CDN. Google search results update on their own schedule.'],
+  ['Does the favicon show in Google search results?', 'Yes, on mobile and desktop. Google needs a square icon that is a multiple of 48 pixels and crawlable, which the 48, 192 and 512 files cover.'],
 ];
 const favMain = `
     <section class="section" style="padding-top:10px">
@@ -68,10 +95,11 @@ const favMain = `
       </div>
     </section>
 ${howTo([
-  'Pick a square image, ideally 512x512 pixels or larger. Non-square images are centred and fitted inside the square.',
-  'Check the previews, especially the 16px and 32px ones. If the icon is unreadable, simplify it to a single letter or mark.',
-  'Download each PNG and upload them to your site root (the same folder as your homepage).',
-  'Copy the link tags into your &lt;head&gt; and save the manifest as site.webmanifest in the root.',
+  'Upload one square image, at least 512 x 512 pixels. A simple mark or initial works better than a full logo with text.',
+  'Check the previews at 16 and 32 pixels. If it is unreadable, simplify the design or add more padding.',
+  'Download the PNGs: 16, 32, 48, 180 (apple-touch-icon), 192 and 512.',
+  'Copy the link tags and site.webmanifest into your site, upload the files to the root, then hard-refresh to check.',
+  'Worked example: a bakery logo with a wordmark is unreadable at 16 pixels. Use just the first letter in brand colour on a solid background instead, and generate every size from that.',
 ], `
         <h3>What each size is for</h3>
         <ul>
@@ -80,7 +108,10 @@ ${howTo([
           <li><strong>180x180 (apple-touch-icon):</strong> the icon when someone adds your site to an iPhone or iPad home screen.</li>
           <li><strong>192x192 and 512x512:</strong> Android home screens and installable web apps, listed in the manifest.</li>
         </ul>
-        <p>For choosing the image itself, read <a href="/blog/logo-favicon-brand-basics-website/" class="link-inline">logo and favicon basics for your website</a>.</p>`)}
+        <p>For choosing the image itself, read <a href="/blog/logo-favicon-brand-basics-website/" class="link-inline">logo and favicon basics for your website</a>.</p>
+        <p>Want it done for you? See <a href="/website-redesign/" class="link-inline">website redesign</a>.</p>`)}
+${moreHtml(MORE_FAV)}
+${reviewCta('Favicon & App Icon Generator')}
 ${faqHtml('Favicon questions', FAV_FAQ)}`;
 const favScript = `
 (function () {
@@ -145,12 +176,25 @@ const favScript = `
 // ---------------------------------------------------------------------------
 // 2. FAQ schema generator
 // ---------------------------------------------------------------------------
+const MORE_FAQ = [
+  ['Common FAQ schema mistakes', `<ul>
+    <li><strong>Schema for questions that are not on the page.</strong> The markup must match visible content, or it can be ignored or treated as spam.</li>
+    <li><strong>Two FAQPage blocks on one page.</strong> A plugin and manual code both adding FAQ schema causes duplicates. Keep one.</li>
+    <li><strong>Expecting the rich result everywhere.</strong> Since 2023, Google shows FAQ rich results mainly for well-known government and health sites. The markup is still valid and helps machines read your page.</li>
+    <li><strong>Sales copy as answers.</strong> Answer the question directly in the first sentence.</li>
+  </ul>`],
+  ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> Yoast SEO has an FAQ block that outputs the schema for you, and Rank Math has a similar block. If you use one of them, do not also paste this JSON-LD. On a page builder without a schema block, paste the code into a Custom HTML block on the same page.</p>
+  <p><strong>Shopify:</strong> paste the JSON-LD into the page content using the code view of the editor, or add it to the relevant template through a custom liquid section. Check the theme does not already output FAQ schema from an FAQ section.</p>`],
+];
 const FAQ_FAQ = [
   ['Does FAQ schema still show rich results in Google?', 'Google now shows FAQ rich results mainly for well-known government and health websites, so most sites will not see the expandable answers. The markup is still valid structured data that helps search engines and AI answer tools understand your questions and answers.'],
   ['Where do I paste the JSON-LD?', 'Inside the page that shows the same questions and answers, either in the head or the body, wrapped in the script tag the tool outputs. In WordPress you can use a code snippet plugin, a custom HTML block or your SEO plugin\'s schema settings.'],
   ['Can I use FAQ schema for questions that are not on the page?', 'No. Google\'s guidelines say the questions and answers in the markup must be visible to users on the same page. Hidden or different content can be treated as spammy structured data.'],
   ['Can answers contain links or formatting?', 'Google allows a few basic HTML tags in answers, such as links, lists and bold text. Plain text is the safest choice and is what this tool expects; any HTML you type is escaped so it shows up literally.'],
   ['How do I test the output?', 'Paste the full code into Google\'s Rich Results Test or the Schema Markup Validator. Both are free and show any errors or warnings.'],
+  ['Is FAQ schema still worth adding?', 'Yes, as long as the FAQ helps readers. The rich result is limited now, but structured, direct answers still help search engines and AI tools understand the page.'],
+  ['Can I use FAQ schema on product pages?', 'Yes, if the product page shows those questions and answers. Do not mark up customer questions that visitors cannot see.'],
+  ['How many questions should I add?', 'As many as the page genuinely answers. Three to eight focused questions is typical for a service or product page.'],
 ];
 const faqMain = `
     <section class="section" style="padding-top:10px">
@@ -172,12 +216,16 @@ const faqMain = `
       </div>
     </section>
 ${howTo([
-  'Type each question exactly as it appears on your page, then its answer in plain text.',
-  'Add at least two questions. Remove empty rows or they are left out of the code.',
-  'Copy the JSON-LD and paste it into the page that shows those questions.',
-  'Test the page in Google\'s Rich Results Test before and after publishing.',
+  'Add each question and its answer, exactly as they appear on the page.',
+  'Read the hints for empty answers, duplicate questions and HTML.',
+  'Copy the FAQPage JSON-LD and paste it into the same page, in a script tag of type application/ld+json.',
+  'Test the live URL in Google\'s Rich Results Test and the Schema Markup Validator.',
+  'Worked example: a service page with three questions on price factors, timelines and support. Generate the JSON-LD, add it to the page, then run the URL through the Rich Results Test and confirm "FAQ" is detected with no errors.',
 ], `
-        <p>For which questions to write and how to lay out the page, see <a href="/blog/faq-page-seo/" class="link-inline">how to write an FAQ page that helps SEO</a>. To check your markup, follow <a href="/blog/test-structured-data-rich-results/" class="link-inline">how to test structured data and rich results</a>.</p>`)}
+        <p>For which questions to write and how to lay out the page, see <a href="/blog/faq-page-seo/" class="link-inline">how to write an FAQ page that helps SEO</a>. To check your markup, follow <a href="/blog/test-structured-data-rich-results/" class="link-inline">how to test structured data and rich results</a>.</p>
+        <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>`)}
+${moreHtml(MORE_FAQ)}
+${reviewCta('FAQ Schema Generator')}
 ${faqHtml('FAQ schema questions', FAQ_FAQ)}`;
 const faqScript = `
 (function () {
@@ -223,12 +271,26 @@ const faqScript = `
 // ---------------------------------------------------------------------------
 // 3. Redirect rule generator
 // ---------------------------------------------------------------------------
+const MORE_RED = [
+  ['Common redirect mistakes', `<ul>
+    <li><strong>Redirect chains.</strong> A to B to C slows crawling and wastes link value. Point every old URL straight to the final page.</li>
+    <li><strong>Sending everything to the homepage.</strong> Google treats mass homepage redirects like missing pages. Map each old URL to its closest match.</li>
+    <li><strong>Using 302 for a permanent move.</strong> If the change is permanent, use 301.</li>
+    <li><strong>Placing rules below WordPress's own block.</strong> In .htaccess, put your redirects above the <code># BEGIN WordPress</code> section.</li>
+    <li><strong>Not updating internal links and the sitemap.</strong> Redirects are a safety net. Link to the new URL directly.</li>
+  </ul>`],
+  ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> on Apache or LiteSpeed hosting (most shared hosts, including Hostinger), use the .htaccess output, or import the CSV into the Redirection plugin if you prefer managing them in the dashboard. On Nginx hosting, .htaccess is ignored, so use the Nginx output or the plugin.</p>
+  <p><strong>Shopify:</strong> there is no server file to edit. Add redirects under Content or Online Store, Navigation, URL Redirects, or import them as a CSV with "Redirect from" and "Redirect to" columns. When moving from WooCommerce, map <code>/product/</code> URLs to <code>/products/</code> and <code>/product-category/</code> to <code>/collections/</code>.</p>`],
+];
 const RED_FAQ = [
   ['Should I use a 301 or a 302 redirect?', 'Use 301 when a page has moved for good, such as after a redesign, a URL change or merging two posts. Use 302 only for temporary moves, like a short promotion or maintenance, when the old URL will come back.'],
   ['Where is the .htaccess file?', 'In the root folder of your site on Apache or LiteSpeed hosting, the same folder that holds wp-config.php on WordPress. It is a hidden file, so turn on "show hidden files" in your file manager. Put redirect rules above the # BEGIN WordPress block.'],
   ['Does this work for Nginx hosting?', 'Yes. Copy the Nginx output into the server block of your site configuration and reload Nginx. On managed hosts without config access, ask support to add the rules or use a redirect plugin.'],
   ['Can I redirect full URLs from another domain?', 'Yes. The tool reduces old full URLs to their path, because a rule on your server only sees the path. New URLs can be full URLs on any domain.'],
   ['How many redirects can I add?', 'Hundreds are fine. Avoid chains (A to B to C) by pointing every old URL straight to its final page, and remove loops where a URL redirects to itself.'],
+  ['How long should I keep 301 redirects?', 'At least a year, and ideally for good if the old URLs have links pointing to them. They cost almost nothing to keep.'],
+  ['Why does my redirect not work?', 'Common causes are rules placed after the WordPress block, a caching layer serving the old page, Nginx hosting ignoring .htaccess, or a trailing slash mismatch.'],
+  ['Will redirects hurt my rankings?', 'A correct 301 to a matching page passes ranking signals to the new URL. Rankings can move for a short while as Google recrawls.'],
 ];
 const redMain = `
     <section class="section" style="padding-top:10px">
@@ -260,13 +322,16 @@ https://example.com/contact-us.html,/contact/</textarea>
       </div>
     </section>
 ${howTo([
-  'List each old URL and the page it should go to, one pair per line.',
-  'Choose 301 for permanent moves (almost always) or 302 for temporary ones.',
-  'Copy the rules for your server: .htaccess for Apache or LiteSpeed (most shared hosting), Nginx for VPS or Nginx hosts.',
-  'On WordPress you can skip server files: save the CSV output as a .csv file and import it in the free Redirection plugin.',
-  'Back up .htaccess first, then test each old URL in a private window after saving.',
+  'Paste old and new URLs, one pair per line, separated by a comma, tab or space.',
+  'Choose 301 for permanent moves or 302 for temporary ones.',
+  'Fix any warnings about loops, duplicates or chains.',
+  'Copy the output for your server: Apache .htaccess, Nginx, or the CSV for the WordPress Redirection plugin.',
+  'Worked example: /old-services/ to /services/. Apache gives a RewriteRule inside the mod_rewrite block in .htaccess; Nginx gives a location block with return 301 that goes inside the server block. Test both old URLs in a private window after reloading the server.',
 ], `
-        <p>Not sure which code to use? Read <a href="/blog/301-vs-302-redirects/" class="link-inline">301 vs 302 redirects explained</a>.</p>`)}
+        <p>Not sure which code to use? Read <a href="/blog/301-vs-302-redirects/" class="link-inline">301 vs 302 redirects explained</a>.</p>
+        <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>`)}
+${moreHtml(MORE_RED)}
+${reviewCta('Redirect Generator (.htaccess & Nginx)')}
 ${faqHtml('Redirect questions', RED_FAQ)}`;
 const redScript = `
 (function () {
@@ -356,7 +421,7 @@ const TOOLS = [
     lead: 'Paste your old and new URLs, pick 301 or 302, and copy ready-made rules for Apache, Nginx or the WordPress Redirection plugin. The tool flags loops, duplicates and chains.',
     main: redMain, script: redScript + '\n' + copyScript, faqs: RED_FAQ,
   },
-  ...require('./tools-pages-more')({ esc, howTo, faqHtml, HUB }),
+  ...require('./tools-pages-more')({ esc, howTo, faqHtml, HUB, moreHtml, reviewCta }),
 ];
 const CATS = ['Image tools', 'SEO tools', 'Marketing tools', 'Developer tools'];
 

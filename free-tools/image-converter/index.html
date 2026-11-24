@@ -92,6 +92,30 @@
             "@type": "Answer",
             "text": "No. Conversion uses your browser canvas, and the files never leave your device."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WebP supported by all browsers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All current major browsers display WebP. Very old browsers may not, which is why some sites keep a JPG fallback, and why WordPress and Shopify handle fallbacks for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does converting change image dimensions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The converter keeps the width and height. Use the image resizer if you also need a different size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which format is best for screenshots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PNG or lossless WebP keeps text sharp. A lossy JPG often blurs small text in screenshots."
+          }
         }
       ]
     },
@@ -187,15 +211,37 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Select one or more images.</li>
-          <li>Choose the format: WebP for websites, JPG for photos that need to open anywhere, PNG for graphics that need transparency.</li>
-          <li>Set the quality. Around 75 to 85 keeps photos looking sharp at a much smaller size.</li>
-          <li>Press <strong>Convert</strong> and download each file.</li>
+          <li>Add the images you want to convert: PNG, JPG or WebP.</li>
+          <li>Pick the output format. WebP for the web, JPG when a platform does not accept WebP, PNG when you need transparency.</li>
+          <li>Set quality for WebP or JPG (75 to 82 is a good starting point). PNG ignores quality.</li>
+          <li>Convert, check the preview, then download each file or all of them.</li>
+          <li>Worked example: a supplier sends product shots as large PNGs. Convert them to WebP at quality 80 before adding them to WooCommerce, and keep the PNG originals in a folder in case you need them again.</li>
         </ol>
         <p>Related reading: <a href="/blog/image-seo-guide/" class="link-inline">the image SEO guide</a>.</p>
         <p>Want it done for you? See <a href="/wordpress-speed-optimization/" class="link-inline">WordPress speed optimization</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common conversion mistakes</h2>
+      <ul>
+    <li><strong>Converting a logo with a transparent background to JPG.</strong> JPG has no transparency, so the background turns white or black. Use PNG or WebP.</li>
+    <li><strong>Converting JPG to PNG to "improve quality".</strong> Lost detail does not come back. The file just gets bigger.</li>
+    <li><strong>Uploading WebP where it is not accepted.</strong> Some email tools, marketplaces and older plugins still want JPG or PNG. Check before converting everything.</li>
+    <li><strong>Losing the originals.</strong> Keep a copy of the source files so you can re-export at a different size or format later.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> current WordPress accepts WebP uploads and creates WebP thumbnails. If an older theme or page builder shows a broken image, update it first. For logos in the header, transparent PNG or SVG (through a plugin that sanitises SVG) is usually cleaner than WebP.</p>
+  <p><strong>Shopify:</strong> you can upload JPG, PNG or WebP, and Shopify serves an optimised format to each browser by itself, so converting to WebP is optional there. Converting still helps when you are uploading many large PNGs, because smaller files upload faster and are easier to manage.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Image%20Converter%20(PNG%2C%20JPG%2C%20WebP)" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Image%20Converter%20(PNG%2C%20JPG%2C%20WebP)%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Image converter questions</h2></div>
@@ -204,6 +250,9 @@
           <details><summary>What happens to transparency when converting to JPG?</summary><p>JPG has no transparency, so transparent areas are filled with white.</p></details>
           <details><summary>Why is AVIF missing?</summary><p>AVIF output is shown only if your browser can encode it. If you do not see it, use WebP, or try a recent version of Chrome or Edge.</p></details>
           <details><summary>Are my files uploaded?</summary><p>No. Conversion uses your browser canvas, and the files never leave your device.</p></details>
+          <details><summary>Is WebP supported by all browsers?</summary><p>All current major browsers display WebP. Very old browsers may not, which is why some sites keep a JPG fallback, and why WordPress and Shopify handle fallbacks for you.</p></details>
+          <details><summary>Does converting change image dimensions?</summary><p>No. The converter keeps the width and height. Use the image resizer if you also need a different size.</p></details>
+          <details><summary>Which format is best for screenshots?</summary><p>PNG or lossless WebP keeps text sharp. A lossy JPG often blurs small text in screenshots.</p></details>
         </div>
       </div>
     </section>

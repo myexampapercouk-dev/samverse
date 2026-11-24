@@ -6,7 +6,7 @@ const path = require('path');
 const read = f => fs.readFileSync(path.join(__dirname, 'free-tool-scripts', f), 'utf8');
 const js = (...files) => [read('_shared.js'), ...files.map(read)].join('\n');
 
-module.exports = ({ esc, howTo, faqHtml, HUB }) => {
+module.exports = ({ esc, howTo, faqHtml, HUB, moreHtml, reviewCta }) => {
   const privacy = (extra = '') => `<p class="tool-note">Runs 100% in your browser. Nothing you add is uploaded to any server.${extra}</p>`;
   const sec = inner => `
     <section class="section" style="padding-top:10px">
@@ -23,7 +23,7 @@ ${inner}
           <input type="${type}" id="${id}" class="tool-input" ${attrs}>`;
   const read2 = (blog, blogText, svc, svcText) => (blog ? `\n        <p>Related reading: <a href="/blog/${blog}/" class="link-inline">${blogText}</a>.</p>` : '') +
     `\n        <p>Want it done for you? See <a href="/${svc}/" class="link-inline">${svcText}</a>.</p>`;
-  const page = t => t.main + howTo(t.steps, read2(...t.links)) + faqHtml(t.faqHead, t.faqs);
+  const page = t => t.main + howTo(t.steps, read2(...t.links)) + moreHtml(t.more) + reviewCta(t.name) + faqHtml(t.faqHead, t.faqs);
 
   const T = [];
 
@@ -47,14 +47,33 @@ ${inner}
           <div class="img-out checker" id="bgOut"></div>
           <div class="tool-row" id="bgDl"></div>`)),
     script: js('bg-remover.js'),
-    steps: ['Choose a photo with a clear subject, such as a product, person or logo.', 'Press <strong>Remove background</strong>. The first run downloads the model; later runs are faster.', 'Pick transparent, white or a custom background colour.', 'Download the PNG and use it on your site, store or marketplace listing.'],
-    links: ['woocommerce-product-images-wrong-size', 'fixing WooCommerce product images that show at the wrong size', 'woocommerce-developer', 'WooCommerce development'],
+    steps: [
+      'Upload a photo with a clear subject: a product, a person or a logo.',
+      'Let the tool remove the background, then check the edges at full size, especially hair, glass and shadows.',
+      'Pick transparent output, or fill with plain white for marketplaces and product grids.',
+      'Download as PNG (keeps transparency) and compress or convert it if it will go on a web page.',
+      'Worked example: a handmade product shot on a kitchen table. Remove the background, fill it white, crop to a square, then upload it so it matches the rest of the catalogue.',
+    ],
+    more: [
+      ['Common mistakes with background removal', `<ul>
+    <li><strong>Saving the result as JPG.</strong> JPG cannot hold transparency, so the background comes back as a solid colour.</li>
+    <li><strong>Poor source photos.</strong> A subject that blends into the background gives rough edges. Shoot against a plain, contrasting surface with even light.</li>
+    <li><strong>Leaving halos.</strong> A thin fringe of old background colour shows on dark pages. Zoom in before downloading.</li>
+    <li><strong>Inconsistent results across a catalogue.</strong> Mixing cut-outs with lifestyle shots in one product grid looks messy. Pick one style per collection.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> transparent PNGs can be heavy. For product grids on a white page, a white-filled WebP is lighter and looks the same. Keep a transparent PNG for use on coloured sections or in the header.</p>
+  <p><strong>Shopify:</strong> a plain white or light background across all product photos keeps collection pages tidy, and marketplace feeds such as Google Merchant Center favour clean product images with no added text or watermarks.</p>`],
+    ],
+    links: ['image-seo-guide', 'the image SEO guide', 'woocommerce-developer', 'WooCommerce development'],
     faqHead: 'Background remover questions',
     faqs: [
       ['Is my photo uploaded?', 'No. The background is removed by an AI model that runs in your browser. Only the model files are downloaded from a CDN; your photo stays on your device.'],
       ['Why is the first run slow?', 'The model files are downloaded the first time, then your browser caches them. After that it works much faster, and the speed depends on your device.'],
       ['How do I get a white background for marketplace listings?', 'After removing the background, choose White in the Background menu and download. Many marketplaces ask for a plain white background on the main product photo.'],
       ['What images work best?', 'Photos where the subject is in focus and stands out from the background. Fine hair, glass and very busy backgrounds may need touching up in an editor.'],
+      ['Are my photos uploaded anywhere?', 'No. The background removal runs in your browser, so the image never leaves your device.'],
+      ['Why are the edges rough on hair or fur?', 'Fine detail is the hardest part for any automatic tool. A sharper photo against a plain contrasting background gives cleaner edges.'],
+      ['Should product photos have a white background?', 'For shop grids and shopping feeds, a plain white or light background is the safest choice. Use lifestyle photos as the second or third image.'],
     ],
   });
   T.push({
@@ -77,7 +96,23 @@ ${inner}
           <p class="tool-msg" id="cvMsg" role="status" aria-live="polite">Your converted files appear here.</p>
           <ul class="img-list" id="cvList"></ul>`)),
     script: js('image-batch.js'),
-    steps: ['Select one or more images.', 'Choose the format: WebP for websites, JPG for photos that need to open anywhere, PNG for graphics that need transparency.', 'Set the quality. Around 75 to 85 keeps photos looking sharp at a much smaller size.', 'Press <strong>Convert</strong> and download each file.'],
+    steps: [
+      'Add the images you want to convert: PNG, JPG or WebP.',
+      'Pick the output format. WebP for the web, JPG when a platform does not accept WebP, PNG when you need transparency.',
+      'Set quality for WebP or JPG (75 to 82 is a good starting point). PNG ignores quality.',
+      'Convert, check the preview, then download each file or all of them.',
+      'Worked example: a supplier sends product shots as large PNGs. Convert them to WebP at quality 80 before adding them to WooCommerce, and keep the PNG originals in a folder in case you need them again.',
+    ],
+    more: [
+      ['Common conversion mistakes', `<ul>
+    <li><strong>Converting a logo with a transparent background to JPG.</strong> JPG has no transparency, so the background turns white or black. Use PNG or WebP.</li>
+    <li><strong>Converting JPG to PNG to "improve quality".</strong> Lost detail does not come back. The file just gets bigger.</li>
+    <li><strong>Uploading WebP where it is not accepted.</strong> Some email tools, marketplaces and older plugins still want JPG or PNG. Check before converting everything.</li>
+    <li><strong>Losing the originals.</strong> Keep a copy of the source files so you can re-export at a different size or format later.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> current WordPress accepts WebP uploads and creates WebP thumbnails. If an older theme or page builder shows a broken image, update it first. For logos in the header, transparent PNG or SVG (through a plugin that sanitises SVG) is usually cleaner than WebP.</p>
+  <p><strong>Shopify:</strong> you can upload JPG, PNG or WebP, and Shopify serves an optimised format to each browser by itself, so converting to WebP is optional there. Converting still helps when you are uploading many large PNGs, because smaller files upload faster and are easier to manage.</p>`],
+    ],
     links: ['image-seo-guide', 'the image SEO guide', 'wordpress-speed-optimization', 'WordPress speed optimization'],
     faqHead: 'Image converter questions',
     faqs: [
@@ -85,6 +120,9 @@ ${inner}
       ['What happens to transparency when converting to JPG?', 'JPG has no transparency, so transparent areas are filled with white.'],
       ['Why is AVIF missing?', 'AVIF output is shown only if your browser can encode it. If you do not see it, use WebP, or try a recent version of Chrome or Edge.'],
       ['Are my files uploaded?', 'No. Conversion uses your browser canvas, and the files never leave your device.'],
+      ['Is WebP supported by all browsers?', 'All current major browsers display WebP. Very old browsers may not, which is why some sites keep a JPG fallback, and why WordPress and Shopify handle fallbacks for you.'],
+      ['Does converting change image dimensions?', 'No. The converter keeps the width and height. Use the image resizer if you also need a different size.'],
+      ['Which format is best for screenshots?', 'PNG or lossless WebP keeps text sharp. A lossy JPG often blurs small text in screenshots.'],
     ],
   });
   T.push({
@@ -108,13 +146,33 @@ ${inner}
           <p class="tool-msg" id="cpMsg" role="status" aria-live="polite">Before and after sizes appear here.</p>
           <ul class="img-list" id="cpList"></ul>`)),
     script: js('image-batch.js'),
-    steps: ['Select the images you want to shrink.', 'Choose JPG or WebP and a quality. Start around 75 and check the result.', 'Set a maximum width. Most content images do not need to be wider than about 1600 px.', 'Press <strong>Compress</strong>, compare the sizes and download the files you want to keep.'],
+    steps: [
+      'Drop in one or more JPG, PNG or WebP images. Everything stays in your browser.',
+      'Choose WebP output and set quality between 75 and 82. That range keeps photos sharp while cutting file size hard.',
+      'Set a maximum width if the original is huge. A blog image rarely needs to be wider than the content column it sits in.',
+      'Compare the before and after preview at 100% zoom, looking at faces, text and edges, then download.',
+      'Worked example: a phone photo for a WordPress blog post. Set WebP, quality 80, max width 1600, then upload the result to the Media Library instead of the original.',
+    ],
+    more: [
+      ['Common compression mistakes', `<ul>
+    <li><strong>Compressing an image that is still far too large.</strong> Resizing does more than quality settings. Shrink the pixel size first, then compress.</li>
+    <li><strong>Compressing the same JPG again and again.</strong> Each save loses detail. Always start from the original file.</li>
+    <li><strong>Using PNG for photos.</strong> PNG is lossless and makes photos heavy. Keep PNG for logos, screenshots and images with transparency, and use WebP or JPG for photos.</li>
+    <li><strong>Going too low on quality.</strong> Below about 60, banding and blocky skies show up. Product photos lose trust fast when they look smudged.</li>
+    <li><strong>Forgetting the file name and alt text.</strong> A small file called <code>IMG_4821.webp</code> with no alt text still misses image search.</li>
+  </ul>`],
+      ['Recommended settings for WordPress and Shopify', `<p><strong>WordPress:</strong> WordPress creates several resized copies of every upload, so compress before uploading and the copies start smaller too. WebP uploads are supported in current WordPress versions. If you already run an optimisation plugin, avoid double compression: either compress here and switch the plugin's compression off, or let the plugin do it and skip this step. For featured images, match the width your theme actually displays.</p>
+  <p><strong>Shopify:</strong> Shopify's CDN converts and resizes images for each device automatically, so your job is to upload a clean, sensibly sized original. Compress very large product photos at quality 80 to 82 before upload to keep the admin and theme editor quick, and keep all product images in a collection the same aspect ratio so the grid lines up.</p>`],
+    ],
     links: ['image-optimization-wordpress', 'image optimization for WordPress', 'wordpress-speed-optimization', 'WordPress speed optimization'],
     faqHead: 'Image compressor questions',
     faqs: [
       ['What quality should I use?', 'For most photos, a quality between 70 and 85 looks almost the same as the original at a much smaller file size. Check the downloaded file and adjust if you see blur or blocky areas.'],
       ['Why did a file get bigger?', 'Images that are already well compressed, or simple graphics saved as PNG, can grow when re-encoded. The tool tells you, so you can keep the original.'],
       ['Does resizing help as much as compression?', 'Often more. An image shown 800 px wide on the page but saved 4000 px wide wastes a lot of data, so setting a maximum width is one of the biggest savings.'],
+      ['Will compressing images make my website faster?', 'Usually yes, because images are often the heaviest part of a page. The biggest gains come from resizing oversized images and serving WebP, then from lazy loading images below the fold.'],
+      ['What quality setting should I use for WebP?', 'Between 75 and 82 suits most photos. Go to the top of that range for product photos and images with fine text, and the bottom for large background images.'],
+      ['Should I compress images that are already on my site?', 'Yes for the heaviest ones, such as homepage banners and top product photos. Replace the file with the same name, or update the image in the page, and clear any cache.'],
     ],
   });
   T.push({
@@ -143,13 +201,32 @@ ${inner}
           <div class="img-out" id="rzOut"></div>
           <div class="tool-row" id="rzDl"></div>`)),
     script: js('resizer.js'),
-    steps: ['Choose your image.', 'Pick a preset, or type a custom width and height.', 'Choose crop to fill, fit with padding, or exact resize.', 'Check the preview and download.'],
+    steps: [
+      'Add your image and choose a preset or type an exact width and height.',
+      'Choose crop to fill the box, or fit to keep the whole image with no cropping.',
+      'Drag the crop area so the subject (a face, a product) stays in frame.',
+      'Download the resized file, then compress it with the image compressor if it is still heavy.',
+      'Worked example: product photos of mixed shapes for a WooCommerce shop. Crop every one to a 1:1 square at the same pixel size so the shop grid lines up with no gaps.',
+    ],
+    more: [
+      ['Common resizing mistakes', `<ul>
+    <li><strong>Making small images bigger.</strong> Upscaling adds blur, not detail. Start from the largest original you have.</li>
+    <li><strong>Mixed aspect ratios in one grid.</strong> Product and gallery grids look broken when some images are square and some are tall.</li>
+    <li><strong>Cropping off the important part.</strong> Check that heads, product edges and text are not cut, especially in banners that crop again on mobile.</li>
+    <li><strong>Uploading at camera size.</strong> A 4000-pixel-wide photo in a 800-pixel column wastes data on every visit.</li>
+  </ul>`],
+      ['WordPress and Shopify sizes', `<p><strong>WordPress and WooCommerce:</strong> your theme decides the display sizes. WooCommerce has image settings under Appearance, Customize, WooCommerce, Product Images, where you set the thumbnail crop (for example 1:1). After you change them, existing thumbnails need regenerating with a regenerate-thumbnails plugin. Resize uploads to roughly the largest size your theme shows.</p>
+  <p><strong>Shopify:</strong> square product images work with almost every theme. Keep all products in the same ratio, and check your theme's documentation for the recommended collection and slideshow banner sizes, since these vary between themes.</p>`],
+    ],
     links: ['woocommerce-product-images-wrong-size', 'why WooCommerce product images show at the wrong size', 'woocommerce-developer', 'WooCommerce development'],
     faqHead: 'Image resizer questions',
     faqs: [
       ['What size should an Open Graph image be?', '1200x630 pixels is the widely used size for Facebook, LinkedIn and WhatsApp link previews. Keep important text away from the edges.'],
       ['What is the difference between crop and fit?', 'Crop to fill covers the whole frame and trims the edges that do not fit. Fit inside keeps the whole image and fills the empty space with a colour.'],
       ['Why do my WooCommerce images look different sizes?', 'Products look uneven when the photos have different aspect ratios. Cropping every photo to the same square size, such as 800x800, keeps the shop grid neat.'],
+      ['What size should product images be?', 'Use one consistent ratio, usually square, at a size large enough for zoom on your theme. Consistency matters more than any single magic number.'],
+      ['Does resizing reduce quality?', 'Shrinking an image keeps it sharp. Enlarging it beyond the original size makes it soft.'],
+      ['Why do my images look cropped differently on mobile?', 'Many themes crop banners to a different ratio on small screens. Keep the subject in the centre or upload a separate mobile banner if the theme allows it.'],
     ],
   });
   T.push({
@@ -202,13 +279,33 @@ ${field('mcUrl', 'Page URL (optional)', 'placeholder="https://example.com/servic
           <div class="serp" id="mcPv"><div class="serp-url" id="mcPvUrl"></div><div class="serp-title" id="mcPvTitle"></div><div class="serp-desc" id="mcPvDesc"></div></div>
           ${hints('mcHints')}`)),
     script: js('meta-checker.js'),
-    steps: ['Type or paste your page title.', 'Add the meta description.', 'Switch between desktop and mobile previews.', 'Shorten anything marked as likely to be cut off, keeping the main keyword near the start.'],
+    steps: [
+      'Paste your page title and meta description.',
+      'Watch the preview and the pixel-width bars. Titles cut off at about 600 pixels on desktop, so put the important words first.',
+      'Check the hints for missing keywords, repeated words and the brand name position.',
+      'Copy the final text into your SEO plugin or platform settings.',
+      'Worked example: "WordPress Speed Optimization in Pune | Samverse" puts the service and city first and the brand last, and the description answers who it is for and what to do next.',
+    ],
+    more: [
+      ['Common meta tag mistakes', `<ul>
+    <li><strong>The same title on many pages.</strong> Every indexed page needs its own title that matches its own content.</li>
+    <li><strong>Brand first, topic last.</strong> On a long title the topic gets cut off. Put the topic first.</li>
+    <li><strong>Keyword stuffing.</strong> Repeating the keyword three times reads as spam and Google may rewrite it.</li>
+    <li><strong>A description that does not match the page.</strong> Google often replaces it with page text if it does not answer the query.</li>
+    <li><strong>No call to action.</strong> The description is your ad copy in search. Say what the reader gets.</li>
+  </ul>`],
+      ['Where to put them in WordPress and Shopify', `<p><strong>WordPress:</strong> with Yoast SEO or Rank Math, edit the SEO title and meta description in the box below the editor or in the sidebar. Check the site-wide title template too, so the brand is not added twice.</p>
+  <p><strong>Shopify:</strong> scroll to "Search engine listing" at the bottom of a product, collection or page and click Edit. The homepage title and description are under Online Store, Preferences. Some themes append the store name automatically, so leave it out of the field if yours does.</p>`],
+    ],
     links: ['write-meta-titles-descriptions', 'how to write meta titles and descriptions', 'wordpress-seo-services', 'WordPress SEO services'],
     faqHead: 'Meta tag length questions',
     faqs: [
       ['How long should a title tag be?', 'Google truncates titles by pixel width rather than a fixed character count. Around 50 to 60 characters usually fits on desktop, but wide letters take more space, which is why the tool measures pixels.'],
       ['How long should a meta description be?', 'Aim for roughly 120 to 155 characters. Google may show more or less depending on the search and the device.'],
       ['Why does Google show a different title or description?', 'Google can rewrite them when it thinks other text on the page matches the search better. A clear, accurate title and description that match the page make this less likely.'],
+      ['Why does Google show a different title from mine?', 'Google rewrites titles that are too long, stuffed with keywords or do not match the page. A clear, accurate title close to the H1 is rewritten less often.'],
+      ['Does the meta description affect rankings?', 'Not directly. It affects whether people click, which is why it is worth writing for each important page.'],
+      ['Should every page have a meta description?', 'Every page you want people to find should. For thin or utility pages, Google will generate one from the page text.'],
     ],
   });
   T.push({
@@ -233,7 +330,24 @@ ${field('rbSitemap', 'Sitemap URL', 'placeholder="https://example.com/sitemap_in
       panel(`${out('rbOut', 'robots.txt', 14)}
           ${hints('rbHints')}`)),
     script: js('robots.js'),
-    steps: ['Keep the WordPress defaults ticked unless you have a reason not to.', 'Add your sitemap URL.', 'Add any extra paths to block, such as cart or checkout pages.', 'Copy the result into a file named robots.txt at your site root, or into the robots.txt editor in Yoast or Rank Math.'],
+    steps: [
+      'Start from a preset: WordPress, WooCommerce or Shopify-style rules.',
+      'Add the paths you want crawlers to skip, such as internal search results and cart pages.',
+      'Add your sitemap URL so search engines can find it.',
+      'Copy the file, upload it to the root of your domain as /robots.txt, and check it in Search Console.',
+      'Worked example for WooCommerce: User-agent: * then Disallow: /cart/, Disallow: /checkout/, Disallow: /my-account/, Disallow: /?s=, then Sitemap: https://example.com/sitemap_index.xml.',
+    ],
+    more: [
+      ['Common robots.txt mistakes', `<ul>
+    <li><strong>Disallow: / left over from staging.</strong> This blocks the whole site. Check it after every launch or migration.</li>
+    <li><strong>Blocking CSS, JS or /wp-content/.</strong> Google needs these to render the page. Do not block theme or plugin files.</li>
+    <li><strong>Using robots.txt to hide a page from Google.</strong> A blocked page can still be indexed from links. Use a noindex tag instead and let Google crawl it.</li>
+    <li><strong>Blocking /wp-admin/ entirely.</strong> If you block it, add Allow: /wp-admin/admin-ajax.php, as WordPress does by default.</li>
+    <li><strong>Forgetting the sitemap line.</strong> It is a simple way to point every crawler at your sitemap.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> WordPress serves a virtual robots.txt until you upload a real file. Yoast SEO and Rank Math let you edit it from the dashboard. For WooCommerce, disallow cart, checkout and my-account, which have no search value. Also check "Discourage search engines" is off under Settings, Reading.</p>
+  <p><strong>Shopify:</strong> Shopify generates robots.txt for you and already blocks cart, checkout and internal search. To change it you edit the <code>robots.txt.liquid</code> theme template. Only add rules there if you have a clear reason, such as filtered collection URLs being crawled.</p>`],
+    ],
     links: ['robots-txt-explained', 'robots.txt explained', 'wordpress-seo-services', 'WordPress SEO services'],
     faqHead: 'Robots.txt questions',
     faqs: [
@@ -241,6 +355,9 @@ ${field('rbSitemap', 'Sitemap URL', 'placeholder="https://example.com/sitemap_in
       ['Should I block /wp-content/ or /wp-includes/?', 'No. Google needs your CSS, JavaScript and images to render pages properly, and many of those files live in these folders.'],
       ['Where does robots.txt go?', 'At the root of your domain, so it opens at example.com/robots.txt. Each subdomain needs its own file.'],
       ['What does Disallow: / do?', 'It asks all crawlers not to crawl any page on the site. It is useful on staging sites, but on a live site it can make your pages drop out of search.'],
+      ['Where do I upload robots.txt?', 'At the root of the domain, so it opens at https://yourdomain.com/robots.txt. Subfolders are ignored.'],
+      ['How do I test my robots.txt?', 'Open the robots.txt report in Google Search Console, and use URL Inspection on an important page to confirm it is not blocked.'],
+      ['Can robots.txt remove a page from Google?', 'No. To remove a page, use a noindex tag or the Removals tool in Search Console, and keep the page crawlable so Google sees the tag.'],
     ],
   });
   T.push({
@@ -266,13 +383,32 @@ ${field('ogHandle', 'X (Twitter) handle, optional', 'placeholder="@yourbrand"')}
           ${hints('ogHints')}
 ${out('ogOut', 'Meta tags', 12)}`)),
     script: js('og.js'),
-    steps: ['Enter the title and description you want people to see when the link is shared.', 'Add the full page URL and a full https:// image URL.', 'Check the live preview and the warnings.', 'Copy the tags into the &lt;head&gt; of the page. On WordPress, Yoast and Rank Math have social fields that do this for you.'],
-    links: ['on-page-seo-checklist', 'the on-page SEO checklist', 'wordpress-seo-services', 'WordPress SEO services'],
+    steps: [
+      'Enter the page URL, title and a short description written for social sharing.',
+      'Add the share image URL. Use a 1200 x 630 pixel image with any text kept away from the edges.',
+      'Choose the card type (summary_large_image for most pages) and copy the generated meta tags.',
+      'Paste the tags into the page head, or fill the same fields in your SEO plugin, then test the URL in the platform preview tools.',
+      'Worked example: a blog post shared in WhatsApp groups. Set og:image to a 1200 x 630 cover with the post title in large type, so the preview reads clearly even at thumbnail size.',
+    ],
+    more: [
+      ['Common Open Graph mistakes', `<ul>
+    <li><strong>A wrong-sized image.</strong> Small or tall images get cropped or shown as a tiny thumbnail. 1200 x 630 works across Facebook, LinkedIn, WhatsApp and X.</li>
+    <li><strong>Relative image URLs.</strong> og:image must be a full https URL.</li>
+    <li><strong>Old previews after changes.</strong> Platforms cache previews. Re-scrape the URL in the platform's debugger after you update tags.</li>
+    <li><strong>Duplicate tags.</strong> A theme and an SEO plugin both adding og tags can make platforms pick the wrong image.</li>
+    <li><strong>Heavy share images.</strong> Very large files may not load in WhatsApp previews. Keep the image compressed.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> Yoast SEO and Rank Math add Open Graph tags for you. Set a default share image in the plugin's social settings, and a per-post image in the post's social tab. Avoid also pasting manual tags, or you will get duplicates.</p>
+  <p><strong>Shopify:</strong> most themes output og tags from the product image or the social sharing image set under Online Store, Preferences. Use a 1200 x 630 image there for the homepage and pages that have no product image.</p>`],
+    ],
+    links: ['repurpose-website-content-social-media', 'repurposing website content for social media', 'wordpress-seo-services', 'WordPress SEO services'],
     faqHead: 'Open Graph questions',
     faqs: [
       ['What image size should I use?', '1200x630 pixels works well for most platforms. Use a JPG or PNG under a few hundred KB and keep text away from the edges.'],
       ['Why does Facebook or WhatsApp still show the old preview?', 'Platforms cache previews. Use the Facebook Sharing Debugger to scrape the URL again; WhatsApp usually updates after some time or with a new URL.'],
       ['Do Open Graph tags help SEO?', 'They do not change rankings directly, but a clear preview can earn more clicks when your pages are shared.'],
+      ['Why is WhatsApp showing no image for my link?', 'Usually the og:image is missing, not a full https URL, or too heavy. Fix the tag, then share the link again; WhatsApp may cache the old preview for a while.'],
+      ['Do I need separate Twitter card tags?', 'X falls back to Open Graph tags for most fields. Adding twitter:card set to summary_large_image makes sure the large image layout is used.'],
     ],
   });
   T.push({
@@ -326,13 +462,33 @@ ${field('utm_content', 'utm_content (ad or link variant, optional)')}
           <textarea id="utmBulk" class="tool-input" rows="5"></textarea>
 ${out('utmBulkOut', 'Tagged URLs', 6)}`)),
     script: js('utm.js'),
-    steps: ['Paste the page URL you want people to land on.', 'Fill in source, medium and campaign. Keep the names consistent across campaigns.', 'Copy the tracking link, or paste a list of URLs in bulk mode.', 'In GA4, find the results under Reports, Acquisition, Traffic acquisition, with the session campaign dimension.'],
+    steps: [
+      'Paste the page URL you want people to land on.',
+      'Fill in source, medium and campaign. Keep names lowercase and consistent across campaigns.',
+      'Copy the tracking link, or paste a list of URLs in bulk mode.',
+      'Worked example for a Google Ads campaign without auto-tagging: utm_source=google, utm_medium=cpc, utm_campaign=diwali_sale, utm_term={keyword}. If auto-tagging (gclid) is on, you usually do not need UTMs on Google Ads at all.',
+      'In GA4, find the results under Reports, Acquisition, Traffic acquisition, with the session campaign dimension.',
+    ],
+    more: [
+      ['Common UTM mistakes', `<ul>
+    <li><strong>Mixing cases and spellings.</strong> "Facebook", "facebook" and "fb" become three sources. Agree a naming list and stick to it.</li>
+    <li><strong>Tagging internal links.</strong> A UTM on a link from your own homepage restarts the session with the wrong source.</li>
+    <li><strong>Unusual mediums.</strong> GA4 groups traffic into channels using medium values such as cpc, email, social and paid_social. Made-up mediums land in "Unassigned".</li>
+    <li><strong>Spaces in values.</strong> Use underscores or hyphens instead.</li>
+    <li><strong>Tagging links that redirect and drop the query string.</strong> Click your tagged link once and check the parameters survive in the address bar.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> some caching and security setups strip or ignore query strings. Test a tagged link while logged out. If you use a redirect plugin, make sure it passes query parameters through.</p>
+  <p><strong>Shopify:</strong> UTM tags work on product, collection and landing pages, and Shopify's own reports show sessions by UTM as well. Use the same naming in both places so GA4 and Shopify figures can be compared.</p>`],
+    ],
     links: ['utm-tags-explained', 'UTM tags explained', 'landing-page-design', 'landing page design'],
     faqHead: 'UTM builder questions',
     faqs: [
       ['Which UTM tags are required?', 'GA4 needs utm_source to attribute the visit, and you should add utm_medium and utm_campaign too. utm_term, utm_content and utm_id are optional.'],
       ['Are UTM values case-sensitive?', 'Yes. "Facebook" and "facebook" show as two sources, which is why the tool lowercases values by default.'],
       ['Should I use UTM tags on internal links?', 'No. Tagging links between your own pages starts a new session with the wrong source. Use them only on links from outside your site.'],
+      ['Do I need UTM tags for Google Ads?', 'Not if auto-tagging is on and Google Ads is linked to GA4. Use UTMs for everything else: email, WhatsApp, social posts, QR codes and other ad platforms.'],
+      ['What should I use as utm_medium for WhatsApp?', 'Pick one value and keep it, such as "social" or "messaging", with utm_source=whatsapp. Consistency is what makes the report useful.'],
+      ['Do UTM tags affect SEO?', 'Not when used on links from outside your site. Your pages should have a canonical tag pointing to the clean URL so tagged versions are not treated as separate pages.'],
     ],
   });
   T.push({
@@ -356,13 +512,33 @@ ${out('waHtml', 'HTML button snippet', 3)}
           <div class="img-out" id="waQr"></div>
           <div class="tool-row" id="waQrDl"></div>`)),
     script: js('whatsapp.js'),
-    steps: ['Enter your country code and WhatsApp number (no leading 0).', 'Type the message customers should see ready in their chat box.', 'Copy the link or the HTML snippet for your site.', 'Make a QR code and download it as PNG or SVG for flyers, shop counters and packaging.'],
+    steps: [
+      'Enter the WhatsApp number with country code and no plus sign, spaces or leading zero (for India, 91 followed by the 10-digit number).',
+      'Write a pre-filled message that tells you where the lead came from, such as "Hi, I saw your website and want a quote for...".',
+      'Copy the wa.me link or download the QR code.',
+      'Place it on your site as a button, and add UTM tags to the page link you share elsewhere so GA4 still sees the source.',
+      'Worked example: a clinic adds a "Book on WhatsApp" button with the message "Hi, I want to book an appointment" on its contact page, and a QR code of the same link on the front-desk poster.',
+    ],
+    more: [
+      ['Common WhatsApp link mistakes', `<ul>
+    <li><strong>Wrong number format.</strong> Including +, spaces, dashes or a leading 0 breaks the link.</li>
+    <li><strong>No pre-filled message.</strong> A blank chat makes visitors hesitate, and you cannot tell which page they came from.</li>
+    <li><strong>A floating button that covers other buttons.</strong> On mobile, keep it clear of "Add to cart", cookie banners and the menu.</li>
+    <li><strong>Not tracking clicks.</strong> Without a GA4 event on the button, WhatsApp leads look like nothing happened.</li>
+    <li><strong>Using a personal number with no business hours.</strong> A WhatsApp Business account with an away message sets expectations.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> you can add the link to any button block, or use a lightweight click-to-chat plugin. Track clicks in Google Tag Manager with a click trigger on links containing <code>wa.me</code>, sent to GA4 as a lead event.</p>
+  <p><strong>Shopify:</strong> add the link to a button in the theme editor, or use a chat app. On product pages, a pre-filled message that includes the product name helps you answer faster. Keep the button away from the sticky add-to-cart bar on mobile.</p>`],
+    ],
     links: ['whatsapp-on-business-website', 'adding WhatsApp to a business website', 'wordpress-website-development', 'WordPress website development'],
     faqHead: 'WhatsApp link questions',
     faqs: [
       ['Does the link work for WhatsApp Business numbers?', 'Yes. wa.me links work for both personal and WhatsApp Business numbers.'],
       ['Why do I need the country code?', 'wa.me links use the full international number without the plus sign or leading zero, for example 91 followed by the 10-digit number in India.'],
       ['Can I change the message later?', 'The message is part of the link, so a new message needs a new link and a new QR code. If you print QR codes, keep the message general.'],
+      ['Does the wa.me link work on desktop?', 'Yes. It opens WhatsApp Web or the desktop app, or asks the visitor to choose.'],
+      ['Can I add the product name to the message automatically?', 'Yes, with a little theme code that builds the link from the page title. The generator gives you the base link to start from.'],
+      ['Will the WhatsApp QR code stop working?', 'No. It holds the wa.me link directly, so it keeps working as long as the number is active on WhatsApp.'],
     ],
   });
   T.push({
@@ -391,14 +567,33 @@ ${out('waHtml', 'HTML button snippet', 3)}
           <div class="img-out" id="qrBox"></div>
           <div class="tool-row" id="qrDl"></div>`)),
     script: js('qr.js'),
-    steps: ['Pick the type: URL, text, WiFi or contact card.', 'Fill in the details. The code updates as you type.', 'Set the size and colours. Keep strong contrast, dark on light, so phones can read it.', 'Scan it with your phone to test, then download PNG for screens or SVG for print.'],
-    links: ['whatsapp-marketing-small-business', 'WhatsApp marketing for small businesses', 'wordpress-website-development', 'WordPress website development'],
+    steps: [
+      'Choose what the code should open: a web page, WhatsApp chat, phone number, email or plain text.',
+      'Paste the link. For web pages, add UTM tags first with the UTM builder so scans show up in GA4.',
+      'Pick colours with strong contrast (dark code on a light background) and add a quiet margin around it.',
+      'Download PNG for screens or SVG for print, then test the printed proof with two different phones before printing in bulk.',
+      'Worked example: a table card in a restaurant. Link to the menu page with utm_source=table_card and utm_medium=qr, download SVG, and print it at least a few centimetres wide.',
+    ],
+    more: [
+      ['Common QR code mistakes', `<ul>
+    <li><strong>Printing before testing.</strong> Always scan the final printed proof, not only the screen preview.</li>
+    <li><strong>Low contrast or inverted colours.</strong> Light codes on dark backgrounds and pastel codes fail on many phone cameras.</li>
+    <li><strong>Too small or too close to the edge.</strong> Leave a clear margin around the code and size it for the scanning distance.</li>
+    <li><strong>Linking to a page that may move.</strong> If the URL changes, printed codes break. Use a stable page, and set up a 301 redirect if you ever change it.</li>
+    <li><strong>No tracking.</strong> Without UTM tags, scans look like direct visits in analytics.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> point the code at a short, permanent URL such as <code>/menu/</code> or <code>/offer/</code>. If you later change the page, add a 301 redirect with the Redirection plugin so old prints keep working.</p>
+  <p><strong>Shopify:</strong> link to a collection or a specific product rather than the homepage, so the scan lands where the buyer wants to be. Shopify adds a redirect automatically when you change a product handle, but check it under Navigation, URL Redirects.</p>`],
+    ],
+    links: ['qr-codes-for-business-website', 'QR codes for a business website', 'wordpress-website-development', 'WordPress website development'],
     faqHead: 'QR code questions',
     faqs: [
       ['Do these QR codes expire?', 'No. They are static codes with the data inside them, so they keep working as long as the link or details inside stay valid.'],
       ['PNG or SVG?', 'PNG for websites, slides and social posts. SVG for print, because it scales to any size without going blurry.'],
       ['What does error correction do?', 'Higher levels let the code still scan when part of it is damaged or covered, but make it denser. Medium suits most uses.'],
       ['Can I track scans?', 'Not with a static code. Put a UTM-tagged URL in the code and you can see the visits in Google Analytics.'],
+      ['Can I track how many people scanned my QR code?', 'Yes, by adding UTM tags to the link before creating the code. Scans then show as visits from that source and medium in GA4.'],
+      ['PNG or SVG for printing?', 'SVG, because it stays sharp at any size. PNG is fine for screens, social posts and documents.'],
     ],
   });
 
@@ -450,13 +645,31 @@ ${out('jsOut', 'Result', 18)}`)),
           <p class="tool-msg" id="cvMsg" role="status"></p>
 ${out('cvOut', 'Converted values', 3)}`)),
     script: js('contrast.js'),
-    steps: ['Enter or pick the text colour and the background colour.', 'Read the contrast ratio and the AA and AAA results.', 'Adjust the colours until normal text passes AA (4.5:1) at least.', 'Use the converter to get the same colour as HEX, RGB or HSL for your CSS or theme settings.'],
-    links: ['choose-website-colours-fonts', 'choosing website colours and fonts', 'website-redesign', 'website redesign'],
+    steps: [
+      'Enter the text colour and the background colour as hex, RGB or HSL.',
+      'Read the contrast ratio and the WCAG results for normal text, large text and UI parts.',
+      'If it fails, use the suggested darker or lighter shade, or nudge the lightness until it passes AA.',
+      'Copy the passing colours into your theme settings or CSS.',
+      'Worked example: light grey #999999 text on white fails AA for body text. Darken it toward #595959 and check again until normal text passes, then use that grey for captions site-wide.',
+    ],
+    more: [
+      ['Common contrast mistakes', `<ul>
+    <li><strong>Light grey body text.</strong> It looks elegant on a designer's screen and is hard to read on a phone in sunlight.</li>
+    <li><strong>Text over photos.</strong> The contrast changes across the image. Add a solid or semi-opaque overlay behind the text.</li>
+    <li><strong>Forgetting button and link states.</strong> Check hover, focus and disabled colours, not only the default.</li>
+    <li><strong>Brand colour as text colour.</strong> A bright brand yellow or light blue often fails on white. Use it for shapes and use a darker shade for text.</li>
+    <li><strong>Relying on colour alone.</strong> Error messages and links should also use icons, text or underlines.</li>
+  </ul>`],
+      ['WordPress and Shopify notes', `<p><strong>WordPress:</strong> in block themes, set colours once in Appearance, Editor, Styles, so every block uses passing pairs. The block editor also warns about low contrast on paragraph and button blocks. In classic themes, set them in the Customizer or theme options.</p>
+  <p><strong>Shopify:</strong> Online Store 2.0 themes use colour schemes under Theme settings, Colors. Check each scheme's text, background and button pairs here, because sections reuse those schemes across the whole store.</p>`],
+    ],
+    links: ['website-accessibility-basics', 'website accessibility basics', 'website-redesign', 'website redesign'],
     faqHead: 'Colour contrast questions',
     faqs: [
       ['What contrast ratio do I need?', 'WCAG 2 level AA asks for at least 4.5:1 for normal text and 3:1 for large text. Level AAA asks for 7:1 and 4.5:1.'],
       ['What counts as large text?', 'Text of at least 18 point (about 24px), or 14 point (about 18.66px) when bold.'],
       ['Which colour formats can I enter?', 'HEX like #7C3AED or #fff, rgb(124, 58, 237), and hsl(262, 83%, 58%).'],
+      ['Does colour contrast affect SEO?', 'Not as a direct ranking factor, but readable pages keep visitors longer, and Lighthouse flags low contrast in its accessibility score.'],
     ],
   });
 

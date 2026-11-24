@@ -92,6 +92,30 @@
             "@type": "Answer",
             "text": "It asks all crawlers not to crawl any page on the site. It is useful on staging sites, but on a live site it can make your pages drop out of search."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I upload robots.txt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the root of the domain, so it opens at https://yourdomain.com/robots.txt. Subfolders are ignored."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I test my robots.txt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the robots.txt report in Google Search Console, and use URL Inspection on an important page to confirm it is not blocked."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can robots.txt remove a page from Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. To remove a page, use a noindex tag or the Removals tool in Search Console, and keep the page crawlable so Google sees the tag."
+          }
         }
       ]
     },
@@ -192,15 +216,38 @@
       <div class="container faq-wrap tool-howto">
         <h2>How to use it</h2>
         <ol>
-          <li>Keep the WordPress defaults ticked unless you have a reason not to.</li>
-          <li>Add your sitemap URL.</li>
-          <li>Add any extra paths to block, such as cart or checkout pages.</li>
-          <li>Copy the result into a file named robots.txt at your site root, or into the robots.txt editor in Yoast or Rank Math.</li>
+          <li>Start from a preset: WordPress, WooCommerce or Shopify-style rules.</li>
+          <li>Add the paths you want crawlers to skip, such as internal search results and cart pages.</li>
+          <li>Add your sitemap URL so search engines can find it.</li>
+          <li>Copy the file, upload it to the root of your domain as /robots.txt, and check it in Search Console.</li>
+          <li>Worked example for WooCommerce: User-agent: * then Disallow: /cart/, Disallow: /checkout/, Disallow: /my-account/, Disallow: /?s=, then Sitemap: https://example.com/sitemap_index.xml.</li>
         </ol>
         <p>Related reading: <a href="/blog/robots-txt-explained/" class="link-inline">robots.txt explained</a>.</p>
         <p>Want it done for you? See <a href="/wordpress-seo-services/" class="link-inline">WordPress SEO services</a>.</p>
       </div>
     </section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>Common robots.txt mistakes</h2>
+      <ul>
+    <li><strong>Disallow: / left over from staging.</strong> This blocks the whole site. Check it after every launch or migration.</li>
+    <li><strong>Blocking CSS, JS or /wp-content/.</strong> Google needs these to render the page. Do not block theme or plugin files.</li>
+    <li><strong>Using robots.txt to hide a page from Google.</strong> A blocked page can still be indexed from links. Use a noindex tag instead and let Google crawl it.</li>
+    <li><strong>Blocking /wp-admin/ entirely.</strong> If you block it, add Allow: /wp-admin/admin-ajax.php, as WordPress does by default.</li>
+    <li><strong>Forgetting the sitemap line.</strong> It is a simple way to point every crawler at your sitemap.</li>
+  </ul>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <h2>WordPress and Shopify notes</h2>
+      <p><strong>WordPress:</strong> WordPress serves a virtual robots.txt until you upload a real file. Yoast SEO and Rank Math let you edit it from the dashboard. For WooCommerce, disallow cart, checkout and my-account, which have no search value. Also check "Discourage search engines" is off under Settings, Reading.</p>
+  <p><strong>Shopify:</strong> Shopify generates robots.txt for you and already blocks cart, checkout and internal search. To change it you edit the <code>robots.txt.liquid</code> theme template. Only add rules there if you have a clear reason, such as filtered collection URLs being crawled.</p>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container faq-wrap">
+      <aside class="inline-cta">
+        <strong>Free website review</strong>
+        <p>Send your website address and get a short, honest review of speed, SEO and enquiry flow, free and with no obligation.</p>
+        <div><a href="/contact/?topic=Free%20website%20review%3A%20Robots.txt%20Generator" class="link-inline">Request a free review →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20used%20your%20free%20Robots.txt%20Generator%20and%20want%20a%20website%20review." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </aside>
+    </div></section>
     <section class="section">
       <div class="container faq-wrap">
         <div class="section-head"><span class="eyebrow">FAQ</span><h2>Robots.txt questions</h2></div>
@@ -209,6 +256,9 @@
           <details><summary>Should I block /wp-content/ or /wp-includes/?</summary><p>No. Google needs your CSS, JavaScript and images to render pages properly, and many of those files live in these folders.</p></details>
           <details><summary>Where does robots.txt go?</summary><p>At the root of your domain, so it opens at example.com/robots.txt. Each subdomain needs its own file.</p></details>
           <details><summary>What does Disallow: / do?</summary><p>It asks all crawlers not to crawl any page on the site. It is useful on staging sites, but on a live site it can make your pages drop out of search.</p></details>
+          <details><summary>Where do I upload robots.txt?</summary><p>At the root of the domain, so it opens at https://yourdomain.com/robots.txt. Subfolders are ignored.</p></details>
+          <details><summary>How do I test my robots.txt?</summary><p>Open the robots.txt report in Google Search Console, and use URL Inspection on an important page to confirm it is not blocked.</p></details>
+          <details><summary>Can robots.txt remove a page from Google?</summary><p>No. To remove a page, use a noindex tag or the Removals tool in Search Console, and keep the page crawlable so Google sees the tag.</p></details>
         </div>
       </div>
     </section>
