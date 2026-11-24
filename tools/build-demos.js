@@ -79,9 +79,117 @@ const T = {
       ['Quick turnaround', 'Call or WhatsApp to book a slot.'],
     ],
   },
+  'eye clinic': {
+    label: 'Eye Clinic', color: '#1d5fa8', soft: '#eaf1fa',
+    tagline: 'Caring eye check-ups and treatment for clear, healthy vision.',
+    services: [
+      ['Eye Check-ups', 'Complete eye examinations for adults and children.'],
+      ['Cataract Care', 'Assessment and treatment options for cataract.'],
+      ['Glaucoma Screening', 'Pressure checks to help catch glaucoma early.'],
+      ['Diabetic Eye Check', 'Retina checks for patients with diabetes.'],
+      ['Spectacles & Lenses', 'Prescription glasses and contact lens guidance.'],
+      ["Children's Eye Care", 'Vision checks and care for kids.'],
+    ],
+    why: [
+      ['Careful examination', 'Each eye check is done thoroughly and explained.'],
+      ['Clear guidance', 'Treatment options discussed before any procedure.'],
+      ['All ages', 'Care for children, adults and senior patients.'],
+      ['Easy appointments', 'Call or WhatsApp to book a convenient time.'],
+    ],
+  },
+  'ivf centre': {
+    label: 'IVF & Fertility Centre', color: '#9b3d6e', soft: '#f8edf3',
+    tagline: 'Supportive fertility care at every step of your journey.',
+    services: [
+      ['Fertility Consultation', 'Understand your options with a detailed consultation.'],
+      ['Fertility Tests', 'Evaluation for both partners to plan the next steps.'],
+      ['IUI', 'Intrauterine insemination where suitable.'],
+      ['IVF / ICSI', 'Assisted reproduction guided by your doctor.'],
+      ['Pregnancy Care', 'Follow-up and monitoring in early pregnancy.'],
+      ['Counselling & Support', 'Guidance and emotional support through treatment.'],
+    ],
+    why: [
+      ['Private consultations', 'Your concerns discussed in confidence.'],
+      ['Clear treatment plans', 'Each step and its cost explained upfront.'],
+      ['Couple-focused care', 'Both partners supported through the process.'],
+      ['Easy appointments', 'Call or WhatsApp to book a consultation.'],
+    ],
+  },
+  'nursing home': {
+    label: 'Nursing Home', color: '#a23b5a', soft: '#f9edf1',
+    tagline: 'Trusted care for mothers and families, close to home.',
+    services: [
+      ['Pregnancy Care', 'Regular check-ups and monitoring through pregnancy.'],
+      ['Delivery Care', 'Care during normal and caesarean deliveries.'],
+      ['Gynaecology Consultation', "Consultations for women's health concerns."],
+      ['Post-Delivery Care', 'Support for mother and baby after delivery.'],
+      ['Infertility Guidance', 'Consultation and guidance for couples.'],
+      ['Indoor Admission', 'Inpatient care when admission is needed.'],
+    ],
+    why: [
+      ['Personal attention', 'Patients and families kept informed at each stage.'],
+      ['Clean facility', 'Hygiene followed in wards and procedure rooms.'],
+      ['Clear guidance', 'Treatment options explained before they begin.'],
+      ['Easy appointments', 'Call or WhatsApp to book a visit.'],
+    ],
+  },
+  'jeweller': {
+    label: 'Jewellers', color: '#8a6d1f', soft: '#f8f3e4',
+    tagline: 'Beautiful jewellery for every occasion.',
+    services: [
+      ['Bridal Jewellery', 'Sets and pieces for weddings and special days.'],
+      ['Daily Wear Jewellery', 'Light, elegant designs for everyday use.'],
+      ['Silver Jewellery', 'Silver ornaments, gifts and articles.'],
+      ['Rings & Earrings', 'A range of designs to choose from.'],
+      ['Custom Orders', 'Pieces made to your design and requirement.'],
+      ['Gifting', 'Jewellery gifts for festivals and celebrations.'],
+    ],
+    why: [
+      ['Wide collection', 'Traditional and modern designs in store.'],
+      ['Transparent billing', 'Weight and charges shown clearly on the bill.'],
+      ['Personal service', 'Help choosing the right piece for the occasion.'],
+      ['Easy enquiry', 'Call or WhatsApp to ask about designs.'],
+    ],
+  },
+  'coaching classes': {
+    label: 'Coaching Classes', color: '#3b4aa0', soft: '#eceefa',
+    tagline: 'Focused coaching to help students reach their goals.',
+    services: [
+      ['Regular Batches', 'Structured classes covering the full syllabus.'],
+      ['Concept Clarity', 'Topics taught from the basics with examples.'],
+      ['Tests & Practice', 'Regular tests to track progress.'],
+      ['Doubt Solving', 'Time set aside to clear student doubts.'],
+      ['Study Material', 'Notes and practice questions for revision.'],
+      ['Online & Offline', 'Learning options to suit each student.'],
+    ],
+    why: [
+      ['Focused teaching', 'Subjects taught with a focus on understanding.'],
+      ['Individual attention', 'Student progress followed up regularly.'],
+      ['Clear schedule', 'Batch timings and syllabus shared upfront.'],
+      ['Easy enquiry', 'Call or WhatsApp to ask about batches.'],
+    ],
+  },
+  'furniture': {
+    label: 'Furniture', color: '#7a4f2a', soft: '#f5eee6',
+    tagline: 'Quality furniture for homes and offices.',
+    services: [
+      ['Living Room Furniture', 'Sofas, tables and units for your living space.'],
+      ['Bedroom Furniture', 'Beds, wardrobes and side tables.'],
+      ['Dining Sets', 'Dining tables and chairs in different sizes.'],
+      ['Office Furniture', 'Desks, chairs and storage for workspaces.'],
+      ['Custom Furniture', 'Made-to-measure pieces in your choice of finish.'],
+      ['Delivery', 'Ask about delivery options for your purchase.'],
+    ],
+    why: [
+      ['Wide range', 'Designs to suit different spaces and styles.'],
+      ['Clear pricing', 'Prices and materials explained before you buy.'],
+      ['Quality materials', 'Material options explained to suit your budget.'],
+      ['Easy enquiry', 'Call or WhatsApp to ask about products.'],
+    ],
+  },
 };
 
-const card = ([h, d]) => `<div class="card"><h3>${esc(h)}</h3><p>${esc(d)}</p></div>`;
+const card =([h, d]) => `<div class="card"><h3>${esc(h)}</h3><p>${esc(d)}</p></div>`;
 
 function page(p) {
   const t = T[p.category];
