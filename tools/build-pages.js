@@ -206,6 +206,7 @@ const RECENT_WORK = {
 };
 
 const render = p => {
+  if (p.recentWork && !RECENT_WORK[p.slug]) RECENT_WORK[p.slug] = p.recentWork;
   const url = `${SITE}/${p.slug}/`;
   const waLink = `https://wa.me/${WA}?text=${encodeURIComponent(p.wa)}`;
   const plainH1 = p.h1.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
@@ -297,7 +298,14 @@ ${p.glance ? `          <ul class="lp-glance">
         </div>
       </div>
     </section>
-${RECENT_WORK[p.slug] ? `
+${p.answer ? `
+    <section class="section" id="short-answer">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">${esc(p.answer.h)}</h2>
+${p.answer.p.map(t => `        <p>${t}</p>`).join('\n')}
+      </div>
+    </section>
+` : ''}${RECENT_WORK[p.slug] ? `
     <section class="section" id="recent-work">
       <div class="container">
         <aside class="inline-cta reveal">
@@ -351,6 +359,7 @@ ${x.table ? `        <div class="table-wrap"><table>
           <thead><tr>${x.table.head.map(c => `<th>${c}</th>`).join('')}</tr></thead>
           <tbody>${x.table.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
         </table></div>
+${(x.after || []).map(t => `        <p>${t}</p>`).join('\n')}` : ''}${x.list ? `        <ul>${x.list.map(t => `<li>${t}</li>`).join('')}</ul>
 ${(x.after || []).map(t => `        <p>${t}</p>`).join('\n')}` : ''}
       </div>
     </section>

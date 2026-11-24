@@ -1366,4 +1366,5 @@ h1: 'Website maintenance services: WordPress maintenance <span class="grad">pack
 ];
 
 require('./pages-upgrades')(PAGES);
+require('./pages-expand')(PAGES);
 module.exports = PAGES.concat(require("./pages-cities").pages);

@@ -73,6 +73,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Will customers need new passwords?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Shopify does not export passwords, so customer accounts are moved and customers set a new password with a reset link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my Shopify URLs still work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every product, collection and blog URL is redirected with a 301 to its new WooCommerce address."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Should I move from Shopify to WooCommerce?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -181,6 +197,23 @@
       </div>
     </section>
 
+    <section class="section" id="short-answer">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">Shopify to WooCommerce migration: how it works</h2>
+        <p>A Shopify to WooCommerce migration moves your products, variants, customers and orders to a WordPress store you own, rebuilds the theme, and redirects every old Shopify URL so rankings carry over. Shopify keeps selling until the switch. For a live WooCommerce shop built and supported here, see the <a href="/work/southern-flavours/">Southern Flavours case study</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="recent-work">
+      <div class="container">
+        <aside class="inline-cta reveal">
+          <strong>Recent work</strong>
+          <p><a href="/work/southern-flavours/" class="link-inline">Southern Flavours (reservations and WooCommerce shop)</a></p>
+          <div><a href="/contact/?topic=Shopify%20to%20WooCommerce%20Migration" class="link-inline">Get a free quote →</a><a href="https://wa.me/917417049145?text=Hi%2C%20I%20want%20to%20move%20my%20Shopify%20store%20to%20WooCommerce." class="inline-cta-wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        </aside>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
@@ -231,6 +264,36 @@
 
       </div>
     </section>
+    <section class="section">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">What moves and what does not</h2>
+        <p>Moved: products with variants, SKUs, images and stock; collections as product categories; customers; past orders where the export allows; blog posts and pages; reviews from most review apps through their CSV export.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Data</th><th>Moves?</th><th>Notes</th></tr></thead>
+          <tbody><tr><td>Products and variants</td><td>Yes</td><td>Variants become WooCommerce variations</td></tr><tr><td>Customers</td><td>Yes</td><td>Passwords cannot be moved; customers reset them</td></tr><tr><td>Orders</td><td>Yes, as history</td><td>Kept for records and reorders</td></tr><tr><td>Reviews</td><td>Usually</td><td>Through the review app's export</td></tr><tr><td>Gift cards</td><td>Partly</td><td>Balances need a gift card plugin and a manual import</td></tr><tr><td>Shopify apps</td><td>No</td><td>Replaced with plugins or custom code</td></tr></tbody>
+        </table></div>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">URL mapping and the 301 plan</h2>
+        <p>Shopify and WooCommerce use different URL patterns, so every old address is mapped to its new one before launch: /products/name to /product/name, /collections/name to /product-category/name, and /blogs/news/post to the new post URL.</p>
+        <p>The redirect list is tested on staging, then Search Console is checked after launch for 404s and the new sitemap is submitted. Meta titles, descriptions and image alt text are carried over.</p>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:820px">
+        <h2 class="reveal">Cost comparison after the move</h2>
+        <p>The running costs change shape rather than disappear. Use this table with your own numbers to compare; you get exact figures for your store after the free review.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Cost line</th><th>On Shopify</th><th>On WooCommerce</th></tr></thead>
+          <tbody><tr><td>Platform</td><td>Monthly Shopify plan</td><td>No platform fee</td></tr><tr><td>Hosting</td><td>Included</td><td>Monthly or yearly hosting plan</td></tr><tr><td>Apps and plugins</td><td>Monthly app fees</td><td>Free plugins or one-time and yearly licences</td></tr><tr><td>Transaction fees</td><td>Extra fee if not using Shopify Payments</td><td>Only the gateway fee</td></tr><tr><td>Updates and security</td><td>Handled by Shopify</td><td>You or a maintenance plan</td></tr></tbody>
+        </table></div>
+
+      </div>
+    </section>
 
 
     <!-- ===== Process ===== -->
@@ -256,6 +319,14 @@
           <h2>Common questions</h2>
         </div>
         <div class="faq reveal">
+          <details>
+            <summary>Will customers need new passwords?</summary>
+            <p>Yes. Shopify does not export passwords, so customer accounts are moved and customers set a new password with a reset link.</p>
+          </details>
+          <details>
+            <summary>Will my Shopify URLs still work?</summary>
+            <p>Yes. Every product, collection and blog URL is redirected with a 301 to its new WooCommerce address.</p>
+          </details>
           <details>
             <summary>Should I move from Shopify to WooCommerce?</summary>
             <p>It depends on your store. WooCommerce gives more control and no platform fee, but you need hosting and regular maintenance. Shopify is simpler to run. After a free review you get an honest view of which fits; see &lt;a href=&quot;/blog/woocommerce-vs-shopify-india/&quot;&gt;WooCommerce vs Shopify&lt;/a&gt;.</p>

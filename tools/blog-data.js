@@ -12066,6 +12066,8 @@ wp option update blog_public 0</code></pre>
 <p>A jeweller's website has to earn trust before it can sell anything. Buyers want to see each piece clearly, understand exactly how the price is made up from weight, purity, making charges and stones, know that the purity is genuine, and be reassured about exchange, buyback and delivery. Most jewellers do best with a mix: an online store for lightweight and everyday pieces, and appointments, try-at-store reservations and WhatsApp video calls for bridal and high-value collections.</p>
 <p>WooCommerce suits jewellers well because it handles product attributes, variations, Indian payment gateways and GST invoices on a site you own. My <a href="/woocommerce-developer/">WooCommerce development</a> service covers the store foundations: product catalogue and categories, payment gateways such as Razorpay, PayU or Cashfree, cash on delivery and shipping rules, GST invoices and a fast mobile checkout. This guide covers what is specific to jewellery.</p>
 
+<p><strong>Want this built for your shop?</strong> See <a href="/website-for-jewellery-shop/">jewellery shop website design</a>: gold-rate pricing, hallmark details, catalogue or full online store, set up on WooCommerce or Shopify.</p>
+
 <h2>Online store, catalogue or both?</h2>
 <table>
   <thead>
