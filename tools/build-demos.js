@@ -224,6 +224,24 @@ const T = {
       ['Easy reservations', 'Call or WhatsApp to reserve a table.'],
     ],
   },
+  salon: {
+    label: "Salon & Spa", color: "#9b4d6b", soft: "#fbf1f5",
+    tagline: "Hair, beauty and spa care in a calm, welcoming space.",
+    services: [
+      ["Haircut & Styling", "Cuts, blow-dries and styling for every hair type."],
+      ["Hair Colour", "Colour, highlights and touch-ups to suit your look."],
+      ["Facials", "Cleansing and refreshing facials for your skin type."],
+      ["Bridal Makeup", "Hair and makeup for your wedding and special events."],
+      ["Nails", "Manicures, pedicures and nail care."],
+      ["Spa & Massage", "Relaxing spa treatments to unwind and recharge."],
+    ],
+    why: [
+      ["Clean, hygienic setup", "Tools and stations are cleaned for every client."],
+      ["Personal attention", "Your look is discussed before we begin."],
+      ["Relaxed space", "A comfortable place to sit back and enjoy."],
+      ["Easy appointments", "Call or WhatsApp to book a convenient time."],
+    ],
+  },
 };
 
 // ---- Visual design per category (fonts, accent, layout, verified Unsplash photos) ----
@@ -258,6 +276,9 @@ const S = {
   'restaurant': { fonts: ['Fraunces', 'Work Sans'], accent: '#b4441d', soft: '#fcf2ea', layout: 'center', radius: 12, gallery: true,
     hero: '1585937421612-70a008356fbe', about: '1517248135467-4c7edcad34c4', svc: ['1601050690597-df0568f70950', '1555396273-367ea4eb4db5', '1546833999-b9f581a1996d', '1414235077428-338989a2e8c0'],
     gal: ['1585937421612-70a008356fbe', '1601050690597-df0568f70950', '1546833999-b9f581a1996d', '1504674900247-0877df9cc836', '1517248135467-4c7edcad34c4', '1565958011703-44f9829ba187'] },
+  salon: { fonts: ["Cormorant Garamond", "Jost"], accent: "#9b4d6b", soft: "#fbf1f5", layout: "center", radius: 16, gallery: true,
+    hero: "1560066984-138dadb4c035", about: "1521590832167-7bcbfaa6381f", svc: ["1522337360788-8b13dee7a37e", "1562322140-8baeececf3df", "1570172619644-dfd03ed5d881", "1487412947147-5cebf100ffc2", "1604654894610-df63bc536371", "1544161515-4ab6ce6db874"],
+    gal: ["1560066984-138dadb4c035", "1522337360788-8b13dee7a37e", "1487412947147-5cebf100ffc2", "1604654894610-df63bc536371", "1570172619644-dfd03ed5d881", "1544161515-4ab6ce6db874"] },
 };
 const BOOK = { 'restaurant': 'Reserve a table', 'jeweller': 'Enquire now', 'coaching classes': 'Enquire about batches', 'furniture': 'Enquire now', 'interior designer': 'Get a consultation', 'car garage': 'Book a service' };
 
