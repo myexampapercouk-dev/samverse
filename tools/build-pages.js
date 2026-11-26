@@ -218,6 +218,12 @@ const render = p => {
         areaServed: p.areaServed ? p.areaServed.map(name => typeof name === 'string' ? { '@type': 'City', name } : name) : 'Worldwide',
         provider: { '@type': 'Organization', '@id': `${SITE}/#service`, name: 'Samverse', url: `${SITE}/`, telephone: '+91-7417049145' },
       },
+      ...(p.localBusiness ? [{
+        '@type': ['LocalBusiness', 'ProfessionalService'], '@id': `${url}#localbusiness`, name: 'Samverse', url, image: `${SITE}/assets/og-image.png`,
+        telephone: '+91-7417049145', email: 'samverse9719@gmail.com', priceRange: 'Fixed quote',
+        address: { '@type': 'PostalAddress', addressLocality: 'Pune', addressRegion: 'Maharashtra', addressCountry: 'IN' },
+        areaServed: (p.areaServed || ['Pune']).map(name => ({ '@type': 'City', name })), parentOrganization: { '@id': `${SITE}/#organization` },
+      }] : []),
       {
         '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },

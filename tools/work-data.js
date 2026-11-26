@@ -923,7 +923,7 @@ module.exports = [
     "url": "https://samverse.space/",
     "industry": "Portfolio & Lead Generation",
     "thumb": "/assets/og-image.png",
-    "seoTitle": "Samverse Case Study: Custom Portfolio & Lead Site",
+    "seoTitle": "Custom Portfolio & Lead Site Case Study | Samverse",
     "metaDescription": "How samverse.space was built: a fast, custom-coded freelance portfolio with service pages, a blog, case studies, schema and spam-free WhatsApp enquiries.",
     "summary": "Samverse.space is a custom-coded static site, not a theme: pages are generated from data files, so it loads fast and stays consistent. The site you're reading is a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog and case studies.",
     "client": "Samverse is my own freelance WordPress development business. The website needed to explain services clearly to very different buyers, prove experience with real work, rank for high-intent searches and turn visitors into enquiries.",

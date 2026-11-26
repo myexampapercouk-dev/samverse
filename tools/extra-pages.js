@@ -167,7 +167,7 @@ module.exports = [
   {
     slug: 'about',
     crumb: 'About',
-    title: 'About Samverse: Freelance WordPress Developer in Pune',
+    title: 'About Samverse | WordPress & Shopify studio, Pune',
     description: 'Who is Samverse? A Pune-based freelance WordPress, WooCommerce and Shopify developer building fast, SEO-ready sites for India, UK, USA and UAE since 2020.',
     eyebrow: 'About',
     h1: 'About <span class="grad">Samverse</span>',
@@ -177,7 +177,7 @@ module.exports = [
     <section class="section" style="padding-top:10px">
       <div class="container about-page">
         <div class="about-page-body">
-          <p><strong>In short:</strong> Samverse is a one-person WordPress, WooCommerce and Shopify development studio in Pune. You deal directly with the developer, get a fixed quote after a free review, and own your domain, hosting and logins.</p>
+          <p><strong>In short:</strong> <a href="/">Samverse</a> is a one-person WordPress, WooCommerce and Shopify development studio in Pune. You deal directly with the developer, get a fixed quote after a free review, and own your domain, hosting and logins.</p>
           <h2>How Samverse started</h2>
           <p>When COVID pushed businesses online in 2020, many owners suddenly needed a proper website, fast. I started building WordPress websites to help them get there, and it has kept me busy ever since.</p>
           <p>Since then I've built websites for an electronics manufacturer, an AI automation agency, a growth marketing agency, an industrial automation media portal, a large temple directory, a doctor's wellness practice and a generator rental company, among others. You can see them in my <a href="/work/">portfolio</a>.</p>
