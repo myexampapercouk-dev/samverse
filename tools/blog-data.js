@@ -28244,6 +28244,8 @@ IN       (blank)  18.0000  IGST      1</code></pre>
 <p>For consumer stores, showing prices inclusive of GST is the usual choice, because shoppers expect the displayed price to be the final price. Business-focused stores sometimes show prices before tax. Either way, the invoice shows the taxable value and tax separately.</p>
 <h3>Can WooCommerce generate e-invoices with an IRN?</h3>
 <p>Not on its own. If e-invoicing applies to your turnover, business invoices have to be registered with the government's e-invoice system, which usually happens through your accounting software or a GST service provider connected to the store.</p>
+<h3>Can someone set up WooCommerce GST and invoices for me?</h3>
+<p>Yes. A WooCommerce developer can create the tax classes, add the CGST, SGST and IGST rows, set up a GST invoice plugin with your GSTIN and HSN codes, and test orders, using the rates your CA gives you. See <a href="/woocommerce-developer/">WooCommerce development in India</a>.</p>
 
 <p>Related reading: <a href="/blog/meta-catalog-instagram-shopping-woocommerce/">connecting WooCommerce to the Meta catalog for Instagram Shopping</a>.</p>
 `,
@@ -60693,6 +60695,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>It varies. Titles usually update as pages are recrawled, while the site name in results and your business profile can take longer. Consistent naming across the site, structured data and listings helps.</p>
 <h3>Should I mention my old name on the new website?</h3>
 <p>Yes. A "formerly Old Name" line on the About page and footer, plus an alternate name in structured data, helps customers and Google connect the two names.</p>
+<h3>Should I rebrand the website or redesign it at the same time?</h3>
+<p>Doing both together means one launch, one round of redirects and one set of listing updates, but more to test. If the site is old or hard to update, combine them and plan the URLs first; if it works well, a rebrand alone is lower risk. See <a href="/website-redesign/">website redesign services in India</a> for help with either.</p>
 
 <p>Related reading: <a href="/blog/compare-website-quotes/">how to compare website quotes fairly</a> and <a href="/blog/faq-page-seo/">how to write an FAQ for a sales page and for SEO</a>.</p>
 `,
@@ -61395,6 +61399,8 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 <p>With the official plugin, a feed on a schedule, or the Shopify channel, yes. Manual uploads do not, so they go out of date.</p>
 <h3>Do I need the Conversions API as well as the pixel?</h3>
 <p>It is recommended. Sending events from the server as well as the browser makes tracking more reliable when browsers block scripts.</p>
+<h3>Can a developer set up the Meta catalog for my WooCommerce store?</h3>
+<p>Yes. A WooCommerce developer can connect the plugin, fix product data that gets rejected, match catalog IDs with pixel events and set up the Conversions API. See <a href="/woocommerce-developer/">WooCommerce development services</a>.</p>
 
 <p>Related reading: <a href="/blog/woocommerce-gst-invoices-india/">WooCommerce GST setup and GST invoices in India</a>.</p>
 `,
