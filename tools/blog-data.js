@@ -506,7 +506,7 @@ module.exports = [
   },
   {
     slug: 'signs-wordpress-site-hacked',
-    seoTitle: 'How to Tell if Your WordPress Site Is Hacked: Quick Checks',
+    seoTitle: 'How to Check if WordPress Is Hacked: 10 Quick Checks',
     title: 'How to Tell if Your WordPress Site Is Hacked: Warning Signs, Quick Checks and What to Do First',
     description: 'How to tell if your WordPress site is hacked: redirects, spam pages in Google, unknown admins and warnings, a quick checklist and the first steps to take.',
     date: '2026-09-27',
@@ -36005,7 +36005,7 @@ find wp-content -name "*.js" -mtime -30 -not -path "*/cache/*"</code></pre>
     body: `
 <p>WordPress sites rarely get hacked because WordPress itself is weak. Core is actively maintained and security fixes are released quickly. Sites get hacked through what surrounds it: a plugin or theme with a known vulnerability that hasn't been updated, a password that was guessed, reused or stolen, pirated software with malware built in, a forgotten site in the same hosting account, or a computer with saved logins that got infected. Nearly all of it is automated, which is why small business sites are hit as often as big ones.</p>
 <p>If your site is already showing signs of a hack, cleaning comes before prevention, because hardening an infected site leaves the backdoors in place. My <a href="/wordpress-malware-removal/">WordPress malware removal service</a> ends with a plain-English report that includes the likely way in, when the evidence shows it.</p>
-<p>This post explains the causes. The steps to close them are in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>.</p>
+<p>This post explains the causes. The steps to close them are in the <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a>. If you are not sure the site is compromised yet, start with <a href="/blog/signs-wordpress-site-hacked/">how to check if WordPress is hacked</a>.</p>
 
 <h2>How a typical WordPress hack happens</h2>
 <p>Most hacks follow the same automated chain. Nobody sits down and decides to attack your site.</p>
@@ -36616,7 +36616,7 @@ wp user list --role=administrator --fields=ID,user_login,user_email</code></pre>
   <li>Look in the database for spam posts, injected scripts and changed site settings</li>
   <li>Check .htaccess and other server config files for redirects aimed at search visitors</li>
 </ul>
-<p>The most common patterns have their own guides: <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a> and <a href="/blog/fix-wordpress-redirect-hack/">the WordPress redirect hack</a>. If you're not sure what you're looking at, start with <a href="/blog/signs-wordpress-site-hacked/">the signs a WordPress site has been hacked</a>.</p>
+<p>The most common patterns have their own guides: <a href="/blog/fix-japanese-keyword-seo-spam-hack/">fixing SEO spam hacks</a> and <a href="/blog/fix-wordpress-redirect-hack/">the WordPress redirect hack</a>. If you're not sure what you're looking at, start with <a href="/blog/signs-wordpress-site-hacked/">how to check if WordPress is hacked</a>.</p>
 
 <h2>Step 4: Clean the site completely</h2>
 <p>Deleting the spam pages you can see isn't enough. If the way in and the backdoors remain, the spam comes back within days.</p>
@@ -41991,6 +41991,8 @@ add_action( 'after_setup_theme', function () {
     related: ['woocommerce-developer', 'wordpress-speed-optimization'],
     body: `
 <p>To speed up WooCommerce, put the store on hosting with enough PHP workers and an object cache, page-cache product and category pages while excluding cart, checkout and account pages, compress product images and remove plugins you do not need. Then fix the WooCommerce-specific slowdowns: cart fragments, unindexed product filters, a bloated Action Scheduler and third-party scripts on product and checkout pages.</p>
+
+<p>If the whole WordPress site is slow, not just the shop, the general guide is <a href="/blog/why-is-my-wordpress-site-slow/">why is my WordPress site slow</a>. This one covers WooCommerce performance optimization only.</p>
 
 <blockquote><strong>Short answer:</strong> WooCommerce performance optimization means fixing the server first (enough PHP workers, PHP 8.2 or newer, Redis object cache), page-caching catalogue pages but never cart or checkout, switching on HPOS, restricting cart fragments, clearing a bloated Action Scheduler and removing scripts and plugins product pages do not need. Then measure product, category and checkout pages again.</blockquote>
 
@@ -74905,7 +74907,7 @@ curl -sI https://yourstore.in/product-category/old-category/ | grep -iE "^(HTTP|
   },
   {
     slug: 'wordpress-update-button-missing',
-    seoTitle: 'WordPress Update Button Missing? Causes and Fixes',
+    seoTitle: 'WordPress Update Button Missing or No Update Button? Fixes',
     title: 'WordPress Update Button Missing? Why Updates Do Not Show and How to Fix It Safely',
     description: 'WordPress update button missing? Check your user role, disabled updates in wp-config, host-managed updates, expired premium licences and file permissions.',
     date: '2026-10-30',
