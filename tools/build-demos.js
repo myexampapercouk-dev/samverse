@@ -393,7 +393,7 @@ footer{background:#0f1115;color:#aab0bb;font-size:14px;padding:40px 0 96px}foote
 <script>document.documentElement.className='js'</script>
 </head>
 <body>
-<div class="demo">Sample homepage made by Samverse for ${n} &mdash; not the official site. Like it? <a href="https://samverse.space/contact/">Contact Samverse</a></div>
+<div class="demo">Sample homepage made by Samverse for ${n} &mdash; not the official site. Like it? <a href="https://wa.me/917417049145">Contact Samverse</a></div>
 <header class="nav"><div class="wrap"><a class="logo" href="#top"><i>${initial}</i><span>${n}</span></a>
 <nav class="menu" aria-label="Main"><a href="#services">${isFood ? 'Menu' : 'Services'}</a><a href="#about">About</a>${s.gallery ? '<a href="#gallery">Gallery</a>' : ''}<a href="#faq">FAQ</a><a href="#visit">Visit</a></nav>
 <a class="btn pri" href="tel:${tel}">${ico('phone', 16)} Call</a></div></header>
