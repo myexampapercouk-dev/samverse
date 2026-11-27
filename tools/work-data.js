@@ -1006,6 +1006,81 @@ module.exports = [
     ]
   },
   {
+    "slug": "studio-agama",
+    "name": "Studio Agama",
+    "url": "https://studioagama.com/",
+    "industry": "Luxury Interior Architecture",
+    "seoTitle": "Luxury Interior Architecture Website on WordPress",
+    "metaDescription": "Luxury interior architecture website on WordPress and Elementor: service pages, project categories, a design concierge line and private consultation booking.",
+    "summary": "A premium website for a Hyderabad interior architecture firm that designs luxury villas, penthouses and residences, built to turn visitors into private consultations.",
+    "client": "Studio Agama is a Hyderabad interior architecture and turnkey design firm working on luxury villas, duplexes, penthouses and residences in areas such as Jubilee Hills and Kokapet.",
+    "goals": [
+      "Present the studio as a premium, design-led firm",
+      "Show services and projects by type of home",
+      "Make it easy to book a private consultation or call the studio",
+      "Support search visibility for luxury interiors in Hyderabad"
+    ],
+    "built": [
+      "Full-screen hero, \"Crafting Timeless Sanctuaries of Quiet Luxury\", with an Explore Portfolio button",
+      "Header with a Design Concierge phone line and a \"Book Private Consultation\" button",
+      "Service pages: residential, commercial, outdoor and landscape, renovation and remodelling, design consultation and 2D/3D layouts",
+      "Projects grouped by category: modern loft, luxury villa, penthouse and private estate",
+      "About, team, FAQ, blog and contact pages",
+      "Newsletter sign-up and repeated \"Schedule Discovery Call\" calls to action"
+    ],
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "A luxury interior architecture firm needed a website that felt as considered as its homes, and that moved high-value clients from browsing to booking a consultation."
+        ]
+      },
+      {
+        "h": "How the site is organised",
+        "p": [
+          "The menu covers Services, About Us, Projects, FAQs, Our Teams, Blogs and Contact Us. The header keeps a Design Concierge phone number and a \"Book Private Consultation\" button on screen, so a serious buyer can reach the studio from any page.",
+          "The homepage opens on a full-screen interior photograph with the line \"Crafting Timeless Sanctuaries of Quiet Luxury\" and a short introduction naming Jubilee Hills and Kokapet, then leads into services, projects and a \"Schedule Discovery Call\" invitation."
+        ]
+      },
+      {
+        "h": "Services and projects by type of home",
+        "p": [
+          "Each service has its own page: residential interior design, commercial interior design, outdoor and landscape design, renovation and remodelling, interior design consultation and 2D/3D layouts. Projects are grouped into categories that match how buyers think about their homes, such as modern loft, luxury villa, penthouse and private estate, so a villa owner can go straight to villa work."
+        ]
+      },
+      {
+        "h": "What other design studios can take from this",
+        "p": [
+          "Let photography lead, keep the words short, and make the next step obvious: a named phone line and a consultation button in the header do more than a contact page alone. Group projects by the kind of home your clients own. This site does that with WordPress, Elementor and Yoast SEO."
+        ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site presents Studio Agama's services and project categories in a premium layout, with consultation booking and a direct phone line on every page."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want an interior design website like this on WordPress, see the websites for interior designers page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
+      }
+    ],
+    "reading": ["website-for-interior-designers-architects", "website-for-3d-visualisation-studios", "multi-step-forms-lead-qualification"],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Yoast SEO",
+      "Contact Form 7"
+    ],
+    "related": [
+      "website-for-interior-designers",
+      "wordpress-website-development",
+      "website-redesign"
+    ]
+  },
+  {
     "slug": "samverse",
     "name": "Samverse (this website)",
     "url": "https://samverse.space/",

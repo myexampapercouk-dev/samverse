@@ -7,6 +7,7 @@
 module.exports = [
   { name: 'Third Eye Social',      url: 'https://thirdeye.social/',         study: '/work/third-eye-social/',      tag: 'AI Automation Agency',      thumb: '/assets/work/thirdeye.svg',       color: '#1A1A1A' },
   { name: 'GlintAero',             url: 'https://glintaero.com/',           study: '/work/glintaero/',             tag: 'Aircraft Spare Parts',                                                 color: '#1D4ED8' },
+  { name: 'Studio Agama',          url: 'https://studioagama.com/',         study: '/work/studio-agama/',          tag: 'Luxury Interior Architecture',                                         color: '#B08D57', hideOnHome: true },
   { name: 'Southern Flavours',     url: 'https://southernflavours.co.uk/',  study: '/work/southern-flavours/',     tag: 'Restaurant, UK',                                                       color: '#B45309', hideOnHome: true },
   { name: 'Vansh Group',           url: 'https://vansh.group/',             study: '/work/vansh-group/',           tag: 'Electronics Manufacturing',                                            color: '#0EA5E9' },
   { name: 'Studio Agama Interiors', url: 'https://interiorstudioagama.com/', study: '/work/studio-agama-interiors/', tag: 'Interior Design Studio',                                             color: '#A16207' },

@@ -132,11 +132,11 @@
   "date": "2026-11-19"
  },
  "https://samverse.space/work/": {
-  "hash": "89b4666de96c9d42",
+  "hash": "ec1ca46d1d48f140",
   "date": "2026-11-27"
  },
  "https://samverse.space/about/": {
-  "hash": "22d658f36ccce0bc",
+  "hash": "8c19fe87ff421519",
   "date": "2026-11-27"
  },
  "https://samverse.space/wordpress-glossary/": {
@@ -428,7 +428,11 @@
   "date": "2026-11-26"
  },
  "https://samverse.space/work/glintaero/": {
-  "hash": "3f3b97bc9574183d",
+  "hash": "0945b6824b539e96",
+  "date": "2026-11-27"
+ },
+ "https://samverse.space/work/studio-agama/": {
+  "hash": "c3bbfb13fd80a8f8",
   "date": "2026-11-27"
  }
 }
