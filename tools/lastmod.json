@@ -1,7 +1,7 @@
 {
  "https://samverse.space/": {
-  "hash": "48cc919eaba1a79a",
-  "date": "2026-11-26"
+  "hash": "ed0964ea74b41a10",
+  "date": "2026-11-27"
  },
  "https://samverse.space/solutions/": {
   "hash": "4afbb995bc0edad3",
@@ -132,12 +132,12 @@
   "date": "2026-11-19"
  },
  "https://samverse.space/work/": {
-  "hash": "09e3c21dad785649",
-  "date": "2026-11-12"
+  "hash": "89b4666de96c9d42",
+  "date": "2026-11-27"
  },
  "https://samverse.space/about/": {
-  "hash": "bb888c9034fd82e8",
-  "date": "2026-11-26"
+  "hash": "22d658f36ccce0bc",
+  "date": "2026-11-27"
  },
  "https://samverse.space/wordpress-glossary/": {
   "hash": "ae006022ad1a6bd3",
@@ -188,8 +188,8 @@
   "date": "2026-11-25"
  },
  "https://samverse.space/work/sahni-power-solutions/": {
-  "hash": "e51977bd4844121b",
-  "date": "2026-11-12"
+  "hash": "2dacfcb68c0a3213",
+  "date": "2026-11-27"
  },
  "https://samverse.space/work/samverse/": {
   "hash": "45c650252d8e9cc3",
@@ -426,5 +426,9 @@
  "https://samverse.space/web-design-company-pune/": {
   "hash": "70fbda49a92316a2",
   "date": "2026-11-26"
+ },
+ "https://samverse.space/work/glintaero/": {
+  "hash": "3f3b97bc9574183d",
+  "date": "2026-11-27"
  }
 }

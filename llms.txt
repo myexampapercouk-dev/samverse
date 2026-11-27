@@ -105,6 +105,7 @@
 - [Southern Flavours](https://samverse.space/work/southern-flavours/): A warm, appetite-led website for an Indian restaurant in Solihull, UK, built around table reservations, the menu and its weekend South Indian breakfast buffet.
 - [Dr. Nitish Gupta](https://samverse.space/work/dr-nitish-gupta-pulmonologist/): A good pulmonologist website shows the doctor's credentials, explains each lung test in plain words and puts booking on every page. This is a detailed, trust-building website for an interventional pulmonologist in Agra, presenting his credentials, chest and lung services and diagnostic facilities, with easy appointment booking.
 - [Sahni Power Solutions](https://samverse.space/work/sahni-power-solutions/): A lead-focused website for a diesel generator rental company, presenting its full fleet from small portable units to large silent gensets.
+- [GlintAero](https://samverse.space/work/glintaero/): A B2B website for an aircraft spare parts trading company, built to turn airlines, MROs and operators into RFQs.
 - [Samverse (this website)](https://samverse.space/work/samverse/): Samverse.space is a custom-coded static site, not a theme: pages are generated from data files, so it loads fast and stays consistent. The site you're reading is a fast, search-focused portfolio and lead generation website for my own freelance business, with service and industry pages, a blog and case studies.
 
 ## Blog topics

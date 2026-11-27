@@ -918,6 +918,94 @@ module.exports = [
     ]
   },
   {
+    "slug": "glintaero",
+    "name": "GlintAero",
+    "url": "https://glintaero.com/",
+    "industry": "Aircraft Spare Parts",
+    "seoTitle": "Aircraft Parts Supplier Website Design on WordPress",
+    "metaDescription": "Aircraft spare parts supplier website on WordPress and Elementor: RFQ form, AOG support, part categories, industries served and a quick quote popup.",
+    "summary": "A B2B website for an aircraft spare parts trading company, built to turn airlines, MROs and operators into RFQs.",
+    "client": "GlintAero Private Limited supplies traceable aircraft spare parts, from airframe and engine parts to landing gear, avionics, hydraulics and hardware, to airlines, MROs and operators.",
+    "goals": [
+      "Make it quick for buyers to send an RFQ with a part number and quantity",
+      "Show the range of part categories and the operators served",
+      "Build trust with traceability, documentation and quality messaging",
+      "Give AOG (aircraft on ground) enquiries a fast route to the team"
+    ],
+    "built": [
+      "Hero with \"Request for Quotation\" and \"View Products\" buttons and trust points: certified parts, full traceability, AOG support 24/7",
+      "Part category grid: airframe, engine, landing gear, avionics, hydraulics, fasteners and hardware, cabin interiors",
+      "A four-step \"How It Works\" process from RFQ to delivery",
+      "Industries served: airlines, MROs, charter and NSOP operators, helicopter operators, leasing companies, flying academies",
+      "RFQ form asking for part number and quantity, plus a \"Get a Quote\" popup and a floating Quick Quote button",
+      "Separate pages for About Us, Leadership, Products & Services, Quality, RFQ and Contact, with WhatsApp and LinkedIn in the top bar"
+    ],
+    "sections": [
+      {
+        "h": "The problem",
+        "p": [
+          "An aircraft parts trading company needed a website that procurement teams at airlines and MROs would trust, and that made sending an RFQ quicker than picking up the phone."
+        ]
+      },
+      {
+        "h": "How the site is organised",
+        "p": [
+          "The menu covers Home, About Us, Leadership, Products & Services, Quality, RFQ and Contact Us, with a \"Get a Quote\" button in the header. A top bar carries the email address, phone number, WhatsApp, LinkedIn and an \"AOG Support 24/7\" badge, so urgent buyers see the fastest route before anything else.",
+          "The homepage opens with \"Your Trusted Source For Quality Aircraft Components\", two buttons (Request for Quotation and View Products) and three trust points: certified parts, full traceability and AOG support 24/7. It then covers the company's commitment, the part categories it supplies, core capabilities, the ordering process, industries served, why buyers choose GlintAero, quality, an FAQ and the RFQ form."
+        ]
+      },
+      {
+        "h": "Built around the RFQ",
+        "p": [
+          "Aircraft parts are bought by part number, so the RFQ form asks for name, email, phone or WhatsApp, company, part number and quantity. A \"How It Works\" section sets expectations in four steps: send your RFQ, receive a quote with price, condition, certification and lead time, confirm the order by email or PO, and receive parts inspected and packed to ATA standards.",
+          "Quote requests are never far away: the header button, the hero button, a floating Quick Quote button and a quote popup all lead to the same enquiry."
+        ]
+      },
+      {
+        "h": "Trust for a regulated industry",
+        "p": [
+          "Buyers in aviation need documentation as much as the part itself, so traceability and quality appear throughout: in the hero, in the \"Quality Assured\" card, in a dedicated Quality page and in the FAQ. The industries section names each type of operator, from scheduled airlines and MROs to helicopter operators and flying academies, so visitors can see their own work listed."
+        ]
+      },
+      {
+        "h": "What other B2B suppliers can take from this",
+        "p": [
+          "Ask for what your buyers already have, such as a part number or SKU, and keep the quote form short. Explain your process step by step so buyers know what happens after they enquire, and put urgent-support contact details at the very top. This site does that with WordPress, Elementor, the Hello Elementor theme, Contact Form 7 and Popup Maker."
+        ]
+      },
+      {
+        "h": "The result",
+        "p": [
+          "The live site presents GlintAero's part categories, process and quality approach clearly, with several routes to an RFQ and a visible AOG contact on every page."
+        ]
+      },
+      {
+        "h": "Want something similar?",
+        "p": [
+          "If you want a B2B supplier or trading website like this on WordPress, see the websites for manufacturers page linked below, or send a short brief through the contact form at the bottom of this page. You get a free review of your current site and a fixed quote before any work starts."
+        ]
+      }
+    ],
+    "reading": [
+      "rfq-forms-b2b-websites",
+      "b2b-manufacturer-website-guide",
+      "website-for-export-businesses",
+      "website-trust-signals-checklist"
+    ],
+    "stack": [
+      "WordPress",
+      "Elementor",
+      "Hello Elementor theme",
+      "Contact Form 7",
+      "Popup Maker"
+    ],
+    "related": [
+      "website-for-manufacturers",
+      "wordpress-website-development",
+      "landing-page-design"
+    ]
+  },
+  {
     "slug": "samverse",
     "name": "Samverse (this website)",
     "url": "https://samverse.space/",
